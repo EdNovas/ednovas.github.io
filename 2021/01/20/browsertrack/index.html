@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>浏览器指纹追踪 | EdNovas的小站</title><meta name="keywords" content="安全，浏览器，软件，插件，指纹，追踪，记录"><meta name="author" content="EdNovas"><meta name="copyright" content="EdNovas"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="浏览器指纹追踪简述现实世界可通过体貌特征、身份证件、生物特征（如指纹信息）等手段对用户进行唯一性识别。Web世界主要通过Cookies技术、浏览器指纹、WebRTC等技术进行识别。 典型追踪技术—Cookie追踪Cookie是什么Cookie，有时也用复数形式Cookies，在Web世界中其实际上是用户浏览网站时，网站存储在用户浏览器上的一段信息，并在服务器和浏览器之间传递，用户与辨别用户身份和维">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浏览器指纹追踪">
+<meta property="og:url" content="https://ednovas.xyz/2021/01/20/browsertrack/index.html">
+<meta property="og:site_name" content="EdNovas的小站">
+<meta property="og:description" content="浏览器指纹追踪简述现实世界可通过体貌特征、身份证件、生物特征（如指纹信息）等手段对用户进行唯一性识别。Web世界主要通过Cookies技术、浏览器指纹、WebRTC等技术进行识别。 典型追踪技术—Cookie追踪Cookie是什么Cookie，有时也用复数形式Cookies，在Web世界中其实际上是用户浏览网站时，网站存储在用户浏览器上的一段信息，并在服务器和浏览器之间传递，用户与辨别用户身份和维">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/digital-fingerprint.jpg">
+<meta property="article:published_time" content="2021-01-20T03:41:00.000Z">
+<meta property="article:modified_time" content="2021-01-20T13:49:28.745Z">
+<meta property="article:author" content="EdNovas">
+<meta property="article:tag" content="安全，浏览器，软件，插件，指纹，追踪，记录">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/digital-fingerprint.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://ednovas.xyz/2021/01/20/browsertrack/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-01-20 21:49:28'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">98</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">57</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">EdNovas的小站</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">浏览器指纹追踪</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-01-20T03:41:00.000Z" title="Created 2021-01-20 11:41:00">2021-01-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-01-20T13:49:28.745Z" title="Updated 2021-01-20 21:49:28">2021-01-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BD%91%E7%AB%99/">网站</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="浏览器指纹追踪"><a href="#浏览器指纹追踪" class="headerlink" title="浏览器指纹追踪"></a>浏览器指纹追踪</h1><h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>现实世界可通过体貌特征、身份证件、生物特征（如指纹信息）等手段对用户进行唯一性识别。Web世界主要通过Cookies技术、浏览器指纹、WebRTC等技术进行识别。</p>
+<h2 id="典型追踪技术—Cookie追踪"><a href="#典型追踪技术—Cookie追踪" class="headerlink" title="典型追踪技术—Cookie追踪"></a>典型追踪技术—Cookie追踪</h2><h3 id="Cookie是什么"><a href="#Cookie是什么" class="headerlink" title="Cookie是什么"></a>Cookie是什么</h3><p>Cookie，有时也用复数形式Cookies，在Web世界中其实际上是用户浏览网站时，网站存储在用户浏览器上的一段信息，并在服务器和浏览器之间传递，用户与辨别用户身份和维持状态。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c2.png"></p>
+<p>当你在浏览器地址栏中键入了服务的URL，浏览器会向服务器发送一个读取网页的请求，并将结果回显。在发送之前，该网页在你的电脑上寻找服务网站设置的Cookie文件，如果找到，浏览器会把Cookie文件中的数据连同前面输入的URL一同发送到服务器。</p>
+<p>服务器收到Cookie数据，就会在他的数据库中检索你的ID，你的购物记录、个人喜好等信息，并记录下新的内容，增加到数据库和Cookie文件中去。如果没有检测到Cookie或者你的Cookie信息与数据库中的信息不符合，则说明你是第一次浏览该网站，服务器的CGI程序将为你创建新的ID信息，并保存到数据库中。</p>
+<p>我们日常工作中所能见到的购物网站如京东淘宝，第三方监测工具如doubleclick、99click等都需要利用Cookie技术，网站分析工具如GA、百度统计、CNZZ等也需要利用Cookie。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c3.png" alt="用户首次访问购物网站时"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c4.png" alt="第二次访问时"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c5.png" alt="浏览器查看Cookies"></p>
+<h3 id="Cookie同步"><a href="#Cookie同步" class="headerlink" title="Cookie同步"></a>Cookie同步</h3><p>Cookie同步一般是指用户访问某A网站时，该网站通过页面跳转等方式将用户的Cookie发送到B网站，使得B网站获取到用户在A网站的用户隐私信息，然后通过RTB（Real Time Bidding）、AdNetwork等一系列平台进行有效的广告推送服务(此部分涉及SSP、DSP、RTB、DMP等一系列广告推送服务和平台)。</p>
+<p>这也就是为什么浏览器的广告和购物网站会给你推送你百度搜索过的东西。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c7.png"></p>
+<p>不少安全工具甚至是浏览器都允许或者引导关闭追踪Cookie，Cookie追踪越来越受限制，浏览器指纹追踪渐渐成为了Web追踪的重要技术手段。</p>
+<hr>
+<h2 id="浏览器指纹追踪-1"><a href="#浏览器指纹追踪-1" class="headerlink" title="浏览器指纹追踪"></a>浏览器指纹追踪</h2><p>类似人的外貌和指纹，Web客户端（这里主要指浏览器）也有多种“外貌”信息和“指纹”信息，将这些信息综合分析计算后，可对客户端进行唯一性识别，进而锁定、追踪、了解网民行为和隐私数据。</p>
+<h3 id="基本指纹"><a href="#基本指纹" class="headerlink" title="基本指纹"></a>基本指纹</h3><p>基本指纹是任何浏览器都具有的特征标识，比如硬件类型（Apple）、操作系统（Mac OS）、用户代理（User agent）、系统字体、语言、屏幕分辨率、浏览器插件 (Flash, Silverlight, Java, etc)、浏览器扩展、浏览器设置 (Do-Not-Track, etc)、时区差（Browser GMT Offset）等众多信息，这些指纹信息“类似”人类的身高、年龄等，有很大的冲突概率，只能作为辅助识别。</p>
+<p>可以在该网址进行查看本地浏览器的基本特征：<a target="_blank" rel="noopener" href="https://www.whatismybrowser.com/">What is my browser</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/---1.png"></p>
+<h3 id="高级指纹"><a href="#高级指纹" class="headerlink" title="高级指纹"></a>高级指纹</h3><p>基本指纹就像是人的外貌特征，外貌可以用男女、身高、体重区分，然而这些特征不能对某个人进行唯一性标识，仅使用基本指纹也无法对客户端进行唯一性判定，基于HTML5的诸多高级指纹对此提供了新思路。</p>
+<h4 id="Canvas指纹"><a href="#Canvas指纹" class="headerlink" title="Canvas指纹"></a><strong>Canvas指纹</strong></h4><p>Canvas（画布）是HTML5中一种动态绘图的标签，可以使用其生成甚至处理高级图片。2014年9月，ProPublica报道：新型的Canvas指纹追踪正在被用到“上到白宫，下到YouPorn”等众多网站，事实上早在2012年已有研究报告分析称canvas指纹被用于跟踪用户。<br><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/---2.png"></p>
+<p>Canvas指纹的原理大致如下：</p>
+<p>相同的HTML5 Canvas元素绘制操作，在不同操作系统、不同浏览器上，产生的图片内容不完全相同。在图片格式上，不同浏览器使用了不同的图形处理引擎、不同的图片导出选项、不同的默认压缩级别等。在像素级别来看，操作系统各自使用了不同的设置和算法来进行抗锯齿和子像素渲染操作。即使相同的绘图操作，产生的图片数据的CRC检验也不相同。</p>
+<p>在线测试地址：<a target="_blank" rel="noopener" href="https://www.browserleaks.com/canvas">Browserleaks</a>，可查看浏览器的Canvas唯一性字符串。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/---6.png"></p>
+<p>Canvas几乎已被所有主流浏览器支持，可以通过大部分的PC、平板、智能手机访问.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/---7.png"></p>
+<h3 id="硬件指纹"><a href="#硬件指纹" class="headerlink" title="硬件指纹"></a>硬件指纹</h3><p>硬件指纹主要通过检测硬件模块获取信息，主要的硬件模块有：GPU’s clock frequency、Camera、Speakers/Microphone、Motion sensors、GPS、Battery等。更多细节请参考：<a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1503.01408v3.pdf">https://arxiv.org/pdf/1503.01408v3.pdf</a></p>
+<h3 id="综合指纹"><a href="#综合指纹" class="headerlink" title="综合指纹"></a>综合指纹</h3><p>将上述所有的基本指纹和多种高级指纹综合利用，进行分析、计算哈希值作为综合指纹，可以大大降低碰撞率，极大提高客户端唯一性识别的准确性。测试地址：<a target="_blank" rel="noopener" href="https://panopticlick.eff.org/">https://panopticlick.eff.org/</a></p>
+<h2 id="跨浏览器指纹"><a href="#跨浏览器指纹" class="headerlink" title="跨浏览器指纹"></a>跨浏览器指纹</h2><p>上述指纹都是基于浏览器进行的，同一台电脑的不同浏览器具有不同的指纹信息。这样造成的结果是，当同一用户使用同一台电脑的不同浏览器时，服务方收集到的浏览器指纹信息不同，无法将该用户进行唯一性识别，进而无法有效分析改用户的的行为。</p>
+<p>近期有学者研究了一种跨浏览器的浏览器指纹，其依赖于浏览器与操作系统和硬件底层进行交互进而分析计算出指纹，这种指纹对于同一台电脑的不同浏览器也是相同的。更多技术细节请参考：</p>
+<p><a target="_blank" rel="noopener" href="http://yinzhicao.org/TrackingFree/crossbrowsertracking_NDSS17.pdf">http://yinzhicao.org/TrackingFree/crossbrowsertracking_NDSS17.pdf</a></p>
+<h2 id="WebRTC"><a href="#WebRTC" class="headerlink" title="WebRTC"></a>WebRTC</h2><p>WebRTC（网页实时通信，Web Real Time Communication），是一个开源项目，旨在使得浏览器能为实时通信（RTC）提供简单的JavaScript接口，说的简单明了一点就是让浏览器提供JS的即时通信接口，让浏览器实时获取和交换视频、音频和数据。WebRTC实现了三个API，分别是:</p>
+<p>MediaStream：通过MediaStream的API能够通过设备的摄像头及麦克风获得视频、音频的同步流。</p>
+<p>RTCPeerConnection：RTCPeerConnection是WebRTC用于构建点对点之间稳定、高效的流传输的组件。</p>
+<p>RTCDataChannel：RTCDataChannel使得浏览器之间（点对点）建立一个高吞吐量、低延时的信道，用于传输任意数据。</p>
+<p>基于WebRTC的实时通讯功能，可以获取客户端的IP地址，包括本地内网地址和公网地址。其原理是利用到RTCPeerConnection 的API，大致函数如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/---11.png"></p>
+<p>利用WebRTC能做的事情还远不止这些，比如使用其探测扫描内网信息，进行语音、视频交流，更多技术细节请参考：</p>
+<p><a target="_blank" rel="noopener" href="http://net.ipcalf.com/">http://net.ipcalf.com</a></p>
+<p><a target="_blank" rel="noopener" href="https://diafygi.github.io/webrtc-ips/">https://diafygi.github.io/webrtc-ips/</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/---12.png"></p>
+<h1 id="防护措施"><a href="#防护措施" class="headerlink" title="防护措施"></a>防护措施</h1><ol>
+<li>使用隐身模式浏览网页，缺点为无法保存历史记录。</li>
+<li>禁用Cookie和JavaScript，缺点为很有可能导致页面显示不正常，不建议。</li>
+<li>禁用WebRTC。Firefox浏览器：打开about:config，找到media.peerconnection.enabled的项，设置成 false。Chrome浏览器需要使用插件禁用。</li>
+<li>禁用Geolocation。Firefox浏览器：打开about:config，找到geo.enabled 的值，设置其值为 false。Chrome 点击设置（Settings），找到隐私和安全（Privacy and security）点击网站设置（Site Settings）在窗口里找到定位（Location）并设置不允许任何网站追踪你的物理位置（Do not allow any site to track your physical location）</li>
+<li>使用99%安全的匿名浏览器，比如Tor洋葱浏览器，具体怎么使用可以参考<a href="/2020/12/27/%E6%9C%80%E5%AE%89%E5%85%A8%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8tor/">这里</a></li>
+<li>禁用Cookies追踪，可以看<a href="/2020/12/21/%E5%B9%BF%E5%91%8A%E6%80%8E%E4%B9%88%E7%9F%A5%E9%81%93%E6%88%91%E5%9C%A8%E6%83%B3%E4%BB%80%E4%B9%88/">这篇文章</a></li>
+<li>安装插件<ol>
+<li>Ghostery可以有效屏蔽网页追踪、广告，加速网页：<a target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/ghostery-%E2%80%93-privacy-ad-blo/mlomiejdfkolichcflejclcbmpeaniij?utm_source=chrome-ntp-icon">https://chrome.google.com/webstore/detail/ghostery-%E2%80%93-privacy-ad-blo/mlomiejdfkolichcflejclcbmpeaniij?utm_source=chrome-ntp-icon</a></li>
+<li>Privacy Badger同样可以有效屏蔽隐秘追踪：<a target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp?utm_source=chrome-ntp-icon">https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp?utm_source=chrome-ntp-icon</a><br>可以在插件设置中开启Prevent WebRTC from leaking local IP address （防止WebRTC追踪泄露IP地址）<br><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/PrivacyBadger.jpg"></li>
+<li>uMatrix十分强大的分类管理cookie,css,image,media,script,XHR,frame和其他：<a target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf?utm_source=chrome-ntp-icon">https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf?utm_source=chrome-ntp-icon</a><br>第一行和第一列的标题方块有上下两个可点击的地方，上面是开启和关闭此列/行全部，下面是仅开启和关闭这个主网页的，除主页面以外此网页上的其他网站等信息由上面的小方块控制。你也可以分别控制每个网页的具体单个选项。<br>在软件使用的时候，除了基本上必须开启的css和image以外，大多数时候需要开启Scrpit选项来保证页面功能能正常运作。你也可以点击ALL直接允许所有都开启。<br><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/unnamed.jpg"></li>
+<li>Chameleon这个仅在GitHub上有，GitHub上下载最新版本的.crx后缀文件：<a target="_blank" rel="noopener" href="https://github.com/ghostwords/chameleon/releases">https://github.com/ghostwords/chameleon/releases</a><br>如果无法正常安装.crx后缀，参考<a href="/2021/01/04/ads/#%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85">这里</a></li>
+<li>Random User-Agent按时自动更改用户代理字符串，隐藏真实用户代理，还可防止通过 JavaScript 发掘真实信息：<a target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/random-user-agent/einpaelgookohagofgnnkcfjbkkgepnp?hl=zh-CN">https://chrome.google.com/webstore/detail/random-user-agent/einpaelgookohagofgnnkcfjbkkgepnp?hl=zh-CN</a></li>
+</ol>
+</li>
+</ol>
+<blockquote>
+<p>转载编辑自Seebug Paper <a target="_blank" rel="noopener" href="https://paper.seebug.org/227/">https://paper.seebug.org/227/</a> <a target="_blank" rel="noopener" href="https://paper.seebug.org/229/">https://paper.seebug.org/229/</a></p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">EdNovas</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://ednovas.xyz/2021/01/20/browsertrack/">https://ednovas.xyz/2021/01/20/browsertrack/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AE%89%E5%85%A8%EF%BC%8C%E6%B5%8F%E8%A7%88%E5%99%A8%EF%BC%8C%E8%BD%AF%E4%BB%B6%EF%BC%8C%E6%8F%92%E4%BB%B6%EF%BC%8C%E6%8C%87%E7%BA%B9%EF%BC%8C%E8%BF%BD%E8%B8%AA%EF%BC%8C%E8%AE%B0%E5%BD%95/">安全，浏览器，软件，插件，指纹，追踪，记录</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/digital-fingerprint.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/01/21/vercel/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1587482538420.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">网站托管到Vercel</div></div></a></div><div class="next-post pull-right"><a href="/2021/01/20/v2ui/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/f0288b435079a664c49b4ce8aae1403e.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">V2-ui面板</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">EdNovas</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">98</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">57</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8C%87%E7%BA%B9%E8%BF%BD%E8%B8%AA"><span class="toc-number">1.</span> <span class="toc-text">浏览器指纹追踪</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text">简述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B8%E5%9E%8B%E8%BF%BD%E8%B8%AA%E6%8A%80%E6%9C%AF%E2%80%94Cookie%E8%BF%BD%E8%B8%AA"><span class="toc-number">1.2.</span> <span class="toc-text">典型追踪技术—Cookie追踪</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Cookie%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.2.1.</span> <span class="toc-text">Cookie是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cookie%E5%90%8C%E6%AD%A5"><span class="toc-number">1.2.2.</span> <span class="toc-text">Cookie同步</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8C%87%E7%BA%B9%E8%BF%BD%E8%B8%AA-1"><span class="toc-number">1.3.</span> <span class="toc-text">浏览器指纹追踪</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%8C%87%E7%BA%B9"><span class="toc-number">1.3.1.</span> <span class="toc-text">基本指纹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E7%BA%A7%E6%8C%87%E7%BA%B9"><span class="toc-number">1.3.2.</span> <span class="toc-text">高级指纹</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Canvas%E6%8C%87%E7%BA%B9"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">Canvas指纹</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A1%AC%E4%BB%B6%E6%8C%87%E7%BA%B9"><span class="toc-number">1.3.3.</span> <span class="toc-text">硬件指纹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%BC%E5%90%88%E6%8C%87%E7%BA%B9"><span class="toc-number">1.3.4.</span> <span class="toc-text">综合指纹</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8C%87%E7%BA%B9"><span class="toc-number">1.4.</span> <span class="toc-text">跨浏览器指纹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WebRTC"><span class="toc-number">1.5.</span> <span class="toc-text">WebRTC</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%98%B2%E6%8A%A4%E6%8E%AA%E6%96%BD"><span class="toc-number">2.</span> <span class="toc-text">防护措施</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/01/31/newgroup/" title="新QQ群"><img src="http://bing.getlove.cn/bingImage" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="新QQ群"/></a><div class="content"><a class="title" href="/2021/01/31/newgroup/" title="新QQ群">新QQ群</a><time datetime="2021-01-31T11:14:00.000Z" title="Created 2021-01-31 19:14:00">2021-01-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/31/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2021/01/31/hello-world/" title="Hello World">Hello World</a><time datetime="2021-01-31T03:23:22.428Z" title="Created 2021-01-31 11:23:22">2021-01-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/30/pandownphp/" title="搭建度盘链接解析网站"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/heybox/baidu/1200x630wa.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="搭建度盘链接解析网站"/></a><div class="content"><a class="title" href="/2021/01/30/pandownphp/" title="搭建度盘链接解析网站">搭建度盘链接解析网站</a><time datetime="2021-01-30T13:29:00.000Z" title="Created 2021-01-30 21:29:00">2021-01-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/27/tracker/" title="Tracker 和 qBitorrent Enhanced说明"><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1116506071,4272746750&amp;fm=26&amp;gp=0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Tracker 和 qBitorrent Enhanced说明"/></a><div class="content"><a class="title" href="/2021/01/27/tracker/" title="Tracker 和 qBitorrent Enhanced说明">Tracker 和 qBitorrent Enhanced说明</a><time datetime="2021-01-27T11:14:00.000Z" title="Created 2021-01-27 19:14:00">2021-01-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/27/proxypool/" title="搭建Proxypool抓取免费节点网站"><img src="https://api.ixiaowai.cn/gqapi/gqapi.php" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="搭建Proxypool抓取免费节点网站"/></a><div class="content"><a class="title" href="/2021/01/27/proxypool/" title="搭建Proxypool抓取免费节点网站">搭建Proxypool抓取免费节点网站</a><time datetime="2021-01-27T09:30:00.000Z" title="Created 2021-01-27 17:30:00">2021-01-27</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By EdNovas</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

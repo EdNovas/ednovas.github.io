@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Python Day 1 | EdNovas的小站</title><meta name="keywords" content="EdNovas"><meta name="author" content="EdNovas"><meta name="copyright" content="EdNovas"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Python最近几年有多火相信大家也有所耳闻，因为其简单易上手还有极其丰富的各种库让他成为了新手容易上手，上限也不低的热门编程语言。我学习python也没有很长时间，还算是个菜鸟新手，在这里只是和大家分享一下我作为一个新手学习python的历程。 因为我注意到很多python新手入门教程书和网站写的有点苦涩难懂，所以我尝试着从一个新手的角度来从最基础说起。并且我相信作为一个新手，我更能清楚在学习的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python Day 1">
+<meta property="og:url" content="https://ednovas.xyz/2020/12/26/python-day-1/index.html">
+<meta property="og:site_name" content="EdNovas的小站">
+<meta property="og:description" content="Python最近几年有多火相信大家也有所耳闻，因为其简单易上手还有极其丰富的各种库让他成为了新手容易上手，上限也不低的热门编程语言。我学习python也没有很长时间，还算是个菜鸟新手，在这里只是和大家分享一下我作为一个新手学习python的历程。 因为我注意到很多python新手入门教程书和网站写的有点苦涩难懂，所以我尝试着从一个新手的角度来从最基础说起。并且我相信作为一个新手，我更能清楚在学习的">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/heybox/day1/V1.webp">
+<meta property="article:published_time" content="2020-12-26T09:14:58.000Z">
+<meta property="article:modified_time" content="2021-01-02T02:54:49.555Z">
+<meta property="article:author" content="EdNovas">
+<meta property="article:tag" content="EdNovas">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/heybox/day1/V1.webp"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://ednovas.xyz/2020/12/26/python-day-1/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-01-02 10:54:49'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">98</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">57</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">EdNovas的小站</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Python Day 1</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2020-12-26T09:14:58.000Z" title="Created 2020-12-26 17:14:58">2020-12-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-01-02T02:54:49.555Z" title="Updated 2021-01-02 10:54:49">2021-01-02</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>Python最近几年有多火相信大家也有所耳闻，因为其简单易上手还有极其丰富的各种库让他成为了新手容易上手，上限也不低的热门编程语言。我学习python也没有很长时间，还算是个菜鸟新手，在这里只是和大家分享一下我作为一个新手学习python的历程。</p>
+<p>因为我注意到很多python新手入门教程书和网站写的有点苦涩难懂，所以我尝试着从一个新手的角度来从最基础说起。并且我相信作为一个新手，我更能清楚在学习的伊始会遇到哪些大佬们编写教程时只是顺带一提的各种问题。</p>
+<p>本人技术欠缺，如果有各种问题，还请大佬指出并改正，我会虚心接受并学习的，毕竟这也是一个很好的学习过程。</p>
+<p><img src="https://cdn.max-c.com/heybox/dailynews/img/330247f759e11b3c2a55132f9e16a648.jpg"></p>
+<h2 id="基础要求"><a href="#基础要求" class="headerlink" title="基础要求"></a>基础要求</h2><p>懂一点电脑基础知识。英文要好，或者至少要一般水平。需要一定的逻辑思维能力。</p>
+<h2 id="python安装"><a href="#python安装" class="headerlink" title="python安装"></a><strong>python安装</strong></h2><p>要编程先得下软件吧，我这里用的是anaconda + wing 101 ide作为例子，你也可以自己选择你想用的ide，都大同小异。注意，wing不支持中文，如果想要用中文ide还请自行选择其他ide。</p>
+<p>“Anaconda是一个免费开源的Python和R语言的发行版本，用于计算科学，Anaconda致力于简化软件包管理系统和部署。Anaconda的包使用软件包管理系统Conda进行管理。”（某基百科）总的来说anaconda就相当于python软件本身+自带了很多的包。而wing ide就是个python的可视化窗口，方便输入、管理、测试代码，常见的ide还有pycharm、idle等。</p>
+<h2 id="下载anaconda"><a href="#下载anaconda" class="headerlink" title="下载anaconda"></a>下载anaconda</h2><p>官方安装地址：<a target="_blank" rel="noopener" href="https://www.anaconda.com/products/individual#macos">https://www.anaconda.com/products/individual#macos</a></p>
+<p><img src="https://cdn.max-c.com/heybox/dailynews/img/3fdc09598aac1b6f437fe76893ee9de3.jpg"></p>
+<p>国内下载速度可能会比较慢，可以选择度盘：</p>
+<p><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1OPlRfPOAhKyoX/_7RH7V3dg">https://pan.baidu.com/s/1OPlRfPOAhKyoX\_7RH7V3dg</a> 提取码: 6r4g</p>
+<p>度盘不限速下载可以参考我这篇文章：<a target="_blank" rel="noopener" href="https://www.xiaoheihe.cn/community/1/list/50255598">https://www.xiaoheihe.cn/community/1/list/50255598</a></p>
+<p>感谢盒友Brx86的提醒，可以从清华大学开源软件镜像站下载国内镜像：<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/">https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/</a></p>
+<h2 id="下载Wing101"><a href="#下载Wing101" class="headerlink" title="下载Wing101"></a>下载Wing101</h2><p>官方安装地址：<a target="_blank" rel="noopener" href="https://wingware.com/downloads">https://wingware.com/downloads</a></p>
+<p><img src="https://cdn.max-c.com/heybox/dailynews/img/94f899598593486b2588698f8b322108.jpg"></p>
+<p>度盘：</p>
+<p><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1OPlRfPOAhKyoX_7RH7V3dg">https://pan.baidu.com/s/1OPlRfPOAhKyoX_7RH7V3dg</a> 提取码: 6r4g</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>正常软件安装流程。先安装Anaconda，注意在安装Anaconda软件的时候，右击安装软件然后选择以管理员的身份运行。安装时间可能较长，还请耐心等待。</p>
+<p><img src="https://cdn.max-c.com/heybox/dailynews/img/36de29087ac8e368517bc1cd78a515f7.png"></p>
+<p>再安装wing 101。</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>全部安装完成后，打开wing，看看python shell里是否已经正确显示python版本号。ide主要分为两大部分，左边的代码文件区域，可以输入代码并保存为py本地文件；还有右边的python shell，是Python的命令行，也就是说是个暂时的命令输入框和执行框，代码文件的运行结果都会出现在这里。</p>
+<p><img src="https://cdn.max-c.com/heybox/dailynews/img/c6ef822f2169809db5780c6891a4b389.jpg"></p>
+<p>正确显示了以后，软件左上角选择黄色的文件，打开下载好的如下文件：setup.py（在上方度盘下载链接中）会出现如下界面（我设置了两个文件窗口，设置方法如下面第二张图右键选择split side by side）</p>
+<p><img src="https://cdn.max-c.com/heybox/dailynews/img/7a48e1a00fcbfc08e0f5b6c1cb2970f1.jpg"></p>
+<p><img src="https://cdn.max-c.com/heybox/dailynews/img/fe1c540ab06d1cd6b6992ef5203f69c2.jpg"></p>
+<p>然后点击上方绿色三角形脚本运行按钮，应该会出现一个函数图像，并且右边的python shell会出现一句话，让你输入你的名字，输入以后会如下第二张图。那么就此证明你的anaconda安装正常并且能正常调用库。</p>
+<p><img src="https://cdn.max-c.com/heybox/dailynews/img/fadfdf6fbcb9477d9103516527126e0b.jpg"></p>
+<p><img src="https://cdn.max-c.com/heybox/dailynews/img/81e562e4997ad2d4bd3be7e43f2d221d.png"></p>
+<p>那么接下来在shell里面输入一行代码print(“Hello, heybox!”)（建议所有的代码手动输入！可能会有中英文转换问题导致bug）并且按回车。（建议在写代码的时候按win+space键，切换输入法为英文输入法，没有英文输入法的可以在设置语言中添加一个）</p>
+<p><img src="https://cdn.max-c.com/heybox/dailynews/img/f858e95193440d6f0075b92b8ecb5233.png"></p>
+<p>那么他就会打印出你输入的内容</p>
+<p><img src="https://cdn.max-c.com/heybox/dailynews/img/16ddd6fb0c0ebb4e74407890e5ac360f.png"></p>
+<p>这里的这个print（）函数就是打印的意思，就是直接把你在后面输入的内容给复制黏贴出来。需要用引号来开始和结束。例如 print(“任何你想输入的内容”) ，引号中的内容中文也可。在python里面单引号和双引号在这里没有区别，所以 print(‘任何你想输入的内容’) 也是可以的。</p>
+<p><img src="https://cdn.max-c.com/heybox/dailynews/img/00acafacfec52b1920f96efd6bf1aadd.png"></p>
+<p>今天就先到这里，今天你学到的可不仅仅是hello, world了哦！</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">EdNovas</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://ednovas.xyz/2020/12/26/python-day-1/">https://ednovas.xyz/2020/12/26/python-day-1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/heybox/day1/V1.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/12/26/python-day-2/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/heybox/day1/V1.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Python Day 2</div></div></a></div><div class="next-post pull-right"><a href="/2020/12/26/%E8%A7%A3%E5%86%B3%E4%BB%A3%E7%90%86%E5%90%8E%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E8%BF%9E%E6%8E%A5%E5%BE%AE%E8%BD%AF%E6%9C%8D%E5%8A%A1/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/301611w8cbe5.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">解决代理后无法正常连接微软服务</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">EdNovas</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">98</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">57</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E8%A6%81%E6%B1%82"><span class="toc-number">1.</span> <span class="toc-text">基础要求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#python%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text">python安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDanaconda"><span class="toc-number">3.</span> <span class="toc-text">下载anaconda</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDWing101"><span class="toc-number">4.</span> <span class="toc-text">下载Wing101</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">5.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-number">6.</span> <span class="toc-text">使用</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/01/31/newgroup/" title="新QQ群"><img src="http://bing.getlove.cn/bingImage" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="新QQ群"/></a><div class="content"><a class="title" href="/2021/01/31/newgroup/" title="新QQ群">新QQ群</a><time datetime="2021-01-31T11:14:00.000Z" title="Created 2021-01-31 19:14:00">2021-01-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/31/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2021/01/31/hello-world/" title="Hello World">Hello World</a><time datetime="2021-01-31T03:23:22.428Z" title="Created 2021-01-31 11:23:22">2021-01-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/30/pandownphp/" title="搭建度盘链接解析网站"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/heybox/baidu/1200x630wa.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="搭建度盘链接解析网站"/></a><div class="content"><a class="title" href="/2021/01/30/pandownphp/" title="搭建度盘链接解析网站">搭建度盘链接解析网站</a><time datetime="2021-01-30T13:29:00.000Z" title="Created 2021-01-30 21:29:00">2021-01-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/27/tracker/" title="Tracker 和 qBitorrent Enhanced说明"><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1116506071,4272746750&amp;fm=26&amp;gp=0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Tracker 和 qBitorrent Enhanced说明"/></a><div class="content"><a class="title" href="/2021/01/27/tracker/" title="Tracker 和 qBitorrent Enhanced说明">Tracker 和 qBitorrent Enhanced说明</a><time datetime="2021-01-27T11:14:00.000Z" title="Created 2021-01-27 19:14:00">2021-01-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/27/proxypool/" title="搭建Proxypool抓取免费节点网站"><img src="https://api.ixiaowai.cn/gqapi/gqapi.php" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="搭建Proxypool抓取免费节点网站"/></a><div class="content"><a class="title" href="/2021/01/27/proxypool/" title="搭建Proxypool抓取免费节点网站">搭建Proxypool抓取免费节点网站</a><time datetime="2021-01-27T09:30:00.000Z" title="Created 2021-01-27 17:30:00">2021-01-27</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By EdNovas</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
