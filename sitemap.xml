@@ -1124,14 +1124,14 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/tags/VPN%EF%BC%8C%E7%BF%BB%E5%A2%99%EF%BC%8CVPS%EF%BC%8C%E9%9D%A2%E6%9D%BF%EF%BC%8CV2ray%EF%BC%8C%E6%A2%AF%E5%AD%90/</loc>
+    <loc>https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99%EF%BC%8CGitHub%EF%BC%8CVercel%EF%BC%8C%E6%89%98%E7%AE%A1%EF%BC%8C%E5%9F%9F%E5%90%8D%EF%BC%8C%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99%EF%BC%8CGitHub%EF%BC%8CVercel%EF%BC%8C%E6%89%98%E7%AE%A1%EF%BC%8C%E5%9F%9F%E5%90%8D%EF%BC%8C%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://ednovas.xyz/tags/VPN%EF%BC%8C%E7%BF%BB%E5%A2%99%EF%BC%8CVPS%EF%BC%8C%E9%9D%A2%E6%9D%BF%EF%BC%8CV2ray%EF%BC%8C%E6%A2%AF%E5%AD%90/</loc>
     <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1189,13 +1189,6 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/categories/%E6%B5%8B%E8%AF%84/</loc>
-    <lastmod>2021-01-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
@@ -1203,7 +1196,21 @@
   </url>
   
   <url>
+    <loc>https://ednovas.xyz/categories/%E6%B5%8B%E8%AF%84/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/categories/%E4%B8%8B%E8%BD%BD/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/categories/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1218,13 +1225,6 @@
   
   <url>
     <loc>https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/</loc>
-    <lastmod>2021-01-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/categories/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
