@@ -128,8 +128,12 @@
       }
       const t = saveToLocal.get('theme')
     
-          if (t === 'dark') activateDarkMode()
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
           else if (t === 'light') activateLightMode()
+          else activateDarkMode()
         
       const asideStatus = saveToLocal.get('aside-status')
       if (asideStatus !== undefined) {
@@ -523,7 +527,7 @@ window.onscroll = function() {
   if (document.querySelector('.angle-wrapper')) {
     document.querySelector('.angle-wrapper').style.display = 'none'
   }
-};</script></div><script defer src="/live2d-widget/autoload.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="true" data-text="LOVE YOU ❤" data-fontsize="17px" data-random="false" async="async"></script><script src="//code.tidio.co/xi7xvcxspsj7k3k8gwzv5q2dyvsmhsyv.js" async="async"></script><script>function onTidioChatApiReady() {
+};</script></div><script defer src="/live2d-widget/autoload.js"></script><script src = "/js/chatroom.js"></script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="true" data-text="LOVE YOU ❤" data-fontsize="17px" data-random="false" async="async"></script><script src="//code.tidio.co/xi7xvcxspsj7k3k8gwzv5q2dyvsmhsyv.js" async="async"></script><script>function onTidioChatApiReady() {
   window.tidioChatApi.hide();
   window.tidioChatApi.on("close", function() {
     window.tidioChatApi.hide();

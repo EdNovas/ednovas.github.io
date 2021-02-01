@@ -1395,19 +1395,6 @@ body {
 input::placeholder {
   color: var(--font-color);
 }
-#web_bg {
-  position: fixed;
-  z-index: -999;
-  width: 100%;
-  height: 100%;
-  background: black;
-  background-attachment: local;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 h1,
 h2,
 h3,
@@ -1584,7 +1571,7 @@ img:not([src]) {
   text-decoration: none !important;
 }
 figure.highlight table::-webkit-scrollbar-thumb {
-  background: #121212;
+  background: #dce4eb;
 }
 figure.highlight pre .deletion {
   color: #bf42bf;
@@ -1593,10 +1580,10 @@ figure.highlight pre .addition {
   color: #105ede;
 }
 figure.highlight pre .meta {
-  color: #c792ea;
+  color: #7c4dff;
 }
 figure.highlight pre .comment {
-  color: #969896;
+  color: rgba(149,165,166,0.8);
 }
 figure.highlight pre .variable,
 figure.highlight pre .attribute,
@@ -1610,10 +1597,10 @@ figure.highlight pre .css .id,
 figure.highlight pre .tag .name,
 figure.highlight pre .css .class,
 figure.highlight pre .css .pseudo {
-  color: #ff5370;
+  color: #e53935;
 }
 figure.highlight pre .tag {
-  color: #89ddff;
+  color: #39adb5;
 }
 figure.highlight pre .number,
 figure.highlight pre .preprocessor,
@@ -1621,10 +1608,10 @@ figure.highlight pre .literal,
 figure.highlight pre .params,
 figure.highlight pre .constant,
 figure.highlight pre .command {
-  color: #f78c6c;
+  color: #f76d47;
 }
 figure.highlight pre .built_in {
-  color: #ffcb6b;
+  color: #ffb62c;
 }
 figure.highlight pre .ruby .class .title,
 figure.highlight pre .css .rules .attribute,
@@ -1637,12 +1624,12 @@ figure.highlight pre .xml .cdata,
 figure.highlight pre .special,
 figure.highlight pre .number,
 figure.highlight pre .formula {
-  color: #c3e88d;
+  color: #91b859;
 }
 figure.highlight pre .keyword,
 figure.highlight pre .title,
 figure.highlight pre .css .hexcolor {
-  color: #89ddff;
+  color: #39adb5;
 }
 figure.highlight pre .function,
 figure.highlight pre .python .decorator,
@@ -1652,23 +1639,23 @@ figure.highlight pre .ruby .title .keyword,
 figure.highlight pre .perl .sub,
 figure.highlight pre .javascript .title,
 figure.highlight pre .coffeescript .title {
-  color: #82aaff;
+  color: #6182b8;
 }
 figure.highlight pre .tag .attr,
 figure.highlight pre .javascript .function {
-  color: #c792ea;
+  color: #7c4dff;
 }
 #article-container figure.highlight .line:before {
   display: inline-block;
   padding: 0 0.3rem 0 0;
   min-width: 1.6rem;
-  color: rgba(238,255,255,0.5);
+  color: rgba(144,164,174,0.5);
   content: counter(line);
   counter-increment: line;
   text-align: left;
 }
 #article-container figure.highlight .line.marked {
-  background-color: rgba(97,97,97,0.314);
+  background-color: rgba(128,203,196,0.251);
 }
 #article-container figure.highlight table {
   display: block;
@@ -1682,8 +1669,8 @@ figure.highlight pre .javascript .function {
 #article-container figure.highlight .gutter pre {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  background-color: #212121;
-  color: rgba(238,255,255,0.5);
+  background-color: #f6f8fa;
+  color: rgba(144,164,174,0.5);
   text-align: right;
 }
 #article-container figure.highlight .code pre {
@@ -1696,8 +1683,8 @@ figure.highlight pre .javascript .function {
   overflow: auto;
   margin: 0 0 1rem;
   padding: 0;
-  background: #212121;
-  color: #eff;
+  background: #f6f8fa;
+  color: #90a4ae;
   line-height: 1.6;
   counter-reset: line;
   white-space: pre-wrap;
@@ -1742,7 +1729,7 @@ blockquote footer cite:before {
 #article-container pre code {
   padding: 0;
   background: none;
-  color: #eff;
+  color: #90a4ae;
   text-shadow: none;
 }
 #article-container figure.highlight {
@@ -1763,11 +1750,11 @@ blockquote footer cite:before {
 #article-container figure.highlight .caption a {
   float: right;
   padding-right: 10px;
-  color: #eff;
+  color: #90a4ae;
 }
 #article-container figure.highlight figcaption a:hover,
 #article-container figure.highlight .caption a:hover {
-  border-bottom-color: #eff;
+  border-bottom-color: #90a4ae;
 }
 #article-container .highlight-tools {
   position: relative;
@@ -1786,8 +1773,8 @@ blockquote footer cite:before {
   overflow: hidden;
   min-height: 1.2rem;
   height: 2.15em;
-  background: #1c1c1c;
-  color: rgba(238,255,255,0.8);
+  background: #e6ebf1;
+  color: #90a4ae;
   font-size: 14px;
 }
 #article-container .highlight-tools.closed + table {
@@ -1869,8 +1856,8 @@ blockquote footer cite:before {
 #article-container figure.highlight {
   margin: 0 0 1.2rem;
   border-radius: 7px;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.4);
-  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 5px 10px 0 rgba(144,164,174,0.4);
+  box-shadow: 0 5px 10px 0 rgba(144,164,174,0.4);
   -webkit-transform: translateZ(0);
 }
 #article-container figure.highlight .highlight-tools:after {
@@ -4672,7 +4659,7 @@ _:future,
 #rightside {
   position: fixed;
   right: -38px;
-  bottom: 40px;
+  bottom: 90px;
   z-index: 100;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
