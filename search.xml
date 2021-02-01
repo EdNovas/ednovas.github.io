@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>Pixiv Top 50 日榜插件</title>
+      <link href="2021/02/01/pixivtop50/"/>
+      <url>2021/02/01/pixivtop50/</url>
+      
+        <content type="html"><![CDATA[<p>在 <code>themes\Butterfly\layout\includes\widget</code> 文件夹新建 <code>card_pixiv.pug</code> 文件，文件内容如下：</p><p>注意：最后三行要保持空格间距一样（直接复制下面代码即可）</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.card-widget.card-pixiv</span><br><span class="line"> .card-content</span><br><span class="line">  .item-headline</span><br><span class="line">    i.fa.fa-image(aria-hidden&#x3D;&quot;true&quot;)</span><br><span class="line">    span&#x3D; _p(&#39;aside.card_pixiv&#39;)</span><br><span class="line">    iframe(src&#x3D;&quot;https:&#x2F;&#x2F;cloud.mokeyjay.com&#x2F;pixiv&quot; frameborder&#x3D;&quot;0&quot;  style&#x3D;&quot;width:99%;height:380px;margin:0;&quot;)</span><br></pre></td></tr></table></figure><p><a href="https://cloud.mokeyjay.com/pixiv">https://cloud.mokeyjay.com/pixiv</a> 使用的是<a href="https://www.mokeyjay.com/">超能小紫</a>提供的服务，也可以自行搭建，搭建方式请看<a href="https://www.mokeyjay.com/archives/1063">这里</a></p><p>编辑 <code>themes\Butterfly\layout\includes\widget\index.pug</code> 文件，在你想要显示的位置插入以下代码：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if theme.aside.card_pixiv</span><br><span class="line">  !&#x3D;partial(&#39;includes&#x2F;widget&#x2F;card_pixiv&#39;, &#123;&#125;, &#123;cache:theme.fragment_cache&#125;)</span><br></pre></td></tr></table></figure><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200419183941492.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70"></p><p>编辑 <code>butterfly.yml</code> 文件，在 <code>card_webinfo</code> 下面添加一行 <code>card_pixiv: true</code></p><p>可以通过搜索关键词 <code>aside</code>，找到对应位置添加</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200419184046471.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70"></p><p>编辑 <code>themes\Butterfly\languages\zh-CN.yml</code> 文件 (请根据你的网站语言选择)，找到 <code>card_announcement: 公告</code> , 在下面添加一行 <code>card_pixiv: Pixiv日榜Top50</code> (后面的文本可自定义)</p><p>如果不想显示，直接把 <code>butterfly.yml</code> 文件的 <code>card_pixiv: true</code> 改为 <code>card_pixiv: false</code> 即可</p><blockquote><p>参考博客：<br>作者: HCLonely<br>链接: <a href="https://blog.hclonely.com/">https://blog.hclonely.com/</a><br>来源: HCLonely Blog</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 魔改 </tag>
+            
+            <tag> butterfly </tag>
+            
+            <tag> 主题 </tag>
+            
+            <tag> pixiv </tag>
+            
+            <tag> top50 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Clash 汉化方法</title>
       <link href="2021/02/01/clashlanguage/"/>
       <url>2021/02/01/clashlanguage/</url>
