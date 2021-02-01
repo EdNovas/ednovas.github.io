@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>Clash 汉化方法</title>
+      <link href="2021/02/01/clashlanguage/"/>
+      <url>2021/02/01/clashlanguage/</url>
+      
+        <content type="html"><![CDATA[<h2 id="汉化包下载"><a href="#汉化包下载" class="headerlink" title="汉化包下载"></a>汉化包下载</h2><p>可能不是最新版本</p><p>0.14.3: <a href="https://ednovas.lanzous.com/iUGmKl5ttqf">https://ednovas.lanzous.com/iUGmKl5ttqf</a></p><h2 id="Windows-平台汉化"><a href="#Windows-平台汉化" class="headerlink" title="Windows 平台汉化"></a>Windows 平台汉化</h2><p>请自行替换下列路径中的app.asar文件</p><p>默认路径是 <code>C:\Program Files\Clash for Windows\resources\app.asar</code></p><p><code>...\Clash for Windows\resources\app.asar</code></p><h2 id="MacOS-平台汉化"><a href="#MacOS-平台汉化" class="headerlink" title="MacOS 平台汉化"></a>MacOS 平台汉化</h2><p>依次打开 – 访达 – 应用程序 – 右键 Clash for Windows – 显示包内容 – Contents – Resources 替换 app.asar 文件即可。</p><h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>此汉化包仅在 Windows 版本测试。</p><p>如果 Clash For Windows 正在运行，请先退出</p><h2 id="Telegram-汉化包更新频道"><a href="#Telegram-汉化包更新频道" class="headerlink" title="Telegram 汉化包更新频道"></a>Telegram 汉化包更新频道</h2><p><a href="https://t.me/ClashR_for_Windows_Channel">https://t.me/ClashR_for_Windows_Channel</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 科学上网 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 科学上网 </tag>
+            
+            <tag> Clash </tag>
+            
+            <tag> 汉化 </tag>
+            
+            <tag> windows端 </tag>
+            
+            <tag> 软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>新QQ群</title>
       <link href="2021/01/31/newgroup/"/>
       <url>2021/01/31/newgroup/</url>
