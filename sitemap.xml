@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/02/02/yesmusicplayer/</loc>
+    
+    <lastmod>2021-02-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2021/02/02/clover/</loc>
     
     <lastmod>2021-02-02</lastmod>
@@ -1405,6 +1412,34 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E7%AE%80%E6%B4%81/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E9%9F%B3%E4%B9%90/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E6%92%AD%E6%94%BE%E5%99%A8/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E7%AE%80%E7%BA%A6/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E7%BD%91%E6%98%93%E4%BA%91/</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
