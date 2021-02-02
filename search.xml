@@ -4,6 +4,105 @@
   
     
     <entry>
+      <title>Video Speed Controller 调整网页视频倍速</title>
+      <link href="2021/02/02/speedcontroller/"/>
+      <url>2021/02/02/speedcontroller/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>转载翻译自 <a href="https://github.com/igrigorik/videospeed">https://github.com/igrigorik/videospeed</a></p></blockquote><h1 id="Video-Speed-Controller"><a href="#Video-Speed-Controller" class="headerlink" title="Video Speed Controller"></a>Video Speed Controller</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>使用快捷键加快，减速，前进和后退HTML5音频/视频</p><p>通过允许您快速调整播放速度，以及倒带视频以多听最后一秒的时间，它将帮助您优化视频观看。我们的阅读速度不是恒定的，而且说话的速度比阅读慢得多-没有理由我们必须以恒定的速度和（非常）缓慢的速度收听。</p><p>安装扩展程序后，只需导航到提供HTML5视频的任何页面，您就会在视频播放器的左上角看到一个速度指示器。将鼠标悬停在指示器上可以显示用于加速，减速或快退视频的控件（10秒+降低播放速度）。或者，甚至更好地使用键盘：</p><p>-S-降低播放速度。<br>-D-提高播放速度。<br>-R-重设播放速度。<br>-Z-将视频后退10秒。<br>-X-将视频前进10秒钟。<br>-V-显示/隐藏控制器。</p><p>如果您更喜欢其他快捷方式，想要更改增量值或希望播放器将来记住您的播放速度，请进入设置页面，并根据自己的喜好对其进行自定义。</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vsc2.jpg"></p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>注意，直接在Chrome Extensions中搜索的前几个都不是改插件，他排在很后面的位置。作者是<code>igrigorik</code>，大概有几千个打分。</p><p>！请勿安装和下载前面几个非官方插件，有群友反馈就安装错了然后被搜索劫持。</p><p>或者<br>直接前往</p><p><a href="https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?utm_source=chrome-ntp-icon">https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?utm_source=chrome-ntp-icon</a></p><p>下载安装该插件</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-02_12-22-40.webp"></p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-02_12-22-40.webp"></p><p>GitHub 项目地址：</p><p><a href="https://github.com/igrigorik/videospeed">https://github.com/igrigorik/videospeed</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windows </tag>
+            
+            <tag> 视频 </tag>
+            
+            <tag> 速度 </tag>
+            
+            <tag> chrome </tag>
+            
+            <tag> 插件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Maya 一个简洁小巧的快速启动工具</title>
+      <link href="2021/02/02/maya/"/>
+      <url>2021/02/02/maya/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>转载自 <a href="https://blog.arae.cc/post/25830.html">https://blog.arae.cc/post/25830.html</a> ， 这也是软件作者的博客地址<br>GitHub项目地址 <a href="https://github.com/25H/Maya">https://github.com/25H/Maya</a></p></blockquote><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Maya是一款体积小巧、简单易用的快速启动工具。不要看体积小巧，它的功能还是非常多样化的，比如：多文件拖拽添加启动、快捷键呼出、自动多列显示、lnk文件解析等等。软件没有繁杂的功能，操作中也不会产生任何垃圾文件，绿色无污染，只专注于文件的快速启动，是用户提升Windows操作体验的好帮手。</p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>GitHub下载地址：<a href="https://github.com/25H/Maya/releases">https://github.com/25H/Maya/releases</a><br>蓝奏云下载地址：<a href="https://wwa.lanzous.com/b0bqwqjvg">https://wwa.lanzous.com/b0bqwqjvg</a></p><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>·多文件拖拽添加启动<br>·快捷键呼出<br>·快捷键运行项目<br>·列表滚轮滚动<br>·自动多列显示<br>·快捷方式编辑<br>·lnk、url文件解析<br>·参数变量、环境变量<br>·开机启动<br>·分类<br>·排序<br>·跨分组拖拽项目<br>·自定布局<br>·自定主题<br>·自定义缩放<br>·运行</p><h2 id="特色"><a href="#特色" class="headerlink" title="特色"></a>特色</h2><p>1、简单，恰到好处<br>不需要过多的思考，不需要过多的学习，上手便能熟练使用，一试便知，你一定会喜欢上它。</p><p>2、功能，短小精悍<br>麻雀虽小却五脏俱全，Maya苗条的身材下隐藏着巨大的能量。无限的潜能，期待你的发掘。</p><p>3、外观，精妙绝伦<br>简约而不简单，每一处细节均精心打磨，每一处体验都深入人心，每一步操作皆无比轻松。</p><p>4、惬意，发自内心<br>如春风，如夏雨，如秋叶，如冬雪。心旷神怡，妙不可言。这种感觉，绝无仅有。</p><p>5、效果，立竿见影<br>一分钟，桌面回归整洁。彻底摆脱图标的困扰，尽情享受属于你的桌面。</p><p>6、未来，无限可能<br>在通往无比强大的路上，Maya才刚刚起步，需要你的支持与鼓励，请给Maya更多的时间。</p><h2 id="相关截图"><a href="#相关截图" class="headerlink" title="相关截图"></a>相关截图</h2><p>最新版本界面可能与截图有出入。</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://i.loli.net/2020/11/01/e8gfB9G1X4NQOKx.png"></p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://i.loli.net/2020/11/01/fT4RmanC8EdoGX9.png"></p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://i.loli.net/2020/11/01/HqT87pQFc51Kjan.png"></p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://i.loli.net/2020/11/01/OEvwrgTadCzj85n.png"></p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://i.loli.net/2020/11/01/ltVmOCFA9MNcBiU.png"></p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://i.loli.net/2020/11/01/ZiKJ5F6N3HfjYUt.png"></p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://i.loli.net/2020/11/01/ZTGszHaKSbQPxjY.png"></p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://i.loli.net/2020/11/01/MO19vKDLpXPsc6r.png"></p><h2 id="参数变量"><a href="#参数变量" class="headerlink" title="参数变量"></a>参数变量</h2><p>Maya 支持 Win环境变量同时并内置 2 个 参数变量 (变量尾不含 \ ) ，涉及范围：目录、起始位置、启动参数。</p><table><thead><tr><th align="left">变量名</th><th align="left">说明</th><th align="left">支持版本</th></tr></thead><tbody><tr><td align="left">%mp%</td><td align="left">所在目录</td><td align="left">1.0.2+</td></tr><tr><td align="left">%mr%</td><td align="left">所在盘根目录</td><td align="left">1.0.2+</td></tr></tbody></table><h2 id="搜索命令"><a href="#搜索命令" class="headerlink" title="搜索命令"></a>搜索命令</h2><table><thead><tr><th align="left">命令头</th><th align="left">说明</th><th align="left">支持版本</th></tr></thead><tbody><tr><td align="left">[&gt;]</td><td align="left">执行终端命令，如：&gt;ping arae.cc</td><td align="left">1.0.5+</td></tr><tr><td align="left">[&lt;]</td><td align="left">调用运行，如：&lt;c:/ 打开c盘</td><td align="left">1.1.4+</td></tr><tr><td align="left">[s ]</td><td align="left">可用搜索列表</td><td align="left">1.1.4+</td></tr><tr><td align="left">[bd ]</td><td align="left">通过 百度 搜索</td><td align="left">1.1.4+</td></tr><tr><td align="left">[b ]</td><td align="left">通过 必应 搜索</td><td align="left">1.1.4+</td></tr><tr><td align="left">[g ]</td><td align="left">通过 谷歌 搜索</td><td align="left">1.1.4+</td></tr><tr><td align="left">[d ]</td><td align="left">通过 DuckDuckGo 搜索</td><td align="left">1.1.4+</td></tr><tr><td align="left">ps：主窗口显示后，直接输入即可，无需手动打开搜索页。</td><td align="left"></td><td align="left"></td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 效率 </tag>
+            
+            <tag> windows </tag>
+            
+            <tag> maya </tag>
+            
+            <tag> 桌面 </tag>
+            
+            <tag> 快速启动 </tag>
+            
+            <tag> 简洁 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Clover 多标签资源管理器拓展</title>
+      <link href="2021/02/02/clover/"/>
+      <url>2021/02/02/clover/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Clover-3"><a href="#Clover-3" class="headerlink" title="Clover 3"></a>Clover 3</h2><p>Clover 是 Windows Explorer 资源管理器的一个扩展，为其增加类似谷歌 Chrome 浏览器的多标签页功能。</p><h2 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h2><p><a href="http://cn.ejie.me/">http://cn.ejie.me/</a></p><p>官网下载链接</p><p><a href="http://cn.ejie.me/download.html">http://cn.ejie.me/download.html</a></p><h3 id="方便的-Tab-页功能"><a href="#方便的-Tab-页功能" class="headerlink" title="方便的 Tab 页功能"></a>方便的 Tab 页功能</h3><p>要掌握功能强大，操作简单的标签页，只需记住Ctrl+T新开页面，Ctrl+W关闭页面，Ctrl+Tab切换页面，工作效率提高何止一倍！</p><h3 id="操作系统无缝集成"><a href="#操作系统无缝集成" class="headerlink" title="操作系统无缝集成"></a>操作系统无缝集成</h3><p>Clover 通过插件的形式集成到 Windows Explorer，保留您通常的使用习惯，无需学习新的文件管理操作，马上就可以使用啦。</p><h3 id="快如闪电的书签栏"><a href="#快如闪电的书签栏" class="headerlink" title="快如闪电的书签栏"></a>快如闪电的书签栏</h3><p>按Ctrl+D添加当前路径，或者直接将文件夹拖入书签栏。再也不用到处寻找要访问的文件夹了，瞬间到达，何等痛快！</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/clover.jpg"></p><h2 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q &amp; A"></a>Q &amp; A</h2><p>Q: Clover 是否支持Windows2000系统？<br>A: Clover 目前只支持Windows XP及之后各个Windows版本 （32bit/64bit），同时支持英文和中文等大部分常用语言。</p><p>Q: 安装时360安全卫士提示 regsvr32 进程安装浏览器插件，这个软件安全吗？<br>A: Clover 通过Windows Explorer插件的形式集成到系统资源管理器中，获取资源管理器新开窗口的消息，能够自动将外部打开的资源管理器窗口吸附到Clover窗口中。 Clover 程序不会获取用户的任何消息。</p><p>Q: ：安装后会自动吸附Windows Explorer，但是现在不行了？<br>A: 有些用户安装后，通过优化软件禁用了ExplorerWatcher插件，会造成这种情况，解除插件的禁用即可（请从IE浏览器–&gt;管理加载项菜单中查看，是否被禁用）。</p><p>Q: 我确认ExplorerWatcher已经启用了，为何还是无法自动吸附？<br>A: 请检查注册表的下列选项，检查浏览器扩展功能是否被禁用了。<br>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]<br>“Enable Browser Extensions”=”yes”</p><p>Q: 您会把Clover开源吗?<br>A:很多朋友咨询这个问题，因为以下几个原因，暂时不会:</p><ol><li>代码仓促写就，还有很多问题。</li><li>长期的开发计划和开发方向还不清晰。</li><li>Clover品牌还不够突出，为避免被山寨，暂时不能公开源码。</li></ol><p>Q: 能不能把任务栏上的Clover三叶草图标换回资源管理器的图标？<br>A: 有些人不喜欢Clover的图标，也有一些人很喜欢。所以我暂时不修改Clover的图标，直到我发现一个更好的，或者有人帮我做出一个更漂亮的图标。网友3man和nick提供了一个图标(by 3man)[<a href="http://ejie.me/images/Windows_Explorer_Clover.ico]">http://ejie.me/images/Windows_Explorer_Clover.ico]</a> (by nick)[<a href="http://ejie.me/images/clover3_32.ico]%EF%BC%8C%E4%BD%A0%E6%9A%82%E6%97%B6%E5%8F%AF%E4%BB%A5%E7%94%A8%E6%9D%A5%E4%BF%AE%E6%94%B9%E4%B8%8B%E9%9D%A2%E8%BF%99%E4%B8%AA%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%E7%9A%84%E5%9B%BE%E6%A0%87">http://ejie.me/images/clover3_32.ico]，你暂时可以用来修改下面这个快捷方式的图标</a>:<br><code>C:\Users\YOUR_USERNAME\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Clover.lnk</code></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 资源管理器 </tag>
+            
+            <tag> Clover </tag>
+            
+            <tag> windows </tag>
+            
+            <tag> 多标签 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>文章内容加密</title>
       <link href="2021/02/01/encrypt/"/>
       <url>2021/02/01/encrypt/</url>
