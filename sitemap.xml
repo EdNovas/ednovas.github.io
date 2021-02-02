@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/01/31/hello-world/</loc>
+    
+    <lastmod>2021-02-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2021/02/03/lenovoonelite/</loc>
     
     <lastmod>2021-02-02</lastmod>
@@ -124,13 +131,6 @@
     <loc>https://ednovas.xyz/2021/02/01/clashlanguage/</loc>
     
     <lastmod>2021-02-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/2021/01/31/hello-world/</loc>
-    
-    <lastmod>2021-01-31</lastmod>
     
   </url>
   
