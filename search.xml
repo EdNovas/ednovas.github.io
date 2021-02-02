@@ -4,11 +4,40 @@
   
     
     <entry>
+      <title>一指禅 - 自动关闭启动广告</title>
+      <link href="2021/02/03/skipads/"/>
+      <url>2021/02/03/skipads/</url>
+      
+        <content type="html"><![CDATA[<p>无需Root的自动关闭启动广告软件。</p><p>八戒的新作，小巧实用。还支持软件安装自动点击，自定义规则等。</p><p>免费够用。Pro版10RMB。</p><p>酷安连接：<br><a href="https://www.coolapk.com/apk/me.app.xad">https://www.coolapk.com/apk/me.app.xad</a></p><p>蓝奏云分流（版本2.9.75）：</p><p><a href="https://ednovas.lanzous.com/iOSRUl8u3ob">https://ednovas.lanzous.com/iOSRUl8u3ob</a></p><p>自定义规则文件下载：</p><p><a href="https://estar.lanzoui.com/11o-rules">https://estar.lanzoui.com/11o-rules</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 安卓 </tag>
+            
+            <tag> 广告 </tag>
+            
+            <tag> ads </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Lenovo One Lite 安卓投屏工具</title>
       <link href="2021/02/03/lenovoonelite/"/>
       <url>2021/02/03/lenovoonelite/</url>
       
-        <content type="html"><![CDATA[<h2 id="软件介绍"><a href="#软件介绍" class="headerlink" title="软件介绍"></a>软件介绍</h2><h3 id="高清投屏，一键连接"><a href="#高清投屏，一键连接" class="headerlink" title="高清投屏，一键连接"></a>高清投屏，一键连接</h3><p>新版本支持全品牌安卓设备，基于USB有线技术，实现快速连接，稳定流畅，更有画质优先，均衡模式，速度优先三种模式选择。</p><h3 id="键鼠模式，畅玩游戏"><a href="#键鼠模式，畅玩游戏" class="headerlink" title="键鼠模式，畅玩游戏"></a>键鼠模式，畅玩游戏</h3><p>电脑玩手游，键盘、鼠标自定义控制，无需模拟器。高清画质，帧率自选，告别卡顿，开启手游新玩法！</p><h3 id="文件互传，不止一种选择"><a href="#文件互传，不止一种选择" class="headerlink" title="文件互传，不止一种选择"></a>文件互传，不止一种选择</h3><p>全新接入“互传联盟”无线传输协议，实现系统级的“互通”，为用户提供跨平台、高速、稳定和0流量的本地文件快传体验。同时支持PC和手机端文件有线传输，多一种方式，多一种选择。</p><h2 id="实测"><a href="#实测" class="headerlink" title="实测"></a>实测</h2><p>以上都是软件官网吹的，实际效果呢，测试也还是挺好的。</p><p>因为使用的USB调试模式，所以延迟几乎没有，这个也是肯定的，如果有延迟那就怪了。</p><p>输入法不兼容电脑。。。额这是硬伤了。而且貌似电脑上的软件框无法调整大小？</p><p>画质是可以达到和手机一样的画质和帧率。</p><p>文件互传，也就是通过USB线传输文件，速度受限于手机存储传输速度和USB线传输速度</p><h2 id="开启-USB-调式模式"><a href="#开启-USB-调式模式" class="headerlink" title="开启 USB 调式模式"></a>开启 USB 调式模式</h2><p>软件使用要先打开 USB 调试模式</p><p>该模式在开发者模式下。</p><p>要打开开发者模式，需要去设置中，选择关于手机，然后连点5次版本号/build_number。根据手机不同有不同的开启方式，但大同小异。</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_04-32-51.webp"></p><p>进入开发者模式以后找到 USB debugging/USB调试并打开</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_04-33-21.webp"></p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官网下载地址</p><p><a href="https://one.lenovo.com/download.html">https://one.lenovo.com/download.html</a></p><p>注意要下载的是Lenovo One Lite</p><p>Lenovo One是仅适配极少数自家机型的</p><p>或者直接戳下方下载链接（官方直链）：</p><p><a href="https://cdnzui.lenovomm.cn/developer/lenovoone/Installforshop.exe">https://cdnzui.lenovomm.cn/developer/lenovoone/Installforshop.exe</a></p><h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><p>软件下载安装打开，用USB连接上已经打开USB调试的手机，然后点击连接即可。</p><p>支持屏息操作。</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_05-00-39.webp"></p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_05-00-48.webp"></p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_05-00-58.webp"></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="软件介绍"><a href="#软件介绍" class="headerlink" title="软件介绍"></a>软件介绍</h2><h3 id="高清投屏，一键连接"><a href="#高清投屏，一键连接" class="headerlink" title="高清投屏，一键连接"></a>高清投屏，一键连接</h3><p>新版本支持全品牌安卓设备，基于USB有线技术，实现快速连接，稳定流畅，更有画质优先，均衡模式，速度优先三种模式选择。</p><h3 id="键鼠模式，畅玩游戏"><a href="#键鼠模式，畅玩游戏" class="headerlink" title="键鼠模式，畅玩游戏"></a>键鼠模式，畅玩游戏</h3><p>电脑玩手游，键盘、鼠标自定义控制，无需模拟器。高清画质，帧率自选，告别卡顿，开启手游新玩法！</p><h3 id="文件互传，不止一种选择"><a href="#文件互传，不止一种选择" class="headerlink" title="文件互传，不止一种选择"></a>文件互传，不止一种选择</h3><p>全新接入“互传联盟”无线传输协议，实现系统级的“互通”，为用户提供跨平台、高速、稳定和0流量的本地文件快传体验。同时支持PC和手机端文件有线传输，多一种方式，多一种选择。</p><h2 id="实测"><a href="#实测" class="headerlink" title="实测"></a>实测</h2><p>以上都是软件官网吹的，实际效果呢，测试也还是挺好的。</p><p>因为使用的USB调试模式，所以延迟几乎没有，这个也是肯定的，如果有延迟那就怪了。</p><p>支持键鼠自定义，不玩游戏还没测试过。不过貌似电脑上的软件框无法调整大小？</p><p>画质是可以达到和手机一样的画质和帧率。</p><p>文件互传，也就是通过USB线传输文件，速度受限于手机存储传输速度和USB线传输速度</p><h2 id="开启-USB-调式模式"><a href="#开启-USB-调式模式" class="headerlink" title="开启 USB 调式模式"></a>开启 USB 调式模式</h2><p>软件使用要先打开 USB 调试模式</p><p>该模式在开发者模式下。</p><p>要打开开发者模式，需要去设置中，选择关于手机，然后连点5次版本号/build_number。根据手机不同有不同的开启方式，但大同小异。</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_04-32-51.webp"></p><p>进入开发者模式以后找到 USB debugging/USB调试并打开</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_04-33-21.webp"></p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官网下载地址</p><p><a href="https://one.lenovo.com/download.html">https://one.lenovo.com/download.html</a></p><p>注意要下载的是Lenovo One Lite</p><p>Lenovo One是仅适配极少数自家机型的</p><p>或者直接戳下方下载链接（官方直链）：</p><p><a href="https://cdnzui.lenovomm.cn/developer/lenovoone/Installforshop.exe">https://cdnzui.lenovomm.cn/developer/lenovoone/Installforshop.exe</a></p><h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><p>软件下载安装打开，用USB连接上已经打开USB调试的手机，然后点击连接即可。</p><p>支持屏息操作。</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_05-00-39.webp"></p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_05-00-48.webp"></p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_05-00-58.webp"></p>]]></content>
       
       
       <categories>
