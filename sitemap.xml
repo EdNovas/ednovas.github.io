@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/ios/index.html</loc>
+    
+    <lastmod>2021-02-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/urls/index.html</loc>
+    
+    <lastmod>2021-02-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/vps/index.html</loc>
+    
+    <lastmod>2021-02-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2021/01/21/gitcalendar/</loc>
     
     <lastmod>2021-02-02</lastmod>
@@ -247,13 +268,6 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/ios/index.html</loc>
-    
-    <lastmod>2021-01-23</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://ednovas.xyz/2021/01/23/chromeflag/</loc>
     
     <lastmod>2021-01-22</lastmod>
@@ -471,13 +485,6 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/vps/index.html</loc>
-    
-    <lastmod>2021-01-18</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://ednovas.xyz/2021/01/16/euserv/</loc>
     
     <lastmod>2021-01-16</lastmod>
@@ -656,13 +663,6 @@
     <loc>https://ednovas.xyz/2021/01/06/movies/</loc>
     
     <lastmod>2021-01-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/urls/index.html</loc>
-    
-    <lastmod>2021-01-04</lastmod>
     
   </url>
   
@@ -921,7 +921,21 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%EF%BC%8C%E6%A2%AF%E5%AD%90%EF%BC%8Ccmd%EF%BC%8C%E4%BB%A3%E7%90%86/</loc>
+    <loc>https://ednovas.xyz/tags/Clover/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/windows/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E5%A4%9A%E6%A0%87%E7%AD%BE/</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -956,6 +970,20 @@
   </url>
   
   <url>
+    <loc>https://ednovas.xyz/tags/%E5%8A%A0%E5%AF%86/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%EF%BC%8C%E6%A2%AF%E5%AD%90%EF%BC%8Ccmd%EF%BC%8C%E4%BB%A3%E7%90%86/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/tags/footer%EF%BC%8C%E9%A1%B5%E8%84%9A/</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>daily</changefreq>
@@ -984,14 +1012,14 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/tags/VPN%EF%BC%8C%E7%BF%BB%E5%A2%99%EF%BC%8C%E8%BD%AF%E4%BB%B6%EF%BC%8C%E6%A2%AF%E5%AD%90/</loc>
+    <loc>https://ednovas.xyz/tags/FTP%EF%BC%8C%E7%BD%91%E7%9B%98%EF%BC%8C%E4%B8%8B%E8%BD%BD%EF%BC%8Clsp/</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/tags/FTP%EF%BC%8C%E7%BD%91%E7%9B%98%EF%BC%8C%E4%B8%8B%E8%BD%BD%EF%BC%8Clsp/</loc>
+    <loc>https://ednovas.xyz/tags/VPN%EF%BC%8C%E7%BF%BB%E5%A2%99%EF%BC%8C%E8%BD%AF%E4%BB%B6%EF%BC%8C%E6%A2%AF%E5%AD%90/</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1096,6 +1124,34 @@
   </url>
   
   <url>
+    <loc>https://ednovas.xyz/tags/maya/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E6%A1%8C%E9%9D%A2/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E7%AE%80%E6%B4%81/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/tags/%E9%9F%B3%E4%B9%90%EF%BC%8C%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%8C%E5%AE%89%E5%8D%93%EF%BC%8Capp%EF%BC%8C%E8%BD%AF%E4%BB%B6%EF%BC%8C%E9%85%B7%E7%82%AB/</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>daily</changefreq>
@@ -1166,6 +1222,20 @@
   </url>
   
   <url>
+    <loc>https://ednovas.xyz/tags/pixiv/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/top50/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/tags/%E7%99%BE%E5%BA%A6%E4%BA%91%E7%9B%98/</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>daily</changefreq>
@@ -1195,20 +1265,6 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E4%B8%8D%E9%99%90%E9%80%9F/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/pixiv/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/top50/</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1285,6 +1341,34 @@
   </url>
   
   <url>
+    <loc>https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E9%80%9F%E5%BA%A6/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/chrome/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/tags/VPN%EF%BC%8C%E7%BF%BB%E5%A2%99%EF%BC%8CVPS%EF%BC%8C%E9%9D%A2%E6%9D%BF%EF%BC%8CV2ray%EF%BC%8C%E6%A2%AF%E5%AD%90/</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>daily</changefreq>
@@ -1293,6 +1377,34 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99%EF%BC%8CGitHub%EF%BC%8CVercel%EF%BC%8C%E6%89%98%E7%AE%A1%EF%BC%8C%E5%9F%9F%E5%90%8D%EF%BC%8C%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E9%9F%B3%E4%B9%90/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E6%92%AD%E6%94%BE%E5%99%A8/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E7%AE%80%E7%BA%A6/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E7%BD%91%E6%98%93%E4%BA%91/</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1328,118 +1440,6 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/VPN%EF%BC%8CV2ray%EF%BC%8C%E6%A2%AF%E5%AD%90%EF%BC%8C%E5%85%8D%E8%B4%B9%EF%BC%8C%E7%99%BD%E5%AB%96%EF%BC%8C%E8%8A%82%E7%82%B9%EF%BC%8C%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/%E5%8A%A0%E5%AF%86/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/Clover/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/windows/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/%E5%A4%9A%E6%A0%87%E7%AD%BE/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/%E9%80%9F%E5%BA%A6/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/chrome/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/maya/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/%E6%A1%8C%E9%9D%A2/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/%E7%AE%80%E6%B4%81/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/%E9%9F%B3%E4%B9%90/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/%E6%92%AD%E6%94%BE%E5%99%A8/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/%E7%AE%80%E7%BA%A6/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/%E7%BD%91%E6%98%93%E4%BA%91/</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1483,14 +1483,14 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/categories/VPS/</loc>
+    <loc>https://ednovas.xyz/categories/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/categories/%E7%BD%91%E7%AB%99/</loc>
+    <loc>https://ednovas.xyz/categories/VPS/</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
