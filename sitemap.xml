@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/02/05/googlevoice/</loc>
+    
+    <lastmod>2021-02-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2021/02/04/picseed/</loc>
     
     <lastmod>2021-02-04</lastmod>
@@ -1608,6 +1615,34 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E9%9A%90%E8%97%8F/</loc>
+    <lastmod>2021-02-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/google-voice/</loc>
+    <lastmod>2021-02-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E4%BF%9D%E5%8F%B7/</loc>
+    <lastmod>2021-02-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E8%99%9A%E6%8B%9F%E6%89%8B%E6%9C%BA%E5%8F%B7/</loc>
+    <lastmod>2021-02-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/gv/</loc>
     <lastmod>2021-02-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
