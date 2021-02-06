@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/02/06/clashconnection/</loc>
+    
+    <lastmod>2021-02-06</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2021/02/06/vpnblacklist/</loc>
     
     <lastmod>2021-02-06</lastmod>
@@ -1895,6 +1902,13 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E9%92%93%E9%B1%BC/</loc>
+    <lastmod>2021-02-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E6%89%8B%E6%9C%BA/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

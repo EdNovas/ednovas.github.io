@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>Clash实现任何平台不用代理软件科学上网</title>
+      <link href="2021/02/06/clashconnection/"/>
+      <url>2021/02/06/clashconnection/</url>
+      
+        <content type="html"><![CDATA[<p>这个有点标题党的意思了啊嘿嘿嘿，还是需要电脑上有Clash或者其他可以实现本地代理的软件的</p><p>这种方法类似软路由代理一样，只要一台设备开着就可以让全家的设备科学上网（前提是要同wifi），当然，电脑关机就会断开代理了。</p><p>这里就以windows端的Clash和Android手机来作为例子</p><h2 id="电脑端设置"><a href="#电脑端设置" class="headerlink" title="电脑端设置"></a>电脑端设置</h2><p>Windows Clash使用说明和一些Q&amp;A看<a href="/2020/11/29/clash-windows/">这里</a></p><p>首先打开Clash的Allow LAN功能，然后下方应该会出现你的局域网IP连接地址，如果没有，那把鼠标移到Allow LAN这个选项就能显示。</p><p>记下这个IP地址， <code>192.168.2.105</code></p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-06_09-24-12.webp"></p><p>还需要记下端口号，如果未经过修改的话一般默认端口号是 <code>7890</code></p><h2 id="其他设备设置"><a href="#其他设备设置" class="headerlink" title="其他设备设置"></a>其他设备设置</h2><p>这里以安卓手机为例，别的设备基本都大同小异，支持 Android，iOS，mac，Linux，Android TV等设备</p><p>在和电脑连接的同WiFi环境下，打开连接的WiFi设置，应该会有如下设置，找到proxy代理设置，并设置为 Manual 手动。</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-06_09-28-07.webp"></p><p>这里的host就填刚刚记下的主机 IP，端口号就是 <code>7890</code> ，保存</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-06_09-27-21.webp"></p><p>然后就可以连接科学上网了，注意上方任务栏没有VPN连接标志</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ%E5%9B%BE%E7%89%8720210206092728.webp"></p><h2 id="理论"><a href="#理论" class="headerlink" title="理论"></a>理论</h2><p>所以理论来说，只要你能找到一台旧电脑，能带的动clash并且WiFi功能还不错，就可以当一个一直开机的“软路由代理”用了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 科学上网 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 科学上网 </tag>
+            
+            <tag> 代理 </tag>
+            
+            <tag> vpn </tag>
+            
+            <tag> 手机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>VPN 黑名单</title>
       <link href="2021/02/06/vpnblacklist/"/>
       <url>2021/02/06/vpnblacklist/</url>
