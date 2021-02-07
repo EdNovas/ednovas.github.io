@@ -4,6 +4,72 @@
   
     
     <entry>
+      <title>科学的进行节点/订阅测速</title>
+      <link href="2021/02/07/speedtest/"/>
+      <url>2021/02/07/speedtest/</url>
+      
+        <content type="html"><![CDATA[<h2 id="网站测速"><a href="#网站测速" class="headerlink" title="网站测速"></a>网站测速</h2><p>Ookla的一个测速网站，比较准而且客观，全球都有测速地点</p><p><a href="https://www.speedtest.net/">https://www.speedtest.net/</a></p><p>Netflix提供的一个测速网站</p><p><a href="https://fast.com/">https://fast.com/</a></p><h2 id="YouTube测速"><a href="#YouTube测速" class="headerlink" title="YouTube测速"></a>YouTube测速</h2><p><a href="https://www.youtube.com/">https://www.youtube.com/</a></p><p>在YouTube上找个8k视频右键查看详细统计信息，速度和稳定性更直观</p><h2 id="Stairspeedtest-reborn"><a href="#Stairspeedtest-reborn" class="headerlink" title="Stairspeedtest-reborn"></a>Stairspeedtest-reborn</h2><p>用这个测速要先确保自己流量够用，机场主同意测速，不要在晚高峰测速的情况下使用。</p><p>GitHub地址：<a href="https://github.com/tindy2013/stairspeedtest-reborn">https://github.com/tindy2013/stairspeedtest-reborn</a></p><p>下载地址（windows的找win64.7z）：</p><p><a href="https://github.com/tindy2013/stairspeedtest-reborn/releases">https://github.com/tindy2013/stairspeedtest-reborn/releases</a></p><p>解压打开stairspeedtest.exe即可使用</p><p>复制黏贴上订阅链接（注意这种cmd类窗口黏贴键就是鼠标右键，不是ctrl+v）</p><p>等待一段时间测速完成会生成结果在result文件夹下。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 科学上网 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 科学上网 </tag>
+            
+            <tag> 代理 </tag>
+            
+            <tag> vpn </tag>
+            
+            <tag> 测速 </tag>
+            
+            <tag> speedtest </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>御坂翻译器—Galgame/文字游戏/漫画多语种实时机翻工具</title>
+      <link href="2021/02/07/translate/"/>
+      <url>2021/02/07/translate/</url>
+      
+        <content type="html"><![CDATA[<h2 id="软件优缺点"><a href="#软件优缺点" class="headerlink" title="软件优缺点"></a>软件优缺点</h2><ul><li><p>和其他翻译软件比较有什么优缺点：</p></li><li><p>适用范围全面，几乎所有出现在屏幕的东西都可以翻译；</p></li><li><p>翻译接口多，目前有12个翻译接口；</p></li><li><p>简洁美观的界面；</p></li><li><p>及其简单傻瓜的操作方式；</p></li><li><p>相比较其他OCR翻译器配置有自动翻译模式；</p></li><li><p>需要联网，可能视网速不同翻译速度有差；</p></li></ul><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>GitHub地址：<a href="https://github.com/PantsuDango/Dango-Translator">https://github.com/PantsuDango/Dango-Translator</a></p><p>百度云盘链接 <a href="https://pan.baidu.com/s/1AD9JWSAKS69gOawwvMXXQw">https://pan.baidu.com/s/1AD9JWSAKS69gOawwvMXXQw</a> 提取码 975h 解压密码：Dango</p><p>演示视频：<a href="https://www.bilibili.com/video/BV1gp4y1Q7Ts?from=search&amp;seid=2515920591076249883">https://www.bilibili.com/video/BV1gp4y1Q7Ts?from=search&amp;seid=2515920591076249883</a></p><h2 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h2><h3 id="安装字体"><a href="#安装字体" class="headerlink" title="安装字体"></a>安装字体</h3><p>第一步要先安装字体</p><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Picture10.png"></p><h2 id="翻译速度参考"><a href="#翻译速度参考" class="headerlink" title="翻译速度参考"></a>翻译速度参考</h2><p>以下为各翻译源翻译时间和质量参考（按照①群幽寂大大的推荐度依次排序）</p><table><thead><tr><th align="left">翻译源</th><th align="left">翻译时间（s）</th><th align="left">翻译质量</th><th align="left">稳定性</th></tr></thead><tbody><tr><td align="left">私人彩云</td><td align="left">0.7</td><td align="left">优+</td><td align="left">优</td></tr><tr><td align="left">私人腾讯</td><td align="left">0.5</td><td align="left">优+</td><td align="left">优</td></tr><tr><td align="left">私人百度</td><td align="left">1</td><td align="left">优</td><td align="left">优</td></tr><tr><td align="left">网页腾讯</td><td align="left">0.6</td><td align="left">优</td><td align="left">良</td></tr><tr><td align="left">网页百度</td><td align="left">2.3</td><td align="left">优</td><td align="left">良-</td></tr><tr><td align="left">金山</td><td align="left">0.6</td><td align="left">良+</td><td align="left">良-</td></tr><tr><td align="left">yeekit</td><td align="left">1.5</td><td align="left">良</td><td align="left">良</td></tr><tr><td align="left">Google</td><td align="left">0.9</td><td align="left">良</td><td align="left">良+</td></tr><tr><td align="left">公共彩云</td><td align="left">0.7</td><td align="left">优+</td><td align="left">最差</td></tr><tr><td align="left">Bing</td><td align="left">0.5</td><td align="left">一般</td><td align="left">良+</td></tr><tr><td align="left">ALAPI</td><td align="left">1</td><td align="left">良+</td><td align="left">良-或差</td></tr><tr><td align="left">有道</td><td align="left">0.45</td><td align="left">最差</td><td align="left">良+</td></tr></tbody></table><h2 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><ol><li><p>error code: 58002 度娘的错误说明</p><p> <img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Picture1.png"></p><p> 解决办法：</p><p> <img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Picture2.png"></p><p> 前往百度翻译注册时的页面，管理控制台开通服务</p></li><li><p>error code: 58003 度娘错误说明</p><p> <img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Picture3.png"></p><p> 解决办法：</p><p> <img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Picture4.png"></p><p> 可能是被误封，最多过一天就恢复正常了</p></li><li><p>error code:Faild to execute script Main</p><p> <img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Picture5.png"></p><p> 解决办法：</p><p> 有两种可能造成这个问题</p><ol><li><p>你当前的系统为日本系统，翻译器不能在日区，繁体的电脑系统区域使用，必须转回简中，如玩的游戏需要转区才可以启动，可以使用<a href="https://ednovas.lanzous.com/iPgUXlfejva">LE转区软件</a>来打开游戏。转区教程：<a href="https://www.bilibili.com/video/av67724039?from=search&amp;seid=15096516439242649288">https://www.bilibili.com/video/av67724039?from=search&amp;seid=15096516439242649288</a></p></li><li><p>你的翻译器文件不完整有缺失，请重下重新完整地解压。</p></li></ol></li><li><p>ocr连接失败，代理设置</p><p> <img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Picture6.png"></p><p> 解决办法：</p><p> 请将以下代理开关全部关掉</p><p> <img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Picture7.png"></p></li><li><p>error code：216200 ocr错误</p><p> <img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Picture8.png"></p><p> 解决办法：</p><p> 重新框选一下范围</p></li><li><p>no space left on device</p><p> <img src= "/img/pics/33063918.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Picture9.png"></p><p> 解决办法：</p><p> 你的C盘满了，请清理一下c盘</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 翻译 </tag>
+            
+            <tag> translate </tag>
+            
+            <tag> galgame </tag>
+            
+            <tag> 翻译器 </tag>
+            
+            <tag> translater </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Clash实现任何平台不用代理软件科学上网</title>
       <link href="2021/02/06/clashconnection/"/>
       <url>2021/02/06/clashconnection/</url>
