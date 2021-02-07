@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>mklink 文件夹链接清理C盘空间</title>
+      <link href="2021/02/07/mklink/"/>
+      <url>2021/02/07/mklink/</url>
+      
+        <content type="html"><![CDATA[<h2 id="命令参数"><a href="#命令参数" class="headerlink" title="命令参数"></a>命令参数</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mklink [[&#x2F;d] | [&#x2F;h] | [&#x2F;j]] &lt;Link&gt; &lt;Target&gt;</span><br></pre></td></tr></table></figure><h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left">/ d</td><td align="left">创建目录符号链接。默认情况下，mklink会创建文件符号链接。</td></tr><tr><td align="left">/H</td><td align="left">创建硬链接而不是符号链接。</td></tr><tr><td align="left">/ J</td><td align="left">创建目录连接。</td></tr><tr><td align="left">&lt;链接&gt;</td><td align="left">指定正在创建的符号链接的名称。</td></tr><tr><td align="left">&lt;目标&gt;</td><td align="left">指定新符号链接引用的路径（相对或绝对）。</td></tr><tr><td align="left">/？</td><td align="left">在命令提示符下显示帮助。</td></tr></tbody></table><h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><p>应用程序下有一个文件 <code>C:\Upload</code>，但是C盘空间不多了，就想把这个文件夹转移到D盘，但是直接剪切过去肯定行不通，应用程序会报错，所以首先把文件夹<code>C:\Upload</code> 整个剪切到d盘(<code>D:\Upload</code>)，再执行命令：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mklink &#x2F;j  &quot;C:\Upload&quot;  &quot;D:\Upload&quot;</span><br></pre></td></tr></table></figure><p>这样c盘下面就会多出一个带快捷方式图标的文件夹 <code>C:\Program Files</code>.</p><p><code>C:\Program Files</code> 这个文件夹是对应用程序透明的，也就是说，除了windows自己，应用程序并不知道 <code>C:\Program Files</code> 下面的东西其实已经转移到d盘了，还当它们仍然在c盘。这样就不影响原来<code>C:\Program Files</code> 下的应用程序的使用了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cmd </tag>
+            
+            <tag> 清理 </tag>
+            
+            <tag> c盘 </tag>
+            
+            <tag> 空间 </tag>
+            
+            <tag> 存储 </tag>
+            
+            <tag> mklink </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>科学的进行节点/订阅测速</title>
       <link href="2021/02/07/speedtest/"/>
       <url>2021/02/07/speedtest/</url>
