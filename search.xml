@@ -4,6 +4,66 @@
   
     
     <entry>
+      <title>Raidrive 多云盘挂载本地</title>
+      <link href="2021/02/10/raidrive/"/>
+      <url>2021/02/10/raidrive/</url>
+      
+        <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>RaiDrive 是一款能够将一些网盘映射为本地网络磁盘的工具，支持 Google Drive、Google Photos、Dropbox、OneDrive、FTP、SFTP、WebDAV</p><p>RaiDrive 可以方便的将网盘映射为本机的网络磁盘，对于使用来说更加方便。</p><p>而在支持的网盘中，目前国内还可以正常使用的有 OneDrive、FTP、SFTP 以及 WebDAV，其中 WebDAV 支持坚果云。</p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官网：<a href="https://www.raidrive.com/">https://www.raidrive.com/</a></p><p>下载：<a href="https://raidrive.en.uptodown.com/windows/download">https://raidrive.en.uptodown.com/windows/download</a></p><p>![](<a href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot">https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot</a> 2021-02-10 073801.jpg)</p><p>软件是完全免费的，但是又些限制而已，不过并不影响使用。</p><h2 id="使用-挂载"><a href="#使用-挂载" class="headerlink" title="使用/挂载"></a>使用/挂载</h2><p>如果使用的是国内的云盘，那么就不用设置。如果使用的是如谷歌云盘等，还需要将设置中的代理设置好。</p><p>如图，代理设置为127.0.0.1 (意为本机IP)，端口选择代理软件监听的端口，比如clash是7890，v2ray是10808。</p><p>此外，默认缓存是C盘，不过我觉得可能用云盘的对缓存要求都会比较大吧，建议换到别的盘。</p><p>![](<a href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot">https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot</a> 2021-02-10 074016.jpg)</p><p>然后点击上方的<code>add</code>添加，注意要区别个人云盘和business商用/教育用云盘，否则会登录报错。</p><p>![](<a href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot">https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot</a> 2021-02-10 074258.jpg)</p><p>如图就是正常登录上了</p><p>![](<a href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot">https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot</a> 2021-02-10 073943.jpg)</p><p>等待软件加载片刻，就会生成本地挂载</p><p>那么这样子就是已经挂在成功了。</p><p>![](<a href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot">https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot</a> 2021-02-10 074416.jpg)</p><p>现在就可以直接在资源管理器里快速上传/下载/编辑不同云盘里的内容了，十分的方便。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 云盘 </tag>
+            
+            <tag> raidrive </tag>
+            
+            <tag> 挂载 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ewomail搭建自定义域名邮箱</title>
+      <link href="2021/02/08/ewomail/"/>
+      <url>2021/02/08/ewomail/</url>
+      
+        <content type="html"><![CDATA[<p>官方说明</p><p><a href="http://doc.ewomail.com/docs/ewomail/jianjie">http://doc.ewomail.com/docs/ewomail/jianjie</a></p><p>设置主机名</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#mail.symail.club 换成 mail.你的域名 </span><br><span class="line">hostnamectl set-hostname mail.symail.club</span><br><span class="line">#修改hosts</span><br><span class="line">vi &#x2F;etc&#x2F;hosts</span><br><span class="line">#把symail.club 全换成你的域名</span><br></pre></td></tr></table></figure><p><img src= "/img/pics/33063918.gif" data-lazy-src="https://img-blog.csdnimg.cn/20190307213035307.jpg"></p><p>域名解析</p><p><a href="http://doc.ewomail.com/docs/ewomail/domain_dns">http://doc.ewomail.com/docs/ewomail/domain_dns</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> VPS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 邮箱 </tag>
+            
+            <tag> email </tag>
+            
+            <tag> ewomail </tag>
+            
+            <tag> vps </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>mklink 文件夹链接清理C盘空间</title>
       <link href="2021/02/07/mklink/"/>
       <url>2021/02/07/mklink/</url>
