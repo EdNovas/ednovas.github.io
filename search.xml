@@ -4,13 +4,27 @@
   
     
     <entry>
-      <title>test</title>
-      <link href="2021/02/13/test/"/>
-      <url>2021/02/13/test/</url>
+      <title>Linux 下 screen 命令基本用法</title>
+      <link href="2021/02/14/screen/"/>
+      <url>2021/02/14/screen/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<blockquote><p><a href="https://blog.csdn.net/weixin_42181200/article/details/84141484">https://blog.csdn.net/weixin_42181200/article/details/84141484</a></p></blockquote><p>screen是一个可以在多个进程（通常是交互式shell）之间复用一个物理终端的全屏幕窗口管理器。即linux下使用多窗口</p><table><thead><tr><th align="left"><strong>常用screen参数</strong></th><th align="left"><strong>效果</strong></th></tr></thead><tbody><tr><td align="left"><code>screen -S session_name</code></td><td align="left"># 新建一个叫session_name的session</td></tr><tr><td align="left"><code>screen -ls</code>（或者screen -list）</td><td align="left"># 列出当前所有的session</td></tr><tr><td align="left"><code>screen -r session_name</code></td><td align="left"># 回到session_name这个session</td></tr><tr><td align="left"><code>screen -d session_name</code></td><td align="left"># 远程detach某个session</td></tr><tr><td align="left"><code>screen -d -r session_name</code></td><td align="left"># 结束当前session并回到session_name这个session</td></tr></tbody></table><p>进入screen窗口后，想暂时退出（等会还想连接这个screen窗口）<br><code>crtl+a+d</code><br>退出当前screen窗口，结束当前screen窗口，不想再连接回来（即杀死会话）<br>exit或者 <code>ctrl+d</code></p>]]></content>
       
       
+      <categories>
+          
+          <category> 编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> screen </tag>
+            
+        </tags>
       
     </entry>
     
