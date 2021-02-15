@@ -4,41 +4,6 @@
   
     
     <entry>
-      <title>短信测压网站搭建</title>
-      <link href="2021/02/15/messageboom/"/>
-      <url>2021/02/15/messageboom/</url>
-      
-        <content type="html"><![CDATA[<h2 id="云短信测压PHP源码V2-1-PRO版"><a href="#云短信测压PHP源码V2-1-PRO版" class="headerlink" title="云短信测压PHP源码V2.1 PRO版"></a>云短信测压PHP源码V2.1 PRO版</h2><blockquote><p>来自 <a href="https://www.kjsv.com/article-19494.html">https://www.kjsv.com/article-19494.html</a></p></blockquote><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>PRO版下载 <a href="https://ednovas.lanzous.com/i4p4Qlp37ab">https://ednovas.lanzous.com/i4p4Qlp37ab</a></p><p>另一版本源码下载 <a href="https://ednovas.lanzous.com/iZSuIlp3nxa">https://ednovas.lanzous.com/iZSuIlp3nxa</a></p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>老生常谈，VPS安装宝塔，宝塔安装网站必要软件，新建解析好的域名网站，添加SSL证书，将下载包中内容解压到网站根目录</p><p>访问域名即可成功</p><h2 id="更多测压接口"><a href="#更多测压接口" class="headerlink" title="更多测压接口"></a>更多测压接口</h2><blockquote><p>来自 <a href="http://www.zfwhys.com/thread-2557649-1-1.html">http://www.zfwhys.com/thread-2557649-1-1.html</a></p></blockquote><p>5000接口下载 <a href="https://ednovas.lanzous.com/iyOo1lp3guf">https://ednovas.lanzous.com/iyOo1lp3guf</a></p><p>可以添加到index.php文件中，注意格式是不一样，自己看看就明白是什么格式了</p><h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>完全简介大方的Demo站</p><p><a href="https://message.ednovas.xyz/">https://message.ednovas.xyz/</a></p><p>Demo网站密码请进qq群询问或者tg联系<a href="https://t.me/EdNovas">EdNovas</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 网站 </category>
-          
-          <category> VPS </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 测压 </tag>
-            
-            <tag> 短信 </tag>
-            
-            <tag> 轰炸 </tag>
-            
-            <tag> 搭建 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>搭建Oneindex个人网盘</title>
       <link href="2021/02/15/oneindex/"/>
       <url>2021/02/15/oneindex/</url>
@@ -68,6 +33,41 @@
             <tag> E5 </tag>
             
             <tag> 个人网盘 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>短信测压网站搭建</title>
+      <link href="2021/02/15/messageboom/"/>
+      <url>2021/02/15/messageboom/</url>
+      
+        <content type="html"><![CDATA[<h2 id="云短信测压PHP源码V2-1-PRO版"><a href="#云短信测压PHP源码V2-1-PRO版" class="headerlink" title="云短信测压PHP源码V2.1 PRO版"></a>云短信测压PHP源码V2.1 PRO版</h2><blockquote><p>来自 <a href="https://www.kjsv.com/article-19494.html">https://www.kjsv.com/article-19494.html</a></p></blockquote><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>PRO版下载 <a href="https://ednovas.lanzous.com/i4p4Qlp37ab">https://ednovas.lanzous.com/i4p4Qlp37ab</a></p><p>另一版本源码下载 <a href="https://ednovas.lanzous.com/iZSuIlp3nxa">https://ednovas.lanzous.com/iZSuIlp3nxa</a></p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>老生常谈，VPS安装宝塔，宝塔安装网站必要软件，新建解析好的域名网站，添加SSL证书，将下载包中内容解压到网站根目录</p><p>访问域名即可成功</p><h2 id="更多测压接口"><a href="#更多测压接口" class="headerlink" title="更多测压接口"></a>更多测压接口</h2><blockquote><p>来自 <a href="http://www.zfwhys.com/thread-2557649-1-1.html">http://www.zfwhys.com/thread-2557649-1-1.html</a></p></blockquote><p>5000接口下载 <a href="https://ednovas.lanzous.com/iyOo1lp3guf">https://ednovas.lanzous.com/iyOo1lp3guf</a></p><p>可以添加到index.php文件中，注意格式是不一样，自己看看就明白是什么格式了</p><h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>完全简介大方的Demo站</p><p><a href="https://message.ednovas.xyz/">https://message.ednovas.xyz/</a></p><p>Demo网站密码请进qq群询问或者tg联系<a href="https://t.me/EdNovas">EdNovas</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网站 </category>
+          
+          <category> VPS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 测压 </tag>
+            
+            <tag> 短信 </tag>
+            
+            <tag> 轰炸 </tag>
+            
+            <tag> 搭建 </tag>
             
         </tags>
       
