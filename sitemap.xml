@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/02/16/govsites/</loc>
+    
+    <lastmod>2021-02-16</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/manifest.json</loc>
     
     <lastmod>2021-02-16</lastmod>
@@ -2231,6 +2238,20 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5/</loc>
+    <lastmod>2021-02-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E5%9B%BD%E5%AE%B6/</loc>
+    <lastmod>2021-02-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E6%94%BF%E5%BA%9C%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2021-02-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
