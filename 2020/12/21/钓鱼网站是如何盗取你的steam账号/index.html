@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>钓鱼网站是如何盗取你的steam账号的（以身试险） | EdNovas的小站</title><meta name="keywords" content="EdNovas"><meta name="author" content="EdNovas"><meta name="copyright" content="EdNovas"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="昨天下午一个群友在steam里收到了这么一个消息，作为群主大大的我必然要以身试险，来会一会这个极有可能是钓鱼网站的抽奖活动。  首先我们登入他的网站，界面如下，做的有鼻子有眼的。我们点击这个roll  哇roll中了一个火箭联盟，但是呢这个key是隐藏起来了，说是需要我们在30分钟内登录steam账号就可以激活了。下面还有一个排行榜，上面是每个人邀请了多少人来参与并且抽了多少次key。  那么我们">
+<!DOCTYPE html><html class="hide-aside" lang="en" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>钓鱼网站是如何盗取你的steam账号的（以身试险） | EdNovas的小站</title><meta name="keywords" content="EdNovas"><meta name="author" content="EdNovas"><meta name="copyright" content="EdNovas"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="昨天下午一个群友在steam里收到了这么一个消息，作为群主大大的我必然要以身试险，来会一会这个极有可能是钓鱼网站的抽奖活动。  首先我们登入他的网站，界面如下，做的有鼻子有眼的。我们点击这个roll  哇roll中了一个火箭联盟，但是呢这个key是隐藏起来了，说是需要我们在30分钟内登录steam账号就可以激活了。下面还有一个排行榜，上面是每个人邀请了多少人来参与并且抽了多少次key。  那么我们">
 <meta property="og:type" content="article">
 <meta property="og:title" content="钓鱼网站是如何盗取你的steam账号的（以身试险）">
 <meta property="og:url" content="https://ednovas.xyz/2020/12/21/%E9%92%93%E9%B1%BC%E7%BD%91%E7%AB%99%E6%98%AF%E5%A6%82%E4%BD%95%E7%9B%97%E5%8F%96%E4%BD%A0%E7%9A%84steam%E8%B4%A6%E5%8F%B7/index.html">
@@ -128,11 +128,26 @@
       }
       const t = saveToLocal.get('theme')
     
-          const now = new Date()
-          const hour = now.getHours()
-          const isNight = hour <= 6 || hour >= 18
-          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-          else if (t === 'light') activateLightMode()
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
           else activateDarkMode()
         
       const asideStatus = saveToLocal.get('aside-status')
