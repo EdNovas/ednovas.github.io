@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #49b1f5;
+  background-color: #7f1dc0;
   background-image: -webkit-linear-gradient(
     45deg,
     rgba(255, 255, 255, 0.4) 25%,
@@ -30,5 +30,5 @@
 
 ::-moz-selection {
   color: #fff;
-  background-color: #49b1f5;
+  background-color: #7f1dc0;
 }
