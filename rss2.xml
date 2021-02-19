@@ -9,8 +9,45 @@
     <atom:link href="https://ednovas.xyz/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 17 Feb 2021 13:23:32 GMT</pubDate>
+    <pubDate>Fri, 19 Feb 2021 11:43:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>抓包工具(Fiddler)v5.0.20202.18177 汉化版</title>
+      <link>https://ednovas.xyz/2021/02/19/fiddler/</link>
+      <guid>https://ednovas.xyz/2021/02/19/fiddler/</guid>
+      <pubDate>Fri, 19 Feb 2021 11:43:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;blockquote&gt;
+&lt;p&gt;转载自果壳剥壳 &lt;a href=&quot;https://www.ghpym.com/fiddler.html&quot;&gt;https://www.ghpym.com/fiddler.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Fiddle</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<blockquote><p>转载自果壳剥壳 <a href="https://www.ghpym.com/fiddler.html">https://www.ghpym.com/fiddler.html</a></p></blockquote><h2 id="Fiddler"><a href="#Fiddler" class="headerlink" title="Fiddler"></a>Fiddler</h2><p>fiddler简称fd，是一款牛逼的抓包工具，能够抓取所有HTTP以及HTTPS协议的数据包，并且有拦截功能，所以这个软件广泛用于卡单，破解等灰色领域。</p><p>1.Fiddler支持断点调试技术，当你在软件的菜单—rules—automatic breakpoints选项选择before request,或者当这些请求或响应属性能够跟目标的标准相匹配，Fiddler测试版就能够暂停Http通讯，并且允许修改请求和响应。这种功能对于安全测试是非常有用的，当然也可以用来做一般的功能测试，因为所有的代码路径都可以用来演习。</p><p>2.通过显示所有的Http通讯，Fiddler测试版可以轻松地演示哪些用来生成一个页面，通过统计页面(就是Fiddler左边的那个大框)用户可以很轻松地使用多选，来得到一个WEB页面的“总重量”(页面文件以及相关js,css等)你也可以很轻松地看到你请求的某个页面，总共被请求了多少次，以及多少字节被转化了。</p><p>3.用户可以加入一个Inspector插件对象，来使用.net下的任何语言来编写Fiddler扩展。RequestInspectors 和 ResponseInspectors提供一个格式规范的，或者是被指定的(用户自定义)Http请求和响应视图。</p><p>4.另外，通过暴露HTTP头，用户可以看见哪些页面被允许在客户端或者是代理端进行缓存。如果要是一个响应没有包含Cache-Control 头，那么他就不会被缓存在客户端。</p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><a href="https://ednovas.lanzous.com/iI0kgluyope">https://ednovas.lanzous.com/iI0kgluyope</a></p>]]></content:encoded>
+      
+      
+      <category domain="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/">软件</category>
+      
+      
+      <category domain="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/">软件</category>
+      
+      <category domain="https://ednovas.xyz/tags/%E6%B1%89%E5%8C%96/">汉化</category>
+      
+      <category domain="https://ednovas.xyz/tags/fiddler/">fiddler</category>
+      
+      <category domain="https://ednovas.xyz/tags/%E7%BD%91%E7%BB%9C/">网络</category>
+      
+      <category domain="https://ednovas.xyz/tags/%E6%8A%93%E5%8C%85/">抓包</category>
+      
+      
+      <comments>https://ednovas.xyz/2021/02/19/fiddler/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Hexo 迁移到 Typecho</title>

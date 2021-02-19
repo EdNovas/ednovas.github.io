@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/02/19/fiddler/</loc>
+    
+    <lastmod>2021-02-19</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2020/12/18/freesubscribes/</loc>
     
     <lastmod>2021-02-19</lastmod>
@@ -2273,6 +2280,27 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5/</loc>
+    <lastmod>2021-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/fiddler/</loc>
+    <lastmod>2021-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2021-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E6%8A%93%E5%8C%85/</loc>
     <lastmod>2021-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
