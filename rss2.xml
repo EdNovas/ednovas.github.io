@@ -9,8 +9,46 @@
     <atom:link href="https://ednovas.xyz/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 22 Feb 2021 12:55:09 GMT</pubDate>
+    <pubDate>Wed, 24 Feb 2021 04:26:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>MTProxy TLS 稳定不被墙一键安装脚本</title>
+      <link>https://ednovas.xyz/2021/02/24/mtproxy/</link>
+      <guid>https://ednovas.xyz/2021/02/24/mtproxy/</guid>
+      <pubDate>Wed, 24 Feb 2021 04:28:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;MTProxy-TLS-一键安装绿色极简脚本&quot;&gt;&lt;a href=&quot;#MTProxy-TLS-一键安装绿色极简脚本&quot; class=&quot;headerlink&quot; title=&quot;MTProxy TLS 一键安装绿色极简脚本&quot;&gt;&lt;/a&gt;MTProxy TLS 一键安装绿色极简</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="MTProxy-TLS-一键安装绿色极简脚本"><a href="#MTProxy-TLS-一键安装绿色极简脚本" class="headerlink" title="MTProxy TLS 一键安装绿色极简脚本"></a>MTProxy TLS 一键安装绿色极简脚本</h2><p>这个脚本相对于之前其他人发的，额外集成了 <code>mtproxy</code> 的新特性，根据指定的域名自动进行伪装。能够有效减少被运营商检测的风险，更优于普通的代理或者随机字串数据包的形式。</p><p>需要注意的是，这里的 TLS 是假的（Fake TLS）这会让你的 IP 访问起来更像是一个正常的网站，在被主动探测时可以返回伪装的网站内容。</p><p>所以，在这里推荐你使用默认端口：<code>443</code>，如果端口被占用或者 NAT 内网主机，可以设置其他端口。</p><p>除过 443 以外，还推荐你使用如下端口，都是常见的 <code>https</code> 端口，也可以进行一定程度的伪装：</p><p>如：443、2053、2083、2087、2096、8443</p><h2 id="安装方式"><a href="#安装方式" class="headerlink" title="安装方式"></a>安装方式</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir &#x2F;home&#x2F;mtproxy &amp;&amp; cd &#x2F;home&#x2F;mtproxy</span><br><span class="line">curl -s -o mtproxy.sh https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;ellermister&#x2F;mtproxy&#x2F;master&#x2F;mtproxy.sh &amp;&amp; chmod +x mtproxy.sh &amp;&amp; bash mtproxy.sh</span><br></pre></td></tr></table></figure><h2 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h2><p>运行服务</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash mtproxy.sh start</span><br></pre></td></tr></table></figure><p>调试运行</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash mtproxy.sh debug</span><br></pre></td></tr></table></figure><p>停止服务</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash mtproxy.sh stop</span><br></pre></td></tr></table></figure><p>重启服务</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash mtproxy.sh restart</span><br></pre></td></tr></table></figure><h2 id="卸载安装"><a href="#卸载安装" class="headerlink" title="卸载安装"></a>卸载安装</h2><p>因为是绿色版卸载极其简单，直接删除所在目录即可。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rm -rf &#x2F;home&#x2F;mtproxy</span><br></pre></td></tr></table></figure><h2 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h2><p>如果你所配置的代理需要公开分享或者给大量人使用，那么你可能会遇到 VPS 最大文件描述符的错误提示。</p><p>编辑文件 <code>vi /etc/security/limits.conf</code> 在文件尾或者对应段加入内容，对用户级进行配置</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">* soft nofile 655350</span><br><span class="line">* hard nofile 655350</span><br></pre></td></tr></table></figure><p>表示对任何用户的软硬限制提升到 655350 个</p><p>接下来对系统级进行配置，<code>vi /etc/sysctl.conf</code> 加入配置</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">fs.file-max &#x3D; 655350</span><br></pre></td></tr></table></figure><p>用户打开的最大文件描述符总数不会超过系统级的总数。</p><p>将内核参数生效</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sysctl -p</span><br></pre></td></tr></table></figure><p>（注意，你需要新开一个 ssh，在新 session 中启动 mtproxy，来保证上述参数生效）</p><h2 id="gost中转"><a href="#gost中转" class="headerlink" title="gost中转"></a>gost中转</h2><p>鉴于伊朗用户的MTProxy使用率比较高，封锁程度也越来越强。半实现 tls 的 mtp 也难以长时间支撑大量用户的连接。</p><p>在这里经过自测被封锁的现象，给予两点原因参考：</p><ol><li>同一IP被大量用户长时间访问会被运营商检测到。</li><li>半 tls 未能完全骗过运营商。</li></ol><p>目前测试中，经由 gost 提供的 tls 完整协议来封装 mtproxy 流量到 MTP 服务器会相对稳定。</p><p>即：client –&gt; iran server –&gt; mtproxy server</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/eJaHj3l59czTReQdBwcFqKAm1XdTwWb44Q8kXnKX.png"></p><p>这个方法解决了同一IP被大量用户同时访问连接的问题，在 firewall 看来，只有一台服务器对外提供服务。</p><p>而对于在伊朗境内的流量被封锁的规则和程度都很小，这种方式也是目前比较稳定的做法。</p><p>下载 gost:</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;github.com&#x2F;ginuerzh&#x2F;gost&#x2F;releases&#x2F;download&#x2F;v2.11.1&#x2F;gost-linux-amd64-2.11.1.gz</span><br><span class="line">gzip -d gost-linux-amd64-2.11.1.gz</span><br><span class="line">mv gost-linux-amd64-2.11.1  gost</span><br><span class="line">chmod +x gost</span><br></pre></td></tr></table></figure><p>iran server (45.93.168.1):</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;gost -L&#x3D;tcp:&#x2F;&#x2F;:443 -L&#x3D;udp:&#x2F;&#x2F;:443 -F&#x3D;forward+mtls:&#x2F;&#x2F;1.1.1.1:8443?mbind&#x3D;true&gt;&#x2F;dev&#x2F;null 2&gt;&amp;1 &amp;</span><br></pre></td></tr></table></figure><p>监听 443 端口的 TCP 和 UDP 数据，并将其转发给 1.1.1.1 服务器的 8443 端口。</p><p>mtproxy server (1.1.1.1):</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;gost -L&#x3D;mtls:&#x2F;&#x2F;:8443&#x2F;127.0.0.1:443&gt;&#x2F;dev&#x2F;null 2&gt;&amp;1 &amp;</span><br></pre></td></tr></table></figure><p>监听 8443 端口数据，并将其转发给443端口 (mtproxy)</p><p>用户只需要在 Telegram 中配置伊朗的服务器 IP 和端口就可以实现连接到 mtproxy 代理服务器。</p><h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>关于封锁的问题，如果你通过上文方式部署 mtproxy 还会被检测，那么建议使用冷门 IP 段的数据中心会降低封锁的可能。也可以通过 gost 转发中转机到你的 mtproxy 服务器之间的流量，这一段是实现真正的 tls 传输，以此骗过防火墙并放行流量 (上文已补充)。</p><h2 id="脚本地址"><a href="#脚本地址" class="headerlink" title="脚本地址"></a>脚本地址</h2><p>GitHub 地址：<a href="https://github.com/ellermister/mtproxy">https://github.com/ellermister/mtproxy</a></p><blockquote><p>转载自 <a href="https://eller.tech/post/40">https://eller.tech/post/40</a></p></blockquote>]]></content:encoded>
+      
+      
+      <category domain="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">科学上网</category>
+      
+      <category domain="https://ednovas.xyz/categories/VPS/">VPS</category>
+      
+      
+      <category domain="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">科学上网</category>
+      
+      <category domain="https://ednovas.xyz/tags/%E4%BB%A3%E7%90%86/">代理</category>
+      
+      <category domain="https://ednovas.xyz/tags/telegram/">telegram</category>
+      
+      <category domain="https://ednovas.xyz/tags/tg/">tg</category>
+      
+      <category domain="https://ednovas.xyz/tags/tg%E4%BB%A3%E7%90%86/">tg代理</category>
+      
+      <category domain="https://ednovas.xyz/tags/telegram%E4%BB%A3%E7%90%86/">telegram代理</category>
+      
+      
+      <comments>https://ednovas.xyz/2021/02/24/mtproxy/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Telegram使用指南</title>
