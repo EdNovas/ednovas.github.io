@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>Surfboard 可能是最快的安卓代理软件</title>
+      <link href="2021/03/10/surfboard/"/>
+      <url>2021/03/10/surfboard/</url>
+      
+        <content type="html"><![CDATA[<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>谷歌商店即可下载</p><p><a href="https://play.google.com/store/apps/details?id=com.getsurfboard">https://play.google.com/store/apps/details?id=com.getsurfboard</a></p><h2 id="速度"><a href="#速度" class="headerlink" title="速度"></a>速度</h2><p>根据”腹语哥”的测试，surfboard可能是安卓端速度最快的代理软件，如图</p><p>Speedtest:</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ%E5%9B%BE%E7%89%8720210310051931.png"></p><p>Youtube:</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ%E5%9B%BE%E7%89%8720210310052002.png"></p><p>原视频：</p><p><a href="https://www.youtube.com/watch?v=oG8y-6s6Aek">https://www.youtube.com/watch?v=oG8y-6s6Aek</a></p><h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><h3 id="订阅链接转换"><a href="#订阅链接转换" class="headerlink" title="订阅链接转换"></a>订阅链接转换</h3><p>为了您更好的使用体验，还是建议将订阅链接转换到Surboard的订阅链接</p><p>订阅链接转换网站前往<a href="/2020/12/20/%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5%E8%BD%AC%E6%8D%A2/">这里</a></p><p>推荐使用我自己搭建的订阅链接转换网站哦 <a href="https://subs.ednovas.xyz/">https://subs.ednovas.xyz</a></p><h3 id="添加订阅"><a href="#添加订阅" class="headerlink" title="添加订阅"></a>添加订阅</h3><p>软件使用上有点类似clash</p><p>在profiles中添加订阅链接，本地文件，扫描qr码，或者新建一个空的配置文件</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_20210310-052459.png"></p><p>添加订阅</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_20210310-052243.png"></p><p>更新订阅等长按订阅文件即可（这里实在截不了图，就偷了Sabrina的图嘿嘿嘿）</p><blockquote><p>图源自 <a href="https://merlinblog.xyz/wiki/surfboard.html">https://merlinblog.xyz/wiki/surfboard.html</a></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1633370814.jpg"></p><h3 id="开启代理"><a href="#开启代理" class="headerlink" title="开启代理"></a>开启代理</h3><p>回到主界面打开即可，一般使用软件自带的分流功能，也就是Rule-based</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_20210310-052247.png"></p><p>在config中切换节点，也可以在这里测试节点ping</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_20210310-052252.png"></p><h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><p>设置界面可调整的东西比clash就少了很多，但是并不影响使用</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_20210310-052258.png"></p><p>其中的Bypass VPN Apps就是选择软件分流，在这里你可以手动选择需要代理的软件</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_20210310-052319.png"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>免费，速度快，自带分流规则，个人认为测ping方面比clash要好些</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> VPN </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件 </tag>
+            
+            <tag> 科学上网 </tag>
+            
+            <tag> 安卓 </tag>
+            
+            <tag> surfboard </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MTProxy TLS 稳定不被墙一键安装脚本</title>
       <link href="2021/02/24/mtproxy/"/>
       <url>2021/02/24/mtproxy/</url>
