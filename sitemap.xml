@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/03/10/neteasemusic/</loc>
+    
+    <lastmod>2021-03-09</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2021/03/10/surfboard/</loc>
     
     <lastmod>2021-03-09</lastmod>
@@ -2413,6 +2420,13 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/surfboard/</loc>
+    <lastmod>2021-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E7%81%B0%E8%89%B2%E6%AD%8C%E6%9B%B2/</loc>
     <lastmod>2021-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
