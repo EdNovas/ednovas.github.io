@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>圈小猫小游戏</title>
+  <script src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/js/phaser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/js/catch-the-cat.js"></script>
+  <style>
+    #catch-the-cat{
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="catch-the-cat"></div>
+</body>
+<script>
+  window.game = new CatchTheCatGame({
+    w: 15,
+    h: 15,
+    r: 20,
+    backgroundColor: 0xeeeeee,
+    parent: 'catch-the-cat',
+    statusBarAlign: 'center',
+    credit: 'EdNovas的小站'
+  });
+</script>
+</html>
