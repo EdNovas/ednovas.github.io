@@ -2,28 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ednovas.xyz/catchcateasy/index.html</loc>
-    
-    <lastmod>2021-03-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/catchcatimpossible/index.html</loc>
-    
-    <lastmod>2021-03-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/catchcathard/index.html</loc>
-    
-    <lastmod>2021-03-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/catchcatmid/index.html</loc>
+    <loc>https://ednovas.xyz/2021/03/10/catchcat/</loc>
     
     <lastmod>2021-03-10</lastmod>
     
@@ -2455,6 +2434,27 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5/</loc>
+    <lastmod>2021-03-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/js/</loc>
+    <lastmod>2021-03-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/html/</loc>
+    <lastmod>2021-03-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2021-03-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

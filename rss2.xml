@@ -9,8 +9,38 @@
     <atom:link href="https://ednovas.xyz/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 10 Mar 2021 11:05:56 GMT</pubDate>
+    <pubDate>Wed, 10 Mar 2021 12:02:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Catchcat抓小猫小游戏</title>
+      <link>https://ednovas.xyz/2021/03/10/catchcat/</link>
+      <guid>https://ednovas.xyz/2021/03/10/catchcat/</guid>
+      <pubDate>Wed, 10 Mar 2021 11:58:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;抓住小猫小游戏&quot;&gt;&lt;a href=&quot;#抓住小猫小游戏&quot; class=&quot;headerlink&quot; title=&quot;抓住小猫小游戏&quot;&gt;&lt;/a&gt;抓住小猫小游戏&lt;/h2&gt;&lt;p&gt;原作者github地址：&lt;a href=&quot;https://github.com/ganlvtech/</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="抓住小猫小游戏"><a href="#抓住小猫小游戏" class="headerlink" title="抓住小猫小游戏"></a>抓住小猫小游戏</h2><p>原作者github地址：<a href="https://github.com/ganlvtech/phaser-catch-the-cat">https://github.com/ganlvtech/phaser-catch-the-cat</a></p><p>成品代码地址：<a href="https://github.com/xf11075/catch-the-cat">https://github.com/xf11075/catch-the-cat</a></p><p>下载以后正确引用js并编辑一下html即可</p><p>js代码可以托管到jsdelivr cdn加速一下</p><h2 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h2><p><a href="/catchcateasy">简单难度</a></p><p><a href="/catchcatmid">普通难度</a></p><p><a href="/catchcathard">高级难度</a></p><p><a href="/catchcatimpossible">炼狱级难度</a></p>]]></content:encoded>
+      
+      
+      <category domain="https://ednovas.xyz/categories/%E6%9D%82/">杂</category>
+      
+      
+      <category domain="https://ednovas.xyz/tags/js/">js</category>
+      
+      <category domain="https://ednovas.xyz/tags/html/">html</category>
+      
+      <category domain="https://ednovas.xyz/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/">小游戏</category>
+      
+      
+      <comments>https://ednovas.xyz/2021/03/10/catchcat/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>网易云音乐解锁灰色歌曲</title>

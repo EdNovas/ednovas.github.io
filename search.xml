@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Catchcat抓小猫小游戏</title>
+      <link href="2021/03/10/catchcat/"/>
+      <url>2021/03/10/catchcat/</url>
+      
+        <content type="html"><![CDATA[<h2 id="抓住小猫小游戏"><a href="#抓住小猫小游戏" class="headerlink" title="抓住小猫小游戏"></a>抓住小猫小游戏</h2><p>原作者github地址：<a href="https://github.com/ganlvtech/phaser-catch-the-cat">https://github.com/ganlvtech/phaser-catch-the-cat</a></p><p>成品代码地址：<a href="https://github.com/xf11075/catch-the-cat">https://github.com/xf11075/catch-the-cat</a></p><p>下载以后正确引用js并编辑一下html即可</p><p>js代码可以托管到jsdelivr cdn加速一下</p><h2 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h2><p><a href="/catchcateasy">简单难度</a></p><p><a href="/catchcatmid">普通难度</a></p><p><a href="/catchcathard">高级难度</a></p><p><a href="/catchcatimpossible">炼狱级难度</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> js </tag>
+            
+            <tag> html </tag>
+            
+            <tag> 小游戏 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>网易云音乐解锁灰色歌曲</title>
       <link href="2021/03/10/neteasemusic/"/>
       <url>2021/03/10/neteasemusic/</url>
