@@ -3195,7 +3195,7 @@
       <link href="2020/12/26/%E8%A7%A3%E5%86%B3%E4%BB%A3%E7%90%86%E5%90%8E%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E8%BF%9E%E6%8E%A5%E5%BE%AE%E8%BD%AF%E6%9C%8D%E5%8A%A1/"/>
       <url>2020/12/26/%E8%A7%A3%E5%86%B3%E4%BB%A3%E7%90%86%E5%90%8E%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E8%BF%9E%E6%8E%A5%E5%BE%AE%E8%BD%AF%E6%9C%8D%E5%8A%A1/</url>
       
-        <content type="html"><![CDATA[<p>由于Microsoft的全部应用在中国区的设置默认都是直连，所以当打开网络代理之后就无法使用应用商店了，这个时候只需要下载 fiddler</p><p><a href="http://www.telerik.com/fiddler">http://www.telerik.com/fiddler</a></p><p>在下载完成之后，点击左上角的winconfig</p><p>之后把所有的microsoft的产品打勾就行</p><p>转载自：<a href="https://blog.csdn.net/l1301913704/article/details/75009554">https://blog.csdn.net/l1301913704/article/details/75009554</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Clash内置方法"><a href="#Clash内置方法" class="headerlink" title="Clash内置方法"></a>Clash内置方法</h2><p>用clash for windows的话General里面有个UWP Loopback设置里面一样可以修改</p><h2 id="下载软件fiddler"><a href="#下载软件fiddler" class="headerlink" title="下载软件fiddler"></a>下载软件fiddler</h2><p>由于Microsoft的全部应用在中国区的设置默认都是直连，所以当打开网络代理之后就无法使用应用商店了，这个时候只需要下载 fiddler</p><p><a href="https://www.telerik.com/download/fiddler">https://www.telerik.com/download/fiddler</a> 在上面的网站下载旧版的fiddler</p><p>在下载完成之后，点击左上角的winconfig</p><p>之后把所有的microsoft的产品打勾就行</p><p>转载自：<a href="https://blog.csdn.net/l1301913704/article/details/75009554">https://blog.csdn.net/l1301913704/article/details/75009554</a></p>]]></content>
       
       
       <categories>
