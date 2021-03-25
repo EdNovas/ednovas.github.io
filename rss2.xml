@@ -9,8 +9,39 @@
     <atom:link href="https://ednovas.xyz/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 25 Mar 2021 02:22:55 GMT</pubDate>
+    <pubDate>Thu, 25 Mar 2021 22:17:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Bing壁纸软件</title>
+      <link>https://ednovas.xyz/2021/03/26/bingwallpaper/</link>
+      <guid>https://ednovas.xyz/2021/03/26/bingwallpaper/</guid>
+      <pubDate>Thu, 25 Mar 2021 22:05:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;今天偶然间发现bing有了个Bing每日壁纸软件，发现看似不错，就下载试了试&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.microsoft.com/en-us/bing/bing-wallpaper?pc=W037&amp;amp;rtc=1&quot;&gt;https://www</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>今天偶然间发现bing有了个Bing每日壁纸软件，发现看似不错，就下载试了试</p><p><a href="https://www.microsoft.com/en-us/bing/bing-wallpaper?pc=W037&amp;rtc=1">https://www.microsoft.com/en-us/bing/bing-wallpaper?pc=W037&amp;rtc=1</a></p><p>软件貌似不支持中文，不过功能比较单一简单，也都能看懂</p><p>安装的时候有个坑，要把这两个勾选的反选，否则你的浏览器主页和搜索框会被改成bing搜索</p><p>虽然影响不大而且通过普通的浏览器设置就能更改，但是最好还是不要勾选，除非你想使用bing搜索</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Bing-Wallpaper-Install-Windows-10-WinBuzzer.jpg"></p><p>界面功能十分简单，就是一个纯粹的壁纸软件，也没法设置定时切换等，对多显示屏支持极不友好。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/03-26_06-07-33.png"></p><p>壁纸软件做的最好的肯定还是小红车Wallpaper Engine 无疑，但是如果你想要体验一下简约风格并且不那么占内存的壁纸软件，bing wallpaper app是个不错的选择</p>]]></content:encoded>
+      
+      
+      <category domain="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/">软件</category>
+      
+      
+      <category domain="https://ednovas.xyz/tags/Bing/">Bing</category>
+      
+      <category domain="https://ednovas.xyz/tags/wallpaper/">wallpaper</category>
+      
+      <category domain="https://ednovas.xyz/tags/%E5%A3%81%E7%BA%B8/">壁纸</category>
+      
+      
+      <comments>https://ednovas.xyz/2021/03/26/bingwallpaper/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>ClashX macOS 使用说明</title>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/03/26/bingwallpaper/</loc>
+    
+    <lastmod>2021-03-25</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2021/03/20/qv2ray/</loc>
     
     <lastmod>2021-03-25</lastmod>
@@ -2581,6 +2588,27 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5/</loc>
+    <lastmod>2021-03-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/Bing/</loc>
+    <lastmod>2021-03-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/wallpaper/</loc>
+    <lastmod>2021-03-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E5%A3%81%E7%BA%B8/</loc>
     <lastmod>2021-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
