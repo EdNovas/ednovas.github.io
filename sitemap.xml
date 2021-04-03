@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/04/03/tiyunti/</loc>
+    
+    <lastmod>2021-04-03</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/2021/04/03/soutu/</loc>
+    
+    <lastmod>2021-04-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2020/12/18/freesubscribes/</loc>
     
     <lastmod>2021-04-03</lastmod>
@@ -2614,6 +2628,27 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://ednovas.xyz/tags/yandex/</loc>
+    <lastmod>2021-04-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E5%A5%88%E9%A3%9E/</loc>
+    <lastmod>2021-04-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E5%86%B7%E9%97%A8%E8%8A%82%E7%82%B9/</loc>
+    <lastmod>2021-04-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -2681,6 +2716,13 @@
   
   <url>
     <loc>https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2021-04-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/categories/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/</loc>
     <lastmod>2021-04-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
