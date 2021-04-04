@@ -9,8 +9,42 @@
     <atom:link href="https://ednovas.xyz/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 03 Apr 2021 14:58:17 GMT</pubDate>
+    <pubDate>Sun, 04 Apr 2021 05:57:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>宝塔面板跳过绑定官方账户</title>
+      <link>https://ednovas.xyz/2021/04/04/btpanel/</link>
+      <guid>https://ednovas.xyz/2021/04/04/btpanel/</guid>
+      <pubDate>Sun, 04 Apr 2021 05:43:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;临时的解决办法就是我们在URL目录中随便加入soft，比如：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://192.168.1.1:8888/soft&quot;&gt;http://192.168.1.1:8888/soft&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这样我们可以跳过强制登录，以及也可以选择</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>临时的解决办法就是我们在URL目录中随便加入soft，比如：</p><p><a href="http://192.168.1.1:8888/soft">http://192.168.1.1:8888/soft</a></p><p>这样我们可以跳过强制登录，以及也可以选择左侧的其他菜单。</p><p>但是，如果下次登录首页还是会跳出来登录，有没有一个长期的办法？</p><p>实际上官方还算不错，就加了一个首页JS文件而已。</p><p>JS路径：</p><p><code>/www/server/panel/BTPanel/static/js/index.js</code></p><p>直接注释掉弹窗部分就好。</p>]]></content:encoded>
+      
+      
+      <category domain="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/">建站</category>
+      
+      
+      <category domain="https://ednovas.xyz/tags/VPS/">VPS</category>
+      
+      <category domain="https://ednovas.xyz/tags/%E5%AE%9D%E5%A1%94/">宝塔</category>
+      
+      <category domain="https://ednovas.xyz/tags/%E9%9D%A2%E6%9D%BF/">面板</category>
+      
+      <category domain="https://ednovas.xyz/tags/%E5%88%A0%E5%BA%93%E5%A1%94/">删库塔</category>
+      
+      
+      <comments>https://ednovas.xyz/2021/04/04/btpanel/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>梯云梯测评</title>

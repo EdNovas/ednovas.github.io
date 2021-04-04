@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>宝塔面板跳过绑定官方账户</title>
+      <link href="2021/04/04/btpanel/"/>
+      <url>2021/04/04/btpanel/</url>
+      
+        <content type="html"><![CDATA[<p>临时的解决办法就是我们在URL目录中随便加入soft，比如：</p><p><a href="http://192.168.1.1:8888/soft">http://192.168.1.1:8888/soft</a></p><p>这样我们可以跳过强制登录，以及也可以选择左侧的其他菜单。</p><p>但是，如果下次登录首页还是会跳出来登录，有没有一个长期的办法？</p><p>实际上官方还算不错，就加了一个首页JS文件而已。</p><p>JS路径：</p><p><code>/www/server/panel/BTPanel/static/js/index.js</code></p><p>直接注释掉弹窗部分就好。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VPS </tag>
+            
+            <tag> 宝塔 </tag>
+            
+            <tag> 面板 </tag>
+            
+            <tag> 删库塔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>梯云梯测评</title>
       <link href="2021/04/03/tiyunti/"/>
       <url>2021/04/03/tiyunti/</url>
