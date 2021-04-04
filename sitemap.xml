@@ -2,14 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ednovas.xyz/2021/04/04/btpanel/</loc>
+    <loc>https://ednovas.xyz/vps/index.html</loc>
     
     <lastmod>2021-04-04</lastmod>
     
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/vps/index.html</loc>
+    <loc>https://ednovas.xyz/2020/11/29/clash-android/</loc>
+    
+    <lastmod>2021-04-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/2020/11/29/clash-windows/</loc>
+    
+    <lastmod>2021-04-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/2021/04/04/btpanel/</loc>
     
     <lastmod>2021-04-04</lastmod>
     
@@ -45,13 +59,6 @@
   
   <url>
     <loc>https://ednovas.xyz/2021/02/01/clashlanguage/</loc>
-    
-    <lastmod>2021-04-02</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/2020/11/29/clash-windows/</loc>
     
     <lastmod>2021-04-02</lastmod>
     
@@ -180,13 +187,6 @@
     <loc>https://ednovas.xyz/%E6%94%AF%E6%8C%81/index.html</loc>
     
     <lastmod>2021-03-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/2020/11/29/clash-android/</loc>
-    
-    <lastmod>2021-03-11</lastmod>
     
   </url>
   
