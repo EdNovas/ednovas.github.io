@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/urls/index.html</loc>
+    
+    <lastmod>2021-04-05</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2020/12/18/freesubscribes/</loc>
     
     <lastmod>2021-04-05</lastmod>
@@ -145,13 +152,6 @@
     <loc>https://ednovas.xyz/2021/03/12/qrcodes/</loc>
     
     <lastmod>2021-03-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/urls/index.html</loc>
-    
-    <lastmod>2021-03-17</lastmod>
     
   </url>
   
