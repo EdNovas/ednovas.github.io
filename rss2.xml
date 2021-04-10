@@ -4335,20 +4335,20 @@
     </item>
     
     <item>
-      <title>V2Ray电脑端使用说明</title>
+      <title>V2RayN电脑端使用说明</title>
       <link>https://ednovas.xyz/2020/12/19/v2ray-windows/</link>
       <guid>https://ednovas.xyz/2020/12/19/v2ray-windows/</guid>
       <pubDate>Sat, 19 Dec 2020 12:15:24 GMT</pubDate>
       
         
         
-      <description>&lt;h2 id=&quot;下载地址&quot;&gt;&lt;a href=&quot;#下载地址&quot; class=&quot;headerlink&quot; title=&quot;下载地址&quot;&gt;&lt;/a&gt;下载地址&lt;/h2&gt;&lt;p&gt;V2Raycore github官方下载地址：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/v2f</description>
+      <description>&lt;h2 id=&quot;下载地址&quot;&gt;&lt;a href=&quot;#下载地址&quot; class=&quot;headerlink&quot; title=&quot;下载地址&quot;&gt;&lt;/a&gt;下载地址&lt;/h2&gt;&lt;p&gt;V2RayN-core github官方下载地址：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/2</description>
         
       
       
       
-      <content:encoded><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>V2Raycore github官方下载地址：</p><p><a href="https://github.com/v2fly/v2ray-core/releases/">https://github.com/2dust/v2rayNG/releases</a></p><p>找到v2ray-windows-64.zip并下载解压，双击v2rayN.exe运行软件。</p><p>蓝奏云分流：<a href="https://ednovas.lanzous.com/iFMi9ijl2wh">https://ednovas.lanzous.com/iFMi9ijl2wh</a></p><h2 id="V2Ray订阅链接使用教程："><a href="#V2Ray订阅链接使用教程：" class="headerlink" title="V2Ray订阅链接使用教程："></a>V2Ray订阅链接使用教程：</h2><iframe src="https://iyideng.me/black-technology/cgfw/v2ray-client-download-and-using-tutorial.html#%EF%BC%882%EF%BC%89V2RayN" width="100%" height="1200"></iframe><p>来自 <a href="https://iyideng.me/black-technology/cgfw/v2ray-client-download-and-using-tutorial.html#%EF%BC%882%EF%BC%89V2RayN">一灯不是和尚</a></p><h2 id="V2Ray单节点使用教程："><a href="#V2Ray单节点使用教程：" class="headerlink" title="V2Ray单节点使用教程："></a>V2Ray单节点使用教程：</h2><p>直接复制节点连接，软件内ctrl+v即可导入，会有成功导入链接提示。</p><p>右键节点，设为活动服务器，即可选择节点。</p><p>然后右下角「HTTP代理模式」选择 「PAC模式」，如果想要选择「全局代理」也可。</p><p>不需要使用时选择「关闭HTTP代理」。</p>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>V2RayN-core github官方下载地址：</p><p><a href="https://github.com/2dust/v2rayN/releases">https://github.com/2dust/v2rayN/releases</a></p><p>找到v2rayN-Core.zip并下载解压，双击v2rayN.exe运行软件。</p><p>蓝奏云分流：<a href="https://ednovas.lanzous.com/iFMi9ijl2wh">https://ednovas.lanzous.com/iFMi9ijl2wh</a></p><h2 id="V2Ray订阅链接使用教程："><a href="#V2Ray订阅链接使用教程：" class="headerlink" title="V2Ray订阅链接使用教程："></a>V2Ray订阅链接使用教程：</h2><iframe src="https://iyideng.me/black-technology/cgfw/v2ray-client-download-and-using-tutorial.html#%EF%BC%882%EF%BC%89V2RayN" width="100%" height="1200"></iframe><p>来自 <a href="https://iyideng.me/black-technology/cgfw/v2ray-client-download-and-using-tutorial.html#%EF%BC%882%EF%BC%89V2RayN">一灯不是和尚</a></p><h2 id="V2Ray单节点使用教程："><a href="#V2Ray单节点使用教程：" class="headerlink" title="V2Ray单节点使用教程："></a>V2Ray单节点使用教程：</h2><p>直接复制节点连接，软件内ctrl+v即可导入，会有成功导入链接提示。</p><p>右键节点，设为活动服务器，即可选择节点。</p><p>然后右下角「HTTP代理模式」选择 「PAC模式」，如果想要选择「全局代理」也可。</p><p>不需要使用时选择「关闭HTTP代理」。</p>]]></content:encoded>
       
       
       <category domain="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">科学上网</category>
