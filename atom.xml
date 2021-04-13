@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>EdNovas的小站</title>
+  <icon>https://ednovas.xyz/icon.png</icon>
+  
+  <link href="https://ednovas.xyz/atom.xml" rel="self"/>
+  
+  <link href="https://ednovas.xyz/"/>
+  <updated>2021-04-06T02:42:41.974Z</updated>
+  <id>https://ednovas.xyz/</id>
+  
+  <author>
+    <name>EdNovas</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>白嫖月抛Atlas OS VPS</title>
+    <link href="https://ednovas.xyz/2021/04/06/atlasos/"/>
+    <id>https://ednovas.xyz/2021/04/06/atlasos/</id>
+    <published>2021-04-06T02:14:00.000Z</published>
+    <updated>2021-04-06T02:42:41.974Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;请合理使用！请勿滥用！本文严禁任何形式转载！youtuber请勿录制讲解视频！违者必究！&quot;&gt;&lt;a href=&quot;#请合理使用！请勿滥用！本文严禁任何形式转载！youtuber请勿录制讲解视频！违者必究！&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="atlas os" scheme="https://ednovas.xyz/tags/atlas-os/"/>
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="白嫖" scheme="https://ednovas.xyz/tags/%E7%99%BD%E5%AB%96/"/>
+    
+    <category term="免费" scheme="https://ednovas.xyz/tags/%E5%85%8D%E8%B4%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>提高效率————电脑查找清理查重卸载软件</title>
+    <link href="https://ednovas.xyz/2021/04/06/cleaner/"/>
+    <id>https://ednovas.xyz/2021/04/06/cleaner/</id>
+    <published>2021-04-06T00:06:00.000Z</published>
+    <updated>2021-04-06T00:41:03.631Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Everything&quot;&gt;&lt;a href=&quot;#Everything&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="windows" scheme="https://ednovas.xyz/tags/windows/"/>
+    
+    <category term="电脑" scheme="https://ednovas.xyz/tags/%E7%94%B5%E8%84%91/"/>
+    
+    <category term="清理" scheme="https://ednovas.xyz/tags/%E6%B8%85%E7%90%86/"/>
+    
+    <category term="卸载" scheme="https://ednovas.xyz/tags/%E5%8D%B8%E8%BD%BD/"/>
+    
+    <category term="查重" scheme="https://ednovas.xyz/tags/%E6%9F%A5%E9%87%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>宝塔面板跳过绑定官方账户</title>
+    <link href="https://ednovas.xyz/2021/04/04/btpanel/"/>
+    <id>https://ednovas.xyz/2021/04/04/btpanel/</id>
+    <published>2021-04-04T05:43:00.000Z</published>
+    <updated>2021-04-05T12:37:20.723Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;临时的解决办法就是我们在URL目录中随便加入soft，比如：&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="宝塔" scheme="https://ednovas.xyz/tags/%E5%AE%9D%E5%A1%94/"/>
+    
+    <category term="面板" scheme="https://ednovas.xyz/tags/%E9%9D%A2%E6%9D%BF/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="删库塔" scheme="https://ednovas.xyz/tags/%E5%88%A0%E5%BA%93%E5%A1%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>梯云梯测评</title>
+    <link href="https://ednovas.xyz/2021/04/03/tiyunti/"/>
+    <id>https://ednovas.xyz/2021/04/03/tiyunti/</id>
+    <published>2021-04-03T13:43:00.000Z</published>
+    <updated>2021-04-09T09:39:48.643Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;最后由EdNovas编辑自2021/04/03&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我用过也有数十家机场，收藏夹和tg也有上百家机场，了解了一些行情&lt;/p&gt;
+&lt;p&gt;虽然我放着梯云梯的广告，但是我这是没有任何盈利的广告&lt;/p&gt;
+&lt;p&gt;总之恰饭不</summary>
+        
+      
+    
+    
+    
+    <category term="机场测评" scheme="https://ednovas.xyz/categories/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/"/>
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    <category term="机场" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%9C%BA/"/>
+    
+    <category term="奈飞" scheme="https://ednovas.xyz/tags/%E5%A5%88%E9%A3%9E/"/>
+    
+    <category term="冷门节点" scheme="https://ednovas.xyz/tags/%E5%86%B7%E9%97%A8%E8%8A%82%E7%82%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搜图神器</title>
+    <link href="https://ednovas.xyz/2021/04/03/soutu/"/>
+    <id>https://ednovas.xyz/2021/04/03/soutu/</id>
+    <published>2021-04-03T13:13:00.000Z</published>
+    <updated>2021-04-03T13:38:46.182Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;网页版：&quot;&gt;&lt;a href=&quot;#网页版：&quot; class=&quot;headerlink&quot; title=&quot;网页版：&quot;&gt;&lt;/a&gt;网页版：&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="wallpaper" scheme="https://ednovas.xyz/tags/wallpaper/"/>
+    
+    <category term="壁纸" scheme="https://ednovas.xyz/tags/%E5%A3%81%E7%BA%B8/"/>
+    
+    <category term="搜图" scheme="https://ednovas.xyz/tags/%E6%90%9C%E5%9B%BE/"/>
+    
+    <category term="yandex" scheme="https://ednovas.xyz/tags/yandex/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bing壁纸软件</title>
+    <link href="https://ednovas.xyz/2021/03/26/bingwallpaper/"/>
+    <id>https://ednovas.xyz/2021/03/26/bingwallpaper/</id>
+    <published>2021-03-25T22:05:00.000Z</published>
+    <updated>2021-03-25T22:17:00.032Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天偶然间发现bing有了个Bing每日壁纸软件，发现看似不错，就下载试了试&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="Bing" scheme="https://ednovas.xyz/tags/Bing/"/>
+    
+    <category term="wallpaper" scheme="https://ednovas.xyz/tags/wallpaper/"/>
+    
+    <category term="壁纸" scheme="https://ednovas.xyz/tags/%E5%A3%81%E7%BA%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ClashX macOS 使用说明</title>
+    <link href="https://ednovas.xyz/2021/03/25/clashx/"/>
+    <id>https://ednovas.xyz/2021/03/25/clashx/</id>
+    <published>2021-03-25T01:35:00.000Z</published>
+    <updated>2021-03-25T02:22:55.604Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自Sabrina &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    <category term="clash" scheme="https://ednovas.xyz/tags/clash/"/>
+    
+    <category term="clashx" scheme="https://ednovas.xyz/tags/clashx/"/>
+    
+    <category term="macos" scheme="https://ednovas.xyz/tags/macos/"/>
+    
+    <category term="VPN" scheme="https://ednovas.xyz/tags/VPN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Telegram表情包制作</title>
+    <link href="https://ednovas.xyz/2021/03/24/tgstickers/"/>
+    <id>https://ednovas.xyz/2021/03/24/tgstickers/</id>
+    <published>2021-03-23T22:05:00.000Z</published>
+    <updated>2021-03-23T22:12:03.099Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;hr&gt;&lt;p&gt;&lt;a class=&quot;light-link&quot; data-fancybox=&quot;gallery&quot; no-pjax=&quot;&quot; data-type=&quot;image&quot; data-caption=&quot;telegram2.jpeg&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="telegram" scheme="https://ednovas.xyz/tags/telegram/"/>
+    
+    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
+    
+    <category term="表情包" scheme="https://ednovas.xyz/tags/%E8%A1%A8%E6%83%85%E5%8C%85/"/>
+    
+    <category term="stickers" scheme="https://ednovas.xyz/tags/stickers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>免费和便宜的VPS</title>
+    <link href="https://ednovas.xyz/2021/03/22/freevps/"/>
+    <id>https://ednovas.xyz/2021/03/22/freevps/</id>
+    <published>2021-03-22T08:48:00.000Z</published>
+    <updated>2021-03-22T09:05:42.445Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;免费（试用）VPS&quot;&gt;&lt;a href=&quot;#免费（试用）VPS&quot; class=&quot;headerlink&quot; title=&quot;免费（试用）VPS&quot;&gt;&lt;/a&gt;免费（试用）VPS&lt;/h2&gt;&lt;h3 id=&quot;Oracle-Cloud-甲骨文云：&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    <category term="VPN" scheme="https://ednovas.xyz/tags/VPN/"/>
+    
+    <category term="机场" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Qv2ray和xray超集的使用</title>
+    <link href="https://ednovas.xyz/2021/03/20/qv2ray/"/>
+    <id>https://ednovas.xyz/2021/03/20/qv2ray/</id>
+    <published>2021-03-20T01:15:00.000Z</published>
+    <updated>2021-03-25T09:57:32.660Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Qv2ray&quot;&gt;&lt;a href=&quot;#Qv2ray&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    <category term="VPN" scheme="https://ednovas.xyz/tags/VPN/"/>
+    
+    <category term="机场" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%9C%BA/"/>
+    
+    <category term="v2ray" scheme="https://ednovas.xyz/tags/v2ray/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生成微信QQ支付宝三合一收款码</title>
+    <link href="https://ednovas.xyz/2021/03/12/qrcodes/"/>
+    <id>https://ednovas.xyz/2021/03/12/qrcodes/</id>
+    <published>2021-03-12T13:15:00.000Z</published>
+    <updated>2021-03-19T21:50:55.683Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&quot;https://www.0353com.cn/74.html&quot;&gt;https://www.0353com.cn/74.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;EdNovas的DEMO站&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="网站" scheme="https://ednovas.xyz/categories/%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="QQ" scheme="https://ednovas.xyz/tags/QQ/"/>
+    
+    <category term="二维码" scheme="https://ednovas.xyz/tags/%E4%BA%8C%E7%BB%B4%E7%A0%81/"/>
+    
+    <category term="微信" scheme="https://ednovas.xyz/tags/%E5%BE%AE%E4%BF%A1/"/>
+    
+    <category term="支付宝" scheme="https://ednovas.xyz/tags/%E6%94%AF%E4%BB%98%E5%AE%9D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VPN和机场区别</title>
+    <link href="https://ednovas.xyz/2021/03/11/vpnandjc/"/>
+    <id>https://ednovas.xyz/2021/03/11/vpnandjc/</id>
+    <published>2021-03-10T22:15:00.000Z</published>
+    <updated>2021-03-25T02:01:24.821Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一些相关链接：&quot;&gt;&lt;a href=&quot;#一些相关链接：&quot; class=&quot;headerlink&quot; title=&quot;一些相关链接：&quot;&gt;&lt;/a&gt;一些相关链接：&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    <category term="VPN" scheme="https://ednovas.xyz/tags/VPN/"/>
+    
+    <category term="机场" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%9C%BA/"/>
+    
+    <category term="v2ray" scheme="https://ednovas.xyz/tags/v2ray/"/>
+    
+    <category term="ss" scheme="https://ednovas.xyz/tags/ss/"/>
+    
+    <category term="ssr" scheme="https://ednovas.xyz/tags/ssr/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Catchcat抓小猫小游戏</title>
+    <link href="https://ednovas.xyz/2021/03/10/catchcat/"/>
+    <id>https://ednovas.xyz/2021/03/10/catchcat/</id>
+    <published>2021-03-10T11:58:00.000Z</published>
+    <updated>2021-03-15T07:11:33.989Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;抓住小猫小游戏&quot;&gt;&lt;a href=&quot;#抓住小猫小游戏&quot; class=&quot;headerlink&quot; title=&quot;抓住小猫小游戏&quot;&gt;&lt;/a&gt;抓住小猫小游戏&lt;/h2&gt;&lt;p&gt;原作者github地址：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="js" scheme="https://ednovas.xyz/tags/js/"/>
+    
+    <category term="html" scheme="https://ednovas.xyz/tags/html/"/>
+    
+    <category term="小游戏" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网易云音乐解锁灰色歌曲</title>
+    <link href="https://ednovas.xyz/2021/03/10/neteasemusic/"/>
+    <id>https://ednovas.xyz/2021/03/10/neteasemusic/</id>
+    <published>2021-03-09T22:58:00.000Z</published>
+    <updated>2021-03-10T11:05:56.861Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载编辑自深度博客 &lt;a href=&quot;https://www.yfriend.xyz/155.html&quot;&gt;https://www.yfriend.xyz/155.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="音乐" scheme="https://ednovas.xyz/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+    <category term="网易云" scheme="https://ednovas.xyz/tags/%E7%BD%91%E6%98%93%E4%BA%91/"/>
+    
+    <category term="灰色歌曲" scheme="https://ednovas.xyz/tags/%E7%81%B0%E8%89%B2%E6%AD%8C%E6%9B%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Surfboard 可能是最快的安卓代理软件</title>
+    <link href="https://ednovas.xyz/2021/03/10/surfboard/"/>
+    <id>https://ednovas.xyz/2021/03/10/surfboard/</id>
+    <published>2021-03-09T21:15:00.000Z</published>
+    <updated>2021-03-25T02:01:35.206Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;谷歌商店即可下载&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    <category term="安卓" scheme="https://ednovas.xyz/tags/%E5%AE%89%E5%8D%93/"/>
+    
+    <category term="surfboard" scheme="https://ednovas.xyz/tags/surfboard/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MTProxy TLS 稳定不被墙一键安装脚本</title>
+    <link href="https://ednovas.xyz/2021/02/24/mtproxy/"/>
+    <id>https://ednovas.xyz/2021/02/24/mtproxy/</id>
+    <published>2021-02-24T04:28:00.000Z</published>
+    <updated>2021-02-24T04:26:02.785Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;MTProxy-TLS-一键安装绿色极简脚本&quot;&gt;&lt;a href=&quot;#MTProxy-TLS-一键安装绿色极简脚本&quot; class=&quot;headerlink&quot; title=&quot;MTProxy TLS 一键安装绿色极简脚本&quot;&gt;&lt;/a&gt;MTProxy TLS</summary>
+        
+      
+    
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    <category term="代理" scheme="https://ednovas.xyz/tags/%E4%BB%A3%E7%90%86/"/>
+    
+    <category term="telegram" scheme="https://ednovas.xyz/tags/telegram/"/>
+    
+    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
+    
+    <category term="tg代理" scheme="https://ednovas.xyz/tags/tg%E4%BB%A3%E7%90%86/"/>
+    
+    <category term="telegram代理" scheme="https://ednovas.xyz/tags/telegram%E4%BB%A3%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Telegram使用指南</title>
+    <link href="https://ednovas.xyz/2021/02/22/telegram/"/>
+    <id>https://ednovas.xyz/2021/02/22/telegram/</id>
+    <published>2021-02-22T12:28:00.000Z</published>
+    <updated>2021-02-22T12:55:09.781Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;整理整合自以下来源&lt;br&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="telegram" scheme="https://ednovas.xyz/tags/telegram/"/>
+    
+    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
+    
+    <category term="聊天" scheme="https://ednovas.xyz/tags/%E8%81%8A%E5%A4%A9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电影电视剧资源网站/APP</title>
+    <link href="https://ednovas.xyz/2021/02/22/videos/"/>
+    <id>https://ednovas.xyz/2021/02/22/videos/</id>
+    <published>2021-02-22T05:53:00.000Z</published>
+    <updated>2021-02-22T06:00:14.827Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;电视盒子和安卓软件&quot;&gt;&lt;a href=&quot;#电视盒子和安卓软件&quot; class=&quot;headerlink&quot; title=&quot;电视盒子和安卓软件&quot;&gt;&lt;/a&gt;电视盒子和安卓软件&lt;/h2&gt;&lt;p&gt;电视盒子TV电视剧电影（安卓手机也可用就是UI可能有点反常）：&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="网站" scheme="https://ednovas.xyz/categories/%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="电影" scheme="https://ednovas.xyz/tags/%E7%94%B5%E5%BD%B1/"/>
+    
+    <category term="电视剧" scheme="https://ednovas.xyz/tags/%E7%94%B5%E8%A7%86%E5%89%A7/"/>
+    
+    <category term="资源" scheme="https://ednovas.xyz/tags/%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习/资源网站</title>
+    <link href="https://ednovas.xyz/2021/02/22/studyresource/"/>
+    <id>https://ednovas.xyz/2021/02/22/studyresource/</id>
+    <published>2021-02-22T05:43:00.000Z</published>
+    <updated>2021-02-22T05:46:48.692Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;学吧导航&quot;&gt;&lt;a href=&quot;#学吧导航&quot; class=&quot;headerlink&quot; title=&quot;学吧导航&quot;&gt;&lt;/a&gt;学吧导航&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="网站" scheme="https://ednovas.xyz/categories/%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="学习" scheme="https://ednovas.xyz/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="资源" scheme="https://ednovas.xyz/tags/%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于 PotPlayer 的播放器教程</title>
+    <link href="https://ednovas.xyz/2021/02/22/potplayerset/"/>
+    <id>https://ednovas.xyz/2021/02/22/potplayerset/</id>
+    <published>2021-02-22T05:38:00.000Z</published>
+    <updated>2021-02-22T05:40:40.040Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&quot;https://vcb-s.com/archives/7228&quot;&gt;https://vcb-s.com/archives/7228&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div</summary>
+        
+      
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="播放器" scheme="https://ednovas.xyz/tags/%E6%92%AD%E6%94%BE%E5%99%A8/"/>
+    
+    <category term="potplayer" scheme="https://ednovas.xyz/tags/potplayer/"/>
+    
+    <category term="madVR" scheme="https://ednovas.xyz/tags/madVR/"/>
+    
+  </entry>
+  
+</feed>
