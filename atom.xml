@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-04-06T02:42:41.974Z</updated>
+  <updated>2021-04-13T20:54:52.799Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RSS阅读器</title>
+    <link href="https://ednovas.xyz/2021/04/14/rss/"/>
+    <id>https://ednovas.xyz/2021/04/14/rss/</id>
+    <published>2021-04-13T20:14:00.000Z</published>
+    <updated>2021-04-13T20:54:52.799Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载编辑自知乎crystal &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="RSS" scheme="https://ednovas.xyz/tags/RSS/"/>
+    
+    <category term="阅读器" scheme="https://ednovas.xyz/tags/%E9%98%85%E8%AF%BB%E5%99%A8/"/>
+    
+    <category term="测评" scheme="https://ednovas.xyz/tags/%E6%B5%8B%E8%AF%84/"/>
+    
+  </entry>
   
   <entry>
     <title>白嫖月抛Atlas OS VPS</title>
@@ -633,40 +665,6 @@
     <category term="学习" scheme="https://ednovas.xyz/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="资源" scheme="https://ednovas.xyz/tags/%E8%B5%84%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基于 PotPlayer 的播放器教程</title>
-    <link href="https://ednovas.xyz/2021/02/22/potplayerset/"/>
-    <id>https://ednovas.xyz/2021/02/22/potplayerset/</id>
-    <published>2021-02-22T05:38:00.000Z</published>
-    <updated>2021-02-22T05:40:40.040Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自 &lt;a href=&quot;https://vcb-s.com/archives/7228&quot;&gt;https://vcb-s.com/archives/7228&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="播放器" scheme="https://ednovas.xyz/tags/%E6%92%AD%E6%94%BE%E5%99%A8/"/>
-    
-    <category term="potplayer" scheme="https://ednovas.xyz/tags/potplayer/"/>
-    
-    <category term="madVR" scheme="https://ednovas.xyz/tags/madVR/"/>
     
   </entry>
   
