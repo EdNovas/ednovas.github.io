@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-04-15T04:48:20.903Z</updated>
+  <updated>2021-04-15T07:18:17.530Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,72 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 HE Tunnel Broker 给 IPv4 VPS 免费添加公网 IPv6 支持</title>
+    <link href="https://ednovas.xyz/2021/04/15/hetunnel/"/>
+    <id>https://ednovas.xyz/2021/04/15/hetunnel/</id>
+    <published>2021-04-15T07:38:45.000Z</published>
+    <updated>2021-04-15T07:18:17.530Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自P3TERX大佬 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="he tunnel" scheme="https://ednovas.xyz/tags/he-tunnel/"/>
+    
+    <category term="ipv4" scheme="https://ednovas.xyz/tags/ipv4/"/>
+    
+    <category term="ipv6" scheme="https://ednovas.xyz/tags/ipv6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Cloudflare WARP 给 VPS 服务器免费添加 IPv4 或 IPv6 网络支持</title>
+    <link href="https://ednovas.xyz/2021/04/15/warpipv6/"/>
+    <id>https://ednovas.xyz/2021/04/15/warpipv6/</id>
+    <published>2021-04-15T07:37:45.000Z</published>
+    <updated>2021-04-15T07:11:05.014Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自P3TERX大佬 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
+    
+    <category term="ipv4" scheme="https://ednovas.xyz/tags/ipv4/"/>
+    
+    <category term="ipv6" scheme="https://ednovas.xyz/tags/ipv6/"/>
+    
+    <category term="warp" scheme="https://ednovas.xyz/tags/warp/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux 下 CPU limit 命令基本用法</title>
@@ -596,75 +662,6 @@
     <category term="安卓" scheme="https://ednovas.xyz/tags/%E5%AE%89%E5%8D%93/"/>
     
     <category term="surfboard" scheme="https://ednovas.xyz/tags/surfboard/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MTProxy TLS 稳定不被墙一键安装脚本</title>
-    <link href="https://ednovas.xyz/2021/02/24/mtproxy/"/>
-    <id>https://ednovas.xyz/2021/02/24/mtproxy/</id>
-    <published>2021-02-24T04:28:00.000Z</published>
-    <updated>2021-02-24T04:26:02.785Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;MTProxy-TLS-一键安装绿色极简脚本&quot;&gt;&lt;a href=&quot;#MTProxy-TLS-一键安装绿色极简脚本&quot; class=&quot;headerlink&quot; title=&quot;MTProxy TLS 一键安装绿色极简脚本&quot;&gt;&lt;/a&gt;MTProxy TLS</summary>
-        
-      
-    
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    <category term="代理" scheme="https://ednovas.xyz/tags/%E4%BB%A3%E7%90%86/"/>
-    
-    <category term="telegram" scheme="https://ednovas.xyz/tags/telegram/"/>
-    
-    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
-    
-    <category term="tg代理" scheme="https://ednovas.xyz/tags/tg%E4%BB%A3%E7%90%86/"/>
-    
-    <category term="telegram代理" scheme="https://ednovas.xyz/tags/telegram%E4%BB%A3%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Telegram使用指南</title>
-    <link href="https://ednovas.xyz/2021/02/22/telegram/"/>
-    <id>https://ednovas.xyz/2021/02/22/telegram/</id>
-    <published>2021-02-22T12:28:00.000Z</published>
-    <updated>2021-02-22T12:55:09.781Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;整理整合自以下来源&lt;br&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="telegram" scheme="https://ednovas.xyz/tags/telegram/"/>
-    
-    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
-    
-    <category term="聊天" scheme="https://ednovas.xyz/tags/%E8%81%8A%E5%A4%A9/"/>
     
   </entry>
   
