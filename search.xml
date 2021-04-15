@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>Linux 下 CPU limit 命令基本用法</title>
+      <link href="2021/04/15/cpulimit/"/>
+      <url>2021/04/15/cpulimit/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Ubuntu-Debian下安装CPUlimit"><a href="#Ubuntu-Debian下安装CPUlimit" class="headerlink" title="Ubuntu/Debian下安装CPUlimit"></a>Ubuntu/Debian下安装CPUlimit</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt install cpulimit</span><br></pre></td></tr></table></figure><h2 id="CentOS下安装："><a href="#CentOS下安装：" class="headerlink" title="CentOS下安装："></a>CentOS下安装：</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install cpulimit</span><br></pre></td></tr></table></figure><h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cpulimit -h</span><br></pre></td></tr></table></figure><p>使用说明：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Usage: cpulimit TARGET [OPTIONS...] [-- PROGRAM]</span><br><span class="line">   TARGET must be exactly one of these:</span><br><span class="line">      -p, --pid&#x3D;N        pid of the process</span><br><span class="line">      -e, --exe&#x3D;FILE     name of the executable program file</span><br><span class="line">                         The -e option only works when</span><br><span class="line">                         cpulimit is run with admin rights.</span><br><span class="line">      -P, --path&#x3D;PATH    absolute path name of the</span><br><span class="line">                         executable program file</span><br><span class="line">   OPTIONS</span><br><span class="line">      -b  --background   run in background</span><br><span class="line">      -f  --foreground   launch target process in foreground and wait for it to exit</span><br><span class="line">      -c  --cpu&#x3D;N        override the detection of CPUs on the machine.</span><br><span class="line">      -l, --limit&#x3D;N      percentage of cpu allowed from 1 up.</span><br><span class="line">                         Usually 1 - 100, but can be higher</span><br><span class="line">                         on multi-core CPUs (mandatory)</span><br><span class="line">      -m, --monitor-forks  Watch children&#x2F;forks of the target process</span><br><span class="line">      -q, --quiet        run in quiet mode (only print errors).</span><br><span class="line">      -k, --kill         kill processes going over their limit</span><br><span class="line">                         instead of just throttling them.</span><br><span class="line">      -r, --restore      Restore processes after they have</span><br><span class="line">                         been killed. Works with the -k flag.</span><br><span class="line">      -s, --signal&#x3D;SIG   Send this signal to the watched process when cpulimit exits.</span><br><span class="line">                         Signal should be specificed as a number or </span><br><span class="line">                         SIGTERM, SIGCONT, SIGSTOP, etc. SIGCONT is the default.</span><br><span class="line">      -v, --verbose      show control statistics</span><br><span class="line">      -z, --lazy         exit if there is no suitable target process,</span><br><span class="line">                         or if it dies</span><br><span class="line">          --             This is the final CPUlimit option. All following</span><br><span class="line">                         options are for another program we will launch.</span><br><span class="line">      -h, --help         display this help and exit</span><br></pre></td></tr></table></figure><p>如果想要限制某个程序，比如xmrig挖矿程序，可以使用</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cpulimit -e xmrig -l 80</span><br></pre></td></tr></table></figure><p>即为限制xmrig程序为占用cpu80%</p><p>或者限制pid</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cpulimit -p 1234 -l 10</span><br></pre></td></tr></table></figure><p>或者限制目录</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cpulimit -e &#x2F;usr&#x2F;local&#x2F;nginx&#x2F;sbin&#x2F;nginx -l 10</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vps </tag>
+            
+            <tag> 命令 </tag>
+            
+            <tag> cpulimit </tag>
+            
+            <tag> cpu </tag>
+            
+            <tag> bash </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ASF steam挂卡神器</title>
       <link href="2021/04/14/asf/"/>
       <url>2021/04/14/asf/</url>

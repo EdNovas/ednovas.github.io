@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-04-14T12:12:36.268Z</updated>
+  <updated>2021-04-15T04:48:20.903Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux 下 CPU limit 命令基本用法</title>
+    <link href="https://ednovas.xyz/2021/04/15/cpulimit/"/>
+    <id>https://ednovas.xyz/2021/04/15/cpulimit/</id>
+    <published>2021-04-15T04:37:45.000Z</published>
+    <updated>2021-04-15T04:48:20.903Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Ubuntu-Debian下安装CPUlimit&quot;&gt;&lt;a href=&quot;#Ubuntu-Debian下安装CPUlimit&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="命令" scheme="https://ednovas.xyz/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+    <category term="cpulimit" scheme="https://ednovas.xyz/tags/cpulimit/"/>
+    
+    <category term="cpu" scheme="https://ednovas.xyz/tags/cpu/"/>
+    
+    <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
+    
+  </entry>
   
   <entry>
     <title>ASF steam挂卡神器</title>
@@ -632,42 +665,6 @@
     <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
     
     <category term="聊天" scheme="https://ednovas.xyz/tags/%E8%81%8A%E5%A4%A9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>电影电视剧资源网站/APP</title>
-    <link href="https://ednovas.xyz/2021/02/22/videos/"/>
-    <id>https://ednovas.xyz/2021/02/22/videos/</id>
-    <published>2021-02-22T05:53:00.000Z</published>
-    <updated>2021-02-22T06:00:14.827Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;电视盒子和安卓软件&quot;&gt;&lt;a href=&quot;#电视盒子和安卓软件&quot; class=&quot;headerlink&quot; title=&quot;电视盒子和安卓软件&quot;&gt;&lt;/a&gt;电视盒子和安卓软件&lt;/h2&gt;&lt;p&gt;电视盒子TV电视剧电影（安卓手机也可用就是UI可能有点反常）：&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="网站" scheme="https://ednovas.xyz/categories/%E7%BD%91%E7%AB%99/"/>
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="电影" scheme="https://ednovas.xyz/tags/%E7%94%B5%E5%BD%B1/"/>
-    
-    <category term="电视剧" scheme="https://ednovas.xyz/tags/%E7%94%B5%E8%A7%86%E5%89%A7/"/>
-    
-    <category term="资源" scheme="https://ednovas.xyz/tags/%E8%B5%84%E6%BA%90/"/>
     
   </entry>
   
