@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-04-19T05:25:50.990Z</updated>
+  <updated>2021-04-19T12:05:53.219Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Pot+LAV+madVR配置教程</title>
+    <link href="https://ednovas.xyz/2021/04/19/lavmadvr/"/>
+    <id>https://ednovas.xyz/2021/04/19/lavmadvr/</id>
+    <published>2021-04-19T11:38:45.000Z</published>
+    <updated>2021-04-19T12:05:53.219Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;potplayer下载地址：&lt;a href=&quot;https://daumpotplayer.com/download/&quot;&gt;https://daumpotplayer.com/download/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;potplayer 64位windows下载直链：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="potplayer" scheme="https://ednovas.xyz/tags/potplayer/"/>
+    
+    <category term="lav" scheme="https://ednovas.xyz/tags/lav/"/>
+    
+    <category term="madvr" scheme="https://ednovas.xyz/tags/madvr/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Premium URL Shortener 短网址网站搭建</title>
     <link href="https://ednovas.xyz/2021/04/19/shorturl/"/>
     <id>https://ednovas.xyz/2021/04/19/shorturl/</id>
     <published>2021-04-19T04:38:45.000Z</published>
-    <updated>2021-04-19T05:25:50.990Z</updated>
+    <updated>2021-04-19T11:56:24.525Z</updated>
     
     
       
@@ -38,13 +68,13 @@
     <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
     
-    <category term="he tunnel" scheme="https://ednovas.xyz/tags/he-tunnel/"/>
+    <category term="url" scheme="https://ednovas.xyz/tags/url/"/>
     
-    <category term="ipv4" scheme="https://ednovas.xyz/tags/ipv4/"/>
+    <category term="短网址" scheme="https://ednovas.xyz/tags/%E7%9F%AD%E7%BD%91%E5%9D%80/"/>
     
-    <category term="ipv6" scheme="https://ednovas.xyz/tags/ipv6/"/>
+    <category term="url shortener" scheme="https://ednovas.xyz/tags/url-shortener/"/>
     
   </entry>
   
@@ -628,40 +658,6 @@
     <category term="html" scheme="https://ednovas.xyz/tags/html/"/>
     
     <category term="小游戏" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>网易云音乐解锁灰色歌曲</title>
-    <link href="https://ednovas.xyz/2021/03/10/neteasemusic/"/>
-    <id>https://ednovas.xyz/2021/03/10/neteasemusic/</id>
-    <published>2021-03-09T22:58:00.000Z</published>
-    <updated>2021-03-10T11:05:56.861Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载编辑自深度博客 &lt;a href=&quot;https://www.yfriend.xyz/155.html&quot;&gt;https://www.yfriend.xyz/155.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="音乐" scheme="https://ednovas.xyz/tags/%E9%9F%B3%E4%B9%90/"/>
-    
-    <category term="网易云" scheme="https://ednovas.xyz/tags/%E7%BD%91%E6%98%93%E4%BA%91/"/>
-    
-    <category term="灰色歌曲" scheme="https://ednovas.xyz/tags/%E7%81%B0%E8%89%B2%E6%AD%8C%E6%9B%B2/"/>
     
   </entry>
   
