@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>Premium URL Shortener 短网址网站搭建</title>
+      <link href="2021/04/19/shorturl/"/>
+      <url>2021/04/19/shorturl/</url>
+      
+        <content type="html"><![CDATA[<p>Premium URL Shortener是一个高级短网址缩短程序，带API功能，可以整合到自有其他平台。</p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>网站程序下载：<a href="https://ednovas.lanzous.com/igqhSo9roti">https://ednovas.lanzous.com/igqhSo9roti</a></p><h2 id="伪静态规则"><a href="#伪静态规则" class="headerlink" title="伪静态规则"></a>伪静态规则</h2><p>Nginx伪静态规则</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if (!-e $request_filename)</span><br><span class="line">    &#123; </span><br><span class="line">        rewrite ^&#x2F;admin&#x2F;(.*)?$ &#x2F;admin&#x2F;index.php?a&#x3D;$1 break;</span><br><span class="line">        rewrite ^&#x2F;(.*)$ &#x2F;index.php?a&#x3D;$1 last;</span><br><span class="line">        break; </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>Apache伪静态规则</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;IfModule mod_rewrite.c&gt;</span><br><span class="line">&lt;IfModule mod_negotiation.c&gt;</span><br><span class="line">    Options -MultiViews -Indexes</span><br><span class="line">&lt;&#x2F;IfModule&gt;</span><br></pre></td></tr></table></figure><h2 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h2><p><a href="https://url.ednova.xyz/">https://url.ednova.xyz</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vps </tag>
+            
+            <tag> he tunnel </tag>
+            
+            <tag> ipv4 </tag>
+            
+            <tag> ipv6 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用 HE Tunnel Broker 给 IPv4 VPS 免费添加公网 IPv6 支持</title>
       <link href="2021/04/15/hetunnel/"/>
       <url>2021/04/15/hetunnel/</url>

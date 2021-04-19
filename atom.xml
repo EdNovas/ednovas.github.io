@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-04-15T07:18:17.530Z</updated>
+  <updated>2021-04-19T04:37:36.566Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Premium URL Shortener 短网址网站搭建</title>
+    <link href="https://ednovas.xyz/2021/04/19/shorturl/"/>
+    <id>https://ednovas.xyz/2021/04/19/shorturl/</id>
+    <published>2021-04-19T04:38:45.000Z</published>
+    <updated>2021-04-19T04:37:36.566Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Premium URL Shortener是一个高级短网址缩短程序，带API功能，可以整合到自有其他平台。&lt;/p&gt;
+&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="he tunnel" scheme="https://ednovas.xyz/tags/he-tunnel/"/>
+    
+    <category term="ipv4" scheme="https://ednovas.xyz/tags/ipv4/"/>
+    
+    <category term="ipv6" scheme="https://ednovas.xyz/tags/ipv6/"/>
+    
+  </entry>
   
   <entry>
     <title>使用 HE Tunnel Broker 给 IPv4 VPS 免费添加公网 IPv6 支持</title>
@@ -630,38 +662,6 @@
     <category term="网易云" scheme="https://ednovas.xyz/tags/%E7%BD%91%E6%98%93%E4%BA%91/"/>
     
     <category term="灰色歌曲" scheme="https://ednovas.xyz/tags/%E7%81%B0%E8%89%B2%E6%AD%8C%E6%9B%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Surfboard 可能是最快的安卓代理软件</title>
-    <link href="https://ednovas.xyz/2021/03/10/surfboard/"/>
-    <id>https://ednovas.xyz/2021/03/10/surfboard/</id>
-    <published>2021-03-09T21:15:00.000Z</published>
-    <updated>2021-03-25T02:01:35.206Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;谷歌商店即可下载&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    <category term="安卓" scheme="https://ednovas.xyz/tags/%E5%AE%89%E5%8D%93/"/>
-    
-    <category term="surfboard" scheme="https://ednovas.xyz/tags/surfboard/"/>
     
   </entry>
   
