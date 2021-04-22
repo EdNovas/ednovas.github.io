@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-04-19T12:05:53.219Z</updated>
+  <updated>2021-04-22T11:47:02.496Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,71 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建proxypool节点池（go）</title>
+    <link href="https://ednovas.xyz/2021/04/22/newproxypool/"/>
+    <id>https://ednovas.xyz/2021/04/22/newproxypool/</id>
+    <published>2021-04-22T09:38:45.000Z</published>
+    <updated>2021-04-22T11:47:02.496Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;安装宝塔&quot;&gt;&lt;a href=&quot;#安装宝塔&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="白嫖" scheme="https://ednovas.xyz/tags/%E7%99%BD%E5%AB%96/"/>
+    
+    <category term="免费" scheme="https://ednovas.xyz/tags/%E5%85%8D%E8%B4%B9/"/>
+    
+    <category term="proxypool" scheme="https://ednovas.xyz/tags/proxypool/"/>
+    
+    <category term="节点池" scheme="https://ednovas.xyz/tags/%E8%8A%82%E7%82%B9%E6%B1%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>K-Lite Codec Pack</title>
+    <link href="https://ednovas.xyz/2021/04/22/klite/"/>
+    <id>https://ednovas.xyz/2021/04/22/klite/</id>
+    <published>2021-04-22T09:36:45.000Z</published>
+    <updated>2021-04-22T09:36:28.131Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;K-Lite Codec Pack为让操作系统及其软件得以播放众多一般而言操作系统自身并不支持的音频及视频格式的Microsoft Windows用解码器安装包。&lt;/p&gt;
+&lt;p&gt;包括madvr，lav等集成解码包&lt;/p&gt;
+&lt;p&gt;官网：&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="potplayer" scheme="https://ednovas.xyz/tags/potplayer/"/>
+    
+    <category term="lav" scheme="https://ednovas.xyz/tags/lav/"/>
+    
+    <category term="madvr" scheme="https://ednovas.xyz/tags/madvr/"/>
+    
+  </entry>
   
   <entry>
     <title>Pot+LAV+madVR配置教程</title>
@@ -594,70 +659,6 @@
     <category term="微信" scheme="https://ednovas.xyz/tags/%E5%BE%AE%E4%BF%A1/"/>
     
     <category term="支付宝" scheme="https://ednovas.xyz/tags/%E6%94%AF%E4%BB%98%E5%AE%9D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VPN和机场区别</title>
-    <link href="https://ednovas.xyz/2021/03/11/vpnandjc/"/>
-    <id>https://ednovas.xyz/2021/03/11/vpnandjc/</id>
-    <published>2021-03-10T22:15:00.000Z</published>
-    <updated>2021-03-25T02:01:24.821Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一些相关链接：&quot;&gt;&lt;a href=&quot;#一些相关链接：&quot; class=&quot;headerlink&quot; title=&quot;一些相关链接：&quot;&gt;&lt;/a&gt;一些相关链接：&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    <category term="VPN" scheme="https://ednovas.xyz/tags/VPN/"/>
-    
-    <category term="机场" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%9C%BA/"/>
-    
-    <category term="v2ray" scheme="https://ednovas.xyz/tags/v2ray/"/>
-    
-    <category term="ss" scheme="https://ednovas.xyz/tags/ss/"/>
-    
-    <category term="ssr" scheme="https://ednovas.xyz/tags/ssr/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Catchcat抓小猫小游戏</title>
-    <link href="https://ednovas.xyz/2021/03/10/catchcat/"/>
-    <id>https://ednovas.xyz/2021/03/10/catchcat/</id>
-    <published>2021-03-10T11:58:00.000Z</published>
-    <updated>2021-03-15T07:11:33.989Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;抓住小猫小游戏&quot;&gt;&lt;a href=&quot;#抓住小猫小游戏&quot; class=&quot;headerlink&quot; title=&quot;抓住小猫小游戏&quot;&gt;&lt;/a&gt;抓住小猫小游戏&lt;/h2&gt;&lt;p&gt;原作者github地址：&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="js" scheme="https://ednovas.xyz/tags/js/"/>
-    
-    <category term="html" scheme="https://ednovas.xyz/tags/html/"/>
-    
-    <category term="小游戏" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/"/>
     
   </entry>
   
