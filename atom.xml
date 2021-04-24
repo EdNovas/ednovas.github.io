@@ -232,11 +232,11 @@
     
     <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
     
-    <category term="命令" scheme="https://ednovas.xyz/tags/%E5%91%BD%E4%BB%A4/"/>
-    
     <category term="cpulimit" scheme="https://ednovas.xyz/tags/cpulimit/"/>
     
     <category term="cpu" scheme="https://ednovas.xyz/tags/cpu/"/>
+    
+    <category term="命令" scheme="https://ednovas.xyz/tags/%E5%91%BD%E4%BB%A4/"/>
     
     <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
     
@@ -264,13 +264,13 @@
     <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
     <category term="steam" scheme="https://ednovas.xyz/tags/steam/"/>
     
     <category term="挂卡" scheme="https://ednovas.xyz/tags/%E6%8C%82%E5%8D%A1/"/>
     
     <category term="asf" scheme="https://ednovas.xyz/tags/asf/"/>
+    
+    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
