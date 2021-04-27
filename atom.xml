@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-04-22T14:07:43.895Z</updated>
+  <updated>2021-04-27T02:56:27.793Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Wordpress搭建个人博客</title>
+    <link href="https://ednovas.xyz/2021/04/27/wordpress/"/>
+    <id>https://ednovas.xyz/2021/04/27/wordpress/</id>
+    <published>2021-04-27T02:17:45.000Z</published>
+    <updated>2021-04-27T02:56:27.793Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="wordpress" scheme="https://ednovas.xyz/tags/wordpress/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建proxypool节点池（go）</title>
@@ -623,42 +654,6 @@
     <category term="机场" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%9C%BA/"/>
     
     <category term="v2ray" scheme="https://ednovas.xyz/tags/v2ray/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>生成微信QQ支付宝三合一收款码</title>
-    <link href="https://ednovas.xyz/2021/03/12/qrcodes/"/>
-    <id>https://ednovas.xyz/2021/03/12/qrcodes/</id>
-    <published>2021-03-12T13:15:00.000Z</published>
-    <updated>2021-03-19T21:50:55.683Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自 &lt;a href=&quot;https://www.0353com.cn/74.html&quot;&gt;https://www.0353com.cn/74.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;EdNovas的DEMO站&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    <category term="网站" scheme="https://ednovas.xyz/categories/%E7%BD%91%E7%AB%99/"/>
-    
-    
-    <category term="QQ" scheme="https://ednovas.xyz/tags/QQ/"/>
-    
-    <category term="二维码" scheme="https://ednovas.xyz/tags/%E4%BA%8C%E7%BB%B4%E7%A0%81/"/>
-    
-    <category term="微信" scheme="https://ednovas.xyz/tags/%E5%BE%AE%E4%BF%A1/"/>
-    
-    <category term="支付宝" scheme="https://ednovas.xyz/tags/%E6%94%AF%E4%BB%98%E5%AE%9D/"/>
     
   </entry>
   
