@@ -48,6 +48,34 @@
   </entry>
   
   <entry>
+    <title>Redis安装报错</title>
+    <link href="https://ednovas.xyz/2021/04/27/redis/"/>
+    <id>https://ednovas.xyz/2021/04/27/redis/</id>
+    <published>2021-04-27T02:17:45.000Z</published>
+    <updated>2021-04-27T14:54:10.845Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;ubuntu1804安装redis的时候报错 Failed to start Advanced key-value store&lt;/p&gt;
+&lt;p&gt;问题描述, 使用apt安装redis报错, 执行的命令是sudo apt install redis-server,</summary>
+        
+      
+    
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="redis" scheme="https://ednovas.xyz/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
     <title>搭建proxypool节点池（go）</title>
     <link href="https://ednovas.xyz/2021/04/22/newproxypool/"/>
     <id>https://ednovas.xyz/2021/04/22/newproxypool/</id>
@@ -623,37 +651,6 @@
     <category term="VPN" scheme="https://ednovas.xyz/tags/VPN/"/>
     
     <category term="机场" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Qv2ray和xray超集的使用</title>
-    <link href="https://ednovas.xyz/2021/03/20/qv2ray/"/>
-    <id>https://ednovas.xyz/2021/03/20/qv2ray/</id>
-    <published>2021-03-20T01:15:00.000Z</published>
-    <updated>2021-03-25T09:57:32.660Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Qv2ray&quot;&gt;&lt;a href=&quot;#Qv2ray&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    <category term="VPN" scheme="https://ednovas.xyz/tags/VPN/"/>
-    
-    <category term="机场" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%9C%BA/"/>
-    
-    <category term="v2ray" scheme="https://ednovas.xyz/tags/v2ray/"/>
     
   </entry>
   
