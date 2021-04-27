@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Redis安装报错</title>
+      <link href="2021/04/27/redis/"/>
+      <url>2021/04/27/redis/</url>
+      
+        <content type="html"><![CDATA[<p>ubuntu1804安装redis的时候报错 Failed to start Advanced key-value store</p><p>问题描述, 使用apt安装redis报错, 执行的命令是sudo apt install redis-server, 报错信息Failed to start Advanced key-value store<br>原因: redis默认只支持ipv6访问, 所以如果服务器没设置ipv6的话，就会报错<br>解决办法:<br>修改redis的配置文件, sudo vim /etc/redis/redis.conf, 将bind 127.0.0.1 ::1修改为bind 127.0.0.1</p><p>重启redis服务, 执行service redis restart 或 redis-server</p><p>版权声明：本文为CSDN博主「littlehaes」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/littlehaes/article/details/104692822">https://blog.csdn.net/littlehaes/article/details/104692822</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vps </tag>
+            
+            <tag> redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Wordpress搭建个人博客</title>
       <link href="2021/04/27/wordpress/"/>
       <url>2021/04/27/wordpress/</url>
@@ -27,33 +54,6 @@
             <tag> 建站 </tag>
             
             <tag> wordpress </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Redis安装报错</title>
-      <link href="2021/04/27/redis/"/>
-      <url>2021/04/27/redis/</url>
-      
-        <content type="html"><![CDATA[<p>ubuntu1804安装redis的时候报错 Failed to start Advanced key-value store</p><p>问题描述, 使用apt安装redis报错, 执行的命令是sudo apt install redis-server, 报错信息Failed to start Advanced key-value store<br>原因: redis默认只支持ipv6访问, 所以如果服务器没设置ipv6的话，就会报错<br>解决办法:<br>修改redis的配置文件, sudo vim /etc/redis/redis.conf, 将bind 127.0.0.1 ::1修改为bind 127.0.0.1</p><p>重启redis服务, 执行service redis restart 或 redis-server</p><p>版权声明：本文为CSDN博主「littlehaes」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/littlehaes/article/details/104692822">https://blog.csdn.net/littlehaes/article/details/104692822</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 编程 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> vps </tag>
-            
-            <tag> redis </tag>
             
         </tags>
       

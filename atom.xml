@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-04-27T02:56:27.793Z</updated>
+  <updated>2021-04-27T14:54:36.850Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Redis安装报错</title>
+    <link href="https://ednovas.xyz/2021/04/27/redis/"/>
+    <id>https://ednovas.xyz/2021/04/27/redis/</id>
+    <published>2021-04-27T14:17:45.000Z</published>
+    <updated>2021-04-27T14:54:36.850Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;ubuntu1804安装redis的时候报错 Failed to start Advanced key-value store&lt;/p&gt;
+&lt;p&gt;问题描述, 使用apt安装redis报错, 执行的命令是sudo apt install redis-server,</summary>
+        
+      
+    
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="redis" scheme="https://ednovas.xyz/tags/redis/"/>
+    
+  </entry>
   
   <entry>
     <title>Wordpress搭建个人博客</title>
@@ -44,34 +72,6 @@
     <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
     
     <category term="wordpress" scheme="https://ednovas.xyz/tags/wordpress/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Redis安装报错</title>
-    <link href="https://ednovas.xyz/2021/04/27/redis/"/>
-    <id>https://ednovas.xyz/2021/04/27/redis/</id>
-    <published>2021-04-27T02:17:45.000Z</published>
-    <updated>2021-04-27T14:54:10.845Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;ubuntu1804安装redis的时候报错 Failed to start Advanced key-value store&lt;/p&gt;
-&lt;p&gt;问题描述, 使用apt安装redis报错, 执行的命令是sudo apt install redis-server,</summary>
-        
-      
-    
-    
-    
-    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
-    
-    <category term="redis" scheme="https://ednovas.xyz/tags/redis/"/>
     
   </entry>
   
