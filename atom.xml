@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-04-30T09:58:51.334Z</updated>
+  <updated>2021-04-30T11:35:54.130Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo添加Algolia搜索</title>
+    <link href="https://ednovas.xyz/2021/04/30/algolia/"/>
+    <id>https://ednovas.xyz/2021/04/30/algolia/</id>
+    <published>2021-04-30T11:22:45.000Z</published>
+    <updated>2021-04-30T11:35:54.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;GitHub项目地址：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="algolia" scheme="https://ednovas.xyz/tags/algolia/"/>
+    
+    <category term="搜索" scheme="https://ednovas.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+    <category term="hexo" scheme="https://ednovas.xyz/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>制作一个自己的订阅链接</title>
@@ -40,11 +74,11 @@
     <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
     
-    <category term="节点" scheme="https://ednovas.xyz/tags/%E8%8A%82%E7%82%B9/"/>
-    
     <category term="订阅链接" scheme="https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5/"/>
     
     <category term="subscribe link" scheme="https://ednovas.xyz/tags/subscribe-link/"/>
+    
+    <category term="节点" scheme="https://ednovas.xyz/tags/%E8%8A%82%E7%82%B9/"/>
     
     <category term="订阅" scheme="https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85/"/>
     
@@ -99,11 +133,11 @@
     <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
-    
     <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
     
     <category term="wordpress" scheme="https://ednovas.xyz/tags/wordpress/"/>
     
@@ -623,37 +657,6 @@
     <category term="macos" scheme="https://ednovas.xyz/tags/macos/"/>
     
     <category term="VPN" scheme="https://ednovas.xyz/tags/VPN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Telegram表情包制作</title>
-    <link href="https://ednovas.xyz/2021/03/24/tgstickers/"/>
-    <id>https://ednovas.xyz/2021/03/24/tgstickers/</id>
-    <published>2021-03-23T22:05:00.000Z</published>
-    <updated>2021-03-23T22:12:03.099Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;hr&gt;&lt;p&gt;&lt;a class=&quot;light-link&quot; data-fancybox=&quot;gallery&quot; no-pjax=&quot;&quot; data-type=&quot;image&quot; data-caption=&quot;telegram2.jpeg&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="telegram" scheme="https://ednovas.xyz/tags/telegram/"/>
-    
-    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
-    
-    <category term="表情包" scheme="https://ednovas.xyz/tags/%E8%A1%A8%E6%83%85%E5%8C%85/"/>
-    
-    <category term="stickers" scheme="https://ednovas.xyz/tags/stickers/"/>
     
   </entry>
   
