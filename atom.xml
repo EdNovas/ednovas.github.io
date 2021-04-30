@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-04-27T14:54:36.850Z</updated>
+  <updated>2021-04-30T09:58:51.334Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>制作一个自己的订阅链接</title>
+    <link href="https://ednovas.xyz/2021/04/30/subscribelink/"/>
+    <id>https://ednovas.xyz/2021/04/30/subscribelink/</id>
+    <published>2021-04-30T09:52:45.000Z</published>
+    <updated>2021-04-30T09:58:51.334Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;首先你要制作自己的订阅链接肯定手里有一些自己的节点，而管理多节点的话，最好用的工具还是v2rayn了&lt;/p&gt;
+&lt;p&gt;全选你的所有节点，然后复制或ctrl+c，黏贴到base64转换网址&lt;/p&gt;
+&lt;p&gt;比如&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+    <category term="节点" scheme="https://ednovas.xyz/tags/%E8%8A%82%E7%82%B9/"/>
+    
+    <category term="订阅链接" scheme="https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5/"/>
+    
+    <category term="subscribe link" scheme="https://ednovas.xyz/tags/subscribe-link/"/>
+    
+    <category term="订阅" scheme="https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85/"/>
+    
+  </entry>
   
   <entry>
     <title>Redis安装报错</title>
@@ -620,37 +654,6 @@
     <category term="表情包" scheme="https://ednovas.xyz/tags/%E8%A1%A8%E6%83%85%E5%8C%85/"/>
     
     <category term="stickers" scheme="https://ednovas.xyz/tags/stickers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>免费和便宜的VPS</title>
-    <link href="https://ednovas.xyz/2021/03/22/freevps/"/>
-    <id>https://ednovas.xyz/2021/03/22/freevps/</id>
-    <published>2021-03-22T08:48:00.000Z</published>
-    <updated>2021-04-25T13:27:10.562Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;免费（试用）VPS&quot;&gt;&lt;a href=&quot;#免费（试用）VPS&quot; class=&quot;headerlink&quot; title=&quot;免费（试用）VPS&quot;&gt;&lt;/a&gt;免费（试用）VPS&lt;/h2&gt;&lt;h3 id=&quot;Oracle-Cloud-甲骨文云：&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    <category term="VPN" scheme="https://ednovas.xyz/tags/VPN/"/>
-    
-    <category term="机场" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%9C%BA/"/>
     
   </entry>
   
