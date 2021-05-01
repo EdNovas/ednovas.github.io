@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>MOVER.IO 文件迁移服务</title>
+      <link href="2021/05/01/moverio/"/>
+      <url>2021/05/01/moverio/</url>
+      
+        <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>可能在大家手里面早就有了几个OneDrive的号，有个人号，E5管理号，A1子号，A1P子号，世纪互联子号，可是都是空的，也不敢存太多东西，要是能够转存资源就好了，刚好发现了一个比较优秀的网站，可以转存多种主流网盘(注:国外的)，当然也包括OneDrive不同域之间的转存，最重要的是，完全免费，只有一点小限制，而它这就是 mover.io。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-f71c12dc94fbf0d8c44ba737517d30e1.png"></p><p>这个网站之前就是网盘搬家类的，就在去年2019年10月21号，被微软收购了(巨硬有钱任性)，现在用于将云文件迁移到OFFICE365(包括谷歌网盘，亚马逊等)，只进不出，接下来简单介绍一下!</p><h2 id="官网地址"><a href="#官网地址" class="headerlink" title="官网地址"></a>官网地址</h2><p><a href="https://mover.io/">https://mover.io</a></p><h2 id="账号注册"><a href="#账号注册" class="headerlink" title="账号注册"></a>账号注册</h2><p>可以直接用微软账户登录</p><h2 id="连接器"><a href="#连接器" class="headerlink" title="连接器"></a>连接器</h2><p>Mover 将十几个云服务提供商、web服务和数据库链接到Office 365，包括OneDrive和SharePoint Online。我们亲切地称这些链接为我们的连接器。</p><p>你为什么要用我们的连接器？以下是我们最喜欢的两个理由：</p><ul><li><p>快速、方便、安全地将多个用户和大数据量迁移到Microsoft。</p></li><li><p>通过我们基于web的服务复制文件而不是使用桌面同步工具来节省带宽。</p></li></ul><h3 id="支持列表"><a href="#支持列表" class="headerlink" title="支持列表"></a>支持列表</h3><p>Mover Agent / Amazon S3 / Amazon WorkDocs / Microsoft Azure / Box / Dropbox / Egnyte / FTP / Google Drive / Office 365 / OneDrive / SFTP / SharePoint Online / WebDAV</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-f4e36fb558f7e36aa7574d5281e61fef.png"></p><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>注册成功后，进入网页，务必使用​电脑打开网页，手机打开网页可能会被折叠，导致文件夹打不开，如下图，电脑打开网页和手机打开的网页(手机Chrome已开启桌面版网页)。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-9e7b0f996593c8e9ef50af5c50432395.png"></p><h2 id="数据源"><a href="#数据源" class="headerlink" title="数据源"></a>数据源</h2><p>数据源基本上 连接器 支持的云服务商都支持！只要授权登录即可！非常方便！</p><h2 id="目的地"><a href="#目的地" class="headerlink" title="目的地"></a>目的地</h2><p>目前仅支持微软家族的存储服务！</p><p>Azure Blob Storage / Office 365 (OneDrive/SharePoint Admin) / OneDrive Consumer / OneDrive for Business (Single User)</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-19f126a714a227b6d3aa891068e34f19.png"></p><h2 id="账号选择？"><a href="#账号选择？" class="headerlink" title="账号选择？"></a>账号选择？</h2><p>我的微软的账号，到底选择哪个授权登录呢？其实多试几次就知道了！</p><p>OneDrive Consumer  : 普通的微软账号</p><p>OneDrive for Business (Single User) ： A1 / A1P / E3 /E5 等商业版账号</p><p>Office 365 (OneDrive/SharePoint Admin) ：A1 / A1P / E3 /E5 等商业版全局管理账号以及SharePoint账号</p><h2 id="数据迁移"><a href="#数据迁移" class="headerlink" title="数据迁移"></a>数据迁移</h2><p>操作比较简单，只需要将 复制源(Source) 和 目标(Destination) 都授权了，就能愉快的玩耍了！</p><p>传输的速度也是非常快的！！</p><p>我只测试了 OneDrive -&gt; OneDrive 和 Google Drive -&gt; OneDrive ，一般速度大概每分钟传输1-2GB。</p><p>更多功能自行探索(其实功能就那几个，多试试)​~~</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-c462e460e5e983fe339b1d8ab435944d.png"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-166f4003b07f699955a6c7ce186bcd46.png"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-baedf92141d6aebd6e53ddaf3cd59e83.png"></p><h2 id="使用缺点"><a href="#使用缺点" class="headerlink" title="使用缺点"></a>使用缺点</h2><p>团队盘(A1，E5，A1P等等)限制单文件大小15G。<br>个人盘限制单文件大小10g(我也不知道怎么回事，可能是网站规则限制吧)。<br>生成的任务删除不了，只能暂停。<br>只能转存到OneDrive，不能转到其他地方。<br>无法自动同步更新，只能手动点击。</p><h2 id="使用优点"><a href="#使用优点" class="headerlink" title="使用优点"></a>使用优点</h2><p>免费(不知道什么时候会收费，现在没有)。<br>不限制网盘数，不限制总流量。<br>可以自动跳过同目录重复文件。<br>支持不同域的OneDrive。<br>官宣是使用的Windows Azure来传输的。</p><h2 id="其他说明"><a href="#其他说明" class="headerlink" title="其他说明"></a>其他说明</h2><p>发现这个平台还支持FTP传输！这个可以用来做一些FTP备份使用，比如网站数据/数据库的备份！</p><blockquote><p>摘自： <a href="https://51.ruyo.net/15587.html">https://51.ruyo.net/15587.html</a> 有部分删改 感谢</p></blockquote><blockquote><p>转载自 Gitiu <a href="https://www.gitiu.com/reprinted_articles/mover-io-move-onedrive-googledrive-dropbox/">https://www.gitiu.com/reprinted_articles/mover-io-move-onedrive-googledrive-dropbox/</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网盘 </tag>
+            
+            <tag> mover.io </tag>
+            
+            <tag> OneDrive </tag>
+            
+            <tag> googledrive </tag>
+            
+            <tag> dropbox </tag>
+            
+            <tag> 互传 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo添加Algolia搜索</title>
       <link href="2021/04/30/algolia/"/>
       <url>2021/04/30/algolia/</url>
