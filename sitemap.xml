@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/05/02/unattended-upgrade/</loc>
+    
+    <lastmod>2021-05-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/2021/05/02/ditto/</loc>
+    
+    <lastmod>2021-05-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/2021/04/15/cpulimit/</loc>
+    
+    <lastmod>2021-05-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2020/12/18/freesubscribes/</loc>
     
     <lastmod>2021-05-02</lastmod>
@@ -248,13 +269,6 @@
   
   <url>
     <loc>https://ednovas.xyz/2021/04/15/warpipv6/</loc>
-    
-    <lastmod>2021-04-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/2021/04/15/cpulimit/</loc>
     
     <lastmod>2021-04-15</lastmod>
     
@@ -3015,6 +3029,41 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E8%81%8A%E5%A4%A9/</loc>
+    <lastmod>2021-05-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/ditto/</loc>
+    <lastmod>2021-05-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E5%A4%8D%E5%88%B6/</loc>
+    <lastmod>2021-05-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E9%BB%8F%E8%B4%B4/</loc>
+    <lastmod>2021-05-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E5%89%AA%E8%B4%B4%E6%9D%BF/</loc>
+    <lastmod>2021-05-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E5%8D%A0%E7%94%A8/</loc>
     <lastmod>2021-05-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
