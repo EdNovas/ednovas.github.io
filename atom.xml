@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-03T04:34:42.765Z</updated>
+  <updated>2021-05-03T09:31:42.547Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ASF steam挂卡神器</title>
+    <link href="https://ednovas.xyz/2021/05/03/asf/"/>
+    <id>https://ednovas.xyz/2021/05/03/asf/</id>
+    <published>2021-05-03T09:31:00.000Z</published>
+    <updated>2021-05-03T09:31:42.547Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;ArchiSteamFarm 是很多进阶级 Steam 用户熟知的软件，它允许用户进行批量性的 Steam 帐号管理且支持效率很高的批量挂卡任务。其支持 Windows/ Linux/ Mac OS 系统，且各平台配置方式差异不大，所以如果你之前就已经用过其它平台的</summary>
+        
+      
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="steam" scheme="https://ednovas.xyz/tags/steam/"/>
+    
+    <category term="挂卡" scheme="https://ednovas.xyz/tags/%E6%8C%82%E5%8D%A1/"/>
+    
+    <category term="asf" scheme="https://ednovas.xyz/tags/asf/"/>
+    
+    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>使用 SSH 连接 GitHub Action 服务器</title>
@@ -497,38 +528,6 @@
     <category term="命令" scheme="https://ednovas.xyz/tags/%E5%91%BD%E4%BB%A4/"/>
     
     <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ASF steam挂卡神器</title>
-    <link href="https://ednovas.xyz/2021/04/14/asf/"/>
-    <id>https://ednovas.xyz/2021/04/14/asf/</id>
-    <published>2021-04-14T00:26:00.000Z</published>
-    <updated>2021-04-14T12:12:36.268Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;（老懒瓜蛋了嘿嘿嘿）&lt;/p&gt;
-&lt;h2 id=&quot;Windows端：&quot;&gt;&lt;a href=&quot;#Windows端：&quot; class=&quot;headerlink&quot; title=&quot;Windows端：&quot;&gt;&lt;/a&gt;Windows端：&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="steam" scheme="https://ednovas.xyz/tags/steam/"/>
-    
-    <category term="挂卡" scheme="https://ednovas.xyz/tags/%E6%8C%82%E5%8D%A1/"/>
-    
-    <category term="asf" scheme="https://ednovas.xyz/tags/asf/"/>
-    
-    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
