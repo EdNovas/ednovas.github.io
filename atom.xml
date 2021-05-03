@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-03T14:14:21.999Z</updated>
+  <updated>2021-05-03T14:35:11.274Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,51 +17,14 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>testlast</title>
-    <link href="https://ednovas.xyz/2021/05/03/t1/"/>
-    <id>https://ednovas.xyz/2021/05/03/t1/</id>
-    <published>2021-05-03T14:59:00.000Z</published>
-    <updated>2021-05-03T14:14:21.999Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;测试而已测试测试last&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="test" scheme="https://ednovas.xyz/categories/test/"/>
-    
-    
-    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="hexo" scheme="https://ednovas.xyz/tags/hexo/"/>
-    
-    <category term="加密" scheme="https://ednovas.xyz/tags/%E5%8A%A0%E5%AF%86/"/>
-    
-    <category term="hexo-blog-encrypt" scheme="https://ednovas.xyz/tags/hexo-blog-encrypt/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hexo博客加密插件</title>
     <link href="https://ednovas.xyz/2021/05/03/hexoencrypt/"/>
     <id>https://ednovas.xyz/2021/05/03/hexoencrypt/</id>
     <published>2021-05-03T12:31:00.000Z</published>
-    <updated>2021-05-03T12:08:51.823Z</updated>
+    <updated>2021-05-03T14:35:11.274Z</updated>
     
     
-    <summary type="html">&lt;p&gt;GitHub项目地址：&lt;a href=&quot;https://github.com/D0n9X1n/hexo-blog-encrypt&quot;&gt;https://github.com/D0n9X1n/hexo-blog-encrypt&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;低级&quot;&gt;&lt;a href=&quot;#低级&quot; class=&quot;headerlink&quot; title=&quot;低级&quot;&gt;&lt;/a&gt;低级&lt;/h2&gt;&lt;h3 id=&quot;实现&quot;&gt;&lt;a href=&quot;#实现&quot; class=&quot;headerlink&quot; title=&quot;实现&quot;&gt;&lt;/a&gt;实现&lt;/h3&gt;&lt;p&gt;打开&lt;code&gt;yourblogsite/themes/next/layout/custom/head.swig&lt;/code&gt;文件，在&lt;head&gt;&lt;/head&gt;之间添加以下内容&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#JavaScript&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    (function()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        if(&amp;#39;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&amp;#39;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            if (prompt(&amp;#39;请输入密码&amp;#39;) !&amp;#x3D;&amp;#x3D; &amp;#39;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&amp;#39;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                alert(&amp;#39;密码错误&amp;#39;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                history.back();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;)();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;&amp;#x2F;script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;之后，在你想要加密的文章的头文件里添加上password: yourpassword即可。&lt;/p&gt;
-&lt;p&gt;注意，这里仅针对Hexo平台的next主题。但是，它的代码和思想是通用的，你在Hexo的其他主题，甚至是Jekyll的主题里也是可以做到的，只是要摆放的位置会不一样。位置的要点是：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;模板文件。无论是Hexo还是Jekyll，都应该在layout文件夹中。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;head&gt;&lt;/head&gt;之间。其实在其他位置也是可行的，但是在此代码之前的一些内容可能会被加载，不完美。
-
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;存在问题&quot;&gt;&lt;a href=&quot;#存在问题&quot; class=&quot;headerlink&quot; title=&quot;存在问题&quot;&gt;&lt;/a&gt;存在问题&lt;/h3&gt;&lt;p&gt;目前主要问题是：&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;GitHub项目地址：&lt;a href=&quot;https://github.com/D0n9X1n/hexo-blog-encrypt&quot;&gt;https://github.com/D0n9X1n/hexo-blog-encrypt&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
@@ -555,11 +518,11 @@
     
     <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
     
+    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
+    
     <category term="ipv4" scheme="https://ednovas.xyz/tags/ipv4/"/>
     
     <category term="ipv6" scheme="https://ednovas.xyz/tags/ipv6/"/>
-    
-    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
     
     <category term="warp" scheme="https://ednovas.xyz/tags/warp/"/>
     
@@ -660,6 +623,40 @@
     <category term="白嫖" scheme="https://ednovas.xyz/tags/%E7%99%BD%E5%AB%96/"/>
     
     <category term="免费" scheme="https://ednovas.xyz/tags/%E5%85%8D%E8%B4%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>提高效率————电脑查找清理查重卸载软件</title>
+    <link href="https://ednovas.xyz/2021/04/06/cleaner/"/>
+    <id>https://ednovas.xyz/2021/04/06/cleaner/</id>
+    <published>2021-04-06T00:06:00.000Z</published>
+    <updated>2021-04-06T00:41:03.631Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Everything&quot;&gt;&lt;a href=&quot;#Everything&quot; class=&quot;headerlink&quot; title=&quot;Everything&quot;&gt;&lt;/a&gt;Everything&lt;/h2&gt;&lt;p&gt;极力推荐&lt;/p&gt;
+&lt;p&gt;一个基于名称快速定位文件和文件夹的软件&lt;/p&gt;
+&lt;h3 id=&quot;特点&quot;&gt;&lt;a href=&quot;#特点&quot; class=&quot;headerlink&quot; title=&quot;特点&quot;&gt;&lt;/a&gt;特点&lt;/h3&gt;&lt;p&gt;轻量安装文件&lt;/p&gt;
+&lt;p&gt;干净简洁的用户界面&lt;/p&gt;
+&lt;p&gt;快速文件索引&lt;/p&gt;
+&lt;p&gt;快速搜索&lt;/p&gt;
+&lt;p&gt;最小资源使用&lt;/p&gt;
+&lt;p&gt;便于文件分享&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="windows" scheme="https://ednovas.xyz/tags/windows/"/>
+    
+    <category term="电脑" scheme="https://ednovas.xyz/tags/%E7%94%B5%E8%84%91/"/>
+    
+    <category term="清理" scheme="https://ednovas.xyz/tags/%E6%B8%85%E7%90%86/"/>
+    
+    <category term="卸载" scheme="https://ednovas.xyz/tags/%E5%8D%B8%E8%BD%BD/"/>
+    
+    <category term="查重" scheme="https://ednovas.xyz/tags/%E6%9F%A5%E9%87%8D/"/>
     
   </entry>
   
