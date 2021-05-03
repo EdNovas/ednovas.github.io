@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-02T14:38:12.897Z</updated>
+  <updated>2021-05-03T04:21:53.851Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 SSH 连接 GitHub Action 服务器</title>
+    <link href="https://ednovas.xyz/2021/05/03/githubactions/"/>
+    <id>https://ednovas.xyz/2021/05/03/githubactions/</id>
+    <published>2021-05-03T03:41:35.778Z</published>
+    <updated>2021-05-03T04:21:53.851Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;奇技淫巧，请勿滥用&lt;/p&gt;
+&lt;p&gt;GitHub Actions 虚拟服务器(VM/VPS)评测（源自p3trex大佬）：&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="github" scheme="https://ednovas.xyz/tags/github/"/>
+    
+    <category term="github actions" scheme="https://ednovas.xyz/tags/github-actions/"/>
+    
+    <category term="ssh" scheme="https://ednovas.xyz/tags/ssh/"/>
+    
+  </entry>
   
   <entry>
     <title>VPS unattended-upgrade占用100%问题解决</title>
@@ -624,42 +657,6 @@
     <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
     
     <category term="删库塔" scheme="https://ednovas.xyz/tags/%E5%88%A0%E5%BA%93%E5%A1%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>梯云梯测评</title>
-    <link href="https://ednovas.xyz/2021/04/03/tiyunti/"/>
-    <id>https://ednovas.xyz/2021/04/03/tiyunti/</id>
-    <published>2021-04-03T13:43:00.000Z</published>
-    <updated>2021-04-09T09:39:48.643Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;最后由EdNovas编辑自2021/04/03&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;我用过也有数十家机场，收藏夹和tg也有上百家机场，了解了一些行情&lt;/p&gt;
-&lt;p&gt;虽然我放着梯云梯的广告，但是我这是没有任何盈利的广告&lt;/p&gt;
-&lt;p&gt;总之恰饭不</summary>
-        
-      
-    
-    
-    
-    <category term="机场测评" scheme="https://ednovas.xyz/categories/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/"/>
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    <category term="机场" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%9C%BA/"/>
-    
-    <category term="奈飞" scheme="https://ednovas.xyz/tags/%E5%A5%88%E9%A3%9E/"/>
-    
-    <category term="冷门节点" scheme="https://ednovas.xyz/tags/%E5%86%B7%E9%97%A8%E8%8A%82%E7%82%B9/"/>
     
   </entry>
   
