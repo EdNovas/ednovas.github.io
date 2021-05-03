@@ -42,6 +42,31 @@
   </entry>
   
   <entry>
+    <title>test3</title>
+    <link href="https://ednovas.xyz/2021/05/03/test1/"/>
+    <id>https://ednovas.xyz/2021/05/03/test1/</id>
+    <published>2021-05-03T12:33:00.000Z</published>
+    <updated>2021-05-03T13:28:25.785Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;测试而已测试测试333&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="test" scheme="https://ednovas.xyz/categories/test/"/>
+    
+    
+    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="hexo" scheme="https://ednovas.xyz/tags/hexo/"/>
+    
+    <category term="加密" scheme="https://ednovas.xyz/tags/%E5%8A%A0%E5%AF%86/"/>
+    
+    <category term="hexo-blog-encrypt" scheme="https://ednovas.xyz/tags/hexo-blog-encrypt/"/>
+    
+  </entry>
+  
+  <entry>
     <title>test</title>
     <link href="https://ednovas.xyz/2021/05/03/test/"/>
     <id>https://ednovas.xyz/2021/05/03/test/</id>
@@ -610,38 +635,6 @@
     <category term="命令" scheme="https://ednovas.xyz/tags/%E5%91%BD%E4%BB%A4/"/>
     
     <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>RSS阅读器</title>
-    <link href="https://ednovas.xyz/2021/04/14/rss/"/>
-    <id>https://ednovas.xyz/2021/04/14/rss/</id>
-    <published>2021-04-13T20:14:00.000Z</published>
-    <updated>2021-04-13T20:54:52.799Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载编辑自知乎crystal &lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="RSS" scheme="https://ednovas.xyz/tags/RSS/"/>
-    
-    <category term="阅读器" scheme="https://ednovas.xyz/tags/%E9%98%85%E8%AF%BB%E5%99%A8/"/>
-    
-    <category term="测评" scheme="https://ednovas.xyz/tags/%E6%B5%8B%E8%AF%84/"/>
     
   </entry>
   
