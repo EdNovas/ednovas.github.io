@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/05/03/test/</loc>
+    
+    <lastmod>2021-05-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2021/05/03/hexoencrypt/</loc>
     
     <lastmod>2021-05-03</lastmod>
@@ -3178,6 +3185,13 @@
   
   <url>
     <loc>https://ednovas.xyz/categories/%E6%9C%BA%E5%9C%BA%E6%B5%8B%E8%AF%84/</loc>
+    <lastmod>2021-05-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/categories/test/</loc>
     <lastmod>2021-05-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

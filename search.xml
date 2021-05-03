@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>test</title>
+      <link href="2021/05/03/test/"/>
+      <url>2021/05/03/test/</url>
+      
+        <content type="html"><![CDATA[<p>测试而已测试测试</p><p>结束，无</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> test </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> 加密 </tag>
+            
+            <tag> hexo-blog-encrypt </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo博客加密插件</title>
       <link href="2021/05/03/hexoencrypt/"/>
       <url>2021/05/03/hexoencrypt/</url>
