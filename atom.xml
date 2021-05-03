@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-03T13:56:41.851Z</updated>
+  <updated>2021-05-03T14:14:21.999Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,64 +17,14 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test4</title>
-    <link href="https://ednovas.xyz/2021/05/03/test/"/>
-    <id>https://ednovas.xyz/2021/05/03/test/</id>
-    <published>2021-05-03T12:59:00.000Z</published>
-    <updated>2021-05-03T13:56:41.851Z</updated>
+    <title>testlast</title>
+    <link href="https://ednovas.xyz/2021/05/03/t1/"/>
+    <id>https://ednovas.xyz/2021/05/03/t1/</id>
+    <published>2021-05-03T14:59:00.000Z</published>
+    <updated>2021-05-03T14:14:21.999Z</updated>
     
     
-    <summary type="html">&lt;p&gt;测试而已测试测试4&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="test" scheme="https://ednovas.xyz/categories/test/"/>
-    
-    
-    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="hexo" scheme="https://ednovas.xyz/tags/hexo/"/>
-    
-    <category term="加密" scheme="https://ednovas.xyz/tags/%E5%8A%A0%E5%AF%86/"/>
-    
-    <category term="hexo-blog-encrypt" scheme="https://ednovas.xyz/tags/hexo-blog-encrypt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test0</title>
-    <link href="https://ednovas.xyz/2021/05/03/test0/"/>
-    <id>https://ednovas.xyz/2021/05/03/test0/</id>
-    <published>2021-05-03T12:33:00.000Z</published>
-    <updated>2021-05-03T13:22:35.127Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;测试而已测试测试&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="test" scheme="https://ednovas.xyz/categories/test/"/>
-    
-    
-    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="hexo" scheme="https://ednovas.xyz/tags/hexo/"/>
-    
-    <category term="加密" scheme="https://ednovas.xyz/tags/%E5%8A%A0%E5%AF%86/"/>
-    
-    <category term="hexo-blog-encrypt" scheme="https://ednovas.xyz/tags/hexo-blog-encrypt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test3</title>
-    <link href="https://ednovas.xyz/2021/05/03/test1/"/>
-    <id>https://ednovas.xyz/2021/05/03/test1/</id>
-    <published>2021-05-03T12:33:00.000Z</published>
-    <updated>2021-05-03T13:28:25.785Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;测试而已测试测试333&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;测试而已测试测试last&lt;/p&gt;</summary>
     
     
     
@@ -605,11 +555,11 @@
     
     <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
     
-    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
-    
     <category term="ipv4" scheme="https://ednovas.xyz/tags/ipv4/"/>
     
     <category term="ipv6" scheme="https://ednovas.xyz/tags/ipv6/"/>
+    
+    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
     
     <category term="warp" scheme="https://ednovas.xyz/tags/warp/"/>
     
@@ -645,6 +595,71 @@
     <category term="命令" scheme="https://ednovas.xyz/tags/%E5%91%BD%E4%BB%A4/"/>
     
     <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RSS阅读器</title>
+    <link href="https://ednovas.xyz/2021/04/14/rss/"/>
+    <id>https://ednovas.xyz/2021/04/14/rss/</id>
+    <published>2021-04-13T20:14:00.000Z</published>
+    <updated>2021-04-13T20:54:52.799Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载编辑自知乎crystal &lt;a href=&quot;https://zhuanlan.zhihu.com/p/45120897&quot;&gt;https://zhuanlan.zhihu.com/p/45120897&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;RSS 的全称是 Really Simple Syndication，“简易信息聚合”。它把新闻、博客等的标题、摘要和内容按一定要求整理推送，用户通过 RSS 阅读器订阅查看。&lt;/p&gt;
+&lt;p&gt;我们可以把 RSS 看作是一种信息订阅服务，把经常浏览的网站聚合在一起，集中查看，不用再逐个打开了，更方便高效。&lt;/p&gt;
+&lt;p&gt;然而挑选一款好的 RSS 阅读器可不容易，经常能看到诸如 “哪个RSS阅读器好？现在有什么好用的 RSS 阅读器？……” 之类的问题。&lt;/p&gt;
+&lt;p&gt;下面就推荐几款优秀的 RSS 阅读器给大家，包括 Win、Android、iOS、Mac 都可以使用。&lt;/p&gt;
+&lt;h2 id=&quot;fluent-reader&quot;&gt;&lt;a href=&quot;#fluent-reader&quot; class=&quot;headerlink&quot; title=&quot;fluent reader&quot;&gt;&lt;/a&gt;fluent reader&lt;/h2&gt;&lt;p&gt;GitHub项目地址：&lt;a href=&quot;https://github.com/yang991178/fluent-reader&quot;&gt;https://github.com/yang991178/fluent-reader&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;微软商店地址：&lt;a href=&quot;https://www.microsoft.com/store/apps/9P71FC94LRH8?cid=github&quot;&gt;https://www.microsoft.com/store/apps/9P71FC94LRH8?cid=github&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;价格&quot;&gt;&lt;a href=&quot;#价格&quot; class=&quot;headerlink&quot; title=&quot;价格&quot;&gt;&lt;/a&gt;价格&lt;/h3&gt;&lt;p&gt;你可以选择付费支持作者，但是免费版也是和付费版一样的功能&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="RSS" scheme="https://ednovas.xyz/tags/RSS/"/>
+    
+    <category term="阅读器" scheme="https://ednovas.xyz/tags/%E9%98%85%E8%AF%BB%E5%99%A8/"/>
+    
+    <category term="测评" scheme="https://ednovas.xyz/tags/%E6%B5%8B%E8%AF%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>白嫖月抛Atlas OS VPS</title>
+    <link href="https://ednovas.xyz/2021/04/06/atlasos/"/>
+    <id>https://ednovas.xyz/2021/04/06/atlasos/</id>
+    <published>2021-04-06T02:14:00.000Z</published>
+    <updated>2021-04-06T02:42:41.974Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;请合理使用！请勿滥用！本文严禁任何形式转载！youtuber请勿录制讲解视频！违者必究！&quot;&gt;&lt;a href=&quot;#请合理使用！请勿滥用！本文严禁任何形式转载！youtuber请勿录制讲解视频！违者必究！&quot; class=&quot;headerlink&quot; title=&quot;请合理使用！请勿滥用！本文严禁任何形式转载！youtuber请勿录制讲解视频！违者必究！&quot;&gt;&lt;/a&gt;请合理使用！请勿滥用！本文严禁任何形式转载！youtuber请勿录制讲解视频！违者必究！&lt;/h1&gt;&lt;h2 id=&quot;白嫖请适度，勿传播，只开一台鸡，自用月抛即可&quot;&gt;&lt;a href=&quot;#白嫖请适度，勿传播，只开一台鸡，自用月抛即可&quot; class=&quot;headerlink&quot; title=&quot;白嫖请适度，勿传播，只开一台鸡，自用月抛即可&quot;&gt;&lt;/a&gt;白嫖请适度，勿传播，只开一台鸡，自用月抛即可&lt;/h2&gt;&lt;h2 id=&quot;开机&quot;&gt;&lt;a href=&quot;#开机&quot; class=&quot;headerlink&quot; title=&quot;开机&quot;&gt;&lt;/a&gt;开机&lt;/h2&gt;&lt;p&gt;注册登录&lt;/p&gt;
+&lt;p&gt;注册可用中国手机号，可用接码平台，一个手机号可以重复接码，但请勿滥用！！！&lt;/p&gt;
+&lt;p&gt;这个平台的本意是用来给学生等做研究等的，可以看到很多类型都内置了如JupyerLab，Eclipse等软件&lt;/p&gt;
+&lt;p&gt;这个是月结账单，所以可以欠费一个月的，而且欠费最多欠8美刀，所以一个低配t3a.micro正好可以用一个月，名副其实的月抛鸡&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.atlas-os.org/&quot;&gt;https://www.atlas-os.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;新建一个机器&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ%E5%9B%BE%E7%89%8720210406101758.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="atlas os" scheme="https://ednovas.xyz/tags/atlas-os/"/>
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="白嫖" scheme="https://ednovas.xyz/tags/%E7%99%BD%E5%AB%96/"/>
+    
+    <category term="免费" scheme="https://ednovas.xyz/tags/%E5%85%8D%E8%B4%B9/"/>
     
   </entry>
   
