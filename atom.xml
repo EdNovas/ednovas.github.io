@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-03T09:31:42.547Z</updated>
+  <updated>2021-05-03T12:08:51.823Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo博客加密插件</title>
+    <link href="https://ednovas.xyz/2021/05/03/hexoencrypt/"/>
+    <id>https://ednovas.xyz/2021/05/03/hexoencrypt/</id>
+    <published>2021-05-03T12:31:00.000Z</published>
+    <updated>2021-05-03T12:08:51.823Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;GitHub项目地址：&lt;a href=&quot;https://github.com/D0n9X1n/hexo-blog-encrypt&quot;&gt;https://github.com/D0n9X1n/hexo-blog-encrypt&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;低级&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="hexo" scheme="https://ednovas.xyz/tags/hexo/"/>
+    
+    <category term="加密" scheme="https://ednovas.xyz/tags/%E5%8A%A0%E5%AF%86/"/>
+    
+    <category term="hexo-blog-encrypt" scheme="https://ednovas.xyz/tags/hexo-blog-encrypt/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ASF steam挂卡神器</title>
     <link href="https://ednovas.xyz/2021/05/03/asf/"/>
     <id>https://ednovas.xyz/2021/05/03/asf/</id>
     <published>2021-05-03T09:31:00.000Z</published>
-    <updated>2021-05-03T09:31:42.547Z</updated>
+    <updated>2021-05-03T10:00:23.817Z</updated>
     
     
       
@@ -624,38 +656,6 @@
     <category term="卸载" scheme="https://ednovas.xyz/tags/%E5%8D%B8%E8%BD%BD/"/>
     
     <category term="查重" scheme="https://ednovas.xyz/tags/%E6%9F%A5%E9%87%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>宝塔面板跳过绑定官方账户</title>
-    <link href="https://ednovas.xyz/2021/04/04/btpanel/"/>
-    <id>https://ednovas.xyz/2021/04/04/btpanel/</id>
-    <published>2021-04-04T05:43:00.000Z</published>
-    <updated>2021-04-05T12:37:20.723Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;临时的解决办法就是我们在URL目录中随便加入soft，比如：&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="宝塔" scheme="https://ednovas.xyz/tags/%E5%AE%9D%E5%A1%94/"/>
-    
-    <category term="面板" scheme="https://ednovas.xyz/tags/%E9%9D%A2%E6%9D%BF/"/>
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="删库塔" scheme="https://ednovas.xyz/tags/%E5%88%A0%E5%BA%93%E5%A1%94/"/>
     
   </entry>
   
