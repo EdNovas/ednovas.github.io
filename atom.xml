@@ -605,11 +605,11 @@
     
     <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
     
+    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
+    
     <category term="ipv4" scheme="https://ednovas.xyz/tags/ipv4/"/>
     
     <category term="ipv6" scheme="https://ednovas.xyz/tags/ipv6/"/>
-    
-    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
     
     <category term="warp" scheme="https://ednovas.xyz/tags/warp/"/>
     
