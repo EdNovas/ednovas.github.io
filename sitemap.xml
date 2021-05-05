@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/05/05/pagermaid/</loc>
+    
+    <lastmod>2021-05-05</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2021/05/05/vpsheihua/</loc>
     
     <lastmod>2021-05-05</lastmod>
@@ -3113,6 +3120,13 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E9%BB%91%E8%AF%9D/</loc>
+    <lastmod>2021-05-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/bot/</loc>
     <lastmod>2021-05-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
