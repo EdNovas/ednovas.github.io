@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-05T14:51:06.044Z</updated>
+  <updated>2021-05-05T14:55:19.983Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -21,10 +21,19 @@
     <link href="https://ednovas.xyz/2021/05/05/vpsheihua/"/>
     <id>https://ednovas.xyz/2021/05/05/vpsheihua/</id>
     <published>2021-05-05T14:31:00.000Z</published>
-    <updated>2021-05-05T14:51:06.044Z</updated>
+    <updated>2021-05-05T14:55:19.983Z</updated>
     
     
-    <summary type="html">&lt;p&gt;一些VPS行业黑话说明&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;一.oneman:&lt;/p&gt;
+&lt;p&gt;指只有一个人经营的idc服务商，业内比较出名的有ramnode，不过这家严格说并不是oneman，人家是夫妻店，是俩人23333。还有那个常年侮辱中国客户的bugetvz，是个澳洲村炮自己开的oneman店。&lt;/p&gt;
+&lt;p&gt;二.毒妇，杜甫&lt;/p&gt;
+&lt;p&gt;指的是独立服务器，缩写是独服，因为输入法经常打成毒妇或者是杜甫，所以这个称呼也沿用开了。&lt;/p&gt;
+&lt;p&gt;三.小鸡&lt;/p&gt;
+&lt;p&gt;指小型vps，往往配置非常低，但是麻雀虽小五脏俱全，往往都有独立ip，同时价格也很便宜。&lt;/p&gt;
+&lt;p&gt;另外一个意思就是独立服务器里开出来的小vps，也叫小鸡。&lt;/p&gt;
+&lt;p&gt;四.母鸡&lt;/p&gt;
+&lt;p&gt;指独立服务器。因为vps都是拿独立服务器虚拟出来的（其实就是独服开了一堆虚拟机），所以小vps叫小鸡，生出小vps来的独服叫母鸡。&lt;/p&gt;
+&lt;p&gt;五.超售&lt;/p&gt;</summary>
     
     
     
