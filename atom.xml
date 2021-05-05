@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-04T02:22:55.267Z</updated>
+  <updated>2021-05-05T14:51:06.044Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VPS黑话</title>
+    <link href="https://ednovas.xyz/2021/05/05/vpsheihua/"/>
+    <id>https://ednovas.xyz/2021/05/05/vpsheihua/</id>
+    <published>2021-05-05T14:31:00.000Z</published>
+    <updated>2021-05-05T14:51:06.044Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;一些VPS行业黑话说明&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="黑话" scheme="https://ednovas.xyz/tags/%E9%BB%91%E8%AF%9D/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo博客加密插件</title>
@@ -635,40 +656,6 @@
     <category term="白嫖" scheme="https://ednovas.xyz/tags/%E7%99%BD%E5%AB%96/"/>
     
     <category term="免费" scheme="https://ednovas.xyz/tags/%E5%85%8D%E8%B4%B9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>提高效率————电脑查找清理查重卸载软件</title>
-    <link href="https://ednovas.xyz/2021/04/06/cleaner/"/>
-    <id>https://ednovas.xyz/2021/04/06/cleaner/</id>
-    <published>2021-04-06T00:06:00.000Z</published>
-    <updated>2021-04-06T00:41:03.631Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;Everything&quot;&gt;&lt;a href=&quot;#Everything&quot; class=&quot;headerlink&quot; title=&quot;Everything&quot;&gt;&lt;/a&gt;Everything&lt;/h2&gt;&lt;p&gt;极力推荐&lt;/p&gt;
-&lt;p&gt;一个基于名称快速定位文件和文件夹的软件&lt;/p&gt;
-&lt;h3 id=&quot;特点&quot;&gt;&lt;a href=&quot;#特点&quot; class=&quot;headerlink&quot; title=&quot;特点&quot;&gt;&lt;/a&gt;特点&lt;/h3&gt;&lt;p&gt;轻量安装文件&lt;/p&gt;
-&lt;p&gt;干净简洁的用户界面&lt;/p&gt;
-&lt;p&gt;快速文件索引&lt;/p&gt;
-&lt;p&gt;快速搜索&lt;/p&gt;
-&lt;p&gt;最小资源使用&lt;/p&gt;
-&lt;p&gt;便于文件分享&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="windows" scheme="https://ednovas.xyz/tags/windows/"/>
-    
-    <category term="电脑" scheme="https://ednovas.xyz/tags/%E7%94%B5%E8%84%91/"/>
-    
-    <category term="清理" scheme="https://ednovas.xyz/tags/%E6%B8%85%E7%90%86/"/>
-    
-    <category term="卸载" scheme="https://ednovas.xyz/tags/%E5%8D%B8%E8%BD%BD/"/>
-    
-    <category term="查重" scheme="https://ednovas.xyz/tags/%E6%9F%A5%E9%87%8D/"/>
     
   </entry>
   
