@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-05T17:40:19.131Z</updated>
+  <updated>2021-05-06T11:20:00.976Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,6 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>NZXT CAM 电脑状态监控软件</title>
+    <link href="https://ednovas.xyz/2021/05/06/nzxtcam/"/>
+    <id>https://ednovas.xyz/2021/05/06/nzxtcam/</id>
+    <published>2021-05-06T11:14:00.000Z</published>
+    <updated>2021-05-06T11:20:00.976Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;官方网站：&lt;a href=&quot;https://www.nzxt.com/camapp&quot;&gt;https://www.nzxt.com/camapp&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;使用&quot;&gt;&lt;a href=&quot;#使用&quot; class=&quot;headerlink&quot; title=&quot;使用&quot;&gt;&lt;/a&gt;使用&lt;/h2&gt;&lt;p&gt;软件支持简体中文&lt;/p&gt;
+&lt;p&gt;硬件监控情况&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-06_19-11-40.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;详细系统信息&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-06_19-16-45.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;CPU具体信息&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-06_19-17-49.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="windows" scheme="https://ednovas.xyz/tags/windows/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Pagermaid————Telgeram人形自走bot搭建</title>
     <link href="https://ednovas.xyz/2021/05/05/pagermaid/"/>
     <id>https://ednovas.xyz/2021/05/05/pagermaid/</id>
@@ -24,14 +52,15 @@
     <updated>2021-05-05T17:40:19.131Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;GitHub项目地址：&lt;a href=&quot;https://github.com/Xtao-Labs/PagerMaid-Modify&quot;&gt;https://github.com/Xtao-Labs/PagerMaid-Modify&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
-        
-      
+&lt;h2 id=&quot;一键脚本（不推荐）&quot;&gt;&lt;a href=&quot;#一键脚本（不推荐）&quot; class=&quot;headerlink&quot; title=&quot;一键脚本（不推荐）&quot;&gt;&lt;/a&gt;一键脚本（不推荐）&lt;/h2&gt;&lt;p&gt;我是尝试过用一键脚本安装过的，但是容易出问题，所以不建议&lt;/p&gt;
+&lt;p&gt;一键脚本安装命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;Xtao-Labs&amp;#x2F;PagerMaid-Modify&amp;#x2F;master&amp;#x2F;install.sh -O install.sh&amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; bash install.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;或者：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget https:&amp;#x2F;&amp;#x2F;cdn.jsdelivr.net&amp;#x2F;gh&amp;#x2F;xtaodada&amp;#x2F;PagerMaid-Modify&amp;#x2F;install.sh -O install.sh&amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; bash install.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;脚本已测试系统：centos 7、centos 8、ubuntu 16.04、ubuntu 18.04、ubuntu 20.04、debian 9、debian 10&lt;/p&gt;
+&lt;p&gt;理论支持系统：Centos 7-8、Ubuntu 16.04-20.04、Debian 8-10&lt;/p&gt;
+&lt;h2 id=&quot;Docker安装&quot;&gt;&lt;a href=&quot;#Docker安装&quot; class=&quot;headerlink&quot; title=&quot;Docker安装&quot;&gt;&lt;/a&gt;Docker安装&lt;/h2&gt;</summary>
     
     
     
@@ -54,15 +83,16 @@
     <updated>2021-05-05T14:55:19.983Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;一.oneman:&lt;/p&gt;
 &lt;p&gt;指只有一个人经营的idc服务商，业内比较出名的有ramnode，不过这家严格说并不是oneman，人家是夫妻店，是俩人23333。还有那个常年侮辱中国客户的bugetvz，是个澳洲村炮自己开的oneman店。&lt;/p&gt;
-&lt;p&gt;二.毒妇，杜甫&lt;</summary>
-        
-      
+&lt;p&gt;二.毒妇，杜甫&lt;/p&gt;
+&lt;p&gt;指的是独立服务器，缩写是独服，因为输入法经常打成毒妇或者是杜甫，所以这个称呼也沿用开了。&lt;/p&gt;
+&lt;p&gt;三.小鸡&lt;/p&gt;
+&lt;p&gt;指小型vps，往往配置非常低，但是麻雀虽小五脏俱全，往往都有独立ip，同时价格也很便宜。&lt;/p&gt;
+&lt;p&gt;另外一个意思就是独立服务器里开出来的小vps，也叫小鸡。&lt;/p&gt;
+&lt;p&gt;四.母鸡&lt;/p&gt;
+&lt;p&gt;指独立服务器。因为vps都是拿独立服务器虚拟出来的（其实就是独服开了一堆虚拟机），所以小vps叫小鸡，生出小vps来的独服叫母鸡。&lt;/p&gt;
+&lt;p&gt;五.超售&lt;/p&gt;</summary>
     
     
     
@@ -83,14 +113,19 @@
     <updated>2021-05-04T02:22:55.267Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;GitHub项目地址：&lt;a href=&quot;https://github.com/D0n9X1n/hexo-blog-encrypt&quot;&gt;https://github.com/D0n9X1n/hexo-blog-encrypt&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;低级&quot;&gt;&lt;a</summary>
-        
-      
+&lt;h2 id=&quot;低级&quot;&gt;&lt;a href=&quot;#低级&quot; class=&quot;headerlink&quot; title=&quot;低级&quot;&gt;&lt;/a&gt;低级&lt;/h2&gt;&lt;h3 id=&quot;实现&quot;&gt;&lt;a href=&quot;#实现&quot; class=&quot;headerlink&quot; title=&quot;实现&quot;&gt;&lt;/a&gt;实现&lt;/h3&gt;&lt;p&gt;打开&lt;code&gt;yourblogsite/themes/next/layout/custom/head.swig&lt;/code&gt;文件，在&lt;head&gt;&lt;/head&gt;之间添加以下内容&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#JavaScript&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    (function()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        if(&amp;#39;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&amp;#39;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            if (prompt(&amp;#39;请输入密码&amp;#39;) !&amp;#x3D;&amp;#x3D; &amp;#39;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&amp;#39;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                alert(&amp;#39;密码错误&amp;#39;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                history.back();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;)();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;&amp;#x2F;script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;之后，在你想要加密的文章的头文件里添加上password: yourpassword即可。&lt;/p&gt;
+&lt;p&gt;注意，这里仅针对Hexo平台的next主题。但是，它的代码和思想是通用的，你在Hexo的其他主题，甚至是Jekyll的主题里也是可以做到的，只是要摆放的位置会不一样。位置的要点是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;模板文件。无论是Hexo还是Jekyll，都应该在layout文件夹中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;head&gt;&lt;/head&gt;之间。其实在其他位置也是可行的，但是在此代码之前的一些内容可能会被加载，不完美。
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;存在问题&quot;&gt;&lt;a href=&quot;#存在问题&quot; class=&quot;headerlink&quot; title=&quot;存在问题&quot;&gt;&lt;/a&gt;存在问题&lt;/h3&gt;&lt;p&gt;目前主要问题是：&lt;/p&gt;</summary>
     
     
     
@@ -115,13 +150,12 @@
     <updated>2021-05-03T10:00:23.817Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;ArchiSteamFarm 是很多进阶级 Steam 用户熟知的软件，它允许用户进行批量性的 Steam 帐号管理且支持效率很高的批量挂卡任务。其支持 Windows/ Linux/ Mac OS 系统，且各平台配置方式差异不大，所以如果你之前就已经用过其它平台的</summary>
-        
-      
+    <summary type="html">&lt;p&gt;ArchiSteamFarm 是很多进阶级 Steam 用户熟知的软件，它允许用户进行批量性的 Steam 帐号管理且支持效率很高的批量挂卡任务。其支持 Windows/ Linux/ Mac OS 系统，且各平台配置方式差异不大，所以如果你之前就已经用过其它平台的 ASF 程序，通过这篇文章你就可以很轻松地搭建远程 ASF 程序并通过网页进行管理。&lt;/p&gt;
+&lt;h2 id=&quot;Windows端：&quot;&gt;&lt;a href=&quot;#Windows端：&quot; class=&quot;headerlink&quot; title=&quot;Windows端：&quot;&gt;&lt;/a&gt;Windows端：&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.bilibili.com/read/cv161719/&quot;&gt;https://www.bilibili.com/read/cv161719/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://justarchinet.github.io/ASF-WebConfigGenerator/#/bot&quot;&gt;https://justarchinet.github.io/ASF-WebConfigGenerator/#/bot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/JustArchiNET/ArchiSteamFarm&quot;&gt;https://github.com/JustArchiNET/ArchiSteamFarm&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Linux（VPS）端：&quot;&gt;&lt;a href=&quot;#Linux（VPS）端：&quot; class=&quot;headerlink&quot; title=&quot;Linux（VPS）端：&quot;&gt;&lt;/a&gt;Linux（VPS）端：&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://yimouleng.com/2017/08/30/archisteamfarm3/&quot;&gt;https://yimouleng.com/2017/08/30/archisteamfarm3/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Linux端挂卡页面&quot;&gt;&lt;a href=&quot;#Linux端挂卡页面&quot; class=&quot;headerlink&quot; title=&quot;Linux端挂卡页面&quot;&gt;&lt;/a&gt;Linux端挂卡页面&lt;/h2&gt;&lt;h3 id=&quot;环境配置&quot;&gt;&lt;a href=&quot;#环境配置&quot; class=&quot;headerlink&quot; title=&quot;环境配置&quot;&gt;&lt;/a&gt;环境配置&lt;/h3&gt;&lt;p&gt;此处以 Centos 7.2 为例，其它系统版本自行替换系统命令即可&lt;/p&gt;</summary>
     
     
     
@@ -146,15 +180,15 @@
     <updated>2021-05-03T04:34:42.765Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;奇技淫巧，请勿滥用&lt;/p&gt;
 &lt;p&gt;GitHub Actions 虚拟服务器(VM/VPS)评测（源自p3trex大佬）：&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
+&lt;p&gt;&lt;a href=&quot;https://p3terx.com/archives/github-actions-virtual-environment-simple-evaluation.html&quot;&gt;https://p3terx.com/archives/github-actions-virtual-environment-simple-evaluation.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;实际上 GitHub Ac­tions 本身是不允许直接连接进行交互式操作，但有好事的开发者竟然另辟蹊径通过安装 tmate 来实现了 SSH 连接，并且制作了相关的 ac­tion 。这使得我们可以非常容易连接到 Ac­tions 的虚拟环境中，相当于免费获得了 20 台 E5 2vCPU/​7G RAM/​90G SSD 配置的 Linux VPS 和 5 台 ma­cOS VPS。&lt;/p&gt;
+&lt;h2 id=&quot;tmate&quot;&gt;&lt;a href=&quot;#tmate&quot; class=&quot;headerlink&quot; title=&quot;tmate&quot;&gt;&lt;/a&gt;tmate&lt;/h2&gt;&lt;p&gt;GitHub项目地址：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mxschmitt/action-tmate&quot;&gt;https://github.com/mxschmitt/action-tmate&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;第一个实现 tmate 连接 Ac­tions 的 ac­tion ，但此方案在退出连接后不能进行到下一个步骤，所以在实际使用中没有多少价值，且极易造成资源浪费，所以只能用于 SSH 连接。不过由于其开天辟地的作用，我决定把它放到第一位。&lt;/p&gt;
+&lt;p&gt;work­flow 文件示例：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;name: Ubuntu&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;on: push&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;jobs:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  build:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    runs-on: ubuntu-latest&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    steps:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - uses: actions&amp;#x2F;checkout@v1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - name: Setup tmate session&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      uses: mxschmitt&amp;#x2F;action-tmate@v1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -179,15 +213,14 @@
     <updated>2021-05-02T14:38:12.897Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;今天在ubuntu机器中发现了刚装了的系统居然有个叫unattended-upgrade的程序一直占用100%的cpu，那必须得杀！&lt;/p&gt;
 &lt;p&gt;直接 sudo kill -9 PID好像行不通&lt;/p&gt;
-&lt;p&gt;更改&lt;code&gt;config file&lt;/code&gt;</summary>
-        
-      
+&lt;p&gt;更改&lt;code&gt;config file&lt;/code&gt; &lt;code&gt;/etc/apt/apt.conf.d/20auto-upgrades&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo dpkg-reconfigure -plow unattended-upgrades&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;设置 &lt;code&gt;APT::Periodic::Unattended-Upgrade&lt;/code&gt; 为 “0”&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cat &amp;#x2F;etc&amp;#x2F;apt&amp;#x2F;apt.conf.d&amp;#x2F;20auto-upgrades&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后再 &lt;code&gt;kill -9 pid&lt;/code&gt; 应该就能杀死了&lt;/p&gt;
+</summary>
     
     
     
@@ -210,14 +243,15 @@
     <updated>2021-05-02T14:31:18.126Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;官网：&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
+&lt;p&gt;&lt;a href=&quot;https://ditto-cp.sourceforge.io/&quot;&gt;https://ditto-cp.sourceforge.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官方下载直连（3.24.184.0版本）：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/sabrogden/Ditto/releases/download/3.24.184.0/DittoSetup_64bit_3_24_184_0.exe&quot;&gt;https://github.com/sabrogden/Ditto/releases/download/3.24.184.0/DittoSetup_64bit_3_24_184_0.exe&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GitHub地址：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/sabrogden/Ditto&quot;&gt;https://github.com/sabrogden/Ditto&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这款软件同时在Microsoft Store里上架了UWP版本&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.microsoft.com/en-us/p/ditto-clipboard/9nblggh3zbjq?activetab=pivot:overviewtab&quot;&gt;https://www.microsoft.com/en-us/p/ditto-clipboard/9nblggh3zbjq?activetab=pivot:overviewtab&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;</summary>
     
     
     
@@ -242,13 +276,13 @@
     <updated>2021-05-01T14:11:22.373Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;可能在大家手里面早就有了几个OneDrive的号，有个人号，E5管理号，A1子号，A1P子号，世纪互联子号，可是都是空的，也不敢存太多东西，要是能够转存资源就好了，刚好发现了一个比较优秀的网站，可以转存多种主流网盘(注:国外的)，当然也包括OneDrive不同域之间的转存，最重要的是，完全免费，只有一点小限制，而它这就是 mover.io。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/2021/02/10/officee5/&quot;&gt;e5账户注册&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-f71c12dc94fbf0d8c44ba737517d30e1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这个网站之前就是网盘搬家类的，就在去年2019年10月21号，被微软收购了(巨硬有钱任性)，现在用于将云文件迁移到OFFICE365(包括谷歌网盘，亚马逊等)，只进不出，接下来简单介绍一下!&lt;/p&gt;
+&lt;h2 id=&quot;官网地址&quot;&gt;&lt;a href=&quot;#官网地址&quot; class=&quot;headerlink&quot; title=&quot;官网地址&quot;&gt;&lt;/a&gt;官网地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://mover.io/&quot;&gt;https://mover.io&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;账号注册&quot;&gt;&lt;a href=&quot;#账号注册&quot; class=&quot;headerlink&quot; title=&quot;账号注册&quot;&gt;&lt;/a&gt;账号注册&lt;/h2&gt;&lt;p&gt;可以直接用微软账户登录&lt;/p&gt;
+&lt;h2 id=&quot;连接器&quot;&gt;&lt;a href=&quot;#连接器&quot; class=&quot;headerlink&quot; title=&quot;连接器&quot;&gt;&lt;/a&gt;连接器&lt;/h2&gt;</summary>
     
     
     
@@ -277,14 +311,18 @@
     <updated>2021-04-30T11:35:54.130Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;GitHub项目地址：&lt;a</summary>
-        
-      
+&lt;p&gt;GitHub项目地址：&lt;a href=&quot;https://github.com/LouisBarranqueiro/hexo-algoliasearch&quot;&gt;https://github.com/LouisBarranqueiro/hexo-algoliasearch&lt;/a&gt;&lt;br&gt;参考文章 &lt;a href=&quot;https://segmentfault.com/a/1190000019340523&quot;&gt;https://segmentfault.com/a/1190000019340523&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://butterfly.js.org/posts/ceeb73f/&quot;&gt;https://butterfly.js.org/posts/ceeb73f/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;博客自带的本地搜索功能普遍鸡肋，建议换成algolia这个强大还免费的搜索系统&lt;/p&gt;
+&lt;p&gt;博客目录执行命令安装algolia&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-algoliasearch --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Algolia 登陆页面 &lt;a href=&quot;https://www.algolia.com/users/sign_in%EF%BC%8C%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8&quot;&gt;https://www.algolia.com/users/sign_in，可以使用&lt;/a&gt; GitHub 或者 Google 账户直接登录，也可以注册一个新账户。&lt;/p&gt;
+&lt;p&gt;注册后的 14 天内拥有所有功能（包括收费类别的）。之后若未续费会自动降级为免费账户，免费账户 总共有 10,000 条记录，每月有 100,000 的可以操作数。免费版对于一个博客来说也是足足够的了&lt;/p&gt;
+&lt;p&gt;登录以后，创建一个新的 Index，这个 index name 之后会用到，要记住了&lt;/p&gt;
+&lt;p&gt;选择API Keys，然后复制并保存Application ID，Search-Only API Key 和 Admin API Key&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/04-30_19-24-56.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;GitHub文档给出的是以下的fields，我没有用到，就使用了其中几个&lt;/p&gt;</summary>
     
     
     
@@ -311,16 +349,16 @@
     <updated>2021-04-30T09:58:51.334Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;首先你要制作自己的订阅链接肯定手里有一些自己的节点，而管理多节点的话，最好用的工具还是v2rayn了&lt;/p&gt;
 &lt;p&gt;全选你的所有节点，然后复制或ctrl+c，黏贴到base64转换网址&lt;/p&gt;
 &lt;p&gt;比如&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
+&lt;p&gt;&lt;a href=&quot;https://tool.chinaz.com/tools/base64.aspx&quot;&gt;https://tool.chinaz.com/tools/base64.aspx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.sojson.com/base64.html&quot;&gt;https://www.sojson.com/base64.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://tool.oschina.net/encrypt?type=3&quot;&gt;https://tool.oschina.net/encrypt?type=3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;转换完成后你会得到base64加密后的一串乱码，复制黏贴这串乱码，保存到你个你能在网页上获取到直链的地方&lt;/p&gt;
+&lt;p&gt;比如&lt;/p&gt;
+&lt;p&gt;github，gitee，vercel，gitlab等&lt;/p&gt;
+&lt;p&gt;新建一个仓库，新建一个md文档，然后黏贴，保存。&lt;/p&gt;</summary>
     
     
     
@@ -345,14 +383,11 @@
     <updated>2021-04-27T14:54:36.850Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;ubuntu1804安装redis的时候报错 Failed to start Advanced key-value store&lt;/p&gt;
-&lt;p&gt;问题描述, 使用apt安装redis报错, 执行的命令是sudo apt install redis-server,</summary>
-        
-      
+&lt;p&gt;问题描述, 使用apt安装redis报错, 执行的命令是sudo apt install redis-server, 报错信息Failed to start Advanced key-value store&lt;br&gt;原因: redis默认只支持ipv6访问, 所以如果服务器没设置ipv6的话，就会报错&lt;br&gt;解决办法:&lt;br&gt;修改redis的配置文件, sudo vim /etc/redis/redis.conf, 将bind 127.0.0.1 ::1修改为bind 127.0.0.1&lt;/p&gt;
+&lt;p&gt;重启redis服务, 执行service redis restart 或 redis-server&lt;/p&gt;
+&lt;p&gt;版权声明：本文为CSDN博主「littlehaes」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。&lt;br&gt;原文链接：&lt;a href=&quot;https://blog.csdn.net/littlehaes/article/details/104692822&quot;&gt;https://blog.csdn.net/littlehaes/article/details/104692822&lt;/a&gt;&lt;/p&gt;
+</summary>
     
     
     
@@ -373,13 +408,14 @@
     <updated>2021-04-27T02:56:27.793Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;WordPress是一个以PHP和MySQL为平台的自由开源的博客软件和内容管理系统。WordPress具有插件架构和模板系统。截至2018年4月，排名前1000万的网站中超过30.6%使用WordPress。WordPress是最受欢迎的网站内容管理系统。全球有大约30%的网站都是使用WordPress架设网站的。&lt;/p&gt;
+&lt;p&gt;wordpress最大的优点就是相较于静态博客很好搭建，而且类似傻瓜式建站的方法，不需要懂任何代码都可以建站。&lt;/p&gt;
+&lt;p&gt;wordpress也有相应的比较明显的缺点，那就是动态网站占用很大，需要配置好的机器。由于功能过于强大，会产生诸如兼容性，插件等各种未知bug，好看的主题都需要付费等问题。&lt;/p&gt;
+&lt;h2 id=&quot;宝塔面板&quot;&gt;&lt;a href=&quot;#宝塔面板&quot; class=&quot;headerlink&quot; title=&quot;宝塔面板&quot;&gt;&lt;/a&gt;宝塔面板&lt;/h2&gt;&lt;p&gt;为了方便起见，还是使用宝塔面板&lt;/p&gt;
+&lt;p&gt;首先用SSH连接上VPS&lt;/p&gt;
+&lt;p&gt;输入正确的IP,22端口，root和root密码，点击连接(ssh root@ipaddress -p 22)&lt;/p&gt;
+&lt;p&gt;然后安装宝塔面板&lt;/p&gt;
+&lt;p&gt;centos 安装&lt;/p&gt;</summary>
     
     
     
@@ -404,13 +440,15 @@
     <updated>2021-04-22T14:07:43.895Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;安装宝塔&quot;&gt;&lt;a href=&quot;#安装宝塔&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;安装宝塔&quot;&gt;&lt;a href=&quot;#安装宝塔&quot; class=&quot;headerlink&quot; title=&quot;安装宝塔&quot;&gt;&lt;/a&gt;安装宝塔&lt;/h2&gt;&lt;p&gt;为了方便，还是安装宝塔或者aapanel（宝塔国际版），个人认为aapanel比宝塔好用不止一点，很多设置更加人性化，不过语言是英文的&lt;/p&gt;
+&lt;p&gt;宝塔：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.bt.cn/&quot;&gt;https://www.bt.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装：&lt;a href=&quot;https://www.bt.cn/bbs/thread-19376-1-1.html&quot;&gt;https://www.bt.cn/bbs/thread-19376-1-1.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;aapanel：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.aapanel.com/index.html&quot;&gt;https://www.aapanel.com/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装：&lt;a href=&quot;https://www.aapanel.com/install.html&quot;&gt;https://www.aapanel.com/install.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ubuntu&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -O install.sh http:&amp;#x2F;&amp;#x2F;www.aapanel.com&amp;#x2F;script&amp;#x2F;install-ubuntu_6.0_en.sh &amp;amp;&amp;amp; sudo bash install.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -437,16 +475,12 @@
     <updated>2021-04-22T09:36:28.131Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;K-Lite Codec Pack为让操作系统及其软件得以播放众多一般而言操作系统自身并不支持的音频及视频格式的Microsoft Windows用解码器安装包。&lt;/p&gt;
 &lt;p&gt;包括madvr，lav等集成解码包&lt;/p&gt;
 &lt;p&gt;官网：&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
+&lt;p&gt;&lt;a href=&quot;https://codecguide.com/download_kl.htm&quot;&gt;https://codecguide.com/download_kl.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/2021/04/19/lavmadvr/&quot;&gt;Pot+LAV+madVR配置教程&lt;/a&gt;&lt;/p&gt;
+</summary>
     
     
     
@@ -469,14 +503,18 @@
     <updated>2021-04-19T12:05:53.219Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;potplayer下载地址：&lt;a href=&quot;https://daumpotplayer.com/download/&quot;&gt;https://daumpotplayer.com/download/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;potplayer 64位windows下载直链：&lt;a</summary>
-        
-      
+&lt;p&gt;potplayer 64位windows下载直链：&lt;a href=&quot;https://daumpotplayer.com/wp-content/uploads/2021/03/PotPlayerSetup64.exe&quot;&gt;https://daumpotplayer.com/wp-content/uploads/2021/03/PotPlayerSetup64.exe&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;LAV Filters下载地址：&lt;a href=&quot;https://github.com/Nevcairiel/LAVFilters/releases&quot;&gt;https://github.com/Nevcairiel/LAVFilters/releases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;madVR下载地址：&lt;a href=&quot;http://www.madvr.com/&quot;&gt;http://www.madvr.com/&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&quot;https://tieba.baidu.com/p/7171344019?qq-pf-to=pcqq.group&quot;&gt;https://tieba.baidu.com/p/7171344019?qq-pf-to=pcqq.group&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c348828fa0ec08fac29b66e14eee3d6d54fbdaac.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/5342da3d70cf3bc7bc93b8aac600baa1cc112aab.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/8eeade11728b471093bc888ad4cec3fdfd0323ab.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/fd7663cf3bc79f3ddc729176ada1cd11738b29ab.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93cdda177f3e6709e99330b92cc79f3df9dc55ab.png&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -499,14 +537,13 @@
     <updated>2021-04-19T11:56:24.525Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;Premium URL Shortener是一个高级短网址缩短程序，带API功能，可以整合到自有其他平台。&lt;/p&gt;
-&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;网站程序下载：&lt;a href=&quot;https://ednovas.lanzous.com/igqhSo9roti&quot;&gt;https://ednovas.lanzous.com/igqhSo9roti&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;伪静态规则&quot;&gt;&lt;a href=&quot;#伪静态规则&quot; class=&quot;headerlink&quot; title=&quot;伪静态规则&quot;&gt;&lt;/a&gt;伪静态规则&lt;/h2&gt;&lt;p&gt;Nginx伪静态规则&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;if (!-e $request_filename)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        rewrite ^&amp;#x2F;admin&amp;#x2F;(.*)?$ &amp;#x2F;admin&amp;#x2F;index.php?a&amp;#x3D;$1 break;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        rewrite ^&amp;#x2F;(.*)$ &amp;#x2F;index.php?a&amp;#x3D;$1 last;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        break; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Apache伪静态规则&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;IfModule mod_rewrite.c&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;IfModule mod_negotiation.c&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Options -MultiViews -Indexes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;&amp;#x2F;IfModule&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;DEMO&quot;&gt;&lt;a href=&quot;#DEMO&quot; class=&quot;headerlink&quot; title=&quot;DEMO&quot;&gt;&lt;/a&gt;DEMO&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://url.ednova.xyz/&quot;&gt;https://url.ednova.xyz&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
@@ -531,14 +568,15 @@
     <updated>2021-04-15T07:18:17.530Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自P3TERX大佬 &lt;a</summary>
-        
-      
+&lt;p&gt;转载自P3TERX大佬 &lt;a href=&quot;https://p3terx.com/archives/use-he-tunnel-broker-to-add-public-network-ipv6-support-to-ipv4-vps-for-free.html&quot;&gt;https://p3terx.com/archives/use-he-tunnel-broker-to-add-public-network-ipv6-support-to-ipv4-vps-for-free.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://p3terx.com/go/aHR0cHM6Ly9oZS5uZXQ&quot;&gt;Hurricane Electric&lt;/a&gt; (简称：HE) 是一家位于美国的全球互联网服务提供商。该公司运营了世界上以对等数目计算的最大 IPv6 网络，同时也提供免费的 IPv6 隧道服务。早在 IPv6 还未普及的时代，博主曾用它家的服务给家里的宽带接入了 IPv6 网络，优先体验了一把，同时也积累了一些 IPv6 网络的使用经验。虽然经过多年的发展 IPv6 已经相当普及，但依然还是有部分 VPS 商家由于各种各样的原因没有给 VPS 标配 IPv6 地址，有的需要加钱、有的甚至不给加钱。当我们有访问 IPv6 网络的需求，就比如给 IPv6 Only VPS 主机做 SSH 跳板，则可以使用 HE Tun­nel Bro­ker 提供的 IPv6 隧道免费给 IPv4 VPS 主机添加一个公网 IPv6 地址来获得 IPv6 网络的访问能力。&lt;/p&gt;
+&lt;h2 id=&quot;创建-Tunnel-Broker-IPv6-隧道&quot;&gt;&lt;a href=&quot;#创建-Tunnel-Broker-IPv6-隧道&quot; class=&quot;headerlink&quot; title=&quot;创建 Tunnel Broker IPv6 隧道&quot;&gt;&lt;/a&gt;创建 Tunnel Broker IPv6 隧道&lt;/h2&gt;&lt;p&gt;注册 &lt;a href=&quot;https://p3terx.com/go/aHR0cHM6Ly93d3cudHVubmVsYnJva2VyLm5ldA&quot;&gt;Tunnel Broker&lt;/a&gt; 账号&lt;br&gt;点击左侧的Create Regular Tunnel(创建常规隧道)&lt;br&gt;输入 VPS 的公网 IP 地址&lt;br&gt;根据 VPS 的位置选择一个合适的节点&lt;br&gt;页面拉到最下方，点击Create Tunnel(创建隧道)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210214034651.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在 Tunnel Details 页面可以看到创建的 IPv6 隧道的详细信息，其中 Client IPv6 Address 是申请到公网 IPv6 地址。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210214040003.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;获取配置示例&quot;&gt;&lt;a href=&quot;#获取配置示例&quot; class=&quot;headerlink&quot; title=&quot;获取配置示例&quot;&gt;&lt;/a&gt;获取配置示例&lt;/h2&gt;&lt;p&gt;在 Tunnel Details 页面有个 Example Configuration 选项卡，在这里你可以选择合适的配置示例。就比如这里有 De­bian/​Ubuntu 的 interfaces 配置文件示例：&lt;/p&gt;</summary>
     
     
     
@@ -563,14 +601,16 @@
     <updated>2021-04-15T07:11:05.014Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自P3TERX大佬 &lt;a</summary>
-        
-      
+&lt;p&gt;转载自P3TERX大佬 &lt;a href=&quot;https://p3terx.com/archives/use-cloudflare-warp-to-add-extra-ipv4-or-ipv6-network-support-to-vps-servers-for-free.html&quot;&gt;https://p3terx.com/archives/use-cloudflare-warp-to-add-extra-ipv4-or-ipv6-network-support-to-vps-servers-for-free.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://p3terx.com/go/aHR0cHM6Ly8xLjEuMS4xLw&quot;&gt;WARP&lt;/a&gt; 是 Cloud­flare 提供的一项基于 Wire­Guard 的网络流量安全及加速服务，能够让你通过连接到 Cloud­flare 的边缘节点实现隐私保护及链路优化。其连接入口为双栈 (IPv4/​IPv6)，因此单栈服务器可以连接到 WARP 来获取额外的网络连通性支持。&lt;/p&gt;
+&lt;p&gt;比如可以让仅具有 IPv6 的服务器直接访问 IPv4 网络，不再局限于 DNS64 的束缚，能自定义任意 DNS 解析服务器，对于科学上网会有很大的帮助；也能让仅具有 IPv4 的服务器获得 IPv6 网络的访问能力，可以作为 IPv6 Only VPS 的 SSH 跳板。另外科学上网通过 WARP 网络可以实现解锁 Net­flix 、绕过 Google 验证码等骚操作。&lt;/p&gt;
+&lt;p&gt;与之前介绍的 &lt;a href=&quot;https://p3terx.com/archives/use-he-tunnel-broker-to-add-public-network-ipv6-support-to-ipv4-vps-for-free.html&quot;&gt;Hurricane Electric IPv6 Tunnel Broker&lt;/a&gt; 不同，WARP 并不提供公网 IP 地址，而是以 NAT 的方式去访问外部网络。此外 Cloud­Flare WARP 的网络质量目前要比 HE 好非常多的。&lt;/p&gt;
+&lt;h2 id=&quot;安装-WireGuard&quot;&gt;&lt;a href=&quot;#安装-WireGuard&quot; class=&quot;headerlink&quot; title=&quot;安装 WireGuard&quot;&gt;&lt;/a&gt;安装 WireGuard&lt;/h2&gt;&lt;p&gt;既然 WARP 是基于 Wire­Guard 的，那么我们首先就需要安装 Wire­Guard 。由于博主使用的是 De­bian ，所以只写了 De­bian 的 Wire­Guard 详细安装方法，其它系统可以参考&lt;a href=&quot;https://p3terx.com/go/aHR0cHM6Ly93d3cud2lyZWd1YXJkLmNvbS9pbnN0YWxsLw&quot;&gt;官方文档&lt;/a&gt;来进行安装。&lt;/p&gt;
+&lt;p&gt;首先安装一些必要的工具，防止接下来的操作出问题。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;apt install curl sudo lsb-release -y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;按照《&lt;a href=&quot;https://p3terx.com/archives/debian-linux-vps-server-wireguard-installation-tutorial.html&quot;&gt;Debian Linux VPS WireGuard 安装教程&lt;/a&gt;》中简单的几个步骤完成安装工作。&lt;/p&gt;</summary>
     
     
     
@@ -597,13 +637,13 @@
     <updated>2021-05-02T11:15:41.420Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Ubuntu-Debian下安装CPUlimit&quot;&gt;&lt;a href=&quot;#Ubuntu-Debian下安装CPUlimit&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;Ubuntu-Debian下安装CPUlimit&quot;&gt;&lt;a href=&quot;#Ubuntu-Debian下安装CPUlimit&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu/Debian下安装CPUlimit&quot;&gt;&lt;/a&gt;Ubuntu/Debian下安装CPUlimit&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt install cpulimit&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;CentOS下安装：&quot;&gt;&lt;a href=&quot;#CentOS下安装：&quot; class=&quot;headerlink&quot; title=&quot;CentOS下安装：&quot;&gt;&lt;/a&gt;CentOS下安装：&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install cpulimit&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;使用说明&quot;&gt;&lt;a href=&quot;#使用说明&quot; class=&quot;headerlink&quot; title=&quot;使用说明&quot;&gt;&lt;/a&gt;使用说明&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cpulimit -h&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;使用说明：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Usage: cpulimit TARGET [OPTIONS...] [-- PROGRAM]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   TARGET must be exactly one of these:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -p, --pid&amp;#x3D;N        pid of the process&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -e, --exe&amp;#x3D;FILE     name of the executable program file&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                         The -e option only works when&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                         cpulimit is run with admin rights.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -P, --path&amp;#x3D;PATH    absolute path name of the&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                         executable program file&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   OPTIONS&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -b  --background   run in background&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -f  --foreground   launch target process in foreground and wait for it to exit&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -c  --cpu&amp;#x3D;N        override the detection of CPUs on the machine.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -l, --limit&amp;#x3D;N      percentage of cpu allowed from 1 up.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                         Usually 1 - 100, but can be higher&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                         on multi-core CPUs (mandatory)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -m, --monitor-forks  Watch children&amp;#x2F;forks of the target process&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -q, --quiet        run in quiet mode (only print errors).&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -k, --kill         kill processes going over their limit&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                         instead of just throttling them.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -r, --restore      Restore processes after they have&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                         been killed. Works with the -k flag.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -s, --signal&amp;#x3D;SIG   Send this signal to the watched process when cpulimit exits.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                         Signal should be specificed as a number or &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                         SIGTERM, SIGCONT, SIGSTOP, etc. SIGCONT is the default.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -v, --verbose      show control statistics&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -z, --lazy         exit if there is no suitable target process,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                         or if it dies&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          --             This is the final CPUlimit option. All following&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                         options are for another program we will launch.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -h, --help         display this help and exit&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;如果想要限制某个程序，比如xmrig挖矿程序，可以使用&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cpulimit -e xmrig -l 80&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -619,38 +659,6 @@
     <category term="命令" scheme="https://ednovas.xyz/tags/%E5%91%BD%E4%BB%A4/"/>
     
     <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>RSS阅读器</title>
-    <link href="https://ednovas.xyz/2021/04/14/rss/"/>
-    <id>https://ednovas.xyz/2021/04/14/rss/</id>
-    <published>2021-04-13T20:14:00.000Z</published>
-    <updated>2021-05-04T13:57:25.055Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载编辑自知乎crystal &lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="RSS" scheme="https://ednovas.xyz/tags/RSS/"/>
-    
-    <category term="阅读器" scheme="https://ednovas.xyz/tags/%E9%98%85%E8%AF%BB%E5%99%A8/"/>
-    
-    <category term="测评" scheme="https://ednovas.xyz/tags/%E6%B5%8B%E8%AF%84/"/>
     
   </entry>
   
