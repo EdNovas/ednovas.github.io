@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-07T05:24:43.318Z</updated>
+  <updated>2021-05-07T13:01:50.113Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自己“搭建”Speedtest测速网站</title>
+    <link href="https://ednovas.xyz/2021/05/07/speedtestcustom/"/>
+    <id>https://ednovas.xyz/2021/05/07/speedtestcustom/</id>
+    <published>2021-05-07T12:14:00.000Z</published>
+    <updated>2021-05-07T13:01:50.113Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在 &lt;a href=&quot;https://www.ookla.com/speedtest-custom&quot;&gt;https://www.ookla.com/speedtest-custom&lt;/a&gt; 页面点击 Start for Free 并注册个账户&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://account.ookla.com/&quot;&gt;https://account.ookla.com/&lt;/a&gt; 登录账户以后点击 Speedtest Custom 下的Go to costum 进入 dashboard&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://account.speedtestcustom.com/dashboard&quot;&gt;https://account.speedtestcustom.com/dashboard&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;然后在configure页面自定义创建你想要的面板&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://account.speedtestcustom.com/configuration/test&quot;&gt;https://account.speedtestcustom.com/configuration/test&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Enable HTTPS 建议勾选&lt;/p&gt;
+&lt;p&gt;这样你的测速网站就“搭建”好了&lt;/p&gt;
+&lt;p&gt;DEMO：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ednovas.speedtestcustom.com/&quot;&gt;https://ednovas.speedtestcustom.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;还有 Embed 也就是页面引入，比如：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="speedtest" scheme="https://ednovas.xyz/tags/speedtest/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo提交百度和Google谷歌收录</title>
@@ -631,42 +663,6 @@
     <category term="ipv4" scheme="https://ednovas.xyz/tags/ipv4/"/>
     
     <category term="ipv6" scheme="https://ednovas.xyz/tags/ipv6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 Cloudflare WARP 给 VPS 服务器免费添加 IPv4 或 IPv6 网络支持</title>
-    <link href="https://ednovas.xyz/2021/04/15/warpipv6/"/>
-    <id>https://ednovas.xyz/2021/04/15/warpipv6/</id>
-    <published>2021-04-15T07:37:45.000Z</published>
-    <updated>2021-04-15T07:11:05.014Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自P3TERX大佬 &lt;a href=&quot;https://p3terx.com/archives/use-cloudflare-warp-to-add-extra-ipv4-or-ipv6-network-support-to-vps-servers-for-free.html&quot;&gt;https://p3terx.com/archives/use-cloudflare-warp-to-add-extra-ipv4-or-ipv6-network-support-to-vps-servers-for-free.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://p3terx.com/go/aHR0cHM6Ly8xLjEuMS4xLw&quot;&gt;WARP&lt;/a&gt; 是 Cloud­flare 提供的一项基于 Wire­Guard 的网络流量安全及加速服务，能够让你通过连接到 Cloud­flare 的边缘节点实现隐私保护及链路优化。其连接入口为双栈 (IPv4/​IPv6)，因此单栈服务器可以连接到 WARP 来获取额外的网络连通性支持。&lt;/p&gt;
-&lt;p&gt;比如可以让仅具有 IPv6 的服务器直接访问 IPv4 网络，不再局限于 DNS64 的束缚，能自定义任意 DNS 解析服务器，对于科学上网会有很大的帮助；也能让仅具有 IPv4 的服务器获得 IPv6 网络的访问能力，可以作为 IPv6 Only VPS 的 SSH 跳板。另外科学上网通过 WARP 网络可以实现解锁 Net­flix 、绕过 Google 验证码等骚操作。&lt;/p&gt;
-&lt;p&gt;与之前介绍的 &lt;a href=&quot;https://p3terx.com/archives/use-he-tunnel-broker-to-add-public-network-ipv6-support-to-ipv4-vps-for-free.html&quot;&gt;Hurricane Electric IPv6 Tunnel Broker&lt;/a&gt; 不同，WARP 并不提供公网 IP 地址，而是以 NAT 的方式去访问外部网络。此外 Cloud­Flare WARP 的网络质量目前要比 HE 好非常多的。&lt;/p&gt;
-&lt;h2 id=&quot;安装-WireGuard&quot;&gt;&lt;a href=&quot;#安装-WireGuard&quot; class=&quot;headerlink&quot; title=&quot;安装 WireGuard&quot;&gt;&lt;/a&gt;安装 WireGuard&lt;/h2&gt;&lt;p&gt;既然 WARP 是基于 Wire­Guard 的，那么我们首先就需要安装 Wire­Guard 。由于博主使用的是 De­bian ，所以只写了 De­bian 的 Wire­Guard 详细安装方法，其它系统可以参考&lt;a href=&quot;https://p3terx.com/go/aHR0cHM6Ly93d3cud2lyZWd1YXJkLmNvbS9pbnN0YWxsLw&quot;&gt;官方文档&lt;/a&gt;来进行安装。&lt;/p&gt;
-&lt;p&gt;首先安装一些必要的工具，防止接下来的操作出问题。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;apt install curl sudo lsb-release -y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;按照《&lt;a href=&quot;https://p3terx.com/archives/debian-linux-vps-server-wireguard-installation-tutorial.html&quot;&gt;Debian Linux VPS WireGuard 安装教程&lt;/a&gt;》中简单的几个步骤完成安装工作。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
-    
-    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
-    
-    <category term="ipv4" scheme="https://ednovas.xyz/tags/ipv4/"/>
-    
-    <category term="ipv6" scheme="https://ednovas.xyz/tags/ipv6/"/>
-    
-    <category term="warp" scheme="https://ednovas.xyz/tags/warp/"/>
     
   </entry>
   

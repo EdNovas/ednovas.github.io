@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>自己“搭建”Speedtest测速网站</title>
+      <link href="2021/05/07/speedtestcustom/"/>
+      <url>2021/05/07/speedtestcustom/</url>
+      
+        <content type="html"><![CDATA[<p>在 <a href="https://www.ookla.com/speedtest-custom">https://www.ookla.com/speedtest-custom</a> 页面点击 Start for Free 并注册个账户</p><p><a href="https://account.ookla.com/">https://account.ookla.com/</a> 登录账户以后点击 Speedtest Custom 下的Go to costum 进入 dashboard</p><p><a href="https://account.speedtestcustom.com/dashboard">https://account.speedtestcustom.com/dashboard</a></p><p>然后在configure页面自定义创建你想要的面板</p><p><a href="https://account.speedtestcustom.com/configuration/test">https://account.speedtestcustom.com/configuration/test</a></p><p>Enable HTTPS 建议勾选</p><p>这样你的测速网站就“搭建”好了</p><p>DEMO：</p><p><a href="https://ednovas.speedtestcustom.com/">https://ednovas.speedtestcustom.com/</a></p><p>还有 Embed 也就是页面引入，比如：</p><iframe width="100%" height="650px" frameborder="0" src="https://ednovas.speedtestcustom.com"></iframe>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 建站 </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> speedtest </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo提交百度和Google谷歌收录</title>
       <link href="2021/05/07/shoulu/"/>
       <url>2021/05/07/shoulu/</url>
