@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-07T05:14:04.930Z</updated>
+  <updated>2021-05-07T05:24:43.318Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -21,142 +21,20 @@
     <link href="https://ednovas.xyz/2021/05/07/shoulu/"/>
     <id>https://ednovas.xyz/2021/05/07/shoulu/</id>
     <published>2021-05-06T22:14:00.000Z</published>
-    <updated>2021-05-07T05:14:04.930Z</updated>
+    <updated>2021-05-07T05:24:43.318Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;文章作者: Hansion&lt;br&gt;文章链接: &lt;a href=&quot;http://www.hansion.win/2020/04/13/hexo-bo-ke-deng-jing-tai-wang-ye-ti-jiao-bai-du-he-google-gu-ge-shou-lu/&quot;&gt;http://www.hansion.win/2020/04/13/hexo-bo-ke-deng-jing-tai-wang-ye-ti-jiao-bai-du-he-google-gu-ge-shou-lu/&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div id=&quot;articleContent&quot;&gt;
-&lt;h2 id=&quot;toc-heading-1&quot;&gt;&lt;a href=&quot;#站点地图&quot; class=&quot;headerlink&quot; title=&quot;站点地图&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;站点地图&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;站点地图是一个网站所有链接的容器。很多网站的连接层次比较深，爬虫很难抓取到，站点地图可以方便爬虫抓取网站页面，通过抓取网站页面，清晰了解网站的架构，网站地图一般存放在根目录下并命名sitemap，为爬虫指路，增加网站重要内容页面的收录。站点地图就是根据网站的结构、框架、内容，生成的导航网页文件。站点地图对于提高用户体验有好处，它们为网站访问者指明方向，并帮助迷失的访问者找到他们想看的页面。&lt;/p&gt;
-&lt;p&gt;-百度百科&lt;/p&gt;
+&lt;h2 id=&quot;站点地图&quot;&gt;&lt;a href=&quot;#站点地图&quot; class=&quot;headerlink&quot; title=&quot;站点地图&quot;&gt;&lt;/a&gt;站点地图&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;站点地图是一个网站所有链接的容器。很多网站的连接层次比较深，爬虫很难抓取到，站点地图可以方便爬虫抓取网站页面，通过抓取网站页面，清晰了解网站的架构，网站地图一般存放在根目录下并命名sitemap，为爬虫指路，增加网站重要内容页面的收录。站点地图就是根据网站的结构、框架、内容，生成的导航网页文件。站点地图对于提高用户体验有好处，它们为网站访问者指明方向，并帮助迷失的访问者找到他们想看的页面。&lt;br&gt;-百度百科&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&quot;toc-heading-2&quot;&gt;&lt;a href=&quot;#生成站点地图&quot; class=&quot;headerlink&quot; title=&quot;生成站点地图&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;生成站点地图&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;安装站点地图生成插件&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;code-area&quot; style=&quot;position: relative&quot;&gt;&lt;i class=&quot;fas fa-angle-up code-expand&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;codecopy_notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-copy code_copy&quot; title=&quot;复制代码&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;code_lang&quot; title=&quot;代码语言&quot;&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;npm install hexo-generator-baidu-sitemap --save
-npm install hexo-generator-sitemap --save&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;在博客根目录的&lt;code&gt;_config.yml&lt;/code&gt;中添加自动生成sitemap的配置&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;code-area&quot; style=&quot;position: relative&quot;&gt;&lt;i class=&quot;fas fa-angle-up code-expand&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;codecopy_notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-copy code_copy&quot; title=&quot;复制代码&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;code_lang&quot; title=&quot;代码语言&quot;&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;sitemap:
-  path: sitemap.xml
-baidusitemap:
-  path: baidusitemap.xml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;同时确认一下该文件里面url对应的是否是接下来要提交的域名&lt;/p&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;生成和部署&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;code-area&quot; style=&quot;position: relative&quot;&gt;&lt;i class=&quot;fas fa-angle-up code-expand&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;codecopy_notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-copy code_copy&quot; title=&quot;复制代码&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;code_lang&quot; title=&quot;代码语言&quot;&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;hexo g
-hexo d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;此时会在&lt;code&gt;public&lt;/code&gt;目录下生成两个文件&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;sitemap.xml&lt;/code&gt; 用于提交给谷歌&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;baidusitemap.xml&lt;/code&gt; 用于提交给百度&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol start=&quot;4&quot;&gt;
-&lt;li&gt;&lt;p&gt;部署成功后，在浏览器打开 &lt;code&gt;你的域名/baidusitemap.xml&lt;/code&gt;，成功展示即代表成功&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413210038.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413210038.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;toc-heading-3&quot;&gt;&lt;a href=&quot;#提交到百度站长（百度收录）&quot; class=&quot;headerlink&quot; title=&quot;提交到百度站长（百度收录）&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;提交到百度站长（百度收录）&lt;/h2&gt;&lt;h3 id=&quot;toc-heading-4&quot;&gt;&lt;a href=&quot;#解决百度不爬取Github-Pages的问题&quot; class=&quot;headerlink&quot; title=&quot;解决百度不爬取Github Pages的问题&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;解决百度不爬取Github Pages的问题&lt;/h3&gt;&lt;p&gt;如果你的博客部署在Github Pages,百度是不会爬取的，这种情况需要借用其他平台转换一下。&lt;/p&gt;
-&lt;p&gt;这里以coding为例&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;在coding中也创建一个博客项目，取得提交地址&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;在博客根目录的&lt;code&gt;_config.yml&lt;/code&gt;中添加coding仓库的配置，注意增加了&lt;code&gt;-&lt;/code&gt;号，这样在部署的时候会同时部署到Github 和 coding&lt;/p&gt;
-&lt;div class=&quot;code-area&quot; style=&quot;position: relative&quot;&gt;&lt;i class=&quot;fas fa-angle-up code-expand&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;codecopy_notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-copy code_copy&quot; title=&quot;复制代码&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;code_lang&quot; title=&quot;代码语言&quot;&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;deploy:
-- type: git
-  repository: https://github.com/hansionit/hansionit.github.io.git
-  branch: master
-- type: git
-  repository: https://e.coding.net/hansion_it/Blog.git
-  branch: master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;hexo g -d&lt;/code&gt;生成部署一下，会提交代码到coding&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;在coding中开启pages服务，配置自定义域名，在你的域名解析控制台增加两条CNAME，解析线路选择&lt;code&gt;百度&lt;/code&gt;，让百度解析到coding的地址&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200414122236.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200414122236.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;toc-heading-5&quot;&gt;&lt;a href=&quot;#sitemap方式提交&quot; class=&quot;headerlink&quot; title=&quot;sitemap方式提交&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;sitemap方式提交&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;查询是否被收录&lt;/p&gt;
-&lt;div class=&quot;code-area&quot; style=&quot;position: relative&quot;&gt;&lt;i class=&quot;fas fa-angle-up code-expand&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;codecopy_notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-copy code_copy&quot; title=&quot;复制代码&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;code_lang&quot; title=&quot;代码语言&quot;&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;site:你的域名&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;   &lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413204214.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413204214.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;&lt;p&gt;若没有收录，则点击&lt;code&gt;提交网址&lt;/code&gt;进行提交&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200414122915.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200414122915.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;然后打开 &lt;a href=&quot;https://ziyuan.baidu.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;百度搜索资源平台&lt;/a&gt;，进入&lt;code&gt;站点管理&lt;/code&gt; -&amp;gt; &lt;code&gt;添加网站&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413202939.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413202939.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;&lt;p&gt;添加完网站后，点击&lt;code&gt;管理站点&lt;/code&gt; -&amp;gt; &lt;code&gt;站点属性设置&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413210128.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413210128.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;选择链接提交&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413210323.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413210323.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol start=&quot;5&quot;&gt;
-&lt;li&gt;&lt;p&gt;选择sitemap，输入上文中的sitmap地址，点击提交&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413210527.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413210527.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;如果提示错误，&lt;strong&gt;以下文件已经提交过了，如想重新提交，请先到文件对应工具的站点下删除此文件。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413211123.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413211123.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;可在下方进行勾选删除后重新提交，如果链接一模一样，没有必要删除，点击删除按钮左边的&lt;code&gt;手动更新文件&lt;/code&gt;更新一下即可&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413211221.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413211221.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;h2 id=&quot;toc-heading-6&quot;&gt;&lt;a href=&quot;#主动推送方式提交&quot; class=&quot;headerlink&quot; title=&quot;主动推送方式提交&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;主动推送方式提交&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;安装插件&lt;code&gt;npm install hexo-baidu-url-submit --save&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;在博客根目录的&lt;code&gt;config.yml&lt;/code&gt;中添加&lt;/p&gt;
-&lt;div class=&quot;code-area&quot; style=&quot;position: relative&quot;&gt;&lt;i class=&quot;fas fa-angle-up code-expand&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;codecopy_notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-copy code_copy&quot; title=&quot;复制代码&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;code_lang&quot; title=&quot;代码语言&quot;&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;baidu_url_submit:
-  count: 100                 # 提交最新的多少个链接
-  host:       # 在百度站长平台中添加的域名
-  token:     # 秘钥
-  path: baidu_urls.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;token在推送的接口中有&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413212519.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413212519.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;&lt;p&gt;同样是该文件，在&lt;code&gt;deployer&lt;/code&gt;中新加一行&lt;code&gt;type: baidu_url_submitter&lt;/code&gt;,注意需要为两个&lt;code&gt;type&lt;/code&gt;前面添加&lt;code&gt;-&lt;/code&gt;符号，结果如：&lt;/p&gt;
-&lt;div class=&quot;code-area&quot; style=&quot;position: relative&quot;&gt;&lt;i class=&quot;fas fa-angle-up code-expand&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;codecopy_notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-copy code_copy&quot; title=&quot;复制代码&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;code_lang&quot; title=&quot;代码语言&quot;&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;deploy:
-- type: git
-  repository: https://e.coding.net/hansion_it/Blog.git
-  branch: master
-- type: baidu_url_submitter&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;生成部署&lt;/p&gt;
-&lt;div class=&quot;code-area&quot; style=&quot;position: relative&quot;&gt;&lt;i class=&quot;fas fa-angle-up code-expand&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;codecopy_notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-copy code_copy&quot; title=&quot;复制代码&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;code_lang&quot; title=&quot;代码语言&quot;&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;hexo g
-hexo d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;若最后有输出&lt;code&gt;&amp;#123;&quot;remain&quot;:2997,&quot;success&quot;:3&amp;#125; INFO  Deploy done: baidu_url_submitter&lt;/code&gt;,则代表成功,success的值代表成功多少条，remain的值代表当天剩余可推送条数&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;toc-heading-7&quot;&gt;&lt;a href=&quot;#自动推送方式提交&quot; class=&quot;headerlink&quot; title=&quot;自动推送方式提交&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;自动推送方式提交&lt;/h3&gt;&lt;p&gt;Hexo的有些主题已完成了此步骤，可先自行确认是否已经完成，一般完成此步骤的主题的&lt;code&gt;_config.yml&lt;/code&gt;文件中会有&lt;code&gt;baidu_push&lt;/code&gt;属性，将其设置为&lt;code&gt;true&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;选择&lt;code&gt;自动推送&lt;/code&gt; -&amp;gt; &lt;code&gt;复制代码&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;没有集成这项功能的，我们可以把代码粘贴到 &lt;code&gt;header.ejs&lt;/code&gt; 文件的 &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; 与 &lt;code&gt;&amp;lt;/head&amp;gt;&lt;/code&gt; 标签之间&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413211705.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200413211705.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;h2 id=&quot;toc-heading-8&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;#提交到谷歌搜索（谷歌收录）&quot; class=&quot;headerlink&quot; title=&quot;提交到谷歌搜索（谷歌收录）&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;提交到谷歌搜索（谷歌收录）&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;进入&lt;a href=&quot;https://www.google.com/webmasters/tools/home?hl=zh-CN&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Google Search Console&lt;/a&gt; 登录你的谷歌账号&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;在&lt;code&gt;网址前缀&lt;/code&gt;中填写地址&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;下载验证文件&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200414124339.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200414124339.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;存入&lt;strong&gt;主题&lt;/strong&gt;的&lt;code&gt;source&lt;/code&gt;目录，而不是根目录的source目录，&lt;code&gt;hexo g -d&lt;/code&gt;生成部署，然后点击&lt;code&gt;验证&lt;/code&gt;，验证成功如下图所示。若提示&lt;code&gt;您的验证文件中的内容不正确。您使用的验证文件是从这里下载的吗?&lt;/code&gt;,你需要检查一下目录是否放至正确&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200414132047.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200414132047.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;点击&lt;code&gt;前往资源页面&lt;/code&gt;，点击&lt;code&gt;站点地图&lt;/code&gt;,输入站点地图的地址，点击&lt;code&gt;提交&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200414132514.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200414132514.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;提交成功后，若显示&lt;code&gt;无法获取&lt;/code&gt;，点击&lt;code&gt;无法获取&lt;/code&gt;会进行网页获取，再刷新网页即可显示成功&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200414132654.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200414132654.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;可以顺便把百度的sitemap也提交上&lt;code&gt;baidusitemap.xml&lt;/code&gt;,成功结果如下：&lt;/p&gt;
-&lt;p&gt;&lt;div class=&quot;img-item&quot; data-src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200414132951.png&quot; data-sub-html=&quot;.caption&quot;&gt;&lt;img src=&quot;https://my-online-pics.oss-cn-beijing.aliyuncs.com/img/20200414132951.png&quot; alt class=&quot;img-shadow img-margin&quot;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
+&lt;h2 id=&quot;生成站点地图&quot;&gt;&lt;a href=&quot;#生成站点地图&quot; class=&quot;headerlink&quot; title=&quot;生成站点地图&quot;&gt;&lt;/a&gt;生成站点地图&lt;/h2&gt;&lt;h3 id=&quot;安装站点地图生成插件&quot;&gt;&lt;a href=&quot;#安装站点地图生成插件&quot; class=&quot;headerlink&quot; title=&quot;安装站点地图生成插件&quot;&gt;&lt;/a&gt;安装站点地图生成插件&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-baidu-sitemap --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-sitemap --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
-</summary>
+&lt;h3 id=&quot;在博客根目录的-config-yml中添加自动生成sitemap的配置&quot;&gt;&lt;a href=&quot;#在博客根目录的-config-yml中添加自动生成sitemap的配置&quot; class=&quot;headerlink&quot; title=&quot;在博客根目录的_config.yml中添加自动生成sitemap的配置&quot;&gt;&lt;/a&gt;在博客根目录的_config.yml中添加自动生成sitemap的配置&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sitemap:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  path: sitemap.xml&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;baidusitemap:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  path: baidusitemap.xml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;同时确认一下该文件里面url对应的是否是接下来要提交的域名&lt;/p&gt;
+&lt;h3 id=&quot;生成和部署&quot;&gt;&lt;a href=&quot;#生成和部署&quot; class=&quot;headerlink&quot; title=&quot;生成和部署&quot;&gt;&lt;/a&gt;生成和部署&lt;/h3&gt;</summary>
     
     
     
