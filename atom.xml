@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-07T13:01:50.113Z</updated>
+  <updated>2021-05-08T04:26:53.289Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GCP，oralce，aws开启root登录</title>
+    <link href="https://ednovas.xyz/2021/05/08/root/"/>
+    <id>https://ednovas.xyz/2021/05/08/root/</id>
+    <published>2021-05-08T04:21:00.000Z</published>
+    <updated>2021-05-08T04:26:53.289Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;主要思路&quot;&gt;&lt;a href=&quot;#主要思路&quot; class=&quot;headerlink&quot; title=&quot;主要思路&quot;&gt;&lt;/a&gt;主要思路&lt;/h2&gt;&lt;p&gt;大同小异，修改 &lt;code&gt;sshd——config&lt;/code&gt; 文件，把里面的 &lt;code&gt;PasswordAuthentication&lt;/code&gt; 和 &lt;code&gt;PermitRootLogin&lt;/code&gt; 都改成 Yes&lt;/p&gt;
+&lt;h2 id=&quot;AWS&quot;&gt;&lt;a href=&quot;#AWS&quot; class=&quot;headerlink&quot; title=&quot;AWS&quot;&gt;&lt;/a&gt;AWS&lt;/h2&gt;&lt;p&gt;切换到root用户&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo -i&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;输入以下命令实现密码登录&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed -ri &amp;#39;s&amp;#x2F;^#?(PasswordAuthentication)\s+(yes|no)&amp;#x2F;\1 yes&amp;#x2F;&amp;#39; &amp;#x2F;etc&amp;#x2F;ssh&amp;#x2F;sshd_config&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed -ri &amp;#39;s&amp;#x2F;^#?(PermitRootLogin)\s+(yes|no)&amp;#x2F;\1 yes&amp;#x2F;&amp;#39; &amp;#x2F;etc&amp;#x2F;ssh&amp;#x2F;sshd_config&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed -ri &amp;#39;s&amp;#x2F;^&amp;#x2F;#&amp;#x2F;;s&amp;#x2F;sleep 10&amp;quot;\s+&amp;#x2F;&amp;amp;\n&amp;#x2F;&amp;#39; &amp;#x2F;root&amp;#x2F;.ssh&amp;#x2F;authorized_keys&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;service sshd restart&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="root" scheme="https://ednovas.xyz/tags/root/"/>
+    
+    <category term="GCP" scheme="https://ednovas.xyz/tags/GCP/"/>
+    
+    <category term="AWS" scheme="https://ednovas.xyz/tags/AWS/"/>
+    
+    <category term="Oracle" scheme="https://ednovas.xyz/tags/Oracle/"/>
+    
+  </entry>
   
   <entry>
     <title>自己“搭建”Speedtest测速网站</title>
@@ -630,39 +664,6 @@
     <category term="短网址" scheme="https://ednovas.xyz/tags/%E7%9F%AD%E7%BD%91%E5%9D%80/"/>
     
     <category term="url shortener" scheme="https://ednovas.xyz/tags/url-shortener/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 HE Tunnel Broker 给 IPv4 VPS 免费添加公网 IPv6 支持</title>
-    <link href="https://ednovas.xyz/2021/04/15/hetunnel/"/>
-    <id>https://ednovas.xyz/2021/04/15/hetunnel/</id>
-    <published>2021-04-15T07:38:45.000Z</published>
-    <updated>2021-04-15T07:18:17.530Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自P3TERX大佬 &lt;a href=&quot;https://p3terx.com/archives/use-he-tunnel-broker-to-add-public-network-ipv6-support-to-ipv4-vps-for-free.html&quot;&gt;https://p3terx.com/archives/use-he-tunnel-broker-to-add-public-network-ipv6-support-to-ipv4-vps-for-free.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://p3terx.com/go/aHR0cHM6Ly9oZS5uZXQ&quot;&gt;Hurricane Electric&lt;/a&gt; (简称：HE) 是一家位于美国的全球互联网服务提供商。该公司运营了世界上以对等数目计算的最大 IPv6 网络，同时也提供免费的 IPv6 隧道服务。早在 IPv6 还未普及的时代，博主曾用它家的服务给家里的宽带接入了 IPv6 网络，优先体验了一把，同时也积累了一些 IPv6 网络的使用经验。虽然经过多年的发展 IPv6 已经相当普及，但依然还是有部分 VPS 商家由于各种各样的原因没有给 VPS 标配 IPv6 地址，有的需要加钱、有的甚至不给加钱。当我们有访问 IPv6 网络的需求，就比如给 IPv6 Only VPS 主机做 SSH 跳板，则可以使用 HE Tun­nel Bro­ker 提供的 IPv6 隧道免费给 IPv4 VPS 主机添加一个公网 IPv6 地址来获得 IPv6 网络的访问能力。&lt;/p&gt;
-&lt;h2 id=&quot;创建-Tunnel-Broker-IPv6-隧道&quot;&gt;&lt;a href=&quot;#创建-Tunnel-Broker-IPv6-隧道&quot; class=&quot;headerlink&quot; title=&quot;创建 Tunnel Broker IPv6 隧道&quot;&gt;&lt;/a&gt;创建 Tunnel Broker IPv6 隧道&lt;/h2&gt;&lt;p&gt;注册 &lt;a href=&quot;https://p3terx.com/go/aHR0cHM6Ly93d3cudHVubmVsYnJva2VyLm5ldA&quot;&gt;Tunnel Broker&lt;/a&gt; 账号&lt;br&gt;点击左侧的Create Regular Tunnel(创建常规隧道)&lt;br&gt;输入 VPS 的公网 IP 地址&lt;br&gt;根据 VPS 的位置选择一个合适的节点&lt;br&gt;页面拉到最下方，点击Create Tunnel(创建隧道)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210214034651.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;在 Tunnel Details 页面可以看到创建的 IPv6 隧道的详细信息，其中 Client IPv6 Address 是申请到公网 IPv6 地址。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210214040003.png&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;获取配置示例&quot;&gt;&lt;a href=&quot;#获取配置示例&quot; class=&quot;headerlink&quot; title=&quot;获取配置示例&quot;&gt;&lt;/a&gt;获取配置示例&lt;/h2&gt;&lt;p&gt;在 Tunnel Details 页面有个 Example Configuration 选项卡，在这里你可以选择合适的配置示例。就比如这里有 De­bian/​Ubuntu 的 interfaces 配置文件示例：&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
-    
-    <category term="he tunnel" scheme="https://ednovas.xyz/tags/he-tunnel/"/>
-    
-    <category term="ipv4" scheme="https://ednovas.xyz/tags/ipv4/"/>
-    
-    <category term="ipv6" scheme="https://ednovas.xyz/tags/ipv6/"/>
     
   </entry>
   
