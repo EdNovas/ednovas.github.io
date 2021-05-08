@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-08T04:26:53.289Z</updated>
+  <updated>2021-05-08T11:31:47.899Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ednovas.xyz/2021/05/08/root/"/>
     <id>https://ednovas.xyz/2021/05/08/root/</id>
     <published>2021-05-08T04:21:00.000Z</published>
-    <updated>2021-05-08T04:26:53.289Z</updated>
+    <updated>2021-05-08T11:31:47.899Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;主要思路&quot;&gt;&lt;a href=&quot;#主要思路&quot; class=&quot;headerlink&quot; title=&quot;主要思路&quot;&gt;&lt;/a&gt;主要思路&lt;/h2&gt;&lt;p&gt;大同小异，修改 &lt;code&gt;sshd——config&lt;/code&gt; 文件，把里面的 &lt;code&gt;PasswordAuthentication&lt;/code&gt; 和 &lt;code&gt;PermitRootLogin&lt;/code&gt; 都改成 Yes&lt;/p&gt;
