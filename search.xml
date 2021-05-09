@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>NAT VPS 使用说明</title>
+      <link href="2021/05/09/nat/"/>
+      <url>2021/05/09/nat/</url>
+      
+        <content type="html"><![CDATA[<p>我发现卖nat服务器的老板不少，但是网上你缺根本找不到什么使用教程，所以此文就是为了nat使用说明而写的</p><blockquote><p>以下转载自 iLemonrain’s Blog <a href="https://blog.ilemonrain.com/linux/nat-server-tutorial.html">https://blog.ilemonrain.com/linux/nat-server-tutorial.html</a></p></blockquote><h2 id="服务器的类别"><a href="#服务器的类别" class="headerlink" title="服务器的类别"></a>服务器的类别</h2><p>在开始本篇教程前，我们先来了解下现在所提供的可供租赁的服务器的种类。</p><h3 id="1-独立服务器"><a href="#1-独立服务器" class="headerlink" title="(1) 独立服务器"></a>(1) 独立服务器</h3><p>独立服务器（又叫母鸡，独服，杜甫），是指服务商提供给你一整台物理服务器的资源供你使用，整台服务器上的资源全部供你使用，不会有任何人跟你抢占服务器资源。</p><ul><li>优点：</li></ul><p>服务器性能强大，资源充足</p><ul><li>缺点：</li></ul><p>价格过于昂贵 （往往性能不错的杜甫必定3XX软妹币起步，更高性能的经常出现四位数）</p><h3 id="2-虚拟服务器-VPS"><a href="#2-虚拟服务器-VPS" class="headerlink" title="(2) 虚拟服务器 (VPS)"></a>(2) 虚拟服务器 (VPS)</h3><p>虚拟服务器（又叫VPS、小鸡），是指服务商通过虚拟化技术（比如KVM、OpenVZ、Xen等），分割一整台（或者多台）物理服务器的资源，取其中的一部分资源供你使用。相对于独立服务器来讲价格要低廉不少，而且配置可以自己选择，相对灵活。</p><ul><li>优点：</li></ul><p>资源可以灵活分配，按需选择配置</p><ul><li>缺点：</li></ul><p>宿主物理服务器（母鸡）阵亡，当前服务器下所有的虚拟机（小鸡）全部跟着阵亡（极少发生，但也分商家）<br>部分服务商会选择超售，或者你遇到一个恶意长时间占用资源的邻居，导致实际性能不如标称配置性能，甚至发生宕机</p><h3 id="3-基于NAT的虚拟服务器-NAT-VPS"><a href="#3-基于NAT的虚拟服务器-NAT-VPS" class="headerlink" title="(3) 基于NAT的虚拟服务器 (NAT-VPS)"></a>(3) 基于NAT的虚拟服务器 (NAT-VPS)</h3><p>基于NAT的虚拟服务器（又叫NAT鸡），是在虚拟服务器（VPS）的基础上，通过共享IP的方式，为这个IP下的服务器提供外网访问能力。</p><ul><li>优点：</li></ul><p>相对于虚拟服务器（VPS）来讲，价格更加低廉（因为几乎没有IP的费用）</p><ul><li>缺点：</li></ul><p>同上，如果你碰到一个折腾的邻居（尤其是拿到服务器就装PPTP等VPN的），会导致服务器IP被墙<br>服务器IP一旦被墙，会导致同IP下所有的服务器全部无法连接（有DDNS的话这点还能好点）<br>只能使用固定的端口访问服务器，而且无法用来建站（强行信仰建站当我没说）</p><blockquote><p>以上转载自 iLemonrain’s Blog <a href="https://blog.ilemonrain.com/linux/nat-server-tutorial.html">https://blog.ilemonrain.com/linux/nat-server-tutorial.html</a></p></blockquote><h2 id="购买nat-vps"><a href="#购买nat-vps" class="headerlink" title="购买nat vps"></a>购买nat vps</h2><p>你既然看到这篇文章了，那你肯定也已经买了个nat vps，但是不知道怎么使用了。这里也就不推荐店铺了，有打广告的嫌疑哈哈哈</p><p>一般nat vps都会有个面板，这里以两种不同的nat vps为例（尽管区别不大）</p><p>一个是需要自己创建端口映射的，另一个是已经创建好了端口映射的</p><p>下面先讲创建端口映射的</p><h2 id="需要端口映射"><a href="#需要端口映射" class="headerlink" title="需要端口映射"></a>需要端口映射</h2><h3 id="创建22端口映射"><a href="#创建22端口映射" class="headerlink" title="创建22端口映射"></a>创建22端口映射</h3><p>一般面板都有个 nat vps 端口映射管理页面，比如下图，不同面板有所不通，但大同小异</p><p>点击添加规则，先要映射一个22端口来连接ssh用，这是必须要的</p><p>05-09_16-36-38.png</p><p>内网端口填写22，公网端口随意填写一个 <code>大于10000</code> 的端口，并且没有被占用的（如果被占用了应该会有提示），可以直接忽略65432端口，这个估计肯定有人占了，协议使用TCP</p><p>（当然，有可能店家直接默认就给分配了一个22端口的映射，那么我们就不再需要创建这个22端口映射了）</p><p>05-09_16-40-45.png</p><h3 id="连接SSH"><a href="#连接SSH" class="headerlink" title="连接SSH"></a>连接SSH</h3><p>然后使用你习惯的ssh连接到VPS</p><p>root密码会在nat vps控制面板页面有的，</p><p>05-09_16-46-09.png</p><p>这里注意以下，端口需要填写刚刚映射了的外网端口，比如我的就是60032</p><p>主机这里复制黏贴公网ip，然后点击连接</p><p>05-09_16-44-26.png</p><h3 id="创建更多端口映射"><a href="#创建更多端口映射" class="headerlink" title="创建更多端口映射"></a>创建更多端口映射</h3><p>然后再创建更多的端口映射，来搭建协议</p><p>操作和映射22端口类似，不过这里强烈推荐内网外网端口一致，以防配置出现混淆！</p><p>05-09_16-48-23.png</p><p>如果需要 TCP 和 UDP服务，那么同端口再映射一个UDP协议即可</p><p>05-09_16-50-08.png</p><p>至少映射两个以上端口，一个用来访问v2-ui面板，一个用来搭建协议</p><p>一般nat开放10-20个端口，如果你有需要你可以全弄满，但也没有必要</p><p>05-09_16-51-40.png</p><h2 id="无需端口映射"><a href="#无需端口映射" class="headerlink" title="无需端口映射"></a>无需端口映射</h2><p>比如这个老板已经搞好端口映射了，开放了10个端口，起始端口从10100到10109，SSH连接端口是61010</p><p>05-09_16-54-17.png</p><p>那么我们就用他给我们的信息直接SSH连接即可</p><p>SSH内主机填写<code>IP解析域名</code>或<code>ip</code>，SSH端口是61010，root和root密码照填即可</p><p>05-09_16-57-07.png</p><p>然后直接连接即可</p><h2 id="IP被墙"><a href="#IP被墙" class="headerlink" title="IP被墙"></a>IP被墙</h2><p>当ip被墙了怎么办，如果店家提供替换那自然最好了（大部分ip被墙也无所谓），如果没有就要用中转去拉了，但是问题是ip被墙了以后ssh也登录不上怎么办呢</p><h3 id="SSH设置代理"><a href="#SSH设置代理" class="headerlink" title="SSH设置代理"></a>SSH设置代理</h3><p>Finalshell在添加了ssh信息后连接不上，然后打开这里的代理服务器设置，添加一个代理，以<a href="/2020/11/29/clash-windows"><code>Clash for Windows</code></a>为例，就是本地<code>127.0.0.1</code>，和端口<code>7890</code>，并选中这个代理，再连接即可</p><p>05-09_17-01-29.png</p><h3 id="Clash开tun-tap"><a href="#Clash开tun-tap" class="headerlink" title="Clash开tun/tap"></a>Clash开tun/tap</h3><p><a href="/2021/02/15/clashtun/">Clash开启tun</a></p><h2 id="Centos关闭防火墙"><a href="#Centos关闭防火墙" class="headerlink" title="Centos关闭防火墙"></a>Centos关闭防火墙</h2><p>centos需要先关闭防火墙！</p><p>centos需要先关闭防火墙！</p><p>centos需要先关闭防火墙！</p><p>（当然有的默认是关着的）</p><p>所以别再问店家为啥ping的通但是连不上，v2-ui面板打不开了</p><p>查看防火墙状态</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">firewall-cmd --state</span><br></pre></td></tr></table></figure><p>停止firewall</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl stop firewalld.service</span><br></pre></td></tr></table></figure><p>禁止firewall开机启动</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl disable firewalld.service </span><br></pre></td></tr></table></figure><h2 id="安装-v2-ui"><a href="#安装-v2-ui" class="headerlink" title="安装 v2-ui"></a>安装 v2-ui</h2><h3 id="更改密码"><a href="#更改密码" class="headerlink" title="更改密码"></a>更改密码</h3><p>如果你愿意你可以给nat vps更改个root密码（下次连接就需要重新输入更改后的密码了）</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">passwd</span><br></pre></td></tr></table></figure><p>然后输入两遍你想改的密码，注意密码是不会显示的，输入完了直接enter回车即可</p><h3 id="安装v2-ui"><a href="#安装v2-ui" class="headerlink" title="安装v2-ui"></a>安装v2-ui</h3><p>GitHub地址：<a href="https://github.com/sprov065/v2-ui">https://github.com/sprov065/v2-ui</a></p><p>一键脚本：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash &lt;(curl -Ls https:&#x2F;&#x2F;blog.sprov.xyz&#x2F;v2-ui.sh)</span><br></pre></td></tr></table></figure><p>安装完成后，需要更改面板端口，默认端口是65432，如果你映射了这个端口，那就直接ip+65432登录即可。但如果没有（大概率是没有的），那么还需要更改登录端口</p><p>05-09_17-14-41.png</p><p>输入v2-ui进入管理菜单</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">v2-ui</span><br></pre></td></tr></table></figure><p>输入6并回车</p><p>05-09_17-16-24.png</p><p>输入你映射了的端口，比如刚刚映射了的60033端口，然后回车</p><p>05-09_17-17-07.png</p><p><code>y</code> 确定，最后回车回到脚本管理菜单即可</p><p>05-09_17-17-59.png</p><h2 id="搭建协议"><a href="#搭建协议" class="headerlink" title="搭建协议"></a>搭建协议</h2><p>然后输入ip（或解析了的域名）+ 更改了的端口进入v2-ui管理页面</p><p>比如我这里就是 conxxxxxx.xxxxxx.xxx:</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> VPS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VPS </tag>
+            
+            <tag> 搭建 </tag>
+            
+            <tag> nat </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>GCP，oralce，aws开启root登录</title>
       <link href="2021/05/08/root/"/>
       <url>2021/05/08/root/</url>
