@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-09T10:07:05.878Z</updated>
+  <updated>2021-05-09T13:18:33.157Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>免费 design 域名一年</title>
+    <link href="https://ednovas.xyz/2021/05/09/porkbundesign/"/>
+    <id>https://ednovas.xyz/2021/05/09/porkbundesign/</id>
+    <published>2021-05-09T12:21:00.000Z</published>
+    <updated>2021-05-09T13:18:33.157Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;porkbun.com总部位于俄勒冈州波特兰市，是ICANN认证域名注册商。母公司为Top Level Design ，主营业务为：各类域名、包括域名隐私保护和证书，其次有虚拟主机、邮件营销主机。提供的域名后缀种类繁多(300多种)，并且为每个域名免费提供隐私保护，在国外有着较高的知名度。&lt;/p&gt;
+&lt;h2 id=&quot;活动介绍&quot;&gt;&lt;a href=&quot;#活动介绍&quot; class=&quot;headerlink&quot; title=&quot;活动介绍&quot;&gt;&lt;/a&gt;活动介绍&lt;/h2&gt;&lt;p&gt;官网：&lt;a href=&quot;https://porkbun.com/&quot;&gt;https://porkbun.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;活动内容：.design域名新用户首年免费，续费每年35美元&lt;/p&gt;
+&lt;p&gt;虽然首年免费，但是续费价格比较贵，小众的国际顶级域名，玩玩可以，请谨慎用于常规使用！&lt;/p&gt;
+&lt;p&gt;需要信用卡或支付宝验证会扣1刀，随后返还。以前可以用生成卡，但是商家学的精明了，目前只能用真实有效的卡才能通过。&lt;/p&gt;
+&lt;h2 id=&quot;注册&quot;&gt;&lt;a href=&quot;#注册&quot; class=&quot;headerlink&quot; title=&quot;注册&quot;&gt;&lt;/a&gt;注册&lt;/h2&gt;&lt;p&gt;注册地址：&lt;a href=&quot;https://porkbun.com/account/login&quot;&gt;https://porkbun.com/account/login&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如何注册就不去赘述了。注册好之后，要到邮箱认证邮件。&lt;/p&gt;
+&lt;h2 id=&quot;购买域名&quot;&gt;&lt;a href=&quot;#购买域名&quot; class=&quot;headerlink&quot; title=&quot;购买域名&quot;&gt;&lt;/a&gt;购买域名&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+  </entry>
+  
+  <entry>
     <title>NAT VPS 使用说明</title>
     <link href="https://ednovas.xyz/2021/05/09/nat/"/>
     <id>https://ednovas.xyz/2021/05/09/nat/</id>
-    <published>2021-05-09T07:17:25.690Z</published>
-    <updated>2021-05-09T10:07:05.878Z</updated>
+    <published>2021-05-09T07:21:00.000Z</published>
+    <updated>2021-05-09T12:58:58.613Z</updated>
     
     
     <summary type="html">&lt;p&gt;我发现卖nat服务器的老板不少，但是网上你却根本找不到什么使用教程，所以此文就是为了nat使用说明而写的&lt;/p&gt;
@@ -624,40 +652,6 @@
 &lt;p&gt;&lt;a href=&quot;https://codecguide.com/download_kl.htm&quot;&gt;https://codecguide.com/download_kl.htm&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;/2021/04/19/lavmadvr/&quot;&gt;Pot+LAV+madVR配置教程&lt;/a&gt;&lt;/p&gt;
 </summary>
-    
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="potplayer" scheme="https://ednovas.xyz/tags/potplayer/"/>
-    
-    <category term="lav" scheme="https://ednovas.xyz/tags/lav/"/>
-    
-    <category term="madvr" scheme="https://ednovas.xyz/tags/madvr/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pot+LAV+madVR配置教程</title>
-    <link href="https://ednovas.xyz/2021/04/19/lavmadvr/"/>
-    <id>https://ednovas.xyz/2021/04/19/lavmadvr/</id>
-    <published>2021-04-19T11:38:45.000Z</published>
-    <updated>2021-04-19T12:05:53.219Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;potplayer下载地址：&lt;a href=&quot;https://daumpotplayer.com/download/&quot;&gt;https://daumpotplayer.com/download/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;potplayer 64位windows下载直链：&lt;a href=&quot;https://daumpotplayer.com/wp-content/uploads/2021/03/PotPlayerSetup64.exe&quot;&gt;https://daumpotplayer.com/wp-content/uploads/2021/03/PotPlayerSetup64.exe&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;LAV Filters下载地址：&lt;a href=&quot;https://github.com/Nevcairiel/LAVFilters/releases&quot;&gt;https://github.com/Nevcairiel/LAVFilters/releases&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;madVR下载地址：&lt;a href=&quot;http://www.madvr.com/&quot;&gt;http://www.madvr.com/&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;转载自 &lt;a href=&quot;https://tieba.baidu.com/p/7171344019?qq-pf-to=pcqq.group&quot;&gt;https://tieba.baidu.com/p/7171344019?qq-pf-to=pcqq.group&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c348828fa0ec08fac29b66e14eee3d6d54fbdaac.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/5342da3d70cf3bc7bc93b8aac600baa1cc112aab.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/8eeade11728b471093bc888ad4cec3fdfd0323ab.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/fd7663cf3bc79f3ddc729176ada1cd11738b29ab.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93cdda177f3e6709e99330b92cc79f3df9dc55ab.png&quot;&gt;&lt;/p&gt;</summary>
     
     
     
