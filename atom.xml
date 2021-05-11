@@ -39,48 +39,13 @@
     
     <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
     
-    <category term="解析" scheme="https://ednovas.xyz/tags/%E8%A7%A3%E6%9E%90/"/>
-    
-    <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
-    
     <category term="dns" scheme="https://ednovas.xyz/tags/dns/"/>
     
     <category term="ddns" scheme="https://ednovas.xyz/tags/ddns/"/>
     
-  </entry>
-  
-  <entry>
-    <title>win10及win7系统手动设置代理开关</title>
-    <link href="https://ednovas.xyz/2021/05/11/proxysetting/"/>
-    <id>https://ednovas.xyz/2021/05/11/proxysetting/</id>
-    <published>2021-05-11T09:40:00.000Z</published>
-    <updated>2021-05-11T09:45:40.257Z</updated>
+    <category term="解析" scheme="https://ednovas.xyz/tags/%E8%A7%A3%E6%9E%90/"/>
     
-    
-    <summary type="html">&lt;p&gt;开启代理服务器后，常常会因为忘记关闭系统代理，导致浏览器不能正常上网。&lt;/p&gt;
-&lt;p&gt;此文是关闭代理服务器后无法正常上网的解决方法，并不是开关代理软件的方法。&lt;/p&gt;
-&lt;p&gt;下面针对win10和win7系统，讲述如何手动关闭代理。&lt;/p&gt;
-&lt;h2 id=&quot;win-10&quot;&gt;&lt;a href=&quot;#win-10&quot; class=&quot;headerlink&quot; title=&quot;win 10&quot;&gt;&lt;/a&gt;win 10&lt;/h2&gt;&lt;p&gt;设置—网络和Internet—代理&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/897b5a83-4aec-4576-a11c-bd188b087d15-10805124.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/734cb407-0601-443c-8d5a-e6355bd928a1-10805124.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/b7bbe53a-20b1-4fc1-ae38-0d983d496cca-10805124.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;关闭：使用代理服务器&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/f7df1ff4-8995-418c-8c5d-8c4ddbadee3f-10805124.jpg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    <category term="代理" scheme="https://ednovas.xyz/tags/%E4%BB%A3%E7%90%86/"/>
-    
-    <category term="win10" scheme="https://ednovas.xyz/tags/win10/"/>
-    
-    <category term="win7" scheme="https://ednovas.xyz/tags/win7/"/>
-    
-    <category term="设置" scheme="https://ednovas.xyz/tags/%E8%AE%BE%E7%BD%AE/"/>
+    <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
     
   </entry>
   
@@ -130,6 +95,41 @@
     <category term="pagermaid" scheme="https://ednovas.xyz/tags/pagermaid/"/>
     
     <category term="keyword" scheme="https://ednovas.xyz/tags/keyword/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>win10及win7系统手动设置代理开关</title>
+    <link href="https://ednovas.xyz/2021/05/11/proxysetting/"/>
+    <id>https://ednovas.xyz/2021/05/11/proxysetting/</id>
+    <published>2021-05-11T09:40:00.000Z</published>
+    <updated>2021-05-11T09:45:40.257Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;开启代理服务器后，常常会因为忘记关闭系统代理，导致浏览器不能正常上网。&lt;/p&gt;
+&lt;p&gt;此文是关闭代理服务器后无法正常上网的解决方法，并不是开关代理软件的方法。&lt;/p&gt;
+&lt;p&gt;下面针对win10和win7系统，讲述如何手动关闭代理。&lt;/p&gt;
+&lt;h2 id=&quot;win-10&quot;&gt;&lt;a href=&quot;#win-10&quot; class=&quot;headerlink&quot; title=&quot;win 10&quot;&gt;&lt;/a&gt;win 10&lt;/h2&gt;&lt;p&gt;设置—网络和Internet—代理&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/897b5a83-4aec-4576-a11c-bd188b087d15-10805124.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/734cb407-0601-443c-8d5a-e6355bd928a1-10805124.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/b7bbe53a-20b1-4fc1-ae38-0d983d496cca-10805124.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;关闭：使用代理服务器&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/f7df1ff4-8995-418c-8c5d-8c4ddbadee3f-10805124.jpg&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    <category term="代理" scheme="https://ednovas.xyz/tags/%E4%BB%A3%E7%90%86/"/>
+    
+    <category term="win10" scheme="https://ednovas.xyz/tags/win10/"/>
+    
+    <category term="win7" scheme="https://ednovas.xyz/tags/win7/"/>
+    
+    <category term="设置" scheme="https://ednovas.xyz/tags/%E8%AE%BE%E7%BD%AE/"/>
     
   </entry>
   
@@ -191,9 +191,9 @@
     <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
     <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   
