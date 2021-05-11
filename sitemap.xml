@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/05/11/ddns/</loc>
+    
+    <lastmod>2021-05-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/2021/05/11/pagermaidkeyword/</loc>
+    
+    <lastmod>2021-05-11</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2021/05/11/proxysetting/</loc>
     
     <lastmod>2021-05-11</lastmod>
@@ -3295,6 +3309,34 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E8%AE%BE%E7%BD%AE/</loc>
+    <lastmod>2021-05-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/dns/</loc>
+    <lastmod>2021-05-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/ddns/</loc>
+    <lastmod>2021-05-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/pagermaid/</loc>
+    <lastmod>2021-05-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/keyword/</loc>
     <lastmod>2021-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

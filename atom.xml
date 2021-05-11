@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-11T09:45:40.257Z</updated>
+  <updated>2021-05-11T12:23:12.825Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DDNS 解析动态 IP</title>
+    <link href="https://ednovas.xyz/2021/05/11/ddns/"/>
+    <id>https://ednovas.xyz/2021/05/11/ddns/</id>
+    <published>2021-05-11T12:06:00.000Z</published>
+    <updated>2021-05-11T12:23:12.825Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Change-IP&quot;&gt;&lt;a href=&quot;#Change-IP&quot; class=&quot;headerlink&quot; title=&quot;Change IP&quot;&gt;&lt;/a&gt;Change IP&lt;/h1&gt;&lt;p&gt;用changeip.com的免费DDNS服务，建立DDNS&lt;/p&gt;
+&lt;h2 id=&quot;注册账户&quot;&gt;&lt;a href=&quot;#注册账户&quot; class=&quot;headerlink&quot; title=&quot;注册账户&quot;&gt;&lt;/a&gt;注册账户&lt;/h2&gt;&lt;p&gt;打开下方链接登录你的DDNS&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.changeip.com/accounts/cart.php?a=confproduct&amp;amp;i=1&quot;&gt;https://www.changeip.com/accounts/cart.php?a=confproduct&amp;amp;i=1&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;解析域名&quot;&gt;&lt;a href=&quot;#解析域名&quot; class=&quot;headerlink&quot; title=&quot;解析域名&quot;&gt;&lt;/a&gt;解析域名&lt;/h2&gt;&lt;p&gt;Jietu20200208-212049.jpg&lt;/p&gt;
+&lt;p&gt;Jietu20200208-212308.jpg&lt;/p&gt;
+&lt;p&gt;Jietu20200208-212419.jpg&lt;/p&gt;
+&lt;p&gt;Jietu20200208-212646.jpg&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="解析" scheme="https://ednovas.xyz/tags/%E8%A7%A3%E6%9E%90/"/>
+    
+    <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+    <category term="dns" scheme="https://ednovas.xyz/tags/dns/"/>
+    
+    <category term="ddns" scheme="https://ednovas.xyz/tags/ddns/"/>
+    
+  </entry>
   
   <entry>
     <title>win10及win7系统手动设置代理开关</title>
@@ -48,6 +81,55 @@
     <category term="win7" scheme="https://ednovas.xyz/tags/win7/"/>
     
     <category term="设置" scheme="https://ednovas.xyz/tags/%E8%AE%BE%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pagermaid Keyword 插件使用教程</title>
+    <link href="https://ednovas.xyz/2021/05/11/pagermaidkeyword/"/>
+    <id>https://ednovas.xyz/2021/05/11/pagermaidkeyword/</id>
+    <published>2021-05-11T09:40:00.000Z</published>
+    <updated>2021-05-11T12:03:00.036Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;入门&quot;&gt;&lt;a href=&quot;#入门&quot; class=&quot;headerlink&quot; title=&quot;入门&quot;&gt;&lt;/a&gt;入门&lt;/h2&gt;&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;p&gt;使用 -apt install keyword 安装此插件&lt;/p&gt;
+&lt;h3 id=&quot;简单的规则-keyword&quot;&gt;&lt;a href=&quot;#简单的规则-keyword&quot; class=&quot;headerlink&quot; title=&quot;简单的规则 ( -keyword )&quot;&gt;&lt;/a&gt;简单的规则 ( -keyword )&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;添加规则 ( -keyword new )&lt;/p&gt;
+&lt;p&gt; 添加纯文本匹配 :&lt;/p&gt;
+&lt;p&gt; -keyword new plain ‘test’ ‘reply’ ( 检测到文本中 包含 test 就回复 reply )&lt;/p&gt;
+&lt;p&gt; 添加正则匹配 ( 仅是举例，正则远不止这些 ) :&lt;/p&gt;
+&lt;p&gt; -keyword new regex ‘test(1|2)’ ‘reply’ ( 检测到文本中 包含 test1 或 test2 就回复 reply )&lt;/p&gt;
+&lt;p&gt; -keyword new regex ‘^test$’ ‘reply’ ( 检测到文本 是 test 就回复 )&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;列出规则 ( -keyword list )&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;删除规则 ( -keyword del , -keyword delid )&lt;/p&gt;
+&lt;p&gt; 删除纯文本规则 :&lt;/p&gt;
+&lt;p&gt; 方法 1: -keyword del plain ‘test’ ( 暴力匹配，test 为要删除的规则 )&lt;/p&gt;
+&lt;p&gt; 方法 2: -keyword delid plain ‘1’ ( 1 为 -keyword list 列出的规则的序号 )&lt;/p&gt;
+&lt;p&gt; 删除正则规则同理，将 plain 替换为 regex 即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;清空规则 ( -keyword clear )&lt;/p&gt;
+&lt;p&gt; 清除纯文本规则 : -keyword clear plain&lt;/p&gt;
+&lt;p&gt; 清除正则规则 : -keyword clear regex&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;细节提醒&quot;&gt;&lt;a href=&quot;#细节提醒&quot; class=&quot;headerlink&quot; title=&quot;细节提醒&quot;&gt;&lt;/a&gt;细节提醒&lt;/h3&gt;&lt;p&gt;清空规则会清空 所有 纯文本或正则规则，慎用。&lt;/p&gt;
+&lt;p&gt;添加和删除规则中的 英文单引号 不可省略。&lt;/p&gt;
+&lt;h2 id=&quot;进阶&quot;&gt;&lt;a href=&quot;#进阶&quot; class=&quot;headerlink&quot; title=&quot;进阶&quot;&gt;&lt;/a&gt;进阶&lt;/h2&gt;&lt;h3 id=&quot;回复限制-replyset&quot;&gt;&lt;a href=&quot;#回复限制-replyset&quot; class=&quot;headerlink&quot; title=&quot;回复限制 ( -replyset )&quot;&gt;&lt;/a&gt;回复限制 ( -replyset )&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="插件" scheme="https://ednovas.xyz/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    
+    <category term="pagermaid" scheme="https://ednovas.xyz/tags/pagermaid/"/>
+    
+    <category term="keyword" scheme="https://ednovas.xyz/tags/keyword/"/>
     
   </entry>
   
@@ -614,63 +696,6 @@
     <category term="节点" scheme="https://ednovas.xyz/tags/%E8%8A%82%E7%82%B9/"/>
     
     <category term="订阅" scheme="https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Redis安装报错</title>
-    <link href="https://ednovas.xyz/2021/04/27/redis/"/>
-    <id>https://ednovas.xyz/2021/04/27/redis/</id>
-    <published>2021-04-27T14:17:45.000Z</published>
-    <updated>2021-04-27T14:54:36.850Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;ubuntu1804安装redis的时候报错 Failed to start Advanced key-value store&lt;/p&gt;
-&lt;p&gt;问题描述, 使用apt安装redis报错, 执行的命令是sudo apt install redis-server, 报错信息Failed to start Advanced key-value store&lt;br&gt;原因: redis默认只支持ipv6访问, 所以如果服务器没设置ipv6的话，就会报错&lt;br&gt;解决办法:&lt;br&gt;修改redis的配置文件, sudo vim /etc/redis/redis.conf, 将bind 127.0.0.1 ::1修改为bind 127.0.0.1&lt;/p&gt;
-&lt;p&gt;重启redis服务, 执行service redis restart 或 redis-server&lt;/p&gt;
-&lt;p&gt;版权声明：本文为CSDN博主「littlehaes」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。&lt;br&gt;原文链接：&lt;a href=&quot;https://blog.csdn.net/littlehaes/article/details/104692822&quot;&gt;https://blog.csdn.net/littlehaes/article/details/104692822&lt;/a&gt;&lt;/p&gt;
-</summary>
-    
-    
-    
-    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
-    
-    <category term="redis" scheme="https://ednovas.xyz/tags/redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Wordpress搭建个人博客</title>
-    <link href="https://ednovas.xyz/2021/04/27/wordpress/"/>
-    <id>https://ednovas.xyz/2021/04/27/wordpress/</id>
-    <published>2021-04-27T02:17:45.000Z</published>
-    <updated>2021-04-27T02:56:27.793Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;WordPress是一个以PHP和MySQL为平台的自由开源的博客软件和内容管理系统。WordPress具有插件架构和模板系统。截至2018年4月，排名前1000万的网站中超过30.6%使用WordPress。WordPress是最受欢迎的网站内容管理系统。全球有大约30%的网站都是使用WordPress架设网站的。&lt;/p&gt;
-&lt;p&gt;wordpress最大的优点就是相较于静态博客很好搭建，而且类似傻瓜式建站的方法，不需要懂任何代码都可以建站。&lt;/p&gt;
-&lt;p&gt;wordpress也有相应的比较明显的缺点，那就是动态网站占用很大，需要配置好的机器。由于功能过于强大，会产生诸如兼容性，插件等各种未知bug，好看的主题都需要付费等问题。&lt;/p&gt;
-&lt;h2 id=&quot;宝塔面板&quot;&gt;&lt;a href=&quot;#宝塔面板&quot; class=&quot;headerlink&quot; title=&quot;宝塔面板&quot;&gt;&lt;/a&gt;宝塔面板&lt;/h2&gt;&lt;p&gt;为了方便起见，还是使用宝塔面板&lt;/p&gt;
-&lt;p&gt;首先用SSH连接上VPS&lt;/p&gt;
-&lt;p&gt;输入正确的IP,22端口，root和root密码，点击连接(ssh root@ipaddress -p 22)&lt;/p&gt;
-&lt;p&gt;然后安装宝塔面板&lt;/p&gt;
-&lt;p&gt;centos 安装&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
-    
-    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
-    
-    <category term="wordpress" scheme="https://ednovas.xyz/tags/wordpress/"/>
     
   </entry>
   
