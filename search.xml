@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>一键将 Word 转换为 Markdown</title>
+      <link href="2021/05/13/wordtomd/"/>
+      <url>2021/05/13/wordtomd/</url>
+      
+        <content type="html"><![CDATA[<h2 id="方法一：Writage-Pandoc-–-双剑合璧！"><a href="#方法一：Writage-Pandoc-–-双剑合璧！" class="headerlink" title="方法一：Writage + Pandoc – 双剑合璧！"></a>方法一：Writage + Pandoc – 双剑合璧！</h2><ol><li><p>下载并安装 Writage，下载地址：<a href="http://www.writage.com/">http://www.writage.com/</a></p><p> 打开 <a href="https://links.jianshu.com/go?to=http://www.writage.com/">Writage网页</a>，点击Download，再点击Download Now完成下载</p><p> <img src="https://upload-images.jianshu.io/upload_images/7692714-0dea7d7aeeffba56.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp"></p><p> <img src="https://upload-images.jianshu.io/upload_images/7692714-6ce19b9714bb0336.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp"></p><p> 运行安装程序，一般按照默认选项安装就好啦</p><p> <img src="https://upload-images.jianshu.io/upload_images/7692714-b10e96c9c32e0026.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/569/format/webp"></p><p> 重启电脑，新建或打开任一 Word 文档，在 文件 菜单栏下选 另存为，查看 【保存类型】 中是否有 Markdown 格式。<br> （如果插件安装成功，就会自动出现Markdown选项；否则，重新安装一遍吧~）</p><p> <img src="https://upload-images.jianshu.io/upload_images/7692714-180fec4da16b8f9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp"></p></li><li><p>下载并安装 Pandoc：官方下载地址 http%3A%2F%2Fpandoc.org%2Finstalling.html</p></li></ol><p>运行安装程序，一般按照默认选项安装就好啦</p><p><img src="https://upload-images.jianshu.io/upload_images/7692714-200a8ac8072f02c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/668/format/webp"></p><ol start="3"><li><p>准备好工具啦，我们开始尝试将word文档转换为markdown文档吧！<br> 首先设置 word 文档中的标准样式，如一级、二级标题，项目符号或编号等，如此才能与 markdown 的格式对应</p><p> （稍微有点繁琐的前期准备，如果文档一开始就是按照标准样式排版，就没有这个烦恼啦）</p><p> <img src="https://upload-images.jianshu.io/upload_images/7692714-abb1b0c891b37773.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp"></p><p> Word 格式 另存为 Markdown（这是最关键的一步~）</p><p> <img src="https://upload-images.jianshu.io/upload_images/7692714-783e08901ab25077.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/674/format/webp"></p><p> markdown 文档在 Word 中的显示效果：</p><p> <img src="https://upload-images.jianshu.io/upload_images/7692714-e545bfbe49f09069.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp"></p><p> 由于markdown中的图片无法设置大小，因此在word中排布的图片格式不标准，需要人工调整</p><p> 其他格式，如一级、二级标题，项目列表等基本没有问题，其中表格显示如下</p><p> <img src="https://upload-images.jianshu.io/upload_images/7692714-80ae8d0c8d8f306d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp"></p><p> 将markdown文档上传至码云等平台并提交，对应的内容预览效果如下</p><p> <img src="https://upload-images.jianshu.io/upload_images/7692714-570250456c4049f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/999/format/webp"></p><p> <img src="https://upload-images.jianshu.io/upload_images/7692714-99c848242acc487a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/999/format/webp"></p></li></ol><h2 id="更加快捷（有时略坑）的方法二：Word-to-Markdown-Converter在线转换网页！"><a href="#更加快捷（有时略坑）的方法二：Word-to-Markdown-Converter在线转换网页！" class="headerlink" title="更加快捷（有时略坑）的方法二：Word to Markdown Converter在线转换网页！"></a>更加快捷（有时略坑）的方法二：Word to Markdown Converter在线转换网页！</h2><ol><li><p>设置word文档中的标准样式，如一级、二级标题，项目符号或编号等，如此才能与markdown的格式对应</p><p> （稍微有点繁琐的前期准备，如果文档一开始就是按照标准样式排版，就没有这个烦恼啦）</p><p> <img src="https://upload-images.jianshu.io/upload_images/7692714-9dfa2efd15ca0a63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp"></p></li><li><p>打开网页Word to Markdown Converter：<a href="https://word-to-markdown.herokuapp.com/">https://word-to-markdown.herokuapp.com/</a></p></li></ol><p><img src="https://upload-images.jianshu.io/upload_images/7692714-a8bc48ed32e7907e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp"></p><ol start="3"><li>选择需要转换的Word文件,点击Convert</li></ol><p><img src="https://upload-images.jianshu.io/upload_images/7692714-a2998ff04f5745ab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp"></p><ol start="4"><li>大功告成啦！ :yum: 页面左边显示的是Markdown文档的内容，右边显示的是预览出来的样子</li></ol><p><img src="https://upload-images.jianshu.io/upload_images/7692714-692e722f34b3be99.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp"></p><p>那么坑在哪里呢？ 我们会发现，表格转换出来是这样子的 :disappointed:</p><p>Markdown文档</p><p><img src="https://upload-images.jianshu.io/upload_images/7692714-235cbd951c925c95.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/563/format/webp"></p><p>预览出来</p><p><img src="https://upload-images.jianshu.io/upload_images/7692714-ea29513995c11fea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/561/format/webp"></p><p>因此还需要进一步手动编辑整理完善表格</p><p>（如果，Word文档本身不包括表格，Word to Markdown Converter使用体验可谓相当便捷稳妥啦！）</p><h2 id="图片的下载与存储"><a href="#图片的下载与存储" class="headerlink" title="图片的下载与存储"></a>图片的下载与存储</h2><p>除了标准格式设置与表格调整问题， 图片的下载与存储也会是我们可能会遇到的问题</p><p>Markdown转换为Word ：在Markdown文档中，图片以网络超链接的形式保存,如果markdown文档中有这一类图片，那么需要在网络连接的情况下，才能正常输出有图片的word文档。否则，图片处显示空白</p><p>Word转换为Markdown ：Word转换为Markdown文档之后，文档中的图片输出到本地文件夹下，将该文件夹与输出的Markdown文档在同一目录下，在Markdown文档中图片引用本地相对路径，也就是说，必须保证</p><p>Markdown文档与存放图片的本地文件夹在一起，才能完整的在markdown编辑器中显示图片</p><blockquote><p>作者：stata连享会<br>链接：<a href="https://www.jianshu.com/p/df6a136d06d8">https://www.jianshu.com/p/df6a136d06d8</a><br>来源：简书</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> markdown </tag>
+            
+            <tag> word </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>GV自动回复消息与自动发送消息教程</title>
       <link href="2021/05/13/gvautosend/"/>
       <url>2021/05/13/gvautosend/</url>
