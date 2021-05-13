@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-13T10:23:34.379Z</updated>
+  <updated>2021-05-13T10:23:49.396Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ednovas.xyz/2021/05/13/wordtomd/"/>
     <id>https://ednovas.xyz/2021/05/13/wordtomd/</id>
     <published>2021-05-13T10:12:00.000Z</published>
-    <updated>2021-05-13T10:23:34.379Z</updated>
+    <updated>2021-05-13T10:23:49.396Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;方法一：Writage-Pandoc-–-双剑合璧！&quot;&gt;&lt;a href=&quot;#方法一：Writage-Pandoc-–-双剑合璧！&quot; class=&quot;headerlink&quot; title=&quot;方法一：Writage + Pandoc – 双剑合璧！&quot;&gt;&lt;/a&gt;方法一：Writage + Pandoc – 双剑合璧！&lt;/h2&gt;&lt;ol&gt;
@@ -85,16 +85,16 @@
     <link href="https://ednovas.xyz/2021/05/13/gvautosend/"/>
     <id>https://ednovas.xyz/2021/05/13/gvautosend/</id>
     <published>2021-05-13T10:06:00.000Z</published>
-    <updated>2021-05-13T10:06:52.691Z</updated>
+    <updated>2021-05-13T11:44:32.888Z</updated>
     
     
-    <summary type="html">&lt;p&gt;1、教程的環境為繁體字環境，簡體字環境請自行同義轉換理解~&lt;br&gt;2、如果您有Google多賬號，操作時請注意賬號的切換與查核~&lt;/p&gt;
-&lt;h2 id=&quot;一、GV自動回覆訊息&quot;&gt;&lt;a href=&quot;#一、GV自動回覆訊息&quot; class=&quot;headerlink&quot; title=&quot;一、GV自動回覆訊息&quot;&gt;&lt;/a&gt;一、GV自動回覆訊息&lt;/h2&gt;&lt;h3 id=&quot;1-1、將GV訊息轉發到Gmail&quot;&gt;&lt;a href=&quot;#1-1、將GV訊息轉發到Gmail&quot; class=&quot;headerlink&quot; title=&quot;1.1、將GV訊息轉發到Gmail&quot;&gt;&lt;/a&gt;1.1、將GV訊息轉發到Gmail&lt;/h3&gt;&lt;p&gt;網址：&lt;a href=&quot;https://voice.google.com/u/0/settings&quot;&gt;https://voice.google.com/u/0/settings&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/469c5f5e209d7eaccd80acbe7bc744c9.jpg&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;1-2、Gmail建立并設置篩選器&quot;&gt;&lt;a href=&quot;#1-2、Gmail建立并設置篩選器&quot; class=&quot;headerlink&quot; title=&quot;1.2、Gmail建立并設置篩選器&quot;&gt;&lt;/a&gt;1.2、Gmail建立并設置篩選器&lt;/h3&gt;&lt;p&gt;在Gmail點擊【管理標籤】，點擊【篩選器和封鎖的地址】，點擊【建立新篩選器】。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/00a3249c7f7b9283aa55eab2975d1d82.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;寄件者填寫【@txt.voice.google.com】，然後點擊【建立篩選器】。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/db4d273e6e407fe3c650012d5d5f2984.jpg&quot;&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;注意：如果您有谷歌多账号，为了避免切换出错，建议在浏览器无痕模式操作&lt;/p&gt;
+&lt;h2 id=&quot;GV自动回复消息&quot;&gt;&lt;a href=&quot;#GV自动回复消息&quot; class=&quot;headerlink&quot; title=&quot;GV自动回复消息&quot;&gt;&lt;/a&gt;GV自动回复消息&lt;/h2&gt;&lt;h3 id=&quot;将GV信息转移到Gmail&quot;&gt;&lt;a href=&quot;#将GV信息转移到Gmail&quot; class=&quot;headerlink&quot; title=&quot;将GV信息转移到Gmail&quot;&gt;&lt;/a&gt;将GV信息转移到Gmail&lt;/h3&gt;&lt;p&gt;网址：&lt;a href=&quot;https://voice.google.com/u/0/settings&quot;&gt;https://voice.google.com/u/0/settings&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ea199e8a667d61cb7c30afcb433a0967.jpg&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Gmail建立并创建过滤器&quot;&gt;&lt;a href=&quot;#Gmail建立并创建过滤器&quot; class=&quot;headerlink&quot; title=&quot;Gmail建立并创建过滤器&quot;&gt;&lt;/a&gt;Gmail建立并创建过滤器&lt;/h3&gt;&lt;p&gt;在Gmail点击【管理标签】，点击【过滤器和屏蔽的地址】，点击【创建新的过滤器】。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ace33ba722513323100f4e6ba0d53b9c.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;发件人填写【@txt.voice.google.com】，然后点击【创建过滤器】。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/db5fd53748155d2a21b6892c5297db8b.jpg&quot;&gt;&lt;/p&gt;</summary>
     
     
     
