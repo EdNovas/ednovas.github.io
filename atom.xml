@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-11T12:31:10.393Z</updated>
+  <updated>2021-05-13T10:06:52.691Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GV自动回复消息与自动发送消息教程</title>
+    <link href="https://ednovas.xyz/2021/05/13/gvautosend/"/>
+    <id>https://ednovas.xyz/2021/05/13/gvautosend/</id>
+    <published>2021-05-13T10:06:00.000Z</published>
+    <updated>2021-05-13T10:06:52.691Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;1、教程的環境為繁體字環境，簡體字環境請自行同義轉換理解~&lt;br&gt;2、如果您有Google多賬號，操作時請注意賬號的切換與查核~&lt;/p&gt;
+&lt;h2 id=&quot;一、GV自動回覆訊息&quot;&gt;&lt;a href=&quot;#一、GV自動回覆訊息&quot; class=&quot;headerlink&quot; title=&quot;一、GV自動回覆訊息&quot;&gt;&lt;/a&gt;一、GV自動回覆訊息&lt;/h2&gt;&lt;h3 id=&quot;1-1、將GV訊息轉發到Gmail&quot;&gt;&lt;a href=&quot;#1-1、將GV訊息轉發到Gmail&quot; class=&quot;headerlink&quot; title=&quot;1.1、將GV訊息轉發到Gmail&quot;&gt;&lt;/a&gt;1.1、將GV訊息轉發到Gmail&lt;/h3&gt;&lt;p&gt;網址：&lt;a href=&quot;https://voice.google.com/u/0/settings&quot;&gt;https://voice.google.com/u/0/settings&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/469c5f5e209d7eaccd80acbe7bc744c9.jpg&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-2、Gmail建立并設置篩選器&quot;&gt;&lt;a href=&quot;#1-2、Gmail建立并設置篩選器&quot; class=&quot;headerlink&quot; title=&quot;1.2、Gmail建立并設置篩選器&quot;&gt;&lt;/a&gt;1.2、Gmail建立并設置篩選器&lt;/h3&gt;&lt;p&gt;在Gmail點擊【管理標籤】，點擊【篩選器和封鎖的地址】，點擊【建立新篩選器】。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/00a3249c7f7b9283aa55eab2975d1d82.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;寄件者填寫【@txt.voice.google.com】，然後點擊【建立篩選器】。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/db4d273e6e407fe3c650012d5d5f2984.jpg&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="gv" scheme="https://ednovas.xyz/tags/gv/"/>
+    
+    <category term="googlevoice" scheme="https://ednovas.xyz/tags/googlevoice/"/>
+    
+  </entry>
   
   <entry>
     <title>DDNS 解析动态 IP</title>
@@ -662,40 +689,6 @@
     <category term="搜索" scheme="https://ednovas.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
     
     <category term="hexo" scheme="https://ednovas.xyz/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>制作一个自己的订阅链接</title>
-    <link href="https://ednovas.xyz/2021/04/30/subscribelink/"/>
-    <id>https://ednovas.xyz/2021/04/30/subscribelink/</id>
-    <published>2021-04-30T09:52:45.000Z</published>
-    <updated>2021-04-30T09:58:51.334Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;首先你要制作自己的订阅链接肯定手里有一些自己的节点，而管理多节点的话，最好用的工具还是v2rayn了&lt;/p&gt;
-&lt;p&gt;全选你的所有节点，然后复制或ctrl+c，黏贴到base64转换网址&lt;/p&gt;
-&lt;p&gt;比如&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://tool.chinaz.com/tools/base64.aspx&quot;&gt;https://tool.chinaz.com/tools/base64.aspx&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.sojson.com/base64.html&quot;&gt;https://www.sojson.com/base64.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://tool.oschina.net/encrypt?type=3&quot;&gt;https://tool.oschina.net/encrypt?type=3&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;转换完成后你会得到base64加密后的一串乱码，复制黏贴这串乱码，保存到你个你能在网页上获取到直链的地方&lt;/p&gt;
-&lt;p&gt;比如&lt;/p&gt;
-&lt;p&gt;github，gitee，vercel，gitlab等&lt;/p&gt;
-&lt;p&gt;新建一个仓库，新建一个md文档，然后黏贴，保存。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    
-    <category term="订阅链接" scheme="https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5/"/>
-    
-    <category term="subscribe link" scheme="https://ednovas.xyz/tags/subscribe-link/"/>
-    
-    <category term="节点" scheme="https://ednovas.xyz/tags/%E8%8A%82%E7%82%B9/"/>
-    
-    <category term="订阅" scheme="https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85/"/>
     
   </entry>
   
