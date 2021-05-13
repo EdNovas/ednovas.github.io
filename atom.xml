@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-13T10:23:49.396Z</updated>
+  <updated>2021-05-13T12:02:37.898Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Wayback Machine：一个从1996年至今备份了超过4000亿个网页的网页时光机</title>
+    <link href="https://ednovas.xyz/2021/05/13/waybackmachine/"/>
+    <id>https://ednovas.xyz/2021/05/13/waybackmachine/</id>
+    <published>2021-05-13T12:02:00.000Z</published>
+    <updated>2021-05-13T12:02:37.898Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;这个网站很有趣，在逗比那里看到的，网页时光机Wayback Machine，基本就是定期备份了所有网站的快照，供人查询，对于很多有网站的人来说，也可以看看当初自己网站的样子，回忆一下，其中内页也能访问，很强大。&lt;/p&gt;
+&lt;p&gt;网站地址：&lt;a href=&quot;http://web.archive.org/&quot;&gt;http://web.archive.org/&lt;/a&gt;&lt;br&gt;注意：这个网站被墙，需要挂梯子访问。&lt;/p&gt;
+&lt;h2 id=&quot;使用方法&quot;&gt;&lt;a href=&quot;#使用方法&quot; class=&quot;headerlink&quot; title=&quot;使用方法&quot;&gt;&lt;/a&gt;使用方法&lt;/h2&gt;&lt;p&gt;首先访问网站：&lt;a href=&quot;http://web.archive.org/&quot;&gt;http://web.archive.org/&lt;/a&gt; ，然后在屏幕中的输入框中输入你要查看的网站域名，例如：baidu.com。&lt;/p&gt;
+&lt;p&gt;输入后就会看到网站在搜索这个域名的快照备份信息，找到后就会如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.moerats.com/usr/picture/Wayback(1).png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;中间的是年份范围，下面的是月份日份范围。&lt;/p&gt;
+&lt;p&gt;下图是查询到的2002年11月19号的百度首页：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.moerats.com/usr/picture/Wayback(2).png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="markdown" scheme="https://ednovas.xyz/tags/markdown/"/>
+    
+    <category term="word" scheme="https://ednovas.xyz/tags/word/"/>
+    
+  </entry>
   
   <entry>
     <title>一键将 Word 转换为 Markdown</title>
@@ -680,41 +708,6 @@
     <category term="黏贴" scheme="https://ednovas.xyz/tags/%E9%BB%8F%E8%B4%B4/"/>
     
     <category term="剪贴板" scheme="https://ednovas.xyz/tags/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MOVER.IO 文件迁移服务</title>
-    <link href="https://ednovas.xyz/2021/05/01/moverio/"/>
-    <id>https://ednovas.xyz/2021/05/01/moverio/</id>
-    <published>2021-05-01T12:52:45.000Z</published>
-    <updated>2021-05-01T14:11:22.373Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;可能在大家手里面早就有了几个OneDrive的号，有个人号，E5管理号，A1子号，A1P子号，世纪互联子号，可是都是空的，也不敢存太多东西，要是能够转存资源就好了，刚好发现了一个比较优秀的网站，可以转存多种主流网盘(注:国外的)，当然也包括OneDrive不同域之间的转存，最重要的是，完全免费，只有一点小限制，而它这就是 mover.io。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;/2021/02/10/officee5/&quot;&gt;e5账户注册&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-f71c12dc94fbf0d8c44ba737517d30e1.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这个网站之前就是网盘搬家类的，就在去年2019年10月21号，被微软收购了(巨硬有钱任性)，现在用于将云文件迁移到OFFICE365(包括谷歌网盘，亚马逊等)，只进不出，接下来简单介绍一下!&lt;/p&gt;
-&lt;h2 id=&quot;官网地址&quot;&gt;&lt;a href=&quot;#官网地址&quot; class=&quot;headerlink&quot; title=&quot;官网地址&quot;&gt;&lt;/a&gt;官网地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://mover.io/&quot;&gt;https://mover.io&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;账号注册&quot;&gt;&lt;a href=&quot;#账号注册&quot; class=&quot;headerlink&quot; title=&quot;账号注册&quot;&gt;&lt;/a&gt;账号注册&lt;/h2&gt;&lt;p&gt;可以直接用微软账户登录&lt;/p&gt;
-&lt;h2 id=&quot;连接器&quot;&gt;&lt;a href=&quot;#连接器&quot; class=&quot;headerlink&quot; title=&quot;连接器&quot;&gt;&lt;/a&gt;连接器&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="网站" scheme="https://ednovas.xyz/categories/%E7%BD%91%E7%AB%99/"/>
-    
-    
-    <category term="网盘" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%9B%98/"/>
-    
-    <category term="mover.io" scheme="https://ednovas.xyz/tags/mover-io/"/>
-    
-    <category term="OneDrive" scheme="https://ednovas.xyz/tags/OneDrive/"/>
-    
-    <category term="googledrive" scheme="https://ednovas.xyz/tags/googledrive/"/>
-    
-    <category term="dropbox" scheme="https://ednovas.xyz/tags/dropbox/"/>
-    
-    <category term="互传" scheme="https://ednovas.xyz/tags/%E4%BA%92%E4%BC%A0/"/>
     
   </entry>
   
