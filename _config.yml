@@ -187,4 +187,4 @@ backup:
   theme: buttefly
   message: Back up my ednovas.xyz blog
   repository:
-    github: git@github.com:wdm1732418365/wdm1732418365.github.io.git,backup
+    github: git@wdm1732418365.github.com:wdm1732418365/wdm1732418365.github.io.git,backup
