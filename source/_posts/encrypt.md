@@ -3,7 +3,7 @@ title: 文章内容加密
 tags: [Hexo,魔改,butterfly,主题,加密]
 id: '1184'
 categories:
-  - - 网站
+  - - 建站
 date: 2021-02-01 20:15:00
 top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/pgp-encryption-hero.png

@@ -22,6 +22,34 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Microsoft-365.
 
 tgbot [@E5Sub_bot](https://t.me/E5Sub_bot)
 
+[@CRE5bot](https://t.me/CRE5bot)
+
+[@EUe5bot](https://t.me/EUe5bot)
+
+@E5_subbot
+
+@kre5_bot
+
+@E5subot
+
+@raindev_bot
+
+@rldsBot
+
+@NawE5SubBot
+
+@officeE5_bot  (@kingyii:  唯一一个使用 kubernetes 运行的e5机器人) 
+
+@SubE5_Bot
+
+@subfore5_bot
+
+@My_e5_bot
+
+@One365E5_bot
+
+更多bot加tg群组 https://t.me/e5subbot
+
 telegram bot 源码 https://github.com/iyear/E5SubBot
 
 使用的时候给bot发送 `/bind` 然后复制那个secret密码，登录你需要续订的e5账号，获取ID

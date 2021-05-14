@@ -6,7 +6,7 @@ categories:
   - - VPS
 date: 2021-02-08 13:23:00
 top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
-cover: http://bing.getlove.cn/bingImage
+cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/automation-inspiration-email-00-hero.png
 # highlight_shrink: true
 ---
 

@@ -3,7 +3,7 @@ title: 利用GitHub+jsdelivr搭建一个图床
 tags: [白嫖,图床,GitHub,jsdelivr,picGO]
 id: '1170'
 categories:
-  - - 网站
+  - - 建站
 date: 2021-01-24 17:18:00
 top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
 cover: https://qntemp3.bejson.com/upload/77230833517097600.png?imageView2/0/w/0/h/0/format/webp

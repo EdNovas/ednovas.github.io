@@ -15,6 +15,22 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a106
 ## 订阅链接转换
 如果不是Clash订阅链接需要转换的可以前往[这里](/2020/12/20/订阅链接转换/)
 
+## 视频
+
+使用教程
+
+感谢热心群友提供
+
+<video width="560" height="315" controls>
+  <source src="https://onecloud.ednovas.xyz/api/v3/file/source/175/%E5%AE%89%E5%8D%93%E5%AF%BC%E5%85%A5%E6%95%99%E7%A8%8B~1.mp4?sign=gyYuHtIiPD5fuCfAhLZtWQsMmJsrnaRvyIJqtA5knfc%3D%3A0" type="video/mp4">
+您的浏览器不支持 video 标签。
+</video>
+
+<!-- <iframe width="560" height="315" src="https://oneindex.ednovas.xyz/images/2021/02/08/clashandroid/%E5%AE%89%E5%8D%93%E5%AF%BC%E5%85%A5%E6%95%99%E7%A8%8B~1.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<video><source src="https://oneindex.ednovas.xyz/images/2021/02/08/clashandroid/%E5%AE%89%E5%8D%93%E5%AF%BC%E5%85%A5%E6%95%99%E7%A8%8B~1.mp4" type="video/mp4"></video> -->
+
+
 ## 下载安装
 1.  下载安装Clash for Android
     *   [谷歌应用商店下载连接](https://play.google.com/store/apps/details?id=com.github.kr328.clash)
@@ -27,9 +43,9 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a106
 
 选择文件导入（Import from File)或者链接导入(Import from URL),这里以链接导入为例，点击如图中第二个URL选项
 
-想要获取免费的订阅链接和yml文件还请加入tg群组或者qq群组，
+想要获取免费的订阅链接，[点此跳转](/2020/12/18/freesubscribes/)
 
-或者网页获取，[点此跳转](/2020/12/18/freesubscribes/)
+或加入[EdNovas云](https://ednovas.me/)，流量大、价格贱，节点较多，速度起飞！ https://ednovas.me/
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_2020-11-29-21-21-09.webp)
 

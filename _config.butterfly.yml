@@ -8,169 +8,209 @@
 
 menu:
   #主页 | Home: / || fas fa-home
+  目录 | Categories: /categories/ || fas fa-folder-open
   回忆 | Archives: /archives/ || fas fa-archive
   标签 | Tags: /tags/ || fas fa-tags
-  # 分类 | Categories: /categories/ || fas fa-folder-open
-  # 列表 | List||fas fa-list:
-  科学上网 | VPN: 
-    - 免费Clash订阅链接（持续更新） || /2020/12/18/freesubscribes/
-    - 机场购买指南 || /2020/12/31/机场/
-    - AK【硬核翻墙/科学上网】系列视频 || /2021/01/01/硬核翻墙/
-    - Clash电脑端使用说明 || /2020/11/29/clash-windows/
-    - Clash安卓端使用说明 || /2020/11/29/clash-android/
-    - V2Ray电脑端使用说明 || /2020/12/19/v2ray-windows/
-    - V2RayNG安卓端使用说明 || /2020/12/19/v2rayng/
-    - Shadowrocket iOS使用说明 || /2020/12/19/shadowrocket/
-    - 游戏代理Netch使用说明 || /2021/01/03/netch/
-    - Firefox插件、Github、Steam富强 || /2020/12/22/firefox插件、github、steam富强/
-    - 解决代理后无法正常连接微软服务 || /2020/12/26/解决代理后无法正常连接微软服务/
-    - 订阅链接转换 || /2020/12/20/订阅链接转换/
-    - Heroku部署免费自建节点 || /2021/01/04/heroku/
-    - 优雅的白嫖IBM云自建节点 || /2021/01/10/IBM/
-    - 免费抓取上千个白嫖节点 || /2021/01/15/freeproxies/
-    - WinXray 附上千免费节点的 V2ray || /2021/01/16/winxray/
-    - 傻瓜式免费VPN || 2021/01/19/freevpn/
-    - cmd设置代理 || /2021/01/21/failedtoconnect/
-    - Heroku部署Xray，Trojan-go，Shadowsocks || /2021/01/26/herokuxray/
-    - 搭建Proxypool抓取免费节点网站 || /2021/01/27/proxypool/
-    - Clash 汉化方法 || /2021/02/01/clashlanguage/
-    - VPN 黑名单 || /2021/02/06/vpnbalcklist/
-    - 科学的进行节点/订阅测速 || /2021/02/07/speedtest/
-    - Clash TUN和TAP模式 || /2021/02/15/clashtun/
-  虚拟服务器 | VPS:
-    - 正确永久白嫖Oracle Cloud || /2021/01/14/oraclecloud/
-    - Aria2 + VPS + Drive 离线下载 || /2020/12/26/aria2-vps-drive-离线下载/
-    - Ubuntu 用 vsftp 搭建 ftp 服务器 || /2021/01/14/ubuntuvsftp/
-    - FTP——网盘的绝佳代替品 || /2021/01/14/ftp/
-    - 白嫖 Euserv VPS（理论永久） || /2021/01/16/euserv/
-    - V2-ui面板 || /2021/01/20/v2ui/
-    - VPS宝塔搭建云便签网站 || /2021/01/25/note/
-    - 搭建Proxypool抓取免费节点网站 || /2021/01/27/proxypool/
-    - 搭建度盘链接解析网站 || /2021/01/30/pandownphp/
-    - ewomail搭建自定义域名邮箱 || /2021/02/08/ewomail/
-    - 服务器测压网站 || /2021/02/04/serverstress/
-    - 搭建 Wikipedia-zh 的镜像网站 || /2021/02/04/wikipediazh/
-    - 短信测压网站搭建 || /2021/02/15/messageboom/
-    - 搭建Oneindex个人网盘 || /2021/02/15/oneindex/
-  网站/建站 | Websites: 
-    - 实用网站（第一期） || /2020/12/04/wesites1/
-    - 实用网站（第二期） || /2020/11/30/websites2/
-    - 广告怎么知道我在想什么——浏览器跟踪 || /2020/12/21/广告怎么知道我在想什么/
-    - 钓鱼网站是如何盗取你的steam账号的（以身试险） || /2020/12/21/钓鱼网站是如何盗取你的steam账号/
-    - 谷歌无限空间团队盘申请 || /2020/12/21/谷歌无限空间团队盘申请/
-    - 网易云刷等级和听歌数量 || /2020/12/27/网易云刷等级和听歌数量/
-    - Freenom申请免费域名 || /2020/12/28/freenom申请免费域名/
-    - Infinityfree+Wordpress免费建站 || /2021/01/01/infinityfree/
-    - Telegraph匿名文章发布网站 || /2021/01/12/telegraph/
-    - Porkbun免费一年域名 || /2021/01/14/porkbun/
-    - 浏览器指纹追踪 || /2021/01/20/browsertrack/
-    - 网站托管到Vercel || /2021/01/21/vercel/
-    - Markdown快速转换表格 || /2021/01/21/markdowntable/
-    - 利用GitHub+jsdelivr搭建一个图床 || /2021/01/24/jsdelivr/
-    - GitHub访问和下载加速 || /2021/01/24/githubspeedup/
-    - 搭建Proxypool抓取免费节点网站 || /2021/01/27/proxypool/
-    - 搭建度盘链接解析网站 || /2021/01/30/pandownphp/
-    - Gitcalendar || /2021/01/21/gitcalendar/
-    - Pixiv Top 50 日榜插件 || /2021/02/01/pixivtop50/
-    - 页脚渐变魔改 || /2021/02/01/footermotion/
-    - 主题加入 Gitter 在线聊天室 || /2021/02/01/gitter/
-    - 文章内容加密 || /2021/02/01/encrypt/
-    - 服务器测压网站 || /2021/02/04/serverstress/
-    - 搭建 Wikipedia-zh 的镜像网站 || /2021/02/04/wikipediazh/
-    - 短信测压网站搭建 || /2021/02/15/messageboom/
-  软件 | Softwares:
-    - 电脑端截图方式 || /2020/12/26/电脑端截图方式一赏/
-    - 笔记软件Onenote || /2020/12/04/onenote/
-    - 添加开机自启软件 || /2020/12/26/添加开机自启软件/
-    - 最安全的浏览器Tor || /2020/12/27/最安全的浏览器tor/
-    - 批量无损压缩图片神器 || /2021/01/01/compress/
-    - QQ透明头像软件安卓 || /2021/01/02/qq/
-    - Waifu2X图片GIF视频放大 || /2021/01/03/waifu2x/
-    - 广告屏蔽/插件安装 || /2021/01/04/ads/
-    - Spotify破解版电脑端/安卓端 || /2021/01/07/spotify/
-    - Lucky免root破解神器 || /2021/01/07/lucky/
-    - Adguard Home去除家里所有设备上的广告 || /2021/01/08/adguardhome/
-    - 美剧星球——可能是手机上最好用的影视APP || /2021/01/10/美剧星球/
-    - Potplayer播放器——电脑看直播 || /2021/01/10/potplayer/
-    - 樱花动漫APP || /2021/01/10/sakuraanime/
-    - Powertoys——Windows官方窗口管理等多功能软件 || /2021/01/14/powertoys/
-    - 手机漫画APP|| /2021/01/14/comics/
-    - 手机端小说软件 || /2021/01/14/小说/
-    - Tap，Tap安卓手势软件 || /2021/01/14/taptap/
-    - QQ获取浏览器历史记录 || /2021/01/18/qqreadhistory/
-    - 浏览器指纹追踪 || /2021/01/20/browsertrack/
-    - 图吧硬件检测工具箱 || /2021/01/22/hardware/
-    - 搜图助手插件 || /2021/01/22/searchimages/
-    - Muviz Edge 安卓可视化音乐软件 || /2021/01/22/muviz/
-    - Chrome flags 隐藏功能 || /2021/01/23/chromeflag/
-    - RX文件管理器 || /2021/01/23/RX文件管理器/
-    - QTTabbar多窗口资源管理器 || /2021/01/23/qttabbar/
-    - Tracker 和 qBitorrent Enhanced说明 || /2021/01/27/tracker/
-    - Clover 多标签资源管理器拓展 || 2021/02/02/clover/
-    - Maya 一个简洁小巧的快速启动工具 || /2021/02/02/maya/
-    - Video Speed Controller 调整网页视频倍速 || /2021/02/02/speedcontroller/
-    - YesPlayMusic 第三方高颜值网易云播放器 || /2021/02/02/yesmusicplayer/
-    - Lenovo One Lite 安卓投屏工具 || /2021/02/03/lenovoonelite/
-    - 一指禅 - 自动关闭启动广告 || /2021/02/03/skipads/
-    - 图种制作 || /2021/02/04/picseed/
-    - ToDesk远程连接工具 || /2021/02/06/todesk/
-    - 御坂翻译器实时机翻 || /2021/02/07/translate/
-    - Raidrive 多云盘挂载本地 || /2021/02/10/raidrive/
-  下载 | Download:
-    - 度盘不限速下载 || /2020/12/26/度盘不限速下载方式一赏/
-    - Aria2 + VPS + Drive 离线下载 || /2020/12/26/aria2-vps-drive-离线下载/
-    - Chrome浏览器下载提速 || /2020/12/21/chrome浏览器下载提速/
-    - 多线程下载视频抓取软件IDM || /2020/12/21/多线程下载、视频抓取软件idm/
-    - 免费32线程下载软件NDM || /2020/12/21/免费32线程下载软件ndm/
-    - 免费128线程并发下载Xdown || /2020/12/21/免费128线程并发下载xdown/
-    - 高速轻量下载器Aria2 || /2020/12/21/高速轻量下载器aria2/
-    - 免费简约清爽下载器Motrix（吸血雷浅谈） || /2020/12/21/免费简约清爽下载器motrix（吸血雷/
-    - 迅雷破解版电脑端/安卓端 || /2021/01/07/thunder/
-    - FTP——网盘的绝佳代替品 || /2021/01/14/ftp/
-    - Tracker 和 qBitorrent Enhanced说明 || /2021/01/27/tracker/
-    - 搭建度盘链接解析网站 || /2021/01/30/pandownphp/
-  编程 | Program:
-    - Python Day 1 || /2020/12/26/python-day-1/
-    - Python Day 2 || /2020/12/26/python-day-2/
-    - Markdown基础 || /2021/01/21/markdownformat/
-    - Markdown快速转换表格 || /2021/01/21/markdowntable/
-    - Linux 下 screen 命令基本用法 || /2021/02/14/screen/
-  测评 | Tests:
-    - 极客湾苹果M1硬核测评 || /2021/01/01/M1
-    - 返璞归真系列测评第一篇——iPhone 4S || /2020/12/04/iphone4s/
-    - 返璞归真系列测评第二期——诺基亚808 PureView || /2020/12/06/nokia808/
-    - 返璞归真系列测评第三期——从iPad 1代到乔布斯 || /2020/12/07/ipad1/
-    - Beoplay H9 3rd Gen开箱测评 || /2020/12/20/beoplay/
-  付费解锁 | Pay to Unlock: 
-    - 如需购买请联系EdNovas || http://wpa.qq.com/msgrd?v=3&uin=180099495&site=qq&menu=yes
+  付费解锁 | Pay to Unlock||iconfont icon-fufei: 
+    - 如需解锁请联系EdNovas || http://wpa.qq.com/msgrd?v=3&uin=180099495&site=qq&menu=yes
     - 自建VPS节点 || /vps/
     - 付费订阅链接 || /urls/
     - ios外区账号 || /ios/
-  杂 | Anything: 
-    - 音乐分享 | Music Shares || /2020/12/19/musics/
-    - 电影频道 | Movies || /2021/01/06/movies/
-    - 无名·引子（小说试写） || /2020/12/21/无名·引子（小说试写）/
-    - 2020年度剪辑——Cee-Roo || /2020/12/22/2020-cee-roo/
-    - 1000多破解游戏，请支持正版 || /2021/01/04/games/
-    - Google - Year in Search 2020 || /2021/01/07/google2020/
-    - Incaseformat 蠕虫病毒 || /2021/01/15/incaseformat/
-    - 随机图片接口收集 || /2021/01/22/randomapi/
-    - 心灵奇旅 || /2021/01/25/soul/
-    - 人人影视被查，涉案金额1600万元 || /2021/02/04/renren/
-    - Google Voice 保号 || /2021/02/05/googlevoice/
-    - Google Voice 号转移 || /2021/02/06/gvtransfer/
-    - mklink 文件夹链接清理C盘空间 || /2021/02/07/mklink/
-    - 免费申请office E5 订阅和 5T Onedrive云盘空间 || /2021/02/10/officee5/
-    - E5 自动续订 || /2021/02/13/e5sub/
-    - 搭建Oneindex个人网盘 || /2021/02/15/oneindex/
-  友情链接 | Link: 
-    - 呆逼の博客 || https://keepdai.cn
-    - 青葱博客 || https://ciraos.top
-    - EdNovas Gitee 加速站 || https://ednovas.gitee.io
-    - 星之韵律的小屋 || https://z4042346.gitee.io/hexo
-  打赏 | Support||fas fa-heart: 
-    - 打赏 | Support || /支持/
-    - 隐私政策 | Pirvacy Policy || /privacy-policy/
+  朋友圈 | Link: /link/ || iconfont icon-pengyouquan
+  打赏支持 | Support: /支持/ || fas fa-heart
+  # 列表 | List||fas fa-list:
+  # 科学上网 | VPN||iconfont icon-feiji: 
+  #   - 免费Clash订阅链接（持续更新） || /2020/12/18/freesubscribes/
+  #   - VPN和机场比较 || /2021/03/11/vpnandjc/
+  #   - VPN 黑名单 || /2021/02/06/vpnbalcklist/
+  #   - 机场购买指南 || /2020/12/31/机场/
+  #   - AK【硬核翻墙/科学上网】系列视频 || /2021/01/01/硬核翻墙/
+  #   - 订阅链接转换 || /2020/12/20/订阅链接转换/
+  #   - Clash电脑端使用说明 || /2020/11/29/clash-windows/
+  #   - Clash 汉化方法 || /2021/02/01/clashlanguage/
+  #   - Clash安卓端使用说明 || /2020/11/29/clash-android/
+  #   - ClashX macOS 使用说明 || /2021/03/25/clashx/
+  #   - Clash TUN和TAP模式 || /2021/02/15/clashtun/
+  #   - Clash 实现任何平台不用代理软件科学上网 || /2021/02/06/clashconnection/
+  #   - Qv2ray和xray超集的使用 || /2021/03/20/qv2ray/
+  #   - V2Ray电脑端使用说明 || /2020/12/19/v2ray-windows/
+  #   - V2RayNG安卓端使用说明 || /2020/12/19/v2rayng/
+  #   - Surfboard 可能是最快的安卓代理软件 || /2021/03/10/surfboard/
+  #   - Shadowrocket iOS使用说明 || /2020/12/19/shadowrocket/
+  #   - 游戏代理Netch使用说明 || /2021/01/03/netch/
+  #   - WinXray 附上千免费节点的 V2ray || /2021/01/16/winxray/
+  #   - 傻瓜式免费VPN || /2021/01/19/freevpn/
+  #   - 科学的进行节点/订阅测速 || /2021/02/07/speedtest/
+  #   - Firefox插件、Github、Steam富强 || /2020/12/22/firefox插件、github、steam富强/
+  #   - 解决代理后无法正常连接微软服务 || /2020/12/26/解决代理后无法正常连接微软服务/
+  #   - Heroku部署免费自建节点 || /2021/01/04/heroku/
+  #   - Heroku部署Xray，Trojan-go，Shadowsocks || /2021/01/26/herokuxray/
+  #   - 优雅的白嫖IBM云自建节点 || /2021/01/10/IBM/
+  #   - 免费抓取上千个白嫖节点 || /2021/01/15/freeproxies/
+  #   - 搭建Proxypool抓取免费节点网站 || /2021/01/27/proxypool/
+  #   - cmd设置代理 || /2021/01/21/failedtoconnect/
+  #   - 搭建proxypool节点池（go） || /2021/04/22/newproxypool/
+  #   - 制作一个自己的订阅链接 || /2021/04/30/subscribelink/
+  # 虚拟服务器 | VPS||iconfont icon-fuwuqi:
+  #   - 正确永久白嫖Oracle Cloud || /2021/01/14/oraclecloud/
+  #   - Aria2 + VPS + Drive 离线下载 || /2020/12/26/aria2-vps-drive-离线下载/
+  #   - Ubuntu 用 vsftp 搭建 ftp 服务器 || /2021/01/14/ubuntuvsftp/
+  #   - FTP——网盘的绝佳代替品 || /2021/01/14/ftp/
+  #   - 白嫖 Euserv VPS（理论永久） || /2021/01/16/euserv/
+  #   - V2-ui面板 || /2021/01/20/v2ui/
+  #   - VPS宝塔搭建云便签网站 || /2021/01/25/note/
+  #   - 搭建Proxypool抓取免费节点网站 || /2021/01/27/proxypool/
+  #   - 搭建度盘链接解析网站 || /2021/01/30/pandownphp/
+  #   - ewomail搭建自定义域名邮箱 || /2021/02/08/ewomail/
+  #   - 服务器测压网站 || /2021/02/04/serverstress/
+  #   - 搭建 Wikipedia-zh 的镜像网站 || /2021/02/04/wikipediazh/
+  #   - 短信测压网站搭建 || /2021/02/15/messageboom/
+  #   - 搭建Oneindex个人网盘 || /2021/02/15/oneindex/
+  #   - MTProxy TLS 稳定不被墙一键安装脚本 || /2021/02/24/mtproxy/
+  #   - 免费和便宜的VPS || /2021/03/22/freevps/
+  #   - Heroku部署免费自建节点 || /2021/01/04/heroku/
+  #   - Heroku部署Xray，Trojan-go，Shadowsocks || /2021/01/26/herokuxray/
+  #   - MTProxy TLS 稳定不被墙一键安装脚本 || /2021/02/24/mtproxy/
+  #   - 白嫖月抛Atlas OS VPS || /2021/04/06/atlasos/
+  #   - 使用HE Tunnel Broker给IPv4 VPS免费添加公网IPv6支持 || /2021/04/15/hetunnel/
+  #   - 使用Cloudflare WARP给VPS服务器免费添加IPv4或IPv6网络支持 || /2021/04/15/warpipv6/
+  #   - 搭建proxypool节点池（go） || /2021/04/22/newproxypool/
+  # 网站/建站 | Websites||iconfont icon-website: 
+  #   - 实用网站（第一期） || /2020/12/04/wesites1/
+  #   - 实用网站（第二期） || /2020/11/30/websites2/
+  #   - 广告怎么知道我在想什么——浏览器跟踪 || /2020/12/21/广告怎么知道我在想什么/
+  #   - 钓鱼网站是如何盗取你的steam账号的（以身试险） || /2020/12/21/钓鱼网站是如何盗取你的steam账号/
+  #   - 谷歌无限空间团队盘申请 || /2020/12/21/谷歌无限空间团队盘申请/
+  #   - 网易云刷等级和听歌数量 || /2020/12/27/网易云刷等级和听歌数量/
+  #   - Freenom申请免费域名 || /2020/12/28/freenom申请免费域名/
+  #   - Infinityfree+Wordpress免费建站 || /2021/01/01/infinityfree/
+  #   - Telegraph匿名文章发布网站 || /2021/01/12/telegraph/
+  #   - Porkbun免费一年域名 || /2021/01/14/porkbun/
+  #   - 浏览器指纹追踪 || /2021/01/20/browsertrack/
+  #   - 网站托管到Vercel || /2021/01/21/vercel/
+  #   - Markdown快速转换表格 || /2021/01/21/markdowntable/
+  #   - 利用GitHub+jsdelivr搭建一个图床 || /2021/01/24/jsdelivr/
+  #   - GitHub访问和下载加速 || /2021/01/24/githubspeedup/
+  #   - 搭建Proxypool抓取免费节点网站 || /2021/01/27/proxypool/
+  #   - 搭建度盘链接解析网站 || /2021/01/30/pandownphp/
+  #   - Gitcalendar || /2021/01/21/gitcalendar/
+  #   - Pixiv Top 50 日榜插件 || /2021/02/01/pixivtop50/
+  #   - 页脚渐变魔改 || /2021/02/01/footermotion/
+  #   - 主题加入 Gitter 在线聊天室 || /2021/02/01/gitter/
+  #   - 文章内容加密 || /2021/02/01/encrypt/
+  #   - 服务器测压网站 || /2021/02/04/serverstress/
+  #   - 搭建 Wikipedia-zh 的镜像网站 || /2021/02/04/wikipediazh/
+  #   - 短信测压网站搭建 || /2021/02/15/messageboom/
+  #   - 部分国家和地区政府网站一览 || /2021/02/16/govsites/
+  #   - Hexo 迁移到 Typecho || /2021/02/17/hexototypecho/
+  #   - 学习/资源网站 || /2021/02/22/studyresource/
+  #   - 电影电视剧资源网站/APP || /2021/02/22/videos/
+  #   - 生成微信QQ支付宝三合一收款码 || /2021/03/12/qrcodes/
+  #   - 宝塔面板跳过绑定官方账户 || /2021/04/04/btpanel/
+  #   - Premium URL Shortener 短网址网站搭建 || /2021/04/19/shorturl/
+  #   - Wordpress搭建个人博客 || /2021/04/27/wordpress/
+  #   - Hexo添加Algolia搜索 || /2021/04/30/algolia/
+  #   - MOVER.IO 文件迁移服务 || /2021/05/01/moverio/
+  # 软件1 | Softwares||iconfont icon-ruanjianfuwu:
+  #   - 电脑端截图方式 || /2020/12/26/电脑端截图方式一赏/
+  #   - 笔记软件Onenote || /2020/12/04/onenote/
+  #   - 添加开机自启软件 || /2020/12/26/添加开机自启软件/
+  #   - 最安全的浏览器Tor || /2020/12/27/最安全的浏览器tor/
+  #   - 批量无损压缩图片神器 || /2021/01/01/compress/
+  #   - QQ透明头像软件安卓 || /2021/01/02/qq/
+  #   - Waifu2X图片GIF视频放大 || /2021/01/03/waifu2x/
+  #   - 广告屏蔽/插件安装 || /2021/01/04/ads/
+  #   - Spotify破解版电脑端/安卓端 || /2021/01/07/spotify/
+  #   - Lucky免root破解神器 || /2021/01/07/lucky/
+  #   - Adguard Home去除家里所有设备上的广告 || /2021/01/08/adguardhome/
+  #   - 美剧星球——可能是手机上最好用的影视APP || /2021/01/10/美剧星球/
+  #   - Potplayer播放器——电脑看直播 || /2021/01/10/potplayer/
+  #   - 樱花动漫APP || /2021/01/10/sakuraanime/
+  #   - Powertoys——Windows官方窗口管理等多功能软件 || /2021/01/14/powertoys/
+  #   - 手机漫画APP|| /2021/01/14/comics/
+  #   - 手机端小说软件 || /2021/01/14/小说/
+  #   - Tap，Tap安卓手势软件 || /2021/01/14/taptap/
+  #   - QQ获取浏览器历史记录 || /2021/01/18/qqreadhistory/
+  #   - 浏览器指纹追踪 || /2021/01/20/browsertrack/
+  #   - 图吧硬件检测工具箱 || /2021/01/22/hardware/
+  #   - 搜图助手插件 || /2021/01/22/searchimages/
+  #   - Muviz Edge 安卓可视化音乐软件 || /2021/01/22/muviz/
+  #   - Chrome flags 隐藏功能 || /2021/01/23/chromeflag/
+  # 软件2 | Softwares||iconfont icon-ruanjianfuwu:
+  #   - 提高效率————电脑查找清理查重卸载软件 || /2021/04/06/cleaner/
+  #   - RX文件管理器 || /2021/01/23/RX文件管理器/
+  #   - QTTabbar多窗口资源管理器 || /2021/01/23/qttabbar/
+  #   - Tracker 和 qBitorrent Enhanced说明 || /2021/01/27/tracker/
+  #   - Clover 多标签资源管理器拓展 || 2021/02/02/clover/
+  #   - Maya 一个简洁小巧的快速启动工具 || /2021/02/02/maya/
+  #   - Video Speed Controller 调整网页视频倍速 || /2021/02/02/speedcontroller/
+  #   - YesPlayMusic 第三方高颜值网易云播放器 || /2021/02/02/yesmusicplayer/
+  #   - Lenovo One Lite 安卓投屏工具 || /2021/02/03/lenovoonelite/
+  #   - 一指禅 - 自动关闭启动广告 || /2021/02/03/skipads/
+  #   - 图种制作 || /2021/02/04/picseed/
+  #   - ToDesk远程连接工具 || /2021/02/06/todesk/
+  #   - 御坂翻译器实时机翻 || /2021/02/07/translate/
+  #   - Raidrive 多云盘挂载本地 || /2021/02/10/raidrive/
+  #   - 抓包工具(Fiddler)汉化版 || /2021/02/19/fiddler/
+  #   - 基于 PotPlayer 的播放器教程 || /2021/02/22/potplayerset/
+  #   - 电影电视剧资源网站/APP || /2021/02/22/videos/
+  #   - Telegram使用指南 || /2021/02/22/telegram/
+  #   - Bing壁纸软件 || /2021/03/26/bingwallpaper/
+  #   - 搜图神器 || /2021/04/03/soutu/
+  #   - RSS阅读器 || /2021/04/14/rss/
+  #   - ASF steam挂卡神器 || /2021/04/14/asf/
+  #   - Pot+LAV+madVR配置教程 || /2021/04/19/lavmadvr/
+  #   - K-Lite Codec Pack || /2021/04/22/klite/
+  # 下载 | Download||iconfont icon-xiazai:
+  #   - 度盘不限速下载 || /2020/12/26/度盘不限速下载方式一赏/
+  #   - Aria2 + VPS + Drive 离线下载 || /2020/12/26/aria2-vps-drive-离线下载/
+  #   - Chrome浏览器下载提速 || /2020/12/21/chrome浏览器下载提速/
+  #   - 多线程下载视频抓取软件IDM || /2020/12/21/多线程下载、视频抓取软件idm/
+  #   - 免费32线程下载软件NDM || /2020/12/21/免费32线程下载软件ndm/
+  #   - 免费128线程并发下载Xdown || /2020/12/21/免费128线程并发下载xdown/
+  #   - 高速轻量下载器Aria2 || /2020/12/21/高速轻量下载器aria2/
+  #   - 免费简约清爽下载器Motrix（吸血雷浅谈） || /2020/12/21/免费简约清爽下载器motrix（吸血雷/
+  #   - 迅雷破解版电脑端/安卓端 || /2021/01/07/thunder/
+  #   - FTP——网盘的绝佳代替品 || /2021/01/14/ftp/
+  #   - Tracker 和 qBitorrent Enhanced说明 || /2021/01/27/tracker/
+  #   - 搭建度盘链接解析网站 || /2021/01/30/pandownphp/
+  # 编程 | Program||iconfont icon-bianchenghuanjing:
+  #   - Python Day 1 || /2020/12/26/python-day-1/
+  #   - Python Day 2 || /2020/12/26/python-day-2/
+  #   - Markdown基础 || /2021/01/21/markdownformat/
+  #   - Markdown快速转换表格 || /2021/01/21/markdowntable/
+  #   - Linux 下 screen 命令基本用法 || /2021/02/14/screen/
+  #   - Linux 下 CPU limit 命令基本用法 || /2021/04/15/cpulimit/
+  #   - Redis安装报错 || /2021/04/27/redis/
+  # 测评 | Tests||iconfont icon-ceping:
+  #   - 极客湾苹果M1硬核测评 || /2021/01/01/M1
+  #   - 返璞归真系列测评第一篇——iPhone 4S || /2020/12/04/iphone4s/
+  #   - 返璞归真系列测评第二期——诺基亚808 PureView || /2020/12/06/nokia808/
+  #   - 返璞归真系列测评第三期——从iPad 1代到乔布斯 || /2020/12/07/ipad1/
+  #   - Beoplay H9 3rd Gen开箱测评 || /2020/12/20/beoplay/
+  
+  # 杂 | Anything||iconfont icon-qita: 
+  #   - 音乐分享 | Music Shares || /2020/12/19/musics/
+  #   - 电影频道 | Movies || /2021/01/06/movies/
+  #   - 无名·引子（小说试写） || /2020/12/21/无名·引子（小说试写）/
+  #   - 2020年度剪辑——Cee-Roo || /2020/12/22/2020-cee-roo/
+  #   - 1000多破解游戏，请支持正版 || /2021/01/04/games/
+  #   - Google - Year in Search 2020 || /2021/01/07/google2020/
+  #   - Incaseformat 蠕虫病毒 || /2021/01/15/incaseformat/
+  #   - 随机图片接口收集 || /2021/01/22/randomapi/
+  #   - 心灵奇旅 || /2021/01/25/soul/
+  #   - 人人影视被查，涉案金额1600万元 || /2021/02/04/renren/
+  #   - Google Voice 保号 || /2021/02/05/googlevoice/
+  #   - Google Voice 号转移 || /2021/02/06/gvtransfer/
+  #   - mklink 文件夹链接清理C盘空间 || /2021/02/07/mklink/
+  #   - 免费申请office E5 订阅和 5T Onedrive云盘空间 || /2021/02/10/officee5/
+  #   - E5 自动续订 || /2021/02/13/e5sub/
+  #   - 搭建Oneindex个人网盘 || /2021/02/15/oneindex/
+  #   - 网易云音乐解锁灰色歌曲 || /2021/03/10/neteasemusic/
+  #   - 抓小猫小游戏 || /2021/03/10/catchcat/
+  #   - Telegram表情包制作 || /2021/03/24/tgstickers/
+
+
 #加密
 encrypt:
     enable: true
@@ -228,6 +268,7 @@ social:
    fab fa-qq: http://wpa.qq.com/msgrd?v=3&uin=180099495&site=qq&menu=yes || QQ
    fas fa-envelope: mailto:1732418365@qq.com || Email
    fab fa-github: https://github.com/wdm1732418365 || Github
+   iconfont icon-rss: /atom.xml || RSS
 
 # search (搜索)
 # --------------------------------------
@@ -237,6 +278,10 @@ algolia_search:
   enable: true
   hits:
     per_page: 10
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
+    hits_stats: "${hits} results found in ${time} ms"
 
 # Local search
 local_search:
@@ -362,7 +407,7 @@ index_post_content:
 toc:
   enable: true
   number: true
-  style_simple: false
+  style_simple: true
 
 post_copyright:
   enable: true
@@ -372,14 +417,14 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: true
+  enable: false
   QR_code:
-     - img: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/IMG_20210114_081337.JPG
-    #   link:
-     - text: wechat
-     - img: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/IMG_20210114_081257.JPG
-    #   link:
-     - text: alipay
+    #  - img: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/IMG_20210114_081337.JPG
+    # #   link:
+    #  - text: wechat
+    #  - img: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/IMG_20210114_081257.JPG
+    # #   link:
+    #  - text: alipay
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -494,19 +539,19 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
-  appId: # leancloud application app id
-  appKey: # leancloud application app key
+  appId: EnV5YLoyOBqrOXB9EDkMBSy4-gzGzoHsz # leancloud application app id
+  appKey: MCTWNHJYAMcvfKeta68Xi7Iu # leancloud application app key
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: en # i18n: zh-CN/zh-TW/en/ja
-  placeholder: Please leave your footprints # valine comment input placeholder (like: Please leave your footprints)
-  guest_info: nick,mail,link # valine comment header info (nick/mail/link)
-  recordIP: false # Record reviewer IP
+  lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
+  placeholder: 1732418365@qq.com # valine comment input placeholder (like: Please leave your footprints)
+  guest_info: nick,mail # valine comment header info (nick/mail/link)
+  recordIP: true # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: # valine background
   emojiCDN: # emoji CDN
-  enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-  requiredFields: nick,mail # required fields (nick/mail)
+  enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
+  requiredFields: nick,mail # required fields (nick/mail)额
   option:
 
 # waline - A simple comment system with backend support fork from Valine
@@ -591,7 +636,7 @@ footer:
     enable: true
     since: 2020
   custom_text: 已经到底啦！再往下划要坏掉啦！
-  copyright: false # Copyright of theme and framework
+  copyright: ture # Copyright of theme and framework
 
 # Analysis
 # --------------------------------------
@@ -602,7 +647,7 @@ baidu_analytics:
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics:
+google_analytics: UA-185849872-1
 
 # Tencent Analytics ID
 # https://mta.qq.com
@@ -635,7 +680,9 @@ google_adsense:
 ad:
   index: 
   aside:
-  post: 
+  post: <a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210405210546.png"><center><h3>EdNovas云————EdNovas自己搞的机场，不想来试试嘛？</h3></center></a>
+        <a href="https://tyt4.xyz/auth/register?code=0tqI" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/04-03_19-58-04.png"><center><h3>梯云梯————众多全球冷门节点，奈飞解锁，注册还可免费试用</h3></center></a>
+        <a href="https://antlink.cc/#/register?code=Wa3WBPHC" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/04-24_12-14-24.png"><center><h3>AntLink蚁链————新用户注册免费使用50g/30天，便宜IPLC机场</h3></center></a>
 
 # Verification (站長驗證)
 # --------------------------------------
@@ -698,6 +745,7 @@ tag_ui: # 留空或 index
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 background: 
+
 
 # Footer Background
 footer_bg: true
@@ -766,7 +814,7 @@ ClickShowText:
 
 # Default display mode (網站默認的顯示模式)
 # light (default) / dark
-display_mode: dark
+display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
@@ -851,19 +899,14 @@ aside:
         欢迎来到EdNovas的小站！
       </div>
       <div class="button--animated">
-        <a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://qm.qq.com/cgi-bin/qm/qr?k=qIK_ButQW4fDk_No3y88A7GBtVnwesPa&jump_from=webapi"></center>
+        <a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://jq.qq.com/?_wv=1027&k=13mMmSwQ"></center>
           <i class="fab fa-qq"></i>
           <span>点击加入QQ群组</span></a>
       </div>
       <div class="button--animated">
-        <center><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://t.me/joinchat/AAAAAEYoSx3MdvK6-00y3g"></center>
+        <center><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://t.me/ednovas2"></center>
           <i class="fab fa-telegram"></i>
           <span>点击加入TG频道</span></a>
-      </div>
-      <div class="button--animated">
-        <center><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://t.me/ednovas1"></center>
-          <i class="fab fa-telegram"></i>
-          <span>点击加入TG群组</span></a>
       </div>
   card_recent_post:
     enable: false
@@ -931,7 +974,7 @@ newest_comments:
 # --------------------------------------
 
 # Change font size
-change_font_size: false
+change_font_size: true
 
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
@@ -1044,19 +1087,20 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/lazyload
 lazyload:
-  enable: true
+  enable: false
   post: /img/pics/33063918.gif
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
-# pwa:
-#   enable: false
-#   manifest: /image/pwa/manifest.json
-#   apple_touch_icon: /image/pwa/apple-touch-icon.png
-#   favicon_32_32: /image/pwa/32.png
-#   favicon_16_16: /image/pwa/16.png
-#   mask_icon: /image/pwa/safari-pinned-tab.svg
+pwa:
+  enable: true
+  manifest: /manifest.json
+  theme_color: '#000000'
+  apple_touch_icon: /image/siteicon/apple-touch-icon.png
+  favicon_32_32: /image/siteicon/32.png
+  favicon_16_16: /image/siteicon/16.png
+  mask_icon: /image/siteicon/safari-pinned-tab.svg
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
@@ -1072,12 +1116,16 @@ inject:
   head:
     # - <link rel="stylesheet" href="/css/footermotion.css">
     - <link rel="stylesheet" href="/css/scrollbar.css">
+    - <link rel="stylesheet" href="//at.alicdn.com/t/font_2440505_a5eo7su26z8.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script defer src="/live2d-widget/autoload.js"></script>
     - <script src = "/js/chatroom.js"></script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
     - <script src = "/js/smoothscrolling.js"></script>
+    - <script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('setup',{'key':'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script>
     # - <script src="xxxx"></script>
+
+
 
 # CDN
 # Don't modify the following settings unless you know how they work

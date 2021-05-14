@@ -52,6 +52,14 @@ https://picsum.photos/
 
 https://placeholder.com/
 
+## 三秋
+
+随机风景图片API接口
+
+https://api.ghser.com/fengjing.html
+
+https://api.ghser.com/random/fengjing.php
+
 ## 小歪API
 https://api.ixiaowai.cn/
 

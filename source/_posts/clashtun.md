@@ -16,13 +16,13 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a106
 
 浏览器之类的应用都是使用系统代理的，一些非系统代理应用，可以通过设置被cfw接管。
 
-目前有两种模式，TAP模式和TUN模式，*** 更推荐使用TUN模式 ***（下面是windows系统方法，mac参考https://docs.cfw.lbyczf.com）。
+目前有两种模式，TAP模式和TUN模式，`更推荐使用TUN模式`（下面是windows系统方法，mac参考https://docs.cfw.lbyczf.com）。
 
 ## TUN模式
 
 ### 方法一
 
-1. 进入网站https://www.wintun.net，点击界面中Download Wintun xxx下载压缩包，根据系统版本（win10 64位对应的是amd64目录下）将对应目录中wintun.dll复制至clash的Home Directory目录中（General页面的Home Directory点击就可以打开）
+1. 进入网站 https://www.wintun.net ，点击界面中Download Wintun xxx下载压缩包，根据系统版本（win10 64位对应的是amd64目录下）将对应目录中wintun.dll复制至clash的Home Directory目录中（General页面的Home Directory点击就可以打开）
 
 2. 点击General中Service Mode右边Manage，在打开窗口中安装服务模式，安装完成应用会自动重启，Service Mode右边地球图标变为绿色即安装成功
 

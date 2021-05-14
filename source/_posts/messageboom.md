@@ -3,7 +3,7 @@ title: 短信测压网站搭建
 tags: [短信,测压,轰炸,网站,搭建]
 id: '1208'
 categories:
-  - - 网站
+  - - 建站
   - - VPS
 date: 2021-02-15 17:09:00
 top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'

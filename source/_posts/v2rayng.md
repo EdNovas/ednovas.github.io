@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2020-12-19 20:45:33
 top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2rayng.webp
+cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/maxresdefault.jpg
 ---
 
 ## 下载地址
@@ -23,6 +23,34 @@ https://ednovas.lanzous.com/iBggDk7cjeh
 
 ## 使用说明
 
-<iframe src="https://merlinblog.xyz/wiki/v2rayng.html" width="100%" height="1500"></iframe> 
+打开左边栏
 
-来自[Sabrina](https://merlinblog.xyz/wiki/v2rayng.html)
+![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-01_12-00-28.png)
+
+选择第一个订阅设置，右上角 + 添加一个订阅
+
+![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-01_11-59-14.png)
+
+黏贴你的v2ray格式订阅链接
+
+![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-01_11-59-52.png)
+
+点击右上角三个小点，点击更新订阅
+
+![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-01_12-01-09.png)
+
+测试节点延迟
+
+![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-01_12-02-48.png)
+
+选择一个节点连接
+
+![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-01_12-01-46.png)
+
+左边栏选择设置
+
+![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-01_12-07-49.png)
+
+路由模式选择绕过局域网及中国大陆
+
+![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-01_12-07-11.png)

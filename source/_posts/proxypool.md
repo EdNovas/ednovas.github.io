@@ -5,12 +5,25 @@ id: '1175'
 categories:
   - - 科学上网
   - - VPS
-  - - 网站
+  - - 建站
 date: 2021-01-27 17:30:00
 top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
 cover: https://api.ixiaowai.cn/gqapi/gqapi.php
 #highlight_shrink: true
 ---
+
+## Demo
+
+长期更新/添加抓取源，目前大概4000可用节点（2021.02.23）
+
+https://proxypool.ednovas.xyz
+
+
+***
+
+以下是搭建说明，没有特殊需要使用Demo就够用
+
+***
 
 ## 视频地址
 
@@ -118,3 +131,4 @@ nohup ./proxypool -c config.yaml 1>>run.log 2>>run.log &
 
 https://proxypool.ednovas.xyz
 
+无法访问或者需要账户密码就是暂时闭站了

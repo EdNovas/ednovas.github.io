@@ -3,7 +3,7 @@ title: 网站托管到Vercel
 tags: [网站,GitHub,Vercel,托管,域名,博客]
 id: '1158'
 categories:
-  - - 网站
+  - - 建站
 date: 2021-01-21 10:59:00
 top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1587482538420.webp

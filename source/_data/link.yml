@@ -1,0 +1,31 @@
+- class_name: 友情链接
+  class_desc: 主题框架
+  link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简单且强大的网站框架
+    - name: Butterfly 主题
+      link: https://butterfly.js.org/
+      avatar: https://butterfly.js.org/img/avatar.png
+      descr: 此博客使用的主题，特此感谢 Jerry 大佬
+
+- class_name: 朋友
+  class_desc: 值得推荐的博客
+  link_list:
+    - name: 叶清风的学习笔记
+      link: https://www.owo233.xyz/
+      avatar: https://secure.gravatar.com/avatar/4398eef8b812287d777a4377505ebd0f?s=48&r=G&d=
+      descr: 是博客呢。OwO
+    - name: Sabrina的万事屋
+      link: https://merlinblog.xyz/
+      avatar: https://merlinblog.xyz/usr/uploads/2020/07/1443918516.jpg
+      descr: Sabrina的万事屋
+    - name: 呆逼の博客
+      link: https://blog.keepdai.cn/
+      avatar: https://cdn.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/logo.png
+      descr: 一个初中生的博客
+    - name: EdNovas的小站（Gitee）
+      link: https://ednovas.gitee.io/
+      avatar: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/avator.jpg
+      descr: EdNovas的Gitee国内加速站

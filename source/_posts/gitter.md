@@ -3,7 +3,7 @@ title: 主题加入 Gitter 在线聊天室
 tags: [Hexo,魔改,butterfly,主题,聊天室]
 id: '1183'
 categories:
-  - - 网站
+  - - 建站
 date: 2021-02-01 15:01:00
 top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/updated-google-hangouts-chat-header@2x.png

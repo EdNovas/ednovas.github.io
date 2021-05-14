@@ -51,7 +51,7 @@ cover: https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1116506071,4272
 
 1. 首推Motrix，只是因为其高颜值。
 
-   Motrix使用和做种方法可以参考[这里](免费简约清爽下载器motrix（吸血雷.md)
+   Motrix使用和做种方法可以参考[这里](/2020/12/21/免费简约清爽下载器motrix（吸血雷/)
 
    [Motrix 添加 tracker方法](##Motrix添加tracker方法)
 

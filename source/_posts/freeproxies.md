@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2021-01-15 21:09:00
 top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
-cover: https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture
+cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/globe-2679754_1920-768x512-1.jpg
 ---
 
 # 免费抓取上千个白嫖节点
@@ -15,15 +15,91 @@ cover: https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPict
 
 ## 网站
 
-直接上网站：
+[自己搭建教程](/2021/01/27/proxypool/)
 
-https://proxypoolsstest.herokuapp.com/
+[自己搭建教程](/2021/04/22/newproxypool/)（新版）
+
+### EdNovas的节点池
+
+> EdNovas节点池因为一些原因决定暂时闭站
+
+~~**EdNovas自己搭建的节点抓取网站 https://proxypool.ednovas.xyz**~~
+
+~~**EdNovas自己搭建的节点抓取网站（新） https://proxy.ednovas.xyz**~~
+
+搜集的一些别的节点抓取网站
+
+### 别的大佬的节点池
+
+> 都闭站/关站了
+
+~~https://bihai.cf/
+https://proxypoolss.tk/
+https://proxypoolsstest.herokuapp.com/~~
+
+### 还未闭站/未统计/未知
+
+代理池集合如不能打开的选择全局，用谷歌浏览器重新打开:
+
+1-  https://proxypool.ednovas.xyz
+2-  https://proxy.iam7.tk
+3-  https://free.kingfu.cf
+4-  https://free.dswang.ga
+5-  https://clashpool.ml
+6-  https://sspool.nl
+7-  https://hm2019721.ml/
+8-  https://6166888.xyz
+9-  https://fu.stgod.com/
+10- 停服  http://8.136.5.236/
+11- 停服   https://bihai.cf/
+12- 没节点   https://fu.stgod.com/surge
+13- https://proxy.51798.xyz/
+14- https://hello.stgod.com/
+15- https://proxy.purel.in
+16- 没节点  https://upan.tk/
+17- https://proxypool-guest997.herokuapp.com/
+18- 停服 https://proxypoolss.tk/  
+19- https://ss.dswang.ga:8443/
+20- https://free886.herokuapp.com
+21- https://proxy.purel.in
+22- https://proxypool.ednovas.xyz
+23- https://233660.xyz/clash
+24- 自由代理  https://raw.githubusercontent.com/adiwzx/freenode/main/adispeed.txt
+25- 伊朗  小猫咪 https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.yml
+26- 不知道那里的小猫咪链接   
+https://raw.githubusercontent.com/adiwzx/freenode/main/adispeed.yml
+
+https://233660.xyz
+https://fq.lonxin.net
+https://free.dswang.ga
+https://free.kingfu.cf
+https://free886.herokuapp.com
+https://hello.stgod.com
+https://hm2019721.ml
+https://proxy.51798.xyz
+https://proxy.iam7.tk
+https://proxypool.ednovas.xyz
+https://ss.dswang.ga:8443
+https://sspool.nl
+https://upan.tk
+https://6166888.xyz
+https://bigproxies.herokuapp.com
+https://clashpool.ml
+https://free.mengbai.cf
+https://proxy.purel.in
+https://proxypool.fly.dev
+https://proxypool-guest997.herokuapp.com
+https://proxypoolv2.herokuapp.com
+https://freemby.tk
+https://www.linbaoz.com
+
+
+
+## 全部订阅链接
 
 这里包含了Clash、ShadowRocket、Surge等订阅链接地址
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-15_21-10-56.webp)
-
-## 全部订阅链接
 
 ```
 https://proxypoolsstest.herokuapp.com/clash/config

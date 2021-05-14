@@ -5,19 +5,71 @@ tags: []
 categories:
   - - uncategorized
 date: 2020-12-08 19:07:34
-password: ios
-message: 联系EdNovas获取密码
+# password: ios
+# message: 联系EdNovas获取密码
 ---
 
-仅应用商店登录，切记勿登录iCloud，登录错地方导致设备被锁概不负责。
+打开AppStore，点击右上角「头像」，划动到最下面选择「退出登录」，登录下方的ID即可。请不要在iCloud里直接登录，如果您在iCloud里直接登录导致隐私泄露和锁机，请自行负责！
 
 [百度经验换账号教程参考](https://jingyan.baidu.com/article/6525d4b1a2f0a0ac7c2e9462.html)
 
+如果提示开启双重认证，请点击“其他选项”>“不升级”即可，一定不要点击继续（否则您的手机会被锁定）
+
+提示需要密保问题验证?
+
+正确输入帐号及密码并且不点击开启双重认证是不需要密保问题的
+
+请将AppStore退出重新打开，检查帐号和密码是否输入正确并尝试重新登录（如果提示开启双重认证，请点击“其他选项”>“不升级”）
+
+# Quantumult
+
+nmsl778@aliyun.com
+
+WSND456ssr
+
+# Shadowrocket
+
+## 2021/05/13更新
+
+x-wurdec@aneeo.cc
+
+Aneeo.com-3976723
+
+n0n8kusxys@icloud.com
+
+Nb778899
+
+s7kp388w48@icloud.com
+
+Ad112211
+
+di001@appledi.com
+
+Appledicom123
+
+## 2021/05/09更新
+
+littbetzeiback1985@web.de
+
+Lovefromgelifen.xyz12345
+
+## 2021/4/3更新
+
+tiyuncc1@gmail.com
+
+Tyunti7678
+
+## 2021/3/31更新
+
+q2hek46dvr@icloud.com
+
+Nb778899
+
 ## 2021/1/23更新
 
-账号：hombo125@163.com
+hombo125@163.com
 
-密码：ABCABC520ssr
+ABCABC520ssr
 
 ## 2021/01/12更新
 

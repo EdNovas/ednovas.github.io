@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2021-01-16 21:31:00
 top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
-cover: https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture
+cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/fk0849hvg2rt13bpqhjy副本.jpg
 highlight_shrink: true
 ---
 

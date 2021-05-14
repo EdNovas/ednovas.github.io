@@ -6,7 +6,7 @@ categories:
   - - 软件
 date: 2021-01-18 11:48:00
 top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
-cover: https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture
+cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-c78b0cbf81571fdd2e0fd76555424555_720w.jpg
 #highlight_shrink: true
 ---
 

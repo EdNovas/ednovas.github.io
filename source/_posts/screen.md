@@ -6,11 +6,24 @@ categories:
   - - 编程
 date: 2021-02-14 11:32:00
 top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
-cover: http://bing.getlove.cn/bingImage
+cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/img_5cc898db4e3d3.png
 # highlight_shrink: true
 ---
 
 > https://blog.csdn.net/weixin_42181200/article/details/84141484
+
+CentOS下安装
+
+```
+yum install screen
+```
+
+Ubuntu/Debian下安装
+
+```
+apt-get install screen
+```
+
 
 screen是一个可以在多个进程（通常是交互式shell）之间复用一个物理终端的全屏幕窗口管理器。即linux下使用多窗口
 

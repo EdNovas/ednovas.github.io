@@ -3,10 +3,10 @@ title: 页脚渐变魔改
 tags: [Hexo,魔改,butterfly,主题,footer，页脚]
 id: '1181'
 categories:
-  - - 网站
+  - - 建站
 date: 2021-02-01 12:25:00
 top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
-cover: https://api.ixiaowai.cn/gqapi/gqapi.php
+cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/jianbian.jpg
 #top: true
 #highlight_shrink: true
 ---
