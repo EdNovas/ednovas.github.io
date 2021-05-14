@@ -184,7 +184,6 @@ feed:
 
 backup:
   type: git
-  theme: buttefly
-  message: Back up my ednovas.xyz blog
   repository:
     github: git@wdm1732418365.github.com:wdm1732418365/wdm1732418365.github.io.git,backup
+    gitcafe: git@wdm1732418365.github.com:wdm1732418365/wdm1732418365.github.io.git,backup
