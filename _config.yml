@@ -182,8 +182,3 @@ feed:
   template:
 
 
-backup:
-  type: git
-  repository:
-    github: git@wdm1732418365.github.com:wdm1732418365/wdm1732418365.github.io.git,backup
-    gitcafe: git@wdm1732418365.github.com:wdm1732418365/wdm1732418365.github.io.git,backup
