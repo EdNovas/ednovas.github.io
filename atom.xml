@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-19T10:14:50.208Z</updated>
+  <updated>2021-05-19T14:27:58.993Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -21,18 +21,16 @@
     <link href="https://ednovas.xyz/2021/05/19/tgshopbot/"/>
     <id>https://ednovas.xyz/2021/05/19/tgshopbot/</id>
     <published>2021-05-19T10:02:00.000Z</published>
-    <updated>2021-05-19T10:14:50.208Z</updated>
+    <updated>2021-05-19T14:27:58.993Z</updated>
     
     
-    <summary type="html">&lt;p&gt;发现了个很好用的tg发卡bot，GitHub地址：&lt;a href=&quot;https://github.com/devourbots/tg_faka_bot&quot;&gt;https://github.com/devourbots/tg_faka_bot&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;DEMO&quot;&gt;&lt;a href=&quot;#DEMO&quot; class=&quot;headerlink&quot; title=&quot;DEMO&quot;&gt;&lt;/a&gt;DEMO&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://t.me/ednovas_shop_bot&quot;&gt;https://t.me/ednovas_shop_bot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;发现了个很好用的tg发卡bot，GitHub地址：&lt;a href=&quot;https://github.com/devourbots/tg_faka_bot&quot;&gt;https://github.com/devourbots/tg_faka_bot&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;基于python开发的，用的sqlite3做数据库，足够轻便，方便备份&lt;/p&gt;
 &lt;p&gt;适配易支付，当面付，麻瓜支付&lt;/p&gt;
 &lt;p&gt;tg用户群组：&lt;a href=&quot;https://t.me/joinchat/HO9r-CLAudrxugPY&quot;&gt;https://t.me/joinchat/HO9r-CLAudrxugPY&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;tg频道：&lt;a href=&quot;https://t.me/devourbots_channel&quot;&gt;https://t.me/devourbots_channel&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Debian-Ubuntu下安装&quot;&gt;&lt;a href=&quot;#Debian-Ubuntu下安装&quot; class=&quot;headerlink&quot; title=&quot;Debian/Ubuntu下安装&quot;&gt;&lt;/a&gt;Debian/Ubuntu下安装&lt;/h2&gt;&lt;p&gt;进入根目录&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd ~&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;安装依赖&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt-get install git python3-pip screen -y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+&lt;h2 id=&quot;Debian-Ubuntu下安装&quot;&gt;&lt;a href=&quot;#Debian-Ubuntu下安装&quot; class=&quot;headerlink&quot; title=&quot;Debian/Ubuntu下安装&quot;&gt;&lt;/a&gt;Debian/Ubuntu下安装&lt;/h2&gt;&lt;p&gt;进入根目录&lt;/p&gt;</summary>
     
     
     
