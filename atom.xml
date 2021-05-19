@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-16T02:55:38.814Z</updated>
+  <updated>2021-05-19T10:14:50.208Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,48 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Telegram 发卡机器人搭建</title>
+    <link href="https://ednovas.xyz/2021/05/19/tgshopbot/"/>
+    <id>https://ednovas.xyz/2021/05/19/tgshopbot/</id>
+    <published>2021-05-19T10:02:00.000Z</published>
+    <updated>2021-05-19T10:14:50.208Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;发现了个很好用的tg发卡bot，GitHub地址：&lt;a href=&quot;https://github.com/devourbots/tg_faka_bot&quot;&gt;https://github.com/devourbots/tg_faka_bot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;基于python开发的，用的sqlite3做数据库，足够轻便，方便备份&lt;/p&gt;
+&lt;p&gt;适配易支付，当面付，麻瓜支付&lt;/p&gt;
+&lt;p&gt;tg用户群组：&lt;a href=&quot;https://t.me/joinchat/HO9r-CLAudrxugPY&quot;&gt;https://t.me/joinchat/HO9r-CLAudrxugPY&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;tg频道：&lt;a href=&quot;https://t.me/devourbots_channel&quot;&gt;https://t.me/devourbots_channel&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Debian-Ubuntu下安装&quot;&gt;&lt;a href=&quot;#Debian-Ubuntu下安装&quot; class=&quot;headerlink&quot; title=&quot;Debian/Ubuntu下安装&quot;&gt;&lt;/a&gt;Debian/Ubuntu下安装&lt;/h2&gt;&lt;p&gt;进入根目录&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd ~&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;安装依赖&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt-get install git python3-pip screen -y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="telegram" scheme="https://ednovas.xyz/tags/telegram/"/>
+    
+    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
+    
+    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    
+    <category term="机器人" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+    <category term="发卡" scheme="https://ednovas.xyz/tags/%E5%8F%91%E5%8D%A1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Cloudflare解析域名</title>
     <link href="https://ednovas.xyz/2021/05/15/cloudflare/"/>
     <id>https://ednovas.xyz/2021/05/15/cloudflare/</id>
-    <published>2021-05-15T14:07:35.659Z</published>
-    <updated>2021-05-16T02:55:38.814Z</updated>
+    <published>2021-05-15T14:08:00.000Z</published>
+    <updated>2021-05-19T10:02:11.030Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;Cloudflare是一家总部位于旧金山的美国跨国科技企业，以向客户提供基于反向代理的内容分发网络及分布式域名解析服务为主要业务。利用 Cloudflare 全球任播网络，Cloudflare可以帮助受保护站点抵御包拒绝服务攻击等网络攻击，确保该网站长期在线，同时提升网站的性能、加载速度以改善访客体验。&lt;/p&gt;
@@ -676,36 +713,6 @@
     <category term="github actions" scheme="https://ednovas.xyz/tags/github-actions/"/>
     
     <category term="ssh" scheme="https://ednovas.xyz/tags/ssh/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VPS unattended-upgrade占用100%问题解决</title>
-    <link href="https://ednovas.xyz/2021/05/02/unattended-upgrade/"/>
-    <id>https://ednovas.xyz/2021/05/02/unattended-upgrade/</id>
-    <published>2021-05-02T14:32:45.000Z</published>
-    <updated>2021-05-02T14:38:12.897Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;今天在ubuntu机器中发现了刚装了的系统居然有个叫unattended-upgrade的程序一直占用100%的cpu，那必须得杀！&lt;/p&gt;
-&lt;p&gt;直接 sudo kill -9 PID好像行不通&lt;/p&gt;
-&lt;p&gt;更改&lt;code&gt;config file&lt;/code&gt; &lt;code&gt;/etc/apt/apt.conf.d/20auto-upgrades&lt;/code&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo dpkg-reconfigure -plow unattended-upgrades&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;设置 &lt;code&gt;APT::Periodic::Unattended-Upgrade&lt;/code&gt; 为 “0”&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cat &amp;#x2F;etc&amp;#x2F;apt&amp;#x2F;apt.conf.d&amp;#x2F;20auto-upgrades&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;然后再 &lt;code&gt;kill -9 pid&lt;/code&gt; 应该就能杀死了&lt;/p&gt;
-</summary>
-    
-    
-    
-    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
-    
-    <category term="cpu" scheme="https://ednovas.xyz/tags/cpu/"/>
-    
-    <category term="占用" scheme="https://ednovas.xyz/tags/%E5%8D%A0%E7%94%A8/"/>
     
   </entry>
   
