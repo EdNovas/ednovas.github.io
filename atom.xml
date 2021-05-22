@@ -72,13 +72,13 @@
     <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="解析" scheme="https://ednovas.xyz/tags/%E8%A7%A3%E6%9E%90/"/>
-    
-    <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
-    
     <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
     
     <category term="domain" scheme="https://ednovas.xyz/tags/domain/"/>
+    
+    <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+    <category term="解析" scheme="https://ednovas.xyz/tags/%E8%A7%A3%E6%9E%90/"/>
     
   </entry>
   
@@ -224,13 +224,13 @@
     
     <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
     
-    <category term="dns" scheme="https://ednovas.xyz/tags/dns/"/>
-    
-    <category term="ddns" scheme="https://ednovas.xyz/tags/ddns/"/>
+    <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
     
     <category term="解析" scheme="https://ednovas.xyz/tags/%E8%A7%A3%E6%9E%90/"/>
     
-    <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
+    <category term="dns" scheme="https://ednovas.xyz/tags/dns/"/>
+    
+    <category term="ddns" scheme="https://ednovas.xyz/tags/ddns/"/>
     
   </entry>
   
@@ -275,11 +275,11 @@
     
     <category term="插件" scheme="https://ednovas.xyz/tags/%E6%8F%92%E4%BB%B6/"/>
     
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
-    
     <category term="pagermaid" scheme="https://ednovas.xyz/tags/pagermaid/"/>
     
     <category term="keyword" scheme="https://ednovas.xyz/tags/keyword/"/>
+    
+    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
     
   </entry>
   
