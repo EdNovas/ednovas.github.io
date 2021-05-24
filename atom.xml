@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-19T14:27:58.993Z</updated>
+  <updated>2021-05-24T03:13:08.295Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Debian Linux VPS 服务器 WireGuard 安装教程</title>
+    <link href="https://ednovas.xyz/2021/05/24/wireguard/"/>
+    <id>https://ednovas.xyz/2021/05/24/wireguard/</id>
+    <published>2021-05-24T03:08:00.000Z</published>
+    <updated>2021-05-24T03:13:08.295Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.wireguard.com/&quot;&gt;https://www.wireguard.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;WireGuard 想必不用过多介绍了，目前网上的 Wire­Guard 教程有的是一键脚本、有的是老方法，安装慢而且会带入了一堆乱七八糟的东西，而官方文档并没有详细说明安装方法。对于 VPS 而言则还要考虑一些实际因素，不然随意安装只有报错等着你。所以博主根据实际经验写了这篇适用于通用操作系统 De­bian 的通用 Wire­Guard 安装教程，适合有手动配置 Wire­Guard 需求的小伙伴。&lt;/p&gt;
+&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;h3 id=&quot;添加-back­ports-源&quot;&gt;&lt;a href=&quot;#添加-back­ports-源&quot; class=&quot;headerlink&quot; title=&quot;添加 back­ports 源&quot;&gt;&lt;/a&gt;添加 back­ports 源&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;echo &amp;quot;deb http:&amp;#x2F;&amp;#x2F;deb.debian.org&amp;#x2F;debian $(lsb_release -sc)-backports main&amp;quot; | sudo tee &amp;#x2F;etc&amp;#x2F;apt&amp;#x2F;sources.list.d&amp;#x2F;backports.list&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;安装依赖组件&quot;&gt;&lt;a href=&quot;#安装依赖组件&quot; class=&quot;headerlink&quot; title=&quot;安装依赖组件&quot;&gt;&lt;/a&gt;安装依赖组件&lt;/h2&gt;&lt;h3 id=&quot;安装网络工具包&quot;&gt;&lt;a href=&quot;#安装网络工具包&quot; class=&quot;headerlink&quot; title=&quot;安装网络工具包&quot;&gt;&lt;/a&gt;安装网络工具包&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt install net-tools iproute2 openresolv dnsutils -y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;安装-wireguard-tools-Wire­Guard-配置工具：wg、wg-quick&quot;&gt;&lt;a href=&quot;#安装-wireguard-tools-Wire­Guard-配置工具：wg、wg-quick&quot; class=&quot;headerlink&quot; title=&quot;安装 wireguard-tools (Wire­Guard 配置工具：wg、wg-quick)&quot;&gt;&lt;/a&gt;安装 wireguard-tools (Wire­Guard 配置工具：wg、wg-quick)&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
+    
+    <category term="wireguard" scheme="https://ednovas.xyz/tags/wireguard/"/>
+    
+    <category term="debian" scheme="https://ednovas.xyz/tags/debian/"/>
+    
+  </entry>
   
   <entry>
     <title>Telegram 发卡机器人搭建</title>
@@ -678,39 +707,6 @@
     <category term="asf" scheme="https://ednovas.xyz/tags/asf/"/>
     
     <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 SSH 连接 GitHub Action 服务器</title>
-    <link href="https://ednovas.xyz/2021/05/03/githubactions/"/>
-    <id>https://ednovas.xyz/2021/05/03/githubactions/</id>
-    <published>2021-05-03T03:41:35.778Z</published>
-    <updated>2021-05-03T04:34:42.765Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;奇技淫巧，请勿滥用&lt;/p&gt;
-&lt;p&gt;GitHub Actions 虚拟服务器(VM/VPS)评测（源自p3trex大佬）：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://p3terx.com/archives/github-actions-virtual-environment-simple-evaluation.html&quot;&gt;https://p3terx.com/archives/github-actions-virtual-environment-simple-evaluation.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;实际上 GitHub Ac­tions 本身是不允许直接连接进行交互式操作，但有好事的开发者竟然另辟蹊径通过安装 tmate 来实现了 SSH 连接，并且制作了相关的 ac­tion 。这使得我们可以非常容易连接到 Ac­tions 的虚拟环境中，相当于免费获得了 20 台 E5 2vCPU/​7G RAM/​90G SSD 配置的 Linux VPS 和 5 台 ma­cOS VPS。&lt;/p&gt;
-&lt;h2 id=&quot;tmate&quot;&gt;&lt;a href=&quot;#tmate&quot; class=&quot;headerlink&quot; title=&quot;tmate&quot;&gt;&lt;/a&gt;tmate&lt;/h2&gt;&lt;p&gt;GitHub项目地址：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/mxschmitt/action-tmate&quot;&gt;https://github.com/mxschmitt/action-tmate&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;第一个实现 tmate 连接 Ac­tions 的 ac­tion ，但此方案在退出连接后不能进行到下一个步骤，所以在实际使用中没有多少价值，且极易造成资源浪费，所以只能用于 SSH 连接。不过由于其开天辟地的作用，我决定把它放到第一位。&lt;/p&gt;
-&lt;p&gt;work­flow 文件示例：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;name: Ubuntu&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;on: push&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;jobs:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  build:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    runs-on: ubuntu-latest&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    steps:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - uses: actions&amp;#x2F;checkout@v1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - name: Setup tmate session&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      uses: mxschmitt&amp;#x2F;action-tmate@v1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
-    
-    <category term="github" scheme="https://ednovas.xyz/tags/github/"/>
-    
-    <category term="github actions" scheme="https://ednovas.xyz/tags/github-actions/"/>
-    
-    <category term="ssh" scheme="https://ednovas.xyz/tags/ssh/"/>
     
   </entry>
   
