@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-24T14:01:57.139Z</updated>
+  <updated>2021-05-27T06:21:11.770Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Telegram 创建一个私聊 bot</title>
+    <link href="https://ednovas.xyz/2021/05/27/tgpmbot/"/>
+    <id>https://ednovas.xyz/2021/05/27/tgpmbot/</id>
+    <published>2021-05-27T06:17:00.000Z</published>
+    <updated>2021-05-27T06:21:11.770Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;文章作者: GarveyZhong&lt;br&gt;文章链接: &lt;a href=&quot;https://blog.imzjw.cn/posts/75dadae5/&quot;&gt;https://blog.imzjw.cn/posts/75dadae5/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;本文章是针对那些 Telegram 是 +86 用户和在意自己隐私问题所记录的一篇教程。&lt;/p&gt;
+&lt;p&gt;看完本章教程之后，用户就可以和你所创建的机器人聊天，由机器人转发该用户的私聊消息，通过回复机器人所转发的消息即可回复用户，同时还可以减少窗口的数量且也保障了自己一定的隐私问题。&lt;/p&gt;
+&lt;p&gt;对于 +86 用户来说，基本可以满足，不过貌似可以通过 &lt;a href=&quot;https://t.me/SpamBot&quot;&gt;@SpamBot&lt;/a&gt; 申诉解除限制，但万一如果你的朋友也是 +86 的话，他就不能和你联系了，你也告诉不了他可以通过 &lt;a href=&quot;https://t.me/SpamBot&quot;&gt;@SpamBot&lt;/a&gt; 解除。&lt;/p&gt;
+&lt;h2 id=&quot;创建机器人&quot;&gt;&lt;a href=&quot;#创建机器人&quot; class=&quot;headerlink&quot; title=&quot;创建机器人&quot;&gt;&lt;/a&gt;创建机器人&lt;/h2&gt;&lt;p&gt;点击 &lt;a href=&quot;https://t.me/BotFather&quot;&gt;@BotFather&lt;/a&gt; ，通过机器人之父创建一个机器人。&lt;/p&gt;
+&lt;p&gt;向它发送 /newbot 指令&lt;/p&gt;
+&lt;p&gt;然后就会问你准备要给机器人起一个什么名字（随意，可以中文）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/npm/cpdd/posts/75dadae5/20210524222523.webp&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="telegram" scheme="https://ednovas.xyz/tags/telegram/"/>
+    
+    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
+    
+    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    
+    <category term="机器人" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+    <category term="私聊" scheme="https://ednovas.xyz/tags/%E7%A7%81%E8%81%8A/"/>
+    
+  </entry>
   
   <entry>
     <title>别好奇，暗网真的没意思</title>
@@ -670,36 +706,6 @@
     <category term="telegram" scheme="https://ednovas.xyz/tags/telegram/"/>
     
     <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VPS黑话</title>
-    <link href="https://ednovas.xyz/2021/05/05/vpsheihua/"/>
-    <id>https://ednovas.xyz/2021/05/05/vpsheihua/</id>
-    <published>2021-05-05T14:31:00.000Z</published>
-    <updated>2021-05-05T14:55:19.983Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;一.oneman:&lt;/p&gt;
-&lt;p&gt;指只有一个人经营的idc服务商，业内比较出名的有ramnode，不过这家严格说并不是oneman，人家是夫妻店，是俩人23333。还有那个常年侮辱中国客户的bugetvz，是个澳洲村炮自己开的oneman店。&lt;/p&gt;
-&lt;p&gt;二.毒妇，杜甫&lt;/p&gt;
-&lt;p&gt;指的是独立服务器，缩写是独服，因为输入法经常打成毒妇或者是杜甫，所以这个称呼也沿用开了。&lt;/p&gt;
-&lt;p&gt;三.小鸡&lt;/p&gt;
-&lt;p&gt;指小型vps，往往配置非常低，但是麻雀虽小五脏俱全，往往都有独立ip，同时价格也很便宜。&lt;/p&gt;
-&lt;p&gt;另外一个意思就是独立服务器里开出来的小vps，也叫小鸡。&lt;/p&gt;
-&lt;p&gt;四.母鸡&lt;/p&gt;
-&lt;p&gt;指独立服务器。因为vps都是拿独立服务器虚拟出来的（其实就是独服开了一堆虚拟机），所以小vps叫小鸡，生出小vps来的独服叫母鸡。&lt;/p&gt;
-&lt;p&gt;五.超售&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="黑话" scheme="https://ednovas.xyz/tags/%E9%BB%91%E8%AF%9D/"/>
     
   </entry>
   
