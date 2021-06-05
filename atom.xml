@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-05-27T06:21:11.770Z</updated>
+  <updated>2021-06-05T13:27:17.047Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建 QQ 搜图 bot</title>
+    <link href="https://ednovas.xyz/2021/06/05/qqbot/"/>
+    <id>https://ednovas.xyz/2021/06/05/qqbot/</id>
+    <published>2021-06-05T12:19:00.000Z</published>
+    <updated>2021-06-05T13:27:17.047Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;项目&quot;&gt;&lt;a href=&quot;#项目&quot; class=&quot;headerlink&quot; title=&quot;项目&quot;&gt;&lt;/a&gt;项目&lt;/h2&gt;&lt;p&gt;主要用到的程序 &lt;a href=&quot;https://github.com/Mrs4s/go-cqhttp&quot;&gt;go-cqhttp&lt;/a&gt; 和 &lt;a href=&quot;https://github.com/Tsuk1ko/cq-picsearcher-bot&quot;&gt;cq-picsearcher-bot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Mrs4s/go-cqhttp&quot;&gt;https://github.com/Mrs4s/go-cqhttp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Tsuk1ko/cq-picsearcher-bot&quot;&gt;https://github.com/Tsuk1ko/cq-picsearcher-bot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h2&gt;&lt;p&gt;需要一台linux VPS&lt;/p&gt;
+&lt;p&gt;（windows系统也可，但是因为各方面原因肯定是不如服务器效果好的）&lt;/p&gt;
+&lt;p&gt;文中服务器已安装宝塔国际版，并用其演示&lt;/p&gt;
+&lt;p&gt;已经使用ssh连接到服务器&lt;/p&gt;
+&lt;h2 id=&quot;下载-go-cqhttp&quot;&gt;&lt;a href=&quot;#下载-go-cqhttp&quot; class=&quot;headerlink&quot; title=&quot;下载 go-cqhttp&quot;&gt;&lt;/a&gt;下载 go-cqhttp&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    
+    <category term="搜图" scheme="https://ednovas.xyz/tags/%E6%90%9C%E5%9B%BE/"/>
+    
+    <category term="机器人" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+    <category term="qq" scheme="https://ednovas.xyz/tags/qq/"/>
+    
+  </entry>
   
   <entry>
     <title>Telegram 创建一个私聊 bot</title>
@@ -675,37 +707,6 @@
     <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
     
     <category term="windows" scheme="https://ednovas.xyz/tags/windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pagermaid————Telgeram人形自走bot搭建</title>
-    <link href="https://ednovas.xyz/2021/05/05/pagermaid/"/>
-    <id>https://ednovas.xyz/2021/05/05/pagermaid/</id>
-    <published>2021-05-05T15:31:00.000Z</published>
-    <updated>2021-05-05T17:40:19.131Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;GitHub项目地址：&lt;a href=&quot;https://github.com/Xtao-Labs/PagerMaid-Modify&quot;&gt;https://github.com/Xtao-Labs/PagerMaid-Modify&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;一键脚本（不推荐）&quot;&gt;&lt;a href=&quot;#一键脚本（不推荐）&quot; class=&quot;headerlink&quot; title=&quot;一键脚本（不推荐）&quot;&gt;&lt;/a&gt;一键脚本（不推荐）&lt;/h2&gt;&lt;p&gt;我是尝试过用一键脚本安装过的，但是容易出问题，所以不建议&lt;/p&gt;
-&lt;p&gt;一键脚本安装命令：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;Xtao-Labs&amp;#x2F;PagerMaid-Modify&amp;#x2F;master&amp;#x2F;install.sh -O install.sh&amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; bash install.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;或者：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget https:&amp;#x2F;&amp;#x2F;cdn.jsdelivr.net&amp;#x2F;gh&amp;#x2F;xtaodada&amp;#x2F;PagerMaid-Modify&amp;#x2F;install.sh -O install.sh&amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; bash install.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;脚本已测试系统：centos 7、centos 8、ubuntu 16.04、ubuntu 18.04、ubuntu 20.04、debian 9、debian 10&lt;/p&gt;
-&lt;p&gt;理论支持系统：Centos 7-8、Ubuntu 16.04-20.04、Debian 8-10&lt;/p&gt;
-&lt;h2 id=&quot;Docker安装&quot;&gt;&lt;a href=&quot;#Docker安装&quot; class=&quot;headerlink&quot; title=&quot;Docker安装&quot;&gt;&lt;/a&gt;Docker安装&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="telegram" scheme="https://ednovas.xyz/tags/telegram/"/>
-    
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
     
   </entry>
   
