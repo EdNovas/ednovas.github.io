@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-06-05T14:06:37.563Z</updated>
+  <updated>2021-06-06T14:18:23.157Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>搭建订阅转换网站</title>
+    <link href="https://ednovas.xyz/2021/06/06/subs/"/>
+    <id>https://ednovas.xyz/2021/06/06/subs/</id>
+    <published>2021-06-06T12:29:00.000Z</published>
+    <updated>2021-06-06T14:18:23.157Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;前端：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/CareyWang/sub-web&quot;&gt;https://github.com/CareyWang/sub-web&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;后端：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/tindy2013/subconverter&quot;&gt;https://github.com/tindy2013/subconverter&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;解析域名&quot;&gt;&lt;a href=&quot;#解析域名&quot; class=&quot;headerlink&quot; title=&quot;解析域名&quot;&gt;&lt;/a&gt;解析域名&lt;/h2&gt;&lt;p&gt;先解析两个域名，建议开启小云朵cdn，设置cloudflare的ssl/tls为完全严格&lt;/p&gt;
+&lt;p&gt;一个用作前端，一个用作后端&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_20-48-34.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_20-49-16.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="订阅转换" scheme="https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>搭建 QQ 搜图 bot</title>
     <link href="https://ednovas.xyz/2021/06/05/qqbot/"/>
     <id>https://ednovas.xyz/2021/06/05/qqbot/</id>
     <published>2021-06-05T12:19:00.000Z</published>
-    <updated>2021-06-05T14:06:37.563Z</updated>
+    <updated>2021-06-06T13:00:19.991Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;项目&quot;&gt;&lt;a href=&quot;#项目&quot; class=&quot;headerlink&quot; title=&quot;项目&quot;&gt;&lt;/a&gt;项目&lt;/h2&gt;&lt;p&gt;主要用到的程序 &lt;a href=&quot;https://github.com/Mrs4s/go-cqhttp&quot;&gt;go-cqhttp&lt;/a&gt; 和 &lt;a href=&quot;https://github.com/Tsuk1ko/cq-picsearcher-bot&quot;&gt;cq-picsearcher-bot&lt;/a&gt;&lt;/p&gt;
@@ -679,34 +709,6 @@
     <category term="google" scheme="https://ednovas.xyz/tags/google/"/>
     
     <category term="baidu" scheme="https://ednovas.xyz/tags/baidu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NZXT CAM 电脑状态监控软件</title>
-    <link href="https://ednovas.xyz/2021/05/06/nzxtcam/"/>
-    <id>https://ednovas.xyz/2021/05/06/nzxtcam/</id>
-    <published>2021-05-06T11:14:00.000Z</published>
-    <updated>2021-05-06T11:20:00.976Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;官方网站：&lt;a href=&quot;https://www.nzxt.com/camapp&quot;&gt;https://www.nzxt.com/camapp&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;使用&quot;&gt;&lt;a href=&quot;#使用&quot; class=&quot;headerlink&quot; title=&quot;使用&quot;&gt;&lt;/a&gt;使用&lt;/h2&gt;&lt;p&gt;软件支持简体中文&lt;/p&gt;
-&lt;p&gt;硬件监控情况&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-06_19-11-40.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;详细系统信息&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-06_19-16-45.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;CPU具体信息&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-06_19-17-49.png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="windows" scheme="https://ednovas.xyz/tags/windows/"/>
     
   </entry>
   
