@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>搭建一个rss订阅bot</title>
+      <link href="2021/06/07/rss_bot/"/>
+      <url>2021/06/07/rss_bot/</url>
+      
+        <content type="html"><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p>搭建一个telegram 上的 rss 订阅 bot，两个项目都不错，这里选用的是flowerss-bot（第一个）</p><p><a href="https://github.com/indes/flowerss-bot">https://github.com/indes/flowerss-bot</a></p><p><a href="https://github.com/iovxw/rssbot">https://github.com/iovxw/rssbot</a></p><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>官方部署文档：</p><p><a href="https://flowerss-bot.vercel.app/#/install">https://flowerss-bot.vercel.app/#/install</a></p><p>首先ssh连接上VPS，然后新建文件夹并且下载最新版本releases并解压：</p><p>（这里使用的是0.8.3版本，可能不是最新版 release地址：<a href="https://github.com/indes/flowerss-bot/releases%EF%BC%8C%E7%9B%AE%E5%89%8D%E6%B2%A1%E6%9C%89arm%E7%89%88%E6%9C%AC%EF%BC%89">https://github.com/indes/flowerss-bot/releases，目前没有arm版本）</a></p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir &#x2F;home&#x2F;flowerss &amp;&amp; cd &#x2F;home&#x2F;flowerss</span><br><span class="line">wget https:&#x2F;&#x2F;github.com&#x2F;indes&#x2F;flowerss-bot&#x2F;releases&#x2F;download&#x2F;v0.8.3&#x2F;flowerss-bot-v0.8.3-linux-amd64.tar.gz</span><br><span class="line">tar -zxvf flowerss-bot-v0.8.3-linux-amd64.tar.gz</span><br><span class="line">copy config.yml.sample config.yml</span><br></pre></td></tr></table></figure><p>然后用文本编辑器编辑编辑config.yml文件，如vi，宝塔，finalshell等</p><h2 id="获取token"><a href="#获取token" class="headerlink" title="获取token"></a>获取token</h2><p>去私聊<a href="https://t.me/botfather">@BotFather</a>然后/newbot新建一个机器人</p><p>输入你想叫的名字，以及分配一个用户名，用户名需要以bot结尾，比如图中的 ednovas_rss_bot</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-07_14-14-58.png"></p><p>最后会返回给你bot的token，复制并黏贴到config.yml中的bot_token的位置并保存</p><p>![](<a href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-07_14-17-45.png%EF%BC%89">https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-07_14-17-45.png）</a></p><h2 id="开启程序"><a href="#开启程序" class="headerlink" title="开启程序"></a>开启程序</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">screen -S flowerss</span><br><span class="line">.&#x2F;flowerss-bot</span><br></pre></td></tr></table></figure><p>然后ctrl+a+d退出screen窗口</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>私聊@ednovas_rss_bot即你刚刚创建的bot使用</p><p>更多使用说明参考官方文档：</p><p><a href="https://flowerss-bot.vercel.app/#/usage">https://flowerss-bot.vercel.app/#/usage</a></p><p>给频道添加订阅需要先给bot频道管理员权限，然后</p><p>/sub @ChannelID [url] 订阅</p><p>比如</p><p>/sub @ednovas2 <a href="https://ednovas.xyz/atom.xml">https://ednovas.xyz/atom.xml</a></p><p>即可</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> VPS </category>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 搭建 </tag>
+            
+            <tag> bot </tag>
+            
+            <tag> RSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>搭建订阅转换网站</title>
       <link href="2021/06/06/subs/"/>
       <url>2021/06/06/subs/</url>

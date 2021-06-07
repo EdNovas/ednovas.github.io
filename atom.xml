@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-06-06T14:18:23.157Z</updated>
+  <updated>2021-06-07T06:24:43.370Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建一个rss订阅bot</title>
+    <link href="https://ednovas.xyz/2021/06/07/rss_bot/"/>
+    <id>https://ednovas.xyz/2021/06/07/rss_bot/</id>
+    <published>2021-06-07T06:06:00.000Z</published>
+    <updated>2021-06-07T06:24:43.370Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;搭建一个telegram 上的 rss 订阅 bot，两个项目都不错，这里选用的是flowerss-bot（第一个）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/indes/flowerss-bot&quot;&gt;https://github.com/indes/flowerss-bot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/iovxw/rssbot&quot;&gt;https://github.com/iovxw/rssbot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;部署&quot;&gt;&lt;a href=&quot;#部署&quot; class=&quot;headerlink&quot; title=&quot;部署&quot;&gt;&lt;/a&gt;部署&lt;/h2&gt;&lt;p&gt;官方部署文档：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://flowerss-bot.vercel.app/#/install&quot;&gt;https://flowerss-bot.vercel.app/#/install&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;首先ssh连接上VPS，然后新建文件夹并且下载最新版本releases并解压：&lt;/p&gt;
+&lt;p&gt;（这里使用的是0.8.3版本，可能不是最新版 release地址：&lt;a href=&quot;https://github.com/indes/flowerss-bot/releases%EF%BC%8C%E7%9B%AE%E5%89%8D%E6%B2%A1%E6%9C%89arm%E7%89%88%E6%9C%AC%EF%BC%89&quot;&gt;https://github.com/indes/flowerss-bot/releases，目前没有arm版本）&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir &amp;#x2F;home&amp;#x2F;flowerss &amp;amp;&amp;amp; cd &amp;#x2F;home&amp;#x2F;flowerss&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;indes&amp;#x2F;flowerss-bot&amp;#x2F;releases&amp;#x2F;download&amp;#x2F;v0.8.3&amp;#x2F;flowerss-bot-v0.8.3-linux-amd64.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tar -zxvf flowerss-bot-v0.8.3-linux-amd64.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;copy config.yml.sample config.yml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/VPS/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    
+    <category term="RSS" scheme="https://ednovas.xyz/tags/RSS/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建订阅转换网站</title>
@@ -668,47 +702,6 @@
     <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
     
     <category term="speedtest" scheme="https://ednovas.xyz/tags/speedtest/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo提交百度和Google谷歌收录</title>
-    <link href="https://ednovas.xyz/2021/05/07/shoulu/"/>
-    <id>https://ednovas.xyz/2021/05/07/shoulu/</id>
-    <published>2021-05-06T22:14:00.000Z</published>
-    <updated>2021-05-07T05:24:43.318Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;文章作者: Hansion&lt;br&gt;文章链接: &lt;a href=&quot;http://www.hansion.win/2020/04/13/hexo-bo-ke-deng-jing-tai-wang-ye-ti-jiao-bai-du-he-google-gu-ge-shou-lu/&quot;&gt;http://www.hansion.win/2020/04/13/hexo-bo-ke-deng-jing-tai-wang-ye-ti-jiao-bai-du-he-google-gu-ge-shou-lu/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;站点地图&quot;&gt;&lt;a href=&quot;#站点地图&quot; class=&quot;headerlink&quot; title=&quot;站点地图&quot;&gt;&lt;/a&gt;站点地图&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;站点地图是一个网站所有链接的容器。很多网站的连接层次比较深，爬虫很难抓取到，站点地图可以方便爬虫抓取网站页面，通过抓取网站页面，清晰了解网站的架构，网站地图一般存放在根目录下并命名sitemap，为爬虫指路，增加网站重要内容页面的收录。站点地图就是根据网站的结构、框架、内容，生成的导航网页文件。站点地图对于提高用户体验有好处，它们为网站访问者指明方向，并帮助迷失的访问者找到他们想看的页面。&lt;br&gt;-百度百科&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;生成站点地图&quot;&gt;&lt;a href=&quot;#生成站点地图&quot; class=&quot;headerlink&quot; title=&quot;生成站点地图&quot;&gt;&lt;/a&gt;生成站点地图&lt;/h2&gt;&lt;h3 id=&quot;安装站点地图生成插件&quot;&gt;&lt;a href=&quot;#安装站点地图生成插件&quot; class=&quot;headerlink&quot; title=&quot;安装站点地图生成插件&quot;&gt;&lt;/a&gt;安装站点地图生成插件&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-baidu-sitemap --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-sitemap --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;在博客根目录的-config-yml中添加自动生成sitemap的配置&quot;&gt;&lt;a href=&quot;#在博客根目录的-config-yml中添加自动生成sitemap的配置&quot; class=&quot;headerlink&quot; title=&quot;在博客根目录的_config.yml中添加自动生成sitemap的配置&quot;&gt;&lt;/a&gt;在博客根目录的_config.yml中添加自动生成sitemap的配置&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sitemap:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  path: sitemap.xml&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;baidusitemap:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  path: baidusitemap.xml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;同时确认一下该文件里面url对应的是否是接下来要提交的域名&lt;/p&gt;
-&lt;h3 id=&quot;生成和部署&quot;&gt;&lt;a href=&quot;#生成和部署&quot; class=&quot;headerlink&quot; title=&quot;生成和部署&quot;&gt;&lt;/a&gt;生成和部署&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
-    
-    <category term="hexo" scheme="https://ednovas.xyz/tags/hexo/"/>
-    
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="百度" scheme="https://ednovas.xyz/tags/%E7%99%BE%E5%BA%A6/"/>
-    
-    <category term="收录" scheme="https://ednovas.xyz/tags/%E6%94%B6%E5%BD%95/"/>
-    
-    <category term="google" scheme="https://ednovas.xyz/tags/google/"/>
-    
-    <category term="baidu" scheme="https://ednovas.xyz/tags/baidu/"/>
     
   </entry>
   
