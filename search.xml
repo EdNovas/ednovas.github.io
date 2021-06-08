@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>微软全局管理（API提权）</title>
+      <link href="2021/06/08/azureapi/"/>
+      <url>2021/06/08/azureapi/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>转载自 <a href="https://sirbei.com/index.php/archives/22/">https://sirbei.com/index.php/archives/22/</a></p></blockquote><h2 id="注册应用、开通-API"><a href="#注册应用、开通-API" class="headerlink" title="注册应用、开通 API"></a>注册应用、开通 API</h2><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/148165012.png"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1512344440.png"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3709738410.png"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1701175550.png"></p><h3 id="设置-Application-密码"><a href="#设置-Application-密码" class="headerlink" title="设置 Application 密码"></a>设置 Application 密码</h3><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3498537165.png"></p><h3 id="记录密码“值”和“ID”备用。"><a href="#记录密码“值”和“ID”备用。" class="headerlink" title="记录密码“值”和“ID”备用。"></a>记录密码“值”和“ID”备用。</h3><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/195691701.png"></p><h2 id="API使用配套软件"><a href="#API使用配套软件" class="headerlink" title="API使用配套软件"></a>API使用配套软件</h2><p>Microsoft-365-Admin</p><p><a href="https://github.com/6mb/Microsoft-365-Admin">https://github.com/6mb/Microsoft-365-Admin</a></p><p>此项目是一个基于API的 Microsoft 365 管理平台, 支持订阅查询，用户管理（查询，新增，删除，分配许可证等），支持批量创建用户，批量删除用户，支持邀请码. 支持多账户管理</p><h2 id="另一个方法"><a href="#另一个方法" class="headerlink" title="另一个方法"></a>另一个方法</h2><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20641690.jpg"></p><p>前提：自己开通了权限，主要是RoleManagement.ReadWrite.Directory（务必保证权限正确开启），而且你的SPO没有被封禁（子账号的onedrive可以正常使用）<br>脚本运行说明：下载代码自己修改参数，代码需要修改的地方都有备注，自行修改即可，需要安装requests库，python3运行代码，返回204就代表成功，然后登陆子账号就可以了<br>client_id() = 应用程序(客户端) ID tenant_id = 目录(租户) ID client_secret = 客户端密码的值</p><p>下载：<a href="https://sirbei.com/usr/uploads/2021/05/1176287315.zip">子账户提权.zip</a></p><p>备用链接：<a href="https://onecloud.ednovas.xyz/s/ZWSl">https://onecloud.ednovas.xyz/s/ZWSl</a></p><h2 id="另一个方法2"><a href="#另一个方法2" class="headerlink" title="另一个方法2"></a>另一个方法2</h2><p>程序入口admin.php</p><p>配置文件config.php（只要改这个，accounts是一个数组，多个全局的配置分别写这里）</p><p><a href="https://sirbei.com/usr/uploads/2021/05/4214281180.zip">ms365admin.zip</a></p><p>备用链接：<a href="https://onecloud.ednovas.xyz/s/pDFZ">https://onecloud.ednovas.xyz/s/pDFZ</a></p><h2 id="产品sku参考"><a href="#产品sku参考" class="headerlink" title="产品sku参考"></a>产品sku参考</h2><p>skuName: STANDARDWOFFPACK_STUDENT<br>displayName: A1 学生版<br>skuId: 314c4481-f395-4525-be8b-2ec4bb1e9d91</p><p>skuName: STANDARDWOFFPACK_FACULTY<br>displayName: A1 教师版<br>skuId: 94763226-9b3c-4e75-a931-5c89701abe66</p><p>skuName: OFFICE_365_A1_PLUS_FOR_STUDENT<br>displayName: A1P 学生版<br>skuId: e82ae690-a2d5-4d76-8d30-7c6e01e6022e</p><p>skuName: OFFICE_365_A1_PLUS_FOR_FACULTY<br>displayName: A1P 教师版<br>skuId: 78e66a63-337a-4a9a-8959-41c6654dfb56</p><p>skuName: M365EDU_A3_STUUSEBNFT_RPA1<br>displayName: A3 无人值守版<br>skuId: 1aa94593-ca12-4254-a738-81a5972958e8</p><p>skuName: Office_365_E3Y<br>displayName: E3Y<br>skuId: 6fd2c87f-b296-42f0-b197-1e91e994b900</p><p>skuName: DEVELOPERPACK_E5<br>displayName: E5 开发者订阅<br>skuId: c42b9cae-ea4f-4ab7-9717-81576235ccac</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> api </tag>
+            
+            <tag> 微软 </tag>
+            
+            <tag> 全局 </tag>
+            
+            <tag> azure </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>搭建一个rss订阅bot</title>
       <link href="2021/06/07/rss_bot/"/>
       <url>2021/06/07/rss_bot/</url>

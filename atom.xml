@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-06-07T07:00:52.371Z</updated>
+  <updated>2021-06-08T11:42:21.611Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微软全局管理（API提权）</title>
+    <link href="https://ednovas.xyz/2021/06/08/azureapi/"/>
+    <id>https://ednovas.xyz/2021/06/08/azureapi/</id>
+    <published>2021-06-08T11:35:00.000Z</published>
+    <updated>2021-06-08T11:42:21.611Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&quot;https://sirbei.com/index.php/archives/22/&quot;&gt;https://sirbei.com/index.php/archives/22/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;注册应用、开通-API&quot;&gt;&lt;a href=&quot;#注册应用、开通-API&quot; class=&quot;headerlink&quot; title=&quot;注册应用、开通 API&quot;&gt;&lt;/a&gt;注册应用、开通 API&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/148165012.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1512344440.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3709738410.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1701175550.png&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;设置-Application-密码&quot;&gt;&lt;a href=&quot;#设置-Application-密码&quot; class=&quot;headerlink&quot; title=&quot;设置 Application 密码&quot;&gt;&lt;/a&gt;设置 Application 密码&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3498537165.png&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;记录密码“值”和“ID”备用。&quot;&gt;&lt;a href=&quot;#记录密码“值”和“ID”备用。&quot; class=&quot;headerlink&quot; title=&quot;记录密码“值”和“ID”备用。&quot;&gt;&lt;/a&gt;记录密码“值”和“ID”备用。&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/195691701.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="api" scheme="https://ednovas.xyz/tags/api/"/>
+    
+    <category term="微软" scheme="https://ednovas.xyz/tags/%E5%BE%AE%E8%BD%AF/"/>
+    
+    <category term="全局" scheme="https://ednovas.xyz/tags/%E5%85%A8%E5%B1%80/"/>
+    
+    <category term="azure" scheme="https://ednovas.xyz/tags/azure/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建一个rss订阅bot</title>
@@ -670,38 +703,6 @@
     <category term="AWS" scheme="https://ednovas.xyz/tags/AWS/"/>
     
     <category term="Oracle" scheme="https://ednovas.xyz/tags/Oracle/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自己“搭建”Speedtest测速网站</title>
-    <link href="https://ednovas.xyz/2021/05/07/speedtestcustom/"/>
-    <id>https://ednovas.xyz/2021/05/07/speedtestcustom/</id>
-    <published>2021-05-07T12:14:00.000Z</published>
-    <updated>2021-05-07T13:01:50.113Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;在 &lt;a href=&quot;https://www.ookla.com/speedtest-custom&quot;&gt;https://www.ookla.com/speedtest-custom&lt;/a&gt; 页面点击 Start for Free 并注册个账户&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://account.ookla.com/&quot;&gt;https://account.ookla.com/&lt;/a&gt; 登录账户以后点击 Speedtest Custom 下的Go to costum 进入 dashboard&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://account.speedtestcustom.com/dashboard&quot;&gt;https://account.speedtestcustom.com/dashboard&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;然后在configure页面自定义创建你想要的面板&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://account.speedtestcustom.com/configuration/test&quot;&gt;https://account.speedtestcustom.com/configuration/test&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Enable HTTPS 建议勾选&lt;/p&gt;
-&lt;p&gt;这样你的测速网站就“搭建”好了&lt;/p&gt;
-&lt;p&gt;DEMO：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://ednovas.speedtestcustom.com/&quot;&gt;https://ednovas.speedtestcustom.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;还有 Embed 也就是页面引入，比如：&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
-    
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="speedtest" scheme="https://ednovas.xyz/tags/speedtest/"/>
     
   </entry>
   
