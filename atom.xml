@@ -88,7 +88,7 @@
     <link href="https://ednovas.xyz/2021/06/06/subs/"/>
     <id>https://ednovas.xyz/2021/06/06/subs/</id>
     <published>2021-06-06T12:29:00.000Z</published>
-    <updated>2021-06-06T14:18:23.157Z</updated>
+    <updated>2021-06-08T22:58:33.316Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;前端：&lt;/p&gt;
@@ -99,6 +99,27 @@
 &lt;p&gt;一个用作前端，一个用作后端&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_20-48-34.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_20-49-16.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="订阅转换" scheme="https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://ednovas.xyz/2021/06/06/test/"/>
+    <id>https://ednovas.xyz/2021/06/06/test/</id>
+    <published>2021-06-06T12:29:00.000Z</published>
+    <updated>2021-06-09T08:33:52.133Z</updated>
+    
     
     
     
@@ -669,40 +690,6 @@
     <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
     
     <category term="nat" scheme="https://ednovas.xyz/tags/nat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GCP，oralce，aws开启root登录</title>
-    <link href="https://ednovas.xyz/2021/05/08/root/"/>
-    <id>https://ednovas.xyz/2021/05/08/root/</id>
-    <published>2021-05-08T04:21:00.000Z</published>
-    <updated>2021-05-08T11:31:47.899Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;主要思路&quot;&gt;&lt;a href=&quot;#主要思路&quot; class=&quot;headerlink&quot; title=&quot;主要思路&quot;&gt;&lt;/a&gt;主要思路&lt;/h2&gt;&lt;p&gt;大同小异，修改 &lt;code&gt;sshd——config&lt;/code&gt; 文件，把里面的 &lt;code&gt;PasswordAuthentication&lt;/code&gt; 和 &lt;code&gt;PermitRootLogin&lt;/code&gt; 都改成 Yes&lt;/p&gt;
-&lt;h2 id=&quot;AWS&quot;&gt;&lt;a href=&quot;#AWS&quot; class=&quot;headerlink&quot; title=&quot;AWS&quot;&gt;&lt;/a&gt;AWS&lt;/h2&gt;&lt;p&gt;切换到root用户&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo -i&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;输入以下命令实现密码登录&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed -ri &amp;#39;s&amp;#x2F;^#?(PasswordAuthentication)\s+(yes|no)&amp;#x2F;\1 yes&amp;#x2F;&amp;#39; &amp;#x2F;etc&amp;#x2F;ssh&amp;#x2F;sshd_config&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed -ri &amp;#39;s&amp;#x2F;^#?(PermitRootLogin)\s+(yes|no)&amp;#x2F;\1 yes&amp;#x2F;&amp;#39; &amp;#x2F;etc&amp;#x2F;ssh&amp;#x2F;sshd_config&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed -ri &amp;#39;s&amp;#x2F;^&amp;#x2F;#&amp;#x2F;;s&amp;#x2F;sleep 10&amp;quot;\s+&amp;#x2F;&amp;amp;\n&amp;#x2F;&amp;#39; &amp;#x2F;root&amp;#x2F;.ssh&amp;#x2F;authorized_keys&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;service sshd restart&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="root" scheme="https://ednovas.xyz/tags/root/"/>
-    
-    <category term="GCP" scheme="https://ednovas.xyz/tags/GCP/"/>
-    
-    <category term="AWS" scheme="https://ednovas.xyz/tags/AWS/"/>
-    
-    <category term="Oracle" scheme="https://ednovas.xyz/tags/Oracle/"/>
     
   </entry>
   
