@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-06-09T08:35:13.798Z</updated>
+  <updated>2021-06-08T11:42:21.611Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,27 +17,6 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>加拿大维多利亚大学含美量200%</title>
-    <link href="https://ednovas.xyz/2021/06/09/test/"/>
-    <id>https://ednovas.xyz/2021/06/09/test/</id>
-    <published>2021-06-09T07:34:52.000Z</published>
-    <updated>2021-06-09T08:35:13.798Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;this is a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>微软全局管理（API提权）</title>
     <link href="https://ednovas.xyz/2021/06/08/azureapi/"/>
     <id>https://ednovas.xyz/2021/06/08/azureapi/</id>
@@ -45,16 +24,15 @@
     <updated>2021-06-08T11:42:21.611Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;转载自 &lt;a href=&quot;https://sirbei.com/index.php/archives/22/&quot;&gt;https://sirbei.com/index.php/archives/22/&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2</summary>
-        
-      
+&lt;h2 id=&quot;注册应用、开通-API&quot;&gt;&lt;a href=&quot;#注册应用、开通-API&quot; class=&quot;headerlink&quot; title=&quot;注册应用、开通 API&quot;&gt;&lt;/a&gt;注册应用、开通 API&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/148165012.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1512344440.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3709738410.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1701175550.png&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;设置-Application-密码&quot;&gt;&lt;a href=&quot;#设置-Application-密码&quot; class=&quot;headerlink&quot; title=&quot;设置 Application 密码&quot;&gt;&lt;/a&gt;设置 Application 密码&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3498537165.png&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;记录密码“值”和“ID”备用。&quot;&gt;&lt;a href=&quot;#记录密码“值”和“ID”备用。&quot; class=&quot;headerlink&quot; title=&quot;记录密码“值”和“ID”备用。&quot;&gt;&lt;/a&gt;记录密码“值”和“ID”备用。&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/195691701.png&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -79,13 +57,14 @@
     <updated>2021-06-07T07:00:52.371Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;搭建一个telegram 上的 rss 订阅</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;搭建一个telegram 上的 rss 订阅 bot，两个项目都不错，这里选用的是flowerss-bot（第一个）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/indes/flowerss-bot&quot;&gt;https://github.com/indes/flowerss-bot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/iovxw/rssbot&quot;&gt;https://github.com/iovxw/rssbot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;部署&quot;&gt;&lt;a href=&quot;#部署&quot; class=&quot;headerlink&quot; title=&quot;部署&quot;&gt;&lt;/a&gt;部署&lt;/h2&gt;&lt;p&gt;官方部署文档：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://flowerss-bot.vercel.app/#/install&quot;&gt;https://flowerss-bot.vercel.app/#/install&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;首先ssh连接上VPS，然后新建文件夹并且下载最新版本releases并解压：&lt;/p&gt;
+&lt;p&gt;（这里使用的是0.8.3版本，可能不是最新版 release地址：&lt;a href=&quot;https://github.com/indes/flowerss-bot/releases%EF%BC%8C%E7%9B%AE%E5%89%8D%E6%B2%A1%E6%9C%89arm%E7%89%88%E6%9C%AC%EF%BC%89&quot;&gt;https://github.com/indes/flowerss-bot/releases，目前没有arm版本）&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir &amp;#x2F;home&amp;#x2F;flowerss &amp;amp;&amp;amp; cd &amp;#x2F;home&amp;#x2F;flowerss&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;indes&amp;#x2F;flowerss-bot&amp;#x2F;releases&amp;#x2F;download&amp;#x2F;v0.8.3&amp;#x2F;flowerss-bot-v0.8.3-linux-amd64.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tar -zxvf flowerss-bot-v0.8.3-linux-amd64.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;copy config.yml.sample config.yml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -112,14 +91,14 @@
     <updated>2021-06-08T22:58:33.316Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;前端：&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
+&lt;p&gt;&lt;a href=&quot;https://github.com/CareyWang/sub-web&quot;&gt;https://github.com/CareyWang/sub-web&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;后端：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/tindy2013/subconverter&quot;&gt;https://github.com/tindy2013/subconverter&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;解析域名&quot;&gt;&lt;a href=&quot;#解析域名&quot; class=&quot;headerlink&quot; title=&quot;解析域名&quot;&gt;&lt;/a&gt;解析域名&lt;/h2&gt;&lt;p&gt;先解析两个域名，建议开启小云朵cdn，设置cloudflare的ssl/tls为完全严格&lt;/p&gt;
+&lt;p&gt;一个用作前端，一个用作后端&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_20-48-34.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_20-49-16.png&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -142,13 +121,14 @@
     <updated>2021-06-06T13:00:19.991Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;项目&quot;&gt;&lt;a href=&quot;#项目&quot; class=&quot;headerlink&quot; title=&quot;项目&quot;&gt;&lt;/a&gt;项目&lt;/h2&gt;&lt;p&gt;主要用到的程序 &lt;a href=&quot;https://github.com/Mrs4s/go-cqhttp&quot;&gt;go-cqhttp&lt;/a&gt; 和</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;项目&quot;&gt;&lt;a href=&quot;#项目&quot; class=&quot;headerlink&quot; title=&quot;项目&quot;&gt;&lt;/a&gt;项目&lt;/h2&gt;&lt;p&gt;主要用到的程序 &lt;a href=&quot;https://github.com/Mrs4s/go-cqhttp&quot;&gt;go-cqhttp&lt;/a&gt; 和 &lt;a href=&quot;https://github.com/Tsuk1ko/cq-picsearcher-bot&quot;&gt;cq-picsearcher-bot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Mrs4s/go-cqhttp&quot;&gt;https://github.com/Mrs4s/go-cqhttp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Tsuk1ko/cq-picsearcher-bot&quot;&gt;https://github.com/Tsuk1ko/cq-picsearcher-bot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h2&gt;&lt;p&gt;需要一台linux VPS&lt;/p&gt;
+&lt;p&gt;（windows系统也可，但是因为各方面原因肯定是不如服务器效果好的）&lt;/p&gt;
+&lt;p&gt;文中服务器已安装宝塔国际版，并用其演示&lt;/p&gt;
+&lt;p&gt;已经使用ssh连接到服务器&lt;/p&gt;
+&lt;h2 id=&quot;下载-go-cqhttp&quot;&gt;&lt;a href=&quot;#下载-go-cqhttp&quot; class=&quot;headerlink&quot; title=&quot;下载 go-cqhttp&quot;&gt;&lt;/a&gt;下载 go-cqhttp&lt;/h2&gt;</summary>
     
     
     
@@ -173,14 +153,16 @@
     <updated>2021-05-27T06:21:11.770Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;文章作者: GarveyZhong&lt;br&gt;文章链接: &lt;a</summary>
-        
-      
+&lt;p&gt;文章作者: GarveyZhong&lt;br&gt;文章链接: &lt;a href=&quot;https://blog.imzjw.cn/posts/75dadae5/&quot;&gt;https://blog.imzjw.cn/posts/75dadae5/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;本文章是针对那些 Telegram 是 +86 用户和在意自己隐私问题所记录的一篇教程。&lt;/p&gt;
+&lt;p&gt;看完本章教程之后，用户就可以和你所创建的机器人聊天，由机器人转发该用户的私聊消息，通过回复机器人所转发的消息即可回复用户，同时还可以减少窗口的数量且也保障了自己一定的隐私问题。&lt;/p&gt;
+&lt;p&gt;对于 +86 用户来说，基本可以满足，不过貌似可以通过 &lt;a href=&quot;https://t.me/SpamBot&quot;&gt;@SpamBot&lt;/a&gt; 申诉解除限制，但万一如果你的朋友也是 +86 的话，他就不能和你联系了，你也告诉不了他可以通过 &lt;a href=&quot;https://t.me/SpamBot&quot;&gt;@SpamBot&lt;/a&gt; 解除。&lt;/p&gt;
+&lt;h2 id=&quot;创建机器人&quot;&gt;&lt;a href=&quot;#创建机器人&quot; class=&quot;headerlink&quot; title=&quot;创建机器人&quot;&gt;&lt;/a&gt;创建机器人&lt;/h2&gt;&lt;p&gt;点击 &lt;a href=&quot;https://t.me/BotFather&quot;&gt;@BotFather&lt;/a&gt; ，通过机器人之父创建一个机器人。&lt;/p&gt;
+&lt;p&gt;向它发送 /newbot 指令&lt;/p&gt;
+&lt;p&gt;然后就会问你准备要给机器人起一个什么名字（随意，可以中文）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/npm/cpdd/posts/75dadae5/20210524222523.webp&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -207,13 +189,15 @@
     <updated>2021-05-24T14:01:57.139Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;有光明的地方，就有黑暗。阳光下的所有美好，都有它的阴暗面。&lt;/p&gt;
+&lt;p&gt;提起暗网，你第一想到的是什么？&lt;/p&gt;
+&lt;p&gt;军火交易？人口贩卖？直播暗杀？&lt;/p&gt;
+&lt;p&gt;假如你在搜索引擎搜索暗网，你会发现大多数媒体口中描述的暗网是黄赌毒聚集地，犯罪者的天堂。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/31ad1ef11abdb1271583de78edc580b5.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;而网上那些自称去过暗网的人，都会表示非常后悔，看了不该看的东西。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/47d811d7810d004f86c6701a895e26b3.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/fb531057ad0b3658a77a136fc23bdab1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;虽然我们都知道网络不是法外之地，但通过双向加密后的暗网，却是互联网真正的法外之地。&lt;/p&gt;</summary>
     
     
     
@@ -236,16 +220,13 @@
     <updated>2021-05-24T14:55:32.187Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;转载自&lt;a href=&quot;https://docs.ginuerzh.xyz/gost/&quot;&gt;https://docs.ginuerzh.xyz/gost/&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;功能特性&quot;&gt;&lt;a</summary>
-        
-      
+&lt;h1 id=&quot;功能特性&quot;&gt;&lt;a href=&quot;#功能特性&quot; class=&quot;headerlink&quot; title=&quot;功能特性&quot;&gt;&lt;/a&gt;功能特性&lt;/h1&gt;&lt;p&gt;多端口监听&lt;br&gt;可设置转发代理，支持多级转发(代理链)&lt;br&gt;支持标准HTTP/HTTPS/HTTP2/SOCKS4(A)/SOCKS5代理协议&lt;br&gt;Web代理支持探测防御&lt;br&gt;SOCKS5代理支持TLS协商加密&lt;br&gt;支持多种隧道类型&lt;br&gt;Tunnel UDP over TCP&lt;br&gt;本地/远程TCP/UDP端口转发&lt;br&gt;TCP/UDP透明代理&lt;br&gt;支持Shadowsocks(TCP/UDP)协议&lt;br&gt;支持SNI代理&lt;br&gt;权限控制&lt;br&gt;负载均衡&lt;br&gt;路由控制&lt;br&gt;DNS解析和代理&lt;br&gt;TUN/TAP设备&lt;/p&gt;
+&lt;h1 id=&quot;下载安装&quot;&gt;&lt;a href=&quot;#下载安装&quot; class=&quot;headerlink&quot; title=&quot;下载安装&quot;&gt;&lt;/a&gt;下载安装&lt;/h1&gt;&lt;h2 id=&quot;二进制文件&quot;&gt;&lt;a href=&quot;#二进制文件&quot; class=&quot;headerlink&quot; title=&quot;二进制文件&quot;&gt;&lt;/a&gt;二进制文件&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/ginuerzh/gost/releases&quot;&gt;https://github.com/ginuerzh/gost/releases&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;源码编译&quot;&gt;&lt;a href=&quot;#源码编译&quot; class=&quot;headerlink&quot; title=&quot;源码编译&quot;&gt;&lt;/a&gt;源码编译&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ginuerzh&amp;#x2F;gost.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cd gost&amp;#x2F;cmd&amp;#x2F;gost&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;go build&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;Docker&quot;&gt;&lt;a href=&quot;#Docker&quot; class=&quot;headerlink&quot; title=&quot;Docker&quot;&gt;&lt;/a&gt;Docker&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;docker pull ginuerzh&amp;#x2F;gost&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Ubuntu Store&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo snap install core&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo snap install gost&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -268,13 +249,11 @@
     <updated>2021-05-24T13:36:51.373Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.wireguard.com/&quot;&gt;https://www.wireguard.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;WireGuard 想必不用过多介绍了，目前网上的 Wire­Guard 教程有的是一键脚本、有的是老方法，安装慢而且会带入了一堆乱七八糟的东西，而官方文档并没有详细说明安装方法。对于 VPS 而言则还要考虑一些实际因素，不然随意安装只有报错等着你。所以博主根据实际经验写了这篇适用于通用操作系统 De­bian 的通用 Wire­Guard 安装教程，适合有手动配置 Wire­Guard 需求的小伙伴。&lt;/p&gt;
+&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;h3 id=&quot;添加-back­ports-源&quot;&gt;&lt;a href=&quot;#添加-back­ports-源&quot; class=&quot;headerlink&quot; title=&quot;添加 back­ports 源&quot;&gt;&lt;/a&gt;添加 back­ports 源&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;echo &amp;quot;deb http:&amp;#x2F;&amp;#x2F;deb.debian.org&amp;#x2F;debian $(lsb_release -sc)-backports main&amp;quot; | sudo tee &amp;#x2F;etc&amp;#x2F;apt&amp;#x2F;sources.list.d&amp;#x2F;backports.list&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;安装依赖组件&quot;&gt;&lt;a href=&quot;#安装依赖组件&quot; class=&quot;headerlink&quot; title=&quot;安装依赖组件&quot;&gt;&lt;/a&gt;安装依赖组件&lt;/h2&gt;&lt;h3 id=&quot;安装网络工具包&quot;&gt;&lt;a href=&quot;#安装网络工具包&quot; class=&quot;headerlink&quot; title=&quot;安装网络工具包&quot;&gt;&lt;/a&gt;安装网络工具包&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt install net-tools iproute2 openresolv dnsutils -y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;安装-wireguard-tools-Wire­Guard-配置工具：wg、wg-quick&quot;&gt;&lt;a href=&quot;#安装-wireguard-tools-Wire­Guard-配置工具：wg、wg-quick&quot; class=&quot;headerlink&quot; title=&quot;安装 wireguard-tools (Wire­Guard 配置工具：wg、wg-quick)&quot;&gt;&lt;/a&gt;安装 wireguard-tools (Wire­Guard 配置工具：wg、wg-quick)&lt;/h3&gt;</summary>
     
     
     
@@ -299,13 +278,13 @@
     <updated>2021-05-19T14:27:58.993Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;DEMO&quot;&gt;&lt;a href=&quot;#DEMO&quot; class=&quot;headerlink&quot; title=&quot;DEMO&quot;&gt;&lt;/a&gt;DEMO&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;DEMO&quot;&gt;&lt;a href=&quot;#DEMO&quot; class=&quot;headerlink&quot; title=&quot;DEMO&quot;&gt;&lt;/a&gt;DEMO&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://t.me/ednovas_shop_bot&quot;&gt;https://t.me/ednovas_shop_bot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;发现了个很好用的tg发卡bot，GitHub地址：&lt;a href=&quot;https://github.com/devourbots/tg_faka_bot&quot;&gt;https://github.com/devourbots/tg_faka_bot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;基于python开发的，用的sqlite3做数据库，足够轻便，方便备份&lt;/p&gt;
+&lt;p&gt;适配易支付，当面付，麻瓜支付&lt;/p&gt;
+&lt;p&gt;tg用户群组：&lt;a href=&quot;https://t.me/joinchat/HO9r-CLAudrxugPY&quot;&gt;https://t.me/joinchat/HO9r-CLAudrxugPY&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;tg频道：&lt;a href=&quot;https://t.me/devourbots_channel&quot;&gt;https://t.me/devourbots_channel&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Debian-Ubuntu下安装&quot;&gt;&lt;a href=&quot;#Debian-Ubuntu下安装&quot; class=&quot;headerlink&quot; title=&quot;Debian/Ubuntu下安装&quot;&gt;&lt;/a&gt;Debian/Ubuntu下安装&lt;/h2&gt;&lt;p&gt;进入根目录&lt;/p&gt;</summary>
     
     
     
@@ -334,13 +313,13 @@
     <updated>2021-05-19T10:02:11.030Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;Cloudflare是一家总部位于旧金山的美国跨国科技企业，以向客户提供基于反向代理的内容分发网络及分布式域名解析服务为主要业务。利用</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;Cloudflare是一家总部位于旧金山的美国跨国科技企业，以向客户提供基于反向代理的内容分发网络及分布式域名解析服务为主要业务。利用 Cloudflare 全球任播网络，Cloudflare可以帮助受保护站点抵御包拒绝服务攻击等网络攻击，确保该网站长期在线，同时提升网站的性能、加载速度以改善访客体验。&lt;/p&gt;
+&lt;p&gt;当然除了cloudflare，还有许多其他如dnspod等其他dns解析平台。我用cloudflare而且功能和国外的访问速度上也是一流的（国内要求访问速度快还请使用别的cdn服务，否则开启cdn就是国内减速）&lt;/p&gt;
+&lt;p&gt;网站支持中文，英文图片演示，位置都是一样的。&lt;/p&gt;
+&lt;h2 id=&quot;购买域名&quot;&gt;&lt;a href=&quot;#购买域名&quot; class=&quot;headerlink&quot; title=&quot;购买域名&quot;&gt;&lt;/a&gt;购买域名&lt;/h2&gt;&lt;p&gt;这个不做演示了，namesilo，namecheap，godaddy，porkbun等域名网站购买一个你想要的域名付款即可。也可以白嫖&lt;a href=&quot;/2020/12/28/freenom%E7%94%B3%E8%AF%B7%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D/&quot;&gt;freenom&lt;/a&gt;，还有&lt;a href=&quot;/2021/05/09/porkbundesign&quot;&gt;porkbun免费一年design域名&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;添加网站&quot;&gt;&lt;a href=&quot;#添加网站&quot; class=&quot;headerlink&quot; title=&quot;添加网站&quot;&gt;&lt;/a&gt;添加网站&lt;/h2&gt;&lt;p&gt;先去cloudflare注册个账户&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cloudflare.com/&quot;&gt;https://www.cloudflare.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;登录进入管理面板 &lt;a href=&quot;https://dash.cloudflare.com/&quot;&gt;https://dash.cloudflare.com/&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
@@ -365,13 +344,14 @@
     <updated>2021-05-13T12:02:37.898Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;这个网站很有趣，在逗比那里看到的，网页时光机Wayback</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;这个网站很有趣，在逗比那里看到的，网页时光机Wayback Machine，基本就是定期备份了所有网站的快照，供人查询，对于很多有网站的人来说，也可以看看当初自己网站的样子，回忆一下，其中内页也能访问，很强大。&lt;/p&gt;
+&lt;p&gt;网站地址：&lt;a href=&quot;http://web.archive.org/&quot;&gt;http://web.archive.org/&lt;/a&gt;&lt;br&gt;注意：这个网站被墙，需要挂梯子访问。&lt;/p&gt;
+&lt;h2 id=&quot;使用方法&quot;&gt;&lt;a href=&quot;#使用方法&quot; class=&quot;headerlink&quot; title=&quot;使用方法&quot;&gt;&lt;/a&gt;使用方法&lt;/h2&gt;&lt;p&gt;首先访问网站：&lt;a href=&quot;http://web.archive.org/&quot;&gt;http://web.archive.org/&lt;/a&gt; ，然后在屏幕中的输入框中输入你要查看的网站域名，例如：baidu.com。&lt;/p&gt;
+&lt;p&gt;输入后就会看到网站在搜索这个域名的快照备份信息，找到后就会如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.moerats.com/usr/picture/Wayback(1).png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;中间的是年份范围，下面的是月份日份范围。&lt;/p&gt;
+&lt;p&gt;下图是查询到的2002年11月19号的百度首页：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.moerats.com/usr/picture/Wayback(2).png&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -392,13 +372,50 @@
     <updated>2021-05-24T13:49:49.179Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;方法一：Writage-Pandoc-–-双剑合璧！&quot;&gt;&lt;a href=&quot;#方法一：Writage-Pandoc-–-双剑合璧！&quot; class=&quot;headerlink&quot; title=&quot;方法一：Writage + Pandoc –</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;方法一：Writage-Pandoc-–-双剑合璧！&quot;&gt;&lt;a href=&quot;#方法一：Writage-Pandoc-–-双剑合璧！&quot; class=&quot;headerlink&quot; title=&quot;方法一：Writage + Pandoc – 双剑合璧！&quot;&gt;&lt;/a&gt;方法一：Writage + Pandoc – 双剑合璧！&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;下载并安装 Writage，下载地址：&lt;a href=&quot;http://www.writage.com/&quot;&gt;http://www.writage.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; 打开 &lt;a href=&quot;https://links.jianshu.com/go?to=http://www.writage.com/&quot;&gt;Writage网页&lt;/a&gt;，点击Download，再点击Download Now完成下载&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-0dea7d7aeeffba56.webp&quot;&gt;&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-6ce19b9714bb0336.webp&quot;&gt;&lt;/p&gt;
+&lt;p&gt; 运行安装程序，一般按照默认选项安装就好啦&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-b10e96c9c32e0026.webp&quot;&gt;&lt;/p&gt;
+&lt;p&gt; 重启电脑，新建或打开任一 Word 文档，在 文件 菜单栏下选 另存为，查看 【保存类型】 中是否有 Markdown 格式。&lt;br&gt; （如果插件安装成功，就会自动出现Markdown选项；否则，重新安装一遍吧~）&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-180fec4da16b8f9f.webp&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;下载并安装 Pandoc：官方下载地址 http%3A%2F%2Fpandoc.org%2Finstalling.html&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;运行安装程序，一般按照默认选项安装就好啦&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-200a8ac8072f02c2.webp&quot;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;准备好工具啦，我们开始尝试将word文档转换为markdown文档吧！&lt;br&gt; 首先设置 word 文档中的标准样式，如一级、二级标题，项目符号或编号等，如此才能与 markdown 的格式对应&lt;/p&gt;
+&lt;p&gt; （稍微有点繁琐的前期准备，如果文档一开始就是按照标准样式排版，就没有这个烦恼啦）&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-abb1b0c891b37773.webp&quot;&gt;&lt;/p&gt;
+&lt;p&gt; Word 格式 另存为 Markdown（这是最关键的一步~）&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-783e08901ab25077.webp&quot;&gt;&lt;/p&gt;
+&lt;p&gt; markdown 文档在 Word 中的显示效果：&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-e545bfbe49f09069.webp&quot;&gt;&lt;/p&gt;
+&lt;p&gt; 由于markdown中的图片无法设置大小，因此在word中排布的图片格式不标准，需要人工调整&lt;/p&gt;
+&lt;p&gt; 其他格式，如一级、二级标题，项目列表等基本没有问题，其中表格显示如下&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-80ae8d0c8d8f306d.webp&quot;&gt;&lt;/p&gt;
+&lt;p&gt; 将markdown文档上传至码云等平台并提交，对应的内容预览效果如下&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-570250456c4049f4.webp&quot;&gt;&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-99c848242acc487a.webp&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;更加快捷（有时略坑）的方法二：Word-to-Markdown-Converter在线转换网页！&quot;&gt;&lt;a href=&quot;#更加快捷（有时略坑）的方法二：Word-to-Markdown-Converter在线转换网页！&quot; class=&quot;headerlink&quot; title=&quot;更加快捷（有时略坑）的方法二：Word to Markdown Converter在线转换网页！&quot;&gt;&lt;/a&gt;更加快捷（有时略坑）的方法二：Word to Markdown Converter在线转换网页！&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;设置word文档中的标准样式，如一级、二级标题，项目符号或编号等，如此才能与markdown的格式对应&lt;/p&gt;
+&lt;p&gt; （稍微有点繁琐的前期准备，如果文档一开始就是按照标准样式排版，就没有这个烦恼啦）&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-9dfa2efd15ca0a63.webp&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开网页Word to Markdown Converter：&lt;a href=&quot;https://word-to-markdown.herokuapp.com/&quot;&gt;https://word-to-markdown.herokuapp.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-a8bc48ed32e7907e.webp&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;选择需要转换的Word文件,点击Convert&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-a2998ff04f5745ab.webp&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -419,14 +436,13 @@
     <updated>2021-05-18T11:26:26.153Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;注意：如果您有谷歌多账号，为了避免切换出错，建议在浏览器无痕模式操作&lt;/p&gt;
-&lt;h2 id=&quot;GV自动回复消息&quot;&gt;&lt;a href=&quot;#GV自动回复消息&quot; class=&quot;headerlink&quot; title=&quot;GV自动回复消息&quot;&gt;&lt;/a&gt;GV自动回复消息&lt;/h2&gt;&lt;h3</summary>
-        
-      
+&lt;h2 id=&quot;GV自动回复消息&quot;&gt;&lt;a href=&quot;#GV自动回复消息&quot; class=&quot;headerlink&quot; title=&quot;GV自动回复消息&quot;&gt;&lt;/a&gt;GV自动回复消息&lt;/h2&gt;&lt;h3 id=&quot;将GV信息转移到Gmail&quot;&gt;&lt;a href=&quot;#将GV信息转移到Gmail&quot; class=&quot;headerlink&quot; title=&quot;将GV信息转移到Gmail&quot;&gt;&lt;/a&gt;将GV信息转移到Gmail&lt;/h3&gt;&lt;p&gt;网址：&lt;a href=&quot;https://voice.google.com/u/0/settings&quot;&gt;https://voice.google.com/u/0/settings&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ea199e8a667d61cb7c30afcb433a0967.jpg&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Gmail建立并创建过滤器&quot;&gt;&lt;a href=&quot;#Gmail建立并创建过滤器&quot; class=&quot;headerlink&quot; title=&quot;Gmail建立并创建过滤器&quot;&gt;&lt;/a&gt;Gmail建立并创建过滤器&lt;/h3&gt;&lt;p&gt;在Gmail点击【管理标签】，点击【过滤器和屏蔽的地址】，点击【创建新的过滤器】。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ace33ba722513323100f4e6ba0d53b9c.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;发件人填写【@txt.voice.google.com】，然后点击【创建过滤器】。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/db5fd53748155d2a21b6892c5297db8b.jpg&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -447,14 +463,13 @@
     <updated>2021-05-11T12:31:10.393Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h1 id=&quot;Change-IP&quot;&gt;&lt;a href=&quot;#Change-IP&quot; class=&quot;headerlink&quot; title=&quot;Change IP&quot;&gt;&lt;/a&gt;Change IP&lt;/h1&gt;&lt;p&gt;用changeip.com的免费DDNS服务，建立DDNS&lt;/p&gt;
-&lt;h2</summary>
-        
-      
+&lt;h2 id=&quot;注册账户&quot;&gt;&lt;a href=&quot;#注册账户&quot; class=&quot;headerlink&quot; title=&quot;注册账户&quot;&gt;&lt;/a&gt;注册账户&lt;/h2&gt;&lt;p&gt;打开下方链接登录你的DDNS&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.changeip.com/accounts/cart.php?a=confproduct&amp;amp;i=1&quot;&gt;https://www.changeip.com/accounts/cart.php?a=confproduct&amp;amp;i=1&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;解析域名&quot;&gt;&lt;a href=&quot;#解析域名&quot; class=&quot;headerlink&quot; title=&quot;解析域名&quot;&gt;&lt;/a&gt;解析域名&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-212049.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-212308.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-212419.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-212646.jpg&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -481,13 +496,31 @@
     <updated>2021-05-11T12:03:00.036Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;入门&quot;&gt;&lt;a href=&quot;#入门&quot; class=&quot;headerlink&quot; title=&quot;入门&quot;&gt;&lt;/a&gt;入门&lt;/h2&gt;&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;p&gt;使用</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;入门&quot;&gt;&lt;a href=&quot;#入门&quot; class=&quot;headerlink&quot; title=&quot;入门&quot;&gt;&lt;/a&gt;入门&lt;/h2&gt;&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;p&gt;使用 -apt install keyword 安装此插件&lt;/p&gt;
+&lt;h3 id=&quot;简单的规则-keyword&quot;&gt;&lt;a href=&quot;#简单的规则-keyword&quot; class=&quot;headerlink&quot; title=&quot;简单的规则 ( -keyword )&quot;&gt;&lt;/a&gt;简单的规则 ( -keyword )&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;添加规则 ( -keyword new )&lt;/p&gt;
+&lt;p&gt; 添加纯文本匹配 :&lt;/p&gt;
+&lt;p&gt; -keyword new plain ‘test’ ‘reply’ ( 检测到文本中 包含 test 就回复 reply )&lt;/p&gt;
+&lt;p&gt; 添加正则匹配 ( 仅是举例，正则远不止这些 ) :&lt;/p&gt;
+&lt;p&gt; -keyword new regex ‘test(1|2)’ ‘reply’ ( 检测到文本中 包含 test1 或 test2 就回复 reply )&lt;/p&gt;
+&lt;p&gt; -keyword new regex ‘^test$’ ‘reply’ ( 检测到文本 是 test 就回复 )&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;列出规则 ( -keyword list )&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;删除规则 ( -keyword del , -keyword delid )&lt;/p&gt;
+&lt;p&gt; 删除纯文本规则 :&lt;/p&gt;
+&lt;p&gt; 方法 1: -keyword del plain ‘test’ ( 暴力匹配，test 为要删除的规则 )&lt;/p&gt;
+&lt;p&gt; 方法 2: -keyword delid plain ‘1’ ( 1 为 -keyword list 列出的规则的序号 )&lt;/p&gt;
+&lt;p&gt; 删除正则规则同理，将 plain 替换为 regex 即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;清空规则 ( -keyword clear )&lt;/p&gt;
+&lt;p&gt; 清除纯文本规则 : -keyword clear plain&lt;/p&gt;
+&lt;p&gt; 清除正则规则 : -keyword clear regex&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;细节提醒&quot;&gt;&lt;a href=&quot;#细节提醒&quot; class=&quot;headerlink&quot; title=&quot;细节提醒&quot;&gt;&lt;/a&gt;细节提醒&lt;/h3&gt;&lt;p&gt;清空规则会清空 所有 纯文本或正则规则，慎用。&lt;/p&gt;
+&lt;p&gt;添加和删除规则中的 英文单引号 不可省略。&lt;/p&gt;
+&lt;h2 id=&quot;进阶&quot;&gt;&lt;a href=&quot;#进阶&quot; class=&quot;headerlink&quot; title=&quot;进阶&quot;&gt;&lt;/a&gt;进阶&lt;/h2&gt;&lt;h3 id=&quot;回复限制-replyset&quot;&gt;&lt;a href=&quot;#回复限制-replyset&quot; class=&quot;headerlink&quot; title=&quot;回复限制 ( -replyset )&quot;&gt;&lt;/a&gt;回复限制 ( -replyset )&lt;/h3&gt;</summary>
     
     
     
@@ -512,16 +545,15 @@
     <updated>2021-05-11T09:45:40.257Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;开启代理服务器后，常常会因为忘记关闭系统代理，导致浏览器不能正常上网。&lt;/p&gt;
 &lt;p&gt;此文是关闭代理服务器后无法正常上网的解决方法，并不是开关代理软件的方法。&lt;/p&gt;
 &lt;p&gt;下面针对win10和win7系统，讲述如何手动关闭代理。&lt;/p&gt;
-&lt;h2</summary>
-        
-      
+&lt;h2 id=&quot;win-10&quot;&gt;&lt;a href=&quot;#win-10&quot; class=&quot;headerlink&quot; title=&quot;win 10&quot;&gt;&lt;/a&gt;win 10&lt;/h2&gt;&lt;p&gt;设置—网络和Internet—代理&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/897b5a83-4aec-4576-a11c-bd188b087d15-10805124.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/734cb407-0601-443c-8d5a-e6355bd928a1-10805124.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/b7bbe53a-20b1-4fc1-ae38-0d983d496cca-10805124.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;关闭：使用代理服务器&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/f7df1ff4-8995-418c-8c5d-8c4ddbadee3f-10805124.jpg&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -548,14 +580,16 @@
     <updated>2021-05-10T22:13:49.206Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;都需要开启MitM, 并且正确的信任证书&lt;/p&gt;
-&lt;h2 id=&quot;shadowrocket&quot;&gt;&lt;a href=&quot;#shadowrocket&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+&lt;h2 id=&quot;shadowrocket&quot;&gt;&lt;a href=&quot;#shadowrocket&quot; class=&quot;headerlink&quot; title=&quot;shadowrocket&quot;&gt;&lt;/a&gt;shadowrocket&lt;/h2&gt;&lt;p&gt;小火箭shadowrocket解锁教程&lt;/p&gt;
+&lt;p&gt;视频是youtube上的，需要开启科学上网观看&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/cMZJG17z9LU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=cMZJG17z9LU&quot;&gt;https://www.youtube.com/watch?v=cMZJG17z9LU&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用自己的节点即可，可以从视频2分钟开始看起。&lt;/p&gt;
+&lt;p&gt;配置：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[URL Rewrite]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(?&amp;lt;&amp;#x3D;_region&amp;#x3D;)CN(?&amp;#x3D;&amp;amp;) US 307&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(?&amp;lt;&amp;#x3D;&amp;amp;mcc_mnc&amp;#x3D;)4 2 307&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;^(https?:\&amp;#x2F;\&amp;#x2F;dm[\w-]+\.\w+\.com\&amp;#x2F;.+)(\?)(.+) $1$3 302&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(^https?:\&amp;#x2F;\&amp;#x2F;*\.\w&amp;#123;4&amp;#125;okv.com\&amp;#x2F;.+&amp;amp;.+)(\d&amp;#123;2&amp;#125;\.3\.\d)(.+) $118.0$3 302&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[MITM]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hostname &amp;#x3D; *.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;surge&quot;&gt;&lt;a href=&quot;#surge&quot; class=&quot;headerlink&quot; title=&quot;surge&quot;&gt;&lt;/a&gt;surge&lt;/h2&gt;</summary>
     
     
     
@@ -582,13 +616,14 @@
     <updated>2021-05-09T13:18:33.157Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;porkbun.com总部位于俄勒冈州波特兰市，是ICANN认证域名注册商。母公司为Top Level Design</summary>
-        
-      
+    <summary type="html">&lt;p&gt;porkbun.com总部位于俄勒冈州波特兰市，是ICANN认证域名注册商。母公司为Top Level Design ，主营业务为：各类域名、包括域名隐私保护和证书，其次有虚拟主机、邮件营销主机。提供的域名后缀种类繁多(300多种)，并且为每个域名免费提供隐私保护，在国外有着较高的知名度。&lt;/p&gt;
+&lt;h2 id=&quot;活动介绍&quot;&gt;&lt;a href=&quot;#活动介绍&quot; class=&quot;headerlink&quot; title=&quot;活动介绍&quot;&gt;&lt;/a&gt;活动介绍&lt;/h2&gt;&lt;p&gt;官网：&lt;a href=&quot;https://porkbun.com/&quot;&gt;https://porkbun.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;活动内容：.design域名新用户首年免费，续费每年35美元&lt;/p&gt;
+&lt;p&gt;虽然首年免费，但是续费价格比较贵，小众的国际顶级域名，玩玩可以，请谨慎用于常规使用！&lt;/p&gt;
+&lt;p&gt;需要信用卡或支付宝验证会扣1刀，随后返还。以前可以用生成卡，但是商家学的精明了，目前只能用真实有效的卡才能通过。&lt;/p&gt;
+&lt;h2 id=&quot;注册&quot;&gt;&lt;a href=&quot;#注册&quot; class=&quot;headerlink&quot; title=&quot;注册&quot;&gt;&lt;/a&gt;注册&lt;/h2&gt;&lt;p&gt;注册地址：&lt;a href=&quot;https://porkbun.com/account/login&quot;&gt;https://porkbun.com/account/login&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如何注册就不去赘述了。注册好之后，要到邮箱认证邮件。&lt;/p&gt;
+&lt;h2 id=&quot;购买域名&quot;&gt;&lt;a href=&quot;#购买域名&quot; class=&quot;headerlink&quot; title=&quot;购买域名&quot;&gt;&lt;/a&gt;购买域名&lt;/h2&gt;</summary>
     
     
     
@@ -609,15 +644,20 @@
     <updated>2021-05-09T12:58:58.613Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;我发现卖nat服务器的老板不少，但是网上你却根本找不到什么使用教程，所以此文就是为了nat使用说明而写的&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;以下转载自 iLemonrain’s Blog &lt;a</summary>
-        
-      
+&lt;p&gt;以下转载自 iLemonrain’s Blog &lt;a href=&quot;https://blog.ilemonrain.com/linux/nat-server-tutorial.html&quot;&gt;https://blog.ilemonrain.com/linux/nat-server-tutorial.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;服务器的类别&quot;&gt;&lt;a href=&quot;#服务器的类别&quot; class=&quot;headerlink&quot; title=&quot;服务器的类别&quot;&gt;&lt;/a&gt;服务器的类别&lt;/h2&gt;&lt;p&gt;在开始本篇教程前，我们先来了解下现在所提供的可供租赁的服务器的种类。&lt;/p&gt;
+&lt;h3 id=&quot;1-独立服务器&quot;&gt;&lt;a href=&quot;#1-独立服务器&quot; class=&quot;headerlink&quot; title=&quot;(1) 独立服务器&quot;&gt;&lt;/a&gt;(1) 独立服务器&lt;/h3&gt;&lt;p&gt;独立服务器（又叫母鸡，独服，杜甫），是指服务商提供给你一整台物理服务器的资源供你使用，整台服务器上的资源全部供你使用，不会有任何人跟你抢占服务器资源。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;优点：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;服务器性能强大，资源充足&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;缺点：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;价格过于昂贵 （往往性能不错的杜甫必定3XX软妹币起步，更高性能的经常出现四位数）&lt;/p&gt;</summary>
     
     
     
@@ -629,6 +669,40 @@
     <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
     
     <category term="nat" scheme="https://ednovas.xyz/tags/nat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GCP，oralce，aws开启root登录</title>
+    <link href="https://ednovas.xyz/2021/05/08/root/"/>
+    <id>https://ednovas.xyz/2021/05/08/root/</id>
+    <published>2021-05-08T04:21:00.000Z</published>
+    <updated>2021-05-08T11:31:47.899Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;主要思路&quot;&gt;&lt;a href=&quot;#主要思路&quot; class=&quot;headerlink&quot; title=&quot;主要思路&quot;&gt;&lt;/a&gt;主要思路&lt;/h2&gt;&lt;p&gt;大同小异，修改 &lt;code&gt;sshd——config&lt;/code&gt; 文件，把里面的 &lt;code&gt;PasswordAuthentication&lt;/code&gt; 和 &lt;code&gt;PermitRootLogin&lt;/code&gt; 都改成 Yes&lt;/p&gt;
+&lt;h2 id=&quot;AWS&quot;&gt;&lt;a href=&quot;#AWS&quot; class=&quot;headerlink&quot; title=&quot;AWS&quot;&gt;&lt;/a&gt;AWS&lt;/h2&gt;&lt;p&gt;切换到root用户&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo -i&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;输入以下命令实现密码登录&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed -ri &amp;#39;s&amp;#x2F;^#?(PasswordAuthentication)\s+(yes|no)&amp;#x2F;\1 yes&amp;#x2F;&amp;#39; &amp;#x2F;etc&amp;#x2F;ssh&amp;#x2F;sshd_config&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed -ri &amp;#39;s&amp;#x2F;^#?(PermitRootLogin)\s+(yes|no)&amp;#x2F;\1 yes&amp;#x2F;&amp;#39; &amp;#x2F;etc&amp;#x2F;ssh&amp;#x2F;sshd_config&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed -ri &amp;#39;s&amp;#x2F;^&amp;#x2F;#&amp;#x2F;;s&amp;#x2F;sleep 10&amp;quot;\s+&amp;#x2F;&amp;amp;\n&amp;#x2F;&amp;#39; &amp;#x2F;root&amp;#x2F;.ssh&amp;#x2F;authorized_keys&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;service sshd restart&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="root" scheme="https://ednovas.xyz/tags/root/"/>
+    
+    <category term="GCP" scheme="https://ednovas.xyz/tags/GCP/"/>
+    
+    <category term="AWS" scheme="https://ednovas.xyz/tags/AWS/"/>
+    
+    <category term="Oracle" scheme="https://ednovas.xyz/tags/Oracle/"/>
     
   </entry>
   
