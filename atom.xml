@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-06-08T11:42:21.611Z</updated>
+  <updated>2021-06-11T13:56:19.083Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建苹果CMS视频站</title>
+    <link href="https://ednovas.xyz/2021/06/11/applecms/"/>
+    <id>https://ednovas.xyz/2021/06/11/applecms/</id>
+    <published>2021-06-11T12:56:00.000Z</published>
+    <updated>2021-06-11T13:56:19.083Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;VPS一个，最好高性能的，别用甲骨文！别用甲骨文！别用甲骨文！（被封了两个账号的痛）&lt;/p&gt;
+&lt;p&gt;首先安装aapanel或宝塔，ubuntu的aapanel（aapanel是宝塔国际版，只有英文界面）一键脚本：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -O install.sh http:&amp;#x2F;&amp;#x2F;www.aapanel.com&amp;#x2F;script&amp;#x2F;install-ubuntu_6.0_en.sh &amp;amp;&amp;amp; sudo bash install.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;安装完成后复制黏贴面板地址，输入账号密码进入&lt;/p&gt;
+&lt;p&gt;安装LNMP，使用极速安装，PHP请选择7.0版本+，一般我比较喜欢选7.2和7.4&lt;/p&gt;
+&lt;p&gt;静等一段比较长的时间，大概十到二十分钟，安装速度根据机器性能有所变化&lt;/p&gt;
+&lt;h2 id=&quot;解析&quot;&gt;&lt;a href=&quot;#解析&quot; class=&quot;headerlink&quot; title=&quot;解析&quot;&gt;&lt;/a&gt;解析&lt;/h2&gt;&lt;p&gt;安装完成后解析域名到该VPS的ip地址，记得要关掉小云朵cdn方便申请SSL证书&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ%E5%9B%BE%E7%89%8720210611212443.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="视频" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91/"/>
+    
+    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
+    
+    <category term="视频站" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91%E7%AB%99/"/>
+    
+  </entry>
   
   <entry>
     <title>微软全局管理（API提权）</title>
@@ -669,40 +703,6 @@
     <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
     
     <category term="nat" scheme="https://ednovas.xyz/tags/nat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GCP，oralce，aws开启root登录</title>
-    <link href="https://ednovas.xyz/2021/05/08/root/"/>
-    <id>https://ednovas.xyz/2021/05/08/root/</id>
-    <published>2021-05-08T04:21:00.000Z</published>
-    <updated>2021-05-08T11:31:47.899Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;主要思路&quot;&gt;&lt;a href=&quot;#主要思路&quot; class=&quot;headerlink&quot; title=&quot;主要思路&quot;&gt;&lt;/a&gt;主要思路&lt;/h2&gt;&lt;p&gt;大同小异，修改 &lt;code&gt;sshd——config&lt;/code&gt; 文件，把里面的 &lt;code&gt;PasswordAuthentication&lt;/code&gt; 和 &lt;code&gt;PermitRootLogin&lt;/code&gt; 都改成 Yes&lt;/p&gt;
-&lt;h2 id=&quot;AWS&quot;&gt;&lt;a href=&quot;#AWS&quot; class=&quot;headerlink&quot; title=&quot;AWS&quot;&gt;&lt;/a&gt;AWS&lt;/h2&gt;&lt;p&gt;切换到root用户&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo -i&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;输入以下命令实现密码登录&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed -ri &amp;#39;s&amp;#x2F;^#?(PasswordAuthentication)\s+(yes|no)&amp;#x2F;\1 yes&amp;#x2F;&amp;#39; &amp;#x2F;etc&amp;#x2F;ssh&amp;#x2F;sshd_config&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed -ri &amp;#39;s&amp;#x2F;^#?(PermitRootLogin)\s+(yes|no)&amp;#x2F;\1 yes&amp;#x2F;&amp;#39; &amp;#x2F;etc&amp;#x2F;ssh&amp;#x2F;sshd_config&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed -ri &amp;#39;s&amp;#x2F;^&amp;#x2F;#&amp;#x2F;;s&amp;#x2F;sleep 10&amp;quot;\s+&amp;#x2F;&amp;amp;\n&amp;#x2F;&amp;#39; &amp;#x2F;root&amp;#x2F;.ssh&amp;#x2F;authorized_keys&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;service sshd restart&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="root" scheme="https://ednovas.xyz/tags/root/"/>
-    
-    <category term="GCP" scheme="https://ednovas.xyz/tags/GCP/"/>
-    
-    <category term="AWS" scheme="https://ednovas.xyz/tags/AWS/"/>
-    
-    <category term="Oracle" scheme="https://ednovas.xyz/tags/Oracle/"/>
     
   </entry>
   
