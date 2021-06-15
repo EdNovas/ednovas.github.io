@@ -118,6 +118,38 @@
   </entry>
   
   <entry>
+    <title>Graph Explorer自定义Microsoft应用密钥有效期</title>
+    <link href="https://ednovas.xyz/2021/06/07/graphexplorer/"/>
+    <id>https://ednovas.xyz/2021/06/07/graphexplorer/</id>
+    <published>2021-06-07T06:06:00.000Z</published>
+    <updated>2021-06-15T09:54:37.299Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Graph-Explorer-在线测试API工具&quot;&gt;&lt;a href=&quot;#Graph-Explorer-在线测试API工具&quot; class=&quot;headerlink&quot; title=&quot;Graph Explorer-在线测试API工具&quot;&gt;&lt;/a&gt;Graph Explorer-在线测试API工具&lt;/h2&gt;&lt;p&gt;工具地址:&lt;a href=&quot;https://developer.microsoft.com/zh-cn/graph/graph-explorer&quot;&gt;https://developer.microsoft.com/zh-cn/graph/graph-explorer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Micro Graph API文档:&lt;a href=&quot;https://docs.microsoft.com/zh-CN/graph/api/overview?view=graph-rest-1.0&quot;&gt;https://docs.microsoft.com/zh-CN/graph/api/overview?view=graph-rest-1.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用条件:有Graph Explorer调用API对应所需权限的账号，方便起见直接使用全局管理员&lt;/p&gt;
+&lt;h2 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h2&gt;&lt;h3 id=&quot;AAD中复制应用的对象ID-Object-ID&quot;&gt;&lt;a href=&quot;#AAD中复制应用的对象ID-Object-ID&quot; class=&quot;headerlink&quot; title=&quot;AAD中复制应用的对象ID(Object ID)&quot;&gt;&lt;/a&gt;AAD中复制应用的对象ID(Object ID)&lt;/h3&gt;&lt;h3 id=&quot;Graph-Explorer-中调用API添加密码&quot;&gt;&lt;a href=&quot;#Graph-Explorer-中调用API添加密码&quot; class=&quot;headerlink&quot; title=&quot;Graph Explorer 中调用API添加密码&quot;&gt;&lt;/a&gt;Graph Explorer 中调用API添加密码&lt;/h3&gt;&lt;p&gt;1- 请求类型改为POST,请求地址 &lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;https:&amp;#x2F;&amp;#x2F;graph.microsoft.com&amp;#x2F;v1.0&amp;#x2F;applications&amp;#x2F;&amp;#123;id&amp;#125;&amp;#x2F;addPassword&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;id改为应用的对象ID&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/VPS/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    
+    <category term="RSS" scheme="https://ednovas.xyz/tags/RSS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>搭建订阅转换网站</title>
     <link href="https://ednovas.xyz/2021/06/06/subs/"/>
     <id>https://ednovas.xyz/2021/06/06/subs/</id>
@@ -667,42 +699,6 @@
     <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
     
     <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NAT VPS 使用说明</title>
-    <link href="https://ednovas.xyz/2021/05/09/nat/"/>
-    <id>https://ednovas.xyz/2021/05/09/nat/</id>
-    <published>2021-05-09T07:21:00.000Z</published>
-    <updated>2021-05-09T12:58:58.613Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;我发现卖nat服务器的老板不少，但是网上你却根本找不到什么使用教程，所以此文就是为了nat使用说明而写的&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;以下转载自 iLemonrain’s Blog &lt;a href=&quot;https://blog.ilemonrain.com/linux/nat-server-tutorial.html&quot;&gt;https://blog.ilemonrain.com/linux/nat-server-tutorial.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;服务器的类别&quot;&gt;&lt;a href=&quot;#服务器的类别&quot; class=&quot;headerlink&quot; title=&quot;服务器的类别&quot;&gt;&lt;/a&gt;服务器的类别&lt;/h2&gt;&lt;p&gt;在开始本篇教程前，我们先来了解下现在所提供的可供租赁的服务器的种类。&lt;/p&gt;
-&lt;h3 id=&quot;1-独立服务器&quot;&gt;&lt;a href=&quot;#1-独立服务器&quot; class=&quot;headerlink&quot; title=&quot;(1) 独立服务器&quot;&gt;&lt;/a&gt;(1) 独立服务器&lt;/h3&gt;&lt;p&gt;独立服务器（又叫母鸡，独服，杜甫），是指服务商提供给你一整台物理服务器的资源供你使用，整台服务器上的资源全部供你使用，不会有任何人跟你抢占服务器资源。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;优点：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;服务器性能强大，资源充足&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;缺点：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;价格过于昂贵 （往往性能不错的杜甫必定3XX软妹币起步，更高性能的经常出现四位数）&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="nat" scheme="https://ednovas.xyz/tags/nat/"/>
     
   </entry>
   
