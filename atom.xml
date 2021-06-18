@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-06-11T13:56:19.083Z</updated>
+  <updated>2021-06-18T08:58:58.643Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于python的全能抢购神器</title>
+    <link href="https://ednovas.xyz/2021/06/18/pythonshop/"/>
+    <id>https://ednovas.xyz/2021/06/18/pythonshop/</id>
+    <published>2021-06-18T08:30:00.000Z</published>
+    <updated>2021-06-18T08:58:58.643Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;源码&quot;&gt;&lt;a href=&quot;#源码&quot; class=&quot;headerlink&quot; title=&quot;源码&quot;&gt;&lt;/a&gt;源码&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.52pojie.cn/thread-1332572-1-1.html&quot;&gt;https://www.52pojie.cn/thread-1332572-1-1.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://lanren.lanzoux.com/b00u3bumh&quot;&gt;https://lanren.lanzoux.com/b00u3bumh&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;备用下载(2021.03.26版本):&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://onecloud.ednovas.xyz/s/wzSO&quot;&gt;https://onecloud.ednovas.xyz/s/wzSO&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;驱动下载&quot;&gt;&lt;a href=&quot;#驱动下载&quot; class=&quot;headerlink&quot; title=&quot;驱动下载&quot;&gt;&lt;/a&gt;驱动下载&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://chromedriver.chromium.org/downloads&quot;&gt;https://chromedriver.chromium.org/downloads&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;视频讲解&quot;&gt;&lt;a href=&quot;#视频讲解&quot; class=&quot;headerlink&quot; title=&quot;视频讲解&quot;&gt;&lt;/a&gt;视频讲解&lt;/h2&gt;&lt;p&gt;b站官方视频讲解: &lt;a href=&quot;https://www.bilibili.com/video/BV1S54y147xc&quot;&gt;https://www.bilibili.com/video/BV1S54y147xc&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="抢购" scheme="https://ednovas.xyz/tags/%E6%8A%A2%E8%B4%AD/"/>
+    
+    <category term="python" scheme="https://ednovas.xyz/tags/python/"/>
+    
+    <category term="京东" scheme="https://ednovas.xyz/tags/%E4%BA%AC%E4%B8%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建苹果CMS视频站</title>
@@ -667,34 +695,6 @@
     <category term="quantumult" scheme="https://ednovas.xyz/tags/quantumult/"/>
     
     <category term="quantumultx" scheme="https://ednovas.xyz/tags/quantumultx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>免费 design 域名一年</title>
-    <link href="https://ednovas.xyz/2021/05/09/porkbundesign/"/>
-    <id>https://ednovas.xyz/2021/05/09/porkbundesign/</id>
-    <published>2021-05-09T12:21:00.000Z</published>
-    <updated>2021-05-09T13:18:33.157Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;porkbun.com总部位于俄勒冈州波特兰市，是ICANN认证域名注册商。母公司为Top Level Design ，主营业务为：各类域名、包括域名隐私保护和证书，其次有虚拟主机、邮件营销主机。提供的域名后缀种类繁多(300多种)，并且为每个域名免费提供隐私保护，在国外有着较高的知名度。&lt;/p&gt;
-&lt;h2 id=&quot;活动介绍&quot;&gt;&lt;a href=&quot;#活动介绍&quot; class=&quot;headerlink&quot; title=&quot;活动介绍&quot;&gt;&lt;/a&gt;活动介绍&lt;/h2&gt;&lt;p&gt;官网：&lt;a href=&quot;https://porkbun.com/&quot;&gt;https://porkbun.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;活动内容：.design域名新用户首年免费，续费每年35美元&lt;/p&gt;
-&lt;p&gt;虽然首年免费，但是续费价格比较贵，小众的国际顶级域名，玩玩可以，请谨慎用于常规使用！&lt;/p&gt;
-&lt;p&gt;需要信用卡或支付宝验证会扣1刀，随后返还。以前可以用生成卡，但是商家学的精明了，目前只能用真实有效的卡才能通过。&lt;/p&gt;
-&lt;h2 id=&quot;注册&quot;&gt;&lt;a href=&quot;#注册&quot; class=&quot;headerlink&quot; title=&quot;注册&quot;&gt;&lt;/a&gt;注册&lt;/h2&gt;&lt;p&gt;注册地址：&lt;a href=&quot;https://porkbun.com/account/login&quot;&gt;https://porkbun.com/account/login&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;如何注册就不去赘述了。注册好之后，要到邮箱认证邮件。&lt;/p&gt;
-&lt;h2 id=&quot;购买域名&quot;&gt;&lt;a href=&quot;#购买域名&quot; class=&quot;headerlink&quot; title=&quot;购买域名&quot;&gt;&lt;/a&gt;购买域名&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   
