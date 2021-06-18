@@ -150,11 +150,11 @@
     <link href="https://ednovas.xyz/2021/06/07/graphexplorer/"/>
     <id>https://ednovas.xyz/2021/06/07/graphexplorer/</id>
     <published>2021-06-07T06:06:00.000Z</published>
-    <updated>2021-06-15T10:53:58.440Z</updated>
+    <updated>2021-06-18T13:46:47.019Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;Graph-Explorer-在线测试API工具&quot;&gt;&lt;a href=&quot;#Graph-Explorer-在线测试API工具&quot; class=&quot;headerlink&quot; title=&quot;Graph Explorer-在线测试API工具&quot;&gt;&lt;/a&gt;Graph Explorer-在线测试API工具&lt;/h2&gt;&lt;p&gt;工具地址:&lt;a href=&quot;https://developer.microsoft.com/zh-cn/graph/graph-explorer&quot;&gt;https://developer.microsoft.com/zh-cn/graph/graph-explorer&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Micro Graph API文档:&lt;a href=&quot;https://docs.microsoft.com/zh-CN/graph/api/overview?view=graph-rest-1.0&quot;&gt;https://docs.microsoft.com/zh-CN/graph/api/overview?view=graph-rest-1.0&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;Graph-Explorer-在线测试API工具&quot;&gt;&lt;a href=&quot;#Graph-Explorer-在线测试API工具&quot; class=&quot;headerlink&quot; title=&quot;Graph Explorer-在线测试API工具&quot;&gt;&lt;/a&gt;Graph Explorer-在线测试API工具&lt;/h2&gt;&lt;p&gt;工具地址: &lt;a href=&quot;https://developer.microsoft.com/zh-cn/graph/graph-explorer&quot;&gt;https://developer.microsoft.com/zh-cn/graph/graph-explorer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Micro Graph API文档: &lt;a href=&quot;https://docs.microsoft.com/zh-CN/graph/api/overview?view=graph-rest-1.0&quot;&gt;https://docs.microsoft.com/zh-CN/graph/api/overview?view=graph-rest-1.0&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;使用条件:有Graph Explorer调用API对应所需权限的账号，方便起见直接使用全局管理员&lt;/p&gt;
 &lt;h2 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h2&gt;&lt;h3 id=&quot;AAD中复制应用的对象ID-Object-ID&quot;&gt;&lt;a href=&quot;#AAD中复制应用的对象ID-Object-ID&quot; class=&quot;headerlink&quot; title=&quot;AAD中复制应用的对象ID(Object ID)&quot;&gt;&lt;/a&gt;AAD中复制应用的对象ID(Object ID)&lt;/h3&gt;&lt;h3 id=&quot;Graph-Explorer-中调用API添加密码&quot;&gt;&lt;a href=&quot;#Graph-Explorer-中调用API添加密码&quot; class=&quot;headerlink&quot; title=&quot;Graph Explorer 中调用API添加密码&quot;&gt;&lt;/a&gt;Graph Explorer 中调用API添加密码&lt;/h3&gt;&lt;p&gt;1- 请求类型改为POST,请求地址 &lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;https:&amp;#x2F;&amp;#x2F;graph.microsoft.com&amp;#x2F;v1.0&amp;#x2F;applications&amp;#x2F;&amp;#123;id&amp;#125;&amp;#x2F;addPassword&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
