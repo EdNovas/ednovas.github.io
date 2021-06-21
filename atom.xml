@@ -144,7 +144,7 @@
     <link href="https://ednovas.xyz/2021/06/07/rss_bot/"/>
     <id>https://ednovas.xyz/2021/06/07/rss_bot/</id>
     <published>2021-06-07T06:06:00.000Z</published>
-    <updated>2021-06-13T04:25:17.919Z</updated>
+    <updated>2021-06-21T05:46:35.401Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;搭建一个telegram 上的 rss 订阅 bot，两个项目都不错，这里选用的是flowerss-bot（第一个）&lt;/p&gt;
@@ -159,8 +159,6 @@
     
     
     <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/VPS/%E5%BB%BA%E7%AB%99/"/>
     
     
     <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
