@@ -66,15 +66,15 @@
     <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
     
     
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="视频" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91/"/>
-    
     <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
     
     <category term="视频站" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91%E7%AB%99/"/>
+    
+    <category term="视频" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91/"/>
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
     
   </entry>
   
@@ -101,47 +101,13 @@
     <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
     
     
-    <category term="api" scheme="https://ednovas.xyz/tags/api/"/>
-    
     <category term="微软" scheme="https://ednovas.xyz/tags/%E5%BE%AE%E8%BD%AF/"/>
     
     <category term="全局" scheme="https://ednovas.xyz/tags/%E5%85%A8%E5%B1%80/"/>
     
     <category term="azure" scheme="https://ednovas.xyz/tags/azure/"/>
     
-  </entry>
-  
-  <entry>
-    <title>搭建一个rss订阅bot</title>
-    <link href="https://ednovas.xyz/2021/06/07/rss_bot/"/>
-    <id>https://ednovas.xyz/2021/06/07/rss_bot/</id>
-    <published>2021-06-07T06:06:00.000Z</published>
-    <updated>2021-06-07T07:00:52.371Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;搭建一个telegram 上的 rss 订阅 bot，两个项目都不错，这里选用的是flowerss-bot（第一个）&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/indes/flowerss-bot&quot;&gt;https://github.com/indes/flowerss-bot&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/iovxw/rssbot&quot;&gt;https://github.com/iovxw/rssbot&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;部署&quot;&gt;&lt;a href=&quot;#部署&quot; class=&quot;headerlink&quot; title=&quot;部署&quot;&gt;&lt;/a&gt;部署&lt;/h2&gt;&lt;p&gt;官方部署文档：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://flowerss-bot.vercel.app/#/install&quot;&gt;https://flowerss-bot.vercel.app/#/install&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;首先ssh连接上VPS，然后新建文件夹并且下载最新版本releases并解压：&lt;/p&gt;
-&lt;p&gt;（这里使用的是0.8.3版本，可能不是最新版 release地址：&lt;a href=&quot;https://github.com/indes/flowerss-bot/releases%EF%BC%8C%E7%9B%AE%E5%89%8D%E6%B2%A1%E6%9C%89arm%E7%89%88%E6%9C%AC%EF%BC%89&quot;&gt;https://github.com/indes/flowerss-bot/releases，目前没有arm版本）&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir &amp;#x2F;home&amp;#x2F;flowerss &amp;amp;&amp;amp; cd &amp;#x2F;home&amp;#x2F;flowerss&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;indes&amp;#x2F;flowerss-bot&amp;#x2F;releases&amp;#x2F;download&amp;#x2F;v0.8.3&amp;#x2F;flowerss-bot-v0.8.3-linux-amd64.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tar -zxvf flowerss-bot-v0.8.3-linux-amd64.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;copy config.yml.sample config.yml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/VPS/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
-    
-    <category term="RSS" scheme="https://ednovas.xyz/tags/RSS/"/>
+    <category term="api" scheme="https://ednovas.xyz/tags/api/"/>
     
   </entry>
   
@@ -174,6 +140,40 @@
   </entry>
   
   <entry>
+    <title>搭建一个rss订阅bot</title>
+    <link href="https://ednovas.xyz/2021/06/07/rss_bot/"/>
+    <id>https://ednovas.xyz/2021/06/07/rss_bot/</id>
+    <published>2021-06-07T06:06:00.000Z</published>
+    <updated>2021-06-13T04:25:17.919Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;搭建一个telegram 上的 rss 订阅 bot，两个项目都不错，这里选用的是flowerss-bot（第一个）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/indes/flowerss-bot&quot;&gt;https://github.com/indes/flowerss-bot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/iovxw/rssbot&quot;&gt;https://github.com/iovxw/rssbot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;部署&quot;&gt;&lt;a href=&quot;#部署&quot; class=&quot;headerlink&quot; title=&quot;部署&quot;&gt;&lt;/a&gt;部署&lt;/h2&gt;&lt;p&gt;官方部署文档：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://flowerss-bot.vercel.app/#/install&quot;&gt;https://flowerss-bot.vercel.app/#/install&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;首先ssh连接上VPS，然后新建文件夹并且下载最新版本releases并解压：&lt;/p&gt;
+&lt;p&gt;（这里使用的是0.8.3版本，可能不是最新版 release地址：&lt;a href=&quot;https://github.com/indes/flowerss-bot/releases%EF%BC%8C%E7%9B%AE%E5%89%8D%E6%B2%A1%E6%9C%89arm%E7%89%88%E6%9C%AC%EF%BC%89&quot;&gt;https://github.com/indes/flowerss-bot/releases，目前没有arm版本）&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir &amp;#x2F;home&amp;#x2F;flowerss &amp;amp;&amp;amp; cd &amp;#x2F;home&amp;#x2F;flowerss&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;indes&amp;#x2F;flowerss-bot&amp;#x2F;releases&amp;#x2F;download&amp;#x2F;v0.8.3&amp;#x2F;flowerss-bot-v0.8.3-linux-amd64.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tar -zxvf flowerss-bot-v0.8.3-linux-amd64.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;copy config.yml.sample config.yml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/VPS/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    
+    <category term="RSS" scheme="https://ednovas.xyz/tags/RSS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>搭建订阅转换网站</title>
     <link href="https://ednovas.xyz/2021/06/06/subs/"/>
     <id>https://ednovas.xyz/2021/06/06/subs/</id>
@@ -195,9 +195,9 @@
     <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
     
     
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
     <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
     
     <category term="订阅转换" scheme="https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2/"/>
     
@@ -227,11 +227,11 @@
     
     <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
     
+    <category term="qq" scheme="https://ednovas.xyz/tags/qq/"/>
+    
     <category term="搜图" scheme="https://ednovas.xyz/tags/%E6%90%9C%E5%9B%BE/"/>
     
     <category term="机器人" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
-    
-    <category term="qq" scheme="https://ednovas.xyz/tags/qq/"/>
     
   </entry>
   
@@ -619,11 +619,11 @@
     
     <category term="插件" scheme="https://ednovas.xyz/tags/%E6%8F%92%E4%BB%B6/"/>
     
+    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    
     <category term="pagermaid" scheme="https://ednovas.xyz/tags/pagermaid/"/>
     
     <category term="keyword" scheme="https://ednovas.xyz/tags/keyword/"/>
-    
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
     
   </entry>
   
