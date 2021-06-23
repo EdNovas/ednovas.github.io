@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-06-18T08:58:58.643Z</updated>
+  <updated>2021-06-23T06:23:38.430Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>内网穿透</title>
+    <link href="https://ednovas.xyz/2021/06/23/frp/"/>
+    <id>https://ednovas.xyz/2021/06/23/frp/</id>
+    <published>2021-06-23T06:06:00.000Z</published>
+    <updated>2021-06-23T06:23:38.430Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;内网穿透，也即NAT 穿透，进行NAT 穿透是为了使具有某一个特定源IP 地址和源端口号的数据包不被NAT 设备屏蔽而正确路由到内网主机。&lt;/p&gt;
+&lt;p&gt;一般来讲,也就是用于从公网环境访问自己的私有设备,让你不在家也能访问家中设备&lt;/p&gt;
+&lt;p&gt;比较好用的内网穿透工具有 frp ngrok ddnsto 等,其中最简单的就是ddnsto了&lt;/p&gt;
+&lt;h2 id=&quot;ddns-to&quot;&gt;&lt;a href=&quot;#ddns-to&quot; class=&quot;headerlink&quot; title=&quot;ddns.to&quot;&gt;&lt;/a&gt;ddns.to&lt;/h2&gt;&lt;p&gt;官网注册账号并登录(微信登录) &lt;a href=&quot;https://www.ddnsto.com/&quot;&gt;https://www.ddnsto.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当外网访问时也是使用微信登录&lt;/p&gt;
+&lt;p&gt;配置极其简单,软路由中选择ddns.to服务,然后填入令牌,启用,保存并应用即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_13-20-05.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;然后外网访问自己绑定的对应内网ip,比如我的就是192.168.2.1&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_13-22-45.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="frp" scheme="https://ednovas.xyz/tags/frp/"/>
+    
+    <category term="ddnsto" scheme="https://ednovas.xyz/tags/ddnsto/"/>
+    
+    <category term="内网穿透" scheme="https://ednovas.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>基于python的全能抢购神器</title>
@@ -659,42 +692,6 @@
     <category term="win7" scheme="https://ednovas.xyz/tags/win7/"/>
     
     <category term="设置" scheme="https://ednovas.xyz/tags/%E8%AE%BE%E7%BD%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ios 解锁 tiktok</title>
-    <link href="https://ednovas.xyz/2021/05/11/iostiktok/"/>
-    <id>https://ednovas.xyz/2021/05/11/iostiktok/</id>
-    <published>2021-05-10T22:02:00.000Z</published>
-    <updated>2021-05-10T22:13:49.206Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;都需要开启MitM, 并且正确的信任证书&lt;/p&gt;
-&lt;h2 id=&quot;shadowrocket&quot;&gt;&lt;a href=&quot;#shadowrocket&quot; class=&quot;headerlink&quot; title=&quot;shadowrocket&quot;&gt;&lt;/a&gt;shadowrocket&lt;/h2&gt;&lt;p&gt;小火箭shadowrocket解锁教程&lt;/p&gt;
-&lt;p&gt;视频是youtube上的，需要开启科学上网观看&lt;/p&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/cMZJG17z9LU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=cMZJG17z9LU&quot;&gt;https://www.youtube.com/watch?v=cMZJG17z9LU&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;使用自己的节点即可，可以从视频2分钟开始看起。&lt;/p&gt;
-&lt;p&gt;配置：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[URL Rewrite]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(?&amp;lt;&amp;#x3D;_region&amp;#x3D;)CN(?&amp;#x3D;&amp;amp;) US 307&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(?&amp;lt;&amp;#x3D;&amp;amp;mcc_mnc&amp;#x3D;)4 2 307&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;^(https?:\&amp;#x2F;\&amp;#x2F;dm[\w-]+\.\w+\.com\&amp;#x2F;.+)(\?)(.+) $1$3 302&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(^https?:\&amp;#x2F;\&amp;#x2F;*\.\w&amp;#123;4&amp;#125;okv.com\&amp;#x2F;.+&amp;amp;.+)(\d&amp;#123;2&amp;#125;\.3\.\d)(.+) $118.0$3 302&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[MITM]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hostname &amp;#x3D; *.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;surge&quot;&gt;&lt;a href=&quot;#surge&quot; class=&quot;headerlink&quot; title=&quot;surge&quot;&gt;&lt;/a&gt;surge&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    
-    <category term="tiktok" scheme="https://ednovas.xyz/tags/tiktok/"/>
-    
-    <category term="ios" scheme="https://ednovas.xyz/tags/ios/"/>
-    
-    <category term="shadowrocket" scheme="https://ednovas.xyz/tags/shadowrocket/"/>
-    
-    <category term="quantumult" scheme="https://ednovas.xyz/tags/quantumult/"/>
-    
-    <category term="quantumultx" scheme="https://ednovas.xyz/tags/quantumultx/"/>
     
   </entry>
   

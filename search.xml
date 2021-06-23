@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>内网穿透</title>
+      <link href="2021/06/23/frp/"/>
+      <url>2021/06/23/frp/</url>
+      
+        <content type="html"><![CDATA[<p>内网穿透，也即NAT 穿透，进行NAT 穿透是为了使具有某一个特定源IP 地址和源端口号的数据包不被NAT 设备屏蔽而正确路由到内网主机。</p><p>一般来讲,也就是用于从公网环境访问自己的私有设备,让你不在家也能访问家中设备</p><p>比较好用的内网穿透工具有 frp ngrok ddnsto 等,其中最简单的就是ddnsto了</p><h2 id="ddns-to"><a href="#ddns-to" class="headerlink" title="ddns.to"></a>ddns.to</h2><p>官网注册账号并登录(微信登录) <a href="https://www.ddnsto.com/">https://www.ddnsto.com/</a></p><p>当外网访问时也是使用微信登录</p><p>配置极其简单,软路由中选择ddns.to服务,然后填入令牌,启用,保存并应用即可</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_13-20-05.png"></p><p>然后外网访问自己绑定的对应内网ip,比如我的就是192.168.2.1</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_13-22-45.png"></p><p>付费版还有更多功能,但是免费就足够用</p><p>如ssh,远程telnet,远程rdp,远程vnc,远程aria2,远程开机</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_13-23-35.png"></p><h2 id="frp"><a href="#frp" class="headerlink" title="frp"></a>frp</h2><blockquote><p>参考引用自异次元 X-Force <a href="https://www.iplaysoft.com/frp.html">https://www.iplaysoft.com/frp.html</a></p></blockquote><p>Frp (Fast Reverse Proxy) 是一个免费开源的用于内网穿透的反向代理应用，它支持 TCP、UDP 协议， 也为 http 和 https 协议提供了额外的支持。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/architecture.png"></p><p>而目前 FRP 还推出了“点对点穿透”的试验性功能，连接成功后可以让公网设备直接跟内网设备“点对点”传输，数据流不再经过 VPS 中转，这样可以不受服务器带宽的限制，传输大文件会更快更稳定。当然，此功能并不能保证在你的网络环境 100% 可用，而且还要求访问端也得运行 FRP 客户端 (因此目前手机是无法实现的，只有电脑可以)。由于实现条件较多，所以有文件传输需求的朋友还是建议买带宽稍大一点的 VPS 会比较省心。</p><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>首先需要一台VPS服务器是肯定的,要开启防火墙对应端口7000</p><p>由于支持包括windows,linux,macOS,arm等多平台,所以十分方便</p><p>GitHub项目地址: <a href="https://github.com/fatedier/frp">https://github.com/fatedier/frp</a></p><p>releases下载地址: <a href="https://github.com/fatedier/frp/releases">https://github.com/fatedier/frp/releases</a></p><h3 id="下载frp程序"><a href="#下载frp程序" class="headerlink" title="下载frp程序"></a>下载frp程序</h3><p>右键对应架构程序,点击copy link address复制链接地址</p><p>注意!我这里用的是arm架构的VPS,所以选择 <code>frp_0.37.0_linux_arm64.tar.gz</code>, 但是一般来说大部分VPS都是amd架构的,请选择 <code>frp_0.37.0_linux_amd64.tar.gz</code></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_13-29-25.png"></p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir /home/frp &amp;&amp; <span class="built_in">cd</span> /home/frp</span><br><span class="line">sudo wget https://github.com/fatedier/frp/releases/download/v0.37.0/frp_0.37.0_linux_arm64.tar.gz  </span><br><span class="line">//这里wget后的链接请换成你刚刚复制的</span><br><span class="line">sudo tar xzvf frp_0.37.0_linux_arm64.tar.gz </span><br><span class="line">//这里xzvf后请换成你下载的文件名,一般为frp_0.37.0_linux_amd64.tar.gz,注意对应版本号</span><br><span class="line">sudo mv frp_0.37.0_linux_arm64/* /home/frp</span><br><span class="line">//这里同上替换</span><br></pre></td></tr></table></figure><p>FRP 默认提供了 2 个服务端配置文件，一个是简化版的 frps.ini，另一个是完整版的 frps_full.ini。</p><p>初学者只需用简版配置即可，在简版 frps.ini 配置文件里，默认设置了监听端口为 <code>7000</code>，你可以按需修改它,要记得防火墙打开对应端口</p><h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">./frps -c ./frps.ini</span><br></pre></td></tr></table></figure><p>如果正常运行即可,可以先ctrl+c停止一下</p><p>打开frps.ini,用vi,宝塔,finalshell打开都可以</p><p>写入一下</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[common]</span><br><span class="line"># frp监听的端口，默认是7000，可以改成其他的</span><br><span class="line">bind_port &#x3D; 7000</span><br><span class="line"># 授权码，请改成更复杂的</span><br><span class="line">token &#x3D; 123456</span><br><span class="line"></span><br><span class="line"># frp管理后台端口，请按自己需求更改</span><br><span class="line">dashboard_port &#x3D; 7500</span><br><span class="line"># frp管理后台用户名和密码，请改成自己的</span><br><span class="line">dashboard_user &#x3D; admin</span><br><span class="line">dashboard_pwd &#x3D; admin</span><br><span class="line">enable_prometheus &#x3D; true</span><br><span class="line"></span><br><span class="line"># frp日志配置</span><br><span class="line">log_file &#x3D; &#x2F;var&#x2F;log&#x2F;frps.log</span><br><span class="line">log_level &#x3D; info</span><br><span class="line">log_max_days &#x3D; 3</span><br></pre></td></tr></table></figure><p>设置后台运行</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cp systemd&#x2F;frps.service &#x2F;usr&#x2F;lib&#x2F;systemd&#x2F;system&#x2F;</span><br><span class="line">systemctl enable frps</span><br><span class="line">systemctl start frps</span><br></pre></td></tr></table></figure><p>防火墙记得还要开放7500面板端口</p><h3 id="内网配置"><a href="#内网配置" class="headerlink" title="内网配置"></a>内网配置</h3><p>软路由上打开frp内网穿透软件或者下载安装ipk文件</p><p><a href="https://github.com/kuoruan/openwrt-frp">https://github.com/kuoruan/openwrt-frp</a></p><p><a href="https://github.com/kuoruan/luci-app-frpc">https://github.com/kuoruan/luci-app-frpc</a></p><p>填入刚刚设置的对应信息配置</p><h2 id="frp一键脚本"><a href="#frp一键脚本" class="headerlink" title="frp一键脚本"></a>frp一键脚本</h2><p><a href="https://github.com/MvsCode/frps-onekey">https://github.com/MvsCode/frps-onekey</a></p><p>方便多了,直接显示对应信息可填写,使用很简单,这里就不再赘述了</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget https://raw.githubusercontent.com/MvsCode/frps-onekey/master/install-frps.sh -O ./install-frps.sh</span><br><span class="line">chmod 700 ./install-frps.sh</span><br><span class="line">./install-frps.sh install</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> VPS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 搭建 </tag>
+            
+            <tag> frp </tag>
+            
+            <tag> ddnsto </tag>
+            
+            <tag> 内网穿透 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>基于python的全能抢购神器</title>
       <link href="2021/06/18/pythonshop/"/>
       <url>2021/06/18/pythonshop/</url>
