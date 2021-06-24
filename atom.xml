@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-06-23T06:23:38.430Z</updated>
+  <updated>2021-06-24T02:14:01.543Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>WIN10UI————网页win10系统</title>
+    <link href="https://ednovas.xyz/2021/06/24/ylui/"/>
+    <id>https://ednovas.xyz/2021/06/24/ylui/</id>
+    <published>2021-06-24T02:06:00.000Z</published>
+    <updated>2021-06-24T02:14:01.543Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;YLUI是一款纯前端框架，是对WEB桌面UI的一个大胆尝试。&lt;/p&gt;
+&lt;p&gt;它凝聚了作者近一年的心血，作为WIN10UI开源项目的升级版，承载了作者对WEB桌面设计风格的追求。&lt;/p&gt;
+&lt;p&gt;在前端技术日新月异的背景下，YLUI力图提供一种新的web应用组织形式。&lt;/p&gt;
+&lt;p&gt;如果你正在寻找一个漂亮的UI组件库，你应该选择bootstrap,layui,element-ui等项目。而你想要让这些应用建立联系，构成组织，并提供一个统一的门户，那么YLUI将会是一个不错的选择。&lt;/p&gt;
+&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yuri2peter/ylui&quot;&gt;https://github.com/yuri2peter/ylui&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;说明文档&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/yuri2peter/ylui/tree/master/documents&quot;&gt;https://github.com/yuri2peter/ylui/tree/master/documents&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;搭建&quot;&gt;&lt;a href=&quot;#搭建&quot; class=&quot;headerlink&quot; title=&quot;搭建&quot;&gt;&lt;/a&gt;搭建&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
     <title>内网穿透</title>
     <link href="https://ednovas.xyz/2021/06/23/frp/"/>
     <id>https://ednovas.xyz/2021/06/23/frp/</id>
-    <published>2021-06-23T06:06:00.000Z</published>
-    <updated>2021-06-23T06:23:38.430Z</updated>
+    <published>2021-06-23T11:06:00.000Z</published>
+    <updated>2021-06-23T14:24:10.861Z</updated>
     
     
     <summary type="html">&lt;p&gt;内网穿透，也即NAT 穿透，进行NAT 穿透是为了使具有某一个特定源IP 地址和源端口号的数据包不被NAT 设备屏蔽而正确路由到内网主机。&lt;/p&gt;
@@ -46,6 +74,34 @@
     <category term="ddnsto" scheme="https://ednovas.xyz/tags/ddnsto/"/>
     
     <category term="内网穿透" scheme="https://ednovas.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网站监控</title>
+    <link href="https://ednovas.xyz/2021/06/23/monitor/"/>
+    <id>https://ednovas.xyz/2021/06/23/monitor/</id>
+    <published>2021-06-23T11:06:00.000Z</published>
+    <updated>2021-06-24T02:01:55.036Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;网站监控使用说明&quot;&gt;&lt;a href=&quot;#网站监控使用说明&quot; class=&quot;headerlink&quot; title=&quot;网站监控使用说明&quot;&gt;&lt;/a&gt;网站监控使用说明&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://uptimerobot.com/&quot;&gt;https://uptimerobot.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;直接上链接,很好用的一个网站监控存活健康的监视器,注册既可用,免费版就足够使用&lt;/p&gt;
+&lt;p&gt;至于使用也很简单,直接添加网站,选择http,输入网址和名字&lt;/p&gt;
+&lt;p&gt;最后别忘了在状态网站status pages加上你的monitors监视器哦&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_22-27-46.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;还可以设置外观等,但是大多要付费,忽略即可&lt;/p&gt;
+&lt;p&gt;别忘了保存,然后就可以看到你的监控页面啦&lt;/p&gt;
+&lt;h2 id=&quot;DEMO&quot;&gt;&lt;a href=&quot;#DEMO&quot; class=&quot;headerlink&quot; title=&quot;DEMO&quot;&gt;&lt;/a&gt;DEMO&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://stats.uptimerobot.com/ykqXpFNMqx&quot;&gt;https://stats.uptimerobot.com/ykqXpFNMqx&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="监控" scheme="https://ednovas.xyz/tags/%E7%9B%91%E6%8E%A7/"/>
     
   </entry>
   
@@ -608,90 +664,6 @@
     <category term="dns" scheme="https://ednovas.xyz/tags/dns/"/>
     
     <category term="ddns" scheme="https://ednovas.xyz/tags/ddns/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pagermaid Keyword 插件使用教程</title>
-    <link href="https://ednovas.xyz/2021/05/11/pagermaidkeyword/"/>
-    <id>https://ednovas.xyz/2021/05/11/pagermaidkeyword/</id>
-    <published>2021-05-11T09:40:00.000Z</published>
-    <updated>2021-05-11T12:03:00.036Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;入门&quot;&gt;&lt;a href=&quot;#入门&quot; class=&quot;headerlink&quot; title=&quot;入门&quot;&gt;&lt;/a&gt;入门&lt;/h2&gt;&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;p&gt;使用 -apt install keyword 安装此插件&lt;/p&gt;
-&lt;h3 id=&quot;简单的规则-keyword&quot;&gt;&lt;a href=&quot;#简单的规则-keyword&quot; class=&quot;headerlink&quot; title=&quot;简单的规则 ( -keyword )&quot;&gt;&lt;/a&gt;简单的规则 ( -keyword )&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;添加规则 ( -keyword new )&lt;/p&gt;
-&lt;p&gt; 添加纯文本匹配 :&lt;/p&gt;
-&lt;p&gt; -keyword new plain ‘test’ ‘reply’ ( 检测到文本中 包含 test 就回复 reply )&lt;/p&gt;
-&lt;p&gt; 添加正则匹配 ( 仅是举例，正则远不止这些 ) :&lt;/p&gt;
-&lt;p&gt; -keyword new regex ‘test(1|2)’ ‘reply’ ( 检测到文本中 包含 test1 或 test2 就回复 reply )&lt;/p&gt;
-&lt;p&gt; -keyword new regex ‘^test$’ ‘reply’ ( 检测到文本 是 test 就回复 )&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;列出规则 ( -keyword list )&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;删除规则 ( -keyword del , -keyword delid )&lt;/p&gt;
-&lt;p&gt; 删除纯文本规则 :&lt;/p&gt;
-&lt;p&gt; 方法 1: -keyword del plain ‘test’ ( 暴力匹配，test 为要删除的规则 )&lt;/p&gt;
-&lt;p&gt; 方法 2: -keyword delid plain ‘1’ ( 1 为 -keyword list 列出的规则的序号 )&lt;/p&gt;
-&lt;p&gt; 删除正则规则同理，将 plain 替换为 regex 即可。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;清空规则 ( -keyword clear )&lt;/p&gt;
-&lt;p&gt; 清除纯文本规则 : -keyword clear plain&lt;/p&gt;
-&lt;p&gt; 清除正则规则 : -keyword clear regex&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;细节提醒&quot;&gt;&lt;a href=&quot;#细节提醒&quot; class=&quot;headerlink&quot; title=&quot;细节提醒&quot;&gt;&lt;/a&gt;细节提醒&lt;/h3&gt;&lt;p&gt;清空规则会清空 所有 纯文本或正则规则，慎用。&lt;/p&gt;
-&lt;p&gt;添加和删除规则中的 英文单引号 不可省略。&lt;/p&gt;
-&lt;h2 id=&quot;进阶&quot;&gt;&lt;a href=&quot;#进阶&quot; class=&quot;headerlink&quot; title=&quot;进阶&quot;&gt;&lt;/a&gt;进阶&lt;/h2&gt;&lt;h3 id=&quot;回复限制-replyset&quot;&gt;&lt;a href=&quot;#回复限制-replyset&quot; class=&quot;headerlink&quot; title=&quot;回复限制 ( -replyset )&quot;&gt;&lt;/a&gt;回复限制 ( -replyset )&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="插件" scheme="https://ednovas.xyz/tags/%E6%8F%92%E4%BB%B6/"/>
-    
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
-    
-    <category term="pagermaid" scheme="https://ednovas.xyz/tags/pagermaid/"/>
-    
-    <category term="keyword" scheme="https://ednovas.xyz/tags/keyword/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>win10及win7系统手动设置代理开关</title>
-    <link href="https://ednovas.xyz/2021/05/11/proxysetting/"/>
-    <id>https://ednovas.xyz/2021/05/11/proxysetting/</id>
-    <published>2021-05-11T09:40:00.000Z</published>
-    <updated>2021-05-11T09:45:40.257Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;开启代理服务器后，常常会因为忘记关闭系统代理，导致浏览器不能正常上网。&lt;/p&gt;
-&lt;p&gt;此文是关闭代理服务器后无法正常上网的解决方法，并不是开关代理软件的方法。&lt;/p&gt;
-&lt;p&gt;下面针对win10和win7系统，讲述如何手动关闭代理。&lt;/p&gt;
-&lt;h2 id=&quot;win-10&quot;&gt;&lt;a href=&quot;#win-10&quot; class=&quot;headerlink&quot; title=&quot;win 10&quot;&gt;&lt;/a&gt;win 10&lt;/h2&gt;&lt;p&gt;设置—网络和Internet—代理&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/897b5a83-4aec-4576-a11c-bd188b087d15-10805124.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/734cb407-0601-443c-8d5a-e6355bd928a1-10805124.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/b7bbe53a-20b1-4fc1-ae38-0d983d496cca-10805124.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;关闭：使用代理服务器&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/f7df1ff4-8995-418c-8c5d-8c4ddbadee3f-10805124.jpg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    <category term="代理" scheme="https://ednovas.xyz/tags/%E4%BB%A3%E7%90%86/"/>
-    
-    <category term="win10" scheme="https://ednovas.xyz/tags/win10/"/>
-    
-    <category term="win7" scheme="https://ednovas.xyz/tags/win7/"/>
-    
-    <category term="设置" scheme="https://ednovas.xyz/tags/%E8%AE%BE%E7%BD%AE/"/>
     
   </entry>
   

@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>WIN10UI————网页win10系统</title>
+      <link href="2021/06/24/ylui/"/>
+      <url>2021/06/24/ylui/</url>
+      
+        <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>YLUI是一款纯前端框架，是对WEB桌面UI的一个大胆尝试。</p><p>它凝聚了作者近一年的心血，作为WIN10UI开源项目的升级版，承载了作者对WEB桌面设计风格的追求。</p><p>在前端技术日新月异的背景下，YLUI力图提供一种新的web应用组织形式。</p><p>如果你正在寻找一个漂亮的UI组件库，你应该选择bootstrap,layui,element-ui等项目。而你想要让这些应用建立联系，构成组织，并提供一个统一的门户，那么YLUI将会是一个不错的选择。</p><h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/yuri2peter/ylui">https://github.com/yuri2peter/ylui</a></p><p>说明文档</p><p><a href="https://github.com/yuri2peter/ylui/tree/master/documents">https://github.com/yuri2peter/ylui/tree/master/documents</a></p><h2 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h2><p>将代码部署至您的web服务目录，如nginx、apache服务器的www目录下，访问对应网址（如<a href="http://127.0.0.1/ylui/%EF%BC%89%E3%80%82">http://127.0.0.1/ylui/）。</a></p><p>然后修改你的 <code>config.js</code> 配置文件</p><p>具体其他配置参考查看说明文档</p><p><a href="https://github.com/yuri2peter/ylui/tree/master/documents">https://github.com/yuri2peter/ylui/tree/master/documents</a></p><h2 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h2><p><a href="https://navigate.ednovas.xyz/">https://navigate.ednovas.xyz/</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 建站 </tag>
+            
+            <tag> 网站 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>内网穿透</title>
       <link href="2021/06/23/frp/"/>
       <url>2021/06/23/frp/</url>
@@ -27,6 +54,33 @@
             <tag> ddnsto </tag>
             
             <tag> 内网穿透 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网站监控</title>
+      <link href="2021/06/23/monitor/"/>
+      <url>2021/06/23/monitor/</url>
+      
+        <content type="html"><![CDATA[<h2 id="网站监控使用说明"><a href="#网站监控使用说明" class="headerlink" title="网站监控使用说明"></a>网站监控使用说明</h2><p><a href="https://uptimerobot.com/">https://uptimerobot.com/</a></p><p>直接上链接,很好用的一个网站监控存活健康的监视器,注册既可用,免费版就足够使用</p><p>至于使用也很简单,直接添加网站,选择http,输入网址和名字</p><p>最后别忘了在状态网站status pages加上你的monitors监视器哦</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_22-27-46.png"></p><p>还可以设置外观等,但是大多要付费,忽略即可</p><p>别忘了保存,然后就可以看到你的监控页面啦</p><h2 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h2><p><a href="https://stats.uptimerobot.com/ykqXpFNMqx">https://stats.uptimerobot.com/ykqXpFNMqx</a></p><h2 id="GitHub程序"><a href="#GitHub程序" class="headerlink" title="GitHub程序"></a>GitHub程序</h2><p>还有基于这个api的一个uptime-status程序</p><p>GitHub地址: <a href="https://github.com/yb/uptime-status">https://github.com/yb/uptime-status</a></p><p>这个可以替换自己的域名</p><h2 id="DEMO-这个不是EdNovas的哦"><a href="#DEMO-这个不是EdNovas的哦" class="headerlink" title="DEMO(这个不是EdNovas的哦)"></a>DEMO(这个不是EdNovas的哦)</h2><p><a href="https://status.org.cn/">https://status.org.cn/</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 监控 </tag>
             
         </tags>
       
@@ -1415,8 +1469,8 @@
     
     <entry>
       <title>RSS阅读器</title>
-      <link href="2021/04/14/rss/"/>
-      <url>2021/04/14/rss/</url>
+      <link href="2021/04/13/rss/"/>
+      <url>2021/04/13/rss/</url>
       
         <content type="html"><![CDATA[<blockquote><p>转载编辑自知乎crystal <a href="https://zhuanlan.zhihu.com/p/45120897">https://zhuanlan.zhihu.com/p/45120897</a></p></blockquote><p>RSS 的全称是 Really Simple Syndication，“简易信息聚合”。它把新闻、博客等的标题、摘要和内容按一定要求整理推送，用户通过 RSS 阅读器订阅查看。</p><p>我们可以把 RSS 看作是一种信息订阅服务，把经常浏览的网站聚合在一起，集中查看，不用再逐个打开了，更方便高效。</p><p>然而挑选一款好的 RSS 阅读器可不容易，经常能看到诸如 “哪个RSS阅读器好？现在有什么好用的 RSS 阅读器？……” 之类的问题。</p><p>下面就推荐几款优秀的 RSS 阅读器给大家，包括 Win、Android、iOS、Mac 都可以使用。</p><h2 id="fluent-reader"><a href="#fluent-reader" class="headerlink" title="fluent reader"></a>fluent reader</h2><p>GitHub项目地址：<a href="https://github.com/yang991178/fluent-reader">https://github.com/yang991178/fluent-reader</a></p><p>微软商店地址：<a href="https://www.microsoft.com/store/apps/9P71FC94LRH8?cid=github">https://www.microsoft.com/store/apps/9P71FC94LRH8?cid=github</a></p><h3 id="价格"><a href="#价格" class="headerlink" title="价格"></a>价格</h3><p>你可以选择付费支持作者，但是免费版也是和付费版一样的功能</p><h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ul><li>跨平台，基于 Electron 开发</li><li>基于 Fluent Design System 设计的 UI，支持系统黑暗模式</li><li>导入或导出 OPML 文件</li><li>使用内置文章视图阅读 RSS 全文或默认加载原网页</li><li>使用正则表达式搜索文章全文或过滤已读文章</li><li>通过文件夹分组整理订阅源</li><li>阻止第三方追踪器并在退出时清除 cookies</li></ul><h3 id="隐私保护"><a href="#隐私保护" class="headerlink" title="隐私保护"></a>隐私保护</h3><p>Fluent Reader 强调隐私第一，所有数据都在本地，每次退出后都清空 Cookies，在隔离的情况下阻止XSS（跨站脚本攻击），不收集个人信息等等。</p><p>Fluent Reader 在 GitHub 开源，可以直接免费下载使用，但也发布了微软商店版本，支持 ARM64，需要付费使用（支持开发者），功能相同。</p><h2 id="RSS-Stalker"><a href="#RSS-Stalker" class="headerlink" title="RSS Stalker"></a>RSS Stalker</h2><p>微软商店下载地址：<a href="https://www.microsoft.com/zh-cn/p/rss-stalker/9n85pv1rjd6v">https://www.microsoft.com/zh-cn/p/rss-stalker/9n85pv1rjd6v</a> 售价 7 元人民币，购买前可先进行 7 天的试用。</p><blockquote><p>图片来自少数派MickeyYin <a href="https://sspai.com/post/55911">https://sspai.com/post/55911</a></p></blockquote><p><img src="https://cdn.sspai.com/2019/07/27/864a7efb03654a310bc33a692e9666b7.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1"></p><p><img src="https://cdn.sspai.com/2019/07/27/b2cbd6bfb9572c9ab40995dd77d2bd4e.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1"></p><p><img src="https://cdn.sspai.com/2019/07/27/09b152924259e38e1f24bdcd8f404fb2.gif"></p><p><img src="https://cdn.sspai.com/2019/07/27/882e7869cf34b254875f0f66b8117137.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1"></p><p><img src="https://cdn.sspai.com/2019/07/27/7faf4e57401b00ccffd81a61b42a68fb.jpg?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1"></p><p><img src="https://cdn.sspai.com/2019/07/27/ec4d7cd1b06011fbd77899cf20178414.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1"></p><p><img src="https://cdn.sspai.com/2019/07/27/0ea6db0ba7df63ecd2029015cba32147.jpg?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1"></p><p><img src="https://cdn.sspai.com/2019/07/27/28a2abd3aa377feec0a5fd6b0816bb01.gif"></p><h2 id="Newsflow"><a href="#Newsflow" class="headerlink" title="Newsflow"></a>Newsflow</h2><p>Windows UWP应用</p><p>微软商店地址：<a href="https://www.microsoft.com/en-us/p/newsflow/9nblggh58s5r?activetab=pivot:overviewtab">https://www.microsoft.com/en-us/p/newsflow/9nblggh58s5r?activetab=pivot:overviewtab</a></p><p>这款 RSS 阅读器支持动态磁贴，磁贴会在开始菜单或手机的首页上直接显示更新的订阅内容。还支持消息推送，实时获取 RSS 订阅源的更新。</p><h2 id="RSS追踪"><a href="#RSS追踪" class="headerlink" title="RSS追踪"></a>RSS追踪</h2><p>RSS TRACKER</p><p>Windwos UWP应用</p><p>微软商店地址：<a href="https://www.microsoft.com/en-us/p/rss-tracker/9n85pv1rjd6v">https://www.microsoft.com/en-us/p/rss-tracker/9n85pv1rjd6v</a></p><p>来自 @Revenge 的推荐</p><h2 id="Nextgen-Reader"><a href="#Nextgen-Reader" class="headerlink" title="Nextgen Reader"></a>Nextgen Reader</h2><p>官网：<a href="http://nextmatters.com/">http://nextmatters.com/</a></p><p>付费软件，最大的特点就是可以一键发送到OneNote</p><h2 id="RSS-Feed-Reader"><a href="#RSS-Feed-Reader" class="headerlink" title="RSS Feed Reader"></a>RSS Feed Reader</h2><p>浏览器插件</p><p><a href="https://chrome.google.com/webstore/detail/rss-feed-reader/pnjaodmkngahhkoihejjehlcdlnohgmp?hl=en-GB">https://chrome.google.com/webstore/detail/rss-feed-reader/pnjaodmkngahhkoihejjehlcdlnohgmp?hl=en-GB</a></p><h2 id="RSS-Subscription-Extension-by-Google"><a href="#RSS-Subscription-Extension-by-Google" class="headerlink" title="RSS Subscription Extension (by Google)"></a>RSS Subscription Extension (by Google)</h2><p>浏览器插件</p><p><a href="https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjd?hl=en-GB">https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjd?hl=en-GB</a></p><h2 id="Feedbro"><a href="#Feedbro" class="headerlink" title="Feedbro"></a>Feedbro</h2><p>浏览器插件</p><p><a href="https://chrome.google.com/webstore/detail/feedbro/mefgmmbdailogpfhfblcnnjfmnpnmdfa?hl=en-GB">https://chrome.google.com/webstore/detail/feedbro/mefgmmbdailogpfhfblcnnjfmnpnmdfa?hl=en-GB</a></p><h2 id="inoreader"><a href="#inoreader" class="headerlink" title="inoreader"></a>inoreader</h2><p>官网：<a href="https://www.inoreader.com/">https://www.inoreader.com/</a></p><p>老牌， 在线服务，国外的，较慢，UI体验不错。源支持账号同步，有手机版【手机用户，推荐】</p><h2 id="InoReader"><a href="#InoReader" class="headerlink" title="InoReader"></a>InoReader</h2><p>官网：<a href="https://www.inoreader.com/">https://www.inoreader.com</a></p><p>平台：Android，iOS，Web</p><p>最优秀的安卓端 RSS 阅读器！界面整齐清爽，功能齐全，对国内外源支持都很好。</p><p>不过毕竟国外的，国内访问可能不太顺畅，其它没啥槽点。推荐给能访问外网的用户。</p><h2 id="Rolly-RSS-阅读器"><a href="#Rolly-RSS-阅读器" class="headerlink" title="Rolly RSS 阅读器"></a>Rolly RSS 阅读器</h2><p>平台：Android</p><p>下载：<a href="https://t00y.com/file/17786953-465072038">Rolly RSS 阅读器</a></p><p>一款安卓版的 RSS 阅读应用。我们可以手动添加 RSS 源，或导入 OPML 文件。</p><p>应用简洁轻量，操作流畅，阅读体验很不错。</p><p>支持自定义阅读样式、夜间模式、定制 RSS 源订阅选项、更换主题、一键已读等。自定义选项非常丰富。</p><h2 id="irreader-阅读器"><a href="#irreader-阅读器" class="headerlink" title="irreader 阅读器"></a>irreader 阅读器</h2><p>官网：<a href="https://irreader.fatecore.com/">https://irreader.fatecore.com</a></p><p>平台：Win、Mac</p><p>全能型选手，除了图文，还支持视频和播客订阅。界面划分为源列表、文章列表和内容区三栏式布局。</p><p>最强大的是自定义订阅功能，可以手动添加无 RSS 源的网站，并指定订阅规则和内容，如 豆瓣某组、B站某Up 等，非常给力。</p><h2 id="Reeder-4"><a href="#Reeder-4" class="headerlink" title="Reeder 4"></a>Reeder 4</h2><p>官网：<a href="https://reederapp.com/">https://reederapp.com</a></p><p>平台：iOS、Mac</p><p>苹果端老牌 RSS 阅读器，iOS 和 Mac 最佳，“没有之一”。</p><h2 id="轻芒杂志"><a href="#轻芒杂志" class="headerlink" title="轻芒杂志"></a>轻芒杂志</h2><p>平台：Android，iOS</p><p>下载：<a href="https://t00y.com/file/17786953-465072076">轻芒杂志安卓版</a>，或者酷安；iOS 前往 App Store 安装</p><p>轻芒杂志是原来的轻芒杂志和阅读的合并升级版，内置了 40 多个高品质杂志，不仅支持 RSS 源订阅，还可以订阅任意公众号！</p><p>并且提供了多种阅读模式和“马克”功能，阅读记录，分享交流都很不错。</p><h2 id="本地阅读器对比"><a href="#本地阅读器对比" class="headerlink" title="本地阅读器对比"></a>本地阅读器对比</h2><blockquote><p>转载自小众软件dodying <a href="https://meta.appinn.net/t/topic/10073">https://meta.appinn.net/t/topic/10073</a></p></blockquote><p>仅测试了本地阅读器<br>Inoreader/Feedly等在线阅读器未测试</p><p>UWP软件未测试</p><table><thead><tr><th align="left">软件</th><th align="left">最新版本</th><th align="left">发布时间</th><th align="left">License</th><th align="left">中文版</th><th align="left">便携（注册表并未严格审查）</th><th align="left">过滤器</th><th align="left">文件夹</th><th align="left">标签</th><th align="left">代理</th><th align="left">其他</th></tr></thead><tbody><tr><td align="left">FeedDemon</td><td align="left">4.5</td><td align="left">2013/6/20</td><td align="left">免费</td><td align="left">有</td><td align="left">否</td><td align="left">%LOCALAPPDATA%\FeedDemon</td><td align="left">HKCU\Software\Bradbury|有</td><td align="left">有</td><td align="left">有</td><td align="left">有</td></tr><tr><td align="left">FeedDemon</td><td align="left">4.5</td><td align="left">2013/6/20</td><td align="left">免费</td><td align="left">有</td><td align="left">否  %LOCALAPPDATA%\FeedDemon</td><td align="left">HKCU\Software\Bradbury|有</td><td align="left">有</td><td align="left">有</td><td align="left">有</td><td align="left"></td></tr><tr><td align="left">Sismics Reader</td><td align="left">1.5</td><td align="left">2018/3/21</td><td align="left">免费，开源</td><td align="left">有</td><td align="left">?</td><td align="left">无</td><td align="left">有</td><td align="left">仅星标</td><td align="left">?</td><td align="left">支持Docker</td></tr><tr><td align="left">RSSOwlnix</td><td align="left">2.7.0-beta</td><td align="left">2019/2/9</td><td align="left">免费，开源</td><td align="left">无?</td><td align="left">否</td><td align="left">%USERPROFILE%.rssowlnix-beta</td><td align="left">有，支持特定订阅，条件为是否包含，行为多样</td><td align="left">有</td><td align="left">有</td><td align="left">无？</td></tr><tr><td align="left">Raven Reader</td><td align="left">0.5.0</td><td align="left">2019/4/21</td><td align="left">免费，开源</td><td align="left">无</td><td align="left">否</td><td align="left">%USERPROFILE%.rss-reader</td><td align="left">%APPDATA%\raven-reader</td><td align="left">%APPDATA%\Raven Reader?</td><td align="left">无</td><td align="left">无</td></tr><tr><td align="left">RSS Guard</td><td align="left">3.5.7</td><td align="left">2019/4/4</td><td align="left">免费，开源</td><td align="left">有，不全</td><td align="left">否</td><td align="left">%LOCALAPPDATA%\RSS Guard</td><td align="left">无</td><td align="left">有</td><td align="left">仅星标</td><td align="left">有</td></tr><tr><td align="left">NFReader</td><td align="left">1.4.3.0</td><td align="left">2014/1/4</td><td align="left">免费</td><td align="left">有，不全</td><td align="left">是</td><td align="left">有，仅支持包含，标记为已读</td><td align="left">无</td><td align="left">无</td><td align="left">有</td><td align="left">功能较简单，不推荐</td></tr><tr><td align="left">Awasu</td><td align="left">3.2</td><td align="left">2018/4/26</td><td align="left">个人版免费，专业版与增强版收费</td><td align="left">无</td><td align="left">否</td><td align="left">%APPDATA%\Awasu</td><td align="left">%LOCALAPPDATA%\Awasu</td><td align="left">个人版没有</td><td align="left">有</td><td align="left">无</td></tr><tr><td align="left">GreatNews</td><td align="left">1.0.0.386 Beta</td><td align="left">2016/4/18</td><td align="left">免费</td><td align="left">有，不全</td><td align="left">是</td><td align="left">有</td><td align="left">有</td><td align="left">有</td><td align="left">有</td><td align="left"></td></tr><tr><td align="left">irreader</td><td align="left">1.5.9</td><td align="left">2019/4/30</td><td align="left">免费</td><td align="left">有</td><td align="left">否</td><td align="left">%APPDATA%\irreader</td><td align="left">无</td><td align="left">有</td><td align="left">仅星标</td><td align="left">有</td></tr><tr><td align="left">Sputnik</td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left">打开显示空白</td></tr><tr><td align="left">RSSOwl</td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left">无法打开</td></tr></tbody></table>]]></content>
       
@@ -2625,8 +2679,8 @@
     
     <entry>
       <title>ToDesk远程连接工具</title>
-      <link href="2021/02/06/todesk/"/>
-      <url>2021/02/06/todesk/</url>
+      <link href="2021/02/05/todesk/"/>
+      <url>2021/02/05/todesk/</url>
       
         <content type="html"><![CDATA[<blockquote><p>转载编辑自 <a href="https://www.iplaysoft.com/todesk.html">https://www.iplaysoft.com/todesk.html</a></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/todesk.png"></p><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>TeamViewer 经常会弹出疑似商业用途警告无法免费使用；微软的 Remote Desktop 需要借助 VPS 服务器搭建 FRP 内网穿透才能互联网连接，有一定使用门槛；AnyDesk 国内网络经常抽风龟速；而其他也有不错的，但大多免费限速较严，想流畅用得爽还得购买高级服务</p><p>ToDesk 是一款新入局的电脑桌面远程控制 / 远程协助软件，主打流畅以及个人免费的特点。软件的体积很小仅 3MB 左右，但麻雀虽小五脏俱全，ToDesk 的功能还是足够实用的：远程桌面控制、文件传输、语音沟通、文字聊天都有。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-06_04-08-01.webp"></p><p>而且与 TeamViewer、向日葵等产品一样，只要输入正确的 ID 号和密码就能一键连接，完全不必考虑受控的机器是否位于内网、有无公网 IP、端口映射或者网络防火土啬等网络环境去操心，基本能替代大多数同类的收费远程协助产品。</p><p>软件支持windows，ios，mac，android，linux平台。</p><p>国内制作的良心软件，目前没有广告并且完全免费。连接速度也是不错的，几乎没有延迟。</p><p>据说，ToDesk 的公司原本一直就是做代理和游戏加速器业务的，在全国早就拥有多个自家的机房，其线路和带宽资源足够丰富，因此 ToDesk 使用时几乎感受不到明显的延时，连接非常稳定，操作起来非常流畅，基本跟本地机器没什么区别，体验相当好。</p><p>当然了，随着免费用户大量涌入之后，这带宽和服务器的投入毕竟是个烧钱的坑，日后能否一直保持目前如此良好的状态就需要时间去考验了。但目前来说，还是非常不错的。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-06_04-08-24.webp"></p><h2 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h2><p><a href="https://todesk.com/">https://todesk.com/</a></p><h2 id="官方下载连接"><a href="#官方下载连接" class="headerlink" title="官方下载连接"></a>官方下载连接</h2><p><a href="https://update.todesk.com/ToDesk_Setup.exe">https://update.todesk.com/ToDesk_Setup.exe</a></p><h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><p>官方QQ反馈群 782855649</p><p>官方论坛 <a href="https://bbs.todesk.com/">https://bbs.todesk.com/</a></p><h2 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h2><blockquote><p>我们的服务器仅记录用户的 ID，通讯全过程都是点对点，并使用 ChaCha20 Poly1305 算法进行流量加密的。<br>临时密码也好,固定密码也好，在服务器上是不会保存也不会上传的。验证密码也是连接到了 控制端后，从客户端的内存中验证。<br>因为我们之前看过一个报道说 TV 服务器被黑，ID 密码泄露。所以我们就从一开始就考虑到这些问题，即便服务器被黑，黑客也不可能连接到客户机。</p></blockquote>]]></content>
       
@@ -2780,8 +2834,8 @@
     
     <entry>
       <title>服务器测压网站</title>
-      <link href="2021/02/04/serverstress/"/>
-      <url>2021/02/04/serverstress/</url>
+      <link href="2021/02/03/serverstress/"/>
+      <url>2021/02/03/serverstress/</url>
       
         <content type="html"><![CDATA[<p><a href="https://www.stressthem.to/booter">https://www.stressthem.to/booter</a><br><a href="https://ipboot.xyz/hub.php">https://ipboot.xyz/hub.php</a><br><a href="https://booter.im/attack.php">https://booter.im/attack.php</a><br><a href="https://hardstresser.com/panel/booter.php">https://hardstresser.com/panel/booter.php</a></p>]]></content>
       
@@ -2842,8 +2896,8 @@
     
     <entry>
       <title>Lenovo One Lite 安卓投屏工具</title>
-      <link href="2021/02/03/lenovoonelite/"/>
-      <url>2021/02/03/lenovoonelite/</url>
+      <link href="2021/02/02/lenovoonelite/"/>
+      <url>2021/02/02/lenovoonelite/</url>
       
         <content type="html"><![CDATA[<h2 id="软件介绍"><a href="#软件介绍" class="headerlink" title="软件介绍"></a>软件介绍</h2><h3 id="高清投屏，一键连接"><a href="#高清投屏，一键连接" class="headerlink" title="高清投屏，一键连接"></a>高清投屏，一键连接</h3><p>新版本支持全品牌安卓设备，基于USB有线技术，实现快速连接，稳定流畅，更有画质优先，均衡模式，速度优先三种模式选择。</p><h3 id="键鼠模式，畅玩游戏"><a href="#键鼠模式，畅玩游戏" class="headerlink" title="键鼠模式，畅玩游戏"></a>键鼠模式，畅玩游戏</h3><p>电脑玩手游，键盘、鼠标自定义控制，无需模拟器。高清画质，帧率自选，告别卡顿，开启手游新玩法！</p><h3 id="文件互传，不止一种选择"><a href="#文件互传，不止一种选择" class="headerlink" title="文件互传，不止一种选择"></a>文件互传，不止一种选择</h3><p>全新接入“互传联盟”无线传输协议，实现系统级的“互通”，为用户提供跨平台、高速、稳定和0流量的本地文件快传体验。同时支持PC和手机端文件有线传输，多一种方式，多一种选择。</p><h2 id="实测"><a href="#实测" class="headerlink" title="实测"></a>实测</h2><p>以上都是软件官网吹的，实际效果呢，测试也还是挺好的。</p><p>因为使用的USB调试模式，所以延迟几乎没有，这个也是肯定的，如果有延迟那就怪了。</p><p>支持键鼠自定义，不玩游戏还没测试过。不过貌似电脑上的软件框无法调整大小？</p><p>画质是可以达到和手机一样的画质和帧率。</p><p>文件互传，也就是通过USB线传输文件，速度受限于手机存储传输速度和USB线传输速度</p><h2 id="开启-USB-调式模式"><a href="#开启-USB-调式模式" class="headerlink" title="开启 USB 调式模式"></a>开启 USB 调式模式</h2><p>软件使用要先打开 USB 调试模式</p><p>该模式在开发者模式下。</p><p>要打开开发者模式，需要去设置中，选择关于手机，然后连点5次版本号/build_number。根据手机不同有不同的开启方式，但大同小异。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_04-32-51.webp"></p><p>进入开发者模式以后找到 USB debugging/USB调试并打开</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_04-33-21.webp"></p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官网下载地址</p><p><a href="https://one.lenovo.com/download.html">https://one.lenovo.com/download.html</a></p><p>注意要下载的是Lenovo One Lite</p><p>Lenovo One是仅适配极少数自家机型的</p><p>或者直接戳下方下载链接（官方直链）：</p><p><a href="https://cdnzui.lenovomm.cn/developer/lenovoone/Installforshop.exe">https://cdnzui.lenovomm.cn/developer/lenovoone/Installforshop.exe</a></p><h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><p>软件下载安装打开，用USB连接上已经打开USB调试的手机，然后点击连接即可。</p><p>支持屏息操作。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_05-00-39.webp"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_05-00-48.webp"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_05-00-58.webp"></p>]]></content>
       
@@ -3888,8 +3942,8 @@
     
     <entry>
       <title>V2-ui面板</title>
-      <link href="2021/01/20/v2ui/"/>
-      <url>2021/01/20/v2ui/</url>
+      <link href="2021/01/19/v2ui/"/>
+      <url>2021/01/19/v2ui/</url>
       
         <content type="html"><![CDATA[<h2 id="建议系统"><a href="#建议系统" class="headerlink" title="建议系统"></a>建议系统</h2><p>面板建议以下系统安装，建议尽量使用新版的系统，且必须是 64 位系统：</p><p>CentOS 7+<br>Ubuntu 16+<br>Debian 8+</p><h2 id="一键安装-amp-升级"><a href="#一键安装-amp-升级" class="headerlink" title="一键安装&amp;升级"></a>一键安装&amp;升级</h2><p>此脚本会使用 v2ray 官方脚本自动安装最新版 v2ray，无需再自己安装 v2ray，若之前安装过非官方的 v2ray，建议先卸载，否则可能会造成冲突。</p><h3 id="疑难解答"><a href="#疑难解答" class="headerlink" title="疑难解答"></a>疑难解答</h3><p><strong>安装相关依赖</strong><br>centos系统下</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum update -y                                                                                                </span><br><span class="line">apt-get update -y &amp;&amp; apt-get install curl -y</span><br></pre></td></tr></table></figure><p>ubuntu系统下</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt update -y</span><br><span class="line">apt-get update -y &amp;&amp; apt-get install curl -y</span><br></pre></td></tr></table></figure><p><strong>若出现 bash curl: command not found 等错误，请先安装 curl</strong></p><p>CentOS 系统：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install curl -y</span><br></pre></td></tr></table></figure><p>Debian 或 Ubuntu 系统：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt install curl -y</span><br></pre></td></tr></table></figure><p><strong>错误提示：-bash curl: command not found</strong></p><p>Ubuntu、Debian如果出现无法安装Curl,需要先升级</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure><h3 id="一键安装"><a href="#一键安装" class="headerlink" title="一键安装"></a>一键安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash &lt;(curl -Ls https:&#x2F;&#x2F;blog.sprov.xyz&#x2F;v2-ui.sh)</span><br></pre></td></tr></table></figure><p>安装后，在浏览器中打开 http://&lt;服务器IP&gt;:65432 即可访问面板，默认用户名和密码都是 admin。</p><p>登陆后请修改用户名和密码</p><h2 id="更换面板端口"><a href="#更换面板端口" class="headerlink" title="更换面板端口"></a>更换面板端口</h2><p><code>v2-ui</code>打开控制面板，选择更换面板端口</p>]]></content>
       
