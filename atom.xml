@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-06-24T11:22:51.849Z</updated>
+  <updated>2021-06-27T03:05:39.903Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建狂雨CMS小说站</title>
+    <link href="https://ednovas.xyz/2021/06/27/bookcms/"/>
+    <id>https://ednovas.xyz/2021/06/27/bookcms/</id>
+    <published>2021-06-27T02:56:00.000Z</published>
+    <updated>2021-06-27T03:05:39.903Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;官网&quot;&gt;&lt;a href=&quot;#官网&quot; class=&quot;headerlink&quot; title=&quot;官网&quot;&gt;&lt;/a&gt;官网&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://bbs.kyxscms.com/&quot;&gt;http://bbs.kyxscms.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;狂雨cms小说采集站&lt;/p&gt;
+&lt;p&gt;官网下载直链: &lt;a href=&quot;http://bbs.kyxscms.com/?s=ajax/downfile/id/1051&quot;&gt;http://bbs.kyxscms.com/?s=ajax/downfile/id/1051&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;EdNovas网盘分流:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ednovas.cloud/s/O0Vu8&quot;&gt;https://ednovas.cloud/s/O0Vu8&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;解析域名,添加网站域名,申请ssl,强制跳转https&lt;/p&gt;
+&lt;p&gt;将下载的zip包放到网站根目录解压缩&lt;/p&gt;
+&lt;p&gt;nginx伪静态改为thinkphp然后保存即可&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="小说站" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E8%AF%B4%E7%AB%99/"/>
+    
+    <category term="小说" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E8%AF%B4/"/>
+    
+  </entry>
   
   <entry>
     <title>WIN10UI————网页win10系统</title>
@@ -631,39 +665,6 @@
     <category term="gv" scheme="https://ednovas.xyz/tags/gv/"/>
     
     <category term="googlevoice" scheme="https://ednovas.xyz/tags/googlevoice/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DDNS 解析动态 IP</title>
-    <link href="https://ednovas.xyz/2021/05/11/ddns/"/>
-    <id>https://ednovas.xyz/2021/05/11/ddns/</id>
-    <published>2021-05-11T12:06:00.000Z</published>
-    <updated>2021-05-11T12:31:10.393Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;Change-IP&quot;&gt;&lt;a href=&quot;#Change-IP&quot; class=&quot;headerlink&quot; title=&quot;Change IP&quot;&gt;&lt;/a&gt;Change IP&lt;/h1&gt;&lt;p&gt;用changeip.com的免费DDNS服务，建立DDNS&lt;/p&gt;
-&lt;h2 id=&quot;注册账户&quot;&gt;&lt;a href=&quot;#注册账户&quot; class=&quot;headerlink&quot; title=&quot;注册账户&quot;&gt;&lt;/a&gt;注册账户&lt;/h2&gt;&lt;p&gt;打开下方链接登录你的DDNS&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.changeip.com/accounts/cart.php?a=confproduct&amp;amp;i=1&quot;&gt;https://www.changeip.com/accounts/cart.php?a=confproduct&amp;amp;i=1&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;解析域名&quot;&gt;&lt;a href=&quot;#解析域名&quot; class=&quot;headerlink&quot; title=&quot;解析域名&quot;&gt;&lt;/a&gt;解析域名&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-212049.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-212308.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-212419.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-212646.jpg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-    <category term="解析" scheme="https://ednovas.xyz/tags/%E8%A7%A3%E6%9E%90/"/>
-    
-    <category term="dns" scheme="https://ednovas.xyz/tags/dns/"/>
-    
-    <category term="ddns" scheme="https://ednovas.xyz/tags/ddns/"/>
     
   </entry>
   
