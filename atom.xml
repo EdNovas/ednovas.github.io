@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-07-01T01:17:09.360Z</updated>
+  <updated>2021-07-01T02:54:41.276Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>typecho搭建个人博客</title>
+    <link href="https://ednovas.xyz/2021/07/01/typecho/"/>
+    <id>https://ednovas.xyz/2021/07/01/typecho/</id>
+    <published>2021-07-01T02:56:00.000Z</published>
+    <updated>2021-07-01T02:54:41.276Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Typecho&quot;&gt;&lt;a href=&quot;#Typecho&quot; class=&quot;headerlink&quot; title=&quot;Typecho&quot;&gt;&lt;/a&gt;Typecho&lt;/h2&gt;&lt;p&gt;项目源码: &lt;a href=&quot;https://github.com/typecho/typecho&quot;&gt;https://github.com/typecho/typecho&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官网: &lt;a href=&quot;https://typecho.org/&quot;&gt;https://typecho.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下载链接: &lt;a href=&quot;https://typecho.org/download&quot;&gt;https://typecho.org/download&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下载正式版即可&lt;/p&gt;
+&lt;p&gt;下载直链(1.1版本): &lt;a href=&quot;https://typecho.org/downloads/1.1-17.10.30-release.tar.gz&quot;&gt;https://typecho.org/downloads/1.1-17.10.30-release.tar.gz&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;搭建&quot;&gt;&lt;a href=&quot;#搭建&quot; class=&quot;headerlink&quot; title=&quot;搭建&quot;&gt;&lt;/a&gt;搭建&lt;/h2&gt;&lt;p&gt;我这里用虚拟主机搭建的&lt;/p&gt;
+&lt;p&gt;先用ftp连接到主机,然后拖入解压后的下载的程序(我使用的是FileZilla)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-01_10-17-18.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="typecho" scheme="https://ednovas.xyz/tags/typecho/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建GitHub下载加速站</title>
@@ -597,70 +629,6 @@
 &lt;p&gt;中间的是年份范围，下面的是月份日份范围。&lt;/p&gt;
 &lt;p&gt;下图是查询到的2002年11月19号的百度首页：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.moerats.com/usr/picture/Wayback(2).png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="markdown" scheme="https://ednovas.xyz/tags/markdown/"/>
-    
-    <category term="word" scheme="https://ednovas.xyz/tags/word/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一键将 Word 转换为 Markdown</title>
-    <link href="https://ednovas.xyz/2021/05/13/wordtomd/"/>
-    <id>https://ednovas.xyz/2021/05/13/wordtomd/</id>
-    <published>2021-05-13T10:12:00.000Z</published>
-    <updated>2021-05-24T13:49:49.179Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;方法一：Writage-Pandoc-–-双剑合璧！&quot;&gt;&lt;a href=&quot;#方法一：Writage-Pandoc-–-双剑合璧！&quot; class=&quot;headerlink&quot; title=&quot;方法一：Writage + Pandoc – 双剑合璧！&quot;&gt;&lt;/a&gt;方法一：Writage + Pandoc – 双剑合璧！&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;下载并安装 Writage，下载地址：&lt;a href=&quot;http://www.writage.com/&quot;&gt;http://www.writage.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt; 打开 &lt;a href=&quot;https://links.jianshu.com/go?to=http://www.writage.com/&quot;&gt;Writage网页&lt;/a&gt;，点击Download，再点击Download Now完成下载&lt;/p&gt;
-&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-0dea7d7aeeffba56.webp&quot;&gt;&lt;/p&gt;
-&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-6ce19b9714bb0336.webp&quot;&gt;&lt;/p&gt;
-&lt;p&gt; 运行安装程序，一般按照默认选项安装就好啦&lt;/p&gt;
-&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-b10e96c9c32e0026.webp&quot;&gt;&lt;/p&gt;
-&lt;p&gt; 重启电脑，新建或打开任一 Word 文档，在 文件 菜单栏下选 另存为，查看 【保存类型】 中是否有 Markdown 格式。&lt;br&gt; （如果插件安装成功，就会自动出现Markdown选项；否则，重新安装一遍吧~）&lt;/p&gt;
-&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-180fec4da16b8f9f.webp&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;下载并安装 Pandoc：官方下载地址 http%3A%2F%2Fpandoc.org%2Finstalling.html&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;运行安装程序，一般按照默认选项安装就好啦&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-200a8ac8072f02c2.webp&quot;&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;准备好工具啦，我们开始尝试将word文档转换为markdown文档吧！&lt;br&gt; 首先设置 word 文档中的标准样式，如一级、二级标题，项目符号或编号等，如此才能与 markdown 的格式对应&lt;/p&gt;
-&lt;p&gt; （稍微有点繁琐的前期准备，如果文档一开始就是按照标准样式排版，就没有这个烦恼啦）&lt;/p&gt;
-&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-abb1b0c891b37773.webp&quot;&gt;&lt;/p&gt;
-&lt;p&gt; Word 格式 另存为 Markdown（这是最关键的一步~）&lt;/p&gt;
-&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-783e08901ab25077.webp&quot;&gt;&lt;/p&gt;
-&lt;p&gt; markdown 文档在 Word 中的显示效果：&lt;/p&gt;
-&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-e545bfbe49f09069.webp&quot;&gt;&lt;/p&gt;
-&lt;p&gt; 由于markdown中的图片无法设置大小，因此在word中排布的图片格式不标准，需要人工调整&lt;/p&gt;
-&lt;p&gt; 其他格式，如一级、二级标题，项目列表等基本没有问题，其中表格显示如下&lt;/p&gt;
-&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-80ae8d0c8d8f306d.webp&quot;&gt;&lt;/p&gt;
-&lt;p&gt; 将markdown文档上传至码云等平台并提交，对应的内容预览效果如下&lt;/p&gt;
-&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-570250456c4049f4.webp&quot;&gt;&lt;/p&gt;
-&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-99c848242acc487a.webp&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;更加快捷（有时略坑）的方法二：Word-to-Markdown-Converter在线转换网页！&quot;&gt;&lt;a href=&quot;#更加快捷（有时略坑）的方法二：Word-to-Markdown-Converter在线转换网页！&quot; class=&quot;headerlink&quot; title=&quot;更加快捷（有时略坑）的方法二：Word to Markdown Converter在线转换网页！&quot;&gt;&lt;/a&gt;更加快捷（有时略坑）的方法二：Word to Markdown Converter在线转换网页！&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;设置word文档中的标准样式，如一级、二级标题，项目符号或编号等，如此才能与markdown的格式对应&lt;/p&gt;
-&lt;p&gt; （稍微有点繁琐的前期准备，如果文档一开始就是按照标准样式排版，就没有这个烦恼啦）&lt;/p&gt;
-&lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-9dfa2efd15ca0a63.webp&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;打开网页Word to Markdown Converter：&lt;a href=&quot;https://word-to-markdown.herokuapp.com/&quot;&gt;https://word-to-markdown.herokuapp.com/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-a8bc48ed32e7907e.webp&quot;&gt;&lt;/p&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;选择需要转换的Word文件,点击Convert&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7692714-a2998ff04f5745ab.webp&quot;&gt;&lt;/p&gt;</summary>
     
     
     
