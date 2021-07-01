@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-06-27T03:17:40.256Z</updated>
+  <updated>2021-07-01T01:09:21.244Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建GitHub下载加速站</title>
+    <link href="https://ednovas.xyz/2021/07/01/githubweb/"/>
+    <id>https://ednovas.xyz/2021/07/01/githubweb/</id>
+    <published>2021-07-01T00:56:00.000Z</published>
+    <updated>2021-07-01T01:09:21.244Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/hunshcn/gh-proxy&quot;&gt;https://github.com/hunshcn/gh-proxy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有Cloudflare Workers无服务器版本以及Python版本&lt;/p&gt;
+&lt;h2 id=&quot;cloudflare-workers&quot;&gt;&lt;a href=&quot;#cloudflare-workers&quot; class=&quot;headerlink&quot; title=&quot;cloudflare workers&quot;&gt;&lt;/a&gt;cloudflare workers&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://workers.cloudflare.com/&quot;&gt;https://workers.cloudflare.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;注册登录账号&lt;/p&gt;
+&lt;p&gt;随便选一个子域名,然后创建一个worker&lt;/p&gt;
+&lt;p&gt;复制以下内容到左侧代码框,Save and deploy 保存并部署&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;index.js&lt;/code&gt; 默认配置下clone走 github.com.cnpmjs.org，项目文件会走jsDeliver，如需走worker，修改Config变量即可&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ASSET_URL&lt;/code&gt; 是静态资源的url（实际上就是现在显示出来的那个输入框单页面）&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="下载" scheme="https://ednovas.xyz/tags/%E4%B8%8B%E8%BD%BD/"/>
+    
+    <category term="github" scheme="https://ednovas.xyz/tags/github/"/>
+    
+    <category term="加速" scheme="https://ednovas.xyz/tags/%E5%8A%A0%E9%80%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建狂雨CMS小说站</title>
@@ -636,35 +670,6 @@
     <category term="markdown" scheme="https://ednovas.xyz/tags/markdown/"/>
     
     <category term="word" scheme="https://ednovas.xyz/tags/word/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GV自动回复消息与自动发送消息教程</title>
-    <link href="https://ednovas.xyz/2021/05/13/gvautosend/"/>
-    <id>https://ednovas.xyz/2021/05/13/gvautosend/</id>
-    <published>2021-05-13T10:06:00.000Z</published>
-    <updated>2021-06-21T05:44:46.405Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;bot已失效!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;注意：如果您有谷歌多账号，为了避免切换出错，建议在浏览器无痕模式操作&lt;/p&gt;
-&lt;h2 id=&quot;GV自动回复消息&quot;&gt;&lt;a href=&quot;#GV自动回复消息&quot; class=&quot;headerlink&quot; title=&quot;GV自动回复消息&quot;&gt;&lt;/a&gt;GV自动回复消息&lt;/h2&gt;&lt;h3 id=&quot;将GV信息转移到Gmail&quot;&gt;&lt;a href=&quot;#将GV信息转移到Gmail&quot; class=&quot;headerlink&quot; title=&quot;将GV信息转移到Gmail&quot;&gt;&lt;/a&gt;将GV信息转移到Gmail&lt;/h3&gt;&lt;p&gt;网址：&lt;a href=&quot;https://voice.google.com/u/0/settings&quot;&gt;https://voice.google.com/u/0/settings&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ea199e8a667d61cb7c30afcb433a0967.jpg&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Gmail建立并创建过滤器&quot;&gt;&lt;a href=&quot;#Gmail建立并创建过滤器&quot; class=&quot;headerlink&quot; title=&quot;Gmail建立并创建过滤器&quot;&gt;&lt;/a&gt;Gmail建立并创建过滤器&lt;/h3&gt;&lt;p&gt;在Gmail点击【管理标签】，点击【过滤器和屏蔽的地址】，点击【创建新的过滤器】。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ace33ba722513323100f4e6ba0d53b9c.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;发件人填写【@txt.voice.google.com】，然后点击【创建过滤器】。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="gv" scheme="https://ednovas.xyz/tags/gv/"/>
-    
-    <category term="googlevoice" scheme="https://ednovas.xyz/tags/googlevoice/"/>
     
   </entry>
   
