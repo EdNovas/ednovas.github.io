@@ -111,7 +111,7 @@
     <link href="https://ednovas.xyz/2021/06/27/bookcms/"/>
     <id>https://ednovas.xyz/2021/06/27/bookcms/</id>
     <published>2021-06-27T02:56:00.000Z</published>
-    <updated>2021-06-27T03:17:40.256Z</updated>
+    <updated>2021-07-03T12:23:11.938Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;官网&quot;&gt;&lt;a href=&quot;#官网&quot; class=&quot;headerlink&quot; title=&quot;官网&quot;&gt;&lt;/a&gt;官网&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://bbs.kyxscms.com/&quot;&gt;http://bbs.kyxscms.com/&lt;/a&gt;&lt;/p&gt;
@@ -125,7 +125,7 @@
     
     
     
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
     <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
@@ -137,6 +137,40 @@
     <category term="小说站" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E8%AF%B4%E7%AB%99/"/>
     
     <category term="小说" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E8%AF%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建小浣熊CMS漫画站</title>
+    <link href="https://ednovas.xyz/2021/06/27/comiccms/"/>
+    <id>https://ednovas.xyz/2021/06/27/comiccms/</id>
+    <published>2021-06-27T02:56:00.000Z</published>
+    <updated>2021-07-03T13:04:11.475Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;小浣熊漫画CMS&quot;&gt;&lt;a href=&quot;#小浣熊漫画CMS&quot; class=&quot;headerlink&quot; title=&quot;小浣熊漫画CMS&quot;&gt;&lt;/a&gt;小浣熊漫画CMS&lt;/h2&gt;&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/hiliqi/xiaohuanxiong&quot;&gt;https://github.com/hiliqi/xiaohuanxiong&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官方博客: &lt;a href=&quot;https://www.xiaohuanxiong.net/&quot;&gt;https://www.xiaohuanxiong.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文档地址: &lt;a href=&quot;https://www.kancloud.cn/hiliqi/raccoon5/1921259&quot;&gt;https://www.kancloud.cn/hiliqi/raccoon5/1921259&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;QQ群：780362399&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;新建一个网站,开启https强跳和证书&lt;/p&gt;
+&lt;p&gt;在网站根目录下,需要先删除全部文件,特别是&lt;code&gt;.user.ini&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;hiliqi&amp;#x2F;xiaohuanxiong.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chown -R www:www .&amp;#x2F; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;php 拓展中安装 &lt;code&gt;redis&lt;/code&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="漫画站" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
+    
+    <category term="漫画" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB/"/>
     
   </entry>
   
@@ -603,37 +637,6 @@
     <category term="机器人" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
     <category term="发卡" scheme="https://ednovas.xyz/tags/%E5%8F%91%E5%8D%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cloudflare解析域名</title>
-    <link href="https://ednovas.xyz/2021/05/15/cloudflare/"/>
-    <id>https://ednovas.xyz/2021/05/15/cloudflare/</id>
-    <published>2021-05-15T14:08:00.000Z</published>
-    <updated>2021-05-19T10:02:11.030Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;Cloudflare是一家总部位于旧金山的美国跨国科技企业，以向客户提供基于反向代理的内容分发网络及分布式域名解析服务为主要业务。利用 Cloudflare 全球任播网络，Cloudflare可以帮助受保护站点抵御包拒绝服务攻击等网络攻击，确保该网站长期在线，同时提升网站的性能、加载速度以改善访客体验。&lt;/p&gt;
-&lt;p&gt;当然除了cloudflare，还有许多其他如dnspod等其他dns解析平台。我用cloudflare而且功能和国外的访问速度上也是一流的（国内要求访问速度快还请使用别的cdn服务，否则开启cdn就是国内减速）&lt;/p&gt;
-&lt;p&gt;网站支持中文，英文图片演示，位置都是一样的。&lt;/p&gt;
-&lt;h2 id=&quot;购买域名&quot;&gt;&lt;a href=&quot;#购买域名&quot; class=&quot;headerlink&quot; title=&quot;购买域名&quot;&gt;&lt;/a&gt;购买域名&lt;/h2&gt;&lt;p&gt;这个不做演示了，namesilo，namecheap，godaddy，porkbun等域名网站购买一个你想要的域名付款即可。也可以白嫖&lt;a href=&quot;/2020/12/28/freenom%E7%94%B3%E8%AF%B7%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D/&quot;&gt;freenom&lt;/a&gt;，还有&lt;a href=&quot;/2021/05/09/porkbundesign&quot;&gt;porkbun免费一年design域名&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;添加网站&quot;&gt;&lt;a href=&quot;#添加网站&quot; class=&quot;headerlink&quot; title=&quot;添加网站&quot;&gt;&lt;/a&gt;添加网站&lt;/h2&gt;&lt;p&gt;先去cloudflare注册个账户&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.cloudflare.com/&quot;&gt;https://www.cloudflare.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;登录进入管理面板 &lt;a href=&quot;https://dash.cloudflare.com/&quot;&gt;https://dash.cloudflare.com/&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
-    
-    <category term="domain" scheme="https://ednovas.xyz/tags/domain/"/>
-    
-    <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-    <category term="解析" scheme="https://ednovas.xyz/tags/%E8%A7%A3%E6%9E%90/"/>
     
   </entry>
   

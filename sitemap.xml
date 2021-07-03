@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/06/27/comiccms/</loc>
+    
+    <lastmod>2021-07-03</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/2021/06/27/bookcms/</loc>
+    
+    <lastmod>2021-07-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2021/07/03/blog/</loc>
     
     <lastmod>2021-07-03</lastmod>
@@ -54,13 +68,6 @@
     <loc>https://ednovas.xyz/2021/04/03/tiyunti/</loc>
     
     <lastmod>2021-06-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/2021/06/27/bookcms/</loc>
-    
-    <lastmod>2021-06-27</lastmod>
     
   </url>
   
@@ -3729,6 +3736,20 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E8%81%8A%E5%A4%A9/</loc>
+    <lastmod>2021-07-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/</loc>
+    <lastmod>2021-07-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB/</loc>
     <lastmod>2021-07-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
