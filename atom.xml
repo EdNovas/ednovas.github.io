@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-07-01T07:09:31.278Z</updated>
+  <updated>2021-07-03T02:07:53.098Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何挑选博客框架、在线博客平台</title>
+    <link href="https://ednovas.xyz/2021/07/03/blog/"/>
+    <id>https://ednovas.xyz/2021/07/03/blog/</id>
+    <published>2021-07-03T02:48:46.000Z</published>
+    <updated>2021-07-03T02:07:53.098Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自Aegisprogram &lt;a href=&quot;https://aegisprogram.github.io/2021/07/01/how-to-choose-a-blog/&quot;&gt;https://aegisprogram.github.io/2021/07/01/how-to-choose-a-blog/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在现在这个信息发达的时代，越来越多非程序员出身的人也想要一个自己的博客。目前也诞生了不少的在线博客网站和博客框架，博客大致分为主要分为动态博客和静态博客两大类。其实关于动态博客和静态博客的选择问题，这个问题的看法还是见仁见智。我在这里简单说说两种博客之间的优劣，以及一些比较友好的在线博客网站。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="框架" scheme="https://ednovas.xyz/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>typecho搭建个人博客</title>
@@ -610,34 +634,6 @@
     <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
     
     <category term="解析" scheme="https://ednovas.xyz/tags/%E8%A7%A3%E6%9E%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Wayback Machine：一个从1996年至今备份了超过4000亿个网页的网页时光机</title>
-    <link href="https://ednovas.xyz/2021/05/13/waybackmachine/"/>
-    <id>https://ednovas.xyz/2021/05/13/waybackmachine/</id>
-    <published>2021-05-13T12:02:00.000Z</published>
-    <updated>2021-05-13T12:02:37.898Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;这个网站很有趣，在逗比那里看到的，网页时光机Wayback Machine，基本就是定期备份了所有网站的快照，供人查询，对于很多有网站的人来说，也可以看看当初自己网站的样子，回忆一下，其中内页也能访问，很强大。&lt;/p&gt;
-&lt;p&gt;网站地址：&lt;a href=&quot;http://web.archive.org/&quot;&gt;http://web.archive.org/&lt;/a&gt;&lt;br&gt;注意：这个网站被墙，需要挂梯子访问。&lt;/p&gt;
-&lt;h2 id=&quot;使用方法&quot;&gt;&lt;a href=&quot;#使用方法&quot; class=&quot;headerlink&quot; title=&quot;使用方法&quot;&gt;&lt;/a&gt;使用方法&lt;/h2&gt;&lt;p&gt;首先访问网站：&lt;a href=&quot;http://web.archive.org/&quot;&gt;http://web.archive.org/&lt;/a&gt; ，然后在屏幕中的输入框中输入你要查看的网站域名，例如：baidu.com。&lt;/p&gt;
-&lt;p&gt;输入后就会看到网站在搜索这个域名的快照备份信息，找到后就会如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.moerats.com/usr/picture/Wayback(1).png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;中间的是年份范围，下面的是月份日份范围。&lt;/p&gt;
-&lt;p&gt;下图是查询到的2002年11月19号的百度首页：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.moerats.com/usr/picture/Wayback(2).png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="markdown" scheme="https://ednovas.xyz/tags/markdown/"/>
-    
-    <category term="word" scheme="https://ednovas.xyz/tags/word/"/>
     
   </entry>
   
