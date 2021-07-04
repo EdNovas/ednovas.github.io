@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>EdNovas的小站</title>
-  <icon>https://ednovas.xyz/icon.png</icon>
+  <icon>https://ednovas.cf/icon.png</icon>
   
-  <link href="https://ednovas.xyz/atom.xml" rel="self"/>
+  <link href="https://ednovas.cf/atom.xml" rel="self"/>
   
-  <link href="https://ednovas.xyz/"/>
+  <link href="https://ednovas.cf/"/>
   <updated>2021-07-04T08:48:39.418Z</updated>
-  <id>https://ednovas.xyz/</id>
+  <id>https://ednovas.cf/</id>
   
   <author>
     <name>EdNovas</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>像专业人士一样使用 Google</title>
-    <link href="https://ednovas.xyz/2021/07/04/google/"/>
-    <id>https://ednovas.xyz/2021/07/04/google/</id>
+    <link href="https://ednovas.cf/2021/07/04/google/"/>
+    <id>https://ednovas.cf/2021/07/04/google/</id>
     <published>2021-07-04T08:56:00.000Z</published>
     <updated>2021-07-04T08:48:39.418Z</updated>
     
@@ -35,17 +35,17 @@
     
     
     
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    <category term="杂" scheme="https://ednovas.cf/categories/%E6%9D%82/"/>
     
     
-    <category term="google" scheme="https://ednovas.xyz/tags/google/"/>
+    <category term="google" scheme="https://ednovas.cf/tags/google/"/>
     
   </entry>
   
   <entry>
     <title>Cloudflare Pages部署</title>
-    <link href="https://ednovas.xyz/2021/07/04/cloudflarepages/"/>
-    <id>https://ednovas.xyz/2021/07/04/cloudflarepages/</id>
+    <link href="https://ednovas.cf/2021/07/04/cloudflarepages/"/>
+    <id>https://ednovas.cf/2021/07/04/cloudflarepages/</id>
     <published>2021-07-04T04:56:00.000Z</published>
     <updated>2021-07-04T06:05:11.089Z</updated>
     
@@ -70,25 +70,25 @@
     
     
     
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    <category term="建站" scheme="https://ednovas.cf/tags/%E5%BB%BA%E7%AB%99/"/>
     
-    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
+    <category term="cloudflare" scheme="https://ednovas.cf/tags/cloudflare/"/>
     
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    <category term="cf" scheme="https://ednovas.cf/tags/cf/"/>
     
-    <category term="cf" scheme="https://ednovas.xyz/tags/cf/"/>
+    <category term="cloudflare pages" scheme="https://ednovas.cf/tags/cloudflare-pages/"/>
     
-    <category term="cloudflare pages" scheme="https://ednovas.xyz/tags/cloudflare-pages/"/>
+    <category term="网站" scheme="https://ednovas.cf/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   
   <entry>
     <title>漫城CMS漫画站</title>
-    <link href="https://ednovas.xyz/2021/07/03/mccms/"/>
-    <id>https://ednovas.xyz/2021/07/03/mccms/</id>
+    <link href="https://ednovas.cf/2021/07/03/mccms/"/>
+    <id>https://ednovas.cf/2021/07/03/mccms/</id>
     <published>2021-07-03T12:56:00.000Z</published>
     <updated>2021-07-04T04:06:29.919Z</updated>
     
@@ -104,25 +104,25 @@
     
     
     
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
+    <category term="CMS" scheme="https://ednovas.cf/tags/CMS/"/>
     
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
     
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    <category term="VPS" scheme="https://ednovas.cf/tags/VPS/"/>
     
-    <category term="漫画站" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
+    <category term="漫画站" scheme="https://ednovas.cf/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
     
-    <category term="漫画" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB/"/>
+    <category term="漫画" scheme="https://ednovas.cf/tags/%E6%BC%AB%E7%94%BB/"/>
     
   </entry>
   
   <entry>
     <title>搭建小浣熊CMS漫画站</title>
-    <link href="https://ednovas.xyz/2021/07/03/comiccms/"/>
-    <id>https://ednovas.xyz/2021/07/03/comiccms/</id>
+    <link href="https://ednovas.cf/2021/07/03/comiccms/"/>
+    <id>https://ednovas.cf/2021/07/03/comiccms/</id>
     <published>2021-07-03T10:56:00.000Z</published>
     <updated>2021-07-04T04:06:42.337Z</updated>
     
@@ -138,25 +138,25 @@
     
     
     
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
+    <category term="CMS" scheme="https://ednovas.cf/tags/CMS/"/>
     
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
     
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    <category term="VPS" scheme="https://ednovas.cf/tags/VPS/"/>
     
-    <category term="漫画站" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
+    <category term="漫画站" scheme="https://ednovas.cf/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
     
-    <category term="漫画" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB/"/>
+    <category term="漫画" scheme="https://ednovas.cf/tags/%E6%BC%AB%E7%94%BB/"/>
     
   </entry>
   
   <entry>
     <title>如何挑选博客框架、在线博客平台</title>
-    <link href="https://ednovas.xyz/2021/07/03/blog/"/>
-    <id>https://ednovas.xyz/2021/07/03/blog/</id>
+    <link href="https://ednovas.cf/2021/07/03/blog/"/>
+    <id>https://ednovas.cf/2021/07/03/blog/</id>
     <published>2021-07-03T02:48:46.000Z</published>
     <updated>2021-07-03T02:24:19.278Z</updated>
     
@@ -168,19 +168,19 @@
     
     
     
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://ednovas.cf/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="框架" scheme="https://ednovas.xyz/tags/%E6%A1%86%E6%9E%B6/"/>
+    <category term="框架" scheme="https://ednovas.cf/tags/%E6%A1%86%E6%9E%B6/"/>
     
   </entry>
   
   <entry>
     <title>typecho搭建个人博客</title>
-    <link href="https://ednovas.xyz/2021/07/01/typecho/"/>
-    <id>https://ednovas.xyz/2021/07/01/typecho/</id>
+    <link href="https://ednovas.cf/2021/07/01/typecho/"/>
+    <id>https://ednovas.cf/2021/07/01/typecho/</id>
     <published>2021-07-01T02:56:00.000Z</published>
     <updated>2021-07-02T13:38:37.486Z</updated>
     
@@ -196,23 +196,23 @@
     
     
     
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://ednovas.cf/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
     
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    <category term="VPS" scheme="https://ednovas.cf/tags/VPS/"/>
     
-    <category term="typecho" scheme="https://ednovas.xyz/tags/typecho/"/>
+    <category term="typecho" scheme="https://ednovas.cf/tags/typecho/"/>
     
   </entry>
   
   <entry>
     <title>搭建GitHub下载加速站</title>
-    <link href="https://ednovas.xyz/2021/07/01/githubweb/"/>
-    <id>https://ednovas.xyz/2021/07/01/githubweb/</id>
+    <link href="https://ednovas.cf/2021/07/01/githubweb/"/>
+    <id>https://ednovas.cf/2021/07/01/githubweb/</id>
     <published>2021-07-01T00:56:00.000Z</published>
     <updated>2021-07-01T01:17:09.360Z</updated>
     
@@ -228,25 +228,25 @@
     
     
     
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
     
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    <category term="VPS" scheme="https://ednovas.cf/tags/VPS/"/>
     
-    <category term="下载" scheme="https://ednovas.xyz/tags/%E4%B8%8B%E8%BD%BD/"/>
+    <category term="下载" scheme="https://ednovas.cf/tags/%E4%B8%8B%E8%BD%BD/"/>
     
-    <category term="github" scheme="https://ednovas.xyz/tags/github/"/>
+    <category term="github" scheme="https://ednovas.cf/tags/github/"/>
     
-    <category term="加速" scheme="https://ednovas.xyz/tags/%E5%8A%A0%E9%80%9F/"/>
+    <category term="加速" scheme="https://ednovas.cf/tags/%E5%8A%A0%E9%80%9F/"/>
     
   </entry>
   
   <entry>
     <title>搭建狂雨CMS小说站</title>
-    <link href="https://ednovas.xyz/2021/06/27/bookcms/"/>
-    <id>https://ednovas.xyz/2021/06/27/bookcms/</id>
+    <link href="https://ednovas.cf/2021/06/27/bookcms/"/>
+    <id>https://ednovas.cf/2021/06/27/bookcms/</id>
     <published>2021-06-27T02:56:00.000Z</published>
     <updated>2021-07-03T12:23:11.938Z</updated>
     
@@ -262,25 +262,25 @@
     
     
     
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
+    <category term="CMS" scheme="https://ednovas.cf/tags/CMS/"/>
     
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
     
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    <category term="VPS" scheme="https://ednovas.cf/tags/VPS/"/>
     
-    <category term="小说站" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E8%AF%B4%E7%AB%99/"/>
+    <category term="小说站" scheme="https://ednovas.cf/tags/%E5%B0%8F%E8%AF%B4%E7%AB%99/"/>
     
-    <category term="小说" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E8%AF%B4/"/>
+    <category term="小说" scheme="https://ednovas.cf/tags/%E5%B0%8F%E8%AF%B4/"/>
     
   </entry>
   
   <entry>
     <title>WIN10UI————网页win10系统</title>
-    <link href="https://ednovas.xyz/2021/06/24/ylui/"/>
-    <id>https://ednovas.xyz/2021/06/24/ylui/</id>
+    <link href="https://ednovas.cf/2021/06/24/ylui/"/>
+    <id>https://ednovas.cf/2021/06/24/ylui/</id>
     <published>2021-06-23T21:06:00.000Z</published>
     <updated>2021-06-24T11:22:51.849Z</updated>
     
@@ -296,19 +296,19 @@
     
     
     
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    <category term="建站" scheme="https://ednovas.cf/tags/%E5%BB%BA%E7%AB%99/"/>
     
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    <category term="网站" scheme="https://ednovas.cf/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   
   <entry>
     <title>内网穿透</title>
-    <link href="https://ednovas.xyz/2021/06/23/frp/"/>
-    <id>https://ednovas.xyz/2021/06/23/frp/</id>
+    <link href="https://ednovas.cf/2021/06/23/frp/"/>
+    <id>https://ednovas.cf/2021/06/23/frp/</id>
     <published>2021-06-23T06:06:00.000Z</published>
     <updated>2021-06-23T14:24:10.861Z</updated>
     
@@ -325,23 +325,23 @@
     
     
     
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    <category term="VPS" scheme="https://ednovas.cf/categories/VPS/"/>
     
     
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
     
-    <category term="frp" scheme="https://ednovas.xyz/tags/frp/"/>
+    <category term="frp" scheme="https://ednovas.cf/tags/frp/"/>
     
-    <category term="ddnsto" scheme="https://ednovas.xyz/tags/ddnsto/"/>
+    <category term="ddnsto" scheme="https://ednovas.cf/tags/ddnsto/"/>
     
-    <category term="内网穿透" scheme="https://ednovas.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    <category term="内网穿透" scheme="https://ednovas.cf/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
   </entry>
   
   <entry>
     <title>网站监控</title>
-    <link href="https://ednovas.xyz/2021/06/23/monitor/"/>
-    <id>https://ednovas.xyz/2021/06/23/monitor/</id>
+    <link href="https://ednovas.cf/2021/06/23/monitor/"/>
+    <id>https://ednovas.cf/2021/06/23/monitor/</id>
     <published>2021-06-23T06:06:00.000Z</published>
     <updated>2021-06-24T02:01:55.036Z</updated>
     
@@ -357,19 +357,19 @@
     
     
     
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    <category term="网站" scheme="https://ednovas.cf/tags/%E7%BD%91%E7%AB%99/"/>
     
-    <category term="监控" scheme="https://ednovas.xyz/tags/%E7%9B%91%E6%8E%A7/"/>
+    <category term="监控" scheme="https://ednovas.cf/tags/%E7%9B%91%E6%8E%A7/"/>
     
   </entry>
   
   <entry>
     <title>基于python的全能抢购神器</title>
-    <link href="https://ednovas.xyz/2021/06/18/pythonshop/"/>
-    <id>https://ednovas.xyz/2021/06/18/pythonshop/</id>
+    <link href="https://ednovas.cf/2021/06/18/pythonshop/"/>
+    <id>https://ednovas.cf/2021/06/18/pythonshop/</id>
     <published>2021-06-18T08:30:00.000Z</published>
     <updated>2021-06-18T08:58:58.643Z</updated>
     
@@ -383,21 +383,21 @@
     
     
     
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    <category term="杂" scheme="https://ednovas.cf/categories/%E6%9D%82/"/>
     
     
-    <category term="抢购" scheme="https://ednovas.xyz/tags/%E6%8A%A2%E8%B4%AD/"/>
+    <category term="抢购" scheme="https://ednovas.cf/tags/%E6%8A%A2%E8%B4%AD/"/>
     
-    <category term="python" scheme="https://ednovas.xyz/tags/python/"/>
+    <category term="python" scheme="https://ednovas.cf/tags/python/"/>
     
-    <category term="京东" scheme="https://ednovas.xyz/tags/%E4%BA%AC%E4%B8%9C/"/>
+    <category term="京东" scheme="https://ednovas.cf/tags/%E4%BA%AC%E4%B8%9C/"/>
     
   </entry>
   
   <entry>
     <title>搭建苹果CMS视频站</title>
-    <link href="https://ednovas.xyz/2021/06/11/applecms/"/>
-    <id>https://ednovas.xyz/2021/06/11/applecms/</id>
+    <link href="https://ednovas.cf/2021/06/11/applecms/"/>
+    <id>https://ednovas.cf/2021/06/11/applecms/</id>
     <published>2021-06-11T12:56:00.000Z</published>
     <updated>2021-06-25T12:14:40.226Z</updated>
     
@@ -413,25 +413,25 @@
     
     
     
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    <category term="VPS" scheme="https://ednovas.cf/categories/VPS/"/>
     
     
-    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
+    <category term="CMS" scheme="https://ednovas.cf/tags/CMS/"/>
     
-    <category term="视频站" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91%E7%AB%99/"/>
+    <category term="视频站" scheme="https://ednovas.cf/tags/%E8%A7%86%E9%A2%91%E7%AB%99/"/>
     
-    <category term="视频" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91/"/>
+    <category term="视频" scheme="https://ednovas.cf/tags/%E8%A7%86%E9%A2%91/"/>
     
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
     
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    <category term="VPS" scheme="https://ednovas.cf/tags/VPS/"/>
     
   </entry>
   
   <entry>
     <title>微软全局管理（API提权）</title>
-    <link href="https://ednovas.xyz/2021/06/08/azureapi/"/>
-    <id>https://ednovas.xyz/2021/06/08/azureapi/</id>
+    <link href="https://ednovas.cf/2021/06/08/azureapi/"/>
+    <id>https://ednovas.cf/2021/06/08/azureapi/</id>
     <published>2021-06-08T11:35:00.000Z</published>
     <updated>2021-06-08T11:42:21.611Z</updated>
     
@@ -448,23 +448,23 @@
     
     
     
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    <category term="杂" scheme="https://ednovas.cf/categories/%E6%9D%82/"/>
     
     
-    <category term="微软" scheme="https://ednovas.xyz/tags/%E5%BE%AE%E8%BD%AF/"/>
+    <category term="微软" scheme="https://ednovas.cf/tags/%E5%BE%AE%E8%BD%AF/"/>
     
-    <category term="全局" scheme="https://ednovas.xyz/tags/%E5%85%A8%E5%B1%80/"/>
+    <category term="全局" scheme="https://ednovas.cf/tags/%E5%85%A8%E5%B1%80/"/>
     
-    <category term="azure" scheme="https://ednovas.xyz/tags/azure/"/>
+    <category term="azure" scheme="https://ednovas.cf/tags/azure/"/>
     
-    <category term="api" scheme="https://ednovas.xyz/tags/api/"/>
+    <category term="api" scheme="https://ednovas.cf/tags/api/"/>
     
   </entry>
   
   <entry>
     <title>Graph Explorer自定义Microsoft应用密钥有效期</title>
-    <link href="https://ednovas.xyz/2021/06/07/graphexplorer/"/>
-    <id>https://ednovas.xyz/2021/06/07/graphexplorer/</id>
+    <link href="https://ednovas.cf/2021/06/07/graphexplorer/"/>
+    <id>https://ednovas.cf/2021/06/07/graphexplorer/</id>
     <published>2021-06-07T06:06:00.000Z</published>
     <updated>2021-06-20T12:03:42.002Z</updated>
     
@@ -478,21 +478,21 @@
     
     
     
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    <category term="杂" scheme="https://ednovas.cf/categories/%E6%9D%82/"/>
     
     
-    <category term="微软" scheme="https://ednovas.xyz/tags/%E5%BE%AE%E8%BD%AF/"/>
+    <category term="微软" scheme="https://ednovas.cf/tags/%E5%BE%AE%E8%BD%AF/"/>
     
-    <category term="microsoft" scheme="https://ednovas.xyz/tags/microsoft/"/>
+    <category term="microsoft" scheme="https://ednovas.cf/tags/microsoft/"/>
     
-    <category term="graph explorer" scheme="https://ednovas.xyz/tags/graph-explorer/"/>
+    <category term="graph explorer" scheme="https://ednovas.cf/tags/graph-explorer/"/>
     
   </entry>
   
   <entry>
     <title>搭建一个rss订阅bot</title>
-    <link href="https://ednovas.xyz/2021/06/07/rss_bot/"/>
-    <id>https://ednovas.xyz/2021/06/07/rss_bot/</id>
+    <link href="https://ednovas.cf/2021/06/07/rss_bot/"/>
+    <id>https://ednovas.cf/2021/06/07/rss_bot/</id>
     <published>2021-06-07T06:06:00.000Z</published>
     <updated>2021-06-21T05:46:35.401Z</updated>
     
@@ -508,23 +508,23 @@
     
     
     
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    <category term="VPS" scheme="https://ednovas.cf/categories/VPS/"/>
     
     
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
     
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    <category term="网站" scheme="https://ednovas.cf/tags/%E7%BD%91%E7%AB%99/"/>
     
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    <category term="bot" scheme="https://ednovas.cf/tags/bot/"/>
     
-    <category term="RSS" scheme="https://ednovas.xyz/tags/RSS/"/>
+    <category term="RSS" scheme="https://ednovas.cf/tags/RSS/"/>
     
   </entry>
   
   <entry>
     <title>搭建订阅转换网站</title>
-    <link href="https://ednovas.xyz/2021/06/06/subs/"/>
-    <id>https://ednovas.xyz/2021/06/06/subs/</id>
+    <link href="https://ednovas.cf/2021/06/06/subs/"/>
+    <id>https://ednovas.cf/2021/06/06/subs/</id>
     <published>2021-06-06T12:29:00.000Z</published>
     <updated>2021-06-08T22:58:33.316Z</updated>
     
@@ -540,21 +540,21 @@
     
     
     
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    <category term="VPS" scheme="https://ednovas.cf/categories/VPS/"/>
     
     
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
     
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    <category term="网站" scheme="https://ednovas.cf/tags/%E7%BD%91%E7%AB%99/"/>
     
-    <category term="订阅转换" scheme="https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2/"/>
+    <category term="订阅转换" scheme="https://ednovas.cf/tags/%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2/"/>
     
   </entry>
   
   <entry>
     <title>搭建 QQ 搜图 bot</title>
-    <link href="https://ednovas.xyz/2021/06/05/qqbot/"/>
-    <id>https://ednovas.xyz/2021/06/05/qqbot/</id>
+    <link href="https://ednovas.cf/2021/06/05/qqbot/"/>
+    <id>https://ednovas.cf/2021/06/05/qqbot/</id>
     <published>2021-06-05T12:19:00.000Z</published>
     <updated>2021-06-06T13:00:19.991Z</updated>
     
@@ -570,23 +570,23 @@
     
     
     
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    <category term="VPS" scheme="https://ednovas.cf/categories/VPS/"/>
     
     
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    <category term="bot" scheme="https://ednovas.cf/tags/bot/"/>
     
-    <category term="qq" scheme="https://ednovas.xyz/tags/qq/"/>
+    <category term="qq" scheme="https://ednovas.cf/tags/qq/"/>
     
-    <category term="搜图" scheme="https://ednovas.xyz/tags/%E6%90%9C%E5%9B%BE/"/>
+    <category term="搜图" scheme="https://ednovas.cf/tags/%E6%90%9C%E5%9B%BE/"/>
     
-    <category term="机器人" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    <category term="机器人" scheme="https://ednovas.cf/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
   </entry>
   
   <entry>
     <title>Telegram 创建一个私聊 bot</title>
-    <link href="https://ednovas.xyz/2021/05/27/tgpmbot/"/>
-    <id>https://ednovas.xyz/2021/05/27/tgpmbot/</id>
+    <link href="https://ednovas.cf/2021/05/27/tgpmbot/"/>
+    <id>https://ednovas.cf/2021/05/27/tgpmbot/</id>
     <published>2021-05-27T06:17:00.000Z</published>
     <updated>2021-05-27T06:21:11.770Z</updated>
     
@@ -604,25 +604,25 @@
     
     
     
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    <category term="杂" scheme="https://ednovas.cf/categories/%E6%9D%82/"/>
     
     
-    <category term="telegram" scheme="https://ednovas.xyz/tags/telegram/"/>
+    <category term="telegram" scheme="https://ednovas.cf/tags/telegram/"/>
     
-    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
+    <category term="tg" scheme="https://ednovas.cf/tags/tg/"/>
     
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    <category term="bot" scheme="https://ednovas.cf/tags/bot/"/>
     
-    <category term="机器人" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    <category term="机器人" scheme="https://ednovas.cf/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
-    <category term="私聊" scheme="https://ednovas.xyz/tags/%E7%A7%81%E8%81%8A/"/>
+    <category term="私聊" scheme="https://ednovas.cf/tags/%E7%A7%81%E8%81%8A/"/>
     
   </entry>
   
   <entry>
     <title>别好奇，暗网真的没意思</title>
-    <link href="https://ednovas.xyz/2021/05/24/darkweb/"/>
-    <id>https://ednovas.xyz/2021/05/24/darkweb/</id>
+    <link href="https://ednovas.cf/2021/05/24/darkweb/"/>
+    <id>https://ednovas.cf/2021/05/24/darkweb/</id>
     <published>2021-05-24T13:37:00.000Z</published>
     <updated>2021-05-24T14:01:57.139Z</updated>
     
@@ -639,14 +639,14 @@
     
     
     
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    <category term="杂" scheme="https://ednovas.cf/categories/%E6%9D%82/"/>
     
     
-    <category term="暗网" scheme="https://ednovas.xyz/tags/%E6%9A%97%E7%BD%91/"/>
+    <category term="暗网" scheme="https://ednovas.cf/tags/%E6%9A%97%E7%BD%91/"/>
     
-    <category term="onion" scheme="https://ednovas.xyz/tags/onion/"/>
+    <category term="onion" scheme="https://ednovas.cf/tags/onion/"/>
     
-    <category term="tor" scheme="https://ednovas.xyz/tags/tor/"/>
+    <category term="tor" scheme="https://ednovas.cf/tags/tor/"/>
     
   </entry>
   
