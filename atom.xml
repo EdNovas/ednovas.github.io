@@ -107,6 +107,74 @@
   </entry>
   
   <entry>
+    <title>漫城CMS漫画站</title>
+    <link href="https://ednovas.xyz/2021/06/27/mccms/"/>
+    <id>https://ednovas.xyz/2021/06/27/mccms/</id>
+    <published>2021-06-27T12:56:00.000Z</published>
+    <updated>2021-07-04T01:41:37.333Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;MCCMS&quot;&gt;&lt;a href=&quot;#MCCMS&quot; class=&quot;headerlink&quot; title=&quot;MCCMS&quot;&gt;&lt;/a&gt;MCCMS&lt;/h2&gt;&lt;p&gt;小浣熊是个很好的漫画CMS,但是采集比较麻烦&lt;/p&gt;
+&lt;p&gt;那么,漫城CMS就是一个很好的选择&lt;/p&gt;
+&lt;p&gt;官网: &lt;a href=&quot;https://www.mccms.cn/&quot;&gt;https://www.mccms.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下载直链: &lt;a href=&quot;http://www.chshcms.net/bbs/show/1551.html&quot;&gt;http://www.chshcms.net/bbs/show/1551.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;搭建&quot;&gt;&lt;a href=&quot;#搭建&quot; class=&quot;headerlink&quot; title=&quot;搭建&quot;&gt;&lt;/a&gt;搭建&lt;/h2&gt;&lt;p&gt;新建网站,https重定向,ssl证书&lt;/p&gt;
+&lt;p&gt;复制下载的zip压缩包到网站根目录,然后解压&lt;/p&gt;
+&lt;p&gt;将解压后的文件夹内的全部文件剪切到根目录下&lt;/p&gt;
+&lt;p&gt;将&lt;code&gt;说明文档&lt;/code&gt;中的&lt;code&gt;伪静态规则&lt;/code&gt;文件全扔到根目录内替换&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="漫画站" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
+    
+    <category term="漫画" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建小浣熊CMS漫画站</title>
+    <link href="https://ednovas.xyz/2021/06/27/comiccms/"/>
+    <id>https://ednovas.xyz/2021/06/27/comiccms/</id>
+    <published>2021-06-27T10:56:00.000Z</published>
+    <updated>2021-07-03T14:03:13.065Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;小浣熊漫画CMS&quot;&gt;&lt;a href=&quot;#小浣熊漫画CMS&quot; class=&quot;headerlink&quot; title=&quot;小浣熊漫画CMS&quot;&gt;&lt;/a&gt;小浣熊漫画CMS&lt;/h2&gt;&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/hiliqi/xiaohuanxiong&quot;&gt;https://github.com/hiliqi/xiaohuanxiong&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官方博客: &lt;a href=&quot;https://www.xiaohuanxiong.net/&quot;&gt;https://www.xiaohuanxiong.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文档地址: &lt;a href=&quot;https://www.kancloud.cn/hiliqi/raccoon5/1921259&quot;&gt;https://www.kancloud.cn/hiliqi/raccoon5/1921259&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;QQ群：780362399&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;新建一个网站,开启https强跳和证书&lt;/p&gt;
+&lt;p&gt;在网站根目录下,需要先删除全部文件,特别是&lt;code&gt;.user.ini&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;hiliqi&amp;#x2F;xiaohuanxiong.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chown -R www:www .&amp;#x2F; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;php 拓展中安装 &lt;code&gt;redis&lt;/code&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="漫画站" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
+    
+    <category term="漫画" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>搭建狂雨CMS小说站</title>
     <link href="https://ednovas.xyz/2021/06/27/bookcms/"/>
     <id>https://ednovas.xyz/2021/06/27/bookcms/</id>
@@ -137,40 +205,6 @@
     <category term="小说站" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E8%AF%B4%E7%AB%99/"/>
     
     <category term="小说" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E8%AF%B4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建小浣熊CMS漫画站</title>
-    <link href="https://ednovas.xyz/2021/06/27/comiccms/"/>
-    <id>https://ednovas.xyz/2021/06/27/comiccms/</id>
-    <published>2021-06-27T02:56:00.000Z</published>
-    <updated>2021-07-03T13:04:11.475Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;小浣熊漫画CMS&quot;&gt;&lt;a href=&quot;#小浣熊漫画CMS&quot; class=&quot;headerlink&quot; title=&quot;小浣熊漫画CMS&quot;&gt;&lt;/a&gt;小浣熊漫画CMS&lt;/h2&gt;&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/hiliqi/xiaohuanxiong&quot;&gt;https://github.com/hiliqi/xiaohuanxiong&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;官方博客: &lt;a href=&quot;https://www.xiaohuanxiong.net/&quot;&gt;https://www.xiaohuanxiong.net/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;文档地址: &lt;a href=&quot;https://www.kancloud.cn/hiliqi/raccoon5/1921259&quot;&gt;https://www.kancloud.cn/hiliqi/raccoon5/1921259&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;QQ群：780362399&lt;/p&gt;
-&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;新建一个网站,开启https强跳和证书&lt;/p&gt;
-&lt;p&gt;在网站根目录下,需要先删除全部文件,特别是&lt;code&gt;.user.ini&lt;/code&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;hiliqi&amp;#x2F;xiaohuanxiong.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chown -R www:www .&amp;#x2F; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;php 拓展中安装 &lt;code&gt;redis&lt;/code&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
-    
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="漫画站" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
-    
-    <category term="漫画" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB/"/>
     
   </entry>
   
@@ -602,41 +636,6 @@
     <category term="wireguard" scheme="https://ednovas.xyz/tags/wireguard/"/>
     
     <category term="debian" scheme="https://ednovas.xyz/tags/debian/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Telegram 发卡机器人搭建</title>
-    <link href="https://ednovas.xyz/2021/05/19/tgshopbot/"/>
-    <id>https://ednovas.xyz/2021/05/19/tgshopbot/</id>
-    <published>2021-05-19T10:02:00.000Z</published>
-    <updated>2021-05-19T14:27:58.993Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;DEMO&quot;&gt;&lt;a href=&quot;#DEMO&quot; class=&quot;headerlink&quot; title=&quot;DEMO&quot;&gt;&lt;/a&gt;DEMO&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://t.me/ednovas_shop_bot&quot;&gt;https://t.me/ednovas_shop_bot&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;发现了个很好用的tg发卡bot，GitHub地址：&lt;a href=&quot;https://github.com/devourbots/tg_faka_bot&quot;&gt;https://github.com/devourbots/tg_faka_bot&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;基于python开发的，用的sqlite3做数据库，足够轻便，方便备份&lt;/p&gt;
-&lt;p&gt;适配易支付，当面付，麻瓜支付&lt;/p&gt;
-&lt;p&gt;tg用户群组：&lt;a href=&quot;https://t.me/joinchat/HO9r-CLAudrxugPY&quot;&gt;https://t.me/joinchat/HO9r-CLAudrxugPY&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;tg频道：&lt;a href=&quot;https://t.me/devourbots_channel&quot;&gt;https://t.me/devourbots_channel&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Debian-Ubuntu下安装&quot;&gt;&lt;a href=&quot;#Debian-Ubuntu下安装&quot; class=&quot;headerlink&quot; title=&quot;Debian/Ubuntu下安装&quot;&gt;&lt;/a&gt;Debian/Ubuntu下安装&lt;/h2&gt;&lt;p&gt;进入根目录&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="telegram" scheme="https://ednovas.xyz/tags/telegram/"/>
-    
-    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
-    
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
-    
-    <category term="机器人" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
-    
-    <category term="发卡" scheme="https://ednovas.xyz/tags/%E5%8F%91%E5%8D%A1/"/>
     
   </entry>
   
