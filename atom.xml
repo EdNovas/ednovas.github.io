@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-07-03T02:24:19.278Z</updated>
+  <updated>2021-07-04T05:35:50.290Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,117 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cloudflare Pages部署</title>
+    <link href="https://ednovas.xyz/2021/07/04/cloudflarepages/"/>
+    <id>https://ednovas.xyz/2021/07/04/cloudflarepages/</id>
+    <published>2021-07-04T04:56:00.000Z</published>
+    <updated>2021-07-04T05:35:50.290Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Cloudflare-Pages&quot;&gt;&lt;a href=&quot;#Cloudflare-Pages&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Pages&quot;&gt;&lt;/a&gt;Cloudflare Pages&lt;/h2&gt;&lt;h3 id=&quot;Cloudflare-Pages-是什么？&quot;&gt;&lt;a href=&quot;#Cloudflare-Pages-是什么？&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Pages 是什么？&quot;&gt;&lt;/a&gt;Cloudflare Pages 是什么？&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://pages.cloudflare.com/&quot;&gt;Cloudflare Pages&lt;/a&gt; 是一个使用 JAMstack 的网站部署平台，和 GitHub Pages 类似，都是一个静态站点部署平台。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Cloudflare Pages is a JAMstack platform for frontend developers to collaborate and deploy websites.&lt;/p&gt;
+&lt;p&gt;Cloudflare Pages is currently in open beta.&lt;/p&gt;
+&lt;p&gt;来自Cloudflare Pages 官网&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;JAMstack-是什么？&quot;&gt;&lt;a href=&quot;#JAMstack-是什么？&quot; class=&quot;headerlink&quot; title=&quot;JAMstack 是什么？&quot;&gt;&lt;/a&gt;JAMstack 是什么？&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://jamstack.org/&quot;&gt;JAMstack&lt;/a&gt; 最开始是 JavaScript、API、Markup 技术栈的一个缩写，由 Mathias Biilmann 提出（感觉就是为了推销 Netlify 服务的 🤔），当然现在已经不止于此了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup&lt;/p&gt;
+&lt;p&gt;Mathias Biilmann (CEO &amp;amp; Co-founder of Netlify)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;按照官网介绍，现在 JAMstack 是新一代的网站架构，通过预渲染和可重用的 API，使其同时拥有静态和动态站点的优势。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/132321.png&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Jamstack is the new standard architecture for the web. Using Git workflows and modern build tools, pre-rendered content is served to a CDN and made dynamic through APIs and serverless functions. Technologies in the stack include JavaScript frameworks, Static Site Generators, Headless CMSs, and CDNs.&lt;/p&gt;
+&lt;p&gt;Jamstack 官网&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="cf" scheme="https://ednovas.xyz/tags/cf/"/>
+    
+    <category term="cloudflare pages" scheme="https://ednovas.xyz/tags/cloudflare-pages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>漫城CMS漫画站</title>
+    <link href="https://ednovas.xyz/2021/07/03/mccms/"/>
+    <id>https://ednovas.xyz/2021/07/03/mccms/</id>
+    <published>2021-07-03T12:56:00.000Z</published>
+    <updated>2021-07-04T04:06:29.919Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;MCCMS&quot;&gt;&lt;a href=&quot;#MCCMS&quot; class=&quot;headerlink&quot; title=&quot;MCCMS&quot;&gt;&lt;/a&gt;MCCMS&lt;/h2&gt;&lt;p&gt;小浣熊是个很好的漫画CMS,但是采集比较麻烦&lt;/p&gt;
+&lt;p&gt;那么,漫城CMS就是一个很好的选择&lt;/p&gt;
+&lt;p&gt;官网: &lt;a href=&quot;https://www.mccms.cn/&quot;&gt;https://www.mccms.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下载直链: &lt;a href=&quot;http://www.chshcms.net/bbs/show/1551.html&quot;&gt;http://www.chshcms.net/bbs/show/1551.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;搭建&quot;&gt;&lt;a href=&quot;#搭建&quot; class=&quot;headerlink&quot; title=&quot;搭建&quot;&gt;&lt;/a&gt;搭建&lt;/h2&gt;&lt;p&gt;新建网站,https重定向,ssl证书&lt;/p&gt;
+&lt;p&gt;复制下载的zip压缩包到网站根目录,然后解压&lt;/p&gt;
+&lt;p&gt;将解压后的文件夹内的全部文件剪切到根目录下&lt;/p&gt;
+&lt;p&gt;将&lt;code&gt;说明文档&lt;/code&gt;中的&lt;code&gt;伪静态规则&lt;/code&gt;文件全扔到根目录内替换&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="漫画站" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
+    
+    <category term="漫画" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建小浣熊CMS漫画站</title>
+    <link href="https://ednovas.xyz/2021/07/03/comiccms/"/>
+    <id>https://ednovas.xyz/2021/07/03/comiccms/</id>
+    <published>2021-07-03T10:56:00.000Z</published>
+    <updated>2021-07-04T04:06:42.337Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;小浣熊漫画CMS&quot;&gt;&lt;a href=&quot;#小浣熊漫画CMS&quot; class=&quot;headerlink&quot; title=&quot;小浣熊漫画CMS&quot;&gt;&lt;/a&gt;小浣熊漫画CMS&lt;/h2&gt;&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/hiliqi/xiaohuanxiong&quot;&gt;https://github.com/hiliqi/xiaohuanxiong&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官方博客: &lt;a href=&quot;https://www.xiaohuanxiong.net/&quot;&gt;https://www.xiaohuanxiong.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文档地址: &lt;a href=&quot;https://www.kancloud.cn/hiliqi/raccoon5/1921259&quot;&gt;https://www.kancloud.cn/hiliqi/raccoon5/1921259&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;QQ群：780362399&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;新建一个网站,开启https强跳和证书&lt;/p&gt;
+&lt;p&gt;在网站根目录下,需要先删除全部文件,特别是&lt;code&gt;.user.ini&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;hiliqi&amp;#x2F;xiaohuanxiong.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chown -R www:www .&amp;#x2F; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;php 拓展中安装 &lt;code&gt;redis&lt;/code&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="漫画站" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
+    
+    <category term="漫画" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>如何挑选博客框架、在线博客平台</title>
@@ -103,74 +214,6 @@
     <category term="github" scheme="https://ednovas.xyz/tags/github/"/>
     
     <category term="加速" scheme="https://ednovas.xyz/tags/%E5%8A%A0%E9%80%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>漫城CMS漫画站</title>
-    <link href="https://ednovas.xyz/2021/06/27/mccms/"/>
-    <id>https://ednovas.xyz/2021/06/27/mccms/</id>
-    <published>2021-06-27T12:56:00.000Z</published>
-    <updated>2021-07-04T01:41:37.333Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;MCCMS&quot;&gt;&lt;a href=&quot;#MCCMS&quot; class=&quot;headerlink&quot; title=&quot;MCCMS&quot;&gt;&lt;/a&gt;MCCMS&lt;/h2&gt;&lt;p&gt;小浣熊是个很好的漫画CMS,但是采集比较麻烦&lt;/p&gt;
-&lt;p&gt;那么,漫城CMS就是一个很好的选择&lt;/p&gt;
-&lt;p&gt;官网: &lt;a href=&quot;https://www.mccms.cn/&quot;&gt;https://www.mccms.cn/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;下载直链: &lt;a href=&quot;http://www.chshcms.net/bbs/show/1551.html&quot;&gt;http://www.chshcms.net/bbs/show/1551.html&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;搭建&quot;&gt;&lt;a href=&quot;#搭建&quot; class=&quot;headerlink&quot; title=&quot;搭建&quot;&gt;&lt;/a&gt;搭建&lt;/h2&gt;&lt;p&gt;新建网站,https重定向,ssl证书&lt;/p&gt;
-&lt;p&gt;复制下载的zip压缩包到网站根目录,然后解压&lt;/p&gt;
-&lt;p&gt;将解压后的文件夹内的全部文件剪切到根目录下&lt;/p&gt;
-&lt;p&gt;将&lt;code&gt;说明文档&lt;/code&gt;中的&lt;code&gt;伪静态规则&lt;/code&gt;文件全扔到根目录内替换&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
-    
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="漫画站" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
-    
-    <category term="漫画" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建小浣熊CMS漫画站</title>
-    <link href="https://ednovas.xyz/2021/06/27/comiccms/"/>
-    <id>https://ednovas.xyz/2021/06/27/comiccms/</id>
-    <published>2021-06-27T10:56:00.000Z</published>
-    <updated>2021-07-03T14:03:13.065Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;小浣熊漫画CMS&quot;&gt;&lt;a href=&quot;#小浣熊漫画CMS&quot; class=&quot;headerlink&quot; title=&quot;小浣熊漫画CMS&quot;&gt;&lt;/a&gt;小浣熊漫画CMS&lt;/h2&gt;&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/hiliqi/xiaohuanxiong&quot;&gt;https://github.com/hiliqi/xiaohuanxiong&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;官方博客: &lt;a href=&quot;https://www.xiaohuanxiong.net/&quot;&gt;https://www.xiaohuanxiong.net/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;文档地址: &lt;a href=&quot;https://www.kancloud.cn/hiliqi/raccoon5/1921259&quot;&gt;https://www.kancloud.cn/hiliqi/raccoon5/1921259&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;QQ群：780362399&lt;/p&gt;
-&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;新建一个网站,开启https强跳和证书&lt;/p&gt;
-&lt;p&gt;在网站根目录下,需要先删除全部文件,特别是&lt;code&gt;.user.ini&lt;/code&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;hiliqi&amp;#x2F;xiaohuanxiong.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chown -R www:www .&amp;#x2F; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;php 拓展中安装 &lt;code&gt;redis&lt;/code&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
-    
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="漫画站" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
-    
-    <category term="漫画" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB/"/>
     
   </entry>
   
@@ -607,35 +650,6 @@
     <category term="gost" scheme="https://ednovas.xyz/tags/gost/"/>
     
     <category term="go simple tunnel" scheme="https://ednovas.xyz/tags/go-simple-tunnel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Debian Linux VPS 服务器 WireGuard 安装教程</title>
-    <link href="https://ednovas.xyz/2021/05/24/wireguard/"/>
-    <id>https://ednovas.xyz/2021/05/24/wireguard/</id>
-    <published>2021-05-24T03:08:00.000Z</published>
-    <updated>2021-05-24T13:36:51.373Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.wireguard.com/&quot;&gt;https://www.wireguard.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;WireGuard 想必不用过多介绍了，目前网上的 Wire­Guard 教程有的是一键脚本、有的是老方法，安装慢而且会带入了一堆乱七八糟的东西，而官方文档并没有详细说明安装方法。对于 VPS 而言则还要考虑一些实际因素，不然随意安装只有报错等着你。所以博主根据实际经验写了这篇适用于通用操作系统 De­bian 的通用 Wire­Guard 安装教程，适合有手动配置 Wire­Guard 需求的小伙伴。&lt;/p&gt;
-&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;h3 id=&quot;添加-back­ports-源&quot;&gt;&lt;a href=&quot;#添加-back­ports-源&quot; class=&quot;headerlink&quot; title=&quot;添加 back­ports 源&quot;&gt;&lt;/a&gt;添加 back­ports 源&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;echo &amp;quot;deb http:&amp;#x2F;&amp;#x2F;deb.debian.org&amp;#x2F;debian $(lsb_release -sc)-backports main&amp;quot; | sudo tee &amp;#x2F;etc&amp;#x2F;apt&amp;#x2F;sources.list.d&amp;#x2F;backports.list&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;安装依赖组件&quot;&gt;&lt;a href=&quot;#安装依赖组件&quot; class=&quot;headerlink&quot; title=&quot;安装依赖组件&quot;&gt;&lt;/a&gt;安装依赖组件&lt;/h2&gt;&lt;h3 id=&quot;安装网络工具包&quot;&gt;&lt;a href=&quot;#安装网络工具包&quot; class=&quot;headerlink&quot; title=&quot;安装网络工具包&quot;&gt;&lt;/a&gt;安装网络工具包&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt install net-tools iproute2 openresolv dnsutils -y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;安装-wireguard-tools-Wire­Guard-配置工具：wg、wg-quick&quot;&gt;&lt;a href=&quot;#安装-wireguard-tools-Wire­Guard-配置工具：wg、wg-quick&quot; class=&quot;headerlink&quot; title=&quot;安装 wireguard-tools (Wire­Guard 配置工具：wg、wg-quick)&quot;&gt;&lt;/a&gt;安装 wireguard-tools (Wire­Guard 配置工具：wg、wg-quick)&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
-    
-    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
-    
-    <category term="wireguard" scheme="https://ednovas.xyz/tags/wireguard/"/>
-    
-    <category term="debian" scheme="https://ednovas.xyz/tags/debian/"/>
     
   </entry>
   

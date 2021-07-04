@@ -4,6 +4,105 @@
   
     
     <entry>
+      <title>Cloudflare Pages部署</title>
+      <link href="2021/07/04/cloudflarepages/"/>
+      <url>2021/07/04/cloudflarepages/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Cloudflare-Pages"><a href="#Cloudflare-Pages" class="headerlink" title="Cloudflare Pages"></a>Cloudflare Pages</h2><h3 id="Cloudflare-Pages-是什么？"><a href="#Cloudflare-Pages-是什么？" class="headerlink" title="Cloudflare Pages 是什么？"></a>Cloudflare Pages 是什么？</h3><p><a href="https://pages.cloudflare.com/">Cloudflare Pages</a> 是一个使用 JAMstack 的网站部署平台，和 GitHub Pages 类似，都是一个静态站点部署平台。</p><blockquote><p>Cloudflare Pages is a JAMstack platform for frontend developers to collaborate and deploy websites.</p><p>Cloudflare Pages is currently in open beta.</p><p>来自Cloudflare Pages 官网</p></blockquote><h3 id="JAMstack-是什么？"><a href="#JAMstack-是什么？" class="headerlink" title="JAMstack 是什么？"></a>JAMstack 是什么？</h3><p><a href="https://jamstack.org/">JAMstack</a> 最开始是 JavaScript、API、Markup 技术栈的一个缩写，由 Mathias Biilmann 提出（感觉就是为了推销 Netlify 服务的 🤔），当然现在已经不止于此了。</p><blockquote><p>A modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup</p><p>Mathias Biilmann (CEO &amp; Co-founder of Netlify)</p></blockquote><p>按照官网介绍，现在 JAMstack 是新一代的网站架构，通过预渲染和可重用的 API，使其同时拥有静态和动态站点的优势。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/132321.png"></p><blockquote><p>Jamstack is the new standard architecture for the web. Using Git workflows and modern build tools, pre-rendered content is served to a CDN and made dynamic through APIs and serverless functions. Technologies in the stack include JavaScript frameworks, Static Site Generators, Headless CMSs, and CDNs.</p><p>Jamstack 官网</p></blockquote><h2 id="托管HEXO"><a href="#托管HEXO" class="headerlink" title="托管HEXO"></a>托管HEXO</h2><p><a href="https://pages.cloudflare.com/">https://pages.cloudflare.com/</a></p><p>登录后绑定你的GitHub账户,然后授予权限,权限全给或者只给你的GitHub Pages仓库都可</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-04_12-32-20.png"></p><p>然后随便输入个project name项目名称,不可用中文,保持默认的GitHub仓库名也可</p><p>framework preset选择None,因为GitHub里是已经渲染好的静态网站了,所以<code>build command</code>构建命令和<code>build output directory</code>也都空着就行,下面的<code>Path</code>也空着即可,然后点击<code>Save and Deploy</code></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-04_13-30-41.png"></p><p>构建需要数分钟,耐心等待即可</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-04_12-13-53.png"></p><p>构建完成后的域名十分复杂,可以自定义域名</p><p><code>Settings</code>设置中还可以便捷的开启<code>Access policy</code>和<code>Web Analytics</code>十分贴心</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-04_13-34-25.png"></p><h2 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h2><p><a href="https://ednovas.ninja/">https://ednovas.ninja</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 建站 </tag>
+            
+            <tag> cloudflare </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> cf </tag>
+            
+            <tag> cloudflare pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>漫城CMS漫画站</title>
+      <link href="2021/07/03/mccms/"/>
+      <url>2021/07/03/mccms/</url>
+      
+        <content type="html"><![CDATA[<h2 id="MCCMS"><a href="#MCCMS" class="headerlink" title="MCCMS"></a>MCCMS</h2><p>小浣熊是个很好的漫画CMS,但是采集比较麻烦</p><p>那么,漫城CMS就是一个很好的选择</p><p>官网: <a href="https://www.mccms.cn/">https://www.mccms.cn/</a></p><p>下载直链: <a href="http://www.chshcms.net/bbs/show/1551.html">http://www.chshcms.net/bbs/show/1551.html</a></p><h2 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h2><p>新建网站,https重定向,ssl证书</p><p>复制下载的zip压缩包到网站根目录,然后解压</p><p>将解压后的文件夹内的全部文件剪切到根目录下</p><p>将<code>说明文档</code>中的<code>伪静态规则</code>文件全扔到根目录内替换</p><p>(由于编码问题,<code>说明文档</code>可能会显示成如 <code>╦╡├ў╬─╡╡</code> 的乱码,<code>伪静态规则</code>显示为<code>╬▒╛▓╠м╣ц╘Є</code>)</p><h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><p>新建数据库,记住用户名密码库名</p><p>访问域名,填入对应数据库信息,前缀不变默认<code>mc_</code>即可,PHP5.6以上数据库类型选择<code>Mysqli</code></p><p>后台管理员信息自己填入,其中认证码就是相当于第二重密码</p><h2 id="采集"><a href="#采集" class="headerlink" title="采集"></a>采集</h2><p>自带的采集解析是要钱的,而且不便宜,可以选择大佬提供的免费解析地址</p><p>采集管理 -&gt; 漫画采集 -&gt; 采集配置 -&gt; 解析地址 改成如下</p><p><a href="http://45.138.68.219//api/resources/parsing_comic">http://45.138.68.219//api/resources/parsing_comic</a></p><p>然后更新配置信息</p><p>然后资源分类内绑定分类并采集即可</p><p>额外采集站点:</p><p>复制下方乱码到txt文件中,然后在资源采集界面导入该txt文件即可</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">eyJ6aXl1YW4iOnsibmFtZSI6Ilx1OGQ0NFx1NmU5MFx1N2FkOSIsInVybCI6Imh0dHA6XC9cLzQ1LjEzOC42OC4yMTlcL2FwaVwvcmVzb3VyY2VzXC9jb21pYyIsImp4dXJsIjoiaHR0cDpcL1wvNDUuMTM4LjY4LjIxOVwvXC9hcGlcL3Jlc291cmNlc1wvcGFyc2luZ19jb21pYyIsInRva2VuIjoicXVuNTk1NDEzMTQ3IiwienQiOjAsInRleHQiOiJcL1wvXHU3OWQ4XHU5NGE1XHU0ZTBkXHU1M2VmXHU1MjIwIn19</span><br></pre></td></tr></table></figure><h2 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h2><p><a href="https://comics.ednovas.xyz/">https://comics.ednovas.xyz</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CMS </tag>
+            
+            <tag> 搭建 </tag>
+            
+            <tag> VPS </tag>
+            
+            <tag> 漫画站 </tag>
+            
+            <tag> 漫画 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建小浣熊CMS漫画站</title>
+      <link href="2021/07/03/comiccms/"/>
+      <url>2021/07/03/comiccms/</url>
+      
+        <content type="html"><![CDATA[<h2 id="小浣熊漫画CMS"><a href="#小浣熊漫画CMS" class="headerlink" title="小浣熊漫画CMS"></a>小浣熊漫画CMS</h2><p>GitHub: <a href="https://github.com/hiliqi/xiaohuanxiong">https://github.com/hiliqi/xiaohuanxiong</a></p><p>官方博客: <a href="https://www.xiaohuanxiong.net/">https://www.xiaohuanxiong.net/</a></p><p>文档地址: <a href="https://www.kancloud.cn/hiliqi/raccoon5/1921259">https://www.kancloud.cn/hiliqi/raccoon5/1921259</a></p><p>QQ群：780362399</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>新建一个网站,开启https强跳和证书</p><p>在网站根目录下,需要先删除全部文件,特别是<code>.user.ini</code></p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;hiliqi&#x2F;xiaohuanxiong.git</span><br><span class="line">chown -R www:www .&#x2F; </span><br></pre></td></tr></table></figure><p>php 拓展中安装 <code>redis</code></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-22-12.png"></p><p>运行目录改成<code>/public</code></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-31-28.png"></p><p>新建数据库</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-35-25.png"></p><p>访问域名,填入对应数据库信息,其中前缀用默认<code>tp_</code>即可</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-36-07.png"></p><p>设置管理员账户</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-36-57.png"></p><p>如果要开启404,而不让cms报错信息显示出来,需要修改config/app.php文件,在中间偏下的位置</p><p>去掉第二排的//即可</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#39;exception_tmpl&#39;         &#x3D;&gt; Env::get(&#39;app_path&#39;) . &#39;index&#x2F;view&#x2F;pub&#x2F;404.html&#39;,</span><br><span class="line">&#39;exception_tmpl&#39;         &#x3D;&gt; Env::get(&#39;think_path&#39;) . &#39;tpl&#x2F;think_exception.tpl&#39;,</span><br></pre></td></tr></table></figure><p>管理员登陆地址 https://你的域名/admin.php/login/login.html</p><h2 id="采集"><a href="#采集" class="headerlink" title="采集"></a>采集</h2><p>没有自带采集,需要额外引用</p><p>可以用火车头采集插件</p><p>官网: <a href="http://www.locoy.com/">http://www.locoy.com/</a></p><p>不过分为免费版和收费版，但免费版由于某些功能限制，没法满足图片本地化需求，所以暂时不适用，如果你有钱可以买一个收费版的，不过没钱也没事，可以直接使用火车头破解版</p><p>火车头高铁采集器v9.8.0.1227旗舰破解自动授权版 <a href="https://www.ynceyi.com/d/file/wordpress/8bb80510d9ac88ae6125bb9f107514b6.zip">https://www.ynceyi.com/d/file/wordpress/8bb80510d9ac88ae6125bb9f107514b6.zip</a></p><p>EdNovas网盘分流 <a href="https://ednovas.cloud/s/qQeCl">https://ednovas.cloud/s/qQeCl</a></p><p>采集参数</p><p><a href="https://www.kancloud.cn/hiliqi/raccoon5/1921263">https://www.kancloud.cn/hiliqi/raccoon5/1921263</a></p><p>参考视频教程</p><p><a href="https://www.bilibili.com/video/BV1VZ4y1M7dL/">https://www.bilibili.com/video/BV1VZ4y1M7dL/</a></p><p>(采集过程很复杂,我也懒得采集了嘿嘿嘿)</p><blockquote><p>参考自 Rat’s <a href="https://www.moerats.com/archives/904/">https://www.moerats.com/archives/904/</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CMS </tag>
+            
+            <tag> 搭建 </tag>
+            
+            <tag> VPS </tag>
+            
+            <tag> 漫画站 </tag>
+            
+            <tag> 漫画 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何挑选博客框架、在线博客平台</title>
       <link href="2021/07/03/blog/"/>
       <url>2021/07/03/blog/</url>
@@ -87,72 +186,6 @@
             <tag> github </tag>
             
             <tag> 加速 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>漫城CMS漫画站</title>
-      <link href="2021/06/27/mccms/"/>
-      <url>2021/06/27/mccms/</url>
-      
-        <content type="html"><![CDATA[<h2 id="MCCMS"><a href="#MCCMS" class="headerlink" title="MCCMS"></a>MCCMS</h2><p>小浣熊是个很好的漫画CMS,但是采集比较麻烦</p><p>那么,漫城CMS就是一个很好的选择</p><p>官网: <a href="https://www.mccms.cn/">https://www.mccms.cn/</a></p><p>下载直链: <a href="http://www.chshcms.net/bbs/show/1551.html">http://www.chshcms.net/bbs/show/1551.html</a></p><h2 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h2><p>新建网站,https重定向,ssl证书</p><p>复制下载的zip压缩包到网站根目录,然后解压</p><p>将解压后的文件夹内的全部文件剪切到根目录下</p><p>将<code>说明文档</code>中的<code>伪静态规则</code>文件全扔到根目录内替换</p><p>(由于编码问题,<code>说明文档</code>可能会显示成如 <code>╦╡├ў╬─╡╡</code> 的乱码,<code>伪静态规则</code>显示为<code>╬▒╛▓╠м╣ц╘Є</code>)</p><h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><p>新建数据库,记住用户名密码库名</p><p>访问域名,填入对应数据库信息,前缀不变默认<code>mc_</code>即可,PHP5.6以上数据库类型选择<code>Mysqli</code></p><p>后台管理员信息自己填入,其中认证码就是相当于第二重密码</p><h2 id="采集"><a href="#采集" class="headerlink" title="采集"></a>采集</h2><p>自带的采集解析是要钱的,而且不便宜,可以选择大佬提供的免费解析地址</p><p>采集管理 -&gt; 漫画采集 -&gt; 采集配置 -&gt; 解析地址 改成如下</p><p><a href="http://45.138.68.219//api/resources/parsing_comic">http://45.138.68.219//api/resources/parsing_comic</a></p><p>然后更新配置信息</p><p>然后资源分类内绑定分类并采集即可</p><p>额外采集站点:</p><p>复制下方乱码到txt文件中,然后在资源采集界面导入该txt文件即可</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">eyJ6aXl1YW4iOnsibmFtZSI6Ilx1OGQ0NFx1NmU5MFx1N2FkOSIsInVybCI6Imh0dHA6XC9cLzQ1LjEzOC42OC4yMTlcL2FwaVwvcmVzb3VyY2VzXC9jb21pYyIsImp4dXJsIjoiaHR0cDpcL1wvNDUuMTM4LjY4LjIxOVwvXC9hcGlcL3Jlc291cmNlc1wvcGFyc2luZ19jb21pYyIsInRva2VuIjoicXVuNTk1NDEzMTQ3IiwienQiOjAsInRleHQiOiJcL1wvXHU3OWQ4XHU5NGE1XHU0ZTBkXHU1M2VmXHU1MjIwIn19</span><br></pre></td></tr></table></figure><h2 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h2><p><a href="https://comics.ednovas.xyz/">https://comics.ednovas.xyz</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 建站 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> CMS </tag>
-            
-            <tag> 搭建 </tag>
-            
-            <tag> VPS </tag>
-            
-            <tag> 漫画站 </tag>
-            
-            <tag> 漫画 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>搭建小浣熊CMS漫画站</title>
-      <link href="2021/06/27/comiccms/"/>
-      <url>2021/06/27/comiccms/</url>
-      
-        <content type="html"><![CDATA[<h2 id="小浣熊漫画CMS"><a href="#小浣熊漫画CMS" class="headerlink" title="小浣熊漫画CMS"></a>小浣熊漫画CMS</h2><p>GitHub: <a href="https://github.com/hiliqi/xiaohuanxiong">https://github.com/hiliqi/xiaohuanxiong</a></p><p>官方博客: <a href="https://www.xiaohuanxiong.net/">https://www.xiaohuanxiong.net/</a></p><p>文档地址: <a href="https://www.kancloud.cn/hiliqi/raccoon5/1921259">https://www.kancloud.cn/hiliqi/raccoon5/1921259</a></p><p>QQ群：780362399</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>新建一个网站,开启https强跳和证书</p><p>在网站根目录下,需要先删除全部文件,特别是<code>.user.ini</code></p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;hiliqi&#x2F;xiaohuanxiong.git</span><br><span class="line">chown -R www:www .&#x2F; </span><br></pre></td></tr></table></figure><p>php 拓展中安装 <code>redis</code></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-22-12.png"></p><p>运行目录改成<code>/public</code></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-31-28.png"></p><p>新建数据库</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-35-25.png"></p><p>访问域名,填入对应数据库信息,其中前缀用默认<code>tp_</code>即可</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-36-07.png"></p><p>设置管理员账户</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-36-57.png"></p><p>如果要开启404,而不让cms报错信息显示出来,需要修改config/app.php文件,在中间偏下的位置</p><p>去掉第二排的//即可</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#39;exception_tmpl&#39;         &#x3D;&gt; Env::get(&#39;app_path&#39;) . &#39;index&#x2F;view&#x2F;pub&#x2F;404.html&#39;,</span><br><span class="line">&#39;exception_tmpl&#39;         &#x3D;&gt; Env::get(&#39;think_path&#39;) . &#39;tpl&#x2F;think_exception.tpl&#39;,</span><br></pre></td></tr></table></figure><p>管理员登陆地址 https://你的域名/admin.php/login/login.html</p><h2 id="采集"><a href="#采集" class="headerlink" title="采集"></a>采集</h2><p>没有自带采集,需要额外引用</p><p>可以用火车头采集插件</p><p>官网: <a href="http://www.locoy.com/">http://www.locoy.com/</a></p><p>不过分为免费版和收费版，但免费版由于某些功能限制，没法满足图片本地化需求，所以暂时不适用，如果你有钱可以买一个收费版的，不过没钱也没事，可以直接使用火车头破解版</p><p>火车头高铁采集器v9.8.0.1227旗舰破解自动授权版 <a href="https://www.ynceyi.com/d/file/wordpress/8bb80510d9ac88ae6125bb9f107514b6.zip">https://www.ynceyi.com/d/file/wordpress/8bb80510d9ac88ae6125bb9f107514b6.zip</a></p><p>EdNovas网盘分流 <a href="https://ednovas.cloud/s/qQeCl">https://ednovas.cloud/s/qQeCl</a></p><p>采集参数</p><p><a href="https://www.kancloud.cn/hiliqi/raccoon5/1921263">https://www.kancloud.cn/hiliqi/raccoon5/1921263</a></p><p>参考视频教程</p><p><a href="https://www.bilibili.com/video/BV1VZ4y1M7dL/">https://www.bilibili.com/video/BV1VZ4y1M7dL/</a></p><p>(采集过程很复杂,我也懒得采集了嘿嘿嘿)</p><blockquote><p>参考自 Rat’s <a href="https://www.moerats.com/archives/904/">https://www.moerats.com/archives/904/</a></p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> 建站 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> CMS </tag>
-            
-            <tag> 搭建 </tag>
-            
-            <tag> VPS </tag>
-            
-            <tag> 漫画站 </tag>
-            
-            <tag> 漫画 </tag>
             
         </tags>
       
