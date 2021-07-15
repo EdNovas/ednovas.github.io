@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>EdNovas的小站</title>
+  <icon>https://ednovas.cf/icon.png</icon>
+  
+  <link href="https://ednovas.cf/atom.xml" rel="self"/>
+  
+  <link href="https://ednovas.cf/"/>
+  <updated>2021-07-04T08:48:39.418Z</updated>
+  <id>https://ednovas.cf/</id>
+  
+  <author>
+    <name>EdNovas</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>像专业人士一样使用 Google</title>
+    <link href="https://ednovas.cf/2021/07/04/google/"/>
+    <id>https://ednovas.cf/2021/07/04/google/</id>
+    <published>2021-07-04T08:56:00.000Z</published>
+    <updated>2021-07-04T08:48:39.418Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;今天在 Dev 社区看到的这篇帖子，虽然自己天天用 Google，但是这些技巧却不是那么的熟悉，所以分享给大家&lt;/p&gt;
+&lt;p&gt;原文：&lt;a href=&quot;https://dev.to/denicmarko/google-like-a-pro-5cf6&quot;&gt;Use Google like a pro&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;译：&lt;a href=&quot;https://blog.imzjw.cn/&quot;&gt;小嘉的部落格&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;谷歌搜索是每个开发人员最重要的技能之一。&lt;/p&gt;
+&lt;p&gt;让我告诉您如何更好地使用 Google。&lt;/p&gt;
+&lt;p&gt;开始吧！&lt;/p&gt;
+&lt;h2 id=&quot;使用引号精确匹配搜索&quot;&gt;&lt;a href=&quot;#使用引号精确匹配搜索&quot; class=&quot;headerlink&quot; title=&quot;使用引号精确匹配搜索&quot;&gt;&lt;/a&gt;使用引号精确匹配搜索&lt;/h2&gt;&lt;p&gt;e.g &lt;code&gt;&amp;quot;what is javascript&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/npm/cpdd/posts/aae542e3/js.5a7w41oq0xk0.webp&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.cf/categories/%E6%9D%82/"/>
+    
+    
+    <category term="google" scheme="https://ednovas.cf/tags/google/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cloudflare Pages部署</title>
+    <link href="https://ednovas.cf/2021/07/04/cloudflarepages/"/>
+    <id>https://ednovas.cf/2021/07/04/cloudflarepages/</id>
+    <published>2021-07-04T04:56:00.000Z</published>
+    <updated>2021-07-04T06:05:11.089Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Cloudflare-Pages&quot;&gt;&lt;a href=&quot;#Cloudflare-Pages&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Pages&quot;&gt;&lt;/a&gt;Cloudflare Pages&lt;/h2&gt;&lt;h3 id=&quot;Cloudflare-Pages-是什么？&quot;&gt;&lt;a href=&quot;#Cloudflare-Pages-是什么？&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Pages 是什么？&quot;&gt;&lt;/a&gt;Cloudflare Pages 是什么？&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://pages.cloudflare.com/&quot;&gt;Cloudflare Pages&lt;/a&gt; 是一个使用 JAMstack 的网站部署平台，和 GitHub Pages 类似，都是一个静态站点部署平台。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Cloudflare Pages is a JAMstack platform for frontend developers to collaborate and deploy websites.&lt;/p&gt;
+&lt;p&gt;Cloudflare Pages is currently in open beta.&lt;/p&gt;
+&lt;p&gt;来自Cloudflare Pages 官网&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;JAMstack-是什么？&quot;&gt;&lt;a href=&quot;#JAMstack-是什么？&quot; class=&quot;headerlink&quot; title=&quot;JAMstack 是什么？&quot;&gt;&lt;/a&gt;JAMstack 是什么？&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://jamstack.org/&quot;&gt;JAMstack&lt;/a&gt; 最开始是 JavaScript、API、Markup 技术栈的一个缩写，由 Mathias Biilmann 提出（感觉就是为了推销 Netlify 服务的 🤔），当然现在已经不止于此了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup&lt;/p&gt;
+&lt;p&gt;Mathias Biilmann (CEO &amp;amp; Co-founder of Netlify)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;按照官网介绍，现在 JAMstack 是新一代的网站架构，通过预渲染和可重用的 API，使其同时拥有静态和动态站点的优势。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/132321.png&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Jamstack is the new standard architecture for the web. Using Git workflows and modern build tools, pre-rendered content is served to a CDN and made dynamic through APIs and serverless functions. Technologies in the stack include JavaScript frameworks, Static Site Generators, Headless CMSs, and CDNs.&lt;/p&gt;
+&lt;p&gt;Jamstack 官网&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="建站" scheme="https://ednovas.cf/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="cloudflare" scheme="https://ednovas.cf/tags/cloudflare/"/>
+    
+    <category term="cf" scheme="https://ednovas.cf/tags/cf/"/>
+    
+    <category term="cloudflare pages" scheme="https://ednovas.cf/tags/cloudflare-pages/"/>
+    
+    <category term="网站" scheme="https://ednovas.cf/tags/%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>漫城CMS漫画站</title>
+    <link href="https://ednovas.cf/2021/07/03/mccms/"/>
+    <id>https://ednovas.cf/2021/07/03/mccms/</id>
+    <published>2021-07-03T12:56:00.000Z</published>
+    <updated>2021-07-04T04:06:29.919Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;MCCMS&quot;&gt;&lt;a href=&quot;#MCCMS&quot; class=&quot;headerlink&quot; title=&quot;MCCMS&quot;&gt;&lt;/a&gt;MCCMS&lt;/h2&gt;&lt;p&gt;小浣熊是个很好的漫画CMS,但是采集比较麻烦&lt;/p&gt;
+&lt;p&gt;那么,漫城CMS就是一个很好的选择&lt;/p&gt;
+&lt;p&gt;官网: &lt;a href=&quot;https://www.mccms.cn/&quot;&gt;https://www.mccms.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下载直链: &lt;a href=&quot;http://www.chshcms.net/bbs/show/1551.html&quot;&gt;http://www.chshcms.net/bbs/show/1551.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;搭建&quot;&gt;&lt;a href=&quot;#搭建&quot; class=&quot;headerlink&quot; title=&quot;搭建&quot;&gt;&lt;/a&gt;搭建&lt;/h2&gt;&lt;p&gt;新建网站,https重定向,ssl证书&lt;/p&gt;
+&lt;p&gt;复制下载的zip压缩包到网站根目录,然后解压&lt;/p&gt;
+&lt;p&gt;将解压后的文件夹内的全部文件剪切到根目录下&lt;/p&gt;
+&lt;p&gt;将&lt;code&gt;说明文档&lt;/code&gt;中的&lt;code&gt;伪静态规则&lt;/code&gt;文件全扔到根目录内替换&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="CMS" scheme="https://ednovas.cf/tags/CMS/"/>
+    
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.cf/tags/VPS/"/>
+    
+    <category term="漫画站" scheme="https://ednovas.cf/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
+    
+    <category term="漫画" scheme="https://ednovas.cf/tags/%E6%BC%AB%E7%94%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建小浣熊CMS漫画站</title>
+    <link href="https://ednovas.cf/2021/07/03/comiccms/"/>
+    <id>https://ednovas.cf/2021/07/03/comiccms/</id>
+    <published>2021-07-03T10:56:00.000Z</published>
+    <updated>2021-07-04T04:06:42.337Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;小浣熊漫画CMS&quot;&gt;&lt;a href=&quot;#小浣熊漫画CMS&quot; class=&quot;headerlink&quot; title=&quot;小浣熊漫画CMS&quot;&gt;&lt;/a&gt;小浣熊漫画CMS&lt;/h2&gt;&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/hiliqi/xiaohuanxiong&quot;&gt;https://github.com/hiliqi/xiaohuanxiong&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官方博客: &lt;a href=&quot;https://www.xiaohuanxiong.net/&quot;&gt;https://www.xiaohuanxiong.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文档地址: &lt;a href=&quot;https://www.kancloud.cn/hiliqi/raccoon5/1921259&quot;&gt;https://www.kancloud.cn/hiliqi/raccoon5/1921259&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;QQ群：780362399&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;新建一个网站,开启https强跳和证书&lt;/p&gt;
+&lt;p&gt;在网站根目录下,需要先删除全部文件,特别是&lt;code&gt;.user.ini&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;hiliqi&amp;#x2F;xiaohuanxiong.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chown -R www:www .&amp;#x2F; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;php 拓展中安装 &lt;code&gt;redis&lt;/code&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="CMS" scheme="https://ednovas.cf/tags/CMS/"/>
+    
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.cf/tags/VPS/"/>
+    
+    <category term="漫画站" scheme="https://ednovas.cf/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
+    
+    <category term="漫画" scheme="https://ednovas.cf/tags/%E6%BC%AB%E7%94%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何挑选博客框架、在线博客平台</title>
+    <link href="https://ednovas.cf/2021/07/03/blog/"/>
+    <id>https://ednovas.cf/2021/07/03/blog/</id>
+    <published>2021-07-03T02:48:46.000Z</published>
+    <updated>2021-07-03T02:24:19.278Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自Aegisprogram &lt;a href=&quot;https://aegisprogram.github.io/2021/07/01/how-to-choose-a-blog/&quot;&gt;https://aegisprogram.github.io/2021/07/01/how-to-choose-a-blog/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在现在这个信息发达的时代，越来越多非程序员出身的人也想要一个自己的博客。目前也诞生了不少的在线博客网站和博客框架，博客大致分为主要分为动态博客和静态博客两大类。其实关于动态博客和静态博客的选择问题，这个问题的看法还是见仁见智。我在这里简单说说两种博客之间的优劣，以及一些比较友好的在线博客网站。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="博客" scheme="https://ednovas.cf/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="框架" scheme="https://ednovas.cf/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>typecho搭建个人博客</title>
+    <link href="https://ednovas.cf/2021/07/01/typecho/"/>
+    <id>https://ednovas.cf/2021/07/01/typecho/</id>
+    <published>2021-07-01T02:56:00.000Z</published>
+    <updated>2021-07-02T13:38:37.486Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Typecho&quot;&gt;&lt;a href=&quot;#Typecho&quot; class=&quot;headerlink&quot; title=&quot;Typecho&quot;&gt;&lt;/a&gt;Typecho&lt;/h2&gt;&lt;p&gt;项目源码: &lt;a href=&quot;https://github.com/typecho/typecho&quot;&gt;https://github.com/typecho/typecho&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官网: &lt;a href=&quot;https://typecho.org/&quot;&gt;https://typecho.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下载链接: &lt;a href=&quot;https://typecho.org/download&quot;&gt;https://typecho.org/download&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下载正式版即可&lt;/p&gt;
+&lt;p&gt;下载直链(1.1版本): &lt;a href=&quot;https://typecho.org/downloads/1.1-17.10.30-release.tar.gz&quot;&gt;https://typecho.org/downloads/1.1-17.10.30-release.tar.gz&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;搭建&quot;&gt;&lt;a href=&quot;#搭建&quot; class=&quot;headerlink&quot; title=&quot;搭建&quot;&gt;&lt;/a&gt;搭建&lt;/h2&gt;&lt;p&gt;我这里用虚拟主机搭建的&lt;/p&gt;
+&lt;p&gt;先用ftp连接到主机,然后拖入解压后的下载的程序(我使用的是FileZilla)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-01_10-17-18.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.cf/tags/VPS/"/>
+    
+    <category term="博客" scheme="https://ednovas.cf/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="typecho" scheme="https://ednovas.cf/tags/typecho/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建GitHub下载加速站</title>
+    <link href="https://ednovas.cf/2021/07/01/githubweb/"/>
+    <id>https://ednovas.cf/2021/07/01/githubweb/</id>
+    <published>2021-07-01T00:56:00.000Z</published>
+    <updated>2021-07-01T01:17:09.360Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/hunshcn/gh-proxy&quot;&gt;https://github.com/hunshcn/gh-proxy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有Cloudflare Workers无服务器版本以及Python版本&lt;/p&gt;
+&lt;h2 id=&quot;cloudflare-workers&quot;&gt;&lt;a href=&quot;#cloudflare-workers&quot; class=&quot;headerlink&quot; title=&quot;cloudflare workers&quot;&gt;&lt;/a&gt;cloudflare workers&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://workers.cloudflare.com/&quot;&gt;https://workers.cloudflare.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;注册登录账号&lt;/p&gt;
+&lt;p&gt;随便选一个子域名,然后创建一个worker&lt;/p&gt;
+&lt;p&gt;复制以下内容到左侧代码框,Save and deploy 保存并部署&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;index.js&lt;/code&gt; 默认配置下clone走 github.com.cnpmjs.org，项目文件会走jsDeliver，如需走worker，修改Config变量即可&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ASSET_URL&lt;/code&gt; 是静态资源的url（实际上就是现在显示出来的那个输入框单页面）&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.cf/tags/VPS/"/>
+    
+    <category term="下载" scheme="https://ednovas.cf/tags/%E4%B8%8B%E8%BD%BD/"/>
+    
+    <category term="github" scheme="https://ednovas.cf/tags/github/"/>
+    
+    <category term="加速" scheme="https://ednovas.cf/tags/%E5%8A%A0%E9%80%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建狂雨CMS小说站</title>
+    <link href="https://ednovas.cf/2021/06/27/bookcms/"/>
+    <id>https://ednovas.cf/2021/06/27/bookcms/</id>
+    <published>2021-06-27T02:56:00.000Z</published>
+    <updated>2021-07-03T12:23:11.938Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;官网&quot;&gt;&lt;a href=&quot;#官网&quot; class=&quot;headerlink&quot; title=&quot;官网&quot;&gt;&lt;/a&gt;官网&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://bbs.kyxscms.com/&quot;&gt;http://bbs.kyxscms.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;狂雨cms小说采集站&lt;/p&gt;
+&lt;p&gt;官网下载直链: &lt;a href=&quot;http://bbs.kyxscms.com/?s=ajax/downfile/id/1051&quot;&gt;http://bbs.kyxscms.com/?s=ajax/downfile/id/1051&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;EdNovas网盘分流:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ednovas.cloud/s/O0Vu8&quot;&gt;https://ednovas.cloud/s/O0Vu8&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;解析域名,添加网站域名,申请ssl,强制跳转https&lt;/p&gt;
+&lt;p&gt;将下载的zip包放到网站根目录解压缩&lt;/p&gt;
+&lt;p&gt;nginx伪静态改为thinkphp然后保存即可&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="CMS" scheme="https://ednovas.cf/tags/CMS/"/>
+    
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.cf/tags/VPS/"/>
+    
+    <category term="小说站" scheme="https://ednovas.cf/tags/%E5%B0%8F%E8%AF%B4%E7%AB%99/"/>
+    
+    <category term="小说" scheme="https://ednovas.cf/tags/%E5%B0%8F%E8%AF%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WIN10UI————网页win10系统</title>
+    <link href="https://ednovas.cf/2021/06/24/ylui/"/>
+    <id>https://ednovas.cf/2021/06/24/ylui/</id>
+    <published>2021-06-23T21:06:00.000Z</published>
+    <updated>2021-06-24T11:22:51.849Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;YLUI是一款纯前端框架，是对WEB桌面UI的一个大胆尝试。&lt;/p&gt;
+&lt;p&gt;它凝聚了作者近一年的心血，作为WIN10UI开源项目的升级版，承载了作者对WEB桌面设计风格的追求。&lt;/p&gt;
+&lt;p&gt;在前端技术日新月异的背景下，YLUI力图提供一种新的web应用组织形式。&lt;/p&gt;
+&lt;p&gt;如果你正在寻找一个漂亮的UI组件库，你应该选择bootstrap,layui,element-ui等项目。而你想要让这些应用建立联系，构成组织，并提供一个统一的门户，那么YLUI将会是一个不错的选择。&lt;/p&gt;
+&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yuri2peter/ylui&quot;&gt;https://github.com/yuri2peter/ylui&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;说明文档&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/yuri2peter/ylui/tree/master/documents&quot;&gt;https://github.com/yuri2peter/ylui/tree/master/documents&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;搭建&quot;&gt;&lt;a href=&quot;#搭建&quot; class=&quot;headerlink&quot; title=&quot;搭建&quot;&gt;&lt;/a&gt;搭建&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="建站" scheme="https://ednovas.cf/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="网站" scheme="https://ednovas.cf/tags/%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>内网穿透</title>
+    <link href="https://ednovas.cf/2021/06/23/frp/"/>
+    <id>https://ednovas.cf/2021/06/23/frp/</id>
+    <published>2021-06-23T06:06:00.000Z</published>
+    <updated>2021-06-23T14:24:10.861Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;内网穿透，也即NAT 穿透，进行NAT 穿透是为了使具有某一个特定源IP 地址和源端口号的数据包不被NAT 设备屏蔽而正确路由到内网主机。&lt;/p&gt;
+&lt;p&gt;一般来讲,也就是用于从公网环境访问自己的私有设备,让你不在家也能访问家中设备&lt;/p&gt;
+&lt;p&gt;比较好用的内网穿透工具有 frp ngrok ddnsto 等,其中最简单的就是ddnsto了&lt;/p&gt;
+&lt;h2 id=&quot;ddns-to&quot;&gt;&lt;a href=&quot;#ddns-to&quot; class=&quot;headerlink&quot; title=&quot;ddns.to&quot;&gt;&lt;/a&gt;ddns.to&lt;/h2&gt;&lt;p&gt;官网注册账号并登录(微信登录) &lt;a href=&quot;https://www.ddnsto.com/&quot;&gt;https://www.ddnsto.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当外网访问时也是使用微信登录&lt;/p&gt;
+&lt;p&gt;配置极其简单,软路由中选择ddns.to服务,然后填入令牌,启用,保存并应用即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_13-20-05.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;然后外网访问自己绑定的对应内网ip,比如我的就是192.168.2.1&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_13-22-45.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.cf/categories/VPS/"/>
+    
+    
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="frp" scheme="https://ednovas.cf/tags/frp/"/>
+    
+    <category term="ddnsto" scheme="https://ednovas.cf/tags/ddnsto/"/>
+    
+    <category term="内网穿透" scheme="https://ednovas.cf/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网站监控</title>
+    <link href="https://ednovas.cf/2021/06/23/monitor/"/>
+    <id>https://ednovas.cf/2021/06/23/monitor/</id>
+    <published>2021-06-23T06:06:00.000Z</published>
+    <updated>2021-06-24T02:01:55.036Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;网站监控使用说明&quot;&gt;&lt;a href=&quot;#网站监控使用说明&quot; class=&quot;headerlink&quot; title=&quot;网站监控使用说明&quot;&gt;&lt;/a&gt;网站监控使用说明&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://uptimerobot.com/&quot;&gt;https://uptimerobot.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;直接上链接,很好用的一个网站监控存活健康的监视器,注册既可用,免费版就足够使用&lt;/p&gt;
+&lt;p&gt;至于使用也很简单,直接添加网站,选择http,输入网址和名字&lt;/p&gt;
+&lt;p&gt;最后别忘了在状态网站status pages加上你的monitors监视器哦&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_22-27-46.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;还可以设置外观等,但是大多要付费,忽略即可&lt;/p&gt;
+&lt;p&gt;别忘了保存,然后就可以看到你的监控页面啦&lt;/p&gt;
+&lt;h2 id=&quot;DEMO&quot;&gt;&lt;a href=&quot;#DEMO&quot; class=&quot;headerlink&quot; title=&quot;DEMO&quot;&gt;&lt;/a&gt;DEMO&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://stats.uptimerobot.com/ykqXpFNMqx&quot;&gt;https://stats.uptimerobot.com/ykqXpFNMqx&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.cf/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="网站" scheme="https://ednovas.cf/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="监控" scheme="https://ednovas.cf/tags/%E7%9B%91%E6%8E%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于python的全能抢购神器</title>
+    <link href="https://ednovas.cf/2021/06/18/pythonshop/"/>
+    <id>https://ednovas.cf/2021/06/18/pythonshop/</id>
+    <published>2021-06-18T08:30:00.000Z</published>
+    <updated>2021-06-18T08:58:58.643Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;源码&quot;&gt;&lt;a href=&quot;#源码&quot; class=&quot;headerlink&quot; title=&quot;源码&quot;&gt;&lt;/a&gt;源码&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.52pojie.cn/thread-1332572-1-1.html&quot;&gt;https://www.52pojie.cn/thread-1332572-1-1.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://lanren.lanzoux.com/b00u3bumh&quot;&gt;https://lanren.lanzoux.com/b00u3bumh&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;备用下载(2021.03.26版本):&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://onecloud.ednovas.xyz/s/wzSO&quot;&gt;https://onecloud.ednovas.xyz/s/wzSO&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;驱动下载&quot;&gt;&lt;a href=&quot;#驱动下载&quot; class=&quot;headerlink&quot; title=&quot;驱动下载&quot;&gt;&lt;/a&gt;驱动下载&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://chromedriver.chromium.org/downloads&quot;&gt;https://chromedriver.chromium.org/downloads&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;视频讲解&quot;&gt;&lt;a href=&quot;#视频讲解&quot; class=&quot;headerlink&quot; title=&quot;视频讲解&quot;&gt;&lt;/a&gt;视频讲解&lt;/h2&gt;&lt;p&gt;b站官方视频讲解: &lt;a href=&quot;https://www.bilibili.com/video/BV1S54y147xc&quot;&gt;https://www.bilibili.com/video/BV1S54y147xc&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.cf/categories/%E6%9D%82/"/>
+    
+    
+    <category term="抢购" scheme="https://ednovas.cf/tags/%E6%8A%A2%E8%B4%AD/"/>
+    
+    <category term="python" scheme="https://ednovas.cf/tags/python/"/>
+    
+    <category term="京东" scheme="https://ednovas.cf/tags/%E4%BA%AC%E4%B8%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建苹果CMS视频站</title>
+    <link href="https://ednovas.cf/2021/06/11/applecms/"/>
+    <id>https://ednovas.cf/2021/06/11/applecms/</id>
+    <published>2021-06-11T12:56:00.000Z</published>
+    <updated>2021-06-25T12:14:40.226Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;VPS一个，最好高性能的，别用甲骨文！别用甲骨文！别用甲骨文！（被封了两个账号的痛）&lt;/p&gt;
+&lt;p&gt;首先安装aapanel或宝塔，ubuntu的aapanel（aapanel是宝塔国际版，只有英文界面）一键脚本：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -O install.sh http:&amp;#x2F;&amp;#x2F;www.aapanel.com&amp;#x2F;script&amp;#x2F;install-ubuntu_6.0_en.sh &amp;amp;&amp;amp; sudo bash install.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;安装完成后复制黏贴面板地址，输入账号密码进入&lt;/p&gt;
+&lt;p&gt;安装LNMP，使用极速安装，PHP请选择7.0版本+，一般我比较喜欢选7.2和7.4&lt;/p&gt;
+&lt;p&gt;静等一段比较长的时间，大概十到二十分钟，安装速度根据机器性能有所变化&lt;/p&gt;
+&lt;h2 id=&quot;解析&quot;&gt;&lt;a href=&quot;#解析&quot; class=&quot;headerlink&quot; title=&quot;解析&quot;&gt;&lt;/a&gt;解析&lt;/h2&gt;&lt;p&gt;安装完成后解析域名到该VPS的ip地址，记得要关掉小云朵cdn方便申请SSL证书&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ%E5%9B%BE%E7%89%8720210611212443.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.cf/categories/VPS/"/>
+    
+    
+    <category term="CMS" scheme="https://ednovas.cf/tags/CMS/"/>
+    
+    <category term="视频站" scheme="https://ednovas.cf/tags/%E8%A7%86%E9%A2%91%E7%AB%99/"/>
+    
+    <category term="视频" scheme="https://ednovas.cf/tags/%E8%A7%86%E9%A2%91/"/>
+    
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VPS" scheme="https://ednovas.cf/tags/VPS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微软全局管理（API提权）</title>
+    <link href="https://ednovas.cf/2021/06/08/azureapi/"/>
+    <id>https://ednovas.cf/2021/06/08/azureapi/</id>
+    <published>2021-06-08T11:35:00.000Z</published>
+    <updated>2021-06-08T11:42:21.611Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&quot;https://sirbei.com/index.php/archives/22/&quot;&gt;https://sirbei.com/index.php/archives/22/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;注册应用、开通-API&quot;&gt;&lt;a href=&quot;#注册应用、开通-API&quot; class=&quot;headerlink&quot; title=&quot;注册应用、开通 API&quot;&gt;&lt;/a&gt;注册应用、开通 API&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/148165012.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1512344440.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3709738410.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1701175550.png&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;设置-Application-密码&quot;&gt;&lt;a href=&quot;#设置-Application-密码&quot; class=&quot;headerlink&quot; title=&quot;设置 Application 密码&quot;&gt;&lt;/a&gt;设置 Application 密码&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3498537165.png&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;记录密码“值”和“ID”备用。&quot;&gt;&lt;a href=&quot;#记录密码“值”和“ID”备用。&quot; class=&quot;headerlink&quot; title=&quot;记录密码“值”和“ID”备用。&quot;&gt;&lt;/a&gt;记录密码“值”和“ID”备用。&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/195691701.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.cf/categories/%E6%9D%82/"/>
+    
+    
+    <category term="微软" scheme="https://ednovas.cf/tags/%E5%BE%AE%E8%BD%AF/"/>
+    
+    <category term="全局" scheme="https://ednovas.cf/tags/%E5%85%A8%E5%B1%80/"/>
+    
+    <category term="azure" scheme="https://ednovas.cf/tags/azure/"/>
+    
+    <category term="api" scheme="https://ednovas.cf/tags/api/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Graph Explorer自定义Microsoft应用密钥有效期</title>
+    <link href="https://ednovas.cf/2021/06/07/graphexplorer/"/>
+    <id>https://ednovas.cf/2021/06/07/graphexplorer/</id>
+    <published>2021-06-07T06:06:00.000Z</published>
+    <updated>2021-06-20T12:03:42.002Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Graph-Explorer-在线测试API工具&quot;&gt;&lt;a href=&quot;#Graph-Explorer-在线测试API工具&quot; class=&quot;headerlink&quot; title=&quot;Graph Explorer-在线测试API工具&quot;&gt;&lt;/a&gt;Graph Explorer-在线测试API工具&lt;/h2&gt;&lt;p&gt;工具地址: &lt;a href=&quot;https://developer.microsoft.com/zh-cn/graph/graph-explorer&quot;&gt;https://developer.microsoft.com/zh-cn/graph/graph-explorer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Micro Graph API文档: &lt;a href=&quot;https://docs.microsoft.com/zh-CN/graph/api/overview?view=graph-rest-1.0&quot;&gt;https://docs.microsoft.com/zh-CN/graph/api/overview?view=graph-rest-1.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用条件:有Graph Explorer调用API对应所需权限的账号，方便起见直接使用全局管理员&lt;/p&gt;
+&lt;h2 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h2&gt;&lt;h3 id=&quot;AAD中复制应用的对象ID-Object-ID&quot;&gt;&lt;a href=&quot;#AAD中复制应用的对象ID-Object-ID&quot; class=&quot;headerlink&quot; title=&quot;AAD中复制应用的对象ID(Object ID)&quot;&gt;&lt;/a&gt;AAD中复制应用的对象ID(Object ID)&lt;/h3&gt;&lt;h3 id=&quot;Graph-Explorer-中调用API添加密码&quot;&gt;&lt;a href=&quot;#Graph-Explorer-中调用API添加密码&quot; class=&quot;headerlink&quot; title=&quot;Graph Explorer 中调用API添加密码&quot;&gt;&lt;/a&gt;Graph Explorer 中调用API添加密码&lt;/h3&gt;&lt;p&gt;1- 请求类型改为POST,请求地址 &lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;https:&amp;#x2F;&amp;#x2F;graph.microsoft.com&amp;#x2F;v1.0&amp;#x2F;applications&amp;#x2F;&amp;#123;id&amp;#125;&amp;#x2F;addPassword&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;id改为应用的对象ID&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.cf/categories/%E6%9D%82/"/>
+    
+    
+    <category term="微软" scheme="https://ednovas.cf/tags/%E5%BE%AE%E8%BD%AF/"/>
+    
+    <category term="microsoft" scheme="https://ednovas.cf/tags/microsoft/"/>
+    
+    <category term="graph explorer" scheme="https://ednovas.cf/tags/graph-explorer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建一个rss订阅bot</title>
+    <link href="https://ednovas.cf/2021/06/07/rss_bot/"/>
+    <id>https://ednovas.cf/2021/06/07/rss_bot/</id>
+    <published>2021-06-07T06:06:00.000Z</published>
+    <updated>2021-06-21T05:46:35.401Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;搭建一个telegram 上的 rss 订阅 bot，两个项目都不错，这里选用的是flowerss-bot（第一个）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/indes/flowerss-bot&quot;&gt;https://github.com/indes/flowerss-bot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/iovxw/rssbot&quot;&gt;https://github.com/iovxw/rssbot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;部署&quot;&gt;&lt;a href=&quot;#部署&quot; class=&quot;headerlink&quot; title=&quot;部署&quot;&gt;&lt;/a&gt;部署&lt;/h2&gt;&lt;p&gt;官方部署文档：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://flowerss-bot.vercel.app/#/install&quot;&gt;https://flowerss-bot.vercel.app/#/install&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;首先ssh连接上VPS，然后新建文件夹并且下载最新版本releases并解压：&lt;/p&gt;
+&lt;p&gt;（这里使用的是0.8.3版本，可能不是最新版 release地址：&lt;a href=&quot;https://github.com/indes/flowerss-bot/releases%EF%BC%8C%E7%9B%AE%E5%89%8D%E6%B2%A1%E6%9C%89arm%E7%89%88%E6%9C%AC%EF%BC%89&quot;&gt;https://github.com/indes/flowerss-bot/releases，目前没有arm版本）&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir &amp;#x2F;home&amp;#x2F;flowerss &amp;amp;&amp;amp; cd &amp;#x2F;home&amp;#x2F;flowerss&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;indes&amp;#x2F;flowerss-bot&amp;#x2F;releases&amp;#x2F;download&amp;#x2F;v0.8.3&amp;#x2F;flowerss-bot-v0.8.3-linux-amd64.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tar -zxvf flowerss-bot-v0.8.3-linux-amd64.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;copy config.yml.sample config.yml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.cf/categories/VPS/"/>
+    
+    
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="网站" scheme="https://ednovas.cf/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="bot" scheme="https://ednovas.cf/tags/bot/"/>
+    
+    <category term="RSS" scheme="https://ednovas.cf/tags/RSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建订阅转换网站</title>
+    <link href="https://ednovas.cf/2021/06/06/subs/"/>
+    <id>https://ednovas.cf/2021/06/06/subs/</id>
+    <published>2021-06-06T12:29:00.000Z</published>
+    <updated>2021-06-08T22:58:33.316Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;前端：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/CareyWang/sub-web&quot;&gt;https://github.com/CareyWang/sub-web&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;后端：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/tindy2013/subconverter&quot;&gt;https://github.com/tindy2013/subconverter&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;解析域名&quot;&gt;&lt;a href=&quot;#解析域名&quot; class=&quot;headerlink&quot; title=&quot;解析域名&quot;&gt;&lt;/a&gt;解析域名&lt;/h2&gt;&lt;p&gt;先解析两个域名，建议开启小云朵cdn，设置cloudflare的ssl/tls为完全严格&lt;/p&gt;
+&lt;p&gt;一个用作前端，一个用作后端&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_20-48-34.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_20-49-16.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.cf/categories/VPS/"/>
+    
+    
+    <category term="搭建" scheme="https://ednovas.cf/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="网站" scheme="https://ednovas.cf/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="订阅转换" scheme="https://ednovas.cf/tags/%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建 QQ 搜图 bot</title>
+    <link href="https://ednovas.cf/2021/06/05/qqbot/"/>
+    <id>https://ednovas.cf/2021/06/05/qqbot/</id>
+    <published>2021-06-05T12:19:00.000Z</published>
+    <updated>2021-06-06T13:00:19.991Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;项目&quot;&gt;&lt;a href=&quot;#项目&quot; class=&quot;headerlink&quot; title=&quot;项目&quot;&gt;&lt;/a&gt;项目&lt;/h2&gt;&lt;p&gt;主要用到的程序 &lt;a href=&quot;https://github.com/Mrs4s/go-cqhttp&quot;&gt;go-cqhttp&lt;/a&gt; 和 &lt;a href=&quot;https://github.com/Tsuk1ko/cq-picsearcher-bot&quot;&gt;cq-picsearcher-bot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Mrs4s/go-cqhttp&quot;&gt;https://github.com/Mrs4s/go-cqhttp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Tsuk1ko/cq-picsearcher-bot&quot;&gt;https://github.com/Tsuk1ko/cq-picsearcher-bot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h2&gt;&lt;p&gt;需要一台linux VPS&lt;/p&gt;
+&lt;p&gt;（windows系统也可，但是因为各方面原因肯定是不如服务器效果好的）&lt;/p&gt;
+&lt;p&gt;文中服务器已安装宝塔国际版，并用其演示&lt;/p&gt;
+&lt;p&gt;已经使用ssh连接到服务器&lt;/p&gt;
+&lt;h2 id=&quot;下载-go-cqhttp&quot;&gt;&lt;a href=&quot;#下载-go-cqhttp&quot; class=&quot;headerlink&quot; title=&quot;下载 go-cqhttp&quot;&gt;&lt;/a&gt;下载 go-cqhttp&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.cf/categories/VPS/"/>
+    
+    
+    <category term="bot" scheme="https://ednovas.cf/tags/bot/"/>
+    
+    <category term="qq" scheme="https://ednovas.cf/tags/qq/"/>
+    
+    <category term="搜图" scheme="https://ednovas.cf/tags/%E6%90%9C%E5%9B%BE/"/>
+    
+    <category term="机器人" scheme="https://ednovas.cf/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Telegram 创建一个私聊 bot</title>
+    <link href="https://ednovas.cf/2021/05/27/tgpmbot/"/>
+    <id>https://ednovas.cf/2021/05/27/tgpmbot/</id>
+    <published>2021-05-27T06:17:00.000Z</published>
+    <updated>2021-05-27T06:21:11.770Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;文章作者: GarveyZhong&lt;br&gt;文章链接: &lt;a href=&quot;https://blog.imzjw.cn/posts/75dadae5/&quot;&gt;https://blog.imzjw.cn/posts/75dadae5/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;本文章是针对那些 Telegram 是 +86 用户和在意自己隐私问题所记录的一篇教程。&lt;/p&gt;
+&lt;p&gt;看完本章教程之后，用户就可以和你所创建的机器人聊天，由机器人转发该用户的私聊消息，通过回复机器人所转发的消息即可回复用户，同时还可以减少窗口的数量且也保障了自己一定的隐私问题。&lt;/p&gt;
+&lt;p&gt;对于 +86 用户来说，基本可以满足，不过貌似可以通过 &lt;a href=&quot;https://t.me/SpamBot&quot;&gt;@SpamBot&lt;/a&gt; 申诉解除限制，但万一如果你的朋友也是 +86 的话，他就不能和你联系了，你也告诉不了他可以通过 &lt;a href=&quot;https://t.me/SpamBot&quot;&gt;@SpamBot&lt;/a&gt; 解除。&lt;/p&gt;
+&lt;h2 id=&quot;创建机器人&quot;&gt;&lt;a href=&quot;#创建机器人&quot; class=&quot;headerlink&quot; title=&quot;创建机器人&quot;&gt;&lt;/a&gt;创建机器人&lt;/h2&gt;&lt;p&gt;点击 &lt;a href=&quot;https://t.me/BotFather&quot;&gt;@BotFather&lt;/a&gt; ，通过机器人之父创建一个机器人。&lt;/p&gt;
+&lt;p&gt;向它发送 /newbot 指令&lt;/p&gt;
+&lt;p&gt;然后就会问你准备要给机器人起一个什么名字（随意，可以中文）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/npm/cpdd/posts/75dadae5/20210524222523.webp&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.cf/categories/%E6%9D%82/"/>
+    
+    
+    <category term="telegram" scheme="https://ednovas.cf/tags/telegram/"/>
+    
+    <category term="tg" scheme="https://ednovas.cf/tags/tg/"/>
+    
+    <category term="bot" scheme="https://ednovas.cf/tags/bot/"/>
+    
+    <category term="机器人" scheme="https://ednovas.cf/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+    <category term="私聊" scheme="https://ednovas.cf/tags/%E7%A7%81%E8%81%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>别好奇，暗网真的没意思</title>
+    <link href="https://ednovas.cf/2021/05/24/darkweb/"/>
+    <id>https://ednovas.cf/2021/05/24/darkweb/</id>
+    <published>2021-05-24T13:37:00.000Z</published>
+    <updated>2021-05-24T14:01:57.139Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;有光明的地方，就有黑暗。阳光下的所有美好，都有它的阴暗面。&lt;/p&gt;
+&lt;p&gt;提起暗网，你第一想到的是什么？&lt;/p&gt;
+&lt;p&gt;军火交易？人口贩卖？直播暗杀？&lt;/p&gt;
+&lt;p&gt;假如你在搜索引擎搜索暗网，你会发现大多数媒体口中描述的暗网是黄赌毒聚集地，犯罪者的天堂。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/31ad1ef11abdb1271583de78edc580b5.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;而网上那些自称去过暗网的人，都会表示非常后悔，看了不该看的东西。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/47d811d7810d004f86c6701a895e26b3.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/fb531057ad0b3658a77a136fc23bdab1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;虽然我们都知道网络不是法外之地，但通过双向加密后的暗网，却是互联网真正的法外之地。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.cf/categories/%E6%9D%82/"/>
+    
+    
+    <category term="暗网" scheme="https://ednovas.cf/tags/%E6%9A%97%E7%BD%91/"/>
+    
+    <category term="onion" scheme="https://ednovas.cf/tags/onion/"/>
+    
+    <category term="tor" scheme="https://ednovas.cf/tags/tor/"/>
+    
+  </entry>
+  
+</feed>
