@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>Hexo添加随机文章功能</title>
+      <link href="2021/07/16/hexorandom/"/>
+      <url>2021/07/16/hexorandom/</url>
+      
+        <content type="html"><![CDATA[<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p>hexo自带有这个插件<code>hexo-generator-random</code></p><p>GitHub项目地址：<a href="https://github.com/Drew233/hexo-generator-random">https://github.com/Drew233/hexo-generator-random</a></p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>npm先需要安装依赖</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install object-assign</span><br></pre></td></tr></table></figure><p>安装插件</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-random --save</span><br></pre></td></tr></table></figure><p>然后再照常<code>hexo d -g</code>，public下就会有个<code>random.html</code>的文件了</p><p>菜单栏可以添加上该地址</p><p>menu:<br>    Random | 随机文章： /random.html || fas fa-random</p><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><a href="https://ednovas.xyz/random.html">https://ednovas.xyz/random.html</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 建站 </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 随机 </tag>
+            
+            <tag> random </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>像专业人士一样使用 Google</title>
       <link href="2021/07/04/google/"/>
       <url>2021/07/04/google/</url>
@@ -3479,7 +3512,7 @@
       <link href="2021/02/01/clashlanguage/"/>
       <url>2021/02/01/clashlanguage/</url>
       
-        <content type="html"><![CDATA[<h2 id="汉化包下载"><a href="#汉化包下载" class="headerlink" title="汉化包下载"></a>汉化包下载</h2><p>可能不是最新版本</p><p>0.15.1: <a href="https://ednovas.lanzoux.com/b00zyk3kd">https://ednovas.lanzoux.com/b00zyk3kd</a></p><p>最新版请前往 telegram 汉化包更新频道获取</p><p><a href="https://t.me/ClashR_for_Windows_Channel">https://t.me/ClashR_for_Windows_Channel</a></p><h2 id="Windows-平台汉化"><a href="#Windows-平台汉化" class="headerlink" title="Windows 平台汉化"></a>Windows 平台汉化</h2><p>请自行替换下列路径中的app.asar文件</p><p>默认路径是 <code>C:\Program Files\Clash for Windows\resources\app.asar</code></p><p><code>...\Clash for Windows\resources\app.asar</code></p><h2 id="MacOS-平台汉化"><a href="#MacOS-平台汉化" class="headerlink" title="MacOS 平台汉化"></a>MacOS 平台汉化</h2><p>依次打开 – 访达 – 应用程序 – 右键 Clash for Windows – 显示包内容 – Contents – Resources 替换 app.asar 文件即可。</p><h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>此汉化包仅在 Windows 版本测试。</p><p>如果 Clash For Windows 正在运行，请先退出</p><h2 id="自己汉化方法"><a href="#自己汉化方法" class="headerlink" title="自己汉化方法"></a>自己汉化方法</h2><p>Clash的文字相关配置都在Clash for Windows\resources\app.asar 中。</p><p>这个文件不能用普通压缩软件解压。需要用到node.js 的 npm,用npm安装asar，然后又asar解析app.asar文件，更改里面的变量，达到汉化的目的。</p><ol><li><p>安装 node.js，node.js 里面自带npm包管理器;</p></li><li><p>用 npm 安装 asar;</p></li></ol><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g asar</span><br></pre></td></tr></table></figure><p>检查是否安装成功</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">asar --version</span><br></pre></td></tr></table></figure><p>如果没有正常输出版本号，就要手动配置环境变量</p><ol><li>用 asar，解析 app.asar 文件;</li></ol><p>如果安装成功，就能尝试解包了。输入</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">asar extract app.asar 文件夹名</span><br></pre></td></tr></table></figure><p>然后文件就会解压到指定文件夹中，正常情况下命令行中不会有输出。</p><p>然后找到 renderer.js（在Clash for Windows\resources\文件夹名\dist\electron目录下），用vscode或者记事本之类的打开，进行查找替换，替换时，如果只是一个单词比如按钮之类的，可以两边加上双引号（英文的双引号），并勾上区分大小写，然后替换，就不会不小心替换了别的代码。</p><p>两个单词以上的，就不一定放在一起了，需要自行查找。反正凡是没被双引号包括的内容不能替换，双引号内的也要谨慎替换。</p><ol><li><p>更改文件里的变量，就是翻译成中文</p></li><li><p>想要汉化哪个单词就搜索哪个，逐个替换</p></li><li><p>翻译完成将文件压缩回 app.asar</p></li></ol><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">asar pack 文件夹名 app.asar</span><br></pre></td></tr></table></figure><p>重新打开软件，汉化完成。</p><blockquote><p><a href="http://91guangju.com/index.php/archives/356/">http://91guangju.com/index.php/archives/356/</a></p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h2 id="汉化包下载"><a href="#汉化包下载" class="headerlink" title="汉化包下载"></a>汉化包下载</h2><p>可能不是最新版本</p><p>0.15.1: <a href="https://ednovas.lanzoux.com/b00zyk3kd">https://ednovas.lanzoux.com/b00zyk3kd</a></p><p>最新版请前往 telegram 汉化包更新频道获取：</p><p><a href="https://t.me/ClashR_for_Windows_Channel">https://t.me/ClashR_for_Windows_Channel</a></p><p>或者前往GitHub获取最新汉化包下载：</p><p><a href="https://github.com/BoyceLig/Clash_Chinese_Patch/releases">https://github.com/BoyceLig/Clash_Chinese_Patch/releases</a></p><h2 id="Windows-平台汉化"><a href="#Windows-平台汉化" class="headerlink" title="Windows 平台汉化"></a>Windows 平台汉化</h2><p>请自行替换下列路径中的app.asar文件</p><p>默认路径是 <code>C:\Program Files\Clash for Windows\resources\app.asar</code></p><p><code>...\Clash for Windows\resources\app.asar</code></p><h2 id="MacOS-平台汉化"><a href="#MacOS-平台汉化" class="headerlink" title="MacOS 平台汉化"></a>MacOS 平台汉化</h2><p>依次打开 – 访达 – 应用程序 – 右键 Clash for Windows – 显示包内容 – Contents – Resources 替换 app.asar 文件即可。</p><h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>此汉化包仅在 Windows 版本测试。</p><p>如果 Clash For Windows 正在运行，请先退出</p><h2 id="自己汉化方法"><a href="#自己汉化方法" class="headerlink" title="自己汉化方法"></a>自己汉化方法</h2><p>Clash的文字相关配置都在Clash for Windows\resources\app.asar 中。</p><p>这个文件不能用普通压缩软件解压。需要用到node.js 的 npm,用npm安装asar，然后又asar解析app.asar文件，更改里面的变量，达到汉化的目的。</p><ol><li><p>安装 node.js，node.js 里面自带npm包管理器;</p></li><li><p>用 npm 安装 asar;</p></li></ol><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g asar</span><br></pre></td></tr></table></figure><p>检查是否安装成功</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">asar --version</span><br></pre></td></tr></table></figure><p>如果没有正常输出版本号，就要手动配置环境变量</p><ol><li>用 asar，解析 app.asar 文件;</li></ol><p>如果安装成功，就能尝试解包了。输入</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">asar extract app.asar 文件夹名</span><br></pre></td></tr></table></figure><p>然后文件就会解压到指定文件夹中，正常情况下命令行中不会有输出。</p><p>然后找到 renderer.js（在Clash for Windows\resources\文件夹名\dist\electron目录下），用vscode或者记事本之类的打开，进行查找替换，替换时，如果只是一个单词比如按钮之类的，可以两边加上双引号（英文的双引号），并勾上区分大小写，然后替换，就不会不小心替换了别的代码。</p><p>两个单词以上的，就不一定放在一起了，需要自行查找。反正凡是没被双引号包括的内容不能替换，双引号内的也要谨慎替换。</p><ol><li><p>更改文件里的变量，就是翻译成中文</p></li><li><p>想要汉化哪个单词就搜索哪个，逐个替换</p></li><li><p>翻译完成将文件压缩回 app.asar</p></li></ol><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">asar pack 文件夹名 app.asar</span><br></pre></td></tr></table></figure><p>重新打开软件，汉化完成。</p><blockquote><p><a href="http://91guangju.com/index.php/archives/356/">http://91guangju.com/index.php/archives/356/</a></p></blockquote>]]></content>
       
       
       <categories>

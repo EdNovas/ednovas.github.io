@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-07-04T08:48:39.418Z</updated>
+  <updated>2021-07-16T10:31:09.143Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo添加随机文章功能</title>
+    <link href="https://ednovas.xyz/2021/07/16/hexorandom/"/>
+    <id>https://ednovas.xyz/2021/07/16/hexorandom/</id>
+    <published>2021-07-16T10:56:00.000Z</published>
+    <updated>2021-07-16T10:31:09.143Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;插件&quot;&gt;&lt;a href=&quot;#插件&quot; class=&quot;headerlink&quot; title=&quot;插件&quot;&gt;&lt;/a&gt;插件&lt;/h2&gt;&lt;p&gt;hexo自带有这个插件&lt;code&gt;hexo-generator-random&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;GitHub项目地址：&lt;a href=&quot;https://github.com/Drew233/hexo-generator-random&quot;&gt;https://github.com/Drew233/hexo-generator-random&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;npm先需要安装依赖&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install object-assign&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;安装插件&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-random --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后再照常&lt;code&gt;hexo d -g&lt;/code&gt;，public下就会有个&lt;code&gt;random.html&lt;/code&gt;的文件了&lt;/p&gt;
+&lt;p&gt;菜单栏可以添加上该地址&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="hexo" scheme="https://ednovas.xyz/tags/hexo/"/>
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="随机" scheme="https://ednovas.xyz/tags/%E9%9A%8F%E6%9C%BA/"/>
+    
+    <category term="random" scheme="https://ednovas.xyz/tags/random/"/>
+    
+  </entry>
   
   <entry>
     <title>像专业人士一样使用 Google</title>
@@ -616,37 +650,6 @@
     <category term="机器人" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
     <category term="私聊" scheme="https://ednovas.xyz/tags/%E7%A7%81%E8%81%8A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>别好奇，暗网真的没意思</title>
-    <link href="https://ednovas.xyz/2021/05/24/darkweb/"/>
-    <id>https://ednovas.xyz/2021/05/24/darkweb/</id>
-    <published>2021-05-24T13:37:00.000Z</published>
-    <updated>2021-05-24T14:01:57.139Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;有光明的地方，就有黑暗。阳光下的所有美好，都有它的阴暗面。&lt;/p&gt;
-&lt;p&gt;提起暗网，你第一想到的是什么？&lt;/p&gt;
-&lt;p&gt;军火交易？人口贩卖？直播暗杀？&lt;/p&gt;
-&lt;p&gt;假如你在搜索引擎搜索暗网，你会发现大多数媒体口中描述的暗网是黄赌毒聚集地，犯罪者的天堂。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/31ad1ef11abdb1271583de78edc580b5.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;而网上那些自称去过暗网的人，都会表示非常后悔，看了不该看的东西。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/47d811d7810d004f86c6701a895e26b3.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/fb531057ad0b3658a77a136fc23bdab1.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;虽然我们都知道网络不是法外之地，但通过双向加密后的暗网，却是互联网真正的法外之地。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="暗网" scheme="https://ednovas.xyz/tags/%E6%9A%97%E7%BD%91/"/>
-    
-    <category term="onion" scheme="https://ednovas.xyz/tags/onion/"/>
-    
-    <category term="tor" scheme="https://ednovas.xyz/tags/tor/"/>
     
   </entry>
   
