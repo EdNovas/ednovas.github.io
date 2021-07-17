@@ -44,9 +44,9 @@
     
     <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
     
-    <category term="随机" scheme="https://ednovas.xyz/tags/%E9%9A%8F%E6%9C%BA/"/>
-    
     <category term="random" scheme="https://ednovas.xyz/tags/random/"/>
+    
+    <category term="随机" scheme="https://ednovas.xyz/tags/%E9%9A%8F%E6%9C%BA/"/>
     
   </entry>
   
@@ -233,11 +233,11 @@
     <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
+    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
     <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
     
     <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="typecho" scheme="https://ednovas.xyz/tags/typecho/"/>
     
