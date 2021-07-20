@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-07-20T02:40:34.033Z</updated>
+  <updated>2021-07-20T12:26:07.711Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何使用hugo+github pages搭建一个个人博客</title>
+    <link href="https://ednovas.xyz/2021/07/20/hugo/"/>
+    <id>https://ednovas.xyz/2021/07/20/hugo/</id>
+    <published>2021-07-20T12:30:00.000Z</published>
+    <updated>2021-07-20T12:26:07.711Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自 Aegisprogram &lt;a href=&quot;https://aegisprogram.github.io/posts/975b52b0.html&quot;&gt;https://aegisprogram.github.io/posts/975b52b0.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;除了可以使用hexo来搭建个人博客之外，我们还可以使用hugo博客框架来搭建自己的个人博客。hugo和hexo相比搭建过程更加的简单快捷，需要的依赖较少，搭建过程不容易出错，对于新手来说更加的友好一些。所以如果你还没能成功搭建起hexo博客的话，那么不妨试试hugo+github pages搭建。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="github" scheme="https://ednovas.xyz/tags/github/"/>
+    
+    <category term="hugo" scheme="https://ednovas.xyz/tags/hugo/"/>
+    
+    <category term="blog" scheme="https://ednovas.xyz/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搜索引擎列表</title>
+    <link href="https://ednovas.xyz/2021/07/20/search-engines-list/"/>
+    <id>https://ednovas.xyz/2021/07/20/search-engines-list/</id>
+    <published>2021-07-20T12:27:00.000Z</published>
+    <updated>2021-07-20T12:21:24.712Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自 Aegisprogram &lt;a href=&quot;https://aegisprogram.github.io/posts/3038875764.html&quot;&gt;https://aegisprogram.github.io/posts/3038875764.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;搜索引擎已经成为我们上网活动中必不可少的一部分，像大家熟知的国外的Google，中国的百度，这些都已经成为人们从网上获取信息的重要工具。很多人苦于百度的广告，但是又对国内无法使用Google搜索而感到无奈（科学上网有一定的门槛，所以只有少部分人才会的）。搜索引擎发展至今，到现在搜索引擎市场也诞生了不少的“优秀分子”，下面我将对这些搜索引擎进行盘点。&lt;/p&gt;
+&lt;p&gt;提示：下面的搜索引擎盘点中并不会包含百度等其他的一些国内的乱七八糟的搜索引擎，国内百度并不是说不能用，只是觉得我要的信息是要在广告里面找出来的，这很耽误时间。其他的像360搜索之类的搜索服务做的还不如百度，也就没有列举的必要了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="搜索" scheme="https://ednovas.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+    <category term="search" scheme="https://ednovas.xyz/tags/search/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux非root用户登录</title>
@@ -581,66 +636,6 @@
     <category term="azure" scheme="https://ednovas.xyz/tags/azure/"/>
     
     <category term="api" scheme="https://ednovas.xyz/tags/api/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Graph Explorer自定义Microsoft应用密钥有效期</title>
-    <link href="https://ednovas.xyz/2021/06/07/graphexplorer/"/>
-    <id>https://ednovas.xyz/2021/06/07/graphexplorer/</id>
-    <published>2021-06-07T06:06:00.000Z</published>
-    <updated>2021-06-20T12:03:42.002Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;Graph-Explorer-在线测试API工具&quot;&gt;&lt;a href=&quot;#Graph-Explorer-在线测试API工具&quot; class=&quot;headerlink&quot; title=&quot;Graph Explorer-在线测试API工具&quot;&gt;&lt;/a&gt;Graph Explorer-在线测试API工具&lt;/h2&gt;&lt;p&gt;工具地址: &lt;a href=&quot;https://developer.microsoft.com/zh-cn/graph/graph-explorer&quot;&gt;https://developer.microsoft.com/zh-cn/graph/graph-explorer&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Micro Graph API文档: &lt;a href=&quot;https://docs.microsoft.com/zh-CN/graph/api/overview?view=graph-rest-1.0&quot;&gt;https://docs.microsoft.com/zh-CN/graph/api/overview?view=graph-rest-1.0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;使用条件:有Graph Explorer调用API对应所需权限的账号，方便起见直接使用全局管理员&lt;/p&gt;
-&lt;h2 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h2&gt;&lt;h3 id=&quot;AAD中复制应用的对象ID-Object-ID&quot;&gt;&lt;a href=&quot;#AAD中复制应用的对象ID-Object-ID&quot; class=&quot;headerlink&quot; title=&quot;AAD中复制应用的对象ID(Object ID)&quot;&gt;&lt;/a&gt;AAD中复制应用的对象ID(Object ID)&lt;/h3&gt;&lt;h3 id=&quot;Graph-Explorer-中调用API添加密码&quot;&gt;&lt;a href=&quot;#Graph-Explorer-中调用API添加密码&quot; class=&quot;headerlink&quot; title=&quot;Graph Explorer 中调用API添加密码&quot;&gt;&lt;/a&gt;Graph Explorer 中调用API添加密码&lt;/h3&gt;&lt;p&gt;1- 请求类型改为POST,请求地址 &lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;https:&amp;#x2F;&amp;#x2F;graph.microsoft.com&amp;#x2F;v1.0&amp;#x2F;applications&amp;#x2F;&amp;#123;id&amp;#125;&amp;#x2F;addPassword&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;id改为应用的对象ID&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="微软" scheme="https://ednovas.xyz/tags/%E5%BE%AE%E8%BD%AF/"/>
-    
-    <category term="microsoft" scheme="https://ednovas.xyz/tags/microsoft/"/>
-    
-    <category term="graph explorer" scheme="https://ednovas.xyz/tags/graph-explorer/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建一个rss订阅bot</title>
-    <link href="https://ednovas.xyz/2021/06/07/rss_bot/"/>
-    <id>https://ednovas.xyz/2021/06/07/rss_bot/</id>
-    <published>2021-06-07T06:06:00.000Z</published>
-    <updated>2021-06-21T05:46:35.401Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;搭建一个telegram 上的 rss 订阅 bot，两个项目都不错，这里选用的是flowerss-bot（第一个）&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/indes/flowerss-bot&quot;&gt;https://github.com/indes/flowerss-bot&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/iovxw/rssbot&quot;&gt;https://github.com/iovxw/rssbot&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;部署&quot;&gt;&lt;a href=&quot;#部署&quot; class=&quot;headerlink&quot; title=&quot;部署&quot;&gt;&lt;/a&gt;部署&lt;/h2&gt;&lt;p&gt;官方部署文档：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://flowerss-bot.vercel.app/#/install&quot;&gt;https://flowerss-bot.vercel.app/#/install&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;首先ssh连接上VPS，然后新建文件夹并且下载最新版本releases并解压：&lt;/p&gt;
-&lt;p&gt;（这里使用的是0.8.3版本，可能不是最新版 release地址：&lt;a href=&quot;https://github.com/indes/flowerss-bot/releases%EF%BC%8C%E7%9B%AE%E5%89%8D%E6%B2%A1%E6%9C%89arm%E7%89%88%E6%9C%AC%EF%BC%89&quot;&gt;https://github.com/indes/flowerss-bot/releases，目前没有arm版本）&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir &amp;#x2F;home&amp;#x2F;flowerss &amp;amp;&amp;amp; cd &amp;#x2F;home&amp;#x2F;flowerss&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;indes&amp;#x2F;flowerss-bot&amp;#x2F;releases&amp;#x2F;download&amp;#x2F;v0.8.3&amp;#x2F;flowerss-bot-v0.8.3-linux-amd64.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tar -zxvf flowerss-bot-v0.8.3-linux-amd64.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;copy config.yml.sample config.yml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
-    
-    <category term="RSS" scheme="https://ednovas.xyz/tags/RSS/"/>
     
   </entry>
   
