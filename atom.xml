@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-07-16T10:31:09.143Z</updated>
+  <updated>2021-07-20T02:25:49.971Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CentOS 7 firewalld指令</title>
+    <link href="https://ednovas.xyz/2021/07/20/firewalld/"/>
+    <id>https://ednovas.xyz/2021/07/20/firewalld/</id>
+    <published>2021-07-20T02:14:00.000Z</published>
+    <updated>2021-07-20T02:25:49.971Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;运行、停止、禁用firewalld&quot;&gt;&lt;a href=&quot;#运行、停止、禁用firewalld&quot; class=&quot;headerlink&quot; title=&quot;运行、停止、禁用firewalld&quot;&gt;&lt;/a&gt;运行、停止、禁用firewalld&lt;/h2&gt;&lt;h3 id=&quot;启动&quot;&gt;&lt;a href=&quot;#启动&quot; class=&quot;headerlink&quot; title=&quot;启动&quot;&gt;&lt;/a&gt;启动&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;systemctl start  firewalld&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;查看状态&quot;&gt;&lt;a href=&quot;#查看状态&quot; class=&quot;headerlink&quot; title=&quot;查看状态&quot;&gt;&lt;/a&gt;查看状态&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;systemctl status firewalld &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;或者 &lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;firewall-cmd --state&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;停止&quot;&gt;&lt;a href=&quot;#停止&quot; class=&quot;headerlink&quot; title=&quot;停止&quot;&gt;&lt;/a&gt;停止&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;systemctl disable firewalld&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;禁用&quot;&gt;&lt;a href=&quot;#禁用&quot; class=&quot;headerlink&quot; title=&quot;禁用&quot;&gt;&lt;/a&gt;禁用&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
+    
+    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
+    
+    <category term="firewall" scheme="https://ednovas.xyz/tags/firewall/"/>
+    
+    <category term="centos" scheme="https://ednovas.xyz/tags/centos/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo添加随机文章功能</title>
     <link href="https://ednovas.xyz/2021/07/16/hexorandom/"/>
     <id>https://ednovas.xyz/2021/07/16/hexorandom/</id>
     <published>2021-07-16T10:56:00.000Z</published>
-    <updated>2021-07-16T10:31:09.143Z</updated>
+    <updated>2021-07-20T02:12:30.904Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;插件&quot;&gt;&lt;a href=&quot;#插件&quot; class=&quot;headerlink&quot; title=&quot;插件&quot;&gt;&lt;/a&gt;插件&lt;/h2&gt;&lt;p&gt;hexo自带有这个插件&lt;code&gt;hexo-generator-random&lt;/code&gt;&lt;/p&gt;
@@ -614,42 +644,6 @@
     <category term="搜图" scheme="https://ednovas.xyz/tags/%E6%90%9C%E5%9B%BE/"/>
     
     <category term="机器人" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Telegram 创建一个私聊 bot</title>
-    <link href="https://ednovas.xyz/2021/05/27/tgpmbot/"/>
-    <id>https://ednovas.xyz/2021/05/27/tgpmbot/</id>
-    <published>2021-05-27T06:17:00.000Z</published>
-    <updated>2021-05-27T06:21:11.770Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;文章作者: GarveyZhong&lt;br&gt;文章链接: &lt;a href=&quot;https://blog.imzjw.cn/posts/75dadae5/&quot;&gt;https://blog.imzjw.cn/posts/75dadae5/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;本文章是针对那些 Telegram 是 +86 用户和在意自己隐私问题所记录的一篇教程。&lt;/p&gt;
-&lt;p&gt;看完本章教程之后，用户就可以和你所创建的机器人聊天，由机器人转发该用户的私聊消息，通过回复机器人所转发的消息即可回复用户，同时还可以减少窗口的数量且也保障了自己一定的隐私问题。&lt;/p&gt;
-&lt;p&gt;对于 +86 用户来说，基本可以满足，不过貌似可以通过 &lt;a href=&quot;https://t.me/SpamBot&quot;&gt;@SpamBot&lt;/a&gt; 申诉解除限制，但万一如果你的朋友也是 +86 的话，他就不能和你联系了，你也告诉不了他可以通过 &lt;a href=&quot;https://t.me/SpamBot&quot;&gt;@SpamBot&lt;/a&gt; 解除。&lt;/p&gt;
-&lt;h2 id=&quot;创建机器人&quot;&gt;&lt;a href=&quot;#创建机器人&quot; class=&quot;headerlink&quot; title=&quot;创建机器人&quot;&gt;&lt;/a&gt;创建机器人&lt;/h2&gt;&lt;p&gt;点击 &lt;a href=&quot;https://t.me/BotFather&quot;&gt;@BotFather&lt;/a&gt; ，通过机器人之父创建一个机器人。&lt;/p&gt;
-&lt;p&gt;向它发送 /newbot 指令&lt;/p&gt;
-&lt;p&gt;然后就会问你准备要给机器人起一个什么名字（随意，可以中文）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/npm/cpdd/posts/75dadae5/20210524222523.webp&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="telegram" scheme="https://ednovas.xyz/tags/telegram/"/>
-    
-    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
-    
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
-    
-    <category term="机器人" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
-    
-    <category term="私聊" scheme="https://ednovas.xyz/tags/%E7%A7%81%E8%81%8A/"/>
     
   </entry>
   
