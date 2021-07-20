@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-07-20T02:25:49.971Z</updated>
+  <updated>2021-07-20T02:38:16.342Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux非root用户登录</title>
+    <link href="https://ednovas.xyz/2021/07/20/linuxnoroot/"/>
+    <id>https://ednovas.xyz/2021/07/20/linuxnoroot/</id>
+    <published>2021-07-20T02:27:00.000Z</published>
+    <updated>2021-07-20T02:38:16.342Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;创建非root用户&quot;&gt;&lt;a href=&quot;#创建非root用户&quot; class=&quot;headerlink&quot; title=&quot;创建非root用户&quot;&gt;&lt;/a&gt;创建非root用户&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;useradd -m ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;给ednovas用户设置密码&quot;&gt;&lt;a href=&quot;#给ednovas用户设置密码&quot; class=&quot;headerlink&quot; title=&quot;给ednovas用户设置密码&quot;&gt;&lt;/a&gt;给ednovas用户设置密码&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;passwd ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;切换用户到ednovas&quot;&gt;&lt;a href=&quot;#切换用户到ednovas&quot; class=&quot;headerlink&quot; title=&quot;切换用户到ednovas&quot;&gt;&lt;/a&gt;切换用户到ednovas&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;su ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;cd到ednovas的当前目录&quot;&gt;&lt;a href=&quot;#cd到ednovas的当前目录&quot; class=&quot;headerlink&quot; title=&quot;cd到ednovas的当前目录&quot;&gt;&lt;/a&gt;cd到ednovas的当前目录&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;在ednovas的目录下创一个-ssh的文件夹并给它的权限设为700&quot;&gt;&lt;a href=&quot;#在ednovas的目录下创一个-ssh的文件夹并给它的权限设为700&quot; class=&quot;headerlink&quot; title=&quot;在ednovas的目录下创一个.ssh的文件夹并给它的权限设为700&quot;&gt;&lt;/a&gt;在ednovas的目录下创一个.ssh的文件夹并给它的权限设为700&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir .ssh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chmod 700 .ssh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
+    
+    <category term="root" scheme="https://ednovas.xyz/tags/root/"/>
+    
+    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CentOS 7 firewalld指令</title>
     <link href="https://ednovas.xyz/2021/07/20/firewalld/"/>
     <id>https://ednovas.xyz/2021/07/20/firewalld/</id>
     <published>2021-07-20T02:14:00.000Z</published>
-    <updated>2021-07-20T02:25:49.971Z</updated>
+    <updated>2021-07-20T02:27:08.409Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;运行、停止、禁用firewalld&quot;&gt;&lt;a href=&quot;#运行、停止、禁用firewalld&quot; class=&quot;headerlink&quot; title=&quot;运行、停止、禁用firewalld&quot;&gt;&lt;/a&gt;运行、停止、禁用firewalld&lt;/h2&gt;&lt;h3 id=&quot;启动&quot;&gt;&lt;a href=&quot;#启动&quot; class=&quot;headerlink&quot; title=&quot;启动&quot;&gt;&lt;/a&gt;启动&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;systemctl start  firewalld&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -612,38 +639,6 @@
     <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
     
     <category term="订阅转换" scheme="https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建 QQ 搜图 bot</title>
-    <link href="https://ednovas.xyz/2021/06/05/qqbot/"/>
-    <id>https://ednovas.xyz/2021/06/05/qqbot/</id>
-    <published>2021-06-05T12:19:00.000Z</published>
-    <updated>2021-06-06T13:00:19.991Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;项目&quot;&gt;&lt;a href=&quot;#项目&quot; class=&quot;headerlink&quot; title=&quot;项目&quot;&gt;&lt;/a&gt;项目&lt;/h2&gt;&lt;p&gt;主要用到的程序 &lt;a href=&quot;https://github.com/Mrs4s/go-cqhttp&quot;&gt;go-cqhttp&lt;/a&gt; 和 &lt;a href=&quot;https://github.com/Tsuk1ko/cq-picsearcher-bot&quot;&gt;cq-picsearcher-bot&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/Mrs4s/go-cqhttp&quot;&gt;https://github.com/Mrs4s/go-cqhttp&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/Tsuk1ko/cq-picsearcher-bot&quot;&gt;https://github.com/Tsuk1ko/cq-picsearcher-bot&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h2&gt;&lt;p&gt;需要一台linux VPS&lt;/p&gt;
-&lt;p&gt;（windows系统也可，但是因为各方面原因肯定是不如服务器效果好的）&lt;/p&gt;
-&lt;p&gt;文中服务器已安装宝塔国际版，并用其演示&lt;/p&gt;
-&lt;p&gt;已经使用ssh连接到服务器&lt;/p&gt;
-&lt;h2 id=&quot;下载-go-cqhttp&quot;&gt;&lt;a href=&quot;#下载-go-cqhttp&quot; class=&quot;headerlink&quot; title=&quot;下载 go-cqhttp&quot;&gt;&lt;/a&gt;下载 go-cqhttp&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
-    
-    <category term="qq" scheme="https://ednovas.xyz/tags/qq/"/>
-    
-    <category term="搜图" scheme="https://ednovas.xyz/tags/%E6%90%9C%E5%9B%BE/"/>
-    
-    <category term="机器人" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
   </entry>
   
