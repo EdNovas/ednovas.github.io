@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-07-20T02:38:16.342Z</updated>
+  <updated>2021-07-20T02:40:34.033Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ednovas.xyz/2021/07/20/linuxnoroot/"/>
     <id>https://ednovas.xyz/2021/07/20/linuxnoroot/</id>
     <published>2021-07-20T02:27:00.000Z</published>
-    <updated>2021-07-20T02:38:16.342Z</updated>
+    <updated>2021-07-20T02:40:34.033Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;创建非root用户&quot;&gt;&lt;a href=&quot;#创建非root用户&quot; class=&quot;headerlink&quot; title=&quot;创建非root用户&quot;&gt;&lt;/a&gt;创建非root用户&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;useradd -m ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -29,6 +29,38 @@
 &lt;h2 id=&quot;切换用户到ednovas&quot;&gt;&lt;a href=&quot;#切换用户到ednovas&quot; class=&quot;headerlink&quot; title=&quot;切换用户到ednovas&quot;&gt;&lt;/a&gt;切换用户到ednovas&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;su ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&quot;cd到ednovas的当前目录&quot;&gt;&lt;a href=&quot;#cd到ednovas的当前目录&quot; class=&quot;headerlink&quot; title=&quot;cd到ednovas的当前目录&quot;&gt;&lt;/a&gt;cd到ednovas的当前目录&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&quot;在ednovas的目录下创一个-ssh的文件夹并给它的权限设为700&quot;&gt;&lt;a href=&quot;#在ednovas的目录下创一个-ssh的文件夹并给它的权限设为700&quot; class=&quot;headerlink&quot; title=&quot;在ednovas的目录下创一个.ssh的文件夹并给它的权限设为700&quot;&gt;&lt;/a&gt;在ednovas的目录下创一个.ssh的文件夹并给它的权限设为700&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir .ssh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chmod 700 .ssh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
+    
+    <category term="root" scheme="https://ednovas.xyz/tags/root/"/>
+    
+    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>避免跳出谷歌人机验证 reCAPTCHA界面的解决方法</title>
+    <link href="https://ednovas.xyz/2021/07/20/googlerecaptcha/"/>
+    <id>https://ednovas.xyz/2021/07/20/googlerecaptcha/</id>
+    <published>2021-07-20T02:27:00.000Z</published>
+    <updated>2021-07-20T02:48:29.106Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;以前进行谷歌搜索的时候，都是很正常的。最近服务器发生了一些变动，在地址栏直接输入关键字搜索，就跳出了人机验证的界面，如下图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0Ly81NDdmYmFkYzNmZmY1LmdpZg.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;次数多了之后 Google 还会弹出一个窗口，要求输入传统的验证码或者跳出阿猫阿狗汽车的图片让你选择。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0Ly81NDdmYzBjMTkxYmJkLmpwZw.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;关于谷歌人机验证的详细新闻，可以看雷锋网的这篇文章——&lt;a href=&quot;http://www.leiphone.com/news/201412/Hnux7n19OcNWwUFt.html&quot;&gt;《与恼人的验证码说拜拜，Google用一次点击区分人与机器》&lt;/a&gt;。我猜测这是多人公用同一个谷歌搜索的站点引起的问题。Google reCaptcha 功能会在收集大量信息，包括IP地址和cookies，然后通过收集这些数据对比用户是否和过去在互联网上的行为一致，来判定这个用户究竟是不是机器人。&lt;/p&gt;
+&lt;p&gt;在好基友的帮助下我找到了一个折中解决的办法。简单说来就是新建一个搜索引擎，指定想要的搜索地址就好(最好避开与你共用一条线路的用户访问的谷歌搜索的站点——主站.com，香港.hk和日本.co.jp这一类)。下面是具体的步骤：&lt;/p&gt;
+&lt;p&gt;1 访问 &amp;lt;google.com/ncr&amp;gt;，随便搜索一个关键字。（ncr=no country redirect不做国家跳转） 2 修改浏览器默认搜索引擎。下面以 Chrome 为例：&lt;/p&gt;
+&lt;p&gt;打开设置&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0LzIwMTcwNDA2MTkyMTQwLmpwZw.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;管理搜索引擎&lt;/p&gt;</summary>
     
     
     
@@ -609,36 +641,6 @@
     <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
     
     <category term="RSS" scheme="https://ednovas.xyz/tags/RSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建订阅转换网站</title>
-    <link href="https://ednovas.xyz/2021/06/06/subs/"/>
-    <id>https://ednovas.xyz/2021/06/06/subs/</id>
-    <published>2021-06-06T12:29:00.000Z</published>
-    <updated>2021-06-08T22:58:33.316Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;前端：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/CareyWang/sub-web&quot;&gt;https://github.com/CareyWang/sub-web&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;后端：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/tindy2013/subconverter&quot;&gt;https://github.com/tindy2013/subconverter&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;解析域名&quot;&gt;&lt;a href=&quot;#解析域名&quot; class=&quot;headerlink&quot; title=&quot;解析域名&quot;&gt;&lt;/a&gt;解析域名&lt;/h2&gt;&lt;p&gt;先解析两个域名，建议开启小云朵cdn，设置cloudflare的ssl/tls为完全严格&lt;/p&gt;
-&lt;p&gt;一个用作前端，一个用作后端&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_20-48-34.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_20-49-16.png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="订阅转换" scheme="https://ednovas.xyz/tags/%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2/"/>
     
   </entry>
   
