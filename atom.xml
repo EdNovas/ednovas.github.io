@@ -72,33 +72,6 @@
   </entry>
   
   <entry>
-    <title>Linux非root用户登录</title>
-    <link href="https://ednovas.xyz/2021/07/20/linuxnoroot/"/>
-    <id>https://ednovas.xyz/2021/07/20/linuxnoroot/</id>
-    <published>2021-07-20T02:27:00.000Z</published>
-    <updated>2021-07-20T02:40:34.033Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;创建非root用户&quot;&gt;&lt;a href=&quot;#创建非root用户&quot; class=&quot;headerlink&quot; title=&quot;创建非root用户&quot;&gt;&lt;/a&gt;创建非root用户&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;useradd -m ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;给ednovas用户设置密码&quot;&gt;&lt;a href=&quot;#给ednovas用户设置密码&quot; class=&quot;headerlink&quot; title=&quot;给ednovas用户设置密码&quot;&gt;&lt;/a&gt;给ednovas用户设置密码&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;passwd ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;切换用户到ednovas&quot;&gt;&lt;a href=&quot;#切换用户到ednovas&quot; class=&quot;headerlink&quot; title=&quot;切换用户到ednovas&quot;&gt;&lt;/a&gt;切换用户到ednovas&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;su ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;cd到ednovas的当前目录&quot;&gt;&lt;a href=&quot;#cd到ednovas的当前目录&quot; class=&quot;headerlink&quot; title=&quot;cd到ednovas的当前目录&quot;&gt;&lt;/a&gt;cd到ednovas的当前目录&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;在ednovas的目录下创一个-ssh的文件夹并给它的权限设为700&quot;&gt;&lt;a href=&quot;#在ednovas的目录下创一个-ssh的文件夹并给它的权限设为700&quot; class=&quot;headerlink&quot; title=&quot;在ednovas的目录下创一个.ssh的文件夹并给它的权限设为700&quot;&gt;&lt;/a&gt;在ednovas的目录下创一个.ssh的文件夹并给它的权限设为700&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir .ssh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chmod 700 .ssh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
-    
-    <category term="root" scheme="https://ednovas.xyz/tags/root/"/>
-    
-    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
     <title>避免跳出谷歌人机验证 reCAPTCHA界面的解决方法</title>
     <link href="https://ednovas.xyz/2021/07/20/googlerecaptcha/"/>
     <id>https://ednovas.xyz/2021/07/20/googlerecaptcha/</id>
@@ -124,9 +97,36 @@
     
     <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
     
+    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
+    
     <category term="root" scheme="https://ednovas.xyz/tags/root/"/>
     
+  </entry>
+  
+  <entry>
+    <title>Linux非root用户登录</title>
+    <link href="https://ednovas.xyz/2021/07/20/linuxnoroot/"/>
+    <id>https://ednovas.xyz/2021/07/20/linuxnoroot/</id>
+    <published>2021-07-20T02:27:00.000Z</published>
+    <updated>2021-07-20T02:40:34.033Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;创建非root用户&quot;&gt;&lt;a href=&quot;#创建非root用户&quot; class=&quot;headerlink&quot; title=&quot;创建非root用户&quot;&gt;&lt;/a&gt;创建非root用户&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;useradd -m ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;给ednovas用户设置密码&quot;&gt;&lt;a href=&quot;#给ednovas用户设置密码&quot; class=&quot;headerlink&quot; title=&quot;给ednovas用户设置密码&quot;&gt;&lt;/a&gt;给ednovas用户设置密码&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;passwd ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;切换用户到ednovas&quot;&gt;&lt;a href=&quot;#切换用户到ednovas&quot; class=&quot;headerlink&quot; title=&quot;切换用户到ednovas&quot;&gt;&lt;/a&gt;切换用户到ednovas&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;su ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;cd到ednovas的当前目录&quot;&gt;&lt;a href=&quot;#cd到ednovas的当前目录&quot; class=&quot;headerlink&quot; title=&quot;cd到ednovas的当前目录&quot;&gt;&lt;/a&gt;cd到ednovas的当前目录&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;在ednovas的目录下创一个-ssh的文件夹并给它的权限设为700&quot;&gt;&lt;a href=&quot;#在ednovas的目录下创一个-ssh的文件夹并给它的权限设为700&quot; class=&quot;headerlink&quot; title=&quot;在ednovas的目录下创一个.ssh的文件夹并给它的权限设为700&quot;&gt;&lt;/a&gt;在ednovas的目录下创一个.ssh的文件夹并给它的权限设为700&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir .ssh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chmod 700 .ssh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
+    
     <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
+    
+    <category term="root" scheme="https://ednovas.xyz/tags/root/"/>
     
   </entry>
   
@@ -152,11 +152,11 @@
     
     <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
     
-    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
-    
     <category term="firewall" scheme="https://ednovas.xyz/tags/firewall/"/>
     
     <category term="centos" scheme="https://ednovas.xyz/tags/centos/"/>
+    
+    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
     
   </entry>
   
