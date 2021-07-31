@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-07-31T14:20:18.386Z</updated>
+  <updated>2021-07-31T14:28:09.282Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网页禁止F12代码和解决方法</title>
+    <link href="https://ednovas.xyz/2021/07/31/f12/"/>
+    <id>https://ednovas.xyz/2021/07/31/f12/</id>
+    <published>2021-07-31T14:56:00.000Z</published>
+    <updated>2021-07-31T14:28:09.282Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h2&gt;&lt;p&gt;禁止打开F12 调试前端代码&lt;/p&gt;
+&lt;h3 id=&quot;方式一&quot;&gt;&lt;a href=&quot;#方式一&quot; class=&quot;headerlink&quot; title=&quot;方式一&quot;&gt;&lt;/a&gt;方式一&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(function()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		$(document).bind(&amp;quot;contextmenu&amp;quot;, function () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			return false; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;);&amp;#x2F;&amp;#x2F;禁止右键&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		document.oncontextmenu &amp;#x3D; function () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			return false; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		document.onkeydown &amp;#x3D; function () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		    if (window.event &amp;amp;&amp;amp; window.event.keyCode &amp;#x3D;&amp;#x3D; 123) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		        event.keyCode &amp;#x3D; 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		        event.returnValue &amp;#x3D; false;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		        return false;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;;&amp;#x2F;&amp;#x2F;禁止F12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;方式二&quot;&gt;&lt;a href=&quot;#方式二&quot; class=&quot;headerlink&quot; title=&quot;方式二&quot;&gt;&lt;/a&gt;方式二&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script type&amp;#x3D;&amp;quot;text&amp;#x2F;javascript&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#x2F;&amp;#x2F;禁用右键（防止右键查看源代码） &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    window.oncontextmenu&amp;#x3D;function()&amp;#123;return false;&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#x2F;&amp;#x2F;禁止任何键盘敲击事件（防止F12和shift+ctrl+i调起开发者工具） &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    window.onkeydown &amp;#x3D; window.onkeyup &amp;#x3D; window.onkeypress &amp;#x3D; function () &amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        window.event.returnValue &amp;#x3D; false; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        return false; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#x2F;&amp;#x2F;如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面 &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var h &amp;#x3D; window.innerHeight,w&amp;#x3D;window.innerWidth; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    window.onresize &amp;#x3D; function () &amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        if (h!&amp;#x3D; window.innerHeight||w!&amp;#x3D;window.innerWidth)&amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            window.close(); &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            window.location &amp;#x3D; &amp;quot;about:blank&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;lt;&amp;#x2F;script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考：&lt;a href=&quot;https://www.jianshu.com/p/d5b8a84cbbd4&quot;&gt;https://www.jianshu.com/p/d5b8a84cbbd4&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.csdn.net/qq_23013025/article/details/53368266&quot;&gt;https://blog.csdn.net/qq_23013025/article/details/53368266&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.csdn.net/weixin_43875808/article/details/96438781&quot;&gt;https://blog.csdn.net/weixin_43875808/article/details/96438781&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.csdn.net/TimVan1596/article/details/83893622&quot;&gt;https://blog.csdn.net/TimVan1596/article/details/83893622&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.csdn.net/tang242424/article/details/83003133&quot;&gt;https://blog.csdn.net/tang242424/article/details/83003133&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;转载自 周小董 &lt;a href=&quot;https://blog.csdn.net/xc_zhou/article/details/104543757&quot;&gt;https://blog.csdn.net/xc_zhou/article/details/104543757&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;解决方法&quot;&gt;&lt;a href=&quot;#解决方法&quot; class=&quot;headerlink&quot; title=&quot;解决方法&quot;&gt;&lt;/a&gt;解决方法&lt;/h2&gt;&lt;h3 id=&quot;view-source&quot;&gt;&lt;a href=&quot;#view-source&quot; class=&quot;headerlink&quot; title=&quot;view-source&quot;&gt;&lt;/a&gt;view-source&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="f12" scheme="https://ednovas.xyz/tags/f12/"/>
+    
+  </entry>
   
   <entry>
     <title>win11下载安装</title>
@@ -600,40 +628,6 @@
     <category term="python" scheme="https://ednovas.xyz/tags/python/"/>
     
     <category term="京东" scheme="https://ednovas.xyz/tags/%E4%BA%AC%E4%B8%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建苹果CMS视频站</title>
-    <link href="https://ednovas.xyz/2021/06/11/applecms/"/>
-    <id>https://ednovas.xyz/2021/06/11/applecms/</id>
-    <published>2021-06-11T12:56:00.000Z</published>
-    <updated>2021-06-25T12:14:40.226Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;VPS一个，最好高性能的，别用甲骨文！别用甲骨文！别用甲骨文！（被封了两个账号的痛）&lt;/p&gt;
-&lt;p&gt;首先安装aapanel或宝塔，ubuntu的aapanel（aapanel是宝塔国际版，只有英文界面）一键脚本：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -O install.sh http:&amp;#x2F;&amp;#x2F;www.aapanel.com&amp;#x2F;script&amp;#x2F;install-ubuntu_6.0_en.sh &amp;amp;&amp;amp; sudo bash install.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;安装完成后复制黏贴面板地址，输入账号密码进入&lt;/p&gt;
-&lt;p&gt;安装LNMP，使用极速安装，PHP请选择7.0版本+，一般我比较喜欢选7.2和7.4&lt;/p&gt;
-&lt;p&gt;静等一段比较长的时间，大概十到二十分钟，安装速度根据机器性能有所变化&lt;/p&gt;
-&lt;h2 id=&quot;解析&quot;&gt;&lt;a href=&quot;#解析&quot; class=&quot;headerlink&quot; title=&quot;解析&quot;&gt;&lt;/a&gt;解析&lt;/h2&gt;&lt;p&gt;安装完成后解析域名到该VPS的ip地址，记得要关掉小云朵cdn方便申请SSL证书&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ%E5%9B%BE%E7%89%8720210611212443.png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
-    
-    <category term="视频站" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91%E7%AB%99/"/>
-    
-    <category term="视频" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91/"/>
-    
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
     
   </entry>
   
