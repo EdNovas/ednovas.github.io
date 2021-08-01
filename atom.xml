@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-08-01T12:23:30.991Z</updated>
+  <updated>2021-08-01T12:54:55.476Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ednovas.xyz/2021/08/01/cloudreve/"/>
     <id>https://ednovas.xyz/2021/08/01/cloudreve/</id>
     <published>2021-08-01T09:56:00.000Z</published>
-    <updated>2021-08-01T12:23:30.991Z</updated>
+    <updated>2021-08-01T12:54:55.476Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -45,6 +45,27 @@
     <category term="OneDrive" scheme="https://ednovas.xyz/tags/OneDrive/"/>
     
     <category term="cloudreve" scheme="https://ednovas.xyz/tags/cloudreve/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cloudreve搭建和挂载OneDrive云盘</title>
+    <link href="https://ednovas.xyz/2021/08/01/aria2andrclone/"/>
+    <id>https://ednovas.xyz/2021/08/01/aria2andrclone/</id>
+    <published>2021-08-01T09:56:00.000Z</published>
+    <updated>2021-08-01T12:32:36.771Z</updated>
+    
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="OneDrive" scheme="https://ednovas.xyz/tags/OneDrive/"/>
+    
+    <category term="cloudreve" scheme="https://ednovas.xyz/tags/cloudreve/"/>
+    
+    <category term="离线下载" scheme="https://ednovas.xyz/tags/%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD/"/>
     
   </entry>
   
@@ -604,34 +625,6 @@
     <category term="ddnsto" scheme="https://ednovas.xyz/tags/ddnsto/"/>
     
     <category term="内网穿透" scheme="https://ednovas.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>网站监控</title>
-    <link href="https://ednovas.xyz/2021/06/23/monitor/"/>
-    <id>https://ednovas.xyz/2021/06/23/monitor/</id>
-    <published>2021-06-23T06:06:00.000Z</published>
-    <updated>2021-06-24T02:01:55.036Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;网站监控使用说明&quot;&gt;&lt;a href=&quot;#网站监控使用说明&quot; class=&quot;headerlink&quot; title=&quot;网站监控使用说明&quot;&gt;&lt;/a&gt;网站监控使用说明&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://uptimerobot.com/&quot;&gt;https://uptimerobot.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;直接上链接,很好用的一个网站监控存活健康的监视器,注册既可用,免费版就足够使用&lt;/p&gt;
-&lt;p&gt;至于使用也很简单,直接添加网站,选择http,输入网址和名字&lt;/p&gt;
-&lt;p&gt;最后别忘了在状态网站status pages加上你的monitors监视器哦&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_22-27-46.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;还可以设置外观等,但是大多要付费,忽略即可&lt;/p&gt;
-&lt;p&gt;别忘了保存,然后就可以看到你的监控页面啦&lt;/p&gt;
-&lt;h2 id=&quot;DEMO&quot;&gt;&lt;a href=&quot;#DEMO&quot; class=&quot;headerlink&quot; title=&quot;DEMO&quot;&gt;&lt;/a&gt;DEMO&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://stats.uptimerobot.com/ykqXpFNMqx&quot;&gt;https://stats.uptimerobot.com/ykqXpFNMqx&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="监控" scheme="https://ednovas.xyz/tags/%E7%9B%91%E6%8E%A7/"/>
     
   </entry>
   
