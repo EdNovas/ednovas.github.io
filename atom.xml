@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-07-31T14:29:40.747Z</updated>
+  <updated>2021-08-01T12:23:30.991Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>cloudreve搭建和挂载OneDrive云盘</title>
+    <link href="https://ednovas.xyz/2021/08/01/cloudreve/"/>
+    <id>https://ednovas.xyz/2021/08/01/cloudreve/</id>
+    <published>2021-08-01T09:56:00.000Z</published>
+    <updated>2021-08-01T12:23:30.991Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;参考自 &lt;a href=&quot;https://docs.cloudreve.org/&quot;&gt;https://docs.cloudreve.org/&lt;/a&gt; 本文添加了更多的说明且更详细些&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;cloudreve是一个极低成本的免费云盘管理系统，可以支持 &lt;/p&gt;
+&lt;p&gt;本机 从机 七牛 OSS COS 又拍云 OneDrive S3&lt;/p&gt;
+&lt;p&gt;这些方式的云盘挂载&lt;/p&gt;
+&lt;p&gt;可以让您快速搭建起公私兼备的网盘系统&lt;/p&gt;
+&lt;p&gt;Cloudreve 在底层支持不同的云存储平台，用户在实际使用时无须关心物理存储方式。&lt;/p&gt;
+&lt;p&gt;你可以使用 Cloudreve 搭建个人用网盘、文件分享系统，亦或是针对大小团体的公有云系统。&lt;/p&gt;
+&lt;h2 id=&quot;链接&quot;&gt;&lt;a href=&quot;#链接&quot; class=&quot;headerlink&quot; title=&quot;链接&quot;&gt;&lt;/a&gt;链接&lt;/h2&gt;&lt;p&gt;官方文档：&lt;a href=&quot;https://docs.cloudreve.org/&quot;&gt;https://docs.cloudreve.org/&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="云盘" scheme="https://ednovas.xyz/tags/%E4%BA%91%E7%9B%98/"/>
+    
+    <category term="OneDrive" scheme="https://ednovas.xyz/tags/OneDrive/"/>
+    
+    <category term="cloudreve" scheme="https://ednovas.xyz/tags/cloudreve/"/>
+    
+  </entry>
+  
+  <entry>
     <title>网页禁止F12代码和解决方法</title>
     <link href="https://ednovas.xyz/2021/07/31/f12/"/>
     <id>https://ednovas.xyz/2021/07/31/f12/</id>
     <published>2021-07-31T14:56:00.000Z</published>
-    <updated>2021-07-31T14:29:40.747Z</updated>
+    <updated>2021-08-01T09:35:17.675Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h2&gt;&lt;p&gt;禁止打开F12 调试前端代码&lt;/p&gt;
@@ -37,7 +69,7 @@
     
     
     
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
     <category term="f12" scheme="https://ednovas.xyz/tags/f12/"/>
@@ -600,34 +632,6 @@
     <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
     
     <category term="监控" scheme="https://ednovas.xyz/tags/%E7%9B%91%E6%8E%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基于python的全能抢购神器</title>
-    <link href="https://ednovas.xyz/2021/06/18/pythonshop/"/>
-    <id>https://ednovas.xyz/2021/06/18/pythonshop/</id>
-    <published>2021-06-18T08:30:00.000Z</published>
-    <updated>2021-06-18T08:58:58.643Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;源码&quot;&gt;&lt;a href=&quot;#源码&quot; class=&quot;headerlink&quot; title=&quot;源码&quot;&gt;&lt;/a&gt;源码&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.52pojie.cn/thread-1332572-1-1.html&quot;&gt;https://www.52pojie.cn/thread-1332572-1-1.html&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://lanren.lanzoux.com/b00u3bumh&quot;&gt;https://lanren.lanzoux.com/b00u3bumh&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;备用下载(2021.03.26版本):&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://onecloud.ednovas.xyz/s/wzSO&quot;&gt;https://onecloud.ednovas.xyz/s/wzSO&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;驱动下载&quot;&gt;&lt;a href=&quot;#驱动下载&quot; class=&quot;headerlink&quot; title=&quot;驱动下载&quot;&gt;&lt;/a&gt;驱动下载&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://chromedriver.chromium.org/downloads&quot;&gt;https://chromedriver.chromium.org/downloads&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;视频讲解&quot;&gt;&lt;a href=&quot;#视频讲解&quot; class=&quot;headerlink&quot; title=&quot;视频讲解&quot;&gt;&lt;/a&gt;视频讲解&lt;/h2&gt;&lt;p&gt;b站官方视频讲解: &lt;a href=&quot;https://www.bilibili.com/video/BV1S54y147xc&quot;&gt;https://www.bilibili.com/video/BV1S54y147xc&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="抢购" scheme="https://ednovas.xyz/tags/%E6%8A%A2%E8%B4%AD/"/>
-    
-    <category term="python" scheme="https://ednovas.xyz/tags/python/"/>
-    
-    <category term="京东" scheme="https://ednovas.xyz/tags/%E4%BA%AC%E4%B8%9C/"/>
     
   </entry>
   
