@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ednovas.xyz/2021/08/01/cloudreve/</loc>
+    <loc>https://ednovas.xyz/2021/08/01/aria2andrclone/</loc>
     
     <lastmod>2021-08-01</lastmod>
     
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2021/08/01/aria2andrclone/</loc>
+    <loc>https://ednovas.xyz/2021/08/01/cloudreve/</loc>
     
     <lastmod>2021-08-01</lastmod>
     
@@ -1228,13 +1228,6 @@
   
   <url>
     <loc>https://ednovas.xyz/2021/02/06/todesk/</loc>
-    
-    <lastmod>2021-02-05</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/2020/12/26/aria2-vps-drive-%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD/</loc>
     
     <lastmod>2021-02-05</lastmod>
     
@@ -3897,6 +3890,13 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD/</loc>
+    <lastmod>2021-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/aria2/</loc>
     <lastmod>2021-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

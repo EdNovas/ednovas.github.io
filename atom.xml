@@ -49,23 +49,39 @@
   </entry>
   
   <entry>
-    <title></title>
+    <title>Aria2离线下载和Rclone使用</title>
     <link href="https://ednovas.xyz/2021/08/01/aria2andrclone/"/>
     <id>https://ednovas.xyz/2021/08/01/aria2andrclone/</id>
     <published>2021-08-01T09:56:00.000Z</published>
-    <updated>2021-08-01T13:05:22.177Z</updated>
+    <updated>2021-08-01T13:55:38.061Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;既然是Aria2离线下载了，那么就肯定是用linux服务器下载并且安装aria2了，这里推荐一个好用而且十分方便的方法&lt;/p&gt;
+&lt;h2 id=&quot;脚本&quot;&gt;&lt;a href=&quot;#脚本&quot; class=&quot;headerlink&quot; title=&quot;脚本&quot;&gt;&lt;/a&gt;脚本&lt;/h2&gt;&lt;p&gt;Aria2 一键安装管理脚本 增强版&lt;/p&gt;
+&lt;p&gt;来自P3TREX大佬的脚本：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/P3TERX/aria2.sh&quot;&gt;https://github.com/P3TERX/aria2.sh&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;功能特性&quot;&gt;&lt;a href=&quot;#功能特性&quot; class=&quot;headerlink&quot; title=&quot;功能特性&quot;&gt;&lt;/a&gt;功能特性&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;BT 下载率高、速度快&lt;/li&gt;
+&lt;li&gt;重启后不丢失任务进度、不重复下载&lt;/li&gt;
+&lt;li&gt;下载错误或取消下载自动删除未完成的文件防止磁盘空间占用&lt;/li&gt;
+&lt;li&gt;下载完成自动清除.aria2后缀名文件&lt;/li&gt;
+&lt;li&gt;一键获取 BT tracker，进一步提升 BT 下载速度&lt;/li&gt;
+&lt;li&gt;更好的 PT 下载支持&lt;/li&gt;
+&lt;li&gt;有一定的防版权投诉、防迅雷吸血效果&lt;/li&gt;
+&lt;li&gt;联动 RCLONE 自动上传到 Google Drive 和 OneDrive 等网盘&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;（全部命令基于Debian/Ubuntu系统，Centos等自行更换成yum等）&lt;/p&gt;</summary>
     
     
     
+    <category term="下载" scheme="https://ednovas.xyz/categories/%E4%B8%8B%E8%BD%BD/"/>
     
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
     
-    
-    <category term="OneDrive" scheme="https://ednovas.xyz/tags/OneDrive/"/>
-    
-    <category term="cloudreve" scheme="https://ednovas.xyz/tags/cloudreve/"/>
+    <category term="下载" scheme="https://ednovas.xyz/tags/%E4%B8%8B%E8%BD%BD/"/>
     
     <category term="离线下载" scheme="https://ednovas.xyz/tags/%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD/"/>
+    
+    <category term="aria2" scheme="https://ednovas.xyz/tags/aria2/"/>
     
   </entry>
   
