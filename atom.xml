@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-08-01T13:09:03.515Z</updated>
+  <updated>2021-08-01T13:55:38.061Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,38 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>cloudreve搭建和挂载OneDrive云盘</title>
-    <link href="https://ednovas.xyz/2021/08/01/cloudreve/"/>
-    <id>https://ednovas.xyz/2021/08/01/cloudreve/</id>
-    <published>2021-08-01T09:56:00.000Z</published>
-    <updated>2021-08-01T13:09:03.515Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;参考自 &lt;a href=&quot;https://docs.cloudreve.org/&quot;&gt;https://docs.cloudreve.org/&lt;/a&gt; 本文添加了更多的说明且更详细些&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;cloudreve是一个极低成本的免费云盘管理系统，可以支持 &lt;/p&gt;
-&lt;p&gt;本机 从机 七牛 OSS COS 又拍云 OneDrive S3&lt;/p&gt;
-&lt;p&gt;这些方式的云盘挂载&lt;/p&gt;
-&lt;p&gt;可以让您快速搭建起公私兼备的网盘系统&lt;/p&gt;
-&lt;p&gt;Cloudreve 在底层支持不同的云存储平台，用户在实际使用时无须关心物理存储方式。&lt;/p&gt;
-&lt;p&gt;你可以使用 Cloudreve 搭建个人用网盘、文件分享系统，亦或是针对大小团体的公有云系统。&lt;/p&gt;
-&lt;h2 id=&quot;链接&quot;&gt;&lt;a href=&quot;#链接&quot; class=&quot;headerlink&quot; title=&quot;链接&quot;&gt;&lt;/a&gt;链接&lt;/h2&gt;&lt;p&gt;官方文档：&lt;a href=&quot;https://docs.cloudreve.org/&quot;&gt;https://docs.cloudreve.org/&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="云盘" scheme="https://ednovas.xyz/tags/%E4%BA%91%E7%9B%98/"/>
-    
-    <category term="OneDrive" scheme="https://ednovas.xyz/tags/OneDrive/"/>
-    
-    <category term="cloudreve" scheme="https://ednovas.xyz/tags/cloudreve/"/>
-    
-  </entry>
   
   <entry>
     <title>Aria2离线下载和Rclone使用</title>
@@ -79,9 +47,41 @@
     
     <category term="下载" scheme="https://ednovas.xyz/tags/%E4%B8%8B%E8%BD%BD/"/>
     
+    <category term="aria2" scheme="https://ednovas.xyz/tags/aria2/"/>
+    
     <category term="离线下载" scheme="https://ednovas.xyz/tags/%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD/"/>
     
-    <category term="aria2" scheme="https://ednovas.xyz/tags/aria2/"/>
+  </entry>
+  
+  <entry>
+    <title>cloudreve搭建和挂载OneDrive云盘</title>
+    <link href="https://ednovas.xyz/2021/08/01/cloudreve/"/>
+    <id>https://ednovas.xyz/2021/08/01/cloudreve/</id>
+    <published>2021-08-01T09:56:00.000Z</published>
+    <updated>2021-08-01T13:09:03.515Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;参考自 &lt;a href=&quot;https://docs.cloudreve.org/&quot;&gt;https://docs.cloudreve.org/&lt;/a&gt; 本文添加了更多的说明且更详细些&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;cloudreve是一个极低成本的免费云盘管理系统，可以支持 &lt;/p&gt;
+&lt;p&gt;本机 从机 七牛 OSS COS 又拍云 OneDrive S3&lt;/p&gt;
+&lt;p&gt;这些方式的云盘挂载&lt;/p&gt;
+&lt;p&gt;可以让您快速搭建起公私兼备的网盘系统&lt;/p&gt;
+&lt;p&gt;Cloudreve 在底层支持不同的云存储平台，用户在实际使用时无须关心物理存储方式。&lt;/p&gt;
+&lt;p&gt;你可以使用 Cloudreve 搭建个人用网盘、文件分享系统，亦或是针对大小团体的公有云系统。&lt;/p&gt;
+&lt;h2 id=&quot;链接&quot;&gt;&lt;a href=&quot;#链接&quot; class=&quot;headerlink&quot; title=&quot;链接&quot;&gt;&lt;/a&gt;链接&lt;/h2&gt;&lt;p&gt;官方文档：&lt;a href=&quot;https://docs.cloudreve.org/&quot;&gt;https://docs.cloudreve.org/&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="云盘" scheme="https://ednovas.xyz/tags/%E4%BA%91%E7%9B%98/"/>
+    
+    <category term="OneDrive" scheme="https://ednovas.xyz/tags/OneDrive/"/>
+    
+    <category term="cloudreve" scheme="https://ednovas.xyz/tags/cloudreve/"/>
     
   </entry>
   
