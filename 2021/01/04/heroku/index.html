@@ -1,0 +1,560 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Heroku部署免费自建节点 | EdNovas的小站</title><meta name="keywords" content="EdNovas"><meta name="author" content="EdNovas"><meta name="copyright" content="EdNovas"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="准备工作注册Heroku首先先要去heroku注册一个账号，不能使用QQ邮箱。推荐使用Gmail和微软outlook邮箱。 如果看不懂可以使用页面翻译，不支持中文。 https:&#x2F;&#x2F;dashboard.heroku.com&#x2F; 会发一封邮箱验证邮件，点击激活即可。密码设置需要至少8位，带数字字母和符号。 最后有一个界面，会询问什么italian什么的不用管他，直接accept同意。 注册一个Clou">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Heroku部署免费自建节点">
+<meta property="og:url" content="https://ednovas.xyz/2021/01/04/heroku/index.html">
+<meta property="og:site_name" content="EdNovas的小站">
+<meta property="og:description" content="准备工作注册Heroku首先先要去heroku注册一个账号，不能使用QQ邮箱。推荐使用Gmail和微软outlook邮箱。 如果看不懂可以使用页面翻译，不支持中文。 https:&#x2F;&#x2F;dashboard.heroku.com&#x2F; 会发一封邮箱验证邮件，点击激活即可。密码设置需要至少8位，带数字字母和符号。 最后有一个界面，会询问什么italian什么的不用管他，直接accept同意。 注册一个Clou">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1_B-khKHPeEEixZhMB9LlWrg.webp">
+<meta property="article:published_time" content="2021-01-04T18:16:00.000Z">
+<meta property="article:modified_time" content="2021-01-26T02:29:26.175Z">
+<meta property="article:author" content="EdNovas">
+<meta property="article:tag" content="EdNovas">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1_B-khKHPeEEixZhMB9LlWrg.webp"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/830.circled-e-filled1.png"><link rel="canonical" href="https://ednovas.xyz/2021/01/04/heroku/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//static.cloudflareinsights.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="O9Uxirs5RzGyHijDvBe5okX6j2BxdRrzjxKkGI34B18"/><meta name="msvalidate.01" content="5651177152477FB9B4EBC45053EECDA3"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="#000000"/><link rel="apple-touch-icon" sizes="180x180" href="/image/siteicon/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/image/siteicon/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/image/siteicon/16.png"/><link rel="mask-icon" href="/image/siteicon/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-185849872-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-185849872-1');
+</script><script defer="defer" data-pjax="data-pjax" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;d6704c4319ce48e883585dfd275af345&quot;}"></script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"59FQUQ1CBL","apiKey":"07dbe3620a56feffda190697671f0a93","indexName":"ednovas","hits":{"per_page":10},"languages":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}.","hits_stats":"${hits} results found in ${time} ms"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":30,"position":"top","messagePrev":"距离文章编辑已经过去了","messageNext":"天，实际情况可能有所变动。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-01-25 18:29:26'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><link rel="stylesheet" href="/css/scrollbar.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_2440505_a5eo7su26z8.css"><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="EdNovas的小站" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/icon.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">218</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">329</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签 | Tags</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-fufei"></i><span> 付费解锁 | Pay to Unlock</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://t.me/ednovas"><span> 如需解锁请联系EdNovas</span></a></li><li><a class="site-page" href="/vps/"><span> 自建VPS节点</span></a></li><li><a class="site-page" href="/urls/"><span> 付费订阅链接</span></a></li><li><a class="site-page" href="/ios/"><span> ios外区账号</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-pengyouquan"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">EdNovas的小站</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签 | Tags</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-fufei"></i><span> 付费解锁 | Pay to Unlock</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://t.me/ednovas"><span> 如需解锁请联系EdNovas</span></a></li><li><a class="site-page" href="/vps/"><span> 自建VPS节点</span></a></li><li><a class="site-page" href="/urls/"><span> 付费订阅链接</span></a></li><li><a class="site-page" href="/ios/"><span> ios外区账号</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-pengyouquan"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Heroku部署免费自建节点</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-01-04T18:16:00.000Z" title="Created 2021-01-04 10:16:00">2021-01-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-01-26T02:29:26.175Z" title="Updated 2021-01-25 18:29:26">2021-01-25</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">科学上网</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>6min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="注册Heroku"><a href="#注册Heroku" class="headerlink" title="注册Heroku"></a>注册Heroku</h3><p>首先先要去heroku注册一个账号，不能使用QQ邮箱。推荐使用Gmail和微软outlook邮箱。</p>
+<p>如果看不懂可以使用页面翻译，不支持中文。</p>
+<p><a target="_blank" rel="noopener" href="https://dashboard.heroku.com/">https://dashboard.heroku.com/</a></p>
+<p>会发一封邮箱验证邮件，点击激活即可。密码设置需要至少8位，带数字字母和符号。</p>
+<p>最后有一个界面，会询问什么italian什么的不用管他，直接accept同意。</p>
+<h3 id="注册一个Cloudflare账号"><a href="#注册一个Cloudflare账号" class="headerlink" title="注册一个Cloudflare账号"></a>注册一个Cloudflare账号</h3><p>Cloudflare（后简称Cf）是个以反向代理的内容分发网络及分布式域名解析服务为主要业务的企业，主要可以提供全球CDN加速服务。</p>
+<p>官网：</p>
+<p><a target="_blank" rel="noopener" href="https://www.cloudflare.com/">https://www.cloudflare.com/</a></p>
+<p>同样注册一个账号，网站支持中文，邮箱随意，可以用QQ邮箱，不过还是建议使用Gmail和Outlook等国外邮箱。</p>
+<p>可能会让你输入一个你的域名，有的话可以输入你freenom的域名或者你自己的域名，没有的话瞎填一个也没事。</p>
+<p>这个后面我们会用到，不急，用于反代加速的。</p>
+<h3 id="V2ray"><a href="#V2ray" class="headerlink" title="V2ray"></a>V2ray</h3><p><a href="/2020/12/19/v2ray-windows/">电脑端V2ray使用说明</a>，我们这里只需要<a target="_blank" rel="noopener" href="https://github.com/v2fly/v2ray-core/releases/">下载软件</a>即可，暂时不用配置。</p>
+<h3 id="优选IP软件"><a href="#优选IP软件" class="headerlink" title="优选IP软件"></a>优选IP软件</h3><p><a target="_blank" rel="noopener" href="https://proxy.freecdn.workers.dev/?url=https://github.com/badafans/better-cloudflare-ip/releases/latest/download/windows.zip">下载</a>并解压，项目地址<a target="_blank" rel="noopener" href="https://github.com/badafans/better-cloudflare-ip">https://github.com/badafans/better-cloudflare-ip</a></p>
+<h2 id="部署Heroku"><a href="#部署Heroku" class="headerlink" title="部署Heroku"></a>部署Heroku</h2><p>点击<a target="_blank" rel="noopener" href="https://dashboard.heroku.com/new?template=https://github.com/bclswl0827/v2ray-heroku">一键部署</a></p>
+<p>（感谢bclswl0827大佬的部署镜像，项目地址<a target="_blank" rel="noopener" href="https://github.com/bclswl0827/v2ray-heroku">https://github.com/bclswl0827/v2ray-heroku</a> ）</p>
+<p>会自动跳转到部署界面</p>
+<p>首先输入你想要的app name也就是APP的名字，这里就是一个二级域名，不能和别人有重复的，也不需要记住，所以随意设定。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-26-36.webp"></p>
+<p>要注意一个账号最多部署5个，超过会有红框警告。所以还想搞更多的话，请自行注册账号。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-26-54.webp"></p>
+<p>然后点击部署App，等待大概1分钟全部部署完毕，点击Manage App进入管理界面。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-35-33.webp"></p>
+<p>点击Settings设置，然后点击Reveal Config Vars显示配置信息，把这里的这一大长串UUID复制下来保存好，比如我这里就是ad806487-2d26-4636-98b6-ab85cc8521f7</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-37-55.webp"></p>
+<p>然后往下拉，有个Domains域名，把这个也需要记录下来，比如我这里就是<a target="_blank" rel="noopener" href="https://ednovas11.herokuapp.com/">https://ednovas11.herokuapp.com/</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-38-08.webp"></p>
+<h2 id="配置V2ray"><a href="#配置V2ray" class="headerlink" title="配置V2ray"></a>配置V2ray</h2><p>然后打开你的V2ray，点击服务器，添加一个Vmess服务器</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-40-47.webp"></p>
+<p>地址就填写刚刚复制的Domains域名，但是要去掉（https://）和末尾的（/），那么这里就是ednovas11.herokuapp.com，而用户ID就复制上刚刚的那一大长串UUID。</p>
+<p>额外ID写64，别名随意，传输协议选ws，底层传输安全选tls，跳过证书验证选true。最后点击确定保存。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-42-53.webp"></p>
+<p>右键V2ray，选择服务器，选择全局代理或者PAC代理，就可以科学上网了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-46-09.webp"></p>
+<p>当然这样子可以上，但是速度不是最快的。这速度也就油管能跑1k多，看个480p都费劲。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-51-33.webp"></p>
+<h2 id="CF反代"><a href="#CF反代" class="headerlink" title="CF反代"></a>CF反代</h2><p>这个时候就需要我们的Cloudflare的workers来进行一个反代加速了。</p>
+<p>在主页点击Workers。可能会让你输入一个你的域名，有的话可以输入你freenom的域名或者你自己的域名，没有的话瞎填一个也没事。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-54-15.webp"></p>
+<p>进入workers界面以后点击Create a worker创建一个worker</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-55-22.webp"></p>
+<p>把左边Script脚本的内容清空，然后复制下面的代码进去</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">addEventListener(</span><br><span class="line">	&quot;fetch&quot;,event &#x3D;&gt; &#123;</span><br><span class="line">		let url&#x3D;new URL(event.request.url);</span><br><span class="line">		url.hostname&#x3D;&quot;域名&quot;;</span><br><span class="line">		let request&#x3D;new Request(url,event.request);</span><br><span class="line">		event. respondWith(</span><br><span class="line">			fetch(request)</span><br><span class="line">		)</span><br><span class="line">	&#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>然后把域名改成你复制到V2ray里面的那个域名，同样要去掉https等那些东西，如ednovas11.herokuapp.com</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-58-36.webp"></p>
+<p>然后点击Save and Deploy保存和部署。等待几秒部署完成后点击send发送。如果右边出现400 Bad Request说明配置成功。如果出现如502等其他错误代码说明配置失败。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-00-55.webp"></p>
+<p>在这里把这个HTTP下面的这个地址复制到V2ray里刚刚配置的那个文件里的地址和伪装域名这里。（双击刚刚配置的节点可以再次打开这个配置界面）点击确定保存。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-02-58.webp"></p>
+<p>再来测速，好家伙，直接几百kbps的速度了，这速度还不如刚才呢。不要急，有速度说明刚刚的配置没有问题。下面还需要使用优选IP来实现完全的加速。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-04-25.webp"></p>
+<h2 id="优选IP"><a href="#优选IP" class="headerlink" title="优选IP"></a>优选IP</h2><p>将下载好了的CF优选IP软件解压后，打开CF优选IP.bat，在弹出的cmd窗口中输入你家的带宽大小。不建议直接输入你家实际带宽总大小，会导致程序没法正确找到合适的IP。</p>
+<p>如果不知道自己家的带宽是多少的，可以上 <a target="_blank" rel="noopener" href="https://speedtest.net/">https://speedtest.net</a> 测速，看下载带宽速度是多少Mbps。</p>
+<p>这里是建议先选择你家IP一半的带宽大小。比如我家是一百兆的带宽，那么我这里就选择50兆。如果你对测出来的IP速度不满意，那么可以逐渐加大这个数字，下次测速60、在下次70，总之切勿超过自家最大带宽。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-08-36.webp"></p>
+<p>我这里输入50以后直接按Enter回车，然后等待一段时间，不会超过5分钟，他会自动测速并且筛选优选IP，耐心等待即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-12-03.webp"></p>
+<p>那么测试出来以后，把上方的优选IP复制下来，我这里也就是104.19.71.197。注意不要复制到空格。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-13-00.webp"></p>
+<p>再次打开V2ray的节点配置界面，把刚刚的优选出来的IP复制黏贴到地址里，并点击确定保存。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-14-28.webp"></p>
+<p>现在再来看这个节点的速度，十分可观啊，直接上了3w，甚至直逼4w。看个4k视频没有什么压力的高速度了，很难想象免费节点能有如此的速度。</p>
+<p><strong>注意！！！单节点不能这样大流量看视频，会直接被Heroku判定为滥用，导致账号被封</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-15-38.webp"></p>
+<h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><h3 id="为什么要负载均衡"><a href="#为什么要负载均衡" class="headerlink" title="为什么要负载均衡"></a>为什么要负载均衡</h3><p>那么我们怎么防止被Heroku封禁呢，我们可以使用Clash的负载均衡功能（V2ray暂时没有这个功能或者我没有发现），从而让多个Heroku的节点都跑流量但是每个节点都不会跑很多。</p>
+<p>这样即使我们在看8K视频，每秒8、9MB的流量在跑，但是Heroku那边就会显示是1-2MB/s的流量在跑，因为我们让每个节点都分担了一部分流量。</p>
+<p>怎么实现负载均衡呢，还记得我前面说过一个账号最多可以创建5个节点嘛，重复上述从<a href="#%E9%83%A8%E7%BD%B2Heroku">heroku部署</a>到<a href="#%E4%BC%98%E9%80%89IP">优选IP</a>的步骤，这样就可以得到5个节点。（要是觉得麻烦可以就部署两个节点，用两个节点实现负载均衡，不过相应的，被封的几率就更大。十分不建议也请勿只使用一个节点并大流量使用）</p>
+<h3 id="V2ray链接转换"><a href="#V2ray链接转换" class="headerlink" title="V2ray链接转换"></a>V2ray链接转换</h3><p>在V2ray中全选你创建的这些个heroku的节点，然后右键选择批量导出分享URL至剪切板，或者快捷键直接ctrl+c。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-25-57.webp"></p>
+<p>去<a href="/2020/12/20/%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5%E8%BD%AC%E6%8D%A2/">订阅链接转换网站</a>（随便一个订阅链接转换网站都可，大同小异）然后把这些个节点信息复制到订阅链接里</p>
+<p>客户端选择Clash，点击生成订阅链接，将订阅链接复制到Clash的Profiles里或者直接一键导入Clash。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-29-16.webp"></p>
+<p>在Clash的Profiles中点击刚刚导入的节点组下面的这个小飞机，在Proxy Groups中把自动选择改掉，点击左键修改</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-31-13.webp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-51-33.webp"></p>
+<p>Edit Proxy Group下方的这个名字自己随便改，然后把四个选项中选择load-balance，然后点击OK保存。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-31-46.webp"></p>
+<p>记得保存！</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-31-57.webp"></p>
+<p>这样就可以实现负载均衡了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-32-10.webp"></p>
+<p>速度可能会因为节点分配的问题而略慢于单节点的速度，但是这样能使用更长久。看个4k视频没有什么问题，甚至偶尔能看个8k。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">EdNovas</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://ednovas.xyz/2021/01/04/heroku/">https://ednovas.xyz/2021/01/04/heroku/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1_B-khKHPeEEixZhMB9LlWrg.webp" data-sites="qq,wechat,weibo,qzone"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="ads-wrap"><a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210405210546.png"><center><h3>EdNovas云————EdNovas自己搞的机场，不想来试试嘛？</h3></center></a> <a href="https://antlink.cc/#/register?code=Wa3WBPHC" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/04-24_12-14-24.png"><center><h3>AntLink蚁链————新用户注册免费使用50g/30天，便宜IPLC机场</h3></center></a></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/01/04/games/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/video-game-types-blog-header.webp" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">1000多破解游戏</div></div></a></div><div class="next-post pull-right"><a href="/2021/01/03/waifu2x/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/icon_main.webp" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Waifu2X图片GIF视频放大</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E5%86%8CHeroku"><span class="toc-number">1.1.</span> <span class="toc-text">注册Heroku</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AACloudflare%E8%B4%A6%E5%8F%B7"><span class="toc-number">1.2.</span> <span class="toc-text">注册一个Cloudflare账号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#V2ray"><span class="toc-number">1.3.</span> <span class="toc-text">V2ray</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E9%80%89IP%E8%BD%AF%E4%BB%B6"><span class="toc-number">1.4.</span> <span class="toc-text">优选IP软件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2Heroku"><span class="toc-number">2.</span> <span class="toc-text">部署Heroku</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEV2ray"><span class="toc-number">3.</span> <span class="toc-text">配置V2ray</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CF%E5%8F%8D%E4%BB%A3"><span class="toc-number">4.</span> <span class="toc-text">CF反代</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%98%E9%80%89IP"><span class="toc-number">5.</span> <span class="toc-text">优选IP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-number">6.</span> <span class="toc-text">负载均衡</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-number">6.1.</span> <span class="toc-text">为什么要负载均衡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#V2ray%E9%93%BE%E6%8E%A5%E8%BD%AC%E6%8D%A2"><span class="toc-number">6.2.</span> <span class="toc-text">V2ray链接转换</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background: linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By EdNovas</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">已经到底啦！再往下划要坏掉啦！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/algolia.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    let initData = {
+      el: '#vcomment',
+      appId: 'EnV5YLoyOBqrOXB9EDkMBSy4-gzGzoHsz',
+      appKey: 'MCTWNHJYAMcvfKeta68Xi7Iu',
+      placeholder: '留下你想说的话吧',
+      avatar: 'monsterid',
+      meta: 'nick,mail'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+    
+    if (false) {
+      const otherData = false
+      initData = Object.assign(initData, otherData)
+    }
+    
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>var gitcalendar = new Vue({
+  el: '#gitcalendar',
+  data: {
+    simplemode: false,
+    user: 'wdm1732418365',
+    fixed: 'fixed',
+    px: 'px',
+    x: '',
+    y: '',
+    span1: '',
+    span2: '',
+    month: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+    monthchange: [],
+    oneyearbeforeday: '',
+    thisday: '',
+    amonthago: '',
+    aweekago: '',
+    weekdatacore: 0,
+    datacore: 0,
+    total: 0,
+    datadate: '',
+    data: [],
+    positionplusdata: [],
+    firstweek: [],
+    lastweek: [],
+    beforeweek: [],
+    thisweekdatacore: 0,
+    mounthbeforeday: 0,
+    mounthfirstindex: 0,
+    crispedges: 'crispedges',
+    thisdayindex: 0,
+    amonthagoindex: 0,
+    amonthagoweek: [],
+    firstdate: [],
+    first2date: [],
+    montharrbefore: [],
+    monthindex: 0,
+    color: ['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']
+  },
+  methods: {
+    selectStyle(data, event) {
+      document.querySelector('.angle-wrapper').style.display = 'block'
+      this.span1 = data.date;
+      this.span2 = data.count;
+      this.x = event.clientX - 100;
+      this.y = event.clientY - 60
+    },
+    outStyle() {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    },
+    thiscolor(x) {
+      if (x === 0) {
+        let i = parseInt(x / 2);
+        return this.color[0]
+      } else if (x < 2) {
+        return this.color[1]
+      } else if (x < 20) {
+        let i = parseInt(x / 2);
+        return this.color[i]
+      } else {
+        return this.color[9]
+      }
+    },
+  }
+});
+var apiurl = 'github-calendar-api.vercel.app' ? 'https://github-calendar-api.vercel.app/api?' : 'https://githubapi.ryanchristian.dev/user/'
+var githubapiurl = apiurl + gitcalendar.user;
+//canvas绘图
+function responsiveChart() {
+  let c = document.getElementById("gitcanvas");
+  if (c) {
+    let cmessage = document.getElementById("gitmessage");
+    let ctx = c.getContext("2d");
+    c.width = document.getElementById("gitcalendarcanvasbox").offsetWidth;
+    let linemaxwitdh = 0.96 * c.width / gitcalendar.data.length;
+    c.height = 9 * linemaxwitdh;
+    let lineminwitdh = 0.8 * linemaxwitdh;
+    let setposition = {
+      x: 0.02 * c.width,
+      y: 0.025 * c.width
+    };
+    for (let week in gitcalendar.data) {
+      weekdata = gitcalendar.data[week];
+      for (let day in weekdata) {
+        let dataitem = {
+          date: "",
+          count: "",
+          x: 0,
+          y: 0
+        };
+        gitcalendar.positionplusdata.push(dataitem);
+        ctx.fillStyle = gitcalendar.thiscolor(weekdata[day].count);
+        setposition.y = Math.round(setposition.y * 100) / 100;
+        dataitem.date = weekdata[day].date;
+        dataitem.count = weekdata[day].count;
+        dataitem.x = setposition.x;
+        dataitem.y = setposition.y;
+        ctx.fillRect(setposition.x, setposition.y, lineminwitdh, lineminwitdh);
+        setposition.y = setposition.y + linemaxwitdh
+      };
+      setposition.y = 0.025 * c.width;
+      setposition.x = setposition.x + linemaxwitdh
+    };
+    ctx.font = "600  Arial";
+    ctx.fillStyle = '#aaa';
+    ctx.fillText("日", 0, 1.9 * linemaxwitdh);
+    ctx.fillText("二", 0, 3.9 * linemaxwitdh);
+    ctx.fillText("四", 0, 5.9 * linemaxwitdh);
+    ctx.fillText("六", 0, 7.9 * linemaxwitdh);
+    let monthindexlist = c.width / 24;
+    for (let index in gitcalendar.monthchange) {
+      ctx.fillText(gitcalendar.monthchange[index], monthindexlist, 0.7 * linemaxwitdh);
+      monthindexlist = monthindexlist + c.width / 12
+    };
+    cmessage.onmousemove = function(event) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    };
+    c.onmousemove = function(event) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+      getMousePos(c, event);
+    };
+
+    function getMousePos(canvas, event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left * (canvas.width / rect.width);
+      var y = event.clientY - rect.top * (canvas.height / rect.height);
+      //console.log("x:"+x+",y:"+y);
+      for (let item of gitcalendar.positionplusdata) {
+        let lenthx = x - item.x;
+        let lenthy = y - item.y;
+        //console.log(lenthx,lenthy);
+        if (0 < lenthx && lenthx < lineminwitdh) {
+          if (0 < lenthy && lenthy < lineminwitdh) {
+            //console.log(item.date,item.count)
+            document.querySelector('.angle-wrapper').style.display = 'block'
+            gitcalendar.span1 = item.date;
+            gitcalendar.span2 = item.count;
+            gitcalendar.x = event.clientX - 100;
+            gitcalendar.y = event.clientY - 60
+          }
+        }
+        //if(0< x - item.x <lineminwitdh&&0< y - item.y <lineminwitdh){
+        //console.log(item.count,item.date);
+        //}
+      }
+    }
+  }
+}
+//数据统计算法
+function addlastmonth() {
+  if (gitcalendar.thisdayindex === 0) {
+    thisweekcore(52);
+    thisweekcore(51);
+    thisweekcore(50);
+    thisweekcore(49);
+    thisweekcore(48);
+    gitcalendar.thisweekdatacore += gitcalendar.firstdate[6].count;
+    gitcalendar.amonthago = gitcalendar.firstdate[6].date
+  } else {
+    thisweekcore(52);
+    thisweekcore(51);
+    thisweekcore(50);
+    thisweekcore(49);
+    thisweek2core();
+    gitcalendar.amonthago = gitcalendar.first2date[gitcalendar.thisdayindex - 1].date
+  }
+};
+
+function thisweek2core() {
+  for (let i = gitcalendar.thisdayindex - 1; i < gitcalendar.first2date.length; i++) {
+    gitcalendar.thisweekdatacore += gitcalendar.first2date[i].count
+  }
+};
+
+function thisweekcore(index) {
+  for (let item of gitcalendar.data[index]) {
+    gitcalendar.thisweekdatacore += item.count
+  }
+};
+
+function addlastweek() {
+  for (let item of gitcalendar.lastweek) {
+    gitcalendar.weekdatacore += item.count
+  }
+};
+
+function addbeforeweek() {
+  for (let i = gitcalendar.thisdayindex; i < gitcalendar.beforeweek.length; i++) {
+    gitcalendar.weekdatacore += gitcalendar.beforeweek[i].count
+  }
+};
+
+function addweek(data) {
+  if (gitcalendar.thisdayindex === 6) {
+    gitcalendar.aweekago = gitcalendar.lastweek[0].date;
+    addlastweek()
+  } else {
+    lastweek = data.contributions[51];
+    gitcalendar.aweekago = lastweek[gitcalendar.thisdayindex + 1].date;
+    addlastweek();
+    addbeforeweek()
+  }
+}
+
+fetch(githubapiurl)
+  .then(data => data.json())
+  .then(data => {
+    gitcalendar.data = data.contributions;
+    gitcalendar.total = data.total;
+    gitcalendar.first2date = gitcalendar.data[48];
+    gitcalendar.firstdate = gitcalendar.data[47];
+    gitcalendar.firstweek = data.contributions[0];
+    gitcalendar.lastweek = data.contributions[52];
+    gitcalendar.beforeweek = data.contributions[51];
+    gitcalendar.thisdayindex = gitcalendar.lastweek.length - 1;
+    gitcalendar.thisday = gitcalendar.lastweek[gitcalendar.thisdayindex].date;
+    gitcalendar.oneyearbeforeday = gitcalendar.firstweek[0].date;
+    gitcalendar.monthindex = gitcalendar.thisday.substring(5, 7) * 1;
+    gitcalendar.montharrbefore = gitcalendar.month.splice(gitcalendar.monthindex, 12 - gitcalendar.monthindex);
+    gitcalendar.monthchange = gitcalendar.montharrbefore.concat(gitcalendar.month);
+    addweek(data);
+    addlastmonth();
+    responsiveChart();
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
+
+//手机版更换为svg绘制
+if (document.getElementById("gitcalendarcanvasbox").offsetWidth < 500) {
+  gitcalendar.simplemode = false
+}
+
+//当改变窗口大小时重新绘制canvas
+window.onresize = function() {
+  if (gitcalendar.simplemode) responsiveChart()
+}
+
+//解决滚动滑轮时出现的标签显示
+window.onscroll = function() {
+  if (document.querySelector('.angle-wrapper')) {
+    document.querySelector('.angle-wrapper').style.display = 'none'
+  }
+};</script></div><script defer src="/live2d-widget/autoload.js"></script><script src = "/js/chatroom.js"></script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script><script src = "/js/smoothscrolling.js"></script><script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('setup',{'key':'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="true" data-text="LOVE YOU ❤" data-fontsize="17px" data-random="false" async="async"></script><script src="//code.tidio.co/xi7xvcxspsj7k3k8gwzv5q2dyvsmhsyv.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script>(function (w, d, s, id) {
+            if (typeof (w.webpushr) !== 'undefined') return; w.webpushr = w.webpushr || function () { (w.webpushr.q = w.webpushr.q || []).push(arguments) }; var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.id = id; js.async = 1; js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window, document, 'script', 'webpushr-jssdk'));webpushr('setup', { 'key': 'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script></body></html>
