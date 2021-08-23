@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-08-23T22:49:04.227Z</updated>
+  <updated>2021-08-23T22:50:18.972Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux Nano编辑器使用说明</title>
+    <link href="https://ednovas.xyz/2021/08/15/nano/"/>
+    <id>https://ednovas.xyz/2021/08/15/nano/</id>
+    <published>2021-08-15T22:25:00.000Z</published>
+    <updated>2021-08-23T22:50:18.972Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;「Q：如何生成一个随机字符串？ A：让新手退出Vim。」&lt;/p&gt;
+&lt;p&gt;网上大部分 Linux 相关教程在涉及文本编辑操作时都是选择的 Vim 编辑器，对于新手来说如何退出成了最大的难题。其实除了 Vim 之外还有别的选择，那就是 nano 。上手 nano 几乎是零学习成本，而且对于只改几行配置文件这样的简单操作，nano 的用户体验完全吊打 Vim。&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;一般系统都内置了 nano 编辑器，如果没有，可以自己安装。&lt;/p&gt;
+&lt;h3 id=&quot;Cen­tOS-系统&quot;&gt;&lt;a href=&quot;#Cen­tOS-系统&quot; class=&quot;headerlink&quot; title=&quot;Cen­tOS 系统&quot;&gt;&lt;/a&gt;Cen­tOS 系统&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install -y nano&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;De­bian-​Ubuntu-系统&quot;&gt;&lt;a href=&quot;#De­bian-​Ubuntu-系统&quot; class=&quot;headerlink&quot; title=&quot;De­bian/​Ubuntu 系统&quot;&gt;&lt;/a&gt;De­bian/​Ubuntu 系统&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt-get install -y nano&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;基本操作&quot;&gt;&lt;a href=&quot;#基本操作&quot; class=&quot;headerlink&quot; title=&quot;基本操作&quot;&gt;&lt;/a&gt;基本操作&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
+    
+    <category term="nano" scheme="https://ednovas.xyz/tags/nano/"/>
+    
+  </entry>
   
   <entry>
     <title>UFW 简单防火墙安装、配置、禁Ping</title>
@@ -610,34 +640,6 @@
     <category term="小说站" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E8%AF%B4%E7%AB%99/"/>
     
     <category term="小说" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E8%AF%B4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WIN10UI————网页win10系统</title>
-    <link href="https://ednovas.xyz/2021/06/24/ylui/"/>
-    <id>https://ednovas.xyz/2021/06/24/ylui/</id>
-    <published>2021-06-24T12:06:00.000Z</published>
-    <updated>2021-08-23T22:49:04.226Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;YLUI是一款纯前端框架，是对WEB桌面UI的一个大胆尝试。&lt;/p&gt;
-&lt;p&gt;它凝聚了作者近一年的心血，作为WIN10UI开源项目的升级版，承载了作者对WEB桌面设计风格的追求。&lt;/p&gt;
-&lt;p&gt;在前端技术日新月异的背景下，YLUI力图提供一种新的web应用组织形式。&lt;/p&gt;
-&lt;p&gt;如果你正在寻找一个漂亮的UI组件库，你应该选择bootstrap,layui,element-ui等项目。而你想要让这些应用建立联系，构成组织，并提供一个统一的门户，那么YLUI将会是一个不错的选择。&lt;/p&gt;
-&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yuri2peter/ylui&quot;&gt;https://github.com/yuri2peter/ylui&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;说明文档&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/yuri2peter/ylui/tree/master/documents&quot;&gt;https://github.com/yuri2peter/ylui/tree/master/documents&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;搭建&quot;&gt;&lt;a href=&quot;#搭建&quot; class=&quot;headerlink&quot; title=&quot;搭建&quot;&gt;&lt;/a&gt;搭建&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
-    
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   
