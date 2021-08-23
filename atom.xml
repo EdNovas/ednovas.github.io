@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-08-15T22:43:58.811Z</updated>
+  <updated>2021-08-23T22:49:04.227Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,41 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Linux Nano编辑器使用说明</title>
-    <link href="https://ednovas.xyz/2021/08/15/nano/"/>
-    <id>https://ednovas.xyz/2021/08/15/nano/</id>
-    <published>2021-08-15T22:25:00.000Z</published>
-    <updated>2021-08-15T22:43:58.811Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;「Q：如何生成一个随机字符串？ A：让新手退出Vim。」&lt;/p&gt;
-&lt;p&gt;网上大部分 Linux 相关教程在涉及文本编辑操作时都是选择的 Vim 编辑器，对于新手来说如何退出成了最大的难题。其实除了 Vim 之外还有别的选择，那就是 nano 。上手 nano 几乎是零学习成本，而且对于只改几行配置文件这样的简单操作，nano 的用户体验完全吊打 Vim。&lt;/p&gt;
-&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;一般系统都内置了 nano 编辑器，如果没有，可以自己安装。&lt;/p&gt;
-&lt;h3 id=&quot;Cen­tOS-系统&quot;&gt;&lt;a href=&quot;#Cen­tOS-系统&quot; class=&quot;headerlink&quot; title=&quot;Cen­tOS 系统&quot;&gt;&lt;/a&gt;Cen­tOS 系统&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install -y nano&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;De­bian-​Ubuntu-系统&quot;&gt;&lt;a href=&quot;#De­bian-​Ubuntu-系统&quot; class=&quot;headerlink&quot; title=&quot;De­bian/​Ubuntu 系统&quot;&gt;&lt;/a&gt;De­bian/​Ubuntu 系统&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt-get install -y nano&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;基本操作&quot;&gt;&lt;a href=&quot;#基本操作&quot; class=&quot;headerlink&quot; title=&quot;基本操作&quot;&gt;&lt;/a&gt;基本操作&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
-    
-    <category term="nano" scheme="https://ednovas.xyz/tags/nano/"/>
-    
-  </entry>
-  
-  <entry>
     <title>UFW 简单防火墙安装、配置、禁Ping</title>
     <link href="https://ednovas.xyz/2021/08/15/ufw/"/>
     <id>https://ednovas.xyz/2021/08/15/ufw/</id>
     <published>2021-08-15T22:25:00.000Z</published>
-    <updated>2021-08-15T23:27:53.723Z</updated>
+    <updated>2021-08-23T22:49:04.227Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;UFW 是一个 Arch Linux、De­bian 或 Ubuntu 中管理防火墙规则的前端，可大大简化防火墙的配置过程。&lt;/p&gt;
@@ -81,7 +51,7 @@
     <link href="https://ednovas.xyz/2021/08/01/aria2andrclone/"/>
     <id>https://ednovas.xyz/2021/08/01/aria2andrclone/</id>
     <published>2021-08-02T00:56:00.000Z</published>
-    <updated>2021-08-01T13:55:38.061Z</updated>
+    <updated>2021-08-23T22:49:04.231Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;既然是Aria2离线下载了，那么就肯定是用linux服务器下载并且安装aria2了，这里推荐一个好用而且十分方便的方法&lt;/p&gt;
@@ -118,7 +88,7 @@
     <link href="https://ednovas.xyz/2021/08/01/cloudreve/"/>
     <id>https://ednovas.xyz/2021/08/01/cloudreve/</id>
     <published>2021-08-02T00:56:00.000Z</published>
-    <updated>2021-08-01T13:09:03.515Z</updated>
+    <updated>2021-08-23T22:49:04.231Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -150,7 +120,7 @@
     <link href="https://ednovas.xyz/2021/07/31/f12/"/>
     <id>https://ednovas.xyz/2021/07/31/f12/</id>
     <published>2021-08-01T05:56:00.000Z</published>
-    <updated>2021-08-01T09:35:17.675Z</updated>
+    <updated>2021-08-23T22:49:04.230Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h2&gt;&lt;p&gt;禁止打开F12 调试前端代码&lt;/p&gt;
@@ -178,7 +148,7 @@
     <link href="https://ednovas.xyz/2021/07/31/win11/"/>
     <id>https://ednovas.xyz/2021/07/31/win11/</id>
     <published>2021-08-01T03:56:00.000Z</published>
-    <updated>2021-07-31T14:20:18.386Z</updated>
+    <updated>2021-08-23T22:49:04.226Z</updated>
     
     
     <summary type="html">&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
@@ -209,7 +179,7 @@
     <link href="https://ednovas.xyz/2021/07/20/hugo/"/>
     <id>https://ednovas.xyz/2021/07/20/hugo/</id>
     <published>2021-07-21T03:30:00.000Z</published>
-    <updated>2021-07-20T12:26:07.711Z</updated>
+    <updated>2021-08-23T22:49:04.229Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -239,7 +209,7 @@
     <link href="https://ednovas.xyz/2021/07/20/search-engines-list/"/>
     <id>https://ednovas.xyz/2021/07/20/search-engines-list/</id>
     <published>2021-07-21T03:27:00.000Z</published>
-    <updated>2021-07-20T12:21:24.712Z</updated>
+    <updated>2021-08-23T22:49:04.227Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -264,7 +234,7 @@
     <link href="https://ednovas.xyz/2021/07/20/googlerecaptcha/"/>
     <id>https://ednovas.xyz/2021/07/20/googlerecaptcha/</id>
     <published>2021-07-20T17:27:00.000Z</published>
-    <updated>2021-07-20T02:48:29.106Z</updated>
+    <updated>2021-08-23T22:49:04.230Z</updated>
     
     
     <summary type="html">&lt;p&gt;以前进行谷歌搜索的时候，都是很正常的。最近服务器发生了一些变动，在地址栏直接输入关键字搜索，就跳出了人机验证的界面，如下图&lt;/p&gt;
@@ -296,7 +266,7 @@
     <link href="https://ednovas.xyz/2021/07/20/linuxnoroot/"/>
     <id>https://ednovas.xyz/2021/07/20/linuxnoroot/</id>
     <published>2021-07-20T17:27:00.000Z</published>
-    <updated>2021-07-20T02:40:34.033Z</updated>
+    <updated>2021-08-23T22:49:04.229Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;创建非root用户&quot;&gt;&lt;a href=&quot;#创建非root用户&quot; class=&quot;headerlink&quot; title=&quot;创建非root用户&quot;&gt;&lt;/a&gt;创建非root用户&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;useradd -m ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -323,7 +293,7 @@
     <link href="https://ednovas.xyz/2021/07/20/firewalld/"/>
     <id>https://ednovas.xyz/2021/07/20/firewalld/</id>
     <published>2021-07-20T17:14:00.000Z</published>
-    <updated>2021-07-20T02:27:08.409Z</updated>
+    <updated>2021-08-23T22:49:04.230Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;运行、停止、禁用firewalld&quot;&gt;&lt;a href=&quot;#运行、停止、禁用firewalld&quot; class=&quot;headerlink&quot; title=&quot;运行、停止、禁用firewalld&quot;&gt;&lt;/a&gt;运行、停止、禁用firewalld&lt;/h2&gt;&lt;h3 id=&quot;启动&quot;&gt;&lt;a href=&quot;#启动&quot; class=&quot;headerlink&quot; title=&quot;启动&quot;&gt;&lt;/a&gt;启动&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;systemctl start  firewalld&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -353,7 +323,7 @@
     <link href="https://ednovas.xyz/2021/07/16/hexorandom/"/>
     <id>https://ednovas.xyz/2021/07/16/hexorandom/</id>
     <published>2021-07-17T01:56:00.000Z</published>
-    <updated>2021-07-20T02:12:30.904Z</updated>
+    <updated>2021-08-23T22:49:04.229Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;插件&quot;&gt;&lt;a href=&quot;#插件&quot; class=&quot;headerlink&quot; title=&quot;插件&quot;&gt;&lt;/a&gt;插件&lt;/h2&gt;&lt;p&gt;hexo自带有这个插件&lt;code&gt;hexo-generator-random&lt;/code&gt;&lt;/p&gt;
@@ -387,7 +357,7 @@
     <link href="https://ednovas.xyz/2021/07/04/google/"/>
     <id>https://ednovas.xyz/2021/07/04/google/</id>
     <published>2021-07-04T23:56:00.000Z</published>
-    <updated>2021-07-23T03:27:41.480Z</updated>
+    <updated>2021-08-23T22:49:04.230Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;今天在 Dev 社区看到的这篇帖子，虽然自己天天用 Google，但是这些技巧却不是那么的熟悉，所以分享给大家&lt;/p&gt;
@@ -413,7 +383,7 @@
     <link href="https://ednovas.xyz/2021/07/04/cloudflarepages/"/>
     <id>https://ednovas.xyz/2021/07/04/cloudflarepages/</id>
     <published>2021-07-04T19:56:00.000Z</published>
-    <updated>2021-07-04T06:05:11.089Z</updated>
+    <updated>2021-08-23T22:49:04.231Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Cloudflare-Pages&quot;&gt;&lt;a href=&quot;#Cloudflare-Pages&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Pages&quot;&gt;&lt;/a&gt;Cloudflare Pages&lt;/h2&gt;&lt;h3 id=&quot;Cloudflare-Pages-是什么？&quot;&gt;&lt;a href=&quot;#Cloudflare-Pages-是什么？&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Pages 是什么？&quot;&gt;&lt;/a&gt;Cloudflare Pages 是什么？&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://pages.cloudflare.com/&quot;&gt;Cloudflare Pages&lt;/a&gt; 是一个使用 JAMstack 的网站部署平台，和 GitHub Pages 类似，都是一个静态站点部署平台。&lt;/p&gt;
@@ -456,7 +426,7 @@
     <link href="https://ednovas.xyz/2021/07/03/mccms/"/>
     <id>https://ednovas.xyz/2021/07/03/mccms/</id>
     <published>2021-07-04T03:56:00.000Z</published>
-    <updated>2021-07-04T04:06:29.919Z</updated>
+    <updated>2021-08-23T22:49:04.229Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;MCCMS&quot;&gt;&lt;a href=&quot;#MCCMS&quot; class=&quot;headerlink&quot; title=&quot;MCCMS&quot;&gt;&lt;/a&gt;MCCMS&lt;/h2&gt;&lt;p&gt;小浣熊是个很好的漫画CMS,但是采集比较麻烦&lt;/p&gt;
@@ -490,7 +460,7 @@
     <link href="https://ednovas.xyz/2021/07/03/comiccms/"/>
     <id>https://ednovas.xyz/2021/07/03/comiccms/</id>
     <published>2021-07-04T01:56:00.000Z</published>
-    <updated>2021-07-04T04:06:42.337Z</updated>
+    <updated>2021-08-23T22:49:04.231Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;小浣熊漫画CMS&quot;&gt;&lt;a href=&quot;#小浣熊漫画CMS&quot; class=&quot;headerlink&quot; title=&quot;小浣熊漫画CMS&quot;&gt;&lt;/a&gt;小浣熊漫画CMS&lt;/h2&gt;&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/hiliqi/xiaohuanxiong&quot;&gt;https://github.com/hiliqi/xiaohuanxiong&lt;/a&gt;&lt;/p&gt;
@@ -524,7 +494,7 @@
     <link href="https://ednovas.xyz/2021/07/03/blog/"/>
     <id>https://ednovas.xyz/2021/07/03/blog/</id>
     <published>2021-07-03T17:48:46.000Z</published>
-    <updated>2021-07-03T02:24:19.278Z</updated>
+    <updated>2021-08-23T22:49:04.231Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -548,7 +518,7 @@
     <link href="https://ednovas.xyz/2021/07/01/typecho/"/>
     <id>https://ednovas.xyz/2021/07/01/typecho/</id>
     <published>2021-07-01T17:56:00.000Z</published>
-    <updated>2021-07-02T13:38:37.486Z</updated>
+    <updated>2021-08-23T22:49:04.227Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Typecho&quot;&gt;&lt;a href=&quot;#Typecho&quot; class=&quot;headerlink&quot; title=&quot;Typecho&quot;&gt;&lt;/a&gt;Typecho&lt;/h2&gt;&lt;p&gt;项目源码: &lt;a href=&quot;https://github.com/typecho/typecho&quot;&gt;https://github.com/typecho/typecho&lt;/a&gt;&lt;/p&gt;
@@ -580,7 +550,7 @@
     <link href="https://ednovas.xyz/2021/07/01/githubweb/"/>
     <id>https://ednovas.xyz/2021/07/01/githubweb/</id>
     <published>2021-07-01T15:56:00.000Z</published>
-    <updated>2021-07-01T01:17:09.360Z</updated>
+    <updated>2021-08-23T22:49:04.230Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/hunshcn/gh-proxy&quot;&gt;https://github.com/hunshcn/gh-proxy&lt;/a&gt;&lt;/p&gt;
@@ -614,7 +584,7 @@
     <link href="https://ednovas.xyz/2021/06/27/bookcms/"/>
     <id>https://ednovas.xyz/2021/06/27/bookcms/</id>
     <published>2021-06-27T17:56:00.000Z</published>
-    <updated>2021-07-03T12:23:11.938Z</updated>
+    <updated>2021-08-23T22:49:04.231Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;官网&quot;&gt;&lt;a href=&quot;#官网&quot; class=&quot;headerlink&quot; title=&quot;官网&quot;&gt;&lt;/a&gt;官网&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://bbs.kyxscms.com/&quot;&gt;http://bbs.kyxscms.com/&lt;/a&gt;&lt;/p&gt;
@@ -640,6 +610,34 @@
     <category term="小说站" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E8%AF%B4%E7%AB%99/"/>
     
     <category term="小说" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E8%AF%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WIN10UI————网页win10系统</title>
+    <link href="https://ednovas.xyz/2021/06/24/ylui/"/>
+    <id>https://ednovas.xyz/2021/06/24/ylui/</id>
+    <published>2021-06-24T12:06:00.000Z</published>
+    <updated>2021-08-23T22:49:04.226Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;YLUI是一款纯前端框架，是对WEB桌面UI的一个大胆尝试。&lt;/p&gt;
+&lt;p&gt;它凝聚了作者近一年的心血，作为WIN10UI开源项目的升级版，承载了作者对WEB桌面设计风格的追求。&lt;/p&gt;
+&lt;p&gt;在前端技术日新月异的背景下，YLUI力图提供一种新的web应用组织形式。&lt;/p&gt;
+&lt;p&gt;如果你正在寻找一个漂亮的UI组件库，你应该选择bootstrap,layui,element-ui等项目。而你想要让这些应用建立联系，构成组织，并提供一个统一的门户，那么YLUI将会是一个不错的选择。&lt;/p&gt;
+&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yuri2peter/ylui&quot;&gt;https://github.com/yuri2peter/ylui&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;说明文档&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/yuri2peter/ylui/tree/master/documents&quot;&gt;https://github.com/yuri2peter/ylui/tree/master/documents&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;搭建&quot;&gt;&lt;a href=&quot;#搭建&quot; class=&quot;headerlink&quot; title=&quot;搭建&quot;&gt;&lt;/a&gt;搭建&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   
