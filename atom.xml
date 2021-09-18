@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-08-23T22:50:18.972Z</updated>
+  <updated>2021-09-18T03:28:06.558Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从网易云音乐迁移歌单到Spotify</title>
+    <link href="https://ednovas.xyz/2021/09/17/neteasetospotify/"/>
+    <id>https://ednovas.xyz/2021/09/17/neteasetospotify/</id>
+    <published>2021-09-17T22:58:00.000Z</published>
+    <updated>2021-09-18T03:28:06.558Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;整体思路&quot;&gt;&lt;a href=&quot;#整体思路&quot; class=&quot;headerlink&quot; title=&quot;整体思路&quot;&gt;&lt;/a&gt;整体思路&lt;/h2&gt;&lt;p&gt;网易云音乐导入到Spotify的整体思路就是&lt;/p&gt;
+&lt;p&gt;先将网易云音乐歌单导出为文字形式，如：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ot A Little Crush On You -- Wildflowers&amp;#x2F;Emmi&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Au palais royal &amp;#x2F; les prostituées -- Various Artists&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;笑东风 -- 杨昊昆&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;末 -- AirJordy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;V.A.-Komorebi（第五人格）（舒 remix） -- 舒&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;We All Lift Together -- Keith Power&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Avicii (Tribute Mix) -- Starek&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Karaoke 365-Somebody to you - The Vamps（合唱版）（猫的蒽 remix） -- 猫的蒽&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Somebody To You -- The Vamps&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;No Hay Nadie Más -- Sebastián Yatra&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这样的&lt;code&gt;歌名 -- 作者&lt;/code&gt;的形式的txt文档，然后再导入到spotify中&lt;/p&gt;
+&lt;h2 id=&quot;导出方法1&quot;&gt;&lt;a href=&quot;#导出方法1&quot; class=&quot;headerlink&quot; title=&quot;导出方法1&quot;&gt;&lt;/a&gt;导出方法1&lt;/h2&gt;&lt;p&gt;使用油猴脚本，将网页版网易云的歌单导出为TXT格式，但是由于网页版网易云受限，最多只能导出1000首歌（如果该歌单超过1000首就只会显示1000首。多歌单总计超1000首，但每个不超1000不受影响）&lt;/p&gt;
+&lt;p&gt;脚本地址（油猴Tampermonkey的安装教程就不再赘述）：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://greasyfork.org/zh-CN/scripts/38793-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%88%97%E8%A1%A8%E5%AF%BC%E5%87%BA&quot;&gt;https://greasyfork.org/zh-CN/scripts/38793-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%88%97%E8%A1%A8%E5%AF%BC%E5%87%BA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装完成后打开你的歌单网页，然后右上角就会出现导出列表按钮，保存到本地即可&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    <category term="网站" scheme="https://ednovas.xyz/categories/%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="音乐" scheme="https://ednovas.xyz/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+    <category term="网易云" scheme="https://ednovas.xyz/tags/%E7%BD%91%E6%98%93%E4%BA%91/"/>
+    
+    <category term="spotify" scheme="https://ednovas.xyz/tags/spotify/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux Nano编辑器使用说明</title>
@@ -606,40 +640,6 @@
     <category term="github" scheme="https://ednovas.xyz/tags/github/"/>
     
     <category term="加速" scheme="https://ednovas.xyz/tags/%E5%8A%A0%E9%80%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建狂雨CMS小说站</title>
-    <link href="https://ednovas.xyz/2021/06/27/bookcms/"/>
-    <id>https://ednovas.xyz/2021/06/27/bookcms/</id>
-    <published>2021-06-27T17:56:00.000Z</published>
-    <updated>2021-08-23T22:49:04.231Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;官网&quot;&gt;&lt;a href=&quot;#官网&quot; class=&quot;headerlink&quot; title=&quot;官网&quot;&gt;&lt;/a&gt;官网&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://bbs.kyxscms.com/&quot;&gt;http://bbs.kyxscms.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;狂雨cms小说采集站&lt;/p&gt;
-&lt;p&gt;官网下载直链: &lt;a href=&quot;http://bbs.kyxscms.com/?s=ajax/downfile/id/1051&quot;&gt;http://bbs.kyxscms.com/?s=ajax/downfile/id/1051&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;EdNovas网盘分流:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://ednovas.cloud/s/O0Vu8&quot;&gt;https://ednovas.cloud/s/O0Vu8&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;解析域名,添加网站域名,申请ssl,强制跳转https&lt;/p&gt;
-&lt;p&gt;将下载的zip包放到网站根目录解压缩&lt;/p&gt;
-&lt;p&gt;nginx伪静态改为thinkphp然后保存即可&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
-    
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="小说站" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E8%AF%B4%E7%AB%99/"/>
-    
-    <category term="小说" scheme="https://ednovas.xyz/tags/%E5%B0%8F%E8%AF%B4/"/>
     
   </entry>
   

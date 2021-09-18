@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>从网易云音乐迁移歌单到Spotify</title>
+      <link href="2021/09/17/neteasetospotify/"/>
+      <url>2021/09/17/neteasetospotify/</url>
+      
+        <content type="html"><![CDATA[<h2 id="整体思路"><a href="#整体思路" class="headerlink" title="整体思路"></a>整体思路</h2><p>网易云音乐导入到Spotify的整体思路就是</p><p>先将网易云音乐歌单导出为文字形式，如：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ot A Little Crush On You -- Wildflowers&#x2F;Emmi</span><br><span class="line">Au palais royal &#x2F; les prostituées -- Various Artists</span><br><span class="line">笑东风 -- 杨昊昆</span><br><span class="line">末 -- AirJordy</span><br><span class="line">V.A.-Komorebi（第五人格）（舒 remix） -- 舒</span><br><span class="line">We All Lift Together -- Keith Power</span><br><span class="line">Avicii (Tribute Mix) -- Starek</span><br><span class="line">Karaoke 365-Somebody to you - The Vamps（合唱版）（猫的蒽 remix） -- 猫的蒽</span><br><span class="line">Somebody To You -- The Vamps</span><br><span class="line">No Hay Nadie Más -- Sebastián Yatra</span><br></pre></td></tr></table></figure><p>这样的<code>歌名 -- 作者</code>的形式的txt文档，然后再导入到spotify中</p><h2 id="导出方法1"><a href="#导出方法1" class="headerlink" title="导出方法1"></a>导出方法1</h2><p>使用油猴脚本，将网页版网易云的歌单导出为TXT格式，但是由于网页版网易云受限，最多只能导出1000首歌（如果该歌单超过1000首就只会显示1000首。多歌单总计超1000首，但每个不超1000不受影响）</p><p>脚本地址（油猴Tampermonkey的安装教程就不再赘述）：</p><p><a href="https://greasyfork.org/zh-CN/scripts/38793-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%88%97%E8%A1%A8%E5%AF%BC%E5%87%BA">https://greasyfork.org/zh-CN/scripts/38793-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%88%97%E8%A1%A8%E5%AF%BC%E5%87%BA</a></p><p>安装完成后打开你的歌单网页，然后右上角就会出现导出列表按钮，保存到本地即可</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/5s28oe4p37xtwc7u8cj087r3ni6d.png"></p><h2 id="导出方法2"><a href="#导出方法2" class="headerlink" title="导出方法2"></a>导出方法2</h2><p>GitHub链接：</p><p><a href="https://github.com/yueyericardo/Netease-to-Youtube-or-Spotify">https://github.com/yueyericardo/Netease-to-Youtube-or-Spotify</a></p><p>网站：</p><p><a href="https://yyrcd.com/n2s/">https://yyrcd.com/n2s/</a></p><p>根据指示输入歌单代码（这个应该自己就能看懂了吧嘿嘿嘿）</p><p>但是同样的，也有1000首的限制</p><p>还可以麻烦项目大佬给你超过1000首歌的txt文档，在GitHub issues里留言即可（态度一定要诚恳哦）：</p><p><a href="https://github.com/yueyericardo/Netease-to-Youtube-or-Spotify/issues/4">https://github.com/yueyericardo/Netease-to-Youtube-or-Spotify/issues/4</a></p><h2 id="导入方法"><a href="#导入方法" class="headerlink" title="导入方法"></a>导入方法</h2><p>导入方法都大同小异，这里使用spotlistr</p><p><a href="https://www.spotlistr.com/search/textbox">https://www.spotlistr.com/search/textbox</a></p><p>登录你的spotify账号，然后在文本框内复制黏贴你的txt文档内容</p><p>然后搜索即可，歌单歌曲较多请耐心等待</p><p>搜索完成以后就可以创建并且添加歌曲了（search！结束后还需要点一个creat list来创建歌单）</p><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>Spotify 美区歌曲最多，免费版用不惯可以使用<a href="/2021/01/07/spotify/">破解版</a>，有能力最好还是支持正版！除此之外，学生有免费3个月试用，上家庭组的车可以更便宜的价格拼到，淘宝也有良心跑路卖家可以便宜购买账号。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂 </category>
+          
+          <category> 网站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件 </tag>
+            
+            <tag> 音乐 </tag>
+            
+            <tag> 网易云 </tag>
+            
+            <tag> spotify </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux Nano编辑器使用说明</title>
       <link href="2021/08/15/nano/"/>
       <url>2021/08/15/nano/</url>
@@ -5056,7 +5089,7 @@
       <link href="2021/01/07/spotify/"/>
       <url>2021/01/07/spotify/</url>
       
-        <content type="html"><![CDATA[<h2 id="电脑端"><a href="#电脑端" class="headerlink" title="电脑端"></a>电脑端</h2><p><a href="https://ednovas.lanzoux.com/i6duAk4ivle">Spotify.1.0.8.7z</a></p><p>下载解压完后，先安装Installer for Spotify 1.0.8.exe，一路默认即可。然后再运行Script_Spotify.bat打补丁，打开补丁后按任意键继续，最后会出现一个外语的弹出窗口，点击确定并关闭即可。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-07_11-08-01.webp"></p><p>然后按win+r打开运行窗口，输入appdata并点ok确定。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-07_11-09-43.webp"></p><p>进入AppData以后，找到AppData\Local\Spotify位置，然后新建一个文件夹叫Update。右键文件夹，打开属性。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-07_11-14-28.webp"></p><p>然后属性选Security安全，Edit…更改权限，把右边三个的权限全部选择Deny拒绝。注意！是系统SYSTEM、你的用户（我这里的Ed）、管理员Administrators所有的权限都拒绝，最后点Apply应用，确定，确定。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-07_11-17-50.webp"></p><h2 id="安卓端"><a href="#安卓端" class="headerlink" title="安卓端"></a>安卓端</h2><p>直接下载安装登录即可</p><p><a href="https://ednovas.lanzoux.com/iWx2wk4iw0j">spotify.apk</a></p><p>最新版更新tg频道 <a href="https://t.me/spotifypremiumcrackapk">https://t.me/spotifypremiumcrackapk</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="全端"><a href="#全端" class="headerlink" title="全端"></a>全端</h2><p>（2021-09-17更新）</p><p>tg频道：<a href="https://t.me/Spotify_Crack">https://t.me/Spotify_Crack</a></p><p>rar后缀的是windows版的，ipa后缀是ios版的，apk后缀是安卓版的</p><h2 id="电脑端"><a href="#电脑端" class="headerlink" title="电脑端"></a>电脑端</h2><p><a href="https://ednovas.lanzoux.com/i6duAk4ivle">Spotify.1.0.8.7z</a></p><p>下载解压完后，先安装Installer for Spotify 1.0.8.exe，一路默认即可。然后再运行Script_Spotify.bat打补丁，打开补丁后按任意键继续，最后会出现一个外语的弹出窗口，点击确定并关闭即可。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-07_11-08-01.webp"></p><p>然后按win+r打开运行窗口，输入appdata并点ok确定。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-07_11-09-43.webp"></p><p>进入AppData以后，找到AppData\Local\Spotify位置，然后新建一个文件夹叫Update。右键文件夹，打开属性。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-07_11-14-28.webp"></p><p>然后属性选Security安全，Edit…更改权限，把右边三个的权限全部选择Deny拒绝。注意！是系统SYSTEM、你的用户（我这里的Ed）、管理员Administrators所有的权限都拒绝，最后点Apply应用，确定，确定。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-07_11-17-50.webp"></p><h2 id="安卓端"><a href="#安卓端" class="headerlink" title="安卓端"></a>安卓端</h2><p>直接下载安装登录即可</p><p><a href="https://ednovas.lanzoux.com/iWx2wk4iw0j">spotify.apk</a></p><p>最新版更新tg频道 <a href="https://t.me/spotifypremiumcrackapk">https://t.me/spotifypremiumcrackapk</a></p>]]></content>
       
       
       <categories>
