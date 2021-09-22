@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-09-22T05:28:49.995Z</updated>
+  <updated>2021-09-22T20:39:48.941Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>E5sub bot搭建</title>
+    <link href="https://ednovas.xyz/2021/09/22/e5subbot/"/>
+    <id>https://ednovas.xyz/2021/09/22/e5subbot/</id>
+    <published>2021-09-22T19:01:00.000Z</published>
+    <updated>2021-09-22T20:39:48.941Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/iyear/E5SubBot&quot;&gt;https://github.com/iyear/E5SubBot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;直接部署&quot;&gt;&lt;a href=&quot;#直接部署&quot; class=&quot;headerlink&quot; title=&quot;直接部署&quot;&gt;&lt;/a&gt;直接部署&lt;/h2&gt;&lt;p&gt;虽然有docker方式部署，但是本项目直接部署会更方便一些&lt;/p&gt;
+&lt;p&gt;在releases界面复制对应版本的链接 &lt;a href=&quot;https://github.com/iyear/E5SubBot/releases&quot;&gt;https://github.com/iyear/E5SubBot/releases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/iyear/E5SubBot/releases/download/v0.3.1/E5SubBot_Linux_64bit.tar.gz%EF%BC%880.3.1%E7%89%88%E6%9C%AClinux64bit%EF%BC%89&quot;&gt;https://github.com/iyear/E5SubBot/releases/download/v0.3.1/E5SubBot_Linux_64bit.tar.gz（0.3.1版本linux64bit）&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir /home/e5sub &amp;amp;&amp;amp; &lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; /home/e5sub&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget https://github.com/iyear/E5SubBot/releases/download/v0.3.1/E5SubBot_Linux_64bit.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tar -zxvf E5SubBot_Linux_64bit.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cp config.yml.example config.yml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后打开&lt;code&gt;config.yml&lt;/code&gt;文件并编辑配置文件&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;bot_token: YOUR_BOT_TOKEN # 从botfather那里获取，创建一个新的机器人并记录下token&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# socks5: 127.0.0.1:1080&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;bindmax: 999 # 最大绑定账号数量&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;goroutine: 20 # 并发数，不要过大&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;admin: 111,222,333 # https:&amp;#x2F;&amp;#x2F;t.me&amp;#x2F;userinfobot 查看自己的tgid作为管理员&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;errlimit: 999 # 单账户最大出错次数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;notice: |- # 公告内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   aaa&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   bbb&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   ccc&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cron: &amp;quot;1 *&amp;#x2F;1 * * *&amp;quot; # API调用频率，cron表达式&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;db: sqlite # splite数据库&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;table: users&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# mysql:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    host: 127.0.0.1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    port: 3306&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    user: root&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    password: pwd&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    database: e5sub&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sqlite:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   db: data.db&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;docker部署&quot;&gt;&lt;a href=&quot;#docker部署&quot; class=&quot;headerlink&quot; title=&quot;docker部署&quot;&gt;&lt;/a&gt;docker部署&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
+    
+    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    
+    <category term="e5" scheme="https://ednovas.xyz/tags/e5/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建YYeTs视频资源下载站</title>
@@ -604,40 +636,6 @@
     <category term="cloudflare pages" scheme="https://ednovas.xyz/tags/cloudflare-pages/"/>
     
     <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>漫城CMS漫画站</title>
-    <link href="https://ednovas.xyz/2021/07/03/mccms/"/>
-    <id>https://ednovas.xyz/2021/07/03/mccms/</id>
-    <published>2021-07-04T03:56:00.000Z</published>
-    <updated>2021-08-23T22:49:04.229Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;MCCMS&quot;&gt;&lt;a href=&quot;#MCCMS&quot; class=&quot;headerlink&quot; title=&quot;MCCMS&quot;&gt;&lt;/a&gt;MCCMS&lt;/h2&gt;&lt;p&gt;小浣熊是个很好的漫画CMS,但是采集比较麻烦&lt;/p&gt;
-&lt;p&gt;那么,漫城CMS就是一个很好的选择&lt;/p&gt;
-&lt;p&gt;官网: &lt;a href=&quot;https://www.mccms.cn/&quot;&gt;https://www.mccms.cn/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;下载直链: &lt;a href=&quot;http://www.chshcms.net/bbs/show/1551.html&quot;&gt;http://www.chshcms.net/bbs/show/1551.html&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;搭建&quot;&gt;&lt;a href=&quot;#搭建&quot; class=&quot;headerlink&quot; title=&quot;搭建&quot;&gt;&lt;/a&gt;搭建&lt;/h2&gt;&lt;p&gt;新建网站,https重定向,ssl证书&lt;/p&gt;
-&lt;p&gt;复制下载的zip压缩包到网站根目录,然后解压&lt;/p&gt;
-&lt;p&gt;将解压后的文件夹内的全部文件剪切到根目录下&lt;/p&gt;
-&lt;p&gt;将&lt;code&gt;说明文档&lt;/code&gt;中的&lt;code&gt;伪静态规则&lt;/code&gt;文件全扔到根目录内替换&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="CMS" scheme="https://ednovas.xyz/tags/CMS/"/>
-    
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="漫画站" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB%E7%AB%99/"/>
-    
-    <category term="漫画" scheme="https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB/"/>
     
   </entry>
   

@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/02/13/e5sub/</loc>
+    
+    <lastmod>2021-09-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/2021/09/22/e5subbot/</loc>
+    
+    <lastmod>2021-09-22</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2021/09/21/ncmtoflacbot/</loc>
     
     <lastmod>2021-09-22</lastmod>
@@ -283,13 +297,6 @@
   
   <url>
     <loc>https://ednovas.xyz/2021/05/02/ditto/</loc>
-    
-    <lastmod>2021-08-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/2021/02/13/e5sub/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
@@ -3988,6 +3995,13 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/MP3/</loc>
+    <lastmod>2021-09-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/e5/</loc>
     <lastmod>2021-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
