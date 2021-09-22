@@ -4,6 +4,128 @@
   
     
     <entry>
+      <title>搭建YYeTs视频资源下载站</title>
+      <link href="2021/09/21/rrysweb/"/>
+      <url>2021/09/21/rrysweb/</url>
+      
+        <content type="html"><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/tgbot-collection/YYeTsBot">https://github.com/tgbot-collection/YYeTsBot</a></p><p>大佬搭建的人人影视bot：<a href="https://t.me/yyets_bot">https://t.me/yyets_bot</a></p><p>大佬搭建的人人影视分享站：<a href="https://yyets.dmesg.app/">https://yyets.dmesg.app/</a></p><h2 id="部署web"><a href="#部署web" class="headerlink" title="部署web"></a>部署web</h2><p>一键脚本，支持amd64/arm64，请先安装 docker、docker-compose和curl</p><p>Linux/macOS：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;tgbot-collection&#x2F;YYeTsBot&#x2F;master&#x2F;scripts&#x2F;install.sh)&quot;</span><br></pre></td></tr></table></figure><h2 id="部署bot"><a href="#部署bot" class="headerlink" title="部署bot"></a>部署bot</h2><p>可以选择docker，也可以直接运行在机器上。</p><h3 id="docker-compose"><a href="#docker-compose" class="headerlink" title="docker-compose"></a>docker-compose</h3><p>参见 <a href="https://github.com/tgbot-collection/BotsRunner">这里</a></p><p>本目录下的 <code>docker-compose.yml</code> 也可以作为参考</p><p>nginx reverse proxy可以<a href="https://github.com/BennyThink/WebsiteRunner">参考这里</a></p><p><a href="https://github.com/tgbot-collection/YYeTsBot/blob/master/yyetsweb/README.md">参考这里获取数据库</a></p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 启动数据库</span><br><span class="line">docker-compose up -d mongo</span><br><span class="line"># 导入数据库</span><br><span class="line">docker yyets_mongo.gz 1234da:&#x2F;tmp</span><br><span class="line"># 进入容器</span><br><span class="line">docker-compose exec mongo bash</span><br><span class="line">mongorestore --gzip --archive&#x3D;&#x2F;tmp&#x2F;yyets_mongo.gz</span><br><span class="line">exit</span><br><span class="line"># 开启服务</span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure><h2 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h2><p><a href="https://down.ednovas.video/">https://down.ednovas.video</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 建站 </tag>
+            
+            <tag> 视频 </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 下载 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Freenom 域名自动续期bot</title>
+      <link href="2021/09/21/freenomextend/"/>
+      <url>2021/09/21/freenomextend/</url>
+      
+        <content type="html"><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/luolongfei/next-freenom">https://github.com/luolongfei/next-freenom</a></p><h2 id="docker部署（最方便）"><a href="#docker部署（最方便）" class="headerlink" title="docker部署（最方便）"></a>docker部署（最方便）</h2><h3 id="基础设置"><a href="#基础设置" class="headerlink" title="基础设置"></a>基础设置</h3><p>升级源和软件并安装wget和vim</p><p>然后自动安装docker</p><p>Debian/Ubunt:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update &amp;&amp; apt-get install -y wget vim</span><br><span class="line">wget -qO- get.docker.com | bash</span><br></pre></td></tr></table></figure><p>CentOS:</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum update &amp;&amp; yum install -y wget vim</span><br></pre></td></tr></table></figure><p>请使用 KVM 架构的 VPS，OpenVZ 架构的 VPS 不支持安装 Docker，另外 CentOS 8 不支持用此脚本来安装 Docker。 更多关于 Docker 安装的内容参考 <a href="https://docs.docker.com/engine/install/">Docker 官方安装指南</a> 。</p><p>检查docker是否安装成功并已经添加环境变量</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker version</span><br></pre></td></tr></table></figure><p>启动 Docker 服务</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure><p>查看 Docker 运行状态</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl status docker</span><br></pre></td></tr></table></figure><p>将 Docker 服务加入开机自启动</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl enable docker</span><br></pre></td></tr></table></figure><h3 id="用-Docker-创建并启动容器"><a href="#用-Docker-创建并启动容器" class="headerlink" title="用 Docker 创建并启动容器"></a>用 Docker 创建并启动容器</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker run -d --name freenom --restart always -v $(pwd):&#x2F;conf -v $(pwd)&#x2F;logs:&#x2F;app&#x2F;logs luolongfei&#x2F;freenom</span><br></pre></td></tr></table></figure><p>或者，如果你想自定义脚本执行时间，则命令如下</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker run -d --name freenom --restart always -v $(pwd):&#x2F;conf -v $(pwd)&#x2F;logs:&#x2F;app&#x2F;logs -e RUN_AT&#x3D;&quot;11:24&quot; luolongfei&#x2F;freenom</span><br></pre></td></tr></table></figure><p>上面这条命令只比上上条命令多了个 -e RUN_AT=”11:24”，其中11:24表示在北京时间每天的 11:24 执行续期任务，你可以自定义这个时间。 这里的RUN_AT参数同时也支持 CRON 命令里的时间形式，比如， -e RUN_AT=”9 11 * * *”，表示每天北京时间 11:09 执行续期任务， 如果你不想每天执行任务，只想隔几天执行，只用修改RUN_AT的值即可。</p><p>注意：不推荐自定义脚本执行时间。因为你可能跟很多人定义的是同一个时间点，这样可能导致所有人都是同一时间向 Freenom 的服务器发起请求， 使得 Freenom 无法稳定提供服务。而如果你不自定义时间，程序会自动指定北京时间 06 ~ 23 点全时段随机的一个时间点作为执行时间， 每次重启容器都会自动重新指定。</p><p>上方 Docker 命令的参数解释</p><table><thead><tr><th align="left">命令</th><th align="left">含义</th></tr></thead><tbody><tr><td align="left">docker run</td><td align="left">开始运行一个容器</td></tr><tr><td align="left">-d 参数</td><td align="left">容器以后台运行并输出容器 ID</td></tr><tr><td align="left">–name 参数</td><td align="left">给容器分配一个识别符，方便将来的启动，停止，删除等操作</td></tr><tr><td align="left">–restart 参数</td><td align="left">配置容器启动类型，always 即为 docker 服务重新启动时自动启动本容器</td></tr><tr><td align="left">-v 参数</td><td align="left">挂载卷（volume），冒号后面是容器的路径，冒号前面是宿主机的路径（只支持绝对路径），$(pwd)表示当前目录</td></tr><tr><td align="left">-e 参数</td><td align="left">指定容器中的环境变量</td></tr><tr><td align="left">luolongfei/freenom</td><td align="left">这是从 docker hub 下载回来的镜像完整路径名</td></tr></tbody></table><p>执行<code>ls -a</code>后你就可以看到在你的当前目录下，有一个.env文件和一个logs目录，logs目录里面存放的是程序日志， 而.env则是配置文件</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim .env</span><br></pre></td></tr></table></figure><p>修改.env内的配置信息然后重启容器</p><table><thead><tr><th align="left">变量名</th><th align="left">含义</th><th align="left">默认值</th><th align="left">是否必须</th><th align="left">备注</th></tr></thead><tbody><tr><td align="left">FREENOM_USERNAME</td><td align="left">Freenom 账户</td><td align="left">-</td><td align="left">是</td><td align="left">只支持邮箱账户，如果你是使用第三方社交账户登录的用户，请在 Freenom 管理页面绑定邮箱，绑定后即可使用邮箱账户登录</td></tr><tr><td align="left">FREENOM_PASSWORD</td><td align="left">Freenom 密码</td><td align="left">-</td><td align="left">是</td><td align="left">某些特殊字符可能需要转义，详见.env文件内注释</td></tr><tr><td align="left">MULTIPLE_ACCOUNTS</td><td align="left">多账户支持</td><td align="left">-</td><td align="left">否</td><td align="left">多个账户和密码的格式必须是“&lt;账户1&gt;@&lt;密码1&gt;</td></tr><tr><td align="left">MAIL_USERNAME</td><td align="left">机器人邮箱账户</td><td align="left">-</td><td align="left">是</td><td align="left">支持Gmail、QQ邮箱以及163邮箱，尽可能使用163邮箱或者QQ邮箱而非Gmail。因为谷歌的安全机制，每次在新设备登录 Gmail 都会先被限制，需要手动解除限制才行。具体的配置方法参考「 配置发信邮箱 」</td></tr><tr><td align="left">MAIL_PASSWORD</td><td align="left">机器人邮箱密码</td><td align="left">-</td><td align="left">是</td><td align="left">Gmail填密码，QQ邮箱或163邮箱填授权码</td></tr><tr><td align="left">TO</td><td align="left">接收通知的邮箱</td><td align="left">-</td><td align="left">是</td><td align="left">你自己最常用的邮箱，推荐使用QQ邮箱，用来接收机器人邮箱发出的域名相关邮件</td></tr><tr><td align="left">MAIL_ENABLE</td><td align="left">是否启用邮件推送功能</td><td align="left">true</td><td align="left">否</td><td align="left">true：启用 false：不启用 默认启用，如果设为false，不启用邮件推送功能，则上面的MAIL_USERNAME、MAIL_PASSWORD、TO变量变为非必须，可不设置</td></tr><tr><td align="left">TELEGRAM_CHAT_ID</td><td align="left">你的chat_id</td><td align="left">-</td><td align="left">否</td><td align="left">通过发送/start给@userinfobot可以获取自己的id</td></tr><tr><td align="left">TELEGRAM_BOT_TOKEN</td><td align="left">你的Telegram bot的token</td><td align="left">-</td><td align="left">否</td><td align="left"></td></tr><tr><td align="left">TELEGRAM_BOT_ENABLE</td><td align="left">是否启用Telegram Bot推送功能</td><td align="left">false</td><td align="left">否</td><td align="left">true：启用 false：不启用 默认不启用，如果设为true，则必须设置上面的TELEGRAM_CHAT_ID和TELEGRAM_BOT_TOKEN变量</td></tr><tr><td align="left">NOTICE_FREQ</td><td align="left">通知频率</td><td align="left">1</td><td align="left">否</td><td align="left">0：仅当有续期操作的时候 1：每次执行</td></tr></tbody></table><p>修改并保存.env文件后，执行<code>docker restart freenom</code>重启容器，等待 5 秒钟左右</p><p>然后执行<code>docker logs freenom</code>查看输出内容</p><p>输出内容中有执行成功字样，则表示配置无误。</p><h3 id="其他docker常用命令"><a href="#其他docker常用命令" class="headerlink" title="其他docker常用命令"></a>其他docker常用命令</h3><p>查看容器在线状态及大小</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker ps -as</span><br></pre></td></tr></table></figure><p>查看容器的运行输出日志</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker logs freenom</span><br></pre></td></tr></table></figure><p>重新启动容器</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker restart freenom</span><br></pre></td></tr></table></figure><p>停止容器的运行</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker stop freenom</span><br></pre></td></tr></table></figure><p>移除容器</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker rm $name</span><br></pre></td></tr></table></figure><p>查看 docker 容器占用 CPU，内存等信息</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker stats --no-stream</span><br></pre></td></tr></table></figure><h2 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h2><p>@ednovas_freenom_bot</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 域名 </tag>
+            
+            <tag> tg </tag>
+            
+            <tag> bot </tag>
+            
+            <tag> freenom </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>youtube视频下载bot</title>
+      <link href="2021/09/21/ytdl/"/>
+      <url>2021/09/21/ytdl/</url>
+      
+        <content type="html"><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/tgbot-collection/ytdlbot">https://github.com/tgbot-collection/ytdlbot</a></p><h2 id="heroku部署"><a href="#heroku部署" class="headerlink" title="heroku部署"></a>heroku部署</h2><p>直接点击GitHub项目里的<code>deploy to heroku</code> 即可</p><h2 id="直接部署"><a href="#直接部署" class="headerlink" title="直接部署"></a>直接部署</h2><p>（需要python3环境，这个请自行安装）</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /home</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/tgbot-collection/ytdlbot.git</span><br><span class="line"><span class="built_in">cd</span> ytdlbot</span><br><span class="line">pip3 install -r requirements.txt</span><br><span class="line"><span class="comment"># 配置环境变量 APP_ID APP_HASH TOKEN</span></span><br><span class="line"><span class="built_in">export</span> APP_ID=1111 APP_HASH=dddd TOKEN=xxx</span><br><span class="line">screen -S ytdlbot</span><br><span class="line">python3 ytdl.py</span><br></pre></td></tr></table></figure><p>最后<code>ctrl+a+d</code>退出screen（习惯使用screen，也可以使用systmd等）</p><h2 id="docker简易安装"><a href="#docker简易安装" class="headerlink" title="docker简易安装"></a>docker简易安装</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -e APP_ID=111 -e APP_HASH=111 -e TOKEN=370FXI bennythink/ytdlbot</span><br></pre></td></tr></table></figure><h2 id="docker完整安装"><a href="#docker完整安装" class="headerlink" title="docker完整安装"></a>docker完整安装</h2><h3 id="获取docker-compose-yml"><a href="#获取docker-compose-yml" class="headerlink" title="获取docker-compose.yml"></a>获取docker-compose.yml</h3><p>下载docker-compose.yml到文件夹内，如 <code>~/ytdl/docker-compose.yml</code></p><h3 id="创建VIP数据库"><a href="#创建VIP数据库" class="headerlink" title="创建VIP数据库"></a>创建VIP数据库</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir ~/ytdl/data/</span><br><span class="line">touch ~/ytdl/data/vip.sqlite</span><br></pre></td></tr></table></figure><h3 id="创建env文件"><a href="#创建env文件" class="headerlink" title="创建env文件"></a>创建env文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir ~/ytdl/env/</span><br><span class="line">vim ~/ytdl/env/ytdl.env</span><br></pre></td></tr></table></figure><h3 id="配置如下环境变量"><a href="#配置如下环境变量" class="headerlink" title="配置如下环境变量"></a>配置如下环境变量</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">APP_ID: REQUIRED</span><br><span class="line">APP_HASH: REQUIRED</span><br><span class="line">TOKEN: REQUIRED</span><br><span class="line">REDIS: REQUIRED</span><br><span class="line">OWNER: owner username</span><br><span class="line">QUOTA: quota in bytes</span><br><span class="line">EX: quota expire time</span><br><span class="line">MULTIPLY: vip quota comparing to normal quota</span><br><span class="line">USD2CNY: exchange rate</span><br><span class="line">VIP: enable VIP or not, default: disable</span><br><span class="line">AFD_LINK</span><br><span class="line">COFFEE_LINK</span><br><span class="line">COFFEE_TOKEN</span><br><span class="line">AFD_TOKEN</span><br><span class="line">AFD_USER_ID</span><br><span class="line">WORKERS: default 100</span><br></pre></td></tr></table></figure><h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure><h2 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h2><p><a href="https://t.me/ytbd_bot">https://t.me/ytbd_bot</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 视频 </tag>
+            
+            <tag> bot </tag>
+            
+            <tag> youtube </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网易云ncm格式到flac格式转换bot</title>
+      <link href="2021/09/21/ncmtoflacbot/"/>
+      <url>2021/09/21/ncmtoflacbot/</url>
+      
+        <content type="html"><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p>GitHub地址：<a href="https://github.com/tgbot-collection/NCMBot">https://github.com/tgbot-collection/NCMBot</a></p><h2 id="创建bot"><a href="#创建bot" class="headerlink" title="创建bot"></a>创建bot</h2><p>先去找botfather创建一个bot</p><p><a href="https://t.me/BotFather">https://t.me/BotFather</a></p><p>给你的bot命名，并且赋予一个bot用户名（不能与已有的用户名重复）</p><p>记下你的token，类似 <code>11111111：iajfCJIAO324IFJIOW</code> 一样的一长串，这个就是服务器和tg bot链接的token</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-09-21_12-16-39.png"></p><h2 id="获取app-id"><a href="#获取app-id" class="headerlink" title="获取app id"></a>获取app id</h2><p><a href="https://my.telegram.org/">https://my.telegram.org</a></p><p>登录你的tg账号（这是tg官方网站，不用担心盗号问题）</p><p>然后就会显示你的<code>app_id</code>和<code>app_hash</code>，如果没有就创建一个（这两个信息请妥善保存，切勿外泄）</p><h2 id="安装程序"><a href="#安装程序" class="headerlink" title="安装程序"></a>安装程序</h2><p>(需要python3环境，这个请自行安装)</p><p>这里的<code>app_id</code>，<code>app_hash</code>和<code>token</code>就是上面获取的，一一对应填入</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-09-21_12-17-20.png"></p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /home</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/tgbot-collection/NCMBot</span><br><span class="line"><span class="built_in">cd</span> NCMBot</span><br><span class="line">pip3 install -r requirements.txt</span><br><span class="line"><span class="comment"># 配置环境变量 APP_ID APP_HASH TOKEN</span></span><br><span class="line"><span class="built_in">export</span> APP_ID=1111 APP_HASH=dddd TOKEN=xxx</span><br><span class="line">screen -S ncmbot</span><br><span class="line">python3 ncmbot.py</span><br></pre></td></tr></table></figure><p>最后<code>ctrl+a+d</code>退出screen（习惯使用screen，也可以使用systmd等）</p><h2 id="docker安装"><a href="#docker安装" class="headerlink" title="docker安装"></a>docker安装</h2><p>docker安装更方便，但是需要先安装docker，这里就不再赘述了</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d -e APP_ID=1234 -e APP_HASH=1234 -e TOKEN=1NFXI bennythink/ncmbot</span><br></pre></td></tr></table></figure><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>tg内和你的机器人开始聊天，直接发送ncm格式的音乐文件给他即可，支持大文件，最大可支持2G</p><p>flac格式要是还是不喜欢可以用格式工厂转换成mp3等格式</p><h3 id="一些命令"><a href="#一些命令" class="headerlink" title="一些命令"></a>一些命令</h3><p>start - 开始使用机器人</p><p>about - 关于机器人</p><p>ping - 运行信息</p><h2 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h2><p><a href="https://t.me/ncmtomp3_bot">https://t.me/ncmtomp3_bot</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 音乐 </tag>
+            
+            <tag> bot </tag>
+            
+            <tag> 网易云 </tag>
+            
+            <tag> MP3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>从网易云音乐迁移歌单到Spotify</title>
       <link href="2021/09/17/neteasetospotify/"/>
       <url>2021/09/17/neteasetospotify/</url>
