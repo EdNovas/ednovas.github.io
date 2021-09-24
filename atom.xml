@@ -94,11 +94,11 @@
     
     <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
     
-    <category term="api" scheme="https://ednovas.xyz/tags/api/"/>
+    <category term="php" scheme="https://ednovas.xyz/tags/php/"/>
     
     <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
     
-    <category term="php" scheme="https://ednovas.xyz/tags/php/"/>
+    <category term="api" scheme="https://ednovas.xyz/tags/api/"/>
     
   </entry>
   
@@ -126,9 +126,9 @@
     
     <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
     
-    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
-    
     <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    
+    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
     
     <category term="e5" scheme="https://ednovas.xyz/tags/e5/"/>
     
@@ -158,9 +158,9 @@
     
     <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
     
-    <category term="视频" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91/"/>
-    
     <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="视频" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91/"/>
     
     <category term="下载" scheme="https://ednovas.xyz/tags/%E4%B8%8B%E8%BD%BD/"/>
     
@@ -189,9 +189,9 @@
     
     <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
     
-    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
-    
     <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    
+    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
     
     <category term="freenom" scheme="https://ednovas.xyz/tags/freenom/"/>
     
@@ -246,9 +246,9 @@
     <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
     
     
-    <category term="音乐" scheme="https://ednovas.xyz/tags/%E9%9F%B3%E4%B9%90/"/>
-    
     <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    
+    <category term="音乐" scheme="https://ednovas.xyz/tags/%E9%9F%B3%E4%B9%90/"/>
     
     <category term="网易云" scheme="https://ednovas.xyz/tags/%E7%BD%91%E6%98%93%E4%BA%91/"/>
     
