@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-09-24T05:06:36.819Z</updated>
+  <updated>2021-09-30T07:53:05.696Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Assembly language 汇编语言基础</title>
+    <link href="https://ednovas.xyz/2021/09/28/mips/"/>
+    <id>https://ednovas.xyz/2021/09/28/mips/</id>
+    <published>2021-09-28T23:51:00.000Z</published>
+    <updated>2021-09-30T07:53:05.696Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;安装java环境&quot;&gt;&lt;a href=&quot;#安装java环境&quot; class=&quot;headerlink&quot; title=&quot;安装java环境&quot;&gt;&lt;/a&gt;安装java环境&lt;/h2&gt;&lt;p&gt;这个网上很多，就不再赘述了&lt;/p&gt;
+&lt;p&gt;基本思路：下载java jdk安装包，安装，添加到环境变量中，cmd测试java版本来判断是否安装成功&lt;/p&gt;
+&lt;h2 id=&quot;软件下载安装&quot;&gt;&lt;a href=&quot;#软件下载安装&quot; class=&quot;headerlink&quot; title=&quot;软件下载安装&quot;&gt;&lt;/a&gt;软件下载安装&lt;/h2&gt;&lt;p&gt;MARS：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://courses.missouristate.edu/KenVollmar/mars/download.htm&quot;&gt;https://courses.missouristate.edu/KenVollmar/mars/download.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;点击download mars下载jar文件后&lt;/p&gt;
+&lt;p&gt;下载下来了一个叫&lt;code&gt;Mars4_5.jar&lt;/code&gt;的文件&lt;/p&gt;
+&lt;p&gt;cmd在jar文件包的目录输入&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;java -jar Mars4_5.jar&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>免费开源图片压缩工具 Squoosh 离线版</title>
@@ -39,32 +65,6 @@
     <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
     
     <category term="图片" scheme="https://ednovas.xyz/tags/%E5%9B%BE%E7%89%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Assembly language 汇编语言基础</title>
-    <link href="https://ednovas.xyz/2021/09/23/mips/"/>
-    <id>https://ednovas.xyz/2021/09/23/mips/</id>
-    <published>2021-09-23T23:51:00.000Z</published>
-    <updated>2021-09-30T06:55:46.010Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;安装java环境&quot;&gt;&lt;a href=&quot;#安装java环境&quot; class=&quot;headerlink&quot; title=&quot;安装java环境&quot;&gt;&lt;/a&gt;安装java环境&lt;/h2&gt;&lt;p&gt;这个网上很多，就不再赘述了&lt;/p&gt;
-&lt;p&gt;基本思路：下载java jdk安装包，安装，添加到环境变量中，cmd测试java版本来判断是否安装成功&lt;/p&gt;
-&lt;h2 id=&quot;软件下载安装&quot;&gt;&lt;a href=&quot;#软件下载安装&quot; class=&quot;headerlink&quot; title=&quot;软件下载安装&quot;&gt;&lt;/a&gt;软件下载安装&lt;/h2&gt;&lt;p&gt;MARS：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://courses.missouristate.edu/KenVollmar/mars/download.htm&quot;&gt;https://courses.missouristate.edu/KenVollmar/mars/download.htm&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;点击download mars下载jar文件后&lt;/p&gt;
-&lt;p&gt;下载下来了一个叫&lt;code&gt;Mars4_5.jar&lt;/code&gt;的文件&lt;/p&gt;
-&lt;p&gt;cmd在jar文件包的目录输入&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;java -jar Mars4_5.jar&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="编程" scheme="https://ednovas.xyz/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
