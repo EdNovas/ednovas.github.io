@@ -24,13 +24,12 @@
     <updated>2021-09-24T05:06:36.819Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;article class=&quot;post-content&quot; id=&quot;article-container&quot;&gt;&lt;p&gt;&lt;strong&gt;Squoosh&lt;/strong&gt; 是一款免费开源的图片压缩工具，它在浏览器中使用”一流的解码器“让图片变得更小。&lt;strong&gt;Squoosh</summary>
-        
-      
+    <summary type="html">&lt;article class=&quot;post-content&quot; id=&quot;article-container&quot;&gt;&lt;p&gt;&lt;strong&gt;Squoosh&lt;/strong&gt; 是一款免费开源的图片压缩工具，它在浏览器中使用”一流的解码器“让图片变得更小。&lt;strong&gt;Squoosh Desktop App&lt;/strong&gt; 基于 Squoosh、Electron，在 Windows、Linux 上实现了 Squoosh 离线版，无需网络就能使用。&lt;a href=&quot;https://dd-static.jd.com/ddimg/jfs/t1/186476/35/3238/88830/609f5596Ec31329b3/6f95f16e884806c0.jpg&quot; data-fancybox=&quot;group&quot; data-caption=&quot;squoosh-desktop-app.jpg&quot; class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://dd-static.jd.com/ddimg/jfs/t1/186476/35/3238/88830/609f5596Ec31329b3/6f95f16e884806c0.jpg&quot; data-lazy-src=&quot;https://dd-static.jd.com/ddimg/jfs/t1/186476/35/3238/88830/609f5596Ec31329b3/6f95f16e884806c0.jpg&quot; alt=&quot;squoosh-desktop-app.jpg&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;描述中“一流的解码器“来自机翻，原文是 best-in-class codecs。&lt;/p&gt;&lt;p&gt;说起来，为了尽可能的节约磁盘空间，我的每一张图片都是用 Squoosh 进行了压缩，Squoosh 唯二的问题在于不提供批量功能，不过对于一张图片一张图片处理的我来说也足够了。实际上，Squoosh 还有一个 &lt;a target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot; href=&quot;https://github.com/GoogleChromeLabs/squoosh/tree/dev/cli&quot;&gt;Squoosh CLI&lt;/a&gt; 版本，是可以实现批量功能的。&lt;/p&gt;&lt;h2 id=&quot;Squoosh-Desktop-App&quot;&gt;&lt;a href=&quot;#Squoosh-Desktop-App&quot; class=&quot;headerlink&quot; title=&quot;Squoosh Desktop App&quot; data-pjax-state&gt;&lt;/a&gt;&lt;strong&gt;Squoosh Desktop App&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;Squoosh Desktop App 将 Squoosh 打包并创建为独立应用，最重要的是可以离线使用，就非常方便了。&lt;a href=&quot;https://dd-static.jd.com/ddimg/jfs/t1/181392/37/4244/63272/609f55c3E3f42c250/a4cbc3e5cf198568.jpg&quot; data-fancybox=&quot;group&quot; data-caption=&quot;screenshot1.jpg&quot; class=&quot;fancybox&quot;&gt;&lt;img data-lazy-src=&quot;https://dd-static.jd.com/ddimg/jfs/t1/181392/37/4244/63272/609f55c3E3f42c250/a4cbc3e5cf198568.jpg&quot; alt=&quot;screenshot1.jpg&quot; class=&quot;entered loaded&quot; src=&quot;https://dd-static.jd.com/ddimg/jfs/t1/181392/37/4244/63272/609f55c3E3f42c250/a4cbc3e5cf198568.jpg&quot; data-ll-status=&quot;loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Squoosh 的另外一个问题，就是在压缩透明背景的 png 格式时，会让背景变黑。&lt;/p&gt;&lt;p&gt;而 Squoosh Desktop App 的问题是，感觉已经年久失修，最后一次更新是 2020 年 5 月份，以及其官网上宣称的 macOS 版本，从未出现过。目前只提供了 Windows 与 Linux 版本，不过青小蛙测试了 Windows 版本，可以正常使用。&lt;/p&gt;&lt;p&gt;但另外一个问题是，Squoosh 会经常更新，使用 Squoosh Desktop App 则永久停留在了去年的版本，鉴于没有网络的情况下，凑合用用还是可以的。&lt;/p&gt;&lt;h2 id=&quot;Squoosh-Desktop-App-下载&quot;&gt;&lt;a href=&quot;#Squoosh-Desktop-App-下载&quot; class=&quot;headerlink&quot; title=&quot;Squoosh Desktop App 下载&quot; data-pjax-state&gt;&lt;/a&gt;Squoosh Desktop App 下载&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;官网：&lt;a target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot; href=&quot;https://squoosh-desktop.vercel.app/&quot;&gt;https://squoosh-desktop.vercel.app/&lt;/a&gt;&lt;/li&gt;&lt;li&gt;下载：h&lt;a href=&quot;ttps://github.com/matiasbenedetto/squoosh-desktop-app/releases&quot; rel=&quot;external nofollow noreferrer&quot; data-pjax-state&gt;ttps://github.com/matiasbenedetto/squoosh-desktop-app/releases&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/article&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;转载自 Daibi_mua &lt;a href=&quot;https://blog.keepdai.cn/imgyouhua.html&quot;&gt;https://blog.keepdai.cn/imgyouhua.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</summary>
     
     
     
@@ -44,6 +43,32 @@
   </entry>
   
   <entry>
+    <title>Assembly language 汇编语言基础</title>
+    <link href="https://ednovas.xyz/2021/09/23/mips/"/>
+    <id>https://ednovas.xyz/2021/09/23/mips/</id>
+    <published>2021-09-23T23:51:00.000Z</published>
+    <updated>2021-09-30T06:55:46.010Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;安装java环境&quot;&gt;&lt;a href=&quot;#安装java环境&quot; class=&quot;headerlink&quot; title=&quot;安装java环境&quot;&gt;&lt;/a&gt;安装java环境&lt;/h2&gt;&lt;p&gt;这个网上很多，就不再赘述了&lt;/p&gt;
+&lt;p&gt;基本思路：下载java jdk安装包，安装，添加到环境变量中，cmd测试java版本来判断是否安装成功&lt;/p&gt;
+&lt;h2 id=&quot;软件下载安装&quot;&gt;&lt;a href=&quot;#软件下载安装&quot; class=&quot;headerlink&quot; title=&quot;软件下载安装&quot;&gt;&lt;/a&gt;软件下载安装&lt;/h2&gt;&lt;p&gt;MARS：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://courses.missouristate.edu/KenVollmar/mars/download.htm&quot;&gt;https://courses.missouristate.edu/KenVollmar/mars/download.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;点击download mars下载jar文件后&lt;/p&gt;
+&lt;p&gt;下载下来了一个叫&lt;code&gt;Mars4_5.jar&lt;/code&gt;的文件&lt;/p&gt;
+&lt;p&gt;cmd在jar文件包的目录输入&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;java -jar Mars4_5.jar&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo 网站访问速度优化</title>
     <link href="https://ednovas.xyz/2021/09/23/speeduphexo/"/>
     <id>https://ednovas.xyz/2021/09/23/speeduphexo/</id>
@@ -51,13 +76,13 @@
     <updated>2021-09-24T05:06:36.752Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;article class=&quot;post-content&quot;</summary>
-        
-      
+    <summary type="html">&lt;article class=&quot;post-content&quot; id=&quot;article-container&quot;&gt;&lt;blockquote&gt;&lt;p&gt;请注意、本篇文章介绍的只是如何优化、并不包含其中的原理、并且优化只做参考&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;我的博客是部署在GitHub上,并没有用到双线部署,静态资源由jsdelivr提供加速&lt;/p&gt;&lt;p&gt;在我的一番打磨下,博客的访问速度我还是挺满意的,这多亏于hexo的轻量&lt;/p&gt;&lt;h1 id=&quot;CDN-加速&quot;&gt;&lt;a href=&quot;#CDN-加速&quot; class=&quot;headerlink&quot; title=&quot;CDN 加速&quot; data-pjax-state&gt;&lt;/a&gt;CDN 加速&lt;/h1&gt;&lt;h2 id=&quot;全局cdn&quot;&gt;&lt;a href=&quot;#全局cdn&quot; class=&quot;headerlink&quot; title=&quot;全局cdn&quot; data-pjax-state&gt;&lt;/a&gt;全局cdn&lt;/h2&gt;&lt;p&gt;在cdn上,我使用的是腾讯云cdn,但如果你用国内节点,是需要备案的但不得不说腾讯云的cdn速度没的说,再加上我是个人博客,一年也用不了多少流量 所以一年大概十几块钱[当然这是没有被DDOS的情况下]如果介意可以使用又拍云的cdn,免费,但是需要在页脚给又拍云打广告,下文以腾讯云做介绍&lt;/p&gt;&lt;p&gt;首先肯定就是购买流量包,之后添加域名,这种教程烂大街了 我就不详细描述了。&lt;/p&gt;&lt;p&gt;注意的是,添加源站信息时,源站地址为GitHubyourname.github.io 回源为你的加速域名&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/Daibi-mua/cdn2@main/tengxunjietu.png&quot; data-fancybox=&quot;group&quot; data-caption class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/Daibi-mua/cdn2@main/tengxunjietu.png&quot; data-lazy-src=&quot;https://cdn.jsdelivr.net/gh/Daibi-mua/cdn2@main/tengxunjietu.png&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;值得启用的设置我会一一列举&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;在访问控制这里找到ip访问限制和下行限速,个人博客可以参考我的。&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228210715623.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228210715623&quot; class=&quot;fancybox&quot;&gt;&lt;img data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228210715623.png&quot; alt=&quot;image-20210228210715623&quot; class=&quot;entered loaded&quot; src=&quot;https://cdn.keepdai.cn//image-20210228210715623.png&quot; data-ll-status=&quot;loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228210751043.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228210751043&quot; class=&quot;fancybox&quot;&gt;&lt;img data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228210751043.png&quot; alt=&quot;image-20210228210751043&quot; class=&quot;entered loaded&quot; src=&quot;https://cdn.keepdai.cn//image-20210228210751043.png&quot; data-ll-status=&quot;loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;在缓存配置里强烈推荐遵循源站,就是你原网站修改内容,他才会更新缓存&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228211017730.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228211017730&quot; class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.keepdai.cn//image-20210228211017730.png&quot; data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228211017730.png&quot; alt=&quot;image-20210228211017730&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;带宽建议设置成5-10m&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228211058033.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228211058033&quot; class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.keepdai.cn//image-20210228211058033.png&quot; data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228211058033.png&quot; alt=&quot;image-20210228211058033&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;h2 id=&quot;静态文件加速&quot;&gt;&lt;a href=&quot;#静态文件加速&quot; class=&quot;headerlink&quot; title=&quot;静态文件加速&quot; data-pjax-state&gt;&lt;/a&gt;静态文件加速&lt;/h2&gt;&lt;p&gt;在网站建设中,我们不免会用到&lt;code&gt;css&lt;/code&gt; 和&lt;code&gt;js&lt;/code&gt;文件,大部分都是以相对路径引用,你可以用外链引用,这里强烈推荐jsdelivr,jsdelivr是一个免费的 CDN 服务，可以利用它配合 github 来为页面静态资源提供加速，有效提升资源加载速度。&lt;/p&gt;&lt;p&gt;文件加速和图片加速其实都一样 图片可以直接用picgo上传 &lt;code&gt;js&lt;/code&gt; &lt;code&gt;css&lt;/code&gt;你可以创建一个GitHub仓库,然后拖拽上传,具体方法太简单了 建议百度。&lt;/p&gt;&lt;p&gt;像蝴蝶主题,他有很多js css文件都是用相对路径来引用的,当然您也可以把这些文件上传到GitHub利用jsdelivr通过外链引用,但这也有坏处就是每次升级时,都要更新一下jsdelivr引用的那些资源,不然你的主题版本和所引用的文件不符合,就会出现网页错位等等bug&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228211652941.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228211652941&quot; class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.keepdai.cn//image-20210228211652941.png&quot; data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228211652941.png&quot; alt=&quot;image-20210228211652941&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;h1 id=&quot;图片格式&quot;&gt;&lt;a href=&quot;#图片格式&quot; class=&quot;headerlink&quot; title=&quot;图片格式&quot; data-pjax-state&gt;&lt;/a&gt;图片格式&lt;/h1&gt;&lt;p&gt;WebP 的优势体现在它具有更优的图像数据压缩算法，能带来更小的图片体积，而且拥有肉眼识别无差异的图像质量；同时具备了无损和有损的压缩模式、Alpha 透明以及动画的特性，在 JPEG 和 PNG 上的转化效果都相当优秀、稳定和统一。&lt;br&gt;之前做过一个测试，对比 PNG 原图、PNG 无损压缩、PNG 转 WebP（无损）、PNG 转 WebP（有损）的压缩效果：&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.keepdai.cn//1666676-2b9b4b9bffe630d2.jpg&quot; data-fancybox=&quot;group&quot; data-caption class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.keepdai.cn//1666676-2b9b4b9bffe630d2.jpg&quot; data-lazy-src=&quot;https://cdn.keepdai.cn//1666676-2b9b4b9bffe630d2.jpg&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;PNG 转 WebP 的压缩率要高于 PNG 原图压缩率，同样支持有损与无损压缩&lt;br&gt;转换后的 WebP 体积大幅减少，图片质量也得到保障（同时肉眼几乎无法看出差异&lt;/p&gt;&lt;p&gt;综上所述所以强烈建议您图片格式使用webp&lt;/p&gt;&lt;h1 id=&quot;Gulp-压缩全站静态资源&quot;&gt;&lt;a href=&quot;#Gulp-压缩全站静态资源&quot; class=&quot;headerlink&quot; title=&quot;Gulp 压缩全站静态资源&quot; data-pjax-state&gt;&lt;/a&gt;Gulp 压缩全站静态资源&lt;/h1&gt;&lt;p&gt;gulp能够帮助用户自动压缩静态资源，配合各类下属插件，能够压缩包括 &lt;code&gt;css&lt;/code&gt;、&lt;code&gt;js&lt;/code&gt;、&lt;code&gt;html&lt;/code&gt; 乃至各类格式的图片文件。&lt;/p&gt;&lt;p&gt;1.安装 &lt;code&gt;Gulp&lt;/code&gt; 插件：在博客根目录 &lt;code&gt;[Blogroot]&lt;/code&gt; 打开终端，输入：&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;Code&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install --global gulp-cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;2.安装各个下属插件以实现对各类静态资源的压缩。&lt;/p&gt;&lt;p&gt;2.&lt;code&gt;压缩HTML&lt;/code&gt; ：&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;Code&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install gulp-htmlclean --save-dev&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install gulp-html-minifier-terser --save-dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;2.2&lt;code&gt;压缩 CSS&lt;/code&gt;：&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;Code&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install gulp-clean-css --save-dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;2.3&lt;code&gt;压缩js&lt;/code&gt;&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;Code&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install --save-dev gulp-uglify&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install --save-dev gulp-babel @babel/core @babel/preset-env&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;3.在博客根目录下创建一个名为&lt;code&gt;gulpfile.js&lt;/code&gt;的文件,并输入以下代码&lt;/p&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;js&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//用到的各个插件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; gulp = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;gulp&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; cleanCSS = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;gulp-clean-css&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; htmlmin = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;gulp-html-minifier-terser&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; htmlclean = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;gulp-htmlclean&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; uglify = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;gulp-uglify&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; babel = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;gulp-babel&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//压缩js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gulp.task(&lt;span class=&quot;string&quot;&gt;&#39;compress&#39;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;() =&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  gulp.src([&lt;span class=&quot;string&quot;&gt;&#39;./public/**/*.js&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;!./public/**/*.min.js&#39;&lt;/span&gt;])&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    .pipe(babel({&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      presets: [&lt;span class=&quot;string&quot;&gt;&#39;@babel/preset-env&#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    }))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    .pipe(uglify().on(&lt;span class=&quot;string&quot;&gt;&#39;error&#39;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;e&lt;/span&gt;) &lt;/span&gt;{&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(e)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    }))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    .pipe(gulp.dest(&lt;span class=&quot;string&quot;&gt;&#39;./public&#39;&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//压缩css&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gulp.task(&lt;span class=&quot;string&quot;&gt;&#39;minify-css&#39;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;() =&amp;gt;&lt;/span&gt; {&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; gulp.src([&lt;span class=&quot;string&quot;&gt;&#39;./public/**/*.css&#39;&lt;/span&gt;])&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .pipe(cleanCSS({&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            compatibility: &lt;span class=&quot;string&quot;&gt;&#39;ie11&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        }))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .pipe(gulp.dest(&lt;span class=&quot;string&quot;&gt;&#39;./public&#39;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;});&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//压缩html&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gulp.task(&lt;span class=&quot;string&quot;&gt;&#39;minify-html&#39;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;() =&amp;gt;&lt;/span&gt; {&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; gulp.src(&lt;span class=&quot;string&quot;&gt;&#39;./public/**/*.html&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .pipe(htmlclean())&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .pipe(htmlmin({&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            removeComments: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//清除html注释&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            collapseWhitespace: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//压缩html&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            collapseBooleanAttributes: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//省略布尔属性的值，例如：&amp;lt;input checked=&quot;true&quot;/&amp;gt; ==&amp;gt; &amp;lt;input /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            removeEmptyAttributes: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//删除所有空格作属性值，例如：&amp;lt;input id=&quot;&quot; /&amp;gt; ==&amp;gt; &amp;lt;input /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            removeScriptTypeAttributes: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//删除&amp;lt;script&amp;gt;的type=&quot;text/javascript&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            removeStyleLinkTypeAttributes: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//删除&amp;lt;style&amp;gt;和&amp;lt;link&amp;gt;的 type=&quot;text/css&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            minifyJS: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//压缩页面 JS&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            minifyCSS: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//压缩页面 CSS&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            minifyURLs: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;  &lt;span class=&quot;comment&quot;&gt;//压缩页面URL&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        }))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .pipe(gulp.dest(&lt;span class=&quot;string&quot;&gt;&#39;./public&#39;&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;});&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 运行gulp命令时依次执行以下任务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gulp.task(&lt;span class=&quot;string&quot;&gt;&#39;default&#39;&lt;/span&gt;, gulp.parallel(&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;string&quot;&gt;&#39;compress&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;minify-css&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;minify-html&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;4.每次运行完 hexo g的时候运行gulp 之后再hexo d或s流程如下&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;Code&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo generate&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gulp&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo server 或 hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&quot;异步加载&quot;&gt;&lt;a href=&quot;#异步加载&quot; class=&quot;headerlink&quot; title=&quot;异步加载&quot; data-pjax-state&gt;&lt;/a&gt;异步加载&lt;/h1&gt;&lt;p&gt;在浏览器解析 HTML 的时候，遇到 &lt;code&gt;&amp;lt;link&amp;gt;、&amp;lt;script&amp;gt;&lt;/code&gt;，这个过程会阻塞后面内容、这样就会增加加载时间。不建议将 JS 放到 &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; 里。&lt;/p&gt;&lt;p&gt;此时我们需要使用异步加载的形式缩短页面的加载时间。&lt;/p&gt;&lt;p&gt;例如:&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;Code&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;- &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/daibi-mua/js@main/Twikoo.css&quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&quot;关闭预加载&quot;&gt;&lt;a href=&quot;#关闭预加载&quot; class=&quot;headerlink&quot; title=&quot;关闭预加载&quot; data-pjax-state&gt;&lt;/a&gt;关闭预加载&lt;/h1&gt;&lt;p&gt;蝴蝶主题有一个预加载动画,其实说实话确实好看,但是它会在你网站所有资源都加载完成时才会呈现出你的网站,这就让日常使用时进入网站时会很慢,所以我通常是推荐关闭它&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228213313903.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228213313903&quot; class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.keepdai.cn//image-20210228213313903.png&quot; data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228213313903.png&quot; alt=&quot;image-20210228213313903&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;在在主题配置文件里打开或者关闭&lt;/p&gt;&lt;h1 id=&quot;使用pjax&quot;&gt;&lt;a href=&quot;#使用pjax&quot; class=&quot;headerlink&quot; title=&quot;使用pjax&quot; data-pjax-state&gt;&lt;/a&gt;使用pjax&lt;/h1&gt;&lt;p&gt;当用户点击链接，通过ajax更新页面需要变化的部分，然后使用HTML5的pushState修改浏览器的URL地址。&lt;/p&gt;&lt;p&gt;这样可以不用重复加载相同的资源（css/js）， 从而提升网页的加载速度。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228213631328.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228213631328&quot; class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.keepdai.cn//image-20210228213631328.png&quot; data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228213631328.png&quot; alt=&quot;image-20210228213631328&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;对于一些第三方插件，有些并不支持pjax 。&lt;br&gt;你可以把网页加入到exclude里，把这个网页给它ban了,这个网页会被pjax排除在外。&lt;br&gt;点击该网页会重新加载网站&lt;/p&gt;&lt;p&gt;使用pjax后，一些自己DIY的js可能会无效，跳转页面时需要重新调用，请参考Pjax文档&lt;br&gt;使用pjax后，一些个别页面加载的js/css，将会改为所有页面都加载&lt;/p&gt;&lt;h1 id=&quot;即时页面&quot;&gt;&lt;a href=&quot;#即时页面&quot; class=&quot;headerlink&quot; title=&quot;即时页面&quot; data-pjax-state&gt;&lt;/a&gt;即时页面&lt;/h1&gt;&lt;p&gt;当鼠标悬停到链接上超过65 毫秒时，Instantpage 会对该链接进行预加载，可以提升访问速度。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228213906416.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228213906416&quot; class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.keepdai.cn//image-20210228213906416.png&quot; data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228213906416.png&quot; alt=&quot;image-20210228213906416&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;参考:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot; href=&quot;https://akilar.top/posts/969dffe3/&quot;&gt;Hexo 博客静态资源加速&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot; href=&quot;https://blog.imzykj.cn/posts/7cfb88dd/&quot;&gt;如何优化博客&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/article&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;转载自Daibi_mua &lt;a href=&quot;https://blog.keepdai.cn/youhua.html&quot;&gt;https://blog.keepdai.cn/youhua.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</summary>
     
     
     
@@ -80,13 +105,13 @@
     <updated>2021-09-24T05:07:53.028Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;article class=&quot;post-content&quot; id=&quot;article-container&quot;&gt;&lt;blockquote&gt;&lt;ul&gt;&lt;li&gt;前几天闲来无事 突然想找一个自己喜欢的随机图片api</summary>
-        
-      
+    <summary type="html">&lt;article class=&quot;post-content&quot; id=&quot;article-container&quot;&gt;&lt;blockquote&gt;&lt;ul&gt;&lt;li&gt;前几天闲来无事 突然想找一个自己喜欢的随机图片api 但翻了半天也没找到自己喜欢的，索性干脆自己做一个&lt;/li&gt;&lt;li&gt;参考了网上一些文章，同时结合自己实际情况，也加上了一些解释。&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot; data-pjax-state&gt;&lt;/a&gt;&lt;strong&gt;准备&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;一台服务器&lt;/li&gt;&lt;li&gt;已经搭建好的php环境&lt;/li&gt;&lt;/ul&gt;&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a href=&quot;#基本原理&quot; class=&quot;headerlink&quot; title=&quot;基本原理&quot; data-pjax-state&gt;&lt;/a&gt;基本原理&lt;/h3&gt;&lt;p&gt;随机图片API，主要原理其实很简单，就三步：&lt;br&gt;1.用一个文本文档存放图片的链接&lt;br&gt;2.当用户请求API时，php就去读取txt文件，然后生成随机数来随机选取一个图片链接&lt;br&gt;3.302重定向到目标图片地址&lt;/p&gt;&lt;hr&gt;&lt;p&gt;​&lt;/p&gt;&lt;h2 id=&quot;实现&quot;&gt;&lt;a href=&quot;#实现&quot; class=&quot;headerlink&quot; title=&quot;实现&quot; data-pjax-state&gt;&lt;/a&gt;&lt;strong&gt;实现&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;下面给出最简单的实现方式，详细说明见注释&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;创建文件img.txt用于存放图片地址，如&lt;/p&gt;&lt;/blockquote&gt;&lt;figure class=&quot;highlight http&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;http&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;https://cdn.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/9.jpg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;https://cdn.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/8.jpg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;https://cdn.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/3.png&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;https://cdn.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/7.jpg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;https://cdn.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/5.jpg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;&lt;p&gt;创建index.php&lt;/p&gt;&lt;/blockquote&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;Code&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;?php&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//存有美图链接的文件名img.txt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$filename = &quot;img.txt&quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;if(!file_exists($filename)){&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    die(&#39;文件不存在&#39;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//从文本获取链接&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$pics = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$fs = fopen($filename, &quot;r&quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;while(!feof($fs)){&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    $line=trim(fgets($fs));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    if($line!=&#39;&#39;){&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        array_push($pics, $line);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    }&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//从数组随机获取链接&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$pic = $pics[array_rand($pics)];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//返回指定格式&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$type=$_GET[&#39;type&#39;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;switch($type){&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//JSON返回&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;case &#39;json&#39;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    header(&#39;Content-type:text/json&#39;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    die(json_encode([&#39;pic&#39;=&amp;gt;$pic]));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;default:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    die(header(&quot;Location: $pic&quot;));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;将img.txt和index.php放在同一个网站目录下，通过访问域名/index.php即可&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;图床推荐：我目前就是用微博图床和GitHub+jsdelivr&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;微博因为有防盗链 这边建议使用微博图床&lt;a target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot; href=&quot;https://chrome.google.com/webstore/detail/%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A%E5%9B%BE%E5%BA%8A/fdfdnfpdplfbbnemmmoklbfjbhecpnhf/related&quot;&gt;插件&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/article&gt;
+
+&lt;h2 id=&quot;DEMO&quot;&gt;&lt;a href=&quot;#DEMO&quot; class=&quot;headerlink&quot; title=&quot;DEMO&quot;&gt;&lt;/a&gt;DEMO&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://api.ednovas.xyz/&quot;&gt;https://api.ednovas.xyz&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;转载自Daibi_mua &lt;a href=&quot;https://blog.keepdai.cn/article.html&quot;&gt;https://blog.keepdai.cn/article.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</summary>
     
     
     
@@ -111,13 +136,14 @@
     <updated>2021-09-22T20:39:48.941Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/iyear/E5SubBot&quot;&gt;https://github.com/iyear/E5SubBot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;直接部署&quot;&gt;&lt;a href=&quot;#直接部署&quot; class=&quot;headerlink&quot; title=&quot;直接部署&quot;&gt;&lt;/a&gt;直接部署&lt;/h2&gt;&lt;p&gt;虽然有docker方式部署，但是本项目直接部署会更方便一些&lt;/p&gt;
+&lt;p&gt;在releases界面复制对应版本的链接 &lt;a href=&quot;https://github.com/iyear/E5SubBot/releases&quot;&gt;https://github.com/iyear/E5SubBot/releases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/iyear/E5SubBot/releases/download/v0.3.1/E5SubBot_Linux_64bit.tar.gz%EF%BC%880.3.1%E7%89%88%E6%9C%AClinux64bit%EF%BC%89&quot;&gt;https://github.com/iyear/E5SubBot/releases/download/v0.3.1/E5SubBot_Linux_64bit.tar.gz（0.3.1版本linux64bit）&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir /home/e5sub &amp;amp;&amp;amp; &lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; /home/e5sub&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget https://github.com/iyear/E5SubBot/releases/download/v0.3.1/E5SubBot_Linux_64bit.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tar -zxvf E5SubBot_Linux_64bit.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cp config.yml.example config.yml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后打开&lt;code&gt;config.yml&lt;/code&gt;文件并编辑配置文件&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;bot_token: YOUR_BOT_TOKEN # 从botfather那里获取，创建一个新的机器人并记录下token&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# socks5: 127.0.0.1:1080&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;bindmax: 999 # 最大绑定账号数量&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;goroutine: 20 # 并发数，不要过大&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;admin: 111,222,333 # https:&amp;#x2F;&amp;#x2F;t.me&amp;#x2F;userinfobot 查看自己的tgid作为管理员&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;errlimit: 999 # 单账户最大出错次数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;notice: |- # 公告内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   aaa&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   bbb&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   ccc&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cron: &amp;quot;1 *&amp;#x2F;1 * * *&amp;quot; # API调用频率，cron表达式&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;db: sqlite # splite数据库&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;table: users&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# mysql:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    host: 127.0.0.1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    port: 3306&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    user: root&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    password: pwd&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    database: e5sub&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sqlite:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   db: data.db&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;docker部署&quot;&gt;&lt;a href=&quot;#docker部署&quot; class=&quot;headerlink&quot; title=&quot;docker部署&quot;&gt;&lt;/a&gt;docker部署&lt;/h2&gt;</summary>
     
     
     
@@ -142,13 +168,14 @@
     <updated>2021-09-22T05:28:49.995Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/tgbot-collection/YYeTsBot&quot;&gt;https://github.com/tgbot-collection/YYeTsBot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;大佬搭建的人人影视bot：&lt;a href=&quot;https://t.me/yyets_bot&quot;&gt;https://t.me/yyets_bot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;大佬搭建的人人影视分享站：&lt;a href=&quot;https://yyets.dmesg.app/&quot;&gt;https://yyets.dmesg.app/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;部署web&quot;&gt;&lt;a href=&quot;#部署web&quot; class=&quot;headerlink&quot; title=&quot;部署web&quot;&gt;&lt;/a&gt;部署web&lt;/h2&gt;&lt;p&gt;一键脚本，支持amd64/arm64，请先安装 docker、docker-compose和curl&lt;/p&gt;
+&lt;p&gt;Linux/macOS：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;bash -c &amp;quot;$(curl -fsSL https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;tgbot-collection&amp;#x2F;YYeTsBot&amp;#x2F;master&amp;#x2F;scripts&amp;#x2F;install.sh)&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;部署bot&quot;&gt;&lt;a href=&quot;#部署bot&quot; class=&quot;headerlink&quot; title=&quot;部署bot&quot;&gt;&lt;/a&gt;部署bot&lt;/h2&gt;&lt;p&gt;可以选择docker，也可以直接运行在机器上。&lt;/p&gt;</summary>
     
     
     
@@ -173,13 +200,13 @@
     <updated>2021-09-22T05:28:49.988Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/luolongfei/next-freenom&quot;&gt;https://github.com/luolongfei/next-freenom&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;docker部署（最方便）&quot;&gt;&lt;a href=&quot;#docker部署（最方便）&quot; class=&quot;headerlink&quot; title=&quot;docker部署（最方便）&quot;&gt;&lt;/a&gt;docker部署（最方便）&lt;/h2&gt;&lt;h3 id=&quot;基础设置&quot;&gt;&lt;a href=&quot;#基础设置&quot; class=&quot;headerlink&quot; title=&quot;基础设置&quot;&gt;&lt;/a&gt;基础设置&lt;/h3&gt;&lt;p&gt;升级源和软件并安装wget和vim&lt;/p&gt;
+&lt;p&gt;然后自动安装docker&lt;/p&gt;
+&lt;p&gt;Debian/Ubunt:&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt-get update &amp;amp;&amp;amp; apt-get install -y wget vim&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -qO- get.docker.com | bash&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;CentOS:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum update &amp;amp;&amp;amp; yum install -y wget vim&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -204,13 +231,12 @@
     <updated>2021-09-22T05:28:49.973Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/tgbot-collection/ytdlbot&quot;&gt;https://github.com/tgbot-collection/ytdlbot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;heroku部署&quot;&gt;&lt;a href=&quot;#heroku部署&quot; class=&quot;headerlink&quot; title=&quot;heroku部署&quot;&gt;&lt;/a&gt;heroku部署&lt;/h2&gt;&lt;p&gt;直接点击GitHub项目里的&lt;code&gt;deploy to heroku&lt;/code&gt; 即可&lt;/p&gt;
+&lt;h2 id=&quot;直接部署&quot;&gt;&lt;a href=&quot;#直接部署&quot; class=&quot;headerlink&quot; title=&quot;直接部署&quot;&gt;&lt;/a&gt;直接部署&lt;/h2&gt;&lt;p&gt;（需要python3环境，这个请自行安装）&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; /home&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; https://github.com/tgbot-collection/ytdlbot.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; ytdlbot&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pip3 install -r requirements.txt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 配置环境变量 APP_ID APP_HASH TOKEN&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;export&lt;/span&gt; APP_ID=1111 APP_HASH=dddd TOKEN=xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;screen -S ytdlbot&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;python3 ytdl.py&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;最后&lt;code&gt;ctrl+a+d&lt;/code&gt;退出screen（习惯使用screen，也可以使用systmd等）&lt;/p&gt;
+&lt;h2 id=&quot;docker简易安装&quot;&gt;&lt;a href=&quot;#docker简易安装&quot; class=&quot;headerlink&quot; title=&quot;docker简易安装&quot;&gt;&lt;/a&gt;docker简易安装&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;docker run -e APP_ID=111 -e APP_HASH=111 -e TOKEN=370FXI bennythink/ytdlbot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -233,13 +259,13 @@
     <updated>2021-09-22T05:28:50.659Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;GitHub地址：&lt;a</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;GitHub地址：&lt;a href=&quot;https://github.com/tgbot-collection/NCMBot&quot;&gt;https://github.com/tgbot-collection/NCMBot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;创建bot&quot;&gt;&lt;a href=&quot;#创建bot&quot; class=&quot;headerlink&quot; title=&quot;创建bot&quot;&gt;&lt;/a&gt;创建bot&lt;/h2&gt;&lt;p&gt;先去找botfather创建一个bot&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://t.me/BotFather&quot;&gt;https://t.me/BotFather&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;给你的bot命名，并且赋予一个bot用户名（不能与已有的用户名重复）&lt;/p&gt;
+&lt;p&gt;记下你的token，类似 &lt;code&gt;11111111：iajfCJIAO324IFJIOW&lt;/code&gt; 一样的一长串，这个就是服务器和tg bot链接的token&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-09-21_12-16-39.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;获取app-id&quot;&gt;&lt;a href=&quot;#获取app-id&quot; class=&quot;headerlink&quot; title=&quot;获取app id&quot;&gt;&lt;/a&gt;获取app id&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://my.telegram.org/&quot;&gt;https://my.telegram.org&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
@@ -264,15 +290,14 @@
     <updated>2021-09-18T03:28:06.558Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h2 id=&quot;整体思路&quot;&gt;&lt;a href=&quot;#整体思路&quot; class=&quot;headerlink&quot; title=&quot;整体思路&quot;&gt;&lt;/a&gt;整体思路&lt;/h2&gt;&lt;p&gt;网易云音乐导入到Spotify的整体思路就是&lt;/p&gt;
 &lt;p&gt;先将网易云音乐歌单导出为文字形式，如：&lt;/p&gt;
-&lt;figure</summary>
-        
-      
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ot A Little Crush On You -- Wildflowers&amp;#x2F;Emmi&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Au palais royal &amp;#x2F; les prostituées -- Various Artists&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;笑东风 -- 杨昊昆&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;末 -- AirJordy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;V.A.-Komorebi（第五人格）（舒 remix） -- 舒&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;We All Lift Together -- Keith Power&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Avicii (Tribute Mix) -- Starek&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Karaoke 365-Somebody to you - The Vamps（合唱版）（猫的蒽 remix） -- 猫的蒽&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Somebody To You -- The Vamps&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;No Hay Nadie Más -- Sebastián Yatra&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这样的&lt;code&gt;歌名 -- 作者&lt;/code&gt;的形式的txt文档，然后再导入到spotify中&lt;/p&gt;
+&lt;h2 id=&quot;导出方法1&quot;&gt;&lt;a href=&quot;#导出方法1&quot; class=&quot;headerlink&quot; title=&quot;导出方法1&quot;&gt;&lt;/a&gt;导出方法1&lt;/h2&gt;&lt;p&gt;使用油猴脚本，将网页版网易云的歌单导出为TXT格式，但是由于网页版网易云受限，最多只能导出1000首歌（如果该歌单超过1000首就只会显示1000首。多歌单总计超1000首，但每个不超1000不受影响）&lt;/p&gt;
+&lt;p&gt;脚本地址（油猴Tampermonkey的安装教程就不再赘述）：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://greasyfork.org/zh-CN/scripts/38793-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%88%97%E8%A1%A8%E5%AF%BC%E5%87%BA&quot;&gt;https://greasyfork.org/zh-CN/scripts/38793-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%88%97%E8%A1%A8%E5%AF%BC%E5%87%BA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装完成后打开你的歌单网页，然后右上角就会出现导出列表按钮，保存到本地即可&lt;/p&gt;</summary>
     
     
     
@@ -299,14 +324,14 @@
     <updated>2021-08-23T22:50:18.972Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;「Q：如何生成一个随机字符串？ A：让新手退出Vim。」&lt;/p&gt;
-&lt;p&gt;网上大部分 Linux 相关教程在涉及文本编辑操作时都是选择的</summary>
-        
-      
+&lt;p&gt;网上大部分 Linux 相关教程在涉及文本编辑操作时都是选择的 Vim 编辑器，对于新手来说如何退出成了最大的难题。其实除了 Vim 之外还有别的选择，那就是 nano 。上手 nano 几乎是零学习成本，而且对于只改几行配置文件这样的简单操作，nano 的用户体验完全吊打 Vim。&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;一般系统都内置了 nano 编辑器，如果没有，可以自己安装。&lt;/p&gt;
+&lt;h3 id=&quot;Cen­tOS-系统&quot;&gt;&lt;a href=&quot;#Cen­tOS-系统&quot; class=&quot;headerlink&quot; title=&quot;Cen­tOS 系统&quot;&gt;&lt;/a&gt;Cen­tOS 系统&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install -y nano&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;De­bian-​Ubuntu-系统&quot;&gt;&lt;a href=&quot;#De­bian-​Ubuntu-系统&quot; class=&quot;headerlink&quot; title=&quot;De­bian/​Ubuntu 系统&quot;&gt;&lt;/a&gt;De­bian/​Ubuntu 系统&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt-get install -y nano&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;基本操作&quot;&gt;&lt;a href=&quot;#基本操作&quot; class=&quot;headerlink&quot; title=&quot;基本操作&quot;&gt;&lt;/a&gt;基本操作&lt;/h2&gt;</summary>
     
     
     
@@ -329,13 +354,14 @@
     <updated>2021-08-23T22:49:04.227Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;UFW 是一个 Arch Linux、De­bian 或 Ubuntu</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;UFW 是一个 Arch Linux、De­bian 或 Ubuntu 中管理防火墙规则的前端，可大大简化防火墙的配置过程。&lt;/p&gt;
+&lt;h2 id=&quot;安装-UFW&quot;&gt;&lt;a href=&quot;#安装-UFW&quot; class=&quot;headerlink&quot; title=&quot;安装 UFW&quot;&gt;&lt;/a&gt;安装 UFW&lt;/h2&gt;&lt;p&gt;如还没有安装，可以使用 apt 命令来安装&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt-get update &amp;amp;&amp;amp; apt-get install ufw&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在使用前，你应该检查下 UFW 是否已经在运行。&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ufw status&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;如果你发现状态是 &lt;code&gt;inactive&lt;/code&gt; ，意思是没有被激活或不起作用。&lt;/p&gt;
+&lt;h2 id=&quot;启用-禁用&quot;&gt;&lt;a href=&quot;#启用-禁用&quot; class=&quot;headerlink&quot; title=&quot;启用/禁用&quot;&gt;&lt;/a&gt;启用/禁用&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ufw &lt;span class=&quot;built_in&quot;&gt;enable&lt;/span&gt;  &lt;span class=&quot;comment&quot;&gt;#启用&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ufw &lt;span class=&quot;built_in&quot;&gt;disable&lt;/span&gt;  &lt;span class=&quot;comment&quot;&gt;#禁用&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -358,14 +384,21 @@
     <updated>2021-08-23T22:49:04.231Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;既然是Aria2离线下载了，那么就肯定是用linux服务器下载并且安装aria2了，这里推荐一个好用而且十分方便的方法&lt;/p&gt;
-&lt;h2</summary>
-        
-      
+&lt;h2 id=&quot;脚本&quot;&gt;&lt;a href=&quot;#脚本&quot; class=&quot;headerlink&quot; title=&quot;脚本&quot;&gt;&lt;/a&gt;脚本&lt;/h2&gt;&lt;p&gt;Aria2 一键安装管理脚本 增强版&lt;/p&gt;
+&lt;p&gt;来自P3TREX大佬的脚本：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/P3TERX/aria2.sh&quot;&gt;https://github.com/P3TERX/aria2.sh&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;功能特性&quot;&gt;&lt;a href=&quot;#功能特性&quot; class=&quot;headerlink&quot; title=&quot;功能特性&quot;&gt;&lt;/a&gt;功能特性&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;BT 下载率高、速度快&lt;/li&gt;
+&lt;li&gt;重启后不丢失任务进度、不重复下载&lt;/li&gt;
+&lt;li&gt;下载错误或取消下载自动删除未完成的文件防止磁盘空间占用&lt;/li&gt;
+&lt;li&gt;下载完成自动清除.aria2后缀名文件&lt;/li&gt;
+&lt;li&gt;一键获取 BT tracker，进一步提升 BT 下载速度&lt;/li&gt;
+&lt;li&gt;更好的 PT 下载支持&lt;/li&gt;
+&lt;li&gt;有一定的防版权投诉、防迅雷吸血效果&lt;/li&gt;
+&lt;li&gt;联动 RCLONE 自动上传到 Google Drive 和 OneDrive 等网盘&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;（全部命令基于Debian/Ubuntu系统，Centos等自行更换成yum等）&lt;/p&gt;</summary>
     
     
     
@@ -388,16 +421,16 @@
     <updated>2021-08-23T22:49:04.231Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;参考自 &lt;a href=&quot;https://docs.cloudreve.org/&quot;&gt;https://docs.cloudreve.org/&lt;/a&gt; 本文添加了更多的说明且更详细些&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;简介&quot;&gt;&lt;a</summary>
-        
-      
+&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;cloudreve是一个极低成本的免费云盘管理系统，可以支持 &lt;/p&gt;
+&lt;p&gt;本机 从机 七牛 OSS COS 又拍云 OneDrive S3&lt;/p&gt;
+&lt;p&gt;这些方式的云盘挂载&lt;/p&gt;
+&lt;p&gt;可以让您快速搭建起公私兼备的网盘系统&lt;/p&gt;
+&lt;p&gt;Cloudreve 在底层支持不同的云存储平台，用户在实际使用时无须关心物理存储方式。&lt;/p&gt;
+&lt;p&gt;你可以使用 Cloudreve 搭建个人用网盘、文件分享系统，亦或是针对大小团体的公有云系统。&lt;/p&gt;
+&lt;h2 id=&quot;链接&quot;&gt;&lt;a href=&quot;#链接&quot; class=&quot;headerlink&quot; title=&quot;链接&quot;&gt;&lt;/a&gt;链接&lt;/h2&gt;&lt;p&gt;官方文档：&lt;a href=&quot;https://docs.cloudreve.org/&quot;&gt;https://docs.cloudreve.org/&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
@@ -420,14 +453,16 @@
     <updated>2021-08-23T22:49:04.230Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h2 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h2&gt;&lt;p&gt;禁止打开F12 调试前端代码&lt;/p&gt;
-&lt;h3 id=&quot;方式一&quot;&gt;&lt;a href=&quot;#方式一&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+&lt;h3 id=&quot;方式一&quot;&gt;&lt;a href=&quot;#方式一&quot; class=&quot;headerlink&quot; title=&quot;方式一&quot;&gt;&lt;/a&gt;方式一&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(function()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		$(document).bind(&amp;quot;contextmenu&amp;quot;, function () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			return false; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;);&amp;#x2F;&amp;#x2F;禁止右键&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		document.oncontextmenu &amp;#x3D; function () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			return false; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		document.onkeydown &amp;#x3D; function () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		    if (window.event &amp;amp;&amp;amp; window.event.keyCode &amp;#x3D;&amp;#x3D; 123) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		        event.keyCode &amp;#x3D; 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		        event.returnValue &amp;#x3D; false;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		        return false;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;;&amp;#x2F;&amp;#x2F;禁止F12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;方式二&quot;&gt;&lt;a href=&quot;#方式二&quot; class=&quot;headerlink&quot; title=&quot;方式二&quot;&gt;&lt;/a&gt;方式二&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script type&amp;#x3D;&amp;quot;text&amp;#x2F;javascript&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#x2F;&amp;#x2F;禁用右键（防止右键查看源代码） &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    window.oncontextmenu&amp;#x3D;function()&amp;#123;return false;&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#x2F;&amp;#x2F;禁止任何键盘敲击事件（防止F12和shift+ctrl+i调起开发者工具） &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    window.onkeydown &amp;#x3D; window.onkeyup &amp;#x3D; window.onkeypress &amp;#x3D; function () &amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        window.event.returnValue &amp;#x3D; false; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        return false; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#x2F;&amp;#x2F;如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面 &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var h &amp;#x3D; window.innerHeight,w&amp;#x3D;window.innerWidth; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    window.onresize &amp;#x3D; function () &amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        if (h!&amp;#x3D; window.innerHeight||w!&amp;#x3D;window.innerWidth)&amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            window.close(); &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            window.location &amp;#x3D; &amp;quot;about:blank&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;lt;&amp;#x2F;script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考：&lt;a href=&quot;https://www.jianshu.com/p/d5b8a84cbbd4&quot;&gt;https://www.jianshu.com/p/d5b8a84cbbd4&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.csdn.net/qq_23013025/article/details/53368266&quot;&gt;https://blog.csdn.net/qq_23013025/article/details/53368266&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.csdn.net/weixin_43875808/article/details/96438781&quot;&gt;https://blog.csdn.net/weixin_43875808/article/details/96438781&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.csdn.net/TimVan1596/article/details/83893622&quot;&gt;https://blog.csdn.net/TimVan1596/article/details/83893622&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.csdn.net/tang242424/article/details/83003133&quot;&gt;https://blog.csdn.net/tang242424/article/details/83003133&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;转载自 周小董 &lt;a href=&quot;https://blog.csdn.net/xc_zhou/article/details/104543757&quot;&gt;https://blog.csdn.net/xc_zhou/article/details/104543757&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;解决方法&quot;&gt;&lt;a href=&quot;#解决方法&quot; class=&quot;headerlink&quot; title=&quot;解决方法&quot;&gt;&lt;/a&gt;解决方法&lt;/h2&gt;&lt;h3 id=&quot;view-source&quot;&gt;&lt;a href=&quot;#view-source&quot; class=&quot;headerlink&quot; title=&quot;view-source&quot;&gt;&lt;/a&gt;view-source&lt;/h3&gt;</summary>
     
     
     
@@ -446,14 +481,19 @@
     <updated>2021-08-23T22:49:04.226Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
-&lt;h2 id=&quot;toc_0&quot;&gt;官方&lt;/h2&gt;&lt;p&gt;进入设置--安全与更新--最底下的预览者计划，选择beta或者dev通道，检查更新，坐等推送&lt;/p&gt;&lt;hr&gt;&lt;h2</summary>
-        
-      
+&lt;h2 id=&quot;toc_0&quot;&gt;官方&lt;/h2&gt;&lt;p&gt;进入设置--安全与更新--最底下的预览者计划，选择beta或者dev通道，检查更新，坐等推送&lt;/p&gt;&lt;hr&gt;&lt;h2 id=&quot;toc_1&quot;&gt;民间小站(下载镜像用)&lt;/h2&gt;&lt;p&gt;官方有些版本是没有给镜像的，这个时候你就要&lt;a href=&quot;https://uupdump.net/&quot;&gt;uupdump&lt;/a&gt;，这里面的镜像是纯净原版的&lt;br&gt;选择中文&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@adc6c4b24fd572789114ee34121594dd62ad706e/2021/07/31/c93580be46d78aeabf45da1974997003.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@adc6c4b24fd572789114ee34121594dd62ad706e/2021/07/31/c93580be46d78aeabf45da1974997003.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;在搜索栏搜索你要的版本&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@3afba4235e2ac4751d4ec1494af5a33f2cf5f16c/2021/07/31/073ae3fda927bdf0ea8b2d23b6b9fda5.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@3afba4235e2ac4751d4ec1494af5a33f2cf5f16c/2021/07/31/073ae3fda927bdf0ea8b2d23b6b9fda5.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;比如我这里搜的是22000.100&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@8b2147b8ef60d37537b2c3c137a69cb79cd93097/2021/07/31/a586253de761ad3385a0c1cc10f73dcf.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@8b2147b8ef60d37537b2c3c137a69cb79cd93097/2021/07/31/a586253de761ad3385a0c1cc10f73dcf.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;选择第二个&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@89aa8e7b1421dab601465c901e7d3d6cea37d882/2021/07/31/a1c44f8aa72c52860fb2642b09dd4a2f.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@89aa8e7b1421dab601465c901e7d3d6cea37d882/2021/07/31/a1c44f8aa72c52860fb2642b09dd4a2f.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;amd64代表64位，上面第一个是更新包，下面的arm64不用管&lt;darkb-text&gt;反正你也装不上&lt;/darkb-text&gt;&lt;br&gt;下一步&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@39172c7580f5b0f4833db561b89a94387f0f75eb/2021/07/31/c66e7460ccc3d3791762cbb650469fb5.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@39172c7580f5b0f4833db561b89a94387f0f75eb/2021/07/31/c66e7460ccc3d3791762cbb650469fb5.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;下一步&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@cf8aaf0c4c6f7d224e506415c02f62d8f7e31faa/2021/07/31/b6c76000d0484a097ebe16d97ccb755c.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@cf8aaf0c4c6f7d224e506415c02f62d8f7e31faa/2021/07/31/b6c76000d0484a097ebe16d97ccb755c.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;保持默认就好，创建下载包&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@bad981018749de49c8c6d58c6940e47b2c8d8f28/2021/07/31/b070ef8de7a772eec150f9f3c512dcb9.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@bad981018749de49c8c6d58c6940e47b2c8d8f28/2021/07/31/b070ef8de7a772eec150f9f3c512dcb9.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;下载好之后是一个压缩包，解压进去里面点击脚本.cmd进行下载&lt;br&gt;后面就看你的网速了&lt;/p&gt;&lt;hr&gt;&lt;p&gt;&lt;a href=&quot;https://blog.isaacwangtt.ml/index.php/archives/76/&quot;&gt;Windows11安装教程&lt;/a&gt;&lt;/p&gt; &lt;/article&gt;
+
+&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
+&lt;p&gt;首先你需要一个闲置u盘(后面须格式化)，一个win11镜像&lt;a href=&quot;https://yun.fw1028.top/s/4nCr&quot;&gt;点我下载&lt;/a&gt; (镜像来自酷安)&lt;/p&gt;&lt;hr&gt;&lt;p&gt;你需要一个pe的安装方式，我用的是&lt;a href=&quot;https://www.itsk.com/forum.php?mod=viewthread&amp;amp;tid=417902&quot;&gt;优启通&lt;/a&gt;&lt;br&gt;我这边已经装上了win11，所以下面用文字说明安装过程&lt;/p&gt;&lt;hr&gt;&lt;h2 id=&quot;toc_0&quot;&gt;PE系统制作&lt;/h2&gt;&lt;p&gt;双击你下载好的exe文件EasyU.exe，点击全新制作，制作pe系统写入u盘&lt;br&gt;静静的等待&lt;br&gt;在这个过程中你可以去&lt;a href=&quot;https://www.baidu.com/&quot;&gt;百度&lt;/a&gt;搜索你电脑机型的BIOS进入方式(每个电脑进入方式不同)&lt;br&gt;等你的pe写入完之后，把镜像文件.iso拷进你的u盘(分区名称为EasyU)，弹出，重启，进入BIOS，选择你的U盘系统，进入&lt;/p&gt;&lt;hr&gt;&lt;h2 id=&quot;toc_1&quot;&gt;(可选)全盘格式化&lt;/h2&gt;&lt;p&gt;进入桌面的&quot;DG硬盘分区&quot;&lt;br&gt;右键你的硬盘(注意是硬盘hd0,hd1不是分区C:D:)&lt;br&gt;选择删除所有分区，在你的第一个硬盘，快速分区，把&quot;创建MSR分区&quot;框选取消，留下&quot;创建新ESP分区&quot;，右边的分盘符按自己情况定，确定&lt;br&gt;如果你有第二块硬盘，则分区的时候，把&quot;创建MSR分区&quot;和&quot;创建新ESP分区&quot;都取消框选(因为ESP分区是引导分区，只需要存在一个)&lt;/p&gt;&lt;hr&gt;&lt;h2 id=&quot;toc_2&quot;&gt;系统安装&lt;/h2&gt;&lt;p&gt;点击桌面的ELX系统安装，程序会自动找你u盘的镜像文件&lt;br&gt;在恢复镜像一栏选择你要装的系统版本，在目标分区一栏选择C盘，点击一键恢复，取消掉&quot;恢复完成后自动运行万能驱动&quot;，点击确定&lt;br&gt;等恢复好后你的电脑会重启，这时拔出u盘(如果不拔出会再次进入PE系统)&lt;br&gt;最后，Enjoy&lt;/p&gt; &lt;/article&gt;
+
+&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
+&lt;p&gt;新外观仅365仅win11能启用，2019 2016 2012 2010 win7 win8 win10不用看了&lt;/p&gt;&lt;hr&gt;&lt;p&gt;进入任意365套件&lt;br&gt;点击账户&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@184ca156189291154e5029421792eab273e3101d/2021/07/31/40f30e0abf0c4a0f99ce999269959c6a.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@184ca156189291154e5029421792eab273e3101d/2021/07/31/40f30e0abf0c4a0f99ce999269959c6a.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;点击预览体验计划&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@54f0f2e2dcd965f079c76e457279d1155e8fcc56/2021/07/31/c56a10da73edce07983f12baf5dfaf64.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@54f0f2e2dcd965f079c76e457279d1155e8fcc56/2021/07/31/c56a10da73edce07983f12baf5dfaf64.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;点击第一个选项&lt;br&gt;选择Beta通道，点击该选项，然后确认&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@618180352e9cdb2dd3641a064b81eb88009c9653/2021/07/31/e7b2b36ee4ab65ba8dad9dffaf3cc627.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@618180352e9cdb2dd3641a064b81eb88009c9653/2021/07/31/e7b2b36ee4ab65ba8dad9dffaf3cc627.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;点击立即更新&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@df1432fbbed223168d9fab23c3a713b294927c93/2021/07/31/35f2158a554c558448bac8d571caafc6.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@df1432fbbed223168d9fab23c3a713b294927c93/2021/07/31/35f2158a554c558448bac8d571caafc6.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;hr&gt;&lt;p&gt;一般来说到这就行了，如果还不行重启&lt;br&gt;实在不行往下看&lt;/p&gt;&lt;hr&gt;&lt;p&gt;点击搜索&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@ace3315cf9691e481d6292bf8d22fde2fe2cbdd1/2021/07/31/aa8898f6b5c9d0cd5881c179b69d98d9.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@ace3315cf9691e481d6292bf8d22fde2fe2cbdd1/2021/07/31/aa8898f6b5c9d0cd5881c179b69d98d9.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;搜索即将推出的功能&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@3d611ba9cca9242af0b610a0d7ada7e9b1058b22/2021/07/31/eaf9f8f629f80346b621766c0fb65642.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@3d611ba9cca9242af0b610a0d7ada7e9b1058b22/2021/07/31/eaf9f8f629f80346b621766c0fb65642.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;在新出来的界面点击启用&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@0fb78673db646c02ec58ec461b6b26b059568bec/2021/07/31/ceccdf84b3a32fa24aef6623cfc1fc61.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@0fb78673db646c02ec58ec461b6b26b059568bec/2021/07/31/ceccdf84b3a32fa24aef6623cfc1fc61.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;如果没有就重启，还不行就是你倒霉了&lt;/p&gt;&lt;hr&gt;&lt;p&gt;推荐这么设置&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@06c4b49dbcd2cd8337929f0561cf2001075033a4/2021/07/31/c93e08577159d6e3c8545b1c3929826b.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@06c4b49dbcd2cd8337929f0561cf2001075033a4/2021/07/31/c93e08577159d6e3c8545b1c3929826b.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;最后，enjoy&lt;/p&gt; &lt;/article&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;转载自 IssacWangTT&lt;br&gt;&lt;a href=&quot;https://blog.isaacwangtt.ml/index.php/archives/77/&quot;&gt;https://blog.isaacwangtt.ml/index.php/archives/77/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.isaacwangtt.ml/index.php/archives/76/&quot;&gt;https://blog.isaacwangtt.ml/index.php/archives/76/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.isaacwangtt.ml/index.php/archives/80/&quot;&gt;https://blog.isaacwangtt.ml/index.php/archives/80/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</summary>
     
     
     
@@ -527,14 +567,16 @@
     <updated>2021-08-23T22:49:04.230Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;以前进行谷歌搜索的时候，都是很正常的。最近服务器发生了一些变动，在地址栏直接输入关键字搜索，就跳出了人机验证的界面，如下图&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
-        
-      
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0Ly81NDdmYmFkYzNmZmY1LmdpZg.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;次数多了之后 Google 还会弹出一个窗口，要求输入传统的验证码或者跳出阿猫阿狗汽车的图片让你选择。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0Ly81NDdmYzBjMTkxYmJkLmpwZw.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;关于谷歌人机验证的详细新闻，可以看雷锋网的这篇文章——&lt;a href=&quot;http://www.leiphone.com/news/201412/Hnux7n19OcNWwUFt.html&quot;&gt;《与恼人的验证码说拜拜，Google用一次点击区分人与机器》&lt;/a&gt;。我猜测这是多人公用同一个谷歌搜索的站点引起的问题。Google reCaptcha 功能会在收集大量信息，包括IP地址和cookies，然后通过收集这些数据对比用户是否和过去在互联网上的行为一致，来判定这个用户究竟是不是机器人。&lt;/p&gt;
+&lt;p&gt;在好基友的帮助下我找到了一个折中解决的办法。简单说来就是新建一个搜索引擎，指定想要的搜索地址就好(最好避开与你共用一条线路的用户访问的谷歌搜索的站点——主站.com，香港.hk和日本.co.jp这一类)。下面是具体的步骤：&lt;/p&gt;
+&lt;p&gt;1 访问 &amp;lt;google.com/ncr&amp;gt;，随便搜索一个关键字。（ncr=no country redirect不做国家跳转） 2 修改浏览器默认搜索引擎。下面以 Chrome 为例：&lt;/p&gt;
+&lt;p&gt;打开设置&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0LzIwMTcwNDA2MTkyMTQwLmpwZw.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;管理搜索引擎&lt;/p&gt;</summary>
     
     
     
@@ -557,13 +599,11 @@
     <updated>2021-08-23T22:49:04.229Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;创建非root用户&quot;&gt;&lt;a href=&quot;#创建非root用户&quot; class=&quot;headerlink&quot; title=&quot;创建非root用户&quot;&gt;&lt;/a&gt;创建非root用户&lt;/h2&gt;&lt;figure class=&quot;highlight</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;创建非root用户&quot;&gt;&lt;a href=&quot;#创建非root用户&quot; class=&quot;headerlink&quot; title=&quot;创建非root用户&quot;&gt;&lt;/a&gt;创建非root用户&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;useradd -m ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;给ednovas用户设置密码&quot;&gt;&lt;a href=&quot;#给ednovas用户设置密码&quot; class=&quot;headerlink&quot; title=&quot;给ednovas用户设置密码&quot;&gt;&lt;/a&gt;给ednovas用户设置密码&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;passwd ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;切换用户到ednovas&quot;&gt;&lt;a href=&quot;#切换用户到ednovas&quot; class=&quot;headerlink&quot; title=&quot;切换用户到ednovas&quot;&gt;&lt;/a&gt;切换用户到ednovas&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;su ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;cd到ednovas的当前目录&quot;&gt;&lt;a href=&quot;#cd到ednovas的当前目录&quot; class=&quot;headerlink&quot; title=&quot;cd到ednovas的当前目录&quot;&gt;&lt;/a&gt;cd到ednovas的当前目录&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;在ednovas的目录下创一个-ssh的文件夹并给它的权限设为700&quot;&gt;&lt;a href=&quot;#在ednovas的目录下创一个-ssh的文件夹并给它的权限设为700&quot; class=&quot;headerlink&quot; title=&quot;在ednovas的目录下创一个.ssh的文件夹并给它的权限设为700&quot;&gt;&lt;/a&gt;在ednovas的目录下创一个.ssh的文件夹并给它的权限设为700&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir .ssh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chmod 700 .ssh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -575,37 +615,6 @@
     <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
     
     <category term="root" scheme="https://ednovas.xyz/tags/root/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS 7 firewalld指令</title>
-    <link href="https://ednovas.xyz/2021/07/20/firewalld/"/>
-    <id>https://ednovas.xyz/2021/07/20/firewalld/</id>
-    <published>2021-07-20T17:14:00.000Z</published>
-    <updated>2021-08-23T22:49:04.230Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;运行、停止、禁用firewalld&quot;&gt;&lt;a href=&quot;#运行、停止、禁用firewalld&quot; class=&quot;headerlink&quot; title=&quot;运行、停止、禁用firewalld&quot;&gt;&lt;/a&gt;运行、停止、禁用firewalld&lt;/h2&gt;&lt;h3</summary>
-        
-      
-    
-    
-    
-    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
-    
-    <category term="firewall" scheme="https://ednovas.xyz/tags/firewall/"/>
-    
-    <category term="centos" scheme="https://ednovas.xyz/tags/centos/"/>
-    
-    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
     
   </entry>
   
