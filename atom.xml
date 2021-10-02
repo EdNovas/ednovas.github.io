@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-09-30T07:53:05.696Z</updated>
+  <updated>2021-10-02T04:16:32.381Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,287 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Regular Expression 正则表达式</title>
+    <link href="https://ednovas.xyz/2021/10/01/regex/"/>
+    <id>https://ednovas.xyz/2021/10/01/regex/</id>
+    <published>2021-10-01T18:51:00.000Z</published>
+    <updated>2021-10-02T04:16:32.381Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/dbnauyuy7y1o3k839iny.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1_Wf89DaXXNLF5xCr-rhwOzQ.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;正则表达式，又称正则表示式、正则表示法、规则表达式、常规表示法，是计算机科学的一个概念。正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。&lt;/p&gt;
+&lt;p&gt;在很多文本编辑器里，正则表达式通常被用来检索、替换那些匹配某个模式的文本。 许多程序设计语言都支持利用正则表达式进行字符串操作。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/zh/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F&quot;&gt;https://zh.wikipedia.org/zh/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;表达式全集&quot;&gt;&lt;a href=&quot;#表达式全集&quot; class=&quot;headerlink&quot; title=&quot;表达式全集&quot;&gt;&lt;/a&gt;表达式全集&lt;/h2&gt;&lt;table class=&quot;wikitable&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th width=&quot;10%&quot;&gt;字符&lt;/th&gt;
+      &lt;th width=&quot;90%&quot;&gt;描述&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\&lt;/th&gt;
+      &lt;td&gt;将下一个字符标记为一个特殊字符、或一个原义字符、或一个向后引用、或一个八进制转义符。例如，“&lt;code&gt;n&lt;/code&gt;”匹配字符“&lt;code&gt;n&lt;/code&gt;”。“&lt;code&gt;\n&lt;/code&gt;”匹配一个换行符。串行“&lt;code&gt;\\&lt;/code&gt;”匹配“&lt;code&gt;\&lt;/code&gt;”而“&lt;code&gt;\(&lt;/code&gt;”则匹配“&lt;code&gt;(&lt;/code&gt;”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;^&lt;/th&gt;
+      &lt;td&gt;匹配输入字符串的开始位置。如果设置了RegExp对象的Multiline属性，^也匹配“&lt;code&gt;\n&lt;/code&gt;”或“&lt;code&gt;\r&lt;/code&gt;”之后的位置。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;$&lt;/th&gt;
+      &lt;td&gt;匹配输入字符串的结束位置。如果设置了RegExp对象的Multiline属性，$也匹配“&lt;code&gt;\n&lt;/code&gt;”或“&lt;code&gt;\r&lt;/code&gt;”之前的位置。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;*&lt;/th&gt;
+      &lt;td&gt;匹配前面的子表达式零次或多次。例如，zo*能匹配“&lt;code&gt;z&lt;/code&gt;”以及“&lt;code&gt;zoo&lt;/code&gt;”。*等价于{0,}。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;+&lt;/th&gt;
+      &lt;td&gt;匹配前面的子表达式一次或多次。例如，“&lt;code&gt;zo+&lt;/code&gt;”能匹配“&lt;code&gt;zo&lt;/code&gt;”以及“&lt;code&gt;zoo&lt;/code&gt;”，但不能匹配“&lt;code&gt;z&lt;/code&gt;”。+等价于{1,}。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;?&lt;/th&gt;
+      &lt;td&gt;匹配前面的子表达式零次或一次。例如，“&lt;code&gt;do(es)?&lt;/code&gt;”可以匹配“&lt;code&gt;does&lt;/code&gt;”或“&lt;code&gt;does&lt;/code&gt;”中的“&lt;code&gt;do&lt;/code&gt;”。?等价于{0,1}。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;{&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;}&lt;/th&gt;
+      &lt;td&gt;&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;是一个非负整数。匹配确定的&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;次。例如，“&lt;code&gt;o&amp;#123;2&amp;#125;&lt;/code&gt;”不能匹配“&lt;code&gt;Bob&lt;/code&gt;”中的“&lt;code&gt;o&lt;/code&gt;”，但是能匹配“&lt;code&gt;food&lt;/code&gt;”中的两个o。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;{&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;,}&lt;/th&gt;
+      &lt;td&gt;&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;是一个非负整数。至少匹配&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;次。例如，“&lt;code&gt;o&amp;#123;2,&amp;#125;&lt;/code&gt;”不能匹配“&lt;code&gt;Bob&lt;/code&gt;”中的“&lt;code&gt;o&lt;/code&gt;”，但能匹配“&lt;code&gt;foooood&lt;/code&gt;”中的所有o。“&lt;code&gt;o&amp;#123;1,&amp;#125;&lt;/code&gt;”等价于“&lt;code&gt;o+&lt;/code&gt;”。“&lt;code&gt;o&amp;#123;0,&amp;#125;&lt;/code&gt;”则等价于“&lt;code&gt;o*&lt;/code&gt;”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;{&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;,&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m&lt;/span&gt;}&lt;/th&gt;
+      &lt;td&gt;&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m&lt;/span&gt;和&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;均为非负整数，其中&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;&amp;lt;=&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m&lt;/span&gt;。最少匹配&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;次且最多匹配&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m&lt;/span&gt;次。例如，“&lt;code&gt;o&amp;#123;1,3&amp;#125;&lt;/code&gt;”将匹配“&lt;code&gt;fooooood&lt;/code&gt;”中的前三个o。“&lt;code&gt;o&amp;#123;0,1&amp;#125;&lt;/code&gt;”等价于“&lt;code&gt;o?&lt;/code&gt;”。请注意在逗号和两个数之间不能有空格。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;?&lt;/th&gt;
+      &lt;td&gt;当该字符紧跟在任何一个其他限制符（*,+,?，{&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;}，{&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;,}，{&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;,&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m&lt;/span&gt;}）后面时，匹配模式是非贪婪的。非贪婪模式尽可能少的匹配所搜索的字符串，而默认的贪婪模式则尽可能多的匹配所搜索的字符串。例如，对于字符串“&lt;code&gt;oooo&lt;/code&gt;”，“&lt;code&gt;o+?&lt;/code&gt;”将匹配单个“&lt;code&gt;o&lt;/code&gt;”，而“&lt;code&gt;o+&lt;/code&gt;”将匹配所有“&lt;code&gt;o&lt;/code&gt;”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;.&lt;/th&gt;
+      &lt;td&gt;匹配除“&lt;code&gt;\&lt;/code&gt;&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;&lt;code&gt;n&lt;/code&gt;&lt;/span&gt;”之外的任何单个字符。要匹配包括“&lt;code&gt;\&lt;/code&gt;&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;&lt;code&gt;n&lt;/code&gt;&lt;/span&gt;”在内的任何字符，请使用像“&lt;code&gt;(.|\n)&lt;/code&gt;”的模式。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;(pattern)&lt;/th&gt;
+      &lt;td&gt;匹配pattern并获取这一匹配。所获取的匹配可以从产生的Matches集合得到，在VBScript中使用SubMatches集合，在JScript中则使用$0…$9属性。要匹配圆括号字符，请使用“&lt;code&gt;\(&lt;/code&gt;”或“&lt;code&gt;\)&lt;/code&gt;”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;(?:pattern)&lt;/th&gt;
+      &lt;td&gt;匹配pattern但不获取匹配结果，也就是说这是一个非获取匹配，不进行存储供以后使用。这在使用或字符“&lt;code&gt;(|)&lt;/code&gt;”来组合一个模式的各个部分是很有用。例如“&lt;code&gt;industr(?:y|ies)&lt;/code&gt;”就是一个比“&lt;code&gt;industry|industries&lt;/code&gt;”更简略的表达式。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;(?=pattern)&lt;/th&gt;
+      &lt;td&gt;正向肯定预查，在任何匹配pattern的字符串开始处匹配查找字符串。这是一个非获取匹配，也就是说，该匹配不需要获取供以后使用。例如，“&lt;code&gt;Windows(?=95|98|NT|2000)&lt;/code&gt;”能匹配“&lt;code&gt;Windows2000&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”，但不能匹配“&lt;code&gt;Windows3.1&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”。预查不消耗字符，也就是说，在一个匹配发生后，在最后一次匹配之后立即开始下一次匹配的搜索，而不是从包含预查的字符之后开始。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;(?!pattern)&lt;/th&gt;
+      &lt;td&gt;正向否定预查，在任何不匹配pattern的字符串开始处匹配查找字符串。这是一个非获取匹配，也就是说，该匹配不需要获取供以后使用。例如“&lt;code&gt;Windows(?!95|98|NT|2000)&lt;/code&gt;”能匹配“&lt;code&gt;Windows3.1&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”，但不能匹配“&lt;code&gt;Windows2000&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”。预查不消耗字符，也就是说，在一个匹配发生后，在最后一次匹配之后立即开始下一次匹配的搜索，而不是从包含预查的字符之后开始&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;(?&amp;lt;=pattern)&lt;/th&gt;
+      &lt;td&gt;反向肯定预查，与正向肯定预查类拟，只是方向相反。例如，“&lt;code&gt;(?&amp;lt;=95|98|NT|2000)Windows&lt;/code&gt;”能匹配“&lt;code&gt;2000Windows&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”，但不能匹配“&lt;code&gt;3.1Windows&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;(?&amp;lt;!pattern)&lt;/th&gt;
+      &lt;td&gt;反向否定预查，与正向否定预查类拟，只是方向相反。例如“&lt;code&gt;(?&amp;lt;!95|98|NT|2000)Windows&lt;/code&gt;”能匹配“&lt;code&gt;3.1Windows&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”，但不能匹配“&lt;code&gt;2000Windows&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;x|y&lt;/th&gt;
+      &lt;td&gt;匹配x或y。例如，“&lt;code&gt;z|food&lt;/code&gt;”能匹配“&lt;code&gt;z&lt;/code&gt;”或“&lt;code&gt;food&lt;/code&gt;”。“&lt;code&gt;(z|f)ood&lt;/code&gt;”则匹配“&lt;code&gt;zood&lt;/code&gt;”或“&lt;code&gt;food&lt;/code&gt;”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;[xyz]&lt;/th&gt;
+      &lt;td&gt;字符集合。匹配所包含的任意一个字符。例如，“&lt;code&gt;[abc]&lt;/code&gt;”可以匹配“&lt;code&gt;plain&lt;/code&gt;”中的“&lt;code&gt;a&lt;/code&gt;”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;[^xyz]&lt;/th&gt;
+      &lt;td&gt;负值字符集合。匹配未包含的任意字符。例如，“&lt;code&gt;[^abc]&lt;/code&gt;”可以匹配“&lt;code&gt;plain&lt;/code&gt;”中的“&lt;code&gt;p&lt;/code&gt;”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;[a-z]&lt;/th&gt;
+      &lt;td&gt;字符范围。匹配指定范围内的任意字符。例如，“&lt;code&gt;[a-z]&lt;/code&gt;”可以匹配“&lt;code&gt;a&lt;/code&gt;”到“&lt;code&gt;z&lt;/code&gt;”范围内的任意小写字母字符。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;[^a-z]&lt;/th&gt;
+      &lt;td&gt;负值字符范围。匹配任何不在指定范围内的任意字符。例如，“&lt;code&gt;[^a-z]&lt;/code&gt;”可以匹配任何不在“&lt;code&gt;a&lt;/code&gt;”到“&lt;code&gt;z&lt;/code&gt;”范围内的任意字符。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\b&lt;/th&gt;
+      &lt;td&gt;匹配一个单词边界，也就是指单词和空格间的位置。例如，“&lt;code&gt;er\b&lt;/code&gt;”可以匹配“&lt;code&gt;never&lt;/code&gt;”中的“&lt;code&gt;er&lt;/code&gt;”，但不能匹配“&lt;code&gt;verb&lt;/code&gt;”中的“&lt;code&gt;er&lt;/code&gt;”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\B&lt;/th&gt;
+      &lt;td&gt;匹配非单词边界。“&lt;code&gt;er\B&lt;/code&gt;”能匹配“&lt;code&gt;verb&lt;/code&gt;”中的“&lt;code&gt;er&lt;/code&gt;”，但不能匹配“&lt;code&gt;never&lt;/code&gt;”中的“&lt;code&gt;er&lt;/code&gt;”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\cx&lt;/th&gt;
+      &lt;td&gt;匹配由x指明的控制字符。例如，\cM匹配一个Control-M或回车符。x的值必须为A-Z或a-z之一。否则，将c视为一个原义的“&lt;code&gt;c&lt;/code&gt;”字符。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\d&lt;/th&gt;
+      &lt;td&gt;匹配一个数字字符。等价于[0-9]。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\D&lt;/th&gt;
+      &lt;td&gt;匹配一个非数字字符。等价于[^0-9]。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\f&lt;/th&gt;
+      &lt;td&gt;匹配一个换页符。等价于\x0c和\cL。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\n&lt;/th&gt;
+      &lt;td&gt;匹配一个换行符。等价于\x0a和\cJ。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\r&lt;/th&gt;
+      &lt;td&gt;匹配一个回车符。等价于\x0d和\cM。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\s&lt;/th&gt;
+      &lt;td&gt;匹配任何空白字符，包括空格、制表符、换页符等等。等价于[ \f\n\r\t\v]。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\S&lt;/th&gt;
+      &lt;td&gt;匹配任何非空白字符。等价于[^ \f\n\r\t\v]。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\t&lt;/th&gt;
+      &lt;td&gt;匹配一个制表符。等价于\x09和\cI。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\v&lt;/th&gt;
+      &lt;td&gt;匹配一个垂直制表符。等价于\x0b和\cK。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\w&lt;/th&gt;
+      &lt;td&gt;匹配包括下划线的任何单词字符。等价于“&lt;code&gt;[A-Za-z0-9_]&lt;/code&gt;”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\W&lt;/th&gt;
+      &lt;td&gt;匹配任何非单词字符。等价于“&lt;code&gt;[^A-Za-z0-9_]&lt;/code&gt;”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\x&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;&lt;/th&gt;
+      &lt;td&gt;匹配&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;，其中&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;为十六进制转义值。十六进制转义值必须为确定的两个数字长。例如，“&lt;code&gt;\x41&lt;/code&gt;”匹配“&lt;code&gt;A&lt;/code&gt;”。“&lt;code&gt;\x041&lt;/code&gt;”则等价于“&lt;code&gt;\x04&amp;amp;1&lt;/code&gt;”。正则表达式中可以使用ASCII编码。.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;num&lt;/span&gt;&lt;/th&gt;
+      &lt;td&gt;匹配&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;num&lt;/span&gt;，其中&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;num&lt;/span&gt;是一个正整数。对所获取的匹配的引用。例如，“&lt;code&gt;(.)\1&lt;/code&gt;”匹配两个连续的相同字符。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;&lt;/th&gt;
+      &lt;td&gt;标识一个八进制转义值或一个向后引用。如果\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;之前至少&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;个获取的子表达式，则&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;为向后引用。否则，如果&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;为八进制数字（0-7），则&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;为一个八进制转义值。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;&lt;/th&gt;
+      &lt;td&gt;标识一个八进制转义值或一个向后引用。如果\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;之前至少有&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;个获得子表达式，则&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;为向后引用。如果\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;之前至少有&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;个获取，则&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;为一个后跟文字&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m&lt;/span&gt;的向后引用。如果前面的条件都不满足，若&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;和&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m&lt;/span&gt;均为八进制数字（0-7），则\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;将匹配八进制转义值&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nml&lt;/span&gt;&lt;/th&gt;
+      &lt;td&gt;如果&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;为八进制数字（0-3），且&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m和l&lt;/span&gt;均为八进制数字（0-7），则匹配八进制转义值&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;l。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align:center;&quot;&gt;\u&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;&lt;/th&gt;
+      &lt;td&gt;匹配&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;，其中&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;是一个用四个十六进制数字表示的Unicode字符。例如，\u00A9匹配版权符号（©）。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;常用正则表达式&quot;&gt;&lt;a href=&quot;#常用正则表达式&quot; class=&quot;headerlink&quot; title=&quot;常用正则表达式&quot;&gt;&lt;/a&gt;常用正则表达式&lt;/h2&gt;&lt;table class=&quot;wikitable&quot; width=&quot;100%&quot;&gt;
+  &lt;tbody&gt;&lt;tr&gt;
+    &lt;th width=&quot;10%&quot;&gt;用户名&lt;/th&gt;
+    &lt;td width=&quot;90%&quot;&gt;/^[a-z0-9_-]{3,16}$/&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th scope=&quot;row&quot;&gt;密码&lt;/th&gt;
+    &lt;td&gt;/^[a-z0-9_-]{6,18}$/&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th scope=&quot;row&quot;&gt;十六进制值&lt;/th&gt;
+    &lt;td&gt;/^#?([a-f0-9]{6}|[a-f0-9]{3})$/&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th scope=&quot;row&quot;&gt;电子邮箱&lt;/th&gt;
+    &lt;td&gt;/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/&lt;br&gt;
+  /^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th scope=&quot;row&quot;&gt;URL&lt;/th&gt;
+    &lt;td&gt;/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th scope=&quot;row&quot;&gt;IP 地址&lt;/th&gt;
+    &lt;td&gt;/((2[0-4]\d|25[0-5]|[01]?\d\d?)\.){3}(2[0-4]\d|25[0-5]|[01]?\d\d?)/&lt;br&gt;/^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th scope=&quot;row&quot;&gt;HTML 标签&lt;/th&gt;
+    &lt;td&gt;/^&amp;lt;([a-z]+)([^&amp;lt;]+)*(?:&amp;gt;(.*)&amp;lt;\/\1&amp;gt;|\s+\/&amp;gt;)$/&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th scope=&quot;row&quot;&gt;删除代码\\注释&lt;/th&gt;
+    &lt;td&gt;(?&amp;lt;!http:|\S)//.*$&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;!--  &lt;tr&gt;
+    &lt;th scope=&quot;row&quot;&gt;&amp;nbsp;&lt;/th&gt;
+    &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;/tr&gt;--&gt;
+  &lt;tr&gt;
+    &lt;th scope=&quot;row&quot;&gt;Unicode编码中的汉字范围&lt;/th&gt;
+    &lt;td&gt;/^[\u2E80-\u9FFF]+$/&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&quot;https://tool.oschina.net/uploads/apidocs/jquery/regexp.html&quot;&gt;https://tool.oschina.net/uploads/apidocs/jquery/regexp.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Algorithm算法</title>
+    <link href="https://ednovas.xyz/2021/10/01/algorithm/"/>
+    <id>https://ednovas.xyz/2021/10/01/algorithm/</id>
+    <published>2021-10-01T17:51:00.000Z</published>
+    <updated>2021-10-02T04:42:37.581Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Cut-property&quot;&gt;&lt;a href=&quot;#Cut-property&quot; class=&quot;headerlink&quot; title=&quot;Cut property&quot;&gt;&lt;/a&gt;Cut property&lt;/h2&gt;&lt;p&gt;For any cut C of the graph, if the weight of an edge e in the cut-set of C is strictly smaller than the weights of all other edges of the cut-set of C, then this edge belongs to all MSTs of the graph.&lt;/p&gt;
+&lt;p&gt;Proof: Assume that there is an MST T that does not contain e. Adding e to T will produce a cycle, that crosses the cut once at e and crosses back at another edge e’ . Deleting e’ we get a spanning tree T∖{e’}∪{e} of strictly smaller weight than T. This contradicts the assumption that T was a MST.&lt;/p&gt;
+&lt;p&gt;By a similar argument, if more than one edge is of minimum weight across a cut, then each such edge is contained in some minimum spanning tree.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Minimum_spanning_tree#Cut_property&quot;&gt;https://en.wikipedia.org/wiki/Minimum_spanning_tree#Cut_property&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Definition-in-class&quot;&gt;&lt;a href=&quot;#Definition-in-class&quot; class=&quot;headerlink&quot; title=&quot;Definition in class&quot;&gt;&lt;/a&gt;Definition in class&lt;/h3&gt;&lt;p&gt;Let (S,V\S) be a cut and let e∈E be a min weight crossing edge for the cut. Then the MST contains e. (i.e. e is a “safe edge”)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/kruskal_idea.png&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Proof-in-class&quot;&gt;&lt;a href=&quot;#Proof-in-class&quot; class=&quot;headerlink&quot; title=&quot;Proof in class&quot;&gt;&lt;/a&gt;Proof in class&lt;/h3&gt;&lt;p&gt;Suppose the MST T doesn’t contain e (e∉T)&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Assembly language 汇编语言基础</title>
-    <link href="https://ednovas.xyz/2021/09/28/mips/"/>
-    <id>https://ednovas.xyz/2021/09/28/mips/</id>
-    <published>2021-09-28T23:51:00.000Z</published>
-    <updated>2021-09-30T07:53:05.696Z</updated>
+    <link href="https://ednovas.xyz/2021/09/23/mips/"/>
+    <id>https://ednovas.xyz/2021/09/23/mips/</id>
+    <published>2021-09-23T23:51:00.000Z</published>
+    <updated>2021-10-02T04:16:35.565Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;安装java环境&quot;&gt;&lt;a href=&quot;#安装java环境&quot; class=&quot;headerlink&quot; title=&quot;安装java环境&quot;&gt;&lt;/a&gt;安装java环境&lt;/h2&gt;&lt;p&gt;这个网上很多，就不再赘述了&lt;/p&gt;
@@ -184,9 +460,9 @@
     
     <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
     
-    <category term="视频" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91/"/>
-    
     <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="视频" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91/"/>
     
     <category term="下载" scheme="https://ednovas.xyz/tags/%E4%B8%8B%E8%BD%BD/"/>
     
@@ -556,65 +832,6 @@
     <category term="搜索" scheme="https://ednovas.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
     
     <category term="search" scheme="https://ednovas.xyz/tags/search/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>避免跳出谷歌人机验证 reCAPTCHA界面的解决方法</title>
-    <link href="https://ednovas.xyz/2021/07/20/googlerecaptcha/"/>
-    <id>https://ednovas.xyz/2021/07/20/googlerecaptcha/</id>
-    <published>2021-07-20T17:27:00.000Z</published>
-    <updated>2021-08-23T22:49:04.230Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;以前进行谷歌搜索的时候，都是很正常的。最近服务器发生了一些变动，在地址栏直接输入关键字搜索，就跳出了人机验证的界面，如下图&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0Ly81NDdmYmFkYzNmZmY1LmdpZg.gif&quot;&gt;&lt;/p&gt;
-&lt;p&gt;次数多了之后 Google 还会弹出一个窗口，要求输入传统的验证码或者跳出阿猫阿狗汽车的图片让你选择。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0Ly81NDdmYzBjMTkxYmJkLmpwZw.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;关于谷歌人机验证的详细新闻，可以看雷锋网的这篇文章——&lt;a href=&quot;http://www.leiphone.com/news/201412/Hnux7n19OcNWwUFt.html&quot;&gt;《与恼人的验证码说拜拜，Google用一次点击区分人与机器》&lt;/a&gt;。我猜测这是多人公用同一个谷歌搜索的站点引起的问题。Google reCaptcha 功能会在收集大量信息，包括IP地址和cookies，然后通过收集这些数据对比用户是否和过去在互联网上的行为一致，来判定这个用户究竟是不是机器人。&lt;/p&gt;
-&lt;p&gt;在好基友的帮助下我找到了一个折中解决的办法。简单说来就是新建一个搜索引擎，指定想要的搜索地址就好(最好避开与你共用一条线路的用户访问的谷歌搜索的站点——主站.com，香港.hk和日本.co.jp这一类)。下面是具体的步骤：&lt;/p&gt;
-&lt;p&gt;1 访问 &amp;lt;google.com/ncr&amp;gt;，随便搜索一个关键字。（ncr=no country redirect不做国家跳转） 2 修改浏览器默认搜索引擎。下面以 Chrome 为例：&lt;/p&gt;
-&lt;p&gt;打开设置&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0LzIwMTcwNDA2MTkyMTQwLmpwZw.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;管理搜索引擎&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
-    
-    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
-    
-    <category term="root" scheme="https://ednovas.xyz/tags/root/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux非root用户登录</title>
-    <link href="https://ednovas.xyz/2021/07/20/linuxnoroot/"/>
-    <id>https://ednovas.xyz/2021/07/20/linuxnoroot/</id>
-    <published>2021-07-20T17:27:00.000Z</published>
-    <updated>2021-08-23T22:49:04.229Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;创建非root用户&quot;&gt;&lt;a href=&quot;#创建非root用户&quot; class=&quot;headerlink&quot; title=&quot;创建非root用户&quot;&gt;&lt;/a&gt;创建非root用户&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;useradd -m ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;给ednovas用户设置密码&quot;&gt;&lt;a href=&quot;#给ednovas用户设置密码&quot; class=&quot;headerlink&quot; title=&quot;给ednovas用户设置密码&quot;&gt;&lt;/a&gt;给ednovas用户设置密码&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;passwd ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;切换用户到ednovas&quot;&gt;&lt;a href=&quot;#切换用户到ednovas&quot; class=&quot;headerlink&quot; title=&quot;切换用户到ednovas&quot;&gt;&lt;/a&gt;切换用户到ednovas&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;su ednovas&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;cd到ednovas的当前目录&quot;&gt;&lt;a href=&quot;#cd到ednovas的当前目录&quot; class=&quot;headerlink&quot; title=&quot;cd到ednovas的当前目录&quot;&gt;&lt;/a&gt;cd到ednovas的当前目录&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;在ednovas的目录下创一个-ssh的文件夹并给它的权限设为700&quot;&gt;&lt;a href=&quot;#在ednovas的目录下创一个-ssh的文件夹并给它的权限设为700&quot; class=&quot;headerlink&quot; title=&quot;在ednovas的目录下创一个.ssh的文件夹并给它的权限设为700&quot;&gt;&lt;/a&gt;在ednovas的目录下创一个.ssh的文件夹并给它的权限设为700&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir .ssh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chmod 700 .ssh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="bash" scheme="https://ednovas.xyz/tags/bash/"/>
-    
-    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
-    
-    <category term="root" scheme="https://ednovas.xyz/tags/root/"/>
     
   </entry>
   
