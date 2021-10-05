@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-10-02T05:23:32.620Z</updated>
+  <updated>2021-10-05T02:27:24.100Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>白嫖 Hax 1H512M 纯IPV6 VPS</title>
+    <link href="https://ednovas.xyz/2021/10/04/haxvps/"/>
+    <id>https://ednovas.xyz/2021/10/04/haxvps/</id>
+    <published>2021-10-05T03:51:00.000Z</published>
+    <updated>2021-10-05T02:27:24.100Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;申请条件&quot;&gt;&lt;a href=&quot;#申请条件&quot; class=&quot;headerlink&quot; title=&quot;申请条件&quot;&gt;&lt;/a&gt;申请条件&lt;/h2&gt;&lt;p&gt;只要一个TG账号即可申请&lt;/p&gt;
+&lt;h2 id=&quot;系统配置&quot;&gt;&lt;a href=&quot;#系统配置&quot; class=&quot;headerlink&quot; title=&quot;系统配置&quot;&gt;&lt;/a&gt;系统配置&lt;/h2&gt;&lt;p&gt;1 CPU&lt;/p&gt;
+&lt;p&gt;512M ram&lt;/p&gt;
+&lt;p&gt;4G HDD （未来欧洲区开通会有SSD）&lt;/p&gt;
+&lt;p&gt;1 * IPV6&lt;/p&gt;
+&lt;h2 id=&quot;申请步骤&quot;&gt;&lt;a href=&quot;#申请步骤&quot; class=&quot;headerlink&quot; title=&quot;申请步骤&quot;&gt;&lt;/a&gt;申请步骤&lt;/h2&gt;&lt;p&gt;官网： &lt;a href=&quot;https://hax.co.id/register&quot;&gt;https://hax.co.id/register&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;打开TG，搜索并打开 &lt;a href=&quot;https://t.me/HaxTG_bot&quot;&gt;&lt;code&gt;@HaxTG_bot&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="白嫖" scheme="https://ednovas.xyz/tags/%E7%99%BD%E5%AB%96/"/>
+    
+    <category term="免费" scheme="https://ednovas.xyz/tags/%E5%85%8D%E8%B4%B9/"/>
+    
+  </entry>
   
   <entry>
     <title>Cron 定时任务表达式</title>
@@ -348,7 +377,7 @@
     <link href="https://ednovas.xyz/2021/10/01/algorithm/"/>
     <id>https://ednovas.xyz/2021/10/01/algorithm/</id>
     <published>2021-10-01T17:51:00.000Z</published>
-    <updated>2021-10-02T04:42:37.581Z</updated>
+    <updated>2021-10-05T02:29:08.333Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Cut-property&quot;&gt;&lt;a href=&quot;#Cut-property&quot; class=&quot;headerlink&quot; title=&quot;Cut property&quot;&gt;&lt;/a&gt;Cut property&lt;/h2&gt;&lt;p&gt;For any cut C of the graph, if the weight of an edge e in the cut-set of C is strictly smaller than the weights of all other edges of the cut-set of C, then this edge belongs to all MSTs of the graph.&lt;/p&gt;
@@ -855,36 +884,6 @@
     
     
     <category term="win11" scheme="https://ednovas.xyz/tags/win11/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何使用hugo+github pages搭建一个个人博客</title>
-    <link href="https://ednovas.xyz/2021/07/20/hugo/"/>
-    <id>https://ednovas.xyz/2021/07/20/hugo/</id>
-    <published>2021-07-21T03:30:00.000Z</published>
-    <updated>2021-08-23T22:49:04.229Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自 Aegisprogram &lt;a href=&quot;https://aegisprogram.github.io/posts/975b52b0.html&quot;&gt;https://aegisprogram.github.io/posts/975b52b0.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;除了可以使用hexo来搭建个人博客之外，我们还可以使用hugo博客框架来搭建自己的个人博客。hugo和hexo相比搭建过程更加的简单快捷，需要的依赖较少，搭建过程不容易出错，对于新手来说更加的友好一些。所以如果你还没能成功搭建起hexo博客的话，那么不妨试试hugo+github pages搭建。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="github" scheme="https://ednovas.xyz/tags/github/"/>
-    
-    <category term="hugo" scheme="https://ednovas.xyz/tags/hugo/"/>
-    
-    <category term="blog" scheme="https://ednovas.xyz/tags/blog/"/>
     
   </entry>
   
