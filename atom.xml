@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-10-05T04:57:12.397Z</updated>
+  <updated>2021-10-06T04:53:10.533Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>WARP+ 刷无限流量</title>
+    <link href="https://ednovas.xyz/2021/10/05/warp+/"/>
+    <id>https://ednovas.xyz/2021/10/05/warp+/</id>
+    <published>2021-10-05T18:51:00.000Z</published>
+    <updated>2021-10-06T04:53:10.533Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;最简单的方法&quot;&gt;&lt;a href=&quot;#最简单的方法&quot; class=&quot;headerlink&quot; title=&quot;最简单的方法&quot;&gt;&lt;/a&gt;最简单的方法&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://replit.com/@wdm1732418365/warp&quot;&gt;https://replit.com/@wdm1732418365/warp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;点击小三角开始run运行，然后输入你的warp ID（获取方法见下&lt;code&gt;获取APP的设备ID&lt;/code&gt;部分）&lt;/p&gt;
+&lt;p&gt;如果你有python环境，本地也可以挂着，或者挂在VPS上开个screen挂着&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;fork 自 &lt;a href=&quot;https://replit.com/@aliilapro/warp&quot;&gt;https://replit.com/@aliilapro/warp&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;CloudFlare® WARP APP&lt;/p&gt;
+&lt;p&gt;下载地址：&lt;a href=&quot;https://1.1.1.1/&quot;&gt;https://1.1.1.1/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;包含全客户端，下载对应客户端软件&lt;/p&gt;
+&lt;h2 id=&quot;获取APP的设备ID&quot;&gt;&lt;a href=&quot;#获取APP的设备ID&quot; class=&quot;headerlink&quot; title=&quot;获取APP的设备ID&quot;&gt;&lt;/a&gt;获取APP的设备ID&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="白嫖" scheme="https://ednovas.xyz/tags/%E7%99%BD%E5%AB%96/"/>
+    
+    <category term="免费" scheme="https://ednovas.xyz/tags/%E5%85%8D%E8%B4%B9/"/>
+    
+  </entry>
+  
+  <entry>
     <title>白嫖 Hax 1H512M 纯IPV6 VPS</title>
     <link href="https://ednovas.xyz/2021/10/04/haxvps/"/>
     <id>https://ednovas.xyz/2021/10/04/haxvps/</id>
     <published>2021-10-05T03:51:00.000Z</published>
-    <updated>2021-10-05T04:57:12.397Z</updated>
+    <updated>2021-10-06T04:53:30.704Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;申请条件&quot;&gt;&lt;a href=&quot;#申请条件&quot; class=&quot;headerlink&quot; title=&quot;申请条件&quot;&gt;&lt;/a&gt;申请条件&lt;/h2&gt;&lt;p&gt;只要一个TG账号即可申请&lt;/p&gt;
@@ -377,7 +407,7 @@
     <link href="https://ednovas.xyz/2021/10/01/algorithm/"/>
     <id>https://ednovas.xyz/2021/10/01/algorithm/</id>
     <published>2021-10-01T17:51:00.000Z</published>
-    <updated>2021-10-05T02:29:08.333Z</updated>
+    <updated>2021-10-06T04:53:30.765Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Cut-property&quot;&gt;&lt;a href=&quot;#Cut-property&quot; class=&quot;headerlink&quot; title=&quot;Cut property&quot;&gt;&lt;/a&gt;Cut property&lt;/h2&gt;&lt;p&gt;For any cut C of the graph, if the weight of an edge e in the cut-set of C is strictly smaller than the weights of all other edges of the cut-set of C, then this edge belongs to all MSTs of the graph.&lt;/p&gt;
@@ -853,37 +883,6 @@
     
     
     <category term="f12" scheme="https://ednovas.xyz/tags/f12/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>win11下载安装</title>
-    <link href="https://ednovas.xyz/2021/07/31/win11/"/>
-    <id>https://ednovas.xyz/2021/07/31/win11/</id>
-    <published>2021-08-01T03:56:00.000Z</published>
-    <updated>2021-08-23T22:49:04.226Z</updated>
-    
-    
-    <summary type="html">&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
-&lt;h2 id=&quot;toc_0&quot;&gt;官方&lt;/h2&gt;&lt;p&gt;进入设置--安全与更新--最底下的预览者计划，选择beta或者dev通道，检查更新，坐等推送&lt;/p&gt;&lt;hr&gt;&lt;h2 id=&quot;toc_1&quot;&gt;民间小站(下载镜像用)&lt;/h2&gt;&lt;p&gt;官方有些版本是没有给镜像的，这个时候你就要&lt;a href=&quot;https://uupdump.net/&quot;&gt;uupdump&lt;/a&gt;，这里面的镜像是纯净原版的&lt;br&gt;选择中文&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@adc6c4b24fd572789114ee34121594dd62ad706e/2021/07/31/c93580be46d78aeabf45da1974997003.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@adc6c4b24fd572789114ee34121594dd62ad706e/2021/07/31/c93580be46d78aeabf45da1974997003.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;在搜索栏搜索你要的版本&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@3afba4235e2ac4751d4ec1494af5a33f2cf5f16c/2021/07/31/073ae3fda927bdf0ea8b2d23b6b9fda5.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@3afba4235e2ac4751d4ec1494af5a33f2cf5f16c/2021/07/31/073ae3fda927bdf0ea8b2d23b6b9fda5.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;比如我这里搜的是22000.100&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@8b2147b8ef60d37537b2c3c137a69cb79cd93097/2021/07/31/a586253de761ad3385a0c1cc10f73dcf.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@8b2147b8ef60d37537b2c3c137a69cb79cd93097/2021/07/31/a586253de761ad3385a0c1cc10f73dcf.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;选择第二个&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@89aa8e7b1421dab601465c901e7d3d6cea37d882/2021/07/31/a1c44f8aa72c52860fb2642b09dd4a2f.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@89aa8e7b1421dab601465c901e7d3d6cea37d882/2021/07/31/a1c44f8aa72c52860fb2642b09dd4a2f.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;amd64代表64位，上面第一个是更新包，下面的arm64不用管&lt;darkb-text&gt;反正你也装不上&lt;/darkb-text&gt;&lt;br&gt;下一步&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@39172c7580f5b0f4833db561b89a94387f0f75eb/2021/07/31/c66e7460ccc3d3791762cbb650469fb5.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@39172c7580f5b0f4833db561b89a94387f0f75eb/2021/07/31/c66e7460ccc3d3791762cbb650469fb5.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;下一步&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@cf8aaf0c4c6f7d224e506415c02f62d8f7e31faa/2021/07/31/b6c76000d0484a097ebe16d97ccb755c.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@cf8aaf0c4c6f7d224e506415c02f62d8f7e31faa/2021/07/31/b6c76000d0484a097ebe16d97ccb755c.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;保持默认就好，创建下载包&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@bad981018749de49c8c6d58c6940e47b2c8d8f28/2021/07/31/b070ef8de7a772eec150f9f3c512dcb9.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@bad981018749de49c8c6d58c6940e47b2c8d8f28/2021/07/31/b070ef8de7a772eec150f9f3c512dcb9.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;下载好之后是一个压缩包，解压进去里面点击脚本.cmd进行下载&lt;br&gt;后面就看你的网速了&lt;/p&gt;&lt;hr&gt;&lt;p&gt;&lt;a href=&quot;https://blog.isaacwangtt.ml/index.php/archives/76/&quot;&gt;Windows11安装教程&lt;/a&gt;&lt;/p&gt; &lt;/article&gt;
-
-&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
-&lt;p&gt;首先你需要一个闲置u盘(后面须格式化)，一个win11镜像&lt;a href=&quot;https://yun.fw1028.top/s/4nCr&quot;&gt;点我下载&lt;/a&gt; (镜像来自酷安)&lt;/p&gt;&lt;hr&gt;&lt;p&gt;你需要一个pe的安装方式，我用的是&lt;a href=&quot;https://www.itsk.com/forum.php?mod=viewthread&amp;amp;tid=417902&quot;&gt;优启通&lt;/a&gt;&lt;br&gt;我这边已经装上了win11，所以下面用文字说明安装过程&lt;/p&gt;&lt;hr&gt;&lt;h2 id=&quot;toc_0&quot;&gt;PE系统制作&lt;/h2&gt;&lt;p&gt;双击你下载好的exe文件EasyU.exe，点击全新制作，制作pe系统写入u盘&lt;br&gt;静静的等待&lt;br&gt;在这个过程中你可以去&lt;a href=&quot;https://www.baidu.com/&quot;&gt;百度&lt;/a&gt;搜索你电脑机型的BIOS进入方式(每个电脑进入方式不同)&lt;br&gt;等你的pe写入完之后，把镜像文件.iso拷进你的u盘(分区名称为EasyU)，弹出，重启，进入BIOS，选择你的U盘系统，进入&lt;/p&gt;&lt;hr&gt;&lt;h2 id=&quot;toc_1&quot;&gt;(可选)全盘格式化&lt;/h2&gt;&lt;p&gt;进入桌面的&quot;DG硬盘分区&quot;&lt;br&gt;右键你的硬盘(注意是硬盘hd0,hd1不是分区C:D:)&lt;br&gt;选择删除所有分区，在你的第一个硬盘，快速分区，把&quot;创建MSR分区&quot;框选取消，留下&quot;创建新ESP分区&quot;，右边的分盘符按自己情况定，确定&lt;br&gt;如果你有第二块硬盘，则分区的时候，把&quot;创建MSR分区&quot;和&quot;创建新ESP分区&quot;都取消框选(因为ESP分区是引导分区，只需要存在一个)&lt;/p&gt;&lt;hr&gt;&lt;h2 id=&quot;toc_2&quot;&gt;系统安装&lt;/h2&gt;&lt;p&gt;点击桌面的ELX系统安装，程序会自动找你u盘的镜像文件&lt;br&gt;在恢复镜像一栏选择你要装的系统版本，在目标分区一栏选择C盘，点击一键恢复，取消掉&quot;恢复完成后自动运行万能驱动&quot;，点击确定&lt;br&gt;等恢复好后你的电脑会重启，这时拔出u盘(如果不拔出会再次进入PE系统)&lt;br&gt;最后，Enjoy&lt;/p&gt; &lt;/article&gt;
-
-&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
-&lt;p&gt;新外观仅365仅win11能启用，2019 2016 2012 2010 win7 win8 win10不用看了&lt;/p&gt;&lt;hr&gt;&lt;p&gt;进入任意365套件&lt;br&gt;点击账户&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@184ca156189291154e5029421792eab273e3101d/2021/07/31/40f30e0abf0c4a0f99ce999269959c6a.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@184ca156189291154e5029421792eab273e3101d/2021/07/31/40f30e0abf0c4a0f99ce999269959c6a.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;点击预览体验计划&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@54f0f2e2dcd965f079c76e457279d1155e8fcc56/2021/07/31/c56a10da73edce07983f12baf5dfaf64.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@54f0f2e2dcd965f079c76e457279d1155e8fcc56/2021/07/31/c56a10da73edce07983f12baf5dfaf64.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;点击第一个选项&lt;br&gt;选择Beta通道，点击该选项，然后确认&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@618180352e9cdb2dd3641a064b81eb88009c9653/2021/07/31/e7b2b36ee4ab65ba8dad9dffaf3cc627.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@618180352e9cdb2dd3641a064b81eb88009c9653/2021/07/31/e7b2b36ee4ab65ba8dad9dffaf3cc627.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;点击立即更新&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@df1432fbbed223168d9fab23c3a713b294927c93/2021/07/31/35f2158a554c558448bac8d571caafc6.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@df1432fbbed223168d9fab23c3a713b294927c93/2021/07/31/35f2158a554c558448bac8d571caafc6.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;hr&gt;&lt;p&gt;一般来说到这就行了，如果还不行重启&lt;br&gt;实在不行往下看&lt;/p&gt;&lt;hr&gt;&lt;p&gt;点击搜索&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@ace3315cf9691e481d6292bf8d22fde2fe2cbdd1/2021/07/31/aa8898f6b5c9d0cd5881c179b69d98d9.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@ace3315cf9691e481d6292bf8d22fde2fe2cbdd1/2021/07/31/aa8898f6b5c9d0cd5881c179b69d98d9.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;搜索即将推出的功能&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@3d611ba9cca9242af0b610a0d7ada7e9b1058b22/2021/07/31/eaf9f8f629f80346b621766c0fb65642.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@3d611ba9cca9242af0b610a0d7ada7e9b1058b22/2021/07/31/eaf9f8f629f80346b621766c0fb65642.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;在新出来的界面点击启用&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@0fb78673db646c02ec58ec461b6b26b059568bec/2021/07/31/ceccdf84b3a32fa24aef6623cfc1fc61.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@0fb78673db646c02ec58ec461b6b26b059568bec/2021/07/31/ceccdf84b3a32fa24aef6623cfc1fc61.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;如果没有就重启，还不行就是你倒霉了&lt;/p&gt;&lt;hr&gt;&lt;p&gt;推荐这么设置&lt;br&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@06c4b49dbcd2cd8337929f0561cf2001075033a4/2021/07/31/c93e08577159d6e3c8545b1c3929826b.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@06c4b49dbcd2cd8337929f0561cf2001075033a4/2021/07/31/c93e08577159d6e3c8545b1c3929826b.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;最后，enjoy&lt;/p&gt; &lt;/article&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;转载自 IssacWangTT&lt;br&gt;&lt;a href=&quot;https://blog.isaacwangtt.ml/index.php/archives/77/&quot;&gt;https://blog.isaacwangtt.ml/index.php/archives/77/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.isaacwangtt.ml/index.php/archives/76/&quot;&gt;https://blog.isaacwangtt.ml/index.php/archives/76/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.isaacwangtt.ml/index.php/archives/80/&quot;&gt;https://blog.isaacwangtt.ml/index.php/archives/80/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="win11" scheme="https://ednovas.xyz/tags/win11/"/>
     
   </entry>
   
