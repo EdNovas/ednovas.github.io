@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-10-25T05:43:09.694Z</updated>
+  <updated>2021-10-25T06:46:11.495Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -21,11 +21,13 @@
     <link href="https://ednovas.xyz/2021/10/24/daydream/"/>
     <id>https://ednovas.xyz/2021/10/24/daydream/</id>
     <published>2021-10-25T04:51:00.000Z</published>
-    <updated>2021-10-25T05:43:09.694Z</updated>
+    <updated>2021-10-25T06:46:11.495Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;Movie&quot;&gt;&lt;a href=&quot;#Movie&quot; class=&quot;headerlink&quot; title=&quot;Movie&quot;&gt;&lt;/a&gt;Movie&lt;/h2&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://ednovas.cloud/api/v3/file/source/57444/%E7%99%BD%E6%97%A5%E6%A2%A6%E6%83%B3%E5%AE%B6.BD1280%E8%B6%85%E6%B8%85%E4%B8%AD%E8%8B%B1%E5%8F%8C%E5%AD%97.%E8%BF%85%E9%9B%B7%E4%B9%8B%E5%AE%B6.www.XL720.com.mp4?sign=---SoXhzDtJkqB11e5hunypqkUp8snN3mLOYi-nxI9w%3D%3A0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; frameborder=&quot;0&quot; allowfullscreen&gt;
-&lt;/iframe&gt;
+    <summary type="html">&lt;h2 id=&quot;Movie&quot;&gt;&lt;a href=&quot;#Movie&quot; class=&quot;headerlink&quot; title=&quot;Movie&quot;&gt;&lt;/a&gt;Movie&lt;/h2&gt;&lt;video width=&quot;560&quot; height=&quot;315&quot; controls&gt;
+  &lt;source src=&quot;https://ednovas.cloud/api/v3/file/source/57444/%E7%99%BD%E6%97%A5%E6%A2%A6%E6%83%B3%E5%AE%B6.BD1280%E8%B6%85%E6%B8%85%E4%B8%AD%E8%8B%B1%E5%8F%8C%E5%AD%97.%E8%BF%85%E9%9B%B7%E4%B9%8B%E5%AE%B6.www.XL720.com.mp4?sign=---SoXhzDtJkqB11e5hunypqkUp8snN3mLOYi-nxI9w%3D%3A0&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;
+
 
 &lt;h2 id=&quot;Movie-Soundtrack&quot;&gt;&lt;a href=&quot;#Movie-Soundtrack&quot; class=&quot;headerlink&quot; title=&quot;Movie Soundtrack&quot;&gt;&lt;/a&gt;Movie Soundtrack&lt;/h2&gt;&lt;p&gt;下为电影原生&lt;/p&gt;
 &lt;iframe src=&quot;https://open.spotify.com/embed/playlist/0Id3yPPLcHZ9ifcui7hT2v&quot; width=&quot;100%&quot; height=&quot;380&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot; allow=&quot;encrypted-media&quot;&gt;&lt;/iframe&gt;
