@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-10-25T01:48:25.295Z</updated>
+  <updated>2021-10-25T04:32:32.926Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>白日梦想家 The Secret Life of Walter Mitty</title>
+    <link href="https://ednovas.xyz/2021/10/24/daydream/"/>
+    <id>https://ednovas.xyz/2021/10/24/daydream/</id>
+    <published>2021-10-25T04:51:00.000Z</published>
+    <updated>2021-10-25T04:32:32.926Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;白日梦想家-The-Secret-Life-of-Walter-Mitty&quot;&gt;&lt;a href=&quot;#白日梦想家-The-Secret-Life-of-Walter-Mitty&quot; class=&quot;headerlink&quot; title=&quot;白日梦想家 The Secret Life of Walter Mitty&quot;&gt;&lt;/a&gt;白日梦想家 The Secret Life of Walter Mitty&lt;/h2&gt;&lt;p&gt;（涉嫌剧透）&lt;/p&gt;
+&lt;p&gt;该片为改编自詹姆斯·瑟伯的短篇小说的第二部电影&lt;/p&gt;
+&lt;p&gt;讲述了一位兢兢业业的杂志封面冲印师华特·米堤（Walter Mitty），常常有各式各样的白日梦。&lt;/p&gt;
+&lt;p&gt;知名摄影师尚恩·欧康诺（Sean O’Connell）有一天送了一卷特别的底片作品，并特别说明希望有一张相片能够成为“生活杂志”最后一期的封面。&lt;/p&gt;
+&lt;p&gt;华特在底片影像部门工作，而过去十六年来从未弄丢过一张相片，然而这次却找不到这张所谓的25号底片，因此从未真正出去冒险过的华特，决定出门寻找尚恩，找回失踪的25号底片。&lt;/p&gt;
+&lt;p&gt;他一开始先前往位于格陵兰的奴克，在当地一间酒吧询问一位邮差，得知尚恩在一条渔船上，于是他便跟着刚好要送无线电零件给条那船的邮差一同前往。&lt;/p&gt;
+&lt;p&gt;因为他们搭乘着直升机，所以华特必须跳机才能抵达，但因一时疏忽而跳到了海上，奋力抵抗鲨鱼后被救了起来，接下来就是他精彩又刺激的冒险。&lt;/p&gt;
+&lt;p&gt;他又前往了冰岛去火山喷发的地方寻找Sean的踪迹，并且目睹了火山的喷发。&lt;/p&gt;
+&lt;p&gt;后来又无果回到了杂志社，并且惨遭开除，也遇到了爱情的打击。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>通过NeverInstall应用平台，实现在线应用体验</title>
@@ -958,37 +983,6 @@ chmod +x /usr/bin/neko-relay
     <category term="视频" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91/"/>
     
     <category term="下载" scheme="https://ednovas.xyz/tags/%E4%B8%8B%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Freenom 域名自动续期bot</title>
-    <link href="https://ednovas.xyz/2021/09/21/freenomextend/"/>
-    <id>https://ednovas.xyz/2021/09/21/freenomextend/</id>
-    <published>2021-09-21T23:01:00.000Z</published>
-    <updated>2021-09-21T23:12:50.750Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/luolongfei/next-freenom&quot;&gt;https://github.com/luolongfei/next-freenom&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;docker部署（最方便）&quot;&gt;&lt;a href=&quot;#docker部署（最方便）&quot; class=&quot;headerlink&quot; title=&quot;docker部署（最方便）&quot;&gt;&lt;/a&gt;docker部署（最方便）&lt;/h2&gt;&lt;h3 id=&quot;基础设置&quot;&gt;&lt;a href=&quot;#基础设置&quot; class=&quot;headerlink&quot; title=&quot;基础设置&quot;&gt;&lt;/a&gt;基础设置&lt;/h3&gt;&lt;p&gt;升级源和软件并安装wget和vim&lt;/p&gt;
-&lt;p&gt;然后自动安装docker&lt;/p&gt;
-&lt;p&gt;Debian/Ubunt:&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt-get update &amp;amp;&amp;amp; apt-get install -y wget vim&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -qO- get.docker.com | bash&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;CentOS:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum update &amp;amp;&amp;amp; yum install -y wget vim&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
-    
-    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
-    
-    <category term="freenom" scheme="https://ednovas.xyz/tags/freenom/"/>
     
   </entry>
   
