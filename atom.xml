@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-10-22T06:39:34.584Z</updated>
+  <updated>2021-10-25T01:48:25.295Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通过NeverInstall应用平台，实现在线应用体验</title>
+    <link href="https://ednovas.xyz/2021/10/24/nerverinstall/"/>
+    <id>https://ednovas.xyz/2021/10/24/nerverinstall/</id>
+    <published>2021-10-24T17:51:00.000Z</published>
+    <updated>2021-10-25T01:48:25.295Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自 小御坂的破站 &lt;a href=&quot;https://blog.misaka.sbs/202110/139.html&quot;&gt;https://blog.misaka.sbs/202110/139.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Neverinstall 是一个基于云的平台，可将任何桌面应用程序带入浏览器。 我们的目标是从根本上改变我们使用软件应用程序的方式，不受硬件限制，真正可以从任何地方访问。&lt;/p&gt;
+&lt;p&gt;据官方的远大远景，看起来挺好玩的样子&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211025013412.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;准备材料&quot;&gt;&lt;a href=&quot;#准备材料&quot; class=&quot;headerlink&quot; title=&quot;准备材料&quot;&gt;&lt;/a&gt;准备材料&lt;/h2&gt;&lt;p&gt;谷歌 / Github / 苹果 / 推特 / 脸书账号一枚&lt;/p&gt;
+&lt;h2 id=&quot;注册步骤&quot;&gt;&lt;a href=&quot;#注册步骤&quot; class=&quot;headerlink&quot; title=&quot;注册步骤&quot;&gt;&lt;/a&gt;注册步骤&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;打开&lt;a href=&quot;https://neverinstall.com/login&quot;&gt;官网&lt;/a&gt; &lt;a href=&quot;https://neverinstall.com/login&quot;&gt;https://neverinstall.com/login&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;选择任意一种方式登录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211025013556.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;PS: 由于其登录验证域名在国内被特殊照顾，请使用特殊方式登录&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>个人使用vpn&quot;翻墙&quot;是否违法？——基于规范性法律文件、案例以及相关计算机技术的分析与讨论</title>
@@ -278,7 +307,7 @@
     <link href="https://ednovas.xyz/2021/10/04/haxvps/"/>
     <id>https://ednovas.xyz/2021/10/04/haxvps/</id>
     <published>2021-10-05T03:51:00.000Z</published>
-    <updated>2021-10-07T19:58:09.982Z</updated>
+    <updated>2021-10-25T01:45:58.623Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;申请条件&quot;&gt;&lt;a href=&quot;#申请条件&quot; class=&quot;headerlink&quot; title=&quot;申请条件&quot;&gt;&lt;/a&gt;申请条件&lt;/h2&gt;&lt;p&gt;只要一个TG账号即可申请&lt;/p&gt;
@@ -735,7 +764,7 @@ chmod +x /usr/bin/neko-relay
     <link href="https://ednovas.xyz/2021/10/01/algorithm/"/>
     <id>https://ednovas.xyz/2021/10/01/algorithm/</id>
     <published>2021-10-01T17:51:00.000Z</published>
-    <updated>2021-10-05T18:06:56.378Z</updated>
+    <updated>2021-10-25T01:46:10.884Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Cut-property&quot;&gt;&lt;a href=&quot;#Cut-property&quot; class=&quot;headerlink&quot; title=&quot;Cut property&quot;&gt;&lt;/a&gt;Cut property&lt;/h2&gt;&lt;p&gt;For any cut C of the graph, if the weight of an edge e in the cut-set of C is strictly smaller than the weights of all other edges of the cut-set of C, then this edge belongs to all MSTs of the graph.&lt;/p&gt;
@@ -762,7 +791,7 @@ chmod +x /usr/bin/neko-relay
     <link href="https://ednovas.xyz/2021/09/23/mips/"/>
     <id>https://ednovas.xyz/2021/09/23/mips/</id>
     <published>2021-09-23T23:51:00.000Z</published>
-    <updated>2021-10-21T02:31:59.771Z</updated>
+    <updated>2021-10-25T01:46:10.861Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;安装java环境&quot;&gt;&lt;a href=&quot;#安装java环境&quot; class=&quot;headerlink&quot; title=&quot;安装java环境&quot;&gt;&lt;/a&gt;安装java环境&lt;/h2&gt;&lt;p&gt;这个网上很多，就不再赘述了&lt;/p&gt;
@@ -960,34 +989,6 @@ chmod +x /usr/bin/neko-relay
     <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
     
     <category term="freenom" scheme="https://ednovas.xyz/tags/freenom/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>youtube视频下载bot</title>
-    <link href="https://ednovas.xyz/2021/09/21/ytdl/"/>
-    <id>https://ednovas.xyz/2021/09/21/ytdl/</id>
-    <published>2021-09-21T22:59:00.000Z</published>
-    <updated>2021-09-21T22:55:30.152Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/tgbot-collection/ytdlbot&quot;&gt;https://github.com/tgbot-collection/ytdlbot&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;heroku部署&quot;&gt;&lt;a href=&quot;#heroku部署&quot; class=&quot;headerlink&quot; title=&quot;heroku部署&quot;&gt;&lt;/a&gt;heroku部署&lt;/h2&gt;&lt;p&gt;直接点击GitHub项目里的&lt;code&gt;deploy to heroku&lt;/code&gt; 即可&lt;/p&gt;
-&lt;h2 id=&quot;直接部署&quot;&gt;&lt;a href=&quot;#直接部署&quot; class=&quot;headerlink&quot; title=&quot;直接部署&quot;&gt;&lt;/a&gt;直接部署&lt;/h2&gt;&lt;p&gt;（需要python3环境，这个请自行安装）&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; /home&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; https://github.com/tgbot-collection/ytdlbot.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; ytdlbot&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pip3 install -r requirements.txt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 配置环境变量 APP_ID APP_HASH TOKEN&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;export&lt;/span&gt; APP_ID=1111 APP_HASH=dddd TOKEN=xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;screen -S ytdlbot&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;python3 ytdl.py&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;最后&lt;code&gt;ctrl+a+d&lt;/code&gt;退出screen（习惯使用screen，也可以使用systmd等）&lt;/p&gt;
-&lt;h2 id=&quot;docker简易安装&quot;&gt;&lt;a href=&quot;#docker简易安装&quot; class=&quot;headerlink&quot; title=&quot;docker简易安装&quot;&gt;&lt;/a&gt;docker简易安装&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;docker run -e APP_ID=111 -e APP_HASH=111 -e TOKEN=370FXI bennythink/ytdlbot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="视频" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91/"/>
-    
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
-    
-    <category term="youtube" scheme="https://ednovas.xyz/tags/youtube/"/>
     
   </entry>
   
