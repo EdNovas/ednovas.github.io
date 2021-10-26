@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>奈飞 Netflix 强制播放1080P清晰度视频</title>
+      <link href="2021/10/25/netflix1080p/"/>
+      <url>2021/10/25/netflix1080p/</url>
+      
+        <content type="html"><![CDATA[<ol><li>用Chrome打开Netflix，搜索test，播放TEST PATTERNS</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-39899319bebecce98241c6370d91d094_r.jpg"></p><ol start="2"><li>右上显示1280×720，即影片画质被限制到了720P</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-33f1e6172c6775eaf3aeee7306ab653a_r.jpg"></p><ol start="3"><li>打开 <a href="https://github.com/truedread/netflix-1080p">https://github.com/truedread/netflix-1080p</a> ，点击Releases</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-30b1d721b4600691c4d503cd19db1e85_r.jpg"></p><ol start="4"><li>点击Source code，下载netflix-1080p-1.21.zip压缩文件，并解压缩</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-9283e896012ffaafc33b79136070fa1d_r.jpg"></p><ol start="5"><li>Chrome右上角，自定义及控制-更多工具-扩展程序</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-8654980f23b98e8b28b10c8f25f3cc6a_r.jpg"></p><ol start="6"><li>右上角，打开开发者模式</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-c1d45dd8e30687530588ffdc59d25eee_r.jpg"></p><ol start="7"><li>点击「加载已解压的扩展程序」，选择刚解压的文件夹</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-b2b4276ac481fa07197b669ca8e8a199_r.jpg"></p><ol start="8"><li>Chrome右上角，扩展程序-更多操作-选项</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-cff98a7f00a74533a043c73bb513107f_r.jpg"></p><ol start="9"><li>前两行打勾之后Save</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-0ad2e7f841c46413fb1ad814c9713e09_r.jpg"></p><ol start="10"><li>清除「缓存的图片和文件」，之后重新加载Netflix网页，再播放影片画质就变成1080P了</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-2589e2fb8a7fb5c9ec97c7584c1c8628_r.jpg"></p><blockquote><p>转载自知乎 你开心就好 <a href="https://www.zhihu.com/question/406310327/answer/2168991269">https://www.zhihu.com/question/406310327/answer/2168991269</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 奈飞 </tag>
+            
+            <tag> netflix </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>白日梦想家 The Secret Life of Walter Mitty</title>
       <link href="2021/10/24/daydream/"/>
       <url>2021/10/24/daydream/</url>
@@ -360,33 +387,6 @@
         <tags>
             
             <tag> 编程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>奈飞 Netflix 强制播放1080P清晰度视频</title>
-      <link href="2021/10/01/netflix1080p/"/>
-      <url>2021/10/01/netflix1080p/</url>
-      
-        <content type="html"><![CDATA[<ol><li>用Chrome打开Netflix，搜索test，播放TEST PATTERNS</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-39899319bebecce98241c6370d91d094_r.jpg"></p><ol start="2"><li>右上显示1280×720，即影片画质被限制到了720P</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-33f1e6172c6775eaf3aeee7306ab653a_r.jpg"></p><ol start="3"><li>打开 <a href="https://github.com/truedread/netflix-1080p">https://github.com/truedread/netflix-1080p</a> ，点击Releases</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-30b1d721b4600691c4d503cd19db1e85_r.jpg"></p><ol start="4"><li>点击Source code，下载netflix-1080p-1.21.zip压缩文件，并解压缩</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-9283e896012ffaafc33b79136070fa1d_r.jpg"></p><ol start="5"><li>Chrome右上角，自定义及控制-更多工具-扩展程序</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-8654980f23b98e8b28b10c8f25f3cc6a_r.jpg"></p><ol start="6"><li>右上角，打开开发者模式</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-c1d45dd8e30687530588ffdc59d25eee_r.jpg"></p><ol start="7"><li>点击「加载已解压的扩展程序」，选择刚解压的文件夹</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-b2b4276ac481fa07197b669ca8e8a199_r.jpg"></p><ol start="8"><li>Chrome右上角，扩展程序-更多操作-选项</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-cff98a7f00a74533a043c73bb513107f_r.jpg"></p><ol start="9"><li>前两行打勾之后Save</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-0ad2e7f841c46413fb1ad814c9713e09_r.jpg"></p><ol start="10"><li>清除「缓存的图片和文件」，之后重新加载Netflix网页，再播放影片画质就变成1080P了</li></ol><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-2589e2fb8a7fb5c9ec97c7584c1c8628_r.jpg"></p><blockquote><p>转载自知乎 你开心就好 <a href="https://www.zhihu.com/question/406310327/answer/2168991269">https://www.zhihu.com/question/406310327/answer/2168991269</a></p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> 杂 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 奈飞 </tag>
-            
-            <tag> netflix </tag>
             
         </tags>
       
