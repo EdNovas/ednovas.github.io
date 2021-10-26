@@ -815,6 +815,46 @@ chmod +x /usr/bin/neko-relay
   </entry>
   
   <entry>
+    <title>奈飞 Netflix 强制播放1080P清晰度视频</title>
+    <link href="https://ednovas.xyz/2021/10/01/netflix1080p/"/>
+    <id>https://ednovas.xyz/2021/10/01/netflix1080p/</id>
+    <published>2021-10-01T17:51:00.000Z</published>
+    <updated>2021-10-26T05:53:45.287Z</updated>
+    
+    
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;用Chrome打开Netflix，搜索test，播放TEST PATTERNS&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-39899319bebecce98241c6370d91d094_r.jpg&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;右上显示1280×720，即影片画质被限制到了720P&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-33f1e6172c6775eaf3aeee7306ab653a_r.jpg&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;打开 &lt;a href=&quot;https://github.com/truedread/netflix-1080p&quot;&gt;https://github.com/truedread/netflix-1080p&lt;/a&gt; ，点击Releases&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-30b1d721b4600691c4d503cd19db1e85_r.jpg&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;点击Source code，下载netflix-1080p-1.21.zip压缩文件，并解压缩&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-9283e896012ffaafc33b79136070fa1d_r.jpg&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;Chrome右上角，自定义及控制-更多工具-扩展程序&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-8654980f23b98e8b28b10c8f25f3cc6a_r.jpg&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="奈飞" scheme="https://ednovas.xyz/tags/%E5%A5%88%E9%A3%9E/"/>
+    
+    <category term="netflix" scheme="https://ednovas.xyz/tags/netflix/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Assembly language 汇编语言基础</title>
     <link href="https://ednovas.xyz/2021/09/23/mips/"/>
     <id>https://ednovas.xyz/2021/09/23/mips/</id>
@@ -954,38 +994,6 @@ chmod +x /usr/bin/neko-relay
     <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
     
     <category term="e5" scheme="https://ednovas.xyz/tags/e5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建YYeTs视频资源下载站</title>
-    <link href="https://ednovas.xyz/2021/09/21/rrysweb/"/>
-    <id>https://ednovas.xyz/2021/09/21/rrysweb/</id>
-    <published>2021-09-22T05:01:00.000Z</published>
-    <updated>2021-09-22T05:27:01.936Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/tgbot-collection/YYeTsBot&quot;&gt;https://github.com/tgbot-collection/YYeTsBot&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;大佬搭建的人人影视bot：&lt;a href=&quot;https://t.me/yyets_bot&quot;&gt;https://t.me/yyets_bot&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;大佬搭建的人人影视分享站：&lt;a href=&quot;https://yyets.dmesg.app/&quot;&gt;https://yyets.dmesg.app/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;部署web&quot;&gt;&lt;a href=&quot;#部署web&quot; class=&quot;headerlink&quot; title=&quot;部署web&quot;&gt;&lt;/a&gt;部署web&lt;/h2&gt;&lt;p&gt;一键脚本，支持amd64/arm64，请先安装 docker、docker-compose和curl&lt;/p&gt;
-&lt;p&gt;Linux/macOS：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;bash -c &amp;quot;$(curl -fsSL https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;tgbot-collection&amp;#x2F;YYeTsBot&amp;#x2F;master&amp;#x2F;scripts&amp;#x2F;install.sh)&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;部署bot&quot;&gt;&lt;a href=&quot;#部署bot&quot; class=&quot;headerlink&quot; title=&quot;部署bot&quot;&gt;&lt;/a&gt;部署bot&lt;/h2&gt;&lt;p&gt;可以选择docker，也可以直接运行在机器上。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
-    
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="视频" scheme="https://ednovas.xyz/tags/%E8%A7%86%E9%A2%91/"/>
-    
-    <category term="下载" scheme="https://ednovas.xyz/tags/%E4%B8%8B%E8%BD%BD/"/>
     
   </entry>
   

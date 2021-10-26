@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/10/01/netflix1080p/</loc>
+    
+    <lastmod>2021-10-26</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2021/04/06/atlasos/</loc>
     
     <lastmod>2021-10-26</lastmod>
@@ -4156,6 +4163,20 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E8%81%8A%E5%A4%A9/</loc>
+    <lastmod>2021-10-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E5%A5%88%E9%A3%9E/</loc>
+    <lastmod>2021-10-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/netflix/</loc>
     <lastmod>2021-10-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
