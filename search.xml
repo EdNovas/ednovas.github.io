@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>OnWorks 免费云端linux系统</title>
+      <link href="2021/10/28/onworks/"/>
+      <url>2021/10/28/onworks/</url>
+      
+        <content type="html"><![CDATA[<h2 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h2><p><a href="https://www.onworks.net/">https://www.onworks.net/</a></p><h2 id="官方简介"><a href="#官方简介" class="headerlink" title="官方简介"></a>官方简介</h2><p>OnWorks is a free hosting provider that allows to run your workstations only using your web browser. Our workstations can be based on a lot of kind of Operative Systems like CentOS, Fedora, Ubuntu and Debian.  OnWorks is a multi-device platform so that our customers can run and test any type of OS from everywhere. It is simple, full of features, light and easy to use by our customers. OnWorks is your cloud computing provider where you can enjoy a lot of type of workstations, and run them free of charge. The workstations are installed with SW for Office, Graphics, Videos, Games and so on.</p><p>OnWorks 是一个免费的托管服务提供商，它允许仅使用您的网络浏览器运行您的工作站。 我们的工作站可以基于多种操作系统，如 CentOS、Fedora、Ubuntu 和 Debian。 OnWorks 是一个多设备平台，因此我们的客户可以从任何地方运行和测试任何类型的操作系统。 它简单、功能齐全、轻便且易于我们的客户使用。 OnWorks 是您的云计算提供商，您可以在其中享受多种类型的工作站，并免费运行它们。 工作站安装了用于办公、图形、视频、游戏等的软件。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>完全免费，标签页开着就会保持活跃，关闭标签页后10分钟无动作即自动释放资源。 </p><p>无公网IP</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 白嫖 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Cloudflare 反代优选提速</title>
+      <link href="2021/10/28/cfworkers/"/>
+      <url>2021/10/28/cfworkers/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>cloudflare一向以提供免费的优质服务为名，cf的反代优选就是利用workers反代然后优选IP来达到一个节点提速的效果。</p><p>目测移动带宽反代优选效果最佳，电信联通效果也很好，但可能不是那么显著（仅目测，请以实际效果为准）</p><p>反代优选一般是给如racknerd，heroku等这类线路不佳的搭建节点提速用的。</p><p>其中racknerd最为明显，反代优选前一般是 3mb/s - 5mb/s的速度，而反代优选后可以达到 70mb/s 的速度（毕竟racknerd机器是G口的，理论上限可达 128mb/s）</p><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul><li><p>cloudflare账号，一个已经解析到VPS的域名</p></li><li><p>v2rayn（本地配置节点信息用的，使用别的类似软件也可）</p></li><li><p>一个已经搭建好的节点，要求必须是 <code>vmess+ws+tls</code> 等这类可以反代优选或使用CDN的协议</p></li><li><p>优选IP软件，项目地址:</p><ol><li><p>我比较常用的： <a href="https://github.com/badafans/better-cloudflare-ip">https://github.com/badafans/better-cloudflare-ip</a><br>release界面中下载<code>windows.zip</code> 解压即可（目前也推出了linux和安卓端）</p></li><li><p><a href="https://github.com/XIU2/CloudflareSpeedTest">https://github.com/XIU2/CloudflareSpeedTest</a><br>realease界面中下载<code>CloudflareST_windows_amd64.zip</code>即可（其他版本自行看说明下载对应版本）</p></li></ol></li></ul><h2 id="CF反代"><a href="#CF反代" class="headerlink" title="CF反代"></a>CF反代</h2><p>这个时候就需要我们的Cloudflare的workers来进行一个反代加速了。</p><p>在主页点击Workers。可能会让你输入一个你的域名，有的话可以输入你freenom的域名或者你自己的域名，没有的话瞎填一个也没事。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-54-15.webp"></p><p>进入workers界面以后点击Create a worker创建一个worker</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-55-22.webp"></p><p>把左边Script脚本的内容清空，然后复制下面的代码进去</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">addEventListener(</span><br><span class="line">&quot;fetch&quot;,event &#x3D;&gt; &#123;</span><br><span class="line">let url&#x3D;new URL(event.request.url);</span><br><span class="line">url.hostname&#x3D;&quot;域名&quot;;</span><br><span class="line">let request&#x3D;new Request(url,event.request);</span><br><span class="line">event. respondWith(</span><br><span class="line">fetch(request)</span><br><span class="line">)</span><br><span class="line">&#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure><p>然后把<code>域名</code>改成你解析的域名，同样要去掉https等那些东西，如 <code>jiedian.ednovas.xyz</code></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-58-36.webp"></p><p>然后点击Save and Deploy保存和部署。等待几秒部署完成后点击send发送。如果右边出现400 Bad Request说明配置成功。如果出现如502等其他错误代码说明配置失败(其实出现了也问题不大，直接略过这里即可)。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-00-55.webp"></p><p>在这里把这个HTTP下面的这个地址复制到V2ray里刚刚配置的那个文件里的地址和伪装域名这里。（双击刚刚配置的节点可以再次打开这个配置界面）点击确定保存。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-02-58.webp"></p><p>再来测速，好家伙，直接几百kbps的速度了，这速度还不如刚才呢。不要急，有速度说明刚刚的配置没有问题。下面还需要使用优选IP来实现完全的加速。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-04-25.webp"></p><h2 id="优选IP"><a href="#优选IP" class="headerlink" title="优选IP"></a>优选IP</h2><p>将下载好了的CF优选IP软件解压后，打开CF优选<code>IP.bat</code>，在弹出的cmd窗口中输入你家的带宽大小。不建议直接输入你家实际带宽总大小，会导致程序没法正确找到合适的IP。</p><p>如果不知道自己家的带宽是多少的，可以上 <a href="https://speedtest.net/">https://speedtest.net</a> 测速，看下载带宽速度是多少Mbps。</p><p>这里是建议先选择你家IP一半的带宽大小。比如我家是 100兆 的带宽，那么我这里就选择50兆。如果你对测出来的IP速度不满意，那么可以逐渐加大这个数字，下次测速60、在下次70，总之切勿超过自家最大带宽。</p><p>一般来说，100M选择70-80M，200M选择160-180M，300M选择260-280M，差不多个值就行，也不用非得填100M和200M这样填满，否则有可能会一直循环跑脚本。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-08-36.webp"></p><p>我这里输入50以后直接按Enter回车，然后等待一段时间，不会超过5分钟，他会自动测速并且筛选优选IP，耐心等待即可。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-12-03.webp"></p><p>那么测试出来以后，把上方的优选IP复制下来，我这里也就是104.19.71.197。注意不要复制到空格。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-13-00.webp"></p><p>再次打开V2ray的节点配置界面，把刚刚的优选出来的IP复制黏贴到地址里，并点击确定保存。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-14-28.webp"></p><p>现在再来看这个节点的速度，十分可观啊，直接上了3w，甚至直逼4w。看个4k视频没有什么压力的高速度了。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-15-38.webp"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> VPS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cloudflare </tag>
+            
+            <tag> cf </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>奈飞 Netflix 强制播放1080P清晰度视频</title>
       <link href="2021/10/25/netflix1080p/"/>
       <url>2021/10/25/netflix1080p/</url>

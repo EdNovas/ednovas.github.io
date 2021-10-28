@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-10-26T06:50:33.007Z</updated>
+  <updated>2021-10-28T22:36:08.467Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,72 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OnWorks 免费云端linux系统</title>
+    <link href="https://ednovas.xyz/2021/10/28/onworks/"/>
+    <id>https://ednovas.xyz/2021/10/28/onworks/</id>
+    <published>2021-10-28T22:51:00.000Z</published>
+    <updated>2021-10-28T22:36:08.467Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;网址&quot;&gt;&lt;a href=&quot;#网址&quot; class=&quot;headerlink&quot; title=&quot;网址&quot;&gt;&lt;/a&gt;网址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.onworks.net/&quot;&gt;https://www.onworks.net/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;官方简介&quot;&gt;&lt;a href=&quot;#官方简介&quot; class=&quot;headerlink&quot; title=&quot;官方简介&quot;&gt;&lt;/a&gt;官方简介&lt;/h2&gt;&lt;p&gt;OnWorks is a free hosting provider that allows to run your workstations only using your web browser. Our workstations can be based on a lot of kind of Operative Systems like CentOS, Fedora, Ubuntu and Debian.  OnWorks is a multi-device platform so that our customers can run and test any type of OS from everywhere. It is simple, full of features, light and easy to use by our customers. OnWorks is your cloud computing provider where you can enjoy a lot of type of workstations, and run them free of charge. The workstations are installed with SW for Office, Graphics, Videos, Games and so on.&lt;/p&gt;
+&lt;p&gt;OnWorks 是一个免费的托管服务提供商，它允许仅使用您的网络浏览器运行您的工作站。 我们的工作站可以基于多种操作系统，如 CentOS、Fedora、Ubuntu 和 Debian。 OnWorks 是一个多设备平台，因此我们的客户可以从任何地方运行和测试任何类型的操作系统。 它简单、功能齐全、轻便且易于我们的客户使用。 OnWorks 是您的云计算提供商，您可以在其中享受多种类型的工作站，并免费运行它们。 工作站安装了用于办公、图形、视频、游戏等的软件。&lt;/p&gt;
+&lt;h2 id=&quot;使用&quot;&gt;&lt;a href=&quot;#使用&quot; class=&quot;headerlink&quot; title=&quot;使用&quot;&gt;&lt;/a&gt;使用&lt;/h2&gt;&lt;p&gt;完全免费，标签页开着就会保持活跃，关闭标签页后10分钟无动作即自动释放资源。 &lt;/p&gt;
+&lt;p&gt;无公网IP&lt;/p&gt;
+</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="白嫖" scheme="https://ednovas.xyz/tags/%E7%99%BD%E5%AB%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cloudflare 反代优选提速</title>
+    <link href="https://ednovas.xyz/2021/10/28/cfworkers/"/>
+    <id>https://ednovas.xyz/2021/10/28/cfworkers/</id>
+    <published>2021-10-28T17:51:00.000Z</published>
+    <updated>2021-10-28T22:36:09.668Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;cloudflare一向以提供免费的优质服务为名，cf的反代优选就是利用workers反代然后优选IP来达到一个节点提速的效果。&lt;/p&gt;
+&lt;p&gt;目测移动带宽反代优选效果最佳，电信联通效果也很好，但可能不是那么显著（仅目测，请以实际效果为准）&lt;/p&gt;
+&lt;p&gt;反代优选一般是给如racknerd，heroku等这类线路不佳的搭建节点提速用的。&lt;/p&gt;
+&lt;p&gt;其中racknerd最为明显，反代优选前一般是 3mb/s - 5mb/s的速度，而反代优选后可以达到 70mb/s 的速度（毕竟racknerd机器是G口的，理论上限可达 128mb/s）&lt;/p&gt;
+&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;cloudflare账号，一个已经解析到VPS的域名&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;v2rayn（本地配置节点信息用的，使用别的类似软件也可）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;一个已经搭建好的节点，要求必须是 &lt;code&gt;vmess+ws+tls&lt;/code&gt; 等这类可以反代优选或使用CDN的协议&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;优选IP软件，项目地址:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;我比较常用的： &lt;a href=&quot;https://github.com/badafans/better-cloudflare-ip&quot;&gt;https://github.com/badafans/better-cloudflare-ip&lt;/a&gt;&lt;br&gt;release界面中下载&lt;code&gt;windows.zip&lt;/code&gt; 解压即可（目前也推出了linux和安卓端）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/XIU2/CloudflareSpeedTest&quot;&gt;https://github.com/XIU2/CloudflareSpeedTest&lt;/a&gt;&lt;br&gt;realease界面中下载&lt;code&gt;CloudflareST_windows_amd64.zip&lt;/code&gt;即可（其他版本自行看说明下载对应版本）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;CF反代&quot;&gt;&lt;a href=&quot;#CF反代&quot; class=&quot;headerlink&quot; title=&quot;CF反代&quot;&gt;&lt;/a&gt;CF反代&lt;/h2&gt;&lt;p&gt;这个时候就需要我们的Cloudflare的workers来进行一个反代加速了。&lt;/p&gt;
+&lt;p&gt;在主页点击Workers。可能会让你输入一个你的域名，有的话可以输入你freenom的域名或者你自己的域名，没有的话瞎填一个也没事。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
+    
+    <category term="cf" scheme="https://ednovas.xyz/tags/cf/"/>
+    
+  </entry>
   
   <entry>
     <title>奈飞 Netflix 强制播放1080P清晰度视频</title>
@@ -932,68 +998,6 @@ chmod +x /usr/bin/neko-relay
     <category term="hexo" scheme="https://ednovas.xyz/tags/hexo/"/>
     
     <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PHP建随机图片API</title>
-    <link href="https://ednovas.xyz/2021/09/23/api/"/>
-    <id>https://ednovas.xyz/2021/09/23/api/</id>
-    <published>2021-09-23T23:01:00.000Z</published>
-    <updated>2021-09-23T23:52:27.281Z</updated>
-    
-    
-    <summary type="html">&lt;article class=&quot;post-content&quot; id=&quot;article-container&quot;&gt;&lt;blockquote&gt;&lt;ul&gt;&lt;li&gt;前几天闲来无事 突然想找一个自己喜欢的随机图片api 但翻了半天也没找到自己喜欢的，索性干脆自己做一个&lt;/li&gt;&lt;li&gt;参考了网上一些文章，同时结合自己实际情况，也加上了一些解释。&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot; data-pjax-state&gt;&lt;/a&gt;&lt;strong&gt;准备&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;一台服务器&lt;/li&gt;&lt;li&gt;已经搭建好的php环境&lt;/li&gt;&lt;/ul&gt;&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a href=&quot;#基本原理&quot; class=&quot;headerlink&quot; title=&quot;基本原理&quot; data-pjax-state&gt;&lt;/a&gt;基本原理&lt;/h3&gt;&lt;p&gt;随机图片API，主要原理其实很简单，就三步：&lt;br&gt;1.用一个文本文档存放图片的链接&lt;br&gt;2.当用户请求API时，php就去读取txt文件，然后生成随机数来随机选取一个图片链接&lt;br&gt;3.302重定向到目标图片地址&lt;/p&gt;&lt;hr&gt;&lt;p&gt;​&lt;/p&gt;&lt;h2 id=&quot;实现&quot;&gt;&lt;a href=&quot;#实现&quot; class=&quot;headerlink&quot; title=&quot;实现&quot; data-pjax-state&gt;&lt;/a&gt;&lt;strong&gt;实现&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;下面给出最简单的实现方式，详细说明见注释&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;创建文件img.txt用于存放图片地址，如&lt;/p&gt;&lt;/blockquote&gt;&lt;figure class=&quot;highlight http&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;http&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;https://cdn.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/9.jpg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;https://cdn.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/8.jpg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;https://cdn.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/3.png&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;https://cdn.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/7.jpg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;https://cdn.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/5.jpg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;&lt;p&gt;创建index.php&lt;/p&gt;&lt;/blockquote&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;Code&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;?php&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//存有美图链接的文件名img.txt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$filename = &quot;img.txt&quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;if(!file_exists($filename)){&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    die(&#39;文件不存在&#39;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//从文本获取链接&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$pics = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$fs = fopen($filename, &quot;r&quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;while(!feof($fs)){&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    $line=trim(fgets($fs));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    if($line!=&#39;&#39;){&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        array_push($pics, $line);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    }&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//从数组随机获取链接&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$pic = $pics[array_rand($pics)];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//返回指定格式&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$type=$_GET[&#39;type&#39;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;switch($type){&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//JSON返回&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;case &#39;json&#39;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    header(&#39;Content-type:text/json&#39;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    die(json_encode([&#39;pic&#39;=&amp;gt;$pic]));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;default:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    die(header(&quot;Location: $pic&quot;));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;将img.txt和index.php放在同一个网站目录下，通过访问域名/index.php即可&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;图床推荐：我目前就是用微博图床和GitHub+jsdelivr&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;微博因为有防盗链 这边建议使用微博图床&lt;a target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot; href=&quot;https://chrome.google.com/webstore/detail/%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A%E5%9B%BE%E5%BA%8A/fdfdnfpdplfbbnemmmoklbfjbhecpnhf/related&quot;&gt;插件&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/article&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;转载自Daibi_mua &lt;a href=&quot;https://blog.keepdai.cn/article.html&quot;&gt;https://blog.keepdai.cn/article.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
-    
-    <category term="php" scheme="https://ednovas.xyz/tags/php/"/>
-    
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="api" scheme="https://ednovas.xyz/tags/api/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>E5sub bot搭建</title>
-    <link href="https://ednovas.xyz/2021/09/22/e5subbot/"/>
-    <id>https://ednovas.xyz/2021/09/22/e5subbot/</id>
-    <published>2021-09-22T19:01:00.000Z</published>
-    <updated>2021-09-22T20:35:18.245Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/iyear/E5SubBot&quot;&gt;https://github.com/iyear/E5SubBot&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;直接部署&quot;&gt;&lt;a href=&quot;#直接部署&quot; class=&quot;headerlink&quot; title=&quot;直接部署&quot;&gt;&lt;/a&gt;直接部署&lt;/h2&gt;&lt;p&gt;虽然有docker方式部署，但是本项目直接部署会更方便一些&lt;/p&gt;
-&lt;p&gt;在releases界面复制对应版本的链接 &lt;a href=&quot;https://github.com/iyear/E5SubBot/releases&quot;&gt;https://github.com/iyear/E5SubBot/releases&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/iyear/E5SubBot/releases/download/v0.3.1/E5SubBot_Linux_64bit.tar.gz%EF%BC%880.3.1%E7%89%88%E6%9C%AClinux64bit%EF%BC%89&quot;&gt;https://github.com/iyear/E5SubBot/releases/download/v0.3.1/E5SubBot_Linux_64bit.tar.gz（0.3.1版本linux64bit）&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir /home/e5sub &amp;amp;&amp;amp; &lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; /home/e5sub&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget https://github.com/iyear/E5SubBot/releases/download/v0.3.1/E5SubBot_Linux_64bit.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tar -zxvf E5SubBot_Linux_64bit.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cp config.yml.example config.yml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;然后打开&lt;code&gt;config.yml&lt;/code&gt;文件并编辑配置文件&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;bot_token: YOUR_BOT_TOKEN # 从botfather那里获取，创建一个新的机器人并记录下token&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# socks5: 127.0.0.1:1080&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;bindmax: 999 # 最大绑定账号数量&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;goroutine: 20 # 并发数，不要过大&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;admin: 111,222,333 # https:&amp;#x2F;&amp;#x2F;t.me&amp;#x2F;userinfobot 查看自己的tgid作为管理员&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;errlimit: 999 # 单账户最大出错次数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;notice: |- # 公告内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   aaa&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   bbb&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   ccc&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cron: &amp;quot;1 *&amp;#x2F;1 * * *&amp;quot; # API调用频率，cron表达式&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;db: sqlite # splite数据库&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;table: users&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# mysql:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    host: 127.0.0.1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    port: 3306&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    user: root&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    password: pwd&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#    database: e5sub&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sqlite:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   db: data.db&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;docker部署&quot;&gt;&lt;a href=&quot;#docker部署&quot; class=&quot;headerlink&quot; title=&quot;docker部署&quot;&gt;&lt;/a&gt;docker部署&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="搭建" scheme="https://ednovas.xyz/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
-    
-    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
-    
-    <category term="e5" scheme="https://ednovas.xyz/tags/e5/"/>
     
   </entry>
   
