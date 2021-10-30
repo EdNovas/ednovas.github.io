@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-10-28T22:36:08.467Z</updated>
+  <updated>2021-10-30T02:21:16.818Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,93 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CloudFlare 免费申请15年证书</title>
+    <link href="https://ednovas.xyz/2021/10/29/cloudflaressl/"/>
+    <id>https://ednovas.xyz/2021/10/29/cloudflaressl/</id>
+    <published>2021-10-30T02:15:00.000Z</published>
+    <updated>2021-10-30T02:21:16.818Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;需要开启 Full 或者Full（strict）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-16-20.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-16-37.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-16-59.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;一定要复制下来并保存好！ &lt;code&gt;Private Key&lt;/code&gt; 不能再次获取，没了就是没了。如果需要只能再次重新申请个替换了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-17-30.png&quot;&gt;&lt;/p&gt;
+</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
+    
+    <category term="cf" scheme="https://ednovas.xyz/tags/cf/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CloudFlare 缓存全站</title>
+    <link href="https://ednovas.xyz/2021/10/29/cloudflareallcache/"/>
+    <id>https://ednovas.xyz/2021/10/29/cloudflareallcache/</id>
+    <published>2021-10-30T02:03:00.000Z</published>
+    <updated>2021-10-30T02:21:17.109Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;CloudFlare 默认只对静态资源进行缓存。动态资源是默认不缓存的。如果你的内容基本是静态的或者不在意实时更新的话，可以使用 CloudFlare 的页面规则设置缓存所有内容。免费用户可以设置3条页面规则，Pro 用户可以使用 30 条规则。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-07-33.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;如果要全域都走这条规则的话，就使用 &lt;code&gt;*&lt;/code&gt;表示全部，比如 &lt;code&gt;*.ednovas.xyz/*&lt;/code&gt;就是代表所有的&lt;code&gt;ednovas.xyz&lt;/code&gt;前缀后缀的域名都要走这个规则&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-08-52.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;还可以加上一条 &lt;code&gt;Edge Cache TTL&lt;/code&gt;，此项为cloudflare多久去检查你的服务器并更新&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-09-59.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;如果有的时候进不去后台，可以设置个Cache Level 的 bypass规则，并且设置其为置顶规则&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-13-18.png&quot;&gt;&lt;/p&gt;
+</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
+    
+    <category term="cf" scheme="https://ednovas.xyz/tags/cf/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo Butterfly 加入 clustrmaps 访问者地图</title>
+    <link href="https://ednovas.xyz/2021/10/29/clustrmaps/"/>
+    <id>https://ednovas.xyz/2021/10/29/clustrmaps/</id>
+    <published>2021-10-30T01:51:00.000Z</published>
+    <updated>2021-10-30T02:21:17.085Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自 cungudafa &lt;a href=&quot;https://blog.csdn.net/cungudafa/article/details/105925710&quot;&gt;https://blog.csdn.net/cungudafa/article/details/105925710&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;看到别人有，我也喜欢，于是添加。&lt;/p&gt;
+&lt;p&gt;官网 &lt;a href=&quot;https://clustrmaps.com/&quot;&gt;clustrmaps.com&lt;/a&gt; 也是第三方的，有Google Docs账号可以直接登录，Sign up即可&lt;/p&gt;
+&lt;p&gt;注册之后，在官网找到 Website Widget，如图。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20200505000231389.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;我喜欢Globe widget形式，如果喜欢Map自便&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20200504230609405.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;点击select就可以看到信息了，我这里用的html版，复制到你的博客就好了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/2020050423071020.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="hexo" scheme="https://ednovas.xyz/tags/hexo/"/>
+    
+    <category term="butterfly" scheme="https://ednovas.xyz/tags/butterfly/"/>
+    
+  </entry>
   
   <entry>
     <title>OnWorks 免费云端linux系统</title>
@@ -917,87 +1004,6 @@ chmod +x /usr/bin/neko-relay
     
     
     <category term="编程" scheme="https://ednovas.xyz/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Assembly language 汇编语言基础</title>
-    <link href="https://ednovas.xyz/2021/09/23/mips/"/>
-    <id>https://ednovas.xyz/2021/09/23/mips/</id>
-    <published>2021-09-23T23:51:00.000Z</published>
-    <updated>2021-10-25T01:46:10.861Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;安装java环境&quot;&gt;&lt;a href=&quot;#安装java环境&quot; class=&quot;headerlink&quot; title=&quot;安装java环境&quot;&gt;&lt;/a&gt;安装java环境&lt;/h2&gt;&lt;p&gt;这个网上很多，就不再赘述了&lt;/p&gt;
-&lt;p&gt;基本思路：下载java jdk安装包，安装，添加到环境变量中，cmd测试java版本来判断是否安装成功&lt;/p&gt;
-&lt;h2 id=&quot;软件下载安装&quot;&gt;&lt;a href=&quot;#软件下载安装&quot; class=&quot;headerlink&quot; title=&quot;软件下载安装&quot;&gt;&lt;/a&gt;软件下载安装&lt;/h2&gt;&lt;p&gt;MARS：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://courses.missouristate.edu/KenVollmar/mars/download.htm&quot;&gt;https://courses.missouristate.edu/KenVollmar/mars/download.htm&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;点击download mars下载jar文件后&lt;/p&gt;
-&lt;p&gt;下载下来了一个叫&lt;code&gt;Mars4_5.jar&lt;/code&gt;的文件&lt;/p&gt;
-&lt;p&gt;cmd在jar文件包的目录输入&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;java -jar Mars4_5.jar&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="编程" scheme="https://ednovas.xyz/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>免费开源图片压缩工具 Squoosh 离线版</title>
-    <link href="https://ednovas.xyz/2021/09/23/squoosh/"/>
-    <id>https://ednovas.xyz/2021/09/23/squoosh/</id>
-    <published>2021-09-23T23:51:00.000Z</published>
-    <updated>2021-09-23T23:54:30.765Z</updated>
-    
-    
-    <summary type="html">&lt;article class=&quot;post-content&quot; id=&quot;article-container&quot;&gt;&lt;p&gt;&lt;strong&gt;Squoosh&lt;/strong&gt; 是一款免费开源的图片压缩工具，它在浏览器中使用”一流的解码器“让图片变得更小。&lt;strong&gt;Squoosh Desktop App&lt;/strong&gt; 基于 Squoosh、Electron，在 Windows、Linux 上实现了 Squoosh 离线版，无需网络就能使用。&lt;a href=&quot;https://dd-static.jd.com/ddimg/jfs/t1/186476/35/3238/88830/609f5596Ec31329b3/6f95f16e884806c0.jpg&quot; data-fancybox=&quot;group&quot; data-caption=&quot;squoosh-desktop-app.jpg&quot; class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://dd-static.jd.com/ddimg/jfs/t1/186476/35/3238/88830/609f5596Ec31329b3/6f95f16e884806c0.jpg&quot; data-lazy-src=&quot;https://dd-static.jd.com/ddimg/jfs/t1/186476/35/3238/88830/609f5596Ec31329b3/6f95f16e884806c0.jpg&quot; alt=&quot;squoosh-desktop-app.jpg&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;描述中“一流的解码器“来自机翻，原文是 best-in-class codecs。&lt;/p&gt;&lt;p&gt;说起来，为了尽可能的节约磁盘空间，我的每一张图片都是用 Squoosh 进行了压缩，Squoosh 唯二的问题在于不提供批量功能，不过对于一张图片一张图片处理的我来说也足够了。实际上，Squoosh 还有一个 &lt;a target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot; href=&quot;https://github.com/GoogleChromeLabs/squoosh/tree/dev/cli&quot;&gt;Squoosh CLI&lt;/a&gt; 版本，是可以实现批量功能的。&lt;/p&gt;&lt;h2 id=&quot;Squoosh-Desktop-App&quot;&gt;&lt;a href=&quot;#Squoosh-Desktop-App&quot; class=&quot;headerlink&quot; title=&quot;Squoosh Desktop App&quot; data-pjax-state&gt;&lt;/a&gt;&lt;strong&gt;Squoosh Desktop App&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;Squoosh Desktop App 将 Squoosh 打包并创建为独立应用，最重要的是可以离线使用，就非常方便了。&lt;a href=&quot;https://dd-static.jd.com/ddimg/jfs/t1/181392/37/4244/63272/609f55c3E3f42c250/a4cbc3e5cf198568.jpg&quot; data-fancybox=&quot;group&quot; data-caption=&quot;screenshot1.jpg&quot; class=&quot;fancybox&quot;&gt;&lt;img data-lazy-src=&quot;https://dd-static.jd.com/ddimg/jfs/t1/181392/37/4244/63272/609f55c3E3f42c250/a4cbc3e5cf198568.jpg&quot; alt=&quot;screenshot1.jpg&quot; class=&quot;entered loaded&quot; src=&quot;https://dd-static.jd.com/ddimg/jfs/t1/181392/37/4244/63272/609f55c3E3f42c250/a4cbc3e5cf198568.jpg&quot; data-ll-status=&quot;loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Squoosh 的另外一个问题，就是在压缩透明背景的 png 格式时，会让背景变黑。&lt;/p&gt;&lt;p&gt;而 Squoosh Desktop App 的问题是，感觉已经年久失修，最后一次更新是 2020 年 5 月份，以及其官网上宣称的 macOS 版本，从未出现过。目前只提供了 Windows 与 Linux 版本，不过青小蛙测试了 Windows 版本，可以正常使用。&lt;/p&gt;&lt;p&gt;但另外一个问题是，Squoosh 会经常更新，使用 Squoosh Desktop App 则永久停留在了去年的版本，鉴于没有网络的情况下，凑合用用还是可以的。&lt;/p&gt;&lt;h2 id=&quot;Squoosh-Desktop-App-下载&quot;&gt;&lt;a href=&quot;#Squoosh-Desktop-App-下载&quot; class=&quot;headerlink&quot; title=&quot;Squoosh Desktop App 下载&quot; data-pjax-state&gt;&lt;/a&gt;Squoosh Desktop App 下载&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;官网：&lt;a target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot; href=&quot;https://squoosh-desktop.vercel.app/&quot;&gt;https://squoosh-desktop.vercel.app/&lt;/a&gt;&lt;/li&gt;&lt;li&gt;下载：h&lt;a href=&quot;ttps://github.com/matiasbenedetto/squoosh-desktop-app/releases&quot; rel=&quot;external nofollow noreferrer&quot; data-pjax-state&gt;ttps://github.com/matiasbenedetto/squoosh-desktop-app/releases&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/article&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;转载自 Daibi_mua &lt;a href=&quot;https://blog.keepdai.cn/imgyouhua.html&quot;&gt;https://blog.keepdai.cn/imgyouhua.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</summary>
-    
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="图片" scheme="https://ednovas.xyz/tags/%E5%9B%BE%E7%89%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 网站访问速度优化</title>
-    <link href="https://ednovas.xyz/2021/09/23/speeduphexo/"/>
-    <id>https://ednovas.xyz/2021/09/23/speeduphexo/</id>
-    <published>2021-09-23T23:49:00.000Z</published>
-    <updated>2021-09-23T23:52:56.324Z</updated>
-    
-    
-    <summary type="html">&lt;article class=&quot;post-content&quot; id=&quot;article-container&quot;&gt;&lt;blockquote&gt;&lt;p&gt;请注意、本篇文章介绍的只是如何优化、并不包含其中的原理、并且优化只做参考&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;我的博客是部署在GitHub上,并没有用到双线部署,静态资源由jsdelivr提供加速&lt;/p&gt;&lt;p&gt;在我的一番打磨下,博客的访问速度我还是挺满意的,这多亏于hexo的轻量&lt;/p&gt;&lt;h1 id=&quot;CDN-加速&quot;&gt;&lt;a href=&quot;#CDN-加速&quot; class=&quot;headerlink&quot; title=&quot;CDN 加速&quot; data-pjax-state&gt;&lt;/a&gt;CDN 加速&lt;/h1&gt;&lt;h2 id=&quot;全局cdn&quot;&gt;&lt;a href=&quot;#全局cdn&quot; class=&quot;headerlink&quot; title=&quot;全局cdn&quot; data-pjax-state&gt;&lt;/a&gt;全局cdn&lt;/h2&gt;&lt;p&gt;在cdn上,我使用的是腾讯云cdn,但如果你用国内节点,是需要备案的但不得不说腾讯云的cdn速度没的说,再加上我是个人博客,一年也用不了多少流量 所以一年大概十几块钱[当然这是没有被DDOS的情况下]如果介意可以使用又拍云的cdn,免费,但是需要在页脚给又拍云打广告,下文以腾讯云做介绍&lt;/p&gt;&lt;p&gt;首先肯定就是购买流量包,之后添加域名,这种教程烂大街了 我就不详细描述了。&lt;/p&gt;&lt;p&gt;注意的是,添加源站信息时,源站地址为GitHubyourname.github.io 回源为你的加速域名&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/Daibi-mua/cdn2@main/tengxunjietu.png&quot; data-fancybox=&quot;group&quot; data-caption class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/Daibi-mua/cdn2@main/tengxunjietu.png&quot; data-lazy-src=&quot;https://cdn.jsdelivr.net/gh/Daibi-mua/cdn2@main/tengxunjietu.png&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;值得启用的设置我会一一列举&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;在访问控制这里找到ip访问限制和下行限速,个人博客可以参考我的。&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228210715623.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228210715623&quot; class=&quot;fancybox&quot;&gt;&lt;img data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228210715623.png&quot; alt=&quot;image-20210228210715623&quot; class=&quot;entered loaded&quot; src=&quot;https://cdn.keepdai.cn//image-20210228210715623.png&quot; data-ll-status=&quot;loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228210751043.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228210751043&quot; class=&quot;fancybox&quot;&gt;&lt;img data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228210751043.png&quot; alt=&quot;image-20210228210751043&quot; class=&quot;entered loaded&quot; src=&quot;https://cdn.keepdai.cn//image-20210228210751043.png&quot; data-ll-status=&quot;loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;在缓存配置里强烈推荐遵循源站,就是你原网站修改内容,他才会更新缓存&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228211017730.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228211017730&quot; class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.keepdai.cn//image-20210228211017730.png&quot; data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228211017730.png&quot; alt=&quot;image-20210228211017730&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;带宽建议设置成5-10m&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228211058033.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228211058033&quot; class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.keepdai.cn//image-20210228211058033.png&quot; data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228211058033.png&quot; alt=&quot;image-20210228211058033&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;h2 id=&quot;静态文件加速&quot;&gt;&lt;a href=&quot;#静态文件加速&quot; class=&quot;headerlink&quot; title=&quot;静态文件加速&quot; data-pjax-state&gt;&lt;/a&gt;静态文件加速&lt;/h2&gt;&lt;p&gt;在网站建设中,我们不免会用到&lt;code&gt;css&lt;/code&gt; 和&lt;code&gt;js&lt;/code&gt;文件,大部分都是以相对路径引用,你可以用外链引用,这里强烈推荐jsdelivr,jsdelivr是一个免费的 CDN 服务，可以利用它配合 github 来为页面静态资源提供加速，有效提升资源加载速度。&lt;/p&gt;&lt;p&gt;文件加速和图片加速其实都一样 图片可以直接用picgo上传 &lt;code&gt;js&lt;/code&gt; &lt;code&gt;css&lt;/code&gt;你可以创建一个GitHub仓库,然后拖拽上传,具体方法太简单了 建议百度。&lt;/p&gt;&lt;p&gt;像蝴蝶主题,他有很多js css文件都是用相对路径来引用的,当然您也可以把这些文件上传到GitHub利用jsdelivr通过外链引用,但这也有坏处就是每次升级时,都要更新一下jsdelivr引用的那些资源,不然你的主题版本和所引用的文件不符合,就会出现网页错位等等bug&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228211652941.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228211652941&quot; class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.keepdai.cn//image-20210228211652941.png&quot; data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228211652941.png&quot; alt=&quot;image-20210228211652941&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;h1 id=&quot;图片格式&quot;&gt;&lt;a href=&quot;#图片格式&quot; class=&quot;headerlink&quot; title=&quot;图片格式&quot; data-pjax-state&gt;&lt;/a&gt;图片格式&lt;/h1&gt;&lt;p&gt;WebP 的优势体现在它具有更优的图像数据压缩算法，能带来更小的图片体积，而且拥有肉眼识别无差异的图像质量；同时具备了无损和有损的压缩模式、Alpha 透明以及动画的特性，在 JPEG 和 PNG 上的转化效果都相当优秀、稳定和统一。&lt;br&gt;之前做过一个测试，对比 PNG 原图、PNG 无损压缩、PNG 转 WebP（无损）、PNG 转 WebP（有损）的压缩效果：&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.keepdai.cn//1666676-2b9b4b9bffe630d2.jpg&quot; data-fancybox=&quot;group&quot; data-caption class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.keepdai.cn//1666676-2b9b4b9bffe630d2.jpg&quot; data-lazy-src=&quot;https://cdn.keepdai.cn//1666676-2b9b4b9bffe630d2.jpg&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;PNG 转 WebP 的压缩率要高于 PNG 原图压缩率，同样支持有损与无损压缩&lt;br&gt;转换后的 WebP 体积大幅减少，图片质量也得到保障（同时肉眼几乎无法看出差异&lt;/p&gt;&lt;p&gt;综上所述所以强烈建议您图片格式使用webp&lt;/p&gt;&lt;h1 id=&quot;Gulp-压缩全站静态资源&quot;&gt;&lt;a href=&quot;#Gulp-压缩全站静态资源&quot; class=&quot;headerlink&quot; title=&quot;Gulp 压缩全站静态资源&quot; data-pjax-state&gt;&lt;/a&gt;Gulp 压缩全站静态资源&lt;/h1&gt;&lt;p&gt;gulp能够帮助用户自动压缩静态资源，配合各类下属插件，能够压缩包括 &lt;code&gt;css&lt;/code&gt;、&lt;code&gt;js&lt;/code&gt;、&lt;code&gt;html&lt;/code&gt; 乃至各类格式的图片文件。&lt;/p&gt;&lt;p&gt;1.安装 &lt;code&gt;Gulp&lt;/code&gt; 插件：在博客根目录 &lt;code&gt;[Blogroot]&lt;/code&gt; 打开终端，输入：&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;Code&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install --global gulp-cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;2.安装各个下属插件以实现对各类静态资源的压缩。&lt;/p&gt;&lt;p&gt;2.&lt;code&gt;压缩HTML&lt;/code&gt; ：&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;Code&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install gulp-htmlclean --save-dev&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install gulp-html-minifier-terser --save-dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;2.2&lt;code&gt;压缩 CSS&lt;/code&gt;：&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;Code&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install gulp-clean-css --save-dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;2.3&lt;code&gt;压缩js&lt;/code&gt;&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;Code&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install --save-dev gulp-uglify&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install --save-dev gulp-babel @babel/core @babel/preset-env&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;3.在博客根目录下创建一个名为&lt;code&gt;gulpfile.js&lt;/code&gt;的文件,并输入以下代码&lt;/p&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;js&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//用到的各个插件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; gulp = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;gulp&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; cleanCSS = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;gulp-clean-css&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; htmlmin = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;gulp-html-minifier-terser&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; htmlclean = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;gulp-htmlclean&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; uglify = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;gulp-uglify&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; babel = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;gulp-babel&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//压缩js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gulp.task(&lt;span class=&quot;string&quot;&gt;&#39;compress&#39;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;() =&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  gulp.src([&lt;span class=&quot;string&quot;&gt;&#39;./public/**/*.js&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;!./public/**/*.min.js&#39;&lt;/span&gt;])&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    .pipe(babel({&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      presets: [&lt;span class=&quot;string&quot;&gt;&#39;@babel/preset-env&#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    }))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    .pipe(uglify().on(&lt;span class=&quot;string&quot;&gt;&#39;error&#39;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;e&lt;/span&gt;) &lt;/span&gt;{&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(e)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    }))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    .pipe(gulp.dest(&lt;span class=&quot;string&quot;&gt;&#39;./public&#39;&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//压缩css&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gulp.task(&lt;span class=&quot;string&quot;&gt;&#39;minify-css&#39;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;() =&amp;gt;&lt;/span&gt; {&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; gulp.src([&lt;span class=&quot;string&quot;&gt;&#39;./public/**/*.css&#39;&lt;/span&gt;])&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .pipe(cleanCSS({&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            compatibility: &lt;span class=&quot;string&quot;&gt;&#39;ie11&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        }))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .pipe(gulp.dest(&lt;span class=&quot;string&quot;&gt;&#39;./public&#39;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;});&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//压缩html&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gulp.task(&lt;span class=&quot;string&quot;&gt;&#39;minify-html&#39;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;() =&amp;gt;&lt;/span&gt; {&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; gulp.src(&lt;span class=&quot;string&quot;&gt;&#39;./public/**/*.html&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .pipe(htmlclean())&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .pipe(htmlmin({&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            removeComments: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//清除html注释&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            collapseWhitespace: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//压缩html&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            collapseBooleanAttributes: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//省略布尔属性的值，例如：&amp;lt;input checked=&quot;true&quot;/&amp;gt; ==&amp;gt; &amp;lt;input /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            removeEmptyAttributes: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//删除所有空格作属性值，例如：&amp;lt;input id=&quot;&quot; /&amp;gt; ==&amp;gt; &amp;lt;input /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            removeScriptTypeAttributes: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//删除&amp;lt;script&amp;gt;的type=&quot;text/javascript&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            removeStyleLinkTypeAttributes: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//删除&amp;lt;style&amp;gt;和&amp;lt;link&amp;gt;的 type=&quot;text/css&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            minifyJS: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//压缩页面 JS&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            minifyCSS: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//压缩页面 CSS&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            minifyURLs: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;  &lt;span class=&quot;comment&quot;&gt;//压缩页面URL&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        }))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .pipe(gulp.dest(&lt;span class=&quot;string&quot;&gt;&#39;./public&#39;&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;});&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 运行gulp命令时依次执行以下任务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gulp.task(&lt;span class=&quot;string&quot;&gt;&#39;default&#39;&lt;/span&gt;, gulp.parallel(&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;string&quot;&gt;&#39;compress&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;minify-css&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;minify-html&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;4.每次运行完 hexo g的时候运行gulp 之后再hexo d或s流程如下&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;Code&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo generate&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gulp&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo server 或 hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&quot;异步加载&quot;&gt;&lt;a href=&quot;#异步加载&quot; class=&quot;headerlink&quot; title=&quot;异步加载&quot; data-pjax-state&gt;&lt;/a&gt;异步加载&lt;/h1&gt;&lt;p&gt;在浏览器解析 HTML 的时候，遇到 &lt;code&gt;&amp;lt;link&amp;gt;、&amp;lt;script&amp;gt;&lt;/code&gt;，这个过程会阻塞后面内容、这样就会增加加载时间。不建议将 JS 放到 &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; 里。&lt;/p&gt;&lt;p&gt;此时我们需要使用异步加载的形式缩短页面的加载时间。&lt;/p&gt;&lt;p&gt;例如:&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;highlight-tools &quot;&gt;&lt;i class=&quot;fas fa-angle-down expand &quot;&gt;&lt;/i&gt;&lt;div class=&quot;code-lang&quot;&gt;Code&lt;/div&gt;&lt;div class=&quot;copy-notice&quot;&gt;&lt;/div&gt;&lt;i class=&quot;fas fa-paste copy-button&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;- &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/daibi-mua/js@main/Twikoo.css&quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&quot;关闭预加载&quot;&gt;&lt;a href=&quot;#关闭预加载&quot; class=&quot;headerlink&quot; title=&quot;关闭预加载&quot; data-pjax-state&gt;&lt;/a&gt;关闭预加载&lt;/h1&gt;&lt;p&gt;蝴蝶主题有一个预加载动画,其实说实话确实好看,但是它会在你网站所有资源都加载完成时才会呈现出你的网站,这就让日常使用时进入网站时会很慢,所以我通常是推荐关闭它&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228213313903.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228213313903&quot; class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.keepdai.cn//image-20210228213313903.png&quot; data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228213313903.png&quot; alt=&quot;image-20210228213313903&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;在在主题配置文件里打开或者关闭&lt;/p&gt;&lt;h1 id=&quot;使用pjax&quot;&gt;&lt;a href=&quot;#使用pjax&quot; class=&quot;headerlink&quot; title=&quot;使用pjax&quot; data-pjax-state&gt;&lt;/a&gt;使用pjax&lt;/h1&gt;&lt;p&gt;当用户点击链接，通过ajax更新页面需要变化的部分，然后使用HTML5的pushState修改浏览器的URL地址。&lt;/p&gt;&lt;p&gt;这样可以不用重复加载相同的资源（css/js）， 从而提升网页的加载速度。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228213631328.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228213631328&quot; class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.keepdai.cn//image-20210228213631328.png&quot; data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228213631328.png&quot; alt=&quot;image-20210228213631328&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;对于一些第三方插件，有些并不支持pjax 。&lt;br&gt;你可以把网页加入到exclude里，把这个网页给它ban了,这个网页会被pjax排除在外。&lt;br&gt;点击该网页会重新加载网站&lt;/p&gt;&lt;p&gt;使用pjax后，一些自己DIY的js可能会无效，跳转页面时需要重新调用，请参考Pjax文档&lt;br&gt;使用pjax后，一些个别页面加载的js/css，将会改为所有页面都加载&lt;/p&gt;&lt;h1 id=&quot;即时页面&quot;&gt;&lt;a href=&quot;#即时页面&quot; class=&quot;headerlink&quot; title=&quot;即时页面&quot; data-pjax-state&gt;&lt;/a&gt;即时页面&lt;/h1&gt;&lt;p&gt;当鼠标悬停到链接上超过65 毫秒时，Instantpage 会对该链接进行预加载，可以提升访问速度。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.keepdai.cn//image-20210228213906416.png&quot; data-fancybox=&quot;group&quot; data-caption=&quot;image-20210228213906416&quot; class=&quot;fancybox&quot;&gt;&lt;img src=&quot;https://cdn.keepdai.cn//image-20210228213906416.png&quot; data-lazy-src=&quot;https://cdn.keepdai.cn//image-20210228213906416.png&quot; alt=&quot;image-20210228213906416&quot; data-ll-status=&quot;loaded&quot; class=&quot;entered loaded&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;参考:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot; href=&quot;https://akilar.top/posts/969dffe3/&quot;&gt;Hexo 博客静态资源加速&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot; href=&quot;https://blog.imzykj.cn/posts/7cfb88dd/&quot;&gt;如何优化博客&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/article&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;转载自Daibi_mua &lt;a href=&quot;https://blog.keepdai.cn/youhua.html&quot;&gt;https://blog.keepdai.cn/youhua.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
-    
-    <category term="hexo" scheme="https://ednovas.xyz/tags/hexo/"/>
-    
-    <category term="网站" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   

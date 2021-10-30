@@ -4,6 +4,87 @@
   
     
     <entry>
+      <title>CloudFlare 免费申请15年证书</title>
+      <link href="2021/10/29/cloudflaressl/"/>
+      <url>2021/10/29/cloudflaressl/</url>
+      
+        <content type="html"><![CDATA[<p>需要开启 Full 或者Full（strict）</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-16-20.png"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-16-37.png"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-16-59.png"></p><p>一定要复制下来并保存好！ <code>Private Key</code> 不能再次获取，没了就是没了。如果需要只能再次重新申请个替换了。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-17-30.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cloudflare </tag>
+            
+            <tag> cf </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CloudFlare 缓存全站</title>
+      <link href="2021/10/29/cloudflareallcache/"/>
+      <url>2021/10/29/cloudflareallcache/</url>
+      
+        <content type="html"><![CDATA[<p>CloudFlare 默认只对静态资源进行缓存。动态资源是默认不缓存的。如果你的内容基本是静态的或者不在意实时更新的话，可以使用 CloudFlare 的页面规则设置缓存所有内容。免费用户可以设置3条页面规则，Pro 用户可以使用 30 条规则。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-07-33.png"></p><p>如果要全域都走这条规则的话，就使用 <code>*</code>表示全部，比如 <code>*.ednovas.xyz/*</code>就是代表所有的<code>ednovas.xyz</code>前缀后缀的域名都要走这个规则</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-08-52.png"></p><p>还可以加上一条 <code>Edge Cache TTL</code>，此项为cloudflare多久去检查你的服务器并更新</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-09-59.png"></p><p>如果有的时候进不去后台，可以设置个Cache Level 的 bypass规则，并且设置其为置顶规则</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-13-18.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cloudflare </tag>
+            
+            <tag> cf </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo Butterfly 加入 clustrmaps 访问者地图</title>
+      <link href="2021/10/29/clustrmaps/"/>
+      <url>2021/10/29/clustrmaps/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>转载自 cungudafa <a href="https://blog.csdn.net/cungudafa/article/details/105925710">https://blog.csdn.net/cungudafa/article/details/105925710</a></p></blockquote><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>看到别人有，我也喜欢，于是添加。</p><p>官网 <a href="https://clustrmaps.com/">clustrmaps.com</a> 也是第三方的，有Google Docs账号可以直接登录，Sign up即可</p><p>注册之后，在官网找到 Website Widget，如图。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20200505000231389.png"></p><p>我喜欢Globe widget形式，如果喜欢Map自便</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20200504230609405.png"></p><p>点击select就可以看到信息了，我这里用的html版，复制到你的博客就好了。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/2020050423071020.png"></p><h2 id="Hexo主题引入"><a href="#Hexo主题引入" class="headerlink" title="Hexo主题引入"></a>Hexo主题引入</h2><p>我在 butterfly（pug）的侧边栏引入的，next可以同理规划；sakura（ejs）更简单，直接贴js或html代码</p><p>在主题配置声明一个侧边栏给地图显示<br>文件：<code>source\_data\butterfly.yml</code></p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">card_maps: true</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20200504234654500.png"></p><p>添加一个界面元素</p><p>文件如图所示：</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20200504234850441.png"></p><p>先在加载框添加一条card_maps的声明，（主题控制是否显示这个界面元素）<br>修改添加：<code>themes\Butterfly\layout\includes\widget\index.pug</code></p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if theme.aside.card_maps</span><br><span class="line">  !&#x3D;partial(&#39;includes&#x2F;widget&#x2F;card_maps&#39;, &#123;&#125;, &#123;cache:theme.fragment_cache&#125;)</span><br></pre></td></tr></table></figure><p>位置其实你可以任意</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20200504234731170.png"></p><p>然后，新建 一个页面元素：<code>themes\Butterfly\layout\includes\widget\card_maps.pug</code><br>复制下面的pug格式样式，将url_for改为你之前申请的</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.card-widget.card-map</span><br><span class="line">  .card-content</span><br><span class="line">    .item-headline</span><br><span class="line">        i.fa.fa-map-marker(aria-hidden&#x3D;&quot;true&quot;)</span><br><span class="line">        span&#x3D; _p(&#39;访客&#39;)</span><br><span class="line">    a(href&#x3D;url_for(&#39;https:&#x2F;&#x2F;clustrmaps.com&#x2F;site&#x2F;1b7sx&#39;))</span><br><span class="line">        img(src&#x3D;url_for(&#39;&#x2F;&#x2F;www.clustrmaps.com&#x2F;map_v2.png?d&#x3D;LHTfP-cAzRYLHEj_KNHtRxRu6ThgMwnyqi-X7ZV9k14&amp;cl&#x3D;ffffff&#39;))</span><br></pre></td></tr></table></figure><h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>小站首页左边栏就是了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> butterfly </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>OnWorks 免费云端linux系统</title>
       <link href="2021/10/28/onworks/"/>
       <url>2021/10/28/onworks/</url>
