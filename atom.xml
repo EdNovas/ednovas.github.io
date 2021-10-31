@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-10-30T21:48:46.486Z</updated>
+  <updated>2021-10-31T06:50:50.014Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在Windows11中安装WSA(安卓子系统)</title>
+    <link href="https://ednovas.xyz/2021/10/30/wsa/"/>
+    <id>https://ednovas.xyz/2021/10/30/wsa/</id>
+    <published>2021-10-31T06:51:00.000Z</published>
+    <updated>2021-10-31T06:50:50.014Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自 IsaacWangTT &lt;a href=&quot;https://blog.isaacwangtt.xyz/index.php/archives/154/&quot;&gt;https://blog.isaacwangtt.xyz/index.php/archives/154/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.isaacwangtt.xyz/index.php/archives/156/&quot;&gt;https://blog.isaacwangtt.xyz/index.php/archives/156/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.isaacwangtt.xyz/index.php/archives/160/&quot;&gt;https://blog.isaacwangtt.xyz/index.php/archives/160/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
+&lt;p&gt;首先你得打开windows里面的功能，在windows菜单里面搜索启用....功能&lt;br&gt;然后打开里面的这两个功能&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@fbd84daf694bc3c341f4a67c387fde02e92fc5a6/2021/10/23/fc239b9e839fce2255a2c5a3d58f57ca.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;hyper-v和虚拟机平台&quot; title=&quot;hyper-v和虚拟机平台&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@fbd84daf694bc3c341f4a67c387fde02e92fc5a6/2021/10/23/fc239b9e839fce2255a2c5a3d58f57ca.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;重启&lt;/p&gt;&lt;hr&gt;&lt;p&gt;之后下载需要的包&lt;br&gt;商店下载链接&lt;a href=&quot;https://www.microsoft.com/store/productId/9P3395VX91NR&quot;&gt;https://www.microsoft.com/store/productId/9P3395VX91NR&lt;/a&gt;&lt;br&gt;安装包抓包地址&lt;a href=&quot;https://store.rg-adguard.net/&quot;&gt;https://store.rg-adguard.net/&lt;/a&gt;&lt;br&gt;在抓包地址右边选择Slow通道(因为Slow通道对应的是Beta通道，其他Fast,RP,Retail分别对应Dev,预览，正式版)&lt;br&gt;然后在地址栏里面输入商店下载地址&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@8dd2873eac46c72a2e068fc1e111bc36e7ac36ee/2021/10/23/6e17ce2332480b48c65701599e6f129c.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@8dd2873eac46c72a2e068fc1e111bc36e7ac36ee/2021/10/23/6e17ce2332480b48c65701599e6f129c.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;找到最下面的那个最大的包，我这里名字为&quot;MicrosoftCorporationII.WindowsSubsystemForAndroid_1.7.32815.0_neutral_~_8wekyb3d8bbwe.msixbundle&quot;&lt;br&gt;如果版本更新可能会变，不过都差不多，把它下载下来&lt;br&gt;如果你双击它，你会发现无法安装&lt;br&gt;这个时候我们需要用管理员运行Powershell来安装&lt;br&gt;win+X运行Powershell&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@d5c10c25afb416a0c37e06b0c4a330497c48d9ad/2021/10/23/de4a05fddc9621828c3f8b7c63023d81.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;Powershell&quot; title=&quot;Powershell&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@d5c10c25afb416a0c37e06b0c4a330497c48d9ad/2021/10/23/de4a05fddc9621828c3f8b7c63023d81.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;在里面输入&lt;/p&gt;&lt;pre class=&quot;hljs-codeblock&quot;&gt;&lt;code class=&quot;hljs csharp&quot;&gt;&lt;table class=&quot;hljs-ln&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;hljs-ln-line hljs-ln-numbers&quot; data-line-number=&quot;1&quot;&gt;&lt;div class=&quot;hljs-ln-n&quot; data-line-number=&quot;1&quot;&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;hljs-ln-line hljs-ln-code&quot; data-line-number=&quot;1&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;add&lt;/span&gt;-appxpackage &lt;span class=&quot;hljs-string&quot;&gt;&quot;这里填你下载的安装包的绝对路径&quot;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;
+&lt;div class=&quot;hljs-control hljs-title&quot;&gt;
+            &lt;div type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; data-original-title=&quot;折行&quot; class=&quot;hljs-control-toggle-break-line&quot;&gt;
+                        &lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#align-left&quot;/&gt;&lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;copy_btn_m5WO5hfpiftSxaHAuBsueGRwFour77Fe&quot; type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; data-original-title=&quot;复制&quot; class=&quot;hljs-control-copy&quot;&gt;
+                        &lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#copy&quot;/&gt;&lt;/svg&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;/pre&gt;&lt;p&gt;比如我的就是&lt;/p&gt;&lt;pre class=&quot;hljs-codeblock&quot;&gt;&lt;code class=&quot;hljs csharp&quot;&gt;&lt;table class=&quot;hljs-ln&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;hljs-ln-line hljs-ln-numbers&quot; data-line-number=&quot;1&quot;&gt;&lt;div class=&quot;hljs-ln-n&quot; data-line-number=&quot;1&quot;&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;hljs-ln-line hljs-ln-code&quot; data-line-number=&quot;1&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;add&lt;/span&gt;-appxpackage &lt;span class=&quot;hljs-string&quot;&gt;&quot;D:\Downloads\Microsoft Edge\MicrosoftCorporationII.WindowsSubsystemForAndroid_1.7.32815.0_neutral___8wekyb3d8bbwe.Msixbundle&quot;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;
+&lt;div class=&quot;hljs-control hljs-title&quot;&gt;
+            &lt;div type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; data-original-title=&quot;折行&quot; class=&quot;hljs-control-toggle-break-line&quot;&gt;
+                        &lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#align-left&quot;/&gt;&lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;copy_btn_k5kBNtQRxu27u6JI96HWWAbK3kEBk4i6&quot; type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; data-original-title=&quot;复制&quot; class=&quot;hljs-control-copy&quot;&gt;
+                        &lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#copy&quot;/&gt;&lt;/svg&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;/pre&gt;&lt;p&gt;回车执行&lt;br&gt;然后就可以enjoy了&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@4bee2cfec873eb34502cd370422d9cbc94559b72/2021/10/23/36f79476f2ecd91ba609db80023925f9.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;WSA&quot; title=&quot;WSA&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@4bee2cfec873eb34502cd370422d9cbc94559b72/2021/10/23/36f79476f2ecd91ba609db80023925f9.png&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;/article&gt;
+
+&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
+&lt;p&gt;很多小伙伴装了WSA都发现没有桌面，这就意味着你只能用adb来进行和子系统的交互&lt;br&gt;十分的麻烦，这里我推荐一个工具，&lt;a href=&quot;https://www.atmb.top/&quot;&gt;秋之盒&lt;/a&gt;&lt;/p&gt;&lt;h2 id=&quot;toc_0&quot;&gt;我使用的是canary金丝雀版本&lt;/h2&gt;&lt;p&gt;进入WSA界面&lt;br&gt;打开开发人员模式&lt;br&gt;启用它，进入管理开发人员设置&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@578098c98de446dabdd6739571a5e9777e9afadf/2021/10/23/740ba46d103856a0a5575f8ba092f631.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;开发人员模式&quot; title=&quot;开发人员模式&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@578098c98de446dabdd6739571a5e9777e9afadf/2021/10/23/740ba46d103856a0a5575f8ba092f631.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;打开usb调试&lt;/p&gt;&lt;hr&gt;&lt;p&gt;回到WSA界面，刷新和复制IP&lt;br&gt;进入秋之盒&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@ac1923a448e632aee5e7b0147ee37a811b86a1b7/2021/10/23/35b60326e485e438db3e1d2c4c480306.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;连接网络设备&quot; title=&quot;连接网络设备&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@ac1923a448e632aee5e7b0147ee37a811b86a1b7/2021/10/23/35b60326e485e438db3e1d2c4c480306.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;在这里输入你复制的IP&lt;/p&gt;&lt;p&gt;安装一个然后你就能对WSA做你想做的事情了，比如可以安装一个应用商店，我这里推荐大家安装一个&lt;a href=&quot;https://www.coolapk.com/&quot;&gt;酷安&lt;/a&gt;&lt;br&gt;听说有人在wsa里面成功安装了谷歌框架，大家也可以试试&lt;/p&gt;&lt;hr&gt;&lt;p&gt;PS:安装的app会出现在开始菜单内&lt;br&gt;关于如何科学上网，可以看看我hxd写的文章:&lt;a href=&quot;https://ednovas.xyz/2021/02/06/clashconnection/&quot;&gt;https://ednovas.xyz/2021/02/06/clashconnection/&lt;/a&gt;&lt;/p&gt; &lt;/article&gt;
+
+&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
+&lt;p&gt;具体看&lt;br&gt;&lt;a href=&quot;https://www.cnbeta.com/articles/tech/1193935.htm&quot;&gt;https://www.cnbeta.com/articles/tech/1193935.htm&lt;/a&gt;&lt;/p&gt;&lt;p&gt;简化版我在酷安的帖子&lt;a href=&quot;https://www.coolapk.com/feed/30903847?shareKey=ODJiOWM1Nzg0MDQ5NjE3NDJmMGQ~&amp;amp;shareUid=2257293&amp;amp;shareFrom=com.coolapk.market_11.4.3&quot;&gt;https://www.coolapk.com/feed/30903847?shareKey=ODJiOWM1Nzg0MDQ5NjE3NDJmMGQ~&amp;amp;shareUid=2257293&amp;amp;shareFrom=com.coolapk.market_11.4.3&lt;/a&gt;&lt;/p&gt; &lt;/article&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>双11鼠标大型购买指南</title>
@@ -748,255 +791,6 @@ chmod +x /usr/bin/neko-relay
     <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
     
     <category term="隧道" scheme="https://ednovas.xyz/tags/%E9%9A%A7%E9%81%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Regular Expression 正则表达式</title>
-    <link href="https://ednovas.xyz/2021/10/01/regex/"/>
-    <id>https://ednovas.xyz/2021/10/01/regex/</id>
-    <published>2021-10-01T18:51:00.000Z</published>
-    <updated>2021-10-01T18:20:47.275Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/dbnauyuy7y1o3k839iny.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1_Wf89DaXXNLF5xCr-rhwOzQ.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;正则表达式，又称正则表示式、正则表示法、规则表达式、常规表示法，是计算机科学的一个概念。正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。&lt;/p&gt;
-&lt;p&gt;在很多文本编辑器里，正则表达式通常被用来检索、替换那些匹配某个模式的文本。 许多程序设计语言都支持利用正则表达式进行字符串操作。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/zh/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F&quot;&gt;https://zh.wikipedia.org/zh/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;表达式全集&quot;&gt;&lt;a href=&quot;#表达式全集&quot; class=&quot;headerlink&quot; title=&quot;表达式全集&quot;&gt;&lt;/a&gt;表达式全集&lt;/h2&gt;&lt;table class=&quot;wikitable&quot;&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;th width=&quot;10%&quot;&gt;字符&lt;/th&gt;
-      &lt;th width=&quot;90%&quot;&gt;描述&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\&lt;/th&gt;
-      &lt;td&gt;将下一个字符标记为一个特殊字符、或一个原义字符、或一个向后引用、或一个八进制转义符。例如，“&lt;code&gt;n&lt;/code&gt;”匹配字符“&lt;code&gt;n&lt;/code&gt;”。“&lt;code&gt;\n&lt;/code&gt;”匹配一个换行符。串行“&lt;code&gt;\\&lt;/code&gt;”匹配“&lt;code&gt;\&lt;/code&gt;”而“&lt;code&gt;\(&lt;/code&gt;”则匹配“&lt;code&gt;(&lt;/code&gt;”。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;^&lt;/th&gt;
-      &lt;td&gt;匹配输入字符串的开始位置。如果设置了RegExp对象的Multiline属性，^也匹配“&lt;code&gt;\n&lt;/code&gt;”或“&lt;code&gt;\r&lt;/code&gt;”之后的位置。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;$&lt;/th&gt;
-      &lt;td&gt;匹配输入字符串的结束位置。如果设置了RegExp对象的Multiline属性，$也匹配“&lt;code&gt;\n&lt;/code&gt;”或“&lt;code&gt;\r&lt;/code&gt;”之前的位置。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;*&lt;/th&gt;
-      &lt;td&gt;匹配前面的子表达式零次或多次。例如，zo*能匹配“&lt;code&gt;z&lt;/code&gt;”以及“&lt;code&gt;zoo&lt;/code&gt;”。*等价于{0,}。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;+&lt;/th&gt;
-      &lt;td&gt;匹配前面的子表达式一次或多次。例如，“&lt;code&gt;zo+&lt;/code&gt;”能匹配“&lt;code&gt;zo&lt;/code&gt;”以及“&lt;code&gt;zoo&lt;/code&gt;”，但不能匹配“&lt;code&gt;z&lt;/code&gt;”。+等价于{1,}。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;?&lt;/th&gt;
-      &lt;td&gt;匹配前面的子表达式零次或一次。例如，“&lt;code&gt;do(es)?&lt;/code&gt;”可以匹配“&lt;code&gt;does&lt;/code&gt;”或“&lt;code&gt;does&lt;/code&gt;”中的“&lt;code&gt;do&lt;/code&gt;”。?等价于{0,1}。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;{&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;}&lt;/th&gt;
-      &lt;td&gt;&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;是一个非负整数。匹配确定的&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;次。例如，“&lt;code&gt;o&amp;#123;2&amp;#125;&lt;/code&gt;”不能匹配“&lt;code&gt;Bob&lt;/code&gt;”中的“&lt;code&gt;o&lt;/code&gt;”，但是能匹配“&lt;code&gt;food&lt;/code&gt;”中的两个o。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;{&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;,}&lt;/th&gt;
-      &lt;td&gt;&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;是一个非负整数。至少匹配&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;次。例如，“&lt;code&gt;o&amp;#123;2,&amp;#125;&lt;/code&gt;”不能匹配“&lt;code&gt;Bob&lt;/code&gt;”中的“&lt;code&gt;o&lt;/code&gt;”，但能匹配“&lt;code&gt;foooood&lt;/code&gt;”中的所有o。“&lt;code&gt;o&amp;#123;1,&amp;#125;&lt;/code&gt;”等价于“&lt;code&gt;o+&lt;/code&gt;”。“&lt;code&gt;o&amp;#123;0,&amp;#125;&lt;/code&gt;”则等价于“&lt;code&gt;o*&lt;/code&gt;”。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;{&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;,&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m&lt;/span&gt;}&lt;/th&gt;
-      &lt;td&gt;&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m&lt;/span&gt;和&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;均为非负整数，其中&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;&amp;lt;=&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m&lt;/span&gt;。最少匹配&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;次且最多匹配&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m&lt;/span&gt;次。例如，“&lt;code&gt;o&amp;#123;1,3&amp;#125;&lt;/code&gt;”将匹配“&lt;code&gt;fooooood&lt;/code&gt;”中的前三个o。“&lt;code&gt;o&amp;#123;0,1&amp;#125;&lt;/code&gt;”等价于“&lt;code&gt;o?&lt;/code&gt;”。请注意在逗号和两个数之间不能有空格。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;?&lt;/th&gt;
-      &lt;td&gt;当该字符紧跟在任何一个其他限制符（*,+,?，{&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;}，{&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;,}，{&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;,&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m&lt;/span&gt;}）后面时，匹配模式是非贪婪的。非贪婪模式尽可能少的匹配所搜索的字符串，而默认的贪婪模式则尽可能多的匹配所搜索的字符串。例如，对于字符串“&lt;code&gt;oooo&lt;/code&gt;”，“&lt;code&gt;o+?&lt;/code&gt;”将匹配单个“&lt;code&gt;o&lt;/code&gt;”，而“&lt;code&gt;o+&lt;/code&gt;”将匹配所有“&lt;code&gt;o&lt;/code&gt;”。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;.&lt;/th&gt;
-      &lt;td&gt;匹配除“&lt;code&gt;\&lt;/code&gt;&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;&lt;code&gt;n&lt;/code&gt;&lt;/span&gt;”之外的任何单个字符。要匹配包括“&lt;code&gt;\&lt;/code&gt;&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;&lt;code&gt;n&lt;/code&gt;&lt;/span&gt;”在内的任何字符，请使用像“&lt;code&gt;(.|\n)&lt;/code&gt;”的模式。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;(pattern)&lt;/th&gt;
-      &lt;td&gt;匹配pattern并获取这一匹配。所获取的匹配可以从产生的Matches集合得到，在VBScript中使用SubMatches集合，在JScript中则使用$0…$9属性。要匹配圆括号字符，请使用“&lt;code&gt;\(&lt;/code&gt;”或“&lt;code&gt;\)&lt;/code&gt;”。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;(?:pattern)&lt;/th&gt;
-      &lt;td&gt;匹配pattern但不获取匹配结果，也就是说这是一个非获取匹配，不进行存储供以后使用。这在使用或字符“&lt;code&gt;(|)&lt;/code&gt;”来组合一个模式的各个部分是很有用。例如“&lt;code&gt;industr(?:y|ies)&lt;/code&gt;”就是一个比“&lt;code&gt;industry|industries&lt;/code&gt;”更简略的表达式。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;(?=pattern)&lt;/th&gt;
-      &lt;td&gt;正向肯定预查，在任何匹配pattern的字符串开始处匹配查找字符串。这是一个非获取匹配，也就是说，该匹配不需要获取供以后使用。例如，“&lt;code&gt;Windows(?=95|98|NT|2000)&lt;/code&gt;”能匹配“&lt;code&gt;Windows2000&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”，但不能匹配“&lt;code&gt;Windows3.1&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”。预查不消耗字符，也就是说，在一个匹配发生后，在最后一次匹配之后立即开始下一次匹配的搜索，而不是从包含预查的字符之后开始。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;(?!pattern)&lt;/th&gt;
-      &lt;td&gt;正向否定预查，在任何不匹配pattern的字符串开始处匹配查找字符串。这是一个非获取匹配，也就是说，该匹配不需要获取供以后使用。例如“&lt;code&gt;Windows(?!95|98|NT|2000)&lt;/code&gt;”能匹配“&lt;code&gt;Windows3.1&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”，但不能匹配“&lt;code&gt;Windows2000&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”。预查不消耗字符，也就是说，在一个匹配发生后，在最后一次匹配之后立即开始下一次匹配的搜索，而不是从包含预查的字符之后开始&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;(?&amp;lt;=pattern)&lt;/th&gt;
-      &lt;td&gt;反向肯定预查，与正向肯定预查类拟，只是方向相反。例如，“&lt;code&gt;(?&amp;lt;=95|98|NT|2000)Windows&lt;/code&gt;”能匹配“&lt;code&gt;2000Windows&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”，但不能匹配“&lt;code&gt;3.1Windows&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;(?&amp;lt;!pattern)&lt;/th&gt;
-      &lt;td&gt;反向否定预查，与正向否定预查类拟，只是方向相反。例如“&lt;code&gt;(?&amp;lt;!95|98|NT|2000)Windows&lt;/code&gt;”能匹配“&lt;code&gt;3.1Windows&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”，但不能匹配“&lt;code&gt;2000Windows&lt;/code&gt;”中的“&lt;code&gt;Windows&lt;/code&gt;”。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;x|y&lt;/th&gt;
-      &lt;td&gt;匹配x或y。例如，“&lt;code&gt;z|food&lt;/code&gt;”能匹配“&lt;code&gt;z&lt;/code&gt;”或“&lt;code&gt;food&lt;/code&gt;”。“&lt;code&gt;(z|f)ood&lt;/code&gt;”则匹配“&lt;code&gt;zood&lt;/code&gt;”或“&lt;code&gt;food&lt;/code&gt;”。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;[xyz]&lt;/th&gt;
-      &lt;td&gt;字符集合。匹配所包含的任意一个字符。例如，“&lt;code&gt;[abc]&lt;/code&gt;”可以匹配“&lt;code&gt;plain&lt;/code&gt;”中的“&lt;code&gt;a&lt;/code&gt;”。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;[^xyz]&lt;/th&gt;
-      &lt;td&gt;负值字符集合。匹配未包含的任意字符。例如，“&lt;code&gt;[^abc]&lt;/code&gt;”可以匹配“&lt;code&gt;plain&lt;/code&gt;”中的“&lt;code&gt;p&lt;/code&gt;”。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;[a-z]&lt;/th&gt;
-      &lt;td&gt;字符范围。匹配指定范围内的任意字符。例如，“&lt;code&gt;[a-z]&lt;/code&gt;”可以匹配“&lt;code&gt;a&lt;/code&gt;”到“&lt;code&gt;z&lt;/code&gt;”范围内的任意小写字母字符。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;[^a-z]&lt;/th&gt;
-      &lt;td&gt;负值字符范围。匹配任何不在指定范围内的任意字符。例如，“&lt;code&gt;[^a-z]&lt;/code&gt;”可以匹配任何不在“&lt;code&gt;a&lt;/code&gt;”到“&lt;code&gt;z&lt;/code&gt;”范围内的任意字符。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\b&lt;/th&gt;
-      &lt;td&gt;匹配一个单词边界，也就是指单词和空格间的位置。例如，“&lt;code&gt;er\b&lt;/code&gt;”可以匹配“&lt;code&gt;never&lt;/code&gt;”中的“&lt;code&gt;er&lt;/code&gt;”，但不能匹配“&lt;code&gt;verb&lt;/code&gt;”中的“&lt;code&gt;er&lt;/code&gt;”。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\B&lt;/th&gt;
-      &lt;td&gt;匹配非单词边界。“&lt;code&gt;er\B&lt;/code&gt;”能匹配“&lt;code&gt;verb&lt;/code&gt;”中的“&lt;code&gt;er&lt;/code&gt;”，但不能匹配“&lt;code&gt;never&lt;/code&gt;”中的“&lt;code&gt;er&lt;/code&gt;”。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\cx&lt;/th&gt;
-      &lt;td&gt;匹配由x指明的控制字符。例如，\cM匹配一个Control-M或回车符。x的值必须为A-Z或a-z之一。否则，将c视为一个原义的“&lt;code&gt;c&lt;/code&gt;”字符。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\d&lt;/th&gt;
-      &lt;td&gt;匹配一个数字字符。等价于[0-9]。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\D&lt;/th&gt;
-      &lt;td&gt;匹配一个非数字字符。等价于[^0-9]。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\f&lt;/th&gt;
-      &lt;td&gt;匹配一个换页符。等价于\x0c和\cL。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\n&lt;/th&gt;
-      &lt;td&gt;匹配一个换行符。等价于\x0a和\cJ。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\r&lt;/th&gt;
-      &lt;td&gt;匹配一个回车符。等价于\x0d和\cM。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\s&lt;/th&gt;
-      &lt;td&gt;匹配任何空白字符，包括空格、制表符、换页符等等。等价于[ \f\n\r\t\v]。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\S&lt;/th&gt;
-      &lt;td&gt;匹配任何非空白字符。等价于[^ \f\n\r\t\v]。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\t&lt;/th&gt;
-      &lt;td&gt;匹配一个制表符。等价于\x09和\cI。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\v&lt;/th&gt;
-      &lt;td&gt;匹配一个垂直制表符。等价于\x0b和\cK。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\w&lt;/th&gt;
-      &lt;td&gt;匹配包括下划线的任何单词字符。等价于“&lt;code&gt;[A-Za-z0-9_]&lt;/code&gt;”。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\W&lt;/th&gt;
-      &lt;td&gt;匹配任何非单词字符。等价于“&lt;code&gt;[^A-Za-z0-9_]&lt;/code&gt;”。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\x&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;&lt;/th&gt;
-      &lt;td&gt;匹配&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;，其中&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;为十六进制转义值。十六进制转义值必须为确定的两个数字长。例如，“&lt;code&gt;\x41&lt;/code&gt;”匹配“&lt;code&gt;A&lt;/code&gt;”。“&lt;code&gt;\x041&lt;/code&gt;”则等价于“&lt;code&gt;\x04&amp;amp;1&lt;/code&gt;”。正则表达式中可以使用ASCII编码。.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;num&lt;/span&gt;&lt;/th&gt;
-      &lt;td&gt;匹配&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;num&lt;/span&gt;，其中&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;num&lt;/span&gt;是一个正整数。对所获取的匹配的引用。例如，“&lt;code&gt;(.)\1&lt;/code&gt;”匹配两个连续的相同字符。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;&lt;/th&gt;
-      &lt;td&gt;标识一个八进制转义值或一个向后引用。如果\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;之前至少&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;个获取的子表达式，则&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;为向后引用。否则，如果&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;为八进制数字（0-7），则&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;为一个八进制转义值。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;&lt;/th&gt;
-      &lt;td&gt;标识一个八进制转义值或一个向后引用。如果\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;之前至少有&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;个获得子表达式，则&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;为向后引用。如果\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;之前至少有&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;个获取，则&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;为一个后跟文字&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m&lt;/span&gt;的向后引用。如果前面的条件都不满足，若&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;和&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m&lt;/span&gt;均为八进制数字（0-7），则\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;将匹配八进制转义值&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nml&lt;/span&gt;&lt;/th&gt;
-      &lt;td&gt;如果&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;为八进制数字（0-3），且&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;m和l&lt;/span&gt;均为八进制数字（0-7），则匹配八进制转义值&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;nm&lt;/span&gt;l。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align:center;&quot;&gt;\u&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;&lt;/th&gt;
-      &lt;td&gt;匹配&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;，其中&lt;span style=&quot;font-family:Times New Roman; font-style:italic;&quot;&gt;n&lt;/span&gt;是一个用四个十六进制数字表示的Unicode字符。例如，\u00A9匹配版权符号（©）。&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;常用正则表达式&quot;&gt;&lt;a href=&quot;#常用正则表达式&quot; class=&quot;headerlink&quot; title=&quot;常用正则表达式&quot;&gt;&lt;/a&gt;常用正则表达式&lt;/h2&gt;&lt;table class=&quot;wikitable&quot; width=&quot;100%&quot;&gt;
-  &lt;tbody&gt;&lt;tr&gt;
-    &lt;th width=&quot;10%&quot;&gt;用户名&lt;/th&gt;
-    &lt;td width=&quot;90%&quot;&gt;/^[a-z0-9_-]{3,16}$/&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;th scope=&quot;row&quot;&gt;密码&lt;/th&gt;
-    &lt;td&gt;/^[a-z0-9_-]{6,18}$/&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;th scope=&quot;row&quot;&gt;十六进制值&lt;/th&gt;
-    &lt;td&gt;/^#?([a-f0-9]{6}|[a-f0-9]{3})$/&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;th scope=&quot;row&quot;&gt;电子邮箱&lt;/th&gt;
-    &lt;td&gt;/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/&lt;br&gt;
-  /^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;th scope=&quot;row&quot;&gt;URL&lt;/th&gt;
-    &lt;td&gt;/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;th scope=&quot;row&quot;&gt;IP 地址&lt;/th&gt;
-    &lt;td&gt;/((2[0-4]\d|25[0-5]|[01]?\d\d?)\.){3}(2[0-4]\d|25[0-5]|[01]?\d\d?)/&lt;br&gt;/^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;th scope=&quot;row&quot;&gt;HTML 标签&lt;/th&gt;
-    &lt;td&gt;/^&amp;lt;([a-z]+)([^&amp;lt;]+)*(?:&amp;gt;(.*)&amp;lt;\/\1&amp;gt;|\s+\/&amp;gt;)$/&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;th scope=&quot;row&quot;&gt;删除代码\\注释&lt;/th&gt;
-    &lt;td&gt;(?&amp;lt;!http:|\S)//.*$&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;!--  &lt;tr&gt;
-    &lt;th scope=&quot;row&quot;&gt;&amp;nbsp;&lt;/th&gt;
-    &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-  &lt;/tr&gt;--&gt;
-  &lt;tr&gt;
-    &lt;th scope=&quot;row&quot;&gt;Unicode编码中的汉字范围&lt;/th&gt;
-    &lt;td&gt;/^[\u2E80-\u9FFF]+$/&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;转载自 &lt;a href=&quot;https://tool.oschina.net/uploads/apidocs/jquery/regexp.html&quot;&gt;https://tool.oschina.net/uploads/apidocs/jquery/regexp.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="编程" scheme="https://ednovas.xyz/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
