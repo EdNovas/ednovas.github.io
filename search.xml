@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>使用andOTP进行谷歌二步验证</title>
+      <link href="2021/11/03/andotp/"/>
+      <url>2021/11/03/andotp/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前置准备"><a href="#前置准备" class="headerlink" title="前置准备"></a><strong>前置准备</strong></h2><p>下载andOTP并安装</p><p><a href="https://github.com/andOTP/andOTP/releases">https://github.com/andOTP/andOTP/releases</a></p><p>在安卓手机和电脑登陆谷歌账号</p><p>ios手机请寻找其他的app，操作八九不离十</p><h2 id="谷歌设置开启二步验证"><a href="#谷歌设置开启二步验证" class="headerlink" title="谷歌设置开启二步验证"></a><strong>谷歌设置开启二步验证</strong></h2><p>点击谷歌账号设置》安全性》两步验证<br>网址：<a href="https://myaccount.google.com/security">https://myaccount.google.com/security</a></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.001.png"></p><p>点击开始</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.002.png"></p><p>之后要你登陆账号输入密码，看到有你的手机设备后点击继续</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.003.png"></p><p>点击使用其他备份方式</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.004.png"></p><p>先点击下载，保存备份验证码，这个验证码一定要保存好，然后点击下一步</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.005.png"></p><p>点击开启</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.006.png"></p><h2 id="使用andOTP生成验证码"><a href="#使用andOTP生成验证码" class="headerlink" title="使用andOTP生成验证码"></a><strong>使用andOTP生成验证码</strong></h2><p>两步验证页面往下滑动看到添加更多第二个验证步骤来验证您的身份，点击“身份验证器”应用设置</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.007.png"></p><p>这里按照你的机型选择，本教程选择Android，点击下一步</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.008.png"></p><p>这里会弹出二维码，打开手机的andOTP，点击右下角的 +选择扫描二维码</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.009.png"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.010.png"></p><p>根据扫码后，andOTP生成的验证码输入即可。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.011.png"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.012.png"></p><p>现在可是打开浏览器无痕模式重新登陆谷歌账号试试，当你输完账号密码后，到验证二步验证的步骤，点击试试其他方法</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.013.png"></p><p>接着选择从Google Authenticator 应用程序取得验证码</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.014.png"></p><p>按照你手机上andOTP展示的验证码输入即可登陆</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.015.png"></p><h2 id="andOTP备份验证码"><a href="#andOTP备份验证码" class="headerlink" title="andOTP备份验证码"></a><strong>andOTP备份验证码</strong></h2><p>点击andOTP右上角的备份，选择备份类型后，创建备份。备份文件请多端存储。换新设备后，需要拷贝备份文件到你的新设备，然后点击下面的还原备份，即可还原。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.016.png"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.017.png"></p><blockquote><p>作者 @HelloMyWorld</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在Windows11中安装WSA(安卓子系统)</title>
       <link href="2021/10/30/wsa/"/>
       <url>2021/10/30/wsa/</url>

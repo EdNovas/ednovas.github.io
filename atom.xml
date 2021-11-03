@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-11-03T02:46:49.646Z</updated>
+  <updated>2021-11-03T23:15:22.364Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用andOTP进行谷歌二步验证</title>
+    <link href="https://ednovas.xyz/2021/11/03/andotp/"/>
+    <id>https://ednovas.xyz/2021/11/03/andotp/</id>
+    <published>2021-11-03T23:51:00.000Z</published>
+    <updated>2021-11-03T23:15:22.364Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前置准备&quot;&gt;&lt;a href=&quot;#前置准备&quot; class=&quot;headerlink&quot; title=&quot;前置准备&quot;&gt;&lt;/a&gt;&lt;strong&gt;前置准备&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;下载andOTP并安装&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/andOTP/andOTP/releases&quot;&gt;https://github.com/andOTP/andOTP/releases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在安卓手机和电脑登陆谷歌账号&lt;/p&gt;
+&lt;p&gt;ios手机请寻找其他的app，操作八九不离十&lt;/p&gt;
+&lt;h2 id=&quot;谷歌设置开启二步验证&quot;&gt;&lt;a href=&quot;#谷歌设置开启二步验证&quot; class=&quot;headerlink&quot; title=&quot;谷歌设置开启二步验证&quot;&gt;&lt;/a&gt;&lt;strong&gt;谷歌设置开启二步验证&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;点击谷歌账号设置》安全性》两步验证&lt;br&gt;网址：&lt;a href=&quot;https://myaccount.google.com/security&quot;&gt;https://myaccount.google.com/security&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.001.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;点击开始&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.002.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>在Windows11中安装WSA(安卓子系统)</title>
@@ -714,83 +738,6 @@
     
     
     <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自定义隧道</title>
-    <link href="https://ednovas.xyz/2021/10/01/tunnel/"/>
-    <id>https://ednovas.xyz/2021/10/01/tunnel/</id>
-    <published>2021-10-02T04:51:00.000Z</published>
-    <updated>2021-10-02T04:55:58.347Z</updated>
-    
-    
-    <summary type="html">&lt;div class=&quot;mdui-card-content markdown-body text_s&quot;&gt;
-&lt;h2 id=&quot;原理&quot;&gt;原理&lt;/h2&gt;
-&lt;p&gt;隧道入口 &amp;lt;=&lt;span style=&quot;border: dashed 1.5px;padding:2px&quot;&gt;隧道&lt;/span&gt;=&amp;gt; 自定义隧道落地 &amp;lt;=&amp;gt; 目标&lt;/p&gt;
-&lt;h2 id=&quot;安装后端&quot;&gt;安装后端&lt;/h2&gt;
-&lt;p&gt;下载: (其他OS请自行替换下载连接: &lt;a href=&quot;https://github.com/nkeonkeo/neko-relay-land/releases/tag/v1.0&quot;&gt;https://github.com/nkeonkeo/neko-relay-land/releases/tag/v1.0&lt;/a&gt;)&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;wget https://github.com/nkeonkeo/neko-relay-land/releases/download/v1.0/neko-relay_linux_amd64 -O /usr/bin/neko-relay
-chmod +x /usr/bin/neko-relay
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;初始化服务: &lt;code&gt;neko-relay -g init&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;菜单引导: &lt;code&gt;neko-relay -g menu&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&quot;添加转发&quot;&gt;添加转发&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;首先在面板添加转发&lt;/p&gt;
-&lt;p&gt;选择支持自定义隧道的节点&lt;/p&gt;
-&lt;p&gt;选择 &lt;code&gt;ws_tunnel_client_tcp+udp&lt;/code&gt; 类型&lt;/p&gt;
-&lt;p&gt;记住添加规则成功后提示的 &lt;strong&gt;规则ID、目标服务器、目标端口&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;在隧道落地端(目标服务器)新增规则&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;neko-relay -g add
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;选择类型:&lt;/p&gt;
-&lt;p&gt;WS隧道加密端(TCP+UDP) 对应 面板 &lt;code&gt;ws_tunnel_client_tcp+udp&lt;/code&gt; 类型&lt;/p&gt;
-&lt;p&gt;WSS隧道加密端(TCP+UDP) 对应 面板 &lt;code&gt;wss_tunnel_client_tcp+udp&lt;/code&gt; 类型&lt;/p&gt;
-&lt;p&gt;MIX隧道加密端(TCP+UDP) 对应 面板 &lt;code&gt;mix_tunnel_client_tcp+udp&lt;/code&gt; 类型&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;规则ID: &lt;/p&gt;
-&lt;p&gt;填写面板添加后提示的&lt;code&gt;规则ID&lt;/code&gt;(如果忘记可以在面板上点击规则状态复制规则ID)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;隧道落地端 - 本机端口:&lt;/p&gt;
-&lt;p&gt;面板添加规则时你填写的目标端口&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;隧道落地端 - 目标地址、目标端口: &lt;/p&gt;
-&lt;p&gt;隧道要转发的目标&lt;/p&gt;
-&lt;p&gt;假设面板规则目标服务器(隧道落地端)IP是&lt;code&gt;1.1.1.1&lt;/code&gt;,面板规则目标端口是&lt;code&gt;1111&lt;/code&gt;,最终目标为&lt;code&gt;2.2.2.2&lt;/code&gt;:&lt;code&gt;2222&lt;/code&gt;,那么:&lt;/p&gt;
-&lt;p&gt;隧道入口-&amp;gt; &lt;code&gt;1.1.1.1&lt;/code&gt;:&lt;code&gt;面板规则目标端口&lt;/code&gt; -&amp;gt; &lt;code&gt;2.2.2.2&lt;/code&gt;(隧道落地端目标地址):&lt;code&gt;2222&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;当然目标可以是隧道落地端自己，像这样:&lt;/p&gt;
-&lt;p&gt;假设隧道落地端有Shadowsocks监听&lt;code&gt;23333&lt;/code&gt;端口，目标地址为&lt;code&gt;127.0.0.1&lt;/code&gt;,目标端口为&lt;code&gt;23333&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;其他功能&quot;&gt;其他功能&lt;/h2&gt;
-&lt;p&gt;菜单引导: &lt;code&gt;neko-relay -g menu&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;初始化服务: &lt;code&gt;neko-relay -g init&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;重启服务: &lt;code&gt;neko-relay -g restart&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;停止服务: &lt;code&gt;neko-relay -g stop&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;更新后端: &lt;code&gt;neko-relay -g update&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;查看规则列表: &lt;code&gt;neko-relay -g list&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;添加规则: &lt;code&gt;neko-relay -g add&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;删除规则: &lt;code&gt;neko-relay -g del&lt;/code&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;转载自 &lt;a href=&quot;https://relay.nekoneko.cloud/knowledge/%E8%87%AA%E5%AE%9A%E4%B9%89%E9%9A%A7%E9%81%93%E6%95%99%E7%A8%8B&quot;&gt;https://relay.nekoneko.cloud/knowledge/%E8%87%AA%E5%AE%9A%E4%B9%89%E9%9A%A7%E9%81%93%E6%95%99%E7%A8%8B&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="隧道" scheme="https://ednovas.xyz/tags/%E9%9A%A7%E9%81%93/"/>
     
   </entry>
   
