@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-11-05T20:54:52.990Z</updated>
+  <updated>2021-11-05T21:11:10.854Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ednovas.xyz/2021/11/05/cheapvps/"/>
     <id>https://ednovas.xyz/2021/11/05/cheapvps/</id>
     <published>2021-11-05T20:09:00.000Z</published>
-    <updated>2021-11-05T20:54:52.990Z</updated>
+    <updated>2021-11-05T21:11:10.854Z</updated>
     
     
     <summary type="html">&lt;table&gt;
@@ -166,7 +166,7 @@
 &lt;td align=&quot;left&quot;&gt;俄罗斯无限流量，电信联通线路不错，移动绕路&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&quot;科学上网VPS&quot;&gt;&lt;a href=&quot;#科学上网VPS&quot; class=&quot;headerlink&quot; title=&quot;科学上网VPS&quot;&gt;&lt;/a&gt;科学上网VPS&lt;/h2&gt;&lt;h3 id=&quot;便宜就完了&quot;&gt;&lt;a href=&quot;#便宜就完了&quot; class=&quot;headerlink&quot; title=&quot;便宜就完了&quot;&gt;&lt;/a&gt;便宜就完了&lt;/h3&gt;&lt;ul&gt;
+&lt;h2 id=&quot;便宜就完了&quot;&gt;&lt;a href=&quot;#便宜就完了&quot; class=&quot;headerlink&quot; title=&quot;便宜就完了&quot;&gt;&lt;/a&gt;便宜就完了&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&quot;&gt;RackNerd&lt;/a&gt; 性价比极高，反代优选能上70mb/s，一年还只要大概70rmb。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://virmach.com/&quot;&gt;Virmach&lt;/a&gt; 绰号就叫低价屠夫，便宜就完了。&lt;/p&gt;
@@ -178,7 +178,7 @@
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://contabo.com/&quot;&gt;Contabo&lt;/a&gt; &lt;del&gt;高配机可能是最便宜的了？&lt;/del&gt; 想要建站等可以考虑&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;优质线路&quot;&gt;&lt;a href=&quot;#优质线路&quot; class=&quot;headerlink&quot; title=&quot;优质线路&quot;&gt;&lt;/a&gt;优质线路&lt;/h3&gt;&lt;ul&gt;
+&lt;h2 id=&quot;科学上网VPS&quot;&gt;&lt;a href=&quot;#科学上网VPS&quot; class=&quot;headerlink&quot; title=&quot;科学上网VPS&quot;&gt;&lt;/a&gt;科学上网VPS&lt;/h2&gt;&lt;h3 id=&quot;优质线路&quot;&gt;&lt;a href=&quot;#优质线路&quot; class=&quot;headerlink&quot; title=&quot;优质线路&quot;&gt;&lt;/a&gt;优质线路&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://cloudpowerall.com/aff.php?aff=3407&quot;&gt;CloudPowerall&lt;/a&gt; 目前主要销售面向中国大陆的香港和洛杉矶 CN2 GIA 线路 KVM VPS。其洛杉矶 VPS 位于洛杉矶 Cera，三网回程 GIA，国内速度非常优秀，而且是 AMD Ryzen 9 3950X 高性能处理器，仅 24.99美元/年，性价比极高！堪称新一代的传家宝，又一个 VPS 界的理财产品。支持 Pay­pal 和支付宝付款。&lt;a href=&quot;https://p3terx.com/archives/cn2-gia-vps-cloudpowerall.html&quot;&gt;最新优惠购买链接可以在这里找到&lt;/a&gt;。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://anyhk.net/aff.php?aff=378&quot;&gt;Anyhk&lt;/a&gt; 主要卖香港和奈飞nat的商家，挺靠谱的，不像很多随时跑路的。主要线路有HKT,HGC,HINET,WTT等NAT/VPS/VDS。每月49.9rmb起。如果你想要便宜的香港和台湾奈飞解锁nat，绝对是个很好的选择。&lt;/p&gt;
@@ -196,7 +196,7 @@
 &lt;/ul&gt;
 &lt;h3 id=&quot;常规线路&quot;&gt;&lt;a href=&quot;#常规线路&quot; class=&quot;headerlink&quot; title=&quot;常规线路&quot;&gt;&lt;/a&gt;常规线路&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&quot;&gt;RackNerd&lt;/a&gt; 价格低、配置高、流量大、工单回复及时，已经获得了国内外众多 VPS 玩家的好评。他家经常搞活动抛出价格非常低且配置很高的优惠套餐，虽然只是常规的直连线路，但实际体验远超过预期，有成为传家宝的潜质。搭建节点的话，使用反代加优选，可以达到70mb/s的速度。如果你已经有 CN2 GIA 、AS9929 之类的优质线路 VPS ，那么它作为非高峰期主力或者当做应急备胎是非常不错的选择。最低年付价格换算下来还不到 1 美元/月，可以说性价比直接拉满。&lt;a href=&quot;https://p3terx.com/archives/cheap-vps-racknerd.html&quot;&gt;点击查看 RackNerd 最新优惠&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://cloudcone.com/&quot;&gt;CloudCone&lt;/a&gt; 主要提供美国洛杉矶 VPS，对于电信用户很多地区会走 CN2 线路，因此延迟和稳定性都较为优秀。优惠价格通常在 1-2美元/月，不过经常很快就没货了。如果你有不着急购买，可以先注册账号，下次活动的第一时间会发邮件通知。&lt;a href=&quot;https://p3terx.com/archives/cheap-vps-cloudcone.html&quot;&gt;点击查看 Cloudcone 最新优惠&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;离线下载VPS&quot;&gt;&lt;a href=&quot;#离线下载VPS&quot; class=&quot;headerlink&quot; title=&quot;离线下载VPS&quot;&gt;&lt;/a&gt;离线下载VPS&lt;/h3&gt;</summary>
+&lt;h2 id=&quot;离线下载VPS&quot;&gt;&lt;a href=&quot;#离线下载VPS&quot; class=&quot;headerlink&quot; title=&quot;离线下载VPS&quot;&gt;&lt;/a&gt;离线下载VPS&lt;/h2&gt;</summary>
     
     
     
