@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-11-03T23:15:22.364Z</updated>
+  <updated>2021-11-05T20:54:52.990Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,197 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>便宜VPS</title>
+    <link href="https://ednovas.xyz/2021/11/05/cheapvps/"/>
+    <id>https://ednovas.xyz/2021/11/05/cheapvps/</id>
+    <published>2021-11-05T20:09:00.000Z</published>
+    <updated>2021-11-05T20:54:52.990Z</updated>
+    
+    
+    <summary type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;VPS 商家&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;最低价格&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;支付方式&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;特点&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://cloudpowerall.com/aff.php?aff=3407&quot;&gt;CloudPowerall&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$24.99/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;极速 CN2 GIA 线路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://anyhk.net/aff.php?aff=378&quot;&gt;Anyhk&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;￥49.9/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;HKT/HGC/HINET/WTT香港台湾奈飞解锁NAT/VPS/VDS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://vollcloud.com/aff.php?aff=109&quot;&gt;Vollcloud&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$67.5/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;大宽带香港CMI线路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.inkisp.com/aff.php?aff=568&quot;&gt;Ink cloud&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;￥349.9/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;香港CMI/BGP 美国日本韩国GIA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&quot;&gt;RackNerd&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$8.89/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡、Bitcoin&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;三网直连，普通价格，高端配置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://contabo.com/&quot;&gt;Contabo&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$6.99/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;信用卡、Paypal&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;便宜高配服务器，普通线路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.ovhcloud.com/&quot;&gt;Ovhcloud&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$7.36/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;便宜高配服务器，普通线路，防DDOS，无限流量&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.frantech.ca/aff.php?aff=5269&quot;&gt;BuyVM&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$2/月 ¥10/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡、Bitcoin&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;低价、无限流量、大盘鸡&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://bwh89.net/&quot;&gt;BandwagonHost&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$49.9/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、微信、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;极速 CN2 GIA 线路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.dmit.io/&quot;&gt;DMIT&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$88.88/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;CN2 GIA 高端高速线路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://hmbcloud.com/&quot;&gt;HMBCloud&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$69.99/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;CN2 GIA 高端高速线路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.olink.cloud/&quot;&gt;OLink Cloud&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$5/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;极速 CU VIP 线路(AS9929)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.vultr.com/?ref=8971645-8H&quot;&gt;Vultr&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$2.5/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、微信、PayPal、Bitcoin&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;注册送 100 美元，有效期30天&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.digitalocean.com/&quot;&gt;DigitalOcean&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$5/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;注册送 100 美元，有效期60天&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.onevps.cloud/&quot;&gt;OneVPS&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$2/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;无限流量 5折优惠码VPSWELCOME&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://cloudcone.com/&quot;&gt;CloudCone&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$1.99/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;按时计费，随用随删&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://spartanhost.org/&quot;&gt;Spartan Host&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$2/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡、Bitcoin&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;三网联通回程(AS4837)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.justg.com/&quot;&gt;Justg&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$19.9/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;南非CN2 GIA线路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.tmthosting.net/index.php&quot;&gt;TMT Hosting&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$2.37/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡、Bitcoin&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;三网联通回程(AS4837)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://hosting.gullo.me/&quot;&gt;Gullo&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$8/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;新加坡奈飞解锁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://virmach.com/&quot;&gt;Virmach&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$7.5/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、Paypal&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;“低价屠夫”，建议买常规版&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://justhost.ru/?ref=128830&quot;&gt;Justhost&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;￥9/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;俄罗斯无限流量，电信联通线路不错，移动绕路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&quot;科学上网VPS&quot;&gt;&lt;a href=&quot;#科学上网VPS&quot; class=&quot;headerlink&quot; title=&quot;科学上网VPS&quot;&gt;&lt;/a&gt;科学上网VPS&lt;/h2&gt;&lt;h3 id=&quot;便宜就完了&quot;&gt;&lt;a href=&quot;#便宜就完了&quot; class=&quot;headerlink&quot; title=&quot;便宜就完了&quot;&gt;&lt;/a&gt;便宜就完了&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&quot;&gt;RackNerd&lt;/a&gt; 性价比极高，反代优选能上70mb/s，一年还只要大概70rmb。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://virmach.com/&quot;&gt;Virmach&lt;/a&gt; 绰号就叫低价屠夫，便宜就完了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://hosting.gullo.me/&quot;&gt;Gullo&lt;/a&gt; 便宜的新加坡奈飞解锁，但是经常缺货。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://justhost.ru/?ref=128830&quot;&gt;Justhost&lt;/a&gt; 便宜的俄罗斯VPS，还是无限流量的，年付有8折优惠。电信和联通友好，移动绕路。油管勉强可看4k。建议选择 &lt;code&gt;DataLine (Moscow）&lt;/code&gt;机房，有 CN2 加成。附赠的IPV6地址可能出bug，可以直接禁用IPV6。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://contabo.com/&quot;&gt;Contabo&lt;/a&gt; &lt;del&gt;高配机可能是最便宜的了？&lt;/del&gt; 想要建站等可以考虑&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;优质线路&quot;&gt;&lt;a href=&quot;#优质线路&quot; class=&quot;headerlink&quot; title=&quot;优质线路&quot;&gt;&lt;/a&gt;优质线路&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://cloudpowerall.com/aff.php?aff=3407&quot;&gt;CloudPowerall&lt;/a&gt; 目前主要销售面向中国大陆的香港和洛杉矶 CN2 GIA 线路 KVM VPS。其洛杉矶 VPS 位于洛杉矶 Cera，三网回程 GIA，国内速度非常优秀，而且是 AMD Ryzen 9 3950X 高性能处理器，仅 24.99美元/年，性价比极高！堪称新一代的传家宝，又一个 VPS 界的理财产品。支持 Pay­pal 和支付宝付款。&lt;a href=&quot;https://p3terx.com/archives/cn2-gia-vps-cloudpowerall.html&quot;&gt;最新优惠购买链接可以在这里找到&lt;/a&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://anyhk.net/aff.php?aff=378&quot;&gt;Anyhk&lt;/a&gt; 主要卖香港和奈飞nat的商家，挺靠谱的，不像很多随时跑路的。主要线路有HKT,HGC,HINET,WTT等NAT/VPS/VDS。每月49.9rmb起。如果你想要便宜的香港和台湾奈飞解锁nat，绝对是个很好的选择。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://bwh89.net/&quot;&gt;BandwagonHost&lt;/a&gt;俗称搬瓦工，是非常老牌的 VPS 商家。搬瓦工的 CN2 GIA 是目前最为稳定的线路之一，三网表现都非常优秀。绝版搬瓦工的套餐早已水涨船高，被 VPS 玩家们誉为传家宝，是 VPS 界的理财产品。现在可以购买到的性价比最高的 CN2 GIA 是&lt;a href=&quot;https://bwh89.net/cart.php?a=confproduct&amp;i=1&quot;&gt;美西电商版&lt;/a&gt;，可以自由切换北美的 DC6、DC9 机房，也可以切换到日本软银机房。因此它可以应对绝大部分状况。这个世界上有很多声称拥有 GIA 线路的厂商，但是搬瓦工比他们中的绝大多数都要好很多。价格方面季付 49.99 美元、年付优惠价 169.99，还可用终身优惠码&lt;code&gt;BWH3HYATVBJW&lt;/code&gt;抵扣大概10美元左右，价格虽然比一般的要高，但毕竟线路质量和性能配置摆在那里。还有&lt;a href=&quot;https://t.me/BandwagonHostNews&quot;&gt;搬瓦工TG补货频道&lt;/a&gt;可以时刻关注&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.olink.cloud/&quot;&gt;OLink Cloud&lt;/a&gt; 目前主营美国圣何塞以及德国法兰克福这两个地区的中国大陆三网回程联通 VIP 线路(AS9929) VPS 和独立服务器。AS9929 俗称联通 A 网，主要服务于政企大客户，对标电信 CN2 GIA ，用户少、负载小、速度快，晚高峰不惧拥堵。暂时比较冷门，价格还没有水涨船高，它家圣何塞的 VPS 为 G 口 9929，是市面上非常少见的。&lt;a href=&quot;https://p3terx.com/archives/cuii-vps-olixnk-cloud.html&quot;&gt;最新优惠购买链接可以在这里找到&lt;/a&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.justg.com/&quot;&gt;Justg&lt;/a&gt; 主营南非 CN2 GIA 线路 VPS。相比满大街的美西和亚太 CN2 GIA，南非 CN2 GIA 线路属于比较冷门的那种，用的人少意味着晚高峰不惧拥堵。最低价格只需 19.9 美元/年，&lt;a href=&quot;https://p3terx.com/archives/cn2-gia-vps-justg.html&quot;&gt;最新优惠购买链接可以在这里找到&lt;/a&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://spartanhost.org/&quot;&gt;Spartan Host&lt;/a&gt; 俗称斯巴达主机，其西雅图机房的 VPS 三网回程走的是联通169(AS4837)线路，由于目前联通的国际带宽充裕所以延迟和稳定性都很优秀，晚高峰接近于 CN2 GIA 的体验，而低至2美元/月的价格让它长期处于缺货状态。二级市场的价格也已经炒上天了，又成了一个 VPS 界的理财产品。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://billing.tmthosting.net/index.php&quot;&gt;TMT Hosting&lt;/a&gt; 很可能是 &lt;a href=&quot;https://spartanhost.org/&quot;&gt;Spartan Host&lt;/a&gt; 的马甲，因为产品线非常相似，西雅图机房的回程线路也是一致的，甚至 IP 都归属于斯巴达。没抢到斯巴达的小伙伴可以购买这家，&lt;a href=&quot;https://p3terx.com/archives/cheap-vps-tmt-hosting.html&quot;&gt;最新优惠购买链接可以在这里找到&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;常规线路&quot;&gt;&lt;a href=&quot;#常规线路&quot; class=&quot;headerlink&quot; title=&quot;常规线路&quot;&gt;&lt;/a&gt;常规线路&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&quot;&gt;RackNerd&lt;/a&gt; 价格低、配置高、流量大、工单回复及时，已经获得了国内外众多 VPS 玩家的好评。他家经常搞活动抛出价格非常低且配置很高的优惠套餐，虽然只是常规的直连线路，但实际体验远超过预期，有成为传家宝的潜质。搭建节点的话，使用反代加优选，可以达到70mb/s的速度。如果你已经有 CN2 GIA 、AS9929 之类的优质线路 VPS ，那么它作为非高峰期主力或者当做应急备胎是非常不错的选择。最低年付价格换算下来还不到 1 美元/月，可以说性价比直接拉满。&lt;a href=&quot;https://p3terx.com/archives/cheap-vps-racknerd.html&quot;&gt;点击查看 RackNerd 最新优惠&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cloudcone.com/&quot;&gt;CloudCone&lt;/a&gt; 主要提供美国洛杉矶 VPS，对于电信用户很多地区会走 CN2 线路，因此延迟和稳定性都较为优秀。优惠价格通常在 1-2美元/月，不过经常很快就没货了。如果你有不着急购买，可以先注册账号，下次活动的第一时间会发邮件通知。&lt;a href=&quot;https://p3terx.com/archives/cheap-vps-cloudcone.html&quot;&gt;点击查看 Cloudcone 最新优惠&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;离线下载VPS&quot;&gt;&lt;a href=&quot;#离线下载VPS&quot; class=&quot;headerlink&quot; title=&quot;离线下载VPS&quot;&gt;&lt;/a&gt;离线下载VPS&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+  </entry>
   
   <entry>
     <title>使用andOTP进行谷歌二步验证</title>
@@ -714,30 +905,6 @@
     
     
     <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shortny PHP短网址汉化版</title>
-    <link href="https://ednovas.xyz/2021/10/01/shortny/"/>
-    <id>https://ednovas.xyz/2021/10/01/shortny/</id>
-    <published>2021-10-02T05:51:00.000Z</published>
-    <updated>2021-10-03T08:30:11.184Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://ednovas.cloud/s/3Ajtv&quot;&gt;https://ednovas.cloud/s/3Ajtv&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;Shortny是一款国外的PHP短网址源码，程序非常小巧，但是功能是很多的，支持自定义后缀、加密访问，查看链接统计，而且还支持放广告，这个广告功能相信有些人会喜欢。界面也比较好看，支持白天/夜晚切换模式，由于官方的程序是收费的，所以这里博主提供的是由顶点网破解的最新版Shortny v2.0.1，顺便说下安装方法和一些细节处理。&lt;/p&gt;
-&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;h3 id=&quot;伪静态&quot;&gt;&lt;a href=&quot;#伪静态&quot; class=&quot;headerlink&quot; title=&quot;伪静态&quot;&gt;&lt;/a&gt;伪静态&lt;/h3&gt;&lt;h4 id=&quot;Nginx&quot;&gt;&lt;a href=&quot;#Nginx&quot; class=&quot;headerlink&quot; title=&quot;Nginx&quot;&gt;&lt;/a&gt;Nginx&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;rewrite ^&amp;#x2F;about &amp;#x2F;about.php last;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rewrite ^&amp;#x2F;api-about &amp;#x2F;api-about.php last;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rewrite ^&amp;#x2F;contact &amp;#x2F;contact.php last;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rewrite ^&amp;#x2F;tos &amp;#x2F;tos.php last;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rewrite ^&amp;#x2F;([^&amp;#x2F;.]+)&amp;#x2F;?$ &amp;#x2F;link.php?id&amp;#x3D;$1 last;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rewrite ^&amp;#x2F;404 &amp;#x2F;404.php last;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;error_page 404 http:&amp;#x2F;&amp;#x2F;d.iowen.cn&amp;#x2F;404;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;error_page 403 http:&amp;#x2F;&amp;#x2F;d.iowen.cn&amp;#x2F;404;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
-&lt;h4 id=&quot;Apache&quot;&gt;&lt;a href=&quot;#Apache&quot; class=&quot;headerlink&quot; title=&quot;Apache&quot;&gt;&lt;/a&gt;Apache&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;RewriteEngine on &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;RewriteRule ^about                about.php [L]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;RewriteRule ^&amp;lt;a class&amp;#x3D;&amp;quot;external balloon&amp;quot; href&amp;#x3D;&amp;quot;https:&amp;#x2F;&amp;#x2F;www.iowen.cn&amp;#x2F;tag&amp;#x2F;api&amp;#x2F;&amp;quot; title&amp;#x3D;&amp;quot;查看与 api 相关的文章&amp;quot; target&amp;#x3D;&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;span data-balloon&amp;#x3D;&amp;quot;查看与 api 相关的文章&amp;quot; data-balloon-pos&amp;#x3D;&amp;quot;up&amp;quot;&amp;gt;api&amp;lt;&amp;#x2F;span&amp;gt;&amp;lt;&amp;#x2F;a&amp;gt;-about            api-about.php [L]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;RewriteRule ^contact              contact.php [L]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;RewriteRule ^tos                  tos.php [L]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;RewriteRule ^([^&amp;#x2F;.]+)&amp;#x2F;?$          link.php?id&amp;#x3D;$1 [L]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;RewriteRule ^404                  404.php [L]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Options -Indexes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ErrorDocument 404 http:&amp;#x2F;&amp;#x2F;d.iowen.cn&amp;#x2F;404&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ErrorDocument 403 http:&amp;#x2F;&amp;#x2F;d.iowen.cn&amp;#x2F;404&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
     
   </entry>
   
