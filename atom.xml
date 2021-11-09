@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-11-05T21:11:10.854Z</updated>
+  <updated>2021-11-09T02:13:05.674Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Evolution Host 测评</title>
+    <link href="https://ednovas.xyz/2021/11/08/evolutionhost/"/>
+    <id>https://ednovas.xyz/2021/11/08/evolutionhost/</id>
+    <published>2021-11-09T01:15:12.000Z</published>
+    <updated>2021-11-09T02:13:05.674Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Evolution-Host&quot;&gt;&lt;a href=&quot;#Evolution-Host&quot; class=&quot;headerlink&quot; title=&quot;Evolution Host&quot;&gt;&lt;/a&gt;Evolution Host&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://evolution-host.com/blog/ssd-vps-hosting.php&quot; target=&quot;_blank&quot;&gt;&lt;center&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-41-14.png&quot;&gt;&lt;/center&gt;&lt;center&gt;提供游戏DDOS防护的大流量VPS，提供多国家选择，100% SLA保证&lt;/center&gt;&lt;center&gt;Evolution Host offers Game DDOS in many countries，with 100% uptime SLA&lt;/center&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;只要你的博客有较多流量并且存在一段时间，在主页放上他们的广告就可以免费白嫖一个VPS了。&lt;/p&gt;
+&lt;p&gt;申请地址：&lt;a href=&quot;https://evolution-host.com/free-vps.php&quot;&gt;https://evolution-host.com/free-vps.php&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;配置&quot;&gt;&lt;a href=&quot;#配置&quot; class=&quot;headerlink&quot; title=&quot;配置&quot;&gt;&lt;/a&gt;配置&lt;/h2&gt;&lt;p&gt;看样子是博客流量越大，给的VPS配置就越好了。&lt;/p&gt;
+&lt;p&gt;我只申请到了个 3H3G 的&lt;/p&gt;
+&lt;p&gt;用的 AMD Ryzen 7 3800X&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-08_17-09-50.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-08_17-13-44.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="白嫖" scheme="https://ednovas.xyz/tags/%E7%99%BD%E5%AB%96/"/>
+    
+    <category term="免费" scheme="https://ednovas.xyz/tags/%E5%85%8D%E8%B4%B9/"/>
+    
+  </entry>
   
   <entry>
     <title>便宜VPS</title>
@@ -827,84 +857,6 @@
     <category term="白嫖" scheme="https://ednovas.xyz/tags/%E7%99%BD%E5%AB%96/"/>
     
     <category term="免费" scheme="https://ednovas.xyz/tags/%E5%85%8D%E8%B4%B9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cron 定时任务表达式</title>
-    <link href="https://ednovas.xyz/2021/10/01/cron/"/>
-    <id>https://ednovas.xyz/2021/10/01/cron/</id>
-    <published>2021-10-02T05:51:00.000Z</published>
-    <updated>2021-10-02T05:22:35.468Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Cron 表达式，是应用在 Unix 和类 Unix 操作系统之中，让脚本、任务定时进行周期性重复的执行。Cron 表达式有差丰富的表达能力，能够适应各种时间表达需求。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/cron-2131.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;共 7 位，最后一位可选，可以不写，至少 6 位，从左到右各位置分别是：&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;left&quot;&gt;位置&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;意义&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;取值&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;支持的符号&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;1&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;秒&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0-59&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;, - * /&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;2&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;分&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0-59&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;, - * /&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;3&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;时&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0-23&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;, - * /&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;4&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;日&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;1-31&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;, - * ? / L W C&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;5&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;1-12 或 JAN - DEC&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;, - * /&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;6&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;周&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;1-7 或 MON - SAT&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;, - * ? / L C #&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;7&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;空或 1970-2099&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;, - * /&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;p&gt;注：Cron 表达式对日期英文缩写、特殊字符大小写不敏感。&lt;/p&gt;
-&lt;h2 id=&quot;秒&quot;&gt;&lt;a href=&quot;#秒&quot; class=&quot;headerlink&quot; title=&quot;秒&quot;&gt;&lt;/a&gt;秒&lt;/h2&gt;&lt;p&gt;允许值范围: 0~59 ,不允许为空值，若值不合法，调度器将抛出SchedulerException异常&lt;/p&gt;
-&lt;p&gt;“*” 代表每隔1秒钟触发&lt;/p&gt;
-&lt;p&gt;“,” 代表在指定的秒数触发，比如”0,15,45”代表0秒、15秒和45秒时触发任务&lt;/p&gt;
-&lt;p&gt;“-“ 代表在指定的范围内触发，比如”25-45”代表从25秒开始触发到45秒结束触发，每隔1秒触发1次&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
     
   </entry>
   
