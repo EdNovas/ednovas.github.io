@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-11-09T05:53:44.916Z</updated>
+  <updated>2021-11-23T05:19:14.114Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>黑色星期五优惠 VPS （持续更新）</title>
+    <link href="https://ednovas.xyz/2021/11/22/blackfriday2021/"/>
+    <id>https://ednovas.xyz/2021/11/22/blackfriday2021/</id>
+    <published>2021-11-22T21:09:00.000Z</published>
+    <updated>2021-11-23T05:19:14.114Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Racknerd&quot;&gt;&lt;a href=&quot;#Racknerd&quot; class=&quot;headerlink&quot; title=&quot;Racknerd&quot;&gt;&lt;/a&gt;Racknerd&lt;/h2&gt;&lt;p&gt;相比去年的黑五貌似更贵了，或者说没有什么大区别，但是却没有了8刀的1H512M机器了。&lt;/p&gt;
+&lt;p&gt;尽量选择洛杉矶、圣何塞的机器，美西是国内友好普通直连线路，直连就几乎能跑满G口。&lt;/p&gt;
+&lt;p&gt;RackNerd 2021黑五，将于美西时间2021年11月22日早上6am开始 (对应北京时间2021年11月22日晚上10pm)。以下为2021年黑五的的VPS促销套餐。&lt;/p&gt;
+&lt;p&gt;黑五期间还有闪购活动，关注频道 &lt;a href=&quot;https://t.me/racknerd_promo&quot;&gt;https://t.me/racknerd_promo&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2021黑五促销-Intel处理器系列&quot;&gt;&lt;a href=&quot;#2021黑五促销-Intel处理器系列&quot; class=&quot;headerlink&quot; title=&quot;2021黑五促销 (Intel处理器系列)&quot;&gt;&lt;/a&gt;2021黑五促销 (Intel处理器系列)&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;768MB 套餐 &lt;/p&gt;
+&lt;p&gt;768 MB 内存&lt;/p&gt;
+&lt;p&gt;1 CPU 核心&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux 基础命令速查备忘手册</title>
@@ -78,7 +104,7 @@
     <link href="https://ednovas.xyz/2021/11/05/cheapvps/"/>
     <id>https://ednovas.xyz/2021/11/05/cheapvps/</id>
     <published>2021-11-05T20:09:00.000Z</published>
-    <updated>2021-11-21T04:20:39.019Z</updated>
+    <updated>2021-11-23T05:19:14.311Z</updated>
     
     
     <summary type="html">&lt;table&gt;
@@ -211,7 +237,7 @@
 &lt;td align=&quot;left&quot;&gt;极速 CN2 GIA 线路&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.dmit.io/&quot;&gt;DMIT&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.dmit.io/aff.php?aff=2664&quot;&gt;DMIT&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&quot;left&quot;&gt;$88.88/年&lt;/td&gt;
 &lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
 &lt;td align=&quot;left&quot;&gt;CN2 GIA 高端高速线路&lt;/td&gt;
@@ -241,7 +267,7 @@
 &lt;td align=&quot;left&quot;&gt;注册送 100 美元，有效期60天&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.onevps.cloud/&quot;&gt;OneVPS&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.onevps.cloud/?aff=39962&quot;&gt;OneVPS&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&quot;left&quot;&gt;$2/月&lt;/td&gt;
 &lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
 &lt;td align=&quot;left&quot;&gt;无限流量 5折优惠码VPSWELCOME&lt;/td&gt;
@@ -897,36 +923,6 @@
     <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
     
     <category term="hCaptcha" scheme="https://ednovas.xyz/tags/hCaptcha/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WARP+ 刷无限流量</title>
-    <link href="https://ednovas.xyz/2021/10/05/warp+/"/>
-    <id>https://ednovas.xyz/2021/10/05/warp+/</id>
-    <published>2021-10-05T18:51:00.000Z</published>
-    <updated>2021-10-06T04:52:30.834Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;最简单的方法&quot;&gt;&lt;a href=&quot;#最简单的方法&quot; class=&quot;headerlink&quot; title=&quot;最简单的方法&quot;&gt;&lt;/a&gt;最简单的方法&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://replit.com/@wdm1732418365/warp&quot;&gt;https://replit.com/@wdm1732418365/warp&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;点击小三角开始run运行，然后输入你的warp ID（获取方法见下&lt;code&gt;获取APP的设备ID&lt;/code&gt;部分）&lt;/p&gt;
-&lt;p&gt;如果你有python环境，本地也可以挂着，或者挂在VPS上开个screen挂着&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;fork 自 &lt;a href=&quot;https://replit.com/@aliilapro/warp&quot;&gt;https://replit.com/@aliilapro/warp&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;CloudFlare® WARP APP&lt;/p&gt;
-&lt;p&gt;下载地址：&lt;a href=&quot;https://1.1.1.1/&quot;&gt;https://1.1.1.1/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;包含全客户端，下载对应客户端软件&lt;/p&gt;
-&lt;h2 id=&quot;获取APP的设备ID&quot;&gt;&lt;a href=&quot;#获取APP的设备ID&quot; class=&quot;headerlink&quot; title=&quot;获取APP的设备ID&quot;&gt;&lt;/a&gt;获取APP的设备ID&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="白嫖" scheme="https://ednovas.xyz/tags/%E7%99%BD%E5%AB%96/"/>
-    
-    <category term="免费" scheme="https://ednovas.xyz/tags/%E5%85%8D%E8%B4%B9/"/>
     
   </entry>
   
