@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-11-23T05:19:14.114Z</updated>
+  <updated>2021-11-23T09:17:27.996Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -21,17 +21,21 @@
     <link href="https://ednovas.xyz/2021/11/22/blackfriday2021/"/>
     <id>https://ednovas.xyz/2021/11/22/blackfriday2021/</id>
     <published>2021-11-22T21:09:00.000Z</published>
-    <updated>2021-11-23T05:19:14.114Z</updated>
+    <updated>2021-11-23T09:17:27.996Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;Racknerd&quot;&gt;&lt;a href=&quot;#Racknerd&quot; class=&quot;headerlink&quot; title=&quot;Racknerd&quot;&gt;&lt;/a&gt;Racknerd&lt;/h2&gt;&lt;p&gt;相比去年的黑五貌似更贵了，或者说没有什么大区别，但是却没有了8刀的1H512M机器了。&lt;/p&gt;
-&lt;p&gt;尽量选择洛杉矶、圣何塞的机器，美西是国内友好普通直连线路，直连就几乎能跑满G口。&lt;/p&gt;
-&lt;p&gt;RackNerd 2021黑五，将于美西时间2021年11月22日早上6am开始 (对应北京时间2021年11月22日晚上10pm)。以下为2021年黑五的的VPS促销套餐。&lt;/p&gt;
-&lt;p&gt;黑五期间还有闪购活动，关注频道 &lt;a href=&quot;https://t.me/racknerd_promo&quot;&gt;https://t.me/racknerd_promo&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;2021黑五促销-Intel处理器系列&quot;&gt;&lt;a href=&quot;#2021黑五促销-Intel处理器系列&quot; class=&quot;headerlink&quot; title=&quot;2021黑五促销 (Intel处理器系列)&quot;&gt;&lt;/a&gt;2021黑五促销 (Intel处理器系列)&lt;/h3&gt;&lt;hr&gt;
-&lt;p&gt;768MB 套餐 &lt;/p&gt;
-&lt;p&gt;768 MB 内存&lt;/p&gt;
-&lt;p&gt;1 CPU 核心&lt;/p&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;Ultra&quot;&gt;&lt;a href=&quot;#Ultra&quot; class=&quot;headerlink&quot; title=&quot;Ultra&quot;&gt;&lt;/a&gt;Ultra&lt;/h1&gt;&lt;p&gt;UltraVPS，德国老牌主机商，主要提供KVM VPS，拥有自己的AS(AS29141)，特色是稳定。现在发布了2021黑五套餐，性价比不错。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;页面的价格均是含19%的价格，国内注册的，均没有税，所以价格要便宜些。&lt;/li&gt;
+&lt;li&gt;注意看，这家有合同期，注意最少提前1个月发TK取消（如果不续费的话）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;NVME-Special-0&lt;/p&gt;
+&lt;p&gt;vCPU：1&lt;/p&gt;
+&lt;p&gt;内存：4 GB&lt;/p&gt;
+&lt;p&gt;空间：50 GB NVME (ZFS based, RAID-1)&lt;/p&gt;
+&lt;p&gt;流量：2 TB / 月（1Gbps端口，双向计算）&lt;/p&gt;
+&lt;p&gt;IPv4：1&lt;/p&gt;
+&lt;p&gt;€3.33/月，3个月合同期&lt;/p&gt;</summary>
     
     
     
