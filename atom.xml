@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-11-27T03:36:41.734Z</updated>
+  <updated>2021-11-28T05:42:14.139Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,138 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用脚本自动抢Oracle ARM服务器，并使用tg机器人通知</title>
+    <link href="https://ednovas.xyz/2021/11/28/oraclearm/"/>
+    <id>https://ednovas.xyz/2021/11/28/oraclearm/</id>
+    <published>2021-11-28T21:09:00.000Z</published>
+    <updated>2021-11-28T05:42:14.139Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自HM的博客 &lt;a href=&quot;https://him.plus/archives/274&quot;&gt;https://him.plus/archives/274&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;post-content&quot; id=&quot;post_content&quot;&gt;
+        &lt;h3 id=&quot;header-id-1&quot;&gt;需要用到的&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;一台vps服务器&lt;/li&gt;
+&lt;li&gt;Terraform&lt;/li&gt;
+&lt;li&gt;oci-cli&lt;br&gt;
+&lt;h4 id=&quot;header-id-2&quot;&gt;一、安装Terraform&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget https:&amp;#x2F;&amp;#x2F;releases.hashicorp.com&amp;#x2F;terraform&amp;#x2F;0.15.5&amp;#x2F;terraform_0.15.5_linux_amd64.zip&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;解压，并移动文件terraform到/usr/bin目录&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;unzip terraform_0.15.5_linux_amd64.zip&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mv terraform &amp;#x2F;usr&amp;#x2F;bin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;使用以下命令查看版本&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;terraform version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;显示如下则安装成功&lt;/strong&gt;&lt;br&gt;
+&lt;/p&gt;&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623394981402.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623394981402.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623394981402.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h4 id=&quot;header-id-3&quot;&gt;二、安装oci-cli工具&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;使用以下命令安装oci-cli工具&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;bash -c &amp;quot;$(curl –L https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;oracle&amp;#x2F;oci-cli&amp;#x2F;master&amp;#x2F;scripts&amp;#x2F;install&amp;#x2F;install.sh)&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;一直回车即可&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;当出现:&lt;/strong&gt;&lt;br&gt;
+&lt;/p&gt;&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395540213.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395540213.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395540213.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;br&gt;
+&lt;strong&gt;这个时候，是在提示你输入y回车，会自动添加环境变量&lt;br&gt;
+之后又是一直回车。出现如下提示表示安装成功。可以用：&lt;code&gt;oci -v&lt;/code&gt;  查询版本&lt;/strong&gt;&lt;br&gt;
+&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395572528.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395572528.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395572528.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h4 id=&quot;header-id-4&quot;&gt;三、复制用户和租户的ocid&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;甲骨文后台右上角—用户设置—点击用户以及租户，在信息栏中有我们需要的ID，分别点击复制，可以保存在记事本备份好&lt;/strong&gt;&lt;br&gt;
+&lt;/p&gt;&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395984815.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395984815.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395984815.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;br&gt;
+&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396103425.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396103425.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396103425.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h4 id=&quot;header-id-5&quot;&gt;四、配置cli&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;输入如下代码开始配置，配置的路径默认在root目录&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;oci setup config&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;具体配置看下面&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Enter a location for your config [&amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;config]: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a user OCID: #输入你的用户OCID&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a tenancy OCID: #输入你的租户OCID&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a region by index or name(e.g.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1: ap-chiyoda-1, 2: ap-chuncheon-1, 3: ap-hyderabad-1, 4: ap-melbourne-1, 5: ap-mumbai-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6: ap-osaka-1, 7: ap-seoul-1, 8: ap-sydney-1, 9: ap-tokyo-1, 10: ca-montreal-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11: ca-toronto-1, 12: eu-amsterdam-1, 13: eu-frankfurt-1, 14: eu-zurich-1, 15: me-dubai-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16: me-jeddah-1, 17: sa-santiago-1, 18: sa-saopaulo-1, 19: uk-cardiff-1, 20: uk-gov-cardiff-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21: uk-gov-london-1, 22: uk-london-1, 23: us-ashburn-1, 24: us-gov-ashburn-1, 25: us-gov-chicago-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26: us-gov-phoenix-1, 27: us-langley-1, 28: us-luke-1, 29: us-phoenix-1, 30: us-sanjose-1): 9  #这里选择你的区域&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Do you want to generate a new API Signing RSA key pair? (If you decline you will be asked to supply the path to an existing key.) [Y&amp;#x2F;n]: y  #输入y生成公钥&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a directory for your keys to be created [&amp;#x2F;root&amp;#x2F;.oci]: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a name for your key [oci_api_key]: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Public key written to: &amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;oci_api_key_public.pem&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a passphrase for your private key (empty for no passphrase): &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Private key written to: &amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;oci_api_key.pem&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Fingerprint: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Config written to &amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;config&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    If you haven&amp;#39;t already uploaded your API Signing public key through the&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    console, follow the instructions on the page linked below in the section&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#39;How to upload the public key&amp;#39;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   https:&amp;#x2F;&amp;#x2F;docs.cloud.oracle.com&amp;#x2F;Content&amp;#x2F;API&amp;#x2F;Concepts&amp;#x2F;apisigningkey.htm#How2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;复制生成的公钥，使用以下命令获取公钥&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cat &amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;oci_api_key_public.pem&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;把显示出来的内容复制,并且添加到&lt;br&gt;
+甲骨文后台—用户设置—资源—API秘钥—添加API秘钥&lt;br&gt;
+
+&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396703012.png&quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;oci iam availability-domain list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;提示以下内容则是配置正确&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396861886.png&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;header-id-6&quot;&gt;五、Terraform环境初始化&lt;/h4&gt;
+&lt;h5 id=&quot;header-id-7&quot;&gt;1、我们先获取甲骨文的Terraform脚本&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;点击 创建VM实例&lt;/strong&gt;&lt;br&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397006677.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397155148.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397237969.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一直下一步&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397917222.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397993340.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623398056711.png&quot;&gt;&lt;/p&gt;
+&lt;h5 id=&quot;header-id-8&quot;&gt;2、配置Terraform&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;使用以下命令创建Terraform运行目录&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd &amp;#x2F;opt&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mkdir terraform-learning &amp;amp;&amp;amp; cd terraform-learning&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;strong&gt;将刚刚解压到桌面的main.tf文件 上传到这个目录&lt;/strong&gt;&lt;br&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623398566301.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;将目录设置为Terraform运行目录&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;terraform init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;以上完成后，开始创建任务，用命令：（注意还是在/opt/terraform-learning）&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;terraform apply&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;执行完上面命令之后，会提示输入yes&lt;/strong&gt;&lt;br&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623398738195.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;上图还能看到API返回Error Message: Out of host capacity,提示主机容量不足，下面就用脚本来不停刷就行了&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h4 id=&quot;header-id-9&quot;&gt;六、部署脚本&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;终于可以部署脚本来抢服务器了，请先获取telegram账号id，并且关注通知机器人@oracle_message_bot&lt;br&gt;
+TG id请通过@userinfobot机器人获取&lt;br&gt;
+在root目录下新建一个terraform.sh&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd &amp;#x2F;root&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vi terraform.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;写入以下内容&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#!&amp;#x2F;bin&amp;#x2F;bash&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;path&amp;#x3D;&amp;#39;&amp;#x2F;opt&amp;#x2F;terraform-learning&amp;#x2F;&amp;#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;FIND_FILE&amp;#x3D;&amp;quot;&amp;#x2F;root&amp;#x2F;terraform.log&amp;quot; #日志文件位置&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;FIND_STR&amp;#x3D;&amp;quot;Apply complete!&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cd $path &amp;amp;&amp;amp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;while true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;do&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    echo &amp;#39;yes&amp;#39; | terraform apply -lock&amp;#x3D;false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    sleep 1s&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;done&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;if [ grep -c &amp;quot;$FIND_STR&amp;quot; $FIND_FILE -ne &amp;#39;20&amp;#39; ];then&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    curl --location --request POST &amp;#39;https:&amp;#x2F;&amp;#x2F;api.telegram.org&amp;#x2F;bot2124631392:AAHtVpEm7KRWo6ulYNG_Zbz98irpmTSIf8o&amp;#x2F;sendMessage&amp;#39; \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--form &amp;#39;text&amp;#x3D;服务器创建成功！&amp;#39; \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--form &amp;#39;chat_id&amp;#x3D;你的tg id&amp;#39; \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--form &amp;#39;parse_mode&amp;#x3D;markdown&amp;#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pkill terraform&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    exit 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fi&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;给Shell脚本赋予执行权限：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;chmod +x terraform.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;使用以下命令后台执行脚本&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;nohup .&amp;#x2F;terraform.sh &amp;gt;&amp;gt; terraform.log 2&amp;gt;&amp;amp;1  &amp;amp;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h5 id=&quot;header-id-10&quot;&gt;如何结束脚本？&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;使用以下命令结束脚本&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pkill terraform&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;转载自HM的博客 &lt;a href=&quot;https://him.plus/archives/274&quot;&gt;https://him.plus/archives/274&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+  </entry>
   
   <entry>
     <title>2021 黑色星期五优惠 VPS （持续更新）</title>
@@ -890,89 +1022,6 @@
     <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
     <category term="梯子" scheme="https://ednovas.xyz/tags/%E6%A2%AF%E5%AD%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>绕过hCaptcha验证方法</title>
-    <link href="https://ednovas.xyz/2021/10/13/skiphcaptcha/"/>
-    <id>https://ednovas.xyz/2021/10/13/skiphcaptcha/</id>
-    <published>2021-10-13T18:09:00.000Z</published>
-    <updated>2021-10-13T18:13:34.005Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自&lt;a href=&quot;https://bbs.pha.pub/threads/36/&quot;&gt;https://bbs.pha.pub/threads/36/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;bbWrapper&quot;&gt;&lt;span style=&quot;font-size: 15px&quot;&gt;当你访问 CurseForge 等网站的时候，是不是经常出现这样的情况：&lt;br&gt;
-
-&lt;div class=&quot;bbImageWrapper  js-lbImage&quot; title=&quot;l1O2UpXc73VCDAr.png&quot; data-src=&quot;https://i.loli.net/2021/07/31/l1O2UpXc73VCDAr.png&quot; data-lb-sidebar-href data-lb-caption-extra-html data-single-image=&quot;1&quot; data-fancybox=&quot;lb-post-111&quot; data-caption=&quot;&lt;h4&gt;l1O2UpXc73VCDAr.png&lt;/h4&gt;&lt;p&gt;&lt;a href=&amp;quot;https:&amp;amp;#x2F;&amp;amp;#x2F;bbs.pha.pub&amp;amp;#x2F;threads&amp;amp;#x2F;36&amp;amp;#x2F;#post-111&amp;quot; class=&amp;quot;js-lightboxCloser&amp;quot;&gt;10935336 · 2021-02-24， 02:20&lt;/a&gt;&lt;/p&gt;&quot; style=&quot;cursor: pointer;&quot;&gt;
-&lt;img src=&quot;https://i.loli.net/2021/07/31/l1O2UpXc73VCDAr.png&quot; data-url=&quot;https://i.loli.net/2021/07/31/l1O2UpXc73VCDAr.png&quot; class=&quot;bbImage&quot; data-zoom-target=&quot;1&quot; style=&quot;width: 454px&quot; alt=&quot;l1O2UpXc73VCDAr.png&quot; title width height loading=&quot;lazy&quot;&gt;
-&lt;/div&gt;
-&lt;br&gt;
-&lt;br&gt;
-这是因为 CurseForge 使用了 Cloudflare 的网站加速服务，又开启了 Cloudflare 的攻击防御，而 Cloudflare 又用了 hCaptcha 来识别你是否是机器人，当 Cloudflare 怀疑你是攻击者时就会要求你输入验证码，所以你偶尔会看到 hCaptcha 人机验证。&lt;br&gt;
-&lt;br&gt;
-曾经 Cloudflare 使用的是 Google 的 reCAPTCHA Enterprise，reCAPTCHA 的用户体验还算不错，但很不幸地它开始收费了。&lt;br&gt;
-所以 Cloudflare 决定换到一个倒给钱的人机验证服务：hCaptcha&lt;br&gt;
-然而不幸的是，hCaptcha 对用户来说非常不友好，而且挂了代理速度还是很慢，真的很烦。&lt;/span&gt;&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;&lt;span style=&quot;font-size: 26px&quot;&gt;今天我就来教用正规方法你绕过 hCaptcha&lt;/span&gt;&lt;/b&gt;&lt;br&gt;
-&lt;span style=&quot;font-size: 15px&quot;&gt;使用 hCaptcha 的辅助功能，官方介绍页：&lt;a href=&quot;https://www.hcaptcha.com/accessibility&quot; target=&quot;_blank&quot; class=&quot;link link--external&quot; data-proxy-href=&quot;/proxy.php?link=https%3A%2F%2Fwww.hcaptcha.com%2Faccessibility&amp;amp;hash=b080b50ebfbd7536e1037421243f9a5b&quot; rel=&quot;noopener&quot;&gt;Accessibility&lt;/a&gt;&lt;/span&gt;&lt;br&gt;
-&lt;br&gt;
-&lt;span style=&quot;font-size: 22px&quot;&gt;&lt;b&gt;1.&lt;/b&gt;&lt;/span&gt;&lt;b&gt;&lt;span style=&quot;font-size: 22px&quot;&gt;注册一个 hCaptcha 无障碍服务账号&lt;/span&gt;&lt;/b&gt;&lt;br&gt;
-&lt;span style=&quot;font-size: 15px&quot;&gt;点击这个链接进行注册（和普通账号是分开的）&lt;br&gt;
-&lt;a href=&quot;https://dashboard.hcaptcha.com/signup?type=accessibility&quot; target=&quot;_blank&quot; class=&quot;link link--external&quot; data-proxy-href=&quot;/proxy.php?link=https%3A%2F%2Fdashboard.hcaptcha.com%2Fsignup%3Ftype%3Daccessibility&amp;amp;hash=7bfa9eee33db7919fa43e78b0252ecba&quot; rel=&quot;noopener&quot;&gt;https://dashboard.hcaptcha.com/signup?type=accessibility&lt;/a&gt;&lt;/span&gt;&lt;br&gt;
-&lt;div class=&quot;bbImageWrapper  js-lbImage&quot; title=&quot;sjleGOodcXZ6EQ2.png&quot; data-src=&quot;https://i.loli.net/2021/07/31/sjleGOodcXZ6EQ2.png&quot; data-lb-sidebar-href data-lb-caption-extra-html data-single-image=&quot;1&quot; data-fancybox=&quot;lb-post-111&quot; data-caption=&quot;&lt;h4&gt;sjleGOodcXZ6EQ2.png&lt;/h4&gt;&lt;p&gt;&lt;a href=&amp;quot;https:&amp;amp;#x2F;&amp;amp;#x2F;bbs.pha.pub&amp;amp;#x2F;threads&amp;amp;#x2F;36&amp;amp;#x2F;#post-111&amp;quot; class=&amp;quot;js-lightboxCloser&amp;quot;&gt;10935336 · 2021-02-24， 02:20&lt;/a&gt;&lt;/p&gt;&quot; style=&quot;cursor: pointer;&quot;&gt;
-&lt;img src=&quot;https://i.loli.net/2021/07/31/sjleGOodcXZ6EQ2.png&quot; data-url=&quot;https://i.loli.net/2021/07/31/sjleGOodcXZ6EQ2.png&quot; class=&quot;bbImage&quot; data-zoom-target=&quot;1&quot; style=&quot;width: 253px&quot; alt=&quot;sjleGOodcXZ6EQ2.png&quot; title width height loading=&quot;lazy&quot;&gt;
-&lt;/div&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;&lt;span style=&quot;font-size: 22px&quot;&gt;2.收邮件&lt;/span&gt;&lt;/b&gt;&lt;br&gt;
-&lt;span style=&quot;font-size: 15px&quot;&gt;你会收到一封这样的邮件&lt;/span&gt;&lt;br&gt;
-&lt;div class=&quot;bbImageWrapper  js-lbImage&quot; title=&quot;21qXTKC6YuksDvW.png&quot; data-src=&quot;https://i.loli.net/2021/07/31/21qXTKC6YuksDvW.png&quot; data-lb-sidebar-href data-lb-caption-extra-html data-single-image=&quot;1&quot; data-fancybox=&quot;lb-post-111&quot; data-caption=&quot;&lt;h4&gt;21qXTKC6YuksDvW.png&lt;/h4&gt;&lt;p&gt;&lt;a href=&amp;quot;https:&amp;amp;#x2F;&amp;amp;#x2F;bbs.pha.pub&amp;amp;#x2F;threads&amp;amp;#x2F;36&amp;amp;#x2F;#post-111&amp;quot; class=&amp;quot;js-lightboxCloser&amp;quot;&gt;10935336 · 2021-02-24， 02:20&lt;/a&gt;&lt;/p&gt;&quot; style=&quot;cursor: pointer;&quot;&gt;
-&lt;img src=&quot;https://i.loli.net/2021/07/31/21qXTKC6YuksDvW.png&quot; data-url=&quot;https://i.loli.net/2021/07/31/21qXTKC6YuksDvW.png&quot; class=&quot;bbImage&quot; data-zoom-target=&quot;1&quot; style=&quot;width: 383px&quot; alt=&quot;21qXTKC6YuksDvW.png&quot; title width height loading=&quot;lazy&quot;&gt;
-&lt;/div&gt;
-&lt;br&gt;
-&lt;span style=&quot;font-size: 15px&quot;&gt;右键点击&lt;code class=&quot;bbCodeInline&quot;&gt;获取辅助功能 Cookie&lt;/code&gt;复制链接地址&lt;br&gt;
-你会得到&lt;code class=&quot;bbCodeInline&quot;&gt;https://accounts.hcaptcha.com/verify_email/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&lt;/code&gt;&lt;br&gt;
-这样的一条链接，把这条链接&lt;b&gt;保存&lt;/b&gt;为浏览器书签之类的，以后还会用到。&lt;/span&gt;&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;&lt;span style=&quot;font-size: 22px&quot;&gt;3.获得&lt;s&gt;饼干&lt;/s&gt; Cookie&lt;/span&gt;&lt;/b&gt;&lt;br&gt;
-&lt;span style=&quot;font-size: 15px&quot;&gt;访问你刚刚复制的链接，你会来到这个页面。&lt;/span&gt;&lt;br&gt;
-&lt;div class=&quot;bbImageWrapper  js-lbImage&quot; title=&quot;3F4AQnEHR7gVwY2.png&quot; data-src=&quot;https://i.loli.net/2021/07/31/3F4AQnEHR7gVwY2.png&quot; data-lb-sidebar-href data-lb-caption-extra-html data-single-image=&quot;1&quot; data-fancybox=&quot;lb-post-111&quot; data-caption=&quot;&lt;h4&gt;3F4AQnEHR7gVwY2.png&lt;/h4&gt;&lt;p&gt;&lt;a href=&amp;quot;https:&amp;amp;#x2F;&amp;amp;#x2F;bbs.pha.pub&amp;amp;#x2F;threads&amp;amp;#x2F;36&amp;amp;#x2F;#post-111&amp;quot; class=&amp;quot;js-lightboxCloser&amp;quot;&gt;10935336 · 2021-02-24， 02:20&lt;/a&gt;&lt;/p&gt;&quot; style=&quot;cursor: pointer;&quot;&gt;
-&lt;img src=&quot;https://i.loli.net/2021/07/31/3F4AQnEHR7gVwY2.png&quot; data-url=&quot;https://i.loli.net/2021/07/31/3F4AQnEHR7gVwY2.png&quot; class=&quot;bbImage&quot; data-zoom-target=&quot;1&quot; style=&quot;width: 351px&quot; alt=&quot;3F4AQnEHR7gVwY2.png&quot; title width height loading=&quot;lazy&quot;&gt;
-&lt;/div&gt;
-&lt;br&gt;
-&lt;span style=&quot;font-size: 15px&quot;&gt;点击 &lt;code class=&quot;bbCodeInline&quot;&gt;设置 Cookie&lt;/code&gt;&lt;br&gt;
-&lt;br&gt;
-显示 &lt;code class=&quot;bbCodeInline&quot;&gt;Cookie集&lt;/code&gt;。 即为成功。（迷之翻译）&lt;/span&gt;&lt;br&gt;
-&lt;div class=&quot;bbImageWrapper  js-lbImage&quot; title=&quot;xWpzK7f3buhSJYs.png&quot; data-src=&quot;https://i.loli.net/2021/07/31/xWpzK7f3buhSJYs.png&quot; data-lb-sidebar-href data-lb-caption-extra-html data-single-image=&quot;1&quot; data-fancybox=&quot;lb-post-111&quot; data-caption=&quot;&lt;h4&gt;xWpzK7f3buhSJYs.png&lt;/h4&gt;&lt;p&gt;&lt;a href=&amp;quot;https:&amp;amp;#x2F;&amp;amp;#x2F;bbs.pha.pub&amp;amp;#x2F;threads&amp;amp;#x2F;36&amp;amp;#x2F;#post-111&amp;quot; class=&amp;quot;js-lightboxCloser&amp;quot;&gt;10935336 · 2021-02-24， 02:20&lt;/a&gt;&lt;/p&gt;&quot; style=&quot;cursor: pointer;&quot;&gt;
-&lt;img src=&quot;https://i.loli.net/2021/07/31/xWpzK7f3buhSJYs.png&quot; data-url=&quot;https://i.loli.net/2021/07/31/xWpzK7f3buhSJYs.png&quot; class=&quot;bbImage&quot; data-zoom-target=&quot;1&quot; style=&quot;width: 161px&quot; alt=&quot;xWpzK7f3buhSJYs.png&quot; title width height loading=&quot;lazy&quot;&gt;
-&lt;/div&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;span style=&quot;font-size: 15px&quot;&gt;现在你可以再次访问有 hCaptcha 的页面，只需要点击我是人类，就能不选图片轻松跳过。是不是很简单。&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;
-#1 目前 hCaptcha 的 Cookie 有效时间只有 24 小时，24 小时后你需要访问你刚刚保存的那个链接，再次获取 Cookie。&lt;br&gt;
-&lt;br&gt;
-#2 部分情况下可能会出现勾选我是人类通过验证码后又跳出来验证码的情况，反复勾选可以通过，有时候需要 3-5 次。&lt;br&gt;
-&lt;br&gt;
-#3 部分情况下使用此方法可能导致无法通过 hCaptcha（似乎是由于广告屏蔽器？），这时你需要清理 Cookie ，将 accounts.hcaptcha.com、 dashboard.hcaptcha.com 、 hcaptcha.com 的 Cookie 全部清除。具体方法请自行搜索某某浏览器清理 Cookie。&lt;/span&gt;&lt;/div&gt;
-
-
-</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
-    
-    <category term="hCaptcha" scheme="https://ednovas.xyz/tags/hCaptcha/"/>
     
   </entry>
   

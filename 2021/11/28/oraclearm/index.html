@@ -1,0 +1,592 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>使用脚本自动抢Oracle ARM服务器，并使用tg机器人通知 | EdNovas的小站</title><meta name="keywords" content="VPS"><meta name="author" content="EdNovas"><meta name="copyright" content="EdNovas"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="转载自HM的博客 https:&#x2F;&#x2F;him.plus&#x2F;archives&#x2F;274           需要用到的  一台vps服务器 Terraform oci-cli 一、安装Terraform   wget https:&#x2F;&#x2F;releases.hashicorp.com&#x2F;terraform&#x2F;0.15.5&#x2F;terraform_0.15.5_linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用脚本自动抢Oracle ARM服务器，并使用tg机器人通知">
+<meta property="og:url" content="https://ednovas.xyz/2021/11/28/oraclearm/index.html">
+<meta property="og:site_name" content="EdNovas的小站">
+<meta property="og:description" content="转载自HM的博客 https:&#x2F;&#x2F;him.plus&#x2F;archives&#x2F;274           需要用到的  一台vps服务器 Terraform oci-cli 一、安装Terraform   wget https:&#x2F;&#x2F;releases.hashicorp.com&#x2F;terraform&#x2F;0.15.5&#x2F;terraform_0.15.5_linux">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/blog_post_20.webp">
+<meta property="article:published_time" content="2021-11-28T21:09:00.000Z">
+<meta property="article:modified_time" content="2021-11-28T05:42:14.139Z">
+<meta property="article:author" content="EdNovas">
+<meta property="article:tag" content="VPS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/blog_post_20.webp"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/830.circled-e-filled1.png"><link rel="canonical" href="https://ednovas.xyz/2021/11/28/oraclearm/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//static.cloudflareinsights.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="O9Uxirs5RzGyHijDvBe5okX6j2BxdRrzjxKkGI34B18"/><meta name="msvalidate.01" content="5651177152477FB9B4EBC45053EECDA3"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="#000000"/><link rel="apple-touch-icon" sizes="180x180" href="/image/siteicon/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/image/siteicon/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/image/siteicon/16.png"/><link rel="mask-icon" href="/image/siteicon/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-185849872-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-185849872-1');
+</script><script defer="defer" data-pjax="data-pjax" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;d6704c4319ce48e883585dfd275af345&quot;}"></script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"59FQUQ1CBL","apiKey":"07dbe3620a56feffda190697671f0a93","indexName":"ednovas","hits":{"per_page":10},"languages":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}.","hits_stats":"${hits} results found in ${time} ms"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":30,"position":"top","messagePrev":"距离文章编辑已经过去了","messageNext":"天，实际情况可能有所变动。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-11-27 21:42:14'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><link rel="stylesheet" href="/css/scrollbar.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_2440505_a5eo7su26z8.css"><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="EdNovas的小站" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/icon.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">256</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">341</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签 | Tags</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-fufei"></i><span> 付费解锁 | Pay to Unlock</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://t.me/ednovas"><span> 如需解锁请联系EdNovas</span></a></li><li><a class="site-page" href="/vps/"><span> 自建VPS节点</span></a></li><li><a class="site-page" href="/urls/"><span> 付费订阅链接</span></a></li><li><a class="site-page" href="/ios/"><span> ios外区账号</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-pengyouquan"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">EdNovas的小站</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签 | Tags</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-fufei"></i><span> 付费解锁 | Pay to Unlock</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://t.me/ednovas"><span> 如需解锁请联系EdNovas</span></a></li><li><a class="site-page" href="/vps/"><span> 自建VPS节点</span></a></li><li><a class="site-page" href="/urls/"><span> 付费订阅链接</span></a></li><li><a class="site-page" href="/ios/"><span> ios外区账号</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-pengyouquan"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">使用脚本自动抢Oracle ARM服务器，并使用tg机器人通知</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-11-28T21:09:00.000Z" title="Created 2021-11-28 13:09:00">2021-11-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-11-28T05:42:14.139Z" title="Updated 2021-11-27 21:42:14">2021-11-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/VPS/">VPS</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">1.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>5min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>转载自HM的博客 <a target="_blank" rel="noopener" href="https://him.plus/archives/274">https://him.plus/archives/274</a></p>
+</blockquote>
+<div class="post-content" id="post_content">
+        <h3 id="header-id-1">需要用到的</h3>
+<ul>
+<li>一台vps服务器</li>
+<li>Terraform</li>
+<li>oci-cli<br>
+<h4 id="header-id-2">一、安装Terraform</h4>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;releases.hashicorp.com&#x2F;terraform&#x2F;0.15.5&#x2F;terraform_0.15.5_linux_amd64.zip</span><br></pre></td></tr></table></figure>
+<p><strong>解压，并移动文件terraform到/usr/bin目录</strong></p>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">unzip terraform_0.15.5_linux_amd64.zip</span><br><span class="line">mv terraform &#x2F;usr&#x2F;bin</span><br></pre></td></tr></table></figure>
+<p><strong>使用以下命令查看版本</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">terraform version</span><br></pre></td></tr></table></figure>
+<p><strong>显示如下则安装成功</strong><br>
+</p><div class="fancybox-wrapper" data-fancybox="post-images" href="https://him.plus/wp-content/uploads/2021/06/image-1623394981402.png"><img class="lazyload lazyload-style-2 lazyload-loaded" src="https://him.plus/wp-content/uploads/2021/06/image-1623394981402.png" data-original="https://him.plus/wp-content/uploads/2021/06/image-1623394981402.png" alt="file" title="%title插图%num" style=""></div><p></p>
+<h4 id="header-id-3">二、安装oci-cli工具</h4>
+<p><strong>使用以下命令安装oci-cli工具</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash -c &quot;$(curl –L https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;oracle&#x2F;oci-cli&#x2F;master&#x2F;scripts&#x2F;install&#x2F;install.sh)&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>一直回车即可</strong><br>
+<strong>当出现:</strong><br>
+</p><div class="fancybox-wrapper" data-fancybox="post-images" href="https://him.plus/wp-content/uploads/2021/06/image-1623395540213.png"><img class="lazyload lazyload-style-2 lazyload-loaded" src="https://him.plus/wp-content/uploads/2021/06/image-1623395540213.png" data-original="https://him.plus/wp-content/uploads/2021/06/image-1623395540213.png" alt="file" title="%title插图%num" style=""></div><br>
+<strong>这个时候，是在提示你输入y回车，会自动添加环境变量<br>
+之后又是一直回车。出现如下提示表示安装成功。可以用：<code>oci -v</code>  查询版本</strong><br>
+<div class="fancybox-wrapper" data-fancybox="post-images" href="https://him.plus/wp-content/uploads/2021/06/image-1623395572528.png"><img class="lazyload lazyload-style-2 lazyload-loaded" src="https://him.plus/wp-content/uploads/2021/06/image-1623395572528.png" data-original="https://him.plus/wp-content/uploads/2021/06/image-1623395572528.png" alt="file" title="%title插图%num" style=""></div><p></p>
+<h4 id="header-id-4">三、复制用户和租户的ocid</h4>
+<p><strong>甲骨文后台右上角—用户设置—点击用户以及租户，在信息栏中有我们需要的ID，分别点击复制，可以保存在记事本备份好</strong><br>
+</p><div class="fancybox-wrapper" data-fancybox="post-images" href="https://him.plus/wp-content/uploads/2021/06/image-1623395984815.png"><img class="lazyload lazyload-style-2 lazyload-loaded" src="https://him.plus/wp-content/uploads/2021/06/image-1623395984815.png" data-original="https://him.plus/wp-content/uploads/2021/06/image-1623395984815.png" alt="file" title="%title插图%num" style=""></div><br>
+<div class="fancybox-wrapper" data-fancybox="post-images" href="https://him.plus/wp-content/uploads/2021/06/image-1623396103425.png"><img class="lazyload lazyload-style-2 lazyload-loaded" src="https://him.plus/wp-content/uploads/2021/06/image-1623396103425.png" data-original="https://him.plus/wp-content/uploads/2021/06/image-1623396103425.png" alt="file" title="%title插图%num" style=""></div><p></p>
+<h4 id="header-id-5">四、配置cli</h4>
+<p><strong>输入如下代码开始配置，配置的路径默认在root目录</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">oci setup config</span><br></pre></td></tr></table></figure>
+<p><strong>具体配置看下面</strong></p>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Enter a location for your config [&#x2F;root&#x2F;.oci&#x2F;config]: </span><br><span class="line">Enter a user OCID: #输入你的用户OCID</span><br><span class="line">Enter a tenancy OCID: #输入你的租户OCID</span><br><span class="line">Enter a region by index or name(e.g.</span><br><span class="line">1: ap-chiyoda-1, 2: ap-chuncheon-1, 3: ap-hyderabad-1, 4: ap-melbourne-1, 5: ap-mumbai-1,</span><br><span class="line">6: ap-osaka-1, 7: ap-seoul-1, 8: ap-sydney-1, 9: ap-tokyo-1, 10: ca-montreal-1,</span><br><span class="line">11: ca-toronto-1, 12: eu-amsterdam-1, 13: eu-frankfurt-1, 14: eu-zurich-1, 15: me-dubai-1,</span><br><span class="line">16: me-jeddah-1, 17: sa-santiago-1, 18: sa-saopaulo-1, 19: uk-cardiff-1, 20: uk-gov-cardiff-1,</span><br><span class="line">21: uk-gov-london-1, 22: uk-london-1, 23: us-ashburn-1, 24: us-gov-ashburn-1, 25: us-gov-chicago-1,</span><br><span class="line">26: us-gov-phoenix-1, 27: us-langley-1, 28: us-luke-1, 29: us-phoenix-1, 30: us-sanjose-1): 9  #这里选择你的区域</span><br><span class="line">Do you want to generate a new API Signing RSA key pair? (If you decline you will be asked to supply the path to an existing key.) [Y&#x2F;n]: y  #输入y生成公钥</span><br><span class="line">Enter a directory for your keys to be created [&#x2F;root&#x2F;.oci]: </span><br><span class="line">Enter a name for your key [oci_api_key]: </span><br><span class="line">Public key written to: &#x2F;root&#x2F;.oci&#x2F;oci_api_key_public.pem</span><br><span class="line">Enter a passphrase for your private key (empty for no passphrase): </span><br><span class="line">Private key written to: &#x2F;root&#x2F;.oci&#x2F;oci_api_key.pem</span><br><span class="line">Fingerprint: </span><br><span class="line">Config written to &#x2F;root&#x2F;.oci&#x2F;config</span><br><span class="line"> </span><br><span class="line">    If you haven&#39;t already uploaded your API Signing public key through the</span><br><span class="line">    console, follow the instructions on the page linked below in the section</span><br><span class="line">    &#39;How to upload the public key&#39;:</span><br><span class="line"> </span><br><span class="line">   https:&#x2F;&#x2F;docs.cloud.oracle.com&#x2F;Content&#x2F;API&#x2F;Concepts&#x2F;apisigningkey.htm#How2</span><br></pre></td></tr></table></figure>
+
+<p><strong>复制生成的公钥，使用以下命令获取公钥</strong></p>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat &#x2F;root&#x2F;.oci&#x2F;oci_api_key_public.pem</span><br></pre></td></tr></table></figure>
+
+<p>把显示出来的内容复制,并且添加到<br>
+甲骨文后台—用户设置—资源—API秘钥—添加API秘钥<br>
+
+<p><img src="https://him.plus/wp-content/uploads/2021/06/image-1623396703012.png"></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">oci iam availability-domain list</span><br></pre></td></tr></table></figure>
+
+<p><strong>提示以下内容则是配置正确</strong><br></p>
+
+
+<p><img src="https://him.plus/wp-content/uploads/2021/06/image-1623396861886.png"></p>
+<h4 id="header-id-6">五、Terraform环境初始化</h4>
+<h5 id="header-id-7">1、我们先获取甲骨文的Terraform脚本</h5>
+<p><strong>点击 创建VM实例</strong><br>
+</p>
+
+<p><img src="https://him.plus/wp-content/uploads/2021/06/image-1623397006677.png"></p>
+<p><img src="https://him.plus/wp-content/uploads/2021/06/image-1623397155148.png"></p>
+<p><img src="https://him.plus/wp-content/uploads/2021/06/image-1623397237969.png"></p>
+<p><strong>一直下一步</strong><br></p>
+<p><img src="https://him.plus/wp-content/uploads/2021/06/image-1623397917222.png"></p>
+<p><img src="https://him.plus/wp-content/uploads/2021/06/image-1623397993340.png"></p>
+<p><img src="https://him.plus/wp-content/uploads/2021/06/image-1623398056711.png"></p>
+<h5 id="header-id-8">2、配置Terraform</h5>
+<p><strong>使用以下命令创建Terraform运行目录</strong></p>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &#x2F;opt&#x2F;</span><br><span class="line">mkdir terraform-learning &amp;&amp; cd terraform-learning</span><br></pre></td></tr></table></figure>
+
+
+<p><strong>将刚刚解压到桌面的main.tf文件 上传到这个目录</strong><br>
+</p>
+
+
+<p><img src="https://him.plus/wp-content/uploads/2021/06/image-1623398566301.png"></p>
+<p><strong>将目录设置为Terraform运行目录</strong><p></p></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">terraform init</span><br></pre></td></tr></table></figure>
+<p><strong>以上完成后，开始创建任务，用命令：（注意还是在/opt/terraform-learning）</strong></p>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">terraform apply</span><br></pre></td></tr></table></figure>
+<p><strong>执行完上面命令之后，会提示输入yes</strong><br>
+
+</p>
+
+<p><img src="https://him.plus/wp-content/uploads/2021/06/image-1623398738195.png"></p>
+<p><strong>上图还能看到API返回Error Message: Out of host capacity,提示主机容量不足，下面就用脚本来不停刷就行了</strong><p></p></p>
+<h4 id="header-id-9">六、部署脚本</h4>
+<p><strong>终于可以部署脚本来抢服务器了，请先获取telegram账号id，并且关注通知机器人@oracle_message_bot<br>
+TG id请通过@userinfobot机器人获取<br>
+在root目录下新建一个terraform.sh</strong></p>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &#x2F;root</span><br><span class="line">vi terraform.sh</span><br></pre></td></tr></table></figure>
+<p><strong>写入以下内容</strong></p>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;bash</span><br><span class="line"> </span><br><span class="line">path&#x3D;&#39;&#x2F;opt&#x2F;terraform-learning&#x2F;&#39;</span><br><span class="line">FIND_FILE&#x3D;&quot;&#x2F;root&#x2F;terraform.log&quot; #日志文件位置</span><br><span class="line">FIND_STR&#x3D;&quot;Apply complete!&quot;</span><br><span class="line">cd $path &amp;&amp;</span><br><span class="line">while true</span><br><span class="line">do</span><br><span class="line">    echo &#39;yes&#39; | terraform apply -lock&#x3D;false</span><br><span class="line">    sleep 1s</span><br><span class="line">done</span><br><span class="line">if [ grep -c &quot;$FIND_STR&quot; $FIND_FILE -ne &#39;20&#39; ];then</span><br><span class="line">    curl --location --request POST &#39;https:&#x2F;&#x2F;api.telegram.org&#x2F;bot2124631392:AAHtVpEm7KRWo6ulYNG_Zbz98irpmTSIf8o&#x2F;sendMessage&#39; \</span><br><span class="line">--form &#39;text&#x3D;服务器创建成功！&#39; \</span><br><span class="line">--form &#39;chat_id&#x3D;你的tg id&#39; \</span><br><span class="line">--form &#39;parse_mode&#x3D;markdown&#39;</span><br><span class="line">pkill terraform</span><br><span class="line">    exit 0</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<p><strong>给Shell脚本赋予执行权限：</strong></p>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chmod +x terraform.sh</span><br></pre></td></tr></table></figure>
+
+<p><strong>使用以下命令后台执行脚本</strong></p>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nohup .&#x2F;terraform.sh &gt;&gt; terraform.log 2&gt;&amp;1  &amp;</span><br></pre></td></tr></table></figure>
+<h5 id="header-id-10">如何结束脚本？</h5>
+<p><strong>使用以下命令结束脚本</strong></p>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkill terraform</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>转载自HM的博客 <a target="_blank" rel="noopener" href="https://him.plus/archives/274">https://him.plus/archives/274</a></p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">EdNovas</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://ednovas.xyz/2021/11/28/oraclearm/">https://ednovas.xyz/2021/11/28/oraclearm/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/VPS/">VPS</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/blog_post_20.webp" data-sites="qq,wechat,weibo,qzone"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="ads-wrap"><a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png"><center><h3>EdNovas云————高性价比，多国家节点，多地区奈飞迪士尼等流媒体解锁</h3></center></a> <a href="https://antlink.cc/#/register?code=Wa3WBPHC" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/04-24_12-14-24.png"><center><h3>AntLink蚁链————新用户注册免费使用50g/30天，便宜IPLC机场</h3></center></a> <a href="https://store.moccanetwork.com/aff.php?aff=85" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_10-16-00-1.png"><center><h3>Mocca Store————便宜稳定奈飞迪士尼等北美流媒体，办公设计学习软件会员</h3></center></a></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/11/22/blackfriday2021/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Black_Friday_1200x628.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">2021 黑色星期五优惠 VPS （持续更新）</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2021/11/22/blackfriday2021/" title="2021 黑色星期五优惠 VPS （持续更新）"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Black_Friday_1200x628.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-22</div><div class="title">2021 黑色星期五优惠 VPS （持续更新）</div></div></a></div><div><a href="/2021/11/08/evolutionhost/" title="Evolution Host 测评"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-41-14.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-08</div><div class="title">Evolution Host 测评</div></div></a></div><div><a href="/2021/11/05/cheapvps/" title="便宜VPS"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/cheap-VPS-hosting-best-cheapest-VPS-hosting-with-buyer-guide.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-05</div><div class="title">便宜VPS</div></div></a></div><div><a href="/2021/10/13/xui/" title="X-ui面板"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-13_16-08-00.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-13</div><div class="title">X-ui面板</div></div></a></div><div><a href="/2021/10/04/haxvps/" title="白嫖 Hax 1H512M 纯IPV6 VPS"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vps2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-04</div><div class="title">白嫖 Hax 1H512M 纯IPV6 VPS</div></div></a></div><div><a href="/2021/10/01/cron/" title="Cron 定时任务表达式"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/5ca4b074e9c52631fc36f901_Schedule-Time.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-01</div><div class="title">Cron 定时任务表达式</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#header-id-1"><span class="toc-number">1.</span> <span class="toc-text">需要用到的</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#header-id-2"><span class="toc-number">1.1.</span> <span class="toc-text">一、安装Terraform</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#header-id-3"><span class="toc-number">1.2.</span> <span class="toc-text">二、安装oci-cli工具</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#header-id-4"><span class="toc-number">1.3.</span> <span class="toc-text">三、复制用户和租户的ocid</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#header-id-5"><span class="toc-number">1.4.</span> <span class="toc-text">四、配置cli</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#header-id-6"><span class="toc-number">1.5.</span> <span class="toc-text">五、Terraform环境初始化</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#header-id-7"><span class="toc-number">1.5.1.</span> <span class="toc-text">1、我们先获取甲骨文的Terraform脚本</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#header-id-8"><span class="toc-number">1.5.2.</span> <span class="toc-text">2、配置Terraform</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#header-id-9"><span class="toc-number">1.6.</span> <span class="toc-text">六、部署脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#header-id-10"><span class="toc-number">1.6.1.</span> <span class="toc-text">如何结束脚本？</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By EdNovas</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">已经到底啦！再往下划要坏掉啦！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/algolia.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    let initData = {
+      el: '#vcomment',
+      appId: 'EnV5YLoyOBqrOXB9EDkMBSy4-gzGzoHsz',
+      appKey: 'MCTWNHJYAMcvfKeta68Xi7Iu',
+      placeholder: '留下你想说的话吧',
+      avatar: 'monsterid',
+      meta: 'nick,mail'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+    
+    if (false) {
+      const otherData = false
+      initData = Object.assign(initData, otherData)
+    }
+    
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>var gitcalendar = new Vue({
+  el: '#gitcalendar',
+  data: {
+    simplemode: false,
+    user: 'wdm1732418365',
+    fixed: 'fixed',
+    px: 'px',
+    x: '',
+    y: '',
+    span1: '',
+    span2: '',
+    month: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+    monthchange: [],
+    oneyearbeforeday: '',
+    thisday: '',
+    amonthago: '',
+    aweekago: '',
+    weekdatacore: 0,
+    datacore: 0,
+    total: 0,
+    datadate: '',
+    data: [],
+    positionplusdata: [],
+    firstweek: [],
+    lastweek: [],
+    beforeweek: [],
+    thisweekdatacore: 0,
+    mounthbeforeday: 0,
+    mounthfirstindex: 0,
+    crispedges: 'crispedges',
+    thisdayindex: 0,
+    amonthagoindex: 0,
+    amonthagoweek: [],
+    firstdate: [],
+    first2date: [],
+    montharrbefore: [],
+    monthindex: 0,
+    color: ['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']
+  },
+  methods: {
+    selectStyle(data, event) {
+      document.querySelector('.angle-wrapper').style.display = 'block'
+      this.span1 = data.date;
+      this.span2 = data.count;
+      this.x = event.clientX - 100;
+      this.y = event.clientY - 60
+    },
+    outStyle() {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    },
+    thiscolor(x) {
+      if (x === 0) {
+        let i = parseInt(x / 2);
+        return this.color[0]
+      } else if (x < 2) {
+        return this.color[1]
+      } else if (x < 20) {
+        let i = parseInt(x / 2);
+        return this.color[i]
+      } else {
+        return this.color[9]
+      }
+    },
+  }
+});
+var apiurl = 'github-calendar-api.vercel.app' ? 'https://github-calendar-api.vercel.app/api?' : 'https://githubapi.ryanchristian.dev/user/'
+var githubapiurl = apiurl + gitcalendar.user;
+//canvas绘图
+function responsiveChart() {
+  let c = document.getElementById("gitcanvas");
+  if (c) {
+    let cmessage = document.getElementById("gitmessage");
+    let ctx = c.getContext("2d");
+    c.width = document.getElementById("gitcalendarcanvasbox").offsetWidth;
+    let linemaxwitdh = 0.96 * c.width / gitcalendar.data.length;
+    c.height = 9 * linemaxwitdh;
+    let lineminwitdh = 0.8 * linemaxwitdh;
+    let setposition = {
+      x: 0.02 * c.width,
+      y: 0.025 * c.width
+    };
+    for (let week in gitcalendar.data) {
+      weekdata = gitcalendar.data[week];
+      for (let day in weekdata) {
+        let dataitem = {
+          date: "",
+          count: "",
+          x: 0,
+          y: 0
+        };
+        gitcalendar.positionplusdata.push(dataitem);
+        ctx.fillStyle = gitcalendar.thiscolor(weekdata[day].count);
+        setposition.y = Math.round(setposition.y * 100) / 100;
+        dataitem.date = weekdata[day].date;
+        dataitem.count = weekdata[day].count;
+        dataitem.x = setposition.x;
+        dataitem.y = setposition.y;
+        ctx.fillRect(setposition.x, setposition.y, lineminwitdh, lineminwitdh);
+        setposition.y = setposition.y + linemaxwitdh
+      };
+      setposition.y = 0.025 * c.width;
+      setposition.x = setposition.x + linemaxwitdh
+    };
+    ctx.font = "600  Arial";
+    ctx.fillStyle = '#aaa';
+    ctx.fillText("日", 0, 1.9 * linemaxwitdh);
+    ctx.fillText("二", 0, 3.9 * linemaxwitdh);
+    ctx.fillText("四", 0, 5.9 * linemaxwitdh);
+    ctx.fillText("六", 0, 7.9 * linemaxwitdh);
+    let monthindexlist = c.width / 24;
+    for (let index in gitcalendar.monthchange) {
+      ctx.fillText(gitcalendar.monthchange[index], monthindexlist, 0.7 * linemaxwitdh);
+      monthindexlist = monthindexlist + c.width / 12
+    };
+    cmessage.onmousemove = function(event) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    };
+    c.onmousemove = function(event) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+      getMousePos(c, event);
+    };
+
+    function getMousePos(canvas, event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left * (canvas.width / rect.width);
+      var y = event.clientY - rect.top * (canvas.height / rect.height);
+      //console.log("x:"+x+",y:"+y);
+      for (let item of gitcalendar.positionplusdata) {
+        let lenthx = x - item.x;
+        let lenthy = y - item.y;
+        //console.log(lenthx,lenthy);
+        if (0 < lenthx && lenthx < lineminwitdh) {
+          if (0 < lenthy && lenthy < lineminwitdh) {
+            //console.log(item.date,item.count)
+            document.querySelector('.angle-wrapper').style.display = 'block'
+            gitcalendar.span1 = item.date;
+            gitcalendar.span2 = item.count;
+            gitcalendar.x = event.clientX - 100;
+            gitcalendar.y = event.clientY - 60
+          }
+        }
+        //if(0< x - item.x <lineminwitdh&&0< y - item.y <lineminwitdh){
+        //console.log(item.count,item.date);
+        //}
+      }
+    }
+  }
+}
+//数据统计算法
+function addlastmonth() {
+  if (gitcalendar.thisdayindex === 0) {
+    thisweekcore(52);
+    thisweekcore(51);
+    thisweekcore(50);
+    thisweekcore(49);
+    thisweekcore(48);
+    gitcalendar.thisweekdatacore += gitcalendar.firstdate[6].count;
+    gitcalendar.amonthago = gitcalendar.firstdate[6].date
+  } else {
+    thisweekcore(52);
+    thisweekcore(51);
+    thisweekcore(50);
+    thisweekcore(49);
+    thisweek2core();
+    gitcalendar.amonthago = gitcalendar.first2date[gitcalendar.thisdayindex - 1].date
+  }
+};
+
+function thisweek2core() {
+  for (let i = gitcalendar.thisdayindex - 1; i < gitcalendar.first2date.length; i++) {
+    gitcalendar.thisweekdatacore += gitcalendar.first2date[i].count
+  }
+};
+
+function thisweekcore(index) {
+  for (let item of gitcalendar.data[index]) {
+    gitcalendar.thisweekdatacore += item.count
+  }
+};
+
+function addlastweek() {
+  for (let item of gitcalendar.lastweek) {
+    gitcalendar.weekdatacore += item.count
+  }
+};
+
+function addbeforeweek() {
+  for (let i = gitcalendar.thisdayindex; i < gitcalendar.beforeweek.length; i++) {
+    gitcalendar.weekdatacore += gitcalendar.beforeweek[i].count
+  }
+};
+
+function addweek(data) {
+  if (gitcalendar.thisdayindex === 6) {
+    gitcalendar.aweekago = gitcalendar.lastweek[0].date;
+    addlastweek()
+  } else {
+    lastweek = data.contributions[51];
+    gitcalendar.aweekago = lastweek[gitcalendar.thisdayindex + 1].date;
+    addlastweek();
+    addbeforeweek()
+  }
+}
+
+fetch(githubapiurl)
+  .then(data => data.json())
+  .then(data => {
+    gitcalendar.data = data.contributions;
+    gitcalendar.total = data.total;
+    gitcalendar.first2date = gitcalendar.data[48];
+    gitcalendar.firstdate = gitcalendar.data[47];
+    gitcalendar.firstweek = data.contributions[0];
+    gitcalendar.lastweek = data.contributions[52];
+    gitcalendar.beforeweek = data.contributions[51];
+    gitcalendar.thisdayindex = gitcalendar.lastweek.length - 1;
+    gitcalendar.thisday = gitcalendar.lastweek[gitcalendar.thisdayindex].date;
+    gitcalendar.oneyearbeforeday = gitcalendar.firstweek[0].date;
+    gitcalendar.monthindex = gitcalendar.thisday.substring(5, 7) * 1;
+    gitcalendar.montharrbefore = gitcalendar.month.splice(gitcalendar.monthindex, 12 - gitcalendar.monthindex);
+    gitcalendar.monthchange = gitcalendar.montharrbefore.concat(gitcalendar.month);
+    addweek(data);
+    addlastmonth();
+    responsiveChart();
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
+
+//手机版更换为svg绘制
+if (document.getElementById("gitcalendarcanvasbox").offsetWidth < 500) {
+  gitcalendar.simplemode = false
+}
+
+//当改变窗口大小时重新绘制canvas
+window.onresize = function() {
+  if (gitcalendar.simplemode) responsiveChart()
+}
+
+//解决滚动滑轮时出现的标签显示
+window.onscroll = function() {
+  if (document.querySelector('.angle-wrapper')) {
+    document.querySelector('.angle-wrapper').style.display = 'none'
+  }
+};</script></div><script defer src="/live2d-widget/autoload.js"></script><script src = "/js/chatroom.js"></script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script><script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('setup',{'key':'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="true" data-text="LOVE YOU ❤" data-fontsize="17px" data-random="false" async="async"></script><script src="//code.tidio.co/xi7xvcxspsj7k3k8gwzv5q2dyvsmhsyv.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script>(function (w, d, s, id) {
+            if (typeof (w.webpushr) !== 'undefined') return; w.webpushr = w.webpushr || function () { (w.webpushr.q = w.webpushr.q || []).push(arguments) }; var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.id = id; js.async = 1; js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window, document, 'script', 'webpushr-jssdk'));webpushr('setup', { 'key': 'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script></body></html>
