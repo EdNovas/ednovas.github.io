@@ -149,6 +149,34 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
   </entry>
   
   <entry>
+    <title>RACKNERD 优惠低至$8.49一年</title>
+    <link href="https://ednovas.xyz/2021/11/28/racknerd/"/>
+    <id>https://ednovas.xyz/2021/11/28/racknerd/</id>
+    <published>2021-11-28T21:09:00.000Z</published>
+    <updated>2021-11-29T06:29:18.214Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;推荐购买洛杉矶和圣何塞的机房，到国内速度更快。&lt;/p&gt;
+&lt;p&gt;个人认为比黑五要值。只是可惜8刀款只有500G的月流量，不过也足够个人用了。&lt;/p&gt;
+&lt;p&gt;RackNerd Cyber Monday 2021 会在北京时间2021年11月29日下午1点开始&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;512MB 套餐 &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;512 MB 内存&lt;/p&gt;
+&lt;p&gt;1 CPU 核心&lt;/p&gt;
+&lt;p&gt;9 GB 高速SSD存储&lt;/p&gt;
+&lt;p&gt;500 GB 月流量&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2021 黑色星期五优惠 VPS （持续更新）</title>
     <link href="https://ednovas.xyz/2021/11/22/blackfriday2021/"/>
     <id>https://ednovas.xyz/2021/11/22/blackfriday2021/</id>
@@ -973,55 +1001,6 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
     <category term="翻墙" scheme="https://ednovas.xyz/tags/%E7%BF%BB%E5%A2%99/"/>
     
     <category term="V2ray" scheme="https://ednovas.xyz/tags/V2ray/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>保姆级v2ray-agent使用说明</title>
-    <link href="https://ednovas.xyz/2021/10/13/v2rayagent/"/>
-    <id>https://ednovas.xyz/2021/10/13/v2rayagent/</id>
-    <published>2021-10-13T18:19:00.000Z</published>
-    <updated>2021-10-13T23:03:38.483Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;这应该是博主最钟爱的一键搭建节点脚本了吧&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;脚本相关&quot;&gt;&lt;a href=&quot;#脚本相关&quot; class=&quot;headerlink&quot; title=&quot;脚本相关&quot;&gt;&lt;/a&gt;脚本相关&lt;/h2&gt;&lt;p&gt;Github项目地址：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/mack-a/v2ray-agent&quot;&gt;https://github.com/mack-a/v2ray-agent&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;TG群：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://t.me/technologyshare&quot;&gt;https://t.me/technologyshare&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;TG频道：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://t.me/v2rayagentshare&quot;&gt;https://t.me/v2rayagentshare&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;特性&quot;&gt;&lt;a href=&quot;#特性&quot; class=&quot;headerlink&quot; title=&quot;特性&quot;&gt;&lt;/a&gt;特性&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;支持Xray-core[XTLS]、v2ray-core&lt;/li&gt;
-&lt;li&gt;支持切换前置[VLESS XTLS -&amp;gt; Trojan XTLS]、[Trojan XTLS -&amp;gt; VLESS XTLS]&lt;/li&gt;
-&lt;li&gt;支持不同核心之间的配置文件互相读取&lt;/li&gt;
-&lt;li&gt;支持 VLESS/VMess/trojan 协议&lt;/li&gt;
-&lt;li&gt;支持Debian、Ubuntu、Centos，支持主流的cpu架构。不建议使用Centos以及低版本的系统，2.3.x后不再支持Centos6&lt;/li&gt;
-&lt;li&gt;支持个性化安装&lt;/li&gt;
-&lt;li&gt;支持多用户管理&lt;/li&gt;
-&lt;li&gt;支持Netflix检测、支持DNS流媒体解锁、支持任意门解锁Netflix&lt;/li&gt;
-&lt;li&gt;无需卸载即可安装、重装任意组合&lt;/li&gt;
-&lt;li&gt;支持卸载时保留Nginx、tls证书。如果acme.sh申请的证书在有效的情况下，不会重新签发&lt;/li&gt;
-&lt;li&gt;支持纯IPv6，IPv6注意事项&lt;/li&gt;
-&lt;li&gt;支持IPv4[入]-&amp;gt;IPv6分流[出]&lt;/li&gt;
-&lt;li&gt;支持WARP分流&lt;/li&gt;
-&lt;li&gt;支持日志管理&lt;/li&gt;
-&lt;li&gt;支持多端口配置&lt;/li&gt;
-&lt;li&gt;支持自定义证书安装&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    
-    <category term="vpn" scheme="https://ednovas.xyz/tags/vpn/"/>
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    <category term="梯子" scheme="https://ednovas.xyz/tags/%E6%A2%AF%E5%AD%90/"/>
     
   </entry>
   
