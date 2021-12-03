@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-11-28T05:42:14.139Z</updated>
+  <updated>2021-12-03T03:20:31.995Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>电脑 ETH 挖矿教程</title>
+    <link href="https://ednovas.xyz/2021/12/02/mining/"/>
+    <id>https://ednovas.xyz/2021/12/02/mining/</id>
+    <published>2021-12-02T21:09:00.000Z</published>
+    <updated>2021-12-03T03:20:31.995Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;电脑建议显卡RTX3060及以上，A卡N卡都可以挖&lt;/p&gt;
+&lt;p&gt;显卡天梯图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-15eb42faf46aaa34d7268edf8495f430_r.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;挖矿软件用的开源矿工：&lt;a href=&quot;https://ntminer.com/&quot;&gt;https://ntminer.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下载地址：&lt;a href=&quot;https://link.zhihu.com/?target=http://minerjson.oss.ntminer.top/NTMiner.zip&quot;&gt;https://link.zhihu.com/?target=http%3A//minerjson.oss.ntminer.top/NTMiner.zip&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;火币挖矿教程：&lt;a href=&quot;https://www.hpt.com/pow/help/3/all?from=home&quot;&gt;https://www.hpt.com/pow/help/3/all?from=home&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;火币矿池网址: &lt;a href=&quot;https://www.hpt.com/pow&quot;&gt;https://www.hpt.com/pow&lt;/a&gt; 注册/登录账号&lt;/p&gt;
+&lt;h2 id=&quot;下载安装软件&quot;&gt;&lt;a href=&quot;#下载安装软件&quot; class=&quot;headerlink&quot; title=&quot;下载安装软件&quot;&gt;&lt;/a&gt;下载安装软件&lt;/h2&gt;&lt;p&gt;下载地址：&lt;a href=&quot;https://link.zhihu.com/?target=http://minerjson.oss.ntminer.top/NTMiner.zip&quot;&gt;https://link.zhihu.com/?target=http%3A//minerjson.oss.ntminer.top/NTMiner.zip&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="挖矿" scheme="https://ednovas.xyz/tags/%E6%8C%96%E7%9F%BF/"/>
+    
+  </entry>
   
   <entry>
     <title>使用脚本自动抢Oracle ARM服务器，并使用tg机器人通知</title>
@@ -963,43 +989,6 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
     
     
     <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>X-ui面板</title>
-    <link href="https://ednovas.xyz/2021/10/13/xui/"/>
-    <id>https://ednovas.xyz/2021/10/13/xui/</id>
-    <published>2021-10-13T23:44:00.000Z</published>
-    <updated>2021-10-13T23:12:37.577Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;很可惜v2ui删库了，虽然还有遗留版本，也还能用，但是还是要与时俱进的。&lt;/p&gt;
-&lt;p&gt;xui项目仓库：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/vaxilu/x-ui&quot;&gt;https://github.com/vaxilu/x-ui&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;一键安装-amp-升级&quot;&gt;&lt;a href=&quot;#一键安装-amp-升级&quot; class=&quot;headerlink&quot; title=&quot;一键安装&amp;amp;升级&quot;&gt;&lt;/a&gt;一键安装&amp;amp;升级&lt;/h2&gt;&lt;p&gt;此脚本会使用 v2ray 官方脚本自动安装最新版 v2ray，无需再自己安装 v2ray，若之前安装过非官方的 v2ray，建议先卸载，否则可能会造成冲突。&lt;/p&gt;
-&lt;h2 id=&quot;功能介绍&quot;&gt;&lt;a href=&quot;#功能介绍&quot; class=&quot;headerlink&quot; title=&quot;功能介绍&quot;&gt;&lt;/a&gt;功能介绍&lt;/h2&gt;&lt;p&gt;功能介绍&lt;br&gt;系统状态监控&lt;br&gt;支持多用户多协议，网页可视化操作&lt;br&gt;支持的协议：vmess、vless、trojan、shadowsocks、dokodemo-door、socks、http&lt;br&gt;支持配置更多传输配置&lt;br&gt;流量统计，限制流量，限制到期时间&lt;br&gt;可自定义 xray 配置模板&lt;br&gt;支持 https 访问面板（自备域名 + ssl 证书）&lt;br&gt;更多高级配置项，详见面板&lt;/p&gt;
-&lt;h2 id=&quot;更新系统&quot;&gt;&lt;a href=&quot;#更新系统&quot; class=&quot;headerlink&quot; title=&quot;更新系统&quot;&gt;&lt;/a&gt;更新系统&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;安装相关依赖&lt;/strong&gt;&lt;br&gt;centos系统下&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum update -y                                                                                                &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;apt-get update -y &amp;amp;&amp;amp; apt-get install curl -y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="面板" scheme="https://ednovas.xyz/tags/%E9%9D%A2%E6%9D%BF/"/>
-    
-    <category term="VPN" scheme="https://ednovas.xyz/tags/VPN/"/>
-    
-    <category term="梯子" scheme="https://ednovas.xyz/tags/%E6%A2%AF%E5%AD%90/"/>
-    
-    <category term="翻墙" scheme="https://ednovas.xyz/tags/%E7%BF%BB%E5%A2%99/"/>
-    
-    <category term="V2ray" scheme="https://ednovas.xyz/tags/V2ray/"/>
     
   </entry>
   

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>电脑 ETH 挖矿教程</title>
+      <link href="2021/12/02/mining/"/>
+      <url>2021/12/02/mining/</url>
+      
+        <content type="html"><![CDATA[<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>电脑建议显卡RTX3060及以上，A卡N卡都可以挖</p><p>显卡天梯图：</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-15eb42faf46aaa34d7268edf8495f430_r.jpg"></p><p>挖矿软件用的开源矿工：<a href="https://ntminer.com/">https://ntminer.com</a></p><p>下载地址：<a href="https://link.zhihu.com/?target=http://minerjson.oss.ntminer.top/NTMiner.zip">https://link.zhihu.com/?target=http%3A//minerjson.oss.ntminer.top/NTMiner.zip</a></p><p>火币挖矿教程：<a href="https://www.hpt.com/pow/help/3/all?from=home">https://www.hpt.com/pow/help/3/all?from=home</a></p><p>火币矿池网址: <a href="https://www.hpt.com/pow">https://www.hpt.com/pow</a> 注册/登录账号</p><h2 id="下载安装软件"><a href="#下载安装软件" class="headerlink" title="下载安装软件"></a>下载安装软件</h2><p>下载地址：<a href="https://link.zhihu.com/?target=http://minerjson.oss.ntminer.top/NTMiner.zip">https://link.zhihu.com/?target=http%3A//minerjson.oss.ntminer.top/NTMiner.zip</a></p><p>下载以后，解压。忽略一切报毒。（挖矿软件不报毒才奇怪呢）</p><p>双击打开软件运行exe程序，允许管理员权限。</p><h2 id="配置虚拟内存"><a href="#配置虚拟内存" class="headerlink" title="配置虚拟内存"></a>配置虚拟内存</h2><p>打开工具箱，管理虚拟内存，分配虚拟内存。一般分配6G即可（一般显卡显存就是6G）</p><p>挖 ETH 每卡至少设置 6.0G 虚拟内存，建议按虚拟内存比显存 1 比 1 设置。比如 6 张 6G 的 1066 显卡建议设置 6 x 6 = 36G。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-02_19-09-47.png"></p><p>点确认后会让你重新启动，点击重启即可。</p><h2 id="配置火币账号"><a href="#配置火币账号" class="headerlink" title="配置火币账号"></a>配置火币账号</h2><p>火币挖矿教程：<a href="https://www.hpt.com/pow/help/3/all?from=home">https://www.hpt.com/pow/help/3/all?from=home</a></p><p>跟着他的流程走，注册/登录火币账号，然后新建一个主池账户。主矿池选择火币北方即可（选择别的地区，在软件内要对应的选择）</p><h2 id="配置软件"><a href="#配置软件" class="headerlink" title="配置软件"></a>配置软件</h2><p>矿机名随意填，主币选择ETH</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-02_19-15-47.png"></p><p>内核安装NBMiner（最新版即可）</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-02_19-16-34.png"></p><p>主矿池选择火币北方1</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-02_19-16-53.png"></p><p>主池账户选择刚刚创建的子账户名称即可</p><p>然后点击尚未开始那个地方，点击开始挖矿</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-02_19-18-34.png"></p><h2 id="到账"><a href="#到账" class="headerlink" title="到账"></a>到账</h2><p>会在24-36小时左右到账火币账户内</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 挖矿 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用脚本自动抢Oracle ARM服务器，并使用tg机器人通知</title>
       <link href="2021/11/28/oraclearm/"/>
       <url>2021/11/28/oraclearm/</url>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ednovas.xyz/2021/12/02/mining/</loc>
+    
+    <lastmod>2021-12-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/2020/12/18/freesubscribes/</loc>
     
     <lastmod>2021-12-03</lastmod>
@@ -4282,6 +4289,13 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/linu/</loc>
+    <lastmod>2021-12-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/%E6%8C%96%E7%9F%BF/</loc>
     <lastmod>2021-12-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
