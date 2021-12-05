@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-12-03T03:20:31.995Z</updated>
+  <updated>2021-12-05T03:19:20.296Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux端口转发的几种常用方法</title>
+    <link href="https://ednovas.xyz/2021/12/05/linuxforward/"/>
+    <id>https://ednovas.xyz/2021/12/05/linuxforward/</id>
+    <published>2021-12-06T01:09:00.000Z</published>
+    <updated>2021-12-05T03:19:20.296Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;SSH-端口转发&quot;&gt;&lt;a href=&quot;#SSH-端口转发&quot; class=&quot;headerlink&quot; title=&quot;SSH 端口转发&quot;&gt;&lt;/a&gt;SSH 端口转发&lt;/h2&gt;&lt;p&gt;SSH 提供了一个非常有意思的功能，就是端口转发，它能够将其他 TCP 端口的网络数据通过 SSH 链接来转发，并且自动提供了相应的加密及解密服务。&lt;/p&gt;
+&lt;h3 id=&quot;（1）本地端口转发&quot;&gt;&lt;a href=&quot;#（1）本地端口转发&quot; class=&quot;headerlink&quot; title=&quot;（1）本地端口转发&quot;&gt;&lt;/a&gt;（1）本地端口转发&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh -fgN -L 2222:localhost:22 localhost&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;（2）远程端口转发&quot;&gt;&lt;a href=&quot;#（2）远程端口转发&quot; class=&quot;headerlink&quot; title=&quot;（2）远程端口转发&quot;&gt;&lt;/a&gt;（2）远程端口转发&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh -fgN -R 2222:host1:22 localhost&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;（3）动态转发&quot;&gt;&lt;a href=&quot;#（3）动态转发&quot; class=&quot;headerlink&quot; title=&quot;（3）动态转发&quot;&gt;&lt;/a&gt;（3）动态转发&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh -fgN -D 12345 root@host1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;iptables-端口转发&quot;&gt;&lt;a href=&quot;#iptables-端口转发&quot; class=&quot;headerlink&quot; title=&quot;iptables 端口转发&quot;&gt;&lt;/a&gt;iptables 端口转发&lt;/h2&gt;&lt;p&gt;可以通过iptables实现数据包的转发。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>电脑 ETH 挖矿教程</title>
@@ -963,32 +989,6 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
     
     
     <category term="VPN" scheme="https://ednovas.xyz/tags/VPN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu简单安装使用指北</title>
-    <link href="https://ednovas.xyz/2021/10/15/ubuntu/"/>
-    <id>https://ednovas.xyz/2021/10/15/ubuntu/</id>
-    <published>2021-10-15T07:07:00.000Z</published>
-    <updated>2021-10-15T08:19:45.312Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;安装双系统&quot;&gt;&lt;a href=&quot;#安装双系统&quot; class=&quot;headerlink&quot; title=&quot;安装双系统&quot;&gt;&lt;/a&gt;安装双系统&lt;/h1&gt;&lt;p&gt;准备一个至少4GB的U盘，最好是USB3.0以上的。磁盘预留至少60G空间。&lt;/p&gt;
-&lt;p&gt;博主双系统安装版本为 Windows11 + Ubuntu21（GPT分区表+UEFI引导启动模式）（文中图片是win10 + Ubuntu 18.04LTS）&lt;/p&gt;
-&lt;p&gt;首先确认电脑已经预装Windows10操作系统（即使是空盘，安装顺序也是推荐先正确安装Windows），如果是近年来的新买笔记本、台式机电脑，默认安装Windows10采用的引导模式都为UEFI引导，硬盘分区表为GPT(GUID)分区表，这种引导模式与分区表与之前的Win7系统（MBR分区表+legacy引导）有所区别&lt;/p&gt;
-&lt;p&gt;需要注意的是，Win10也是可以在旧的 &lt;code&gt;MBR分区表+legacy引导模式&lt;/code&gt; 下安装的，如果是自行安装的Windows系统，请确认是通过UEFI模式引导安装的Win10（比如电脑之前是win7系统再重装win10，因为硬盘分区表为MBR，很可能安装方式为MBR+legacy）。&lt;/p&gt;
-&lt;p&gt;判断方法：按下win+r打开运行，输入msinfo32，确定，打开系统信息，查看BIOS模式是否为UEFI。&lt;/p&gt;
-&lt;p&gt;一句话总结，UEIF引导就对了。&lt;/p&gt;
-&lt;h2 id=&quot;Ubuntu下载&quot;&gt;&lt;a href=&quot;#Ubuntu下载&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu下载&quot;&gt;&lt;/a&gt;Ubuntu下载&lt;/h2&gt;&lt;p&gt;下载界面：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://ubuntu.com/download/desktop&quot;&gt;https://ubuntu.com/download/desktop&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
     
   </entry>
   
