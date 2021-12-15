@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-12-13T04:00:08.834Z</updated>
+  <updated>2021-12-15T02:31:43.278Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VPS 添加 WARP 解锁奈飞终极版</title>
+    <link href="https://ednovas.xyz/2021/12/14/warpnetflix/"/>
+    <id>https://ednovas.xyz/2021/12/14/warpnetflix/</id>
+    <published>2021-12-14T21:09:00.000Z</published>
+    <updated>2021-12-15T02:31:43.278Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;cloudflare一直以来提供了十分优秀且免费的服务，希望不要被滥用。&lt;/p&gt;
+&lt;p&gt;此文是使用warp来达到奈飞解锁的目的的。该方法还请自用，请勿用于解锁服务贩卖等。&lt;/p&gt;
+&lt;h2 id=&quot;安装Warp&quot;&gt;&lt;a href=&quot;#安装Warp&quot; class=&quot;headerlink&quot; title=&quot;安装Warp&quot;&gt;&lt;/a&gt;安装Warp&lt;/h2&gt;&lt;p&gt;GitHub地址：&lt;a href=&quot;https://github.com/fscarmen/warp&quot;&gt;https://github.com/fscarmen/warp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;该一键脚本可能是最快且最完善的warp一键安装脚本&lt;/p&gt;
+&lt;p&gt;一键脚本：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -N https:&amp;#x2F;&amp;#x2F;cdn.jsdelivr.net&amp;#x2F;gh&amp;#x2F;fscarmen&amp;#x2F;warp&amp;#x2F;menu.sh &amp;amp;&amp;amp; bash menu.sh [option] [lisence]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;运行后选择2简体中文，然后一般是纯ipv4添加ipv6warp，所以选1（根据自己情况选择）。&lt;/p&gt;
+&lt;p&gt;如果有warp+的 license可以输入，没有的话跳过即可，使用普通的warp服务。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
+    
+    <category term="warp" scheme="https://ednovas.xyz/tags/warp/"/>
+    
+  </entry>
   
   <entry>
     <title>Cloudflare Teams 团队 Warp</title>
@@ -952,35 +980,6 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
 &lt;p&gt;该片为改编自詹姆斯·瑟伯的短篇小说的第二部电影&lt;/p&gt;
 &lt;p&gt;讲述了一位兢兢业业的杂志封面冲印师华特·米堤（Walter Mitty），常常有各式各样的白日梦。&lt;/p&gt;
 &lt;p&gt;知名摄影师尚恩·欧康诺（Sean O’Connell）有一天送了一卷特别的底片作品，并特别说明希望有一张相片能够成为“生活杂志”最后一期的封面。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>通过NeverInstall应用平台，实现在线应用体验</title>
-    <link href="https://ednovas.xyz/2021/10/24/nerverinstall/"/>
-    <id>https://ednovas.xyz/2021/10/24/nerverinstall/</id>
-    <published>2021-10-24T17:51:00.000Z</published>
-    <updated>2021-10-25T01:48:25.295Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自 小御坂的破站 &lt;a href=&quot;https://blog.misaka.sbs/202110/139.html&quot;&gt;https://blog.misaka.sbs/202110/139.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Neverinstall 是一个基于云的平台，可将任何桌面应用程序带入浏览器。 我们的目标是从根本上改变我们使用软件应用程序的方式，不受硬件限制，真正可以从任何地方访问。&lt;/p&gt;
-&lt;p&gt;据官方的远大远景，看起来挺好玩的样子&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211025013412.png&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;准备材料&quot;&gt;&lt;a href=&quot;#准备材料&quot; class=&quot;headerlink&quot; title=&quot;准备材料&quot;&gt;&lt;/a&gt;准备材料&lt;/h2&gt;&lt;p&gt;谷歌 / Github / 苹果 / 推特 / 脸书账号一枚&lt;/p&gt;
-&lt;h2 id=&quot;注册步骤&quot;&gt;&lt;a href=&quot;#注册步骤&quot; class=&quot;headerlink&quot; title=&quot;注册步骤&quot;&gt;&lt;/a&gt;注册步骤&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;打开&lt;a href=&quot;https://neverinstall.com/login&quot;&gt;官网&lt;/a&gt; &lt;a href=&quot;https://neverinstall.com/login&quot;&gt;https://neverinstall.com/login&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;选择任意一种方式登录&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211025013556.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;PS: 由于其登录验证域名在国内被特殊照顾，请使用特殊方式登录&lt;/p&gt;</summary>
     
     
     
