@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-12-18T23:57:14.801Z</updated>
+  <updated>2021-12-21T03:36:07.743Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,110 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VPS屏蔽Censys扫描</title>
+    <link href="https://ednovas.xyz/2021/12/20/censys/"/>
+    <id>https://ednovas.xyz/2021/12/20/censys/</id>
+    <published>2021-12-21T03:12:00.000Z</published>
+    <updated>2021-12-21T03:36:07.743Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;什么是Censys&quot;&gt;&lt;a href=&quot;#什么是Censys&quot; class=&quot;headerlink&quot; title=&quot;什么是Censys&quot;&gt;&lt;/a&gt;什么是Censys&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://censys.io/&quot;&gt;https://censys.io&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Censys 是一款用以搜索联网设备信息的新型搜索引擎 ，安全专家可以使用它来评估他们实现方案的安全性，而黑客则可以使用它作为前期侦查攻击目标、收集目标信息的强大利器。&lt;/p&gt;
+&lt;h3 id=&quot;Censys功能介绍&quot;&gt;&lt;a href=&quot;#Censys功能介绍&quot; class=&quot;headerlink&quot; title=&quot;Censys功能介绍&quot;&gt;&lt;/a&gt;Censys功能介绍&lt;/h3&gt;&lt;p&gt;现在，黑客和安全专家们拥有了一款新型强大的分析工具，那就是 Censys 搜索引擎，与最流行的搜索引擎Shodan非常类似。Censys是一款免费的搜索引擎，最初由密歇根大学的研究人员在10月发行，目前由谷歌提供支持。&lt;/p&gt;
+&lt;p&gt;Censys搜索引擎能够扫描整个互联网，Censys 每天都会扫描IPv4地址空间，以搜索所有联网设备并收集相关的信息，并返回一份有关资源（如设备、网站和证书）配置和部署信息的总体报告。&lt;/p&gt;
+&lt;p&gt;Censys官方网站上这样描述该搜索引擎：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Censys是一款搜索引擎，它允许计算机科学家了解组成互联网的设备和网络。Censys由因特网范围扫描驱动，它使得研究人员能够找到特定的主机，并能够针将设备、网站和证书的配置和部署信息创建到一个总体报告中。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Censys原理及架构&quot;&gt;&lt;a href=&quot;#Censys原理及架构&quot; class=&quot;headerlink&quot; title=&quot;Censys原理及架构&quot;&gt;&lt;/a&gt;Censys原理及架构&lt;/h3&gt;&lt;p&gt;与Shodan类似，Censys维护着一个完整的数据库，里面保存着每个暴露在互联网上的设备信息。对于一个黑客来说，如果他想搜索一个特定的目标，并需要收集目标配置的信息，那么对他来说censys无疑是一款特权工具。同时，安全专家能够轻易锁定互联网上保护措施很差的设备。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows建立隐藏用户</title>
+    <link href="https://ednovas.xyz/2021/12/20/windowshideuser/"/>
+    <id>https://ednovas.xyz/2021/12/20/windowshideuser/</id>
+    <published>2021-12-21T02:12:00.000Z</published>
+    <updated>2021-12-21T03:36:07.658Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;CMD创建新用户&quot;&gt;&lt;a href=&quot;#CMD创建新用户&quot; class=&quot;headerlink&quot; title=&quot;CMD创建新用户&quot;&gt;&lt;/a&gt;CMD创建新用户&lt;/h2&gt;&lt;p&gt;需要有ADMIN权限的cmd&lt;/p&gt;
+&lt;p&gt;创建新用户并给该用户添加管理员权限：&lt;/p&gt;
+&lt;p&gt;(用户名处加了个$在结尾是可以在&lt;code&gt;net user&lt;/code&gt;命令下不显示该用户，但是在控制面板内还是能看到的)&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;net user username$ password &amp;#x2F;add&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;net localgroup administrators username$ &amp;#x2F;add&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;例如 ednovas为用户名，paswd为密码的新用户就是：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;net user ednovas$ paswd &amp;#x2F;add&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;net localgroup administrators ednovas$ &amp;#x2F;add&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这两句命令行后应该有返回&lt;code&gt;命令成功完成&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image-20210403141500963.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image-20210403141948213.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Telegram 客户端 Proxy 代理设置</title>
+    <link href="https://ednovas.xyz/2021/12/20/tgproxy/"/>
+    <id>https://ednovas.xyz/2021/12/20/tgproxy/</id>
+    <published>2021-12-20T23:12:00.000Z</published>
+    <updated>2021-12-21T03:36:08.207Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Telegram-Desktop-客户端&quot;&gt;&lt;a href=&quot;#Telegram-Desktop-客户端&quot; class=&quot;headerlink&quot; title=&quot;Telegram Desktop 客户端&quot;&gt;&lt;/a&gt;Telegram Desktop 客户端&lt;/h2&gt;&lt;p&gt;Telegram Desktop 默认并没有勾选”使用系统代理”, 所以很多人觉得需要开全局才能用,  其实不然, 可以手动勾选”使用系统代理”或使用自定义代理.&lt;/p&gt;
+&lt;h3 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h3&gt;&lt;p&gt;情况A: 未登录账号: 界面左下角按钮&lt;/p&gt;
+&lt;p&gt;情况B: 已登录账号: Telegram Desktop 客户端 → 左上角三短线 → 设置 → 高级 → 网络和代理 → 代理类型 → 勾选”使用系统代理”或”使用自定义代理”&lt;/p&gt;
+&lt;h4 id=&quot;使用自定义代理添加方法&quot;&gt;&lt;a href=&quot;#使用自定义代理添加方法&quot; class=&quot;headerlink&quot; title=&quot;使用自定义代理添加方法&quot;&gt;&lt;/a&gt;使用自定义代理添加方法&lt;/h4&gt;&lt;p&gt;添加代理: SOCKS5/HTTP (这俩均可)&lt;/p&gt;
+&lt;p&gt;服务器: &lt;code&gt;127.0.0.1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;端口: &lt;code&gt;端口&lt;/code&gt;需查看你的代理软件(SS/SSR/Clash for Windows/V2RayN…)&lt;/p&gt;
+&lt;p&gt;不需要填写用户名和密码。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS 8 迁移到 Rocky 8</title>
+    <link href="https://ednovas.xyz/2021/12/20/centostorocky/"/>
+    <id>https://ednovas.xyz/2021/12/20/centostorocky/</id>
+    <published>2021-12-20T21:09:00.000Z</published>
+    <updated>2021-12-21T03:36:08.206Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;时代的结束&quot;&gt;&lt;a href=&quot;#时代的结束&quot; class=&quot;headerlink&quot; title=&quot;时代的结束&quot;&gt;&lt;/a&gt;时代的结束&lt;/h2&gt;&lt;p&gt;CentOS Linux 8即将于2021年12月31日停止技术更新。&lt;/p&gt;
+&lt;p&gt;CentOS Linux 7继续支持到2024年6月30日。&lt;/p&gt;
+&lt;p&gt;对Yum系有眷恋的朋友可以升级到RockyLinux8。&lt;/p&gt;
+&lt;h2 id=&quot;升级系统&quot;&gt;&lt;a href=&quot;#升级系统&quot; class=&quot;headerlink&quot; title=&quot;升级系统&quot;&gt;&lt;/a&gt;升级系统&lt;/h2&gt;&lt;p&gt;升级系统并重启&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo dnf –y upgrade &amp;amp;&amp;amp; sudo reboot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;下载转换脚本并执行&quot;&gt;&lt;a href=&quot;#下载转换脚本并执行&quot; class=&quot;headerlink&quot; title=&quot;下载转换脚本并执行&quot;&gt;&lt;/a&gt;下载转换脚本并执行&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;curl -O https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;rocky-linux&amp;#x2F;rocky-tools&amp;#x2F;main&amp;#x2F;migrate2rocky&amp;#x2F;migrate2rocky.sh &amp;amp;&amp;amp; chmod+x migrate2rocky.sh &amp;amp;&amp;amp; bash migrate2rocky.sh –r &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;等待迁移完成&quot;&gt;&lt;a href=&quot;#等待迁移完成&quot; class=&quot;headerlink&quot; title=&quot;等待迁移完成&quot;&gt;&lt;/a&gt;等待迁移完成&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+  </entry>
   
   <entry>
     <title>申请eu.org免费域名</title>
@@ -848,143 +952,6 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
     <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
     
     <category term="cf" scheme="https://ednovas.xyz/tags/cf/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo Butterfly 加入 clustrmaps 访问者地图</title>
-    <link href="https://ednovas.xyz/2021/10/29/clustrmaps/"/>
-    <id>https://ednovas.xyz/2021/10/29/clustrmaps/</id>
-    <published>2021-10-30T01:51:00.000Z</published>
-    <updated>2021-10-30T02:21:17.085Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自 cungudafa &lt;a href=&quot;https://blog.csdn.net/cungudafa/article/details/105925710&quot;&gt;https://blog.csdn.net/cungudafa/article/details/105925710&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;看到别人有，我也喜欢，于是添加。&lt;/p&gt;
-&lt;p&gt;官网 &lt;a href=&quot;https://clustrmaps.com/&quot;&gt;clustrmaps.com&lt;/a&gt; 也是第三方的，有Google Docs账号可以直接登录，Sign up即可&lt;/p&gt;
-&lt;p&gt;注册之后，在官网找到 Website Widget，如图。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20200505000231389.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;我喜欢Globe widget形式，如果喜欢Map自便&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20200504230609405.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;点击select就可以看到信息了，我这里用的html版，复制到你的博客就好了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/2020050423071020.png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="hexo" scheme="https://ednovas.xyz/tags/hexo/"/>
-    
-    <category term="butterfly" scheme="https://ednovas.xyz/tags/butterfly/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OnWorks 免费云端linux系统</title>
-    <link href="https://ednovas.xyz/2021/10/28/onworks/"/>
-    <id>https://ednovas.xyz/2021/10/28/onworks/</id>
-    <published>2021-10-28T22:51:00.000Z</published>
-    <updated>2021-10-28T22:36:08.467Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;网址&quot;&gt;&lt;a href=&quot;#网址&quot; class=&quot;headerlink&quot; title=&quot;网址&quot;&gt;&lt;/a&gt;网址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.onworks.net/&quot;&gt;https://www.onworks.net/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;官方简介&quot;&gt;&lt;a href=&quot;#官方简介&quot; class=&quot;headerlink&quot; title=&quot;官方简介&quot;&gt;&lt;/a&gt;官方简介&lt;/h2&gt;&lt;p&gt;OnWorks is a free hosting provider that allows to run your workstations only using your web browser. Our workstations can be based on a lot of kind of Operative Systems like CentOS, Fedora, Ubuntu and Debian.  OnWorks is a multi-device platform so that our customers can run and test any type of OS from everywhere. It is simple, full of features, light and easy to use by our customers. OnWorks is your cloud computing provider where you can enjoy a lot of type of workstations, and run them free of charge. The workstations are installed with SW for Office, Graphics, Videos, Games and so on.&lt;/p&gt;
-&lt;p&gt;OnWorks 是一个免费的托管服务提供商，它允许仅使用您的网络浏览器运行您的工作站。 我们的工作站可以基于多种操作系统，如 CentOS、Fedora、Ubuntu 和 Debian。 OnWorks 是一个多设备平台，因此我们的客户可以从任何地方运行和测试任何类型的操作系统。 它简单、功能齐全、轻便且易于我们的客户使用。 OnWorks 是您的云计算提供商，您可以在其中享受多种类型的工作站，并免费运行它们。 工作站安装了用于办公、图形、视频、游戏等的软件。&lt;/p&gt;
-&lt;h2 id=&quot;使用&quot;&gt;&lt;a href=&quot;#使用&quot; class=&quot;headerlink&quot; title=&quot;使用&quot;&gt;&lt;/a&gt;使用&lt;/h2&gt;&lt;p&gt;完全免费，标签页开着就会保持活跃，关闭标签页后10分钟无动作即自动释放资源。 &lt;/p&gt;
-&lt;p&gt;无公网IP&lt;/p&gt;
-</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="白嫖" scheme="https://ednovas.xyz/tags/%E7%99%BD%E5%AB%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cloudflare 反代优选提速</title>
-    <link href="https://ednovas.xyz/2021/10/28/cfworkers/"/>
-    <id>https://ednovas.xyz/2021/10/28/cfworkers/</id>
-    <published>2021-10-28T17:51:00.000Z</published>
-    <updated>2021-10-28T22:36:09.668Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;cloudflare一向以提供免费的优质服务为名，cf的反代优选就是利用workers反代然后优选IP来达到一个节点提速的效果。&lt;/p&gt;
-&lt;p&gt;目测移动带宽反代优选效果最佳，电信联通效果也很好，但可能不是那么显著（仅目测，请以实际效果为准）&lt;/p&gt;
-&lt;p&gt;反代优选一般是给如racknerd，heroku等这类线路不佳的搭建节点提速用的。&lt;/p&gt;
-&lt;p&gt;其中racknerd最为明显，反代优选前一般是 3mb/s - 5mb/s的速度，而反代优选后可以达到 70mb/s 的速度（毕竟racknerd机器是G口的，理论上限可达 128mb/s）&lt;/p&gt;
-&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;cloudflare账号，一个已经解析到VPS的域名&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;v2rayn（本地配置节点信息用的，使用别的类似软件也可）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;一个已经搭建好的节点，要求必须是 &lt;code&gt;vmess+ws+tls&lt;/code&gt; 等这类可以反代优选或使用CDN的协议&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;优选IP软件，项目地址:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;我比较常用的： &lt;a href=&quot;https://github.com/badafans/better-cloudflare-ip&quot;&gt;https://github.com/badafans/better-cloudflare-ip&lt;/a&gt;&lt;br&gt;release界面中下载&lt;code&gt;windows.zip&lt;/code&gt; 解压即可（目前也推出了linux和安卓端）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/XIU2/CloudflareSpeedTest&quot;&gt;https://github.com/XIU2/CloudflareSpeedTest&lt;/a&gt;&lt;br&gt;realease界面中下载&lt;code&gt;CloudflareST_windows_amd64.zip&lt;/code&gt;即可（其他版本自行看说明下载对应版本）&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;CF反代&quot;&gt;&lt;a href=&quot;#CF反代&quot; class=&quot;headerlink&quot; title=&quot;CF反代&quot;&gt;&lt;/a&gt;CF反代&lt;/h2&gt;&lt;p&gt;这个时候就需要我们的Cloudflare的workers来进行一个反代加速了。&lt;/p&gt;
-&lt;p&gt;在主页点击Workers。可能会让你输入一个你的域名，有的话可以输入你freenom的域名或者你自己的域名，没有的话瞎填一个也没事。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
-    
-    <category term="cf" scheme="https://ednovas.xyz/tags/cf/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>奈飞 Netflix 强制播放1080P清晰度视频</title>
-    <link href="https://ednovas.xyz/2021/10/25/netflix1080p/"/>
-    <id>https://ednovas.xyz/2021/10/25/netflix1080p/</id>
-    <published>2021-10-25T17:51:00.000Z</published>
-    <updated>2021-10-26T06:50:33.007Z</updated>
-    
-    
-    <summary type="html">&lt;ol&gt;
-&lt;li&gt;用Chrome打开Netflix，搜索test，播放TEST PATTERNS&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-39899319bebecce98241c6370d91d094_r.jpg&quot;&gt;&lt;/p&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;右上显示1280×720，即影片画质被限制到了720P&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-33f1e6172c6775eaf3aeee7306ab653a_r.jpg&quot;&gt;&lt;/p&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;打开 &lt;a href=&quot;https://github.com/truedread/netflix-1080p&quot;&gt;https://github.com/truedread/netflix-1080p&lt;/a&gt; ，点击Releases&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-30b1d721b4600691c4d503cd19db1e85_r.jpg&quot;&gt;&lt;/p&gt;
-&lt;ol start=&quot;4&quot;&gt;
-&lt;li&gt;点击Source code，下载netflix-1080p-1.21.zip压缩文件，并解压缩&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-9283e896012ffaafc33b79136070fa1d_r.jpg&quot;&gt;&lt;/p&gt;
-&lt;ol start=&quot;5&quot;&gt;
-&lt;li&gt;Chrome右上角，自定义及控制-更多工具-扩展程序&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-8654980f23b98e8b28b10c8f25f3cc6a_r.jpg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="奈飞" scheme="https://ednovas.xyz/tags/%E5%A5%88%E9%A3%9E/"/>
-    
-    <category term="netflix" scheme="https://ednovas.xyz/tags/netflix/"/>
     
   </entry>
   
