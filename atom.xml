@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-12-21T05:23:01.291Z</updated>
+  <updated>2021-12-22T04:11:26.210Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vollcloud VPS测评</title>
+    <link href="https://ednovas.xyz/2021/12/21/vollcloud/"/>
+    <id>https://ednovas.xyz/2021/12/21/vollcloud/</id>
+    <published>2021-12-21T23:12:00.000Z</published>
+    <updated>2021-12-22T04:11:26.210Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;价格&quot;&gt;&lt;a href=&quot;#价格&quot; class=&quot;headerlink&quot; title=&quot;价格&quot;&gt;&lt;/a&gt;价格&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;6刀月付鸡&lt;/p&gt;
+&lt;p&gt;CPU：1核&lt;/p&gt;
+&lt;p&gt;内存：256M DDR4&lt;/p&gt;
+&lt;p&gt;硬盘：6G SSD/Raid10&lt;/p&gt;
+&lt;p&gt;端口：100Mbps CMI&lt;/p&gt;
+&lt;p&gt;流量：300G/每月（双向流量）&lt;/p&gt;
+&lt;p&gt;IPv4：1个&lt;/p&gt;
+&lt;p&gt;防御：2G DDoS / CC&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+  </entry>
   
   <entry>
     <title>VPS屏蔽Censys扫描</title>
@@ -913,35 +940,6 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
 &lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-16-59.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;一定要复制下来并保存好！ &lt;code&gt;Private Key&lt;/code&gt; 不能再次获取，没了就是没了。如果需要只能再次重新申请个替换了。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-17-30.png&quot;&gt;&lt;/p&gt;
-</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
-    
-    <category term="cf" scheme="https://ednovas.xyz/tags/cf/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CloudFlare 缓存全站</title>
-    <link href="https://ednovas.xyz/2021/10/29/cloudflareallcache/"/>
-    <id>https://ednovas.xyz/2021/10/29/cloudflareallcache/</id>
-    <published>2021-10-30T02:03:00.000Z</published>
-    <updated>2021-10-30T02:21:17.109Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;CloudFlare 默认只对静态资源进行缓存。动态资源是默认不缓存的。如果你的内容基本是静态的或者不在意实时更新的话，可以使用 CloudFlare 的页面规则设置缓存所有内容。免费用户可以设置3条页面规则，Pro 用户可以使用 30 条规则。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-07-33.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;如果要全域都走这条规则的话，就使用 &lt;code&gt;*&lt;/code&gt;表示全部，比如 &lt;code&gt;*.ednovas.xyz/*&lt;/code&gt;就是代表所有的&lt;code&gt;ednovas.xyz&lt;/code&gt;前缀后缀的域名都要走这个规则&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-08-52.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;还可以加上一条 &lt;code&gt;Edge Cache TTL&lt;/code&gt;，此项为cloudflare多久去检查你的服务器并更新&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-09-59.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;如果有的时候进不去后台，可以设置个Cache Level 的 bypass规则，并且设置其为置顶规则&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-13-18.png&quot;&gt;&lt;/p&gt;
 </summary>
     
     
