@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>OneMark————让Onenote支持Markdown</title>
+      <link href="2021/12/24/onenotemd/"/>
+      <url>2021/12/24/onenotemd/</url>
+      
+        <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>众所周知，Onenote作为一款优秀的笔记软件，就是总是这个不支持那个不支持，比如Markdown，LATEX等。GEM等插件又要花钱，烦恼的很啊</p><p><a href="https://onemark.neuxlab.cn/">OneMark</a>是<a href="https://www.v2ex.com/t/822262">V2EX</a>一位大佬ccyixia的杰作————一个Onenote的Markdown支持插件</p><p>目前只支持 OneNote Windows 桌面版，不支持 UWP 版本</p><p>官网：<a href="https://onemark.neuxlab.cn/">https://onemark.neuxlab.cn/</a></p><p>不需要多余操作，每一次按<code>Enter</code>都见证文字的变身</p><p>汲取新世代编辑器的精华设计，完美融入 OneNote 之中</p><p>随心增删编辑，可切换源码状态，数据双向更新</p><p>支持主流 <code>Markdown</code> 语法，更为你带来真正好用的<code>代码块</code>、<code>LaTex</code> 以及 <code>TOC</code></p><h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><p>官网下载安装重启Onenote即可。不会重启Onenote？直接重启电脑即可。</p><h2 id="支持版本"><a href="#支持版本" class="headerlink" title="支持版本"></a>支持版本</h2><p>OneNote 2013 及以上版本，不支持 UWP 版本。安装成功后会在界面上添加 OneMark 菜单。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ribbon.png"></p><h2 id="64位-or-32-位？"><a href="#64位-or-32-位？" class="headerlink" title="64位 or 32 位？"></a>64位 or 32 位？</h2><p>请选择与当前 OneNote 一致的版本。如何查看 OneNote 的位元：</p><p>点击<code>文件</code> - <code>账户</code> - <code>关于 OneNote</code>，弹出的对话框第一行末尾。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/bit.png"></p><h2 id="安装后没有显示菜单"><a href="#安装后没有显示菜单" class="headerlink" title="安装后没有显示菜单"></a>安装后没有显示菜单</h2><p>请点击 <code>文件</code> - <code>选项</code> - <code>加载项</code>，如果 <code>非活动应用程序加载项</code> 中没有 OneMark，则参考 <a href="#onemark-%E6%B2%A1%E6%9C%89%E5%87%BA%E7%8E%B0%E5%9C%A8%E5%8A%A0%E8%BD%BD%E9%A1%B9%E4%B8%AD">OneMark 没有出现在加载项中</a></p><p>如果列表中存在 OneMark，则点击左下角的 <code>转到</code>，然后勾选 <code>OneMark</code>， 点击 <code>确定</code>。</p><p>正常操作后界面上会显示 OneMark 菜单。如果没有显示，则参考 <a href="#%E5%8A%A0%E8%BD%BD-com-%E9%80%89%E9%A1%B9%E6%97%B6%E5%87%BA%E7%8E%B0%E8%BF%90%E8%A1%8C%E9%94%99%E8%AF%AF">加载 COM 选项时出现运行错误</a>。</p><h2 id="加载-COM-选项时出现运行错误"><a href="#加载-COM-选项时出现运行错误" class="headerlink" title="加载 COM 选项时出现运行错误"></a>加载 COM 选项时出现运行错误</h2><p>请按照以下顺序依次进行尝试。每步操作完后如确认 OneMark 已正常显示，则不用继续尝试。</p><ul><li>尝试重启 OneNote。</li><li>尝试重启电脑。</li><li>去<code>控制面板</code> - <code>程序和功能</code> 中，找到 Office（或OneNote），点击右键 - <code>修复</code> - <code>联机修复</code>。</li></ul><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/repair.png"></p><p>运行 <code>OneMark</code> 安装程序，先点 <code>Remove OneMark</code> 卸载。然后再运行安装程序，在第三步选择安装路径的左下方，勾选<code>Everyone</code>，再继续。</p><h2 id="OneMark-没有出现在加载项中"><a href="#OneMark-没有出现在加载项中" class="headerlink" title="OneMark 没有出现在加载项中"></a>OneMark 没有出现在加载项中</h2><p>请按照以下顺序依次进行尝试。每步操作完后如确认 OneMark 已正常显示，则不用继续尝试。</p><ul><li>查看 OneNote 是32位还是64位，确认安装程序与其是一致的。如果不一致，先卸载，再安装正确的版本。</li><li>如果电脑上装有杀毒软件，暂时关闭一下。</li><li>运行 OneMark 安装程序，先点 <code>Remove OneMark</code> 卸载。然后再运行安装程序，在第三步选择安装路径的左下方，勾选<code>Everyone</code>，再继续。</li></ul><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/668c882egy1gxe077edp1g20m80ay7lh.gif"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/668c882egy1gxe077922hg20m80780y1.gif"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/668c882egy1gxe0779yqmg20m807s7b6.gif"></p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/668c882egy1gxe0783rohg20m80gohdx.gif"></p><p>双向更新，在Markdown和渲染前的内容间自由切换</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/668c882egy1gxe077bwaqg20m808cwvt.gif"></p><p>被吐槽无数的英文自动变成 Calibri 字体的问题好像也因为这种二次渲染模式的引入无意中解决了</p><h2 id="使用快捷键"><a href="#使用快捷键" class="headerlink" title="使用快捷键"></a>使用快捷键</h2><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-24_17-20-05.png"></p><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>感谢Onenote免费提供了如此好用的笔记软件，也感谢Onemark作者ccyixia的优秀作品！</p><blockquote><p>转载编辑自 <a href="https://www.v2ex.com/t/822262">https://www.v2ex.com/t/822262</a><br><a href="https://onemark.neuxlab.cn/docs/setup/">https://onemark.neuxlab.cn/docs/setup/</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件 </tag>
+            
+            <tag> onenote </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vollcloud VPS测评</title>
       <link href="2021/12/21/vollcloud/"/>
       <url>2021/12/21/vollcloud/</url>
