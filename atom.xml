@@ -24,13 +24,15 @@
     <updated>2021-12-24T09:25:17.638Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;众所周知，Onenote作为一款优秀的笔记软件，就是总是这个不支持那个不支持，比如Markdown，LATEX等。GEM等插件又要花钱，烦恼的很啊&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://onemark.neuxlab.cn/&quot;&gt;OneMark&lt;/a&gt;是&lt;a href=&quot;https://www.v2ex.com/t/822262&quot;&gt;V2EX&lt;/a&gt;一位大佬ccyixia的杰作————一个Onenote的Markdown支持插件&lt;/p&gt;
+&lt;p&gt;目前只支持 OneNote Windows 桌面版，不支持 UWP 版本&lt;/p&gt;
+&lt;p&gt;官网：&lt;a href=&quot;https://onemark.neuxlab.cn/&quot;&gt;https://onemark.neuxlab.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不需要多余操作，每一次按&lt;code&gt;Enter&lt;/code&gt;都见证文字的变身&lt;/p&gt;
+&lt;p&gt;汲取新世代编辑器的精华设计，完美融入 OneNote 之中&lt;/p&gt;
+&lt;p&gt;随心增删编辑，可切换源码状态，数据双向更新&lt;/p&gt;
+&lt;p&gt;支持主流 &lt;code&gt;Markdown&lt;/code&gt; 语法，更为你带来真正好用的&lt;code&gt;代码块&lt;/code&gt;、&lt;code&gt;LaTex&lt;/code&gt; 以及 &lt;code&gt;TOC&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;使用说明&quot;&gt;&lt;a href=&quot;#使用说明&quot; class=&quot;headerlink&quot; title=&quot;使用说明&quot;&gt;&lt;/a&gt;使用说明&lt;/h2&gt;</summary>
     
     
     
@@ -51,17 +53,15 @@
     <updated>2021-12-22T04:11:26.210Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h2 id=&quot;价格&quot;&gt;&lt;a href=&quot;#价格&quot; class=&quot;headerlink&quot; title=&quot;价格&quot;&gt;&lt;/a&gt;价格&lt;/h2&gt;&lt;hr&gt;
 &lt;p&gt;6刀月付鸡&lt;/p&gt;
 &lt;p&gt;CPU：1核&lt;/p&gt;
 &lt;p&gt;内存：256M DDR4&lt;/p&gt;
-&lt;p&gt;硬盘：6G</summary>
-        
-      
+&lt;p&gt;硬盘：6G SSD/Raid10&lt;/p&gt;
+&lt;p&gt;端口：100Mbps CMI&lt;/p&gt;
+&lt;p&gt;流量：300G/每月（双向流量）&lt;/p&gt;
+&lt;p&gt;IPv4：1个&lt;/p&gt;
+&lt;p&gt;防御：2G DDoS / CC&lt;/p&gt;</summary>
     
     
     
@@ -80,13 +80,15 @@
     <updated>2021-12-24T01:50:06.025Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;什么是Censys&quot;&gt;&lt;a href=&quot;#什么是Censys&quot; class=&quot;headerlink&quot; title=&quot;什么是Censys&quot;&gt;&lt;/a&gt;什么是Censys&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;什么是Censys&quot;&gt;&lt;a href=&quot;#什么是Censys&quot; class=&quot;headerlink&quot; title=&quot;什么是Censys&quot;&gt;&lt;/a&gt;什么是Censys&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://censys.io/&quot;&gt;https://censys.io&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Censys 是一款用以搜索联网设备信息的新型搜索引擎 ，安全专家可以使用它来评估他们实现方案的安全性，而黑客则可以使用它作为前期侦查攻击目标、收集目标信息的强大利器。&lt;/p&gt;
+&lt;h3 id=&quot;Censys功能介绍&quot;&gt;&lt;a href=&quot;#Censys功能介绍&quot; class=&quot;headerlink&quot; title=&quot;Censys功能介绍&quot;&gt;&lt;/a&gt;Censys功能介绍&lt;/h3&gt;&lt;p&gt;现在，黑客和安全专家们拥有了一款新型强大的分析工具，那就是 Censys 搜索引擎，与最流行的搜索引擎Shodan非常类似。Censys是一款免费的搜索引擎，最初由密歇根大学的研究人员在10月发行，目前由谷歌提供支持。&lt;/p&gt;
+&lt;p&gt;Censys搜索引擎能够扫描整个互联网，Censys 每天都会扫描IPv4地址空间，以搜索所有联网设备并收集相关的信息，并返回一份有关资源（如设备、网站和证书）配置和部署信息的总体报告。&lt;/p&gt;
+&lt;p&gt;Censys官方网站上这样描述该搜索引擎：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Censys是一款搜索引擎，它允许计算机科学家了解组成互联网的设备和网络。Censys由因特网范围扫描驱动，它使得研究人员能够找到特定的主机，并能够针将设备、网站和证书的配置和部署信息创建到一个总体报告中。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Censys原理及架构&quot;&gt;&lt;a href=&quot;#Censys原理及架构&quot; class=&quot;headerlink&quot; title=&quot;Censys原理及架构&quot;&gt;&lt;/a&gt;Censys原理及架构&lt;/h3&gt;&lt;p&gt;与Shodan类似，Censys维护着一个完整的数据库，里面保存着每个暴露在互联网上的设备信息。对于一个黑客来说，如果他想搜索一个特定的目标，并需要收集目标配置的信息，那么对他来说censys无疑是一款特权工具。同时，安全专家能够轻易锁定互联网上保护措施很差的设备。&lt;/p&gt;</summary>
     
     
     
@@ -105,13 +107,15 @@
     <updated>2021-12-21T03:36:07.658Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;CMD创建新用户&quot;&gt;&lt;a href=&quot;#CMD创建新用户&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;CMD创建新用户&quot;&gt;&lt;a href=&quot;#CMD创建新用户&quot; class=&quot;headerlink&quot; title=&quot;CMD创建新用户&quot;&gt;&lt;/a&gt;CMD创建新用户&lt;/h2&gt;&lt;p&gt;需要有ADMIN权限的cmd&lt;/p&gt;
+&lt;p&gt;创建新用户并给该用户添加管理员权限：&lt;/p&gt;
+&lt;p&gt;(用户名处加了个$在结尾是可以在&lt;code&gt;net user&lt;/code&gt;命令下不显示该用户，但是在控制面板内还是能看到的)&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;net user username$ password &amp;#x2F;add&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;net localgroup administrators username$ &amp;#x2F;add&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;例如 ednovas为用户名，paswd为密码的新用户就是：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;net user ednovas$ paswd &amp;#x2F;add&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;net localgroup administrators ednovas$ &amp;#x2F;add&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这两句命令行后应该有返回&lt;code&gt;命令成功完成&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image-20210403141500963.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image-20210403141948213.png&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -128,13 +132,13 @@
     <updated>2021-12-21T03:36:08.207Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Telegram-Desktop-客户端&quot;&gt;&lt;a href=&quot;#Telegram-Desktop-客户端&quot; class=&quot;headerlink&quot; title=&quot;Telegram Desktop 客户端&quot;&gt;&lt;/a&gt;Telegram Desktop</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;Telegram-Desktop-客户端&quot;&gt;&lt;a href=&quot;#Telegram-Desktop-客户端&quot; class=&quot;headerlink&quot; title=&quot;Telegram Desktop 客户端&quot;&gt;&lt;/a&gt;Telegram Desktop 客户端&lt;/h2&gt;&lt;p&gt;Telegram Desktop 默认并没有勾选”使用系统代理”, 所以很多人觉得需要开全局才能用,  其实不然, 可以手动勾选”使用系统代理”或使用自定义代理.&lt;/p&gt;
+&lt;h3 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h3&gt;&lt;p&gt;情况A: 未登录账号: 界面左下角按钮&lt;/p&gt;
+&lt;p&gt;情况B: 已登录账号: Telegram Desktop 客户端 → 左上角三短线 → 设置 → 高级 → 网络和代理 → 代理类型 → 勾选”使用系统代理”或”使用自定义代理”&lt;/p&gt;
+&lt;h4 id=&quot;使用自定义代理添加方法&quot;&gt;&lt;a href=&quot;#使用自定义代理添加方法&quot; class=&quot;headerlink&quot; title=&quot;使用自定义代理添加方法&quot;&gt;&lt;/a&gt;使用自定义代理添加方法&lt;/h4&gt;&lt;p&gt;添加代理: SOCKS5/HTTP (这俩均可)&lt;/p&gt;
+&lt;p&gt;服务器: &lt;code&gt;127.0.0.1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;端口: &lt;code&gt;端口&lt;/code&gt;需查看你的代理软件(SS/SSR/Clash for Windows/V2RayN…)&lt;/p&gt;
+&lt;p&gt;不需要填写用户名和密码。&lt;/p&gt;</summary>
     
     
     
@@ -155,14 +159,13 @@
     <updated>2021-12-21T03:36:08.206Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h2 id=&quot;时代的结束&quot;&gt;&lt;a href=&quot;#时代的结束&quot; class=&quot;headerlink&quot; title=&quot;时代的结束&quot;&gt;&lt;/a&gt;时代的结束&lt;/h2&gt;&lt;p&gt;CentOS Linux 8即将于2021年12月31日停止技术更新。&lt;/p&gt;
-&lt;p&gt;CentOS Linux</summary>
-        
-      
+&lt;p&gt;CentOS Linux 7继续支持到2024年6月30日。&lt;/p&gt;
+&lt;p&gt;对Yum系有眷恋的朋友可以升级到RockyLinux8。&lt;/p&gt;
+&lt;h2 id=&quot;升级系统&quot;&gt;&lt;a href=&quot;#升级系统&quot; class=&quot;headerlink&quot; title=&quot;升级系统&quot;&gt;&lt;/a&gt;升级系统&lt;/h2&gt;&lt;p&gt;升级系统并重启&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo dnf –y upgrade &amp;amp;&amp;amp; sudo reboot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;下载转换脚本并执行&quot;&gt;&lt;a href=&quot;#下载转换脚本并执行&quot; class=&quot;headerlink&quot; title=&quot;下载转换脚本并执行&quot;&gt;&lt;/a&gt;下载转换脚本并执行&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;curl -O https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;rocky-linux&amp;#x2F;rocky-tools&amp;#x2F;main&amp;#x2F;migrate2rocky&amp;#x2F;migrate2rocky.sh &amp;amp;&amp;amp; chmod+x migrate2rocky.sh &amp;amp;&amp;amp; bash migrate2rocky.sh –r &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;等待迁移完成&quot;&gt;&lt;a href=&quot;#等待迁移完成&quot; class=&quot;headerlink&quot; title=&quot;等待迁移完成&quot;&gt;&lt;/a&gt;等待迁移完成&lt;/h2&gt;</summary>
     
     
     
@@ -181,14 +184,16 @@
     <updated>2021-12-25T01:26:01.187Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自 小御坂的破站 &lt;a</summary>
-        
-      
+&lt;p&gt;转载自 小御坂的破站 &lt;a href=&quot;https://blog.misaka.rest/202110/55.html&quot;&gt;https://blog.misaka.rest/202110/55.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;准备材料&quot;&gt;&lt;a href=&quot;#准备材料&quot; class=&quot;headerlink&quot; title=&quot;准备材料&quot;&gt;&lt;/a&gt;准备材料&lt;/h2&gt;&lt;p&gt;一个邮箱（最好是gmail、outlook之类的常用邮箱）&lt;/p&gt;
+&lt;h2 id=&quot;申请流程&quot;&gt;&lt;a href=&quot;#申请流程&quot; class=&quot;headerlink&quot; title=&quot;申请流程&quot;&gt;&lt;/a&gt;申请流程&lt;/h2&gt;&lt;p&gt;打开&lt;a href=&quot;https://nic.eu.org/arf/en/login/&quot;&gt;注册页面&lt;/a&gt; &lt;a href=&quot;https://nic.eu.org/arf/en/login/&quot;&gt;https://nic.eu.org/arf/en/login/&lt;/a&gt; ，点击Register&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010021048.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;填入个人信息，输入邮箱密码，同意协议，点击Create&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010021322.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;成功创建账号&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010021420.png&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -207,13 +212,14 @@
     <updated>2021-12-15T02:31:43.278Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;cloudflare一直以来提供了十分优秀且免费的服务，希望不要被滥用。&lt;/p&gt;
+&lt;p&gt;此文是使用warp来达到奈飞解锁的目的的。该方法还请自用，请勿用于解锁服务贩卖等。&lt;/p&gt;
+&lt;h2 id=&quot;安装Warp&quot;&gt;&lt;a href=&quot;#安装Warp&quot; class=&quot;headerlink&quot; title=&quot;安装Warp&quot;&gt;&lt;/a&gt;安装Warp&lt;/h2&gt;&lt;p&gt;GitHub地址：&lt;a href=&quot;https://github.com/fscarmen/warp&quot;&gt;https://github.com/fscarmen/warp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;该一键脚本可能是最快且最完善的warp一键安装脚本&lt;/p&gt;
+&lt;p&gt;一键脚本：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -N https:&amp;#x2F;&amp;#x2F;cdn.jsdelivr.net&amp;#x2F;gh&amp;#x2F;fscarmen&amp;#x2F;warp&amp;#x2F;menu.sh &amp;amp;&amp;amp; bash menu.sh [option] [lisence]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;运行后选择2简体中文，然后一般是纯ipv4添加ipv6warp，所以选1（根据自己情况选择）。&lt;/p&gt;
+&lt;p&gt;如果有warp+的 license可以输入，没有的话跳过即可，使用普通的warp服务。&lt;/p&gt;</summary>
     
     
     
@@ -234,14 +240,17 @@
     <updated>2021-12-13T04:00:08.834Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;部分图片文字转载自 小御坂的破站 &lt;a</summary>
-        
-      
+&lt;p&gt;部分图片文字转载自 小御坂的破站 &lt;a href=&quot;https://blog.misaka.rest/202112/291.html&quot;&gt;https://blog.misaka.rest/202112/291.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;WARP默认分配到的通道是共享的通道，很多用户被挤在一起，导致网速变得越来越差。&lt;/p&gt;
+&lt;p&gt;这时候有两种方法。一种是使用WARP+，而另外一种就是使用CloudFlare Teams的专属通道&lt;/p&gt;
+&lt;h2 id=&quot;CF开启Teams&quot;&gt;&lt;a href=&quot;#CF开启Teams&quot; class=&quot;headerlink&quot; title=&quot;CF开启Teams&quot;&gt;&lt;/a&gt;CF开启Teams&lt;/h2&gt;&lt;p&gt;登入CF &lt;a href=&quot;https://dash.cloudflare.com/&quot;&gt;https://dash.cloudflare.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;选择Teams&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-12-12_19-24-09.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;输入组织名称（后面可以随意更改），点击Next&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212185134.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;选择Free Plan&lt;/p&gt;</summary>
     
     
     
@@ -260,13 +269,12 @@
     <updated>2021-12-05T03:19:20.296Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;SSH-端口转发&quot;&gt;&lt;a href=&quot;#SSH-端口转发&quot; class=&quot;headerlink&quot; title=&quot;SSH 端口转发&quot;&gt;&lt;/a&gt;SSH 端口转发&lt;/h2&gt;&lt;p&gt;SSH 提供了一个非常有意思的功能，就是端口转发，它能够将其他 TCP 端口的网络数据通过</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;SSH-端口转发&quot;&gt;&lt;a href=&quot;#SSH-端口转发&quot; class=&quot;headerlink&quot; title=&quot;SSH 端口转发&quot;&gt;&lt;/a&gt;SSH 端口转发&lt;/h2&gt;&lt;p&gt;SSH 提供了一个非常有意思的功能，就是端口转发，它能够将其他 TCP 端口的网络数据通过 SSH 链接来转发，并且自动提供了相应的加密及解密服务。&lt;/p&gt;
+&lt;h3 id=&quot;（1）本地端口转发&quot;&gt;&lt;a href=&quot;#（1）本地端口转发&quot; class=&quot;headerlink&quot; title=&quot;（1）本地端口转发&quot;&gt;&lt;/a&gt;（1）本地端口转发&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh -fgN -L 2222:localhost:22 localhost&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;（2）远程端口转发&quot;&gt;&lt;a href=&quot;#（2）远程端口转发&quot; class=&quot;headerlink&quot; title=&quot;（2）远程端口转发&quot;&gt;&lt;/a&gt;（2）远程端口转发&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh -fgN -R 2222:host1:22 localhost&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;（3）动态转发&quot;&gt;&lt;a href=&quot;#（3）动态转发&quot; class=&quot;headerlink&quot; title=&quot;（3）动态转发&quot;&gt;&lt;/a&gt;（3）动态转发&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh -fgN -D 12345 root@host1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;iptables-端口转发&quot;&gt;&lt;a href=&quot;#iptables-端口转发&quot; class=&quot;headerlink&quot; title=&quot;iptables 端口转发&quot;&gt;&lt;/a&gt;iptables 端口转发&lt;/h2&gt;&lt;p&gt;可以通过iptables实现数据包的转发。&lt;/p&gt;</summary>
     
     
     
@@ -287,15 +295,14 @@
     <updated>2021-12-03T03:20:31.995Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;电脑建议显卡RTX3060及以上，A卡N卡都可以挖&lt;/p&gt;
 &lt;p&gt;显卡天梯图：&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
-        
-      
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-15eb42faf46aaa34d7268edf8495f430_r.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;挖矿软件用的开源矿工：&lt;a href=&quot;https://ntminer.com/&quot;&gt;https://ntminer.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下载地址：&lt;a href=&quot;https://link.zhihu.com/?target=http://minerjson.oss.ntminer.top/NTMiner.zip&quot;&gt;https://link.zhihu.com/?target=http%3A//minerjson.oss.ntminer.top/NTMiner.zip&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;火币挖矿教程：&lt;a href=&quot;https://www.hpt.com/pow/help/3/all?from=home&quot;&gt;https://www.hpt.com/pow/help/3/all?from=home&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;火币矿池网址: &lt;a href=&quot;https://www.hpt.com/pow&quot;&gt;https://www.hpt.com/pow&lt;/a&gt; 注册/登录账号&lt;/p&gt;
+&lt;h2 id=&quot;下载安装软件&quot;&gt;&lt;a href=&quot;#下载安装软件&quot; class=&quot;headerlink&quot; title=&quot;下载安装软件&quot;&gt;&lt;/a&gt;下载安装软件&lt;/h2&gt;&lt;p&gt;下载地址：&lt;a href=&quot;https://link.zhihu.com/?target=http://minerjson.oss.ntminer.top/NTMiner.zip&quot;&gt;https://link.zhihu.com/?target=http%3A//minerjson.oss.ntminer.top/NTMiner.zip&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
@@ -314,16 +321,120 @@
     <updated>2021-11-28T05:42:14.139Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;转载自HM的博客 &lt;a href=&quot;https://him.plus/archives/274&quot;&gt;https://him.plus/archives/274&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div</summary>
-        
-      
+&lt;div class=&quot;post-content&quot; id=&quot;post_content&quot;&gt;
+        &lt;h3 id=&quot;header-id-1&quot;&gt;需要用到的&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;一台vps服务器&lt;/li&gt;
+&lt;li&gt;Terraform&lt;/li&gt;
+&lt;li&gt;oci-cli&lt;br&gt;
+&lt;h4 id=&quot;header-id-2&quot;&gt;一、安装Terraform&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget https:&amp;#x2F;&amp;#x2F;releases.hashicorp.com&amp;#x2F;terraform&amp;#x2F;0.15.5&amp;#x2F;terraform_0.15.5_linux_amd64.zip&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;解压，并移动文件terraform到/usr/bin目录&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;unzip terraform_0.15.5_linux_amd64.zip&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mv terraform &amp;#x2F;usr&amp;#x2F;bin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;使用以下命令查看版本&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;terraform version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;显示如下则安装成功&lt;/strong&gt;&lt;br&gt;
+&lt;/p&gt;&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623394981402.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623394981402.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623394981402.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h4 id=&quot;header-id-3&quot;&gt;二、安装oci-cli工具&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;使用以下命令安装oci-cli工具&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;bash -c &amp;quot;$(curl –L https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;oracle&amp;#x2F;oci-cli&amp;#x2F;master&amp;#x2F;scripts&amp;#x2F;install&amp;#x2F;install.sh)&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;一直回车即可&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;当出现:&lt;/strong&gt;&lt;br&gt;
+&lt;/p&gt;&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395540213.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395540213.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395540213.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;br&gt;
+&lt;strong&gt;这个时候，是在提示你输入y回车，会自动添加环境变量&lt;br&gt;
+之后又是一直回车。出现如下提示表示安装成功。可以用：&lt;code&gt;oci -v&lt;/code&gt;  查询版本&lt;/strong&gt;&lt;br&gt;
+&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395572528.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395572528.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395572528.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h4 id=&quot;header-id-4&quot;&gt;三、复制用户和租户的ocid&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;甲骨文后台右上角—用户设置—点击用户以及租户，在信息栏中有我们需要的ID，分别点击复制，可以保存在记事本备份好&lt;/strong&gt;&lt;br&gt;
+&lt;/p&gt;&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395984815.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395984815.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395984815.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;br&gt;
+&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396103425.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396103425.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396103425.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h4 id=&quot;header-id-5&quot;&gt;四、配置cli&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;输入如下代码开始配置，配置的路径默认在root目录&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;oci setup config&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;具体配置看下面&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Enter a location for your config [&amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;config]: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a user OCID: #输入你的用户OCID&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a tenancy OCID: #输入你的租户OCID&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a region by index or name(e.g.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1: ap-chiyoda-1, 2: ap-chuncheon-1, 3: ap-hyderabad-1, 4: ap-melbourne-1, 5: ap-mumbai-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6: ap-osaka-1, 7: ap-seoul-1, 8: ap-sydney-1, 9: ap-tokyo-1, 10: ca-montreal-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11: ca-toronto-1, 12: eu-amsterdam-1, 13: eu-frankfurt-1, 14: eu-zurich-1, 15: me-dubai-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16: me-jeddah-1, 17: sa-santiago-1, 18: sa-saopaulo-1, 19: uk-cardiff-1, 20: uk-gov-cardiff-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21: uk-gov-london-1, 22: uk-london-1, 23: us-ashburn-1, 24: us-gov-ashburn-1, 25: us-gov-chicago-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26: us-gov-phoenix-1, 27: us-langley-1, 28: us-luke-1, 29: us-phoenix-1, 30: us-sanjose-1): 9  #这里选择你的区域&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Do you want to generate a new API Signing RSA key pair? (If you decline you will be asked to supply the path to an existing key.) [Y&amp;#x2F;n]: y  #输入y生成公钥&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a directory for your keys to be created [&amp;#x2F;root&amp;#x2F;.oci]: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a name for your key [oci_api_key]: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Public key written to: &amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;oci_api_key_public.pem&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a passphrase for your private key (empty for no passphrase): &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Private key written to: &amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;oci_api_key.pem&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Fingerprint: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Config written to &amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;config&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    If you haven&amp;#39;t already uploaded your API Signing public key through the&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    console, follow the instructions on the page linked below in the section&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#39;How to upload the public key&amp;#39;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   https:&amp;#x2F;&amp;#x2F;docs.cloud.oracle.com&amp;#x2F;Content&amp;#x2F;API&amp;#x2F;Concepts&amp;#x2F;apisigningkey.htm#How2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;复制生成的公钥，使用以下命令获取公钥&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cat &amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;oci_api_key_public.pem&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;把显示出来的内容复制,并且添加到&lt;br&gt;
+甲骨文后台—用户设置—资源—API秘钥—添加API秘钥&lt;br&gt;
+
+&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396703012.png&quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;oci iam availability-domain list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;提示以下内容则是配置正确&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396861886.png&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;header-id-6&quot;&gt;五、Terraform环境初始化&lt;/h4&gt;
+&lt;h5 id=&quot;header-id-7&quot;&gt;1、我们先获取甲骨文的Terraform脚本&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;点击 创建VM实例&lt;/strong&gt;&lt;br&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397006677.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397155148.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397237969.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一直下一步&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397917222.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397993340.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623398056711.png&quot;&gt;&lt;/p&gt;
+&lt;h5 id=&quot;header-id-8&quot;&gt;2、配置Terraform&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;使用以下命令创建Terraform运行目录&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd &amp;#x2F;opt&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mkdir terraform-learning &amp;amp;&amp;amp; cd terraform-learning&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;strong&gt;将刚刚解压到桌面的main.tf文件 上传到这个目录&lt;/strong&gt;&lt;br&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623398566301.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;将目录设置为Terraform运行目录&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;terraform init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;以上完成后，开始创建任务，用命令：（注意还是在/opt/terraform-learning）&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;terraform apply&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;执行完上面命令之后，会提示输入yes&lt;/strong&gt;&lt;br&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623398738195.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;上图还能看到API返回Error Message: Out of host capacity,提示主机容量不足，下面就用脚本来不停刷就行了&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h4 id=&quot;header-id-9&quot;&gt;六、部署脚本&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;终于可以部署脚本来抢服务器了，请先获取telegram账号id，并且关注通知机器人@oracle_message_bot&lt;br&gt;
+TG id请通过@userinfobot机器人获取&lt;br&gt;
+在root目录下新建一个terraform.sh&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd &amp;#x2F;root&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vi terraform.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;写入以下内容&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#!&amp;#x2F;bin&amp;#x2F;bash&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;path&amp;#x3D;&amp;#39;&amp;#x2F;opt&amp;#x2F;terraform-learning&amp;#x2F;&amp;#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;FIND_FILE&amp;#x3D;&amp;quot;&amp;#x2F;root&amp;#x2F;terraform.log&amp;quot; #日志文件位置&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;FIND_STR&amp;#x3D;&amp;quot;Apply complete!&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cd $path &amp;amp;&amp;amp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;while true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;do&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    echo &amp;#39;yes&amp;#39; | terraform apply -lock&amp;#x3D;false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    sleep 1s&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;done&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;if [ grep -c &amp;quot;$FIND_STR&amp;quot; $FIND_FILE -ne &amp;#39;20&amp;#39; ];then&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    curl --location --request POST &amp;#39;https:&amp;#x2F;&amp;#x2F;api.telegram.org&amp;#x2F;bot2124631392:AAHtVpEm7KRWo6ulYNG_Zbz98irpmTSIf8o&amp;#x2F;sendMessage&amp;#39; \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--form &amp;#39;text&amp;#x3D;服务器创建成功！&amp;#39; \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--form &amp;#39;chat_id&amp;#x3D;你的tg id&amp;#39; \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--form &amp;#39;parse_mode&amp;#x3D;markdown&amp;#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pkill terraform&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    exit 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fi&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;给Shell脚本赋予执行权限：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;chmod +x terraform.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;使用以下命令后台执行脚本&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;nohup .&amp;#x2F;terraform.sh &amp;gt;&amp;gt; terraform.log 2&amp;gt;&amp;amp;1  &amp;amp;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h5 id=&quot;header-id-10&quot;&gt;如何结束脚本？&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;使用以下命令结束脚本&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pkill terraform&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;转载自HM的博客 &lt;a href=&quot;https://him.plus/archives/274&quot;&gt;https://him.plus/archives/274&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;</summary>
     
     
     
@@ -342,15 +453,15 @@
     <updated>2021-11-29T06:34:51.849Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;推荐购买洛杉矶和圣何塞的机房，到国内速度更快。&lt;/p&gt;
 &lt;p&gt;个人认为比黑五要值。只是可惜8刀款只有500G的月流量，不过也足够个人用了。&lt;/p&gt;
-&lt;p&gt;RackNerd Cyber Monday 2021</summary>
-        
-      
+&lt;p&gt;RackNerd Cyber Monday 2021 会在北京时间2021年11月29日下午1点开始&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-28_22-34-21.png&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;512MB-套餐&quot;&gt;&lt;a href=&quot;#512MB-套餐&quot; class=&quot;headerlink&quot; title=&quot;512MB 套餐&quot;&gt;&lt;/a&gt;512MB 套餐&lt;/h2&gt;&lt;p&gt;512 MB 内存&lt;/p&gt;
+&lt;p&gt;1 CPU 核心&lt;/p&gt;
+&lt;p&gt;9 GB 高速SSD存储&lt;/p&gt;
+&lt;p&gt;500 GB 月流量&lt;/p&gt;</summary>
     
     
     
@@ -369,14 +480,16 @@
     <updated>2021-11-27T03:36:41.734Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;内容整理自&lt;br&gt;&lt;a href=&quot;https://t.me/liyuans&quot;&gt;https://t.me/liyuans&lt;/a&gt;&lt;br&gt;&lt;a</summary>
-        
-      
+&lt;p&gt;内容整理自&lt;br&gt;&lt;a href=&quot;https://t.me/liyuans&quot;&gt;https://t.me/liyuans&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://zhujiwiki.com/&quot;&gt;https://zhujiwiki.com/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://affyun.com/&quot;&gt;https://affyun.com/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://t.me/lowendaff_blog&quot;&gt;https://t.me/lowendaff_blog&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;持续更新ing…&quot;&gt;&lt;a href=&quot;#持续更新ing…&quot; class=&quot;headerlink&quot; title=&quot;持续更新ing…&quot;&gt;&lt;/a&gt;持续更新ing…&lt;/h1&gt;&lt;h1 id=&quot;Misaka-io&quot;&gt;&lt;a href=&quot;#Misaka-io&quot; class=&quot;headerlink&quot; title=&quot;Misaka.io&quot;&gt;&lt;/a&gt;Misaka.io&lt;/h1&gt;&lt;p&gt;S2N-2C4G - London&lt;/p&gt;
+&lt;p&gt;2vCore/4G/64G/4T&lt;/p&gt;
+&lt;p&gt;Looking Glass： &lt;a href=&quot;http://ping.sx/&quot;&gt;Ping.sx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;年付优惠码：&lt;code&gt;LETBF2021-LON&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;链接：  &lt;a href=&quot;https://app.misaka.io/&quot;&gt;https://app.misaka.io&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;仅售35刀&lt;/p&gt;
+&lt;h1 id=&quot;LAUNCH-VPS&quot;&gt;&lt;a href=&quot;#LAUNCH-VPS&quot; class=&quot;headerlink&quot; title=&quot;LAUNCH VPS&quot;&gt;&lt;/a&gt;LAUNCH VPS&lt;/h1&gt;</summary>
     
     
     
@@ -395,13 +508,15 @@
     <updated>2021-11-09T05:53:44.916Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;基础命令&quot;&gt;&lt;a href=&quot;#基础命令&quot; class=&quot;headerlink&quot; title=&quot;基础命令&quot;&gt;&lt;/a&gt;基础命令&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;基础命令&quot;&gt;&lt;a href=&quot;#基础命令&quot; class=&quot;headerlink&quot; title=&quot;基础命令&quot;&gt;&lt;/a&gt;基础命令&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/linux(1).jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/linux(2).jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/linux(3).jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/linux(4).jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/linux(5).jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/linux(6).jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/linux(7).jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/linux(8).jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/linux(9).jpg&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -420,13 +535,14 @@
     <updated>2021-11-09T02:16:59.907Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Evolution-Host&quot;&gt;&lt;a href=&quot;#Evolution-Host&quot; class=&quot;headerlink&quot; title=&quot;Evolution Host&quot;&gt;&lt;/a&gt;Evolution Host&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;Evolution-Host&quot;&gt;&lt;a href=&quot;#Evolution-Host&quot; class=&quot;headerlink&quot; title=&quot;Evolution Host&quot;&gt;&lt;/a&gt;Evolution Host&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://evolution-host.com/blog/ssd-vps-hosting.php&quot; target=&quot;_blank&quot;&gt;&lt;center&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-41-14.png&quot;&gt;&lt;/center&gt;&lt;center&gt;提供游戏DDOS防护的大流量VPS，提供多国家选择，100% SLA保证&lt;/center&gt;&lt;center&gt;Evolution Host offers Game DDOS in many countries，with 100% uptime SLA&lt;/center&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;只要你的博客有较多流量并且存在一段时间，在主页放上他们的广告就可以免费白嫖一个VPS了。&lt;/p&gt;
+&lt;p&gt;申请地址：&lt;a href=&quot;https://evolution-host.com/free-vps.php&quot;&gt;https://evolution-host.com/free-vps.php&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;配置&quot;&gt;&lt;a href=&quot;#配置&quot; class=&quot;headerlink&quot; title=&quot;配置&quot;&gt;&lt;/a&gt;配置&lt;/h2&gt;&lt;p&gt;看样子是博客流量越大，给的VPS配置就越好了。&lt;/p&gt;
+&lt;p&gt;我只申请到了个 3H3G 的&lt;/p&gt;
+&lt;p&gt;用的 AMD Ryzen 7 3800X&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-08_17-09-50.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-08_17-13-44.png&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -449,19 +565,319 @@
     <updated>2021-12-24T08:56:39.321Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align=&quot;left&quot;&gt;VPS 商家&lt;/th&gt;
 &lt;th align=&quot;left&quot;&gt;最低价格&lt;/th&gt;
 &lt;th align=&quot;left&quot;&gt;支付方式&lt;/th&gt;
-&lt;th</summary>
-        
-      
+&lt;th align=&quot;left&quot;&gt;特点&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://cloudpowerall.com/aff.php?aff=3407&quot;&gt;CloudPowerall&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$24.99/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;美国奈飞解锁，极速 CN2 GIA 线路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://anyhk.net/aff.php?aff=378&quot;&gt;Anyhk&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;￥49.9/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;HKT/HGC/HINET/WTT香港台湾奈飞解锁NAT/VPS/VDS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://vollcloud.com/aff.php?aff=109&quot;&gt;Vollcloud&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$67.5/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;大宽带香港CMI线路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://cloudsilk.io/aff.php?aff=133&quot;&gt;CloudSilk&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;￥159.99/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;美国4837、9929，德国4837&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.inkisp.com/aff.php?aff=568&quot;&gt;Ink cloud&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;￥349.9/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;香港CMI/BGP 美国日本韩国GIA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://vmshell.com/aff.php?aff=314&quot;&gt;Vmshell&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$49/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;香港CMI 流媒体解锁，实际体验不好&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.moonvm.com/aff.php?aff=300&quot;&gt;Moonvm&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$24/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Hinet动态小鸡，台湾奈飞解锁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&quot;&gt;RackNerd&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$8.89/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡、Bitcoin&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;三网直连，普通价格，高端配置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.ethernetservers.com/clients/aff.php?aff=1637&quot;&gt;Ethernet&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$12/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、Paypal&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;G口美国机房，提供免费20G DDOS防御&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://portal.dedipath.com/aff.php?aff=1061&quot;&gt;DediPath&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$6.5/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、微信&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;美国洛杉矶G口不限流量&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.webhorizon.in/order/forms/a/MjcwMA==&quot;&gt;Webhorizon&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$4/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;信用卡、Paypal&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;新加坡波兰美国等多地的nat机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://xiaojier.mooncloud.top/&quot;&gt;小小吉儿&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;￥2/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;台湾香港等便宜nat机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://polocloud.xyz/aff.php?aff=109&quot;&gt;Polocloud&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;￥25/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;马来西亚、澳门奈飞解锁nat机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;http://client.tmwhost.net/aff.php?aff=93&quot;&gt;Tmwhost&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;￥47.9/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;澳门奈飞解锁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://greencloudvps.com/billing/aff.php?aff=3263&quot;&gt;Greencloud&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$25/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;新加坡203.55IP，日本45.142奈飞解锁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://console.whloud.com/aff.php?aff=122&quot;&gt;Whcloud&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$5/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、微信、Paypal&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;日本奈飞解锁，需要支付宝人脸实名认证&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.limewave.net/&quot;&gt;LimeWave&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$3.14CAD/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;G口，普通线路，加拿大奈飞解锁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://support.1strentalserver.com/aff.php?aff=186&quot;&gt;1stRentalServer&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;500JPY/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;50M带宽，日本原生IP，日本本地流媒体全解锁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://tyo.cloudsigma.com/ui/?affid=ewang24225&quot;&gt;Cloudsigma&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1109JPY/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;日本奈飞迪士尼解锁，动态IP，关闭开启机子即一个新ip&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.conoha.jp/referral/?token=jPGhYm9grBd5qcYAVDzbVz1ymG0iw3eCFTIeTZqlesaPfXuvMoU-30P&quot;&gt;Conoha&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;680JPY/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;100M原生IP迪士尼解锁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.hostnamaste.com/clients/aff.php?aff=230&quot;&gt;Hostnamaste&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$12/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;美国加拿大法国印度俄罗斯VPS，提供OVZ和KVM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://melbicom.net/?from=40230&quot;&gt;Melbicom&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;3.9€/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;欧洲和新加坡多地区G口无限流量，优惠码&lt;code&gt;new_referer_40230&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;http://www.kagoya.jp/cloud/vps/&quot;&gt;Kagoya&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;550JPY/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;100M无限流量，三网直连&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://ruvds.com/pr5984&quot;&gt;RUVDS&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;￥109/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;俄罗斯奈飞解锁，100Mbps不限流量，15%优惠码&lt;code&gt;KPN-NBQ-IMT&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://clients.hostiger.com/?affid=514&quot;&gt;Hostiger&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$20/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;土耳其便宜VPS，无限流量&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://nest.bangmod.cloud/?aff=wdm1732418365&quot;&gt;Bangmod&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;￥30/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;150M，泰国便宜VPS，需要泰国手机号接码验证&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://contabo.com/&quot;&gt;Contabo&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$6.99/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;信用卡、Paypal&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;便宜高配服务器，普通线路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.ovhcloud.com/&quot;&gt;Ovhcloud&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$7.36/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;便宜高配服务器，普通线路，防DDOS，无限流量&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://store.moccanetwork.com/aff.php?aff=85&quot;&gt;SSDNODES&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$103/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;信用卡、Paypal&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;12H48G配置只要$103/年，便宜高配服务器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.frantech.ca/aff.php?aff=5269&quot;&gt;BuyVM&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$2/月 ¥10/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡、Bitcoin&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;低价、无限流量、大盘鸡&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://bandwagonhost.com/aff.php?aff=66665&quot;&gt;BandwagonHost&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$49.9/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、微信、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;极速 CN2 GIA 线路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.dmit.io/aff.php?aff=2664&quot;&gt;DMIT&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$88.88/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;CN2 GIA 高端高速线路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://hmbcloud.com/aff.php?aff=391&quot;&gt;HMBCloud&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$69.99/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;CN2 GIA 高端高速线路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.olink.cloud/&quot;&gt;OLink Cloud&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$5/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;极速 CU VIP 线路(AS9929)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.vultr.com/?ref=8971645-8H&quot;&gt;Vultr&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$2.5/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、微信、PayPal、Bitcoin&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;注册送 100 美元，有效期14天&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.digitalocean.com/&quot;&gt;DigitalOcean&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$5/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;注册送 100 美元，有效期60天&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.onevps.cloud/?aff=39962&quot;&gt;OneVPS&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$2/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;无限流量 5折优惠码VPSWELCOME&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://app.cloudcone.com/?ref=7234&quot;&gt;CloudCone&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$11/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;按时计费，随用随删&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.spartanhost.net/aff.php?aff=1475&quot;&gt;Spartan Host&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$2/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡、Bitcoin&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;三网联通回程(AS4837)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.justg.com/aff.php?aff=344&quot;&gt;Justg&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$19.9/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;南非CN2 GIA线路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.tmthosting.net/aff.php?aff=143&quot;&gt;TMT Hosting&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$2.37/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡、Bitcoin&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;三网联通回程(AS4837)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://hosting.gullo.me/&quot;&gt;Gullo&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$8/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;PayPal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;新加坡奈飞解锁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://virmach.com/&quot;&gt;Virmach&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$7.5/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、Paypal&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;“低价屠夫”，建议买常规版&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://justhost.ru/?ref=128830&quot;&gt;Justhost&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;￥9/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;俄罗斯无限流量，电信联通线路不错，移动绕路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&quot;科学上网VPS&quot;&gt;&lt;a href=&quot;#科学上网VPS&quot; class=&quot;headerlink&quot; title=&quot;科学上网VPS&quot;&gt;&lt;/a&gt;科学上网VPS&lt;/h2&gt;&lt;h3 id=&quot;便宜就完了&quot;&gt;&lt;a href=&quot;#便宜就完了&quot; class=&quot;headerlink&quot; title=&quot;便宜就完了&quot;&gt;&lt;/a&gt;便宜就完了&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&quot;&gt;RackNerd&lt;/a&gt; 性价比极高，反代优选能上70mb/s，一年还只要大概70rmb。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.ethernetservers.com/clients/aff.php?aff=1637&quot;&gt;Ethernet&lt;/a&gt; 性价比较高，G口美国线路。线路一般。一年12刀，三年只要30刀。优惠码可见此处 &lt;a href=&quot;https://www.ethernetservers.com/coupons&quot;&gt;https://www.ethernetservers.com/coupons&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://my.webhorizon.in/order/forms/a/MjcwMA==&quot;&gt;webhorizon&lt;/a&gt; 印度商家，卖nat的（nat可以理解为小vps），不会用nat的还请勿购买。最便宜$4/年，但是配置和线路肯定就不敢恭维了。不过很多地区是奈飞全解锁的，不过这个没有解锁保证，看脸。购买后是手动开通的，所以还需要等待一段时间。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://xiaojier.mooncloud.top/&quot;&gt;小小吉儿&lt;/a&gt; 算是tg里比较靠谱的nat商家了。群组 &lt;a href=&quot;https://t.me/kuaileceshi2&quot;&gt;https://t.me/kuaileceshi2&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://virmach.com/&quot;&gt;Virmach&lt;/a&gt; 绰号就叫低价屠夫，便宜就完了。黑五期间还有超低价，闪购补货频道：&lt;a href=&quot;https://t.me/vpscang_virmach&quot;&gt;https://t.me/vpscang_virmach&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://hosting.gullo.me/&quot;&gt;Gullo&lt;/a&gt; 便宜的新加坡奈飞解锁，但是经常缺货。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://justhost.ru/?ref=128830&quot;&gt;Justhost&lt;/a&gt; 便宜的俄罗斯VPS，还是无限流量的，年付有8折优惠。电信和联通友好，移动绕路。油管勉强可看4k。建议选择 &lt;code&gt;DataLine (Moscow）&lt;/code&gt;机房，有 CN2 加成。附赠的IPV6地址可能出bug，可以直接禁用IPV6。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://contabo.com/&quot;&gt;Contabo&lt;/a&gt; &lt;del&gt;高配机可能是最便宜的了？&lt;/del&gt; 想要建站等可以考虑&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://melbicom.net/?from=40230&quot;&gt;Melbicom&lt;/a&gt; 低至 3.9欧元/月，折合人民币大概 28元/月的欧洲VPS。G口带宽，无限流量。国内可能都需要中转，但耐不住大口无限流量啊。支持支付宝。他家的独服也不错的&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;优质线路&quot;&gt;&lt;a href=&quot;#优质线路&quot; class=&quot;headerlink&quot; title=&quot;优质线路&quot;&gt;&lt;/a&gt;优质线路&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://cloudpowerall.com/aff.php?aff=3407&quot;&gt;CloudPowerall&lt;/a&gt; 目前主要销售面向中国大陆的香港和洛杉矶 CN2 GIA 线路 KVM VPS。其洛杉矶 VPS 位于洛杉矶 Cera，三网回程 GIA，国内速度非常优秀，而且是 AMD Ryzen 9 3950X 高性能处理器，仅 24.99美元/年，美国奈飞解锁性价比极高！堪称新一代的传家宝，又一个 VPS 界的理财产品。支持 Pay­pal 和支付宝付款。&lt;a href=&quot;https://p3terx.com/archives/cn2-gia-vps-cloudpowerall.html&quot;&gt;最新优惠购买链接可以在这里找到&lt;/a&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://anyhk.net/aff.php?aff=378&quot;&gt;Anyhk&lt;/a&gt; 主要卖香港和奈飞nat的商家，挺靠谱的，不像很多随时跑路的。主要线路有HKT,HGC,HINET,WTT等NAT/VPS/VDS。每月49.9rmb起。如果你想要便宜的香港和台湾奈飞解锁nat，绝对是个很好的选择。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://bandwagonhost.com/aff.php?aff=66665&quot;&gt;BandwagonHost&lt;/a&gt;俗称搬瓦工，是非常老牌的 VPS 商家。搬瓦工的 CN2 GIA 是目前最为稳定的线路之一，三网表现都非常优秀。绝版搬瓦工的套餐早已水涨船高，被 VPS 玩家们誉为传家宝，是 VPS 界的理财产品。现在可以购买到的性价比最高的 CN2 GIA 是&lt;a href=&quot;https://bwh89.net/cart.php?a=confproduct&amp;i=1&quot;&gt;美西电商版&lt;/a&gt;，可以自由切换北美的 DC6、DC9 机房，也可以切换到日本软银机房。因此它可以应对绝大部分状况。这个世界上有很多声称拥有 GIA 线路的厂商，但是搬瓦工比他们中的绝大多数都要好很多。价格方面季付 49.99 美元、年付优惠价 169.99，还可用终身优惠码&lt;code&gt;BWH3HYATVBJW&lt;/code&gt;抵扣大概10美元左右，价格虽然比一般的要高，但毕竟线路质量和性能配置摆在那里。还有&lt;a href=&quot;https://t.me/BandwagonHostNews&quot;&gt;搬瓦工TG补货频道&lt;/a&gt;可以时刻关注&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.olink.cloud/&quot;&gt;OLink Cloud&lt;/a&gt; 目前主营美国圣何塞以及德国法兰克福这两个地区的中国大陆三网回程联通 VIP 线路(AS9929) VPS 和独立服务器。AS9929 俗称联通 A 网，主要服务于政企大客户，对标电信 CN2 GIA ，用户少、负载小、速度快，晚高峰不惧拥堵。暂时比较冷门，价格还没有水涨船高，它家圣何塞的 VPS 为 G 口 9929，是市面上非常少见的。&lt;a href=&quot;https://p3terx.com/archives/cuii-vps-olixnk-cloud.html&quot;&gt;最新优惠购买链接可以在这里找到&lt;/a&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.justg.com/aff.php?aff=344&quot;&gt;Justg&lt;/a&gt; 主营南非 CN2 GIA 线路 VPS。相比满大街的美西和亚太 CN2 GIA，南非 CN2 GIA 线路属于比较冷门的那种，用的人少意味着晚高峰不惧拥堵。最低价格只需 19.9 美元/年。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://billing.spartanhost.net/aff.php?aff=1475&quot;&gt;Spartan Host&lt;/a&gt; 俗称斯巴达主机，其西雅图机房的 VPS 三网回程走的是联通169(AS4837)线路，由于目前联通的国际带宽充裕所以延迟和稳定性都很优秀，晚高峰接近于 CN2 GIA 的体验，而低至2美元/月的价格让它长期处于缺货状态。二级市场的价格也已经炒上天了，又成了一个 VPS 界的理财产品。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://billing.tmthosting.net/aff.php?aff=143&quot;&gt;TMT Hosting&lt;/a&gt; 很可能是 &lt;a href=&quot;https://spartanhost.org/&quot;&gt;Spartan Host&lt;/a&gt; 的马甲，因为产品线非常相似，西雅图机房的回程线路也是一致的，甚至 IP 都归属于斯巴达。没抢到斯巴达的小伙伴可以购买这家，&lt;a href=&quot;https://p3terx.com/archives/cheap-vps-tmt-hosting.html&quot;&gt;最新优惠购买链接可以在这里找到&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;常规线路&quot;&gt;&lt;a href=&quot;#常规线路&quot; class=&quot;headerlink&quot; title=&quot;常规线路&quot;&gt;&lt;/a&gt;常规线路&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&quot;&gt;RackNerd&lt;/a&gt; 价格低、配置高、流量大、工单回复及时，已经获得了国内外众多 VPS 玩家的好评。他家经常搞活动抛出价格非常低且配置很高的优惠套餐，虽然只是常规的直连线路，但实际体验远超过预期，有成为传家宝的潜质。搭建节点的话，使用反代加优选，可以达到70mb/s的速度。如果你已经有 CN2 GIA 、AS9929 之类的优质线路 VPS ，那么它作为非高峰期主力或者当做应急备胎是非常不错的选择。最低年付价格换算下来还不到 1 美元/月，可以说性价比直接拉满。&lt;a href=&quot;https://p3terx.com/archives/cheap-vps-racknerd.html&quot;&gt;点击查看 RackNerd 最新优惠&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://app.cloudcone.com/?ref=7234&quot;&gt;CloudCone&lt;/a&gt; 主要提供美国洛杉矶 VPS，对于电信用户很多地区会走 CN2 线路，因此延迟和稳定性都较为优秀。优惠价格通常在 1-2美元/月，不过经常很快就没货了。如果你有不着急购买，可以先注册账号，下次活动的第一时间会发邮件通知。&lt;a href=&quot;https://p3terx.com/archives/cheap-vps-cloudcone.html&quot;&gt;点击查看 Cloudcone 最新优惠&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;奈飞解锁&quot;&gt;&lt;a href=&quot;#奈飞解锁&quot; class=&quot;headerlink&quot; title=&quot;奈飞解锁&quot;&gt;&lt;/a&gt;奈飞解锁&lt;/h3&gt;</summary>
     
     
     
@@ -480,14 +896,14 @@
     <updated>2021-11-03T23:15:22.364Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h2 id=&quot;前置准备&quot;&gt;&lt;a href=&quot;#前置准备&quot; class=&quot;headerlink&quot; title=&quot;前置准备&quot;&gt;&lt;/a&gt;&lt;strong&gt;前置准备&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;下载andOTP并安装&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
+&lt;p&gt;&lt;a href=&quot;https://github.com/andOTP/andOTP/releases&quot;&gt;https://github.com/andOTP/andOTP/releases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在安卓手机和电脑登陆谷歌账号&lt;/p&gt;
+&lt;p&gt;ios手机请寻找其他的app，操作八九不离十&lt;/p&gt;
+&lt;h2 id=&quot;谷歌设置开启二步验证&quot;&gt;&lt;a href=&quot;#谷歌设置开启二步验证&quot; class=&quot;headerlink&quot; title=&quot;谷歌设置开启二步验证&quot;&gt;&lt;/a&gt;&lt;strong&gt;谷歌设置开启二步验证&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;点击谷歌账号设置》安全性》两步验证&lt;br&gt;网址：&lt;a href=&quot;https://myaccount.google.com/security&quot;&gt;https://myaccount.google.com/security&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.001.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;点击开始&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.002.png&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -504,14 +920,33 @@
     <updated>2021-11-03T02:46:49.646Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自 IsaacWangTT &lt;a</summary>
-        
-      
+&lt;p&gt;转载自 IsaacWangTT &lt;a href=&quot;https://blog.isaacwangtt.xyz/index.php/archives/154/&quot;&gt;https://blog.isaacwangtt.xyz/index.php/archives/154/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.isaacwangtt.xyz/index.php/archives/156/&quot;&gt;https://blog.isaacwangtt.xyz/index.php/archives/156/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.isaacwangtt.xyz/index.php/archives/160/&quot;&gt;https://blog.isaacwangtt.xyz/index.php/archives/160/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
+&lt;p&gt;首先你得打开windows里面的功能，在windows菜单里面搜索启用....功能&lt;br&gt;然后打开里面的这两个功能&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@fbd84daf694bc3c341f4a67c387fde02e92fc5a6/2021/10/23/fc239b9e839fce2255a2c5a3d58f57ca.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;hyper-v和虚拟机平台&quot; title=&quot;hyper-v和虚拟机平台&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@fbd84daf694bc3c341f4a67c387fde02e92fc5a6/2021/10/23/fc239b9e839fce2255a2c5a3d58f57ca.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;重启&lt;/p&gt;&lt;hr&gt;&lt;p&gt;之后下载需要的包&lt;br&gt;商店下载链接&lt;a href=&quot;https://www.microsoft.com/store/productId/9P3395VX91NR&quot;&gt;https://www.microsoft.com/store/productId/9P3395VX91NR&lt;/a&gt;&lt;br&gt;安装包抓包地址&lt;a href=&quot;https://store.rg-adguard.net/&quot;&gt;https://store.rg-adguard.net/&lt;/a&gt;&lt;br&gt;在抓包地址右边选择Slow通道(因为Slow通道对应的是Beta通道，其他Fast,RP,Retail分别对应Dev,预览，正式版)&lt;br&gt;然后在地址栏里面输入商店下载地址&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@8dd2873eac46c72a2e068fc1e111bc36e7ac36ee/2021/10/23/6e17ce2332480b48c65701599e6f129c.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@8dd2873eac46c72a2e068fc1e111bc36e7ac36ee/2021/10/23/6e17ce2332480b48c65701599e6f129c.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;找到最下面的那个最大的包，我这里名字为&quot;MicrosoftCorporationII.WindowsSubsystemForAndroid_1.7.32815.0_neutral_~_8wekyb3d8bbwe.msixbundle&quot;&lt;br&gt;如果版本更新可能会变，不过都差不多，把它下载下来&lt;br&gt;如果你双击它，你会发现无法安装&lt;br&gt;这个时候我们需要用管理员运行Powershell来安装&lt;br&gt;win+X运行Powershell&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@d5c10c25afb416a0c37e06b0c4a330497c48d9ad/2021/10/23/de4a05fddc9621828c3f8b7c63023d81.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;Powershell&quot; title=&quot;Powershell&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@d5c10c25afb416a0c37e06b0c4a330497c48d9ad/2021/10/23/de4a05fddc9621828c3f8b7c63023d81.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;在里面输入&lt;/p&gt;&lt;pre class=&quot;hljs-codeblock&quot;&gt;&lt;code class=&quot;hljs csharp&quot;&gt;&lt;table class=&quot;hljs-ln&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;hljs-ln-line hljs-ln-numbers&quot; data-line-number=&quot;1&quot;&gt;&lt;div class=&quot;hljs-ln-n&quot; data-line-number=&quot;1&quot;&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;hljs-ln-line hljs-ln-code&quot; data-line-number=&quot;1&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;add&lt;/span&gt;-appxpackage &lt;span class=&quot;hljs-string&quot;&gt;&quot;这里填你下载的安装包的绝对路径&quot;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;
+&lt;div class=&quot;hljs-control hljs-title&quot;&gt;
+            &lt;div type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; data-original-title=&quot;折行&quot; class=&quot;hljs-control-toggle-break-line&quot;&gt;
+                        &lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#align-left&quot;/&gt;&lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;copy_btn_m5WO5hfpiftSxaHAuBsueGRwFour77Fe&quot; type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; data-original-title=&quot;复制&quot; class=&quot;hljs-control-copy&quot;&gt;
+                        &lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#copy&quot;/&gt;&lt;/svg&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;/pre&gt;&lt;p&gt;比如我的就是&lt;/p&gt;&lt;pre class=&quot;hljs-codeblock&quot;&gt;&lt;code class=&quot;hljs csharp&quot;&gt;&lt;table class=&quot;hljs-ln&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;hljs-ln-line hljs-ln-numbers&quot; data-line-number=&quot;1&quot;&gt;&lt;div class=&quot;hljs-ln-n&quot; data-line-number=&quot;1&quot;&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;hljs-ln-line hljs-ln-code&quot; data-line-number=&quot;1&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;add&lt;/span&gt;-appxpackage &lt;span class=&quot;hljs-string&quot;&gt;&quot;D:\Downloads\Microsoft Edge\MicrosoftCorporationII.WindowsSubsystemForAndroid_1.7.32815.0_neutral___8wekyb3d8bbwe.Msixbundle&quot;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;
+&lt;div class=&quot;hljs-control hljs-title&quot;&gt;
+            &lt;div type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; data-original-title=&quot;折行&quot; class=&quot;hljs-control-toggle-break-line&quot;&gt;
+                        &lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#align-left&quot;/&gt;&lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;copy_btn_k5kBNtQRxu27u6JI96HWWAbK3kEBk4i6&quot; type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; data-original-title=&quot;复制&quot; class=&quot;hljs-control-copy&quot;&gt;
+                        &lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#copy&quot;/&gt;&lt;/svg&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;/pre&gt;&lt;p&gt;回车执行&lt;br&gt;然后就可以enjoy了&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@4bee2cfec873eb34502cd370422d9cbc94559b72/2021/10/23/36f79476f2ecd91ba609db80023925f9.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;WSA&quot; title=&quot;WSA&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@4bee2cfec873eb34502cd370422d9cbc94559b72/2021/10/23/36f79476f2ecd91ba609db80023925f9.png&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;/article&gt;
+
+&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
+&lt;p&gt;很多小伙伴装了WSA都发现没有桌面，这就意味着你只能用adb来进行和子系统的交互&lt;br&gt;十分的麻烦，这里我推荐一个工具，&lt;a href=&quot;https://www.atmb.top/&quot;&gt;秋之盒&lt;/a&gt;&lt;/p&gt;&lt;h2 id=&quot;toc_0&quot;&gt;我使用的是canary金丝雀版本&lt;/h2&gt;&lt;p&gt;进入WSA界面&lt;br&gt;打开开发人员模式&lt;br&gt;启用它，进入管理开发人员设置&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@578098c98de446dabdd6739571a5e9777e9afadf/2021/10/23/740ba46d103856a0a5575f8ba092f631.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;开发人员模式&quot; title=&quot;开发人员模式&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@578098c98de446dabdd6739571a5e9777e9afadf/2021/10/23/740ba46d103856a0a5575f8ba092f631.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;打开usb调试&lt;/p&gt;&lt;hr&gt;&lt;p&gt;回到WSA界面，刷新和复制IP&lt;br&gt;进入秋之盒&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@ac1923a448e632aee5e7b0147ee37a811b86a1b7/2021/10/23/35b60326e485e438db3e1d2c4c480306.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;连接网络设备&quot; title=&quot;连接网络设备&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@ac1923a448e632aee5e7b0147ee37a811b86a1b7/2021/10/23/35b60326e485e438db3e1d2c4c480306.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;在这里输入你复制的IP&lt;/p&gt;&lt;p&gt;安装一个然后你就能对WSA做你想做的事情了，比如可以安装一个应用商店，我这里推荐大家安装一个&lt;a href=&quot;https://www.coolapk.com/&quot;&gt;酷安&lt;/a&gt;&lt;br&gt;听说有人在wsa里面成功安装了谷歌框架，大家也可以试试&lt;/p&gt;&lt;hr&gt;&lt;p&gt;PS:安装的app会出现在开始菜单内&lt;br&gt;关于如何科学上网，可以看看我hxd写的文章:&lt;a href=&quot;https://ednovas.xyz/2021/02/06/clashconnection/&quot;&gt;https://ednovas.xyz/2021/02/06/clashconnection/&lt;/a&gt;&lt;/p&gt; &lt;/article&gt;
+
+&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
+&lt;p&gt;具体看&lt;br&gt;&lt;a href=&quot;https://www.cnbeta.com/articles/tech/1193935.htm&quot;&gt;https://www.cnbeta.com/articles/tech/1193935.htm&lt;/a&gt;&lt;/p&gt;&lt;p&gt;简化版我在酷安的帖子&lt;a href=&quot;https://www.coolapk.com/feed/30903847?shareKey=ODJiOWM1Nzg0MDQ5NjE3NDJmMGQ~&amp;amp;shareUid=2257293&amp;amp;shareFrom=com.coolapk.market_11.4.3&quot;&gt;https://www.coolapk.com/feed/30903847?shareKey=ODJiOWM1Nzg0MDQ5NjE3NDJmMGQ~&amp;amp;shareUid=2257293&amp;amp;shareFrom=com.coolapk.market_11.4.3&lt;/a&gt;&lt;/p&gt; &lt;/article&gt;</summary>
     
     
     
@@ -528,14 +963,10 @@
     <updated>2021-10-30T21:48:46.486Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自 大松鼠 &lt;a</summary>
-        
-      
+&lt;p&gt;转载自 大松鼠 &lt;a href=&quot;https://api.xiaoheihe.cn/v3/bbs/app/api/web/share?link_id=71998372&quot;&gt;https://api.xiaoheihe.cn/v3/bbs/app/api/web/share?link_id=71998372&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;section&gt;&lt;p&gt;今年的双十一太重量级了 看到这么多好货这么便宜忍不住想给大家推荐一波。（最后附上鼠标性能天梯图）&lt;/p&gt;&lt;p&gt;所有推荐的鼠标都是我亲手上手试过的，觉得好才会推荐出来，所以有些鼠标没推荐到，是我漏了或者是我没上手体验过不敢下结论。&lt;/p&gt;&lt;p&gt;大部分人购买鼠标的预算都在200元以下所以我着重说200以下价位&lt;/p&gt;&lt;p&gt;直接上干货吧。&lt;/p&gt;&lt;h2&gt;200元以下价位&lt;/h2&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;712&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/9025c7f7b2d76d7524cffb82af570233/thumb.jpeg&quot; data-width=&quot;800&quot; style=&quot;padding-top: 0px; height: 445px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/9025c7f7b2d76d7524cffb82af570233/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;h3&gt;赛睿Rival3&lt;/h3&gt;&lt;p&gt;为什么把这个鼠标放到第一个呢，因为这个鼠标的价格实在是太有竞争力了，以前一直都是卖249，在200元价位段可谓是毫无竞争力和性价比，这次双十一直接杀到89元这个价位，简直就是降维打击，作为赛睿进入轻量化鼠标的处女作在不打洞的情况下做到了77克的重量。缺点就是用的是橡胶线材对比伞绳线来说还是比较硬的，但是现在这个价位的话可以理解。如果你的预算在100块以内的话这款鼠标绝对是这个价位的不二之选。&lt;/p&gt;&lt;p&gt;模具三围120*58*39 重量77g 传感器TrueMove Core&lt;/p&gt;&lt;p&gt;推荐手长16CM-19CM 建议入手价格89元 &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;800&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/f54acc8694e8ed8bf5dac47ed8903f4a/thumb.jpeg&quot; data-width=&quot;800&quot; style=&quot;padding-top: 0px; height: 500px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/f54acc8694e8ed8bf5dac47ed8903f4a/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;h3&gt;罗技G102&lt;/h3&gt;&lt;p&gt;这个就不用多说了吧百元价位的一直的王，最低卖到过69元 ，G102在这个价位段搭载了主动张力系统可以说是这个鼠标最大的卖点了。这个模具适合抓握和指握，如果是趴握玩家的话可能就不太适合，但是按照今年百元价位群魔乱舞的情况来说的话如果G102不卖到59或者69的话竞争力不会太强&lt;/p&gt;&lt;p&gt;模具三围 116.6*62.15*38.2  重量82g 传感器Hero8K&lt;/p&gt;&lt;p&gt;推荐手长16CM-18.5CM  建议入手价格59-69元&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;749&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/1c41ef64f77a27826da88bc4c9a160b7/thumb.jpeg&quot; data-width=&quot;747&quot; style=&quot;padding-top: 0px; height: 501px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/1c41ef64f77a27826da88bc4c9a160b7/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;h3&gt;炼狱蝰蛇V2MINI &lt;/h3&gt;&lt;p&gt;这个鼠标是经典蝰蛇模具的缩小版，但是有点小过头了，我16CM的手都觉得小了，大手玩家肯定不太用得了这个鼠标。这个鼠标的优点就是采用了雷蛇SPEEDFLEX类伞绳线材，在这个价位段这个线材的可以说是鲨疯了。加上蝰蛇V2MINI采用了轻量化设计在外壳不打洞的情况下做到了62克的轻量化 可以说这个重量在所有鼠标里都是一个非常优秀的重量了，更别说在百元价位段。&lt;/p&gt;&lt;p&gt;模具三围 114.2*56*38.5 重量62克 传感器PAW3359 &lt;/p&gt;&lt;p&gt;推荐手长15CM-17.5CM建议入手价格89元&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;800&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/1b5e1697c0c2355f12bee017dd9bda51/thumb.jpeg&quot; data-width=&quot;800&quot; style=&quot;padding-top: 0px; height: 500px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/1b5e1697c0c2355f12bee017dd9bda51/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;h3&gt;冰豹 极光豹酷玩版&lt;/h3&gt;&lt;p&gt;最大的卖点冰豹独家的泰坦涂层和泰坦滚轮，冰豹的泰坦涂层可以说是涂层界天花板的存在了，泰坦滚轮就更是最强滚轮了。这个涂层不管是耐用性或者是抗汗都是一流，摸起来就感觉在摸女孩子的手一样（不是）&lt;span data-emoji=&quot;cube_doge&quot; class=&quot;hb-emoji hb-emoji-cube hb-emoji-cube_13&quot;&gt;&lt;/span&gt;，这次极光豹做到了无洞69克轻量化算是比较优秀的一个重量了。缺点就是线材用的是比较硬的橡胶线材和光微动，这次冰豹的光微动按键手感特别的硬不适合速点，所以如果玩LOL的朋友建议不要入手。总之这次极光豹酷玩版对比精英版在表面涂层和滚轮上并没有缩水，这一点要给冰豹一个好评。&lt;/p&gt;&lt;p&gt;模具三围120*58*38.7 重量69g 传感器PAW3331 &lt;/p&gt;&lt;p&gt;推荐手长16CM-19CM 建议入手价129&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;800&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/a46f00d8a531b5d81b546fa693a50881/thumb.jpeg&quot; data-width=&quot;800&quot; style=&quot;padding-top: 0px; height: 500px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/a46f00d8a531b5d81b546fa693a50881/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;h4 class=&quot;img-desc show-img-desc&quot;&gt;&lt;/h4&gt;&lt;h3&gt;巴塞利斯蛇X极速版 &lt;/h3&gt;&lt;p&gt;名字太长了下面就说他的简称小巴蛇吧。这是这个价位少有的无线游戏鼠标，优点是雷蛇的hyperspeed无线连接技术。但是这个价位的无线鼠标大多数都是采用干电池的设计，加上本身小巴蛇本身83g不太优秀的重量加上干电池可能要快到100g核 弹 级&lt;span data-emoji=&quot;cube_滑稽&quot; class=&quot;hb-emoji hb-emoji-cube hb-emoji-cube_34&quot;&gt;&lt;/span&gt;的重量了。但是抛开重量来说这款鼠标不管是性能还是无线连接的稳定性都是可圈可点的。&lt;/p&gt;&lt;p&gt;模具三围130*60*42 重量83克传感器PAW3369 &lt;/p&gt;&lt;p&gt;推荐手长17CM-20CM 建议入手价格149元&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;1000&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/f5bb73e80e3b607ec03e50f3095ac4cb/thumb.jpeg&quot; data-width=&quot;750&quot; style=&quot;padding-top: 0px; height: 666px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/f5bb73e80e3b607ec03e50f3095ac4cb/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;h3&gt;达尔优A970&lt;/h3&gt;&lt;p&gt;顶级外设就不用我说了吧，这段时间达尔优出的新品一个比一个劲爆，真的有顶级外设内味了。这次冲到159元可以说也是性价比很高的一个鼠标了，搭载的是达尔优和原相定制的AIM引擎，这个AIM引擎可以说是性能第一梯队的一个传感器了，采用的类伞绳（其实我也不知道这个是不是伞绳，因为外观是编制线，柔软度却是伞绳的柔软度）搭载了达尔优的第二代KBS按键，这个按键手感真的没得说，这个模具加上KBS按键握姿兼容性挺高的。缺点就是84克的重量有点中规中矩。&lt;/p&gt;&lt;p&gt;三围131*71.7*40.5重量84g 传感器 达尔优AIM &lt;/p&gt;&lt;p&gt;推荐手长16CM-20CM 建议入手价格159元&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h3&gt;&lt;/h3&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;952&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/a97a1a6b46a31941e12d14b59ac8cc55/thumb.jpeg&quot; data-width=&quot;1080&quot; style=&quot;padding-top: 0px; height: 440px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/a97a1a6b46a31941e12d14b59ac8cc55/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;h3&gt;赛睿rival3的无线版&lt;/h3&gt;&lt;p&gt;使用体验参考前面rival3，这次的无线版采用的是两节7号干电池设计，上一节电池是96g，上两节电池的话也是超过了100g这个健身器材级的重量，不过这个价位的鼠标也还可以接受，用的是高通的无线连接方案，无线链接特别稳定算是一个优点。&lt;br&gt;&lt;/p&gt;&lt;p&gt;模具三围120*58*39 重量 单电池96g双电池108g 传感器TrueMove Air &lt;/p&gt;&lt;p&gt;推荐手长16CM-19CM 建议入手价格179元 &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;800&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/c5987c06af17b0c4856495ba9998fbb7/thumb.jpeg&quot; data-width=&quot;800&quot; style=&quot;padding-top: 0px; height: 500px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/c5987c06af17b0c4856495ba9998fbb7/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;p&gt;极度未知 旋火 &lt;br&gt;&lt;/p&gt;&lt;p&gt;双十一189元，旋火降价到了这个价格竞争力还是很大的，优点是用了超软伞绳线（这个伞绳真的很软），TTC80M金微动。缺点就是传感器采用的是PAW3335传感器没有上顶级的传感器，加上滚轮的刻度感不太行。这个鼠标虽然是洞洞鼠，但是平时使用的时候是感觉不到洞洞的存在的，模具和GPW的手感比较像，59g的重量可以说是这个价位段极少的存在了，原厂会附送一副防滑贴，这个细节给好评。&lt;/p&gt;&lt;p&gt;三围124.2*66.8*38.2重量59g 传感器PAW3335 &lt;/p&gt;&lt;p&gt;推荐手长17CM-20CM 建议入手价格189&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;692&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/cf0322a193cfee9cdf70cf0a5fc43c70/thumb.jpeg&quot; data-width=&quot;800&quot; style=&quot;padding-top: 0px; height: 432px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/cf0322a193cfee9cdf70cf0a5fc43c70/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;p&gt;赛睿SENSEI TEN &lt;/p&gt;&lt;p&gt;重量级选手看截图这个直降300就知道多重量级了SENSEI TEN原价499的鼠标今年双十一直接199，这鼠标其实缺点有点多，比如没有伞绳 、92克的重量比较重等。但是TM Pro传感器加上类肤图层在这个价位段确实很确实很能打。&lt;/p&gt;&lt;p&gt;三围126*65*39重量92克 传感器TrueMove Pro &lt;/p&gt;&lt;p&gt;推荐手长17CM-19CM 建议入手价格199元&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;200元以上&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;800&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/066a834e509bcdd70ae74e555b7e0ca5/thumb.jpeg&quot; data-width=&quot;800&quot; style=&quot;padding-top: 0px; height: 500px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/066a834e509bcdd70ae74e555b7e0ca5/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;h3&gt;达尔优A960 &lt;/h3&gt;&lt;p&gt;达尔优进入轻量化市场的第一款作品，做到了很高的水平，模具是右手人体工学模具，看着像G403但实际上手手感完全不同，左侧的收腰特别舒服，感觉就是为你的大拇指量身定做的。线材采用的是伞绳线，重量也做到了无洞非常优秀的65克，性能上采用的是PMW3389传感器这个传感器是上一代的旗舰传感器，现在来看的话也不弱，如果想要轻量化右手人体工学鼠标，这款鼠标可以着重考虑一下。&lt;/p&gt;&lt;p&gt;三围121.6*64.7*39.6 重量65g 传感器PMW3389 &lt;/p&gt;&lt;p&gt;推荐手长16.5CM-19CM建议入手价219&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;800&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/4872c1256cd0f4e17cbb234ab804e79e/thumb.jpeg&quot; data-width=&quot;800&quot; style=&quot;padding-top: 0px; height: 500px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/4872c1256cd0f4e17cbb234ab804e79e/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;h3&gt;炼狱蝰蛇V2&lt;/h3&gt;&lt;p&gt;这个鼠标就不用我多说了吧，经典的蝰蛇第二代产品，用的是PAW3399应该是目前最强的传感器了，加上雷蛇的SPEEDFLEX类伞绳线材，喜欢蝰蛇这个模具的真的不要错过，缺点就是这个鼠标太大了不太适合某些手比较小的人，加上雷蛇的光微动，按键手感比较肉，空键程比较大。&lt;br&gt;&lt;/p&gt;&lt;p&gt;三围127*61*42 重量82g 传感器PAW3399 &lt;/p&gt;&lt;p&gt;推荐手长17.5CM-21CM 建议入手价格249&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;800&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/aa48752959198599f2d820eaf0570eee/thumb.jpeg&quot; data-width=&quot;800&quot; style=&quot;padding-top: 0px; height: 500px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/aa48752959198599f2d820eaf0570eee/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;h3&gt;八岐大蛇V2 &lt;/h3&gt;&lt;p&gt;雷蛇出品的小手无线鼠标，优秀的重量控制加上雷蛇的HYPERSPEED无线双模，即能兼顾游戏也能兼顾办公。虽然是干电池设计但是鼠标本身重量就不重的情况下，即使上电池重量也不会太高，唯一的缺点可能就是这个价位采用了3369的传感器。&lt;br&gt;&lt;/p&gt;&lt;p&gt;三围108*60*38 重量60g 传感器PAW3369 &lt;/p&gt;&lt;p&gt;推荐手长15CM-18CM 建议入手价格299&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;1000&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/2c924566aa119c827eff3b78483b3e0d/thumb.jpeg&quot; data-width=&quot;750&quot; style=&quot;padding-top: 0px; height: 666px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/2c924566aa119c827eff3b78483b3e0d/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;h3&gt;Xtrfy M42 &lt;/h3&gt;&lt;p&gt;是一款小手轻量化的洞洞鼠，59g优秀的重量控制，可以更换的手感加上采用PMW3389引擎，在这个价位也是一个非常有竞争力的产品。缺点就是官方宣称的是伞绳线，实际线材特别硬，根本不是伞绳线，对于这种虚假宣传的行为真的是差评。但是抛开线材来说这款鼠标真的是非常有竞争力的一款小手洞洞鼠标。&lt;/p&gt;&lt;p&gt;三围118*56*38 重量59g 传感器PMW3389 &lt;/p&gt;&lt;p&gt;推荐手长16CM-18.5CM 建议入手价格329&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;750&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/e5c9759cb4a9bcffaf5436374b3ca536/thumb.jpeg&quot; data-width=&quot;750&quot; style=&quot;padding-top: 0px; height: 500px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/e5c9759cb4a9bcffaf5436374b3ca536/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;h3&gt;毒蝰终极版&lt;/h3&gt;&lt;p&gt;重量级选手毒蝰终极版来了 去年双十一买过399的价格，今年双十一399的价格再次回归了！毒蝰终极版大家应该也比较熟悉了吧 这个价格搭载PAW3399顶级传感器雷蛇hyperspeed无线技术，74克轻量化设计，399元这个价位真的是鲨疯了，新批次采用的是二代光微动空键程的情况有所改善。&lt;/p&gt;&lt;p&gt;三围127*66*38 重量74g 传感器PAW3399 &lt;/p&gt;&lt;p&gt;推荐手长16CM-19CM 建议入手价399元&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;800&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/e120bf7c281e1d79c4c09664c334f64c/thumb.jpeg&quot; data-width=&quot;800&quot; style=&quot;padding-top: 0px; height: 500px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/e120bf7c281e1d79c4c09664c334f64c/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h3&gt;冰豹KONE PRO AIR 魔幻豹无线职业版&lt;/h3&gt;&lt;p&gt;经典的冰豹泰坦涂层+二代泰坦滚轮，手感没得说，模具是右手人体工学模具，但是握姿兼容性很高。前期首发版本的魔幻豹由于品控问题搞得风评很不好，现在的都是新批次，按键空键程的问题也解决了，品控方面的话还是不用太担心。鼠标采用的是PAW3371传感器，性能肯定也是第一梯队的，但是549的价格就看大家的接受程度了，但是如果想要右手人体工学模具无线鼠标的一定不要错过这一款。&lt;/p&gt;&lt;p&gt;三围125*72*64重量75g 传感器PAW3371 &lt;/p&gt;&lt;p&gt;推荐手长16.5CM-20CM 建议入手价格549&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;800&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/bb694195c42928c682fc3fb344104b45/thumb.jpeg&quot; data-width=&quot;800&quot; style=&quot;padding-top: 0px; height: 500px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/bb694195c42928c682fc3fb344104b45/thumb.jpeg&quot;&gt;&lt;/p&gt;&lt;h3&gt;罗技GPRO X SUPERLIGHT&lt;/h3&gt;&lt;p&gt;俗称GPW二代，在狗屁王一代的基础上做了减重从一代的85g减至60g，这个重量表现在无线鼠标里属于非常非常优秀的一档。GPW的模具在手掌兼容性上也特别的高，连接稳定性和性能肯定不用担心，无线连接采用的罗技lightspeed无线连接技术，这次GPXS的HERO25K传感器经过了特别的调教，在性能表现上属于非常顶级的表现。&lt;/p&gt;&lt;p&gt;但是这次GPXS的售价比较高首发来到了1299元，经过几个月的降价来到了800元区间，这个价格就看各位的钱包了 。&lt;/p&gt;&lt;p&gt;三围125*63*40 重量60g 传感器HERO25K &lt;/p&gt;&lt;p&gt;推荐手长16CM-20CM 建议入手价格849元&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h3&gt;双十一推荐到这里就结束了，可能还有很多我没推荐到的好产品，可能是因为我没用过或者是竞争力不强而没有写到请大家见谅，如果还有疑问的可以私聊问我。&lt;/h3&gt;&lt;h3&gt;最后附上自己制作的鼠标传感器天梯图，可以给大家购买其他鼠标的时候做一个性能参考。&lt;/h3&gt;&lt;p&gt;&lt;img class=&quot; lazyloaded&quot; data-height=&quot;447&quot; data-original=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/1b9ca230e8b70baef2ef5a53212d3b83/thumb.png&quot; data-width=&quot;730&quot; style=&quot;padding-top: 0px; height: 306px; width: 500px;&quot; src=&quot;https://imgheybox.max-c.com/bbs/2021/10/30/1b9ca230e8b70baef2ef5a53212d3b83/thumb.png&quot;&gt;&lt;/p&gt;&lt;h2&gt;传感器性能天梯图争议很大纯属图一乐，如果你觉得性能不符，请以你心中的标准为准。&lt;/h2&gt;&lt;/section&gt;</summary>
     
     
     
