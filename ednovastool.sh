@@ -1,6 +1,6 @@
 #!/bin/bash
-ver="1.0.0"
-changeLog="创建该整合脚本"
+ver="1.0.3"
+changeLog="添加rclone脚本"
 
 green(){
     echo -e "\033[32m\033[01m$1\033[0m"
@@ -99,8 +99,7 @@ function oraclefirewall(){
         iptables -P FORWARD ACCEPT
         iptables -P OUTPUT ACCEPT
         iptables -F
-        yellow "请输入y并回车(Press 'y' and enter)"
-        apt-get purge netfilter-persistent
+        apt-get purge netfilter-persistent -y
     fi
 }
 
@@ -145,6 +144,7 @@ function superspeed(){
 function gost(){
     wget --no-check-certificate -O gost.sh http://xiaojier.mooncloud.top/backup/gost.sh && chmod +x gost.sh && ./gost.sh
 }
+
 
 function brook(){
     wget  -N --no-check-certificate http://xiaojier.mooncloud.top/backup/brook-pf-mod.sh && bash brook-pf-mod.sh
@@ -207,6 +207,11 @@ function changehostname(){
     green "Finished! Please reconnect to ssh or reboot your vps"
 }
 
+function mtproxy(){
+    mkdir /home/mtproxy && cd /home/mtproxy
+    curl -s -o mtproxy.sh https://raw.githubusercontent.com/ellermister/mtproxy/master/mtproxy.sh && chmod +x mtproxy.sh && bash mtproxy.sh
+}
+
 function aria2(){
     apt install wget curl ca-certificates && wget -N git.io/aria2.sh && chmod +x aria2.sh && ./aria2.sh
 }
@@ -226,6 +231,19 @@ function georgexie2333amd(){
 
 function georgexie2333arm(){
     curl -sL https://raw.githubusercontent.com/GeorgeXie2333/Project-WARP-Unlock/main/run_arm.sh | bash
+}
+
+function cxxmatrix(){
+    sudo apt install make
+    sudo apt install g++ -y
+    git clone https://github.com/akinomyoga/cxxmatrix.git
+    cd cxxmatrix
+    make
+    ./cxxmatrix 'The Matrix' 'Reloaded'
+}
+
+function rclone(){
+    curl https://rclone.org/install.sh | sudo bash
 }
 
 function updateScript(){
@@ -261,33 +279,37 @@ function start_menu(){
     echo "12. x-ui面板"
     echo "13. Mack-a v2rayagent八合一脚本"
     echo "14. Xrayr 后端安装"
+    echo "15. Mtproxy+伪tls一键脚本"
     echo "                        "
-    echo "15. TCP调优脚本"
-    echo "16. 六合一BBR脚本"
-    echo "17. OVZ开启BBR"
+    echo "16. TCP调优脚本"
+    echo "17. 六合一BBR脚本"
+    echo "18. OVZ开启BBR"
     echo "                        "
-    echo "18. 流媒体检测脚本"
-    echo "19. AMD奈飞检测脚本"
-    echo "20. ARM奈飞检测脚本"
+    echo "19. 流媒体检测脚本"
+    echo "20. AMD奈飞检测脚本"
+    echo "21. ARM奈飞检测脚本"
     echo "                        "
-    echo "21. fscarmen warp一键脚本"
-    echo "22. acacia233 warp解锁奈飞脚本"
-    echo "23. GeorgeXie2333 warp解锁奈飞脚本"
-    echo "24. GeorgeXie2333 ARM warp解锁奈飞脚本"
-    echo "25. GeorgeXie2333 warp刷IP脚本"
-    echo "26. fscarmen warp刷IP脚本"
+    echo "22. fscarmen warp一键脚本"
+    echo "23. acacia233 warp解锁奈飞脚本"
+    echo "24. GeorgeXie2333 warp解锁奈飞脚本"
+    echo "25. GeorgeXie2333 ARM warp解锁奈飞脚本"
+    echo "26. GeorgeXie2333 warp刷IP脚本"
+    echo "27. fscarmen warp刷IP脚本"
     echo "                        "
-    echo "27. Iptables转发脚本"
-    echo "28. Socat转发脚本"
-    echo "29. Gost加密脚本"
-    echo "30. Brook转发脚本"
+    echo "28. Iptables转发脚本"
+    echo "29. Socat转发脚本"
+    echo "30. Gost加密脚本"
+    echo "31. Brook转发脚本"
     echo "                        "
-    echo "31. Docker一键脚本"
-    echo "32. aapanel 国际版宝塔安装"
+    echo "32. Docker一键脚本"
+    echo "33. aapanel 国际版宝塔安装"
+    echo "34. cxxmatrix黑客帝国屏保"
+    echo "35. Rclone官方一键脚本"
     echo "                        "
     echo "v. 更新脚本"
     echo "0. 退出脚本"
     read -p "请输入选项:" menuNumberInput
+
     case "$menuNumberInput" in     
         1 ) rootLogin ;;
         2 ) vpsupdate ;;
@@ -303,24 +325,27 @@ function start_menu(){
         12 ) xui ;; 
         13 ) macka ;;
         14 ) xrayr ;;
-        15 ) tcp ;;
-        16 ) bbr ;;
-        17 ) ovzbbr ;;
-        18 ) region ;;
-        19 ) netflixamd ;;
-        20 ) netflixarm ;;
-        21 ) warp ;;
-        22 ) acacia233 ;;
-        23 ) georgexie2333amd ;;
-        24 ) georgexie2333arm ;;
-        25 ) georgexie2333 ;;
-        26 ) fscarmen ;;
-        27 ) iptables ;;
-        28 ) socat ;;
-        29 ) gost ;;
-        30 ) brook ;;
-        31 ) docker ;;
-        32 ) aapanel ;;
+        15 ) mtproxy ;;
+        16 ) tcp ;;
+        17 ) bbr ;;
+        18 ) ovzbbr ;;
+        19 ) region ;;
+        20 ) netflixamd ;;
+        21 ) netflixarm ;;
+        22 ) warp ;;
+        23 ) acacia233 ;;
+        24 ) georgexie2333amd ;;
+        25 ) georgexie2333arm ;;
+        26 ) georgexie2333 ;;
+        27 ) fscarmen ;;
+        28 ) iptables ;;
+        29 ) socat ;;
+        30 ) gost ;;
+        31 ) brook ;;
+        32 ) docker ;;
+        33 ) aapanel ;;
+        34 ) cxxmatrix ;;
+        35 ) rclone ;;
         v ) updateScript ;;
         0 ) exit 0 ;;
     esac
