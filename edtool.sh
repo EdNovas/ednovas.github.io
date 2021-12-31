@@ -1,6 +1,6 @@
 #!/bin/bash
-ver="1.0.9"
-changeLog="添加青龙面板一键脚本"
+ver="1.1.0"
+changeLog="添加青龙面板一键脚本，添加检测本机IP，并修复了一些bug"
 
 green(){
     echo -e "\033[32m\033[01m$1\033[0m"
@@ -12,10 +12,6 @@ yellow(){
     echo -e "\033[33m\033[01m$1\033[0m"
 }
 
-Get_Ip_Address(){
-	getIpAddress=""
-	getIpAddress=$(curl -sS --connect-timeout 10 -m 60 https://www.aapanel.com/api/common/getClientIP)
-}
 
 if [[ -f /etc/redhat-release ]]; then
 release="Centos"
@@ -75,6 +71,18 @@ function rootLogin(){
     wget -N https://raw.githubusercontent.com/wdm1732418365/vpstoolbox/main/root.sh && chmod -R 755 root.sh && bash root.sh
 }
 
+function ipdetestonekey(){
+	yellow "'curl: (7) Couldn't connect to server' 即表示无IPV4/IPV6地址"
+	green "IPV4地址为："
+	curl -4 ip.p3terx.com
+	green "IPV6地址为："
+	curl -6 ip.p3terx.com
+}
+
+function Get_Ip_Address(){
+	getIpAddress=$(curl -sS --connect-timeout 10 -m 60 https://www.aapanel.com/api/common/getClientIP)
+	echo "IP地址为 $getIpAddress"
+}
 
 function warponekey(){
     wget -N https://cdn.jsdelivr.net/gh/fscarmen/warp/menu.sh && bash menu.sh
@@ -213,7 +221,7 @@ function lemonbench(){
     curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast
 }
 
-function xrayr(){
+function xrayronekey(){
     bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
 }
 
@@ -288,22 +296,10 @@ function epicgamesonekey(){
 
 
 function qinglongonekey(){
-    sudo yum check-update
-    curl -fsSL https://get.docker.com/ | sh
-    sudo systemctl start docker
-    sudo systemctl status docker
+	curl -fsSL https://get.docker.com/ | sh
+	sudo systemctl start docker
     sudo systemctl enable docker
-    docker run -dit \
-      --name QL \
-      --hostname QL \
-      --restart always \
-      -p 5700:5700 \
-      -v $PWD/QL/config:/ql/config \
-      -v $PWD/QL/log:/ql/log \
-      -v $PWD/QL/db:/ql/db \
-      -v $PWD/QL/scripts:/ql/scripts \
-      -v $PWD/QL/jbot:/ql/jbot \
-      whyour/qinglong:latest
+    docker run -dit --name QL --hostname QL --restart always -p 5700:5700 -v $PWD/QL/config:/ql/config -v $PWD/QL/log:/ql/log -v $PWD/QL/db:/ql/db -v $PWD/QL/scripts:/ql/scripts -v $PWD/QL/jbot:/ql/jbot whyour/qinglong:latest
     echo "安装成功，访问 https://${getIpAddress}:5700 即可登录青龙面板，记得开放5700端口！"
     echo "用户名为 admin 密码是 adminadmin"
 }
@@ -323,6 +319,7 @@ function start_menu(){
     echo "                        "
     yellow "当前版本(Version): $ver"
     yellow "更新(Updates): $changeLog"
+    yellow "当前VPS ip地址为：$getIpAddress"
     echo "                        "
     echo "1. 修改登录为 root 密码登录"
     echo "2. VPS系统更新"
@@ -371,6 +368,8 @@ function start_menu(){
     echo "37. Teamspeak一键脚本 3.13.6"
     echo "38. ssr一键脚本"
     echo "39. Epic Games自动领取每周免费游戏脚本"
+	echo "40. 显示本机IP"
+	echo "41. 青龙面板一键脚本"
     echo "                        "
     echo "v. 更新脚本"
     echo "0. 退出脚本"
@@ -416,8 +415,11 @@ function start_menu(){
         37 ) teamspeakonekey ;;
         38 ) ssronekey ;;
         39 ) epicgamesonekey ;;
+	40 ) ipdetestonekey ;;
+	41 ) qinglongonekey ;;
         v ) updateScript ;;
         0 ) exit 0 ;;
     esac
 }
+Get_Ip_Address
 start_menu
