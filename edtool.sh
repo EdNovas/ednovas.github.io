@@ -1,3 +1,6 @@
+layout: false
+---
+
 #!/bin/bash
 ver="1.2.0"
 changeLog="添加了二级目录，加入了内存信息查看，程序实时占用，硬盘占用查询"

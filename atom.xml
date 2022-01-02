@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2021-12-31T19:51:06.985Z</updated>
+  <updated>2022-01-02T10:11:18.244Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>EdNovas VPS脚本工具箱</title>
+    <link href="https://ednovas.xyz/2022/01/02/ednovastool/"/>
+    <id>https://ednovas.xyz/2022/01/02/ednovastool/</id>
+    <published>2022-01-03T03:12:00.000Z</published>
+    <updated>2022-01-02T10:11:18.244Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;EdNovas的Toolbox工具箱&quot;&gt;&lt;a href=&quot;#EdNovas的Toolbox工具箱&quot; class=&quot;headerlink&quot; title=&quot;EdNovas的Toolbox工具箱&quot;&gt;&lt;/a&gt;EdNovas的Toolbox工具箱&lt;/h1&gt;&lt;p&gt;简介：整合了一些常用的脚本，会尽量持续更新~&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 添加二级目录（由于脚本太多，目前页面太长）&lt;/li&gt;
+&lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 整理脚本逻辑顺序&lt;/li&gt;
+&lt;li&gt;&lt;input disabled type=&quot;checkbox&quot;&gt; 添加更多vps程序&lt;/li&gt;
+&lt;li&gt;&lt;input disabled type=&quot;checkbox&quot;&gt; 所有脚本添加出处&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;脚本&quot;&gt;&lt;a href=&quot;#脚本&quot; class=&quot;headerlink&quot; title=&quot;脚本&quot;&gt;&lt;/a&gt;脚本&lt;/h2&gt;&lt;p&gt;最新版：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -N https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;wdm1732418365&amp;#x2F;vpstoolbox&amp;#x2F;main&amp;#x2F;ednovastool.sh &amp;amp;&amp;amp; chmod +x ednovastool.sh &amp;amp;&amp;amp; .&amp;#x2F;ednovastool.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;稳定版：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;bash &amp;lt;(curl -sL https:&amp;#x2F;&amp;#x2F;suo.yt&amp;#x2F;vSeL8AH)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;此整合脚本整体借鉴自&lt;a href=&quot;https://github.com/Misaka-blog/MisakaLinuxToolbox&quot;&gt;御坂的Linux VPS工具箱&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;工具箱中脚本均来自GitHub，大部分已注明作者&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+  </entry>
   
   <entry>
     <title>使用 Fiddler 代理 UWP 软件</title>
@@ -590,7 +621,7 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
     <link href="https://ednovas.xyz/2021/11/05/cheapvps/"/>
     <id>https://ednovas.xyz/2021/11/05/cheapvps/</id>
     <published>2021-11-05T20:09:00.000Z</published>
-    <updated>2021-12-31T06:46:10.505Z</updated>
+    <updated>2022-01-02T10:11:19.192Z</updated>
     
     
     <summary type="html">&lt;table&gt;
@@ -745,6 +776,12 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
 &lt;td align=&quot;left&quot;&gt;$20/年&lt;/td&gt;
 &lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
 &lt;td align=&quot;left&quot;&gt;土耳其便宜VPS，无限流量&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.alwyzon.com/en&quot;&gt;Alwyzon&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;€29/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;奥地利便宜VPS，5T每月，G口，奈飞迪士尼解锁&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://nest.bangmod.cloud/?aff=wdm1732418365&quot;&gt;Bangmod&lt;/a&gt;&lt;/td&gt;
@@ -926,49 +963,6 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
 &lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.001.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;点击开始&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.002.png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>在Windows11中安装WSA(安卓子系统)</title>
-    <link href="https://ednovas.xyz/2021/10/30/wsa/"/>
-    <id>https://ednovas.xyz/2021/10/30/wsa/</id>
-    <published>2021-10-31T06:51:00.000Z</published>
-    <updated>2021-11-03T02:46:49.646Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自 IsaacWangTT &lt;a href=&quot;https://blog.isaacwangtt.xyz/index.php/archives/154/&quot;&gt;https://blog.isaacwangtt.xyz/index.php/archives/154/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.isaacwangtt.xyz/index.php/archives/156/&quot;&gt;https://blog.isaacwangtt.xyz/index.php/archives/156/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.isaacwangtt.xyz/index.php/archives/160/&quot;&gt;https://blog.isaacwangtt.xyz/index.php/archives/160/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
-&lt;p&gt;首先你得打开windows里面的功能，在windows菜单里面搜索启用....功能&lt;br&gt;然后打开里面的这两个功能&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@fbd84daf694bc3c341f4a67c387fde02e92fc5a6/2021/10/23/fc239b9e839fce2255a2c5a3d58f57ca.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;hyper-v和虚拟机平台&quot; title=&quot;hyper-v和虚拟机平台&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@fbd84daf694bc3c341f4a67c387fde02e92fc5a6/2021/10/23/fc239b9e839fce2255a2c5a3d58f57ca.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;重启&lt;/p&gt;&lt;hr&gt;&lt;p&gt;之后下载需要的包&lt;br&gt;商店下载链接&lt;a href=&quot;https://www.microsoft.com/store/productId/9P3395VX91NR&quot;&gt;https://www.microsoft.com/store/productId/9P3395VX91NR&lt;/a&gt;&lt;br&gt;安装包抓包地址&lt;a href=&quot;https://store.rg-adguard.net/&quot;&gt;https://store.rg-adguard.net/&lt;/a&gt;&lt;br&gt;在抓包地址右边选择Slow通道(因为Slow通道对应的是Beta通道，其他Fast,RP,Retail分别对应Dev,预览，正式版)&lt;br&gt;然后在地址栏里面输入商店下载地址&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@8dd2873eac46c72a2e068fc1e111bc36e7ac36ee/2021/10/23/6e17ce2332480b48c65701599e6f129c.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;图片&quot; title=&quot;图片&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@8dd2873eac46c72a2e068fc1e111bc36e7ac36ee/2021/10/23/6e17ce2332480b48c65701599e6f129c.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;找到最下面的那个最大的包，我这里名字为&quot;MicrosoftCorporationII.WindowsSubsystemForAndroid_1.7.32815.0_neutral_~_8wekyb3d8bbwe.msixbundle&quot;&lt;br&gt;如果版本更新可能会变，不过都差不多，把它下载下来&lt;br&gt;如果你双击它，你会发现无法安装&lt;br&gt;这个时候我们需要用管理员运行Powershell来安装&lt;br&gt;win+X运行Powershell&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@d5c10c25afb416a0c37e06b0c4a330497c48d9ad/2021/10/23/de4a05fddc9621828c3f8b7c63023d81.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;Powershell&quot; title=&quot;Powershell&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@d5c10c25afb416a0c37e06b0c4a330497c48d9ad/2021/10/23/de4a05fddc9621828c3f8b7c63023d81.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;在里面输入&lt;/p&gt;&lt;pre class=&quot;hljs-codeblock&quot;&gt;&lt;code class=&quot;hljs csharp&quot;&gt;&lt;table class=&quot;hljs-ln&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;hljs-ln-line hljs-ln-numbers&quot; data-line-number=&quot;1&quot;&gt;&lt;div class=&quot;hljs-ln-n&quot; data-line-number=&quot;1&quot;&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;hljs-ln-line hljs-ln-code&quot; data-line-number=&quot;1&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;add&lt;/span&gt;-appxpackage &lt;span class=&quot;hljs-string&quot;&gt;&quot;这里填你下载的安装包的绝对路径&quot;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;
-&lt;div class=&quot;hljs-control hljs-title&quot;&gt;
-            &lt;div type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; data-original-title=&quot;折行&quot; class=&quot;hljs-control-toggle-break-line&quot;&gt;
-                        &lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#align-left&quot;/&gt;&lt;/svg&gt;
-                    &lt;/div&gt;
-                    &lt;div id=&quot;copy_btn_m5WO5hfpiftSxaHAuBsueGRwFour77Fe&quot; type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; data-original-title=&quot;复制&quot; class=&quot;hljs-control-copy&quot;&gt;
-                        &lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#copy&quot;/&gt;&lt;/svg&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;&lt;/pre&gt;&lt;p&gt;比如我的就是&lt;/p&gt;&lt;pre class=&quot;hljs-codeblock&quot;&gt;&lt;code class=&quot;hljs csharp&quot;&gt;&lt;table class=&quot;hljs-ln&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;hljs-ln-line hljs-ln-numbers&quot; data-line-number=&quot;1&quot;&gt;&lt;div class=&quot;hljs-ln-n&quot; data-line-number=&quot;1&quot;&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;hljs-ln-line hljs-ln-code&quot; data-line-number=&quot;1&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;add&lt;/span&gt;-appxpackage &lt;span class=&quot;hljs-string&quot;&gt;&quot;D:\Downloads\Microsoft Edge\MicrosoftCorporationII.WindowsSubsystemForAndroid_1.7.32815.0_neutral___8wekyb3d8bbwe.Msixbundle&quot;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;
-&lt;div class=&quot;hljs-control hljs-title&quot;&gt;
-            &lt;div type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; data-original-title=&quot;折行&quot; class=&quot;hljs-control-toggle-break-line&quot;&gt;
-                        &lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#align-left&quot;/&gt;&lt;/svg&gt;
-                    &lt;/div&gt;
-                    &lt;div id=&quot;copy_btn_k5kBNtQRxu27u6JI96HWWAbK3kEBk4i6&quot; type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; data-original-title=&quot;复制&quot; class=&quot;hljs-control-copy&quot;&gt;
-                        &lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#copy&quot;/&gt;&lt;/svg&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;&lt;/pre&gt;&lt;p&gt;回车执行&lt;br&gt;然后就可以enjoy了&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@4bee2cfec873eb34502cd370422d9cbc94559b72/2021/10/23/36f79476f2ecd91ba609db80023925f9.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;WSA&quot; title=&quot;WSA&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@4bee2cfec873eb34502cd370422d9cbc94559b72/2021/10/23/36f79476f2ecd91ba609db80023925f9.png&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;/article&gt;
-
-&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
-&lt;p&gt;很多小伙伴装了WSA都发现没有桌面，这就意味着你只能用adb来进行和子系统的交互&lt;br&gt;十分的麻烦，这里我推荐一个工具，&lt;a href=&quot;https://www.atmb.top/&quot;&gt;秋之盒&lt;/a&gt;&lt;/p&gt;&lt;h2 id=&quot;toc_0&quot;&gt;我使用的是canary金丝雀版本&lt;/h2&gt;&lt;p&gt;进入WSA界面&lt;br&gt;打开开发人员模式&lt;br&gt;启用它，进入管理开发人员设置&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@578098c98de446dabdd6739571a5e9777e9afadf/2021/10/23/740ba46d103856a0a5575f8ba092f631.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;开发人员模式&quot; title=&quot;开发人员模式&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@578098c98de446dabdd6739571a5e9777e9afadf/2021/10/23/740ba46d103856a0a5575f8ba092f631.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;打开usb调试&lt;/p&gt;&lt;hr&gt;&lt;p&gt;回到WSA界面，刷新和复制IP&lt;br&gt;进入秋之盒&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@ac1923a448e632aee5e7b0147ee37a811b86a1b7/2021/10/23/35b60326e485e438db3e1d2c4c480306.png&quot;&gt;&lt;img class=&quot;lazy loaded&quot; alt=&quot;连接网络设备&quot; title=&quot;连接网络设备&quot; data-ll-status=&quot;loaded&quot; src=&quot;https://cdn.jsdelivr.net/gh/IsaacWangTT/jsdelivr@ac1923a448e632aee5e7b0147ee37a811b86a1b7/2021/10/23/35b60326e485e438db3e1d2c4c480306.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;在这里输入你复制的IP&lt;/p&gt;&lt;p&gt;安装一个然后你就能对WSA做你想做的事情了，比如可以安装一个应用商店，我这里推荐大家安装一个&lt;a href=&quot;https://www.coolapk.com/&quot;&gt;酷安&lt;/a&gt;&lt;br&gt;听说有人在wsa里面成功安装了谷歌框架，大家也可以试试&lt;/p&gt;&lt;hr&gt;&lt;p&gt;PS:安装的app会出现在开始菜单内&lt;br&gt;关于如何科学上网，可以看看我hxd写的文章:&lt;a href=&quot;https://ednovas.xyz/2021/02/06/clashconnection/&quot;&gt;https://ednovas.xyz/2021/02/06/clashconnection/&lt;/a&gt;&lt;/p&gt; &lt;/article&gt;
-
-&lt;article id=&quot;post&quot; lg-uid=&quot;lg1&quot;&gt;
-&lt;p&gt;具体看&lt;br&gt;&lt;a href=&quot;https://www.cnbeta.com/articles/tech/1193935.htm&quot;&gt;https://www.cnbeta.com/articles/tech/1193935.htm&lt;/a&gt;&lt;/p&gt;&lt;p&gt;简化版我在酷安的帖子&lt;a href=&quot;https://www.coolapk.com/feed/30903847?shareKey=ODJiOWM1Nzg0MDQ5NjE3NDJmMGQ~&amp;amp;shareUid=2257293&amp;amp;shareFrom=com.coolapk.market_11.4.3&quot;&gt;https://www.coolapk.com/feed/30903847?shareKey=ODJiOWM1Nzg0MDQ5NjE3NDJmMGQ~&amp;amp;shareUid=2257293&amp;amp;shareFrom=com.coolapk.market_11.4.3&lt;/a&gt;&lt;/p&gt; &lt;/article&gt;</summary>
     
     
     
