@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2022-01-02T10:11:18.244Z</updated>
+  <updated>2022-01-02T10:17:06.943Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -21,10 +21,11 @@
     <link href="https://ednovas.xyz/2022/01/02/ednovastool/"/>
     <id>https://ednovas.xyz/2022/01/02/ednovastool/</id>
     <published>2022-01-03T03:12:00.000Z</published>
-    <updated>2022-01-02T10:11:18.244Z</updated>
+    <updated>2022-01-02T10:17:06.943Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;EdNovas的Toolbox工具箱&quot;&gt;&lt;a href=&quot;#EdNovas的Toolbox工具箱&quot; class=&quot;headerlink&quot; title=&quot;EdNovas的Toolbox工具箱&quot;&gt;&lt;/a&gt;EdNovas的Toolbox工具箱&lt;/h1&gt;&lt;p&gt;简介：整合了一些常用的脚本，会尽量持续更新~&lt;/p&gt;
+    <summary type="html">&lt;h1 id=&quot;EdNovas的Toolbox工具箱&quot;&gt;&lt;a href=&quot;#EdNovas的Toolbox工具箱&quot; class=&quot;headerlink&quot; title=&quot;EdNovas的Toolbox工具箱&quot;&gt;&lt;/a&gt;EdNovas的Toolbox工具箱&lt;/h1&gt;&lt;h2 id=&quot;脚本地址&quot;&gt;&lt;a href=&quot;#脚本地址&quot; class=&quot;headerlink&quot; title=&quot;脚本地址&quot;&gt;&lt;/a&gt;脚本地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/wdm1732418365/vpstoolbox&quot;&gt;https://github.com/wdm1732418365/vpstoolbox&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;整合了一些常用的脚本，会尽量持续更新~&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 添加二级目录（由于脚本太多，目前页面太长）&lt;/li&gt;
 &lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 整理脚本逻辑顺序&lt;/li&gt;
@@ -33,10 +34,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&quot;脚本&quot;&gt;&lt;a href=&quot;#脚本&quot; class=&quot;headerlink&quot; title=&quot;脚本&quot;&gt;&lt;/a&gt;脚本&lt;/h2&gt;&lt;p&gt;最新版：&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -N https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;wdm1732418365&amp;#x2F;vpstoolbox&amp;#x2F;main&amp;#x2F;ednovastool.sh &amp;amp;&amp;amp; chmod +x ednovastool.sh &amp;amp;&amp;amp; .&amp;#x2F;ednovastool.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;稳定版：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;bash &amp;lt;(curl -sL https:&amp;#x2F;&amp;#x2F;suo.yt&amp;#x2F;vSeL8AH)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;此整合脚本整体借鉴自&lt;a href=&quot;https://github.com/Misaka-blog/MisakaLinuxToolbox&quot;&gt;御坂的Linux VPS工具箱&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;工具箱中脚本均来自GitHub，大部分已注明作者&lt;/p&gt;</summary>
+&lt;p&gt;稳定版：&lt;/p&gt;</summary>
     
     
     
