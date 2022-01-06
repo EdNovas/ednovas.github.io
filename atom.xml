@@ -619,7 +619,7 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
     <link href="https://ednovas.xyz/2021/11/05/cheapvps/"/>
     <id>https://ednovas.xyz/2021/11/05/cheapvps/</id>
     <published>2021-11-05T20:09:00.000Z</published>
-    <updated>2022-01-02T10:11:19.192Z</updated>
+    <updated>2022-01-06T09:55:20.273Z</updated>
     
     
     <summary type="html">&lt;table&gt;
@@ -782,6 +782,12 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
 &lt;td align=&quot;left&quot;&gt;奥地利便宜VPS，5T每月，G口，奈飞迪士尼解锁&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.bacloud.com/aff.php?aff=400&quot;&gt;Bacloud&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;€26/年&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Paypal、信用卡、支付宝&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;立陶宛、美国、荷兰便宜OVZ，也有KVM，立陶宛奈飞解锁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://nest.bangmod.cloud/?aff=wdm1732418365&quot;&gt;Bangmod&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&quot;left&quot;&gt;￥30/月&lt;/td&gt;
 &lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
@@ -927,13 +933,13 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.justg.com/aff.php?aff=344&quot;&gt;Justg&lt;/a&gt; 主营南非 CN2 GIA 线路 VPS。相比满大街的美西和亚太 CN2 GIA，南非 CN2 GIA 线路属于比较冷门的那种，用的人少意味着晚高峰不惧拥堵。最低价格只需 19.9 美元/年。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://billing.spartanhost.net/aff.php?aff=1475&quot;&gt;Spartan Host&lt;/a&gt; 俗称斯巴达主机，其西雅图机房的 VPS 三网回程走的是联通169(AS4837)线路，由于目前联通的国际带宽充裕所以延迟和稳定性都很优秀，晚高峰接近于 CN2 GIA 的体验，而低至2美元/月的价格让它长期处于缺货状态。二级市场的价格也已经炒上天了，又成了一个 VPS 界的理财产品。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://billing.spartanhost.net/aff.php?aff=1475&quot;&gt;Spartan Host&lt;/a&gt; 俗称斯巴达主机，其西雅图机房的 VPS 三网回程走的是联通169(AS4837)线路，由于目前联通的国际带宽充裕所以延迟和稳定性都很优秀，晚高峰接近于 CN2 GIA 的体验，而低至2美元/月的价格让它长期处于缺货状态。二级市场的价格也已经炒上天了，又成了一个 VPS 界的理财产品。补货频道 &lt;a href=&quot;https://t.me/spartanhost_moniter&quot;&gt;https://t.me/spartanhost_moniter&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://billing.tmthosting.net/aff.php?aff=143&quot;&gt;TMT Hosting&lt;/a&gt; 很可能是 &lt;a href=&quot;https://spartanhost.org/&quot;&gt;Spartan Host&lt;/a&gt; 的马甲，因为产品线非常相似，西雅图机房的回程线路也是一致的，甚至 IP 都归属于斯巴达。没抢到斯巴达的小伙伴可以购买这家，&lt;a href=&quot;https://p3terx.com/archives/cheap-vps-tmt-hosting.html&quot;&gt;最新优惠购买链接可以在这里找到&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://billing.tmthosting.net/aff.php?aff=143&quot;&gt;TMT Hosting&lt;/a&gt; 很可能是 &lt;a href=&quot;https://spartanhost.org/&quot;&gt;Spartan Host&lt;/a&gt; 的马甲，因为产品线非常相似，西雅图机房的回程线路也是一致的，甚至 IP 都归属于斯巴达。没抢到斯巴达的小伙伴可以购买这家，&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;常规线路&quot;&gt;&lt;a href=&quot;#常规线路&quot; class=&quot;headerlink&quot; title=&quot;常规线路&quot;&gt;&lt;/a&gt;常规线路&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&quot;&gt;RackNerd&lt;/a&gt; 价格低、配置高、流量大、工单回复及时，已经获得了国内外众多 VPS 玩家的好评。他家经常搞活动抛出价格非常低且配置很高的优惠套餐，虽然只是常规的直连线路，但实际体验远超过预期，有成为传家宝的潜质。搭建节点的话，使用反代加优选，可以达到70mb/s的速度。如果你已经有 CN2 GIA 、AS9929 之类的优质线路 VPS ，那么它作为非高峰期主力或者当做应急备胎是非常不错的选择。最低年付价格换算下来还不到 1 美元/月，可以说性价比直接拉满。&lt;a href=&quot;https://p3terx.com/archives/cheap-vps-racknerd.html&quot;&gt;点击查看 RackNerd 最新优惠&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://app.cloudcone.com/?ref=7234&quot;&gt;CloudCone&lt;/a&gt; 主要提供美国洛杉矶 VPS，对于电信用户很多地区会走 CN2 线路，因此延迟和稳定性都较为优秀。优惠价格通常在 1-2美元/月，不过经常很快就没货了。如果你有不着急购买，可以先注册账号，下次活动的第一时间会发邮件通知。&lt;a href=&quot;https://p3terx.com/archives/cheap-vps-cloudcone.html&quot;&gt;点击查看 Cloudcone 最新优惠&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;常规线路&quot;&gt;&lt;a href=&quot;#常规线路&quot; class=&quot;headerlink&quot; title=&quot;常规线路&quot;&gt;&lt;/a&gt;常规线路&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&quot;&gt;RackNerd&lt;/a&gt; 价格低、配置高、流量大、工单回复及时，已经获得了国内外众多 VPS 玩家的好评。他家经常搞活动抛出价格非常低且配置很高的优惠套餐，虽然只是常规的直连线路，但实际体验远超过预期，有成为传家宝的潜质。搭建节点的话，使用反代加优选，可以达到70mb/s的速度。如果你已经有 CN2 GIA 、AS9929 之类的优质线路 VPS ，那么它作为非高峰期主力或者当做应急备胎是非常不错的选择。最低年付价格换算下来还不到 1 美元/月，可以说性价比直接拉满。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://app.cloudcone.com/?ref=7234&quot;&gt;CloudCone&lt;/a&gt; 主要提供美国洛杉矶 VPS，对于电信用户很多地区会走 CN2 线路，因此延迟和稳定性都较为优秀。优惠价格通常在 1-2美元/月，不过经常很快就没货了。如果你有不着急购买，可以先注册账号，下次活动的第一时间会发邮件通知。补货频道 &lt;a href=&quot;https://t.me/CloudConeBF&quot;&gt;https://t.me/CloudConeBF&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;奈飞解锁&quot;&gt;&lt;a href=&quot;#奈飞解锁&quot; class=&quot;headerlink&quot; title=&quot;奈飞解锁&quot;&gt;&lt;/a&gt;奈飞解锁&lt;/h3&gt;</summary>
     
     
