@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2022-01-02T10:17:06.943Z</updated>
+  <updated>2022-01-11T05:17:07.636Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Microsoft 365 E5 Renew Plus 续订程序</title>
+    <link href="https://ednovas.xyz/2022/01/10/e5renewplus/"/>
+    <id>https://ednovas.xyz/2022/01/10/e5renewplus/</id>
+    <published>2022-01-11T03:12:00.000Z</published>
+    <updated>2022-01-11T05:17:07.636Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;投稿文章&lt;/p&gt;
+&lt;p&gt;文章作者 SundayRX&lt;/p&gt;
+&lt;p&gt;软件作者 SundayRX&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;Microsoft-365-E5-Renew-Plus&quot;&gt;&lt;a href=&quot;#Microsoft-365-E5-Renew-Plus&quot; class=&quot;headerlink&quot; title=&quot;Microsoft 365 E5 Renew Plus&quot;&gt;&lt;/a&gt;Microsoft 365 E5 Renew Plus&lt;/h1&gt;&lt;h2 id=&quot;Microsoft-365-E5-Renew-Plus的由来&quot;&gt;&lt;a href=&quot;#Microsoft-365-E5-Renew-Plus的由来&quot; class=&quot;headerlink&quot; title=&quot;Microsoft 365 E5 Renew Plus的由来&quot;&gt;&lt;/a&gt;Microsoft 365 E5 Renew Plus的由来&lt;/h2&gt;&lt;p&gt;Microsoft 365 E5 Renew Plus为Microsoft 365 E5 Renew的升级版，其功能性，易用性，美观程度上都要强于旧版。&lt;/p&gt;
+&lt;h2 id=&quot;主要功能&quot;&gt;&lt;a href=&quot;#主要功能&quot; class=&quot;headerlink&quot; title=&quot;主要功能&quot;&gt;&lt;/a&gt;主要功能&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;支持开机自启动后台调用&lt;/strong&gt;：使用简单方便，无需购买服务器部署，本地应用程序即开即用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;两种可选的调用权限&lt;/strong&gt;：用户未登录作为守护程序调用(需要客户端密码)、程序以登录用户身份直接调用(需要账户密码)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自动配置API权限&lt;/strong&gt;：登录调用的API权限支持由程序自动配置&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;API种类齐全&lt;/strong&gt;：43个可选的Microsoft Graph REST API Beta中的API(未来可能会继续添加)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;完全随机的API选用模式&lt;/strong&gt;：从已选定的API序列中随机抽取一个或几个进行调用（个数和API随机）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;完全随机的API调用顺序&lt;/strong&gt;：每轮API的调用先后顺序随机&lt;/li&gt;
+&lt;li&gt;**完全随机的API内容(仅部分API支持)**：POST写类型的API的上传内容随机&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;完全随机的API调用时间间隔&lt;/strong&gt;：随机区段500s-86400s自定义&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;每日工作时间自定义&lt;/strong&gt;：在日常工作时间进行调用，适用于从不关机重启的服务器设备&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;每周工作日自定义&lt;/strong&gt;：在每周的工作日进行调用，适用于从不关机重启的服务器设备&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;运行智能暂停&lt;/strong&gt;：防止因持续在错误配置下运行而导致的账户封禁&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;运行配置自动保存&lt;/strong&gt;：可保存运行配置，无需反复设置&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;无限制账号个数&lt;/strong&gt;：理论上允许无限制个数账号后台自动调用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;支持自定义客户端密钥&lt;/strong&gt;：允许非登录调用使用自定义密钥&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自定义美化界面&lt;/strong&gt;：支持自定义背景图片，半透明度以及毛玻璃效果&lt;h2 id=&quot;主界面&quot;&gt;&lt;a href=&quot;#主界面&quot; class=&quot;headerlink&quot; title=&quot;主界面&quot;&gt;&lt;/a&gt;主界面&lt;/h2&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/784e25357f754e9783bda0923d51854d.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMjEyMDIw,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;运行结果查看&quot;&gt;&lt;a href=&quot;#运行结果查看&quot; class=&quot;headerlink&quot; title=&quot;运行结果查看&quot;&gt;&lt;/a&gt;运行结果查看&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20210323150719810.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMjEyMDIw,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;入群须知&quot;&gt;&lt;a href=&quot;#入群须知&quot; class=&quot;headerlink&quot; title=&quot;入群须知 &quot;&gt;&lt;/a&gt;&lt;font color=&quot;#cc0000&quot;&gt;&lt;strong&gt;入群须知&lt;/strong&gt; &lt;/font&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;font color=&quot;#cc0000&quot;&gt;&lt;strong&gt;使用本系列产品只是增加E5续订概率，并不能保证100%续订成功&lt;/strong&gt;&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&quot;#cc0000&quot;&gt;&lt;strong&gt;续订操作有些许技术门槛，且需要具备一定的自学能力&lt;/strong&gt;&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&quot;#cc0000&quot;&gt;&lt;strong&gt;每个人的时间都是宝贵的，遇到问题先查阅&lt;a href=&quot;https://sundayrx.coding.net/s/78f69c8a-8620-4d53-bad2-c4b365fed1a0&quot;&gt;帮助文档&lt;/a&gt;，实在无法解决时再发起提问(&lt;a href=&quot;https://sundayrx.coding.net/s/78f69c8a-8620-4d53-bad2-c4b365fed1a0/4&quot;&gt;提问的艺术&lt;/a&gt;)&lt;/strong&gt;&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="e5" scheme="https://ednovas.xyz/tags/e5/"/>
+    
+  </entry>
   
   <entry>
     <title>EdNovas VPS脚本工具箱</title>
@@ -948,30 +997,6 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
     
     
     <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用andOTP进行谷歌二步验证</title>
-    <link href="https://ednovas.xyz/2021/11/03/andotp/"/>
-    <id>https://ednovas.xyz/2021/11/03/andotp/</id>
-    <published>2021-11-03T23:51:00.000Z</published>
-    <updated>2021-11-03T23:15:22.364Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前置准备&quot;&gt;&lt;a href=&quot;#前置准备&quot; class=&quot;headerlink&quot; title=&quot;前置准备&quot;&gt;&lt;/a&gt;&lt;strong&gt;前置准备&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;下载andOTP并安装&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/andOTP/andOTP/releases&quot;&gt;https://github.com/andOTP/andOTP/releases&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在安卓手机和电脑登陆谷歌账号&lt;/p&gt;
-&lt;p&gt;ios手机请寻找其他的app，操作八九不离十&lt;/p&gt;
-&lt;h2 id=&quot;谷歌设置开启二步验证&quot;&gt;&lt;a href=&quot;#谷歌设置开启二步验证&quot; class=&quot;headerlink&quot; title=&quot;谷歌设置开启二步验证&quot;&gt;&lt;/a&gt;&lt;strong&gt;谷歌设置开启二步验证&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;点击谷歌账号设置》安全性》两步验证&lt;br&gt;网址：&lt;a href=&quot;https://myaccount.google.com/security&quot;&gt;https://myaccount.google.com/security&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.001.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;点击开始&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.002.png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
     
   </entry>
   
