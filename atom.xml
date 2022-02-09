@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2022-01-23T04:59:53.117Z</updated>
+  <updated>2022-02-09T01:54:25.636Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Yandex 免费域名邮箱和配置SMTP</title>
+    <link href="https://ednovas.xyz/2022/02/08/yandexdomainmail/"/>
+    <id>https://ednovas.xyz/2022/02/08/yandexdomainmail/</id>
+    <published>2022-02-08T21:09:00.000Z</published>
+    <updated>2022-02-09T01:54:25.636Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Outlook e5 a1 a1p等订阅可以自定义域名，但是比较复杂或者需要一些特殊手段，但是yandex mail提供免费的域名邮箱服务。这项服务叫做Yandex Connect，免费提供1000个子邮箱，每个子邮箱10G容量。查阅过官方文档，并没有找到明确解释，但是外网网友据说每个邮箱有每天3000封邮件的发件限制，相比QQ、Gmail这些只有每日500封的已经很厉害了。而且注册极其容易。此外还有SPF/DIKM配置能十分有效的防止邮件进入垃圾箱的概率。&lt;/p&gt;
+&lt;h2 id=&quot;注册主账号&quot;&gt;&lt;a href=&quot;#注册主账号&quot; class=&quot;headerlink&quot; title=&quot;注册主账号&quot;&gt;&lt;/a&gt;注册主账号&lt;/h2&gt;&lt;p&gt;就类似Office E5一样，需要一个主要的管理员账户，就是直接去yandex官网注册个即可 &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://passport.yandex.com/registration&quot;&gt;https://passport.yandex.com/registration&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;可以使用手机号或者安全问题两种方式注册，实测国内 +86 手机号可以验证。GV貌似也可行。&lt;/p&gt;
+&lt;h2 id=&quot;绑定域名&quot;&gt;&lt;a href=&quot;#绑定域名&quot; class=&quot;headerlink&quot; title=&quot;绑定域名&quot;&gt;&lt;/a&gt;绑定域名&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://connect.yandex.com/pdd/&quot;&gt;https://connect.yandex.com/pdd/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;上述链接是原来的界面，但是现在yandex connect改版了，免费的yandex connect入口被藏起来了，需要去&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://connect.yandex.com/portal/admin/domains&quot;&gt;https://connect.yandex.com/portal/admin/domains&lt;/a&gt; 页面，然后就会提示你的账户还不是yandex connect计划，这样就可以选择直接加入免费的yandex connect计划（右上角账户那个地方确认加入yandex connect）。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://admin.yandex.ru/&quot;&gt;https://admin.yandex.ru/&lt;/a&gt; 页面可以再次回到管理页面（类似Microsoft Admin一样）&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="yandex" scheme="https://ednovas.xyz/tags/yandex/"/>
+    
+    <category term="mail" scheme="https://ednovas.xyz/tags/mail/"/>
+    
+    <category term="smtp" scheme="https://ednovas.xyz/tags/smtp/"/>
+    
+  </entry>
   
   <entry>
     <title>Microsoft 365 E5 Renew Plus 续订程序</title>
@@ -657,465 +687,6 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
     <category term="白嫖" scheme="https://ednovas.xyz/tags/%E7%99%BD%E5%AB%96/"/>
     
     <category term="免费" scheme="https://ednovas.xyz/tags/%E5%85%8D%E8%B4%B9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>便宜VPS</title>
-    <link href="https://ednovas.xyz/2021/11/05/cheapvps/"/>
-    <id>https://ednovas.xyz/2021/11/05/cheapvps/</id>
-    <published>2021-11-05T20:09:00.000Z</published>
-    <updated>2022-02-02T02:53:32.438Z</updated>
-    
-    
-    <summary type="html">&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;left&quot;&gt;VPS 商家&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;最低价格&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;支付方式&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;特点&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://cloudpowerall.com/aff.php?aff=3407&quot;&gt;CloudPowerall&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$24.99/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;美国奈飞解锁，极速 CN2 GIA 线路&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://idc.wiki/aff.php?aff=2198&quot;&gt;Wikihost&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;￥18/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;美国4837精品线路，香港cn2和cera，奈飞不解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://anyhk.net/aff.php?aff=378&quot;&gt;Anyhk&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;￥49.9/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;HKT/HGC/HINET/WTT香港台湾奈飞解锁NAT/VPS/VDS&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://vollcloud.com/aff.php?aff=109&quot;&gt;Vollcloud&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$67.5/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;大宽带香港CMI线路&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.nearoute.com/register?aff=38389&quot;&gt;Nearoute&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$6/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、信用卡、微信支付&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;G口香港，香港流媒体解锁，移动友好&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.licloud.io/aff.php?aff=161&quot;&gt;Licloud&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$19.9/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、Paypal&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;100M香港CMI线路&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://cloudsilk.io/aff.php?aff=133&quot;&gt;CloudSilk&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;￥159.99/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;美国4837、9929，德国4837&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.inkisp.com/aff.php?aff=568&quot;&gt;Ink cloud&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;￥349.9/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;香港CMI/BGP 美国日本韩国GIA&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.moonvm.com/aff.php?aff=300&quot;&gt;Moonvm&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$24/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Hinet动态小鸡，台湾奈飞解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&quot;&gt;RackNerd&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$8.89/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡、Bitcoin&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;三网直连，普通价格，高端配置&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.ethernetservers.com/clients/aff.php?aff=1637&quot;&gt;Ethernet&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$12/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、Paypal&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;G口美国机房，提供免费20G DDOS防御&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://portal.dedipath.com/aff.php?aff=1061&quot;&gt;DediPath&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$6.5/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、微信&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;美国洛杉矶G口不限流量&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.edgevirt.com/aff.php?aff=7&quot;&gt;Edgevirt&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$15/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;美国迈阿密VPS，IP超级超级超级干净，流媒体全解锁，10G口，国内线路不好，需要手动配置网络装机&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.webhorizon.in/order/forms/a/MjcwMA==&quot;&gt;Webhorizon&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$4/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;信用卡、Paypal&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;新加坡波兰美国等多地的nat机&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://xiaojier.mooncloud.top/&quot;&gt;小小吉儿&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;￥2/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;台湾香港等便宜nat机&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://polocloud.xyz/aff.php?aff=109&quot;&gt;Polocloud&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;￥25/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;马来西亚、澳门奈飞解锁nat机&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;http://client.tmwhost.net/aff.php?aff=93&quot;&gt;Tmwhost&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;￥47.9/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;澳门奈飞解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://greencloudvps.com/billing/aff.php?aff=3263&quot;&gt;Greencloud&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$25/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;新加坡203.55IP，日本45.142奈飞解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://console.whloud.com/aff.php?aff=122&quot;&gt;Whcloud&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$5/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、微信、Paypal&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;日本奈飞解锁，需要支付宝人脸实名认证&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.limewave.net/&quot;&gt;LimeWave&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$3.14CAD/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;G口，普通线路，加拿大奈飞解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://support.1strentalserver.com/aff.php?aff=186&quot;&gt;1stRentalServer&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;500JPY/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;50M带宽，日本原生IP，日本本地流媒体全解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://tyo.cloudsigma.com/ui/?affid=ewang24225&quot;&gt;Cloudsigma&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;1109JPY/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;日本奈飞迪士尼解锁，动态IP，关闭开启机子即一个新ip&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.conoha.jp/referral/?token=jPGhYm9grBd5qcYAVDzbVz1ymG0iw3eCFTIeTZqlesaPfXuvMoU-30P&quot;&gt;Conoha&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;680JPY/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;100M原生IP迪士尼解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://digital-vm.com/portal/aff.php?aff=774&quot;&gt;DigitalVM&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$40/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;日本、新加坡、丹麦等地无限流量VPS，可选择1G/10G带宽&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://members.xethost.com/aff.php?aff=39&quot;&gt;Xethost&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$15/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;匈牙利便宜无限流量VPS，100M带宽，匈牙利奈飞解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://1984hosting.com/&quot;&gt;1984Hosting&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$5/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;100M冰岛VPS，冰岛奈飞解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.albahost.net/&quot;&gt;Albahost&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;€5/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;G口阿尔巴尼亚和科沃斯VPS&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.nexusbytes.com/aff.php?aff=423&quot;&gt;Nexusbytes&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$3.8/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;便宜G口英国，联通友好。G口荷兰。亚洲地区不推荐&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://hazi.ro/&quot;&gt;Hazi&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;€1.9/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;罗马尼亚本土商家，G口，奈飞解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://portal.yer.cloud/aff.php?aff=14&quot;&gt;Yercloud&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$3.98/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;阿塞拜疆便宜vps&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.friendhosting.net/pl.php?28731&quot;&gt;Friendhosting&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;€25/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡、支付宝、微信&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;美国荷兰捷克保加利亚拉脱维亚VPS，带宽100M&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://gohost.kz/aff.php?aff=351&quot;&gt;Gohost&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;2000 KZT/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;哈萨克斯坦服务器服务商，哈萨克斯坦奈飞解锁，100M带宽&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://oneprovider.com/&quot;&gt;Oneprovider&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$3.5/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;超多国家G口机器，多到难以想象，部分地区奈飞解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://zappiehost.com/&quot;&gt;Zappie&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$4.5/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;新西兰VPS，LXC虚拟化&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.expertvm.com/&quot;&gt;Expertvm&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$4/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;新加坡VPS，奈飞解锁，需要自己手动配置网络装机&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://vds.market/?p=51&quot;&gt;VDS.MARKET&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$2.8/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;新加坡、荷兰、德国、西班牙、乌克兰 G口无限流量&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.webplot.co.uk/manager/aff.php?aff=11&quot;&gt;Webplot&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;€9.9/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;英国KVM VPS一年只需72rmb，具体效果可以谷歌搜索看看测评&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.lightnode.com/?inviteCode=LDSCQM&amp;promoteWay=LINK&quot;&gt;LightNode&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$7/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、支付宝&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;有土耳其，泰国，孟加拉国，柬埔寨等冷门节点&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.hostnamaste.com/clients/aff.php?aff=230&quot;&gt;Hostnamaste&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$12/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;美国加拿大法国印度俄罗斯VPS，提供OVZ和KVM&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://melbicom.net/?from=40230&quot;&gt;Melbicom&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;3.9€/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;欧洲和新加坡多地区G口无限流量，优惠码&lt;code&gt;new_referer_40230&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;http://www.kagoya.jp/cloud/vps/&quot;&gt;Kagoya&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;550JPY/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;100M无限流量，三网直连&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://ruvds.com/pr5984&quot;&gt;RUVDS&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;￥109/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;俄罗斯奈飞解锁，100Mbps不限流量，15%优惠码&lt;code&gt;KPN-NBQ-IMT&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://clients.hostiger.com/?affid=514&quot;&gt;Hostiger&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$20/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;土耳其便宜VPS，无限流量&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.alwyzon.com/en&quot;&gt;Alwyzon&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;€29/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;奥地利便宜VPS，5T每月，G口，奈飞迪士尼解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.bacloud.com/aff.php?aff=400&quot;&gt;Bacloud&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;€26/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡、支付宝&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;立陶宛、美国、荷兰便宜OVZ，也有KVM，立陶宛奈飞解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://bytes.ua/?from=14129&quot;&gt;BYTES&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$20/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;乌克兰G口无限流量，乌克兰本地奈飞解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://nest.bangmod.cloud/?aff=wdm1732418365&quot;&gt;Bangmod&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;￥30/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;150M，泰国便宜VPS，需要泰国手机号接码验证&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://contabo.com/&quot;&gt;Contabo&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$6.99/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;信用卡、Paypal&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;便宜高配服务器，普通线路&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.ovhcloud.com/&quot;&gt;Ovhcloud&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$7.36/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;便宜高配服务器，普通线路，防DDOS，无限流量&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://store.moccanetwork.com/aff.php?aff=85&quot;&gt;SSDNODES&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$103/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;信用卡、Paypal&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;12H48G配置$103/年，便宜高配服务器&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://my.frantech.ca/aff.php?aff=5269&quot;&gt;BuyVM&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$2/月 ¥10/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡、Bitcoin&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;低价、无限流量、大盘鸡&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://bandwagonhost.com/aff.php?aff=66665&quot;&gt;BandwagonHost&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$49.9/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、微信、PayPal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;极速 CN2 GIA 线路&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.dmit.io/aff.php?aff=2664&quot;&gt;DMIT&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$88.88/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;CN2 GIA 高端高速线路&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://hmbcloud.com/aff.php?aff=391&quot;&gt;HMBCloud&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$69.99/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;CN2 GIA 高端高速线路&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.olink.cloud/&quot;&gt;OLink Cloud&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$5/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;极速 CU VIP 线路(AS9929)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.vultr.com/?ref=8971645-8H&quot;&gt;Vultr&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$2.5/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、微信、PayPal、Bitcoin&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;注册送 100 美元，有效期14天&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.digitalocean.com/&quot;&gt;DigitalOcean&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$5/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;PayPal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;注册送 100 美元，有效期60天&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.onevps.cloud/?aff=39962&quot;&gt;OneVPS&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$2/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;无限流量 5折优惠码VPSWELCOME&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://app.cloudcone.com/?ref=7234&quot;&gt;CloudCone&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$11/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;按时计费，随用随删&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.spartanhost.net/aff.php?aff=1475&quot;&gt;Spartan Host&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$2/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡、Bitcoin&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;三网联通回程(AS4837)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://www.justg.com/aff.php?aff=344&quot;&gt;Justg&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$19.9/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;南非CN2 GIA线路&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.tmthosting.net/aff.php?aff=143&quot;&gt;TMT Hosting&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$2.37/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、PayPal、信用卡、Bitcoin&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;三网联通回程(AS4837)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://hosting.gullo.me/&quot;&gt;Gullo&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$8/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;PayPal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;新加坡奈飞解锁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://virmach.com/&quot;&gt;Virmach&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;$7.5/年&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、Paypal&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;“低价屠夫”，建议买常规版&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://justhost.ru/?ref=128830&quot;&gt;Justhost&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;￥9/月&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;支付宝、Paypal、信用卡&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;俄罗斯无限流量，电信联通线路不错，移动绕路&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&quot;科学上网VPS&quot;&gt;&lt;a href=&quot;#科学上网VPS&quot; class=&quot;headerlink&quot; title=&quot;科学上网VPS&quot;&gt;&lt;/a&gt;科学上网VPS&lt;/h2&gt;&lt;h3 id=&quot;便宜就完了&quot;&gt;&lt;a href=&quot;#便宜就完了&quot; class=&quot;headerlink&quot; title=&quot;便宜就完了&quot;&gt;&lt;/a&gt;便宜就完了&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&quot;&gt;RackNerd&lt;/a&gt; 性价比极高，反代优选能上70mb/s，一年还只要大概70rmb。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.ethernetservers.com/clients/aff.php?aff=1637&quot;&gt;Ethernet&lt;/a&gt; 性价比较高，G口美国线路。线路一般。一年12刀，三年只要30刀。优惠码可见此处 &lt;a href=&quot;https://www.ethernetservers.com/coupons&quot;&gt;https://www.ethernetservers.com/coupons&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://my.webhorizon.in/order/forms/a/MjcwMA==&quot;&gt;webhorizon&lt;/a&gt; 印度商家，卖nat的（nat可以理解为小vps），不会用nat的还请勿购买。最便宜$4/年，但是配置和线路肯定就不敢恭维了。不过很多地区是奈飞全解锁的，不过这个没有解锁保证，看脸。购买后是手动开通的，所以还需要等待一段时间。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://xiaojier.mooncloud.top/&quot;&gt;小小吉儿&lt;/a&gt; 算是tg里比较靠谱的nat商家了。群组 &lt;a href=&quot;https://t.me/kuaileceshi2&quot;&gt;https://t.me/kuaileceshi2&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://virmach.com/&quot;&gt;Virmach&lt;/a&gt; 绰号就叫低价屠夫，便宜就完了。黑五期间还有超低价，闪购补货频道：&lt;a href=&quot;https://t.me/vpscang_virmach&quot;&gt;https://t.me/vpscang_virmach&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://hosting.gullo.me/&quot;&gt;Gullo&lt;/a&gt; 便宜的新加坡奈飞解锁，但是经常缺货。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.webplot.co.uk/manager/aff.php?aff=11&quot;&gt;Webplot&lt;/a&gt; €9.9/年，合人民币72元/年，英国KVM VPS。具体效果不清楚。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://justhost.ru/?ref=128830&quot;&gt;Justhost&lt;/a&gt; 便宜的俄罗斯VPS，还是无限流量的，年付有8折优惠。电信和联通友好，移动绕路。油管勉强可看4k。建议选择 &lt;code&gt;DataLine (Moscow）&lt;/code&gt;机房，有 CN2 加成。附赠的IPV6地址可能出bug，可以直接禁用IPV6。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://contabo.com/&quot;&gt;Contabo&lt;/a&gt; &lt;del&gt;高配机可能是最便宜的了？&lt;/del&gt; 想要建站等可以考虑&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://melbicom.net/?from=40230&quot;&gt;Melbicom&lt;/a&gt; 低至 3.9欧元/月，折合人民币大概 28元/月的欧洲VPS。G口带宽，无限流量。国内可能都需要中转，但耐不住大口无限流量啊。支持支付宝。他家的独服也不错的&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;优质线路&quot;&gt;&lt;a href=&quot;#优质线路&quot; class=&quot;headerlink&quot; title=&quot;优质线路&quot;&gt;&lt;/a&gt;优质线路&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://cloudpowerall.com/aff.php?aff=3407&quot;&gt;CloudPowerall&lt;/a&gt; 目前主要销售面向中国大陆的香港和洛杉矶 CN2 GIA 线路 KVM VPS。其洛杉矶 VPS 位于洛杉矶 Cera，三网回程 GIA，国内速度非常优秀，而且是 AMD Ryzen 9 3950X 高性能处理器，仅 24.99美元/年，美国奈飞解锁性价比极高！堪称新一代的传家宝，又一个 VPS 界的理财产品。支持 Pay­pal 和支付宝付款。&lt;a href=&quot;https://p3terx.com/archives/cn2-gia-vps-cloudpowerall.html&quot;&gt;最新优惠购买链接可以在这里找到&lt;/a&gt;。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://anyhk.net/aff.php?aff=378&quot;&gt;Anyhk&lt;/a&gt; 主要卖香港和奈飞nat的商家，挺靠谱的，不像很多随时跑路的。主要线路有HKT,HGC,HINET,WTT等NAT/VPS/VDS。每月49.9rmb起。如果你想要便宜的香港和台湾奈飞解锁nat，绝对是个很好的选择。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://bandwagonhost.com/aff.php?aff=66665&quot;&gt;BandwagonHost&lt;/a&gt;俗称搬瓦工，是非常老牌的 VPS 商家。搬瓦工的 CN2 GIA 是目前最为稳定的线路之一，三网表现都非常优秀。绝版搬瓦工的套餐早已水涨船高，被 VPS 玩家们誉为传家宝，是 VPS 界的理财产品。现在可以购买到的性价比最高的 CN2 GIA 是&lt;a href=&quot;https://bwh89.net/cart.php?a=confproduct&amp;i=1&quot;&gt;美西电商版&lt;/a&gt;，可以自由切换北美的 DC6、DC9 机房，也可以切换到日本软银机房。因此它可以应对绝大部分状况。这个世界上有很多声称拥有 GIA 线路的厂商，但是搬瓦工比他们中的绝大多数都要好很多。价格方面季付 49.99 美元、年付优惠价 169.99，还可用终身优惠码&lt;code&gt;BWH3HYATVBJW&lt;/code&gt;抵扣大概10美元左右，价格虽然比一般的要高，但毕竟线路质量和性能配置摆在那里。还有我自己的搬瓦工监控补货网站可以关注 &lt;a href=&quot;https://bwg.ednovas.xyz/&quot;&gt;https://bwg.ednovas.xyz&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.olink.cloud/&quot;&gt;OLink Cloud&lt;/a&gt; 目前主营美国圣何塞以及德国法兰克福这两个地区的中国大陆三网回程联通 VIP 线路(AS9929) VPS 和独立服务器。AS9929 俗称联通 A 网，主要服务于政企大客户，对标电信 CN2 GIA ，用户少、负载小、速度快，晚高峰不惧拥堵。暂时比较冷门，价格还没有水涨船高，它家圣何塞的 VPS 为 G 口 9929，是市面上非常少见的。&lt;a href=&quot;https://p3terx.com/archives/cuii-vps-olixnk-cloud.html&quot;&gt;最新优惠购买链接可以在这里找到&lt;/a&gt;。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.justg.com/aff.php?aff=344&quot;&gt;Justg&lt;/a&gt; 主营南非 CN2 GIA 线路 VPS。相比满大街的美西和亚太 CN2 GIA，南非 CN2 GIA 线路属于比较冷门的那种，用的人少意味着晚高峰不惧拥堵。最低价格只需 19.9 美元/年。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://billing.spartanhost.net/aff.php?aff=1475&quot;&gt;Spartan Host&lt;/a&gt; 俗称斯巴达主机，其西雅图机房的 VPS 三网回程走的是联通169(AS4837)线路，由于目前联通的国际带宽充裕所以延迟和稳定性都很优秀，晚高峰接近于 CN2 GIA 的体验，而低至2美元/月的价格让它长期处于缺货状态。二级市场的价格也已经炒上天了，又成了一个 VPS 界的理财产品。补货频道 &lt;a href=&quot;https://t.me/spartanhost_moniter&quot;&gt;https://t.me/spartanhost_moniter&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://billing.tmthosting.net/aff.php?aff=143&quot;&gt;TMT Hosting&lt;/a&gt; 很可能是 &lt;a href=&quot;https://spartanhost.org/&quot;&gt;Spartan Host&lt;/a&gt; 的马甲，因为产品线非常相似，西雅图机房的回程线路也是一致的，甚至 IP 都归属于斯巴达。没抢到斯巴达的小伙伴可以购买这家，&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;常规线路&quot;&gt;&lt;a href=&quot;#常规线路&quot; class=&quot;headerlink&quot; title=&quot;常规线路&quot;&gt;&lt;/a&gt;常规线路&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&quot;&gt;RackNerd&lt;/a&gt; 价格低、配置高、流量大、工单回复及时，已经获得了国内外众多 VPS 玩家的好评。他家经常搞活动抛出价格非常低且配置很高的优惠套餐，虽然只是常规的直连线路，但实际体验远超过预期，有成为传家宝的潜质。搭建节点的话，使用反代加优选，可以达到70mb/s的速度。如果你已经有 CN2 GIA 、AS9929 之类的优质线路 VPS ，那么它作为非高峰期主力或者当做应急备胎是非常不错的选择。最低年付价格换算下来还不到 1 美元/月，可以说性价比直接拉满。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://app.cloudcone.com/?ref=7234&quot;&gt;CloudCone&lt;/a&gt; 主要提供美国洛杉矶 VPS，对于电信用户很多地区会走 CN2 线路，因此延迟和稳定性都较为优秀。优惠价格通常在 1-2美元/月，不过经常很快就没货了。如果你有不着急购买，可以先注册账号，下次活动的第一时间会发邮件通知。补货频道 &lt;a href=&quot;https://t.me/CloudConeBF&quot;&gt;https://t.me/CloudConeBF&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;奈飞解锁&quot;&gt;&lt;a href=&quot;#奈飞解锁&quot; class=&quot;headerlink&quot; title=&quot;奈飞解锁&quot;&gt;&lt;/a&gt;奈飞解锁&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
     
   </entry>
   
