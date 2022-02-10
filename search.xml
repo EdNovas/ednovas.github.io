@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Cloudflare 免费解析动态域名 DDNS</title>
+      <link href="2022/02/09/cfddns/"/>
+      <url>2022/02/09/cfddns/</url>
+      
+        <content type="html"><![CDATA[<h2 id="脚本地址"><a href="#脚本地址" class="headerlink" title="脚本地址"></a>脚本地址</h2><p><a href="https://github.com/yulewang/cloudflare-api-v4-ddns">https://github.com/yulewang/cloudflare-api-v4-ddns</a></p><h2 id="获取-KEY"><a href="#获取-KEY" class="headerlink" title="获取 KEY"></a>获取 KEY</h2><p>访问 <a href="https://dash.cloudflare.com/profile">https://dash.cloudflare.com/profile</a> 在页面下方找到 Global API Key，点击右侧的 View 查看 Key，并保存下来 ，在页面下方找到 Global API Key，点击右侧的 View 查看 Key，并保存下来 </p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/bD7yJqoYcAV3riB.png"></p><h2 id="解析域名"><a href="#解析域名" class="headerlink" title="解析域名"></a>解析域名</h2><p>设置用于 DDNS 解析的二级域名，流量不经过CDN(云朵变灰)</p><p>添加一条A记录，例如：hkt.test.com，Proxy status设置成DNS only </p><p>ipv4地址随意就行</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/DzHSaNEb1ZBU5pC.png"></p><h2 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a>运行脚本</h2><p>下载 DNNS 脚本</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;aipeach&#x2F;cloudflare-api-v4-ddns&#x2F;master&#x2F;cf-v4-ddns.sh &gt; &#x2F;root&#x2F;cf-v4-ddns.sh &amp;&amp; chmod +x &#x2F;root&#x2F;cf-v4-ddns.sh</span><br></pre></td></tr></table></figure><h2 id="配置信息"><a href="#配置信息" class="headerlink" title="配置信息"></a>配置信息</h2><p>修改 DDNS 脚本并补充相关信息</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vi cf-v4-ddns.sh</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># incorrect api-key results in E_UNAUTH error</span><br><span class="line"># 填写 Global API Key</span><br><span class="line">CFKEY&#x3D;</span><br><span class="line"></span><br><span class="line"># Username, eg: user@example.com</span><br><span class="line"># 填写 CloudFlare 登陆邮箱</span><br><span class="line">CFUSER&#x3D;</span><br><span class="line"></span><br><span class="line"># Zone name, eg: example.com</span><br><span class="line"># 填写需要用来 DDNS 的一级域名</span><br><span class="line">CFZONE_NAME&#x3D;</span><br><span class="line"></span><br><span class="line"># Hostname to update, eg: homeserver.example.com</span><br><span class="line"># 填写 DDNS 的二级域名(只需填写前缀)</span><br><span class="line">CFRECORD_NAME&#x3D;</span><br></pre></td></tr></table></figure><p>首次运行脚本,输出内容会显示当前IP，进入cloudflare查看 确保IP已变更为当前IP</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;cf-v4-ddns.sh</span><br></pre></td></tr></table></figure><h2 id="设置定时任务"><a href="#设置定时任务" class="headerlink" title="设置定时任务"></a>设置定时任务</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">crontab -e</span><br><span class="line">*&#x2F;2 * * * * &#x2F;root&#x2F;cf-v4-ddns.sh &gt;&#x2F;dev&#x2F;null 2&gt;&amp;1</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 如果需要日志，替换上面的代码</span><br><span class="line">*&#x2F;2 * * * * &#x2F;root&#x2F;cf-v4-ddns.sh &gt;&gt; &#x2F;var&#x2F;log&#x2F;cf-ddns.log 2&gt;&amp;1</span><br></pre></td></tr></table></figure><blockquote><p>转载自 <a href="https://aipeach.gitbook.io/blogbackup/cloudflare-da-jian-ddns-jiao-ben-ban#huo-qu-global-api-key">https://aipeach.gitbook.io/blogbackup/cloudflare-da-jian-ddns-jiao-ben-ban#huo-qu-global-api-key</a><br><a href="https://github.com/EdNovas/cloudflare-api-v4-ddns">https://github.com/EdNovas/cloudflare-api-v4-ddns</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> VPS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cloudflare </tag>
+            
+            <tag> cf </tag>
+            
+            <tag> ddns </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Yandex 免费域名邮箱和配置SMTP</title>
       <link href="2022/02/08/yandexdomainmail/"/>
       <url>2022/02/08/yandexdomainmail/</url>

@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2022-02-09T01:54:25.636Z</updated>
+  <updated>2022-02-10T03:27:12.009Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cloudflare 免费解析动态域名 DDNS</title>
+    <link href="https://ednovas.xyz/2022/02/09/cfddns/"/>
+    <id>https://ednovas.xyz/2022/02/09/cfddns/</id>
+    <published>2022-02-09T21:09:00.000Z</published>
+    <updated>2022-02-10T03:27:12.009Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;脚本地址&quot;&gt;&lt;a href=&quot;#脚本地址&quot; class=&quot;headerlink&quot; title=&quot;脚本地址&quot;&gt;&lt;/a&gt;脚本地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yulewang/cloudflare-api-v4-ddns&quot;&gt;https://github.com/yulewang/cloudflare-api-v4-ddns&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;获取-KEY&quot;&gt;&lt;a href=&quot;#获取-KEY&quot; class=&quot;headerlink&quot; title=&quot;获取 KEY&quot;&gt;&lt;/a&gt;获取 KEY&lt;/h2&gt;&lt;p&gt;访问 &lt;a href=&quot;https://dash.cloudflare.com/profile&quot;&gt;https://dash.cloudflare.com/profile&lt;/a&gt; 在页面下方找到 Global API Key，点击右侧的 View 查看 Key，并保存下来 ，在页面下方找到 Global API Key，点击右侧的 View 查看 Key，并保存下来 &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/bD7yJqoYcAV3riB.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;解析域名&quot;&gt;&lt;a href=&quot;#解析域名&quot; class=&quot;headerlink&quot; title=&quot;解析域名&quot;&gt;&lt;/a&gt;解析域名&lt;/h2&gt;&lt;p&gt;设置用于 DDNS 解析的二级域名，流量不经过CDN(云朵变灰)&lt;/p&gt;
+&lt;p&gt;添加一条A记录，例如：hkt.test.com，Proxy status设置成DNS only &lt;/p&gt;
+&lt;p&gt;ipv4地址随意就行&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/DzHSaNEb1ZBU5pC.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
+    
+    <category term="cf" scheme="https://ednovas.xyz/tags/cf/"/>
+    
+    <category term="ddns" scheme="https://ednovas.xyz/tags/ddns/"/>
+    
+  </entry>
   
   <entry>
     <title>Yandex 免费域名邮箱和配置SMTP</title>
@@ -657,36 +686,6 @@ TG id请通过@userinfobot机器人获取&lt;br&gt;
     
     
     <category term="linu" scheme="https://ednovas.xyz/tags/linu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Evolution Host 测评</title>
-    <link href="https://ednovas.xyz/2021/11/08/evolutionhost/"/>
-    <id>https://ednovas.xyz/2021/11/08/evolutionhost/</id>
-    <published>2021-11-09T01:15:12.000Z</published>
-    <updated>2021-11-09T02:16:59.907Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;Evolution-Host&quot;&gt;&lt;a href=&quot;#Evolution-Host&quot; class=&quot;headerlink&quot; title=&quot;Evolution Host&quot;&gt;&lt;/a&gt;Evolution Host&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://evolution-host.com/blog/ssd-vps-hosting.php&quot; target=&quot;_blank&quot;&gt;&lt;center&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-29_19-41-14.png&quot;&gt;&lt;/center&gt;&lt;center&gt;提供游戏DDOS防护的大流量VPS，提供多国家选择，100% SLA保证&lt;/center&gt;&lt;center&gt;Evolution Host offers Game DDOS in many countries，with 100% uptime SLA&lt;/center&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;只要你的博客有较多流量并且存在一段时间，在主页放上他们的广告就可以免费白嫖一个VPS了。&lt;/p&gt;
-&lt;p&gt;申请地址：&lt;a href=&quot;https://evolution-host.com/free-vps.php&quot;&gt;https://evolution-host.com/free-vps.php&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;配置&quot;&gt;&lt;a href=&quot;#配置&quot; class=&quot;headerlink&quot; title=&quot;配置&quot;&gt;&lt;/a&gt;配置&lt;/h2&gt;&lt;p&gt;看样子是博客流量越大，给的VPS配置就越好了。&lt;/p&gt;
-&lt;p&gt;我只申请到了个 3H3G 的&lt;/p&gt;
-&lt;p&gt;用的 AMD Ryzen 7 3800X&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-08_17-09-50.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-08_17-13-44.png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="白嫖" scheme="https://ednovas.xyz/tags/%E7%99%BD%E5%AB%96/"/>
-    
-    <category term="免费" scheme="https://ednovas.xyz/tags/%E5%85%8D%E8%B4%B9/"/>
     
   </entry>
   
