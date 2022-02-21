@@ -1,0 +1,688 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>使用 ocserv 搭建企业级 OpenConnect VPN 网关 | EdNovas的小站</title><meta name="keywords" content="vpn,ocserv,openconnect"><meta name="author" content="EdNovas"><meta name="copyright" content="EdNovas"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="转载自 Nova Kwok https:&#x2F;&#x2F;nova.moe&#x2F;deploy-openconnect-ocserv-with-letsencrypt&#x2F;                     AnyConnect 和 OpenConnect   本文于 2019-02-21 更新，修改了关于申请 SSL 证书的章节。   Wikipedia 上描述 OpenConnect 如下：   OpenCo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用 ocserv 搭建企业级 OpenConnect VPN 网关">
+<meta property="og:url" content="https://ednovas.xyz/2022/02/16/ocserv/index.html">
+<meta property="og:site_name" content="EdNovas的小站">
+<meta property="og:description" content="转载自 Nova Kwok https:&#x2F;&#x2F;nova.moe&#x2F;deploy-openconnect-ocserv-with-letsencrypt&#x2F;                     AnyConnect 和 OpenConnect   本文于 2019-02-21 更新，修改了关于申请 SSL 证书的章节。   Wikipedia 上描述 OpenConnect 如下：   OpenCo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/anyconnect.jpg">
+<meta property="article:published_time" content="2022-02-16T21:09:00.000Z">
+<meta property="article:modified_time" content="2022-02-21T09:21:34.563Z">
+<meta property="article:author" content="EdNovas">
+<meta property="article:tag" content="vpn">
+<meta property="article:tag" content="ocserv">
+<meta property="article:tag" content="openconnect">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/anyconnect.jpg"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/830.circled-e-filled1.png"><link rel="canonical" href="https://ednovas.xyz/2022/02/16/ocserv/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//static.cloudflareinsights.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="O9Uxirs5RzGyHijDvBe5okX6j2BxdRrzjxKkGI34B18"/><meta name="msvalidate.01" content="5651177152477FB9B4EBC45053EECDA3"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="#000000"/><link rel="apple-touch-icon" sizes="180x180" href="/image/siteicon/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/image/siteicon/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/image/siteicon/16.png"/><link rel="mask-icon" href="/image/siteicon/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-185849872-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-185849872-1');
+</script><script defer="defer" data-pjax="data-pjax" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;d6704c4319ce48e883585dfd275af345&quot;}"></script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"59FQUQ1CBL","apiKey":"07dbe3620a56feffda190697671f0a93","indexName":"ednovas","hits":{"per_page":10},"languages":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}.","hits_stats":"${hits} results found in ${time} ms"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":30,"position":"top","messagePrev":"距离文章编辑已经过去了","messageNext":"天，实际情况可能有所变动。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-02-21 01:21:34'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><link rel="stylesheet" href="/css/scrollbar.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_2440505_a5eo7su26z8.css"><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="EdNovas的小站" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/icon.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">275</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">349</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于我 | About</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-pengyouquan"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">EdNovas的小站</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于我 | About</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-pengyouquan"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">使用 ocserv 搭建企业级 OpenConnect VPN 网关</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-02-16T21:09:00.000Z" title="Created 2022-02-16 13:09:00">2022-02-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-02-21T09:21:34.563Z" title="Updated 2022-02-21 01:21:34">2022-02-21</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">科学上网</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">2.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>8min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>转载自 Nova Kwok <a target="_blank" rel="noopener" href="https://nova.moe/deploy-openconnect-ocserv-with-letsencrypt/">https://nova.moe/deploy-openconnect-ocserv-with-letsencrypt/</a></p>
+</blockquote>
+<div class="content">
+                
+
+<h2 id="anyconnect-和-openconnect">AnyConnect 和 OpenConnect<a href="#anyconnect-和-openconnect" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<blockquote>
+<p>本文于 2019-02-21 更新，修改了关于申请 SSL 证书的章节。</p>
+</blockquote>
+
+<p>Wikipedia 上描述 OpenConnect 如下：</p>
+
+<blockquote>
+<p>OpenConnect is an open-source software application for connecting to virtual private networks (VPN), which implement secure point-to-point connections.</p>
+
+<p>It was originally written as an open-source replacement for Cisco’s proprietary AnyConnect SSL VPN client,[2] which is supported by several Cisco routers. As of 2013, the OpenConnect project also offers an AnyConnect-compatible server,[3] and thus offers a full client-server VPN solution.</p>
+</blockquote>
+
+<p>可以简要地看出，OpenConnect 原本是由于 AnyConnect 有只能运行在 Cisco 设备上限制而开发出来的一个多系统支持的开源 VPN 实现方式，属于 SSL VPN，需要一个有效的 SSL 证书。</p>
+
+<p>本文实行简单粗暴的原则，记录了一个 Ubuntu 服务器最小化搭建 ocserv（OpenConnect 服务端） 服务的过程，所以：不使用证书登录验证（使用用户名 + 密码组合），SSL 使用 Let’s Encrypt（而非网上许多文章所介绍的自签发）。</p>
+
+<h2 id="why-openconnect">Why OpenConnect<a href="#why-openconnect" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>可能有些小伙伴看到本文长度会问了，为什么要搞这么复杂？直接 ss-server 或者 OpenVPN 一键脚本安装不好么？</p>
+
+<p>原因有三：</p>
+
+<ul>
+<li>我们需要的是安全内网访问，不是快速地绕过防火墙… 而且后期需要加入证书认证</li>
+<li>OpenVPN 协议特征过于明显，虽然 AnyConnect 协议特征也十分明显，但是由于目前只有一些大厂在用，一般而言直接拨位与海外的 VPN 网关不容易受到干扰或受到的干扰较小</li>
+<li>对于例如 iOS/BlackBerry BBOS 系统而言，一般自带 AnyConnect 连接工具</li>
+</ul>
+
+<p>本例中：</p>
+
+<ul>
+<li>一台全新的 Ubuntu 18.04 LTS（主要是考虑到 80 端口未被占用，给后文中获取 SSL 证书的方法提供可能）</li>
+<li>域名为：vpn.example.com，并且已经做好了解析到服务器 IP</li>
+<li>服务器 IP 为：1.2.3.4</li>
+</ul>
+
+<blockquote>
+<p>2018-09-12 更新：如果 80 端口被占用了可以考虑使用 DNS Challenge 的方法获取 Let’s Encrypt 证书，相关步骤可以参考 <a href="/host-static-website-with-google-storage-and-google-cdn/">《使用 Google Cloud Platform 的 Storage 托管静态站点并通过 Google CDN 加速》</a></p>
+</blockquote>
+
+<h2 id="安装-ocserv-准备系统">安装 ocserv &amp; 准备系统<a href="#安装-ocserv-准备系统" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>网上许多方法都是通过手动编译源代码包的方式安装，然而现在至少对于 Debian 系的系统来说已经有了编译好的软件包了，详情见 <a target="_blank" rel="noopener" href="https://ocserv.gitlab.io/www/packages.html">Distribution Status</a>，对于 Debian 系服务器来说（比如本例的 Ubuntu）直接一条指令即可（非常感谢维护这个包的：Aron Xu，Liang Guo 和 Mike Miller）：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install ocserv -y</code></pre><button class="highlight-copy-btn">Copy</button></div>
+<p>之后我们需要打开系统的转发功能，在 <code>/etc/sysctl.conf</code> 中加入如下行：</p>
+
+<pre><code>net.ipv4.ip_forward=1
+</code></pre>
+
+<p>通过</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sysctl -p</code></pre><button class="highlight-copy-btn">Copy</button></div>
+<p>保存。</p>
+
+<p>打开 NAT 功能：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># iptables -t nat -A POSTROUTING -j MASQUERADE</span></code></pre><button class="highlight-copy-btn">Copy</button></div>
+<h2 id="配置-let-s-encrypt-证书">配置 Let’s Encrypt 证书<a href="#配置-let-s-encrypt-证书" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p><code>ocserv</code> 需要 SSL 证书（用来加密连接流量，保证连接安全，放心，这一步不复杂），网上许多教程中使用的是自签发证书，方法复杂且容易被 MITM 攻击，好在现在有 Let’s Encrypt 可以免费为自己域名添加证书，本例中使用 <code>certbot</code> 来获取一个 Let’s Encrypt 证书。</p>
+
+<p>下载<code>certbot</code>，方法很多，在本例中为：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get update
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository ppa:certbot/certbot
+$ sudo apt-get update
+$ sudo apt-get install certbot</code></pre><button class="highlight-copy-btn">Copy</button></div>
+<p>其他系统请参考 <a target="_blank" rel="noopener" href="https://certbot.eff.org">Certbot 官方网站</a>。</p>
+
+<hr>
+
+<p>这一步比较 Tricky，请仔细阅读：<strong>certbot 获取 SSL 证书有多种方式，例如它可以在你机器上起一个临时的网页服务器，并且让自己的 Authority 来尝试连接临时服务器用来确认你机器的所有权，也可以通过 DNS 设置 TXT 记录的方式来验证，以下方式使用的是开一个临时服务器的方式来获取，如果希望通过 DNS 修改 TXT 记录的方式获取，请参考<a href="/host-static-website-with-google-storage-and-google-cdn/">《使用 Google Cloud Platform 的 Storage 托管静态站点并通过 Google CDN 加速》</a>一文中的“获取 SSL 证书章节”。</strong></p>
+
+<p>此外，有热心读者指出：ocserv 程序在安装后会使用 443 端口导致开启临时网页服务器的时候失败，读者给出的建议如下：</p>
+
+<blockquote>
+<p>在进行 <code>certbot</code> 获取证书之前，先以管理员权限修改 <code>/lib/systemd/system/ocserv.socket</code> 配置文件，将其中的两个443端口号修改为其他未被占用的端口号后，再运行  <code>certbot</code>  即可，这样做的好处是，可以利用  <code>certbot</code>  的自动证书续期功能。</p>
+
+<p>另外，<code>/lib/systemd/system/ocserv.socket</code> 中指定的端口号无需与  <code>/etc/ocserv/ocserv.conf</code> 中的端口号保持一致。在使用 OpenConnect 或者 AnyConnect 客户端时，使用在 <code>/lib/systemd/system/ocserv.socket</code> 中指定的端口号即可。</p>
+</blockquote>
+
+<p>非常感谢这位读者的邮件，欢迎大家在测试的时候进行尝试~</p>
+
+<hr>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ certbot certonly</code></pre><button class="highlight-copy-btn">Copy</button></div>
+<p>会看到：</p>
+
+<pre><code>Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+How would you like to authenticate with the ACME CA?
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+1: Spin up a temporary webserver (standalone)
+2: Place files in webroot directory (webroot)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Select the appropriate number [1-2] then [enter] (press 'c' to cancel):
+</code></pre>
+
+<p>由于我们仅仅是想要一个证书，这里选择 1，让 <code>certbot</code> 来搞定证书获取的过程，之后输入自己的域名，比如本例中的 <code>vpn.example.com</code> ，稍等片刻应该可以看到类似如下的输出（记住证书存放的地址，后面会用到）：</p>
+
+<pre><code>IMPORTANT NOTES:
+ - Congratulations! Your certificate and chain have been saved at:
+   /etc/letsencrypt/live/vpn.example.com/fullchain.pem
+   Your key file has been saved at:
+   /etc/letsencrypt/live/vpn.example.com/privkey.pem
+   Your cert will expire on 2018-11-11. To obtain a new or tweaked
+   version of this certificate in the future, simply run certbot
+   again. To non-interactively renew *all* of your certificates, run
+   "certbot renew"
+</code></pre>
+
+<h2 id="配置-ocserv">配置 ocserv<a href="#配置-ocserv" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>默认安装好后在<code>/etc/ocserv/</code>下有一个很长的配置文件<code>ocserv.conf</code>，着重注意以下配置字段：</p>
+
+<pre><code># 登录方式，使用用户名密码登录，密码文件稍后生成
+auth = "plain[/etc/ocserv/ocpasswd]"
+
+# 允许同时连接的客户端数量
+max-clients = 4
+
+# 限制同一客户端的并行登陆数量
+max-same-clients = 2
+
+# 服务监听的 TCP/UDP 端口（默认为 443）
+tcp-port = 443
+udp-port = 443
+
+# 自动优化 MTU，尝试改善网络性能
+try-mtu-discovery = true
+
+# 服务器证书与密钥，就是上一步中生成的证书和私钥的位置
+server-cert = /etc/letsencrypt/live/vpn.example.com/fullchain.pem
+server-key = /etc/letsencrypt/live/vpn.example.com/privkey.pem
+
+# 服务器域名
+default-domain = vpn.example.com
+
+# 客户端连上 vpn 后使用的 DNS，这里使用 Cloudflare 的 1.1.1.1
+dns = 1.1.1.1
+
+# 注释掉所有的 route 和 no-route，让服务器成为 gateway
+#route = 192.168.1.0/255.255.255.0
+#no-route = 192.168.5.0/255.255.255.0
+
+# 启用 Cisco 客户端兼容性支持
+cisco-client-compat = true
+</code></pre>
+
+<p>由于使用用户名密码登录，我们需要生成一个密码文件，指令如下：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ocpasswd -c /etc/ocserv/ocpasswd &lt;用户名&gt;</code></pre><button class="highlight-copy-btn">Copy</button></div>
+<p>此时会要求你输入两边密码，如果需要再添加用户只需重复上述指令即可。</p>
+
+<p>配置好后启动 VPN：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ocserv -c /etc/ocserv.conf</code></pre><button class="highlight-copy-btn">Copy</button></div>
+<p>确认已经开启：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">root@vpn:/etc/ocserv# netstat -tulpn <span class="p">|</span> grep <span class="m">443</span>
+tcp        <span class="m">0</span>      <span class="m">0</span> <span class="m">0</span>.0.0.0:443             <span class="m">0</span>.0.0.0:*               LISTEN      <span class="m">1987</span>/ocserv
+tcp6       <span class="m">0</span>      <span class="m">0</span> :::443                  :::*                    LISTEN      <span class="m">1987</span>/ocserv
+udp        <span class="m">0</span>      <span class="m">0</span> <span class="m">0</span>.0.0.0:443             <span class="m">0</span>.0.0.0:*                           <span class="m">1987</span>/ocserv
+udp6       <span class="m">0</span>      <span class="m">0</span> :::443                  :::*                                <span class="m">1987</span>/ocserv</code></pre><button class="highlight-copy-btn">Copy</button></div>
+<h2 id="connecting-through-vpn">Connecting Through VPN<a href="#connecting-through-vpn" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>配置好 VPN 后让自己的所有服务器全部拨上 VPN：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># openconnect https://vpn.example.com/</span></code></pre><button class="highlight-copy-btn">Copy</button></div>
+<p>对于个人用户访问，这里以黑莓 Passport 为例（请无视那个现在并不存在企业名称），截图如下：</p>
+
+<p><img src="https://nova-moe-blog-assets.webp.se/pics/openconnect/username.png" alt="">
+<img src="https://nova-moe-blog-assets.webp.se/pics/openconnect/banner.png" alt=""></p>
+
+<p>拨通后可以看到自己的内网 IP ：</p>
+
+<p><img src="https://nova-moe-blog-assets.webp.se/pics/openconnect/address.png" alt=""></p>
+
+<p>然后，开始在 VPN 的保护下畅游自己的大内网吧～</p>
+
+<h2 id="off-topic">Off-Topic<a href="#off-topic" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>如果直接用浏览器去访问 VPN 网关（比如本例中：<a target="_blank" rel="noopener" href="https://vpn.example.com">https://vpn.example.com</a>）的话，返回的是如下 HTML 内容：</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="p">&lt;</span><span class="nt">config-auth</span> <span class="na">client</span><span class="o">=</span><span class="s">"vpn"</span> <span class="na">type</span><span class="o">=</span><span class="s">"auth-request"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">version</span> <span class="na">who</span><span class="o">=</span><span class="s">"sg"</span><span class="p">&gt;</span>0.1(1)<span class="p">&lt;/</span><span class="nt">version</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">auth</span> <span class="na">id</span><span class="o">=</span><span class="s">"main"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">message</span><span class="p">&gt;</span>Please enter your username.<span class="p">&lt;/</span><span class="nt">message</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">method</span><span class="o">=</span><span class="s">"post"</span> <span class="na">action</span><span class="o">=</span><span class="s">"/auth"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class="na">name</span><span class="o">=</span><span class="s">"username"</span> <span class="na">label</span><span class="o">=</span><span class="s">"Username:"</span> <span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;&lt;/</span><span class="nt">auth</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">config-auth</span><span class="p">&gt;</span></code></pre><button class="highlight-copy-btn">Copy</button></div>
+<p>此外如果开启了 <code>ocserv</code> 之后在  <code>sudo</code>  的时候卡住并提示：”sudo: unable to resolve host vpn: Resource temporarily unavailable” 的话，着重关注一下自己的<code>/etc/hosts</code>文件中是否包含一行：</p>
+
+<pre><code>127.0.0.1    localhost
+</code></pre>
+
+<h2 id="参考连接">参考连接<a href="#参考连接" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<ol>
+<li><a target="_blank" rel="noopener" href="https://www.logcg.com/archives/1343.html">使用 ocserv 搭建 Cisco Anyconnect 服务器</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.vultr.com/docs/setup-openconnect-vpn-server-for-cisco-anyconnect-on-ubuntu-14-04-x64">Setup OpenConnect VPN Server for Cisco AnyConnect on Ubuntu 14.04 x64</a></li>
+</ol>
+
+<pre><code>        &lt;/div&gt;
+</code></pre>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">EdNovas</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://ednovas.xyz/2022/02/16/ocserv/">https://ednovas.xyz/2022/02/16/ocserv/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/vpn/">vpn</a><a class="post-meta__tags" href="/tags/ocserv/">ocserv</a><a class="post-meta__tags" href="/tags/openconnect/">openconnect</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/anyconnect.jpg" data-sites="qq,wechat,weibo,qzone"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="ads-wrap"><a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png"><center><h3>EdNovas云————高性价比，多国家节点，多地区奈飞迪士尼等流媒体解锁</h3></center></a> <a href="https://antlink.cc/#/register?code=Wa3WBPHC" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/04-24_12-14-24.png"><center><h3>AntLink蚁链————新用户注册免费使用50g/30天，便宜IPLC机场</h3></center></a> <a href="https://store.moccanetwork.com/aff.php?aff=85" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_10-16-00-1.png"><center><h3>Mocca Store————便宜稳定奈飞迪士尼等北美流媒体，办公设计学习软件会员</h3></center></a></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/02/20/koyeb/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/E-8Jyg6X0CAYGNu.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Koyeb 免费Docker容器</div></div></a></div><div class="next-post pull-right"><a href="/2022/02/09/cfddns/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/cf-logo-social-media.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Cloudflare 免费解析动态域名 DDNS</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2021/10/13/v2rayagent/" title="保姆级v2ray-agent使用说明"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/-LV3x-7WtgjD9WFSe7KS.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-13</div><div class="title">保姆级v2ray-agent使用说明</div></div></a></div><div><a href="/2021/02/07/speedtest/" title="科学的进行节点/订阅测速"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Speedtest.net-Logo.wine.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-07</div><div class="title">科学的进行节点/订阅测速</div></div></a></div><div><a href="/2021/02/06/clashconnection/" title="Clash实现任何平台不用代理软件科学上网"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-06</div><div class="title">Clash实现任何平台不用代理软件科学上网</div></div></a></div><div><a href="/2021/02/06/vpnblacklist/" title="VPN 黑名单"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/the_blacklist-min.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-06</div><div class="title">VPN 黑名单</div></div></a></div><div><a href="/2020/12/19/v2ray-windows/" title="V2RayN电脑端使用说明"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/45726700-df29-11ea-96f1-0813cffea4ca.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-19</div><div class="title">V2RayN电脑端使用说明</div></div></a></div><div><a href="/2020/12/18/freesubscribes/" title="免费Clash订阅链接/节点(持续更新)"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-18</div><div class="title">免费Clash订阅链接/节点(持续更新)</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#anyconnect-%E5%92%8C-openconnect"><span class="toc-number">1.</span> <span class="toc-text">AnyConnect 和 OpenConnect</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#why-openconnect"><span class="toc-number">2.</span> <span class="toc-text">Why OpenConnect</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-ocserv-%E5%87%86%E5%A4%87%E7%B3%BB%E7%BB%9F"><span class="toc-number">3.</span> <span class="toc-text">安装 ocserv &amp; 准备系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-let-s-encrypt-%E8%AF%81%E4%B9%A6"><span class="toc-number">4.</span> <span class="toc-text">配置 Let’s Encrypt 证书</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-ocserv"><span class="toc-number">5.</span> <span class="toc-text">配置 ocserv</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#connecting-through-vpn"><span class="toc-number">6.</span> <span class="toc-text">Connecting Through VPN</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#off-topic"><span class="toc-number">7.</span> <span class="toc-text">Off-Topic</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%BF%9E%E6%8E%A5"><span class="toc-number">8.</span> <span class="toc-text">参考连接</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By EdNovas</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">已经到底啦！再往下划要坏掉啦！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/algolia.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    let initData = {
+      el: '#vcomment',
+      appId: 'EnV5YLoyOBqrOXB9EDkMBSy4-gzGzoHsz',
+      appKey: 'MCTWNHJYAMcvfKeta68Xi7Iu',
+      placeholder: '留下你想说的话吧',
+      avatar: 'monsterid',
+      meta: 'nick,mail'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+    
+    if (false) {
+      const otherData = false
+      initData = Object.assign(initData, otherData)
+    }
+    
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>var gitcalendar = new Vue({
+  el: '#gitcalendar',
+  data: {
+    simplemode: false,
+    user: 'EdNovas',
+    fixed: 'fixed',
+    px: 'px',
+    x: '',
+    y: '',
+    span1: '',
+    span2: '',
+    month: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+    monthchange: [],
+    oneyearbeforeday: '',
+    thisday: '',
+    amonthago: '',
+    aweekago: '',
+    weekdatacore: 0,
+    datacore: 0,
+    total: 0,
+    datadate: '',
+    data: [],
+    positionplusdata: [],
+    firstweek: [],
+    lastweek: [],
+    beforeweek: [],
+    thisweekdatacore: 0,
+    mounthbeforeday: 0,
+    mounthfirstindex: 0,
+    crispedges: 'crispedges',
+    thisdayindex: 0,
+    amonthagoindex: 0,
+    amonthagoweek: [],
+    firstdate: [],
+    first2date: [],
+    montharrbefore: [],
+    monthindex: 0,
+    color: ['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']
+  },
+  methods: {
+    selectStyle(data, event) {
+      document.querySelector('.angle-wrapper').style.display = 'block'
+      this.span1 = data.date;
+      this.span2 = data.count;
+      this.x = event.clientX - 100;
+      this.y = event.clientY - 60
+    },
+    outStyle() {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    },
+    thiscolor(x) {
+      if (x === 0) {
+        let i = parseInt(x / 2);
+        return this.color[0]
+      } else if (x < 2) {
+        return this.color[1]
+      } else if (x < 20) {
+        let i = parseInt(x / 2);
+        return this.color[i]
+      } else {
+        return this.color[9]
+      }
+    },
+  }
+});
+var apiurl = 'github-calendar-api.vercel.app' ? 'https://github-calendar-api.vercel.app/api?' : 'https://githubapi.ryanchristian.dev/user/'
+var githubapiurl = apiurl + gitcalendar.user;
+//canvas绘图
+function responsiveChart() {
+  let c = document.getElementById("gitcanvas");
+  if (c) {
+    let cmessage = document.getElementById("gitmessage");
+    let ctx = c.getContext("2d");
+    c.width = document.getElementById("gitcalendarcanvasbox").offsetWidth;
+    let linemaxwitdh = 0.96 * c.width / gitcalendar.data.length;
+    c.height = 9 * linemaxwitdh;
+    let lineminwitdh = 0.8 * linemaxwitdh;
+    let setposition = {
+      x: 0.02 * c.width,
+      y: 0.025 * c.width
+    };
+    for (let week in gitcalendar.data) {
+      weekdata = gitcalendar.data[week];
+      for (let day in weekdata) {
+        let dataitem = {
+          date: "",
+          count: "",
+          x: 0,
+          y: 0
+        };
+        gitcalendar.positionplusdata.push(dataitem);
+        ctx.fillStyle = gitcalendar.thiscolor(weekdata[day].count);
+        setposition.y = Math.round(setposition.y * 100) / 100;
+        dataitem.date = weekdata[day].date;
+        dataitem.count = weekdata[day].count;
+        dataitem.x = setposition.x;
+        dataitem.y = setposition.y;
+        ctx.fillRect(setposition.x, setposition.y, lineminwitdh, lineminwitdh);
+        setposition.y = setposition.y + linemaxwitdh
+      };
+      setposition.y = 0.025 * c.width;
+      setposition.x = setposition.x + linemaxwitdh
+    };
+    ctx.font = "600  Arial";
+    ctx.fillStyle = '#aaa';
+    ctx.fillText("日", 0, 1.9 * linemaxwitdh);
+    ctx.fillText("二", 0, 3.9 * linemaxwitdh);
+    ctx.fillText("四", 0, 5.9 * linemaxwitdh);
+    ctx.fillText("六", 0, 7.9 * linemaxwitdh);
+    let monthindexlist = c.width / 24;
+    for (let index in gitcalendar.monthchange) {
+      ctx.fillText(gitcalendar.monthchange[index], monthindexlist, 0.7 * linemaxwitdh);
+      monthindexlist = monthindexlist + c.width / 12
+    };
+    cmessage.onmousemove = function(event) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    };
+    c.onmousemove = function(event) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+      getMousePos(c, event);
+    };
+
+    function getMousePos(canvas, event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left * (canvas.width / rect.width);
+      var y = event.clientY - rect.top * (canvas.height / rect.height);
+      //console.log("x:"+x+",y:"+y);
+      for (let item of gitcalendar.positionplusdata) {
+        let lenthx = x - item.x;
+        let lenthy = y - item.y;
+        //console.log(lenthx,lenthy);
+        if (0 < lenthx && lenthx < lineminwitdh) {
+          if (0 < lenthy && lenthy < lineminwitdh) {
+            //console.log(item.date,item.count)
+            document.querySelector('.angle-wrapper').style.display = 'block'
+            gitcalendar.span1 = item.date;
+            gitcalendar.span2 = item.count;
+            gitcalendar.x = event.clientX - 100;
+            gitcalendar.y = event.clientY - 60
+          }
+        }
+        //if(0< x - item.x <lineminwitdh&&0< y - item.y <lineminwitdh){
+        //console.log(item.count,item.date);
+        //}
+      }
+    }
+  }
+}
+//数据统计算法
+function addlastmonth() {
+  if (gitcalendar.thisdayindex === 0) {
+    thisweekcore(52);
+    thisweekcore(51);
+    thisweekcore(50);
+    thisweekcore(49);
+    thisweekcore(48);
+    gitcalendar.thisweekdatacore += gitcalendar.firstdate[6].count;
+    gitcalendar.amonthago = gitcalendar.firstdate[6].date
+  } else {
+    thisweekcore(52);
+    thisweekcore(51);
+    thisweekcore(50);
+    thisweekcore(49);
+    thisweek2core();
+    gitcalendar.amonthago = gitcalendar.first2date[gitcalendar.thisdayindex - 1].date
+  }
+};
+
+function thisweek2core() {
+  for (let i = gitcalendar.thisdayindex - 1; i < gitcalendar.first2date.length; i++) {
+    gitcalendar.thisweekdatacore += gitcalendar.first2date[i].count
+  }
+};
+
+function thisweekcore(index) {
+  for (let item of gitcalendar.data[index]) {
+    gitcalendar.thisweekdatacore += item.count
+  }
+};
+
+function addlastweek() {
+  for (let item of gitcalendar.lastweek) {
+    gitcalendar.weekdatacore += item.count
+  }
+};
+
+function addbeforeweek() {
+  for (let i = gitcalendar.thisdayindex; i < gitcalendar.beforeweek.length; i++) {
+    gitcalendar.weekdatacore += gitcalendar.beforeweek[i].count
+  }
+};
+
+function addweek(data) {
+  if (gitcalendar.thisdayindex === 6) {
+    gitcalendar.aweekago = gitcalendar.lastweek[0].date;
+    addlastweek()
+  } else {
+    lastweek = data.contributions[51];
+    gitcalendar.aweekago = lastweek[gitcalendar.thisdayindex + 1].date;
+    addlastweek();
+    addbeforeweek()
+  }
+}
+
+fetch(githubapiurl)
+  .then(data => data.json())
+  .then(data => {
+    gitcalendar.data = data.contributions;
+    gitcalendar.total = data.total;
+    gitcalendar.first2date = gitcalendar.data[48];
+    gitcalendar.firstdate = gitcalendar.data[47];
+    gitcalendar.firstweek = data.contributions[0];
+    gitcalendar.lastweek = data.contributions[52];
+    gitcalendar.beforeweek = data.contributions[51];
+    gitcalendar.thisdayindex = gitcalendar.lastweek.length - 1;
+    gitcalendar.thisday = gitcalendar.lastweek[gitcalendar.thisdayindex].date;
+    gitcalendar.oneyearbeforeday = gitcalendar.firstweek[0].date;
+    gitcalendar.monthindex = gitcalendar.thisday.substring(5, 7) * 1;
+    gitcalendar.montharrbefore = gitcalendar.month.splice(gitcalendar.monthindex, 12 - gitcalendar.monthindex);
+    gitcalendar.monthchange = gitcalendar.montharrbefore.concat(gitcalendar.month);
+    addweek(data);
+    addlastmonth();
+    responsiveChart();
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
+
+//手机版更换为svg绘制
+if (document.getElementById("gitcalendarcanvasbox").offsetWidth < 500) {
+  gitcalendar.simplemode = false
+}
+
+//当改变窗口大小时重新绘制canvas
+window.onresize = function() {
+  if (gitcalendar.simplemode) responsiveChart()
+}
+
+//解决滚动滑轮时出现的标签显示
+window.onscroll = function() {
+  if (document.querySelector('.angle-wrapper')) {
+    document.querySelector('.angle-wrapper').style.display = 'none'
+  }
+};</script></div><script defer src="/live2d-widget/autoload.js"></script><script src = "/js/chatroom.js"></script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script><script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('setup',{'key':'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script><script src = "/js/smoothscrolling.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="true" data-text="LOVE YOU ❤" data-fontsize="17px" data-random="false" async="async"></script><script src="//code.tidio.co/xi7xvcxspsj7k3k8gwzv5q2dyvsmhsyv.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script>(function (w, d, s, id) {
+            if (typeof (w.webpushr) !== 'undefined') return; w.webpushr = w.webpushr || function () { (w.webpushr.q = w.webpushr.q || []).push(arguments) }; var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.id = id; js.async = 1; js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window, document, 'script', 'webpushr-jssdk'));webpushr('setup', { 'key': 'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script></body></html>
