@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2022-02-21T09:21:32.064Z</updated>
+  <updated>2022-03-13T05:04:33.052Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于clash新版本的配置写法更改教程</title>
+    <link href="https://ednovas.xyz/2022/03/07/clashparsers/"/>
+    <id>https://ednovas.xyz/2022/03/07/clashparsers/</id>
+    <published>2022-03-07T23:09:00.000Z</published>
+    <updated>2022-03-13T05:04:33.052Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;使用Prasers更新订阅，会自动把旧配置改成新配置&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7d69aa1167261b56dc945.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Windows&quot;&gt;&lt;a href=&quot;#Windows&quot; class=&quot;headerlink&quot; title=&quot;Windows&quot;&gt;&lt;/a&gt;Windows&lt;/h2&gt;&lt;p&gt;对于0.19.4及以下用户，无需更改&lt;/p&gt;
+&lt;p&gt;对于0.19.5及以上用户，请点击Settings-Profiles-Parsers-Edit（设置-配置-预处理配置-编辑）,删除默认的parsers: #array ,并粘贴以下内容&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;parsers:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - reg: &amp;#39;^.*$&amp;#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    code: |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      module.exports.parse &amp;#x3D; async (raw, &amp;#123; axios, yaml, notify, console &amp;#125;, &amp;#123; name, url, interval, selected &amp;#125;) &amp;#x3D;&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        const obj &amp;#x3D; yaml.parse(raw)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        obj.proxies.forEach( v &amp;#x3D;&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            if (v.network &amp;#x3D;&amp;#x3D;&amp;#x3D; &amp;#39;ws&amp;#39; &amp;amp;&amp;amp; !v[&amp;#39;ws-opts&amp;#39;] &amp;amp;&amp;amp; v[&amp;#39;ws-path&amp;#39;] &amp;amp;&amp;amp; !v[&amp;#39;ws-headers&amp;#39;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              const opts &amp;#x3D; &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              opts.path &amp;#x3D; v[&amp;#39;ws-path&amp;#39;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              v[&amp;#39;ws-opts&amp;#39;] &amp;#x3D; opts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              delete v[&amp;#39;ws-path&amp;#39;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            if (v.network &amp;#x3D;&amp;#x3D;&amp;#x3D; &amp;#39;ws&amp;#39; &amp;amp;&amp;amp; !v[&amp;#39;ws-opts&amp;#39;] &amp;amp;&amp;amp; v[&amp;#39;ws-path&amp;#39;] &amp;amp;&amp;amp; v[&amp;#39;ws-headers&amp;#39;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              const opts &amp;#x3D; &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              opts.path &amp;#x3D; v[&amp;#39;ws-path&amp;#39;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              opts.headers &amp;#x3D; v[&amp;#39;ws-headers&amp;#39;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              v[&amp;#39;ws-opts&amp;#39;] &amp;#x3D; opts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              delete v[&amp;#39;ws-path&amp;#39;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              delete v[&amp;#39;ws-headers&amp;#39;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        return yaml.stringify(obj)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后更新订阅（注意，parsers内容仅在更新订阅时生效，一定要更新一次订阅）&lt;/p&gt;
+&lt;h2 id=&quot;MAC&quot;&gt;&lt;a href=&quot;#MAC&quot; class=&quot;headerlink&quot; title=&quot;MAC&quot;&gt;&lt;/a&gt;MAC&lt;/h2&gt;&lt;p&gt;对于Clash for Windows的mac版用户，操作方法同Windows&lt;/p&gt;
+&lt;p&gt;对于Clash X用户，请使用1.72.0及以前版本，如果不能接受旧版本，请手动修改或换到CFW mac版&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    <category term="clash" scheme="https://ednovas.xyz/tags/clash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Solusvm安装OVZ7</title>
+    <link href="https://ednovas.xyz/2022/03/07/solusvm/"/>
+    <id>https://ednovas.xyz/2022/03/07/solusvm/</id>
+    <published>2022-03-07T21:09:00.000Z</published>
+    <updated>2022-03-13T05:04:35.158Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;转换OVZ7&quot;&gt;&lt;a href=&quot;#转换OVZ7&quot; class=&quot;headerlink&quot; title=&quot;转换OVZ7&quot;&gt;&lt;/a&gt;转换OVZ7&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install screen -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;screen -S d&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mkdir &amp;#x2F;vz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall https:&amp;#x2F;&amp;#x2F;download.openvz.org&amp;#x2F;virtuozzo&amp;#x2F;releases&amp;#x2F;openvz-7.0.11-235&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;p&amp;#x2F;python-subprocess32-3.2.7-1.vz7.5.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall https:&amp;#x2F;&amp;#x2F;download.openvz.org&amp;#x2F;virtuozzo&amp;#x2F;releases&amp;#x2F;openvz-7.0.11-235&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;o&amp;#x2F;openvz-release-7.0.11-3.vz7.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install epel-release -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install python3 -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -Uvh http:&amp;#x2F;&amp;#x2F;repo.virtuozzo.com&amp;#x2F;vzlinux&amp;#x2F;7&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;r&amp;#x2F;readykernel-scan-0.11-1.vl7.noarch.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -Uvh http:&amp;#x2F;&amp;#x2F;repo.virtuozzo.com&amp;#x2F;vzlinux&amp;#x2F;7&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;z&amp;#x2F;zstd-1.4.4-1.vl7.x86_64.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -Uvh http:&amp;#x2F;&amp;#x2F;repo.virtuozzo.com&amp;#x2F;vzlinux&amp;#x2F;7&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;v&amp;#x2F;vzlinux-release-7-1.vl7.91.x86_64.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mv &amp;#x2F;etc&amp;#x2F;yum.repos.d&amp;#x2F;CentOS-* &amp;#x2F;root&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -e --nodeps --justdb json-c&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum erase jansson -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall http:&amp;#x2F;&amp;#x2F;repo.virtuozzo.com&amp;#x2F;vzlinux&amp;#x2F;7.7&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;j&amp;#x2F;jansson-2.10-1.vl7.1.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall http:&amp;#x2F;&amp;#x2F;repo.virtuozzo.com&amp;#x2F;vzlinux&amp;#x2F;7.7&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;j&amp;#x2F;json-c-0.11-13.vl7.1.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -e --nodeps --justdb nspr nss nss-pem nss-softokn nss-softokn-freebl nss-sysinit nss-tools nss-util&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall http:&amp;#x2F;&amp;#x2F;repo.virtuozzo.com&amp;#x2F;vzlinux&amp;#x2F;7&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;n&amp;#x2F;nss-3.44.0-7.vl7.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum downgrade glibc* -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install nss-softokn-freebl.i686 nss-tools -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install prlctl prl-disp-service vzkernel *ploop* -y &amp;amp;&amp;amp; yum update -y &amp;amp;&amp;amp; yum install fuse -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;reboot&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;screen -S dd&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;modprobe ploop pfmt_ploop1 pfmt_raw pio_direct fuse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -O &amp;#x2F;usr&amp;#x2F;libexec&amp;#x2F;ovz-template-converter https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;solusvm-support&amp;#x2F;svm_patches&amp;#x2F;master&amp;#x2F;ovz-template-converter.patched &amp;amp;&amp;amp; chmod +x &amp;#x2F;usr&amp;#x2F;libexec&amp;#x2F;ovz-template-converter&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -e --nodeps --justdb python3-pip&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install -y python36-pip python-configobj &amp;amp;&amp;amp; pip3 install configobj&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install *ez.noarch -y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;伪授权SolusVM&quot;&gt;&lt;a href=&quot;#伪授权SolusVM&quot; class=&quot;headerlink&quot; title=&quot;伪授权SolusVM&quot;&gt;&lt;/a&gt;伪授权SolusVM&lt;/h2&gt;&lt;p&gt;添加伪授权hosts&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vi &amp;#x2F;etc&amp;#x2F;hosts&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;添加如下伪授权，套餐是 SolusVM Enterprise (NOC)，任选1个即可：&lt;/p&gt;
+&lt;p&gt;伪授权站1&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 www.soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing1.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing2.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing3.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing4.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing5.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing6.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;伪授权站2&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 www.soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing1.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing2.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing3.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing4.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing5.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing6.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="solusvm" scheme="https://ednovas.xyz/tags/solusvm/"/>
+    
+    <category term="ovz7" scheme="https://ednovas.xyz/tags/ovz7/"/>
+    
+  </entry>
   
   <entry>
     <title>Koyeb 免费Docker容器</title>
@@ -384,7 +440,7 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     <link href="https://ednovas.xyz/2022/01/02/ednovastool/"/>
     <id>https://ednovas.xyz/2022/01/02/ednovastool/</id>
     <published>2022-01-03T03:12:00.000Z</published>
-    <updated>2022-01-23T05:00:14.734Z</updated>
+    <updated>2022-03-13T05:05:42.065Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;EdNovas的Toolbox工具箱&quot;&gt;&lt;a href=&quot;#EdNovas的Toolbox工具箱&quot; class=&quot;headerlink&quot; title=&quot;EdNovas的Toolbox工具箱&quot;&gt;&lt;/a&gt;EdNovas的Toolbox工具箱&lt;/h1&gt;&lt;h2 id=&quot;脚本地址&quot;&gt;&lt;a href=&quot;#脚本地址&quot; class=&quot;headerlink&quot; title=&quot;脚本地址&quot;&gt;&lt;/a&gt;脚本地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/wdm1732418365/vpstoolbox&quot;&gt;https://github.com/wdm1732418365/vpstoolbox&lt;/a&gt;&lt;/p&gt;
@@ -395,9 +451,10 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
 &lt;li&gt;&lt;input disabled type=&quot;checkbox&quot;&gt; 添加更多vps程序&lt;/li&gt;
 &lt;li&gt;&lt;input disabled type=&quot;checkbox&quot;&gt; 所有脚本添加出处&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;脚本&quot;&gt;&lt;a href=&quot;#脚本&quot; class=&quot;headerlink&quot; title=&quot;脚本&quot;&gt;&lt;/a&gt;脚本&lt;/h2&gt;&lt;p&gt;最新版：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -N https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;wdm1732418365&amp;#x2F;vpstoolbox&amp;#x2F;main&amp;#x2F;ednovastool.sh &amp;amp;&amp;amp; chmod +x ednovastool.sh &amp;amp;&amp;amp; .&amp;#x2F;ednovastool.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;稳定版：&lt;/p&gt;</summary>
+&lt;h2 id=&quot;脚本&quot;&gt;&lt;a href=&quot;#脚本&quot; class=&quot;headerlink&quot; title=&quot;脚本&quot;&gt;&lt;/a&gt;脚本&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -N https:&amp;#x2F;&amp;#x2F;cdn.jsdelivr.net&amp;#x2F;gh&amp;#x2F;ednovas&amp;#x2F;vpstoolbox@main&amp;#x2F;ednovastool.sh &amp;amp;&amp;amp; chmod +x ednovastool.sh &amp;amp;&amp;amp; .&amp;#x2F;ednovastool.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;此整合脚本整体借鉴自&lt;a href=&quot;https://github.com/Misaka-blog/MisakaLinuxToolbox&quot;&gt;御坂的Linux VPS工具箱&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;工具箱中脚本均来自GitHub，大部分已注明作者&lt;/p&gt;</summary>
     
     
     
@@ -730,165 +787,6 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     
     
     <category term="挖矿" scheme="https://ednovas.xyz/tags/%E6%8C%96%E7%9F%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用脚本自动抢Oracle ARM服务器，并使用tg机器人通知</title>
-    <link href="https://ednovas.xyz/2021/11/28/oraclearm/"/>
-    <id>https://ednovas.xyz/2021/11/28/oraclearm/</id>
-    <published>2021-11-28T21:09:00.000Z</published>
-    <updated>2021-11-28T05:42:14.139Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自HM的博客 &lt;a href=&quot;https://him.plus/archives/274&quot;&gt;https://him.plus/archives/274&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;post-content&quot; id=&quot;post_content&quot;&gt;
-        &lt;h3 id=&quot;header-id-1&quot;&gt;需要用到的&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;一台vps服务器&lt;/li&gt;
-&lt;li&gt;Terraform&lt;/li&gt;
-&lt;li&gt;oci-cli&lt;br&gt;
-&lt;h4 id=&quot;header-id-2&quot;&gt;一、安装Terraform&lt;/h4&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget https:&amp;#x2F;&amp;#x2F;releases.hashicorp.com&amp;#x2F;terraform&amp;#x2F;0.15.5&amp;#x2F;terraform_0.15.5_linux_amd64.zip&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;解压，并移动文件terraform到/usr/bin目录&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;unzip terraform_0.15.5_linux_amd64.zip&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mv terraform &amp;#x2F;usr&amp;#x2F;bin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;使用以下命令查看版本&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;terraform version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;显示如下则安装成功&lt;/strong&gt;&lt;br&gt;
-&lt;/p&gt;&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623394981402.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623394981402.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623394981402.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
-&lt;h4 id=&quot;header-id-3&quot;&gt;二、安装oci-cli工具&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;使用以下命令安装oci-cli工具&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;bash -c &amp;quot;$(curl –L https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;oracle&amp;#x2F;oci-cli&amp;#x2F;master&amp;#x2F;scripts&amp;#x2F;install&amp;#x2F;install.sh)&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;一直回车即可&lt;/strong&gt;&lt;br&gt;
-&lt;strong&gt;当出现:&lt;/strong&gt;&lt;br&gt;
-&lt;/p&gt;&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395540213.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395540213.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395540213.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;br&gt;
-&lt;strong&gt;这个时候，是在提示你输入y回车，会自动添加环境变量&lt;br&gt;
-之后又是一直回车。出现如下提示表示安装成功。可以用：&lt;code&gt;oci -v&lt;/code&gt;  查询版本&lt;/strong&gt;&lt;br&gt;
-&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395572528.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395572528.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395572528.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
-&lt;h4 id=&quot;header-id-4&quot;&gt;三、复制用户和租户的ocid&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;甲骨文后台右上角—用户设置—点击用户以及租户，在信息栏中有我们需要的ID，分别点击复制，可以保存在记事本备份好&lt;/strong&gt;&lt;br&gt;
-&lt;/p&gt;&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395984815.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395984815.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623395984815.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;br&gt;
-&lt;div class=&quot;fancybox-wrapper&quot; data-fancybox=&quot;post-images&quot; href=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396103425.png&quot;&gt;&lt;img class=&quot;lazyload lazyload-style-2 lazyload-loaded&quot; src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396103425.png&quot; data-original=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396103425.png&quot; alt=&quot;file&quot; title=&quot;%title插图%num&quot; style&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
-&lt;h4 id=&quot;header-id-5&quot;&gt;四、配置cli&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;输入如下代码开始配置，配置的路径默认在root目录&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;oci setup config&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;具体配置看下面&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Enter a location for your config [&amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;config]: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a user OCID: #输入你的用户OCID&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a tenancy OCID: #输入你的租户OCID&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a region by index or name(e.g.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1: ap-chiyoda-1, 2: ap-chuncheon-1, 3: ap-hyderabad-1, 4: ap-melbourne-1, 5: ap-mumbai-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6: ap-osaka-1, 7: ap-seoul-1, 8: ap-sydney-1, 9: ap-tokyo-1, 10: ca-montreal-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11: ca-toronto-1, 12: eu-amsterdam-1, 13: eu-frankfurt-1, 14: eu-zurich-1, 15: me-dubai-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16: me-jeddah-1, 17: sa-santiago-1, 18: sa-saopaulo-1, 19: uk-cardiff-1, 20: uk-gov-cardiff-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21: uk-gov-london-1, 22: uk-london-1, 23: us-ashburn-1, 24: us-gov-ashburn-1, 25: us-gov-chicago-1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26: us-gov-phoenix-1, 27: us-langley-1, 28: us-luke-1, 29: us-phoenix-1, 30: us-sanjose-1): 9  #这里选择你的区域&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Do you want to generate a new API Signing RSA key pair? (If you decline you will be asked to supply the path to an existing key.) [Y&amp;#x2F;n]: y  #输入y生成公钥&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a directory for your keys to be created [&amp;#x2F;root&amp;#x2F;.oci]: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a name for your key [oci_api_key]: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Public key written to: &amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;oci_api_key_public.pem&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Enter a passphrase for your private key (empty for no passphrase): &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Private key written to: &amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;oci_api_key.pem&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Fingerprint: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Config written to &amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;config&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    If you haven&amp;#39;t already uploaded your API Signing public key through the&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    console, follow the instructions on the page linked below in the section&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#39;How to upload the public key&amp;#39;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   https:&amp;#x2F;&amp;#x2F;docs.cloud.oracle.com&amp;#x2F;Content&amp;#x2F;API&amp;#x2F;Concepts&amp;#x2F;apisigningkey.htm#How2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;复制生成的公钥，使用以下命令获取公钥&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cat &amp;#x2F;root&amp;#x2F;.oci&amp;#x2F;oci_api_key_public.pem&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;把显示出来的内容复制,并且添加到&lt;br&gt;
-甲骨文后台—用户设置—资源—API秘钥—添加API秘钥&lt;br&gt;
-
-&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396703012.png&quot;&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;oci iam availability-domain list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;提示以下内容则是配置正确&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
-
-
-&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623396861886.png&quot;&gt;&lt;/p&gt;
-&lt;h4 id=&quot;header-id-6&quot;&gt;五、Terraform环境初始化&lt;/h4&gt;
-&lt;h5 id=&quot;header-id-7&quot;&gt;1、我们先获取甲骨文的Terraform脚本&lt;/h5&gt;
-&lt;p&gt;&lt;strong&gt;点击 创建VM实例&lt;/strong&gt;&lt;br&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397006677.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397155148.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397237969.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;一直下一步&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397917222.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623397993340.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623398056711.png&quot;&gt;&lt;/p&gt;
-&lt;h5 id=&quot;header-id-8&quot;&gt;2、配置Terraform&lt;/h5&gt;
-&lt;p&gt;&lt;strong&gt;使用以下命令创建Terraform运行目录&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd &amp;#x2F;opt&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mkdir terraform-learning &amp;amp;&amp;amp; cd terraform-learning&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
-&lt;p&gt;&lt;strong&gt;将刚刚解压到桌面的main.tf文件 上传到这个目录&lt;/strong&gt;&lt;br&gt;
-&lt;/p&gt;
-
-
-&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623398566301.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;将目录设置为Terraform运行目录&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;terraform init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;以上完成后，开始创建任务，用命令：（注意还是在/opt/terraform-learning）&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;terraform apply&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;执行完上面命令之后，会提示输入yes&lt;/strong&gt;&lt;br&gt;
-
-&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://him.plus/wp-content/uploads/2021/06/image-1623398738195.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;上图还能看到API返回Error Message: Out of host capacity,提示主机容量不足，下面就用脚本来不停刷就行了&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
-&lt;h4 id=&quot;header-id-9&quot;&gt;六、部署脚本&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;终于可以部署脚本来抢服务器了，请先获取telegram账号id，并且关注通知机器人@oracle_message_bot&lt;br&gt;
-TG id请通过@userinfobot机器人获取&lt;br&gt;
-在root目录下新建一个terraform.sh&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd &amp;#x2F;root&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vi terraform.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;写入以下内容&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#!&amp;#x2F;bin&amp;#x2F;bash&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;path&amp;#x3D;&amp;#39;&amp;#x2F;opt&amp;#x2F;terraform-learning&amp;#x2F;&amp;#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;FIND_FILE&amp;#x3D;&amp;quot;&amp;#x2F;root&amp;#x2F;terraform.log&amp;quot; #日志文件位置&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;FIND_STR&amp;#x3D;&amp;quot;Apply complete!&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cd $path &amp;amp;&amp;amp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;while true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;do&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    echo &amp;#39;yes&amp;#39; | terraform apply -lock&amp;#x3D;false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    sleep 1s&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;done&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;if [ grep -c &amp;quot;$FIND_STR&amp;quot; $FIND_FILE -ne &amp;#39;20&amp;#39; ];then&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    curl --location --request POST &amp;#39;https:&amp;#x2F;&amp;#x2F;api.telegram.org&amp;#x2F;bot2124631392:AAHtVpEm7KRWo6ulYNG_Zbz98irpmTSIf8o&amp;#x2F;sendMessage&amp;#39; \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--form &amp;#39;text&amp;#x3D;服务器创建成功！&amp;#39; \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--form &amp;#39;chat_id&amp;#x3D;你的tg id&amp;#39; \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--form &amp;#39;parse_mode&amp;#x3D;markdown&amp;#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pkill terraform&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    exit 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fi&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;给Shell脚本赋予执行权限：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;chmod +x terraform.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;使用以下命令后台执行脚本&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;nohup .&amp;#x2F;terraform.sh &amp;gt;&amp;gt; terraform.log 2&amp;gt;&amp;amp;1  &amp;amp;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h5 id=&quot;header-id-10&quot;&gt;如何结束脚本？&lt;/h5&gt;
-&lt;p&gt;&lt;strong&gt;使用以下命令结束脚本&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pkill terraform&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;转载自HM的博客 &lt;a href=&quot;https://him.plus/archives/274&quot;&gt;https://him.plus/archives/274&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>RACKNERD 优惠低至$8.49一年</title>
-    <link href="https://ednovas.xyz/2021/11/28/racknerd/"/>
-    <id>https://ednovas.xyz/2021/11/28/racknerd/</id>
-    <published>2021-11-28T21:09:00.000Z</published>
-    <updated>2021-11-29T06:34:51.849Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;推荐购买洛杉矶和圣何塞的机房，到国内速度更快。&lt;/p&gt;
-&lt;p&gt;个人认为比黑五要值。只是可惜8刀款只有500G的月流量，不过也足够个人用了。&lt;/p&gt;
-&lt;p&gt;RackNerd Cyber Monday 2021 会在北京时间2021年11月29日下午1点开始&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-28_22-34-21.png&quot;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;512MB-套餐&quot;&gt;&lt;a href=&quot;#512MB-套餐&quot; class=&quot;headerlink&quot; title=&quot;512MB 套餐&quot;&gt;&lt;/a&gt;512MB 套餐&lt;/h2&gt;&lt;p&gt;512 MB 内存&lt;/p&gt;
-&lt;p&gt;1 CPU 核心&lt;/p&gt;
-&lt;p&gt;9 GB 高速SSD存储&lt;/p&gt;
-&lt;p&gt;500 GB 月流量&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
     
   </entry>
   
