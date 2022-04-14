@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2022-03-13T05:04:33.052Z</updated>
+  <updated>2022-04-14T07:27:32.482Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,91 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux 服务器更换镜像源</title>
+    <link href="https://ednovas.xyz/2022/04/13/linuxchangesource/"/>
+    <id>https://ednovas.xyz/2022/04/13/linuxchangesource/</id>
+    <published>2022-04-14T03:06:00.000Z</published>
+    <updated>2022-04-14T07:27:32.482Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;修改镜像源&quot;&gt;&lt;a href=&quot;#修改镜像源&quot; class=&quot;headerlink&quot; title=&quot;修改镜像源&quot;&gt;&lt;/a&gt;修改镜像源&lt;/h1&gt;&lt;p&gt;手动更改的话&lt;/p&gt;
+&lt;h2 id=&quot;Ubuntu&quot;&gt;&lt;a href=&quot;#Ubuntu&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu&quot;&gt;&lt;/a&gt;Ubuntu&lt;/h2&gt;&lt;p&gt;Ubuntu 打开并修改 &lt;code&gt;/etc/apt/sources.list&lt;/code&gt; 文件即可&lt;/p&gt;
+&lt;p&gt;通用源:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deb mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http:&amp;#x2F;&amp;#x2F;archive.canonical.com&amp;#x2F;ubuntu focal partner&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http:&amp;#x2F;&amp;#x2F;archive.canonical.com&amp;#x2F;ubuntu focal partner&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;阿里源：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deb http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-security main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-updates main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-proposed main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-backports main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-security main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-updates main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-proposed main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-backports main restricted universe multiverse focal&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;Debian&quot;&gt;&lt;a href=&quot;#Debian&quot; class=&quot;headerlink&quot; title=&quot;Debian&quot;&gt;&lt;/a&gt;Debian&lt;/h2&gt;&lt;p&gt;阿里源：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Oracle Cloud 甲骨文云用 TG bot 刷 ARM</title>
+    <link href="https://ednovas.xyz/2022/04/13/oraclerbot/"/>
+    <id>https://ednovas.xyz/2022/04/13/oraclerbot/</id>
+    <published>2022-04-14T02:06:00.000Z</published>
+    <updated>2022-04-14T07:27:33.564Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;甲骨文云服务在上一年更新了ARM配置，那么时至今日，很多用户发现热门地区无法手动创建ARM，因为每个区域的ARM是有限的，其他用户已经抢先一步开好，自己点的话是大力出不了奇迹的，那么这个时候就需要找一个代刷了。网上有很多，这里介绍一个朋友 R佬 开发的甲骨文账号管理Bot，这个已经不单单是刷机使用了，还有很多管理功能。&lt;/p&gt;
+&lt;h2 id=&quot;R-Bot&quot;&gt;&lt;a href=&quot;#R-Bot&quot; class=&quot;headerlink&quot; title=&quot;R-Bot&quot;&gt;&lt;/a&gt;R-Bot&lt;/h2&gt;&lt;h3 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/semicons/java_oci_manage&quot;&gt;https://github.com/semicons/java_oci_manage&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;运行环境&quot;&gt;&lt;a href=&quot;#运行环境&quot; class=&quot;headerlink&quot; title=&quot;运行环境&quot;&gt;&lt;/a&gt;运行环境&lt;/h3&gt;&lt;p&gt;[JDK] 11&lt;/p&gt;
+&lt;p&gt;[LINUX] Ubuntu20.04(已测试).Debian(未测试，但是应该可以).Centos(需手动安装jdk11)&lt;/p&gt;
+&lt;p&gt;[Windows]未适配&lt;/p&gt;
+&lt;h3 id=&quot;已实现功能&quot;&gt;&lt;a href=&quot;#已实现功能&quot; class=&quot;headerlink&quot; title=&quot;已实现功能&quot;&gt;&lt;/a&gt;已实现功能&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    
+    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
+    
+    <category term="oracle" scheme="https://ednovas.xyz/tags/oracle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Oracle Cloud 甲骨文云账户更改密码、邮箱、租户名</title>
+    <link href="https://ednovas.xyz/2022/04/13/oracleaccount/"/>
+    <id>https://ednovas.xyz/2022/04/13/oracleaccount/</id>
+    <published>2022-04-14T01:06:00.000Z</published>
+    <updated>2022-04-14T07:27:33.565Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;关于注册/开机/配置甲骨文等可以看&lt;a href=&quot;/2021/01/14/oraclecloud/&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;刷甲骨文机器可以看&lt;a href=&quot;/2021/11/28/oraclearm/&quot;&gt;这里&lt;/a&gt;或&lt;a href=&quot;/2022/04/13/oraclerbot/&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2022年1月开始至2月期间甲骨文陆续对各区域的服务控制台进行了升级更新。最明显的改动就是：&lt;/p&gt;
+&lt;p&gt;登录界面变化，出现二次跳转至新登录界面，并且引入了身份域（身份域默认为：Default）;&lt;br&gt;用户控制台出现变化，将原来单独的用户控制台融入到服务控制台中；&lt;br&gt;其他大量的操作细化。&lt;/p&gt;
+&lt;p&gt;新版看起来更加简单明了。当我们进入服务控制台后，点击右上角人头像标识，甲骨文账户的所有管理操作都可以在这里完成：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c4ca4238a0b9238.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;下面本文就详细讲解一下如何在新版中进行更改密码、变更邮箱、添加用户、变更租户名等操作：&lt;/p&gt;
+&lt;h2 id=&quot;更改密码&quot;&gt;&lt;a href=&quot;#更改密码&quot; class=&quot;headerlink&quot; title=&quot;更改密码&quot;&gt;&lt;/a&gt;更改密码&lt;/h2&gt;&lt;p&gt;点击进入【我的信息概要】，选择【更改密码】&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="oracle" scheme="https://ednovas.xyz/tags/oracle/"/>
+    
+  </entry>
   
   <entry>
     <title>关于clash新版本的配置写法更改教程</title>
@@ -706,87 +791,6 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
     
     <category term="warp" scheme="https://ednovas.xyz/tags/warp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cloudflare Teams 团队 Warp</title>
-    <link href="https://ednovas.xyz/2021/12/12/cfteams/"/>
-    <id>https://ednovas.xyz/2021/12/12/cfteams/</id>
-    <published>2021-12-12T21:09:00.000Z</published>
-    <updated>2021-12-13T04:00:08.834Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;部分图片文字转载自 小御坂的破站 &lt;a href=&quot;https://blog.misaka.rest/202112/291.html&quot;&gt;https://blog.misaka.rest/202112/291.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;WARP默认分配到的通道是共享的通道，很多用户被挤在一起，导致网速变得越来越差。&lt;/p&gt;
-&lt;p&gt;这时候有两种方法。一种是使用WARP+，而另外一种就是使用CloudFlare Teams的专属通道&lt;/p&gt;
-&lt;h2 id=&quot;CF开启Teams&quot;&gt;&lt;a href=&quot;#CF开启Teams&quot; class=&quot;headerlink&quot; title=&quot;CF开启Teams&quot;&gt;&lt;/a&gt;CF开启Teams&lt;/h2&gt;&lt;p&gt;登入CF &lt;a href=&quot;https://dash.cloudflare.com/&quot;&gt;https://dash.cloudflare.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;选择Teams&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-12-12_19-24-09.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;输入组织名称（后面可以随意更改），点击Next&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212185134.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;选择Free Plan&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux端口转发的几种常用方法</title>
-    <link href="https://ednovas.xyz/2021/12/05/linuxforward/"/>
-    <id>https://ednovas.xyz/2021/12/05/linuxforward/</id>
-    <published>2021-12-06T01:09:00.000Z</published>
-    <updated>2021-12-05T03:19:20.296Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;SSH-端口转发&quot;&gt;&lt;a href=&quot;#SSH-端口转发&quot; class=&quot;headerlink&quot; title=&quot;SSH 端口转发&quot;&gt;&lt;/a&gt;SSH 端口转发&lt;/h2&gt;&lt;p&gt;SSH 提供了一个非常有意思的功能，就是端口转发，它能够将其他 TCP 端口的网络数据通过 SSH 链接来转发，并且自动提供了相应的加密及解密服务。&lt;/p&gt;
-&lt;h3 id=&quot;（1）本地端口转发&quot;&gt;&lt;a href=&quot;#（1）本地端口转发&quot; class=&quot;headerlink&quot; title=&quot;（1）本地端口转发&quot;&gt;&lt;/a&gt;（1）本地端口转发&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh -fgN -L 2222:localhost:22 localhost&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;（2）远程端口转发&quot;&gt;&lt;a href=&quot;#（2）远程端口转发&quot; class=&quot;headerlink&quot; title=&quot;（2）远程端口转发&quot;&gt;&lt;/a&gt;（2）远程端口转发&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh -fgN -R 2222:host1:22 localhost&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;（3）动态转发&quot;&gt;&lt;a href=&quot;#（3）动态转发&quot; class=&quot;headerlink&quot; title=&quot;（3）动态转发&quot;&gt;&lt;/a&gt;（3）动态转发&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh -fgN -D 12345 root@host1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;iptables-端口转发&quot;&gt;&lt;a href=&quot;#iptables-端口转发&quot; class=&quot;headerlink&quot; title=&quot;iptables 端口转发&quot;&gt;&lt;/a&gt;iptables 端口转发&lt;/h2&gt;&lt;p&gt;可以通过iptables实现数据包的转发。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>电脑 ETH 挖矿教程</title>
-    <link href="https://ednovas.xyz/2021/12/02/mining/"/>
-    <id>https://ednovas.xyz/2021/12/02/mining/</id>
-    <published>2021-12-02T21:09:00.000Z</published>
-    <updated>2021-12-03T03:20:31.995Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;电脑建议显卡RTX3060及以上，A卡N卡都可以挖&lt;/p&gt;
-&lt;p&gt;显卡天梯图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-15eb42faf46aaa34d7268edf8495f430_r.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;挖矿软件用的开源矿工：&lt;a href=&quot;https://ntminer.com/&quot;&gt;https://ntminer.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;下载地址：&lt;a href=&quot;https://link.zhihu.com/?target=http://minerjson.oss.ntminer.top/NTMiner.zip&quot;&gt;https://link.zhihu.com/?target=http%3A//minerjson.oss.ntminer.top/NTMiner.zip&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;火币挖矿教程：&lt;a href=&quot;https://www.hpt.com/pow/help/3/all?from=home&quot;&gt;https://www.hpt.com/pow/help/3/all?from=home&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;火币矿池网址: &lt;a href=&quot;https://www.hpt.com/pow&quot;&gt;https://www.hpt.com/pow&lt;/a&gt; 注册/登录账号&lt;/p&gt;
-&lt;h2 id=&quot;下载安装软件&quot;&gt;&lt;a href=&quot;#下载安装软件&quot; class=&quot;headerlink&quot; title=&quot;下载安装软件&quot;&gt;&lt;/a&gt;下载安装软件&lt;/h2&gt;&lt;p&gt;下载地址：&lt;a href=&quot;https://link.zhihu.com/?target=http://minerjson.oss.ntminer.top/NTMiner.zip&quot;&gt;https://link.zhihu.com/?target=http%3A//minerjson.oss.ntminer.top/NTMiner.zip&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="挖矿" scheme="https://ednovas.xyz/tags/%E6%8C%96%E7%9F%BF/"/>
     
   </entry>
   
