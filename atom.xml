@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2022-04-14T07:27:32.482Z</updated>
+  <updated>2022-04-21T07:00:36.961Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>暗网网站搭建和暗网域名申请方法</title>
+    <link href="https://ednovas.xyz/2022/04/20/torwebsite/"/>
+    <id>https://ednovas.xyz/2022/04/20/torwebsite/</id>
+    <published>2022-04-21T03:06:00.000Z</published>
+    <updated>2022-04-21T07:00:36.961Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;直接安装&quot;&gt;&lt;a href=&quot;#直接安装&quot; class=&quot;headerlink&quot; title=&quot;直接安装&quot;&gt;&lt;/a&gt;直接安装&lt;/h2&gt;&lt;p&gt;一般可以通过apt直接安装tor服务&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt install tor&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;如果不行请进行以下操作&lt;/p&gt;
+&lt;h2 id=&quot;手动安装&quot;&gt;&lt;a href=&quot;#手动安装&quot; class=&quot;headerlink&quot; title=&quot;手动安装&quot;&gt;&lt;/a&gt;手动安装&lt;/h2&gt;&lt;p&gt;修改source.list&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo vi &amp;#x2F;etc&amp;#x2F;apt&amp;#x2F;sources.list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;最后加下面这两行&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deb https:&amp;#x2F;&amp;#x2F;deb.torproject.org&amp;#x2F;torproject.org stretch main&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src https:&amp;#x2F;&amp;#x2F;deb.torproject.org&amp;#x2F;torproject.org stretch main&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;添加密钥&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML CSS JS 基础</title>
+    <link href="https://ednovas.xyz/2022/04/15/htmlcssjs/"/>
+    <id>https://ednovas.xyz/2022/04/15/htmlcssjs/</id>
+    <published>2022-04-16T03:06:00.000Z</published>
+    <updated>2022-04-21T07:00:37.433Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/html_css_javascript_infographic.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;HTML provides the basic structure of sites, which is enhanced and modified by other technologies like CSS and JavaScript.&lt;/p&gt;
+&lt;p&gt;HTML提供网站的基础，在此基础上可以添加CSS 和 JavaScript来让网址变得更多元化。&lt;/p&gt;
+&lt;p&gt;CSS is used to control presentation, formatting, and layout.&lt;/p&gt;
+&lt;p&gt;CSS是用来表示、格式和布局。&lt;/p&gt;
+&lt;p&gt;JavaScript is used to control the behavior of different elements.&lt;/p&gt;
+&lt;p&gt;JS是用来控制不同元素的行为。&lt;/p&gt;
+&lt;h1 id=&quot;Setting-the-Stage-一些关于网站的网络知识基础&quot;&gt;&lt;a href=&quot;#Setting-the-Stage-一些关于网站的网络知识基础&quot; class=&quot;headerlink&quot; title=&quot;Setting the Stage (一些关于网站的网络知识基础)&quot;&gt;&lt;/a&gt;Setting the Stage (一些关于网站的网络知识基础)&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_1.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_2.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_3.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_4.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_5.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_6.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_7.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_8.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_9.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_10.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_11.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_12.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_13.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_14.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_15.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_16.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_17.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_18.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_19.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_20.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_21.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_22.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_23.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_24.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_25.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_26.png&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;HTML-html基础&quot;&gt;&lt;a href=&quot;#HTML-html基础&quot; class=&quot;headerlink&quot; title=&quot;HTML(html基础)&quot;&gt;&lt;/a&gt;HTML(html基础)&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="js" scheme="https://ednovas.xyz/tags/js/"/>
+    
+    <category term="html" scheme="https://ednovas.xyz/tags/html/"/>
+    
+    <category term="css" scheme="https://ednovas.xyz/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux 服务器更换镜像源</title>
@@ -78,7 +135,7 @@
     <link href="https://ednovas.xyz/2022/04/13/oracleaccount/"/>
     <id>https://ednovas.xyz/2022/04/13/oracleaccount/</id>
     <published>2022-04-14T01:06:00.000Z</published>
-    <updated>2022-04-14T07:27:33.565Z</updated>
+    <updated>2022-04-21T07:00:37.319Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;关于注册/开机/配置甲骨文等可以看&lt;a href=&quot;/2021/01/14/oraclecloud/&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
@@ -735,62 +792,6 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     
     
     <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>申请eu.org免费域名</title>
-    <link href="https://ednovas.xyz/2021/12/17/euorg/"/>
-    <id>https://ednovas.xyz/2021/12/17/euorg/</id>
-    <published>2021-12-17T21:09:00.000Z</published>
-    <updated>2021-12-25T01:26:01.187Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自 小御坂的破站 &lt;a href=&quot;https://blog.misaka.rest/202110/55.html&quot;&gt;https://blog.misaka.rest/202110/55.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;准备材料&quot;&gt;&lt;a href=&quot;#准备材料&quot; class=&quot;headerlink&quot; title=&quot;准备材料&quot;&gt;&lt;/a&gt;准备材料&lt;/h2&gt;&lt;p&gt;一个邮箱（最好是gmail、outlook之类的常用邮箱）&lt;/p&gt;
-&lt;h2 id=&quot;申请流程&quot;&gt;&lt;a href=&quot;#申请流程&quot; class=&quot;headerlink&quot; title=&quot;申请流程&quot;&gt;&lt;/a&gt;申请流程&lt;/h2&gt;&lt;p&gt;打开&lt;a href=&quot;https://nic.eu.org/arf/en/login/&quot;&gt;注册页面&lt;/a&gt; &lt;a href=&quot;https://nic.eu.org/arf/en/login/&quot;&gt;https://nic.eu.org/arf/en/login/&lt;/a&gt; ，点击Register&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010021048.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;填入个人信息，输入邮箱密码，同意协议，点击Create&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010021322.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;成功创建账号&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010021420.png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VPS 添加 WARP 解锁奈飞终极版</title>
-    <link href="https://ednovas.xyz/2021/12/14/warpnetflix/"/>
-    <id>https://ednovas.xyz/2021/12/14/warpnetflix/</id>
-    <published>2021-12-14T21:09:00.000Z</published>
-    <updated>2021-12-15T02:31:43.278Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;cloudflare一直以来提供了十分优秀且免费的服务，希望不要被滥用。&lt;/p&gt;
-&lt;p&gt;此文是使用warp来达到奈飞解锁的目的的。该方法还请自用，请勿用于解锁服务贩卖等。&lt;/p&gt;
-&lt;h2 id=&quot;安装Warp&quot;&gt;&lt;a href=&quot;#安装Warp&quot; class=&quot;headerlink&quot; title=&quot;安装Warp&quot;&gt;&lt;/a&gt;安装Warp&lt;/h2&gt;&lt;p&gt;GitHub地址：&lt;a href=&quot;https://github.com/fscarmen/warp&quot;&gt;https://github.com/fscarmen/warp&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;该一键脚本可能是最快且最完善的warp一键安装脚本&lt;/p&gt;
-&lt;p&gt;一键脚本：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -N https:&amp;#x2F;&amp;#x2F;cdn.jsdelivr.net&amp;#x2F;gh&amp;#x2F;fscarmen&amp;#x2F;warp&amp;#x2F;menu.sh &amp;amp;&amp;amp; bash menu.sh [option] [lisence]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;运行后选择2简体中文，然后一般是纯ipv4添加ipv6warp，所以选1（根据自己情况选择）。&lt;/p&gt;
-&lt;p&gt;如果有warp+的 license可以输入，没有的话跳过即可，使用普通的warp服务。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
-    
-    <category term="warp" scheme="https://ednovas.xyz/tags/warp/"/>
     
   </entry>
   
