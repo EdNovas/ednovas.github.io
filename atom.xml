@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2022-04-21T07:00:36.961Z</updated>
+  <updated>2022-04-23T08:19:34.034Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,527 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图片隐形工具outguess</title>
+    <link href="https://ednovas.xyz/2022/04/23/outguess/"/>
+    <id>https://ednovas.xyz/2022/04/23/outguess/</id>
+    <published>2022-04-24T04:06:00.000Z</published>
+    <updated>2022-04-23T08:19:34.034Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;可以直接 &lt;code&gt;apt install outguess&lt;/code&gt; 或者 &lt;code&gt;yum install outguess&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;或者自行编译&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;crorvick&amp;#x2F;outguess&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cd outguess&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.&amp;#x2F;configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;使用帮助&quot;&gt;&lt;a href=&quot;#使用帮助&quot; class=&quot;headerlink&quot; title=&quot;使用帮助&quot;&gt;&lt;/a&gt;使用帮助&lt;/h2&gt;&lt;p&gt;输入 &lt;code&gt;outguess -h&lt;/code&gt; 可获得help帮助页面&lt;/p&gt;
+&lt;p&gt;图片格式需要 jpg 格式&lt;/p&gt;
+&lt;h2 id=&quot;加密&quot;&gt;&lt;a href=&quot;#加密&quot; class=&quot;headerlink&quot; title=&quot;加密&quot;&gt;&lt;/a&gt;加密&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;outguess -k &amp;quot;secret key&amp;quot; -d input.txt pic.jpg pic_output.jpg&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;其中 -k 命令是加上密码用的，&lt;code&gt;secret key&lt;/code&gt;就是密码。 -d 就是加密了，input.txt是需要隐藏的txt文件，pic.jpg是原始图片，pic_output.jpg是最后输出的包含隐藏内容的图片。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>各种类型文件头部特征</title>
+    <link href="https://ednovas.xyz/2022/04/23/filehead/"/>
+    <id>https://ednovas.xyz/2022/04/23/filehead/</id>
+    <published>2022-04-24T03:06:00.000Z</published>
+    <updated>2022-04-23T08:19:33.383Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;a href=&quot;#从Ultra－edit-32中提取出来的&quot; class=&quot;headerlink&quot; title=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;/a&gt;从Ultra－edit-32中提取出来的&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;File&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Type&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;ExtensionsHeader&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;JPEG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;jpg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;FFD8FF&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;PNG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;png&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;89504E47&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;GIF&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;gif&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;47494638&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;TIFF&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;tif&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;49492A00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Windows Bitmap&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;bmp&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;424D&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;CAD&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;dwg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;41433130&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Adobe Photoshop&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;psd&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;38425053&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Rich Text Format&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;rtf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;7B5C727466&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;XML&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;xml&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;3C3F786D6C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;HTML&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;html&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;68746D6C3E&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Email [thorough only]&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;eml&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;44656C69766572792D646174653A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Outlook Express&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;dbx&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;CFAD12FEC5FD746F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Outlook&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;pst&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2142444E&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MS Word/Excel&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;xls.or.doc&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;D0CF11E0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MS Access&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mdb&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;5374616E64617264204A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;WordPerfect&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wpd&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;FF575043&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Postscript&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;eps.or.ps&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;252150532D41646F6265&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Adobe Acrobat&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;pdf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;255044462D312E&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Quicken&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;qdf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;AC9EBD8F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Windows Password&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;pwl&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;E3828596&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;ZIP Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;zip&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;504B0304&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;RAR Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;rar&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;52617221&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Wave&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wav&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;57415645&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;AVI&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;avi&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;41564920&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Real Audio&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;ram&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2E7261FD&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Real Media&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;rm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2E524D46&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mpg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;000001BA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mpg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;000001B3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Quicktime&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mov&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;6D6F6F76&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Windows Media&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;asf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;3026B2758E66CF11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MIDI&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mid&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4D546864&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&quot;从winhex中取出的文件头列表&quot;&gt;&lt;a href=&quot;#从winhex中取出的文件头列表&quot; class=&quot;headerlink&quot; title=&quot;从winhex中取出的文件头列表&quot;&gt;&lt;/a&gt;从winhex中取出的文件头列表&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;File&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Type&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;ExtensionsHeader&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;JPEG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;jpg;jpeg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0xFFD8FF&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;PNG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;png&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x89504E470D0A1A0A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;GIF&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;gif&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;GIF8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;TIFF&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;tif;tiff&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x49492A00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;TIFF&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;tif;tiff&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x4D4D002A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Bit map&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;bmp&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;BM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;AOL ART&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;art&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x4A47040E000000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;AOL ART&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;art&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x4A47030E000000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;PC Paintbrush&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;pcx&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x0A050108&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Graphics Metafile&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wmf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0xD7CDC69A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Graphics Metafile&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wmf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x01000900&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Graphics Metafile&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wmf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x02000900&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Enhanced Metafile&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;emf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x0100000058000000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Corel Draw&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;cdr&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;CDR&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;CAD&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;dwg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x41433130&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Adobe Photoshop&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;psd&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;8BPS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Rich Text Format&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;rtf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;rtf&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;XML&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;xml&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;HTML&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;html;htm;php;php3;php4;phtml;shtml&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Email&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;eml&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Delivery-date:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Outlook Express&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;dbx&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0xCFAD12FE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MS Office/OLE2&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;doc;xls;dot;ppt;xla;ppa;pps;pot;msi;sdw;db&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0xD0CF11E0A1B11AE1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MS Access&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mdb;mda;mde;mdt&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Standard J&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;WordPerfect&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wpd&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0xFF575043&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;OpenOffice Writer&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;sxw&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;writer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;OpenOffice Calc&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;sxc&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;calc&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;OpenOffice Math&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;sxm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;math&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;OpenOffice Impress&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;sxi&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;impress&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;OpenOffice Draw&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;sxd&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;draw&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Adobe FrameMaker&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;fm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;PostScript&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;eps.or.ps;ps;eps&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;%!PS-Adobe&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Adobe Acrobat&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;pdf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;%PDF-1.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Quicken&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;qdf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0xAC9EBD8F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;QuickBooks Backup&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;qbb&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x458600000600&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Sage&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;sly.or.srt.or.slt;sly;srt;slt&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x53520100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Sage Backup&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;SAGEBACKUP&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Lotus WordPro v9&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;lwp&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x576F726450726F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Lotus 123 v9&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;123&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x00001A00051004&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Lotus 123 v5&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wk4&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x00001A0002100400&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Lotus 123 v3&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wk3&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x00001A0000100400&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Lotus 123 v1&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wk1&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x2000604060&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Windows Password&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;pwl&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0xE3828596&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;ZIP Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;zip;jar&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x504B0304&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;ZIP Archive (outdated)&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;zip&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x504B3030&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;RAR Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;rar&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Rar!&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;GZ Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;gz;tgz&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x1F8B08&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;BZIP Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;bz2&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;BZh&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;ARJ Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;arj&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x60EA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;7－ZIP Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;7z&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;7z集&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Wave&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wav&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;WAVE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;AVI&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;avi&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;AVI&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Real Audio&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;ram;ra&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;.ra?0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Real Media&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;rm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;.RMF&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mpg;mpeg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x000001BA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mpg;mpeg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x000001B3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Quicktime&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mov&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;moov&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Windows Media&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;asf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x3026B2758E66CF11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MIDI&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mid&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;MThd&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Win32 Executable&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;exe;dll;drv;vxd;sys;ocx;vbx&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;MZ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Win16 Executable&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;exe;dll;drv;vxd;sys;ocx;vbx&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;MZ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;ELF Executable&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;elf;;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x7F454C4601010100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&quot;https://hubinqiang.com/blog/IS/fileExtensionsHeader.html&quot;&gt;https://hubinqiang.com/blog/IS/fileExtensionsHeader.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>暗网网站搭建和暗网域名申请方法</title>
@@ -740,58 +1261,6 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     
     <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Telegram 客户端 Proxy 代理设置</title>
-    <link href="https://ednovas.xyz/2021/12/20/tgproxy/"/>
-    <id>https://ednovas.xyz/2021/12/20/tgproxy/</id>
-    <published>2021-12-20T23:12:00.000Z</published>
-    <updated>2021-12-21T03:36:08.207Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;Telegram-Desktop-客户端&quot;&gt;&lt;a href=&quot;#Telegram-Desktop-客户端&quot; class=&quot;headerlink&quot; title=&quot;Telegram Desktop 客户端&quot;&gt;&lt;/a&gt;Telegram Desktop 客户端&lt;/h2&gt;&lt;p&gt;Telegram Desktop 默认并没有勾选”使用系统代理”, 所以很多人觉得需要开全局才能用,  其实不然, 可以手动勾选”使用系统代理”或使用自定义代理.&lt;/p&gt;
-&lt;h3 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h3&gt;&lt;p&gt;情况A: 未登录账号: 界面左下角按钮&lt;/p&gt;
-&lt;p&gt;情况B: 已登录账号: Telegram Desktop 客户端 → 左上角三短线 → 设置 → 高级 → 网络和代理 → 代理类型 → 勾选”使用系统代理”或”使用自定义代理”&lt;/p&gt;
-&lt;h4 id=&quot;使用自定义代理添加方法&quot;&gt;&lt;a href=&quot;#使用自定义代理添加方法&quot; class=&quot;headerlink&quot; title=&quot;使用自定义代理添加方法&quot;&gt;&lt;/a&gt;使用自定义代理添加方法&lt;/h4&gt;&lt;p&gt;添加代理: SOCKS5/HTTP (这俩均可)&lt;/p&gt;
-&lt;p&gt;服务器: &lt;code&gt;127.0.0.1&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;端口: &lt;code&gt;端口&lt;/code&gt;需查看你的代理软件(SS/SSR/Clash for Windows/V2RayN…)&lt;/p&gt;
-&lt;p&gt;不需要填写用户名和密码。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS 8 迁移到 Rocky 8</title>
-    <link href="https://ednovas.xyz/2021/12/20/centostorocky/"/>
-    <id>https://ednovas.xyz/2021/12/20/centostorocky/</id>
-    <published>2021-12-20T21:09:00.000Z</published>
-    <updated>2021-12-21T03:36:08.206Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;时代的结束&quot;&gt;&lt;a href=&quot;#时代的结束&quot; class=&quot;headerlink&quot; title=&quot;时代的结束&quot;&gt;&lt;/a&gt;时代的结束&lt;/h2&gt;&lt;p&gt;CentOS Linux 8即将于2021年12月31日停止技术更新。&lt;/p&gt;
-&lt;p&gt;CentOS Linux 7继续支持到2024年6月30日。&lt;/p&gt;
-&lt;p&gt;对Yum系有眷恋的朋友可以升级到RockyLinux8。&lt;/p&gt;
-&lt;h2 id=&quot;升级系统&quot;&gt;&lt;a href=&quot;#升级系统&quot; class=&quot;headerlink&quot; title=&quot;升级系统&quot;&gt;&lt;/a&gt;升级系统&lt;/h2&gt;&lt;p&gt;升级系统并重启&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo dnf –y upgrade &amp;amp;&amp;amp; sudo reboot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;下载转换脚本并执行&quot;&gt;&lt;a href=&quot;#下载转换脚本并执行&quot; class=&quot;headerlink&quot; title=&quot;下载转换脚本并执行&quot;&gt;&lt;/a&gt;下载转换脚本并执行&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;curl -O https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;rocky-linux&amp;#x2F;rocky-tools&amp;#x2F;main&amp;#x2F;migrate2rocky&amp;#x2F;migrate2rocky.sh &amp;amp;&amp;amp; chmod+x migrate2rocky.sh &amp;amp;&amp;amp; bash migrate2rocky.sh –r &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;等待迁移完成&quot;&gt;&lt;a href=&quot;#等待迁移完成&quot; class=&quot;headerlink&quot; title=&quot;等待迁移完成&quot;&gt;&lt;/a&gt;等待迁移完成&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
     
   </entry>
   
