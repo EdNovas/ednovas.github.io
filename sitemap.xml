@@ -905,14 +905,14 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2021/01/21/failedtoconnect/</loc>
+    <loc>https://ednovas.xyz/2021/07/31/f12/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2021/07/31/f12/</loc>
+    <loc>https://ednovas.xyz/2021/01/21/failedtoconnect/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
@@ -933,14 +933,14 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2021/07/20/firewalld/</loc>
+    <loc>https://ednovas.xyz/2021/02/01/footermotion/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2021/02/01/footermotion/</loc>
+    <loc>https://ednovas.xyz/2021/07/20/firewalld/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
@@ -982,14 +982,14 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2021/02/01/gitter/</loc>
+    <loc>https://ednovas.xyz/2021/07/04/google/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2021/07/04/google/</loc>
+    <loc>https://ednovas.xyz/2021/02/01/gitter/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
@@ -1346,14 +1346,14 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2021/02/15/oneindex/</loc>
+    <loc>https://ednovas.xyz/2020/12/04/onenote/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2020/12/04/onenote/</loc>
+    <loc>https://ednovas.xyz/2021/02/15/oneindex/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
@@ -1423,14 +1423,14 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2020/12/26/python-day-1/</loc>
+    <loc>https://ednovas.xyz/2021/05/11/proxysetting/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2021/05/11/proxysetting/</loc>
+    <loc>https://ednovas.xyz/2020/12/26/python-day-1/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
@@ -1542,14 +1542,14 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2021/06/07/rss_bot/</loc>
+    <loc>https://ednovas.xyz/2021/01/10/sakuraanime/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2021/01/10/sakuraanime/</loc>
+    <loc>https://ednovas.xyz/2021/06/07/rss_bot/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
@@ -1955,14 +1955,14 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2020/12/27/%E7%BD%91%E6%98%93%E4%BA%91%E5%88%B7%E7%AD%89%E7%BA%A7%E5%92%8C%E5%90%AC%E6%AD%8C%E6%95%B0%E9%87%8F/</loc>
+    <loc>https://ednovas.xyz/2021/01/01/%E7%A1%AC%E6%A0%B8%E7%BF%BB%E5%A2%99/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/2021/01/01/%E7%A1%AC%E6%A0%B8%E7%BF%BB%E5%A2%99/</loc>
+    <loc>https://ednovas.xyz/2020/12/27/%E7%BD%91%E6%98%93%E4%BA%91%E5%88%B7%E7%AD%89%E7%BA%A7%E5%92%8C%E5%90%AC%E6%AD%8C%E6%95%B0%E9%87%8F/</loc>
     
     <lastmod>2021-08-23</lastmod>
     
@@ -2615,13 +2615,6 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/tags/butterfly/</loc>
-    <lastmod>2022-04-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ednovas.xyz/tags/Clover/</loc>
     <lastmod>2022-04-27</lastmod>
     <changefreq>daily</changefreq>
@@ -2644,6 +2637,13 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E6%BC%AB%E7%94%BB/</loc>
+    <lastmod>2022-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/butterfly/</loc>
     <lastmod>2022-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2832,6 +2832,13 @@
   </url>
   
   <url>
+    <loc>https://ednovas.xyz/tags/f12/</loc>
+    <lastmod>2022-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/tags/%E6%A2%AF%E5%AD%90/</loc>
     <lastmod>2022-04-27</lastmod>
     <changefreq>daily</changefreq>
@@ -2840,13 +2847,6 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/cmd/</loc>
-    <lastmod>2022-04-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/f12/</loc>
     <lastmod>2022-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2874,6 +2874,20 @@
   </url>
   
   <url>
+    <loc>https://ednovas.xyz/tags/footer%EF%BC%8C%E9%A1%B5%E8%84%9A/</loc>
+    <lastmod>2022-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ednovas.xyz/tags/freenom/</loc>
+    <lastmod>2022-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ednovas.xyz/tags/firewall/</loc>
     <lastmod>2022-04-27</lastmod>
     <changefreq>daily</changefreq>
@@ -2895,14 +2909,7 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/tags/footer%EF%BC%8C%E9%A1%B5%E8%84%9A/</loc>
-    <lastmod>2022-04-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/freenom/</loc>
+    <loc>https://ednovas.xyz/tags/%E6%9C%BA%E5%9C%BA/</loc>
     <lastmod>2022-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2910,13 +2917,6 @@
   
   <url>
     <loc>https://ednovas.xyz/tags/%E7%BF%BB%E5%A2%99/</loc>
-    <lastmod>2022-04-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ednovas.xyz/tags/%E6%9C%BA%E5%9C%BA/</loc>
     <lastmod>2022-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -3000,14 +3000,14 @@
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/tags/%E8%81%8A%E5%A4%A9%E5%AE%A4/</loc>
+    <loc>https://ednovas.xyz/tags/google/</loc>
     <lastmod>2022-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/tags/google/</loc>
+    <loc>https://ednovas.xyz/tags/%E8%81%8A%E5%A4%A9%E5%AE%A4/</loc>
     <lastmod>2022-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -4570,14 +4570,14 @@
 
   
   <url>
-    <loc>https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
+    <loc>https://ednovas.xyz/categories/%E6%9D%82/</loc>
     <lastmod>2022-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ednovas.xyz/categories/%E6%9D%82/</loc>
+    <loc>https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
     <lastmod>2022-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
