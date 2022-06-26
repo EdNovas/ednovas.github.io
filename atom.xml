@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2022-04-23T08:19:34.034Z</updated>
+  <updated>2022-06-26T07:20:00.921Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,78 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从GFW原理到翻墙原理和协议</title>
+    <link href="https://ednovas.xyz/2022/06/25/gfw/"/>
+    <id>https://ednovas.xyz/2022/06/25/gfw/</id>
+    <published>2022-06-25T21:09:00.000Z</published>
+    <updated>2022-06-26T07:20:00.921Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;GFW的原理&quot;&gt;&lt;a href=&quot;#GFW的原理&quot; class=&quot;headerlink&quot; title=&quot;GFW的原理&quot;&gt;&lt;/a&gt;GFW的原理&lt;/h1&gt;&lt;p&gt;要与GFW对抗不能仅仅停留在什么不能访问了，什么可以访问之类的表面现象上。知道youtube不能访问了，对于翻墙来说并无帮助。但是知道GFW是如何让我们不能访问youtube的，则对下一步的翻墙方案的选择和实施具有重大意义。所以在讨论如何翻之前，先要深入原理了解GFW是如何封的。&lt;/p&gt;
+&lt;p&gt;总的来说，GFW是一个分布式的入侵检测系统，并不是一个严格意义上的防火墙。不是说每个出入国境的IP包都需要先经过GFW的首可。做为一个入侵检测系统，GFW把你每一次访问facebook都看做一次入侵，然后在检测到入侵之后采取应对措施，也就是常见的连接重置。&lt;/p&gt;
+&lt;p&gt;检测有两种方式。一种是人工检测，一种是机器检测。你去国新办网站举报，就是参与了人工检测。在人工检测到不和谐的网站之后，就会采取一些应对方式来防止国内的网民访问该网站。对于这类的封锁，规避检测就不是技术问题了，只能从GFW采取的应对方式上采取反制措施。另外一类检测是机器检测，其检测过程又可以再进一步细分：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/0r2ob02om5.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;重建是指GFW从网络上监听过往的IP包，然后分析其中的TCP协议，最后重建出一个完整的字节流。分析是在这个重建的字节流上分析具体的应用协议，比如HTTP协议。然后在应用协议中查找是不是有不和谐的内容，然后决定采用何种应对方式。&lt;/p&gt;
+&lt;p&gt;所以，GFW机器检测的第一步就是重建出一个字节流。那么GFW是如何拿到原始的IP包的呢？真正的GFW部署方式，外人根本无从得知。据猜测，GFW是部署在国家的出口路由器的旁路上，用“分光”的方式把IP包复制一份到另外一根光纤上，从而拿到所有进出国境的IP包。下图引在gfwrev.blogspot.com：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/g8f9fcptsz.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;但是Google在北京有自己的机房。所以聪明的网友就使用Google的北京机房提供的GAE服务，用Goagent软件达到高速翻墙的目的。但是有网友证实 &lt;a href=&quot;https://twitter.com/chengr28/status/260970749190365184&quot;&gt;https://twitter.com/chengr28/status/260970749190365184&lt;/a&gt; ，&lt;br&gt;即便是北京的机房也会被骨干网丢包。事实上Google在北京的谷翔机房有一个独立的AS（BGP的概念）。这个AS与谷歌总部有一条IPV6的直连线路，所以通过这个机房可以用IPV6不受墙的限制出去。但是这个AS无论是连接国内还是国外都是要经过GFW的。所以机房在北京也不能保证国内访问不被墙。GFW通过配置骨干网的BGP路由规则，是可以让国内的机房也经过它的。另外一个例子是当我们访问被封的网站触发连接重置的时候，往往收到两个RST包，但是TTL不同。还有一个例子是对于被封的IP，访问的IP包还没有到达国际出口就已经被丢弃。所以GFW应该在其他地方也部署有设备，据推测是在省级骨干路由的位置。&lt;/p&gt;
+&lt;p&gt;对于GFW到底在哪这个话题，最近又有国外友人表达了兴趣 &lt;a href=&quot;https://github.com/mothran/mongol&quot;&gt;https://github.com/mothran/mongol&lt;/a&gt;。 笔者在前人的基础上写了一个更完备的探测工具 &lt;a href=&quot;https://github.com/fqrouter/qiang&quot;&gt;https://github.com/fqrouter/qiang&lt;/a&gt; 。其原理是基于一个IP协议的特性叫TTL。TTL是Time to Live的简写。IP包在没经过一次路由的时候，路由器都会把IP包的TTL减去1。如果TTL到零了，路由器就不会再把IP包发给下一级路由。然后我们知道GFW会在监听到不和谐的IP包之后发回RST包来重置TCP连接。那么通过设置不同的TTL就可以知道从你的电脑，到GFW之间经过了几个路由器。比如说TTL设置成9不触发RST，但是10就触发RST，那么到GFW就是经过了10个路由器。另外一个IP协议的特性是当TTL耗尽的时候，路由器应该发回一个TTL EXCEEDED的ICMP包，并把自己的IP地址设置成SRC（来源）。结合这两点，就可以探测出IP包是到了IP地址为什么的路由器之后才被GFW检测到。有了IP地址之后，再结合IP地址地理位置的数据库就可以知道其地理位置。据说，得出的位置大概是这样的：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+    <category term="VPN" scheme="https://ednovas.xyz/tags/VPN/"/>
+    
+    <category term="梯子" scheme="https://ednovas.xyz/tags/%E6%A2%AF%E5%AD%90/"/>
+    
+    <category term="V2ray" scheme="https://ednovas.xyz/tags/V2ray/"/>
+    
+    <category term="gfw" scheme="https://ednovas.xyz/tags/gfw/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从摩尔斯电码到密码学</title>
+    <link href="https://ednovas.xyz/2022/06/25/moss/"/>
+    <id>https://ednovas.xyz/2022/06/25/moss/</id>
+    <published>2022-06-25T20:09:00.000Z</published>
+    <updated>2022-06-26T07:20:00.969Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;起源&quot;&gt;&lt;a href=&quot;#起源&quot; class=&quot;headerlink&quot; title=&quot;起源&quot;&gt;&lt;/a&gt;起源&lt;/h1&gt;&lt;p&gt;早期的密码学 目前已知最早的密码是大约公元前1900年的埃及古王国时期，用特殊的埃及象形文字雕刻在墓碑上。 但这些文字并不被认为是某种秘密通信的真正尝试，而是在增加神秘和阴谋气氛，甚至是为了给能看懂的观者提供乐趣。 这是密码学在其它用途上的应用，或者只是看上去是这样（如果这是某种密码的误导或伪装，那确实令人印象深刻）。&lt;/p&gt;
+&lt;p&gt;至于最有名的密码，也可以说是代码，肯定就是耳熟能详的莫斯电报码了。著名的 三短三长三短 的 SOS 求救信号应该无人不知无人不晓。&lt;/p&gt;
+&lt;h1 id=&quot;Moss-Code&quot;&gt;&lt;a href=&quot;#Moss-Code&quot; class=&quot;headerlink&quot; title=&quot;Moss Code&quot;&gt;&lt;/a&gt;Moss Code&lt;/h1&gt;&lt;p&gt;摩尔斯电码（又译为摩斯密码，英语：Morse code）是一种时通时断的信号代码。通过不同的排列顺序来表达不同的英文字母、数字和标点符号。&lt;/p&gt;
+&lt;p&gt;是由美国人艾尔菲德·维尔与萨缪尔·摩尔斯在1836年发明。&lt;/p&gt;
+&lt;p&gt;摩尔斯电码是一种早期的数码化通信形式， 它依靠一系列的 点和划 来传递编码信息 ，它的代码包括五种：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;点（·）：1 （读 “滴” dit ，时间占据1t）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;划（—）：111 （读 “嗒” dah ，时间占据3t）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;字符内部的停顿（在点和划之间）：0 （时间占据1t）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;字符间停顿：000 （时间占据3t）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;单词间的停顿：0000000 （时间占据7t）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;点的长度（也就是上面的时间长度t）决定了发报的速度&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/72f082025aafa40f2b207369a264034f79f0199b.webp&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="moss" scheme="https://ednovas.xyz/tags/moss/"/>
+    
+    <category term="password" scheme="https://ednovas.xyz/tags/password/"/>
+    
+  </entry>
   
   <entry>
     <title>图片隐形工具outguess</title>
@@ -1209,58 +1281,6 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     
     
     <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VPS屏蔽Censys扫描</title>
-    <link href="https://ednovas.xyz/2021/12/20/censys/"/>
-    <id>https://ednovas.xyz/2021/12/20/censys/</id>
-    <published>2021-12-21T03:12:00.000Z</published>
-    <updated>2021-12-24T01:50:06.025Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;什么是Censys&quot;&gt;&lt;a href=&quot;#什么是Censys&quot; class=&quot;headerlink&quot; title=&quot;什么是Censys&quot;&gt;&lt;/a&gt;什么是Censys&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://censys.io/&quot;&gt;https://censys.io&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Censys 是一款用以搜索联网设备信息的新型搜索引擎 ，安全专家可以使用它来评估他们实现方案的安全性，而黑客则可以使用它作为前期侦查攻击目标、收集目标信息的强大利器。&lt;/p&gt;
-&lt;h3 id=&quot;Censys功能介绍&quot;&gt;&lt;a href=&quot;#Censys功能介绍&quot; class=&quot;headerlink&quot; title=&quot;Censys功能介绍&quot;&gt;&lt;/a&gt;Censys功能介绍&lt;/h3&gt;&lt;p&gt;现在，黑客和安全专家们拥有了一款新型强大的分析工具，那就是 Censys 搜索引擎，与最流行的搜索引擎Shodan非常类似。Censys是一款免费的搜索引擎，最初由密歇根大学的研究人员在10月发行，目前由谷歌提供支持。&lt;/p&gt;
-&lt;p&gt;Censys搜索引擎能够扫描整个互联网，Censys 每天都会扫描IPv4地址空间，以搜索所有联网设备并收集相关的信息，并返回一份有关资源（如设备、网站和证书）配置和部署信息的总体报告。&lt;/p&gt;
-&lt;p&gt;Censys官方网站上这样描述该搜索引擎：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“Censys是一款搜索引擎，它允许计算机科学家了解组成互联网的设备和网络。Censys由因特网范围扫描驱动，它使得研究人员能够找到特定的主机，并能够针将设备、网站和证书的配置和部署信息创建到一个总体报告中。”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;Censys原理及架构&quot;&gt;&lt;a href=&quot;#Censys原理及架构&quot; class=&quot;headerlink&quot; title=&quot;Censys原理及架构&quot;&gt;&lt;/a&gt;Censys原理及架构&lt;/h3&gt;&lt;p&gt;与Shodan类似，Censys维护着一个完整的数据库，里面保存着每个暴露在互联网上的设备信息。对于一个黑客来说，如果他想搜索一个特定的目标，并需要收集目标配置的信息，那么对他来说censys无疑是一款特权工具。同时，安全专家能够轻易锁定互联网上保护措施很差的设备。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows建立隐藏用户</title>
-    <link href="https://ednovas.xyz/2021/12/20/windowshideuser/"/>
-    <id>https://ednovas.xyz/2021/12/20/windowshideuser/</id>
-    <published>2021-12-21T02:12:00.000Z</published>
-    <updated>2021-12-21T03:36:07.658Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;CMD创建新用户&quot;&gt;&lt;a href=&quot;#CMD创建新用户&quot; class=&quot;headerlink&quot; title=&quot;CMD创建新用户&quot;&gt;&lt;/a&gt;CMD创建新用户&lt;/h2&gt;&lt;p&gt;需要有ADMIN权限的cmd&lt;/p&gt;
-&lt;p&gt;创建新用户并给该用户添加管理员权限：&lt;/p&gt;
-&lt;p&gt;(用户名处加了个$在结尾是可以在&lt;code&gt;net user&lt;/code&gt;命令下不显示该用户，但是在控制面板内还是能看到的)&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;net user username$ password &amp;#x2F;add&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;net localgroup administrators username$ &amp;#x2F;add&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;例如 ednovas为用户名，paswd为密码的新用户就是：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;net user ednovas$ paswd &amp;#x2F;add&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;net localgroup administrators ednovas$ &amp;#x2F;add&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;这两句命令行后应该有返回&lt;code&gt;命令成功完成&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image-20210403141500963.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image-20210403141948213.png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
     
   </entry>
   

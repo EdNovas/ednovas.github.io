@@ -1,0 +1,579 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>从摩尔斯电码到密码学 | EdNovas的小站</title><meta name="keywords" content="moss,password"><meta name="author" content="EdNovas"><meta name="copyright" content="EdNovas"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="起源早期的密码学 目前已知最早的密码是大约公元前1900年的埃及古王国时期，用特殊的埃及象形文字雕刻在墓碑上。 但这些文字并不被认为是某种秘密通信的真正尝试，而是在增加神秘和阴谋气氛，甚至是为了给能看懂的观者提供乐趣。 这是密码学在其它用途上的应用，或者只是看上去是这样（如果这是某种密码的误导或伪装，那确实令人印象深刻）。 至于最有名的密码，也可以说是代码，肯定就是耳熟能详的莫斯电报码了。著名的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从摩尔斯电码到密码学">
+<meta property="og:url" content="https://ednovas.xyz/2022/06/25/moss/index.html">
+<meta property="og:site_name" content="EdNovas的小站">
+<meta property="og:description" content="起源早期的密码学 目前已知最早的密码是大约公元前1900年的埃及古王国时期，用特殊的埃及象形文字雕刻在墓碑上。 但这些文字并不被认为是某种秘密通信的真正尝试，而是在增加神秘和阴谋气氛，甚至是为了给能看懂的观者提供乐趣。 这是密码学在其它用途上的应用，或者只是看上去是这样（如果这是某种密码的误导或伪装，那确实令人印象深刻）。 至于最有名的密码，也可以说是代码，肯定就是耳熟能详的莫斯电报码了。著名的">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/PASSWORD-ft-IMAGE.png">
+<meta property="article:published_time" content="2022-06-25T20:09:00.000Z">
+<meta property="article:modified_time" content="2022-06-26T07:20:00.969Z">
+<meta property="article:author" content="EdNovas">
+<meta property="article:tag" content="moss">
+<meta property="article:tag" content="password">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/PASSWORD-ft-IMAGE.png"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/830.circled-e-filled1.png"><link rel="canonical" href="https://ednovas.xyz/2022/06/25/moss/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//static.cloudflareinsights.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="O9Uxirs5RzGyHijDvBe5okX6j2BxdRrzjxKkGI34B18"/><meta name="msvalidate.01" content="5651177152477FB9B4EBC45053EECDA3"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="#000000"/><link rel="apple-touch-icon" sizes="180x180" href="/image/siteicon/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/image/siteicon/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/image/siteicon/16.png"/><link rel="mask-icon" href="/image/siteicon/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-185849872-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-185849872-1');
+</script><script defer="defer" data-pjax="data-pjax" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;d6704c4319ce48e883585dfd275af345&quot;}"></script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"59FQUQ1CBL","apiKey":"07dbe3620a56feffda190697671f0a93","indexName":"ednovas","hits":{"per_page":10},"languages":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}.","hits_stats":"${hits} results found in ${time} ms"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":30,"position":"top","messagePrev":"距离文章编辑已经过去了","messageNext":"天，实际情况可能有所变动。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-06-26 00:20:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><link rel="stylesheet" href="/css/scrollbar.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_2440505_a5eo7su26z8.css"><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="EdNovas的小站" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/icon.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">286</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">356</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于我 | About</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-users"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">EdNovas的小站</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于我 | About</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-users"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">从摩尔斯电码到密码学</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-06-25T20:09:00.000Z" title="Created 2022-06-25 13:09:00">2022-06-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-06-26T07:20:00.969Z" title="Updated 2022-06-26 00:20:00">2022-06-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%9D%82/">杂</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">3.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>10min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h1><p>早期的密码学 目前已知最早的密码是大约公元前1900年的埃及古王国时期，用特殊的埃及象形文字雕刻在墓碑上。 但这些文字并不被认为是某种秘密通信的真正尝试，而是在增加神秘和阴谋气氛，甚至是为了给能看懂的观者提供乐趣。 这是密码学在其它用途上的应用，或者只是看上去是这样（如果这是某种密码的误导或伪装，那确实令人印象深刻）。</p>
+<p>至于最有名的密码，也可以说是代码，肯定就是耳熟能详的莫斯电报码了。著名的 三短三长三短 的 SOS 求救信号应该无人不知无人不晓。</p>
+<h1 id="Moss-Code"><a href="#Moss-Code" class="headerlink" title="Moss Code"></a>Moss Code</h1><p>摩尔斯电码（又译为摩斯密码，英语：Morse code）是一种时通时断的信号代码。通过不同的排列顺序来表达不同的英文字母、数字和标点符号。</p>
+<p>是由美国人艾尔菲德·维尔与萨缪尔·摩尔斯在1836年发明。</p>
+<p>摩尔斯电码是一种早期的数码化通信形式， 它依靠一系列的 点和划 来传递编码信息 ，它的代码包括五种：</p>
+<ol>
+<li><p>点（·）：1 （读 “滴” dit ，时间占据1t）</p>
+</li>
+<li><p>划（—）：111 （读 “嗒” dah ，时间占据3t）</p>
+</li>
+<li><p>字符内部的停顿（在点和划之间）：0 （时间占据1t）</p>
+</li>
+<li><p>字符间停顿：000 （时间占据3t）</p>
+</li>
+<li><p>单词间的停顿：0000000 （时间占据7t）</p>
+</li>
+</ol>
+<p>点的长度（也就是上面的时间长度t）决定了发报的速度</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/72f082025aafa40f2b207369a264034f79f0199b.webp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/morsecode-1.jpg"></p>
+<h2 id="sos"><a href="#sos" class="headerlink" title="sos"></a>sos</h2><p>求救信号 SOS（···—···）</p>
+<p>1912年，著名的泰坦尼克号游轮首航遇险时，发送的是CQD（英国马可尼无线电公司决定用CQD作为 船舶遇难信号），但因 D（—··）易于其他字母混淆，周围船只并未意识到是求救信号，没有快速救援，在快沉没时才使用的 新求救信号SOS（···———···）发报。泰坦尼克号沉没后，SOS才被广泛接受和使用</p>
+<p>事实上，虽然SOS信号在1906年即已制订，但英国的无线电操作员很少使用SOS信号，他们更喜欢老式的CQD遇难信号。</p>
+<p>泰坦尼克号的无线电首席官员约翰·乔治·菲利普一直在发送CQD遇难信号，直到下级无线电操作员哈罗德·布莱德建议他：“发送SOS吧，这是新的调用信号，这也可能是你最后的机会来发送它了！”然后菲利普在传统的CQD求救信号中夹杂SOS信号。</p>
+<p>求救信号直到第二天早上才被加州人号收到，因为她并没有24小时都监听无线电。</p>
+<h2 id="转换网站"><a href="#转换网站" class="headerlink" title="转换网站"></a>转换网站</h2><p><a target="_blank" rel="noopener" href="http://www.jsons.cn/morse/">http://www.jsons.cn/morse/</a></p>
+<p><a target="_blank" rel="noopener" href="https://morsecode.world/international/translator.html">https://morsecode.world/international/translator.html</a></p>
+<p>等等许多网站都可以快速转换 Moss Code</p>
+<h1 id="Baudot-Code"><a href="#Baudot-Code" class="headerlink" title="Baudot Code"></a>Baudot Code</h1><p>博多式电报机 (Baudot code) 是法国人埃米尔‧博多于1874年发明的“印字电报机”。主要特点是字符用5比特编码，采用两个字符集。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/12067578-5ad092acc57aa4c5.webp"></p>
+<h2 id="转换网站-1"><a href="#转换网站-1" class="headerlink" title="转换网站"></a>转换网站</h2><p><a target="_blank" rel="noopener" href="https://cryptii.com/pipes/baudot">https://cryptii.com/pipes/baudot</a></p>
+<h1 id="过渡"><a href="#过渡" class="headerlink" title="过渡"></a>过渡</h1><p>从电报，到历史上一些十分有名的密码，诸如凯撒密码等。</p>
+<h1 id="栅栏易位法-凯撒方阵"><a href="#栅栏易位法-凯撒方阵" class="headerlink" title="栅栏易位法(凯撒方阵)"></a>栅栏易位法(凯撒方阵)</h1><p>即把将要传递的信息中的字母交替排成上下两行，再将下面一行字母排在上面一行的后边，从而形成一段密码。</p>
+<p>例如密文：TEOGSDYUTAENNHLNETAMSHVAED</p>
+<p>解密过程：先将密文分为两行</p>
+<p>T E O G S D Y U T A E N N</p>
+<p>H L N E T A M S H V A E D</p>
+<p>再按上下上下的顺序组合成一句话</p>
+<p>THE LONGEST DAY MUST HAVE AN END.</p>
+<h2 id="多栏"><a href="#多栏" class="headerlink" title="多栏"></a>多栏</h2><p>加密时不一定非用两栏，还是举《数字城堡》中的一个例子，密文为：</p>
+<p>PFEE SESN RETM MFHA IRWE OOIG MEEN NRMA ENET SHAS DCNS IIAA IEER BRNK FBLE LODI</p>
+<p>去掉空格：PFEESESNRETMMFHAIRWEOOIGMEENNRMAENETSHASDCNSIIAAIEERBRNKFBLELODI</p>
+<p>共64个字符，以8个字符为一栏，排列成8*8的方阵(凯撒方阵)：</p>
+<p>P F E E S E S N</p>
+<p>R E T M M F H A</p>
+<p>I R W E O O I G</p>
+<p>M E E N N R M A</p>
+<p>E N E T S H A S</p>
+<p>D C N S I I A A</p>
+<p>I E E R B R N K</p>
+<p>F B L E L O D I</p>
+<p>从上向下竖着读：PRIMEDIFFERENCEBETWEENELEMENTSRESMONSIBLEFORHIROSHIMAANDNAGASAKI</p>
+<p>插入空格：PRIME DIFFERENCE BETWEEN ELEMENTS RESMONSIBLE FOR HIROSHIMA AND NAGASAKI (广岛和长崎的原子弹轰炸的最主要区别)</p>
+<h2 id="转换网站-2"><a href="#转换网站-2" class="headerlink" title="转换网站"></a>转换网站</h2><p><a target="_blank" rel="noopener" href="https://cryptii.com/pipes/rail-fence-cipher">https://cryptii.com/pipes/rail-fence-cipher</a></p>
+<h1 id="维吉尼亚密码"><a href="#维吉尼亚密码" class="headerlink" title="维吉尼亚密码"></a>维吉尼亚密码</h1><p>Vigenère cipher</p>
+<p>维吉尼亚密码是一种简单的多表代换密码(由26个类似的Caesar密码的代换表组成)，</p>
+<p>即由一些偏移量不同的恺撒密码组成，这些代换在一起组成了密钥。</p>
+<p>英文中a<del>z，由0</del>25表示。</p>
+<p>假设串长为m，明文为P，密文为C，密钥为K则</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-06-25_22-20-10.bmp"></p>
+<p>也可以根据图1进行计算，如图。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-994bb20eb908fe1ace76f14d5e93aea1_720w.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-06-25_22-20-39.bmp"></p>
+<h2 id="转换网站-3"><a href="#转换网站-3" class="headerlink" title="转换网站"></a>转换网站</h2><p><a target="_blank" rel="noopener" href="https://cryptii.com/pipes/vigenere-cipher">https://cryptii.com/pipes/vigenere-cipher</a></p>
+<h1 id="恺撒移位密码（凯撒密码）"><a href="#恺撒移位密码（凯撒密码）" class="headerlink" title="恺撒移位密码（凯撒密码）"></a>恺撒移位密码（凯撒密码）</h1><p>将字母表前移或者后错几位</p>
+<p>明码表 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+<p>密码表 Q W E R T Y U I O P A S D F G H J K L Z X C V B N M</p>
+<p>明文 F O R E S T</p>
+<p>密文 Y G K T L Z</p>
+<p>只需重排密码表二十六个字母的顺序，允许密码表是明码表的任意一种重排，密钥就会增加到四千亿亿亿多种，我们就有超过4×1027种密码表。破解就变得很困难。</p>
+<h2 id="转换网站-4"><a href="#转换网站-4" class="headerlink" title="转换网站"></a>转换网站</h2><p><a target="_blank" rel="noopener" href="https://cryptii.com/pipes/caesar-cipher">https://cryptii.com/pipes/caesar-cipher</a></p>
+<h1 id="培根密码"><a href="#培根密码" class="headerlink" title="培根密码"></a>培根密码</h1><p>Bacon Cipher</p>
+<p>培根密码是弗朗西斯·培根在1605年设计的消息编码方式。培根密码将消息隐藏到文本的表现方式中，而不是文本的内容中。</p>
+<p>为了对消息进行编码，需要将明文中的每个字母按照下方的编码表进行编码。明文中的每个字母都会转换成一组5个的a/b字母。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/BaconCipher-1.png"></p>
+<p>除此之外，还有第二种编码表，与第一种编码表不同的是，在第二种编码表里I与J、U与V皆有不同编号。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/BaconCipher-2.png"></p>
+<p>加密者需使用两种不同字体，分别代表A和B。准备好一篇包含相同AB字数的假信息后，按照密文格式化假信息，即依密文中每个字母是A还是B分别套用两种字体。</p>
+<p>解密时，将上述方法倒转。所有字体一转回A，字体二转回B，以后再按上表拼回字母。</p>
+<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>使用培根密码加密单词：<code>civilizations</code></p>
+<p>首先根据对照表写出明文对应的AB字母：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">AAABA ABAAA BABAB ABAAA ABABB ABAAA BBAAB AAAAA BAABB ABAAA ABBBA ABBAB BAABA</span><br></pre></td></tr></table></figure>
+<p>将B转换为小写:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">AAAbA AbAAA bAbAb AbAAA AbAbb AbAAA bbAAb AAAAA bAAbb AbAAA AbbbA AbbAb bAAbA</span><br></pre></td></tr></table></figure>
+<p>此时任意选取一段英文句子，由于培根密码是1个字母对应5个字母（比方说A对应aaaaa）所以要求句子的字母总个数为明文个数的五倍，即所选句子要和上面AB字符串长度相同</p>
+<p>例如明文：<code>civilizations</code>有13个字母，所以选取的句子为13*5=65个字母长度。</p>
+<p>此时我们选取了句子（载体）：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">my interest is in the future because i am going to spend the rest of my life ttere</span><br></pre></td></tr></table></figure>
+<p>再将AB字符串附加到句子上（呈现方式为大小写）：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MY InTErEST iS iN tHe FUTUrE beCaUSE i aM GoING TO sPEnd ThE RESt of MY liFe tTErE</span><br></pre></td></tr></table></figure>
+<p>在本例中，仅使用了大小写来表现培根密码中的A和B，其实我们也可以使用不同的字体，是否加粗来表现。</p>
+<p>例如：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/BaconCipher-3.png"></p>
+<h2 id="转换网站-5"><a href="#转换网站-5" class="headerlink" title="转换网站"></a>转换网站</h2><p><a target="_blank" rel="noopener" href="https://cryptii.com/pipes/bacon-cipher">https://cryptii.com/pipes/bacon-cipher</a></p>
+<h1 id="现代"><a href="#现代" class="headerlink" title="现代"></a>现代</h1><p>时间到了近现代，在信息时代，我们更多的接触到了密码。各种进制的转换和键盘以及字母颠倒等新奇的密码出现了。</p>
+<h1 id="进制转换密码"><a href="#进制转换密码" class="headerlink" title="进制转换密码"></a>进制转换密码</h1><p>这个就是比较简单的了</p>
+<p>10011010010</p>
+<p>一看就是二进制，转换为10进制就是1234了</p>
+<p>然后还可以对应字母表中26个字母做进一步的密码转换。</p>
+<h2 id="转换网站-6"><a href="#转换网站-6" class="headerlink" title="转换网站"></a>转换网站</h2><p><a target="_blank" rel="noopener" href="https://tool.oschina.net/hexconvert/">https://tool.oschina.net/hexconvert/</a></p>
+<h1 id="键盘密码"><a href="#键盘密码" class="headerlink" title="键盘密码"></a>键盘密码</h1><p>利用手机和电脑键盘的排列组合形成的密码</p>
+<h1 id="字母颠倒-镜像密码"><a href="#字母颠倒-镜像密码" class="headerlink" title="字母颠倒/镜像密码"></a>字母颠倒/镜像密码</h1><p>比如 hep poo6 上下颠倒过来就是 good day</p>
+<p>达芬奇终其一生每天都在做笔记，在去世后留下了大批未经整理的手稿，皆以个人独特的左手镜像反写字书写，难以解读。需要使用镜子照着来看。</p>
+<h1 id="Base64"><a href="#Base64" class="headerlink" title="Base64"></a>Base64</h1><p>Base64（基底64）是一种基于64个可打印字符来表示二进制数据的表示方法。由于log2(64) = 6，所以每6个位元为一个单元，对应某个可打印字符。3个字节相当于24个位元，对应于4个Base64单元，即3个字节可由4个可打印字符来表示。在Base64中的可打印字符包括字母A-Z、a-z、数字0-9，这样共有62个字符，此外两个可打印符号在不同的系统中而不同。一些如uuencode的其他编码方法，和之后BinHex（英语：BinHex）的版本使用不同的64字符集来代表6个二进制数字，但是不被称为Base64。</p>
+<p>Base64常用于在通常处理文本数据的场合，表示、传输、存储一些二进制数据，包括MIME的电子邮件及XML的一些复杂数据。</p>
+<h2 id="转换网站-7"><a href="#转换网站-7" class="headerlink" title="转换网站"></a>转换网站</h2><p><a target="_blank" rel="noopener" href="https://cryptii.com/pipes/text-to-base64">https://cryptii.com/pipes/text-to-base64</a></p>
+<h1 id="ASCII"><a href="#ASCII" class="headerlink" title="ASCII"></a>ASCII</h1><p>ASCII是基于拉丁字母的一套电脑编码系统。它主要用于显示现代英语，而其扩展版本延伸美国标准信息交换码则可以部分支持其他西欧语言，并等同于国际标准ISO/IEC 646。 美国信息交换标准代码是这套编码系统的传统命名，互联网号码分配局现在更倾向于使用它的新名字US-ASCII。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-06-25_22-45-12.bmp"></p>
+<h1 id="苏州码子"><a href="#苏州码子" class="headerlink" title="苏州码子"></a>苏州码子</h1><p>在BBC英剧《神探夏洛克》第一季第二集中出现过的 “苏州码子”（Suzhou numerals），又作“杭州码子”（Hangzhou misnomer）</p>
+<p>苏州码子是种曾在民间流行一时在中国传统数字，产生于中国的苏州，由中国的算筹演变而来。因为苏州码子容易学习，书写便捷，一串数字能连笔写出，而且写法如同算珠，可以配合算盘使用，所以曾经广泛使用于商业中，在账簿和发票等均有使用。现在这种数字在中国大陆几近绝迹，但在港澳地区、台湾的街市、旧式茶餐厅及中药房偶而仍然可见。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-06-25_22-05-48.bmp"></p>
+<h2 id="为何叫杭州码子？"><a href="#为何叫杭州码子？" class="headerlink" title="为何叫杭州码子？"></a>为何叫杭州码子？</h2><p>苏州码子由Unicode3.0版本加入Unicode标准，当时被误解为杭州风格。Unicode中大多的“杭州”错误已经被修正，但是为了稳定，Unicode的方针不允许字符名称的改变，所以字符名称中的“杭州数字”也就将错就错了。字符名称被有些软件作为唯一标识符，修改会造成向后兼容问题。关于这个误命名的广泛性，甚至在英国广播公司于2010年出品的最新福尔摩斯改编剧《Sherlock》里都得以体现：苏州码子大量地以“杭州”这个名称作为本剧第一季第二集的关键线索穿插其间。</p>
+<h1 id="书本单词密码"><a href="#书本单词密码" class="headerlink" title="书本单词密码"></a>书本单词密码</h1><p>在各种侦探电视剧中都可能会看到通过书本传输加密信息的片段。通过传递标记的页码和行数以及第几个单词，来传输信息。至于使用的哪本书籍，因为书的数量实在太多了，所以这种密码也是一种低成本但高效的方法，当然伪装就是多买几本书吧（笑）。</p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>密码是为了防止别人破译加密用的，所以只要说你能知道怎么加密和解密，并且让旁人看着云里雾里摸不清头脑，那么你就成功了。密码学不限于以上所说的这些，甚至有时候和朋友之间的梗也是一种密码，足以能让你和朋友会心一笑而旁人则一脸懵逼。可以说密码学渗透了我们的方方面面。我们输入的每个账号密码，卡的芯片，甚至和人之间的交流也是密码。</p>
+<p>密码就在我们身边。</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/zh-hans/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%8E%86%E5%8F%B2">https://zh.m.wikipedia.org/zh-hans/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%8E%86%E5%8F%B2</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/92781133">https://zhuanlan.zhihu.com/p/92781133</a><br><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Suzhou_numerals#Hangzhou_misnomer">https://en.wikipedia.org/wiki/Suzhou_numerals#Hangzhou_misnomer</a><br><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%87%AF%E6%92%92%E6%96%B9%E9%98%B5/5373130">https://baike.baidu.com/item/%E5%87%AF%E6%92%92%E6%96%B9%E9%98%B5/5373130</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111611977">https://zhuanlan.zhihu.com/p/111611977</a><br><a target="_blank" rel="noopener" href="https://cryptowikis.com/ClassicalCipher/Steganography/BaconCipher/">https://cryptowikis.com/ClassicalCipher/Steganography/BaconCipher/</a></p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">EdNovas</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://ednovas.xyz/2022/06/25/moss/">https://ednovas.xyz/2022/06/25/moss/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/moss/">moss</a><a class="post-meta__tags" href="/tags/password/">password</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/PASSWORD-ft-IMAGE.png" data-sites="qq,wechat,weibo,qzone"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="ads-wrap"><a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png"><center><h3>EdNovas云————高性价比，节点覆盖80+国家，多地区奈飞迪士尼等流媒体解锁</h3></center></a> <a href="https://store.moccanetwork.com/aff.php?aff=85" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_10-16-00-1.png"><center><h3>Mocca Store————便宜稳定奈飞迪士尼等北美流媒体，办公设计学习软件会员</h3></center></a></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/06/25/gfw/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/PASSWORD-ft-IMAGE.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">从GFW原理到翻墙原理和协议</div></div></a></div><div class="next-post pull-right"><a href="/2022/04/23/outguess/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Decoy.webp" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">图片隐形工具outguess</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B5%B7%E6%BA%90"><span class="toc-number">1.</span> <span class="toc-text">起源</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Moss-Code"><span class="toc-number">2.</span> <span class="toc-text">Moss Code</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#sos"><span class="toc-number">2.1.</span> <span class="toc-text">sos</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AC%E6%8D%A2%E7%BD%91%E7%AB%99"><span class="toc-number">2.2.</span> <span class="toc-text">转换网站</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Baudot-Code"><span class="toc-number">3.</span> <span class="toc-text">Baudot Code</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AC%E6%8D%A2%E7%BD%91%E7%AB%99-1"><span class="toc-number">3.1.</span> <span class="toc-text">转换网站</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%87%E6%B8%A1"><span class="toc-number">4.</span> <span class="toc-text">过渡</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A0%85%E6%A0%8F%E6%98%93%E4%BD%8D%E6%B3%95-%E5%87%AF%E6%92%92%E6%96%B9%E9%98%B5"><span class="toc-number">5.</span> <span class="toc-text">栅栏易位法(凯撒方阵)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E6%A0%8F"><span class="toc-number">5.1.</span> <span class="toc-text">多栏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AC%E6%8D%A2%E7%BD%91%E7%AB%99-2"><span class="toc-number">5.2.</span> <span class="toc-text">转换网站</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%B4%E5%90%89%E5%B0%BC%E4%BA%9A%E5%AF%86%E7%A0%81"><span class="toc-number">6.</span> <span class="toc-text">维吉尼亚密码</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AC%E6%8D%A2%E7%BD%91%E7%AB%99-3"><span class="toc-number">6.1.</span> <span class="toc-text">转换网站</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%81%BA%E6%92%92%E7%A7%BB%E4%BD%8D%E5%AF%86%E7%A0%81%EF%BC%88%E5%87%AF%E6%92%92%E5%AF%86%E7%A0%81%EF%BC%89"><span class="toc-number">7.</span> <span class="toc-text">恺撒移位密码（凯撒密码）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AC%E6%8D%A2%E7%BD%91%E7%AB%99-4"><span class="toc-number">7.1.</span> <span class="toc-text">转换网站</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%B9%E6%A0%B9%E5%AF%86%E7%A0%81"><span class="toc-number">8.</span> <span class="toc-text">培根密码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B"><span class="toc-number">9.</span> <span class="toc-text">示例</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AC%E6%8D%A2%E7%BD%91%E7%AB%99-5"><span class="toc-number">9.1.</span> <span class="toc-text">转换网站</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%8E%B0%E4%BB%A3"><span class="toc-number">10.</span> <span class="toc-text">现代</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E5%AF%86%E7%A0%81"><span class="toc-number">11.</span> <span class="toc-text">进制转换密码</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AC%E6%8D%A2%E7%BD%91%E7%AB%99-6"><span class="toc-number">11.1.</span> <span class="toc-text">转换网站</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%94%AE%E7%9B%98%E5%AF%86%E7%A0%81"><span class="toc-number">12.</span> <span class="toc-text">键盘密码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%97%E6%AF%8D%E9%A2%A0%E5%80%92-%E9%95%9C%E5%83%8F%E5%AF%86%E7%A0%81"><span class="toc-number">13.</span> <span class="toc-text">字母颠倒&#x2F;镜像密码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Base64"><span class="toc-number">14.</span> <span class="toc-text">Base64</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AC%E6%8D%A2%E7%BD%91%E7%AB%99-7"><span class="toc-number">14.1.</span> <span class="toc-text">转换网站</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ASCII"><span class="toc-number">15.</span> <span class="toc-text">ASCII</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%8B%8F%E5%B7%9E%E7%A0%81%E5%AD%90"><span class="toc-number">16.</span> <span class="toc-text">苏州码子</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BD%95%E5%8F%AB%E6%9D%AD%E5%B7%9E%E7%A0%81%E5%AD%90%EF%BC%9F"><span class="toc-number">16.1.</span> <span class="toc-text">为何叫杭州码子？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B9%A6%E6%9C%AC%E5%8D%95%E8%AF%8D%E5%AF%86%E7%A0%81"><span class="toc-number">17.</span> <span class="toc-text">书本单词密码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-number">18.</span> <span class="toc-text">小结</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By EdNovas</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">已经到底啦！再往下划要坏掉啦！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/algolia.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    let initData = {
+      el: '#vcomment',
+      appId: 'EnV5YLoyOBqrOXB9EDkMBSy4-gzGzoHsz',
+      appKey: 'MCTWNHJYAMcvfKeta68Xi7Iu',
+      placeholder: '留下你想说的话吧',
+      avatar: 'monsterid',
+      meta: 'nick,mail'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+    
+    if (false) {
+      const otherData = false
+      initData = Object.assign(initData, otherData)
+    }
+    
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>var gitcalendar = new Vue({
+  el: '#gitcalendar',
+  data: {
+    simplemode: false,
+    user: 'EdNovas',
+    fixed: 'fixed',
+    px: 'px',
+    x: '',
+    y: '',
+    span1: '',
+    span2: '',
+    month: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+    monthchange: [],
+    oneyearbeforeday: '',
+    thisday: '',
+    amonthago: '',
+    aweekago: '',
+    weekdatacore: 0,
+    datacore: 0,
+    total: 0,
+    datadate: '',
+    data: [],
+    positionplusdata: [],
+    firstweek: [],
+    lastweek: [],
+    beforeweek: [],
+    thisweekdatacore: 0,
+    mounthbeforeday: 0,
+    mounthfirstindex: 0,
+    crispedges: 'crispedges',
+    thisdayindex: 0,
+    amonthagoindex: 0,
+    amonthagoweek: [],
+    firstdate: [],
+    first2date: [],
+    montharrbefore: [],
+    monthindex: 0,
+    color: ['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']
+  },
+  methods: {
+    selectStyle(data, event) {
+      document.querySelector('.angle-wrapper').style.display = 'block'
+      this.span1 = data.date;
+      this.span2 = data.count;
+      this.x = event.clientX - 100;
+      this.y = event.clientY - 60
+    },
+    outStyle() {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    },
+    thiscolor(x) {
+      if (x === 0) {
+        let i = parseInt(x / 2);
+        return this.color[0]
+      } else if (x < 2) {
+        return this.color[1]
+      } else if (x < 20) {
+        let i = parseInt(x / 2);
+        return this.color[i]
+      } else {
+        return this.color[9]
+      }
+    },
+  }
+});
+var apiurl = 'github-calendar-api.vercel.app' ? 'https://github-calendar-api.vercel.app/api?' : 'https://githubapi.ryanchristian.dev/user/'
+var githubapiurl = apiurl + gitcalendar.user;
+//canvas绘图
+function responsiveChart() {
+  let c = document.getElementById("gitcanvas");
+  if (c) {
+    let cmessage = document.getElementById("gitmessage");
+    let ctx = c.getContext("2d");
+    c.width = document.getElementById("gitcalendarcanvasbox").offsetWidth;
+    let linemaxwitdh = 0.96 * c.width / gitcalendar.data.length;
+    c.height = 9 * linemaxwitdh;
+    let lineminwitdh = 0.8 * linemaxwitdh;
+    let setposition = {
+      x: 0.02 * c.width,
+      y: 0.025 * c.width
+    };
+    for (let week in gitcalendar.data) {
+      weekdata = gitcalendar.data[week];
+      for (let day in weekdata) {
+        let dataitem = {
+          date: "",
+          count: "",
+          x: 0,
+          y: 0
+        };
+        gitcalendar.positionplusdata.push(dataitem);
+        ctx.fillStyle = gitcalendar.thiscolor(weekdata[day].count);
+        setposition.y = Math.round(setposition.y * 100) / 100;
+        dataitem.date = weekdata[day].date;
+        dataitem.count = weekdata[day].count;
+        dataitem.x = setposition.x;
+        dataitem.y = setposition.y;
+        ctx.fillRect(setposition.x, setposition.y, lineminwitdh, lineminwitdh);
+        setposition.y = setposition.y + linemaxwitdh
+      };
+      setposition.y = 0.025 * c.width;
+      setposition.x = setposition.x + linemaxwitdh
+    };
+    ctx.font = "600  Arial";
+    ctx.fillStyle = '#aaa';
+    ctx.fillText("日", 0, 1.9 * linemaxwitdh);
+    ctx.fillText("二", 0, 3.9 * linemaxwitdh);
+    ctx.fillText("四", 0, 5.9 * linemaxwitdh);
+    ctx.fillText("六", 0, 7.9 * linemaxwitdh);
+    let monthindexlist = c.width / 24;
+    for (let index in gitcalendar.monthchange) {
+      ctx.fillText(gitcalendar.monthchange[index], monthindexlist, 0.7 * linemaxwitdh);
+      monthindexlist = monthindexlist + c.width / 12
+    };
+    cmessage.onmousemove = function(event) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    };
+    c.onmousemove = function(event) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+      getMousePos(c, event);
+    };
+
+    function getMousePos(canvas, event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left * (canvas.width / rect.width);
+      var y = event.clientY - rect.top * (canvas.height / rect.height);
+      //console.log("x:"+x+",y:"+y);
+      for (let item of gitcalendar.positionplusdata) {
+        let lenthx = x - item.x;
+        let lenthy = y - item.y;
+        //console.log(lenthx,lenthy);
+        if (0 < lenthx && lenthx < lineminwitdh) {
+          if (0 < lenthy && lenthy < lineminwitdh) {
+            //console.log(item.date,item.count)
+            document.querySelector('.angle-wrapper').style.display = 'block'
+            gitcalendar.span1 = item.date;
+            gitcalendar.span2 = item.count;
+            gitcalendar.x = event.clientX - 100;
+            gitcalendar.y = event.clientY - 60
+          }
+        }
+        //if(0< x - item.x <lineminwitdh&&0< y - item.y <lineminwitdh){
+        //console.log(item.count,item.date);
+        //}
+      }
+    }
+  }
+}
+//数据统计算法
+function addlastmonth() {
+  if (gitcalendar.thisdayindex === 0) {
+    thisweekcore(52);
+    thisweekcore(51);
+    thisweekcore(50);
+    thisweekcore(49);
+    thisweekcore(48);
+    gitcalendar.thisweekdatacore += gitcalendar.firstdate[6].count;
+    gitcalendar.amonthago = gitcalendar.firstdate[6].date
+  } else {
+    thisweekcore(52);
+    thisweekcore(51);
+    thisweekcore(50);
+    thisweekcore(49);
+    thisweek2core();
+    gitcalendar.amonthago = gitcalendar.first2date[gitcalendar.thisdayindex - 1].date
+  }
+};
+
+function thisweek2core() {
+  for (let i = gitcalendar.thisdayindex - 1; i < gitcalendar.first2date.length; i++) {
+    gitcalendar.thisweekdatacore += gitcalendar.first2date[i].count
+  }
+};
+
+function thisweekcore(index) {
+  for (let item of gitcalendar.data[index]) {
+    gitcalendar.thisweekdatacore += item.count
+  }
+};
+
+function addlastweek() {
+  for (let item of gitcalendar.lastweek) {
+    gitcalendar.weekdatacore += item.count
+  }
+};
+
+function addbeforeweek() {
+  for (let i = gitcalendar.thisdayindex; i < gitcalendar.beforeweek.length; i++) {
+    gitcalendar.weekdatacore += gitcalendar.beforeweek[i].count
+  }
+};
+
+function addweek(data) {
+  if (gitcalendar.thisdayindex === 6) {
+    gitcalendar.aweekago = gitcalendar.lastweek[0].date;
+    addlastweek()
+  } else {
+    lastweek = data.contributions[51];
+    gitcalendar.aweekago = lastweek[gitcalendar.thisdayindex + 1].date;
+    addlastweek();
+    addbeforeweek()
+  }
+}
+
+fetch(githubapiurl)
+  .then(data => data.json())
+  .then(data => {
+    gitcalendar.data = data.contributions;
+    gitcalendar.total = data.total;
+    gitcalendar.first2date = gitcalendar.data[48];
+    gitcalendar.firstdate = gitcalendar.data[47];
+    gitcalendar.firstweek = data.contributions[0];
+    gitcalendar.lastweek = data.contributions[52];
+    gitcalendar.beforeweek = data.contributions[51];
+    gitcalendar.thisdayindex = gitcalendar.lastweek.length - 1;
+    gitcalendar.thisday = gitcalendar.lastweek[gitcalendar.thisdayindex].date;
+    gitcalendar.oneyearbeforeday = gitcalendar.firstweek[0].date;
+    gitcalendar.monthindex = gitcalendar.thisday.substring(5, 7) * 1;
+    gitcalendar.montharrbefore = gitcalendar.month.splice(gitcalendar.monthindex, 12 - gitcalendar.monthindex);
+    gitcalendar.monthchange = gitcalendar.montharrbefore.concat(gitcalendar.month);
+    addweek(data);
+    addlastmonth();
+    responsiveChart();
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
+
+//手机版更换为svg绘制
+if (document.getElementById("gitcalendarcanvasbox").offsetWidth < 500) {
+  gitcalendar.simplemode = false
+}
+
+//当改变窗口大小时重新绘制canvas
+window.onresize = function() {
+  if (gitcalendar.simplemode) responsiveChart()
+}
+
+//解决滚动滑轮时出现的标签显示
+window.onscroll = function() {
+  if (document.querySelector('.angle-wrapper')) {
+    document.querySelector('.angle-wrapper').style.display = 'none'
+  }
+};</script></div><script defer src="/live2d-widget/autoload.js"></script><script src = "/js/chatroom.js"></script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script><script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('setup',{'key':'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script><script src = "/js/smoothscrolling.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="true" data-text="LOVE YOU ❤" data-fontsize="17px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script>(function (w, d, s, id) {
+            if (typeof (w.webpushr) !== 'undefined') return; w.webpushr = w.webpushr || function () { (w.webpushr.q = w.webpushr.q || []).push(arguments) }; var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.id = id; js.async = 1; js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window, document, 'script', 'webpushr-jssdk'));webpushr('setup', { 'key': 'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script></body></html>
