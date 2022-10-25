@@ -24,15 +24,13 @@
     <updated>2022-06-26T07:20:00.921Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;GFW的原理&quot;&gt;&lt;a href=&quot;#GFW的原理&quot; class=&quot;headerlink&quot; title=&quot;GFW的原理&quot;&gt;&lt;/a&gt;GFW的原理&lt;/h1&gt;&lt;p&gt;要与GFW对抗不能仅仅停留在什么不能访问了，什么可以访问之类的表面现象上。知道youtube不能访问了，对于翻墙来说并无帮助。但是知道GFW是如何让我们不能访问youtube的，则对下一步的翻墙方案的选择和实施具有重大意义。所以在讨论如何翻之前，先要深入原理了解GFW是如何封的。&lt;/p&gt;
-&lt;p&gt;总的来说，GFW是一个分布式的入侵检测系统，并不是一个严格意义上的防火墙。不是说每个出入国境的IP包都需要先经过GFW的首可。做为一个入侵检测系统，GFW把你每一次访问facebook都看做一次入侵，然后在检测到入侵之后采取应对措施，也就是常见的连接重置。&lt;/p&gt;
-&lt;p&gt;检测有两种方式。一种是人工检测，一种是机器检测。你去国新办网站举报，就是参与了人工检测。在人工检测到不和谐的网站之后，就会采取一些应对方式来防止国内的网民访问该网站。对于这类的封锁，规避检测就不是技术问题了，只能从GFW采取的应对方式上采取反制措施。另外一类检测是机器检测，其检测过程又可以再进一步细分：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/0r2ob02om5.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;重建是指GFW从网络上监听过往的IP包，然后分析其中的TCP协议，最后重建出一个完整的字节流。分析是在这个重建的字节流上分析具体的应用协议，比如HTTP协议。然后在应用协议中查找是不是有不和谐的内容，然后决定采用何种应对方式。&lt;/p&gt;
-&lt;p&gt;所以，GFW机器检测的第一步就是重建出一个字节流。那么GFW是如何拿到原始的IP包的呢？真正的GFW部署方式，外人根本无从得知。据猜测，GFW是部署在国家的出口路由器的旁路上，用“分光”的方式把IP包复制一份到另外一根光纤上，从而拿到所有进出国境的IP包。下图引在gfwrev.blogspot.com：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/g8f9fcptsz.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;但是Google在北京有自己的机房。所以聪明的网友就使用Google的北京机房提供的GAE服务，用Goagent软件达到高速翻墙的目的。但是有网友证实 &lt;a href=&quot;https://twitter.com/chengr28/status/260970749190365184&quot;&gt;https://twitter.com/chengr28/status/260970749190365184&lt;/a&gt; ，&lt;br&gt;即便是北京的机房也会被骨干网丢包。事实上Google在北京的谷翔机房有一个独立的AS（BGP的概念）。这个AS与谷歌总部有一条IPV6的直连线路，所以通过这个机房可以用IPV6不受墙的限制出去。但是这个AS无论是连接国内还是国外都是要经过GFW的。所以机房在北京也不能保证国内访问不被墙。GFW通过配置骨干网的BGP路由规则，是可以让国内的机房也经过它的。另外一个例子是当我们访问被封的网站触发连接重置的时候，往往收到两个RST包，但是TTL不同。还有一个例子是对于被封的IP，访问的IP包还没有到达国际出口就已经被丢弃。所以GFW应该在其他地方也部署有设备，据推测是在省级骨干路由的位置。&lt;/p&gt;
-&lt;p&gt;对于GFW到底在哪这个话题，最近又有国外友人表达了兴趣 &lt;a href=&quot;https://github.com/mothran/mongol&quot;&gt;https://github.com/mothran/mongol&lt;/a&gt;。 笔者在前人的基础上写了一个更完备的探测工具 &lt;a href=&quot;https://github.com/fqrouter/qiang&quot;&gt;https://github.com/fqrouter/qiang&lt;/a&gt; 。其原理是基于一个IP协议的特性叫TTL。TTL是Time to Live的简写。IP包在没经过一次路由的时候，路由器都会把IP包的TTL减去1。如果TTL到零了，路由器就不会再把IP包发给下一级路由。然后我们知道GFW会在监听到不和谐的IP包之后发回RST包来重置TCP连接。那么通过设置不同的TTL就可以知道从你的电脑，到GFW之间经过了几个路由器。比如说TTL设置成9不触发RST，但是10就触发RST，那么到GFW就是经过了10个路由器。另外一个IP协议的特性是当TTL耗尽的时候，路由器应该发回一个TTL EXCEEDED的ICMP包，并把自己的IP地址设置成SRC（来源）。结合这两点，就可以探测出IP包是到了IP地址为什么的路由器之后才被GFW检测到。有了IP地址之后，再结合IP地址地理位置的数据库就可以知道其地理位置。据说，得出的位置大概是这样的：&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;GFW的原理&quot;&gt;&lt;a href=&quot;#GFW的原理&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
@@ -57,25 +55,13 @@
     <updated>2022-06-26T07:20:00.969Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;起源&quot;&gt;&lt;a href=&quot;#起源&quot; class=&quot;headerlink&quot; title=&quot;起源&quot;&gt;&lt;/a&gt;起源&lt;/h1&gt;&lt;p&gt;早期的密码学 目前已知最早的密码是大约公元前1900年的埃及古王国时期，用特殊的埃及象形文字雕刻在墓碑上。 但这些文字并不被认为是某种秘密通信的真正尝试，而是在增加神秘和阴谋气氛，甚至是为了给能看懂的观者提供乐趣。 这是密码学在其它用途上的应用，或者只是看上去是这样（如果这是某种密码的误导或伪装，那确实令人印象深刻）。&lt;/p&gt;
-&lt;p&gt;至于最有名的密码，也可以说是代码，肯定就是耳熟能详的莫斯电报码了。著名的 三短三长三短 的 SOS 求救信号应该无人不知无人不晓。&lt;/p&gt;
-&lt;h1 id=&quot;Moss-Code&quot;&gt;&lt;a href=&quot;#Moss-Code&quot; class=&quot;headerlink&quot; title=&quot;Moss Code&quot;&gt;&lt;/a&gt;Moss Code&lt;/h1&gt;&lt;p&gt;摩尔斯电码（又译为摩斯密码，英语：Morse code）是一种时通时断的信号代码。通过不同的排列顺序来表达不同的英文字母、数字和标点符号。&lt;/p&gt;
-&lt;p&gt;是由美国人艾尔菲德·维尔与萨缪尔·摩尔斯在1836年发明。&lt;/p&gt;
-&lt;p&gt;摩尔斯电码是一种早期的数码化通信形式， 它依靠一系列的 点和划 来传递编码信息 ，它的代码包括五种：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;点（·）：1 （读 “滴” dit ，时间占据1t）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;划（—）：111 （读 “嗒” dah ，时间占据3t）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;字符内部的停顿（在点和划之间）：0 （时间占据1t）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;字符间停顿：000 （时间占据3t）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;单词间的停顿：0000000 （时间占据7t）&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;点的长度（也就是上面的时间长度t）决定了发报的速度&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/72f082025aafa40f2b207369a264034f79f0199b.webp&quot;&gt;&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;起源&quot;&gt;&lt;a href=&quot;#起源&quot; class=&quot;headerlink&quot; title=&quot;起源&quot;&gt;&lt;/a&gt;起源&lt;/h1&gt;&lt;p&gt;早期的密码学 目前已知最早的密码是大约公元前1900年的埃及古王国时期，用特殊的埃及象形文字雕刻在墓碑上。</summary>
+        
+      
     
     
     
@@ -96,13 +82,13 @@
     <updated>2022-04-23T08:19:34.034Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;可以直接 &lt;code&gt;apt install outguess&lt;/code&gt; 或者 &lt;code&gt;yum install outguess&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;或者自行编译&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;crorvick&amp;#x2F;outguess&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cd outguess&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.&amp;#x2F;configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;使用帮助&quot;&gt;&lt;a href=&quot;#使用帮助&quot; class=&quot;headerlink&quot; title=&quot;使用帮助&quot;&gt;&lt;/a&gt;使用帮助&lt;/h2&gt;&lt;p&gt;输入 &lt;code&gt;outguess -h&lt;/code&gt; 可获得help帮助页面&lt;/p&gt;
-&lt;p&gt;图片格式需要 jpg 格式&lt;/p&gt;
-&lt;h2 id=&quot;加密&quot;&gt;&lt;a href=&quot;#加密&quot; class=&quot;headerlink&quot; title=&quot;加密&quot;&gt;&lt;/a&gt;加密&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;outguess -k &amp;quot;secret key&amp;quot; -d input.txt pic.jpg pic_output.jpg&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;其中 -k 命令是加上密码用的，&lt;code&gt;secret key&lt;/code&gt;就是密码。 -d 就是加密了，input.txt是需要隐藏的txt文件，pic.jpg是原始图片，pic_output.jpg是最后输出的包含隐藏内容的图片。&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;可以直接 &lt;code&gt;apt install outguess&lt;/code&gt; 或者 &lt;code&gt;yum install</summary>
+        
+      
     
     
     
@@ -119,488 +105,13 @@
     <updated>2022-04-23T08:19:33.383Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;a href=&quot;#从Ultra－edit-32中提取出来的&quot; class=&quot;headerlink&quot; title=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;/a&gt;从Ultra－edit-32中提取出来的&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;left&quot;&gt;File&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;Type&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;ExtensionsHeader&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;JPEG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;jpg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;FFD8FF&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;PNG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;png&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;89504E47&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;GIF&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;gif&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;47494638&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;TIFF&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;tif&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;49492A00&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Windows Bitmap&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;bmp&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;424D&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;CAD&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;dwg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;41433130&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Adobe Photoshop&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;psd&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;38425053&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Rich Text Format&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;rtf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;7B5C727466&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;XML&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;xml&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;3C3F786D6C&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;HTML&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;html&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;68746D6C3E&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Email [thorough only]&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;eml&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;44656C69766572792D646174653A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Outlook Express&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;dbx&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;CFAD12FEC5FD746F&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Outlook&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;pst&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;2142444E&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MS Word/Excel&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;xls.or.doc&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;D0CF11E0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MS Access&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mdb&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;5374616E64617264204A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;WordPerfect&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wpd&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;FF575043&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Postscript&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;eps.or.ps&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;252150532D41646F6265&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Adobe Acrobat&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;pdf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;255044462D312E&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Quicken&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;qdf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;AC9EBD8F&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Windows Password&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;pwl&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;E3828596&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;ZIP Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;zip&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;504B0304&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;RAR Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;rar&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;52617221&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Wave&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wav&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;57415645&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;AVI&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;avi&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;41564920&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Real Audio&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;ram&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;2E7261FD&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Real Media&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;rm&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;2E524D46&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mpg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;000001BA&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mpg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;000001B3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Quicktime&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mov&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;6D6F6F76&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Windows Media&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;asf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;3026B2758E66CF11&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MIDI&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mid&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;4D546864&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&quot;从winhex中取出的文件头列表&quot;&gt;&lt;a href=&quot;#从winhex中取出的文件头列表&quot; class=&quot;headerlink&quot; title=&quot;从winhex中取出的文件头列表&quot;&gt;&lt;/a&gt;从winhex中取出的文件头列表&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;left&quot;&gt;File&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;Type&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;ExtensionsHeader&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;JPEG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;jpg;jpeg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0xFFD8FF&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;PNG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;png&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x89504E470D0A1A0A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;GIF&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;gif&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;GIF8&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;TIFF&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;tif;tiff&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x49492A00&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;TIFF&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;tif;tiff&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x4D4D002A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Bit map&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;bmp&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;BM&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;AOL ART&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;art&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x4A47040E000000&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;AOL ART&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;art&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x4A47030E000000&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;PC Paintbrush&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;pcx&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x0A050108&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Graphics Metafile&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wmf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0xD7CDC69A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Graphics Metafile&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wmf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x01000900&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Graphics Metafile&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wmf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x02000900&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Enhanced Metafile&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;emf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x0100000058000000&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Corel Draw&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;cdr&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;CDR&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;CAD&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;dwg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x41433130&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Adobe Photoshop&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;psd&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;8BPS&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Rich Text Format&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;rtf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;rtf&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;XML&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;xml&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;HTML&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;html;htm;php;php3;php4;phtml;shtml&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;type&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Email&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;eml&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Delivery-date:&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Outlook Express&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;dbx&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0xCFAD12FE&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MS Office/OLE2&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;doc;xls;dot;ppt;xla;ppa;pps;pot;msi;sdw;db&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0xD0CF11E0A1B11AE1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MS Access&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mdb;mda;mde;mdt&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Standard J&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;WordPerfect&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wpd&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0xFF575043&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;OpenOffice Writer&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;sxw&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;writer&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;OpenOffice Calc&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;sxc&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;calc&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;OpenOffice Math&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;sxm&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;math&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;OpenOffice Impress&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;sxi&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;impress&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;OpenOffice Draw&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;sxd&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;draw&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Adobe FrameMaker&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;fm&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;PostScript&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;eps.or.ps;ps;eps&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;%!PS-Adobe&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Adobe Acrobat&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;pdf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;%PDF-1.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Quicken&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;qdf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0xAC9EBD8F&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;QuickBooks Backup&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;qbb&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x458600000600&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Sage&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;sly.or.srt.or.slt;sly;srt;slt&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x53520100&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Sage Backup&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;1&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;SAGEBACKUP&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Lotus WordPro v9&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;lwp&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x576F726450726F&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Lotus 123 v9&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;123&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x00001A00051004&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Lotus 123 v5&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wk4&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x00001A0002100400&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Lotus 123 v3&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wk3&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x00001A0000100400&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Lotus 123 v1&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wk1&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x2000604060&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Windows Password&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;pwl&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0xE3828596&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;ZIP Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;zip;jar&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x504B0304&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;ZIP Archive (outdated)&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;zip&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x504B3030&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;RAR Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;rar&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Rar!&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;GZ Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;gz;tgz&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x1F8B08&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;BZIP Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;bz2&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;BZh&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;ARJ Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;arj&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x60EA&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;7－ZIP Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;7z&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;7z集&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Wave&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wav&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;WAVE&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;AVI&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;avi&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;AVI&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Real Audio&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;ram;ra&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;.ra?0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Real Media&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;rm&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;.RMF&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mpg;mpeg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x000001BA&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mpg;mpeg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x000001B3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Quicktime&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mov&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;moov&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Windows Media&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;asf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x3026B2758E66CF11&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MIDI&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mid&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;MThd&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Win32 Executable&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;exe;dll;drv;vxd;sys;ocx;vbx&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;MZ&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Win16 Executable&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;exe;dll;drv;vxd;sys;ocx;vbx&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;MZ&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;ELF Executable&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;elf;;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x7F454C4601010100&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;blockquote&gt;
-&lt;p&gt;转载自 &lt;a href=&quot;https://hubinqiang.com/blog/IS/fileExtensionsHeader.html&quot;&gt;https://hubinqiang.com/blog/IS/fileExtensionsHeader.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;a href=&quot;#从Ultra－edit-32中提取出来的&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
@@ -617,14 +128,14 @@
     <updated>2022-04-21T07:00:36.961Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;h2 id=&quot;直接安装&quot;&gt;&lt;a href=&quot;#直接安装&quot; class=&quot;headerlink&quot; title=&quot;直接安装&quot;&gt;&lt;/a&gt;直接安装&lt;/h2&gt;&lt;p&gt;一般可以通过apt直接安装tor服务&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt install tor&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;如果不行请进行以下操作&lt;/p&gt;
-&lt;h2 id=&quot;手动安装&quot;&gt;&lt;a href=&quot;#手动安装&quot; class=&quot;headerlink&quot; title=&quot;手动安装&quot;&gt;&lt;/a&gt;手动安装&lt;/h2&gt;&lt;p&gt;修改source.list&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo vi &amp;#x2F;etc&amp;#x2F;apt&amp;#x2F;sources.list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;最后加下面这两行&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deb https:&amp;#x2F;&amp;#x2F;deb.torproject.org&amp;#x2F;torproject.org stretch main&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src https:&amp;#x2F;&amp;#x2F;deb.torproject.org&amp;#x2F;torproject.org stretch main&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;添加密钥&lt;/p&gt;</summary>
+&lt;figure class=&quot;highlight</summary>
+        
+      
     
     
     
@@ -640,18 +151,10 @@
     <link href="https://ednovas.xyz/2022/04/15/htmlcssjs/"/>
     <id>https://ednovas.xyz/2022/04/15/htmlcssjs/</id>
     <published>2022-04-16T03:06:00.000Z</published>
-    <updated>2022-04-22T04:50:02.926Z</updated>
+    <updated>2022-10-25T08:28:19.646Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/html_css_javascript_infographic.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;HTML provides the basic structure of sites, which is enhanced and modified by other technologies like CSS and JavaScript.&lt;/p&gt;
-&lt;p&gt;HTML提供网站的基础，在此基础上可以添加CSS 和 JavaScript来让网址变得更多元化。&lt;/p&gt;
-&lt;p&gt;CSS is used to control presentation, formatting, and layout.&lt;/p&gt;
-&lt;p&gt;CSS是用来表示、格式和布局。&lt;/p&gt;
-&lt;p&gt;JavaScript is used to control the behavior of different elements.&lt;/p&gt;
-&lt;p&gt;JS是用来控制不同元素的行为。&lt;/p&gt;
-&lt;h1 id=&quot;Setting-the-Stage-一些关于网站的网络知识基础&quot;&gt;&lt;a href=&quot;#Setting-the-Stage-一些关于网站的网络知识基础&quot; class=&quot;headerlink&quot; title=&quot;Setting the Stage (一些关于网站的网络知识基础)&quot;&gt;&lt;/a&gt;Setting the Stage (一些关于网站的网络知识基础)&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_01.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_02.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_03.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_04.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_05.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_06.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_07.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_08.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_09.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_10.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_11.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_12.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_13.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_14.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_15.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_16.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_17.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_18.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_19.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_20.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_21.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_22.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_23.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_24.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_25.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/01-setting-the-stage_Page_26.png&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;HTML-html基础&quot;&gt;&lt;a href=&quot;#HTML-html基础&quot; class=&quot;headerlink&quot; title=&quot;HTML(html基础)&quot;&gt;&lt;/a&gt;HTML(html基础)&lt;/h1&gt;</summary>
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
     
     
     
@@ -674,13 +177,14 @@
     <updated>2022-04-14T07:27:32.482Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;h1 id=&quot;修改镜像源&quot;&gt;&lt;a href=&quot;#修改镜像源&quot; class=&quot;headerlink&quot; title=&quot;修改镜像源&quot;&gt;&lt;/a&gt;修改镜像源&lt;/h1&gt;&lt;p&gt;手动更改的话&lt;/p&gt;
-&lt;h2 id=&quot;Ubuntu&quot;&gt;&lt;a href=&quot;#Ubuntu&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu&quot;&gt;&lt;/a&gt;Ubuntu&lt;/h2&gt;&lt;p&gt;Ubuntu 打开并修改 &lt;code&gt;/etc/apt/sources.list&lt;/code&gt; 文件即可&lt;/p&gt;
-&lt;p&gt;通用源:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deb mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror:&amp;#x2F;&amp;#x2F;mirrors.ubuntu.com&amp;#x2F;mirrors.txt focal-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http:&amp;#x2F;&amp;#x2F;archive.canonical.com&amp;#x2F;ubuntu focal partner&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http:&amp;#x2F;&amp;#x2F;archive.canonical.com&amp;#x2F;ubuntu focal partner&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;阿里源：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deb http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-security main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-updates main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-proposed main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-backports main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-security main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-updates main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-proposed main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http:&amp;#x2F;&amp;#x2F;mirrors.aliyun.com&amp;#x2F;ubuntu&amp;#x2F; focal-backports main restricted universe multiverse focal&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;Debian&quot;&gt;&lt;a href=&quot;#Debian&quot; class=&quot;headerlink&quot; title=&quot;Debian&quot;&gt;&lt;/a&gt;Debian&lt;/h2&gt;&lt;p&gt;阿里源：&lt;/p&gt;</summary>
+&lt;h2 id=&quot;Ubuntu&quot;&gt;&lt;a href=&quot;#Ubuntu&quot;</summary>
+        
+      
     
     
     
@@ -701,12 +205,13 @@
     <updated>2022-04-14T07:27:33.564Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;甲骨文云服务在上一年更新了ARM配置，那么时至今日，很多用户发现热门地区无法手动创建ARM，因为每个区域的ARM是有限的，其他用户已经抢先一步开好，自己点的话是大力出不了奇迹的，那么这个时候就需要找一个代刷了。网上有很多，这里介绍一个朋友 R佬 开发的甲骨文账号管理Bot，这个已经不单单是刷机使用了，还有很多管理功能。&lt;/p&gt;
-&lt;h2 id=&quot;R-Bot&quot;&gt;&lt;a href=&quot;#R-Bot&quot; class=&quot;headerlink&quot; title=&quot;R-Bot&quot;&gt;&lt;/a&gt;R-Bot&lt;/h2&gt;&lt;h3 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/semicons/java_oci_manage&quot;&gt;https://github.com/semicons/java_oci_manage&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;运行环境&quot;&gt;&lt;a href=&quot;#运行环境&quot; class=&quot;headerlink&quot; title=&quot;运行环境&quot;&gt;&lt;/a&gt;运行环境&lt;/h3&gt;&lt;p&gt;[JDK] 11&lt;/p&gt;
-&lt;p&gt;[LINUX] Ubuntu20.04(已测试).Debian(未测试，但是应该可以).Centos(需手动安装jdk11)&lt;/p&gt;
-&lt;p&gt;[Windows]未适配&lt;/p&gt;
-&lt;h3 id=&quot;已实现功能&quot;&gt;&lt;a href=&quot;#已实现功能&quot; class=&quot;headerlink&quot; title=&quot;已实现功能&quot;&gt;&lt;/a&gt;已实现功能&lt;/h3&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
@@ -731,14 +236,13 @@
     <updated>2022-04-21T07:00:37.319Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;关于注册/开机/配置甲骨文等可以看&lt;a href=&quot;/2021/01/14/oraclecloud/&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;刷甲骨文机器可以看&lt;a href=&quot;/2021/11/28/oraclearm/&quot;&gt;这里&lt;/a&gt;或&lt;a href=&quot;/2022/04/13/oraclerbot/&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;2022年1月开始至2月期间甲骨文陆续对各区域的服务控制台进行了升级更新。最明显的改动就是：&lt;/p&gt;
-&lt;p&gt;登录界面变化，出现二次跳转至新登录界面，并且引入了身份域（身份域默认为：Default）;&lt;br&gt;用户控制台出现变化，将原来单独的用户控制台融入到服务控制台中；&lt;br&gt;其他大量的操作细化。&lt;/p&gt;
-&lt;p&gt;新版看起来更加简单明了。当我们进入服务控制台后，点击右上角人头像标识，甲骨文账户的所有管理操作都可以在这里完成：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c4ca4238a0b9238.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;下面本文就详细讲解一下如何在新版中进行更改密码、变更邮箱、添加用户、变更租户名等操作：&lt;/p&gt;
-&lt;h2 id=&quot;更改密码&quot;&gt;&lt;a href=&quot;#更改密码&quot; class=&quot;headerlink&quot; title=&quot;更改密码&quot;&gt;&lt;/a&gt;更改密码&lt;/h2&gt;&lt;p&gt;点击进入【我的信息概要】，选择【更改密码】&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;关于注册/开机/配置甲骨文等可以看&lt;a</summary>
+        
+      
     
     
     
@@ -759,14 +263,14 @@
     <updated>2022-03-13T05:04:33.052Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;p&gt;使用Prasers更新订阅，会自动把旧配置改成新配置&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7d69aa1167261b56dc945.png&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Windows&quot;&gt;&lt;a href=&quot;#Windows&quot; class=&quot;headerlink&quot; title=&quot;Windows&quot;&gt;&lt;/a&gt;Windows&lt;/h2&gt;&lt;p&gt;对于0.19.4及以下用户，无需更改&lt;/p&gt;
-&lt;p&gt;对于0.19.5及以上用户，请点击Settings-Profiles-Parsers-Edit（设置-配置-预处理配置-编辑）,删除默认的parsers: #array ,并粘贴以下内容&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;parsers:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - reg: &amp;#39;^.*$&amp;#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    code: |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      module.exports.parse &amp;#x3D; async (raw, &amp;#123; axios, yaml, notify, console &amp;#125;, &amp;#123; name, url, interval, selected &amp;#125;) &amp;#x3D;&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        const obj &amp;#x3D; yaml.parse(raw)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        obj.proxies.forEach( v &amp;#x3D;&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            if (v.network &amp;#x3D;&amp;#x3D;&amp;#x3D; &amp;#39;ws&amp;#39; &amp;amp;&amp;amp; !v[&amp;#39;ws-opts&amp;#39;] &amp;amp;&amp;amp; v[&amp;#39;ws-path&amp;#39;] &amp;amp;&amp;amp; !v[&amp;#39;ws-headers&amp;#39;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              const opts &amp;#x3D; &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              opts.path &amp;#x3D; v[&amp;#39;ws-path&amp;#39;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              v[&amp;#39;ws-opts&amp;#39;] &amp;#x3D; opts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              delete v[&amp;#39;ws-path&amp;#39;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            if (v.network &amp;#x3D;&amp;#x3D;&amp;#x3D; &amp;#39;ws&amp;#39; &amp;amp;&amp;amp; !v[&amp;#39;ws-opts&amp;#39;] &amp;amp;&amp;amp; v[&amp;#39;ws-path&amp;#39;] &amp;amp;&amp;amp; v[&amp;#39;ws-headers&amp;#39;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              const opts &amp;#x3D; &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              opts.path &amp;#x3D; v[&amp;#39;ws-path&amp;#39;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              opts.headers &amp;#x3D; v[&amp;#39;ws-headers&amp;#39;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              v[&amp;#39;ws-opts&amp;#39;] &amp;#x3D; opts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              delete v[&amp;#39;ws-path&amp;#39;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              delete v[&amp;#39;ws-headers&amp;#39;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        return yaml.stringify(obj)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;然后更新订阅（注意，parsers内容仅在更新订阅时生效，一定要更新一次订阅）&lt;/p&gt;
-&lt;h2 id=&quot;MAC&quot;&gt;&lt;a href=&quot;#MAC&quot; class=&quot;headerlink&quot; title=&quot;MAC&quot;&gt;&lt;/a&gt;MAC&lt;/h2&gt;&lt;p&gt;对于Clash for Windows的mac版用户，操作方法同Windows&lt;/p&gt;
-&lt;p&gt;对于Clash X用户，请使用1.72.0及以前版本，如果不能接受旧版本，请手动修改或换到CFW mac版&lt;/p&gt;</summary>
+&lt;p&gt;&lt;img</summary>
+        
+      
     
     
     
@@ -787,14 +291,13 @@
     <updated>2022-03-13T05:04:35.158Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;转换OVZ7&quot;&gt;&lt;a href=&quot;#转换OVZ7&quot; class=&quot;headerlink&quot; title=&quot;转换OVZ7&quot;&gt;&lt;/a&gt;转换OVZ7&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install screen -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;screen -S d&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mkdir &amp;#x2F;vz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall https:&amp;#x2F;&amp;#x2F;download.openvz.org&amp;#x2F;virtuozzo&amp;#x2F;releases&amp;#x2F;openvz-7.0.11-235&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;p&amp;#x2F;python-subprocess32-3.2.7-1.vz7.5.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall https:&amp;#x2F;&amp;#x2F;download.openvz.org&amp;#x2F;virtuozzo&amp;#x2F;releases&amp;#x2F;openvz-7.0.11-235&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;o&amp;#x2F;openvz-release-7.0.11-3.vz7.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install epel-release -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install python3 -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -Uvh http:&amp;#x2F;&amp;#x2F;repo.virtuozzo.com&amp;#x2F;vzlinux&amp;#x2F;7&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;r&amp;#x2F;readykernel-scan-0.11-1.vl7.noarch.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -Uvh http:&amp;#x2F;&amp;#x2F;repo.virtuozzo.com&amp;#x2F;vzlinux&amp;#x2F;7&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;z&amp;#x2F;zstd-1.4.4-1.vl7.x86_64.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -Uvh http:&amp;#x2F;&amp;#x2F;repo.virtuozzo.com&amp;#x2F;vzlinux&amp;#x2F;7&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;v&amp;#x2F;vzlinux-release-7-1.vl7.91.x86_64.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mv &amp;#x2F;etc&amp;#x2F;yum.repos.d&amp;#x2F;CentOS-* &amp;#x2F;root&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -e --nodeps --justdb json-c&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum erase jansson -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall http:&amp;#x2F;&amp;#x2F;repo.virtuozzo.com&amp;#x2F;vzlinux&amp;#x2F;7.7&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;j&amp;#x2F;jansson-2.10-1.vl7.1.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall http:&amp;#x2F;&amp;#x2F;repo.virtuozzo.com&amp;#x2F;vzlinux&amp;#x2F;7.7&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;j&amp;#x2F;json-c-0.11-13.vl7.1.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -e --nodeps --justdb nspr nss nss-pem nss-softokn nss-softokn-freebl nss-sysinit nss-tools nss-util&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall http:&amp;#x2F;&amp;#x2F;repo.virtuozzo.com&amp;#x2F;vzlinux&amp;#x2F;7&amp;#x2F;x86_64&amp;#x2F;os&amp;#x2F;Packages&amp;#x2F;n&amp;#x2F;nss-3.44.0-7.vl7.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum downgrade glibc* -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install nss-softokn-freebl.i686 nss-tools -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install prlctl prl-disp-service vzkernel *ploop* -y &amp;amp;&amp;amp; yum update -y &amp;amp;&amp;amp; yum install fuse -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;reboot&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;screen -S dd&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;modprobe ploop pfmt_ploop1 pfmt_raw pio_direct fuse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -O &amp;#x2F;usr&amp;#x2F;libexec&amp;#x2F;ovz-template-converter https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;solusvm-support&amp;#x2F;svm_patches&amp;#x2F;master&amp;#x2F;ovz-template-converter.patched &amp;amp;&amp;amp; chmod +x &amp;#x2F;usr&amp;#x2F;libexec&amp;#x2F;ovz-template-converter&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -e --nodeps --justdb python3-pip&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install -y python36-pip python-configobj &amp;amp;&amp;amp; pip3 install configobj&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install *ez.noarch -y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;伪授权SolusVM&quot;&gt;&lt;a href=&quot;#伪授权SolusVM&quot; class=&quot;headerlink&quot; title=&quot;伪授权SolusVM&quot;&gt;&lt;/a&gt;伪授权SolusVM&lt;/h2&gt;&lt;p&gt;添加伪授权hosts&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vi &amp;#x2F;etc&amp;#x2F;hosts&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;添加如下伪授权，套餐是 SolusVM Enterprise (NOC)，任选1个即可：&lt;/p&gt;
-&lt;p&gt;伪授权站1&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 www.soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing1.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing2.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing3.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing4.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing5.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing6.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;伪授权站2&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 www.soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing1.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing2.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing3.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing4.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing5.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing6.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;转换OVZ7&quot;&gt;&lt;a href=&quot;#转换OVZ7&quot; class=&quot;headerlink&quot; title=&quot;转换OVZ7&quot;&gt;&lt;/a&gt;转换OVZ7&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
     
     
     
@@ -815,14 +318,14 @@
     <updated>2022-02-21T09:21:32.064Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;h2 id=&quot;官网&quot;&gt;&lt;a href=&quot;#官网&quot; class=&quot;headerlink&quot; title=&quot;官网&quot;&gt;&lt;/a&gt;官网&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.koyeb.com/&quot;&gt;https://www.koyeb.com/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;注册&quot;&gt;&lt;a href=&quot;#注册&quot; class=&quot;headerlink&quot; title=&quot;注册&quot;&gt;&lt;/a&gt;注册&lt;/h2&gt;&lt;p&gt;邮箱注册或者GitHub验证登录即可，无需信用卡验证。&lt;/p&gt;
-&lt;p&gt;用户用途信息这些随便选择即可。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-02-20_17-56-01.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-02-20_17-56-57.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-02-20_17-57-54.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-02-20_17-58-17.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;注册成功&lt;/p&gt;</summary>
+&lt;h2</summary>
+        
+      
     
     
     
@@ -843,214 +346,14 @@
     <updated>2022-02-21T09:21:34.563Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自 Nova Kwok &lt;a href=&quot;https://nova.moe/deploy-openconnect-ocserv-with-letsencrypt/&quot;&gt;https://nova.moe/deploy-openconnect-ocserv-with-letsencrypt/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;content&quot;&gt;
-                
-
-&lt;h2 id=&quot;anyconnect-和-openconnect&quot;&gt;AnyConnect 和 OpenConnect&lt;a href=&quot;#anyconnect-和-openconnect&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;本文于 2019-02-21 更新，修改了关于申请 SSL 证书的章节。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Wikipedia 上描述 OpenConnect 如下：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;OpenConnect is an open-source software application for connecting to virtual private networks (VPN), which implement secure point-to-point connections.&lt;/p&gt;
-
-&lt;p&gt;It was originally written as an open-source replacement for Cisco’s proprietary AnyConnect SSL VPN client,[2] which is supported by several Cisco routers. As of 2013, the OpenConnect project also offers an AnyConnect-compatible server,[3] and thus offers a full client-server VPN solution.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;可以简要地看出，OpenConnect 原本是由于 AnyConnect 有只能运行在 Cisco 设备上限制而开发出来的一个多系统支持的开源 VPN 实现方式，属于 SSL VPN，需要一个有效的 SSL 证书。&lt;/p&gt;
-
-&lt;p&gt;本文实行简单粗暴的原则，记录了一个 Ubuntu 服务器最小化搭建 ocserv（OpenConnect 服务端） 服务的过程，所以：不使用证书登录验证（使用用户名 + 密码组合），SSL 使用 Let’s Encrypt（而非网上许多文章所介绍的自签发）。&lt;/p&gt;
-
-&lt;h2 id=&quot;why-openconnect&quot;&gt;Why OpenConnect&lt;a href=&quot;#why-openconnect&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;可能有些小伙伴看到本文长度会问了，为什么要搞这么复杂？直接 ss-server 或者 OpenVPN 一键脚本安装不好么？&lt;/p&gt;
-
-&lt;p&gt;原因有三：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;我们需要的是安全内网访问，不是快速地绕过防火墙… 而且后期需要加入证书认证&lt;/li&gt;
-&lt;li&gt;OpenVPN 协议特征过于明显，虽然 AnyConnect 协议特征也十分明显，但是由于目前只有一些大厂在用，一般而言直接拨位与海外的 VPN 网关不容易受到干扰或受到的干扰较小&lt;/li&gt;
-&lt;li&gt;对于例如 iOS/BlackBerry BBOS 系统而言，一般自带 AnyConnect 连接工具&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;本例中：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;一台全新的 Ubuntu 18.04 LTS（主要是考虑到 80 端口未被占用，给后文中获取 SSL 证书的方法提供可能）&lt;/li&gt;
-&lt;li&gt;域名为：vpn.example.com，并且已经做好了解析到服务器 IP&lt;/li&gt;
-&lt;li&gt;服务器 IP 为：1.2.3.4&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;2018-09-12 更新：如果 80 端口被占用了可以考虑使用 DNS Challenge 的方法获取 Let’s Encrypt 证书，相关步骤可以参考 &lt;a href=&quot;/host-static-website-with-google-storage-and-google-cdn/&quot;&gt;《使用 Google Cloud Platform 的 Storage 托管静态站点并通过 Google CDN 加速》&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;安装-ocserv-准备系统&quot;&gt;安装 ocserv &amp;amp; 准备系统&lt;a href=&quot;#安装-ocserv-准备系统&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;网上许多方法都是通过手动编译源代码包的方式安装，然而现在至少对于 Debian 系的系统来说已经有了编译好的软件包了，详情见 &lt;a href=&quot;https://ocserv.gitlab.io/www/packages.html&quot;&gt;Distribution Status&lt;/a&gt;，对于 Debian 系服务器来说（比如本例的 Ubuntu）直接一条指令即可（非常感谢维护这个包的：Aron Xu，Liang Guo 和 Mike Miller）：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;$ sudo apt install ocserv -y&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;之后我们需要打开系统的转发功能，在 &lt;code&gt;/etc/sysctl.conf&lt;/code&gt; 中加入如下行：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;net.ipv4.ip_forward=1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;通过&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;$ sysctl -p&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;保存。&lt;/p&gt;
-
-&lt;p&gt;打开 NAT 功能：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# iptables -t nat -A POSTROUTING -j MASQUERADE&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;h2 id=&quot;配置-let-s-encrypt-证书&quot;&gt;配置 Let’s Encrypt 证书&lt;a href=&quot;#配置-let-s-encrypt-证书&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;ocserv&lt;/code&gt; 需要 SSL 证书（用来加密连接流量，保证连接安全，放心，这一步不复杂），网上许多教程中使用的是自签发证书，方法复杂且容易被 MITM 攻击，好在现在有 Let’s Encrypt 可以免费为自己域名添加证书，本例中使用 &lt;code&gt;certbot&lt;/code&gt; 来获取一个 Let’s Encrypt 证书。&lt;/p&gt;
-
-&lt;p&gt;下载&lt;code&gt;certbot&lt;/code&gt;，方法很多，在本例中为：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;$ sudo apt-get update
-$ sudo apt-get install software-properties-common
-$ sudo add-apt-repository ppa:certbot/certbot
-$ sudo apt-get update
-$ sudo apt-get install certbot&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;其他系统请参考 &lt;a href=&quot;https://certbot.eff.org&quot;&gt;Certbot 官方网站&lt;/a&gt;。&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;这一步比较 Tricky，请仔细阅读：&lt;strong&gt;certbot 获取 SSL 证书有多种方式，例如它可以在你机器上起一个临时的网页服务器，并且让自己的 Authority 来尝试连接临时服务器用来确认你机器的所有权，也可以通过 DNS 设置 TXT 记录的方式来验证，以下方式使用的是开一个临时服务器的方式来获取，如果希望通过 DNS 修改 TXT 记录的方式获取，请参考&lt;a href=&quot;/host-static-website-with-google-storage-and-google-cdn/&quot;&gt;《使用 Google Cloud Platform 的 Storage 托管静态站点并通过 Google CDN 加速》&lt;/a&gt;一文中的“获取 SSL 证书章节”。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;此外，有热心读者指出：ocserv 程序在安装后会使用 443 端口导致开启临时网页服务器的时候失败，读者给出的建议如下：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;在进行 &lt;code&gt;certbot&lt;/code&gt; 获取证书之前，先以管理员权限修改 &lt;code&gt;/lib/systemd/system/ocserv.socket&lt;/code&gt; 配置文件，将其中的两个443端口号修改为其他未被占用的端口号后，再运行  &lt;code&gt;certbot&lt;/code&gt;  即可，这样做的好处是，可以利用  &lt;code&gt;certbot&lt;/code&gt;  的自动证书续期功能。&lt;/p&gt;
-
-&lt;p&gt;另外，&lt;code&gt;/lib/systemd/system/ocserv.socket&lt;/code&gt; 中指定的端口号无需与  &lt;code&gt;/etc/ocserv/ocserv.conf&lt;/code&gt; 中的端口号保持一致。在使用 OpenConnect 或者 AnyConnect 客户端时，使用在 &lt;code&gt;/lib/systemd/system/ocserv.socket&lt;/code&gt; 中指定的端口号即可。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;非常感谢这位读者的邮件，欢迎大家在测试的时候进行尝试~&lt;/p&gt;
-
-&lt;hr&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;$ certbot certonly&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;会看到：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Saving debug log to /var/log/letsencrypt/letsencrypt.log
-
-How would you like to authenticate with the ACME CA?
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-1: Spin up a temporary webserver (standalone)
-2: Place files in webroot directory (webroot)
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Select the appropriate number [1-2] then [enter] (press &#39;c&#39; to cancel):
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;由于我们仅仅是想要一个证书，这里选择 1，让 &lt;code&gt;certbot&lt;/code&gt; 来搞定证书获取的过程，之后输入自己的域名，比如本例中的 &lt;code&gt;vpn.example.com&lt;/code&gt; ，稍等片刻应该可以看到类似如下的输出（记住证书存放的地址，后面会用到）：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;IMPORTANT NOTES:
- - Congratulations! Your certificate and chain have been saved at:
-   /etc/letsencrypt/live/vpn.example.com/fullchain.pem
-   Your key file has been saved at:
-   /etc/letsencrypt/live/vpn.example.com/privkey.pem
-   Your cert will expire on 2018-11-11. To obtain a new or tweaked
-   version of this certificate in the future, simply run certbot
-   again. To non-interactively renew *all* of your certificates, run
-   &quot;certbot renew&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;配置-ocserv&quot;&gt;配置 ocserv&lt;a href=&quot;#配置-ocserv&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;默认安装好后在&lt;code&gt;/etc/ocserv/&lt;/code&gt;下有一个很长的配置文件&lt;code&gt;ocserv.conf&lt;/code&gt;，着重注意以下配置字段：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# 登录方式，使用用户名密码登录，密码文件稍后生成
-auth = &quot;plain[/etc/ocserv/ocpasswd]&quot;
-
-# 允许同时连接的客户端数量
-max-clients = 4
-
-# 限制同一客户端的并行登陆数量
-max-same-clients = 2
-
-# 服务监听的 TCP/UDP 端口（默认为 443）
-tcp-port = 443
-udp-port = 443
-
-# 自动优化 MTU，尝试改善网络性能
-try-mtu-discovery = true
-
-# 服务器证书与密钥，就是上一步中生成的证书和私钥的位置
-server-cert = /etc/letsencrypt/live/vpn.example.com/fullchain.pem
-server-key = /etc/letsencrypt/live/vpn.example.com/privkey.pem
-
-# 服务器域名
-default-domain = vpn.example.com
-
-# 客户端连上 vpn 后使用的 DNS，这里使用 Cloudflare 的 1.1.1.1
-dns = 1.1.1.1
-
-# 注释掉所有的 route 和 no-route，让服务器成为 gateway
-#route = 192.168.1.0/255.255.255.0
-#no-route = 192.168.5.0/255.255.255.0
-
-# 启用 Cisco 客户端兼容性支持
-cisco-client-compat = true
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;由于使用用户名密码登录，我们需要生成一个密码文件，指令如下：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;$ ocpasswd -c /etc/ocserv/ocpasswd &amp;lt;用户名&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;此时会要求你输入两边密码，如果需要再添加用户只需重复上述指令即可。&lt;/p&gt;
-
-&lt;p&gt;配置好后启动 VPN：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;$ ocserv -c /etc/ocserv.conf&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;确认已经开启：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;root@vpn:/etc/ocserv# netstat -tulpn &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; grep &lt;span class=&quot;m&quot;&gt;443&lt;/span&gt;
-tcp        &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;.0.0.0:443             &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;.0.0.0:*               LISTEN      &lt;span class=&quot;m&quot;&gt;1987&lt;/span&gt;/ocserv
-tcp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; :::443                  :::*                    LISTEN      &lt;span class=&quot;m&quot;&gt;1987&lt;/span&gt;/ocserv
-udp        &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;.0.0.0:443             &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;.0.0.0:*                           &lt;span class=&quot;m&quot;&gt;1987&lt;/span&gt;/ocserv
-udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; :::443                  :::*                                &lt;span class=&quot;m&quot;&gt;1987&lt;/span&gt;/ocserv&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;h2 id=&quot;connecting-through-vpn&quot;&gt;Connecting Through VPN&lt;a href=&quot;#connecting-through-vpn&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;配置好 VPN 后让自己的所有服务器全部拨上 VPN：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# openconnect https://vpn.example.com/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;对于个人用户访问，这里以黑莓 Passport 为例（请无视那个现在并不存在企业名称），截图如下：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://nova-moe-blog-assets.webp.se/pics/openconnect/username.png&quot; alt&gt;
-&lt;img src=&quot;https://nova-moe-blog-assets.webp.se/pics/openconnect/banner.png&quot; alt&gt;&lt;/p&gt;
-
-&lt;p&gt;拨通后可以看到自己的内网 IP ：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://nova-moe-blog-assets.webp.se/pics/openconnect/address.png&quot; alt&gt;&lt;/p&gt;
-
-&lt;p&gt;然后，开始在 VPN 的保护下畅游自己的大内网吧～&lt;/p&gt;
-
-&lt;h2 id=&quot;off-topic&quot;&gt;Off-Topic&lt;a href=&quot;#off-topic&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;如果直接用浏览器去访问 VPN 网关（比如本例中：&lt;a href=&quot;https://vpn.example.com&quot;&gt;https://vpn.example.com&lt;/a&gt;）的话，返回的是如下 HTML 内容：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;config-auth&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;vpn&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;auth-request&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;who&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;0.1(1)&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;auth&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;main&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;Please enter your username.&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/auth&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;username&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Username:&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;auth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;config-auth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;此外如果开启了 &lt;code&gt;ocserv&lt;/code&gt; 之后在  &lt;code&gt;sudo&lt;/code&gt;  的时候卡住并提示：”sudo: unable to resolve host vpn: Resource temporarily unavailable” 的话，着重关注一下自己的&lt;code&gt;/etc/hosts&lt;/code&gt;文件中是否包含一行：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;127.0.0.1    localhost
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;参考连接&quot;&gt;参考连接&lt;a href=&quot;#参考连接&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.logcg.com/archives/1343.html&quot;&gt;使用 ocserv 搭建 Cisco Anyconnect 服务器&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.vultr.com/docs/setup-openconnect-vpn-server-for-cisco-anyconnect-on-ubuntu-14-04-x64&quot;&gt;Setup OpenConnect VPN Server for Cisco AnyConnect on Ubuntu 14.04 x64&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code&gt;        &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</summary>
+&lt;p&gt;转载自 Nova Kwok &lt;a</summary>
+        
+      
     
     
     
@@ -1073,13 +376,13 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     <updated>2022-02-10T03:27:12.009Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;脚本地址&quot;&gt;&lt;a href=&quot;#脚本地址&quot; class=&quot;headerlink&quot; title=&quot;脚本地址&quot;&gt;&lt;/a&gt;脚本地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yulewang/cloudflare-api-v4-ddns&quot;&gt;https://github.com/yulewang/cloudflare-api-v4-ddns&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;获取-KEY&quot;&gt;&lt;a href=&quot;#获取-KEY&quot; class=&quot;headerlink&quot; title=&quot;获取 KEY&quot;&gt;&lt;/a&gt;获取 KEY&lt;/h2&gt;&lt;p&gt;访问 &lt;a href=&quot;https://dash.cloudflare.com/profile&quot;&gt;https://dash.cloudflare.com/profile&lt;/a&gt; 在页面下方找到 Global API Key，点击右侧的 View 查看 Key，并保存下来 ，在页面下方找到 Global API Key，点击右侧的 View 查看 Key，并保存下来 &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/bD7yJqoYcAV3riB.png&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;解析域名&quot;&gt;&lt;a href=&quot;#解析域名&quot; class=&quot;headerlink&quot; title=&quot;解析域名&quot;&gt;&lt;/a&gt;解析域名&lt;/h2&gt;&lt;p&gt;设置用于 DDNS 解析的二级域名，流量不经过CDN(云朵变灰)&lt;/p&gt;
-&lt;p&gt;添加一条A记录，例如：hkt.test.com，Proxy status设置成DNS only &lt;/p&gt;
-&lt;p&gt;ipv4地址随意就行&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/DzHSaNEb1ZBU5pC.png&quot;&gt;&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;脚本地址&quot;&gt;&lt;a href=&quot;#脚本地址&quot; class=&quot;headerlink&quot; title=&quot;脚本地址&quot;&gt;&lt;/a&gt;脚本地址&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
     
     
     
@@ -1102,14 +405,13 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     <updated>2022-02-09T01:54:25.636Z</updated>
     
     
-    <summary type="html">&lt;p&gt;Outlook e5 a1 a1p等订阅可以自定义域名，但是比较复杂或者需要一些特殊手段，但是yandex mail提供免费的域名邮箱服务。这项服务叫做Yandex Connect，免费提供1000个子邮箱，每个子邮箱10G容量。查阅过官方文档，并没有找到明确解释，但是外网网友据说每个邮箱有每天3000封邮件的发件限制，相比QQ、Gmail这些只有每日500封的已经很厉害了。而且注册极其容易。此外还有SPF/DIKM配置能十分有效的防止邮件进入垃圾箱的概率。&lt;/p&gt;
-&lt;h2 id=&quot;注册主账号&quot;&gt;&lt;a href=&quot;#注册主账号&quot; class=&quot;headerlink&quot; title=&quot;注册主账号&quot;&gt;&lt;/a&gt;注册主账号&lt;/h2&gt;&lt;p&gt;就类似Office E5一样，需要一个主要的管理员账户，就是直接去yandex官网注册个即可 &lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://passport.yandex.com/registration&quot;&gt;https://passport.yandex.com/registration&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;可以使用手机号或者安全问题两种方式注册，实测国内 +86 手机号可以验证。GV貌似也可行。&lt;/p&gt;
-&lt;h2 id=&quot;绑定域名&quot;&gt;&lt;a href=&quot;#绑定域名&quot; class=&quot;headerlink&quot; title=&quot;绑定域名&quot;&gt;&lt;/a&gt;绑定域名&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://connect.yandex.com/pdd/&quot;&gt;https://connect.yandex.com/pdd/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;上述链接是原来的界面，但是现在yandex connect改版了，免费的yandex connect入口被藏起来了，需要去&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://connect.yandex.com/portal/admin/domains&quot;&gt;https://connect.yandex.com/portal/admin/domains&lt;/a&gt; 页面，然后就会提示你的账户还不是yandex connect计划，这样就可以选择直接加入免费的yandex connect计划（右上角账户那个地方确认加入yandex connect）。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://admin.yandex.ru/&quot;&gt;https://admin.yandex.ru/&lt;/a&gt; 页面可以再次回到管理页面（类似Microsoft Admin一样）&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Outlook e5 a1 a1p等订阅可以自定义域名，但是比较复杂或者需要一些特殊手段，但是yandex mail提供免费的域名邮箱服务。这项服务叫做Yandex</summary>
+        
+      
     
     
     
@@ -1132,32 +434,18 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     <updated>2022-03-30T03:40:15.950Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;投稿文章&lt;/p&gt;
 &lt;p&gt;文章作者 SundayRX&lt;/p&gt;
 &lt;p&gt;软件作者 SundayRX&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;Microsoft-365-E5-Renew-Plus&quot;&gt;&lt;a href=&quot;#Microsoft-365-E5-Renew-Plus&quot; class=&quot;headerlink&quot; title=&quot;Microsoft 365 E5 Renew Plus&quot;&gt;&lt;/a&gt;Microsoft 365 E5 Renew Plus&lt;/h1&gt;&lt;h2 id=&quot;Microsoft-365-E5-Renew-Plus的由来&quot;&gt;&lt;a href=&quot;#Microsoft-365-E5-Renew-Plus的由来&quot; class=&quot;headerlink&quot; title=&quot;Microsoft 365 E5 Renew Plus的由来&quot;&gt;&lt;/a&gt;Microsoft 365 E5 Renew Plus的由来&lt;/h2&gt;&lt;p&gt;Microsoft 365 E5 Renew Plus为Microsoft 365 E5 Renew的升级版，其功能性，易用性，美观程度上都要强于旧版。&lt;/p&gt;
-&lt;h2 id=&quot;主要功能&quot;&gt;&lt;a href=&quot;#主要功能&quot; class=&quot;headerlink&quot; title=&quot;主要功能&quot;&gt;&lt;/a&gt;主要功能&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;支持开机自启动后台调用&lt;/strong&gt;：使用简单方便，无需购买服务器部署，本地应用程序即开即用&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;两种可选的调用权限&lt;/strong&gt;：用户未登录作为守护程序调用(需要客户端密码)、程序以登录用户身份直接调用(需要账户密码)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;自动配置API权限&lt;/strong&gt;：登录调用的API权限支持由程序自动配置&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;API种类齐全&lt;/strong&gt;：43个可选的Microsoft Graph REST API Beta中的API(未来可能会继续添加)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;完全随机的API选用模式&lt;/strong&gt;：从已选定的API序列中随机抽取一个或几个进行调用（个数和API随机）&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;完全随机的API调用顺序&lt;/strong&gt;：每轮API的调用先后顺序随机&lt;/li&gt;
-&lt;li&gt;**完全随机的API内容(仅部分API支持)**：POST写类型的API的上传内容随机&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;完全随机的API调用时间间隔&lt;/strong&gt;：随机区段500s-86400s自定义&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;每日工作时间自定义&lt;/strong&gt;：在日常工作时间进行调用，适用于从不关机重启的服务器设备&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;每周工作日自定义&lt;/strong&gt;：在每周的工作日进行调用，适用于从不关机重启的服务器设备&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;运行智能暂停&lt;/strong&gt;：防止因持续在错误配置下运行而导致的账户封禁&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;运行配置自动保存&lt;/strong&gt;：可保存运行配置，无需反复设置&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;无限制账号个数&lt;/strong&gt;：理论上允许无限制个数账号后台自动调用&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;支持自定义客户端密钥&lt;/strong&gt;：允许非登录调用使用自定义密钥&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;自定义美化界面&lt;/strong&gt;：支持自定义背景图片，半透明度以及毛玻璃效果&lt;h2 id=&quot;主界面&quot;&gt;&lt;a href=&quot;#主界面&quot; class=&quot;headerlink&quot; title=&quot;主界面&quot;&gt;&lt;/a&gt;主界面&lt;/h2&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/1.png&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;运行结果查看&quot;&gt;&lt;a href=&quot;#运行结果查看&quot; class=&quot;headerlink&quot; title=&quot;运行结果查看&quot;&gt;&lt;/a&gt;运行结果查看&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/2.png&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;入群须知&quot;&gt;&lt;a href=&quot;#入群须知&quot; class=&quot;headerlink&quot; title=&quot;入群须知 &quot;&gt;&lt;/a&gt;&lt;font color=&quot;#cc0000&quot;&gt;&lt;strong&gt;入群须知&lt;/strong&gt; &lt;/font&gt;&lt;/h1&gt;</summary>
+&lt;h1 id=&quot;Microsoft-365-E5-Renew-Plus&quot;&gt;&lt;a</summary>
+        
+      
     
     
     
@@ -1178,18 +466,13 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     <updated>2022-03-13T05:05:42.065Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;EdNovas的Toolbox工具箱&quot;&gt;&lt;a href=&quot;#EdNovas的Toolbox工具箱&quot; class=&quot;headerlink&quot; title=&quot;EdNovas的Toolbox工具箱&quot;&gt;&lt;/a&gt;EdNovas的Toolbox工具箱&lt;/h1&gt;&lt;h2 id=&quot;脚本地址&quot;&gt;&lt;a href=&quot;#脚本地址&quot; class=&quot;headerlink&quot; title=&quot;脚本地址&quot;&gt;&lt;/a&gt;脚本地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/wdm1732418365/vpstoolbox&quot;&gt;https://github.com/wdm1732418365/vpstoolbox&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;整合了一些常用的脚本，会尽量持续更新~&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 添加二级目录（由于脚本太多，目前页面太长）&lt;/li&gt;
-&lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 整理脚本逻辑顺序&lt;/li&gt;
-&lt;li&gt;&lt;input disabled type=&quot;checkbox&quot;&gt; 添加更多vps程序&lt;/li&gt;
-&lt;li&gt;&lt;input disabled type=&quot;checkbox&quot;&gt; 所有脚本添加出处&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;脚本&quot;&gt;&lt;a href=&quot;#脚本&quot; class=&quot;headerlink&quot; title=&quot;脚本&quot;&gt;&lt;/a&gt;脚本&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -N https:&amp;#x2F;&amp;#x2F;cdn.jsdelivr.net&amp;#x2F;gh&amp;#x2F;ednovas&amp;#x2F;vpstoolbox@main&amp;#x2F;ednovastool.sh &amp;amp;&amp;amp; chmod +x ednovastool.sh &amp;amp;&amp;amp; .&amp;#x2F;ednovastool.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;此整合脚本整体借鉴自&lt;a href=&quot;https://github.com/Misaka-blog/MisakaLinuxToolbox&quot;&gt;御坂的Linux VPS工具箱&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;工具箱中脚本均来自GitHub，大部分已注明作者&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;EdNovas的Toolbox工具箱&quot;&gt;&lt;a href=&quot;#EdNovas的Toolbox工具箱&quot; class=&quot;headerlink&quot; title=&quot;EdNovas的Toolbox工具箱&quot;&gt;&lt;/a&gt;EdNovas的Toolbox工具箱&lt;/h1&gt;&lt;h2</summary>
+        
+      
     
     
     
@@ -1208,14 +491,13 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     <updated>2021-12-31T19:51:06.985Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h2&gt;&lt;p&gt;微软为UWP软件预设了沙箱，而这个沙箱默认阻断与本地网络（localhost，或者127.0.0.1）的连接&lt;/p&gt;
-&lt;p&gt;因此，UWP软件的流量无法通过代理软件。&lt;/p&gt;
-&lt;h2 id=&quot;官网&quot;&gt;&lt;a href=&quot;#官网&quot; class=&quot;headerlink&quot; title=&quot;官网&quot;&gt;&lt;/a&gt;官网&lt;/h2&gt;&lt;p&gt;下载Fiddler&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.telerik.com/download/fiddler-everywhere&quot;&gt;https://www.telerik.com/download/fiddler-everywhere&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;打开Fiddler，点击左上角的WinConfig按钮（需要UAC授权）。成功打开程序后，如果弹出警告，点击No按钮。&lt;/p&gt;
-&lt;p&gt;软件会列出全部UWP应用，我们可以发现，很多Windows系统组件也是UWP应用，这就难怪我们开启全局代理时，会出现部分Windows功能联网失败的情况。&lt;/p&gt;
-&lt;p&gt;在显示出来的列表中勾选你想要解除网络限制的UWP软件，勾选完毕后，注意点击上方的保存按钮以启用更改。&lt;/p&gt;
-&lt;h2 id=&quot;注意&quot;&gt;&lt;a href=&quot;#注意&quot; class=&quot;headerlink&quot; title=&quot;注意&quot;&gt;&lt;/a&gt;注意&lt;/h2&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
@@ -1236,15 +518,13 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     <updated>2021-12-24T09:25:17.638Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;众所周知，Onenote作为一款优秀的笔记软件，就是总是这个不支持那个不支持，比如Markdown，LATEX等。GEM等插件又要花钱，烦恼的很啊&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://onemark.neuxlab.cn/&quot;&gt;OneMark&lt;/a&gt;是&lt;a href=&quot;https://www.v2ex.com/t/822262&quot;&gt;V2EX&lt;/a&gt;一位大佬ccyixia的杰作————一个Onenote的Markdown支持插件&lt;/p&gt;
-&lt;p&gt;目前只支持 OneNote Windows 桌面版，不支持 UWP 版本&lt;/p&gt;
-&lt;p&gt;官网：&lt;a href=&quot;https://onemark.neuxlab.cn/&quot;&gt;https://onemark.neuxlab.cn/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;不需要多余操作，每一次按&lt;code&gt;Enter&lt;/code&gt;都见证文字的变身&lt;/p&gt;
-&lt;p&gt;汲取新世代编辑器的精华设计，完美融入 OneNote 之中&lt;/p&gt;
-&lt;p&gt;随心增删编辑，可切换源码状态，数据双向更新&lt;/p&gt;
-&lt;p&gt;支持主流 &lt;code&gt;Markdown&lt;/code&gt; 语法，更为你带来真正好用的&lt;code&gt;代码块&lt;/code&gt;、&lt;code&gt;LaTex&lt;/code&gt; 以及 &lt;code&gt;TOC&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&quot;使用说明&quot;&gt;&lt;a href=&quot;#使用说明&quot; class=&quot;headerlink&quot; title=&quot;使用说明&quot;&gt;&lt;/a&gt;使用说明&lt;/h2&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
@@ -1265,15 +545,17 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     <updated>2021-12-22T04:11:26.210Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;h2 id=&quot;价格&quot;&gt;&lt;a href=&quot;#价格&quot; class=&quot;headerlink&quot; title=&quot;价格&quot;&gt;&lt;/a&gt;价格&lt;/h2&gt;&lt;hr&gt;
 &lt;p&gt;6刀月付鸡&lt;/p&gt;
 &lt;p&gt;CPU：1核&lt;/p&gt;
 &lt;p&gt;内存：256M DDR4&lt;/p&gt;
-&lt;p&gt;硬盘：6G SSD/Raid10&lt;/p&gt;
-&lt;p&gt;端口：100Mbps CMI&lt;/p&gt;
-&lt;p&gt;流量：300G/每月（双向流量）&lt;/p&gt;
-&lt;p&gt;IPv4：1个&lt;/p&gt;
-&lt;p&gt;防御：2G DDoS / CC&lt;/p&gt;</summary>
+&lt;p&gt;硬盘：6G</summary>
+        
+      
     
     
     
