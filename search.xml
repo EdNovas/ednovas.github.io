@@ -4,6 +4,76 @@
   
     
     <entry>
+      <title>使用 Cloudfront CDN</title>
+      <link href="2022/10/28/cloudfront/"/>
+      <url>2022/10/28/cloudfront/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Amazon-Cloudfront"><a href="#Amazon-Cloudfront" class="headerlink" title="Amazon Cloudfront"></a>Amazon Cloudfront</h2><p>Cloudfront是Amazon提供的CDN服务，有每月免费1T的流量，该流量不可累计。个人小站的话，这个CDN是足够用的了，而且主要是国内访问的速度还不错。但是需要注意不要被攻击了，不然AWS的扣费还是很贵的。</p><p><a href="https://aws.amazon.com/cn/cloudfront/">https://aws.amazon.com/cn/cloudfront/</a></p><h2 id="解析域名"><a href="#解析域名" class="headerlink" title="解析域名"></a>解析域名</h2><p>首先先解析个三级域名到你的需要加CDN的网站的VPS IP上，比如</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/photo_2022-10-28_15-50-23.jpg"></p><p>这里的 8.8.8.8 就是你的VPS IP。这里的cdn就是你的三级域名前缀，这个域名是看不到的，这是回源域名用的。用户访问的是后面Cloudfront生成的域名地址或者是自己加的CNAME域名地址。</p><h2 id="创建账号"><a href="#创建账号" class="headerlink" title="创建账号"></a>创建账号</h2><p>前往 <a href="https://aws.amazon.com/cn/cloudfront/">https://aws.amazon.com/cn/cloudfront/</a> 注册个账号，并且绑定个信用卡，建议绑定小额的或者限额，否则扣起费来吃不消。</p><p>创建个Distributions</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_15-54-24.png"></p><p>然后填入你刚刚解析的那个回源域名，比如刚刚解析的 cdn.ednovas.blog</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_15-55-04.png"></p><p>Protocol一般选择https only保证TLS。不过如果不清楚的话，可以选择Match viewer。</p><p>然后此页面其他全部默认就行</p><p>如果有TLS的https，还是建议开启https强跳。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_15-58-07.png"></p><p>下面这里Price class选择默认即可，或者按需选择</p><p>下面的HTTP versions可以把HTTP/3也勾选上</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_15-58-22.png"></p><p>如果不想用cloudfront默认的奇怪的长长的三级域名的话，这里可以加个CNAME，当然还需要用AWS自己的证书才行。</p><p>CNAME这里输入你想让用户访问用的CNAME域名，比如 user.ednovas.blog，用户访问这个地址就会访问你加了CDN的网站了。</p><p>然后如果要用CNAME的话，必须使用AWS的证书才可以，需要点下面的request certicificate来获取一个证书</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-01-14.png"></p><p>直接选择Next即可</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-04-24.png"></p><p>然后输入你要加证书的域名，然后选择默认的DNS验证即可。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-04-52.png"></p><p>点进去</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-05-42.png"></p><p>然后在域名中解析对应的CNAME名字和值</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-06-02.png"></p><p>记得把小云朵关上</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-06-56.png"></p><p>然后过几分钟就可以验证成功申请下来了</p><p>然后在CDN的页面，选择刚刚申请的这个证书（如果一直没有，可以先保存当前的CDN设置，然后再点击Edit编辑加上这个CNAME和证书）</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-08-09.png"></p><p>需要等待生效的时间比较久，可能需要几十分钟</p><p>然后访问CNAME地址就可以了！</p><h2 id="添加限制"><a href="#添加限制" class="headerlink" title="添加限制"></a>添加限制</h2><p>然后在Distributions中，还可以设置其他的一些Behaviors，Error pages，Geopraphic restrictions等，这里以Geopraphic restrictions 为例，屏蔽除了中国以外的所有用户访问</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-10-21.png"></p><p>Allow list仅选择国内然后保存，等待几分钟生效即可。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-11-36.png"></p><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p>用 ping.pe 测试CDN的效果还可以</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-12-36.png"></p><h2 id="开启费用提醒"><a href="#开启费用提醒" class="headerlink" title="开启费用提醒"></a>开启费用提醒</h2><p>右上角账户这里选择billing</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-13-31.png"></p><p>可以把这几个全都打开，然后设置提醒免费资源用尽提醒邮箱</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-14-21.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+          <category> VPS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 建站 </tag>
+            
+            <tag> VPS </tag>
+            
+            <tag> AWS </tag>
+            
+            <tag> CDN </tag>
+            
+            <tag> Cloudfront </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用 Gcore CDN</title>
+      <link href="2022/10/28/gcore/"/>
+      <url>2022/10/28/gcore/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Gcorelab-CDN"><a href="#Gcorelab-CDN" class="headerlink" title="Gcorelab CDN"></a>Gcorelab CDN</h2><p>类似AWS的Cloudfront CDN，提供每月1T的免费流量。效果不如Cloudfront但是也还不错</p><p><a href="https://cdn.gcore.com/">https://cdn.gcore.com/</a></p><h2 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h2><p>Gcore 地址</p><p><a href="https://cdn.gcore.com/">https://cdn.gcore.com/</a></p><p>Porkbun购买域名（便宜）</p><p><a href="https://porkbun.com/">https://porkbun.com</a></p><p>因为Gcore的CDN需要更改Nameservers，所以比较建议买个新的域名然后专用CDN</p><h2 id="使用CDN"><a href="#使用CDN" class="headerlink" title="使用CDN"></a>使用CDN</h2><p>输入要加CDN的域名</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-32-18.png"></p><p>解析个根域名到你的网站所在的VPS的IP（必须是跟域名）</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-33-41.png"></p><p>更改nameserver为Gcore的nameservers</p><p>nameserver生效需要等待比较久的时间，最长大概可能需要几小时，快的话几分钟。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-35-03.png"></p><p>这几个全开就行</p><p>这个选择http和https</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-39-39.png"></p><p>可以把 Browser caching开启</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-40-20.png"></p><p>并开启https强跳</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_16-40-49.png"></p><p>然后允许SSL证书，他就会给该根域名自动申请一个证书</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_23-50-42.png"></p><p>然后保存就行了。</p><h2 id="修改回源地址"><a href="#修改回源地址" class="headerlink" title="修改回源地址"></a>修改回源地址</h2><p>回到主页面，选择Origins groups，</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_23-51-45.png"></p><p>修改为你需要加CDN的地址，注意这个回源地址不能开CDN，要直接解析到那个VPS网站的IP。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_23-52-48.png"></p><p>等待一段时间生效即可。</p><h2 id="流量"><a href="#流量" class="headerlink" title="流量"></a>流量</h2><p>注意每月免费流量只有1T。</p><p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-10-28_23-55-24.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+          <category> VPS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 建站 </tag>
+            
+            <tag> VPS </tag>
+            
+            <tag> CDN </tag>
+            
+            <tag> Cloudfront </tag>
+            
+            <tag> Gcore </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>从GFW原理到翻墙原理和协议</title>
       <link href="2022/06/25/gfw/"/>
       <url>2022/06/25/gfw/</url>
