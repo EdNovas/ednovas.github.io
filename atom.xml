@@ -74,11 +74,11 @@
     
     <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
     
-    <category term="AWS" scheme="https://ednovas.xyz/tags/AWS/"/>
-    
     <category term="CDN" scheme="https://ednovas.xyz/tags/CDN/"/>
     
     <category term="Cloudfront" scheme="https://ednovas.xyz/tags/Cloudfront/"/>
+    
+    <category term="AWS" scheme="https://ednovas.xyz/tags/AWS/"/>
     
   </entry>
   
