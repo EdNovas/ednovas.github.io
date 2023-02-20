@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2023-01-08T01:32:17.813Z</updated>
+  <updated>2023-02-20T12:28:15.938Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Raspberry Pi 入门使用指南</title>
+    <link href="https://ednovas.xyz/2023/02/19/raspberry/"/>
+    <id>https://ednovas.xyz/2023/02/19/raspberry/</id>
+    <published>2023-02-20T05:28:00.000Z</published>
+    <updated>2023-02-20T12:28:15.938Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Raspberry-Pi&quot;&gt;&lt;a href=&quot;#Raspberry-Pi&quot; class=&quot;headerlink&quot; title=&quot;Raspberry Pi&quot;&gt;&lt;/a&gt;Raspberry Pi&lt;/h2&gt;&lt;p&gt;树莓派（英语：Raspberry Pi）英国树莓派基金会开发的微型单板计算机，目的是以低价硬体及自由软体促进学校的基本电脑科学教育。&lt;/p&gt;
+&lt;p&gt;树莓派系列计算机每一代均使用博通（Broadcom）出产的ARM架构处理器，如今生产的机型（树莓派4B）内存在2GB和8GB之间，主要TF卡作为系统存储媒体（初代使用SD卡），配备USB接口和HDMI的视频输出（支持声音输出），内置Ethernet/WLAN/Bluetooth网络链接的方式（依据型号决定），并且可使用多种操作系统。产品线型号分为A型、B型、Zero型和ComputeModule计算卡。&lt;/p&gt;
+&lt;h2 id=&quot;用途&quot;&gt;&lt;a href=&quot;#用途&quot; class=&quot;headerlink&quot; title=&quot;用途&quot;&gt;&lt;/a&gt;用途&lt;/h2&gt;&lt;p&gt;Raspberry Pi 实际上就是一个超级便捷的小型电脑，通常用来装linux系统，可以用作服务器的一些功能。&lt;/p&gt;
+&lt;p&gt;例如：搭建个人网站，Git服务器，远程BT下载器，小型家庭NAS，AirPlay服务，闹钟，DNSmasq服务（内网DNS），Adguard Home，等等功能。&lt;/p&gt;
+&lt;p&gt;这是作为服务器的用途，还可以用作一些机械结构的模块，用来做树莓派飞行器，机器人，遥控坦克等等。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.adafruit.com/&quot;&gt;https://www.adafruit.com/&lt;/a&gt; 这个网站上有很多树莓派的开源有趣的项目可以用作参考&lt;/p&gt;
+&lt;p&gt;还有一本书也很推荐 &lt;a href=&quot;https://book.douban.com/subject/25856712/&quot;&gt;https://book.douban.com/subject/25856712/&lt;/a&gt; （京东有售。不想买书的话可以从Z-lib找免费的PDF版本）&lt;/p&gt;
+&lt;h2 id=&quot;购买&quot;&gt;&lt;a href=&quot;#购买&quot; class=&quot;headerlink&quot; title=&quot;购买&quot;&gt;&lt;/a&gt;购买&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="raspberry" scheme="https://ednovas.xyz/tags/raspberry/"/>
+    
+  </entry>
   
   <entry>
     <title>使用 Chrome Remote Desktop 远程控制 Ubuntu 服务器</title>
@@ -1272,36 +1300,6 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
     
     <category term="e5" scheme="https://ednovas.xyz/tags/e5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>EdNovas VPS脚本工具箱</title>
-    <link href="https://ednovas.xyz/2022/01/02/ednovastool/"/>
-    <id>https://ednovas.xyz/2022/01/02/ednovastool/</id>
-    <published>2022-01-03T03:12:00.000Z</published>
-    <updated>2022-03-13T05:05:42.065Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;EdNovas的Toolbox工具箱&quot;&gt;&lt;a href=&quot;#EdNovas的Toolbox工具箱&quot; class=&quot;headerlink&quot; title=&quot;EdNovas的Toolbox工具箱&quot;&gt;&lt;/a&gt;EdNovas的Toolbox工具箱&lt;/h1&gt;&lt;h2 id=&quot;脚本地址&quot;&gt;&lt;a href=&quot;#脚本地址&quot; class=&quot;headerlink&quot; title=&quot;脚本地址&quot;&gt;&lt;/a&gt;脚本地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/wdm1732418365/vpstoolbox&quot;&gt;https://github.com/wdm1732418365/vpstoolbox&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;整合了一些常用的脚本，会尽量持续更新~&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 添加二级目录（由于脚本太多，目前页面太长）&lt;/li&gt;
-&lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 整理脚本逻辑顺序&lt;/li&gt;
-&lt;li&gt;&lt;input disabled type=&quot;checkbox&quot;&gt; 添加更多vps程序&lt;/li&gt;
-&lt;li&gt;&lt;input disabled type=&quot;checkbox&quot;&gt; 所有脚本添加出处&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;脚本&quot;&gt;&lt;a href=&quot;#脚本&quot; class=&quot;headerlink&quot; title=&quot;脚本&quot;&gt;&lt;/a&gt;脚本&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -N https:&amp;#x2F;&amp;#x2F;cdn.jsdelivr.net&amp;#x2F;gh&amp;#x2F;ednovas&amp;#x2F;vpstoolbox@main&amp;#x2F;ednovastool.sh &amp;amp;&amp;amp; chmod +x ednovastool.sh &amp;amp;&amp;amp; .&amp;#x2F;ednovastool.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;此整合脚本整体借鉴自&lt;a href=&quot;https://github.com/Misaka-blog/MisakaLinuxToolbox&quot;&gt;御坂的Linux VPS工具箱&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;工具箱中脚本均来自GitHub，大部分已注明作者&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
     
   </entry>
   
