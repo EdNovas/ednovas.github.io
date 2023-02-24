@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2023-02-20T12:28:15.938Z</updated>
+  <updated>2023-02-24T12:59:38.000Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,77 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Raspberry + 外接硬盘 用内网穿透 WebDav 作公网 NAS</title>
+    <link href="https://ednovas.xyz/2023/02/24/homemadenas/"/>
+    <id>https://ednovas.xyz/2023/02/24/homemadenas/</id>
+    <published>2023-02-25T06:28:00.000Z</published>
+    <updated>2023-02-24T12:59:38.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Raspberry（别的支持docker的软路由/家庭服务器等也可以）&lt;/li&gt;
+&lt;li&gt;cloudflare账号（用cloudfalre tunnel）&lt;/li&gt;
+&lt;li&gt;用作nas的硬盘（插到raspberry上的外接硬盘，需要自供电，raspberry的电量带不动不插电的移动硬盘）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;初期&quot;&gt;&lt;a href=&quot;#初期&quot; class=&quot;headerlink&quot; title=&quot;初期&quot;&gt;&lt;/a&gt;初期&lt;/h2&gt;&lt;p&gt;raspberry初始化可以看 &lt;a href=&quot;/2023/02/19/raspberry/&quot;&gt;https://ednovas.xyz/2023/02/19/raspberry/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;注意本教程安装的OMV NAS系统，不能有桌面UI，安装系统的时候请选择没有桌面的lite版本系统。如果选择了有桌面的系统，我们也需要卸载。可以执行以下命令卸载完全各种桌面：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt purge xserver* lightdm* raspberrypi-ui-mods vlc* lxde* chromium* desktop* gnome* gstreamer* gtk* hicolor-icon-theme* lx* mesa*&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt autoremove&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;cloudflare tunnel设置可以看 &lt;a href=&quot;2023/02/24/cloudflaretunnel/&quot;&gt;https://ednovas.xyz/2023/02/24/cloudflaretunnel/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;安装OMV&quot;&gt;&lt;a href=&quot;#安装OMV&quot; class=&quot;headerlink&quot; title=&quot;安装OMV&quot;&gt;&lt;/a&gt;安装OMV&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.openmediavault.org/&quot;&gt;https://www.openmediavault.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;openmediavault 是一个免费的十分优秀的NAS管理系统，我们可以用来装在raspberry上的。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
+    
+    <category term="内网穿透" scheme="https://ednovas.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    
+    <category term="docker" scheme="https://ednovas.xyz/tags/docker/"/>
+    
+    <category term="tunnel" scheme="https://ednovas.xyz/tags/tunnel/"/>
+    
+    <category term="nas" scheme="https://ednovas.xyz/tags/nas/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cloudflare Tunnel 免费内网穿透</title>
+    <link href="https://ednovas.xyz/2023/02/24/cloudflaretunnel/"/>
+    <id>https://ednovas.xyz/2023/02/24/cloudflaretunnel/</id>
+    <published>2023-02-25T05:28:00.000Z</published>
+    <updated>2023-02-24T12:03:28.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Cloudflare-Tunnel&quot;&gt;&lt;a href=&quot;#Cloudflare-Tunnel&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Tunnel&quot;&gt;&lt;/a&gt;Cloudflare Tunnel&lt;/h2&gt;&lt;p&gt;cloudflare提供的免费加密通道，通过cloudflare的cnd访问部署在内网的服务，比如web,ssh,smb,tcp等。&lt;/p&gt;
+&lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h2&gt;&lt;p&gt;那肯定必须需要一个cloudflare账号，以及开通 cloudflare zero trust。&lt;/p&gt;
+&lt;p&gt;cloudflare：&lt;a href=&quot;https://www.cloudflare.com/&quot;&gt;https://www.cloudflare.com/&lt;/a&gt;&lt;br&gt;zero trust: &lt;a href=&quot;https://one.dash.cloudflare.com/&quot;&gt;https://one.dash.cloudflare.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;在你的需要内网穿透的设备上安装cloudflared（cf的本地cli客户端），这里博主以raspberry pi 4 作为例子。&lt;/p&gt;
+&lt;p&gt;由于raspberry pi 4 是arm64的，所以需要下载arm架构的文件：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;curl -L &lt;span class=&quot;string&quot;&gt;&amp;#x27;https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64&amp;#x27;&lt;/span&gt; -o /usr/bin/cloudflared&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chmod +x /usr/bin/cloudflared&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;如果是普通amd64架构的，使用以下命令：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
+    
+    <category term="内网穿透" scheme="https://ednovas.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    
+    <category term="tunnel" scheme="https://ednovas.xyz/tags/tunnel/"/>
+    
+  </entry>
   
   <entry>
     <title>Raspberry Pi 入门使用指南</title>
@@ -1224,82 +1295,6 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     <category term="cf" scheme="https://ednovas.xyz/tags/cf/"/>
     
     <category term="ddns" scheme="https://ednovas.xyz/tags/ddns/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Yandex 免费域名邮箱和配置SMTP</title>
-    <link href="https://ednovas.xyz/2022/02/08/yandexdomainmail/"/>
-    <id>https://ednovas.xyz/2022/02/08/yandexdomainmail/</id>
-    <published>2022-02-08T21:09:00.000Z</published>
-    <updated>2022-02-09T01:54:25.636Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Outlook e5 a1 a1p等订阅可以自定义域名，但是比较复杂或者需要一些特殊手段，但是yandex mail提供免费的域名邮箱服务。这项服务叫做Yandex Connect，免费提供1000个子邮箱，每个子邮箱10G容量。查阅过官方文档，并没有找到明确解释，但是外网网友据说每个邮箱有每天3000封邮件的发件限制，相比QQ、Gmail这些只有每日500封的已经很厉害了。而且注册极其容易。此外还有SPF/DIKM配置能十分有效的防止邮件进入垃圾箱的概率。&lt;/p&gt;
-&lt;h2 id=&quot;注册主账号&quot;&gt;&lt;a href=&quot;#注册主账号&quot; class=&quot;headerlink&quot; title=&quot;注册主账号&quot;&gt;&lt;/a&gt;注册主账号&lt;/h2&gt;&lt;p&gt;就类似Office E5一样，需要一个主要的管理员账户，就是直接去yandex官网注册个即可 &lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://passport.yandex.com/registration&quot;&gt;https://passport.yandex.com/registration&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;可以使用手机号或者安全问题两种方式注册，实测国内 +86 手机号可以验证。GV貌似也可行。&lt;/p&gt;
-&lt;h2 id=&quot;绑定域名&quot;&gt;&lt;a href=&quot;#绑定域名&quot; class=&quot;headerlink&quot; title=&quot;绑定域名&quot;&gt;&lt;/a&gt;绑定域名&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://connect.yandex.com/pdd/&quot;&gt;https://connect.yandex.com/pdd/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;上述链接是原来的界面，但是现在yandex connect改版了，免费的yandex connect入口被藏起来了，需要去&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://connect.yandex.com/portal/admin/domains&quot;&gt;https://connect.yandex.com/portal/admin/domains&lt;/a&gt; 页面，然后就会提示你的账户还不是yandex connect计划，这样就可以选择直接加入免费的yandex connect计划（右上角账户那个地方确认加入yandex connect）。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://admin.yandex.ru/&quot;&gt;https://admin.yandex.ru/&lt;/a&gt; 页面可以再次回到管理页面（类似Microsoft Admin一样）&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="yandex" scheme="https://ednovas.xyz/tags/yandex/"/>
-    
-    <category term="mail" scheme="https://ednovas.xyz/tags/mail/"/>
-    
-    <category term="smtp" scheme="https://ednovas.xyz/tags/smtp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Microsoft 365 E5 Renew Plus 续订程序</title>
-    <link href="https://ednovas.xyz/2022/01/10/e5renewplus/"/>
-    <id>https://ednovas.xyz/2022/01/10/e5renewplus/</id>
-    <published>2022-01-11T03:12:00.000Z</published>
-    <updated>2022-03-30T03:40:15.950Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;投稿文章&lt;/p&gt;
-&lt;p&gt;文章作者 SundayRX&lt;/p&gt;
-&lt;p&gt;软件作者 SundayRX&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;Microsoft-365-E5-Renew-Plus&quot;&gt;&lt;a href=&quot;#Microsoft-365-E5-Renew-Plus&quot; class=&quot;headerlink&quot; title=&quot;Microsoft 365 E5 Renew Plus&quot;&gt;&lt;/a&gt;Microsoft 365 E5 Renew Plus&lt;/h1&gt;&lt;h2 id=&quot;Microsoft-365-E5-Renew-Plus的由来&quot;&gt;&lt;a href=&quot;#Microsoft-365-E5-Renew-Plus的由来&quot; class=&quot;headerlink&quot; title=&quot;Microsoft 365 E5 Renew Plus的由来&quot;&gt;&lt;/a&gt;Microsoft 365 E5 Renew Plus的由来&lt;/h2&gt;&lt;p&gt;Microsoft 365 E5 Renew Plus为Microsoft 365 E5 Renew的升级版，其功能性，易用性，美观程度上都要强于旧版。&lt;/p&gt;
-&lt;h2 id=&quot;主要功能&quot;&gt;&lt;a href=&quot;#主要功能&quot; class=&quot;headerlink&quot; title=&quot;主要功能&quot;&gt;&lt;/a&gt;主要功能&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;支持开机自启动后台调用&lt;/strong&gt;：使用简单方便，无需购买服务器部署，本地应用程序即开即用&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;两种可选的调用权限&lt;/strong&gt;：用户未登录作为守护程序调用(需要客户端密码)、程序以登录用户身份直接调用(需要账户密码)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;自动配置API权限&lt;/strong&gt;：登录调用的API权限支持由程序自动配置&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;API种类齐全&lt;/strong&gt;：43个可选的Microsoft Graph REST API Beta中的API(未来可能会继续添加)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;完全随机的API选用模式&lt;/strong&gt;：从已选定的API序列中随机抽取一个或几个进行调用（个数和API随机）&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;完全随机的API调用顺序&lt;/strong&gt;：每轮API的调用先后顺序随机&lt;/li&gt;
-&lt;li&gt;**完全随机的API内容(仅部分API支持)**：POST写类型的API的上传内容随机&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;完全随机的API调用时间间隔&lt;/strong&gt;：随机区段500s-86400s自定义&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;每日工作时间自定义&lt;/strong&gt;：在日常工作时间进行调用，适用于从不关机重启的服务器设备&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;每周工作日自定义&lt;/strong&gt;：在每周的工作日进行调用，适用于从不关机重启的服务器设备&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;运行智能暂停&lt;/strong&gt;：防止因持续在错误配置下运行而导致的账户封禁&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;运行配置自动保存&lt;/strong&gt;：可保存运行配置，无需反复设置&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;无限制账号个数&lt;/strong&gt;：理论上允许无限制个数账号后台自动调用&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;支持自定义客户端密钥&lt;/strong&gt;：允许非登录调用使用自定义密钥&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;自定义美化界面&lt;/strong&gt;：支持自定义背景图片，半透明度以及毛玻璃效果&lt;h2 id=&quot;主界面&quot;&gt;&lt;a href=&quot;#主界面&quot; class=&quot;headerlink&quot; title=&quot;主界面&quot;&gt;&lt;/a&gt;主界面&lt;/h2&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/1.png&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;运行结果查看&quot;&gt;&lt;a href=&quot;#运行结果查看&quot; class=&quot;headerlink&quot; title=&quot;运行结果查看&quot;&gt;&lt;/a&gt;运行结果查看&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/2.png&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;入群须知&quot;&gt;&lt;a href=&quot;#入群须知&quot; class=&quot;headerlink&quot; title=&quot;入群须知 &quot;&gt;&lt;/a&gt;&lt;font color=&quot;#cc0000&quot;&gt;&lt;strong&gt;入群须知&lt;/strong&gt; &lt;/font&gt;&lt;/h1&gt;</summary>
-    
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="e5" scheme="https://ednovas.xyz/tags/e5/"/>
     
   </entry>
   
