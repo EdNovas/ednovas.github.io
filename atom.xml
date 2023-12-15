@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2023-02-24T12:59:38.000Z</updated>
+  <updated>2023-12-15T05:43:08.675Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Blend Hosting VPS</title>
+    <link href="https://ednovas.xyz/2023/12/14/blendhosting/"/>
+    <id>https://ednovas.xyz/2023/12/14/blendhosting/</id>
+    <published>2023-12-15T06:28:00.000Z</published>
+    <updated>2023-12-15T05:43:08.675Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Blend Hosting &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一家成立于2005年的马来西亚托管服务商并提供了全天候的客户服务，以确保伺服器稳定的运行。Blend Hosting 的数据中心分别有位于吉隆坡的AIMS数据中心, 和位于赛城的 Bridge 数据中心。&lt;/p&gt;
+&lt;p&gt;Blend Hosting 的 VPS 分别有 Linux VPS 和 Windows VPS。 其中附有100Mbps带宽与不限量的数据传输，99%主机在线保证及长达15天的退款保证，且有免费的SSL证书。另外，Linux VPS每月最低仅需 $5.59 而 Windows VPS 每月最低仅需 $9.59。支持的付款方式有 Paypal 或加密货币及信用卡。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/BlendHosting.jpg&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;VPS套餐&quot;&gt;&lt;a href=&quot;#VPS套餐&quot; class=&quot;headerlink&quot; title=&quot;VPS套餐&quot;&gt;&lt;/a&gt;VPS套餐&lt;/h1&gt;&lt;h2 id=&quot;Linux&quot;&gt;&lt;a href=&quot;#Linux&quot; class=&quot;headerlink&quot; title=&quot;Linux&quot;&gt;&lt;/a&gt;Linux&lt;/h2&gt;&lt;p&gt;Linux VPS托管计划 &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SSD VPS 1 &lt;/p&gt;
+&lt;p&gt;1GB 内存&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Raspberry + 外接硬盘 用内网穿透 WebDav 作公网 NAS</title>
@@ -1266,35 +1293,6 @@ udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&q
     <category term="ocserv" scheme="https://ednovas.xyz/tags/ocserv/"/>
     
     <category term="openconnect" scheme="https://ednovas.xyz/tags/openconnect/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cloudflare 免费解析动态域名 DDNS</title>
-    <link href="https://ednovas.xyz/2022/02/09/cfddns/"/>
-    <id>https://ednovas.xyz/2022/02/09/cfddns/</id>
-    <published>2022-02-09T21:09:00.000Z</published>
-    <updated>2022-02-10T03:27:12.009Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;脚本地址&quot;&gt;&lt;a href=&quot;#脚本地址&quot; class=&quot;headerlink&quot; title=&quot;脚本地址&quot;&gt;&lt;/a&gt;脚本地址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yulewang/cloudflare-api-v4-ddns&quot;&gt;https://github.com/yulewang/cloudflare-api-v4-ddns&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;获取-KEY&quot;&gt;&lt;a href=&quot;#获取-KEY&quot; class=&quot;headerlink&quot; title=&quot;获取 KEY&quot;&gt;&lt;/a&gt;获取 KEY&lt;/h2&gt;&lt;p&gt;访问 &lt;a href=&quot;https://dash.cloudflare.com/profile&quot;&gt;https://dash.cloudflare.com/profile&lt;/a&gt; 在页面下方找到 Global API Key，点击右侧的 View 查看 Key，并保存下来 ，在页面下方找到 Global API Key，点击右侧的 View 查看 Key，并保存下来 &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/bD7yJqoYcAV3riB.png&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;解析域名&quot;&gt;&lt;a href=&quot;#解析域名&quot; class=&quot;headerlink&quot; title=&quot;解析域名&quot;&gt;&lt;/a&gt;解析域名&lt;/h2&gt;&lt;p&gt;设置用于 DDNS 解析的二级域名，流量不经过CDN(云朵变灰)&lt;/p&gt;
-&lt;p&gt;添加一条A记录，例如：hkt.test.com，Proxy status设置成DNS only &lt;/p&gt;
-&lt;p&gt;ipv4地址随意就行&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/DzHSaNEb1ZBU5pC.png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
-    
-    <category term="cf" scheme="https://ednovas.xyz/tags/cf/"/>
-    
-    <category term="ddns" scheme="https://ednovas.xyz/tags/ddns/"/>
     
   </entry>
   
