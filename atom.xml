@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2023-12-15T05:43:08.675Z</updated>
+  <updated>2024-04-26T04:51:17.952Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,122 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Server Gigabit Network</title>
+    <link href="https://ednovas.xyz/2024/04/25/gigabit/"/>
+    <id>https://ednovas.xyz/2024/04/25/gigabit/</id>
+    <published>2024-04-26T05:28:00.000Z</published>
+    <updated>2024-04-26T04:51:17.952Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/gigabit1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Server Gigabit VPS默认是100M共享带宽，不限制流量使用，低延迟，架构(VIRTUAL TYPE)：KVM分为Linux VPS和Windows VPS两种，其中Linux VPS月付$11.59起，套餐整理如下：&lt;/p&gt;
+&lt;h2 id=&quot;Linux-VPS-Hosting&quot;&gt;&lt;a href=&quot;#Linux-VPS-Hosting&quot; class=&quot;headerlink&quot; title=&quot;Linux VPS Hosting&quot;&gt;&lt;/a&gt;Linux VPS Hosting&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;内存&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;CPU&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;SSD&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;价格&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;购买&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;1G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;20G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$11.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=1&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;2G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;40G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$16.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=19&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;4G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;80G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$34.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=21&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;8G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;8核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;160G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$70.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=25&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;16G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;14核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;200G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$134.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=27&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&quot;Windows-VPS-Hosting&quot;&gt;&lt;a href=&quot;#Windows-VPS-Hosting&quot; class=&quot;headerlink&quot; title=&quot;Windows VPS Hosting&quot;&gt;&lt;/a&gt;Windows VPS Hosting&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;内存&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;CPU&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;SSD&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;价格&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;购买&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;1G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;20G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$9.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=2&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;2G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;40G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$20.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=12&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;3G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;3核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;80G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$31.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=13&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;4G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;100G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$42.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=14&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;8G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;8核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;180G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$86.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=18&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&quot;官网&quot;&gt;&lt;a href=&quot;#官网&quot; class=&quot;headerlink&quot; title=&quot;官网&quot;&gt;&lt;/a&gt;官网&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.servergigabit.com/&quot;&gt;https://www.servergigabit.com&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Blend Hosting VPS</title>
@@ -1063,236 +1179,6 @@
     <category term="docker" scheme="https://ednovas.xyz/tags/docker/"/>
     
     <category term="koyeb" scheme="https://ednovas.xyz/tags/koyeb/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 ocserv 搭建企业级 OpenConnect VPN 网关</title>
-    <link href="https://ednovas.xyz/2022/02/16/ocserv/"/>
-    <id>https://ednovas.xyz/2022/02/16/ocserv/</id>
-    <published>2022-02-16T21:09:00.000Z</published>
-    <updated>2022-02-21T09:21:34.563Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自 Nova Kwok &lt;a href=&quot;https://nova.moe/deploy-openconnect-ocserv-with-letsencrypt/&quot;&gt;https://nova.moe/deploy-openconnect-ocserv-with-letsencrypt/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;content&quot;&gt;
-                
-
-&lt;h2 id=&quot;anyconnect-和-openconnect&quot;&gt;AnyConnect 和 OpenConnect&lt;a href=&quot;#anyconnect-和-openconnect&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;本文于 2019-02-21 更新，修改了关于申请 SSL 证书的章节。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Wikipedia 上描述 OpenConnect 如下：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;OpenConnect is an open-source software application for connecting to virtual private networks (VPN), which implement secure point-to-point connections.&lt;/p&gt;
-
-&lt;p&gt;It was originally written as an open-source replacement for Cisco’s proprietary AnyConnect SSL VPN client,[2] which is supported by several Cisco routers. As of 2013, the OpenConnect project also offers an AnyConnect-compatible server,[3] and thus offers a full client-server VPN solution.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;可以简要地看出，OpenConnect 原本是由于 AnyConnect 有只能运行在 Cisco 设备上限制而开发出来的一个多系统支持的开源 VPN 实现方式，属于 SSL VPN，需要一个有效的 SSL 证书。&lt;/p&gt;
-
-&lt;p&gt;本文实行简单粗暴的原则，记录了一个 Ubuntu 服务器最小化搭建 ocserv（OpenConnect 服务端） 服务的过程，所以：不使用证书登录验证（使用用户名 + 密码组合），SSL 使用 Let’s Encrypt（而非网上许多文章所介绍的自签发）。&lt;/p&gt;
-
-&lt;h2 id=&quot;why-openconnect&quot;&gt;Why OpenConnect&lt;a href=&quot;#why-openconnect&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;可能有些小伙伴看到本文长度会问了，为什么要搞这么复杂？直接 ss-server 或者 OpenVPN 一键脚本安装不好么？&lt;/p&gt;
-
-&lt;p&gt;原因有三：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;我们需要的是安全内网访问，不是快速地绕过防火墙… 而且后期需要加入证书认证&lt;/li&gt;
-&lt;li&gt;OpenVPN 协议特征过于明显，虽然 AnyConnect 协议特征也十分明显，但是由于目前只有一些大厂在用，一般而言直接拨位与海外的 VPN 网关不容易受到干扰或受到的干扰较小&lt;/li&gt;
-&lt;li&gt;对于例如 iOS/BlackBerry BBOS 系统而言，一般自带 AnyConnect 连接工具&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;本例中：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;一台全新的 Ubuntu 18.04 LTS（主要是考虑到 80 端口未被占用，给后文中获取 SSL 证书的方法提供可能）&lt;/li&gt;
-&lt;li&gt;域名为：vpn.example.com，并且已经做好了解析到服务器 IP&lt;/li&gt;
-&lt;li&gt;服务器 IP 为：1.2.3.4&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;2018-09-12 更新：如果 80 端口被占用了可以考虑使用 DNS Challenge 的方法获取 Let’s Encrypt 证书，相关步骤可以参考 &lt;a href=&quot;/host-static-website-with-google-storage-and-google-cdn/&quot;&gt;《使用 Google Cloud Platform 的 Storage 托管静态站点并通过 Google CDN 加速》&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;安装-ocserv-准备系统&quot;&gt;安装 ocserv &amp;amp; 准备系统&lt;a href=&quot;#安装-ocserv-准备系统&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;网上许多方法都是通过手动编译源代码包的方式安装，然而现在至少对于 Debian 系的系统来说已经有了编译好的软件包了，详情见 &lt;a href=&quot;https://ocserv.gitlab.io/www/packages.html&quot;&gt;Distribution Status&lt;/a&gt;，对于 Debian 系服务器来说（比如本例的 Ubuntu）直接一条指令即可（非常感谢维护这个包的：Aron Xu，Liang Guo 和 Mike Miller）：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;$ sudo apt install ocserv -y&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;之后我们需要打开系统的转发功能，在 &lt;code&gt;/etc/sysctl.conf&lt;/code&gt; 中加入如下行：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;net.ipv4.ip_forward=1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;通过&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;$ sysctl -p&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;保存。&lt;/p&gt;
-
-&lt;p&gt;打开 NAT 功能：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# iptables -t nat -A POSTROUTING -j MASQUERADE&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;h2 id=&quot;配置-let-s-encrypt-证书&quot;&gt;配置 Let’s Encrypt 证书&lt;a href=&quot;#配置-let-s-encrypt-证书&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;ocserv&lt;/code&gt; 需要 SSL 证书（用来加密连接流量，保证连接安全，放心，这一步不复杂），网上许多教程中使用的是自签发证书，方法复杂且容易被 MITM 攻击，好在现在有 Let’s Encrypt 可以免费为自己域名添加证书，本例中使用 &lt;code&gt;certbot&lt;/code&gt; 来获取一个 Let’s Encrypt 证书。&lt;/p&gt;
-
-&lt;p&gt;下载&lt;code&gt;certbot&lt;/code&gt;，方法很多，在本例中为：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;$ sudo apt-get update
-$ sudo apt-get install software-properties-common
-$ sudo add-apt-repository ppa:certbot/certbot
-$ sudo apt-get update
-$ sudo apt-get install certbot&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;其他系统请参考 &lt;a href=&quot;https://certbot.eff.org&quot;&gt;Certbot 官方网站&lt;/a&gt;。&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;这一步比较 Tricky，请仔细阅读：&lt;strong&gt;certbot 获取 SSL 证书有多种方式，例如它可以在你机器上起一个临时的网页服务器，并且让自己的 Authority 来尝试连接临时服务器用来确认你机器的所有权，也可以通过 DNS 设置 TXT 记录的方式来验证，以下方式使用的是开一个临时服务器的方式来获取，如果希望通过 DNS 修改 TXT 记录的方式获取，请参考&lt;a href=&quot;/host-static-website-with-google-storage-and-google-cdn/&quot;&gt;《使用 Google Cloud Platform 的 Storage 托管静态站点并通过 Google CDN 加速》&lt;/a&gt;一文中的“获取 SSL 证书章节”。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;此外，有热心读者指出：ocserv 程序在安装后会使用 443 端口导致开启临时网页服务器的时候失败，读者给出的建议如下：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;在进行 &lt;code&gt;certbot&lt;/code&gt; 获取证书之前，先以管理员权限修改 &lt;code&gt;/lib/systemd/system/ocserv.socket&lt;/code&gt; 配置文件，将其中的两个443端口号修改为其他未被占用的端口号后，再运行  &lt;code&gt;certbot&lt;/code&gt;  即可，这样做的好处是，可以利用  &lt;code&gt;certbot&lt;/code&gt;  的自动证书续期功能。&lt;/p&gt;
-
-&lt;p&gt;另外，&lt;code&gt;/lib/systemd/system/ocserv.socket&lt;/code&gt; 中指定的端口号无需与  &lt;code&gt;/etc/ocserv/ocserv.conf&lt;/code&gt; 中的端口号保持一致。在使用 OpenConnect 或者 AnyConnect 客户端时，使用在 &lt;code&gt;/lib/systemd/system/ocserv.socket&lt;/code&gt; 中指定的端口号即可。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;非常感谢这位读者的邮件，欢迎大家在测试的时候进行尝试~&lt;/p&gt;
-
-&lt;hr&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;$ certbot certonly&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;会看到：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Saving debug log to /var/log/letsencrypt/letsencrypt.log
-
-How would you like to authenticate with the ACME CA?
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-1: Spin up a temporary webserver (standalone)
-2: Place files in webroot directory (webroot)
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Select the appropriate number [1-2] then [enter] (press &#39;c&#39; to cancel):
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;由于我们仅仅是想要一个证书，这里选择 1，让 &lt;code&gt;certbot&lt;/code&gt; 来搞定证书获取的过程，之后输入自己的域名，比如本例中的 &lt;code&gt;vpn.example.com&lt;/code&gt; ，稍等片刻应该可以看到类似如下的输出（记住证书存放的地址，后面会用到）：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;IMPORTANT NOTES:
- - Congratulations! Your certificate and chain have been saved at:
-   /etc/letsencrypt/live/vpn.example.com/fullchain.pem
-   Your key file has been saved at:
-   /etc/letsencrypt/live/vpn.example.com/privkey.pem
-   Your cert will expire on 2018-11-11. To obtain a new or tweaked
-   version of this certificate in the future, simply run certbot
-   again. To non-interactively renew *all* of your certificates, run
-   &quot;certbot renew&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;配置-ocserv&quot;&gt;配置 ocserv&lt;a href=&quot;#配置-ocserv&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;默认安装好后在&lt;code&gt;/etc/ocserv/&lt;/code&gt;下有一个很长的配置文件&lt;code&gt;ocserv.conf&lt;/code&gt;，着重注意以下配置字段：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# 登录方式，使用用户名密码登录，密码文件稍后生成
-auth = &quot;plain[/etc/ocserv/ocpasswd]&quot;
-
-# 允许同时连接的客户端数量
-max-clients = 4
-
-# 限制同一客户端的并行登陆数量
-max-same-clients = 2
-
-# 服务监听的 TCP/UDP 端口（默认为 443）
-tcp-port = 443
-udp-port = 443
-
-# 自动优化 MTU，尝试改善网络性能
-try-mtu-discovery = true
-
-# 服务器证书与密钥，就是上一步中生成的证书和私钥的位置
-server-cert = /etc/letsencrypt/live/vpn.example.com/fullchain.pem
-server-key = /etc/letsencrypt/live/vpn.example.com/privkey.pem
-
-# 服务器域名
-default-domain = vpn.example.com
-
-# 客户端连上 vpn 后使用的 DNS，这里使用 Cloudflare 的 1.1.1.1
-dns = 1.1.1.1
-
-# 注释掉所有的 route 和 no-route，让服务器成为 gateway
-#route = 192.168.1.0/255.255.255.0
-#no-route = 192.168.5.0/255.255.255.0
-
-# 启用 Cisco 客户端兼容性支持
-cisco-client-compat = true
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;由于使用用户名密码登录，我们需要生成一个密码文件，指令如下：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;$ ocpasswd -c /etc/ocserv/ocpasswd &amp;lt;用户名&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;此时会要求你输入两边密码，如果需要再添加用户只需重复上述指令即可。&lt;/p&gt;
-
-&lt;p&gt;配置好后启动 VPN：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;$ ocserv -c /etc/ocserv.conf&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;确认已经开启：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;root@vpn:/etc/ocserv# netstat -tulpn &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; grep &lt;span class=&quot;m&quot;&gt;443&lt;/span&gt;
-tcp        &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;.0.0.0:443             &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;.0.0.0:*               LISTEN      &lt;span class=&quot;m&quot;&gt;1987&lt;/span&gt;/ocserv
-tcp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; :::443                  :::*                    LISTEN      &lt;span class=&quot;m&quot;&gt;1987&lt;/span&gt;/ocserv
-udp        &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;.0.0.0:443             &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;.0.0.0:*                           &lt;span class=&quot;m&quot;&gt;1987&lt;/span&gt;/ocserv
-udp6       &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;      &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; :::443                  :::*                                &lt;span class=&quot;m&quot;&gt;1987&lt;/span&gt;/ocserv&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;h2 id=&quot;connecting-through-vpn&quot;&gt;Connecting Through VPN&lt;a href=&quot;#connecting-through-vpn&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;配置好 VPN 后让自己的所有服务器全部拨上 VPN：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# openconnect https://vpn.example.com/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;对于个人用户访问，这里以黑莓 Passport 为例（请无视那个现在并不存在企业名称），截图如下：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://nova-moe-blog-assets.webp.se/pics/openconnect/username.png&quot; alt&gt;
-&lt;img src=&quot;https://nova-moe-blog-assets.webp.se/pics/openconnect/banner.png&quot; alt&gt;&lt;/p&gt;
-
-&lt;p&gt;拨通后可以看到自己的内网 IP ：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://nova-moe-blog-assets.webp.se/pics/openconnect/address.png&quot; alt&gt;&lt;/p&gt;
-
-&lt;p&gt;然后，开始在 VPN 的保护下畅游自己的大内网吧～&lt;/p&gt;
-
-&lt;h2 id=&quot;off-topic&quot;&gt;Off-Topic&lt;a href=&quot;#off-topic&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;如果直接用浏览器去访问 VPN 网关（比如本例中：&lt;a href=&quot;https://vpn.example.com&quot;&gt;https://vpn.example.com&lt;/a&gt;）的话，返回的是如下 HTML 内容：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;chroma&quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;config-auth&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;vpn&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;auth-request&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;who&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;0.1(1)&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;auth&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;main&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;Please enter your username.&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/auth&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;username&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Username:&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;auth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;config-auth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;button class=&quot;highlight-copy-btn&quot;&gt;Copy&lt;/button&gt;&lt;/div&gt;
-&lt;p&gt;此外如果开启了 &lt;code&gt;ocserv&lt;/code&gt; 之后在  &lt;code&gt;sudo&lt;/code&gt;  的时候卡住并提示：”sudo: unable to resolve host vpn: Resource temporarily unavailable” 的话，着重关注一下自己的&lt;code&gt;/etc/hosts&lt;/code&gt;文件中是否包含一行：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;127.0.0.1    localhost
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;参考连接&quot;&gt;参考连接&lt;a href=&quot;#参考连接&quot; class=&quot;anchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3&quot;/&gt;&lt;line x1=&quot;8&quot; y1=&quot;12&quot; x2=&quot;16&quot; y2=&quot;12&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.logcg.com/archives/1343.html&quot;&gt;使用 ocserv 搭建 Cisco Anyconnect 服务器&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.vultr.com/docs/setup-openconnect-vpn-server-for-cisco-anyconnect-on-ubuntu-14-04-x64&quot;&gt;Setup OpenConnect VPN Server for Cisco AnyConnect on Ubuntu 14.04 x64&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code&gt;        &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</summary>
-    
-    
-    
-    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    
-    <category term="vpn" scheme="https://ednovas.xyz/tags/vpn/"/>
-    
-    <category term="ocserv" scheme="https://ednovas.xyz/tags/ocserv/"/>
-    
-    <category term="openconnect" scheme="https://ednovas.xyz/tags/openconnect/"/>
     
   </entry>
   

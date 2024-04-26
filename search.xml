@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Server Gigabit Network</title>
+      <link href="2024/04/25/gigabit/"/>
+      <url>2024/04/25/gigabit/</url>
+      
+        <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。</p><p><img src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/gigabit1.png"></p><p>Server Gigabit VPS默认是100M共享带宽，不限制流量使用，低延迟，架构(VIRTUAL TYPE)：KVM分为Linux VPS和Windows VPS两种，其中Linux VPS月付$11.59起，套餐整理如下：</p><h2 id="Linux-VPS-Hosting"><a href="#Linux-VPS-Hosting" class="headerlink" title="Linux VPS Hosting"></a>Linux VPS Hosting</h2><table><thead><tr><th align="left">内存</th><th align="left">CPU</th><th align="left">SSD</th><th align="left">价格</th><th align="left">购买</th></tr></thead><tbody><tr><td align="left">1G</td><td align="left">1核</td><td align="left">20G</td><td align="left">$11.59/月</td><td align="left"><a href="https://billing.servergigabit.com/cart.php?a=add&pid=1">链接</a></td></tr><tr><td align="left">2G</td><td align="left">2核</td><td align="left">40G</td><td align="left">$16.59/月</td><td align="left"><a href="https://billing.servergigabit.com/cart.php?a=add&pid=19">链接</a></td></tr><tr><td align="left">4G</td><td align="left">4核</td><td align="left">80G</td><td align="left">$34.59/月</td><td align="left"><a href="https://billing.servergigabit.com/cart.php?a=add&pid=21">链接</a></td></tr><tr><td align="left">8G</td><td align="left">8核</td><td align="left">160G</td><td align="left">$70.59/月</td><td align="left"><a href="https://billing.servergigabit.com/cart.php?a=add&pid=25">链接</a></td></tr><tr><td align="left">16G</td><td align="left">14核</td><td align="left">200G</td><td align="left">$134.59/月</td><td align="left"><a href="https://billing.servergigabit.com/cart.php?a=add&pid=27">链接</a></td></tr></tbody></table><h2 id="Windows-VPS-Hosting"><a href="#Windows-VPS-Hosting" class="headerlink" title="Windows VPS Hosting"></a>Windows VPS Hosting</h2><table><thead><tr><th align="left">内存</th><th align="left">CPU</th><th align="left">SSD</th><th align="left">价格</th><th align="left">购买</th></tr></thead><tbody><tr><td align="left">1G</td><td align="left">1核</td><td align="left">20G</td><td align="left">$9.59/月</td><td align="left"><a href="https://billing.servergigabit.com/cart.php?a=add&pid=2">链接</a></td></tr><tr><td align="left">2G</td><td align="left">2核</td><td align="left">40G</td><td align="left">$20.59/月</td><td align="left"><a href="https://billing.servergigabit.com/cart.php?a=add&pid=12">链接</a></td></tr><tr><td align="left">3G</td><td align="left">3核</td><td align="left">80G</td><td align="left">$31.59/月</td><td align="left"><a href="https://billing.servergigabit.com/cart.php?a=add&pid=13">链接</a></td></tr><tr><td align="left">4G</td><td align="left">4核</td><td align="left">100G</td><td align="left">$42.59/月</td><td align="left"><a href="https://billing.servergigabit.com/cart.php?a=add&pid=14">链接</a></td></tr><tr><td align="left">8G</td><td align="left">8核</td><td align="left">180G</td><td align="left">$86.59/月</td><td align="left"><a href="https://billing.servergigabit.com/cart.php?a=add&pid=18">链接</a></td></tr></tbody></table><h2 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h2><p><a href="https://www.servergigabit.com/">https://www.servergigabit.com</a></p><h2 id="优惠码"><a href="#优惠码" class="headerlink" title="优惠码"></a>优惠码</h2><p><code>SGVPS10</code></p><h2 id="测试IP"><a href="#测试IP" class="headerlink" title="测试IP"></a>测试IP</h2><p><code>103.212.70.1</code><br><code>103.175.16.1</code></p><h1 id="Server-Gigabit-马来西亚机房"><a href="#Server-Gigabit-马来西亚机房" class="headerlink" title="Server Gigabit 马来西亚机房"></a>Server Gigabit 马来西亚机房</h1><p><img src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/gigabit2.jpg"></p><p><img src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/gigabit3.jpg"></p><p><img src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/gigabit4.jpg"></p><p><img src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/gigabit5.jpg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> VPS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VPS </tag>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Blend Hosting VPS</title>
       <link href="2023/12/14/blendhosting/"/>
       <url>2023/12/14/blendhosting/</url>
