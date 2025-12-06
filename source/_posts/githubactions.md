@@ -5,7 +5,7 @@ id: '1247'
 categories:
   - - VPS
 date: 2021-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-03 11:32:45
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/442-github-actions.png
 # highlight_shrink: true
 ---

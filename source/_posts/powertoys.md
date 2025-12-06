@@ -5,7 +5,7 @@ id: '1141'
 categories:
   - - 软件
 date: 2021-01-14 06:28:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/powertoys_2019.0.webp
 ---
 
@@ -21,7 +21,7 @@ https://github.com/microsoft/PowerToys/releases
 
 蓝奏云分流（版本0.29.3）：
 
-https://ednovas.lanzous.com/icWi4kdgluf
+https://ednovas.lanzoux.com/icWi4kdgluf
 
 下载安装即可。
 
@@ -98,3 +98,21 @@ Windows 10版PowerToys包含以下工具程序：
 Topbook youtube演示视频：
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/frRSH4VlQCc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## 加入插件
+
+> 感谢revenge提醒,软件还可加入everything和浏览器搜索插件让他变得更强大
+
+浏览器关键词搜索GitHub地址: https://github.com/masi456/PowerToys
+
+内置everything本地搜索神器GitHub地址: https://github.com/IzaiahSun/PowerToys
+
+releases界面可以直接下载已经内置版本,或者可以手动安装
+
+下载 https://onecloud.ednovas.xyz/s/zYCK
+
+放在/modules/launcher/Plugins里面
+
+![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210620170001.jpg)
+
+![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210620170047.png)

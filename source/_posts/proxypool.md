@@ -7,7 +7,7 @@ categories:
   - - VPS
   - - 建站
 date: 2021-01-27 17:30:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://api.ixiaowai.cn/gqapi/gqapi.php
 #highlight_shrink: true
 ---

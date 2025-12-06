@@ -5,7 +5,7 @@ id: '1227'
 categories:
   - - 软件
 date: 2021-04-03 21:13:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/soutushenqi.jpg
 # highlight_shrink: true
 ---
@@ -42,6 +42,6 @@ http://soutushenqi.com/
 
 ## 手机破解版下载
 
-4.3.0版本：https://ednovas.lanzous.com/irNAmnmoq3i
+4.3.0版本：https://ednovas.lanzoux.com/irNAmnmoq3i
 
-如果失效用4.1.1版本：https://ednovas.lanzous.com/iiIJZnmoq6b
+如果失效用4.1.1版本：https://ednovas.lanzoux.com/iiIJZnmoq6b

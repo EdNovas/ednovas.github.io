@@ -5,13 +5,13 @@ id: '558'
 categories:
   - - 科学上网
 date: 2020-12-19 20:39:50
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/0_eGqjLXySHxjnu5a5.webp
 ---
 
 ## 软件购买
 
-Shadowrocket需要iOS外区商店自行购买或者找[EdNovas](http://wpa.qq.com/msgrd?v=3&uin=180099495&site=qq&menu=yes)免费获取ios共享账号下载shadowrocket
+Shadowrocket需要iOS外区商店自行购买： [http://shop.owo233.xyz](http://shop.owo233.xyz)
 
 ## 订阅链接
 

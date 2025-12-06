@@ -6,7 +6,7 @@ categories:
   - - 软件
   - - 安全
 date: 2021-01-18 10:45:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210118104709.webp
 #highlight_shrink: true
 ---
@@ -135,7 +135,7 @@ https://flymc.cc/2020/03/17/HuorongRules/
 
 其中我自己用的三个规则下载地址：
 
-https://ednovas.lanzous.com/ix7n1kiz3ab
+https://ednovas.lanzoux.com/ix7n1kiz3ab
 
 其中的1.json是我自己写的，能包含主要保护浏览器的历史记录访问，以及保存的本地ssh密钥，xshell的密钥访问。
 

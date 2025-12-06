@@ -5,8 +5,10 @@ id: '1240'
 categories:
   - - 建站
 date: 2021-04-27 10:17:45
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/wordpress-backup00.png
+#top: 2
+sticky: 1
 # highlight_shrink: true
 ---
 
@@ -375,3 +377,30 @@ wordpress最强大的就是他的插件功能
 https://wordpress.ednovas.xyz/
 
 现在访问博客网址就可以看到你的内容了
+
+## 一键脚本
+
+发现wordpress还有一键安装脚本
+
+```
+# 先安装curl, CentOS
+yum install -y curl
+# Ubuntu安装curl
+apt update && apt install -y curl
+# 运行WordPress一键脚本
+bash <(curl -sL https://2i.gs/7uFN)
+```
+
+或
+
+```
+bash <(curl -sL https://s.hijk.art/wordpress.sh)
+```
+
+或
+
+```
+bash <(curl -sL https://raw.githubusercontent.com/hijkpw/scripts/master/wordpress.sh)
+```
+
+> https://tlanyan.me/wordpress-one-click-script/

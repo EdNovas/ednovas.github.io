@@ -5,7 +5,7 @@ id: '1192'
 categories:
   - - 杂
 date: 2021-02-04 09:52:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1534469249266361.jpg
 #highlight_shrink: true
 ---

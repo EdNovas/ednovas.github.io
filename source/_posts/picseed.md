@@ -5,7 +5,7 @@ id: '1194'
 categories:
   - - 软件
 date: 2021-02-04 18:06:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/hidden_logo.png
 highlight_shrink: true
 ---
@@ -109,7 +109,7 @@ http://downloads.sourceforge.net/project/wxmedit/3.1/wxMEdit-3.1-win32-bin.7z
 
 蓝奏云分流（版本3.1）：
 
-https://ednovas.lanzous.com/iOmHUlbb2fa
+https://ednovas.lanzoux.com/iOmHUlbb2fa
 
 #### 复制黏贴另存为
 
@@ -129,9 +129,7 @@ https://ednovas.lanzous.com/iOmHUlbb2fa
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-04_19-35-21.webp)
 
-最终效果如下，可以下载该图片然后修改后缀名为 `.zip` 并解压，里面有些好东西（猥琐的笑
-
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/picseed.png)
+最终效果如下，可以下载该图片然后修改后缀名为 `.zip` 并解压
 
 ### 方法二：bat copy
 

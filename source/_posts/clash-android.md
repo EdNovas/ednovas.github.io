@@ -5,7 +5,7 @@ id: '140'
 categories:
   - - 科学上网
 date: 2020-11-29 13:47:28
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp
 ---
 
@@ -34,7 +34,6 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a106
 ## 下载安装
 1.  下载安装Clash for Android
     *   [谷歌应用商店下载连接](https://play.google.com/store/apps/details?id=com.github.kr328.clash)
-    *   [蓝奏云下载连接](https://ednovas.lanzous.com/b00zze9dc)
 2.  打开Profiles
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_21-28-49.webp)

@@ -6,7 +6,7 @@ categories:
   - - 下载
   - - 软件
 date: 2021-01-27 19:14:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1116506071,4272746750&fm=26&gp=0.jpg
 #highlight_shrink: true
 ---
@@ -59,7 +59,7 @@ cover: https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1116506071,4272
 
     GitHub下载地址：https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases
 
-    蓝奏云分流 4.3.3.10 版本：https://ednovas.lanzous.com/i8SX7l8ufze
+    蓝奏云分流 4.3.3.10 版本：https://ednovas.lanzoux.com/i8SX7l8ufze
 
     [qB 添加 tracker 方法](##qB添加tracker方法)
 

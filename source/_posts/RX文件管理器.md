@@ -5,7 +5,7 @@ id: '1168'
 categories:
   - - 软件
 date: 2021-01-23 17:23:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/apps.7863.14049445347502045.2d3a62ea-b886-4fa5-8985-d3cf43c99523.png
 #highlight_shrink: true
 ---

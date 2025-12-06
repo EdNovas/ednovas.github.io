@@ -6,9 +6,11 @@ tags:
 categories:
   - 杂
 date: 2021-05-13 18:06:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/google-voice-1000x530.png
 ---
+
+> bot已失效!
 
 注意：如果您有谷歌多账号，为了避免切换出错，建议在浏览器无痕模式操作
 
@@ -52,7 +54,8 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/google-voice-1
 
 ```
 function autoReplier() {
-var labelObj = GmailApp.getUserLabelByName('autoReply'); //这里面的autoReply就是我们上面设置的归档名字。
+var labelObj = GmailApp.getUserLabelByName('autoReply'); 
+//这里面的autoReply就是我们上面设置的归档名字。
 var gmailThreads;
 var messages;
 var sender;
@@ -63,7 +66,8 @@ for (var gg = 0; gg < labelObj.getUnreadCount(); gg++) {
     for (var ii = 0; ii < messages.length; ii++) {
         if (messages[ii].isUnread()) {
             sender = messages[ii].getFrom();
-            MailApp.sendEmail(sender, 'Auto Reply', "Hello,Peace~");//回复邮件，为避免出错，回复内容请设置英文
+            MailApp.sendEmail(sender, 'Auto Reply', "Hello,Peace~");
+            //回复邮件，为避免出错，回复内容请设置英文
             messages[ii].markRead(); //标记为已读
             messages[ii].moveToTrash();//删除邮件
         }
@@ -92,6 +96,8 @@ http://web.archive.org/web/20210228065959/https://iiii.im/746
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/74d5e58ab5d1ec2834649ff021bb6bed.jpeg)
 
 按下图所示新增触发条件，您可以选择分钟定时器或者其他的定时器，点击【保存】。
+
+选择分钟计时器，间隔为每分钟（每分钟=1分钟之内执行一次脚本。长期保号建议设置为每小时。因为太频繁脚本容易罢工）
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3f55d58fb5bd5ca5cb8bf6ab36d38a7b.jpg)
 
@@ -126,7 +132,8 @@ GV保号机器人是每月1日自动发送信息到您的GV号，您也可以如
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/2cadf48acbbe5b29929681d952af1bca.jpg)
 
 本教程鸣谢：  
-1、GV保号机器人：https://t.me/gvkeep_bot
+1、GV保号机器人：
+https://t.me/gvkeep_bot
 
 2、本教程在以下网址教程基础上完善：  
 https://web.archive.org/web/20210228065959/https://iiii.im/746

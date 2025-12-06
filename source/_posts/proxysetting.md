@@ -9,7 +9,7 @@ tags:
 categories:
   - 科学上网
 date: 2021-05-11 17:40:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1000x500 _proxy icon.png
 ---
 

@@ -5,7 +5,7 @@ id: '1162'
 categories:
   - - 科学上网
 date: 2021-01-21 20:23:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/hack-like-pro-windows-cmd-remote-commands-for-aspiring-hacker-part-1.1280x600.jpg
 #highlight_shrink: true
 ---

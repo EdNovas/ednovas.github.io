@@ -5,60 +5,114 @@ id: '376'
 categories:
   - - 科学上网
 date: 2020-12-18 17:15:12
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp
 password: 123
 message: 密码请私聊EdNovas
-#sticky: 1
+#top: 5
+# sticky: 6
 ---
 
-> 最后编辑自 Ednovas 2021.05.06
+> 最后编辑自 Ednovas 2021.10.07
 
 ### [Clash电脑端使用方法参阅](/2020/11/29/clash-windows/)
 ### [Clash安卓端使用方法参阅](/2020/11/29/clash-android/)
 ### [非Clash客户端订阅链接转换点这里](/2020/12/20/订阅链接转换/)
-### 购买机场之前请先参阅[机场购买指南](/2020/12/31/机场/)
 ### 机场注册链接放在这里，只是为了觉得用的舒服，方便购买用的，不是必须注册。
-### 如果有失效或者不能用的订阅链接，请加入QQ群组`485315787`反馈或telegram联系[EdNovas](https://t.me/EdNovas)，感谢
-### 由于博客缓存时间超长（最长可达数月），因此请经常刷新此页面，否则可能无法同步更新获取最新免费订阅
 
 # 请合理合法使用，请勿发表任何不法言论或参与任何违反犯罪行为！
 
-# 再发现谁TM用这个上法轮功网站，把你骨灰扬了，并永久停止免费分享
+# 再发现谁用这个上法轮功网站，永久停止免费分享，机场面板有审计规则能看到谁违反的，以及使用的ip地址
 
 ## 也请卸载`360为首等国内电脑管家`软件，他们会记录并且上传本地代理记录
 
-***
+## 节点主要用于科研方面，大部分用于维基百科和谷歌学术用途的。还请不要二次分享
 
-### 欢迎使用EdNovas自己的机场 https://ednovas.me/ 物美价廉，无限流量，无限时长（严禁分享及滥用）
-
-<a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210405210546.png"></a>
+## 想要共享你的订阅链接的，TG联系 [@ednovas](https://t.me/ednovas)
 
 ***
 
-**2021.05.13到期，1T流量**
-机场注册链接：https://xgr1.xyz/auth/register?code=TGGx
-Clash订阅链接：
+### 欢迎使用EdNovas自己的机场 https://ednovas.me 物美价廉（严禁分享及滥用）
+
+<a href="https://ednovas.me" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png"></a>
+
+***
+
+此页面可能不再经常更新，可以关注白嫖频道（经常更新）：
+
+https://t.me/ednovasfree
+
+***
+
+感谢 @JohnBen520 的贡献！
+
 ```
-https://xgr1.xyz/link/W7Pk1LLeaR7NuHoY?clash=1
+https://dllx.tk/GreenFishYYDS-Clash
+```
+
+```
+https://v1.mk/90Jw1cc
+```
+
+```
+https://v1.mk/pLi5iuV
 ```
 
 ***
 
-**2021.06.07到期，30G流量**
-加tg群 https://t.me/didiyun 白嫖月付套餐
+**2022/01/07到期，357G**
+Clash订阅：
+
+```
+https://www.sufeiyunjiedian.xyz/link/eu91NcXW45hjxNoM?sub=3
+```
+
+***
+
+V2ray订阅：
+```
+https://cn.xhhv2.com/link/yAAI050WWZotq4zb?sub=3&extend=1
+```
+
+***
+
+Clash订阅：
+```
+https://subsc.ednovas.xyz/sub?target=clash&url=https%3A%2F%2Fbiteb.club%2Flink%2F8I0OzitnNrAoGWio%3Fclash%3D1&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
+```
+
+***
+
+**10240G流量**
+https://t.me/zhihuanlegu
+Clash订阅：
+```
+https://zhizhi.bike/api/v1/client/subscribe?token=136fb17552e76mr7ac372086ec15bcdf&flag=clash
+```
+
+
+***
+
+**免流订阅 2022.04.22到期，无限流量**
+
+机场注册链接：https://dash.fartrans.xyz/link/FpeW2ftK4ASbQLNW?sub=3
+
+**免流说明**
+https://pwnote.ednovas.xyz/mxka7?view
+
 V2ray订阅链接：
 ```
-https://pro.didiyun.xyz/s/dW9y4rNo
+https://dash.fartrans.xyz/link/FpeW2ftK4ASbQLNW?sub=3
 ```
 
 ***
 
-**2021.05.28到期，100G流量**
-机场注册链接：https://fr33vpn.xyz/#/register?code=8l5y13Zm
+**500G流量**
+### 注册免费送50G/30天
+机场注册链接：https://antlink.cc/#/register?code=Wa3WBPHC
 Clash订阅链接：
 ```
-https://fr33vpn.xyz/api/v1/client/subscribe?token=55792d6f9ff8165d9cb33a6fca677f91
+https://newsub.antlink.xyz/api/v1/client/subscribe?token=a9542d44ab8612c8b3445d4e2e777d41
 ```
 
 ***
@@ -70,96 +124,9 @@ Clash订阅链接：
 https://leadingto.top/api/v1/client/subscribe?token=d91774daff2b4cb8d5b6df3fc4927728
 ```
 
-***
-
-**2021.05.31到期，250G流量**
-机场注册链接：https://www.kapok.cloud/auth/register?code=o8CW
-Clash订阅链接：
-```
-https://www.kapok.cloud/link/FIIv7sSm6WQsVL1W?clash=1
-```
-
-***
-
-**感谢 @CitizenScyu 贡献的订阅**
-Clash订阅链接：
-```
-https://foly.ga/link/Um0qxVPmmCZftwoh?clash=1&extend=1
-```
-
-```
-https://fr33vpn.xyz/api/v1/client/subscribe?token=66e310663de4b2b56bfe8640e13b2b56
-```
-
-```
-https://hp-subs.ton7.cn/api/v1/client/subscribe?token=7352fb85a620703090b21e98c2e1e120
-```
-
-```
-https://subcon.dlj.tf/sub?target=clash&new_name=true&url=https%3A%2F%2Ffanfanyun2.club%2Flink%2FSoz7UOklTGlZhc04%3Fsub%3D3&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
-```
-
-***
-
-**500G流量**
-**注册免费送50G/30天**
-机场注册链接：https://antlink.cc/#/register?code=Wa3WBPHC
-Clash订阅链接：
-```
-https://newsub.antlink.xyz/api/v1/client/subscribe?token=a9542d44ab8612c8b3445d4e2e777d41
-```
-
-***
-
-**免流订阅，不会用请勿占用别人需要使用的！！！2022.04.22到期，无限流量，免流订阅，不会用请勿占用别人需要使用的！！！**
-机场注册链接：https://fartrans.xyz/auth/register?code=fEZw
-
-**免流说明（不会或者看不懂说明的还请使用别的订阅）：**
-https://pwnote.ednovas.xyz/mxka7?view
-
-V2ray订阅链接：
-```
-https://fartrans.xyz/link/FpeW2ftK4ASbQLNW?sub=3
-```
-
-
-***
-
-**感谢Devin Bruce贡献！2021.07.13到期**
-Clash订阅链接：
-```
-https://www.mgnb.jp/api/v1/client/subscribe?token=9e5f94e3fb5e27e4ce102647ef8e68da
-```
-
-***
 
 
 
-**2021.08.14到期，每月100G流量**
-机场注册链接：https://fr33vpn.xyz/#/register?code=Z9s6LDNt
-Clash订阅链接：
-```
-https://fr33vpn.xyz/api/v1/client/subscribe?token=81e9ae0fda3b5fb35cadd9d06865a5f9
-```
-
-***
-
-**2T流量**
-机场注册链接：https://ninihao.me/auth/register?code=MPZ5
-Clash订阅链接：
-```
-https://cloud.xiaobaiyunddns.xyz/link/FChOhUdCHe6VlEq2?clash=1
-```
-
-
-***
-
-**2021.12.03到期每月5GB，youtube 6w+（注册每月白嫖5GB）**  
-机场注册链接：https://www.cni.lol/#/register?code=2MmIlKVQ
-Clash订阅链接：
-```
-https://v2ky.com/api/v1/client/subscribe?token=a95a7c6949d8b3c3ecba0bad8a1cbe94
-```
 
 ***
 
@@ -174,9 +141,9 @@ https://v2ky.com/api/v1/client/subscribe?token=a95a7c6949d8b3c3ecba0bad8a1cbe94
 ***
 
 
-## 欢迎使用EdNovas自己的机场 https://ednovas.me/ 物美价廉，无限流量，无限时长（严禁分享及滥用）
+### 欢迎使用EdNovas自己的机场 https://ednovas.me 物美价廉（严禁分享及滥用）~~
 
-<a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210405210546.png"><center>
+<a href="https://ednovas.me" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png">
 
 ***
 
@@ -247,9 +214,6 @@ https://nekoneko.cloud/subscribe_clash/a166b770-4e6c-11eb-ba41-81d01f6df39d~~
 Clash订阅链接：
 https://yueer.pw/link/kvkx4W7qOzyvfkad?clash=2~~
 
-~~**未知到期时间，无限流量**
-Clash yml文件下载（txt后缀文件和yml一样使用方法）：
-https://ednovas.lanzous.com/iaGfuluyl9a~~
 
 ~~**2021.02.17到期，200G流量youtube6w**
 机场注册链接：https://lm.lanmei.fun/auth/register?code=zhEx
@@ -288,9 +252,6 @@ https://c7p8yhbgnknfuqw.atcskylink.cloud/api/v1/client/subscribe?token=706169bfa
 Clash订阅链接：
 https://v2ky.com/api/v1/client/subscribe?token=a95a7c6949d8b3c3ecba0bad8a1cbe94~~
 
-~~**未知到期日期，未知流量,晚高峰youtube8w速度（超高速了啊）**
-Clash yml文件下载（txt后缀文件和yml一样使用方法）：
-https://ednovas.lanzous.com/ilTYtloy5kj~~
 
 ~~**2022.02.13到期，每月20G流量，youtube 5w+**
 机场注册链接：https://holiport.org/#/register?code=CNlyprju
@@ -372,3 +333,177 @@ https://subcon.dlj.tf/sub?target=clash&new_name=true&url=vmess%3A%2F%2FeyJ2IjoyL
 Clash订阅链接：
 https://subcon.dlj.tf/sub?target=clash&new_name=true&url=https%3A%2F%2Fmb.skiturbo.xyz%2Flink%2FXzs5gZh61Woso7S2%3Fclash%3D1&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini~~
 
+~~**2021.06.22到期，100G流量**
+机场注册链接：https://www.alcwyy.com/#/register?code=q6RdtJx6
+Clash订阅链接：
+https://www.alcwyy.com/api/v1/client/subscribe?token=a8d5454ef02572e219c59e13cdb8268d~~
+
+
+
+~~**2021.06.19到期，100G流量**
+Clash订阅链接：
+https://www.alcwyy.com/api/v1/client/subscribe?token=dd93cbbe7eaf87e773300216f896c125~~
+
+~~**2021/06/21到期，3072G流量**
+机场注册链接：https://www.cthgo.me/#/register?code=Nzl3xz3u
+Clash订阅链接：
+https://dy.cthgo.me/api/v1/client/subscribe?token=13f6517002c9414838ed3ba61911dfc5~~
+
+
+~~**2021.06.07到期，30G流量**
+加tg群 https://t.me/didiyun 白嫖月付套餐
+V2ray订阅链接：
+https://pro.didiyun.xyz/s/dW9y4rNo~~
+
+~~**2021-06-27到期，300G流量**
+机场注册链接：https://www.jiasuyun.cyou/#/register?code=IZLUya6f
+Clash订阅链接：
+https://www.jiasuyun.cyou/api/v1/client/subscribe?token=97a2e824606db8ff91aec4dc27e02156~~
+
+
+
+~~**2021-06-20到期，500G流量**
+机场注册链接（用这个aff邀请码可以白嫖500G/月）：https://www.badu.icu/auth/register?code=4q0S
+Clash订阅链接：
+https://subcon.dlj.tf/sub?target=clash&new_name=true&url=https%3A%2F%2Fwww.badu.icu%2Flink%2FGRFtbAG3kcoQKonr%3Fsub%3D3%26extend%3D1&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini~~
+
+
+~~**2021.05.28到期，100G流量**
+机场注册链接：https://fr33vpn.xyz/#/register?code=8l5y13Zm
+Clash订阅链接：
+https://fr33vpn.xyz/api/v1/client/subscribe?token=55792d6f9ff8165d9cb33a6fca677f91~~
+
+
+~~**2021.05.31到期，250G流量**
+机场注册链接：https://www.kapok.cloud/auth/register?code=o8CW
+Clash订阅链接：
+https://www.kapok.cloud/link/FIIv7sSm6WQsVL1W?clash=1~~
+
+
+
+
+~~**2021.08.14到期，每月100G流量**
+机场注册链接：https://fr33vpn.xyz/#/register?code=Z9s6LDNt
+Clash订阅链接：
+https://fr33vpn.xyz/api/v1/client/subscribe?token=81e9ae0fda3b5fb35cadd9d06865a5f9~~
+
+
+~~**感谢 @CitizenScyu 贡献的订阅，流量未知，到期时间未知**
+Clash订阅链接：
+
+https://subcon.dlj.tf/sub?target=clash&new_name=true&url=https%3A%2F%2Ffanfanyun2.club%2Flink%2FSoz7UOklTGlZhc04%3Fsub%3D3&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini~~
+
+
+~~https://foly.ga/link/Um0qxVPmmCZftwoh?clash=1&extend=1~~
+
+
+~~https://fr33vpn.xyz/api/v1/client/subscribe?token=66e310663de4b2b56bfe8640e13b2b56~~
+
+
+~~https://hp-subs.ton7.cn/api/v1/client/subscribe?token=7352fb85a620703090b21e98c2e1e120~~
+
+
+~~**2021.06.12到期，1T流量**
+机场注册链接：https://xgr1.xyz/auth/register?code=TGGx
+Clash订阅链接：
+http://xgr2.xyz/link/W7Pk1LLeaR7NuHoY?clash=1~~
+
+
+~~**100G流量**
+机场注册链接: http://scicentre.io/#/register?code=7uEJfmXa
+clash订阅链接:
+https://wrq8888.xyz/api/v1/client/subscribe?token=8db3d7ccca8bf98e533fba08d0744b00~~
+
+
+~~**2021.07.08到期，100G流量**
+机场注册链接：https://www.jiasuyun.cyou/#/register?code=N6jnBpyW
+Clash订阅链接：
+https://www.jiasuyun.cyou/api/v1/client/subscribe?token=97a2e824606db8ff91aec4dc27e02156~~
+
+~~**100G流量**
+Clash订阅链接:
+https://yigedingyue.com/api/v1/client/subscribe?token=53143ed1ed41dab0474a96dc027d3ffb~~
+
+
+~~**2021.08.01到期,100G流量**
+Clash订阅链接:
+https://gayv.gay/api/v1/client/subscribe?token=2e6d2418c7d6f9c55886d0560b4a09de~~
+
+~~**2021.07.09到期，2.2T流量**
+机场注册链接：https://v2.qcppl.team/auth/register?code=lYMW
+Clash订阅链接：
+https://v2.qcppl.team/link/hhGKvtE2wkNrWD5d?clash=1~~
+
+
+~~**感谢Devin Bruce贡献！2021.07.13到期**
+Clash订阅链接：
+https://www.mgnb.jp/api/v1/client/subscribe?token=9e5f94e3fb5e27e4ce102647ef8e68da~~
+
+
+
+~~Clash订阅链接：
+https://subsc.ednovas.xyz/sub?target=clash&url=https%3A%2F%2Fsockboom.me%2Flink%2FGDlzCBhyfJfhSGnl%3Fmu%3D1&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini~~
+
+
+~~**150G流量，不会用免流请勿使用！！！**
+机场注册链接：http://www.52ml.co/#/register?code=hudGuX2g
+最低仅需1.8rmb/月
+Clash订阅链接：
+http://www.52ml.co/api/v1/client/subscribe?token=b7534fa10b98d8766bbe6f1625bbbba5~~
+
+
+
+
+~~**2021.08.26到期，200G流量**
+机场注册链接：https://cloud.bellscloud.com/auth/register?code=2Iin
+使用优惠码 `支持梦歌云` 购买19.9/月的小铃铛套餐即可白嫖200G（月）
+Clash订阅链接：
+https://sub.bellscloud.com/link/ZitnVNDkbcIljQ8L?clash=1~~
+
+
+
+~~**2021.08.25到期，20G流量**
+机场注册链接：https://www.antonywilson.cn/register?code=YUep
+Clash订阅链接：
+https://www.antonywilson.cn/link/yCkbjj4ytfntfi1k?sub=windows~~
+
+
+
+~~**2021.08.09过期，200G流量**
+**免流机场免流机场免流机场！不会用还请不要浪费流量**
+**免流说明（不会或者看不懂说明的还请使用别的订阅）：**
+https://pwnote.ednovas.xyz/mxka7?view
+机场注册链接：https://www.mxcloud.icu/auth/register?code=oiXm
+v2ray订阅链接：
+https://www.mxcloud.icu/link/X6IHsUnPBQgmRCmO?sub=3~~
+
+
+
+~~**2021.07.26过期,3T流量**
+机场注册链接: https://biteb.me/auth/register?code=YFJV
+Clash订阅链接:
+https://biteb.club/link/6RJ0uo4VTbD6xjAZ?clash=1~~
+
+
+~~**2021.08.13到期，500G流量**
+注册即送试用30G
+机场注册链接：https://www.chy.fit/#/register?code=Usg9oosi
+彩虹云windows/macOS/安卓定制客户端已经上线。一个账号通用。一键连接。统一交互。请登录后点击侧栏-使用文档下载。 
+Clash订阅链接：
+https://chy.fit/api/v1/client/subscribe?token=10dcbf9eedfa969ac1ee2ca717e89bcc~~
+
+
+~~**2T流量**
+机场注册链接：https://ninihao.cc/auth/register?code=MPZ5
+Clash订阅链接：
+https://cloud.xiaobaiyunddns.xyz/link/FChOhUdCHe6VlEq2?clash=1~~
+
+~~**2021/12/07到期，4.5T流量**
+Clash订阅：
+https://api.tsutsu.cc/sub?target=clash&url=https%3A%2F%2Fbaipiao-rss.com%2Flink%2F0K8XtZr8s7lat8ap%3Fclash%3D1&insert=false&config=https%3A%2F%2Fcdn.staticaly.com%2Fgh%2Flhl77%2Fsub-ini%2Fmain%2Ftsutsu-full-urltest.ini~~
+
+
+~~**2021.12.03到期每月5GB，youtube 6w+（注册每月白嫖5GB）**  
+机场注册链接：https://www.cni.lol/#/register?code=2MmIlKVQ
+Clash订阅链接：
+https://v2ky.com/api/v1/client/subscribe?token=a95a7c6949d8b3c3ecba0bad8a1cbe94~~

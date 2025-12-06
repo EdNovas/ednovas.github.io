@@ -6,7 +6,7 @@ categories:
   - - 网站
   - - 软件
 date: 2021-02-22 13:53:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/EhjA-hmhafis3300165.webp
 # highlight_shrink: true
 ---
@@ -15,7 +15,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/EhjA-hmhafis33
 
 电视盒子TV电视剧电影（安卓手机也可用就是UI可能有点反常）：
 
-https://ednovas.lanzous.com/b00zyp1bc
+https://ednovas.lanzoux.com/b00zyp1bc
 
 美剧星球：
 
@@ -23,7 +23,7 @@ https://ednovas.lanzous.com/b00zyp1bc
 
 安卓电影电视剧APP：
 
-https://ednovas.lanzous.com/b00zyr0mj
+https://ednovas.lanzoux.com/b00zyr0mj
 
 
 ## 网址汇总

@@ -5,7 +5,7 @@ id: '266'
 categories:
   - - 测评
 date: 2020-12-07 13:03:33
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/heybox/ipad1/technology-1607305061351-1487.webp
 ---
 

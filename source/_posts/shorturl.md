@@ -5,7 +5,7 @@ id: '1236'
 categories:
   - - 建站
 date: 2021-04-19 12:38:45
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/rebrandlyurlshortener010.png
 # highlight_shrink: true
 ---
@@ -14,7 +14,9 @@ Premium URL Shortener是一个高级短网址缩短程序，带API功能，可�
 
 ## 下载
 
-网站程序下载：https://ednovas.lanzous.com/igqhSo9roti
+网站程序下载：https://ednovas.lanzoux.com/igqhSo9roti
+
+备用：https://onecloud.ednovas.xyz/s/Wjho
 
 ## 伪静态规则
 
@@ -40,4 +42,4 @@ Apache伪静态规则
 
 ## DEMO
 
-https://url.ednova.xyz
+https://url.ednovas.xyz

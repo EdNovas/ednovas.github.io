@@ -5,11 +5,11 @@ id: '1124'
 categories:
   - - 软件
 date: 2021-01-02 20:48:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Tencent_QQ-Logo.wine.png
 ---
 
-https://ednovas.lanzous.com/iHztuil7yqb
+https://ednovas.lanzoux.com/iHztuil7yqb
 
 下载安装使用，可以使用自定义的透明背景的PNG格式图片。
 

@@ -5,7 +5,7 @@ id: '1159'
 categories:
   - - 编程
 date: 2021-01-21 19:22:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.sspai.com/2018/07/24/088eaabe3a61a2bb4b57739a5b744636.jpg?imageMogr2/auto-orient/quality/95/thumbnail/!1420x708r/gravity/Center/crop/1420x708/interlace/1
 #highlight_shrink: true
 ---

@@ -5,7 +5,7 @@ id: '1129'
 categories:
   - - 软件
 date: 2021-01-04 16:24:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/dark_banner.webp
 ---
 
@@ -58,6 +58,6 @@ https://www.crx4chrome.com/crx/31928/
 
 安卓端的广告屏蔽推荐Adguard，可以在应用商店下载或者用破解版（国外大神破解版本，没标注名字是因为找不到叫啥了。。抱歉）：
 
-https://ednovas.lanzous.com/i79Zgk12v1a
+https://ednovas.lanzoux.com/i79Zgk12v1a
 
 >转载图片已标注原图片来源

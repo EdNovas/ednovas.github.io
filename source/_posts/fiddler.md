@@ -5,7 +5,7 @@ id: '1213'
 categories:
   - - 软件
 date: 2021-02-19 19:43:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://img.lguohe.com/uploads/2018/11/fidder-480x300.png
 # highlight_shrink: true
 ---
@@ -26,4 +26,4 @@ fiddler简称fd，是一款牛逼的抓包工具，能够抓取所有HTTP以及H
 
 ## 下载
 
-https://ednovas.lanzous.com/iI0kgluyope
+https://ednovas.lanzoux.com/iI0kgluyope

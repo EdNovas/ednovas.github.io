@@ -9,7 +9,7 @@ tags:
 categories:
   - VPS
 date: 2021-05-08 12:21:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-00532941b2f768db55fe49309766f637_1440w.jpg
 ---
 
@@ -17,53 +17,10 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-00532941b2f
 
 大同小异，修改 `sshd——config` 文件，把里面的 `PasswordAuthentication` 和 `PermitRootLogin` 都改成 Yes
 
-## AWS
-
-切换到root用户
-
-```
-sudo -i
-```
-
-输入以下命令实现密码登录
-
-```
-sed -ri 's/^#?(PasswordAuthentication)\s+(yes|no)/\1 yes/' /etc/ssh/sshd_config
-```
-
-```
-sed -ri 's/^#?(PermitRootLogin)\s+(yes|no)/\1 yes/' /etc/ssh/sshd_config
-```
-
-```
-sed -ri 's/^/#/;s/sleep 10"\s+/&\n/' /root/.ssh/authorized_keys
-```
-
-```
-service sshd restart
-```
-
-## Oracle
-
-
-```
-sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config;
-```
-
-```
-sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config;
-```
-
-```
-sudo service sshd restart
-```
-
-## GCP
-
 修改SSH配置文件/etc/ssh/sshd_config
 
 ```
-修改SSH配置文件/etc/ssh/sshd_config
+vi /etc/ssh/sshd_config
 ```
 
 找到PermitRootLogin和 PasswordAuthentication
@@ -90,4 +47,21 @@ Centos 7适用
 ```
 systemctl restart sshd.service
 ```
+
+## 方便起见
+
+```
+sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config;
+```
+
+```
+sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config;
+```
+
+```
+sudo service sshd restart
+```
+
+
+
 

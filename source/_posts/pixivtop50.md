@@ -5,11 +5,13 @@ id: '1180'
 categories:
   - - 建站
 date: 2021-02-01 12:19:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20180927070512.webp
 #top: true
 #highlight_shrink: true
 ---
+
+## 超能小紫服务好像失效了,EdNovas自己搭建的地址 https://pixiv.ednovas.xyz ,将下方地址 https://cloud.mokeyjay.com/pixiv 全部替换即可
 
 在 `themes\Butterfly\layout\includes\widget` 文件夹新建 `card_pixiv.pug` 文件，文件内容如下：
 
@@ -30,7 +32,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20180927070512
     iframe(src="https://cloud.mokeyjay.com/pixiv" frameborder="0"  style="width:99%;height:380px;margin:0;")
 ```
 
-https://cloud.mokeyjay.com/pixiv 使用的是[超能小紫](https://www.mokeyjay.com/)提供的服务，也可以自行搭建，搭建方式请看[这里](https://www.mokeyjay.com/archives/1063)
+https://cloud.mokeyjay.com/pixiv 使用的是[超能小紫](https://www.mokeyjay.com/)提供的服务，也可以自行搭建，搭建方式请看[GitHub项目地址](https://github.com/mokeyjay/Pixiv-daily-ranking-widget)
 
 编辑 `themes\Butterfly\layout\includes\widget\index.pug` 文件，在你想要显示的位置插入以下代码：
 ```

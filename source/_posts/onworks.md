@@ -1,0 +1,26 @@
+---
+title: OnWorks 免费云端linux系统
+tags: [白嫖]
+categories:
+  - - 杂
+date: 2021-10-28 15:51:00
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
+cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/5ca13d8453042.image.jpg
+# highlight_shrink: true
+---
+
+## 网址
+
+https://www.onworks.net/
+
+## 官方简介
+
+OnWorks is a free hosting provider that allows to run your workstations only using your web browser. Our workstations can be based on a lot of kind of Operative Systems like CentOS, Fedora, Ubuntu and Debian.  OnWorks is a multi-device platform so that our customers can run and test any type of OS from everywhere. It is simple, full of features, light and easy to use by our customers. OnWorks is your cloud computing provider where you can enjoy a lot of type of workstations, and run them free of charge. The workstations are installed with SW for Office, Graphics, Videos, Games and so on.
+
+OnWorks 是一个免费的托管服务提供商，它允许仅使用您的网络浏览器运行您的工作站。 我们的工作站可以基于多种操作系统，如 CentOS、Fedora、Ubuntu 和 Debian。 OnWorks 是一个多设备平台，因此我们的客户可以从任何地方运行和测试任何类型的操作系统。 它简单、功能齐全、轻便且易于我们的客户使用。 OnWorks 是您的云计算提供商，您可以在其中享受多种类型的工作站，并免费运行它们。 工作站安装了用于办公、图形、视频、游戏等的软件。
+
+## 使用
+
+完全免费，标签页开着就会保持活跃，关闭标签页后10分钟无动作即自动释放资源。 
+
+无公网IP

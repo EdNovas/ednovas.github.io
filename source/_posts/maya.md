@@ -5,7 +5,7 @@ id: '1186'
 categories:
   - - 软件
 date: 2021-02-02 12:06:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Maya-Logo.png
 #top: true
 #highlight_shrink: true
@@ -21,7 +21,7 @@ Maya是一款体积小巧、简单易用的快速启动工具。不要看体积�
 ## 下载地址
 
 GitHub下载地址：https://github.com/25H/Maya/releases
-蓝奏云下载地址：https://wwa.lanzous.com/b0bqwqjvg
+蓝奏云下载地址：https://wwa.lanzoux.com/b0bqwqjvg
 
 ## 功能
 ·多文件拖拽添加启动

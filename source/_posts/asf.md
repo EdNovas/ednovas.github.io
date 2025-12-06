@@ -5,7 +5,7 @@ id: '1232'
 categories:
   - - 软件
 date: 2021-05-03 17:31:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/archi-steam-farm-768x432.jpg
 # highlight_shrink: true
 ---
@@ -84,7 +84,7 @@ chmod +x ArchiSteamFarm
 
 第二步（设置了URL却想发Steam64位ID）：如同第一步，复制URL，进入此网站查询，第三行即为64位ID。
 
-自行复制数字，格式为http://steamcommunity.com/profiles/XXXXXXX（数字），得到64位ID。
+自行复制数字，格式为 https://steamcommunity.com/profiles/XXXXXXX（数字），得到64位ID。
 
 ### ASF配置生成器页面高级设置（必要）
 
@@ -117,7 +117,7 @@ screen -S asf
 
 如果你看到 Shell 有类似于如下图这样的输出就说明 ASF 程序启动完成
 
-![](https://blogpic.irain.in/imgs/2020/04/6114743c10305834.png!/fw/2558/quality/75/format/webp)
+![](https://blogpic.irain.in/imgs/2020/04/6114743c10305834.png)
 
 ## 设置网页管理面板(简单)
 

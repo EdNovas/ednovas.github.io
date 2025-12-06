@@ -5,7 +5,7 @@ id: '1242'
 categories:
   - - 科学上网
 date: 2021-04-30 17:52:45
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/rebrandly url shortener 010.png
 # highlight_shrink: true
 ---

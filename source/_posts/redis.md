@@ -5,7 +5,7 @@ id: '1241'
 categories:
   - - 编程
 date: 2021-04-27 22:17:45
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1498119653712274.png
 # highlight_shrink: true
 ---

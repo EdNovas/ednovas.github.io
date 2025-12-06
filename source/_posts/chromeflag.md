@@ -5,7 +5,7 @@ id: '1167'
 categories:
   - - 软件
 date: 2021-01-23 06:23:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.sspai.com/article/73599088-e74b-4186-ee00-607d58f29d46.jpg?imageMogr2/auto-orient/quality/95/thumbnail/!1420x708r/gravity/Center/crop/1420x708/interlace/1
 #highlight_shrink: true
 ---

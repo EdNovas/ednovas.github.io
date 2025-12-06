@@ -5,7 +5,7 @@ id: '1219'
 categories:
   - - 杂
 date: 2021-03-10 19:58:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://api.ixiaowai.cn/gqapi/gqapi.php
 # highlight_shrink: true
 ---

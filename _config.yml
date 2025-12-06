@@ -34,6 +34,7 @@ skip_render:
   - catchcathard/*
   - catchcatmid/*
   - catchcatimpossible/*
+  - edtool.sh
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -109,7 +110,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: git@wdm1732418365.github.com:wdm1732418365/wdm1732418365.github.io.git
+  repository: git@ednovas.github.com:ednovas/ednovas.github.io.git
   branch: main
 
 #local_search
@@ -181,4 +182,8 @@ feed:
   autodiscovery: true
   template:
 
-
+# backup:
+#   type: git
+#   repository:
+#     github: git@ednovas.github.com:ednovas/ednovas.github.io.git,backup
+#     gitcafe: git@ednovas.github.com:ednovas/ednovas.github.io.git,backup

@@ -5,7 +5,7 @@ id: '1246'
 categories:
   - - 编程
 date: 2021-05-02 22:32:45
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/the-best-cpus-for-gaming-2019-hero1567181382948504.jpg
 # highlight_shrink: true
 ---

@@ -5,7 +5,7 @@ id: '1155'
 categories:
   - - 科学上网
 date: 2021-01-19 19:47:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/d108d6daa05c480eacfc817179f39db37f4c118c.webp
 #highlight_shrink: true
 ---
@@ -37,46 +37,42 @@ Wang：高速/普通
 Pupa：普通
 猴王：普通
 
-https://ednovas.lanzous.com/b00zyje9c
-
 ## Tenon VPN 全端
 
 官网：https://www.tenonvpn.net/
-
-Windows端蓝奏云：https://ednovas.lanzous.com/i58fJkl0nti
 
 ***
 
 > 以下来自Sabrina的万事屋 https://merlinblog.xyz/wiki/freess.html
 
-https://sabrinathings.lanzous.com/iz0zxm7002b
+https://sabrinathings.lanzoux.com/iz0zxm7002b
 ProxyMaster VPN
 ***
-https://sabrinathings.lanzous.com/io884lzuxfe
+https://sabrinathings.lanzoux.com/io884lzuxfe
 Power VPN
 ***
-https://sabrinathings.lanzous.com/iOH3Slxmsaj
+https://sabrinathings.lanzoux.com/iOH3Slxmsaj
 小明VPN
 ***
-https://sabrinathings.lanzous.com/iSk3Rlwe0na
+https://sabrinathings.lanzoux.com/iSk3Rlwe0na
 VPN Unblock
 ***
-https://sabrinathings.lanzous.com/i08o9md100b
+https://sabrinathings.lanzoux.com/i08o9md100b
 海鸥VPN
 ***
-https://sabrinathings.lanzous.com/iKE0Nm6lvvg
+https://sabrinathings.lanzoux.com/iKE0Nm6lvvg
 酷通 VPN
 ***
-https://sabrinathings.lanzous.com/iWcDClhuaeh
+https://sabrinathings.lanzoux.com/iWcDClhuaeh
 火箭VPN
 ***
-https://lanzous.com/iCgiukvgxrcTunnel
+https://lanzoux.com/iCgiukvgxrcTunnel
 Bear VPN
 ***
-https://sabrinathings.lanzous.com/i9aGOkm61fe
+https://sabrinathings.lanzoux.com/i9aGOkm61fe
 Augustro VPN
 ***
-https://lanzous.com/i9AcQk9vvij
+https://lanzoux.com/i9AcQk9vvij
 Quark VPN
 ***
 https://lanzoui.com/icz14k7bvze
@@ -98,19 +94,19 @@ https://sabrinathings.lanzoui.com/iCCvbjurbfc
 
 西瓜 VPN
 ***
-https://sabrinathings.lanzous.com/iSdjsm6lttc
+https://sabrinathings.lanzoux.com/iSdjsm6lttc
 
 Shell VPN
 ***
-https://sabrinathings.lanzous.com/ipnmIk9vted
+https://sabrinathings.lanzoux.com/ipnmIk9vted
 
 Express VPN
 ***
-https://sabrinathings.lanzous.com/i7jqembuotg
+https://sabrinathings.lanzoux.com/i7jqembuotg
 
 Shuttle VPN
 ***
-https://sabrinathings.lanzous.com/i5o6Mltyaba
+https://sabrinathings.lanzoux.com/i5o6Mltyaba
 
 黑洞 VPN
 ***
@@ -162,11 +158,11 @@ https://sabrinathings.lanzoui.com/ivfbMj900be
 
 阳光VPN
 ***
-https://sabrinathings.lanzous.com/i4VjDmrcjlg
+https://sabrinathings.lanzoux.com/i4VjDmrcjlg
 
 Speed VPN
 ***
-https://sabrinathings.lanzous.com/igmxCmfg93a
+https://sabrinathings.lanzoux.com/igmxCmfg93a
 
 赛风 Pro
 ***
@@ -174,15 +170,15 @@ https://sabrinathings.lanzoui.com/iBiSZjj32oh
 
 Touch VPN
 ***
-https://sabrinathings.lanzous.com/iM3i9lmwwda
+https://sabrinathings.lanzoux.com/iM3i9lmwwda
 
 佛跳墙加速器
 ***
-https://sabrinathings.lanzous.com/i2eZMmif1lc
+https://sabrinathings.lanzoux.com/i2eZMmif1lc
 
 AdGuard VPN
 ***
-https://sabrinathings.lanzous.com/iAlXmm9spgf
+https://sabrinathings.lanzoux.com/iAlXmm9spgf
 
 Velocity VPN
 ***
@@ -194,15 +190,15 @@ https://sabrinathings.lanzoui.com/iGmhDj05xda
 
 365 VPN
 ***
-https://sabrinathings.lanzous.com/ixRSJkvgxlg
+https://sabrinathings.lanzoux.com/ixRSJkvgxlg
 
 Turbo VPN
 ***
-https://sabrinathings.lanzous.com/iF5NUlhubih
+https://sabrinathings.lanzoux.com/iF5NUlhubih
 
 VPN Master
 ***
-https://sabrinathings.lanzous.com/iA1Rqmo7o0h
+https://sabrinathings.lanzoux.com/iA1Rqmo7o0h
 
 kiwi VPN
 ***
@@ -214,7 +210,7 @@ https://sabrinathings.lanzoui.com/ioeMZisl7qf
 
 Starry VPN
 ***
-https://sabrinathings.lanzous.com/iHifzlqg71g
+https://sabrinathings.lanzoux.com/iHifzlqg71g
 
 银河 VPN
 ***
@@ -226,7 +222,7 @@ https://sabrinathings.lanzoui.com/iJp4Eijh27i
 
 DC VPN
 ***
-https://sabrinathings.lanzous.com/iX6izlhuetg 
+https://sabrinathings.lanzoux.com/iX6izlhuetg 
 
 Hotspot Shield VPN
 ***
@@ -238,7 +234,7 @@ https://sabrinathings.lanzoui.com/iQ17Uindfqf
 
 TODAY VPN
 ***
-https://sabrinathings.lanzous.com/iKtH6lmwwuh
+https://sabrinathings.lanzoux.com/iKtH6lmwwuh
 
 VPNhub
 ***
@@ -246,7 +242,7 @@ https://sabrinathings.lanzoui.com/iTHf0jpq7sf
 
 VPNTap2Free
 ***
-https://sabrinathings.lanzous.com/iqSLCmo7nne
+https://sabrinathings.lanzoux.com/iqSLCmo7nne
 
 BetternetVPN
 ***
@@ -298,7 +294,7 @@ https://sabrinathings.lanzoui.com/i9BUpindg5a
 
 FastVPN特别版
 ***
-https://sabrinathings.lanzous.com/iqMBhkm5u2j
+https://sabrinathings.lanzoux.com/iqMBhkm5u2j
 
 SuperVPN特别版
 ***
@@ -306,11 +302,11 @@ https://sabrinathings.lanzoui.com/iORfLjn36sj
 
 HolaVPN特别版
 ***
-https://sabrinathings.lanzous.com/i9YpGl4hxza
+https://sabrinathings.lanzoux.com/i9YpGl4hxza
 
 猴王VPN
 ***
-https://sabrinathings.lanzous.com/izxi1kye8lc
+https://sabrinathings.lanzoux.com/izxi1kye8lc
 
 蜜蜂VPN
 ***
@@ -318,11 +314,11 @@ https://sabrinathings.lanzoui.com/iuEZCg4uruh
 
 飞梭加速器
 ***
-https://sabrinathings.lanzous.com/idtqil8ui5c
+https://sabrinathings.lanzoux.com/idtqil8ui5c
 
 雷霆加速器
 ***
-https://sabrinathings.lanzous.com/iMErJlqg64d
+https://sabrinathings.lanzoux.com/iMErJlqg64d
 
 蚂蚁加速器
 ***

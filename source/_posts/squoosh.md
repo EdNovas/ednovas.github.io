@@ -1,0 +1,14 @@
+---
+title: 免费开源图片压缩工具 Squoosh 离线版
+tags: [软件,图片]
+categories:
+  - - 软件
+date: 2021-09-23 16:51:00
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
+cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/waktgrmffssq3zfv5fhm.jpg
+# highlight_shrink: true
+---
+
+<article class="post-content" id="article-container"><p><strong>Squoosh</strong> 是一款免费开源的图片压缩工具，它在浏览器中使用”一流的解码器“让图片变得更小。<strong>Squoosh Desktop App</strong> 基于 Squoosh、Electron，在 Windows、Linux 上实现了 Squoosh 离线版，无需网络就能使用。<a href="https://dd-static.jd.com/ddimg/jfs/t1/186476/35/3238/88830/609f5596Ec31329b3/6f95f16e884806c0.jpg" data-fancybox="group" data-caption="squoosh-desktop-app.jpg" class="fancybox"><img src="https://dd-static.jd.com/ddimg/jfs/t1/186476/35/3238/88830/609f5596Ec31329b3/6f95f16e884806c0.jpg" data-lazy-src="https://dd-static.jd.com/ddimg/jfs/t1/186476/35/3238/88830/609f5596Ec31329b3/6f95f16e884806c0.jpg" alt="squoosh-desktop-app.jpg" data-ll-status="loaded" class="entered loaded"></a></p><p>描述中“一流的解码器“来自机翻，原文是 best-in-class codecs。</p><p>说起来，为了尽可能的节约磁盘空间，我的每一张图片都是用 Squoosh 进行了压缩，Squoosh 唯二的问题在于不提供批量功能，不过对于一张图片一张图片处理的我来说也足够了。实际上，Squoosh 还有一个 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/GoogleChromeLabs/squoosh/tree/dev/cli">Squoosh CLI</a> 版本，是可以实现批量功能的。</p><h2 id="Squoosh-Desktop-App"><a href="#Squoosh-Desktop-App" class="headerlink" title="Squoosh Desktop App" data-pjax-state=""></a><strong>Squoosh Desktop App</strong></h2><p>Squoosh Desktop App 将 Squoosh 打包并创建为独立应用，最重要的是可以离线使用，就非常方便了。<a href="https://dd-static.jd.com/ddimg/jfs/t1/181392/37/4244/63272/609f55c3E3f42c250/a4cbc3e5cf198568.jpg" data-fancybox="group" data-caption="screenshot1.jpg" class="fancybox"><img data-lazy-src="https://dd-static.jd.com/ddimg/jfs/t1/181392/37/4244/63272/609f55c3E3f42c250/a4cbc3e5cf198568.jpg" alt="screenshot1.jpg" class="entered loaded" src="https://dd-static.jd.com/ddimg/jfs/t1/181392/37/4244/63272/609f55c3E3f42c250/a4cbc3e5cf198568.jpg" data-ll-status="loaded"></a></p><p>Squoosh 的另外一个问题，就是在压缩透明背景的 png 格式时，会让背景变黑。</p><p>而 Squoosh Desktop App 的问题是，感觉已经年久失修，最后一次更新是 2020 年 5 月份，以及其官网上宣称的 macOS 版本，从未出现过。目前只提供了 Windows 与 Linux 版本，不过青小蛙测试了 Windows 版本，可以正常使用。</p><p>但另外一个问题是，Squoosh 会经常更新，使用 Squoosh Desktop App 则永久停留在了去年的版本，鉴于没有网络的情况下，凑合用用还是可以的。</p><h2 id="Squoosh-Desktop-App-下载"><a href="#Squoosh-Desktop-App-下载" class="headerlink" title="Squoosh Desktop App 下载" data-pjax-state=""></a>Squoosh Desktop App 下载</h2><ul><li>官网：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://squoosh-desktop.vercel.app/">https://squoosh-desktop.vercel.app/</a></li><li>下载：h<a href="ttps://github.com/matiasbenedetto/squoosh-desktop-app/releases" rel="external nofollow noreferrer" data-pjax-state="">ttps://github.com/matiasbenedetto/squoosh-desktop-app/releases</a></li></ul></article>
+
+> 转载自 Daibi_mua https://blog.keepdai.cn/imgyouhua.html

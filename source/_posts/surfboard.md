@@ -5,16 +5,19 @@ id: '1217'
 categories:
   - - 科学上网
 date: 2021-03-10 05:15:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/-LBnoY2fRrQzEAYSZ_1D.png
 # highlight_shrink: true
 ---
 
 ## 下载
 
-谷歌商店即可下载
+最新版请从TG频道下载
 
-https://play.google.com/store/apps/details?id=com.getsurfboard
+https://t.me/surfboardnews
+
+新版本相较于Google Play的旧版本变化不小，但是大体使用上并没有区别。
+
 
 ## 速度
 

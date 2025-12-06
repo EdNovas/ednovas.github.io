@@ -5,12 +5,13 @@ id: '1234'
 categories:
   - - VPS
 date: 2021-04-15 15:37:45
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210225024426.jpg
 # highlight_shrink: true
 ---
 
 > 转载自P3TERX大佬 https://p3terx.com/archives/use-cloudflare-warp-to-add-extra-ipv4-or-ipv6-network-support-to-vps-servers-for-free.html
+> https://p3terx.com/archives/debian-linux-vps-server-wireguard-installation-tutorial.html
 
 ## 前言
 
@@ -22,7 +23,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210225024426
 
 ## 安装 WireGuard
 
-既然 WARP 是基于 Wire­Guard 的，那么我们首先就需要安装 Wire­Guard 。由于博主使用的是 De­bian ，所以只写了 De­bian 的 Wire­Guard 详细安装方法，其它系统可以参考[官方文档](https://p3terx.com/go/aHR0cHM6Ly93d3cud2lyZWd1YXJkLmNvbS9pbnN0YWxsLw)来进行安装。
+既然 WARP 是基于 Wire­Guard 的，那么我们首先就需要安装 Wire­Guard 。由于博主使用的是 De­bian ，所以只写了 De­bian 的 Wire­Guard 详细安装方法，其它系统可以参考[官方文档](https://www.wireguard.com/install/)来进行安装。
 
 首先安装一些必要的工具，防止接下来的操作出问题。
 
@@ -30,7 +31,85 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210225024426
 apt update
 apt install curl sudo lsb-release -y
 ```
-按照《[Debian Linux VPS WireGuard 安装教程](https://p3terx.com/archives/debian-linux-vps-server-wireguard-installation-tutorial.html)》中简单的几个步骤完成安装工作。
+
+添加 back­ports 源
+
+```
+echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | sudo tee /etc/apt/sources.list.d/backports.list
+sudo apt update
+```
+
+安装依赖组件
+
+安装必要的网络工具
+
+```
+sudo apt install iproute2 openresolv -y
+```
+
+安装 wireguard-tools (Wire­Guard 配置工具：wg、wg-quick)
+
+```
+sudo apt install wireguard-tools --no-install-recommends
+```
+
+### 开始安装
+
+先执行 `uname -r` 命令查看内核版本。如果是 5.6 及以上内核则已经集成了 Wire­Guard ，就不需要安装了。
+
+当然看到这篇教程的小伙伴肯定大多数都不是这个情况，因为目前 De­bian 10 自带的内核版本是 4.19。所以有如下几个安装方法可供选择：
+
+1. 安装版本高于 5.6 的内核
+2. 安装 wireguard 内核模块
+3. 安装 wireguard-go
+
+理论网络性能：内核集成 ≥ 内核模块 ＞ wireguard-go
+
+不过并不是所有 VPS 都能随便装，最终选择还要看 VPS 所使用的虚拟化技术：
+
+* KVM / HyperV / XEN HVM 等完整虚拟化的 VPS 主机，以上都是可选项，根据实际情况任选其一，后面有相关说明。
+
+* OpenVZ / LXC 等非完整虚拟化 VPS 主机，由于是共享宿主机内核，故无法对内核进行修改，就只能安装 `wireguard-go`。
+
+如果只要安装方便快捷，对网络性能没有极致追求，又或者对以上信息一脸懵逼，请直接移步到 安装 `wireguard-go` 章节。
+
+#### 安装新版内核
+
+KVM / Hy­perV / XEN HVM 等完整虚拟化的 VPS 主机，且能应对更换内核可能带来的不良后果则可以这个方式。
+
+为了系统的稳定性推荐安装 back­ports 仓库中的内核 (截止发文版本为 5.9)。以下是一把梭命令：
+
+```
+sudo apt -t $(lsb_release -sc)-backports install linux-image-$(dpkg --print-architecture) linux-headers-$(dpkg --print-architecture) --install-recommends -y
+```
+
+安装完重启，并执行 `uname -r` 命令查看内核版本来确认新内核是否被启用。
+
+#### 安装 wireguard 内核模块
+
+这个安装方式博主个人并不是很推荐，对于 Linux 不熟悉的人很容易出错，尤其是使用过改内核的脚本一顿骚操作改了一些未知来源的 “BBR 减速内核”。
+
+KVM / Hy­perV / XEN HVM 等完整虚拟化的 VPS 主机，内核版本 5.6 以下可以尝试执行以下命令安装 wire­guard 动态内核模块。
+
+```
+sudo apt install wireguard-dkms -y
+```
+
+安装后执行 `modprobe wireguard` 命令加载 Wire­Guard 内核模块。
+
+最后执行 `lsmod | grep wireguard` 命令检查是否成功加载。
+
+#### 安装 wireguard-go
+
+OpenVZ 或 LXC 的 VPS 与不想折腾内核、追求稳定的小伙伴可以安装 `wireguard-go`。理论网络性能可能不及内核集成方案，不过对于正常使用而言还是绰绰有余的。
+
+TIPS: 对于 OpenVZ 或 LXC 的 VPS 需要先执行`lsmod | grep tun`命令来检查 TUN/​TAP 功能是否正常启用，若没有请自行咕鸽搜索开启方法，否则安装了也是不能使用的。
+
+自己编译或者一把梭脚本来安装已编译好的最新稳定版 `wireguard-go` 二进制文件：
+
+```
+curl -fsSL git.io/wireguard-go.sh | sudo bash
+```
 
 ## 使用 wgcf 生成 WireGuard 配置文件
 [wgcf](https://p3terx.com/go/aHR0cHM6Ly9naXRodWIuY29tL1ZpUmIzL3dnY2Y) 是 Cloud­flare WARP 的非官方 CLI 工具，它可以模拟 WARP 客户端注册账号，并生成通用的 Wire­Guard 配置文件。
@@ -208,3 +287,4 @@ curl -fsSL git.io/speedtest-cli.sh | sudo bash
 Cloud­flare 一直以来为广大人民群众免费提供优秀的网络服务，希望大家善待它，不要肆意滥用。
 
 > 转载自P3TERX大佬 https://p3terx.com/archives/use-cloudflare-warp-to-add-extra-ipv4-or-ipv6-network-support-to-vps-servers-for-free.html
+> https://p3terx.com/archives/debian-linux-vps-server-wireguard-installation-tutorial.html

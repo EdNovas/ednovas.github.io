@@ -5,7 +5,7 @@ id: '1226'
 categories:
   - - 软件
 date: 2021-03-26 06:05:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Bing-Wallpaper-Install-Windows-10-WinBuzzer.jpg
 # highlight_shrink: true
 ---

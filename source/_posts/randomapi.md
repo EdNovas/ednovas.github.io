@@ -5,7 +5,7 @@ id: '1166'
 categories:
   - - 杂
 date: 2021-01-22 21:28:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: http://bing.getlove.cn/bingImage
 #highlight_shrink: true
 ---
@@ -97,6 +97,11 @@ https://img.paulzzh.tech/touhou/random (东方的随机图，43000+)出处(・ω
 
 博客里有说明：https://www.toubiec.cn/
 https://acg.toubiec.cn/random.php
+
+## 推荐自用二次元
+
+https://api.pigax.cn/pc
+https://api.sayqz.com/api/img/acg.php
 
 ## 后宫漫图
 https://acg.sx/images

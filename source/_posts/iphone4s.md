@@ -5,7 +5,7 @@ id: '260'
 categories:
   - - 测评
 date: 2020-12-04 12:14:31
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/heybox/iphone 4s/900265-gorgerous-metal-apple-wallpaper-1920x1080-cell-phone.webp
 ---
 

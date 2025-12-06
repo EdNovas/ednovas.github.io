@@ -5,7 +5,7 @@ id: '861'
 categories:
   - - 下载
 date: 2020-12-21 12:40:43
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/xiao2018-08-26_15-31-27.webp
 ---
 
@@ -27,7 +27,7 @@ Aria2是一款自由、跨平台命令行界面的下载管理器。支持的下
 
 ## 一键安装
 
-上面两个是比较麻烦的配置教程和方法，我估计你们也没有时间去研究，而且配置起来需要一定的基础知识。推荐你们使用以下的超·懒人一键安装Aria2NG的方法来进行软件的安装，只需要下载并且安装软件即可。[https://ednovas.lanzous.com/ioB1pjbpymb](https://ednovas.lanzous.com/ioB1pjbpymb)
+上面两个是比较麻烦的配置教程和方法，我估计你们也没有时间去研究，而且配置起来需要一定的基础知识。推荐你们使用以下的超·懒人一键安装Aria2NG的方法来进行软件的安装，只需要下载并且安装软件即可。[https://ednovas.lanzoux.com/ioB1pjbpymb](https://ednovas.lanzoux.com/ioB1pjbpymb)
 
 感谢作者：FrostSigh
 

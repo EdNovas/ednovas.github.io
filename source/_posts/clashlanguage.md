@@ -5,20 +5,20 @@ id: '1179'
 categories:
   - - 科学上网
 date: 2021-02-01 11:19:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp
 #top: true
 #highlight_shrink: true
 ---
 ## 汉化包下载
 
-可能不是最新版本
-
-0.15.1: https://ednovas.lanzous.com/b00zyk3kd
-
-最新版请前往 telegram 汉化包更新频道获取
+最新版请前往 telegram 汉化包更新频道获取：
 
 https://t.me/ClashR_for_Windows_Channel
+
+或者前往GitHub获取最新汉化包下载：
+
+https://github.com/BoyceLig/Clash_Chinese_Patch/releases
 
 ## Windows 平台汉化
 

@@ -6,7 +6,7 @@ categories:
   - - 软件
   - - 网站
 date: 2021-01-20 11:41:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/digital-fingerprint.jpg
 #highlight_shrink: true
 ---
@@ -58,7 +58,12 @@ Cookie同步一般是指用户访问某A网站时，该网站通过页面跳转�
 
 可以在该网址进行查看本地浏览器的基本特征：[What is my browser](https://www.whatismybrowser.com/)
 
+这里是由 Chris Hauk 写的一篇[浏览器指纹指南](https://pixelprivacy.com/resources/browser-fingerprinting/)，里面提供了更多关于What is my browser的信息和背景，以及用户在浏览网页时可能采取的步骤，从而更好地保护隐私。
+
+上述博客中还包含了更多的如何保护你的在线隐私问题，有兴趣推荐拜读一下: https://pixelprivacy.com （网站是纯英文的，可以使用页面翻译更方便的浏览）
+
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/---1.png)
+
 ### 高级指纹
 基本指纹就像是人的外貌特征，外貌可以用男女、身高、体重区分，然而这些特征不能对某个人进行唯一性标识，仅使用基本指纹也无法对客户端进行唯一性判定，基于HTML5的诸多高级指纹对此提供了新思路。
 #### **Canvas指纹**

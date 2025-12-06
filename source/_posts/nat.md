@@ -7,13 +7,11 @@ tags:
 categories:
   - VPS
 date: 2021-05-09 15:21:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/nat.jpg
 ---
 
 我发现卖nat服务器的老板不少，但是网上你却根本找不到什么使用教程，所以此文就是为了nat使用说明而写的
-
-> 以下转载自 iLemonrain's Blog https://blog.ilemonrain.com/linux/nat-server-tutorial.html
 
 ## 服务器的类别
 
@@ -178,6 +176,9 @@ systemctl disable firewalld.service
 
 ## 安装 v2-ui
 
+## 疑似作者被抓，项目网站已删库，请使用x-ui作为替代品
+## x-ui项目地址: https://github.com/vaxilu/x-ui
+
 ### 更改密码
 
 如果你愿意你可以给nat vps更改个root密码（下次连接就需要重新输入更改后的密码了）
@@ -191,23 +192,32 @@ passwd
 
 ### 安装v2-ui
 
-GitHub地址：https://github.com/sprov065/v2-ui
+GitHub地址：~~https://github.com/sprov065/v2-ui~~（已删库，请使用x-ui代替）
 
-一键脚本：
+https://github.com/vaxilu/x-ui
+
+或使用网站时光机回溯 http://web.archive.org/web/20210412193605/https://github.com/sprov065/v2-ui 
+
+#### 一键脚本
+
+~~bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)~~
+(v2ui已删库，以下是x-ui项目)
 
 ```
-bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 ```
 
 安装完成后，需要更改面板端口，默认端口是65432，如果你映射了这个端口，那就直接ip+65432登录即可。但如果没有（大概率是没有的），那么还需要更改登录端口
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-09_17-14-41.png)
 
-输入v2-ui进入管理菜单
+输入~~v2-ui~~ `x-ui`进入管理菜单
 
+~~v2-ui~~
 ```
-v2-ui
+x-ui
 ```
+
 
 输入6并回车
 

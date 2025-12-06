@@ -5,7 +5,7 @@ id: '1147'
 categories:
   - - 软件
 date: 2021-01-14 19:52:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/dt2w_huawei_feature.webp
 ---
 
@@ -23,7 +23,7 @@ https://github.com/KieronQuinn/TapTap/releases
 
 蓝奏云分流（版本0.9 beta）：
 
-https://ednovas.lanzous.com/ilAx7kefh3e
+https://ednovas.lanzoux.com/ilAx7kefh3e
 
 ## 使用
 

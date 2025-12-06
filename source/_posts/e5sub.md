@@ -5,7 +5,7 @@ id: '1206'
 categories:
   - - 杂
 date: 2021-02-13 05:41:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Microsoft-365.jpg
 # highlight_shrink: true
 ---
@@ -16,11 +16,21 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Microsoft-365.
 
 我们可以使用API自动订阅或者搭建oneindex的方法来实现自动续期
 
-以下是使用API自动订阅的方法。以下方法均可行，可以自行选择或者全选（原理是一样的）
+以下是使用API自动订阅的方法。
+
+## 注意
+
+以下方法均可行，可以自行选择或者全选。原理是一样的，都是调用api模拟开发者操作
+
+以下方法都是增加续订几率，能否续订属于玄学问题（问就是买下微软就能100%续订）
+
+如果续订会在试用还有30天的时候续订，并且给你注册e5全局时用的个人邮箱发一封续订成功的邮件
+
+如果还剩29天，还没有续订，可以开启软件中的紧急续订模式急救
 
 ## Telegram Bot （可能是最简单的）
 
-tgbot [@E5Sub_bot](https://t.me/E5Sub_bot)
+[@E5Sub_bot](https://t.me/E5Sub_bot)
 
 [@CRE5bot](https://t.me/CRE5bot)
 
@@ -60,36 +70,29 @@ telegram bot 源码 https://github.com/iyear/E5SubBot
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-13_05-34-58.png)
 
-## 软件 
+## 软件（推荐，续订几率可能是最大的）
 
-![](https://img-blog.csdnimg.cn/20200930162211460.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMjEyMDIw,size_16,color_FFFFFF,t_70#pic_center)
+![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/1.png)
 
-### 说明：
+### 官网
 
-https://blog.csdn.net/qq_33212020/article/details/106837905
-
-主要优点 
-
-使用简单方便，无需购买服务器部署，本地应用程序即开即用
-
-### V1.7.2 正式版下载链接：
-https://sundayrx.lanzoux.com/i5oa5kq0trc
-
-### 压缩包默认解压密码
-
-SundayRX
+https://e5renew.com
 
 ### 使用说明
 
-https://blog.csdn.net/qq_33212020/article/details/106837905#t12
+使用教程：[https://ednovas.blog/2022/01/10/e5renewplus/](/2022/01/10/e5renewplus/)
 
-## 软件Plus版
+帮助文档：https://sundayrx.coding.net/s/78f69c8a-8620-4d53-bad2-c4b365fed1a0
 
-同上，不过是高级版，有更多的功能，界面也好看了许多
+### 主要优点
 
-下载地址：https://ednovas.lanzous.com/ivaGOlma6fe
+使用简单方便，无需购买服务器部署，本地应用程序即开即用
 
-或者加作者QQ群 254058945 获取最新版
+### 下载地址
+
+https://e5renew.com/#download
+
+(压缩包默认解压密码：SundayRX)
 
 ## 网页版1
 
@@ -114,10 +117,27 @@ https://ms-e5-renew.leeskyler.top:11015/Account/Login?ReturnUrl=%2F
 
 根据大佬的教程一步步走即可，部署在GitHub的actions里即可自动续订
 
-GitHub AUTOAPI稳定版 https://github.com/wangziyingwen/AutoApiP
+已删库：
 
-GitHub AUTOAPI最新版 https://github.com/wangziyingwen/AutoApi
+~~GitHub AUTOAPI稳定版 https://github.com/wangziyingwen/AutoApiP
+GitHub AUTOAPI最新版 https://github.com/wangziyingwen/AutoApi~~
+
+我的fork版：https://github.com/wdm1732418365/AutoApi
+
+## cloudreve公共网盘
+
+https://docs.cloudreve.org
+
+demo：https://ednovas.cloud
 
 ## Oneindex个人网盘搭建
 
 [Oneindex个人网盘搭建](/2021/02/15/oneindex/)
+
+## onemanager个人网盘
+
+https://github.com/qkqpttgf/OneManager-php
+
+## laindex（优秀的oneindex魔改）
+
+https://github.com/WangNingkai/OLAINDEX

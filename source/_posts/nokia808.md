@@ -5,7 +5,7 @@ id: '262'
 categories:
   - - 测评
 date: 2020-12-06 07:21:52
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/heybox/nokia 808/nokia-logo-with-hands-1600x830.webp
 ---
 

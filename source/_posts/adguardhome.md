@@ -5,7 +5,7 @@ id: '1135'
 categories:
   - - 软件
 date: 2021-01-08 20:06:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20201101092641.webp
 ---
 
@@ -31,7 +31,7 @@ GitHub官方地址：https://github.com/AdguardTeam/AdGuardHome/wiki/Getting-Sta
 
 GitHub官方下载地址：https://static.adguard.com/adguardhome/edge/AdGuardHome_windows_amd64.zip
 
-蓝奏云分流（可能不是最新版）：https://ednovas.lanzous.com/izkPNk6d83a
+蓝奏云分流（可能不是最新版）：https://ednovas.lanzoux.com/izkPNk6d83a
 
 下载解压缩以后，我们只需要AdGuardHome.exe这个文件。
 

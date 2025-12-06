@@ -5,7 +5,7 @@ id: '1138'
 categories:
   - - 软件
 date: 2021-01-10 19:53:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/sakura-bloom.webp
 ---
 
@@ -23,7 +23,7 @@ https://github.com/670848654/SakuraAnime/releases
 
 蓝奏云分流：
 
-https://ednovas.lanzous.com/iH4FVk928nc
+https://ednovas.lanzoux.com/iH4FVk928nc
 
 下载安装即可
 

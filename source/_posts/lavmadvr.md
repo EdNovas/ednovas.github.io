@@ -5,7 +5,7 @@ id: '1237'
 categories:
   - - 软件
 date: 2021-04-19 19:38:45
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/potplayer-01.webp
 # highlight_shrink: true
 ---

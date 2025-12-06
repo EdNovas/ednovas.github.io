@@ -5,7 +5,7 @@ id: '1239'
 categories:
   - - 建站
 date: 2021-04-22 17:38:45
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://api.ixiaowai.cn/gqapi/gqapi.php
 # highlight_shrink: true
 ---
@@ -140,9 +140,6 @@ go-bindata -version
 go get -u -v github.com/Sansui233/proxypool
 ```
 
-或
-
-蓝奏云下载0.7.1版本：https://ednovas.lanzous.com/ilMweoe20oj
 
 默认下载的程序会在`/root/go/pkg/mod/github.com/!sansui233/proxypool@v0.7.1`下，建议将其换个位置
 

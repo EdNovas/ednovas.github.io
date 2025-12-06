@@ -5,7 +5,7 @@ id: '1055'
 categories:
   - - 软件
 date: 2020-12-27 10:31:58
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/tor-project-logo-onions.webp
 ---
 

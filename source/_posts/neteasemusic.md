@@ -5,7 +5,7 @@ id: '1218'
 categories:
   - - 杂
 date: 2021-03-10 06:58:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/NetEase-Cloud-Music-1280x720.jpg
 highlight_shrink: true
 ---
@@ -257,7 +257,7 @@ FINAL,DIRECT
 
 https://download.yjs2635.xyz/unblockmusic/unblockmusic_0240.zip
 
-备用地址：https://ednovas.lanzous.com/iMWM6mryzqj
+备用地址：https://ednovas.lanzoux.com/iMWM6mryzqj
 
 版本更新说明
 

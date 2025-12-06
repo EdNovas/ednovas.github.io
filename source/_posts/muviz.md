@@ -5,7 +5,7 @@ id: '1165'
 categories:
   - - 软件
 date: 2021-01-22 20:50:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/5ff7465ae28d9.png
 #highlight_shrink: true
 ---
@@ -16,7 +16,7 @@ Muviz Edge 是一款非常有趣的适用于安卓设备的手机音乐可视化
 https://play.google.com/store/apps/details?id=com.sparkine.muvizedge&hl=en_US&gl=US
 
 蓝奏云破解付费版本（自己用lucky破解器破解的）：
-https://ednovas.lanzous.com/imvDokpem4f
+https://ednovas.lanzoux.com/imvDokpem4f
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/640.gif)
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/6301.gif)

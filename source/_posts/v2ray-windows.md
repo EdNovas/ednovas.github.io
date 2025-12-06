@@ -5,7 +5,7 @@ id: '546'
 categories:
   - - 科学上网
 date: 2020-12-19 20:15:24
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/45726700-df29-11ea-96f1-0813cffea4ca.webp
 ---
 
@@ -17,7 +17,6 @@ V2RayN-core github官方下载地址：
 
 找到v2rayN-Core.zip并下载解压，双击v2rayN.exe运行软件。
 
-蓝奏云分流（不是最新版，极力建议GitHub下载最新版）：https://ednovas.lanzous.com/iFMi9ijl2wh
 
 ## v2ray更换内核
 

@@ -5,7 +5,7 @@ id: '1221'
 categories:
   - - 建站
 date: 2021-03-12 21:15:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/39677-76134-headerl-xl.jpg
 # highlight_shrink: true
 ---
@@ -14,19 +14,14 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/39677-76134-he
 
 ## EdNovas的DEMO站
 
-暂无
+https://qrcode.ednovas.xyz
 
 ## 大西瓜收款码三合一
 
 https://qr.no0a.cn/
 
-## 说明
-
-之后用过两个收款码生成系统，一个是收款啦，还有一个是优启梦收款码，前面一个用起来挺方便的，就是二维码识别得比较慢，自己想改接口但是没学过php也做不了什么。后面一个是买的源码，用了一段时间提示什么小媳妇让我把你站禁了(￣▽￣)~*，找了作者之后前一段时间又提示让买源码。。。想把他这个限制给取消了，但是刚看完html+css教程的我只能束手无策，于是就萌生了自己搞一个生成系统的想法。
-
 ![](https://attach.52pojie.cn/forum/201903/10/202310sl888la84icea8yy.gif)
 
-前前后后弄了几个星期，根本上是在边百度边看文档中渡过的，由于刚学这个，很多东西也没接触过。把这个系统功用剖析了一下，觉得这个全靠html+css+js能够完成，然后就开端百度一步一步完成需求了。
 
 ## 原理
 
@@ -46,10 +41,120 @@ https://qr.no0a.cn/
 
 最新版GitHub下载: https://github.com/BWmelon/qrcode
 
-(以下都是老版)
+gitee：https://gitee.com/BWmelon/qrcode
+
+(以下可能更新不及时)
 
 下载地址：[收款码在线生成系统源码 无限制.rar](https://u4108918.ctfile.com/fs/4108918-367829048)
 
 百度网盘：[收款码在线生成系统源码 无限制.rar](https://pan.baidu.com/s/15t9SYWdfx_RTfC2IDNq4ag)
 
-EdNovas的蓝奏云：https://ednovas.lanzous.com/iVvrkmuy79c
+EdNovas的蓝奏云：https://ednovas.lanzoux.com/iVvrkmuy79c
+
+## 添加自定义新样式
+
+<p>1、添加样式背景图</p>
+<ul>
+<li>使用外部图片链接方式，如淘宝链接：
+上传图片到各大图床，如淘宝图床，然后获取图片链接，然后在index.html 页面中 <code>"swiper-wrapper"</code> 类下添加代码：
+<code>&lt;div class="swiper-slide" style="background-image:url(这是外部图片链接)" mould-name="new"&gt;&lt;/div&gt;</code></li>
+</ul>
+<p>其中<code>mould-name="new"&gt;</code>中的<code>new</code>为自定义样式名。</p>
+<ul>
+<li>使用本地图片方式：
+将背景图添加到 ./imgs/bgimgs/ 文件夹下，文件名以 "new.png" 为例，然后在 index.html 页面中 <code>"swiper-wrapper"</code> 类下添加样式：</li>
+</ul>
+<p><code>&lt;div class="swiper-slide" style="background-image:url(imgs/bgimgs/new.png)"&gt;&lt;/div&gt;</code></p>
+<p>其中的<code>new</code>也为样式名。</p>
+<p>2、打开根目录下 config.json 文件，添加json数据，根节点名必须为样式名，如 "new"，其他子节点参考下表：</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>说明</th>
+<th>参考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>qrWidth</td>
+<td>整数</td>
+<td>二维码宽度</td>
+<td>300</td>
+</tr>
+<tr>
+<td>qrHeight</td>
+<td>整数</td>
+<td>二维码高度，建议和二维码宽度相同</td>
+<td>300</td>
+</tr>
+<tr>
+<td>foreground</td>
+<td>字符串</td>
+<td>二维码前景色，支持十六进制、rgb、rgba</td>
+<td>"#000", "rgb(0, 0, 0)", "rgba(0, 0, 0, 0.5)"</td>
+</tr>
+<tr>
+<td>background</td>
+<td>字符串</td>
+<td>二维码背景色，支持十六进制、rgb、rgba</td>
+<td>"#fff", "rgb(255, 255, 255)", "rgba(255, 255, 255, 0.5)"</td>
+</tr>
+<tr>
+<td>imgWidth</td>
+<td>整数</td>
+<td>背景图宽度</td>
+<td>900（其他尺寸未兼容）</td>
+</tr>
+<tr>
+<td>imgHeight</td>
+<td>整数</td>
+<td>背景图高度</td>
+<td>1200（其他尺寸未兼容）</td>
+</tr>
+<tr>
+<td>font</td>
+<td>字符串</td>
+<td>字体和大小</td>
+<td>"70px '黑体'"</td>
+</tr>
+<tr>
+<td>fontColor</td>
+<td>字符串</td>
+<td>文字颜色（未填写收款名则不生成）</td>
+<td>"#fff", "rgb(255, 255, 255)", "rgba(255, 255, 255, 0.5)"</td>
+</tr>
+<tr>
+<td>recNameLeft</td>
+<td>空串或整数</td>
+<td>文字距离左侧距离，建议为空串，此时文本将自适应居中显示</td>
+<td>"", 100</td>
+</tr>
+<tr>
+<td>recNameTop</td>
+<td>整数</td>
+<td>文字距离顶部距离</td>
+<td>170</td>
+</tr>
+<tr>
+<td>qrLeft</td>
+<td>整数</td>
+<td>二维码距离左侧距离</td>
+<td>270</td>
+</tr>
+<tr>
+<td>qrTop</td>
+<td>整数</td>
+<td>二维码距离顶部距离</td>
+<td>320</td>
+</tr>
+</tbody>
+</table>
+<p>这样就成功添加了一个新的样式，新增的json内容内容大致为下图所示：</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/deac7f7569bc0ec97c2532d5c8236a54ce28f0715297a80bff12b5f14343ddde/68747470733a2f2f696d67732e62776d656c6f6e2e636f6d2f32303230303931333231313133302e706e67"><img src="https://camo.githubusercontent.com/deac7f7569bc0ec97c2532d5c8236a54ce28f0715297a80bff12b5f14343ddde/68747470733a2f2f696d67732e62776d656c6f6e2e636f6d2f32303230303931333231313133302e706e67" alt="参考" data-canonical-src="https://imgs.bwmelon.com/20200913211130.png" style="max-width: 100%;"></a></p>
+<p>3、小提示：
+如果不想在背景中生成收款名，可以将fontColor属性设为transparent。</p>
+<p>如需修改样式滑动效果，可以参考<a href="https://www.swiper.com.cn/api/index.html" rel="nofollow">Swiper中文网</a>文档。</p>
+
+

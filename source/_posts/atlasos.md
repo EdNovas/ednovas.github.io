@@ -5,14 +5,14 @@ id: '1230'
 categories:
   - - VPS
 date: 2021-04-06 10:14:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/d1747ca6d096e7ba1faa90830942325900b069b6.jpg
 # highlight_shrink: true
 ---
 
-# 请合理使用！请勿滥用！本文严禁任何形式转载！youtuber请勿录制讲解视频！违者必究！
+# 目前只能欠费1美刀，只能用2天了
 
-## 白嫖请适度，勿传播，只开一台鸡，自用月抛即可
+# 已无白嫖
 
 ## 开机
 
@@ -21,8 +21,6 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/d1747ca6d096e7
 注册可用中国手机号，可用接码平台，一个手机号可以重复接码，但请勿滥用！！！
 
 这个平台的本意是用来给学生等做研究等的，可以看到很多类型都内置了如JupyerLab，Eclipse等软件
-
-这个是月结账单，所以可以欠费一个月的，而且欠费最多欠8美刀，所以一个低配t3a.micro正好可以用一个月，名副其实的月抛鸡
 
 https://www.atlas-os.org/
 
@@ -78,4 +76,3 @@ workers加优选IP参考[这里](/2021/01/04/heroku/#CF%E5%8F%8D%E4%BB%A3)
 
 这样一个节点就搭建完成了
 
-# 请合理使用！请勿滥用！本文严禁转载！youtuber请勿录制讲解视频！违者必究！

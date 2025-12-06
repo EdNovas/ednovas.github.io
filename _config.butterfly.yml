@@ -7,17 +7,19 @@
 #   name || link || icon
 
 menu:
-  #主页 | Home: / || fas fa-home
+  主页 | Home: https://navigate.ednovas.xyz || fas fa-home
+  随机 | Random: /random.html || fas fa-random
   目录 | Categories: /categories/ || fas fa-folder-open
   回忆 | Archives: /archives/ || fas fa-archive
-  标签 | Tags: /tags/ || fas fa-tags
-  付费解锁 | Pay to Unlock||iconfont icon-fufei: 
-    - 如需解锁请联系EdNovas || http://wpa.qq.com/msgrd?v=3&uin=180099495&site=qq&menu=yes
-    - 自建VPS节点 || /vps/
-    - 付费订阅链接 || /urls/
-    - ios外区账号 || /ios/
-  朋友圈 | Link: /link/ || iconfont icon-pengyouquan
+  关于我 | About: /about/ || fa fa-user
+  朋友圈 | Link: /link/ || fa fa-users
   打赏支持 | Support: /支持/ || fas fa-heart
+    # 标签 | Tags: /tags/  fas fa-tags
+  # 付费解锁 | Pay to Unlock||iconfont icon-fufei: 
+    # - 如需解锁请联系EdNovas  https://t.me/ednovas
+    # - 自建VPS节点  /vps/
+    # - 付费订阅链接  /urls/
+    # - ios外区账号  /ios/
   # 列表 | List||fas fa-list:
   # 科学上网 | VPN||iconfont icon-feiji: 
   #   - 免费Clash订阅链接（持续更新） || /2020/12/18/freesubscribes/
@@ -225,7 +227,7 @@ gitcalendar:
   #设为false时使用svg绘制gitgitcalendar
   #canvas：dom数少，但图像会发生模糊，自适应一般
   #svg：dom数多，图像清晰，自适应更佳
-  user: wdm1732418365 #这里填写你的github用户名
+  user: EdNovas #这里填写你的github用户名
   apiurl: github-calendar-api.vercel.app
   # 以下色调选择喜欢的一行保留即可。其余注释。
   # color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
@@ -265,9 +267,7 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-   fab fa-qq: http://wpa.qq.com/msgrd?v=3&uin=180099495&site=qq&menu=yes || QQ
-   fas fa-envelope: mailto:1732418365@qq.com || Email
-   fab fa-github: https://github.com/wdm1732418365 || Github
+   fab fa-telegram-plane: https://t.me/ednovas || TG
    iconfont icon-rss: /atom.xml || RSS
 
 # search (搜索)
@@ -313,34 +313,34 @@ favicon: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/830.circled-
 
 # Avatar (頭像)
 avatar:
-  img: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/avator.jpg
+  img: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/icon.png
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://api.ixiaowai.cn/gqapi/gqapi.php
+index_img: https://api.ednovas.xyz
 #index_img: http://api.dujin.org/bing/1920.php
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+default_top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 
 # The banner image of archive page
-archive_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+archive_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+tag_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+tag_per_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+category_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 
 # The banner image of category page
 # format:
@@ -356,7 +356,7 @@ cover:
   # left/right/both
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
-  default_cover: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+  default_cover: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
@@ -544,7 +544,7 @@ valine:
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
-  placeholder: 1732418365@qq.com # valine comment input placeholder (like: Please leave your footprints)
+  placeholder: 留下你想说的话吧 # valine comment input placeholder (like: Please leave your footprints)
   guest_info: nick,mail # valine comment header info (nick/mail/link)
   recordIP: true # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
@@ -608,7 +608,7 @@ chatra:
 # tidio
 # https://www.tidio.com/
 tidio:
-  enable: true
+  enable: false
   public_key: xi7xvcxspsj7k3k8gwzv5q2dyvsmhsyv
 
 # daovoice
@@ -679,10 +679,12 @@ google_adsense:
 # Insert ads manually (手動插入廣告)
 ad:
   index: 
-  aside:
-  post: <a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210405210546.png"><center><h3>EdNovas云————EdNovas自己搞的机场，不想来试试嘛？</h3></center></a>
-        <a href="https://tyt4.xyz/auth/register?code=0tqI" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/04-03_19-58-04.png"><center><h3>梯云梯————众多全球冷门节点，奈飞解锁，注册还可免费试用</h3></center></a>
-        <a href="https://antlink.cc/#/register?code=Wa3WBPHC" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/04-24_12-14-24.png"><center><h3>AntLink蚁链————新用户注册免费使用50g/30天，便宜IPLC机场</h3></center></a>
+  aside: 
+  post: <a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png"><center><h3>EdNovas云————高性价比，节点覆盖80+国家，多地区奈飞迪士尼等流媒体解锁</h3></center></a>
+        <a href="https://store.moccanetwork.com/aff.php?aff=85" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_10-16-00-1.png"><center><h3>Mocca Store————便宜稳定奈飞迪士尼等北美流媒体，办公设计学习软件会员</h3></center></a>
+        
+        
+
 
 # Verification (站長驗證)
 # --------------------------------------
@@ -891,7 +893,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/wdm1732418365
+      link: https://t.me/ednovas
   card_announcement:
     enable: true
     content:
@@ -899,14 +901,14 @@ aside:
         欢迎来到EdNovas的小站！
       </div>
       <div class="button--animated">
-        <a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://jq.qq.com/?_wv=1027&k=13mMmSwQ"></center>
-          <i class="fab fa-qq"></i>
-          <span>点击加入QQ群组</span></a>
-      </div>
-      <div class="button--animated">
         <center><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://t.me/ednovas2"></center>
           <i class="fab fa-telegram"></i>
           <span>点击加入TG频道</span></a>
+      </div>
+      <div class="button--animated">
+        <center><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://t.me/joinchat/s9g5bIcf-Jw1NjFl"></center>
+          <i class="fab fa-telegram"></i>
+          <span>点击加入TG群组</span></a>
       </div>
   card_recent_post:
     enable: false

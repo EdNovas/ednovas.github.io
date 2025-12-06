@@ -5,7 +5,7 @@ id: '1137'
 categories:
   - - 软件
 date: 2021-01-10 14:55:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/potplayer-01.webp
 ---
 
@@ -27,7 +27,7 @@ https://potplayer.daum.net/
 
 蓝奏云分流：
 
-https://ednovas.lanzous.com/ix4INk8mhzc
+https://ednovas.lanzoux.com/ix4INk8mhzc
 
 这个软件最强的地方不是没有各种垃圾广告，而是他强大的功能，这些都可以在右键视频中发现。它还可以添加频道，观看世界各地的直播（国外的需要梯子）
 

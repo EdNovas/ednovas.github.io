@@ -5,7 +5,7 @@ id: '79'
 categories:
   - - 科学上网
 date: 2020-11-29 06:07:41
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp
 ---
 
@@ -18,32 +18,10 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a106
 
 如果不是Clash订阅链接需要转换的可以前往[这里](/2020/12/20/订阅链接转换/)
 
-## 视频教程
-（油管视频,需要梯子观看。非本人制作，视频中版本较老，使用操作可能有所不同，仅供参考。）
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/R1F6xC3iIHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### 感谢群友的热心录制
-
-使用教程
-<video width="560" height="315" controls>
-  <source src="https://onecloud.ednovas.xyz/api/v3/file/source/173/1615384413703~1.mp4?sign=emzHXl3WFs-hRInxNbHKyqbFEtwf9LHESyZqabckYxY%3D%3A0" type="video/mp4">
-</video>
-
-<!-- <iframe width="560" height="315" src="https://oneindex.ednovas.xyz/images/2021/02/08/clashwin/1615384413703~1.mp4" allowfullscreen></iframe> -->
-<!-- <video><source src="https://oneindex.ednovas.xyz/images/2021/02/08/clashwin/1615384413703~1.mp4" type="video/mp4"></video> -->
-
-汉化教程
-<video width="560" height="315" controls>
-  <source src="https://onecloud.ednovas.xyz/api/v3/file/source/174/1615383301594~1.mp4?sign=BBrKgsdE5V4qw9suP1N4UtfI5hF27UuyBQ77dtQtY3c%3D%3A0" type="video/mp4">
-</video>
-<!-- <iframe width="560" height="315" src="https://oneindex.ednovas.xyz/images/2021/02/08/clashwin/1615383301594~1.mp4" allowfullscreen></iframe> -->
-
-<!-- <video><source src="https://oneindex.ednovas.xyz/images/2021/02/08/clashwin/1615383301594~1.mp4" type="video/mp4"></video> -->
+## 下载安装
 
 1.  下载Clash for Windows
-    *   [Github下载链接](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.13.5/Clash.for.Windows.Setup.0.13.5.exe)
-    *   [蓝奏云下载链接 版本15.1（附汉化包下载）](https://ednovas.lanzous.com/b00zyk3kd)
+    *   [Github下载链接](https://github.com/Fndroid/clash_for_windows_pkg/releases)
 2.  安装软件
     *   双击打开Clash for windows.exe，同意权限，选择给所有用户安装（图一），点击next
     *   默认安装位置即可，（如果想要更改安装位置，点击Browse...选择）点击Install（图二）

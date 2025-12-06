@@ -5,7 +5,7 @@ id: '1170'
 categories:
   - - 建站
 date: 2021-01-24 17:18:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://qntemp3.bejson.com/upload/77230833517097600.png?imageView2/0/w/0/h/0/format/webp
 #highlight_shrink: true
 ---

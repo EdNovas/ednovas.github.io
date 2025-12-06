@@ -5,7 +5,7 @@ id: '1215'
 categories:
   - - 网站
 date: 2021-02-22 13:43:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1557364192-work_while_you_study_banner.jpg
 # highlight_shrink: true
 ---

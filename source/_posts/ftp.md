@@ -6,7 +6,7 @@ categories:
   - - VPS
   - - 下载
 date: 2021-01-14 21:28:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ftp.webp
 ---
 
@@ -62,7 +62,7 @@ HTTP上载提供了一种非常简单的将文件上载到服务器的方法，�
 
 酷安下载：https://www.coolapk.com/apk/com.estrongs.android.pop
 
-安卓破解版：https://ednovas.lanzous.com/islYukelb3e
+安卓破解版：https://ednovas.lanzoux.com/islYukelb3e
 
 ## 使用说明
 
@@ -144,4 +144,4 @@ https://play.google.com/store/apps/details?id=com.ttee.leeplayer
 
 蓝奏云下载：
 
-https://ednovas.lanzous.com/ilpNqkewpvc
+https://ednovas.lanzoux.com/ilpNqkewpvc

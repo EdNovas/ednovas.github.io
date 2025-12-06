@@ -5,7 +5,7 @@ id: '1197'
 categories:
   - - 杂
 date: 2021-02-06 05:22:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/google-voice-1000x530.png
 highlight_shrink: true
 ---

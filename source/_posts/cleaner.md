@@ -5,7 +5,7 @@ id: '1229'
 categories:
   - - 软件
 date: 2021-04-06 08:06:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Improve-efficiency-through-automation.jpg
 # highlight_shrink: true
 ---
@@ -144,7 +144,7 @@ WinExt是一个免费的 Windows 实用工具包。您可以通过使用它享�
 
 ### 下载地址
 
-https://ednovas.lanzous.com/iw3rcnpffyh
+https://ednovas.lanzoux.com/iw3rcnpffyh
 
 ### 正版软件激活码
 

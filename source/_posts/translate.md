@@ -5,7 +5,7 @@ id: '1200'
 categories:
   - - 软件
 date: 2021-02-07 12:09:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/yuban.jpg
 # highlight_shrink: true
 ---
@@ -322,7 +322,7 @@ GitHub地址：https://github.com/PantsuDango/Dango-Translator
 
     有两种可能造成这个问题
 
-    1. 你当前的系统为日本系统，翻译器不能在日区，繁体的电脑系统区域使用，必须转回简中，如玩的游戏需要转区才可以启动，可以使用[LE转区软件](https://ednovas.lanzous.com/iPgUXlfejva)来打开游戏。转区教程：https://www.bilibili.com/video/av67724039?from=search&seid=15096516439242649288
+    1. 你当前的系统为日本系统，翻译器不能在日区，繁体的电脑系统区域使用，必须转回简中，如玩的游戏需要转区才可以启动，可以使用[LE转区软件](https://ednovas.lanzoux.com/iPgUXlfejva)来打开游戏。转区教程：https://www.bilibili.com/video/av67724039?from=search&seid=15096516439242649288
 
     2. 你的翻译器文件不完整有缺失，请重下重新完整地解压。
 

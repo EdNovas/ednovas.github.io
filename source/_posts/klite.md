@@ -5,7 +5,7 @@ id: '1238'
 categories:
   - - 软件
 date: 2021-04-22 17:36:45
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/K-Lite-Codec-Pack-2.jpg
 # highlight_shrink: true
 ---

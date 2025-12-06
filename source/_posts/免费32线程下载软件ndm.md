@@ -5,7 +5,7 @@ id: '855'
 categories:
   - - 下载
 date: 2020-12-21 12:37:48
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/heybox/NDM/QQ图片20201214094649.webp
 ---
 

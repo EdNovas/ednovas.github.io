@@ -5,10 +5,15 @@ id: '1156'
 categories:
   - - VPS
 date: 2021-01-20 04:44:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/f0288b435079a664c49b4ce8aae1403e.jpg
 #highlight_shrink: true
 ---
+
+# 项目网站已删库，请使用x-ui作为替代品 x-ui项目地址: https://github.com/vaxilu/x-ui
+# 或者使用waybackmachine追溯原仓库 http://web.archive.org/web/20210412193605/https://github.com/sprov065/v2-ui
+# 和原网站 http://web.archive.org/web/20210525032117/https://blog.sprov.xyz/
+
 ## 建议系统
 
 面板建议以下系统安装，建议尽量使用新版的系统，且必须是 64 位系统：

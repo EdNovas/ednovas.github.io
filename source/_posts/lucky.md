@@ -5,7 +5,7 @@ id: '1133'
 categories:
   - - 软件
 date: 2021-01-07 15:57:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Lucky-Patcher.webp
 ---
 
@@ -34,7 +34,7 @@ Lucky Patcher可以阻止所有这些广告，它可以为您提供最佳游戏�
 https://www.luckypatchers.com/lucky-patcher-all-versions/p
 
 蓝奏云分流（9.2.1版本，可能更新不及时，不会太影响使用）：
-[Installer_9.2.1.apk](https://ednovas.lanzous.com/izUiBk4vl6h)
+[Installer_9.2.1.apk](https://ednovas.lanzoux.com/izUiBk4vl6h)
 
 ## Lucky使用例子
 

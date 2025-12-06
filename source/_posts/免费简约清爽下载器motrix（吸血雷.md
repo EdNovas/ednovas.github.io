@@ -5,7 +5,7 @@ id: '864'
 categories:
   - - 下载
 date: 2020-12-21 12:42:44
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/heybox/motrix/QQ图片20201214144336.webp
 ---
 

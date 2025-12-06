@@ -5,7 +5,7 @@ id: '1210'
 categories:
   - - 科学上网
 date: 2021-02-15 21:34:00
-top_img: 'linear-gradient(20deg,#0062be,#925696,#cc426e,#fb0347)'
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp
 # highlight_shrink: true
 ---
