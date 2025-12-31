@@ -19,10 +19,10 @@ top_img: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)
 
 https://vps.ednovas.tech
 
-<img width="2560" height="1229" alt="Snipaste_2025-12-04_22-32-11" src="https://github.com/user-attachments/assets/53cfb7b2-d51d-40d3-b63c-82b285f828c8" />
+<img alt="Snipaste_2025-12-04_22-32-11" src="https://github.com/user-attachments/assets/53cfb7b2-d51d-40d3-b63c-82b285f828c8" />
 
-<img width="2560" height="1229" alt="Snipaste_2025-12-04_22-30-24" src="https://github.com/user-attachments/assets/67959879-2f62-45c7-ad11-0ea91e2220cf" />
-<img width="2560" height="1229" alt="Snipaste_2025-12-04_22-31-45" src="https://github.com/user-attachments/assets/e0f8725b-bf5d-46e1-9d2f-d35261e687a2" />
+<img alt="Snipaste_2025-12-04_22-30-24" src="https://github.com/user-attachments/assets/67959879-2f62-45c7-ad11-0ea91e2220cf" />
+<img alt="Snipaste_2025-12-04_22-31-45" src="https://github.com/user-attachments/assets/e0f8725b-bf5d-46e1-9d2f-d35261e687a2" />
 
 
 # VPS Manager Pro (Web SSH Terminal)

@@ -18,32 +18,17 @@ top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 
 这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 https://github.com/Minerchu/dongguaTV ，本作添加了许多功能。
 
-# 演示网站
+
+## 演示网站
 
 https://ednovas-test.vercel.app （不包含任何数据）
 
-<img width="2547" height="1226" alt="image" src="https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950" />
+<img alt="image" src="https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950" />
 
-<img width="2547" height="1227" alt="image" src="https://github.com/user-attachments/assets/d03543f5-34a4-414b-a131-62eda0af21b2" />
+<img alt="image" src="https://github.com/user-attachments/assets/d03543f5-34a4-414b-a131-62eda0af21b2" />
 
-<img width="2547" height="1229" alt="image" src="https://github.com/user-attachments/assets/e8bd4e14-dbd2-4d49-a1fc-7979c1ca22a4" />
+<img alt="image" src="https://github.com/user-attachments/assets/e8bd4e14-dbd2-4d49-a1fc-7979c1ca22a4" />
 
-
----
-
-## 📚 目录 (Table of Contents)
-
-- [✨ 核心特性 (Features)](#-核心特性-features)
-- [🎨 界面升级 (UI Upgrade)](#-界面升级-ui-upgrade)
-- [🛠️ 技术栈 (Tech Stack)](#️-技术栈-tech-stack)
-- [🔧 前置准备 (Prerequisites)](#-前置准备-prerequisites)
-- [🌐 网络优化 & 代理 (Network & Proxy)](#-网络优化--代理-network--proxy)
-- [🔒 安全与高级功能 (Security & Advanced)](#-安全与高级功能-security--advanced)
-- [📦 安装与运行 (Installation)](#-安装与运行-installation)
-- [🚀 部署 (Deployment)](#-部署-deployment)
-- [🤖 Android APP 构建](#-android-app-构建-github-actions)
-- [💾 数据维护与备份](#-数据维护与备份)
-- [⚠️ 免责声明 (Disclaimer)](#️-免责声明-disclaimer)
 
 ---
 
