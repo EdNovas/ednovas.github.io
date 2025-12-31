@@ -58,7 +58,9 @@ jobs:
 
       # 安装依赖
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm config set registry https://registry.npmjs.org/
+          npm ci --legacy-peer-deps || npm install --legacy-peer-deps
 
       # 构建静态文件
       - name: Build Hexo
