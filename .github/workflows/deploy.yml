@@ -10,6 +10,17 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     
+    # 定义环境变量，这样可以安全处理长字符串
+    env:
+      ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+      ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+      ALGOLIA_ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
+      WEBPUSHR_KEY: ${{ secrets.WEBPUSHR_KEY }}
+      WEBPUSHR_AUTH_TOKEN: ${{ secrets.WEBPUSHR_AUTH_TOKEN }}
+      WEBPUSHR_TRACKING_CODE: ${{ secrets.WEBPUSHR_TRACKING_CODE }}
+      VALINE_APP_ID: ${{ secrets.VALINE_APP_ID }}
+      VALINE_APP_KEY: ${{ secrets.VALINE_APP_KEY }}
+
     steps:
       # 检出代码
       - name: Checkout repository
@@ -27,28 +38,20 @@ jobs:
       # 从模板生成 Hexo 主配置文件
       - name: Generate Hexo config from template
         run: |
-          # 复制模板文件
           cp _config.template.yml _config.yml
-          
-          # 替换 Algolia 相关的环境变量
-          sed -i "s|\${ALGOLIA_APP_ID}|${{ secrets.ALGOLIA_APP_ID }}|g" _config.yml
-          sed -i "s|\${ALGOLIA_API_KEY}|${{ secrets.ALGOLIA_API_KEY }}|g" _config.yml
-          sed -i "s|\${ALGOLIA_ADMIN_API_KEY}|${{ secrets.ALGOLIA_ADMIN_API_KEY }}|g" _config.yml
-          
-          # 替换 WebPushr 相关的环境变量
-          sed -i "s|\${WEBPUSHR_KEY}|${{ secrets.WEBPUSHR_KEY }}|g" _config.yml
-          sed -i "s|\${WEBPUSHR_AUTH_TOKEN}|${{ secrets.WEBPUSHR_AUTH_TOKEN }}|g" _config.yml
-          sed -i "s|\${WEBPUSHR_TRACKING_CODE}|${{ secrets.WEBPUSHR_TRACKING_CODE }}|g" _config.yml
+          sed -i "s|\${ALGOLIA_APP_ID}|${ALGOLIA_APP_ID}|g" _config.yml
+          sed -i "s|\${ALGOLIA_API_KEY}|${ALGOLIA_API_KEY}|g" _config.yml
+          sed -i "s|\${ALGOLIA_ADMIN_API_KEY}|${ALGOLIA_ADMIN_API_KEY}|g" _config.yml
+          sed -i "s|\${WEBPUSHR_KEY}|${WEBPUSHR_KEY}|g" _config.yml
+          sed -i "s|\${WEBPUSHR_AUTH_TOKEN}|${WEBPUSHR_AUTH_TOKEN}|g" _config.yml
+          sed -i "s|\${WEBPUSHR_TRACKING_CODE}|${WEBPUSHR_TRACKING_CODE}|g" _config.yml
 
       # 从模板生成 Butterfly 主题配置文件
       - name: Generate Butterfly config from template
         run: |
-          # 复制模板文件
           cp _config.butterfly.template.yml _config.butterfly.yml
-          
-          # 替换 Valine 的 appId 和 appKey
-          sed -i "s|\${VALINE_APP_ID}|${{ secrets.VALINE_APP_ID }}|g" _config.butterfly.yml
-          sed -i "s|\${VALINE_APP_KEY}|${{ secrets.VALINE_APP_KEY }}|g" _config.butterfly.yml
+          sed -i "s|\${VALINE_APP_ID}|${VALINE_APP_ID}|g" _config.butterfly.yml
+          sed -i "s|\${VALINE_APP_KEY}|${VALINE_APP_KEY}|g" _config.butterfly.yml
 
       # 安装依赖
       - name: Install dependencies
