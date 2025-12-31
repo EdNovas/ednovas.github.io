@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>EdNovas的小站</title>
+  <icon>https://ednovas.xyz/icon.png</icon>
+  
+  <link href="https://ednovas.xyz/atom.xml" rel="self"/>
+  
+  <link href="https://ednovas.xyz/"/>
+  <updated>2025-12-31T20:58:22.761Z</updated>
+  <id>https://ednovas.xyz/</id>
+  
+  <author>
+    <name>EdNovas</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 SSH 连接 GitHub Action 服务器</title>
+    <link href="https://ednovas.xyz/2025/12/31/githubactions/"/>
+    <id>https://ednovas.xyz/2025/12/31/githubactions/</id>
+    <published>2025-12-31T20:58:22.761Z</published>
+    <updated>2025-12-31T20:58:22.761Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;奇技淫巧，请勿滥用&lt;/p&gt;
+&lt;p&gt;GitHub Actions 虚拟服务器(VM/VPS)评测（源自p3trex大佬）：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://p3terx.com/archives/github-actions-virtual-environment-simple-evaluation.html&quot;&gt;https://p3terx.com/archives/github-actions-virtual-environment-simple-evaluation.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;实际上 GitHub Ac­tions 本身是不允许直接连接进行交互式操作，但有好事的开发者竟然另辟蹊径通过安装 tmate 来实现了 SSH 连接，并且制作了相关的 ac­tion 。这使得我们可以非常容易连接到 Ac­tions 的虚拟环境中，相当于免费获得了 20 台 E5 2vCPU/​7G RAM/​90G SSD 配置的 Linux VPS 和 5 台 ma­cOS VPS。&lt;/p&gt;
+&lt;h2 id=&quot;tmate&quot;&gt;&lt;a href=&quot;#tmate&quot; class=&quot;headerlink&quot; title=&quot;tmate&quot;&gt;&lt;/a&gt;tmate&lt;/h2&gt;&lt;p&gt;GitHub项目地址：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mxschmitt/action-tmate&quot;&gt;https://github.com/mxschmitt/action-tmate&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;第一个实现 tmate 连接 Ac­tions 的 ac­tion ，但此方案在退出连接后不能进行到下一个步骤，所以在实际使用中没有多少价值，且极易造成资源浪费，所以只能用于 SSH 连接。不过由于其开天辟地的作用，我决定把它放到第一位。&lt;/p&gt;
+&lt;p&gt;work­flow 文件示例：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;name: Ubuntu&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;on: push&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;jobs:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  build:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    runs-on: ubuntu-latest&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    steps:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - uses: actions/checkout@v1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - name: Setup tmate session&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      uses: mxschmitt/action-tmate@v1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="github" scheme="https://ednovas.xyz/tags/github/"/>
+    
+    <category term="github actions" scheme="https://ednovas.xyz/tags/github-actions/"/>
+    
+    <category term="ssh" scheme="https://ednovas.xyz/tags/ssh/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Server Gigabit Network</title>
+    <link href="https://ednovas.xyz/2024/04/25/gigabit/"/>
+    <id>https://ednovas.xyz/2024/04/25/gigabit/</id>
+    <published>2024-04-25T22:28:00.000Z</published>
+    <updated>2025-12-31T20:58:22.761Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/gigabit1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Server Gigabit VPS默认是100M共享带宽，不限制流量使用，低延迟，架构(VIRTUAL TYPE)：KVM分为Linux VPS和Windows VPS两种，其中Linux VPS月付$11.59起，套餐整理如下：&lt;/p&gt;
+&lt;h2 id=&quot;Linux-VPS-Hosting&quot;&gt;&lt;a href=&quot;#Linux-VPS-Hosting&quot; class=&quot;headerlink&quot; title=&quot;Linux VPS Hosting&quot;&gt;&lt;/a&gt;Linux VPS Hosting&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;内存&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;CPU&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;SSD&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;价格&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;购买&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;1G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;20G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$11.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=1&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;2G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;40G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$16.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=19&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;4G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;80G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$34.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=21&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;8G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;8核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;160G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$70.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=25&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;16G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;14核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;200G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$134.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=27&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&quot;Windows-VPS-Hosting&quot;&gt;&lt;a href=&quot;#Windows-VPS-Hosting&quot; class=&quot;headerlink&quot; title=&quot;Windows VPS Hosting&quot;&gt;&lt;/a&gt;Windows VPS Hosting&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;内存&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;CPU&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;SSD&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;价格&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;购买&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;1G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;20G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$9.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=2&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;2G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;40G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$20.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=12&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;3G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;3核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;80G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$31.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=13&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;4G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;100G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$42.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=14&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;8G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;8核&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;180G&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$86.59/月&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;https://billing.servergigabit.com/cart.php?a=add&amp;pid=18&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&quot;官网&quot;&gt;&lt;a href=&quot;#官网&quot; class=&quot;headerlink&quot; title=&quot;官网&quot;&gt;&lt;/a&gt;官网&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.servergigabit.com/&quot;&gt;https://www.servergigabit.com&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Blend Hosting VPS</title>
+    <link href="https://ednovas.xyz/2023/12/14/blendhosting/"/>
+    <id>https://ednovas.xyz/2023/12/14/blendhosting/</id>
+    <published>2023-12-14T22:28:00.000Z</published>
+    <updated>2025-12-31T20:58:22.756Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Blend Hosting &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一家成立于2005年的马来西亚托管服务商并提供了全天候的客户服务，以确保伺服器稳定的运行。Blend Hosting 的数据中心分别有位于吉隆坡的AIMS数据中心, 和位于赛城的 Bridge 数据中心。&lt;/p&gt;
+&lt;p&gt;Blend Hosting 的 VPS 分别有 Linux VPS 和 Windows VPS。 其中附有100Mbps带宽与不限量的数据传输，99%主机在线保证及长达15天的退款保证，且有免费的SSL证书。另外，Linux VPS每月最低仅需 $5.59 而 Windows VPS 每月最低仅需 $9.59。支持的付款方式有 Paypal 或加密货币及信用卡。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/BlendHosting.jpg&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;VPS套餐&quot;&gt;&lt;a href=&quot;#VPS套餐&quot; class=&quot;headerlink&quot; title=&quot;VPS套餐&quot;&gt;&lt;/a&gt;VPS套餐&lt;/h1&gt;&lt;h2 id=&quot;Linux&quot;&gt;&lt;a href=&quot;#Linux&quot; class=&quot;headerlink&quot; title=&quot;Linux&quot;&gt;&lt;/a&gt;Linux&lt;/h2&gt;&lt;p&gt;Linux VPS托管计划 &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SSD VPS 1 &lt;/p&gt;
+&lt;p&gt;1GB 内存&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Raspberry + 外接硬盘 用内网穿透 WebDav 作公网 NAS</title>
+    <link href="https://ednovas.xyz/2023/02/24/homemadenas/"/>
+    <id>https://ednovas.xyz/2023/02/24/homemadenas/</id>
+    <published>2023-02-24T22:28:00.000Z</published>
+    <updated>2025-12-31T20:58:22.763Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Raspberry（别的支持docker的软路由/家庭服务器等也可以）&lt;/li&gt;
+&lt;li&gt;cloudflare账号（用cloudfalre tunnel）&lt;/li&gt;
+&lt;li&gt;用作nas的硬盘（插到raspberry上的外接硬盘，需要自供电，raspberry的电量带不动不插电的移动硬盘）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;初期&quot;&gt;&lt;a href=&quot;#初期&quot; class=&quot;headerlink&quot; title=&quot;初期&quot;&gt;&lt;/a&gt;初期&lt;/h2&gt;&lt;p&gt;raspberry初始化可以看 &lt;a href=&quot;/2023/02/19/raspberry/&quot;&gt;https://ednovas.xyz/2023/02/19/raspberry/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;注意本教程安装的OMV NAS系统，不能有桌面UI，安装系统的时候请选择没有桌面的lite版本系统。如果选择了有桌面的系统，我们也需要卸载。可以执行以下命令卸载完全各种桌面：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt purge xserver* lightdm* raspberrypi-ui-mods vlc* lxde* chromium* desktop* gnome* gstreamer* gtk* hicolor-icon-theme* lx* mesa*&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt autoremove&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;cloudflare tunnel设置可以看 &lt;a href=&quot;2023/02/24/cloudflaretunnel/&quot;&gt;https://ednovas.xyz/2023/02/24/cloudflaretunnel/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;安装OMV&quot;&gt;&lt;a href=&quot;#安装OMV&quot; class=&quot;headerlink&quot; title=&quot;安装OMV&quot;&gt;&lt;/a&gt;安装OMV&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.openmediavault.org/&quot;&gt;https://www.openmediavault.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;openmediavault 是一个免费的十分优秀的NAS管理系统，我们可以用来装在raspberry上的。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
+    
+    <category term="tunnel" scheme="https://ednovas.xyz/tags/tunnel/"/>
+    
+    <category term="内网穿透" scheme="https://ednovas.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    
+    <category term="nas" scheme="https://ednovas.xyz/tags/nas/"/>
+    
+    <category term="docker" scheme="https://ednovas.xyz/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cloudflare Tunnel 免费内网穿透</title>
+    <link href="https://ednovas.xyz/2023/02/24/cloudflaretunnel/"/>
+    <id>https://ednovas.xyz/2023/02/24/cloudflaretunnel/</id>
+    <published>2023-02-24T21:28:00.000Z</published>
+    <updated>2025-12-31T20:58:22.757Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Cloudflare-Tunnel&quot;&gt;&lt;a href=&quot;#Cloudflare-Tunnel&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Tunnel&quot;&gt;&lt;/a&gt;Cloudflare Tunnel&lt;/h2&gt;&lt;p&gt;cloudflare提供的免费加密通道，通过cloudflare的cnd访问部署在内网的服务，比如web,ssh,smb,tcp等。&lt;/p&gt;
+&lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h2&gt;&lt;p&gt;那肯定必须需要一个cloudflare账号，以及开通 cloudflare zero trust。&lt;/p&gt;
+&lt;p&gt;cloudflare：&lt;a href=&quot;https://www.cloudflare.com/&quot;&gt;https://www.cloudflare.com/&lt;/a&gt;&lt;br&gt;zero trust: &lt;a href=&quot;https://one.dash.cloudflare.com/&quot;&gt;https://one.dash.cloudflare.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;在你的需要内网穿透的设备上安装cloudflared（cf的本地cli客户端），这里博主以raspberry pi 4 作为例子。&lt;/p&gt;
+&lt;p&gt;由于raspberry pi 4 是arm64的，所以需要下载arm架构的文件：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;curl -L &lt;span class=&quot;string&quot;&gt;&amp;#x27;https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64&amp;#x27;&lt;/span&gt; -o /usr/bin/cloudflared&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;chmod&lt;/span&gt; +x /usr/bin/cloudflared&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;如果是普通amd64架构的，使用以下命令：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="cloudflare" scheme="https://ednovas.xyz/tags/cloudflare/"/>
+    
+    <category term="tunnel" scheme="https://ednovas.xyz/tags/tunnel/"/>
+    
+    <category term="内网穿透" scheme="https://ednovas.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Raspberry Pi 入门使用指南</title>
+    <link href="https://ednovas.xyz/2023/02/19/raspberry/"/>
+    <id>https://ednovas.xyz/2023/02/19/raspberry/</id>
+    <published>2023-02-19T21:28:00.000Z</published>
+    <updated>2025-12-31T20:58:22.768Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Raspberry-Pi&quot;&gt;&lt;a href=&quot;#Raspberry-Pi&quot; class=&quot;headerlink&quot; title=&quot;Raspberry Pi&quot;&gt;&lt;/a&gt;Raspberry Pi&lt;/h2&gt;&lt;p&gt;树莓派（英语：Raspberry Pi）英国树莓派基金会开发的微型单板计算机，目的是以低价硬体及自由软体促进学校的基本电脑科学教育。&lt;/p&gt;
+&lt;p&gt;树莓派系列计算机每一代均使用博通（Broadcom）出产的ARM架构处理器，如今生产的机型（树莓派4B）内存在2GB和8GB之间，主要TF卡作为系统存储媒体（初代使用SD卡），配备USB接口和HDMI的视频输出（支持声音输出），内置Ethernet/WLAN/Bluetooth网络链接的方式（依据型号决定），并且可使用多种操作系统。产品线型号分为A型、B型、Zero型和ComputeModule计算卡。&lt;/p&gt;
+&lt;h2 id=&quot;用途&quot;&gt;&lt;a href=&quot;#用途&quot; class=&quot;headerlink&quot; title=&quot;用途&quot;&gt;&lt;/a&gt;用途&lt;/h2&gt;&lt;p&gt;Raspberry Pi 实际上就是一个超级便捷的小型电脑，通常用来装linux系统，可以用作服务器的一些功能。&lt;/p&gt;
+&lt;p&gt;例如：搭建个人网站，Git服务器，远程BT下载器，小型家庭NAS，AirPlay服务，闹钟，DNSmasq服务（内网DNS），Adguard Home，等等功能。&lt;/p&gt;
+&lt;p&gt;这是作为服务器的用途，还可以用作一些机械结构的模块，用来做树莓派飞行器，机器人，遥控坦克等等。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.adafruit.com/&quot;&gt;https://www.adafruit.com/&lt;/a&gt; 这个网站上有很多树莓派的开源有趣的项目可以用作参考&lt;/p&gt;
+&lt;p&gt;还有一本书也很推荐 &lt;a href=&quot;https://book.douban.com/subject/25856712/&quot;&gt;https://book.douban.com/subject/25856712/&lt;/a&gt; （京东有售。不想买书的话可以从Z-lib找免费的PDF版本）&lt;/p&gt;
+&lt;h2 id=&quot;购买&quot;&gt;&lt;a href=&quot;#购买&quot; class=&quot;headerlink&quot; title=&quot;购买&quot;&gt;&lt;/a&gt;购买&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="raspberry" scheme="https://ednovas.xyz/tags/raspberry/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Chrome Remote Desktop 远程控制 Ubuntu 服务器</title>
+    <link href="https://ednovas.xyz/2023/01/07/remote-ubuntu/"/>
+    <id>https://ednovas.xyz/2023/01/07/remote-ubuntu/</id>
+    <published>2023-01-07T11:51:00.000Z</published>
+    <updated>2025-12-31T20:58:22.768Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;众所周知，Chrome Remote Desktop 是一款十分出色的完全免费远程控制软件。其易用性和功能的强大性，以及连接的稳定性都给这款软件加分不少，唯一的缺点可能就是国内无法使用了，需要开梯子才可使用。&lt;/p&gt;
+&lt;p&gt;首先，先准备一个需要远程控制的VPS，要求 Debian或者 Ubuntu系统。还需要另一个控制端，手机电脑均可，登录你的 Google 账户：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://remotedesktop.google.com/support/&quot;&gt;https://remotedesktop.google.com/support/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;安装（Ubuntu为例）&quot;&gt;&lt;a href=&quot;#安装（Ubuntu为例）&quot; class=&quot;headerlink&quot; title=&quot;安装（Ubuntu为例）&quot;&gt;&lt;/a&gt;安装（Ubuntu为例）&lt;/h2&gt;&lt;h3 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h3&gt;&lt;p&gt;控制端前往 &lt;a href=&quot;https://remotedesktop.google.com/headless&quot;&gt;https://remotedesktop.google.com/headless&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2023-01-07_15-50-47.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Ubuntu被控端下载程序包&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="远程控制" scheme="https://ednovas.xyz/tags/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/"/>
+    
+    <category term="ubuntu" scheme="https://ednovas.xyz/tags/ubuntu/"/>
+    
+    <category term="Chrome Remote Desktop" scheme="https://ednovas.xyz/tags/Chrome-Remote-Desktop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Cloudfront CDN</title>
+    <link href="https://ednovas.xyz/2022/10/28/cloudfront/"/>
+    <id>https://ednovas.xyz/2022/10/28/cloudfront/</id>
+    <published>2022-10-28T13:09:00.000Z</published>
+    <updated>2025-12-31T20:58:22.757Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Amazon-Cloudfront&quot;&gt;&lt;a href=&quot;#Amazon-Cloudfront&quot; class=&quot;headerlink&quot; title=&quot;Amazon Cloudfront&quot;&gt;&lt;/a&gt;Amazon Cloudfront&lt;/h2&gt;&lt;p&gt;Cloudfront是Amazon提供的CDN服务，有每月免费1T的流量，该流量不可累计。个人小站的话，这个CDN是足够用的了，而且主要是国内访问的速度还不错。但是需要注意不要被攻击了，不然AWS的扣费还是很贵的。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://aws.amazon.com/cn/cloudfront/&quot;&gt;https://aws.amazon.com/cn/cloudfront/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;解析域名&quot;&gt;&lt;a href=&quot;#解析域名&quot; class=&quot;headerlink&quot; title=&quot;解析域名&quot;&gt;&lt;/a&gt;解析域名&lt;/h2&gt;&lt;p&gt;首先先解析个三级域名到你的需要加CDN的网站的VPS IP上，比如&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/photo_2022-10-28_15-50-23.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这里的 8.8.8.8 就是你的VPS IP。这里的cdn就是你的三级域名前缀，这个域名是看不到的，这是回源域名用的。用户访问的是后面Cloudfront生成的域名地址或者是自己加的CNAME域名地址。&lt;/p&gt;
+&lt;h2 id=&quot;创建账号&quot;&gt;&lt;a href=&quot;#创建账号&quot; class=&quot;headerlink&quot; title=&quot;创建账号&quot;&gt;&lt;/a&gt;创建账号&lt;/h2&gt;&lt;p&gt;前往 &lt;a href=&quot;https://aws.amazon.com/cn/cloudfront/&quot;&gt;https://aws.amazon.com/cn/cloudfront/&lt;/a&gt; 注册个账号，并且绑定个信用卡，建议绑定小额的或者限额，否则扣起费来吃不消。&lt;/p&gt;
+&lt;p&gt;创建个Distributions&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="CDN" scheme="https://ednovas.xyz/tags/CDN/"/>
+    
+    <category term="Cloudfront" scheme="https://ednovas.xyz/tags/Cloudfront/"/>
+    
+    <category term="AWS" scheme="https://ednovas.xyz/tags/AWS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Gcore CDN</title>
+    <link href="https://ednovas.xyz/2022/10/28/gcore/"/>
+    <id>https://ednovas.xyz/2022/10/28/gcore/</id>
+    <published>2022-10-28T13:09:00.000Z</published>
+    <updated>2025-12-31T20:58:22.761Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Gcorelab-CDN&quot;&gt;&lt;a href=&quot;#Gcorelab-CDN&quot; class=&quot;headerlink&quot; title=&quot;Gcorelab CDN&quot;&gt;&lt;/a&gt;Gcorelab CDN&lt;/h2&gt;&lt;p&gt;类似AWS的Cloudfront CDN，提供每月1T的免费流量。效果不如Cloudfront但是也还不错&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cdn.gcore.com/&quot;&gt;https://cdn.gcore.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;注册账号&quot;&gt;&lt;a href=&quot;#注册账号&quot; class=&quot;headerlink&quot; title=&quot;注册账号&quot;&gt;&lt;/a&gt;注册账号&lt;/h2&gt;&lt;p&gt;Gcore 地址&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cdn.gcore.com/&quot;&gt;https://cdn.gcore.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Porkbun购买域名（便宜）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://porkbun.com/&quot;&gt;https://porkbun.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;因为Gcore的CDN需要更改Nameservers，所以比较建议买个新的域名然后专用CDN&lt;/p&gt;
+&lt;h2 id=&quot;使用CDN&quot;&gt;&lt;a href=&quot;#使用CDN&quot; class=&quot;headerlink&quot; title=&quot;使用CDN&quot;&gt;&lt;/a&gt;使用CDN&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
+    
+    <category term="CDN" scheme="https://ednovas.xyz/tags/CDN/"/>
+    
+    <category term="Cloudfront" scheme="https://ednovas.xyz/tags/Cloudfront/"/>
+    
+    <category term="Gcore" scheme="https://ednovas.xyz/tags/Gcore/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从GFW原理到翻墙原理和协议</title>
+    <link href="https://ednovas.xyz/2022/06/25/gfw/"/>
+    <id>https://ednovas.xyz/2022/06/25/gfw/</id>
+    <published>2022-06-25T14:09:00.000Z</published>
+    <updated>2025-12-31T20:58:22.761Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;GFW的原理&quot;&gt;&lt;a href=&quot;#GFW的原理&quot; class=&quot;headerlink&quot; title=&quot;GFW的原理&quot;&gt;&lt;/a&gt;GFW的原理&lt;/h1&gt;&lt;p&gt;要与GFW对抗不能仅仅停留在什么不能访问了，什么可以访问之类的表面现象上。知道youtube不能访问了，对于翻墙来说并无帮助。但是知道GFW是如何让我们不能访问youtube的，则对下一步的翻墙方案的选择和实施具有重大意义。所以在讨论如何翻之前，先要深入原理了解GFW是如何封的。&lt;/p&gt;
+&lt;p&gt;总的来说，GFW是一个分布式的入侵检测系统，并不是一个严格意义上的防火墙。不是说每个出入国境的IP包都需要先经过GFW的首可。做为一个入侵检测系统，GFW把你每一次访问facebook都看做一次入侵，然后在检测到入侵之后采取应对措施，也就是常见的连接重置。&lt;/p&gt;
+&lt;p&gt;检测有两种方式。一种是人工检测，一种是机器检测。你去国新办网站举报，就是参与了人工检测。在人工检测到不和谐的网站之后，就会采取一些应对方式来防止国内的网民访问该网站。对于这类的封锁，规避检测就不是技术问题了，只能从GFW采取的应对方式上采取反制措施。另外一类检测是机器检测，其检测过程又可以再进一步细分：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/0r2ob02om5.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;重建是指GFW从网络上监听过往的IP包，然后分析其中的TCP协议，最后重建出一个完整的字节流。分析是在这个重建的字节流上分析具体的应用协议，比如HTTP协议。然后在应用协议中查找是不是有不和谐的内容，然后决定采用何种应对方式。&lt;/p&gt;
+&lt;p&gt;所以，GFW机器检测的第一步就是重建出一个字节流。那么GFW是如何拿到原始的IP包的呢？真正的GFW部署方式，外人根本无从得知。据猜测，GFW是部署在国家的出口路由器的旁路上，用“分光”的方式把IP包复制一份到另外一根光纤上，从而拿到所有进出国境的IP包。下图引在gfwrev.blogspot.com：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/g8f9fcptsz.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;但是Google在北京有自己的机房。所以聪明的网友就使用Google的北京机房提供的GAE服务，用Goagent软件达到高速翻墙的目的。但是有网友证实 &lt;a href=&quot;https://twitter.com/chengr28/status/260970749190365184&quot;&gt;https://twitter.com/chengr28/status/260970749190365184&lt;/a&gt; ，&lt;br&gt;即便是北京的机房也会被骨干网丢包。事实上Google在北京的谷翔机房有一个独立的AS（BGP的概念）。这个AS与谷歌总部有一条IPV6的直连线路，所以通过这个机房可以用IPV6不受墙的限制出去。但是这个AS无论是连接国内还是国外都是要经过GFW的。所以机房在北京也不能保证国内访问不被墙。GFW通过配置骨干网的BGP路由规则，是可以让国内的机房也经过它的。另外一个例子是当我们访问被封的网站触发连接重置的时候，往往收到两个RST包，但是TTL不同。还有一个例子是对于被封的IP，访问的IP包还没有到达国际出口就已经被丢弃。所以GFW应该在其他地方也部署有设备，据推测是在省级骨干路由的位置。&lt;/p&gt;
+&lt;p&gt;对于GFW到底在哪这个话题，最近又有国外友人表达了兴趣 &lt;a href=&quot;https://github.com/mothran/mongol&quot;&gt;https://github.com/mothran/mongol&lt;/a&gt;。 笔者在前人的基础上写了一个更完备的探测工具 &lt;a href=&quot;https://github.com/fqrouter/qiang&quot;&gt;https://github.com/fqrouter/qiang&lt;/a&gt; 。其原理是基于一个IP协议的特性叫TTL。TTL是Time to Live的简写。IP包在没经过一次路由的时候，路由器都会把IP包的TTL减去1。如果TTL到零了，路由器就不会再把IP包发给下一级路由。然后我们知道GFW会在监听到不和谐的IP包之后发回RST包来重置TCP连接。那么通过设置不同的TTL就可以知道从你的电脑，到GFW之间经过了几个路由器。比如说TTL设置成9不触发RST，但是10就触发RST，那么到GFW就是经过了10个路由器。另外一个IP协议的特性是当TTL耗尽的时候，路由器应该发回一个TTL EXCEEDED的ICMP包，并把自己的IP地址设置成SRC（来源）。结合这两点，就可以探测出IP包是到了IP地址为什么的路由器之后才被GFW检测到。有了IP地址之后，再结合IP地址地理位置的数据库就可以知道其地理位置。据说，得出的位置大概是这样的：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+    <category term="VPN" scheme="https://ednovas.xyz/tags/VPN/"/>
+    
+    <category term="梯子" scheme="https://ednovas.xyz/tags/%E6%A2%AF%E5%AD%90/"/>
+    
+    <category term="V2ray" scheme="https://ednovas.xyz/tags/V2ray/"/>
+    
+    <category term="gfw" scheme="https://ednovas.xyz/tags/gfw/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从摩尔斯电码到密码学</title>
+    <link href="https://ednovas.xyz/2022/06/25/moss/"/>
+    <id>https://ednovas.xyz/2022/06/25/moss/</id>
+    <published>2022-06-25T13:09:00.000Z</published>
+    <updated>2025-12-31T20:58:22.764Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;起源&quot;&gt;&lt;a href=&quot;#起源&quot; class=&quot;headerlink&quot; title=&quot;起源&quot;&gt;&lt;/a&gt;起源&lt;/h1&gt;&lt;p&gt;早期的密码学 目前已知最早的密码是大约公元前1900年的埃及古王国时期，用特殊的埃及象形文字雕刻在墓碑上。 但这些文字并不被认为是某种秘密通信的真正尝试，而是在增加神秘和阴谋气氛，甚至是为了给能看懂的观者提供乐趣。 这是密码学在其它用途上的应用，或者只是看上去是这样（如果这是某种密码的误导或伪装，那确实令人印象深刻）。&lt;/p&gt;
+&lt;p&gt;至于最有名的密码，也可以说是代码，肯定就是耳熟能详的莫斯电报码了。著名的 三短三长三短 的 SOS 求救信号应该无人不知无人不晓。&lt;/p&gt;
+&lt;h1 id=&quot;Moss-Code&quot;&gt;&lt;a href=&quot;#Moss-Code&quot; class=&quot;headerlink&quot; title=&quot;Moss Code&quot;&gt;&lt;/a&gt;Moss Code&lt;/h1&gt;&lt;p&gt;摩尔斯电码（又译为摩斯密码，英语：Morse code）是一种时通时断的信号代码。通过不同的排列顺序来表达不同的英文字母、数字和标点符号。&lt;/p&gt;
+&lt;p&gt;是由美国人艾尔菲德·维尔与萨缪尔·摩尔斯在1836年发明。&lt;/p&gt;
+&lt;p&gt;摩尔斯电码是一种早期的数码化通信形式， 它依靠一系列的 点和划 来传递编码信息 ，它的代码包括五种：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;点（·）：1 （读 “滴” dit ，时间占据1t）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;划（—）：111 （读 “嗒” dah ，时间占据3t）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;字符内部的停顿（在点和划之间）：0 （时间占据1t）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;字符间停顿：000 （时间占据3t）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;单词间的停顿：0000000 （时间占据7t）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;点的长度（也就是上面的时间长度t）决定了发报的速度&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/72f082025aafa40f2b207369a264034f79f0199b.webp&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="moss" scheme="https://ednovas.xyz/tags/moss/"/>
+    
+    <category term="password" scheme="https://ednovas.xyz/tags/password/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图片隐形工具outguess</title>
+    <link href="https://ednovas.xyz/2022/04/23/outguess/"/>
+    <id>https://ednovas.xyz/2022/04/23/outguess/</id>
+    <published>2022-04-23T21:06:00.000Z</published>
+    <updated>2025-12-31T20:58:22.766Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;可以直接 &lt;code&gt;apt install outguess&lt;/code&gt; 或者 &lt;code&gt;yum install outguess&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;或者自行编译&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https://github.com/crorvick/outguess&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cd outguess&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;./configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;使用帮助&quot;&gt;&lt;a href=&quot;#使用帮助&quot; class=&quot;headerlink&quot; title=&quot;使用帮助&quot;&gt;&lt;/a&gt;使用帮助&lt;/h2&gt;&lt;p&gt;输入 &lt;code&gt;outguess -h&lt;/code&gt; 可获得help帮助页面&lt;/p&gt;
+&lt;p&gt;图片格式需要 jpg 格式&lt;/p&gt;
+&lt;h2 id=&quot;加密&quot;&gt;&lt;a href=&quot;#加密&quot; class=&quot;headerlink&quot; title=&quot;加密&quot;&gt;&lt;/a&gt;加密&lt;/h2&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;outguess -k &amp;quot;secret key&amp;quot; -d input.txt pic.jpg pic_output.jpg&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;其中 -k 命令是加上密码用的，&lt;code&gt;secret key&lt;/code&gt;就是密码。 -d 就是加密了，input.txt是需要隐藏的txt文件，pic.jpg是原始图片，pic_output.jpg是最后输出的包含隐藏内容的图片。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>各种类型文件头部特征</title>
+    <link href="https://ednovas.xyz/2022/04/23/filehead/"/>
+    <id>https://ednovas.xyz/2022/04/23/filehead/</id>
+    <published>2022-04-23T20:06:00.000Z</published>
+    <updated>2025-12-31T20:58:22.760Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;a href=&quot;#从Ultra－edit-32中提取出来的&quot; class=&quot;headerlink&quot; title=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;/a&gt;从Ultra－edit-32中提取出来的&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;File&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Type&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;ExtensionsHeader&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;JPEG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;jpg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;FFD8FF&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;PNG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;png&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;89504E47&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;GIF&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;gif&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;47494638&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;TIFF&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;tif&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;49492A00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Windows Bitmap&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;bmp&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;424D&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;CAD&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;dwg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;41433130&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Adobe Photoshop&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;psd&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;38425053&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Rich Text Format&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;rtf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;7B5C727466&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;XML&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;xml&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;3C3F786D6C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;HTML&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;html&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;68746D6C3E&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Email [thorough only]&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;eml&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;44656C69766572792D646174653A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Outlook Express&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;dbx&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;CFAD12FEC5FD746F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Outlook&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;pst&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2142444E&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MS Word/Excel&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;xls.or.doc&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;D0CF11E0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MS Access&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mdb&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;5374616E64617264204A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;WordPerfect&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wpd&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;FF575043&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Postscript&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;eps.or.ps&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;252150532D41646F6265&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Adobe Acrobat&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;pdf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;255044462D312E&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Quicken&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;qdf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;AC9EBD8F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Windows Password&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;pwl&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;E3828596&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;ZIP Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;zip&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;504B0304&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;RAR Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;rar&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;52617221&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Wave&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wav&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;57415645&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;AVI&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;avi&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;41564920&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Real Audio&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;ram&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2E7261FD&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Real Media&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;rm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2E524D46&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mpg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;000001BA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mpg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;000001B3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Quicktime&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mov&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;6D6F6F76&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Windows Media&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;asf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;3026B2758E66CF11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MIDI&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mid&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4D546864&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&quot;从winhex中取出的文件头列表&quot;&gt;&lt;a href=&quot;#从winhex中取出的文件头列表&quot; class=&quot;headerlink&quot; title=&quot;从winhex中取出的文件头列表&quot;&gt;&lt;/a&gt;从winhex中取出的文件头列表&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;File&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Type&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;ExtensionsHeader&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;JPEG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;jpg;jpeg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0xFFD8FF&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;PNG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;png&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x89504E470D0A1A0A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;GIF&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;gif&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;GIF8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;TIFF&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;tif;tiff&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x49492A00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;TIFF&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;tif;tiff&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x4D4D002A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Bit map&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;bmp&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;BM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;AOL ART&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;art&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x4A47040E000000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;AOL ART&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;art&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x4A47030E000000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;PC Paintbrush&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;pcx&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x0A050108&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Graphics Metafile&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wmf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0xD7CDC69A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Graphics Metafile&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wmf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x01000900&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Graphics Metafile&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wmf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x02000900&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Enhanced Metafile&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;emf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x0100000058000000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Corel Draw&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;cdr&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;CDR&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;CAD&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;dwg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x41433130&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Adobe Photoshop&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;psd&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;8BPS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Rich Text Format&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;rtf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;rtf&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;XML&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;xml&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;HTML&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;html;htm;php;php3;php4;phtml;shtml&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Email&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;eml&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Delivery-date:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Outlook Express&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;dbx&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0xCFAD12FE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MS Office/OLE2&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;doc;xls;dot;ppt;xla;ppa;pps;pot;msi;sdw;db&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0xD0CF11E0A1B11AE1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MS Access&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mdb;mda;mde;mdt&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Standard J&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;WordPerfect&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wpd&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0xFF575043&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;OpenOffice Writer&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;sxw&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;writer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;OpenOffice Calc&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;sxc&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;calc&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;OpenOffice Math&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;sxm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;math&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;OpenOffice Impress&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;sxi&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;impress&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;OpenOffice Draw&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;sxd&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;draw&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Adobe FrameMaker&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;fm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;PostScript&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;eps.or.ps;ps;eps&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;%!PS-Adobe&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Adobe Acrobat&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;pdf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;%PDF-1.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Quicken&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;qdf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0xAC9EBD8F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;QuickBooks Backup&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;qbb&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x458600000600&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Sage&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;sly.or.srt.or.slt;sly;srt;slt&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x53520100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Sage Backup&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;SAGEBACKUP&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Lotus WordPro v9&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;lwp&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x576F726450726F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Lotus 123 v9&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;123&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x00001A00051004&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Lotus 123 v5&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wk4&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x00001A0002100400&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Lotus 123 v3&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wk3&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x00001A0000100400&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Lotus 123 v1&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wk1&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x2000604060&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Windows Password&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;pwl&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0xE3828596&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;ZIP Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;zip;jar&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x504B0304&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;ZIP Archive (outdated)&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;zip&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x504B3030&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;RAR Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;rar&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Rar!&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;GZ Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;gz;tgz&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x1F8B08&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;BZIP Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;bz2&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;BZh&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;ARJ Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;arj&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x60EA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;7－ZIP Archive&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;7z&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;7z集&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Wave&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;wav&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;WAVE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;AVI&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;avi&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;AVI&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Real Audio&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;ram;ra&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;.ra?0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Real Media&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;rm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;.RMF&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mpg;mpeg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x000001BA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mpg;mpeg&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x000001B3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Quicktime&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mov&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;moov&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Windows Media&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;asf&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x3026B2758E66CF11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;MIDI&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;mid&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;MThd&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Win32 Executable&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;exe;dll;drv;vxd;sys;ocx;vbx&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;MZ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Win16 Executable&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;exe;dll;drv;vxd;sys;ocx;vbx&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;MZ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;ELF Executable&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;elf;;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0x7F454C4601010100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&quot;https://hubinqiang.com/blog/IS/fileExtensionsHeader.html&quot;&gt;https://hubinqiang.com/blog/IS/fileExtensionsHeader.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>暗网网站搭建和暗网域名申请方法</title>
+    <link href="https://ednovas.xyz/2022/04/20/torwebsite/"/>
+    <id>https://ednovas.xyz/2022/04/20/torwebsite/</id>
+    <published>2022-04-20T20:06:00.000Z</published>
+    <updated>2025-12-31T20:58:22.771Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;直接安装&quot;&gt;&lt;a href=&quot;#直接安装&quot; class=&quot;headerlink&quot; title=&quot;直接安装&quot;&gt;&lt;/a&gt;直接安装&lt;/h2&gt;&lt;p&gt;一般可以通过apt直接安装tor服务&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt install tor&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;如果不行请进行以下操作&lt;/p&gt;
+&lt;h2 id=&quot;手动安装&quot;&gt;&lt;a href=&quot;#手动安装&quot; class=&quot;headerlink&quot; title=&quot;手动安装&quot;&gt;&lt;/a&gt;手动安装&lt;/h2&gt;&lt;p&gt;修改source.list&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo vi /etc/apt/sources.list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;最后加下面这两行&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deb https://deb.torproject.org/torproject.org stretch main&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src https://deb.torproject.org/torproject.org stretch main&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;添加密钥&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML CSS JS 基础</title>
+    <link href="https://ednovas.xyz/2022/04/15/htmlcssjs/"/>
+    <id>https://ednovas.xyz/2022/04/15/htmlcssjs/</id>
+    <published>2022-04-15T20:06:00.000Z</published>
+    <updated>2025-12-31T20:58:22.763Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="js" scheme="https://ednovas.xyz/tags/js/"/>
+    
+    <category term="html" scheme="https://ednovas.xyz/tags/html/"/>
+    
+    <category term="css" scheme="https://ednovas.xyz/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 服务器更换镜像源</title>
+    <link href="https://ednovas.xyz/2022/04/13/linuxchangesource/"/>
+    <id>https://ednovas.xyz/2022/04/13/linuxchangesource/</id>
+    <published>2022-04-13T20:06:00.000Z</published>
+    <updated>2025-12-31T20:58:22.764Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;修改镜像源&quot;&gt;&lt;a href=&quot;#修改镜像源&quot; class=&quot;headerlink&quot; title=&quot;修改镜像源&quot;&gt;&lt;/a&gt;修改镜像源&lt;/h1&gt;&lt;p&gt;手动更改的话&lt;/p&gt;
+&lt;h2 id=&quot;Ubuntu&quot;&gt;&lt;a href=&quot;#Ubuntu&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu&quot;&gt;&lt;/a&gt;Ubuntu&lt;/h2&gt;&lt;p&gt;Ubuntu 打开并修改 &lt;code&gt;/etc/apt/sources.list&lt;/code&gt; 文件即可&lt;/p&gt;
+&lt;p&gt;通用源:&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deb mirror://mirrors.ubuntu.com/mirrors.txt focal main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror://mirrors.ubuntu.com/mirrors.txt focal main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb mirror://mirrors.ubuntu.com/mirrors.txt focal-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror://mirrors.ubuntu.com/mirrors.txt focal-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb mirror://mirrors.ubuntu.com/mirrors.txt focal-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror://mirrors.ubuntu.com/mirrors.txt focal-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb mirror://mirrors.ubuntu.com/mirrors.txt focal-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror://mirrors.ubuntu.com/mirrors.txt focal-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://archive.canonical.com/ubuntu focal partner&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://archive.canonical.com/ubuntu focal partner&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;阿里源：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse focal&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;Debian&quot;&gt;&lt;a href=&quot;#Debian&quot; class=&quot;headerlink&quot; title=&quot;Debian&quot;&gt;&lt;/a&gt;Debian&lt;/h2&gt;&lt;p&gt;阿里源：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Oracle Cloud 甲骨文云用 TG bot 刷 ARM</title>
+    <link href="https://ednovas.xyz/2022/04/13/oraclerbot/"/>
+    <id>https://ednovas.xyz/2022/04/13/oraclerbot/</id>
+    <published>2022-04-13T19:06:00.000Z</published>
+    <updated>2025-12-31T20:58:22.766Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;甲骨文云服务在上一年更新了ARM配置，那么时至今日，很多用户发现热门地区无法手动创建ARM，因为每个区域的ARM是有限的，其他用户已经抢先一步开好，自己点的话是大力出不了奇迹的，那么这个时候就需要找一个代刷了。网上有很多，这里介绍一个朋友 R佬 开发的甲骨文账号管理Bot，这个已经不单单是刷机使用了，还有很多管理功能。&lt;/p&gt;
+&lt;h2 id=&quot;R-Bot&quot;&gt;&lt;a href=&quot;#R-Bot&quot; class=&quot;headerlink&quot; title=&quot;R-Bot&quot;&gt;&lt;/a&gt;R-Bot&lt;/h2&gt;&lt;h3 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/semicons/java_oci_manage&quot;&gt;https://github.com/semicons/java_oci_manage&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;运行环境&quot;&gt;&lt;a href=&quot;#运行环境&quot; class=&quot;headerlink&quot; title=&quot;运行环境&quot;&gt;&lt;/a&gt;运行环境&lt;/h3&gt;&lt;p&gt;[JDK] 11&lt;/p&gt;
+&lt;p&gt;[LINUX] Ubuntu20.04(已测试).Debian(未测试，但是应该可以).Centos(需手动安装jdk11)&lt;/p&gt;
+&lt;p&gt;[Windows]未适配&lt;/p&gt;
+&lt;h3 id=&quot;已实现功能&quot;&gt;&lt;a href=&quot;#已实现功能&quot; class=&quot;headerlink&quot; title=&quot;已实现功能&quot;&gt;&lt;/a&gt;已实现功能&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="bot" scheme="https://ednovas.xyz/tags/bot/"/>
+    
+    <category term="tg" scheme="https://ednovas.xyz/tags/tg/"/>
+    
+    <category term="oracle" scheme="https://ednovas.xyz/tags/oracle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Oracle Cloud 甲骨文云账户更改密码、邮箱、租户名</title>
+    <link href="https://ednovas.xyz/2022/04/13/oracleaccount/"/>
+    <id>https://ednovas.xyz/2022/04/13/oracleaccount/</id>
+    <published>2022-04-13T18:06:00.000Z</published>
+    <updated>2025-12-31T20:58:22.766Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;关于注册/开机/配置甲骨文等可以看&lt;a href=&quot;/2021/01/14/oraclecloud/&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;刷甲骨文机器可以看&lt;a href=&quot;/2021/11/28/oraclearm/&quot;&gt;这里&lt;/a&gt;或&lt;a href=&quot;/2022/04/13/oraclerbot/&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2022年1月开始至2月期间甲骨文陆续对各区域的服务控制台进行了升级更新。最明显的改动就是：&lt;/p&gt;
+&lt;p&gt;登录界面变化，出现二次跳转至新登录界面，并且引入了身份域（身份域默认为：Default）;&lt;br&gt;用户控制台出现变化，将原来单独的用户控制台融入到服务控制台中；&lt;br&gt;其他大量的操作细化。&lt;/p&gt;
+&lt;p&gt;新版看起来更加简单明了。当我们进入服务控制台后，点击右上角人头像标识，甲骨文账户的所有管理操作都可以在这里完成：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c4ca4238a0b9238.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;下面本文就详细讲解一下如何在新版中进行更改密码、变更邮箱、添加用户、变更租户名等操作：&lt;/p&gt;
+&lt;h2 id=&quot;更改密码&quot;&gt;&lt;a href=&quot;#更改密码&quot; class=&quot;headerlink&quot; title=&quot;更改密码&quot;&gt;&lt;/a&gt;更改密码&lt;/h2&gt;&lt;p&gt;点击进入【我的信息概要】，选择【更改密码】&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
+    
+    <category term="oracle" scheme="https://ednovas.xyz/tags/oracle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于clash新版本的配置写法更改教程</title>
+    <link href="https://ednovas.xyz/2022/03/07/clashparsers/"/>
+    <id>https://ednovas.xyz/2022/03/07/clashparsers/</id>
+    <published>2022-03-07T15:09:00.000Z</published>
+    <updated>2025-12-31T20:58:22.757Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;使用Prasers更新订阅，会自动把旧配置改成新配置&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7d69aa1167261b56dc945.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Windows&quot;&gt;&lt;a href=&quot;#Windows&quot; class=&quot;headerlink&quot; title=&quot;Windows&quot;&gt;&lt;/a&gt;Windows&lt;/h2&gt;&lt;p&gt;对于0.19.4及以下用户，无需更改&lt;/p&gt;
+&lt;p&gt;对于0.19.5及以上用户，请点击Settings-Profiles-Parsers-Edit（设置-配置-预处理配置-编辑）,删除默认的parsers: #array ,并粘贴以下内容&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;parsers:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - reg: &amp;#x27;^.*$&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    code: |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      module.exports.parse = async (raw, &amp;#123; axios, yaml, notify, console &amp;#125;, &amp;#123; name, url, interval, selected &amp;#125;) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        const obj = yaml.parse(raw)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        obj.proxies.forEach( v =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            if (v.network === &amp;#x27;ws&amp;#x27; &amp;amp;&amp;amp; !v[&amp;#x27;ws-opts&amp;#x27;] &amp;amp;&amp;amp; v[&amp;#x27;ws-path&amp;#x27;] &amp;amp;&amp;amp; !v[&amp;#x27;ws-headers&amp;#x27;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              const opts = &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              opts.path = v[&amp;#x27;ws-path&amp;#x27;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              v[&amp;#x27;ws-opts&amp;#x27;] = opts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              delete v[&amp;#x27;ws-path&amp;#x27;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            if (v.network === &amp;#x27;ws&amp;#x27; &amp;amp;&amp;amp; !v[&amp;#x27;ws-opts&amp;#x27;] &amp;amp;&amp;amp; v[&amp;#x27;ws-path&amp;#x27;] &amp;amp;&amp;amp; v[&amp;#x27;ws-headers&amp;#x27;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              const opts = &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              opts.path = v[&amp;#x27;ws-path&amp;#x27;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              opts.headers = v[&amp;#x27;ws-headers&amp;#x27;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              v[&amp;#x27;ws-opts&amp;#x27;] = opts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              delete v[&amp;#x27;ws-path&amp;#x27;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              delete v[&amp;#x27;ws-headers&amp;#x27;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        return yaml.stringify(obj)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;然后更新订阅（注意，parsers内容仅在更新订阅时生效，一定要更新一次订阅）&lt;/p&gt;
+&lt;h2 id=&quot;MAC&quot;&gt;&lt;a href=&quot;#MAC&quot; class=&quot;headerlink&quot; title=&quot;MAC&quot;&gt;&lt;/a&gt;MAC&lt;/h2&gt;&lt;p&gt;对于Clash for Windows的mac版用户，操作方法同Windows&lt;/p&gt;
+&lt;p&gt;对于Clash X用户，请使用1.72.0及以前版本，如果不能接受旧版本，请手动修改或换到CFW mac版&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    <category term="clash" scheme="https://ednovas.xyz/tags/clash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Solusvm安装OVZ7</title>
+    <link href="https://ednovas.xyz/2022/03/07/solusvm/"/>
+    <id>https://ednovas.xyz/2022/03/07/solusvm/</id>
+    <published>2022-03-07T13:09:00.000Z</published>
+    <updated>2025-12-31T20:58:22.769Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;转换OVZ7&quot;&gt;&lt;a href=&quot;#转换OVZ7&quot; class=&quot;headerlink&quot; title=&quot;转换OVZ7&quot;&gt;&lt;/a&gt;转换OVZ7&lt;/h2&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install screen -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;screen -S d&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mkdir /vz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall https://download.openvz.org/virtuozzo/releases/openvz-7.0.11-235/x86_64/os/Packages/p/python-subprocess32-3.2.7-1.vz7.5.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall https://download.openvz.org/virtuozzo/releases/openvz-7.0.11-235/x86_64/os/Packages/o/openvz-release-7.0.11-3.vz7.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install epel-release -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install python3 -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -Uvh http://repo.virtuozzo.com/vzlinux/7/x86_64/os/Packages/r/readykernel-scan-0.11-1.vl7.noarch.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -Uvh http://repo.virtuozzo.com/vzlinux/7/x86_64/os/Packages/z/zstd-1.4.4-1.vl7.x86_64.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -Uvh http://repo.virtuozzo.com/vzlinux/7/x86_64/os/Packages/v/vzlinux-release-7-1.vl7.91.x86_64.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mv /etc/yum.repos.d/CentOS-* /root/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -e --nodeps --justdb json-c&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum erase jansson -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall http://repo.virtuozzo.com/vzlinux/7.7/x86_64/os/Packages/j/jansson-2.10-1.vl7.1.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall http://repo.virtuozzo.com/vzlinux/7.7/x86_64/os/Packages/j/json-c-0.11-13.vl7.1.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -e --nodeps --justdb nspr nss nss-pem nss-softokn nss-softokn-freebl nss-sysinit nss-tools nss-util&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall http://repo.virtuozzo.com/vzlinux/7/x86_64/os/Packages/n/nss-3.44.0-7.vl7.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum downgrade glibc* -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install nss-softokn-freebl.i686 nss-tools -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install prlctl prl-disp-service vzkernel *ploop* -y &amp;amp;&amp;amp; yum update -y &amp;amp;&amp;amp; yum install fuse -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;reboot&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;screen -S dd&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;modprobe ploop pfmt_ploop1 pfmt_raw pio_direct fuse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -O /usr/libexec/ovz-template-converter https://raw.githubusercontent.com/solusvm-support/svm_patches/master/ovz-template-converter.patched &amp;amp;&amp;amp; chmod +x /usr/libexec/ovz-template-converter&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -e --nodeps --justdb python3-pip&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install -y python36-pip python-configobj &amp;amp;&amp;amp; pip3 install configobj&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install *ez.noarch -y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;伪授权SolusVM&quot;&gt;&lt;a href=&quot;#伪授权SolusVM&quot; class=&quot;headerlink&quot; title=&quot;伪授权SolusVM&quot;&gt;&lt;/a&gt;伪授权SolusVM&lt;/h2&gt;&lt;p&gt;添加伪授权hosts&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vi /etc/hosts&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;添加如下伪授权，套餐是 SolusVM Enterprise (NOC)，任选1个即可：&lt;/p&gt;
+&lt;p&gt;伪授权站1&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 www.soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing1.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing2.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing3.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing4.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing5.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing6.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;伪授权站2&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 www.soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing1.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing2.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing3.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing4.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing5.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing6.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
+    
+    
+    <category term="solusvm" scheme="https://ednovas.xyz/tags/solusvm/"/>
+    
+    <category term="ovz7" scheme="https://ednovas.xyz/tags/ovz7/"/>
+    
+  </entry>
+  
+</feed>
