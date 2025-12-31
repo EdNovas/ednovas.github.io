@@ -1,0 +1,68 @@
+name: Deploy Hexo Blog
+
+on:
+  push:
+    branches:
+      - dev  # 当 dev 分支有推送时触发
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 检出代码
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true  # 如果主题是 submodule 的话
+          fetch-depth: 0
+
+      # 设置 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16'  # Hexo 5.x 推荐使用 Node 16
+          cache: 'npm'
+
+      # 从模板生成 Hexo 主配置文件
+      - name: Generate Hexo config from template
+        run: |
+          # 复制模板文件
+          cp _config.template.yml _config.yml
+          
+          # 替换 Algolia 相关的环境变量
+          sed -i "s|\${ALGOLIA_APP_ID}|${{ secrets.ALGOLIA_APP_ID }}|g" _config.yml
+          sed -i "s|\${ALGOLIA_API_KEY}|${{ secrets.ALGOLIA_API_KEY }}|g" _config.yml
+          sed -i "s|\${ALGOLIA_ADMIN_API_KEY}|${{ secrets.ALGOLIA_ADMIN_API_KEY }}|g" _config.yml
+          
+          # 替换 WebPushr 相关的环境变量
+          sed -i "s|\${WEBPUSHR_KEY}|${{ secrets.WEBPUSHR_KEY }}|g" _config.yml
+          sed -i "s|\${WEBPUSHR_AUTH_TOKEN}|${{ secrets.WEBPUSHR_AUTH_TOKEN }}|g" _config.yml
+          sed -i "s|\${WEBPUSHR_TRACKING_CODE}|${{ secrets.WEBPUSHR_TRACKING_CODE }}|g" _config.yml
+
+      # 从模板生成 Butterfly 主题配置文件
+      - name: Generate Butterfly config from template
+        run: |
+          # 复制模板文件
+          cp _config.butterfly.template.yml _config.butterfly.yml
+          
+          # 替换 Valine 的 appId 和 appKey
+          sed -i "s|\${VALINE_APP_ID}|${{ secrets.VALINE_APP_ID }}|g" _config.butterfly.yml
+          sed -i "s|\${VALINE_APP_KEY}|${{ secrets.VALINE_APP_KEY }}|g" _config.butterfly.yml
+
+      # 安装依赖
+      - name: Install dependencies
+        run: npm ci
+
+      # 构建静态文件
+      - name: Build Hexo
+        run: npm run build
+
+      # 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages  # 部署到 gh-pages 分支

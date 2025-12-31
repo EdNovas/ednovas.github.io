@@ -1,0 +1,190 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: EdNovas的小站
+subtitle: ''
+description: ''
+keywords: EdNovas
+author: EdNovas
+language: en
+timezone: ''
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
+url: https://ednovas.xyz
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+  - catchcateasy/*
+  - catchcathard/*
+  - catchcatmid/*
+  - catchcatimpossible/*
+  - edtool.sh
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 30
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 30
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+Plugins: 
+  - hexo-algoliasearch
+## Themes: https://hexo.io/themes/
+theme: butterfly
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+# Note: 在 GitHub Actions 中不需要这个，因为我们使用 peaceiris/actions-gh-pages
+deploy:
+  type: ''
+
+#local_search
+search:
+  path: search.xml
+  field: post
+  content: true
+
+#algolia search
+# 注意：敏感信息通过环境变量注入
+algolia:
+  appId: ${ALGOLIA_APP_ID}
+  apiKey: ${ALGOLIA_API_KEY}
+  adminApiKey: ${ALGOLIA_ADMIN_API_KEY}
+  chunkSize: 5000
+  indexName: "ednovas"
+  fields:
+    - content:strip:truncate,0,200
+    - tags
+    - permalink
+    - excerpt:strip
+    - title
+    - categories
+
+#web_push_notification
+# 注意：敏感信息通过环境变量注入
+webPushNotification:
+  webpushrKey: ${WEBPUSHR_KEY}
+  webpushrAuthToken: ${WEBPUSHR_AUTH_TOKEN}
+  trackingCode: ${WEBPUSHR_TRACKING_CODE}
+
+# hexo-offline-popup.
+service_worker:
+  maximumFileSizeToCacheInBytes: 3145728 # 缓存的最大文件大小，以字节为单位，此处设置为3MB。
+  staticFileGlobs:
+    - public/**/*.{js,html,xml,css,png,jpg,gif,svg,webp,eot,ttf,woff,woff2}
+    # - public/**/*.{html,xml} #精简版使用这行即可
+  # 静态文件合集，如果你的站点使用了例如webp格式的文件，请将文件类型添加进去。。
+  # 注意，此处的文件类型就是会缓存下来的所有文件类型，如果不需要缓存那么多，
+  # 而只是想判断网页更新与否，缓存html和xml即可。
+  stripPrefix: public
+  verbose: false
+  runtimeCaching:
+    # CDNs - should be cacheFirst, since they should be used specific versions so should not change
+    # - urlPattern: /* # 如果你需要加载CDN資源，请配置该选项，如果沒有，可以不配置。
+    #   handler: cacheFirst
+    #   options:
+    #     origin: unpkg.com # 又拍云
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdn.jsdelivr.net # jsdelivr
+    # 更多cdn可自行参照上述格式进行配置。
+
+# feed:
+#   type: rss2
+#   path: rss2.xml
+#   limit: false
+#   hub:
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+
+# backup:
+#   type: git
+#   repository:
+#     github: git@ednovas.github.com:ednovas/ednovas.github.io.git,backup
+#     gitcafe: git@ednovas.github.com:ednovas/ednovas.github.io.git,backup
