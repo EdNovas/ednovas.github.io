@@ -22,7 +22,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '16'  # Hexo 5.x 推荐使用 Node 16
-          cache: 'npm'
 
       # 从模板生成 Hexo 主配置文件
       - name: Generate Hexo config from template
@@ -60,7 +59,8 @@ jobs:
       - name: Install dependencies
         run: |
           npm config set registry https://registry.npmjs.org/
-          npm ci --legacy-peer-deps || npm install --legacy-peer-deps
+          rm -f package-lock.json
+          npm install --legacy-peer-deps
 
       # 构建静态文件
       - name: Build Hexo
