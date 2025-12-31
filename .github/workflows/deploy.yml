@@ -15,7 +15,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: true  # 如果主题是 submodule 的话
           fetch-depth: 0
 
       # 设置 Node.js 环境
