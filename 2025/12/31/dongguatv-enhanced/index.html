@@ -1,0 +1,1141 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>E视界 (DongguaTV Enhanced Edition) | EdNovas的小站</title><meta name="keywords" content="编程,软件,电影,电视剧,Vue,Node.js"><meta name="author" content="EdNovas"><meta name="copyright" content="EdNovas"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 https:&#x2F;&#x2F;github.com&#x2F;Minerchu&#x2F;dongguaTV ，本作添加了许多功能。 演示网站https:&#x2F;&#x2F;ednovas-test.vercel.app （不包含任何数据）         📚 目录 (Table of Contents) ✨ 核心特性 (Features)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="E视界 (DongguaTV Enhanced Edition)">
+<meta property="og:url" content="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/index.html">
+<meta property="og:site_name" content="EdNovas的小站">
+<meta property="og:description" content="这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 https:&#x2F;&#x2F;github.com&#x2F;Minerchu&#x2F;dongguaTV ，本作添加了许多功能。 演示网站https:&#x2F;&#x2F;ednovas-test.vercel.app （不包含任何数据）         📚 目录 (Table of Contents) ✨ 核心特性 (Features)">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950">
+<meta property="article:published_time" content="2025-12-31T13:41:00.000Z">
+<meta property="article:modified_time" content="2025-12-31T21:45:41.156Z">
+<meta property="article:author" content="EdNovas">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="软件">
+<meta property="article:tag" content="电影">
+<meta property="article:tag" content="电视剧">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="Node.js">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/830.circled-e-filled1.png"><link rel="canonical" href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//static.cloudflareinsights.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="O9Uxirs5RzGyHijDvBe5okX6j2BxdRrzjxKkGI34B18"/><meta name="msvalidate.01" content="5651177152477FB9B4EBC45053EECDA3"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="#000000"/><link rel="apple-touch-icon" sizes="180x180" href="/image/siteicon/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/image/siteicon/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/image/siteicon/16.png"/><link rel="mask-icon" href="/image/siteicon/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-185849872-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-185849872-1');
+</script><script defer="defer" data-pjax="data-pjax" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;d6704c4319ce48e883585dfd275af345&quot;}"></script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"59FQUQ1CBL","apiKey":"07dbe3620a56feffda190697671f0a93","indexName":"ednovas","hits":{"per_page":10},"languages":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}.","hits_stats":"${hits} results found in ${time} ms"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":30,"position":"top","messagePrev":"距离文章编辑已经过去了","messageNext":"天，实际情况可能有所变动。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-12-31 21:45:41'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><link rel="stylesheet" href="/css/scrollbar.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_2440505_a5eo7su26z8.css"><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="EdNovas的小站" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/icon.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">295</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">366</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于我 | About</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-users"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">EdNovas的小站</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于我 | About</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-users"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">E视界 (DongguaTV Enhanced Edition)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-12-31T13:41:00.000Z" title="Created 2025-12-31 13:41:00">2025-12-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-12-31T21:45:41.156Z" title="Updated 2025-12-31 21:45:41">2025-12-31</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BC%96%E7%A8%8B/%E8%BD%AF%E4%BB%B6/">软件</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BC%96%E7%A8%8B/%E8%BD%AF%E4%BB%B6/%E7%BD%91%E7%AB%99/">网站</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">6.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>23min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 <a target="_blank" rel="noopener" href="https://github.com/Minerchu/dongguaTV">https://github.com/Minerchu/dongguaTV</a> ，本作添加了许多功能。</p>
+<h1 id="演示网站"><a href="#演示网站" class="headerlink" title="演示网站"></a>演示网站</h1><p><a target="_blank" rel="noopener" href="https://ednovas-test.vercel.app/">https://ednovas-test.vercel.app</a> （不包含任何数据）</p>
+<img width="2547" height="1226" alt="image" src="https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950" />
+
+<img width="2547" height="1227" alt="image" src="https://github.com/user-attachments/assets/d03543f5-34a4-414b-a131-62eda0af21b2" />
+
+<img width="2547" height="1229" alt="image" src="https://github.com/user-attachments/assets/e8bd4e14-dbd2-4d49-a1fc-7979c1ca22a4" />
+
+
+<hr>
+<h2 id="📚-目录-Table-of-Contents"><a href="#📚-目录-Table-of-Contents" class="headerlink" title="📚 目录 (Table of Contents)"></a>📚 目录 (Table of Contents)</h2><ul>
+<li><a href="#-%E6%A0%B8%E5%BF%83%E7%89%B9%E6%80%A7-features">✨ 核心特性 (Features)</a></li>
+<li><a href="#-%E7%95%8C%E9%9D%A2%E5%8D%87%E7%BA%A7-ui-upgrade">🎨 界面升级 (UI Upgrade)</a></li>
+<li><a href="#%EF%B8%8F-%E6%8A%80%E6%9C%AF%E6%A0%88-tech-stack">🛠️ 技术栈 (Tech Stack)</a></li>
+<li><a href="#-%E5%89%8D%E7%BD%AE%E5%87%86%E5%A4%87-prerequisites">🔧 前置准备 (Prerequisites)</a></li>
+<li><a href="#-%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96--%E4%BB%A3%E7%90%86-network--proxy">🌐 网络优化 &amp; 代理 (Network &amp; Proxy)</a></li>
+<li><a href="#-%E5%AE%89%E5%85%A8%E4%B8%8E%E9%AB%98%E7%BA%A7%E5%8A%9F%E8%83%BD-security--advanced">🔒 安全与高级功能 (Security &amp; Advanced)</a></li>
+<li><a href="#-%E5%AE%89%E8%A3%85%E4%B8%8E%E8%BF%90%E8%A1%8C-installation">📦 安装与运行 (Installation)</a></li>
+<li><a href="#-%E9%83%A8%E7%BD%B2-deployment">🚀 部署 (Deployment)</a></li>
+<li><a href="#-android-app-%E6%9E%84%E5%BB%BA-github-actions">🤖 Android APP 构建</a></li>
+<li><a href="#-%E6%95%B0%E6%8D%AE%E7%BB%B4%E6%8A%A4%E4%B8%8E%E5%A4%87%E4%BB%BD">💾 数据维护与备份</a></li>
+<li><a href="#%EF%B8%8F-%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E-disclaimer">⚠️ 免责声明 (Disclaimer)</a></li>
+</ul>
+<hr>
+<h2 id="✨-核心特性-Core-Features"><a href="#✨-核心特性-Core-Features" class="headerlink" title="✨ 核心特性 (Core Features)"></a>✨ 核心特性 (Core Features)</h2><h3 id="1-🎬-双引擎数据驱动"><a href="#1-🎬-双引擎数据驱动" class="headerlink" title="1. 🎬 双引擎数据驱动"></a>1. 🎬 双引擎数据驱动</h3><ul>
+<li>**TMDb (The Movie Database)**：提供高质量的电影/剧集元数据（海报、背景图、评分、简介、演职员表）。</li>
+<li><strong>CMS 聚合源 (Maccms)**：可集成多个自定义第三方资源站 API，自动进行</strong>全网测速**，智能过滤失效源，确保播放流畅。</li>
+</ul>
+<h3 id="2-🔍-智能搜索与聚合"><a href="#2-🔍-智能搜索与聚合" class="headerlink" title="2. 🔍 智能搜索与聚合"></a>2. 🔍 智能搜索与聚合</h3><ul>
+<li><strong>实时流式搜索 (SSE)**：采用 Server-Sent Events 技术，搜索结果</strong>边搜边显**，即时反馈，无需等待所有源响应。</li>
+<li><strong>智能关键词匹配</strong>：自动生成搜索变体（去除副标题、季数后缀等），同时搜索中英文名，大幅提高命中率。</li>
+<li><strong>自动英中翻译</strong>：检测到英文搜索词时，自动通过 TMDB 获取中文译名并一起搜索（如搜索 “Stranger Things” 会自动添加 “怪奇物语”），无需外部翻译 API。</li>
+<li><strong>自动分组与实时合并</strong>：同一影片的不同线路自动聚合，新搜索到的源实时合并到已有卡片，右上角源数量实时跳动。</li>
+<li><strong>SQLite 永久缓存</strong>：内置高性能 SQLite 数据库缓存，支持无限存储，读写速度极快，热搜词秒级响应。</li>
+</ul>
+<h3 id="3-📺-沉浸式播放体验"><a href="#3-📺-沉浸式播放体验" class="headerlink" title="3. 📺 沉浸式播放体验"></a>3. 📺 沉浸式播放体验</h3><ul>
+<li><strong>影院模式</strong>：全新设计的播放详情页，采用暗色系沉浸布局，支持剧集网格选择。</li>
+<li><strong>智能线路测速</strong>：支持用户端直连测速和服务器代理测速，真实反映视频可用性。</li>
+<li><strong>自动故障转移</strong>：播放失败时自动切换到下一个可用线路，无需手动操作。</li>
+<li><strong>投屏支持</strong>：集成 DLNA/AirPlay 本地投屏功能（需浏览器支持）。</li>
+</ul>
+<h3 id="4-🌏-大陆用户优化"><a href="#4-🌏-大陆用户优化" class="headerlink" title="4. 🌏 大陆用户优化"></a>4. 🌏 大陆用户优化</h3><ul>
+<li><strong>智能 IP 双重检测</strong>：采用 <strong>Cloudflare Trace + ipapi.co</strong> 双重检测机制，准确率高且无 API 速率限制，自动切换到 TMDB 反代模式。</li>
+<li><strong>本地资源优先</strong>：核心依赖库（Vue, Bootstrap, DPlayer 等）均本地化部署，彻底解决 CDN 劫持或加载缓慢问题，秒开无压力。</li>
+<li><strong>一键安装脚本</strong>：支持交互式配置 API Key、反代地址、运行端口。</li>
+</ul>
+<h3 id="5-📱-多端支持"><a href="#5-📱-多端支持" class="headerlink" title="5. 📱 多端支持"></a>5. 📱 多端支持</h3><ul>
+<li><strong>Android TV / 盒子</strong>：提供专属 APK 安装包，完美适配电视遥控器操作，支持 Android TV 桌面启动 (Leanback Launcher)。</li>
+<li><strong>移动端 App</strong>：基于现代 Web 技术封装，支持**沉浸式状态栏 (Immersive Status Bar)**，顶部无黑边，内容自动适配刘海屏，体验原生级流畅。</li>
+<li><strong>PWA 支持</strong>：支持添加到主屏幕，即点即用。</li>
+</ul>
+<h3 id="6-🔒-安全与访问控制"><a href="#6-🔒-安全与访问控制" class="headerlink" title="6. 🔒 安全与访问控制"></a>6. 🔒 安全与访问控制</h3><ul>
+<li><strong>全局访问密码</strong>：支持设置全局访问密码，且支持<strong>记住登录状态长达 1 年</strong>，既安全又便捷。</li>
+<li><strong>远程配置加载</strong>：支持从远程 URL 加载 <code>db.json</code> 配置文件，方便多站点统一管理。</li>
+</ul>
+<hr>
+<h2 id="🎨-界面与交互升级-UI-UX-Upgrades"><a href="#🎨-界面与交互升级-UI-UX-Upgrades" class="headerlink" title="🎨 界面与交互升级 (UI/UX Upgrades)"></a>🎨 界面与交互升级 (UI/UX Upgrades)</h2><p>相比原版，我们在 UI/UX 上做了颠覆性的改进：</p>
+<table>
+<thead>
+<tr>
+<th align="left">功能区域</th>
+<th align="left">原版体验</th>
+<th align="left"><strong>MAX 版体验</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>首页视觉</strong></td>
+<td align="left">简单的列表罗列</td>
+<td align="left"><strong>Netflix 风格 Hero 轮播</strong>：全屏动态背景、高斯模糊遮罩、Top 10 排名特效。</td>
+</tr>
+<tr>
+<td align="left"><strong>导航栏</strong></td>
+<td align="left">固定顶部</td>
+<td align="left"><strong>智能融合导航</strong>：初始透明，滚动变黑；分类点击自动平滑滚动定位。</td>
+</tr>
+<tr>
+<td align="left"><strong>搜索框</strong></td>
+<td align="left">顶部固定位置</td>
+<td align="left"><strong>动态交互搜索栏</strong>：初始占满全屏，下滑自动吸顶并缩小为”胶囊”悬浮。</td>
+</tr>
+<tr>
+<td align="left"><strong>榜单浏览</strong></td>
+<td align="left">有限的静态列表</td>
+<td align="left">**无限滚动 (Infinite Scroll)**：20+ 个细分榜单，支持向右无限加载。</td>
+</tr>
+<tr>
+<td align="left"><strong>搜索体验</strong></td>
+<td align="left">需等待 loading 结束</td>
+<td align="left">**实时流式加载 (SSE)**：结果即时呈现，源数量实时跳动增加，拒绝枯燥等待。</td>
+</tr>
+<tr>
+<td align="left"><strong>线路选择</strong></td>
+<td align="left">单一延迟显示</td>
+<td align="left"><strong>双模式测速</strong>：区分”直连”(用户端)和”代理”(服务器端) 测速，更准确。</td>
+</tr>
+<tr>
+<td align="left"><strong>播放失败</strong></td>
+<td align="left">需手动切换</td>
+<td align="left"><strong>自动故障转移</strong>：检测播放失败后自动切换到下一可用线路。</td>
+</tr>
+<tr>
+<td align="left"><strong>启动体验</strong></td>
+<td align="left">页面分块加载</td>
+<td align="left"><strong>优雅启动屏</strong>：新增应用级启动画面，资源加载完成后丝滑过渡，拒绝白屏。</td>
+</tr>
+<tr>
+<td align="left"><strong>分类系统</strong></td>
+<td align="left">仅支持搜索跳转</td>
+<td align="left"><strong>全直达榜单</strong>：历史、冒险、综艺等分类均拥有独立的数据流榜单。</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="🛠️-技术栈-Tech-Stack"><a href="#🛠️-技术栈-Tech-Stack" class="headerlink" title="🛠️ 技术栈 (Tech Stack)"></a>🛠️ 技术栈 (Tech Stack)</h2><table>
+<thead>
+<tr>
+<th>类别</th>
+<th>技术</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Frontend</strong></td>
+<td>Vue.js 3 (CDN), Bootstrap 5, FontAwesome 6, DPlayer, HLS.js</td>
+</tr>
+<tr>
+<td><strong>Backend</strong></td>
+<td>Node.js, Express, Axios</td>
+</tr>
+<tr>
+<td><strong>Data Sources</strong></td>
+<td>TMDb API v3, 48+ Maccms CMS APIs</td>
+</tr>
+<tr>
+<td><strong>Deployment</strong></td>
+<td>Docker, Vercel, PM2, 宝塔面板</td>
+</tr>
+<tr>
+<td><strong>Cache</strong></td>
+<td>Flexible: SQLite (Recommended), JSON File, or Memory</td>
+</tr>
+<tr>
+<td><strong>Proxy</strong></td>
+<td>Cloudflare Workers (for China users)</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="🔧-前置准备"><a href="#🔧-前置准备" class="headerlink" title="🔧 前置准备"></a>🔧 前置准备</h2><h3 id="1-⚠️-配置采集源-重要"><a href="#1-⚠️-配置采集源-重要" class="headerlink" title="1. ⚠️ 配置采集源 (重要)"></a>1. ⚠️ 配置采集源 (重要)</h3><p>本项目<strong>不包含</strong>任何内置的影视资源接口。在运行项目前（或运行后），您必须自行添加合法的 Maccms V10 (JSON格式) 接口才能搜索和播放视频。</p>
+<p><strong>配置方法：</strong><br>所有的采集源配置均存储在根目录的 <code>db.json</code> 文件中。</p>
+<ol>
+<li> 项目初次运行时会自动生成 <code>db.json</code>（如果未生成，可以手动创建或使用模板）。</li>
+<li> 打开 <code>db.json</code>，找到 <code>sites</code> 数组。</li>
+<li> 填入您找到的采集接口信息：</li>
+</ol>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;sites&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;key&quot;</span><span class="punctuation">:</span> <span class="string">&quot;unique_key1&quot;</span><span class="punctuation">,</span>       <span class="comment">// 唯一标识符（英文字母，不可重复）</span></span><br><span class="line">      <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;站点名称1&quot;</span><span class="punctuation">,</span>         <span class="comment">// 显示在界面的名称</span></span><br><span class="line">      <span class="attr">&quot;api&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://...&quot;</span><span class="punctuation">,</span>      <span class="comment">// Maccms V10/JSON 接口地址</span></span><br><span class="line">      <span class="attr">&quot;active&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span>             <span class="comment">// 是否启用 (true/false)</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;key&quot;</span><span class="punctuation">:</span> <span class="string">&quot;unique_key2&quot;</span><span class="punctuation">,</span>       <span class="comment">// 唯一标识符（英文字母，不可重复）</span></span><br><span class="line">      <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;站点名称2&quot;</span><span class="punctuation">,</span>         <span class="comment">// 显示在界面的名称</span></span><br><span class="line">      <span class="attr">&quot;api&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://...&quot;</span><span class="punctuation">,</span>      <span class="comment">// Maccms V10/JSON 接口地址</span></span><br><span class="line">      <span class="attr">&quot;active&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span>             <span class="comment">// 是否启用 (true/false)</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li> 保存文件并<strong>重启服务</strong>。</li>
+</ol>
+<h3 id="2-获取-TMDb-API-Key-必需"><a href="#2-获取-TMDb-API-Key-必需" class="headerlink" title="2. 获取 TMDb API Key (必需)"></a>2. 获取 TMDb API Key (必需)</h3><p>本项目依赖 <strong>The Movie Database (TMDb)</strong> 提供影视元数据。</p>
+<ol>
+<li> 注册账户：访问 <a target="_blank" rel="noopener" href="https://www.themoviedb.org/signup">Create Account</a> 注册并登录。</li>
+<li> 申请 API：访问 <a target="_blank" rel="noopener" href="https://www.themoviedb.org/settings/api">API Settings</a>，点击 <strong>“Create”</strong> 或 <strong>“click here”</strong> 申请。</li>
+<li> 填写信息：应用类型选择 **”Developer”**，简单填写用途（如 “Personal learning project”）。</li>
+<li> 获取 Key：申请通过后，复制 <strong>“API Key (v3 auth)”</strong> 备用。</li>
+</ol>
+<h3 id="3-大陆用户：部署-TMDB-反代-可选"><a href="#3-大陆用户：部署-TMDB-反代-可选" class="headerlink" title="3. 大陆用户：部署 TMDB 反代 (可选)"></a>3. 大陆用户：部署 TMDB 反代 (可选)</h3><p>由于 TMDB 在大陆无法直接访问，需要配置反向代理以正常显示海报和影视信息。</p>
+<h4 id="方案一：部署-Cloudflare-Workers-反代-推荐"><a href="#方案一：部署-Cloudflare-Workers-反代-推荐" class="headerlink" title="方案一：部署 Cloudflare Workers 反代 (推荐)"></a>方案一：部署 Cloudflare Workers 反代 (推荐)</h4><ol>
+<li><p><strong>登录 Cloudflare</strong></p>
+<ul>
+<li>访问 <a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">Cloudflare Dashboard</a></li>
+<li>选择左侧菜单 <strong>“Workers &amp; Pages”</strong> → <strong>“Create application”</strong> → <strong>“Create Worker”</strong></li>
+</ul>
+</li>
+<li><p><strong>部署反代代码</strong></p>
+<ul>
+<li>给 Worker 取名（如 <code>tmdb-proxy</code>），点击 <strong>Deploy</strong></li>
+<li>部署后点击 <strong>“Edit code”</strong></li>
+<li>复制 <code>cloudflare-tmdb-proxy.js</code> 文件内容，粘贴到编辑器</li>
+<li>点击 <strong>“Save and Deploy”</strong></li>
+</ul>
+</li>
+<li><p><strong>获取 Worker URL</strong><br> 部署成功后获得 URL，如：<code>https://tmdb-proxy.your-name.workers.dev</code></p>
+</li>
+<li><p><strong>稍后在安装时配置</strong><br> 在 <code>.env</code> 文件中添加：</p>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">TMDB_PROXY_URL=https://tmdb-proxy.your-name.workers.dev</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="4-资源站-CORS-代理-可选-推荐"><a href="#4-资源站-CORS-代理-可选-推荐" class="headerlink" title="4. 资源站 CORS 代理 (可选/推荐)"></a>4. 资源站 CORS 代理 (可选/推荐)</h3><p>当服务器或用户无法直接访问某些资源站时，系统会自动通过 CORS 代理中转请求。</p>
+<h4 id="支持的场景"><a href="#支持的场景" class="headerlink" title="支持的场景"></a>支持的场景</h4><table>
+<thead>
+<tr>
+<th>场景</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>服务器端搜索</strong></td>
+<td>服务器无法访问资源站 API 时，自动通过代理搜索</td>
+</tr>
+<tr>
+<td><strong>服务器端获取详情</strong></td>
+<td>同上，获取影片详情时自动回退到代理</td>
+</tr>
+<tr>
+<td><strong>用户端视频播放</strong></td>
+<td>用户浏览器无法访问视频流时，自动代理播放</td>
+</tr>
+<tr>
+<td><strong>慢速线路优化</strong></td>
+<td>直连延迟 &gt;1500ms 时，自动尝试代理，选择更快的方式</td>
+</tr>
+</tbody></table>
+<h4 id="核心功能"><a href="#核心功能" class="headerlink" title="核心功能"></a>核心功能</h4><ul>
+<li>✅ <strong>智能学习</strong>：自动记住需要代理的站点（24小时有效期）</li>
+<li>✅ <strong>慢速检测</strong>：直连延迟超过 1.5 秒时，自动测试代理是否更快</li>
+<li>✅ <strong>m3u8 重写</strong>：自动重写 m3u8 文件中的 ts 分片 URL，确保视频流完整代理</li>
+<li>✅ <strong>防盗链绕过</strong>：自动设置正确的 Referer 和 Origin 头</li>
+</ul>
+<h4 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h4><p><strong>服务器端（搜索/详情）：</strong></p>
+<ol>
+<li>服务器先尝试直接访问资源站 API</li>
+<li>如果直连失败或延迟过高，自动通过 CORS 代理重试</li>
+<li>成功后会”记住”该站点需要代理，后续请求直接使用代理</li>
+</ol>
+<p><strong>用户端（播放）：</strong></p>
+<ol>
+<li>用户端测速时，先尝试直接访问视频流</li>
+<li>如果直连失败或延迟 &gt;1500ms，自动通过 CORS 代理重试</li>
+<li>代理会重写 m3u8 内容，将 ts 分片 URL 也改为代理 URL</li>
+<li>UI 上会显示三种状态：<ul>
+<li>🟢 <strong>直连</strong>：用户端可直接访问</li>
+<li>🟡 <strong>中转</strong>：通过代理访问</li>
+<li>🔵 <strong>服务</strong>：服务器端测速（无法客户端测试）</li>
+</ul>
+</li>
+</ol>
+<h4 id="部署-CORS-代理-Cloudflare-Workers"><a href="#部署-CORS-代理-Cloudflare-Workers" class="headerlink" title="部署 CORS 代理 (Cloudflare Workers)"></a>部署 CORS 代理 (Cloudflare Workers)</h4><blockquote>
+<p>⚠️ <strong>关于流量限制的风险提示</strong>：<br>Cloudflare 免费版 Workers 每日有请求限制 (10万次)，且根据条款<strong>不建议</strong>用于大规模非 HTML 内容（如视频流）的代理。</p>
+<ul>
+<li><strong>个人自用</strong>：通常没问题。</li>
+<li><strong>多人/高频使用</strong>：强烈建议使用下方的 <strong>VPS / Node.js</strong> 部署方案，以免被封号。</li>
+</ul>
+</blockquote>
+<ol>
+<li><p><strong>登录 <a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">Cloudflare Dashboard</a></strong></p>
+<ul>
+<li>进入 <strong>Workers &amp; Pages</strong> → <strong>Create Worker</strong></li>
+<li>命名如 <code>cors-proxy</code></li>
+</ul>
+</li>
+<li><p><strong>部署代理代码</strong></p>
+<ul>
+<li>复制 <code>cloudflare-cors-proxy.js</code> 文件<strong>全部内容</strong>到编辑器</li>
+<li>点击 <strong>“Save and Deploy”</strong></li>
+<li>记录 Worker URL（如 <code>https://cors-proxy.your-name.workers.dev</code>）</li>
+</ul>
+</li>
+<li><p><strong>配置 .env</strong></p>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CORS_PROXY_URL=https://cors-proxy.your-name.workers.dev</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>（可选）绑定自定义域名</strong></p>
+<ul>
+<li>Worker 设置 → Triggers → Custom Domains → 添加域名</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>⚠️ <strong>重要</strong>：每次更新 <code>cloudflare-cors-proxy.js</code> 文件后，需要重新部署到 Cloudflare！</p>
+</blockquote>
+<h4 id="部署-CORS-代理-VPS-Node-js"><a href="#部署-CORS-代理-VPS-Node-js" class="headerlink" title="部署 CORS 代理 (VPS / Node.js)"></a>部署 CORS 代理 (VPS / Node.js)</h4><p>如果您有自己的服务器，或者流量较大，建议使用此方式。</p>
+<ol>
+<li><p> <strong>准备环境</strong>：确保 VPS 已安装 Node.js (v18+)。</p>
+</li>
+<li><p> <strong>上传代码</strong>：上传 <code>proxy-server.js</code> 到服务器。</p>
+</li>
+<li><p><strong>安装依赖 &amp; 运行</strong>：</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">npm install express axios cors dotenv</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动服务</span></span><br><span class="line">PORT=8080 node proxy-server.js</span><br></pre></td></tr></table></figure>
+<p> <em>推荐使用 PM2 守护进程：</em> <code>pm2 start proxy-server.js --name cors-proxy</code></p>
+</li>
+<li><p><strong>配置 .env</strong>：</p>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CORS_PROXY_URL=http://your-vps-ip:8080</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="代理工作流程图"><a href="#代理工作流程图" class="headerlink" title="代理工作流程图"></a>代理工作流程图</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">用户请求 m3u8 视频</span><br><span class="line">        ↓</span><br><span class="line">   代理获取 m3u8</span><br><span class="line">        ↓</span><br><span class="line">  重写 ts 分片 URL</span><br><span class="line">   (改为经过代理)</span><br><span class="line">        ↓</span><br><span class="line">  返回修改后的 m3u8</span><br><span class="line">        ↓</span><br><span class="line">播放器请求 ts 分片</span><br><span class="line">   (通过代理,带正确 Referer)</span><br><span class="line">        ↓</span><br><span class="line">    视频正常播放 ✓</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="🔒-安全配置与远程加载-高级"><a href="#🔒-安全配置与远程加载-高级" class="headerlink" title="🔒 安全配置与远程加载 (高级)"></a>🔒 安全配置与远程加载 (高级)</h2><p>为了保护您的站点或统一管理配置，可以使用以下高级功能：</p>
+<h3 id="全局访问密码"><a href="#全局访问密码" class="headerlink" title="全局访问密码"></a>全局访问密码</h3><p>在 <code>.env</code> 文件中设置 <code>ACCESS_PASSWORD</code> 即可开启全局密码保护。开启后，用户访问任何页面都需要输入密码。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ACCESS_PASSWORD=your_secure_password</span><br></pre></td></tr></table></figure>
+
+<h3 id="远程配置文件-db-json"><a href="#远程配置文件-db-json" class="headerlink" title="远程配置文件 (db.json)"></a>远程配置文件 (db.json)</h3><p>如果您有多个站点或希望远程更新配置，可以让服务器读取远程的 <code>db.json</code> 文件。<br>在 <code>.env</code> 文件中设置：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 远程 JSON 文件地址 (需支持 GET 请求)</span><br><span class="line">REMOTE_DB_URL=https://example.com/my-config/db.json</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>注意</strong>：</p>
+<ol>
+<li>配置 <code>REMOTE_DB_URL</code> 后，系统会自动优先尝试从该 URL 获取配置。</li>
+<li>会有 5 分钟的内存缓存，避免频繁请求远程服务器。</li>
+<li>如果远程获取失败，会自动降级使用本地的 <code>db.json</code> 文件。</li>
+</ol>
+</blockquote>
+<h3 id="多用户模式与观看历史同步-新功能"><a href="#多用户模式与观看历史同步-新功能" class="headerlink" title="多用户模式与观看历史同步 (新功能)"></a>多用户模式与观看历史同步 (新功能)</h3><p>支持多个密码，每个密码代表一个独立用户，拥有独立的观看历史。历史记录可在同一用户的不同设备间自动同步。</p>
+<p><strong>配置方式</strong>：在 <code>.env</code> 文件中用逗号分隔多个密码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 多密码模式</span><br><span class="line">ACCESS_PASSWORD=admin_password,user1_pass,user2_pass</span><br></pre></td></tr></table></figure>
+
+<p><strong>规则说明</strong>：<br>| 密码位置 | 行为 |<br>|———|——|<br>| <strong>第一个密码</strong> | 保持传统模式，观看历史仅存储在本地设备 |<br>| <strong>第二个及之后</strong> | 启用云同步，观看历史在设备间自动同步 |</p>
+<p><strong>同步特性</strong>：</p>
+<ul>
+<li>✅ 自动同步：页面加载时自动拉取和推送历史</li>
+<li>✅ 本地优先：本地记录不会被其他设备覆盖</li>
+<li>✅ 智能合并：同一影片以最新的观看记录为准</li>
+<li>✅ 隐蔽提示：同步状态图标显示在”继续观看”旁边</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>重要</strong>：观看历史同步功能<strong>仅在 SQLite 缓存模式下可用</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>缓存类型</th>
+<th>历史同步</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>sqlite</code></td>
+<td>✅ 支持</td>
+<td>推荐，数据持久化存储在数据库中</td>
+</tr>
+<tr>
+<td><code>json</code></td>
+<td>❌ 不支持</td>
+<td>仅支持搜索/详情缓存，无用户数据存储</td>
+</tr>
+<tr>
+<td><code>memory</code></td>
+<td>❌ 不支持</td>
+<td>服务器重启后数据丢失</td>
+</tr>
+<tr>
+<td><code>none</code></td>
+<td>❌ 不支持</td>
+<td>无缓存功能</td>
+</tr>
+</tbody></table>
+<p>如需使用历史同步，请在 <code>.env</code> 中设置 <code>CACHE_TYPE=sqlite</code>。</p>
+</blockquote>
+<p><strong>使用场景示例</strong>：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># admin_password - 管理员使用，本地存储</span></span><br><span class="line"><span class="comment"># user1_pass - 家人A使用，全设备同步  </span></span><br><span class="line"><span class="comment"># user2_pass - 家人B使用，全设备同步</span></span><br><span class="line">ACCESS_PASSWORD=admin123,familyA_pass,familyB_pass</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="📦-安装与运行-Installation"><a href="#📦-安装与运行-Installation" class="headerlink" title="📦 安装与运行 (Installation)"></a>📦 安装与运行 (Installation)</h2><h3 id="🚀-一键安装脚本-推荐"><a href="#🚀-一键安装脚本-推荐" class="headerlink" title="🚀 一键安装脚本 (推荐)"></a>🚀 一键安装脚本 (推荐)</h3><p>适用于 Ubuntu/Debian/CentOS 系统，自动安装所有依赖并配置服务。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 下载并运行一键安装脚本</span></span><br><span class="line">curl -fsSL https://raw.githubusercontent.com/ednovas/dongguaTV/main/install.sh | bash</span><br></pre></td></tr></table></figure>
+
+<p>或者手动下载后运行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget https://raw.githubusercontent.com/ednovas/dongguaTV/main/install.sh</span><br><span class="line"><span class="built_in">chmod</span> +x install.sh</span><br><span class="line">./install.sh</span><br></pre></td></tr></table></figure>
+
+<p>脚本会引导您输入：</p>
+<ul>
+<li>TMDB API Key (必填)</li>
+<li>TMDB 反代地址 (可选，大陆用户需要)</li>
+<li>运行端口 (默认 3000)</li>
+<li>运行端口 (默认 3000)</li>
+<li>安装目录 (默认 /opt/dongguaTV)</li>
+</ul>
+<blockquote>
+<p><strong>提示</strong>：安装完成后，您可以随时编辑安装目录下的 <code>.env</code> 文件，修改 <code>CACHE_TYPE</code> 来切换缓存模式（需要重启服务）。</p>
+</blockquote>
+<h3 id="手动本地运行"><a href="#手动本地运行" class="headerlink" title="手动本地运行"></a>手动本地运行</h3><h4 id="1-安装-Node-js-v18"><a href="#1-安装-Node-js-v18" class="headerlink" title="1. 安装 Node.js (v18+)"></a>1. 安装 Node.js (v18+)</h4><p><strong>Ubuntu/Debian:</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -fsSL https://deb.nodesource.com/setup_18.x | <span class="built_in">sudo</span> -E bash -</span><br><span class="line"><span class="built_in">sudo</span> apt-get install -y nodejs</span><br></pre></td></tr></table></figure>
+
+<p><strong>CentOS/RHEL:</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -fsSL https://rpm.nodesource.com/setup_18.x | <span class="built_in">sudo</span> bash -</span><br><span class="line"><span class="built_in">sudo</span> yum install -y nodejs</span><br></pre></td></tr></table></figure>
+
+<p><strong>macOS (使用 Homebrew):</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew install node@18</span><br></pre></td></tr></table></figure>
+
+<p><strong>Windows:</strong><br>下载安装包：<a target="_blank" rel="noopener" href="https://nodejs.org/">https://nodejs.org/</a></p>
+<p>验证安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node -v  <span class="comment"># 应显示 v18.x.x</span></span><br><span class="line">npm -v   <span class="comment"># 应显示 9.x.x 或更高</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-安装编译工具-可选"><a href="#2-安装编译工具-可选" class="headerlink" title="2. 安装编译工具 (可选)"></a>2. 安装编译工具 (可选)</h4><p>如果您计划使用 <code>sqlite</code> 作为缓存（默认推荐），则必须安装编译工具。如果不使用 SQLite (如使用 <code>json</code> 或 <code>memory</code> 模式)，可跳过此步。</p>
+<p><strong>Ubuntu/Debian:</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get install -y build-essential python3</span><br></pre></td></tr></table></figure>
+
+<p><strong>CentOS/RHEL:</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> yum groupinstall -y <span class="string">&quot;Development Tools&quot;</span></span><br><span class="line"><span class="built_in">sudo</span> yum install -y python3</span><br></pre></td></tr></table></figure>
+
+<p><strong>macOS:</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-安装项目依赖"><a href="#3-安装项目依赖" class="headerlink" title="3. 安装项目依赖"></a>3. 安装项目依赖</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-配置环境变量"><a href="#4-配置环境变量" class="headerlink" title="4. 配置环境变量"></a>4. 配置环境变量</h4><p>复制 <code>.env.example</code> 为 <code>.env</code>，并配置如下信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># TMDb API Key (必填)</span><br><span class="line">TMDB_API_KEY=your_api_key_here</span><br><span class="line"></span><br><span class="line"># 可选：自定义端口 (默认 3000)</span><br><span class="line">PORT=3000</span><br><span class="line"></span><br><span class="line"># 可选：大陆用户 TMDB 反代地址 (详见下方说明)</span><br><span class="line">TMDB_PROXY_URL=</span><br><span class="line"></span><br><span class="line"># 可选：缓存类型 (&#x27;json&#x27;, &#x27;sqlite&#x27;, &#x27;memory&#x27;, &#x27;none&#x27;) - 默认 json</span><br><span class="line">CACHE_TYPE=json</span><br><span class="line"></span><br><span class="line"># 可选：访问密码 (设置后需要密码才能访问)</span><br><span class="line">ACCESS_PASSWORD=</span><br><span class="line"></span><br><span class="line"># 可选：远程配置文件地址</span><br><span class="line">REMOTE_DB_URL=</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-启动服务"><a href="#5-启动服务" class="headerlink" title="5. 启动服务"></a>5. 启动服务</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node server.js</span><br></pre></td></tr></table></figure>
+
+<h4 id="6-访问"><a href="#6-访问" class="headerlink" title="6. 访问"></a>6. 访问</h4><p>打开浏览器访问 <code>http://localhost:3000</code></p>
+<hr>
+<h2 id="🚀-部署-Deployment"><a href="#🚀-部署-Deployment" class="headerlink" title="🚀 部署 (Deployment)"></a>🚀 部署 (Deployment)</h2><h3 id="🐳-Docker-部署-推荐"><a href="#🐳-Docker-部署-推荐" class="headerlink" title="🐳 Docker 部署 (推荐)"></a>🐳 Docker 部署 (推荐)</h3><h4 id="环境变量说明"><a href="#环境变量说明" class="headerlink" title="环境变量说明"></a>环境变量说明</h4><table>
+<thead>
+<tr>
+<th>变量名</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>TMDB_API_KEY</code></td>
+<td>✅ 是</td>
+<td>TMDb API 密钥，用于获取影视信息</td>
+</tr>
+<tr>
+<td><code>CACHE_TYPE</code></td>
+<td>❌ 否</td>
+<td>缓存类型: <code>json</code>(默认), <code>sqlite</code>, <code>memory</code>, <code>none</code></td>
+</tr>
+<tr>
+<td><code>TMDB_PROXY_URL</code></td>
+<td>❌ 否</td>
+<td>TMDB 反代地址，大陆用户需要配置</td>
+</tr>
+<tr>
+<td><code>CORS_PROXY_URL</code></td>
+<td>❌ 否</td>
+<td>视频/图片 CORS 代理地址，解决资源站播放失败问题</td>
+</tr>
+<tr>
+<td><code>PORT</code></td>
+<td>❌ 否</td>
+<td>服务端口，默认 3000</td>
+</tr>
+<tr>
+<td><code>ACCESS_PASSWORD</code></td>
+<td>❌ 否</td>
+<td>访问密码，保护站点不被公开访问</td>
+</tr>
+<tr>
+<td><code>REMOTE_DB_URL</code></td>
+<td>❌ 否</td>
+<td>远程 <code>db.json</code> 地址，用于统一配置管理</td>
+</tr>
+</tbody></table>
+<h4 id="方案一：使用现有镜像（最快）"><a href="#方案一：使用现有镜像（最快）" class="headerlink" title="方案一：使用现有镜像（最快）"></a>方案一：使用现有镜像（最快）</h4><p>无需构建，一行命令直接运行。</p>
+<blockquote>
+<p><strong>🎉 多架构支持</strong>：Docker 镜像已支持以下架构，会自动选择匹配的版本：</p>
+<ul>
+<li><code>linux/amd64</code> - x86_64 服务器、PC</li>
+<li><code>linux/arm64</code> - Apple M1/M2/M3、树莓派4/5、AWS Graviton</li>
+<li><code>linux/arm/v7</code> - 树莓派3、旧版 ARM 设备</li>
+</ul>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 基础启动 (请替换 TMDB_API_KEY)</span></span><br><span class="line">docker run -d -p 3000:3000 \</span><br><span class="line">  -e TMDB_API_KEY=<span class="string">&quot;your_api_key_here&quot;</span> \</span><br><span class="line">  -e ACCESS_PASSWORD=<span class="string">&quot;your_password&quot;</span> \</span><br><span class="line">  --name donggua-tv \</span><br><span class="line">  --restart unless-stopped \</span><br><span class="line">  ghcr.io/ednovas/dongguatv:latest</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1. ⚠️ 重要：先创建文件，防止 Docker 将其识别为目录</span></span><br><span class="line"><span class="built_in">touch</span> db.json cache.db</span><br><span class="line"><span class="comment"># 如果是 Windows PowerShell:</span></span><br><span class="line"><span class="comment"># New-Item -ItemType File -Name db.json -Force</span></span><br><span class="line"><span class="comment"># New-Item -ItemType File -Name cache.db -Force</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 写入默认配置 (可选，如果不写则为空)</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;&#123;&quot;sites&quot;:[]&#125;&#x27;</span> &gt; db.json</span><br><span class="line"><span class="built_in">mkdir</span> -p cache/images</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 完整配置启动</span></span><br><span class="line">docker run -d -p 3000:3000 \</span><br><span class="line">  -e TMDB_API_KEY=<span class="string">&quot;your_api_key_here&quot;</span> \</span><br><span class="line">  -e ACCESS_PASSWORD=<span class="string">&quot;your_password&quot;</span> \</span><br><span class="line">  -e TMDB_PROXY_URL=<span class="string">&quot;https://tmdb-proxy.your-name.workers.dev&quot;</span> \</span><br><span class="line">  -e CORS_PROXY_URL=<span class="string">&quot;https://cors-proxy.your-name.workers.dev&quot;</span> \</span><br><span class="line">  -e REMOTE_DB_URL=<span class="string">&quot;https://example.com/db.json&quot;</span> \</span><br><span class="line">  -v $(<span class="built_in">pwd</span>)/db.json:/app/db.json \</span><br><span class="line">  -v $(<span class="built_in">pwd</span>)/cache.db:/app/cache.db \</span><br><span class="line">  -v $(<span class="built_in">pwd</span>)/cache/images:/app/public/cache/images \</span><br><span class="line">  --name donggua-tv \</span><br><span class="line">  --restart unless-stopped \</span><br><span class="line">  ghcr.io/ednovas/dongguatv:latest</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>⚠️ 常见错误警告</strong>：如果启动失败且日志报错 <code>EISDIR: illegal operation on a directory</code>，说明您没有先创建 <code>db.json</code> 文件，Docker 自动创建了同名文件夹。请删除该文件夹 (<code>rm -rf db.json</code>) 并重新执行上述 <code>touch</code> 命令创建文件。</p>
+<p><strong>注意</strong>：如果不挂载 <code>-v</code> 卷，您的站点配置(db.json)和缓存(cache.db)将在容器重启后丢失。请确保当前目录下有 <code>db.json</code> 文件（如果没有，第一次运行后可以从容器内复制出来）。</p>
+</blockquote>
+<h4 id="方案二：本地构建"><a href="#方案二：本地构建" class="headerlink" title="方案二：本地构建"></a>方案二：本地构建</h4><p>如果您想自己修改代码或重新构建镜像：</p>
+<ol>
+<li><strong>构建镜像</strong> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker build -t donggua-tv .</span><br></pre></td></tr></table></figure></li>
+<li><strong>运行容器</strong> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d -p 3000:3000 \</span><br><span class="line">  -e TMDB_API_KEY=<span class="string">&quot;your_api_key_here&quot;</span> \</span><br><span class="line">  -e TMDB_PROXY_URL=<span class="string">&quot;https://tmdb-proxy.your-name.workers.dev&quot;</span> \</span><br><span class="line">  -e CORS_PROXY_URL=<span class="string">&quot;https://cors-proxy.your-name.workers.dev&quot;</span> \</span><br><span class="line">  -e REMOTE_DB_URL=<span class="string">&quot;https://example.com/db.json&quot;</span> \</span><br><span class="line">  --name donggua-tv \</span><br><span class="line">  --restart unless-stopped \</span><br><span class="line">  donggua-tv</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="方案三：Docker-Compose"><a href="#方案三：Docker-Compose" class="headerlink" title="方案三：Docker Compose"></a>方案三：Docker Compose</h4><p>如果您更喜欢使用 Compose 管理：</p>
+<ol>
+<li>创建 <code>docker-compose.yml</code> 文件： <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">&#x27;3&#x27;</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">donggua-tv:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">ghcr.io/ednovas/dongguatv:latest</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">donggua-tv</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;3000:3000&quot;</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">TMDB_API_KEY=your_api_key_here</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">TMDB_PROXY_URL=https://tmdb-proxy.your-name.workers.dev</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">CORS_PROXY_URL=https://cors-proxy.your-name.workers.dev</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ACCESS_PASSWORD=your_secure_password</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">REMOTE_DB_URL=https://example.com/db.json</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./db.json:/app/db.json</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./cache.db:/app/cache.db</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">unless-stopped</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><strong>启动</strong> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 同样需要先创建文件，防止挂载成目录</span></span><br><span class="line"><span class="built_in">touch</span> db.json cache.db</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动服务</span></span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="▲-Vercel-部署"><a href="#▲-Vercel-部署" class="headerlink" title="▲ Vercel 部署"></a>▲ Vercel 部署</h3><p>适合零成本快速上线。</p>
+<p><a target="_blank" rel="noopener" href="https://vercel.com/new/clone?repository-url=https://github.com/ednovas/dongguaTV&env=TMDB_API_KEY,REMOTE_DB_URL,ACCESS_PASSWORD,TMDB_PROXY_URL&envDescription=TMDB_API_KEY%20and%20REMOTE_DB_URL%20are%20required.%20Others%20are%20optional.&envLink=https://github.com/ednovas/dongguaTV%23-vercel-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><img src="https://vercel.com/button" alt="Deploy with Vercel"></a></p>
+<p><em>(请确保先将本项目fork到您自己的 GitHub 仓库，点击上方按钮即可一键导入部署)</em></p>
+<h4 id="⚠️-Vercel-环境变量配置注意事项"><a href="#⚠️-Vercel-环境变量配置注意事项" class="headerlink" title="⚠️ Vercel 环境变量配置注意事项"></a>⚠️ Vercel 环境变量配置注意事项</h4><p>在 Vercel 部署后，<strong>必须正确配置环境变量</strong>才能使用：</p>
+<ol>
+<li><p><strong>Settings → Environment Variables</strong> 中添加以下变量：</p>
+<ul>
+<li><code>TMDB_API_KEY</code> - TMDb API 密钥（<strong>必填</strong>）</li>
+<li><code>REMOTE_DB_URL</code> - 远程站点配置 JSON 地址（<strong>Vercel 必填</strong>，因为无法读取本地 db.json）</li>
+<li><code>ACCESS_PASSWORD</code> - 访问密码（可选）</li>
+<li><code>TMDB_PROXY_URL</code> - 大陆用户反代地址（可选）</li>
+</ul>
+</li>
+<li><p><strong>环境变量不生效？</strong> 请按以下步骤排查：</p>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>操作</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>①</td>
+<td>检查变量名</td>
+<td>确保<strong>完全正确</strong>且区分大小写</td>
+</tr>
+<tr>
+<td>②</td>
+<td>检查环境范围</td>
+<td>确保勾选了 <strong>Production</strong> 环境</td>
+</tr>
+<tr>
+<td>③</td>
+<td><strong>重新部署</strong></td>
+<td>⚠️ 添加/修改变量后必须重新部署！进入 Deployments → 点击最新部署的 <code>...</code> → <strong>Redeploy</strong></td>
+</tr>
+<tr>
+<td>④</td>
+<td>使用诊断端点</td>
+<td>访问 <code>/api/debug</code> 查看环境变量状态</td>
+</tr>
+</tbody></table>
+</li>
+<li><p><strong>诊断端点</strong> - 检查配置是否生效：</p>
+<p>访问 <code>https://your-domain.vercel.app/api/debug</code>，您会看到类似以下的返回：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;environment&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Vercel Serverless&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;node_version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;v18.x.x&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;env_status&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;TMDB_API_KEY&quot;</span><span class="punctuation">:</span> <span class="string">&quot;configured&quot;</span><span class="punctuation">,</span>      <span class="comment">// 应显示 &quot;configured&quot;</span></span><br><span class="line">    <span class="attr">&quot;TMDB_PROXY_URL&quot;</span><span class="punctuation">:</span> <span class="string">&quot;not_set&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;ACCESS_PASSWORD&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1 password(s)&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;REMOTE_DB_URL&quot;</span><span class="punctuation">:</span> <span class="string">&quot;not_set&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;CACHE_TYPE&quot;</span><span class="punctuation">:</span> <span class="string">&quot;memory&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;cache_type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;memory&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;timestamp&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2024-01-01T00:00:00.000Z&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>如果 <code>TMDB_API_KEY</code> 显示 <code>&quot;missing&quot;</code>，说明环境变量未正确配置或未重新部署。</p>
+</li>
+<li><p><strong>常见问题</strong>：</p>
+<ul>
+<li>❌ <strong>修改环境变量后没有重新部署</strong> - 这是最常见的问题！</li>
+<li>❌ <strong>环境变量只勾选了 Preview 没勾选 Production</strong></li>
+<li>❌ <strong>使用了错误的变量名</strong>（如 <code>tmdb_api_key</code> 而非 <code>TMDB_API_KEY</code>）</li>
+</ul>
+</li>
+<li><p><strong>Vercel 功能限制</strong>：<br>由于 Vercel Serverless 无法写入文件系统，以下功能在 Vercel 上不可用：</p>
+<ul>
+<li>❌ 本地图片缓存（会自动禁用）</li>
+<li>❌ SQLite 缓存（使用内存缓存替代）</li>
+<li>❌ 本地 db.json（必须配置 <code>REMOTE_DB_URL</code>）</li>
+<li>❌ 多用户历史同步（需要持久化存储）</li>
+</ul>
+</li>
+</ol>
+<h3 id="🖥️-Linux-服务器命令行部署-PM2"><a href="#🖥️-Linux-服务器命令行部署-PM2" class="headerlink" title="🖥️ Linux 服务器命令行部署 (PM2)"></a>🖥️ Linux 服务器命令行部署 (PM2)</h3><p>适合常规 VPS (Ubuntu/CentOS/Debian)。</p>
+<ol>
+<li><p><strong>环境准备</strong></p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装 Node.js (v18+)</span></span><br><span class="line">curl -fsSL https://deb.nodesource.com/setup_18.x | <span class="built_in">sudo</span> -E bash -</span><br><span class="line"><span class="built_in">sudo</span> apt-get install -y nodejs</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 PM2 进程管理器</span></span><br><span class="line">npm install -g pm2</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>获取代码与运行</strong></p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/ednovas/dongguaTV.git</span><br><span class="line"><span class="built_in">cd</span> dongguaTV</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置环境变量</span></span><br><span class="line"><span class="built_in">cp</span> .env.example .<span class="built_in">env</span></span><br><span class="line"><span class="comment"># 编辑 .env文件填入您的 TMDB_API_KEY</span></span><br><span class="line">nano .<span class="built_in">env</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 PM2 启动服务</span></span><br><span class="line">pm2 start server.js --name <span class="string">&quot;donggua-tv&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置开机自启</span></span><br><span class="line">pm2 save &amp;&amp; pm2 startup</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="🏰-宝塔面板-aaPanel-部署"><a href="#🏰-宝塔面板-aaPanel-部署" class="headerlink" title="🏰 宝塔面板 (aaPanel) 部署"></a>🏰 宝塔面板 (aaPanel) 部署</h3><p>可视化管理，不需要懂代码。</p>
+<ol>
+<li> 在 <strong>软件商店</strong> 搜索并安装 <strong>Node.js版本管理器</strong> (建议选择 v18+)。</li>
+<li><strong>⚠️ 重要：安装编译工具</strong> (better-sqlite3 需要)：<ul>
+<li>  登录 SSH 终端。</li>
+<li>执行安装命令：  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># CentOS/RedHat</span></span><br><span class="line"><span class="built_in">sudo</span> yum groupinstall <span class="string">&quot;Development Tools&quot;</span> -y</span><br><span class="line"><span class="built_in">sudo</span> yum install python3 -y</span><br><span class="line"></span><br><span class="line"><span class="comment"># Ubuntu/Debian</span></span><br><span class="line"><span class="built_in">sudo</span> apt-get install build-essential python3 -y</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>在 <strong>网站</strong> -&gt; <strong>Node项目</strong> -&gt; <strong>添加Node项目</strong>。<ul>
+<li>  <strong>项目目录</strong>：选择上传代码的文件夹 (例如 <code>/www/wwwroot/dongguaTV</code>)。</li>
+<li>  <strong>启动选项</strong>：<code>server.js</code>。</li>
+<li>  <strong>项目端口</strong>：<code>3000</code>。</li>
+</ul>
+</li>
+<li><strong>配置环境变量</strong>：<ul>
+<li>  在 <strong>文件</strong> 栏目进入项目目录。</li>
+<li>  将 <code>.env.example</code> 重命名为 <code>.env</code>。</li>
+<li>编辑 <code>.env</code> 文件，配置以下内容：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 必填：TMDb API Key</span><br><span class="line">TMDB_API_KEY=your_api_key_here</span><br><span class="line"></span><br><span class="line"># 可选：运行端口</span><br><span class="line">PORT=3000</span><br><span class="line"></span><br><span class="line"># 可选：缓存类型 (&#x27;json&#x27;, &#x27;sqlite&#x27;, &#x27;memory&#x27;, &#x27;none&#x27;)</span><br><span class="line">CACHE_TYPE=json</span><br><span class="line"></span><br><span class="line"># 可选：大陆用户 TMDB 反代地址</span><br><span class="line"># 如果您的服务器在大陆，请参考&quot;大陆用户配置&quot;章节部署反代</span><br><span class="line">TMDB_PROXY_URL=https://tmdb-proxy.your-name.workers.dev</span><br></pre></td></tr></table></figure></li>
+<li>  保存后回到 <strong>Node项目</strong> 列表，点击 <strong>重启</strong> 服务。</li>
+</ul>
+</li>
+<li> 点击 <strong>映射/绑定域名</strong>，输入您的域名 (如 <code>movie.example.com</code>)。</li>
+<li> 访问域名即可使用。</li>
+</ol>
+<h4 id="🤖-Android-APP-构建-GitHub-Actions"><a href="#🤖-Android-APP-构建-GitHub-Actions" class="headerlink" title="🤖 Android APP 构建 (GitHub Actions)"></a>🤖 Android APP 构建 (GitHub Actions)</h4><p>本项目配置了自动化构建流程。由于构建 APK 耗时较长，<strong>默认仅在推送 Tag 时触发构建</strong>，普通代码提交不会触发。</p>
+<ol>
+<li> <strong>Fork 本仓库</strong> 到您的 GitHub 账号。</li>
+<li>**提交 Tag (触发构建)**：<br> 每当您推送一个以 <code>v</code> 开头的 Tag (例如 <code>v1.0.0</code>) 到仓库时，GitHub Actions 会自动触发构建。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git tag v1.0.0</span><br><span class="line">git push origin v1.0.0</span><br></pre></td></tr></table></figure></li>
+<li><strong>下载 APK</strong>：<br> 构建完成后，在 GitHub 仓库的 <strong>“Releases”</strong> 页面即可下载生成的 <code>.apk</code> 安装包。<br> <em>此 APK 包含完整的电视端 (Android TV) 适配、沉浸式状态栏支持及自动优化的应用图标。</em></li>
+</ol>
+<h4 id="📱-构建特性"><a href="#📱-构建特性" class="headerlink" title="📱 构建特性"></a>📱 构建特性</h4><ul>
+<li><strong>自动图标优化</strong>：GitHub Actions 会自动调整图标尺寸并添加安全边距，防止在圆形图标遮罩下被裁剪。</li>
+<li><strong>沉浸式适配</strong>：内置原生级状态栏适配逻辑，自动处理 Safe Area，确保刘海屏手机无遮挡。</li>
+</ul>
+<h4 id="📱-APK-默认配置"><a href="#📱-APK-默认配置" class="headerlink" title="📱 APK 默认配置"></a>📱 APK 默认配置</h4><table>
+<thead>
+<tr>
+<th>配置项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>App 名称</strong></td>
+<td>E视界</td>
+</tr>
+<tr>
+<td><strong>默认服务器</strong></td>
+<td><code>https://ednovas.video</code></td>
+</tr>
+<tr>
+<td><strong>图标来源</strong></td>
+<td>自动从 <code>public/icon.png</code> 生成</td>
+</tr>
+</tbody></table>
+<h4 id="🔧-自定义构建-新功能"><a href="#🔧-自定义构建-新功能" class="headerlink" title="🔧 自定义构建 (新功能)"></a>🔧 自定义构建 (新功能)</h4><p>无需修改代码，直接在 GitHub 网页上自定义并构建 App：</p>
+<ol>
+<li> 进入仓库的 <strong>Actions</strong> 页面。</li>
+<li> 在左侧选择 **”Android Build &amp; Release”**。</li>
+<li> 点击右侧的 <strong>Run workflow</strong> 按钮。</li>
+<li>输入配置信息：<ul>
+<li><strong>Server URL</strong>: 您的服务器地址 (例如 <code>https://movie.example.com</code>)</li>
+<li><strong>App Name</strong>: App 名称 (例如 <code>我的私人影院</code>)</li>
+<li><strong>Version Tag</strong>: 版本号 (例如 <code>v1.0.0</code>)</li>
+</ul>
+</li>
+<li> 点击 <strong>Run workflow</strong> 开始构建。</li>
+</ol>
+<p>等待构建完成后，在 Releases 页面即可下载您定制的 App。</p>
+<h4 id="🔧-代码修改方式-高级"><a href="#🔧-代码修改方式-高级" class="headerlink" title="🔧 代码修改方式 (高级)"></a>🔧 代码修改方式 (高级)</h4><p>如果您 Fork 了本项目并希望永久修改默认配置：</p>
+<ol>
+<li><p>编辑 <code>capacitor.config.json</code>，修改 <code>server.url</code> 为您的服务器地址：</p>
+ <figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;appId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;com.ednovas.donguatv&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;appName&quot;</span><span class="punctuation">:</span> <span class="string">&quot;E视界&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;webDir&quot;</span><span class="punctuation">:</span> <span class="string">&quot;public&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;server&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://your-server.com&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;cleartext&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>提交更改并推送 Tag 触发自动构建：</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add capacitor.config.json</span><br><span class="line">git commit -m <span class="string">&quot;修改服务器地址&quot;</span></span><br><span class="line">git tag v1.0.0</span><br><span class="line">git push origin main --tags</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>或者本地手动构建：</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install</span><br><span class="line">npx <span class="built_in">cap</span> <span class="built_in">sync</span> android</span><br><span class="line"><span class="built_in">cd</span> android &amp;&amp; ./gradlew assembleRelease</span><br></pre></td></tr></table></figure>
+<p> APK 位于 <code>android/app/build/outputs/apk/release/</code></p>
+</li>
+</ol>
+<h4 id="🏠-内网-HTTP-使用说明"><a href="#🏠-内网-HTTP-使用说明" class="headerlink" title="🏠 内网 HTTP 使用说明"></a>🏠 内网 HTTP 使用说明</h4><blockquote>
+<p><strong>⚠️ 重要</strong>：从 Android 9 (API 28) 开始，Android 默认禁止明文 HTTP 流量 (Cleartext Traffic)。如果您的 APK 无法连接 HTTP 服务器，请确认以下配置。</p>
+</blockquote>
+<p><strong>问题现象</strong>：</p>
+<ul>
+<li>APK 在 Android TV / 手机上一直显示 loading</li>
+<li>浏览器可以正常访问 <code>http://192.168.x.x:3000</code>，但 APP 不行</li>
+<li>控制台报错 <code>net::ERR_CLEARTEXT_NOT_PERMITTED</code></li>
+</ul>
+<p><strong>解决方案</strong>：</p>
+<p>本项目已内置 HTTP 支持配置。如果您使用 GitHub Actions 自动构建或本地构建，APK 会自动支持 HTTP 访问。</p>
+<p><strong>使用 GitHub Actions 构建内网 APK</strong>：</p>
+<ol>
+<li>进入 <strong>Actions</strong> → <strong>Android Build &amp; Release</strong> → <strong>Run workflow</strong></li>
+<li>填写您的内网服务器地址：<code>http://192.168.1.100:3000</code></li>
+<li>构建完成后下载 APK，即可正常访问 HTTP 服务</li>
+</ol>
+<p><strong>📝 注意事项</strong>：</p>
+<ul>
+<li><code>capacitor.config.json</code> 中的 <code>&quot;cleartext&quot;: true</code> 是 Capacitor 配置，但 Android 9+ 还需要上述 Android 原生配置</li>
+<li>如果您手动构建 APK，请确保项目代码是最新版本（包含上述配置）</li>
+<li>建议使用固定 IP 地址而非主机名，避免 DNS 解析问题</li>
+</ul>
+<hr>
+<h2 id="💾-数据维护与备份"><a href="#💾-数据维护与备份" class="headerlink" title="💾 数据维护与备份"></a>💾 数据维护与备份</h2><p>本项目的核心数据存储在以下两个文件中，建议定期备份：</p>
+<ol>
+<li> **<code>db.json</code>**：存储所有的采集源配置信息（重要）。</li>
+<li> <strong><code>cache.db</code></strong> (SQLite模式)：存储搜索结果和详情的数据库文件。</li>
+<li> <strong><code>cache_search.json</code> / <code>cache_detail.json</code></strong> (JSON模式)：存储缓存的 JSON 文件。</li>
+</ol>
+<h3 id="备份命令示例"><a href="#备份命令示例" class="headerlink" title="备份命令示例"></a>备份命令示例</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 备份到当前用户的 backup 目录</span></span><br><span class="line"><span class="built_in">mkdir</span> -p ~/backup</span><br><span class="line"><span class="built_in">cp</span> /opt/dongguaTV/db.json ~/backup/</span><br><span class="line"><span class="comment"># 如果使用 SQLite</span></span><br><span class="line">[ -f /opt/dongguaTV/cache.db ] &amp;&amp; <span class="built_in">cp</span> /opt/dongguaTV/cache.db ~/backup/</span><br><span class="line"><span class="comment"># 如果使用 JSON</span></span><br><span class="line">[ -f /opt/dongguaTV/cache_search.json ] &amp;&amp; <span class="built_in">cp</span> /opt/dongguaTV/cache_search.json ~/backup/</span><br></pre></td></tr></table></figure>
+
+<h3 id="清理缓存"><a href="#清理缓存" class="headerlink" title="清理缓存"></a>清理缓存</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># SQLite 模式</span></span><br><span class="line"><span class="built_in">rm</span> /opt/dongguaTV/cache.db</span><br><span class="line"></span><br><span class="line"><span class="comment"># JSON 模式</span></span><br><span class="line"><span class="built_in">rm</span> /opt/dongguaTV/cache_*.json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重启服务生效</span></span><br><span class="line">pm2 restart donggua-tv</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="📝-贡献与致谢"><a href="#📝-贡献与致谢" class="headerlink" title="📝 贡献与致谢"></a>📝 贡献与致谢</h2><p>本项目由 <strong>kk爱吃王哥呆阿龟头</strong> 设计编写， <strong>ednovas</strong> 优化了功能和部署流程。<br>数据由 <strong>TMDb</strong> 和各式 <strong>Maccms</strong> API 提供。</p>
+<hr>
+<h2 id="⚠️-免责声明-Disclaimer"><a href="#⚠️-免责声明-Disclaimer" class="headerlink" title="⚠️ 免责声明 (Disclaimer)"></a>⚠️ 免责声明 (Disclaimer)</h2><ol>
+<li> <strong>仅供学习交流</strong>：本项目仅作为 Node.js 和 Vue 3 的学习练手项目开源，旨在展示前后端交互、数据聚合与 UI 设计技术。</li>
+<li> <strong>API 说明</strong>：本项目<strong>不内置</strong>任何有效的影视资源采集接口。README 或代码演示中可能出现的 API 地址仅为占位符或示例，不保证可用性。</li>
+<li> <strong>自行配置</strong>：使用者需自行寻找合法的 Maccms V10/JSON 格式的采集接口，并遵守相关法律法规。</li>
+<li> <strong>内容无关</strong>：开发者不存储、不发布、不参与任何视频内容的制作与传播，对用户配置的内容不承担任何责任。</li>
+</ol>
+<hr>
+<p><em>Enjoy your movie night! 🍿</em></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">EdNovas</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/">https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BC%96%E7%A8%8B/">编程</a><a class="post-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6/">软件</a><a class="post-meta__tags" href="/tags/%E7%94%B5%E5%BD%B1/">电影</a><a class="post-meta__tags" href="/tags/%E7%94%B5%E8%A7%86%E5%89%A7/">电视剧</a><a class="post-meta__tags" href="/tags/Vue/">Vue</a><a class="post-meta__tags" href="/tags/Node-js/">Node.js</a></div><div class="post_share"><div class="social-share" data-image="https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950" data-sites="qq,wechat,weibo,qzone"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="ads-wrap"><a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png"><center><h3>EdNovas云————高性价比，节点覆盖80+国家，多地区奈飞迪士尼等流媒体解锁</h3></center></a></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2025/12/31/githubactions/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/442-github-actions.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">使用 SSH 连接 GitHub Action 服务器</div></div></a></div><div class="next-post pull-right"><a href="/2024/04/25/gigabit/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/gigabit1.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Server Gigabit Network</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2021/02/22/videos/" title="电影电视剧资源网站/APP"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/EhjA-hmhafis3300165.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-22</div><div class="title">电影电视剧资源网站/APP</div></div></a></div><div><a href="/2021/02/04/renren/" title="人人影视被查，涉案金额1600万元"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1534469249266361.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-04</div><div class="title">人人影视被查，涉案金额1600万元</div></div></a></div><div><a href="/2021/10/01/regex/" title="Regular Expression 正则表达式"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/featured.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-01</div><div class="title">Regular Expression 正则表达式</div></div></a></div><div><a href="/2021/10/01/algorithm/" title="Algorithm算法"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/algorithms_landlord-FINAL.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-01</div><div class="title">Algorithm算法</div></div></a></div><div><a href="/2021/09/23/mips/" title="Assembly language 汇编语言基础"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/49561-assembly-language.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-23</div><div class="title">Assembly language 汇编语言基础</div></div></a></div><div><a href="/2022/01/10/e5renewplus/" title="Microsoft 365 E5 Renew Plus 续订程序"><img class="cover" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/office-365-upgrade.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-10</div><div class="title">Microsoft 365 E5 Renew Plus 续订程序</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%BC%94%E7%A4%BA%E7%BD%91%E7%AB%99"><span class="toc-number">1.</span> <span class="toc-text">演示网站</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%9A-%E7%9B%AE%E5%BD%95-Table-of-Contents"><span class="toc-number">1.1.</span> <span class="toc-text">📚 目录 (Table of Contents)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9C%A8-%E6%A0%B8%E5%BF%83%E7%89%B9%E6%80%A7-Core-Features"><span class="toc-number">1.2.</span> <span class="toc-text">✨ 核心特性 (Core Features)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%F0%9F%8E%AC-%E5%8F%8C%E5%BC%95%E6%93%8E%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8"><span class="toc-number">1.2.1.</span> <span class="toc-text">1. 🎬 双引擎数据驱动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%F0%9F%94%8D-%E6%99%BA%E8%83%BD%E6%90%9C%E7%B4%A2%E4%B8%8E%E8%81%9A%E5%90%88"><span class="toc-number">1.2.2.</span> <span class="toc-text">2. 🔍 智能搜索与聚合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%F0%9F%93%BA-%E6%B2%89%E6%B5%B8%E5%BC%8F%E6%92%AD%E6%94%BE%E4%BD%93%E9%AA%8C"><span class="toc-number">1.2.3.</span> <span class="toc-text">3. 📺 沉浸式播放体验</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%F0%9F%8C%8F-%E5%A4%A7%E9%99%86%E7%94%A8%E6%88%B7%E4%BC%98%E5%8C%96"><span class="toc-number">1.2.4.</span> <span class="toc-text">4. 🌏 大陆用户优化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%F0%9F%93%B1-%E5%A4%9A%E7%AB%AF%E6%94%AF%E6%8C%81"><span class="toc-number">1.2.5.</span> <span class="toc-text">5. 📱 多端支持</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%F0%9F%94%92-%E5%AE%89%E5%85%A8%E4%B8%8E%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6"><span class="toc-number">1.2.6.</span> <span class="toc-text">6. 🔒 安全与访问控制</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%A8-%E7%95%8C%E9%9D%A2%E4%B8%8E%E4%BA%A4%E4%BA%92%E5%8D%87%E7%BA%A7-UI-UX-Upgrades"><span class="toc-number">1.3.</span> <span class="toc-text">🎨 界面与交互升级 (UI&#x2F;UX Upgrades)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9B%A0%EF%B8%8F-%E6%8A%80%E6%9C%AF%E6%A0%88-Tech-Stack"><span class="toc-number">1.4.</span> <span class="toc-text">🛠️ 技术栈 (Tech Stack)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%A7-%E5%89%8D%E7%BD%AE%E5%87%86%E5%A4%87"><span class="toc-number">1.5.</span> <span class="toc-text">🔧 前置准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E2%9A%A0%EF%B8%8F-%E9%85%8D%E7%BD%AE%E9%87%87%E9%9B%86%E6%BA%90-%E9%87%8D%E8%A6%81"><span class="toc-number">1.5.1.</span> <span class="toc-text">1. ⚠️ 配置采集源 (重要)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%8E%B7%E5%8F%96-TMDb-API-Key-%E5%BF%85%E9%9C%80"><span class="toc-number">1.5.2.</span> <span class="toc-text">2. 获取 TMDb API Key (必需)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%A4%A7%E9%99%86%E7%94%A8%E6%88%B7%EF%BC%9A%E9%83%A8%E7%BD%B2-TMDB-%E5%8F%8D%E4%BB%A3-%E5%8F%AF%E9%80%89"><span class="toc-number">1.5.3.</span> <span class="toc-text">3. 大陆用户：部署 TMDB 反代 (可选)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%80%EF%BC%9A%E9%83%A8%E7%BD%B2-Cloudflare-Workers-%E5%8F%8D%E4%BB%A3-%E6%8E%A8%E8%8D%90"><span class="toc-number">1.5.3.1.</span> <span class="toc-text">方案一：部署 Cloudflare Workers 反代 (推荐)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%B5%84%E6%BA%90%E7%AB%99-CORS-%E4%BB%A3%E7%90%86-%E5%8F%AF%E9%80%89-%E6%8E%A8%E8%8D%90"><span class="toc-number">1.5.4.</span> <span class="toc-text">4. 资源站 CORS 代理 (可选&#x2F;推荐)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%94%AF%E6%8C%81%E7%9A%84%E5%9C%BA%E6%99%AF"><span class="toc-number">1.5.4.1.</span> <span class="toc-text">支持的场景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD"><span class="toc-number">1.5.4.2.</span> <span class="toc-text">核心功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">1.5.4.3.</span> <span class="toc-text">工作原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2-CORS-%E4%BB%A3%E7%90%86-Cloudflare-Workers"><span class="toc-number">1.5.4.4.</span> <span class="toc-text">部署 CORS 代理 (Cloudflare Workers)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2-CORS-%E4%BB%A3%E7%90%86-VPS-Node-js"><span class="toc-number">1.5.4.5.</span> <span class="toc-text">部署 CORS 代理 (VPS &#x2F; Node.js)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="toc-number">1.5.4.6.</span> <span class="toc-text">代理工作流程图</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%92-%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%B8%8E%E8%BF%9C%E7%A8%8B%E5%8A%A0%E8%BD%BD-%E9%AB%98%E7%BA%A7"><span class="toc-number">1.6.</span> <span class="toc-text">🔒 安全配置与远程加载 (高级)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81"><span class="toc-number">1.6.1.</span> <span class="toc-text">全局访问密码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-db-json"><span class="toc-number">1.6.2.</span> <span class="toc-text">远程配置文件 (db.json)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E7%94%A8%E6%88%B7%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%A7%82%E7%9C%8B%E5%8E%86%E5%8F%B2%E5%90%8C%E6%AD%A5-%E6%96%B0%E5%8A%9F%E8%83%BD"><span class="toc-number">1.6.3.</span> <span class="toc-text">多用户模式与观看历史同步 (新功能)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%A6-%E5%AE%89%E8%A3%85%E4%B8%8E%E8%BF%90%E8%A1%8C-Installation"><span class="toc-number">1.7.</span> <span class="toc-text">📦 安装与运行 (Installation)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%9A%80-%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC-%E6%8E%A8%E8%8D%90"><span class="toc-number">1.7.1.</span> <span class="toc-text">🚀 一键安装脚本 (推荐)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E5%8A%A8%E6%9C%AC%E5%9C%B0%E8%BF%90%E8%A1%8C"><span class="toc-number">1.7.2.</span> <span class="toc-text">手动本地运行</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85-Node-js-v18"><span class="toc-number">1.7.2.1.</span> <span class="toc-text">1. 安装 Node.js (v18+)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7-%E5%8F%AF%E9%80%89"><span class="toc-number">1.7.2.2.</span> <span class="toc-text">2. 安装编译工具 (可选)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E4%BE%9D%E8%B5%96"><span class="toc-number">1.7.2.3.</span> <span class="toc-text">3. 安装项目依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">1.7.2.4.</span> <span class="toc-text">4. 配置环境变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1"><span class="toc-number">1.7.2.5.</span> <span class="toc-text">5. 启动服务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E8%AE%BF%E9%97%AE"><span class="toc-number">1.7.2.6.</span> <span class="toc-text">6. 访问</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9A%80-%E9%83%A8%E7%BD%B2-Deployment"><span class="toc-number">1.8.</span> <span class="toc-text">🚀 部署 (Deployment)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%90%B3-Docker-%E9%83%A8%E7%BD%B2-%E6%8E%A8%E8%8D%90"><span class="toc-number">1.8.1.</span> <span class="toc-text">🐳 Docker 部署 (推荐)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AF%B4%E6%98%8E"><span class="toc-number">1.8.1.1.</span> <span class="toc-text">环境变量说明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%80%EF%BC%9A%E4%BD%BF%E7%94%A8%E7%8E%B0%E6%9C%89%E9%95%9C%E5%83%8F%EF%BC%88%E6%9C%80%E5%BF%AB%EF%BC%89"><span class="toc-number">1.8.1.2.</span> <span class="toc-text">方案一：使用现有镜像（最快）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%BA%8C%EF%BC%9A%E6%9C%AC%E5%9C%B0%E6%9E%84%E5%BB%BA"><span class="toc-number">1.8.1.3.</span> <span class="toc-text">方案二：本地构建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%89%EF%BC%9ADocker-Compose"><span class="toc-number">1.8.1.4.</span> <span class="toc-text">方案三：Docker Compose</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%96%B2-Vercel-%E9%83%A8%E7%BD%B2"><span class="toc-number">1.8.2.</span> <span class="toc-text">▲ Vercel 部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%9A%A0%EF%B8%8F-Vercel-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">1.8.2.1.</span> <span class="toc-text">⚠️ Vercel 环境变量配置注意事项</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%96%A5%EF%B8%8F-Linux-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%83%A8%E7%BD%B2-PM2"><span class="toc-number">1.8.3.</span> <span class="toc-text">🖥️ Linux 服务器命令行部署 (PM2)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%8F%B0-%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF-aaPanel-%E9%83%A8%E7%BD%B2"><span class="toc-number">1.8.4.</span> <span class="toc-text">🏰 宝塔面板 (aaPanel) 部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%A4%96-Android-APP-%E6%9E%84%E5%BB%BA-GitHub-Actions"><span class="toc-number">1.8.4.1.</span> <span class="toc-text">🤖 Android APP 构建 (GitHub Actions)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%93%B1-%E6%9E%84%E5%BB%BA%E7%89%B9%E6%80%A7"><span class="toc-number">1.8.4.2.</span> <span class="toc-text">📱 构建特性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%93%B1-APK-%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE"><span class="toc-number">1.8.4.3.</span> <span class="toc-text">📱 APK 默认配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%94%A7-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9E%84%E5%BB%BA-%E6%96%B0%E5%8A%9F%E8%83%BD"><span class="toc-number">1.8.4.4.</span> <span class="toc-text">🔧 自定义构建 (新功能)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%94%A7-%E4%BB%A3%E7%A0%81%E4%BF%AE%E6%94%B9%E6%96%B9%E5%BC%8F-%E9%AB%98%E7%BA%A7"><span class="toc-number">1.8.4.5.</span> <span class="toc-text">🔧 代码修改方式 (高级)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%8F%A0-%E5%86%85%E7%BD%91-HTTP-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E"><span class="toc-number">1.8.4.6.</span> <span class="toc-text">🏠 内网 HTTP 使用说明</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%BE-%E6%95%B0%E6%8D%AE%E7%BB%B4%E6%8A%A4%E4%B8%8E%E5%A4%87%E4%BB%BD"><span class="toc-number">1.9.</span> <span class="toc-text">💾 数据维护与备份</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD%E5%91%BD%E4%BB%A4%E7%A4%BA%E4%BE%8B"><span class="toc-number">1.9.1.</span> <span class="toc-text">备份命令示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%85%E7%90%86%E7%BC%93%E5%AD%98"><span class="toc-number">1.9.2.</span> <span class="toc-text">清理缓存</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%9D-%E8%B4%A1%E7%8C%AE%E4%B8%8E%E8%87%B4%E8%B0%A2"><span class="toc-number">1.10.</span> <span class="toc-text">📝 贡献与致谢</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9A%A0%EF%B8%8F-%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E-Disclaimer"><span class="toc-number">1.11.</span> <span class="toc-text">⚠️ 免责声明 (Disclaimer)</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By EdNovas</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">已经到底啦！再往下划要坏掉啦！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/algolia.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    let initData = {
+      el: '#vcomment',
+      appId: 'EnV5YLoyOBqrOXB9EDkMBSy4-gzGzoHsz',
+      appKey: 'MCTWNHJYAMcvfKeta68Xi7Iu',
+      placeholder: '留下你想说的话吧',
+      avatar: 'monsterid',
+      meta: 'nick,mail'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+    
+    if (false) {
+      const otherData = false
+      initData = Object.assign(initData, otherData)
+    }
+    
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>var gitcalendar = new Vue({
+  el: '#gitcalendar',
+  data: {
+    simplemode: false,
+    user: 'EdNovas',
+    fixed: 'fixed',
+    px: 'px',
+    x: '',
+    y: '',
+    span1: '',
+    span2: '',
+    month: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+    monthchange: [],
+    oneyearbeforeday: '',
+    thisday: '',
+    amonthago: '',
+    aweekago: '',
+    weekdatacore: 0,
+    datacore: 0,
+    total: 0,
+    datadate: '',
+    data: [],
+    positionplusdata: [],
+    firstweek: [],
+    lastweek: [],
+    beforeweek: [],
+    thisweekdatacore: 0,
+    mounthbeforeday: 0,
+    mounthfirstindex: 0,
+    crispedges: 'crispedges',
+    thisdayindex: 0,
+    amonthagoindex: 0,
+    amonthagoweek: [],
+    firstdate: [],
+    first2date: [],
+    montharrbefore: [],
+    monthindex: 0,
+    color: ['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']
+  },
+  methods: {
+    selectStyle(data, event) {
+      document.querySelector('.angle-wrapper').style.display = 'block'
+      this.span1 = data.date;
+      this.span2 = data.count;
+      this.x = event.clientX - 100;
+      this.y = event.clientY - 60
+    },
+    outStyle() {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    },
+    thiscolor(x) {
+      if (x === 0) {
+        let i = parseInt(x / 2);
+        return this.color[0]
+      } else if (x < 2) {
+        return this.color[1]
+      } else if (x < 20) {
+        let i = parseInt(x / 2);
+        return this.color[i]
+      } else {
+        return this.color[9]
+      }
+    },
+  }
+});
+var apiurl = '' ? 'https:///api?' : 'https://githubapi.ryanchristian.dev/user/'
+var githubapiurl = apiurl + gitcalendar.user;
+//canvas绘图
+function responsiveChart() {
+  let c = document.getElementById("gitcanvas");
+  if (c) {
+    let cmessage = document.getElementById("gitmessage");
+    let ctx = c.getContext("2d");
+    c.width = document.getElementById("gitcalendarcanvasbox").offsetWidth;
+    let linemaxwitdh = 0.96 * c.width / gitcalendar.data.length;
+    c.height = 9 * linemaxwitdh;
+    let lineminwitdh = 0.8 * linemaxwitdh;
+    let setposition = {
+      x: 0.02 * c.width,
+      y: 0.025 * c.width
+    };
+    for (let week in gitcalendar.data) {
+      weekdata = gitcalendar.data[week];
+      for (let day in weekdata) {
+        let dataitem = {
+          date: "",
+          count: "",
+          x: 0,
+          y: 0
+        };
+        gitcalendar.positionplusdata.push(dataitem);
+        ctx.fillStyle = gitcalendar.thiscolor(weekdata[day].count);
+        setposition.y = Math.round(setposition.y * 100) / 100;
+        dataitem.date = weekdata[day].date;
+        dataitem.count = weekdata[day].count;
+        dataitem.x = setposition.x;
+        dataitem.y = setposition.y;
+        ctx.fillRect(setposition.x, setposition.y, lineminwitdh, lineminwitdh);
+        setposition.y = setposition.y + linemaxwitdh
+      };
+      setposition.y = 0.025 * c.width;
+      setposition.x = setposition.x + linemaxwitdh
+    };
+    ctx.font = "600  Arial";
+    ctx.fillStyle = '#aaa';
+    ctx.fillText("日", 0, 1.9 * linemaxwitdh);
+    ctx.fillText("二", 0, 3.9 * linemaxwitdh);
+    ctx.fillText("四", 0, 5.9 * linemaxwitdh);
+    ctx.fillText("六", 0, 7.9 * linemaxwitdh);
+    let monthindexlist = c.width / 24;
+    for (let index in gitcalendar.monthchange) {
+      ctx.fillText(gitcalendar.monthchange[index], monthindexlist, 0.7 * linemaxwitdh);
+      monthindexlist = monthindexlist + c.width / 12
+    };
+    cmessage.onmousemove = function(event) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    };
+    c.onmousemove = function(event) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+      getMousePos(c, event);
+    };
+
+    function getMousePos(canvas, event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left * (canvas.width / rect.width);
+      var y = event.clientY - rect.top * (canvas.height / rect.height);
+      //console.log("x:"+x+",y:"+y);
+      for (let item of gitcalendar.positionplusdata) {
+        let lenthx = x - item.x;
+        let lenthy = y - item.y;
+        //console.log(lenthx,lenthy);
+        if (0 < lenthx && lenthx < lineminwitdh) {
+          if (0 < lenthy && lenthy < lineminwitdh) {
+            //console.log(item.date,item.count)
+            document.querySelector('.angle-wrapper').style.display = 'block'
+            gitcalendar.span1 = item.date;
+            gitcalendar.span2 = item.count;
+            gitcalendar.x = event.clientX - 100;
+            gitcalendar.y = event.clientY - 60
+          }
+        }
+        //if(0< x - item.x <lineminwitdh&&0< y - item.y <lineminwitdh){
+        //console.log(item.count,item.date);
+        //}
+      }
+    }
+  }
+}
+//数据统计算法
+function addlastmonth() {
+  if (gitcalendar.thisdayindex === 0) {
+    thisweekcore(52);
+    thisweekcore(51);
+    thisweekcore(50);
+    thisweekcore(49);
+    thisweekcore(48);
+    gitcalendar.thisweekdatacore += gitcalendar.firstdate[6].count;
+    gitcalendar.amonthago = gitcalendar.firstdate[6].date
+  } else {
+    thisweekcore(52);
+    thisweekcore(51);
+    thisweekcore(50);
+    thisweekcore(49);
+    thisweek2core();
+    gitcalendar.amonthago = gitcalendar.first2date[gitcalendar.thisdayindex - 1].date
+  }
+};
+
+function thisweek2core() {
+  for (let i = gitcalendar.thisdayindex - 1; i < gitcalendar.first2date.length; i++) {
+    gitcalendar.thisweekdatacore += gitcalendar.first2date[i].count
+  }
+};
+
+function thisweekcore(index) {
+  for (let item of gitcalendar.data[index]) {
+    gitcalendar.thisweekdatacore += item.count
+  }
+};
+
+function addlastweek() {
+  for (let item of gitcalendar.lastweek) {
+    gitcalendar.weekdatacore += item.count
+  }
+};
+
+function addbeforeweek() {
+  for (let i = gitcalendar.thisdayindex; i < gitcalendar.beforeweek.length; i++) {
+    gitcalendar.weekdatacore += gitcalendar.beforeweek[i].count
+  }
+};
+
+function addweek(data) {
+  if (gitcalendar.thisdayindex === 6) {
+    gitcalendar.aweekago = gitcalendar.lastweek[0].date;
+    addlastweek()
+  } else {
+    lastweek = data.contributions[51];
+    gitcalendar.aweekago = lastweek[gitcalendar.thisdayindex + 1].date;
+    addlastweek();
+    addbeforeweek()
+  }
+}
+
+fetch(githubapiurl)
+  .then(data => data.json())
+  .then(data => {
+    gitcalendar.data = data.contributions;
+    gitcalendar.total = data.total;
+    gitcalendar.first2date = gitcalendar.data[48];
+    gitcalendar.firstdate = gitcalendar.data[47];
+    gitcalendar.firstweek = data.contributions[0];
+    gitcalendar.lastweek = data.contributions[52];
+    gitcalendar.beforeweek = data.contributions[51];
+    gitcalendar.thisdayindex = gitcalendar.lastweek.length - 1;
+    gitcalendar.thisday = gitcalendar.lastweek[gitcalendar.thisdayindex].date;
+    gitcalendar.oneyearbeforeday = gitcalendar.firstweek[0].date;
+    gitcalendar.monthindex = gitcalendar.thisday.substring(5, 7) * 1;
+    gitcalendar.montharrbefore = gitcalendar.month.splice(gitcalendar.monthindex, 12 - gitcalendar.monthindex);
+    gitcalendar.monthchange = gitcalendar.montharrbefore.concat(gitcalendar.month);
+    addweek(data);
+    addlastmonth();
+    responsiveChart();
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
+
+//手机版更换为svg绘制
+if (document.getElementById("gitcalendarcanvasbox").offsetWidth < 500) {
+  gitcalendar.simplemode = false
+}
+
+//当改变窗口大小时重新绘制canvas
+window.onresize = function() {
+  if (gitcalendar.simplemode) responsiveChart()
+}
+
+//解决滚动滑轮时出现的标签显示
+window.onscroll = function() {
+  if (document.querySelector('.angle-wrapper')) {
+    document.querySelector('.angle-wrapper').style.display = 'none'
+  }
+};</script></div><script defer src="/live2d-widget/autoload.js"></script><script src = "/js/chatroom.js"></script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script><script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('setup',{'key':'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script><script src = "/js/smoothscrolling.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="true" data-text="LOVE YOU ❤" data-fontsize="17px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script>(function (w, d, s, id) {
+            if (typeof (w.webpushr) !== 'undefined') return; w.webpushr = w.webpushr || function () { (w.webpushr.q = w.webpushr.q || []).push(arguments) }; var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.id = id; js.async = 1; js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window, document, 'script', 'webpushr-jssdk'));webpushr('setup', { 'key': 'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>

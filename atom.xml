@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2025-12-31T21:13:42.517Z</updated>
+  <updated>2025-12-31T21:45:41.159Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>使用 SSH 连接 GitHub Action 服务器</title>
     <link href="https://ednovas.xyz/2025/12/31/githubactions/"/>
     <id>https://ednovas.xyz/2025/12/31/githubactions/</id>
-    <published>2025-12-31T21:13:42.517Z</published>
-    <updated>2025-12-31T21:13:42.517Z</updated>
+    <published>2025-12-31T21:45:41.159Z</published>
+    <updated>2025-12-31T21:45:41.159Z</updated>
     
     
     <summary type="html">&lt;p&gt;奇技淫巧，请勿滥用&lt;/p&gt;
@@ -50,11 +50,67 @@
   </entry>
   
   <entry>
+    <title>E视界 (DongguaTV Enhanced Edition)</title>
+    <link href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/"/>
+    <id>https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</id>
+    <published>2025-12-31T13:41:00.000Z</published>
+    <updated>2025-12-31T21:45:41.156Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 &lt;a href=&quot;https://github.com/Minerchu/dongguaTV&quot;&gt;https://github.com/Minerchu/dongguaTV&lt;/a&gt; ，本作添加了许多功能。&lt;/p&gt;
+&lt;h1 id=&quot;演示网站&quot;&gt;&lt;a href=&quot;#演示网站&quot; class=&quot;headerlink&quot; title=&quot;演示网站&quot;&gt;&lt;/a&gt;演示网站&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://ednovas-test.vercel.app/&quot;&gt;https://ednovas-test.vercel.app&lt;/a&gt; （不包含任何数据）&lt;/p&gt;
+&lt;img width=&quot;2547&quot; height=&quot;1226&quot; alt=&quot;image&quot; src=&quot;https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950&quot;&gt;
+
+&lt;img width=&quot;2547&quot; height=&quot;1227&quot; alt=&quot;image&quot; src=&quot;https://github.com/user-attachments/assets/d03543f5-34a4-414b-a131-62eda0af21b2&quot;&gt;
+
+&lt;img width=&quot;2547&quot; height=&quot;1229&quot; alt=&quot;image&quot; src=&quot;https://github.com/user-attachments/assets/e8bd4e14-dbd2-4d49-a1fc-7979c1ca22a4&quot;&gt;
+
+
+&lt;hr&gt;
+&lt;h2 id=&quot;📚-目录-Table-of-Contents&quot;&gt;&lt;a href=&quot;#📚-目录-Table-of-Contents&quot; class=&quot;headerlink&quot; title=&quot;📚 目录 (Table of Contents)&quot;&gt;&lt;/a&gt;📚 目录 (Table of Contents)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#-%E6%A0%B8%E5%BF%83%E7%89%B9%E6%80%A7-features&quot;&gt;✨ 核心特性 (Features)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#-%E7%95%8C%E9%9D%A2%E5%8D%87%E7%BA%A7-ui-upgrade&quot;&gt;🎨 界面升级 (UI Upgrade)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%EF%B8%8F-%E6%8A%80%E6%9C%AF%E6%A0%88-tech-stack&quot;&gt;🛠️ 技术栈 (Tech Stack)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#-%E5%89%8D%E7%BD%AE%E5%87%86%E5%A4%87-prerequisites&quot;&gt;🔧 前置准备 (Prerequisites)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#-%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96--%E4%BB%A3%E7%90%86-network--proxy&quot;&gt;🌐 网络优化 &amp;amp; 代理 (Network &amp;amp; Proxy)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#-%E5%AE%89%E5%85%A8%E4%B8%8E%E9%AB%98%E7%BA%A7%E5%8A%9F%E8%83%BD-security--advanced&quot;&gt;🔒 安全与高级功能 (Security &amp;amp; Advanced)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#-%E5%AE%89%E8%A3%85%E4%B8%8E%E8%BF%90%E8%A1%8C-installation&quot;&gt;📦 安装与运行 (Installation)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#-%E9%83%A8%E7%BD%B2-deployment&quot;&gt;🚀 部署 (Deployment)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#-android-app-%E6%9E%84%E5%BB%BA-github-actions&quot;&gt;🤖 Android APP 构建&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#-%E6%95%B0%E6%8D%AE%E7%BB%B4%E6%8A%A4%E4%B8%8E%E5%A4%87%E4%BB%BD&quot;&gt;💾 数据维护与备份&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%EF%B8%8F-%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E-disclaimer&quot;&gt;⚠️ 免责声明 (Disclaimer)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</summary>
+    
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="网站" scheme="https://ednovas.xyz/categories/%E7%BC%96%E7%A8%8B/%E8%BD%AF%E4%BB%B6/%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="编程" scheme="https://ednovas.xyz/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="软件" scheme="https://ednovas.xyz/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="电影" scheme="https://ednovas.xyz/tags/%E7%94%B5%E5%BD%B1/"/>
+    
+    <category term="电视剧" scheme="https://ednovas.xyz/tags/%E7%94%B5%E8%A7%86%E5%89%A7/"/>
+    
+    <category term="Vue" scheme="https://ednovas.xyz/tags/Vue/"/>
+    
+    <category term="Node.js" scheme="https://ednovas.xyz/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Server Gigabit Network</title>
     <link href="https://ednovas.xyz/2024/04/25/gigabit/"/>
     <id>https://ednovas.xyz/2024/04/25/gigabit/</id>
     <published>2024-04-25T22:28:00.000Z</published>
-    <updated>2025-12-31T21:13:42.517Z</updated>
+    <updated>2025-12-31T21:45:41.159Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。&lt;/p&gt;
@@ -170,7 +226,7 @@
     <link href="https://ednovas.xyz/2023/12/14/blendhosting/"/>
     <id>https://ednovas.xyz/2023/12/14/blendhosting/</id>
     <published>2023-12-14T22:28:00.000Z</published>
-    <updated>2025-12-31T21:13:42.513Z</updated>
+    <updated>2025-12-31T21:45:41.153Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Blend Hosting &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com&lt;/a&gt;&lt;/p&gt;
@@ -197,7 +253,7 @@
     <link href="https://ednovas.xyz/2023/02/24/homemadenas/"/>
     <id>https://ednovas.xyz/2023/02/24/homemadenas/</id>
     <published>2023-02-24T22:28:00.000Z</published>
-    <updated>2025-12-31T21:13:42.518Z</updated>
+    <updated>2025-12-31T21:45:41.161Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;ul&gt;
@@ -237,7 +293,7 @@
     <link href="https://ednovas.xyz/2023/02/24/cloudflaretunnel/"/>
     <id>https://ednovas.xyz/2023/02/24/cloudflaretunnel/</id>
     <published>2023-02-24T21:28:00.000Z</published>
-    <updated>2025-12-31T21:13:42.514Z</updated>
+    <updated>2025-12-31T21:45:41.155Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Cloudflare-Tunnel&quot;&gt;&lt;a href=&quot;#Cloudflare-Tunnel&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Tunnel&quot;&gt;&lt;/a&gt;Cloudflare Tunnel&lt;/h2&gt;&lt;p&gt;cloudflare提供的免费加密通道，通过cloudflare的cnd访问部署在内网的服务，比如web,ssh,smb,tcp等。&lt;/p&gt;
@@ -270,7 +326,7 @@
     <link href="https://ednovas.xyz/2023/02/19/raspberry/"/>
     <id>https://ednovas.xyz/2023/02/19/raspberry/</id>
     <published>2023-02-19T21:28:00.000Z</published>
-    <updated>2025-12-31T21:13:42.523Z</updated>
+    <updated>2025-12-31T21:45:41.166Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Raspberry-Pi&quot;&gt;&lt;a href=&quot;#Raspberry-Pi&quot; class=&quot;headerlink&quot; title=&quot;Raspberry Pi&quot;&gt;&lt;/a&gt;Raspberry Pi&lt;/h2&gt;&lt;p&gt;树莓派（英语：Raspberry Pi）英国树莓派基金会开发的微型单板计算机，目的是以低价硬体及自由软体促进学校的基本电脑科学教育。&lt;/p&gt;
@@ -298,7 +354,7 @@
     <link href="https://ednovas.xyz/2023/01/07/remote-ubuntu/"/>
     <id>https://ednovas.xyz/2023/01/07/remote-ubuntu/</id>
     <published>2023-01-07T11:51:00.000Z</published>
-    <updated>2025-12-31T21:13:42.524Z</updated>
+    <updated>2025-12-31T21:45:41.166Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;众所周知，Chrome Remote Desktop 是一款十分出色的完全免费远程控制软件。其易用性和功能的强大性，以及连接的稳定性都给这款软件加分不少，唯一的缺点可能就是国内无法使用了，需要开梯子才可使用。&lt;/p&gt;
@@ -329,7 +385,7 @@
     <link href="https://ednovas.xyz/2022/10/28/cloudfront/"/>
     <id>https://ednovas.xyz/2022/10/28/cloudfront/</id>
     <published>2022-10-28T13:09:00.000Z</published>
-    <updated>2025-12-31T21:13:42.514Z</updated>
+    <updated>2025-12-31T21:45:41.155Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Amazon-Cloudfront&quot;&gt;&lt;a href=&quot;#Amazon-Cloudfront&quot; class=&quot;headerlink&quot; title=&quot;Amazon Cloudfront&quot;&gt;&lt;/a&gt;Amazon Cloudfront&lt;/h2&gt;&lt;p&gt;Cloudfront是Amazon提供的CDN服务，有每月免费1T的流量，该流量不可累计。个人小站的话，这个CDN是足够用的了，而且主要是国内访问的速度还不错。但是需要注意不要被攻击了，不然AWS的扣费还是很贵的。&lt;/p&gt;
@@ -364,7 +420,7 @@
     <link href="https://ednovas.xyz/2022/10/28/gcore/"/>
     <id>https://ednovas.xyz/2022/10/28/gcore/</id>
     <published>2022-10-28T13:09:00.000Z</published>
-    <updated>2025-12-31T21:13:42.517Z</updated>
+    <updated>2025-12-31T21:45:41.159Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Gcorelab-CDN&quot;&gt;&lt;a href=&quot;#Gcorelab-CDN&quot; class=&quot;headerlink&quot; title=&quot;Gcorelab CDN&quot;&gt;&lt;/a&gt;Gcorelab CDN&lt;/h2&gt;&lt;p&gt;类似AWS的Cloudfront CDN，提供每月1T的免费流量。效果不如Cloudfront但是也还不错&lt;/p&gt;
@@ -400,7 +456,7 @@
     <link href="https://ednovas.xyz/2022/06/25/gfw/"/>
     <id>https://ednovas.xyz/2022/06/25/gfw/</id>
     <published>2022-06-25T14:09:00.000Z</published>
-    <updated>2025-12-31T21:13:42.517Z</updated>
+    <updated>2025-12-31T21:45:41.159Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;GFW的原理&quot;&gt;&lt;a href=&quot;#GFW的原理&quot; class=&quot;headerlink&quot; title=&quot;GFW的原理&quot;&gt;&lt;/a&gt;GFW的原理&lt;/h1&gt;&lt;p&gt;要与GFW对抗不能仅仅停留在什么不能访问了，什么可以访问之类的表面现象上。知道youtube不能访问了，对于翻墙来说并无帮助。但是知道GFW是如何让我们不能访问youtube的，则对下一步的翻墙方案的选择和实施具有重大意义。所以在讨论如何翻之前，先要深入原理了解GFW是如何封的。&lt;/p&gt;
@@ -433,7 +489,7 @@
     <link href="https://ednovas.xyz/2022/06/25/moss/"/>
     <id>https://ednovas.xyz/2022/06/25/moss/</id>
     <published>2022-06-25T13:09:00.000Z</published>
-    <updated>2025-12-31T21:13:42.520Z</updated>
+    <updated>2025-12-31T21:45:41.162Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;起源&quot;&gt;&lt;a href=&quot;#起源&quot; class=&quot;headerlink&quot; title=&quot;起源&quot;&gt;&lt;/a&gt;起源&lt;/h1&gt;&lt;p&gt;早期的密码学 目前已知最早的密码是大约公元前1900年的埃及古王国时期，用特殊的埃及象形文字雕刻在墓碑上。 但这些文字并不被认为是某种秘密通信的真正尝试，而是在增加神秘和阴谋气氛，甚至是为了给能看懂的观者提供乐趣。 这是密码学在其它用途上的应用，或者只是看上去是这样（如果这是某种密码的误导或伪装，那确实令人印象深刻）。&lt;/p&gt;
@@ -472,7 +528,7 @@
     <link href="https://ednovas.xyz/2022/04/23/outguess/"/>
     <id>https://ednovas.xyz/2022/04/23/outguess/</id>
     <published>2022-04-23T21:06:00.000Z</published>
-    <updated>2025-12-31T21:13:42.522Z</updated>
+    <updated>2025-12-31T21:45:41.164Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;可以直接 &lt;code&gt;apt install outguess&lt;/code&gt; 或者 &lt;code&gt;yum install outguess&lt;/code&gt;&lt;/p&gt;
@@ -497,7 +553,7 @@
     <link href="https://ednovas.xyz/2022/04/23/filehead/"/>
     <id>https://ednovas.xyz/2022/04/23/filehead/</id>
     <published>2022-04-23T20:06:00.000Z</published>
-    <updated>2025-12-31T21:13:42.516Z</updated>
+    <updated>2025-12-31T21:45:41.158Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;a href=&quot;#从Ultra－edit-32中提取出来的&quot; class=&quot;headerlink&quot; title=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;/a&gt;从Ultra－edit-32中提取出来的&lt;/h2&gt;&lt;table&gt;
@@ -995,7 +1051,7 @@
     <link href="https://ednovas.xyz/2022/04/20/torwebsite/"/>
     <id>https://ednovas.xyz/2022/04/20/torwebsite/</id>
     <published>2022-04-20T20:06:00.000Z</published>
-    <updated>2025-12-31T21:13:42.525Z</updated>
+    <updated>2025-12-31T21:45:41.169Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;直接安装&quot;&gt;&lt;a href=&quot;#直接安装&quot; class=&quot;headerlink&quot; title=&quot;直接安装&quot;&gt;&lt;/a&gt;直接安装&lt;/h2&gt;&lt;p&gt;一般可以通过apt直接安装tor服务&lt;/p&gt;
@@ -1024,7 +1080,7 @@
     <link href="https://ednovas.xyz/2022/04/15/htmlcssjs/"/>
     <id>https://ednovas.xyz/2022/04/15/htmlcssjs/</id>
     <published>2022-04-15T20:06:00.000Z</published>
-    <updated>2025-12-31T21:13:42.518Z</updated>
+    <updated>2025-12-31T21:45:41.161Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
@@ -1047,7 +1103,7 @@
     <link href="https://ednovas.xyz/2022/04/13/linuxchangesource/"/>
     <id>https://ednovas.xyz/2022/04/13/linuxchangesource/</id>
     <published>2022-04-13T20:06:00.000Z</published>
-    <updated>2025-12-31T21:13:42.519Z</updated>
+    <updated>2025-12-31T21:45:41.162Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;修改镜像源&quot;&gt;&lt;a href=&quot;#修改镜像源&quot; class=&quot;headerlink&quot; title=&quot;修改镜像源&quot;&gt;&lt;/a&gt;修改镜像源&lt;/h1&gt;&lt;p&gt;手动更改的话&lt;/p&gt;
@@ -1076,7 +1132,7 @@
     <link href="https://ednovas.xyz/2022/04/13/oraclerbot/"/>
     <id>https://ednovas.xyz/2022/04/13/oraclerbot/</id>
     <published>2022-04-13T19:06:00.000Z</published>
-    <updated>2025-12-31T21:13:42.522Z</updated>
+    <updated>2025-12-31T21:45:41.164Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;甲骨文云服务在上一年更新了ARM配置，那么时至今日，很多用户发现热门地区无法手动创建ARM，因为每个区域的ARM是有限的，其他用户已经抢先一步开好，自己点的话是大力出不了奇迹的，那么这个时候就需要找一个代刷了。网上有很多，这里介绍一个朋友 R佬 开发的甲骨文账号管理Bot，这个已经不单单是刷机使用了，还有很多管理功能。&lt;/p&gt;
@@ -1106,7 +1162,7 @@
     <link href="https://ednovas.xyz/2022/04/13/oracleaccount/"/>
     <id>https://ednovas.xyz/2022/04/13/oracleaccount/</id>
     <published>2022-04-13T18:06:00.000Z</published>
-    <updated>2025-12-31T21:13:42.522Z</updated>
+    <updated>2025-12-31T21:45:41.164Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;关于注册/开机/配置甲骨文等可以看&lt;a href=&quot;/2021/01/14/oraclecloud/&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
@@ -1134,7 +1190,7 @@
     <link href="https://ednovas.xyz/2022/03/07/clashparsers/"/>
     <id>https://ednovas.xyz/2022/03/07/clashparsers/</id>
     <published>2022-03-07T15:09:00.000Z</published>
-    <updated>2025-12-31T21:13:42.514Z</updated>
+    <updated>2025-12-31T21:45:41.155Z</updated>
     
     
     <summary type="html">&lt;p&gt;使用Prasers更新订阅，会自动把旧配置改成新配置&lt;/p&gt;
@@ -1155,37 +1211,6 @@
     <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
     <category term="clash" scheme="https://ednovas.xyz/tags/clash/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Solusvm安装OVZ7</title>
-    <link href="https://ednovas.xyz/2022/03/07/solusvm/"/>
-    <id>https://ednovas.xyz/2022/03/07/solusvm/</id>
-    <published>2022-03-07T13:09:00.000Z</published>
-    <updated>2025-12-31T21:13:42.524Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;转换OVZ7&quot;&gt;&lt;a href=&quot;#转换OVZ7&quot; class=&quot;headerlink&quot; title=&quot;转换OVZ7&quot;&gt;&lt;/a&gt;转换OVZ7&lt;/h2&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install screen -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;screen -S d&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mkdir /vz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall https://download.openvz.org/virtuozzo/releases/openvz-7.0.11-235/x86_64/os/Packages/p/python-subprocess32-3.2.7-1.vz7.5.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall https://download.openvz.org/virtuozzo/releases/openvz-7.0.11-235/x86_64/os/Packages/o/openvz-release-7.0.11-3.vz7.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install epel-release -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install python3 -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -Uvh http://repo.virtuozzo.com/vzlinux/7/x86_64/os/Packages/r/readykernel-scan-0.11-1.vl7.noarch.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -Uvh http://repo.virtuozzo.com/vzlinux/7/x86_64/os/Packages/z/zstd-1.4.4-1.vl7.x86_64.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -Uvh http://repo.virtuozzo.com/vzlinux/7/x86_64/os/Packages/v/vzlinux-release-7-1.vl7.91.x86_64.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mv /etc/yum.repos.d/CentOS-* /root/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -e --nodeps --justdb json-c&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum erase jansson -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall http://repo.virtuozzo.com/vzlinux/7.7/x86_64/os/Packages/j/jansson-2.10-1.vl7.1.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall http://repo.virtuozzo.com/vzlinux/7.7/x86_64/os/Packages/j/json-c-0.11-13.vl7.1.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -e --nodeps --justdb nspr nss nss-pem nss-softokn nss-softokn-freebl nss-sysinit nss-tools nss-util&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum localinstall http://repo.virtuozzo.com/vzlinux/7/x86_64/os/Packages/n/nss-3.44.0-7.vl7.x86_64.rpm -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum downgrade glibc* -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install nss-softokn-freebl.i686 nss-tools -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install prlctl prl-disp-service vzkernel *ploop* -y &amp;amp;&amp;amp; yum update -y &amp;amp;&amp;amp; yum install fuse -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;reboot&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;screen -S dd&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;modprobe ploop pfmt_ploop1 pfmt_raw pio_direct fuse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -O /usr/libexec/ovz-template-converter https://raw.githubusercontent.com/solusvm-support/svm_patches/master/ovz-template-converter.patched &amp;amp;&amp;amp; chmod +x /usr/libexec/ovz-template-converter&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rpm -e --nodeps --justdb python3-pip&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install -y python36-pip python-configobj &amp;amp;&amp;amp; pip3 install configobj&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum install *ez.noarch -y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;伪授权SolusVM&quot;&gt;&lt;a href=&quot;#伪授权SolusVM&quot; class=&quot;headerlink&quot; title=&quot;伪授权SolusVM&quot;&gt;&lt;/a&gt;伪授权SolusVM&lt;/h2&gt;&lt;p&gt;添加伪授权hosts&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vi /etc/hosts&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;添加如下伪授权，套餐是 SolusVM Enterprise (NOC)，任选1个即可：&lt;/p&gt;
-&lt;p&gt;伪授权站1&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 www.soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing1.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing2.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing3.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing4.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing5.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.225 licensing6.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;伪授权站2&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 www.soluslabs.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing1.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing2.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing3.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing4.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing5.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;150.95.9.221 licensing6.soluslabs.net&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="solusvm" scheme="https://ednovas.xyz/tags/solusvm/"/>
-    
-    <category term="ovz7" scheme="https://ednovas.xyz/tags/ovz7/"/>
     
   </entry>
   
