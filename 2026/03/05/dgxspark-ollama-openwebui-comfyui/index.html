@@ -1,0 +1,896 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>本地 AI 全栈部署：Ollama + Open WebUI + ComfyUI 图像生成 | EdNovas的小站</title><meta name="keywords" content="AI,DGX Spark,Ollama,Open WebUI,ComfyUI,FLUX,本地部署"><meta name="author" content="EdNovas"><meta name="copyright" content="EdNovas"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="注： 本文由AI生成，ednovas编辑并审核发布。 本地 AI 全栈部署：Ollama + Open WebUI + ComfyUI本文使用 NVIDIA DGX Spark 进行演示，你也可以在其他支持 Docker 的设备上进行部署，推荐ubuntu或者MAC系统。 NVIDIA DGX Spark 是 NVIDIA 推出的面向个人&#x2F;小型团队的桌面级 AI 超级计算机，搭载 Grace Bl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="本地 AI 全栈部署：Ollama + Open WebUI + ComfyUI 图像生成">
+<meta property="og:url" content="https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/index.html">
+<meta property="og:site_name" content="EdNovas的小站">
+<meta property="og:description" content="注： 本文由AI生成，ednovas编辑并审核发布。 本地 AI 全栈部署：Ollama + Open WebUI + ComfyUI本文使用 NVIDIA DGX Spark 进行演示，你也可以在其他支持 Docker 的设备上进行部署，推荐ubuntu或者MAC系统。 NVIDIA DGX Spark 是 NVIDIA 推出的面向个人&#x2F;小型团队的桌面级 AI 超级计算机，搭载 Grace Bl">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/nvidia-dgx-spark-og.jpg">
+<meta property="article:published_time" content="2026-03-05T13:29:00.000Z">
+<meta property="article:modified_time" content="2026-03-05T22:01:20.206Z">
+<meta property="article:author" content="EdNovas">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="DGX Spark">
+<meta property="article:tag" content="Ollama">
+<meta property="article:tag" content="Open WebUI">
+<meta property="article:tag" content="ComfyUI">
+<meta property="article:tag" content="FLUX">
+<meta property="article:tag" content="本地部署">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/nvidia-dgx-spark-og.jpg"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/830.circled-e-filled1.png"><link rel="canonical" href="https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//static.cloudflareinsights.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="O9Uxirs5RzGyHijDvBe5okX6j2BxdRrzjxKkGI34B18"/><meta name="msvalidate.01" content="5651177152477FB9B4EBC45053EECDA3"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="#000000"/><link rel="apple-touch-icon" sizes="180x180" href="/image/siteicon/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/image/siteicon/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/image/siteicon/16.png"/><link rel="mask-icon" href="/image/siteicon/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-185849872-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-185849872-1');
+</script><script defer="defer" data-pjax="data-pjax" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;d6704c4319ce48e883585dfd275af345&quot;}"></script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"59FQUQ1CBL","apiKey":"07dbe3620a56feffda190697671f0a93","indexName":"ednovas","hits":{"per_page":10},"languages":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}.","hits_stats":"${hits} results found in ${time} ms"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":30,"position":"top","messagePrev":"距离文章编辑已经过去了","messageNext":"天，实际情况可能有所变动。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2026-03-05 22:01:20'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><link rel="stylesheet" href="/css/scrollbar.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_2440505_a5eo7su26z8.css"><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="EdNovas的小站" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/icon.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">299</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">378</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">15</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于我 | About</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-users"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">EdNovas的小站</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于我 | About</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-users"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">本地 AI 全栈部署：Ollama + Open WebUI + ComfyUI 图像生成</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2026-03-05T13:29:00.000Z" title="Created 2026-03-05 13:29:00">2026-03-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2026-03-05T22:01:20.206Z" title="Updated 2026-03-05 22:01:20">2026-03-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/AI/">AI</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">3.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>15min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>注： 本文由AI生成，ednovas编辑并审核发布。</p>
+<h1 id="本地-AI-全栈部署：Ollama-Open-WebUI-ComfyUI"><a href="#本地-AI-全栈部署：Ollama-Open-WebUI-ComfyUI" class="headerlink" title="本地 AI 全栈部署：Ollama + Open WebUI + ComfyUI"></a>本地 AI 全栈部署：Ollama + Open WebUI + ComfyUI</h1><p>本文使用 NVIDIA DGX Spark 进行演示，你也可以在其他支持 Docker 的设备上进行部署，推荐ubuntu或者MAC系统。</p>
+<p>NVIDIA DGX Spark 是 NVIDIA 推出的面向个人/小型团队的桌面级 AI 超级计算机，搭载 Grace Blackwell 架构，拥有 128GB 统一内存，非常适合在本地运行大语言模型和图像生成工作负载。本文将介绍如何在 DGX Spark 上一步步部署 <strong>Ollama + Open WebUI + ComfyUI</strong>，实现本地 LLM 聊天 + AI 图像生成的全栈 AI 工作站。</p>
+<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><ul>
+<li>💬 <strong>Open WebUI</strong>：一个美观的 ChatGPT 风格 Web 聊天界面，支持多模型切换（通过 Ollama 管理本地模型）</li>
+<li>🖼️ <strong>ComfyUI</strong>：节点式 Stable Diffusion / FLUX 图像生成工作流引擎，作为 Open WebUI 的图像生成后端</li>
+<li>在 Open WebUI 的聊天中直接输入 Prompt，即可调用 ComfyUI 后端生成图片并展示</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2026-03-05_13-38-42.png" alt="Open WebUI 聊天界面"></p>
+<hr>
+<h2 id="一、前置准备"><a href="#一、前置准备" class="headerlink" title="一、前置准备"></a>一、前置准备</h2><h3 id="1-1-DGX-Spark-基本配置"><a href="#1-1-DGX-Spark-基本配置" class="headerlink" title="1.1 DGX Spark 基本配置"></a>1.1 DGX Spark 基本配置</h3><p>确保你的 DGX Spark 已完成初始设置，并且可以通过 NVIDIA Sync 或 SSH 连接到设备。</p>
+<h3 id="1-2-Docker-权限配置"><a href="#1-2-Docker-权限配置" class="headerlink" title="1.2 Docker 权限配置"></a>1.2 Docker 权限配置</h3><p>通过 NVIDIA Sync 打开终端（Terminal），测试 Docker 是否可用：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure>
+
+<p>如果出现 <code>permission denied</code> 错误，需要将当前用户添加到 docker 组：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> usermod -aG docker <span class="variable">$USER</span></span><br><span class="line">newgrp docker</span><br></pre></td></tr></table></figure>
+
+<p>再次运行 <code>docker ps</code> 确认无报错。</p>
+<hr>
+<h2 id="二、部署-Open-WebUI-Ollama"><a href="#二、部署-Open-WebUI-Ollama" class="headerlink" title="二、部署 Open WebUI + Ollama"></a>二、部署 Open WebUI + Ollama</h2><p>Open WebUI 提供了一个集成 Ollama 的 Docker 镜像，一条命令即可同时部署 Ollama 推理后端和 Web 聊天界面。</p>
+<h3 id="2-1-拉取镜像"><a href="#2-1-拉取镜像" class="headerlink" title="2.1 拉取镜像"></a>2.1 拉取镜像</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker pull ghcr.io/open-webui/open-webui:ollama</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-通过-NVIDIA-Sync-配置（推荐）"><a href="#2-2-通过-NVIDIA-Sync-配置（推荐）" class="headerlink" title="2.2 通过 NVIDIA Sync 配置（推荐）"></a>2.2 通过 NVIDIA Sync 配置（推荐）</h3><p>如果你使用 NVIDIA Sync 管理 DGX Spark，可以通过自定义端口配置来自动化启动：</p>
+<ol>
+<li>点击系统托盘的 NVIDIA Sync 图标，打开主窗口</li>
+<li>点击右上角齿轮图标进入 <strong>Settings</strong></li>
+<li>切换到 <strong>Custom</strong> 标签，点击 <strong>Add New</strong></li>
+<li>填写以下信息：<ul>
+<li><strong>Name</strong>: <code>Open WebUI</code></li>
+<li><strong>Port</strong>: <code>12000</code></li>
+<li><strong>Auto open in browser</strong>: ✅ 勾选</li>
+<li><strong>Start Script</strong>:</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/usr/bin/env bash</span></span><br><span class="line"><span class="built_in">set</span> -euo pipefail</span><br><span class="line"></span><br><span class="line">NAME=<span class="string">&quot;open-webui&quot;</span></span><br><span class="line">IMAGE=<span class="string">&quot;ghcr.io/open-webui/open-webui:ollama&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">cleanup</span></span>() &#123;</span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;Signal received; stopping <span class="variable">$&#123;NAME&#125;</span>...&quot;</span></span><br><span class="line">  docker stop <span class="string">&quot;<span class="variable">$&#123;NAME&#125;</span>&quot;</span> &gt;/dev/null 2&gt;&amp;1 || <span class="literal">true</span></span><br><span class="line">  <span class="built_in">exit</span> 0</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">trap</span> cleanup INT TERM HUP QUIT EXIT</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ! docker info &gt;/dev/null 2&gt;&amp;1; <span class="keyword">then</span></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;Error: Docker daemon not reachable.&quot;</span> &gt;&amp;2</span><br><span class="line">  <span class="built_in">exit</span> 1</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ -n <span class="string">&quot;<span class="subst">$(docker ps -q --filter <span class="string">&quot;name=^<span class="variable">$&#123;NAME&#125;</span>$&quot;</span> --filter <span class="string">&quot;status=running&quot;</span>)</span>&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;Container <span class="variable">$&#123;NAME&#125;</span> is already running.&quot;</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  <span class="keyword">if</span> [ -n <span class="string">&quot;<span class="subst">$(docker ps -aq --filter <span class="string">&quot;name=^<span class="variable">$&#123;NAME&#125;</span>$&quot;</span>)</span>&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;Starting existing container <span class="variable">$&#123;NAME&#125;</span>...&quot;</span></span><br><span class="line">    docker start <span class="string">&quot;<span class="variable">$&#123;NAME&#125;</span>&quot;</span> &gt;/dev/null</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;Creating and starting <span class="variable">$&#123;NAME&#125;</span>...&quot;</span></span><br><span class="line">    docker run -d -p 12000:8080 --gpus=all \</span><br><span class="line">      -v open-webui:/app/backend/data \</span><br><span class="line">      -v open-webui-ollama:/root/.ollama \</span><br><span class="line">      --name <span class="string">&quot;<span class="variable">$&#123;NAME&#125;</span>&quot;</span> <span class="string">&quot;<span class="variable">$&#123;IMAGE&#125;</span>&quot;</span> &gt;/dev/null</span><br><span class="line">  <span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Running. Press Ctrl+C to stop <span class="variable">$&#123;NAME&#125;</span>.&quot;</span></span><br><span class="line"><span class="keyword">while</span> :; <span class="keyword">do</span> <span class="built_in">sleep</span> 86400; <span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>点击 <strong>Add</strong> 保存配置</li>
+</ol>
+<h3 id="2-3-手动-Docker-启动（替代方案）"><a href="#2-3-手动-Docker-启动（替代方案）" class="headerlink" title="2.3 手动 Docker 启动（替代方案）"></a>2.3 手动 Docker 启动（替代方案）</h3><p>如果不使用 NVIDIA Sync，也可以直接在终端运行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  -p 12000:8080 \</span><br><span class="line">  --gpus=all \</span><br><span class="line">  -v open-webui:/app/backend/data \</span><br><span class="line">  -v open-webui-ollama:/root/.ollama \</span><br><span class="line">  --name open-webui \</span><br><span class="line">  ghcr.io/open-webui/open-webui:ollama</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-4-初始配置"><a href="#2-4-初始配置" class="headerlink" title="2.4 初始配置"></a>2.4 初始配置</h3><ol>
+<li>浏览器访问 <code>http://localhost:12000</code>（首次启动需等待片刻）</li>
+<li>点击 <strong>Get Started</strong>，创建管理员账户</li>
+<li>在左上角的模型下拉框中搜索并拉取模型，例如输入 <code>gpt-oss:20b</code> 或 <code>llama3:8b</code>，点击 <strong>Pull</strong> 从 Ollama 库下载</li>
+<li>等待模型下载完成后，选择模型即可开始聊天</li>
+</ol>
+<p>推荐的模型：</p>
+<h4 id="💬-通用聊天模型"><a href="#💬-通用聊天模型" class="headerlink" title="💬 通用聊天模型"></a>💬 通用聊天模型</h4><table>
+<thead>
+<tr>
+<th align="left">模型</th>
+<th align="center">参数量</th>
+<th align="center">磁盘占用</th>
+<th align="center">运行内存</th>
+<th align="left">推荐场景</th>
+<th align="left">优点</th>
+<th align="left">缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>deepseek-r1:70b</code></td>
+<td align="center">70B</td>
+<td align="center">43 GB</td>
+<td align="center">~48 GB</td>
+<td align="left">复杂推理、数学、代码</td>
+<td align="left">推理能力极强，思维链清晰，中文优秀</td>
+<td align="left">体积大，推理较慢，需要大内存</td>
+</tr>
+<tr>
+<td align="left"><code>deepseek-v3.2:cloud</code></td>
+<td align="center">—</td>
+<td align="center">云端</td>
+<td align="center">云端</td>
+<td align="left">日常聊天、写作、代码</td>
+<td align="left">综合能力强，中文表现出色，速度快</td>
+<td align="left">依赖云端（cloud 版本）</td>
+</tr>
+<tr>
+<td align="left"><code>qwen3.5:397b-cloud</code></td>
+<td align="center">397B</td>
+<td align="center">云端</td>
+<td align="center">云端</td>
+<td align="left">高难度任务、长文本</td>
+<td align="left">当前最强开源模型之一，能力全面</td>
+<td align="left">仅 cloud 版本，参数量极大</td>
+</tr>
+<tr>
+<td align="left"><code>llama4:latest</code></td>
+<td align="center">16x17B (MoE)</td>
+<td align="center">67 GB</td>
+<td align="center">~72 GB</td>
+<td align="left">多语言聊天、通用任务</td>
+<td align="left">Meta 最新模型，多语言能力强，支持图文输入</td>
+<td align="left">中文能力略逊于国产模型</td>
+</tr>
+<tr>
+<td align="left"><code>llama3.3:latest</code></td>
+<td align="center">70B</td>
+<td align="center">43 GB</td>
+<td align="center">~48 GB</td>
+<td align="left">通用聊天、轻量部署</td>
+<td align="left">成熟稳定，社区资源丰富</td>
+<td align="left">能力不如 Llama4</td>
+</tr>
+<tr>
+<td align="left"><code>gemma3:27b</code></td>
+<td align="center">27B</td>
+<td align="center">17 GB</td>
+<td align="center">~20 GB</td>
+<td align="left">日常聊天、轻量推理</td>
+<td align="left">Google 出品，效率高，支持多模态</td>
+<td align="left">中文能力一般</td>
+</tr>
+<tr>
+<td align="left"><code>gemini-3-flash-preview:cloud</code></td>
+<td align="center">—</td>
+<td align="center">云端</td>
+<td align="center">云端</td>
+<td align="left">快速回复、多模态</td>
+<td align="left">速度极快，支持图文理解</td>
+<td align="left">仅 cloud，预览版本</td>
+</tr>
+<tr>
+<td align="left"><code>gpt-oss:20b</code></td>
+<td align="center">20B</td>
+<td align="center">14 GB</td>
+<td align="center">~16 GB</td>
+<td align="left">NVIDIA 生态适配</td>
+<td align="left">OpenAI 开源模型，专为 DGX Spark 优化</td>
+<td align="left">社区资源较少</td>
+</tr>
+<tr>
+<td align="left"><code>gpt-oss:120b</code></td>
+<td align="center">120B</td>
+<td align="center">65 GB</td>
+<td align="center">~70 GB</td>
+<td align="left">高质量对话、复杂任务</td>
+<td align="left">能力强，DGX Spark 生态深度适配</td>
+<td align="left">需要较大内存</td>
+</tr>
+<tr>
+<td align="left"><code>glm-5:cloud</code></td>
+<td align="center">—</td>
+<td align="center">云端</td>
+<td align="center">云端</td>
+<td align="left">中文聊天、创作</td>
+<td align="left">智谱最新模型，中文理解出色</td>
+<td align="left">仅 cloud 版本</td>
+</tr>
+<tr>
+<td align="left"><code>kimi-k2.5:cloud</code></td>
+<td align="center">—</td>
+<td align="center">云端</td>
+<td align="center">云端</td>
+<td align="left">长文本处理、中文聊天</td>
+<td align="left">超长上下文，中文能力强</td>
+<td align="left">仅 cloud 版本</td>
+</tr>
+<tr>
+<td align="left"><code>kimi-k2-thinking:cloud</code></td>
+<td align="center">—</td>
+<td align="center">云端</td>
+<td align="center">云端</td>
+<td align="left">深度推理、思维链</td>
+<td align="left">内置思考过程，推理透明</td>
+<td align="left">仅 cloud 版本，速度较慢</td>
+</tr>
+<tr>
+<td align="left"><code>minimax-m2.5:cloud</code></td>
+<td align="center">—</td>
+<td align="center">云端</td>
+<td align="center">云端</td>
+<td align="left">聊天、创作</td>
+<td align="left">中文流畅，创意写作能力好</td>
+<td align="left">仅 cloud 版本</td>
+</tr>
+<tr>
+<td align="left"><code>richardyoung/deepseek-r1-32b-uncensored</code></td>
+<td align="center">32B</td>
+<td align="center">19 GB</td>
+<td align="center">~22 GB</td>
+<td align="left">无审查场景</td>
+<td align="left">无内容限制，推理能力强</td>
+<td align="left">第三方修改版，需自行评估风险</td>
+</tr>
+</tbody></table>
+<h4 id="🔧-专用模型"><a href="#🔧-专用模型" class="headerlink" title="🔧 专用模型"></a>🔧 专用模型</h4><table>
+<thead>
+<tr>
+<th align="left">模型</th>
+<th align="center">参数量</th>
+<th align="center">磁盘占用</th>
+<th align="center">运行内存</th>
+<th align="left">推荐场景</th>
+<th align="left">优点</th>
+<th align="left">缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>qwen3-coder-next:cloud</code></td>
+<td align="center">—</td>
+<td align="center">云端</td>
+<td align="center">云端</td>
+<td align="left">代码生成、Debug、重构</td>
+<td align="left">代码能力顶级，支持多语言编程</td>
+<td align="left">仅 cloud 版本</td>
+</tr>
+<tr>
+<td align="left"><code>qwen3-vl:235b-cloud</code></td>
+<td align="center">235B</td>
+<td align="center">云端</td>
+<td align="center">云端</td>
+<td align="left">图像理解、多模态分析</td>
+<td align="left">视觉理解能力强，支持图文对话</td>
+<td align="left">仅 cloud，参数量大</td>
+</tr>
+<tr>
+<td align="left"><code>glm-ocr:latest</code></td>
+<td align="center">—</td>
+<td align="center">2.2 GB</td>
+<td align="center">~3 GB</td>
+<td align="left">OCR 文字识别</td>
+<td align="left">专注 OCR 任务，识别准确率高，体积小巧</td>
+<td align="left">仅限 OCR 场景</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>💡 标注 <code>cloud</code> 的模型通过云端 API 运行，不占用本地资源；无 <code>cloud</code> 标注的模型完全在本地运行，数据不出设备。DGX Spark 的 128GB 统一内存可轻松运行 70B 级别的本地模型。</p>
+</blockquote>
+<blockquote>
+<p>更多模型可在 Ollama 模型库浏览：<a target="_blank" rel="noopener" href="https://ollama.com/library">https://ollama.com/library</a></p>
+</blockquote>
+<hr>
+<h2 id="三、部署-ComfyUI"><a href="#三、部署-ComfyUI" class="headerlink" title="三、部署 ComfyUI"></a>三、部署 ComfyUI</h2><p>ComfyUI 是一个基于节点的 Stable Diffusion / FLUX 图像生成界面，我们将它部署为 Open WebUI 的图像生成后端。</p>
+<h3 id="3-1-安装-ComfyUI"><a href="#3-1-安装-ComfyUI" class="headerlink" title="3.1 安装 ComfyUI"></a>3.1 安装 ComfyUI</h3><p>推荐使用 Docker 部署 ComfyUI，也可以直接在 DGX Spark 上从源码安装：</p>
+<h4 id="方式一：源码安装"><a href="#方式一：源码安装" class="headerlink" title="方式一：源码安装"></a>方式一：源码安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/comfyanonymous/ComfyUI.git</span><br><span class="line"><span class="built_in">cd</span> ComfyUI</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖（建议先创建虚拟环境）</span></span><br><span class="line">pip install -r requirements.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动 ComfyUI（监听所有网卡，便于远程访问）</span></span><br><span class="line">python main.py --listen 0.0.0.0 --port 8188</span><br></pre></td></tr></table></figure>
+
+<h4 id="方式二：Docker-部署"><a href="#方式二：Docker-部署" class="headerlink" title="方式二：Docker 部署"></a>方式二：Docker 部署</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --gpus=all \</span><br><span class="line">  -p 8188:8188 \</span><br><span class="line">  -v comfyui-data:/app \</span><br><span class="line">  --name comfyui \</span><br><span class="line">  ghcr.io/ai-dock/comfyui:latest</span><br></pre></td></tr></table></figure>
+
+<h4 id="方式三：源码安装-systemctl-服务（推荐）"><a href="#方式三：源码安装-systemctl-服务（推荐）" class="headerlink" title="方式三：源码安装 + systemctl 服务（推荐）"></a>方式三：源码安装 + systemctl 服务（推荐）</h4><p>源码安装后，通过 systemd 将 ComfyUI 注册为系统服务，实现开机自启和后台常驻运行。</p>
+<p><strong>第一步：源码安装（同方式一）</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 选择一个安装目录，例如 /opt</span></span><br><span class="line"><span class="built_in">cd</span> /opt</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/comfyanonymous/ComfyUI.git</span><br><span class="line"><span class="built_in">cd</span> ComfyUI</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建 Python 虚拟环境并安装依赖</span></span><br><span class="line">python3 -m venv venv</span><br><span class="line"><span class="built_in">source</span> venv/bin/activate</span><br><span class="line">pip install -r requirements.txt</span><br><span class="line">deactivate</span><br></pre></td></tr></table></figure>
+
+<p><strong>第二步：创建 systemd 服务文件</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /etc/systemd/system/comfyui.service</span><br></pre></td></tr></table></figure>
+
+<p>写入以下内容（请根据实际路径和用户名修改）：</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Unit]</span></span><br><span class="line"><span class="attr">Description</span>=ComfyUI - Stable Diffusion / FLUX Node-based UI</span><br><span class="line"><span class="attr">After</span>=network.target</span><br><span class="line"></span><br><span class="line"><span class="section">[Service]</span></span><br><span class="line"><span class="attr">Type</span>=simple</span><br><span class="line"><span class="attr">User</span>=&lt;你的用户名&gt;</span><br><span class="line"><span class="attr">WorkingDirectory</span>=/opt/ComfyUI</span><br><span class="line"><span class="attr">ExecStart</span>=/opt/ComfyUI/venv/bin/python main.py --listen <span class="number">0.0</span>.<span class="number">0.0</span> --port <span class="number">8188</span></span><br><span class="line"><span class="attr">Restart</span>=<span class="literal">on</span>-failure</span><br><span class="line"><span class="attr">RestartSec</span>=<span class="number">10</span></span><br><span class="line"><span class="attr">Environment</span>=PATH=/opt/ComfyUI/venv/bin:/usr/local/bin:/usr/bin:/bin</span><br><span class="line"></span><br><span class="line"><span class="section">[Install]</span></span><br><span class="line"><span class="attr">WantedBy</span>=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>💡 将 <code>&lt;你的用户名&gt;</code> 替换为实际运行用户（如 <code>nvidia</code>），<code>WorkingDirectory</code> 和 <code>ExecStart</code> 中的路径替换为你的 ComfyUI 实际安装目录。</p>
+</blockquote>
+<p><strong>第三步：启动并设为开机自启</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 重新加载 systemd 配置</span></span><br><span class="line"><span class="built_in">sudo</span> systemctl daemon-reload</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动 ComfyUI</span></span><br><span class="line"><span class="built_in">sudo</span> systemctl start comfyui</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设为开机自启</span></span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> comfyui</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看运行状态</span></span><br><span class="line"><span class="built_in">sudo</span> systemctl status comfyui</span><br></pre></td></tr></table></figure>
+
+<p><strong>常用管理命令：</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 停止服务</span></span><br><span class="line"><span class="built_in">sudo</span> systemctl stop comfyui</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重启服务（修改配置或安装新节点后）</span></span><br><span class="line"><span class="built_in">sudo</span> systemctl restart comfyui</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看实时日志</span></span><br><span class="line"><span class="built_in">sudo</span> journalctl -u comfyui -f</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-2-安装-ComfyUI-Manager"><a href="#3-2-安装-ComfyUI-Manager" class="headerlink" title="3.2 安装 ComfyUI Manager"></a>3.2 安装 ComfyUI Manager</h3><p>ComfyUI Manager 是一个非常实用的插件管理器，可以方便地安装/管理各种自定义节点和模型。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ComfyUI/custom_nodes</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/ltdrdata/ComfyUI-Manager.git</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后重启 ComfyUI，在界面右侧会出现 <strong>Manager</strong> 按钮，通过它可以一键安装缺失的自定义节点。</p>
+<h3 id="3-3-下载-FLUX-模型"><a href="#3-3-下载-FLUX-模型" class="headerlink" title="3.3 下载 FLUX 模型"></a>3.3 下载 FLUX 模型</h3><p>本教程使用 <strong>FLUX.1 Dev</strong> 模型进行图像生成，需要下载以下模型文件到 ComfyUI 对应目录：</p>
+<table>
+<thead>
+<tr>
+<th align="center">模型文件</th>
+<th align="center">存放目录</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>flux1-dev-fp8.safetensors</code></td>
+<td align="center"><code>models/unet/</code></td>
+<td align="center">FLUX UNet 主模型 (FP8 量化)</td>
+</tr>
+<tr>
+<td align="center"><code>t5xxl_fp8_e4m3fn.safetensors</code></td>
+<td align="center"><code>models/clip/</code></td>
+<td align="center">T5-XXL 文本编码器</td>
+</tr>
+<tr>
+<td align="center"><code>clip_l.safetensors</code></td>
+<td align="center"><code>models/clip/</code></td>
+<td align="center">CLIP-L 文本编码器</td>
+</tr>
+<tr>
+<td align="center"><code>ae.safetensors</code></td>
+<td align="center"><code>models/vae/</code></td>
+<td align="center">FLUX VAE 解码器</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>💡 这些模型可以从 HuggingFace 下载，搜索 <code>black-forest-labs/FLUX.1-dev</code> 即可找到。<br>FP8 量化版本对显存更友好，DGX Spark 的 128GB 统一内存可以轻松运行完整精度版本。</p>
+</blockquote>
+<h3 id="3-4-验证-ComfyUI"><a href="#3-4-验证-ComfyUI" class="headerlink" title="3.4 验证 ComfyUI"></a>3.4 验证 ComfyUI</h3><p>访问 <code>http://&lt;DGX_SPARK_IP&gt;:8188</code>，确认 ComfyUI 界面正常加载。可以手动构建一个简单的 FLUX 工作流进行测试。</p>
+<hr>
+<h2 id="四、在-Open-WebUI-中配置-ComfyUI-图像生成"><a href="#四、在-Open-WebUI-中配置-ComfyUI-图像生成" class="headerlink" title="四、在 Open WebUI 中配置 ComfyUI 图像生成"></a>四、在 Open WebUI 中配置 ComfyUI 图像生成</h2><p>这是本教程的核心部分：将 ComfyUI 作为 Open WebUI 的图像生成引擎，实现在聊天界面中直接生成图片。</p>
+<h3 id="4-1-Open-WebUI-图像生成设置"><a href="#4-1-Open-WebUI-图像生成设置" class="headerlink" title="4.1 Open WebUI 图像生成设置"></a>4.1 Open WebUI 图像生成设置</h3><ol>
+<li>在 Open WebUI 中，点击左下角头像 → <strong>Admin Panel</strong> → <strong>Settings</strong> → <strong>Images</strong></li>
+<li>配置以下参数：</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2026-03-05_13-40-11.png" alt="Open WebUI Images 设置页面"></p>
+<table>
+<thead>
+<tr>
+<th align="center">设置项</th>
+<th align="center">值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>Image Generation Engine</strong></td>
+<td align="center"><code>ComfyUI</code></td>
+</tr>
+<tr>
+<td align="center"><strong>ComfyUI Base URL</strong></td>
+<td align="center"><code>http://&lt;DGX_SPARK_IP&gt;:8188</code>（例如 <code>http://192.168.4.21:8188</code>）</td>
+</tr>
+<tr>
+<td align="center"><strong>Image Prompt Generation</strong></td>
+<td align="center">✅ 开启（让 LLM 自动优化图像 Prompt）</td>
+</tr>
+<tr>
+<td align="center"><strong>Image Size</strong></td>
+<td align="center"><code>1024×1024</code></td>
+</tr>
+<tr>
+<td align="center"><strong>Steps</strong></td>
+<td align="center"><code>25</code>（或根据需要调整）</td>
+</tr>
+</tbody></table>
+<h3 id="4-2-上传-ComfyUI-Workflow"><a href="#4-2-上传-ComfyUI-Workflow" class="headerlink" title="4.2 上传 ComfyUI Workflow"></a>4.2 上传 ComfyUI Workflow</h3><p>Open WebUI 需要一个 <strong>API 格式</strong> 的 ComfyUI 工作流 JSON 文件来调用 ComfyUI。以下是本教程使用的 FLUX 工作流：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;1&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;inputs&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;unet_name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;flux1-dev-fp8.safetensors&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;weight_dtype&quot;</span><span class="punctuation">:</span> <span class="string">&quot;default&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;class_type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;UNETLoader&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;2&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;inputs&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;clip_name1&quot;</span><span class="punctuation">:</span> <span class="string">&quot;t5xxl_fp8_e4m3fn.safetensors&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;clip_name2&quot;</span><span class="punctuation">:</span> <span class="string">&quot;clip_l.safetensors&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;flux&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;class_type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;DualCLIPLoader&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;3&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;inputs&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;vae_name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ae.safetensors&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;class_type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;VAELoader&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;4&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;inputs&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Prompt placeholder&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;clip&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;2&quot;</span><span class="punctuation">,</span> <span class="number">0</span><span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;class_type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;CLIPTextEncode&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;5&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;inputs&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;clip&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;2&quot;</span><span class="punctuation">,</span> <span class="number">0</span><span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;class_type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;CLIPTextEncode&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;6&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;inputs&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;width&quot;</span><span class="punctuation">:</span> <span class="number">1024</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;height&quot;</span><span class="punctuation">:</span> <span class="number">1024</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;batch_size&quot;</span><span class="punctuation">:</span> <span class="number">1</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;class_type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;EmptyLatentImage&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;7&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;inputs&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;seed&quot;</span><span class="punctuation">:</span> <span class="number">123456789</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;steps&quot;</span><span class="punctuation">:</span> <span class="number">20</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cfg&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;sampler_name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;euler&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;scheduler&quot;</span><span class="punctuation">:</span> <span class="string">&quot;simple&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;denoise&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;model&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;1&quot;</span><span class="punctuation">,</span> <span class="number">0</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;positive&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;4&quot;</span><span class="punctuation">,</span> <span class="number">0</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;negative&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;5&quot;</span><span class="punctuation">,</span> <span class="number">0</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;latent_image&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;6&quot;</span><span class="punctuation">,</span> <span class="number">0</span><span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;class_type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;KSampler&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;8&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;inputs&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;samples&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;7&quot;</span><span class="punctuation">,</span> <span class="number">0</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;vae&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;3&quot;</span><span class="punctuation">,</span> <span class="number">0</span><span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;class_type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;VAEDecode&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;9&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;inputs&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;filename_prefix&quot;</span><span class="punctuation">:</span> <span class="string">&quot;OpenWebUI_FLUX&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;images&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;8&quot;</span><span class="punctuation">,</span> <span class="number">0</span><span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;class_type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;SaveImage&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>将以上 JSON 保存为文件，然后在 Open WebUI 的 Images 设置页面中，点击 <strong>ComfyUI Workflow</strong> 旁的 <strong>Edit / Upload</strong> 按钮上传。</p>
+<h3 id="4-3-配置-Workflow-节点映射"><a href="#4-3-配置-Workflow-节点映射" class="headerlink" title="4.3 配置 Workflow 节点映射"></a>4.3 配置 Workflow 节点映射</h3><p>上传工作流后，Open WebUI 需要知道工作流中哪些节点对应哪些参数。在 <strong>ComfyUI Workflow Notes</strong> 部分配置节点映射：</p>
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">节点 ID</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>Prompt</strong> → <code>text</code></td>
+<td align="center"><code>4</code></td>
+<td align="center">正向提示词输入节点</td>
+</tr>
+<tr>
+<td align="center"><strong>Model</strong> → <code>ckpt_name</code></td>
+<td align="center"><code>1</code></td>
+<td align="center">UNet 模型加载节点</td>
+</tr>
+<tr>
+<td align="center"><strong>Width</strong> → <code>width</code></td>
+<td align="center"><code>6</code></td>
+<td align="center">图像宽度</td>
+</tr>
+<tr>
+<td align="center"><strong>Height</strong> → <code>height</code></td>
+<td align="center"><code>6</code></td>
+<td align="center">图像高度</td>
+</tr>
+<tr>
+<td align="center"><strong>Steps</strong> → <code>steps</code></td>
+<td align="center"><code>7</code></td>
+<td align="center">采样步数</td>
+</tr>
+<tr>
+<td align="center"><strong>Seed</strong> → <code>seed</code></td>
+<td align="center"><code>7</code></td>
+<td align="center">随机种子</td>
+</tr>
+</tbody></table>
+<h3 id="4-4-工作流节点说明"><a href="#4-4-工作流节点说明" class="headerlink" title="4.4 工作流节点说明"></a>4.4 工作流节点说明</h3><p>上面的 FLUX 工作流由以下节点组成：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">┌──────────────┐</span><br><span class="line">│ 1. UNETLoader │──→ 加载 FLUX UNet 模型 (flux1-dev-fp8)</span><br><span class="line">└──────────────┘</span><br><span class="line"></span><br><span class="line">┌────────────────┐</span><br><span class="line">│ 2. DualCLIPLoader │──→ 加载 T5-XXL + CLIP-L 双文本编码器</span><br><span class="line">└────────────────┘</span><br><span class="line">        │</span><br><span class="line">        ├──→ 4. CLIPTextEncode (正向 Prompt)</span><br><span class="line">        └──→ 5. CLIPTextEncode (负向 Prompt，FLUX 留空)</span><br><span class="line"></span><br><span class="line">┌──────────────┐</span><br><span class="line">│ 3. VAELoader │──→ 加载 FLUX VAE 解码器</span><br><span class="line">└──────────────┘</span><br><span class="line"></span><br><span class="line">┌──────────────────┐</span><br><span class="line">│ 6. EmptyLatentImage │──→ 生成空白 Latent (1024×1024)</span><br><span class="line">└──────────────────┘</span><br><span class="line"></span><br><span class="line">┌────────────┐</span><br><span class="line">│ 7. KSampler │──→ 执行扩散采样 (euler, 20步, cfg=1)</span><br><span class="line">└────────────┘</span><br><span class="line"></span><br><span class="line">┌──────────────┐</span><br><span class="line">│ 8. VAEDecode │──→ 解码 Latent → 像素图像</span><br><span class="line">└──────────────┘</span><br><span class="line"></span><br><span class="line">┌──────────────┐</span><br><span class="line">│ 9. SaveImage │──→ 保存图像 (前缀: OpenWebUI_FLUX)</span><br><span class="line">└──────────────┘</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>⚠️ FLUX 模型的 <strong>CFG</strong> 值设为 <strong>1</strong>（即不使用 classifier-free guidance，这是 FLUX 的特性），<strong>负向 Prompt 留空</strong>。</p>
+</blockquote>
+<hr>
+<h2 id="五、使用：在聊天中生成图片"><a href="#五、使用：在聊天中生成图片" class="headerlink" title="五、使用：在聊天中生成图片"></a>五、使用：在聊天中生成图片</h2><p>配置完成后，你可以在 Open WebUI 的聊天界面中生成图片：</p>
+<ol>
+<li>在聊天窗口中点击输入框旁边的 <strong>图片生成</strong> 按钮（或在 Prompt 中触发图像生成）</li>
+<li>输入图像描述 Prompt，例如：<code>a futuristic cyberpunk city at night, neon lights, rain reflections</code></li>
+<li>Open WebUI 会将 Prompt 发送给 ComfyUI 后端执行 FLUX 工作流</li>
+<li>等待 ComfyUI 完成推理后，生成的图片会自动显示在聊天界面中</li>
+</ol>
+<blockquote>
+<p>💡 如果开启了 <strong>Image Prompt Generation</strong>，LLM 会先根据你的描述自动生成一个更优化的英文 Prompt，然后再发送给 ComfyUI，这样生成效果会更好。</p>
+</blockquote>
+<hr>
+<h2 id="六、常用操作"><a href="#六、常用操作" class="headerlink" title="六、常用操作"></a>六、常用操作</h2><h3 id="6-1-更新-Open-WebUI"><a href="#6-1-更新-Open-WebUI" class="headerlink" title="6.1 更新 Open WebUI"></a>6.1 更新 Open WebUI</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker stop open-webui</span><br><span class="line">docker <span class="built_in">rm</span> open-webui</span><br><span class="line">docker pull ghcr.io/open-webui/open-webui:ollama</span><br></pre></td></tr></table></figure>
+
+<p>然后重新通过 NVIDIA Sync 或 Docker 命令启动。</p>
+<h3 id="6-2-停止服务"><a href="#6-2-停止服务" class="headerlink" title="6.2 停止服务"></a>6.2 停止服务</h3><ul>
+<li><strong>Open WebUI</strong>: 在 NVIDIA Sync 中点击 Custom 区域的 ✕ 按钮，或 <code>docker stop open-webui</code></li>
+<li><strong>ComfyUI</strong>: <code>Ctrl+C</code> 停止进程，或 <code>docker stop comfyui</code></li>
+</ul>
+<h3 id="6-3-清理数据"><a href="#6-3-清理数据" class="headerlink" title="6.3 清理数据"></a>6.3 清理数据</h3><blockquote>
+<p>⚠️ 以下命令会永久删除所有数据和已下载的模型！</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 停止并删除容器</span></span><br><span class="line">docker stop open-webui &amp;&amp; docker <span class="built_in">rm</span> open-webui</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除镜像</span></span><br><span class="line">docker rmi ghcr.io/open-webui/open-webui:ollama</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除持久化数据</span></span><br><span class="line">docker volume <span class="built_in">rm</span> open-webui open-webui-ollama</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="七、常见问题"><a href="#七、常见问题" class="headerlink" title="七、常见问题"></a>七、常见问题</h2><h3 id="Q-ComfyUI-生成图片时报错-“Missing-nodes”？"><a href="#Q-ComfyUI-生成图片时报错-“Missing-nodes”？" class="headerlink" title="Q: ComfyUI 生成图片时报错 “Missing nodes”？"></a>Q: ComfyUI 生成图片时报错 “Missing nodes”？</h3><p>使用 ComfyUI Manager 中的 <strong>Install Missing Custom Nodes</strong> 功能一键安装缺失节点。本教程的 FLUX 工作流使用的都是 ComfyUI 内置节点，通常不会遇到此问题。</p>
+<h3 id="Q-Open-WebUI-无法连接-ComfyUI？"><a href="#Q-Open-WebUI-无法连接-ComfyUI？" class="headerlink" title="Q: Open WebUI 无法连接 ComfyUI？"></a>Q: Open WebUI 无法连接 ComfyUI？</h3><ul>
+<li>确认 ComfyUI 监听的是 <code>0.0.0.0</code> 而非 <code>127.0.0.1</code></li>
+<li>确认 ComfyUI Base URL 使用的是 DGX Spark 的局域网 IP（而不是 localhost，除非 Open WebUI 和 ComfyUI 在同一台机器上）</li>
+<li>检查防火墙是否放行了 8188 端口</li>
+</ul>
+<h3 id="Q-图片生成速度很慢？"><a href="#Q-图片生成速度很慢？" class="headerlink" title="Q: 图片生成速度很慢？"></a>Q: 图片生成速度很慢？</h3><ul>
+<li>FLUX FP8 在 DGX Spark 上通常 20 步生成 1024×1024 图片需要约 30-60 秒</li>
+<li>可适当降低 Steps 数量（如从 20 降到 15）来加速</li>
+<li>确认是否启用了 GPU 加速（<code>--gpus=all</code>）</li>
+</ul>
+<h3 id="Q-如何添加更多模型？"><a href="#Q-如何添加更多模型？" class="headerlink" title="Q: 如何添加更多模型？"></a>Q: 如何添加更多模型？</h3><p>在 ComfyUI Manager 中可以浏览和安装各种模型。也可以手动将 <code>.safetensors</code> 模型文件放到 ComfyUI 对应的 <code>models/</code> 子目录中。</p>
+<hr>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li>NVIDIA 官方教程：<a target="_blank" rel="noopener" href="https://build.nvidia.com/spark/open-webui/sync">Open WebUI with Ollama on DGX Spark</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.openwebui.com/">Open WebUI 官方文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/comfyanonymous/ComfyUI">ComfyUI GitHub</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ltdrdata/ComfyUI-Manager">ComfyUI Manager</a></li>
+<li><a target="_blank" rel="noopener" href="https://ollama.com/library">Ollama 模型库</a></li>
+<li><a target="_blank" rel="noopener" href="https://huggingface.co/black-forest-labs/FLUX.1-dev">FLUX.1 模型 (HuggingFace)</a></li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">EdNovas</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/">https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/AI/">AI</a><a class="post-meta__tags" href="/tags/DGX-Spark/">DGX Spark</a><a class="post-meta__tags" href="/tags/Ollama/">Ollama</a><a class="post-meta__tags" href="/tags/Open-WebUI/">Open WebUI</a><a class="post-meta__tags" href="/tags/ComfyUI/">ComfyUI</a><a class="post-meta__tags" href="/tags/FLUX/">FLUX</a><a class="post-meta__tags" href="/tags/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/">本地部署</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/nvidia-dgx-spark-og.jpg" data-sites="qq,wechat,weibo,qzone"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="ads-wrap"><a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png"><center><h3>EdNovas云————高性价比，节点覆盖80+国家，多地区奈飞迪士尼等流媒体解锁</h3></center></a></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2026/02/13/blendhosting2026/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/blendhosting2026.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Blend Hosting VPS 2026</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0-AI-%E5%85%A8%E6%A0%88%E9%83%A8%E7%BD%B2%EF%BC%9AOllama-Open-WebUI-ComfyUI"><span class="toc-number">1.</span> <span class="toc-text">本地 AI 全栈部署：Ollama + Open WebUI + ComfyUI</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C"><span class="toc-number">1.1.</span> <span class="toc-text">最终效果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%89%8D%E7%BD%AE%E5%87%86%E5%A4%87"><span class="toc-number">1.2.</span> <span class="toc-text">一、前置准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-DGX-Spark-%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.1 DGX Spark 基本配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-Docker-%E6%9D%83%E9%99%90%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.2.</span> <span class="toc-text">1.2 Docker 权限配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E9%83%A8%E7%BD%B2-Open-WebUI-Ollama"><span class="toc-number">1.3.</span> <span class="toc-text">二、部署 Open WebUI + Ollama</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F"><span class="toc-number">1.3.1.</span> <span class="toc-text">2.1 拉取镜像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E9%80%9A%E8%BF%87-NVIDIA-Sync-%E9%85%8D%E7%BD%AE%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.2 通过 NVIDIA Sync 配置（推荐）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E6%89%8B%E5%8A%A8-Docker-%E5%90%AF%E5%8A%A8%EF%BC%88%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88%EF%BC%89"><span class="toc-number">1.3.3.</span> <span class="toc-text">2.3 手动 Docker 启动（替代方案）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E5%88%9D%E5%A7%8B%E9%85%8D%E7%BD%AE"><span class="toc-number">1.3.4.</span> <span class="toc-text">2.4 初始配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%92%AC-%E9%80%9A%E7%94%A8%E8%81%8A%E5%A4%A9%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.3.4.1.</span> <span class="toc-text">💬 通用聊天模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%94%A7-%E4%B8%93%E7%94%A8%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.3.4.2.</span> <span class="toc-text">🔧 专用模型</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E9%83%A8%E7%BD%B2-ComfyUI"><span class="toc-number">1.4.</span> <span class="toc-text">三、部署 ComfyUI</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E5%AE%89%E8%A3%85-ComfyUI"><span class="toc-number">1.4.1.</span> <span class="toc-text">3.1 安装 ComfyUI</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%B8%80%EF%BC%9A%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">方式一：源码安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%BA%8C%EF%BC%9ADocker-%E9%83%A8%E7%BD%B2"><span class="toc-number">1.4.1.2.</span> <span class="toc-text">方式二：Docker 部署</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%B8%89%EF%BC%9A%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85-systemctl-%E6%9C%8D%E5%8A%A1%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">1.4.1.3.</span> <span class="toc-text">方式三：源码安装 + systemctl 服务（推荐）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E5%AE%89%E8%A3%85-ComfyUI-Manager"><span class="toc-number">1.4.2.</span> <span class="toc-text">3.2 安装 ComfyUI Manager</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E4%B8%8B%E8%BD%BD-FLUX-%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.4.3.</span> <span class="toc-text">3.3 下载 FLUX 模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-%E9%AA%8C%E8%AF%81-ComfyUI"><span class="toc-number">1.4.4.</span> <span class="toc-text">3.4 验证 ComfyUI</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%9C%A8-Open-WebUI-%E4%B8%AD%E9%85%8D%E7%BD%AE-ComfyUI-%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90"><span class="toc-number">1.5.</span> <span class="toc-text">四、在 Open WebUI 中配置 ComfyUI 图像生成</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-Open-WebUI-%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.5.1.</span> <span class="toc-text">4.1 Open WebUI 图像生成设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E4%B8%8A%E4%BC%A0-ComfyUI-Workflow"><span class="toc-number">1.5.2.</span> <span class="toc-text">4.2 上传 ComfyUI Workflow</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E9%85%8D%E7%BD%AE-Workflow-%E8%8A%82%E7%82%B9%E6%98%A0%E5%B0%84"><span class="toc-number">1.5.3.</span> <span class="toc-text">4.3 配置 Workflow 节点映射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-%E5%B7%A5%E4%BD%9C%E6%B5%81%E8%8A%82%E7%82%B9%E8%AF%B4%E6%98%8E"><span class="toc-number">1.5.4.</span> <span class="toc-text">4.4 工作流节点说明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E4%BD%BF%E7%94%A8%EF%BC%9A%E5%9C%A8%E8%81%8A%E5%A4%A9%E4%B8%AD%E7%94%9F%E6%88%90%E5%9B%BE%E7%89%87"><span class="toc-number">1.6.</span> <span class="toc-text">五、使用：在聊天中生成图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C"><span class="toc-number">1.7.</span> <span class="toc-text">六、常用操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-%E6%9B%B4%E6%96%B0-Open-WebUI"><span class="toc-number">1.7.1.</span> <span class="toc-text">6.1 更新 Open WebUI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-%E5%81%9C%E6%AD%A2%E6%9C%8D%E5%8A%A1"><span class="toc-number">1.7.2.</span> <span class="toc-text">6.2 停止服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-%E6%B8%85%E7%90%86%E6%95%B0%E6%8D%AE"><span class="toc-number">1.7.3.</span> <span class="toc-text">6.3 清理数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-number">1.8.</span> <span class="toc-text">七、常见问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Q-ComfyUI-%E7%94%9F%E6%88%90%E5%9B%BE%E7%89%87%E6%97%B6%E6%8A%A5%E9%94%99-%E2%80%9CMissing-nodes%E2%80%9D%EF%BC%9F"><span class="toc-number">1.8.1.</span> <span class="toc-text">Q: ComfyUI 生成图片时报错 “Missing nodes”？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Q-Open-WebUI-%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5-ComfyUI%EF%BC%9F"><span class="toc-number">1.8.2.</span> <span class="toc-text">Q: Open WebUI 无法连接 ComfyUI？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Q-%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90%E9%80%9F%E5%BA%A6%E5%BE%88%E6%85%A2%EF%BC%9F"><span class="toc-number">1.8.3.</span> <span class="toc-text">Q: 图片生成速度很慢？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Q-%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E6%9B%B4%E5%A4%9A%E6%A8%A1%E5%9E%8B%EF%BC%9F"><span class="toc-number">1.8.4.</span> <span class="toc-text">Q: 如何添加更多模型？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">1.9.</span> <span class="toc-text">参考资料</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2026 By EdNovas</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">已经到底啦！再往下划要坏掉啦！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/algolia.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    let initData = {
+      el: '#vcomment',
+      appId: 'EnV5YLoyOBqrOXB9EDkMBSy4-gzGzoHsz',
+      appKey: 'MCTWNHJYAMcvfKeta68Xi7Iu',
+      placeholder: '留下你想说的话吧',
+      avatar: 'monsterid',
+      meta: 'nick,mail'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+    
+    if (false) {
+      const otherData = false
+      initData = Object.assign(initData, otherData)
+    }
+    
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>var gitcalendar = new Vue({
+  el: '#gitcalendar',
+  data: {
+    simplemode: false,
+    user: 'EdNovas',
+    fixed: 'fixed',
+    px: 'px',
+    x: '',
+    y: '',
+    span1: '',
+    span2: '',
+    month: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+    monthchange: [],
+    oneyearbeforeday: '',
+    thisday: '',
+    amonthago: '',
+    aweekago: '',
+    weekdatacore: 0,
+    datacore: 0,
+    total: 0,
+    datadate: '',
+    data: [],
+    positionplusdata: [],
+    firstweek: [],
+    lastweek: [],
+    beforeweek: [],
+    thisweekdatacore: 0,
+    mounthbeforeday: 0,
+    mounthfirstindex: 0,
+    crispedges: 'crispedges',
+    thisdayindex: 0,
+    amonthagoindex: 0,
+    amonthagoweek: [],
+    firstdate: [],
+    first2date: [],
+    montharrbefore: [],
+    monthindex: 0,
+    color: ['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']
+  },
+  methods: {
+    selectStyle(data, event) {
+      document.querySelector('.angle-wrapper').style.display = 'block'
+      this.span1 = data.date;
+      this.span2 = data.count;
+      this.x = event.clientX - 100;
+      this.y = event.clientY - 60
+    },
+    outStyle() {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    },
+    thiscolor(x) {
+      if (x === 0) {
+        let i = parseInt(x / 2);
+        return this.color[0]
+      } else if (x < 2) {
+        return this.color[1]
+      } else if (x < 20) {
+        let i = parseInt(x / 2);
+        return this.color[i]
+      } else {
+        return this.color[9]
+      }
+    },
+  }
+});
+var apiurl = '' ? 'https:///api?' : 'https://githubapi.ryanchristian.dev/user/'
+var githubapiurl = apiurl + gitcalendar.user;
+//canvas绘图
+function responsiveChart() {
+  let c = document.getElementById("gitcanvas");
+  if (c) {
+    let cmessage = document.getElementById("gitmessage");
+    let ctx = c.getContext("2d");
+    c.width = document.getElementById("gitcalendarcanvasbox").offsetWidth;
+    let linemaxwitdh = 0.96 * c.width / gitcalendar.data.length;
+    c.height = 9 * linemaxwitdh;
+    let lineminwitdh = 0.8 * linemaxwitdh;
+    let setposition = {
+      x: 0.02 * c.width,
+      y: 0.025 * c.width
+    };
+    for (let week in gitcalendar.data) {
+      weekdata = gitcalendar.data[week];
+      for (let day in weekdata) {
+        let dataitem = {
+          date: "",
+          count: "",
+          x: 0,
+          y: 0
+        };
+        gitcalendar.positionplusdata.push(dataitem);
+        ctx.fillStyle = gitcalendar.thiscolor(weekdata[day].count);
+        setposition.y = Math.round(setposition.y * 100) / 100;
+        dataitem.date = weekdata[day].date;
+        dataitem.count = weekdata[day].count;
+        dataitem.x = setposition.x;
+        dataitem.y = setposition.y;
+        ctx.fillRect(setposition.x, setposition.y, lineminwitdh, lineminwitdh);
+        setposition.y = setposition.y + linemaxwitdh
+      };
+      setposition.y = 0.025 * c.width;
+      setposition.x = setposition.x + linemaxwitdh
+    };
+    ctx.font = "600  Arial";
+    ctx.fillStyle = '#aaa';
+    ctx.fillText("日", 0, 1.9 * linemaxwitdh);
+    ctx.fillText("二", 0, 3.9 * linemaxwitdh);
+    ctx.fillText("四", 0, 5.9 * linemaxwitdh);
+    ctx.fillText("六", 0, 7.9 * linemaxwitdh);
+    let monthindexlist = c.width / 24;
+    for (let index in gitcalendar.monthchange) {
+      ctx.fillText(gitcalendar.monthchange[index], monthindexlist, 0.7 * linemaxwitdh);
+      monthindexlist = monthindexlist + c.width / 12
+    };
+    cmessage.onmousemove = function(event) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    };
+    c.onmousemove = function(event) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+      getMousePos(c, event);
+    };
+
+    function getMousePos(canvas, event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left * (canvas.width / rect.width);
+      var y = event.clientY - rect.top * (canvas.height / rect.height);
+      //console.log("x:"+x+",y:"+y);
+      for (let item of gitcalendar.positionplusdata) {
+        let lenthx = x - item.x;
+        let lenthy = y - item.y;
+        //console.log(lenthx,lenthy);
+        if (0 < lenthx && lenthx < lineminwitdh) {
+          if (0 < lenthy && lenthy < lineminwitdh) {
+            //console.log(item.date,item.count)
+            document.querySelector('.angle-wrapper').style.display = 'block'
+            gitcalendar.span1 = item.date;
+            gitcalendar.span2 = item.count;
+            gitcalendar.x = event.clientX - 100;
+            gitcalendar.y = event.clientY - 60
+          }
+        }
+        //if(0< x - item.x <lineminwitdh&&0< y - item.y <lineminwitdh){
+        //console.log(item.count,item.date);
+        //}
+      }
+    }
+  }
+}
+//数据统计算法
+function addlastmonth() {
+  if (gitcalendar.thisdayindex === 0) {
+    thisweekcore(52);
+    thisweekcore(51);
+    thisweekcore(50);
+    thisweekcore(49);
+    thisweekcore(48);
+    gitcalendar.thisweekdatacore += gitcalendar.firstdate[6].count;
+    gitcalendar.amonthago = gitcalendar.firstdate[6].date
+  } else {
+    thisweekcore(52);
+    thisweekcore(51);
+    thisweekcore(50);
+    thisweekcore(49);
+    thisweek2core();
+    gitcalendar.amonthago = gitcalendar.first2date[gitcalendar.thisdayindex - 1].date
+  }
+};
+
+function thisweek2core() {
+  for (let i = gitcalendar.thisdayindex - 1; i < gitcalendar.first2date.length; i++) {
+    gitcalendar.thisweekdatacore += gitcalendar.first2date[i].count
+  }
+};
+
+function thisweekcore(index) {
+  for (let item of gitcalendar.data[index]) {
+    gitcalendar.thisweekdatacore += item.count
+  }
+};
+
+function addlastweek() {
+  for (let item of gitcalendar.lastweek) {
+    gitcalendar.weekdatacore += item.count
+  }
+};
+
+function addbeforeweek() {
+  for (let i = gitcalendar.thisdayindex; i < gitcalendar.beforeweek.length; i++) {
+    gitcalendar.weekdatacore += gitcalendar.beforeweek[i].count
+  }
+};
+
+function addweek(data) {
+  if (gitcalendar.thisdayindex === 6) {
+    gitcalendar.aweekago = gitcalendar.lastweek[0].date;
+    addlastweek()
+  } else {
+    lastweek = data.contributions[51];
+    gitcalendar.aweekago = lastweek[gitcalendar.thisdayindex + 1].date;
+    addlastweek();
+    addbeforeweek()
+  }
+}
+
+fetch(githubapiurl)
+  .then(data => data.json())
+  .then(data => {
+    gitcalendar.data = data.contributions;
+    gitcalendar.total = data.total;
+    gitcalendar.first2date = gitcalendar.data[48];
+    gitcalendar.firstdate = gitcalendar.data[47];
+    gitcalendar.firstweek = data.contributions[0];
+    gitcalendar.lastweek = data.contributions[52];
+    gitcalendar.beforeweek = data.contributions[51];
+    gitcalendar.thisdayindex = gitcalendar.lastweek.length - 1;
+    gitcalendar.thisday = gitcalendar.lastweek[gitcalendar.thisdayindex].date;
+    gitcalendar.oneyearbeforeday = gitcalendar.firstweek[0].date;
+    gitcalendar.monthindex = gitcalendar.thisday.substring(5, 7) * 1;
+    gitcalendar.montharrbefore = gitcalendar.month.splice(gitcalendar.monthindex, 12 - gitcalendar.monthindex);
+    gitcalendar.monthchange = gitcalendar.montharrbefore.concat(gitcalendar.month);
+    addweek(data);
+    addlastmonth();
+    responsiveChart();
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
+
+//手机版更换为svg绘制
+if (document.getElementById("gitcalendarcanvasbox").offsetWidth < 500) {
+  gitcalendar.simplemode = false
+}
+
+//当改变窗口大小时重新绘制canvas
+window.onresize = function() {
+  if (gitcalendar.simplemode) responsiveChart()
+}
+
+//解决滚动滑轮时出现的标签显示
+window.onscroll = function() {
+  if (document.querySelector('.angle-wrapper')) {
+    document.querySelector('.angle-wrapper').style.display = 'none'
+  }
+};</script></div><script defer src="/live2d-widget/autoload.js"></script><script src = "/js/chatroom.js"></script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script><script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('setup',{'key':'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script><script src = "/js/smoothscrolling.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="true" data-text="LOVE YOU ❤" data-fontsize="17px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script>(function (w, d, s, id) {
+            if (typeof (w.webpushr) !== 'undefined') return; w.webpushr = w.webpushr || function () { (w.webpushr.q = w.webpushr.q || []).push(arguments) }; var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.id = id; js.async = 1; js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window, document, 'script', 'webpushr-jssdk'));webpushr('setup', { 'key': 'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
