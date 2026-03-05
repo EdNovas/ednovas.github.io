@@ -33,10 +33,10 @@
 - class_name: 朋友
   class_desc: 值得推荐的博客
   link_list:
-    - name: つつのBlog
-      link: https://blog.tsutsu.one
-      avatar: https://img.tsutsu.one/i-1/2022/05/26/628ef8a6e4797.jpg
-      descr: 想把海洋里所有鱼都握在手里, 把森林里里所有花都插在心头. 
+    - name: LHL's Blog
+      link: https://blog.lhl.one
+      avatar: https://smms-vip3.see.you/2025/04/18/KXpf8u5SQYNPkA3.jpg
+      descr: 能烂尾的结局，过程一定很精彩
     - name: Akilarの糖果屋
       link: https://akilar.top/
       avatar: https://akilar.top/img/siteicon/favicon.png
