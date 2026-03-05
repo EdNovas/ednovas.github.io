@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2026-03-05T23:02:33.849Z</updated>
+  <updated>2026-03-05T23:07:50.444Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,70 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Prompt Engineering 实战指南：让 AI 输出质量翻倍的技巧</title>
+    <link href="https://ednovas.xyz/2026/03/05/prompt-engineering-guide/"/>
+    <id>https://ednovas.xyz/2026/03/05/prompt-engineering-guide/</id>
+    <published>2026-03-05T14:48:00.000Z</published>
+    <updated>2026-03-05T23:07:50.444Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
+&lt;h1 id=&quot;Prompt-Engineering-实战指南：让-AI-输出质量翻倍的技巧&quot;&gt;&lt;a href=&quot;#Prompt-Engineering-实战指南：让-AI-输出质量翻倍的技巧&quot; class=&quot;headerlink&quot; title=&quot;Prompt Engineering 实战指南：让 AI 输出质量翻倍的技巧&quot;&gt;&lt;/a&gt;Prompt Engineering 实战指南：让 AI 输出质量翻倍的技巧&lt;/h1&gt;&lt;p&gt;同样一个大模型，不同的提示词（Prompt）可以导致天壤之别的结果。很多人觉得 AI “不好用”、”回答太水”，往往不是模型的问题，而是 &lt;strong&gt;提示词写得太随意&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;本文从实战角度出发，总结了一套系统化的 Prompt 编写方法，适用于 ChatGPT / Claude / DeepSeek / Gemini 等所有主流大模型。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;一、Prompt-的核心原则&quot;&gt;&lt;a href=&quot;#一、Prompt-的核心原则&quot; class=&quot;headerlink&quot; title=&quot;一、Prompt 的核心原则&quot;&gt;&lt;/a&gt;一、Prompt 的核心原则&lt;/h2&gt;&lt;h3 id=&quot;1-1-好-Prompt-的三个要素&quot;&gt;&lt;a href=&quot;#1-1-好-Prompt-的三个要素&quot; class=&quot;headerlink&quot; title=&quot;1.1 好 Prompt 的三个要素&quot;&gt;&lt;/a&gt;1.1 好 Prompt 的三个要素&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;要素&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;说明&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;反面例子&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;具体&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;明确说出你要什么&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;❌ “帮我写个东西”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;完整&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;提供足够的上下文&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;❌ “这段代码有 bug”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;有约束&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;限定格式、长度、风格&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;❌ “随便写就行”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&quot;1-2-一句话总结&quot;&gt;&lt;a href=&quot;#1-2-一句话总结&quot; class=&quot;headerlink&quot; title=&quot;1.2 一句话总结&quot;&gt;&lt;/a&gt;1.2 一句话总结&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯 &lt;strong&gt;把 AI 当成一个能力很强但完全不了解你背景的新同事&lt;/strong&gt;——你需要把任务说清楚，把背景交代完整，把期望讲明白。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="AI" scheme="https://ednovas.xyz/categories/AI/"/>
+    
+    
+    <category term="AI" scheme="https://ednovas.xyz/tags/AI/"/>
+    
+    <category term="Prompt Engineering" scheme="https://ednovas.xyz/tags/Prompt-Engineering/"/>
+    
+    <category term="ChatGPT" scheme="https://ednovas.xyz/tags/ChatGPT/"/>
+    
+    <category term="Claude" scheme="https://ednovas.xyz/tags/Claude/"/>
+    
+    <category term="大模型" scheme="https://ednovas.xyz/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/"/>
+    
+    <category term="提示词" scheme="https://ednovas.xyz/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Cloudflare Workers + KV 实战：搭建零成本节点健康监控系统</title>
     <link href="https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/"/>
     <id>https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/</id>
     <published>2026-03-05T14:39:00.000Z</published>
-    <updated>2026-03-05T23:02:33.849Z</updated>
+    <updated>2026-03-05T23:07:50.432Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -65,7 +124,7 @@
     <link href="https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/"/>
     <id>https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/</id>
     <published>2026-03-05T14:23:00.000Z</published>
-    <updated>2026-03-05T23:02:33.856Z</updated>
+    <updated>2026-03-05T23:07:50.439Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -110,7 +169,7 @@
     <link href="https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/"/>
     <id>https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/</id>
     <published>2026-03-05T13:29:00.000Z</published>
-    <updated>2026-03-05T23:02:33.850Z</updated>
+    <updated>2026-03-05T23:07:50.434Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -151,7 +210,7 @@
     <link href="https://ednovas.xyz/2026/02/13/blendhosting2026/"/>
     <id>https://ednovas.xyz/2026/02/13/blendhosting2026/</id>
     <published>2026-02-13T22:28:00.000Z</published>
-    <updated>2026-03-05T23:02:33.848Z</updated>
+    <updated>2026-03-05T23:07:50.431Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot;&gt;&lt;a href=&quot;#Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot; class=&quot;headerlink&quot; title=&quot;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&quot;&gt;&lt;/a&gt;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&lt;/h1&gt;&lt;p&gt;Blend Hosting 是一家成立于 2005 年的海外服务器与云计算服务商，在 VPS 与服务器领域拥有 20 年以上的持续运营记录。相比偏向短期试用型的平台，Blend Hosting 的整体定位更偏向长期稳定运行与可持续使用的应用场景，目标用户群体也更明确。&lt;/p&gt;
@@ -179,7 +238,7 @@
     <link href="https://ednovas.xyz/2026/01/27/servergigabit/"/>
     <id>https://ednovas.xyz/2026/01/27/servergigabit/</id>
     <published>2026-01-27T20:38:00.000Z</published>
-    <updated>2026-03-05T23:02:33.863Z</updated>
+    <updated>2026-03-05T23:07:50.446Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot;&gt;&lt;a href=&quot;#🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot; class=&quot;headerlink&quot; title=&quot;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&quot;&gt;&lt;/a&gt;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&lt;/h1&gt;&lt;p&gt;本款 &lt;strong&gt;Deluxe Dedicated Server (MY) v2&lt;/strong&gt; 部署于马来西亚数据中心，采用企业级硬件配置，专为高并发、高性能及长期稳定运行的业务场景而设计 [cite: 3]。&lt;/p&gt;
@@ -255,7 +314,7 @@
     <link href="https://ednovas.xyz/2025/12/31/vps-manager-pro/"/>
     <id>https://ednovas.xyz/2025/12/31/vps-manager-pro/</id>
     <published>2025-12-31T13:46:00.000Z</published>
-    <updated>2026-03-05T23:02:33.866Z</updated>
+    <updated>2026-03-05T23:07:50.450Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Sample-Website-演示网站&quot;&gt;&lt;a href=&quot;#Sample-Website-演示网站&quot; class=&quot;headerlink&quot; title=&quot;Sample Website 演示网站&quot;&gt;&lt;/a&gt;Sample Website 演示网站&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://vps.ednovas.tech/&quot;&gt;https://vps.ednovas.tech&lt;/a&gt;&lt;/p&gt;
@@ -295,7 +354,7 @@
     <link href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/"/>
     <id>https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</id>
     <published>2025-12-31T13:41:00.000Z</published>
-    <updated>2026-03-05T23:02:33.851Z</updated>
+    <updated>2026-03-05T23:07:50.434Z</updated>
     
     
     <summary type="html">&lt;p&gt;这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 &lt;a href=&quot;https://github.com/Minerchu/dongguaTV&quot;&gt;https://github.com/Minerchu/dongguaTV&lt;/a&gt; ，本作添加了许多功能。&lt;/p&gt;
@@ -341,7 +400,7 @@
     <link href="https://ednovas.xyz/2024/04/25/gigabit/"/>
     <id>https://ednovas.xyz/2024/04/25/gigabit/</id>
     <published>2024-04-25T22:28:00.000Z</published>
-    <updated>2026-03-05T23:02:33.854Z</updated>
+    <updated>2026-03-05T23:07:50.437Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。&lt;/p&gt;
@@ -457,7 +516,7 @@
     <link href="https://ednovas.xyz/2023/12/14/blendhosting/"/>
     <id>https://ednovas.xyz/2023/12/14/blendhosting/</id>
     <published>2023-12-14T22:28:00.000Z</published>
-    <updated>2026-03-05T23:02:33.848Z</updated>
+    <updated>2026-03-05T23:07:50.431Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Blend Hosting &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com&lt;/a&gt;&lt;/p&gt;
@@ -484,7 +543,7 @@
     <link href="https://ednovas.xyz/2023/02/24/homemadenas/"/>
     <id>https://ednovas.xyz/2023/02/24/homemadenas/</id>
     <published>2023-02-24T22:28:00.000Z</published>
-    <updated>2026-03-05T23:02:33.856Z</updated>
+    <updated>2026-03-05T23:07:50.439Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;ul&gt;
@@ -524,7 +583,7 @@
     <link href="https://ednovas.xyz/2023/02/24/cloudflaretunnel/"/>
     <id>https://ednovas.xyz/2023/02/24/cloudflaretunnel/</id>
     <published>2023-02-24T21:28:00.000Z</published>
-    <updated>2026-03-05T23:02:33.850Z</updated>
+    <updated>2026-03-05T23:07:50.433Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Cloudflare-Tunnel&quot;&gt;&lt;a href=&quot;#Cloudflare-Tunnel&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Tunnel&quot;&gt;&lt;/a&gt;Cloudflare Tunnel&lt;/h2&gt;&lt;p&gt;cloudflare提供的免费加密通道，通过cloudflare的cnd访问部署在内网的服务，比如web,ssh,smb,tcp等。&lt;/p&gt;
@@ -557,7 +616,7 @@
     <link href="https://ednovas.xyz/2023/02/19/raspberry/"/>
     <id>https://ednovas.xyz/2023/02/19/raspberry/</id>
     <published>2023-02-19T21:28:00.000Z</published>
-    <updated>2026-03-05T23:02:33.862Z</updated>
+    <updated>2026-03-05T23:07:50.445Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Raspberry-Pi&quot;&gt;&lt;a href=&quot;#Raspberry-Pi&quot; class=&quot;headerlink&quot; title=&quot;Raspberry Pi&quot;&gt;&lt;/a&gt;Raspberry Pi&lt;/h2&gt;&lt;p&gt;树莓派（英语：Raspberry Pi）英国树莓派基金会开发的微型单板计算机，目的是以低价硬体及自由软体促进学校的基本电脑科学教育。&lt;/p&gt;
@@ -585,7 +644,7 @@
     <link href="https://ednovas.xyz/2023/01/07/remote-ubuntu/"/>
     <id>https://ednovas.xyz/2023/01/07/remote-ubuntu/</id>
     <published>2023-01-07T11:51:00.000Z</published>
-    <updated>2026-03-05T23:02:33.862Z</updated>
+    <updated>2026-03-05T23:07:50.446Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;众所周知，Chrome Remote Desktop 是一款十分出色的完全免费远程控制软件。其易用性和功能的强大性，以及连接的稳定性都给这款软件加分不少，唯一的缺点可能就是国内无法使用了，需要开梯子才可使用。&lt;/p&gt;
@@ -616,7 +675,7 @@
     <link href="https://ednovas.xyz/2022/10/28/cloudfront/"/>
     <id>https://ednovas.xyz/2022/10/28/cloudfront/</id>
     <published>2022-10-28T13:09:00.000Z</published>
-    <updated>2026-03-05T23:02:33.850Z</updated>
+    <updated>2026-03-05T23:07:50.433Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Amazon-Cloudfront&quot;&gt;&lt;a href=&quot;#Amazon-Cloudfront&quot; class=&quot;headerlink&quot; title=&quot;Amazon Cloudfront&quot;&gt;&lt;/a&gt;Amazon Cloudfront&lt;/h2&gt;&lt;p&gt;Cloudfront是Amazon提供的CDN服务，有每月免费1T的流量，该流量不可累计。个人小站的话，这个CDN是足够用的了，而且主要是国内访问的速度还不错。但是需要注意不要被攻击了，不然AWS的扣费还是很贵的。&lt;/p&gt;
@@ -651,7 +710,7 @@
     <link href="https://ednovas.xyz/2022/10/28/gcore/"/>
     <id>https://ednovas.xyz/2022/10/28/gcore/</id>
     <published>2022-10-28T13:09:00.000Z</published>
-    <updated>2026-03-05T23:02:33.854Z</updated>
+    <updated>2026-03-05T23:07:50.437Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Gcorelab-CDN&quot;&gt;&lt;a href=&quot;#Gcorelab-CDN&quot; class=&quot;headerlink&quot; title=&quot;Gcorelab CDN&quot;&gt;&lt;/a&gt;Gcorelab CDN&lt;/h2&gt;&lt;p&gt;类似AWS的Cloudfront CDN，提供每月1T的免费流量。效果不如Cloudfront但是也还不错&lt;/p&gt;
@@ -687,7 +746,7 @@
     <link href="https://ednovas.xyz/2022/06/25/gfw/"/>
     <id>https://ednovas.xyz/2022/06/25/gfw/</id>
     <published>2022-06-25T14:09:00.000Z</published>
-    <updated>2026-03-05T23:02:33.854Z</updated>
+    <updated>2026-03-05T23:07:50.437Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;GFW的原理&quot;&gt;&lt;a href=&quot;#GFW的原理&quot; class=&quot;headerlink&quot; title=&quot;GFW的原理&quot;&gt;&lt;/a&gt;GFW的原理&lt;/h1&gt;&lt;p&gt;要与GFW对抗不能仅仅停留在什么不能访问了，什么可以访问之类的表面现象上。知道youtube不能访问了，对于翻墙来说并无帮助。但是知道GFW是如何让我们不能访问youtube的，则对下一步的翻墙方案的选择和实施具有重大意义。所以在讨论如何翻之前，先要深入原理了解GFW是如何封的。&lt;/p&gt;
@@ -720,7 +779,7 @@
     <link href="https://ednovas.xyz/2022/06/25/moss/"/>
     <id>https://ednovas.xyz/2022/06/25/moss/</id>
     <published>2022-06-25T13:09:00.000Z</published>
-    <updated>2026-03-05T23:02:33.858Z</updated>
+    <updated>2026-03-05T23:07:50.441Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;起源&quot;&gt;&lt;a href=&quot;#起源&quot; class=&quot;headerlink&quot; title=&quot;起源&quot;&gt;&lt;/a&gt;起源&lt;/h1&gt;&lt;p&gt;早期的密码学 目前已知最早的密码是大约公元前1900年的埃及古王国时期，用特殊的埃及象形文字雕刻在墓碑上。 但这些文字并不被认为是某种秘密通信的真正尝试，而是在增加神秘和阴谋气氛，甚至是为了给能看懂的观者提供乐趣。 这是密码学在其它用途上的应用，或者只是看上去是这样（如果这是某种密码的误导或伪装，那确实令人印象深刻）。&lt;/p&gt;
@@ -759,7 +818,7 @@
     <link href="https://ednovas.xyz/2022/04/23/outguess/"/>
     <id>https://ednovas.xyz/2022/04/23/outguess/</id>
     <published>2022-04-23T21:06:00.000Z</published>
-    <updated>2026-03-05T23:02:33.860Z</updated>
+    <updated>2026-03-05T23:07:50.443Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;可以直接 &lt;code&gt;apt install outguess&lt;/code&gt; 或者 &lt;code&gt;yum install outguess&lt;/code&gt;&lt;/p&gt;
@@ -784,7 +843,7 @@
     <link href="https://ednovas.xyz/2022/04/23/filehead/"/>
     <id>https://ednovas.xyz/2022/04/23/filehead/</id>
     <published>2022-04-23T20:06:00.000Z</published>
-    <updated>2026-03-05T23:02:33.853Z</updated>
+    <updated>2026-03-05T23:07:50.436Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;a href=&quot;#从Ultra－edit-32中提取出来的&quot; class=&quot;headerlink&quot; title=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;/a&gt;从Ultra－edit-32中提取出来的&lt;/h2&gt;&lt;table&gt;
@@ -1274,35 +1333,6 @@
     
     <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>暗网网站搭建和暗网域名申请方法</title>
-    <link href="https://ednovas.xyz/2022/04/20/torwebsite/"/>
-    <id>https://ednovas.xyz/2022/04/20/torwebsite/</id>
-    <published>2022-04-20T20:06:00.000Z</published>
-    <updated>2026-03-05T23:02:33.865Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;直接安装&quot;&gt;&lt;a href=&quot;#直接安装&quot; class=&quot;headerlink&quot; title=&quot;直接安装&quot;&gt;&lt;/a&gt;直接安装&lt;/h2&gt;&lt;p&gt;一般可以通过apt直接安装tor服务&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt install tor&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;如果不行请进行以下操作&lt;/p&gt;
-&lt;h2 id=&quot;手动安装&quot;&gt;&lt;a href=&quot;#手动安装&quot; class=&quot;headerlink&quot; title=&quot;手动安装&quot;&gt;&lt;/a&gt;手动安装&lt;/h2&gt;&lt;p&gt;修改source.list&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo vi /etc/apt/sources.list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;最后加下面这两行&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deb https://deb.torproject.org/torproject.org stretch main&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src https://deb.torproject.org/torproject.org stretch main&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;添加密钥&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
     
   </entry>
   
