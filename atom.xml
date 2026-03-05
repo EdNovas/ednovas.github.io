@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2026-03-05T22:01:20.206Z</updated>
+  <updated>2026-03-05T22:35:01.602Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,56 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>GitHub Actions 自动化部署 Hexo 博客完全指南</title>
+    <link href="https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/"/>
+    <id>https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/</id>
+    <published>2026-03-05T14:23:00.000Z</published>
+    <updated>2026-03-05T22:35:01.602Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
+&lt;h1 id=&quot;GitHub-Actions-自动化部署-Hexo-博客完全指南&quot;&gt;&lt;a href=&quot;#GitHub-Actions-自动化部署-Hexo-博客完全指南&quot; class=&quot;headerlink&quot; title=&quot;GitHub Actions 自动化部署 Hexo 博客完全指南&quot;&gt;&lt;/a&gt;GitHub Actions 自动化部署 Hexo 博客完全指南&lt;/h1&gt;&lt;p&gt;传统的 Hexo 博客部署流程通常是：本地写文章 → &lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo generate&lt;/code&gt; → &lt;code&gt;hexo deploy&lt;/code&gt;。这个流程有几个痛点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🖥️ 换一台电脑就需要重新配置整个 Hexo 环境（Node.js、npm 依赖等）&lt;/li&gt;
+&lt;li&gt;🔑 配置文件中包含 API Key 等敏感信息，直接提交到 Git 有安全风险&lt;/li&gt;
+&lt;li&gt;⏱️ 每次部署都需要手动执行多个命令，繁琐且容易出错&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本文将详细介绍如何使用 &lt;strong&gt;GitHub Actions&lt;/strong&gt; 实现 Hexo 博客的全自动部署：推送代码到 GitHub 仓库后，自动构建并发布到 GitHub Pages，同时妥善保护敏感信息。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;整体架构&quot;&gt;&lt;a href=&quot;#整体架构&quot; class=&quot;headerlink&quot; title=&quot;整体架构&quot;&gt;&lt;/a&gt;整体架构&lt;/h2&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;本地电脑 (写文章)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │  git push → dev 分支&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;GitHub 仓库 (源码)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ├──── GitHub Actions 自动触发&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │         │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │         ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    ┌─────────────────────────────────┐&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  GitHub Actions Runner          │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │                                 │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  1. 检出代码                     │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  2. 从模板 + Secrets 生成配置     │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  3. npm install                 │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  4. hexo generate               │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  5. 部署到 gh-pages 分支         │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    └─────────────────────────────────┘&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │         │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │         ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    GitHub Pages (线上博客)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    └──── Cloudflare Pages 自动触发&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         ┌─────────────────────────────────┐&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  Cloudflare Pages               │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │                                 │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  • dev 分支 → Preview 预览环境   │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  • gh-pages 分支 → Production   │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  • 自动绑定自定义域名            │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  • 全球 CDN 加速                │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         └─────────────────────────────────┘&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;核心思路：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;源码存放在 &lt;code&gt;dev&lt;/code&gt; 分支（包含模板配置文件，不含敏感信息）&lt;/li&gt;
+&lt;li&gt;GitHub Actions 在构建时通过 Secrets + &lt;code&gt;envsubst&lt;/code&gt; 动态生成真实配置文件&lt;/li&gt;
+&lt;li&gt;构建产物自动推送到 &lt;code&gt;gh-pages&lt;/code&gt; 分支&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GitHub Pages&lt;/strong&gt; 和 &lt;strong&gt;Cloudflare Pages&lt;/strong&gt; 同时从 &lt;code&gt;gh-pages&lt;/code&gt; 分支提供服务，互为冗余&lt;/li&gt;
+&lt;li&gt;Cloudflare Pages 还会为每个 &lt;code&gt;dev&lt;/code&gt; 分支的推送自动生成 &lt;strong&gt;Preview 预览环境&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Hexo" scheme="https://ednovas.xyz/tags/Hexo/"/>
+    
+    <category term="GitHub Actions" scheme="https://ednovas.xyz/tags/GitHub-Actions/"/>
+    
+    <category term="CI/CD" scheme="https://ednovas.xyz/tags/CI-CD/"/>
+    
+    <category term="自动化部署" scheme="https://ednovas.xyz/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>本地 AI 全栈部署：Ollama + Open WebUI + ComfyUI 图像生成</title>
     <link href="https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/"/>
     <id>https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/</id>
     <published>2026-03-05T13:29:00.000Z</published>
-    <updated>2026-03-05T22:01:20.206Z</updated>
+    <updated>2026-03-05T22:35:01.595Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -62,7 +107,7 @@
     <link href="https://ednovas.xyz/2026/02/13/blendhosting2026/"/>
     <id>https://ednovas.xyz/2026/02/13/blendhosting2026/</id>
     <published>2026-02-13T22:28:00.000Z</published>
-    <updated>2026-03-05T22:01:20.204Z</updated>
+    <updated>2026-03-05T22:35:01.592Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot;&gt;&lt;a href=&quot;#Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot; class=&quot;headerlink&quot; title=&quot;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&quot;&gt;&lt;/a&gt;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&lt;/h1&gt;&lt;p&gt;Blend Hosting 是一家成立于 2005 年的海外服务器与云计算服务商，在 VPS 与服务器领域拥有 20 年以上的持续运营记录。相比偏向短期试用型的平台，Blend Hosting 的整体定位更偏向长期稳定运行与可持续使用的应用场景，目标用户群体也更明确。&lt;/p&gt;
@@ -90,7 +135,7 @@
     <link href="https://ednovas.xyz/2026/01/27/servergigabit/"/>
     <id>https://ednovas.xyz/2026/01/27/servergigabit/</id>
     <published>2026-01-27T20:38:00.000Z</published>
-    <updated>2026-03-05T22:01:20.219Z</updated>
+    <updated>2026-03-05T22:35:01.609Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot;&gt;&lt;a href=&quot;#🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot; class=&quot;headerlink&quot; title=&quot;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&quot;&gt;&lt;/a&gt;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&lt;/h1&gt;&lt;p&gt;本款 &lt;strong&gt;Deluxe Dedicated Server (MY) v2&lt;/strong&gt; 部署于马来西亚数据中心，采用企业级硬件配置，专为高并发、高性能及长期稳定运行的业务场景而设计 [cite: 3]。&lt;/p&gt;
@@ -166,7 +211,7 @@
     <link href="https://ednovas.xyz/2025/12/31/vps-manager-pro/"/>
     <id>https://ednovas.xyz/2025/12/31/vps-manager-pro/</id>
     <published>2025-12-31T13:46:00.000Z</published>
-    <updated>2026-03-05T22:01:20.222Z</updated>
+    <updated>2026-03-05T22:35:01.613Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Sample-Website-演示网站&quot;&gt;&lt;a href=&quot;#Sample-Website-演示网站&quot; class=&quot;headerlink&quot; title=&quot;Sample Website 演示网站&quot;&gt;&lt;/a&gt;Sample Website 演示网站&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://vps.ednovas.tech/&quot;&gt;https://vps.ednovas.tech&lt;/a&gt;&lt;/p&gt;
@@ -206,7 +251,7 @@
     <link href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/"/>
     <id>https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</id>
     <published>2025-12-31T13:41:00.000Z</published>
-    <updated>2026-03-05T22:01:20.207Z</updated>
+    <updated>2026-03-05T22:35:01.595Z</updated>
     
     
     <summary type="html">&lt;p&gt;这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 &lt;a href=&quot;https://github.com/Minerchu/dongguaTV&quot;&gt;https://github.com/Minerchu/dongguaTV&lt;/a&gt; ，本作添加了许多功能。&lt;/p&gt;
@@ -252,7 +297,7 @@
     <link href="https://ednovas.xyz/2024/04/25/gigabit/"/>
     <id>https://ednovas.xyz/2024/04/25/gigabit/</id>
     <published>2024-04-25T22:28:00.000Z</published>
-    <updated>2026-03-05T22:01:20.210Z</updated>
+    <updated>2026-03-05T22:35:01.599Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。&lt;/p&gt;
@@ -368,7 +413,7 @@
     <link href="https://ednovas.xyz/2023/12/14/blendhosting/"/>
     <id>https://ednovas.xyz/2023/12/14/blendhosting/</id>
     <published>2023-12-14T22:28:00.000Z</published>
-    <updated>2026-03-05T22:01:20.204Z</updated>
+    <updated>2026-03-05T22:35:01.592Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Blend Hosting &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com&lt;/a&gt;&lt;/p&gt;
@@ -395,7 +440,7 @@
     <link href="https://ednovas.xyz/2023/02/24/homemadenas/"/>
     <id>https://ednovas.xyz/2023/02/24/homemadenas/</id>
     <published>2023-02-24T22:28:00.000Z</published>
-    <updated>2026-03-05T22:01:20.212Z</updated>
+    <updated>2026-03-05T22:35:01.602Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;ul&gt;
@@ -435,7 +480,7 @@
     <link href="https://ednovas.xyz/2023/02/24/cloudflaretunnel/"/>
     <id>https://ednovas.xyz/2023/02/24/cloudflaretunnel/</id>
     <published>2023-02-24T21:28:00.000Z</published>
-    <updated>2026-03-05T22:01:20.206Z</updated>
+    <updated>2026-03-05T22:35:01.594Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Cloudflare-Tunnel&quot;&gt;&lt;a href=&quot;#Cloudflare-Tunnel&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Tunnel&quot;&gt;&lt;/a&gt;Cloudflare Tunnel&lt;/h2&gt;&lt;p&gt;cloudflare提供的免费加密通道，通过cloudflare的cnd访问部署在内网的服务，比如web,ssh,smb,tcp等。&lt;/p&gt;
@@ -468,7 +513,7 @@
     <link href="https://ednovas.xyz/2023/02/19/raspberry/"/>
     <id>https://ednovas.xyz/2023/02/19/raspberry/</id>
     <published>2023-02-19T21:28:00.000Z</published>
-    <updated>2026-03-05T22:01:20.218Z</updated>
+    <updated>2026-03-05T22:35:01.608Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Raspberry-Pi&quot;&gt;&lt;a href=&quot;#Raspberry-Pi&quot; class=&quot;headerlink&quot; title=&quot;Raspberry Pi&quot;&gt;&lt;/a&gt;Raspberry Pi&lt;/h2&gt;&lt;p&gt;树莓派（英语：Raspberry Pi）英国树莓派基金会开发的微型单板计算机，目的是以低价硬体及自由软体促进学校的基本电脑科学教育。&lt;/p&gt;
@@ -496,7 +541,7 @@
     <link href="https://ednovas.xyz/2023/01/07/remote-ubuntu/"/>
     <id>https://ednovas.xyz/2023/01/07/remote-ubuntu/</id>
     <published>2023-01-07T11:51:00.000Z</published>
-    <updated>2026-03-05T22:01:20.218Z</updated>
+    <updated>2026-03-05T22:35:01.609Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;众所周知，Chrome Remote Desktop 是一款十分出色的完全免费远程控制软件。其易用性和功能的强大性，以及连接的稳定性都给这款软件加分不少，唯一的缺点可能就是国内无法使用了，需要开梯子才可使用。&lt;/p&gt;
@@ -527,7 +572,7 @@
     <link href="https://ednovas.xyz/2022/10/28/cloudfront/"/>
     <id>https://ednovas.xyz/2022/10/28/cloudfront/</id>
     <published>2022-10-28T13:09:00.000Z</published>
-    <updated>2026-03-05T22:01:20.206Z</updated>
+    <updated>2026-03-05T22:35:01.594Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Amazon-Cloudfront&quot;&gt;&lt;a href=&quot;#Amazon-Cloudfront&quot; class=&quot;headerlink&quot; title=&quot;Amazon Cloudfront&quot;&gt;&lt;/a&gt;Amazon Cloudfront&lt;/h2&gt;&lt;p&gt;Cloudfront是Amazon提供的CDN服务，有每月免费1T的流量，该流量不可累计。个人小站的话，这个CDN是足够用的了，而且主要是国内访问的速度还不错。但是需要注意不要被攻击了，不然AWS的扣费还是很贵的。&lt;/p&gt;
@@ -562,7 +607,7 @@
     <link href="https://ednovas.xyz/2022/10/28/gcore/"/>
     <id>https://ednovas.xyz/2022/10/28/gcore/</id>
     <published>2022-10-28T13:09:00.000Z</published>
-    <updated>2026-03-05T22:01:20.210Z</updated>
+    <updated>2026-03-05T22:35:01.599Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Gcorelab-CDN&quot;&gt;&lt;a href=&quot;#Gcorelab-CDN&quot; class=&quot;headerlink&quot; title=&quot;Gcorelab CDN&quot;&gt;&lt;/a&gt;Gcorelab CDN&lt;/h2&gt;&lt;p&gt;类似AWS的Cloudfront CDN，提供每月1T的免费流量。效果不如Cloudfront但是也还不错&lt;/p&gt;
@@ -598,7 +643,7 @@
     <link href="https://ednovas.xyz/2022/06/25/gfw/"/>
     <id>https://ednovas.xyz/2022/06/25/gfw/</id>
     <published>2022-06-25T14:09:00.000Z</published>
-    <updated>2026-03-05T22:01:20.210Z</updated>
+    <updated>2026-03-05T22:35:01.599Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;GFW的原理&quot;&gt;&lt;a href=&quot;#GFW的原理&quot; class=&quot;headerlink&quot; title=&quot;GFW的原理&quot;&gt;&lt;/a&gt;GFW的原理&lt;/h1&gt;&lt;p&gt;要与GFW对抗不能仅仅停留在什么不能访问了，什么可以访问之类的表面现象上。知道youtube不能访问了，对于翻墙来说并无帮助。但是知道GFW是如何让我们不能访问youtube的，则对下一步的翻墙方案的选择和实施具有重大意义。所以在讨论如何翻之前，先要深入原理了解GFW是如何封的。&lt;/p&gt;
@@ -631,7 +676,7 @@
     <link href="https://ednovas.xyz/2022/06/25/moss/"/>
     <id>https://ednovas.xyz/2022/06/25/moss/</id>
     <published>2022-06-25T13:09:00.000Z</published>
-    <updated>2026-03-05T22:01:20.214Z</updated>
+    <updated>2026-03-05T22:35:01.605Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;起源&quot;&gt;&lt;a href=&quot;#起源&quot; class=&quot;headerlink&quot; title=&quot;起源&quot;&gt;&lt;/a&gt;起源&lt;/h1&gt;&lt;p&gt;早期的密码学 目前已知最早的密码是大约公元前1900年的埃及古王国时期，用特殊的埃及象形文字雕刻在墓碑上。 但这些文字并不被认为是某种秘密通信的真正尝试，而是在增加神秘和阴谋气氛，甚至是为了给能看懂的观者提供乐趣。 这是密码学在其它用途上的应用，或者只是看上去是这样（如果这是某种密码的误导或伪装，那确实令人印象深刻）。&lt;/p&gt;
@@ -670,7 +715,7 @@
     <link href="https://ednovas.xyz/2022/04/23/outguess/"/>
     <id>https://ednovas.xyz/2022/04/23/outguess/</id>
     <published>2022-04-23T21:06:00.000Z</published>
-    <updated>2026-03-05T22:01:20.216Z</updated>
+    <updated>2026-03-05T22:35:01.606Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;可以直接 &lt;code&gt;apt install outguess&lt;/code&gt; 或者 &lt;code&gt;yum install outguess&lt;/code&gt;&lt;/p&gt;
@@ -695,7 +740,7 @@
     <link href="https://ednovas.xyz/2022/04/23/filehead/"/>
     <id>https://ednovas.xyz/2022/04/23/filehead/</id>
     <published>2022-04-23T20:06:00.000Z</published>
-    <updated>2026-03-05T22:01:20.209Z</updated>
+    <updated>2026-03-05T22:35:01.598Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;a href=&quot;#从Ultra－edit-32中提取出来的&quot; class=&quot;headerlink&quot; title=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;/a&gt;从Ultra－edit-32中提取出来的&lt;/h2&gt;&lt;table&gt;
@@ -1193,7 +1238,7 @@
     <link href="https://ednovas.xyz/2022/04/20/torwebsite/"/>
     <id>https://ednovas.xyz/2022/04/20/torwebsite/</id>
     <published>2022-04-20T20:06:00.000Z</published>
-    <updated>2026-03-05T22:01:20.221Z</updated>
+    <updated>2026-03-05T22:35:01.611Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;直接安装&quot;&gt;&lt;a href=&quot;#直接安装&quot; class=&quot;headerlink&quot; title=&quot;直接安装&quot;&gt;&lt;/a&gt;直接安装&lt;/h2&gt;&lt;p&gt;一般可以通过apt直接安装tor服务&lt;/p&gt;
@@ -1222,7 +1267,7 @@
     <link href="https://ednovas.xyz/2022/04/15/htmlcssjs/"/>
     <id>https://ednovas.xyz/2022/04/15/htmlcssjs/</id>
     <published>2022-04-15T20:06:00.000Z</published>
-    <updated>2026-03-05T22:01:20.212Z</updated>
+    <updated>2026-03-05T22:35:01.602Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
@@ -1237,35 +1282,6 @@
     <category term="html" scheme="https://ednovas.xyz/tags/html/"/>
     
     <category term="css" scheme="https://ednovas.xyz/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 服务器更换镜像源</title>
-    <link href="https://ednovas.xyz/2022/04/13/linuxchangesource/"/>
-    <id>https://ednovas.xyz/2022/04/13/linuxchangesource/</id>
-    <published>2022-04-13T20:06:00.000Z</published>
-    <updated>2026-03-05T22:01:20.213Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;修改镜像源&quot;&gt;&lt;a href=&quot;#修改镜像源&quot; class=&quot;headerlink&quot; title=&quot;修改镜像源&quot;&gt;&lt;/a&gt;修改镜像源&lt;/h1&gt;&lt;p&gt;手动更改的话&lt;/p&gt;
-&lt;h2 id=&quot;Ubuntu&quot;&gt;&lt;a href=&quot;#Ubuntu&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu&quot;&gt;&lt;/a&gt;Ubuntu&lt;/h2&gt;&lt;p&gt;Ubuntu 打开并修改 &lt;code&gt;/etc/apt/sources.list&lt;/code&gt; 文件即可&lt;/p&gt;
-&lt;p&gt;通用源:&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deb mirror://mirrors.ubuntu.com/mirrors.txt focal main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror://mirrors.ubuntu.com/mirrors.txt focal main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb mirror://mirrors.ubuntu.com/mirrors.txt focal-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror://mirrors.ubuntu.com/mirrors.txt focal-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb mirror://mirrors.ubuntu.com/mirrors.txt focal-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror://mirrors.ubuntu.com/mirrors.txt focal-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb mirror://mirrors.ubuntu.com/mirrors.txt focal-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src mirror://mirrors.ubuntu.com/mirrors.txt focal-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://archive.canonical.com/ubuntu focal partner&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://archive.canonical.com/ubuntu focal partner&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;阿里源：&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse focal&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;Debian&quot;&gt;&lt;a href=&quot;#Debian&quot; class=&quot;headerlink&quot; title=&quot;Debian&quot;&gt;&lt;/a&gt;Debian&lt;/h2&gt;&lt;p&gt;阿里源：&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
-    
-    <category term="linux" scheme="https://ednovas.xyz/tags/linux/"/>
     
   </entry>
   
