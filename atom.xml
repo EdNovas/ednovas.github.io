@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2026-03-05T23:07:50.444Z</updated>
+  <updated>2026-03-10T23:26:15.957Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,79 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Cloudflare Pages 免费托管静态网站 + 域名购买省钱指南</title>
+    <link href="https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/"/>
+    <id>https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/</id>
+    <published>2026-03-10T16:19:00.000Z</published>
+    <updated>2026-03-10T23:26:15.957Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
+&lt;h1 id=&quot;Cloudflare-Pages-免费托管静态网站-域名购买省钱指南&quot;&gt;&lt;a href=&quot;#Cloudflare-Pages-免费托管静态网站-域名购买省钱指南&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Pages 免费托管静态网站 + 域名购买省钱指南&quot;&gt;&lt;/a&gt;Cloudflare Pages 免费托管静态网站 + 域名购买省钱指南&lt;/h1&gt;&lt;p&gt;想搭建个人博客、项目主页或文档站？&lt;strong&gt;Cloudflare Pages&lt;/strong&gt; 提供免费、无限带宽的静态网站托管，配合 GitHub 仓库实现 &lt;strong&gt;推送即部署&lt;/strong&gt;，全程零服务器、零成本。&lt;/p&gt;
+&lt;p&gt;本文将详细介绍：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🚀 如何将 GitHub 仓库连接到 Cloudflare Pages，实现自动化部署&lt;/li&gt;
+&lt;li&gt;🌐 如何绑定自定义域名&lt;/li&gt;
+&lt;li&gt;💰 域名购买的省钱技巧&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;一、Cloudflare-Pages-是什么？&quot;&gt;&lt;a href=&quot;#一、Cloudflare-Pages-是什么？&quot; class=&quot;headerlink&quot; title=&quot;一、Cloudflare Pages 是什么？&quot;&gt;&lt;/a&gt;一、Cloudflare Pages 是什么？&lt;/h2&gt;&lt;p&gt;Cloudflare Pages 是一个 &lt;strong&gt;静态网站托管平台&lt;/strong&gt;，可以直接从 GitHub 仓库读取代码、自动构建并部署到 Cloudflare 的全球 CDN。&lt;/p&gt;
+&lt;h3 id=&quot;免费套餐&quot;&gt;&lt;a href=&quot;#免费套餐&quot; class=&quot;headerlink&quot; title=&quot;免费套餐&quot;&gt;&lt;/a&gt;免费套餐&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;资源&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;免费额度&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;每月构建次数&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;500 次&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;并发构建&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1 个&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;带宽&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;无限&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;站点数量&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;无限&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;自定义域名&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;无限&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;SSL 证书&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;自动（免费）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="Cloudflare Pages" scheme="https://ednovas.xyz/tags/Cloudflare-Pages/"/>
+    
+    <category term="GitHub" scheme="https://ednovas.xyz/tags/GitHub/"/>
+    
+    <category term="静态网站" scheme="https://ednovas.xyz/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="域名" scheme="https://ednovas.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Prompt Engineering 实战指南：让 AI 输出质量翻倍的技巧</title>
     <link href="https://ednovas.xyz/2026/03/05/prompt-engineering-guide/"/>
     <id>https://ednovas.xyz/2026/03/05/prompt-engineering-guide/</id>
     <published>2026-03-05T14:48:00.000Z</published>
-    <updated>2026-03-05T23:07:50.444Z</updated>
+    <updated>2026-03-10T23:26:15.969Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -80,7 +148,7 @@
     <link href="https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/"/>
     <id>https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/</id>
     <published>2026-03-05T14:39:00.000Z</published>
-    <updated>2026-03-05T23:07:50.432Z</updated>
+    <updated>2026-03-10T23:26:15.957Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -124,7 +192,7 @@
     <link href="https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/"/>
     <id>https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/</id>
     <published>2026-03-05T14:23:00.000Z</published>
-    <updated>2026-03-05T23:07:50.439Z</updated>
+    <updated>2026-03-10T23:26:15.964Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -169,7 +237,7 @@
     <link href="https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/"/>
     <id>https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/</id>
     <published>2026-03-05T13:29:00.000Z</published>
-    <updated>2026-03-05T23:07:50.434Z</updated>
+    <updated>2026-03-10T23:26:15.959Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -210,7 +278,7 @@
     <link href="https://ednovas.xyz/2026/02/13/blendhosting2026/"/>
     <id>https://ednovas.xyz/2026/02/13/blendhosting2026/</id>
     <published>2026-02-13T22:28:00.000Z</published>
-    <updated>2026-03-05T23:07:50.431Z</updated>
+    <updated>2026-03-10T23:26:15.956Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot;&gt;&lt;a href=&quot;#Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot; class=&quot;headerlink&quot; title=&quot;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&quot;&gt;&lt;/a&gt;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&lt;/h1&gt;&lt;p&gt;Blend Hosting 是一家成立于 2005 年的海外服务器与云计算服务商，在 VPS 与服务器领域拥有 20 年以上的持续运营记录。相比偏向短期试用型的平台，Blend Hosting 的整体定位更偏向长期稳定运行与可持续使用的应用场景，目标用户群体也更明确。&lt;/p&gt;
@@ -238,7 +306,7 @@
     <link href="https://ednovas.xyz/2026/01/27/servergigabit/"/>
     <id>https://ednovas.xyz/2026/01/27/servergigabit/</id>
     <published>2026-01-27T20:38:00.000Z</published>
-    <updated>2026-03-05T23:07:50.446Z</updated>
+    <updated>2026-03-10T23:26:15.971Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot;&gt;&lt;a href=&quot;#🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot; class=&quot;headerlink&quot; title=&quot;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&quot;&gt;&lt;/a&gt;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&lt;/h1&gt;&lt;p&gt;本款 &lt;strong&gt;Deluxe Dedicated Server (MY) v2&lt;/strong&gt; 部署于马来西亚数据中心，采用企业级硬件配置，专为高并发、高性能及长期稳定运行的业务场景而设计 [cite: 3]。&lt;/p&gt;
@@ -314,7 +382,7 @@
     <link href="https://ednovas.xyz/2025/12/31/vps-manager-pro/"/>
     <id>https://ednovas.xyz/2025/12/31/vps-manager-pro/</id>
     <published>2025-12-31T13:46:00.000Z</published>
-    <updated>2026-03-05T23:07:50.450Z</updated>
+    <updated>2026-03-10T23:26:15.975Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Sample-Website-演示网站&quot;&gt;&lt;a href=&quot;#Sample-Website-演示网站&quot; class=&quot;headerlink&quot; title=&quot;Sample Website 演示网站&quot;&gt;&lt;/a&gt;Sample Website 演示网站&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://vps.ednovas.tech/&quot;&gt;https://vps.ednovas.tech&lt;/a&gt;&lt;/p&gt;
@@ -354,7 +422,7 @@
     <link href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/"/>
     <id>https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</id>
     <published>2025-12-31T13:41:00.000Z</published>
-    <updated>2026-03-05T23:07:50.434Z</updated>
+    <updated>2026-03-10T23:26:15.959Z</updated>
     
     
     <summary type="html">&lt;p&gt;这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 &lt;a href=&quot;https://github.com/Minerchu/dongguaTV&quot;&gt;https://github.com/Minerchu/dongguaTV&lt;/a&gt; ，本作添加了许多功能。&lt;/p&gt;
@@ -400,7 +468,7 @@
     <link href="https://ednovas.xyz/2024/04/25/gigabit/"/>
     <id>https://ednovas.xyz/2024/04/25/gigabit/</id>
     <published>2024-04-25T22:28:00.000Z</published>
-    <updated>2026-03-05T23:07:50.437Z</updated>
+    <updated>2026-03-10T23:26:15.962Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。&lt;/p&gt;
@@ -516,7 +584,7 @@
     <link href="https://ednovas.xyz/2023/12/14/blendhosting/"/>
     <id>https://ednovas.xyz/2023/12/14/blendhosting/</id>
     <published>2023-12-14T22:28:00.000Z</published>
-    <updated>2026-03-05T23:07:50.431Z</updated>
+    <updated>2026-03-10T23:26:15.956Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Blend Hosting &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com&lt;/a&gt;&lt;/p&gt;
@@ -543,7 +611,7 @@
     <link href="https://ednovas.xyz/2023/02/24/homemadenas/"/>
     <id>https://ednovas.xyz/2023/02/24/homemadenas/</id>
     <published>2023-02-24T22:28:00.000Z</published>
-    <updated>2026-03-05T23:07:50.439Z</updated>
+    <updated>2026-03-10T23:26:15.964Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;ul&gt;
@@ -583,7 +651,7 @@
     <link href="https://ednovas.xyz/2023/02/24/cloudflaretunnel/"/>
     <id>https://ednovas.xyz/2023/02/24/cloudflaretunnel/</id>
     <published>2023-02-24T21:28:00.000Z</published>
-    <updated>2026-03-05T23:07:50.433Z</updated>
+    <updated>2026-03-10T23:26:15.958Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Cloudflare-Tunnel&quot;&gt;&lt;a href=&quot;#Cloudflare-Tunnel&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Tunnel&quot;&gt;&lt;/a&gt;Cloudflare Tunnel&lt;/h2&gt;&lt;p&gt;cloudflare提供的免费加密通道，通过cloudflare的cnd访问部署在内网的服务，比如web,ssh,smb,tcp等。&lt;/p&gt;
@@ -616,7 +684,7 @@
     <link href="https://ednovas.xyz/2023/02/19/raspberry/"/>
     <id>https://ednovas.xyz/2023/02/19/raspberry/</id>
     <published>2023-02-19T21:28:00.000Z</published>
-    <updated>2026-03-05T23:07:50.445Z</updated>
+    <updated>2026-03-10T23:26:15.971Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Raspberry-Pi&quot;&gt;&lt;a href=&quot;#Raspberry-Pi&quot; class=&quot;headerlink&quot; title=&quot;Raspberry Pi&quot;&gt;&lt;/a&gt;Raspberry Pi&lt;/h2&gt;&lt;p&gt;树莓派（英语：Raspberry Pi）英国树莓派基金会开发的微型单板计算机，目的是以低价硬体及自由软体促进学校的基本电脑科学教育。&lt;/p&gt;
@@ -644,7 +712,7 @@
     <link href="https://ednovas.xyz/2023/01/07/remote-ubuntu/"/>
     <id>https://ednovas.xyz/2023/01/07/remote-ubuntu/</id>
     <published>2023-01-07T11:51:00.000Z</published>
-    <updated>2026-03-05T23:07:50.446Z</updated>
+    <updated>2026-03-10T23:26:15.971Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;众所周知，Chrome Remote Desktop 是一款十分出色的完全免费远程控制软件。其易用性和功能的强大性，以及连接的稳定性都给这款软件加分不少，唯一的缺点可能就是国内无法使用了，需要开梯子才可使用。&lt;/p&gt;
@@ -675,7 +743,7 @@
     <link href="https://ednovas.xyz/2022/10/28/cloudfront/"/>
     <id>https://ednovas.xyz/2022/10/28/cloudfront/</id>
     <published>2022-10-28T13:09:00.000Z</published>
-    <updated>2026-03-05T23:07:50.433Z</updated>
+    <updated>2026-03-10T23:26:15.958Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Amazon-Cloudfront&quot;&gt;&lt;a href=&quot;#Amazon-Cloudfront&quot; class=&quot;headerlink&quot; title=&quot;Amazon Cloudfront&quot;&gt;&lt;/a&gt;Amazon Cloudfront&lt;/h2&gt;&lt;p&gt;Cloudfront是Amazon提供的CDN服务，有每月免费1T的流量，该流量不可累计。个人小站的话，这个CDN是足够用的了，而且主要是国内访问的速度还不错。但是需要注意不要被攻击了，不然AWS的扣费还是很贵的。&lt;/p&gt;
@@ -710,7 +778,7 @@
     <link href="https://ednovas.xyz/2022/10/28/gcore/"/>
     <id>https://ednovas.xyz/2022/10/28/gcore/</id>
     <published>2022-10-28T13:09:00.000Z</published>
-    <updated>2026-03-05T23:07:50.437Z</updated>
+    <updated>2026-03-10T23:26:15.962Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Gcorelab-CDN&quot;&gt;&lt;a href=&quot;#Gcorelab-CDN&quot; class=&quot;headerlink&quot; title=&quot;Gcorelab CDN&quot;&gt;&lt;/a&gt;Gcorelab CDN&lt;/h2&gt;&lt;p&gt;类似AWS的Cloudfront CDN，提供每月1T的免费流量。效果不如Cloudfront但是也还不错&lt;/p&gt;
@@ -746,7 +814,7 @@
     <link href="https://ednovas.xyz/2022/06/25/gfw/"/>
     <id>https://ednovas.xyz/2022/06/25/gfw/</id>
     <published>2022-06-25T14:09:00.000Z</published>
-    <updated>2026-03-05T23:07:50.437Z</updated>
+    <updated>2026-03-10T23:26:15.962Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;GFW的原理&quot;&gt;&lt;a href=&quot;#GFW的原理&quot; class=&quot;headerlink&quot; title=&quot;GFW的原理&quot;&gt;&lt;/a&gt;GFW的原理&lt;/h1&gt;&lt;p&gt;要与GFW对抗不能仅仅停留在什么不能访问了，什么可以访问之类的表面现象上。知道youtube不能访问了，对于翻墙来说并无帮助。但是知道GFW是如何让我们不能访问youtube的，则对下一步的翻墙方案的选择和实施具有重大意义。所以在讨论如何翻之前，先要深入原理了解GFW是如何封的。&lt;/p&gt;
@@ -779,7 +847,7 @@
     <link href="https://ednovas.xyz/2022/06/25/moss/"/>
     <id>https://ednovas.xyz/2022/06/25/moss/</id>
     <published>2022-06-25T13:09:00.000Z</published>
-    <updated>2026-03-05T23:07:50.441Z</updated>
+    <updated>2026-03-10T23:26:15.967Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;起源&quot;&gt;&lt;a href=&quot;#起源&quot; class=&quot;headerlink&quot; title=&quot;起源&quot;&gt;&lt;/a&gt;起源&lt;/h1&gt;&lt;p&gt;早期的密码学 目前已知最早的密码是大约公元前1900年的埃及古王国时期，用特殊的埃及象形文字雕刻在墓碑上。 但这些文字并不被认为是某种秘密通信的真正尝试，而是在增加神秘和阴谋气氛，甚至是为了给能看懂的观者提供乐趣。 这是密码学在其它用途上的应用，或者只是看上去是这样（如果这是某种密码的误导或伪装，那确实令人印象深刻）。&lt;/p&gt;
@@ -818,7 +886,7 @@
     <link href="https://ednovas.xyz/2022/04/23/outguess/"/>
     <id>https://ednovas.xyz/2022/04/23/outguess/</id>
     <published>2022-04-23T21:06:00.000Z</published>
-    <updated>2026-03-05T23:07:50.443Z</updated>
+    <updated>2026-03-10T23:26:15.969Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;可以直接 &lt;code&gt;apt install outguess&lt;/code&gt; 或者 &lt;code&gt;yum install outguess&lt;/code&gt;&lt;/p&gt;
@@ -834,504 +902,6 @@
     
     
     <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>各种类型文件头部特征</title>
-    <link href="https://ednovas.xyz/2022/04/23/filehead/"/>
-    <id>https://ednovas.xyz/2022/04/23/filehead/</id>
-    <published>2022-04-23T20:06:00.000Z</published>
-    <updated>2026-03-05T23:07:50.436Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;a href=&quot;#从Ultra－edit-32中提取出来的&quot; class=&quot;headerlink&quot; title=&quot;从Ultra－edit-32中提取出来的&quot;&gt;&lt;/a&gt;从Ultra－edit-32中提取出来的&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;left&quot;&gt;File&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;Type&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;ExtensionsHeader&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;JPEG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;jpg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;FFD8FF&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;PNG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;png&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;89504E47&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;GIF&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;gif&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;47494638&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;TIFF&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;tif&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;49492A00&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Windows Bitmap&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;bmp&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;424D&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;CAD&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;dwg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;41433130&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Adobe Photoshop&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;psd&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;38425053&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Rich Text Format&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;rtf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;7B5C727466&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;XML&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;xml&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;3C3F786D6C&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;HTML&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;html&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;68746D6C3E&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Email [thorough only]&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;eml&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;44656C69766572792D646174653A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Outlook Express&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;dbx&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;CFAD12FEC5FD746F&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Outlook&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;pst&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;2142444E&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MS Word/Excel&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;xls.or.doc&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;D0CF11E0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MS Access&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mdb&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;5374616E64617264204A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;WordPerfect&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wpd&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;FF575043&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Postscript&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;eps.or.ps&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;252150532D41646F6265&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Adobe Acrobat&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;pdf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;255044462D312E&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Quicken&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;qdf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;AC9EBD8F&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Windows Password&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;pwl&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;E3828596&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;ZIP Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;zip&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;504B0304&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;RAR Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;rar&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;52617221&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Wave&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wav&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;57415645&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;AVI&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;avi&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;41564920&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Real Audio&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;ram&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;2E7261FD&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Real Media&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;rm&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;2E524D46&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mpg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;000001BA&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mpg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;000001B3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Quicktime&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mov&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;6D6F6F76&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Windows Media&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;asf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;3026B2758E66CF11&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MIDI&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mid&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;4D546864&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&quot;从winhex中取出的文件头列表&quot;&gt;&lt;a href=&quot;#从winhex中取出的文件头列表&quot; class=&quot;headerlink&quot; title=&quot;从winhex中取出的文件头列表&quot;&gt;&lt;/a&gt;从winhex中取出的文件头列表&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;left&quot;&gt;File&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;Type&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;ExtensionsHeader&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;JPEG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;jpg;jpeg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0xFFD8FF&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;PNG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;png&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x89504E470D0A1A0A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;GIF&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;gif&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;GIF8&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;TIFF&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;tif;tiff&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x49492A00&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;TIFF&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;tif;tiff&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x4D4D002A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Bit map&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;bmp&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;BM&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;AOL ART&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;art&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x4A47040E000000&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;AOL ART&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;art&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x4A47030E000000&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;PC Paintbrush&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;pcx&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x0A050108&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Graphics Metafile&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wmf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0xD7CDC69A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Graphics Metafile&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wmf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x01000900&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Graphics Metafile&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wmf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x02000900&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Enhanced Metafile&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;emf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x0100000058000000&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Corel Draw&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;cdr&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;CDR&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;CAD&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;dwg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x41433130&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Adobe Photoshop&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;psd&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;8BPS&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Rich Text Format&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;rtf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;rtf&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;XML&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;xml&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;HTML&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;html;htm;php;php3;php4;phtml;shtml&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;type&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Email&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;eml&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Delivery-date:&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Outlook Express&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;dbx&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0xCFAD12FE&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MS Office/OLE2&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;doc;xls;dot;ppt;xla;ppa;pps;pot;msi;sdw;db&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0xD0CF11E0A1B11AE1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MS Access&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mdb;mda;mde;mdt&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Standard J&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;WordPerfect&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wpd&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0xFF575043&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;OpenOffice Writer&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;sxw&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;writer&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;OpenOffice Calc&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;sxc&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;calc&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;OpenOffice Math&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;sxm&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;math&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;OpenOffice Impress&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;sxi&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;impress&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;OpenOffice Draw&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;sxd&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;draw&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Adobe FrameMaker&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;fm&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;PostScript&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;eps.or.ps;ps;eps&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;%!PS-Adobe&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Adobe Acrobat&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;pdf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;%PDF-1.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Quicken&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;qdf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0xAC9EBD8F&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;QuickBooks Backup&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;qbb&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x458600000600&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Sage&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;sly.or.srt.or.slt;sly;srt;slt&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x53520100&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Sage Backup&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;1&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;SAGEBACKUP&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Lotus WordPro v9&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;lwp&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x576F726450726F&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Lotus 123 v9&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;123&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x00001A00051004&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Lotus 123 v5&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wk4&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x00001A0002100400&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Lotus 123 v3&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wk3&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x00001A0000100400&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Lotus 123 v1&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wk1&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x2000604060&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Windows Password&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;pwl&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0xE3828596&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;ZIP Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;zip;jar&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x504B0304&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;ZIP Archive (outdated)&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;zip&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x504B3030&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;RAR Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;rar&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Rar!&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;GZ Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;gz;tgz&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x1F8B08&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;BZIP Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;bz2&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;BZh&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;ARJ Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;arj&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x60EA&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;7－ZIP Archive&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;7z&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;7z集&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Wave&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;wav&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;WAVE&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;AVI&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;avi&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;AVI&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Real Audio&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;ram;ra&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;.ra?0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Real Media&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;rm&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;.RMF&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mpg;mpeg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x000001BA&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MPEG&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mpg;mpeg&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x000001B3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Quicktime&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mov&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;moov&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Windows Media&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;asf&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x3026B2758E66CF11&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;MIDI&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;mid&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;MThd&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Win32 Executable&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;exe;dll;drv;vxd;sys;ocx;vbx&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;MZ&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Win16 Executable&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;exe;dll;drv;vxd;sys;ocx;vbx&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;MZ&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;ELF Executable&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;elf;;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;0x7F454C4601010100&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;blockquote&gt;
-&lt;p&gt;转载自 &lt;a href=&quot;https://hubinqiang.com/blog/IS/fileExtensionsHeader.html&quot;&gt;https://hubinqiang.com/blog/IS/fileExtensionsHeader.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
     
     
   </entry>
