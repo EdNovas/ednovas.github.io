@@ -1,5 +1,5 @@
 ---
-title: Cloudflare Pages 免费托管静态网站 + 域名购买省钱指南
+title: Cloudflare Pages + Workers：部署小项目的终极方案 + 域名省钱指南
 tags: [Cloudflare Pages,GitHub,静态网站,域名,建站]
 categories:
   - - 杂
@@ -11,12 +11,16 @@ cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/cf-pages-deploy.png
 
 注： 本文由AI生成，ednovas编辑并审核发布。
 
-# Cloudflare Pages 免费托管静态网站 + 域名购买省钱指南
+# Cloudflare Pages + Workers：部署小项目的终极方案
 
-想搭建个人博客、项目主页或文档站？**Cloudflare Pages** 提供免费、无限带宽的静态网站托管，配合 GitHub 仓库实现 **推送即部署**，全程零服务器、零成本。
+用了一段时间后越来越觉得，**Cloudflare Pages + Workers** 可能是目前部署小项目最舒服的方案——免费、快速、全球 CDN、自带防御，推送即上线。
+
+我目前在 Cloudflare 上跑了十几个小项目，从博客到 API 到展示页面一应俱全，**全部零服务器成本**。本文详细分享这套工作流，以及域名购买的省钱技巧。
 
 本文将详细介绍：
 - 🚀 如何将 GitHub 仓库连接到 Cloudflare Pages，实现自动化部署
+- 🌍 我的实际项目案例
+- 🛡️ Cloudflare 生态配套功能
 - 🌐 如何绑定自定义域名
 - 💰 域名购买的省钱技巧
 
@@ -39,13 +43,15 @@ Cloudflare Pages 是一个 **静态网站托管平台**，可以直接从 GitHub
 
 > 💡 **无限带宽** 是 Cloudflare Pages 最大的优势，即使你的网站流量很大也不会产生任何费用。
 
-### 适合什么网站？
+### 适合什么项目？
 
 - ✅ 个人博客（Hexo / Hugo / Jekyll / VitePress）
-- ✅ 项目文档站
-- ✅ 落地页 / 营销页面
+- ✅ 项目文档站 / 下载页面
+- ✅ 落地页 / 导航页 / 地址发布页
 - ✅ 纯前端 SPA（React / Vue）
-- ❌ 需要后端数据库的动态网站（可以搭配 Workers 实现）
+- ✅ 数据展示页面（地图、图表等）
+- ✅ 搭配 Workers 做小型 API 服务
+- ❌ 需要持久化数据库的重型后端（但 D1 + Workers 可以轻量搞定）
 
 ---
 
@@ -166,7 +172,78 @@ Preview 环境非常实用：
 
 ---
 
-## 四、绑定自定义域名
+## 四、实际项目案例
+
+以下是我用 Cloudflare Pages + Workers 部署的一些真实项目，可以直观感受它的灵活性：
+
+| 项目 | 类型 | 技术方案 | 说明 |
+| :-- | :-: | :-: | :-- |
+| **博客** | Pages | Hexo + GitHub Actions | 写文章推送到 `dev` 分支，Actions 构建后推送到 `gh-pages`，CF Pages 自动部署 |
+| **节点地图** | Workers | JS + amCharts | 动态抓取订阅信息，在世界地图上展示全球节点分布 |
+| **下载页面** | Pages | 纯 HTML/JS | 从 GitHub Release 自动拉取最新版本，展示下载链接 |
+| **地址发布页** | Workers | JS 跳转 | 一个简洁的跳转中转页，自动重定向到最新地址 |
+| **导航页** | Pages | 静态 HTML | 个人常用网址导航页面 |
+| **节点监控** | Workers + KV | JS + Telegram Bot | 接收国内服务器上报的检测结果，自动切换 DNS、发送告警 |
+
+可以看到，无论是 **纯静态展示**（Pages）还是 **需要后端逻辑的小 API**（Workers），Cloudflare 平台都能轻松搞定，而且全部在免费额度内。
+
+> 💡 **一个 Cloudflare 账号**就能管理所有这些项目，统一的 Dashboard、统一的域名管理、统一的分析面板——运维成本几乎为零。
+
+---
+
+## 五、Cloudflare 生态配套功能
+
+除了 Pages 和 Workers 本身，Cloudflare 提供了大量免费的配套功能，这才是真正让人离不开的理由：
+
+### 5.1 自动 DDoS 防护
+
+所有通过 Cloudflare 的流量都自动受到 DDoS 防护，不需要任何配置。即使你只是一个小博客，也能抵御大规模攻击。
+
+### 5.2 Web Analytics（网站分析）
+
+Cloudflare 提供免费的 Web Analytics，无需嵌入 JS 代码，直接在 Dashboard 查看：
+- 页面访问量 / 独立访客数
+- 来源国家分布
+- 热门页面排行
+- 带宽使用情况
+
+比 Google Analytics 更轻量，而且**不影响页面加载速度**。
+
+### 5.3 快捷域名管理
+
+在 CF Pages 项目中绑定域名非常简单：
+- 点击 **Custom domains → Add**
+- 如果 DNS 已在 Cloudflare，CNAME 记录自动创建
+- SSL 证书自动签发和续期
+- 整个过程不超过 1 分钟
+
+### 5.4 请求分析和 API 限流
+
+对于 Workers 项目，Cloudflare 提供：
+- **请求分析**：每个 Worker 的调用次数、延迟、错误率一目了然
+- **Rate Limiting**：可以配置 API 限流规则，防止滥用
+- **WAF 规则**：自定义防火墙规则，过滤恶意请求
+
+### 5.5 Workers 付费套餐（$5/月）
+
+免费套餐对大多数小项目已经足够，但如果你有稍大的 API 请求量，Workers Paid Plan 也非常划算：
+
+| 对比 | 免费套餐 | Workers Paid ($5/月) |
+| :-- | :-: | :-: |
+| **每日请求** | 100,000 | **无限** |
+| **CPU 时间** | 10ms / 请求 | 30ms / 请求 |
+| **KV 读取** | 100,000 / 天 | 10,000,000 / 月 |
+| **KV 写入** | 1,000 / 天 | 1,000,000 / 月 |
+| **D1 数据库** | 5GB | 5GB + 更多读写 |
+| **Durable Objects** | ❌ | ✅ |
+
+5 美元一个月，能跑无限请求、海量 KV 读写，比任何 VPS 都便宜，还自带全球 CDN 和 DDoS 防护。对于稍大一些的 API 服务来说简直是白给。
+
+> 💡 **总结一句话**：Cloudflare 生态好用又贴心还便宜，从建站到运维到安全一站式搞定。
+
+---
+
+## 六、绑定自定义域名
 
 默认的 `*.pages.dev` 域名虽然能用，但自定义域名更专业。
 
@@ -209,7 +286,7 @@ Cloudflare Pages 默认就是 HTTPS，而且自动签发和续期 SSL 证书，�
 
 ---
 
-## 五、域名购买省钱指南
+## 七、域名购买省钱指南
 
 ### 5.1 查询域名价格：TLD-List
 
@@ -295,7 +372,7 @@ Cloudflare Pages 默认就是 HTTPS，而且自动签发和续期 SSL 证书，�
 
 ---
 
-## 六、完整建站流程总结
+## 八、完整建站流程总结
 
 从零开始建站的最佳路径：
 
@@ -321,7 +398,7 @@ Cloudflare Pages 默认就是 HTTPS，而且自动签发和续期 SSL 证书，�
 
 ---
 
-## 七、常见问题
+## 九、常见问题
 
 ### Q: Cloudflare Pages 和 GitHub Pages 有什么区别？
 
