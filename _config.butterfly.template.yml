@@ -228,7 +228,7 @@ gitcalendar:
   #canvas：dom数少，但图像会发生模糊，自适应一般
   #svg：dom数多，图像清晰，自适应更佳
   user: EdNovas #这里填写你的github用户名
-  apiurl: github-calendar-api.vercel.app
+  apiurl: # 留空使用备用 API
   # 以下色调选择喜欢的一行保留即可。其余注释。
   # color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
   color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
@@ -1121,7 +1121,7 @@ inject:
     - <link rel="stylesheet" href="//at.alicdn.com/t/font_2440505_a5eo7su26z8.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script defer src="/live2d-widget/autoload.js"></script>
+    - <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0/dist/autoload.js"></script>
     - <script src = "/js/chatroom.js"></script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
     - <script src = "/js/smoothscrolling.js"></script>
     - <script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('setup',{'key':'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script>
