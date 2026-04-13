@@ -3412,6 +3412,11 @@ blockquote footer cite:before {
   margin: 0 auto;
   border-width: 0px;
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -3474,6 +3479,8 @@ blockquote footer cite:before {
 .gitcalendar-graph {
   padding: 15px 0 0;
   text-align: center;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .contrib-column {
   text-align: center;
@@ -3572,8 +3579,13 @@ h2.f4.text-normal.mb-3 {
 }
 .position-relative {
   width: 100%;
+  max-width: 100%;
   padding-left: 20px;
   padding-right: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 @media screen and (max-width: 650px) {
   .contrib-column {
