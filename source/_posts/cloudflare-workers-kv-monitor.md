@@ -5,7 +5,7 @@ categories:
   - - 杂
 date: 2026-03-05 14:39:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/cf-workers-monitor.png
+cover: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800
 #highlight_shrink: true
 ---
 

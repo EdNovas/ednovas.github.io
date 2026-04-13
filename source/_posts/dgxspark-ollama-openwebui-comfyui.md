@@ -5,7 +5,7 @@ categories:
   - - AI
 date: 2026-03-05 13:29:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/nvidia-dgx-spark-og.jpg
+cover: https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=800
 #highlight_shrink: true
 ---
 

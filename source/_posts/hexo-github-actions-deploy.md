@@ -5,7 +5,7 @@ categories:
   - - 杂
 date: 2026-03-05 14:23:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/hexo-github-actions.png
+cover: https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800
 #highlight_shrink: true
 ---
 

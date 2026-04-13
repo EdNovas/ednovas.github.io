@@ -5,7 +5,7 @@ categories:
   - - 杂
 date: 2026-03-10 16:19:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/cf-pages-deploy.png
+cover: https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800
 #highlight_shrink: true
 ---
 
