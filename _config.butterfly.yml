@@ -10,6 +10,7 @@ menu:
   主页 | Home: https://navigate.ednovas.xyz || fas fa-home
   随机 | Random: /random.html || fas fa-random
   目录 | Categories: /categories/ || fas fa-folder-open
+  标签 | Tags: /tags/ || fas fa-tags
   回忆 | Archives: /archives/ || fas fa-archive
   关于我 | About: /about/ || fa fa-user
   朋友圈 | Link: /link/ || fa fa-users
