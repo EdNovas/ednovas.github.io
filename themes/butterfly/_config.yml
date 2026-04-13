@@ -8,7 +8,7 @@
 
 menu:
   主页 | Home: https://navigate.ednovas.xyz || fas fa-home
-  随机 | Random: /random.html || fas fa-random
+  随机 | Random: /random/ || fas fa-random
   目录 | Categories: /categories/ || fas fa-folder-open
   回忆 | Archives: /archives/ || fas fa-archive
   关于我 | About: /about/ || fa fa-user
