@@ -8,10 +8,8 @@ date: 2021-04-27 10:17:45
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/wordpress-backup00.png
 #top: 2
-sticky: 1
 # highlight_shrink: true
 ---
-
 ## 简介
 
 WordPress是一个以PHP和MySQL为平台的自由开源的博客软件和内容管理系统。WordPress具有插件架构和模板系统。截至2018年4月，排名前1000万的网站中超过30.6%使用WordPress。WordPress是最受欢迎的网站内容管理系统。全球有大约30%的网站都是使用WordPress架设网站的。
@@ -28,9 +26,7 @@ wordpress也有相应的比较明显的缺点，那就是动态网站占用很�
 
 输入正确的IP,22端口，root和root密码，点击连接(ssh root@ipaddress -p 22)
 
-
 然后安装宝塔面板
-
 
 centos 安装
 
@@ -70,7 +66,6 @@ photo_2021-04-27_09-06-12.jpg
 
 进入面板进行安装
 
-
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-05-88.png)
 
 极力推荐使用LNMP
@@ -79,39 +74,29 @@ php版本请选择7.0+版本，phpmyadmin可以选择5.0
 
 如果机器配置较好，大于1H1G，可以选择最高版本
 
-
 我一般选择7.2或者7.3
-
 
 然后点击极速安装
 
-
 根据不同机器不同配置，安装时长不一
-
 
 1H1G机器大概安装需要10-15分钟
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-05-87.png)
 
-
 安装过程中会发现必须要求验证宝塔账户
 
-
 但是这样就必须要绑定身份证和手机号等，这不就暴露了搭建的~~黄色网站~~了吗
-
 
 所以我们选择[绕过](2021/04/04/btpanel/)
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-05-86.png)
 
-
 建议在面板设置中修改你的账号和密码
-
 
 面板端口想改就改，随便了，记得放行对应端口防火墙
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-05-85.png)
-
 
 ### 宝塔卸载命令
 
@@ -134,20 +119,15 @@ sh bt-uninstall.sh
 
 进入宝塔的软件商店，一键部署下
 
-
 第一个就是wordpress
-
 
 点击右边的一键部署
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-05-83.png)
 
-
 然后输入自己刚刚解析了的域名
 
-
 比如我的就是wordpress.ednovas.xyz
-
 
 然后数据库账户和密码一定要自己记得住的！
 
@@ -161,21 +141,17 @@ sh bt-uninstall.sh
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-05-81.png)
 
-
 这样就是部署完成了
 
 访问 http://wordpress.ednovas.xyz/index.php 应该就可以了
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-05-80.png)
 
-
 如果发现页面加载不出来，需要等待一会就可以了。或者直接后缀改成/wp-admin/setup-config.php
 
 比如我的就是http://wordpress.ednovas.xyz/wp-admin/setup-config.php
 
-
 进入这个页面
-
 
 选择语言
 
@@ -185,9 +161,7 @@ sh bt-uninstall.sh
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-03-73.png)
 
-
 然后这里就需要填入我们刚刚创建的数据库了
-
 
 数据库名和用户名是一样的，密码就是刚刚设置的密码，下面两项保持不变即可
 
@@ -197,14 +171,11 @@ sh bt-uninstall.sh
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-03-71.png)
 
-
 这里几个需要说明一下
 
 站点标题随意，你想把你网址叫啥就叫啥，支持中文
 
-
 用户名和密码就是你的wordpress面板管理员账户和密码
-
 
 这个比较重用，妥善保管
 
@@ -214,12 +185,9 @@ sh bt-uninstall.sh
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-03-70.png)
 
-
 然后就进入了登录页面
 
-
 输入上一步设置的管理员用户名和密码
-
 
 点击登录
 
@@ -233,13 +201,11 @@ sh bt-uninstall.sh
 
 由于宝塔是内置的wordpress，版本可能不是最新版本的
 
-
 建议升级一下wordpress
 
 点击升级
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-03-67.png)
-
 
 左边点击首页，就进入了管理页面的主页
 
@@ -257,12 +223,9 @@ sh bt-uninstall.sh
 
 选择一个主题安装并预览
 
-
 如果你觉得这些主题不够或者不满意
 
-
 还有更多付费主题和付费主题插件
-
 
 比如elementor等
 
@@ -272,9 +235,7 @@ sh bt-uninstall.sh
 
 更换主题
 
-
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-03-61.png)
-
 
 左侧栏有很多的主题相关设置，每个主题不一样，这里就不多做介绍了
 
@@ -292,23 +253,19 @@ sh bt-uninstall.sh
 
 wordpress最强大的就是他的插件功能
 
-
 点击安装插件
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-03-57.png)
 
-
 在这里可以搜索并且安装一些强大的插件
 
 安装前建议先看插件评论和安装次数，不能排除垃圾插件和恶意插件的存在
-
 
 比如安装elementor，搜索并且安装
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-03-56.png)
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-03-55.png)
-
 
 然后在插件中点击已安装的插件，启用
 
@@ -318,9 +275,7 @@ wordpress最强大的就是他的插件功能
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-04-27_10-03-53.png)
 
-
 还有几个重要的东西
-
 
 ### 文章
 

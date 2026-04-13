@@ -7,9 +7,7 @@ date: 2021-09-23 16:51:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/49561-assembly-language.jpg
 # highlight_shrink: true
-sticky: 5
 ---
-
 ## 安装java环境
 
 这个网上很多，就不再赘述了
@@ -24,7 +22,7 @@ https://courses.missouristate.edu/KenVollmar/mars/download.htm
 
 点击download mars下载jar文件后
 
-下载下来了一个叫`Mars4_5.jar`的文件
+下载下来了一个叫 `Mars4_5.jar`的文件
 
 cmd在jar文件包的目录输入
 
@@ -35,7 +33,6 @@ java -jar Mars4_5.jar
 回车，等一会就开启MARS了
 
 ## Assembly Language
-
 
 Assembly Language最大的特点就是基本思路不像python和java等一样的high level language一样的智能并且高效，他主要是能让机器识别的作用
 
@@ -54,35 +51,29 @@ MIPS 汇编语言是指MIPS处理器的汇编语言，MIPS是指 an acronym for 
 ## Register 寄存器
 
 - 在MIPS中有32个通用寄存器（Register）
+- Register 都是由 `$`符号开头的
+- 寄存器一般直接用对应的编号表示，比如 `$0`就是 `Register 1`， `$1`就是 `Register 2`，一直到 `$32`(一共就32个通用寄存器) 或者直接用对应的寄存器名称，例如：`$t1`， `$sp`
+- 对于乘法和除法分别有对应的两个寄存器 `$lo`, `$hi`
 
-- Register 都是由`$`符号开头的
-
-- 寄存器一般直接用对应的编号表示，比如`$0`就是 `Register 1`， `$1`就是`Register 2`，一直到 `$32`(一共就32个通用寄存器) 或者直接用对应的寄存器名称，例如：`$t1`， `$sp`
-
-- 对于乘法和除法分别有对应的两个寄存器`$lo`, `$hi`
-
-  - 对于以上二者，不存在直接寻址；必须要通过`mfhi(“move from hi”)`以及`mflo(“move from lo”)`分别来进行访问对应的内容
-
+  - 对于以上二者，不存在直接寻址；必须要通过 `mfhi(“move from hi”)`以及 `mflo(“move from lo”)`分别来进行访问对应的内容
   - 乘法：`HI` 存储32位高位， `LO`存储32位低位
-
   - 除法：`LO`存储结果，`HI`存储余数
-
 - 栈的走向是从高地址到低地址
 
 ### 32个Register
 
-|REGISTER|NAME|USAGE|
-|:----|:----|:----|
-|$0|$zero|常量0(constant value 0)|
-|$1|$at|保留给汇编器(Reserved for assembler)|
-|$2-$3|$v0 - $v1|函数调用返回值(values for results and expression evaluation)|
-|$4-$7|$a0-$a3|函数调用参数(arguments)|
-|$8-$15|$t0-$t7|暂时的(或随便用的)|
-|$16-$23|$s0-$s7|保存的(或如果用，需要SAVE/RESTORE的)(saved)|
-|$24-$25|$t8-$t9|暂时的(或随便用的)|
-|$28|$gp|全局指针(Global Pointer)|
-|$29|$sp|堆栈指针(Stack Pointer)|
-|$30|$fp|帧指针(Frame Pointer)|
+| REGISTER | NAME        | USAGE                                                        |
+| :------- | :---------- | :----------------------------------------------------------- |
+| $0       | $zero       | 常量0(constant value 0)                                      |
+| $1       | $at         | 保留给汇编器(Reserved for assembler)                         |
+| $2-$3    | $v0 - $v1 | 函数调用返回值(values for results and expression evaluation) |
+| $4-$7    | $a0-$a3   | 函数调用参数(arguments)                                      |
+| $8-$15   | $t0-$t7   | 暂时的(或随便用的)                                           |
+| $16-$23  | $s0-$s7   | 保存的(或如果用，需要SAVE/RESTORE的)(saved)                  |
+| $24-$25  | $t8-$t9   | 暂时的(或随便用的)                                           |
+| $28      | $gp         | 全局指针(Global Pointer)                                     |
+| $29      | $sp         | 堆栈指针(Stack Pointer)                                      |
+| $30      | $fp         | 帧指针(Frame Pointer)                                        |
 
 ## Byte bit word
 
@@ -146,23 +137,23 @@ add $10, $9, $9
 add $10, $10, $9
 ```
 
-分别表示把1这个值存储到`register 9`的位置
+分别表示把1这个值存储到 `register 9`的位置
 
-把`register 9`和`register 9`里面的值相加，放到`register 10`里面
+把 `register 9`和 `register 9`里面的值相加，放到 `register 10`里面
 
-`Register 10`里面的值加上`Register 9` 里面的值，存储到`Register 10`里面
+`Register 10`里面的值加上 `Register 9` 里面的值，存储到 `Register 10`里面
 
 而计算顺序的话，基本都是以第一个register为结果/输出，后面两个是运算，$y, $x, $z就如同 y=x+z 一样的 (这里的表述十分不严谨，只是体现一个运算基本思路)
 
-这里的`add`很好理解，就是add的意思，`addi`指的是`Add immediate`
+这里的 `add`很好理解，就是add的意思，`addi`指的是 `Add immediate`
 
 同样是add，
 
 > add adds the value in two registers
-> 
+>
 > addi adds an immediate value (constant) to the register
 
-Add是把两个register里的值相加，而addi是把一个`immediate value`，也就是一个常数加到register里面
+Add是把两个register里的值相加，而addi是把一个 `immediate value`，也就是一个常数加到register里面
 
 ### li && ori
 
@@ -211,13 +202,12 @@ $10: 0b 0100 0010 1000 0010
 
 Nor则是
 
-|a|b|out|
-|:----|:----|:----|
-|0|0|1|
-|0|1|0|
-|1|0|0|
-|1|1|0|
-
+| a | b | out |
+| :- | :- | :-- |
+| 0 | 0 | 1   |
+| 0 | 1 | 0   |
+| 1 | 0 | 0   |
+| 1 | 1 | 0   |
 
 ### sll && srl && sra
 
@@ -271,12 +261,12 @@ loop:
 	b loop
 
 exit:
-	nop	
+	nop
 ```
 
 一个简单的loop
 
-`beqz`是指 `Branch Equal to Zero` 也就是如果这个$8的值是0的话，就跳转到`exit`这里
+`beqz`是指 `Branch Equal to Zero` 也就是如果这个$8的值是0的话，就跳转到 `exit`这里
 
 `beq`类似beqz，不过这里不是等于0，而是等于另一个register。如下例子
 
@@ -285,7 +275,6 @@ beq $t0, $t1, Target
 # 意思就是 branch to Target if $t0 == $t1
 # 如果 register t0 等于 t1的话，那么就跳转到target那里去（比如loop）
 ```
-
 
 `b loop`: The b instruction for the ARM CPU is nearly the same as the jmp instruction for the x86 CPU: A jump instruction
 
@@ -311,8 +300,7 @@ bne $10, $0, exit
 
 `lb` load byte
 
-`lbu` load byte unsigned 
-
+`lbu` load byte unsigned
 
 #### Example
 
@@ -399,7 +387,7 @@ nor $12, $21, $7
 ```
 
 ```
-beq $9, $8, label_A	
+beq $9, $8, label_A
 
 # beq = I-type
 # opcode    rs    rt    immediate
@@ -422,10 +410,10 @@ beq $9, $8, label_A
 
 bob:
 	.word 212
-	
+
 connie:
 	.word 40122
-	
+
 .text
 	# Store the sum of integer
 	# at 'bob' and integer at
@@ -435,7 +423,7 @@ connie:
 	# in a 'lw' instruction
 	# (ie must use register and
 	# an offset of zero).
-	
+
 #lw $8, bob   # don't do this (just a usually way we would do it but incorrect)
 #lw $9, connie
 #add $10, $8, $9

@@ -7,10 +7,8 @@ date: 2021-10-01 10:51:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/algorithms_landlord-FINAL.jpg
 # highlight_shrink: true
-sticky: 4
 password: 123
 ---
-
 ## Cut property
 
 For any cut C of the graph, if the weight of an edge e in the cut-set of C is strictly smaller than the weights of all other edges of the cut-set of C, then this edge belongs to all MSTs of the graph.
@@ -39,6 +37,7 @@ W(T')=W(T)-W(e')+w(e) < W(T)
 
 A = ∅
 for j = 1 -> |v|-1
+
 - Find a cut (S,V/S) st. no deges in A cross cut
 - Add min weight crossing edge for that cut [A<-A∪{e}]
 
@@ -92,14 +91,13 @@ while |A| < |V| - 1
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-01_10-51-45.png)
 
-
 ## Boruvka's Algorithm
 
-The algorithm begins by finding the minimum-weight edge incident to each vertex of the graph, and adding all of those edges to the forest. 
+The algorithm begins by finding the minimum-weight edge incident to each vertex of the graph, and adding all of those edges to the forest.
 
-Then, it repeats a similar process of finding the minimum-weight edge from each tree constructed so far to a different tree, and adding all of those edges to the forest. 
+Then, it repeats a similar process of finding the minimum-weight edge from each tree constructed so far to a different tree, and adding all of those edges to the forest.
 
-Each repetition of this process reduces the number of trees, within each connected component of the graph, to at most half of this former value, so after logarithmically many repetitions the process finishes. 
+Each repetition of this process reduces the number of trees, within each connected component of the graph, to at most half of this former value, so after logarithmically many repetitions the process finishes.
 
 When it does, the set of edges it has added forms the minimum spanning forest.
 
@@ -109,7 +107,7 @@ When it does, the set of edges it has added forms the minimum spanning forest.
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-01_10-56-55.png)
 
-### Proof 
+### Proof
 
 Optional Material: http://www.csee.wvu.edu/~ksmani/courses/fa01/random/lecnotes/lec11/MST.pdf
 
@@ -142,17 +140,17 @@ Initially MST is empty. Every vertex is singe component as highlighted in blue c
 
 For every component, find the cheapest edge that connects it to some other component.
 
-|Component         |       Cheapest Edge that connects it to some other component|
-|:----|:----|
-|  {0}               |            0-1|
-|  {1}               |            0-1|
-|  {2}               |            2-8|
-|  {3}               |            2-3|
-|  {4}               |            3-4|
-|  {5}               |            5-6|
-|  {6}              |             6-7|
-|  {7}                |           6-7|
-|  {8}               |            2-8 |
+| Component | Cheapest Edge that connects it to some other component |
+| :-------- | :----------------------------------------------------- |
+| {0}       | 0-1                                                    |
+| {1}       | 0-1                                                    |
+| {2}       | 2-8                                                    |
+| {3}       | 2-3                                                    |
+| {4}       | 3-4                                                    |
+| {5}       | 5-6                                                    |
+| {6}       | 6-7                                                    |
+| {7}       | 6-7                                                    |
+| {8}       | 2-8                                                    |
 
 The cheapest edges are highlighted with green color. Now MST becomes {0-1, 2-8, 2-3, 3-4, 5-6, 6-7}.
 
@@ -164,18 +162,17 @@ After above step, components are { {0,1}, {2,3,4,8}, {5,6,7} }. The components a
 
 We again repeat the step, i.e., for every component, find the cheapest edge that connects it to some other component.
 
-|Component         |       Cheapest Edge that connects it to some other component|
-|:----|:----|
-|  {0,1}                |        1-2 (or 0-7)|
- | {2,3,4,8}             |       2-5|
-  |{5,6,7}             |         2-5|
+| Component | Cheapest Edge that connects it to some other component |
+| :-------- | :----------------------------------------------------- |
+| {0,1}     | 1-2 (or 0-7)                                           |
+| {2,3,4,8} | 2-5                                                    |
+| {5,6,7}   | 2-5                                                    |
 
 The cheapest edges are highlighted with green color. Now MST becomes {0-1, 2-8, 2-3, 3-4, 5-6, 6-7, 1-2, 2-5}
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/14.jpg)
 
 At this stage, there is only one component {0, 1, 2, 3, 4, 5, 6, 7, 8} which has all edges. Since there is only one component left, we stop and return MST.
-
 
 > https://www.geeksforgeeks.org/boruvkas-algorithm-greedy-algo-9/
 
@@ -193,7 +190,7 @@ Join two subsets into a single subset.
 
 In this post, we will discuss the application of Disjoint Set Data Structure. The application is to check whether a given graph contains a cycle or not.
 
-Union-Find Algorithm can be used to check whether an undirected graph contains cycle or not. Note that we have discussed an algorithm to detect cycle. This is another method based on Union-Find. This method assumes that the graph doesn’t contain any self-loops. 
+Union-Find Algorithm can be used to check whether an undirected graph contains cycle or not. Note that we have discussed an algorithm to detect cycle. This is another method based on Union-Find. This method assumes that the graph doesn’t contain any self-loops.
 
 > https://www.geeksforgeeks.org/union-find/
 
@@ -240,7 +237,6 @@ let v be some node
 (3) Let S_j be size(# nodes) in the tree of v after j label changes (root changed)
 (4) S_j >= 2 S_(j-1) >= 2*2 S_(j-2) >= ... 2^j *1 --> 2^j <= n <--> j <= log_2(n)
 
-
 ### W-Q-U Runtime
 
 FIND O(logn)
@@ -250,7 +246,7 @@ Given mixture m,n of connected and union operations, runtime = O(m*log(n))
 
 ## Union-Rank
 
-The idea is to always attach smaller depth tree under the root of the deeper tree. This technique is called union by rank. The term rank is preferred instead of height because if path compression technique (we have discussed it below) is used, then rank is not always equal to height. Also, size (in place of height) of trees can also be used as rank. Using size as rank also yields worst case time complexity as O(Logn) 
+The idea is to always attach smaller depth tree under the root of the deeper tree. This technique is called union by rank. The term rank is preferred instead of height because if path compression technique (we have discussed it below) is used, then rank is not always equal to height. Also, size (in place of height) of trees can also be used as rank. Using size as rank also yields worst case time complexity as O(Logn)
 
 ```
 Let us see the above example with union by rank
@@ -268,20 +264,20 @@ Do Union(1, 2)
 0    2
 
 Do Union(2, 3)
-    1    
+    1  
  /  |  \
 0   2   3
 ```
 
 ### Path Compression
 
-The second optimization to naive method is Path Compression. The idea is to flatten the tree when find() is called. 
+The second optimization to naive method is Path Compression. The idea is to flatten the tree when find() is called.
 
-When find() is called for an element x, root of the tree is returned. 
+When find() is called for an element x, root of the tree is returned.
 
-The find() operation traverses up from x to find root. 
+The find() operation traverses up from x to find root.
 
-The idea of path compression is to make the found root as parent of x so that we don’t have to traverse all intermediate nodes again. 
+The idea of path compression is to make the found root as parent of x so that we don’t have to traverse all intermediate nodes again.
 
 If x is root of a subtree, then path (to root) from all nodes under x also compresses.
 
@@ -307,24 +303,23 @@ that when find() is called next time for 1, 2 or 3, the path to root is reduced.
     0           7    8  1   2
 ```
 
-The two techniques complement each other. 
+The two techniques complement each other.
 
-The time complexity of each operation becomes even smaller than O(Logn). 
+The time complexity of each operation becomes even smaller than O(Logn).
 
-In fact, amortized time complexity effectively becomes small constant. 
-
+In fact, amortized time complexity effectively becomes small constant.
 
 > https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/
 
 ## BFS (solution for unweighted graph)
 
-Breadth First Traversal (or Search) for a graph is similar to Breadth First Traversal of a tree. 
+Breadth First Traversal (or Search) for a graph is similar to Breadth First Traversal of a tree.
 
-The only catch here is, unlike trees, graphs may contain cycles, so we may come to the same node again. 
+The only catch here is, unlike trees, graphs may contain cycles, so we may come to the same node again.
 
-To avoid processing a node more than once, we use a boolean visited array. 
+To avoid processing a node more than once, we use a boolean visited array.
 
-For simplicity, it is assumed that all vertices are reachable from the starting vertex. 
+For simplicity, it is assumed that all vertices are reachable from the starting vertex.
 
 ### Example
 
@@ -343,7 +338,6 @@ For simplicity, it is assumed that all vertices are reachable from the starting 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/bfs10.png)
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/bfs11.png)
-
 
 ```
 procedure BFS(G, root) is
@@ -364,18 +358,17 @@ procedure BFS(G, root) is
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-04_13-32-41.png)
 
-
 ## Weighted DAG (Directed Acyclic Graph)
 
-For a general weighted graph, we can calculate single source shortest distances in O(VE) time using Bellman–Ford Algorithm. 
+For a general weighted graph, we can calculate single source shortest distances in O(VE) time using Bellman–Ford Algorithm.
 
-For a graph with no negative weights, we can do better and calculate single source shortest distances in O(E + VLogV) time using Dijkstra’s algorithm. 
+For a graph with no negative weights, we can do better and calculate single source shortest distances in O(E + VLogV) time using Dijkstra’s algorithm.
 
 We can calculate single source shortest distances in O(V+E) time for DAGs. The idea is to use Topological Sorting.
 
-We initialize distances to all vertices as infinite and distance to source as 0, then we find a topological sorting of the graph. 
+We initialize distances to all vertices as infinite and distance to source as 0, then we find a topological sorting of the graph.
 
-Topological Sorting of a graph represents a linear ordering of the graph (See below, figure (b) is a linear representation of figure (a) ). 
+Topological Sorting of a graph represents a linear ordering of the graph (See below, figure (b) is a linear representation of figure (a) ).
 
 Once we have topological order (or linear representation), we one by one process all vertices in topological order. For every vertex being processed, we update distances of its adjacent using distance of current vertex.
 
@@ -411,15 +404,14 @@ The vertices u and v stand the neighbors in the graph and d[u] and d[v] stand th
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1_GuDzLpfpwY2_gZZRqkq9hg.png)
 
-Now we know we can reach the vertex u from the starting vertex S through two vertices and that path costs d[u]. 
+Now we know we can reach the vertex u from the starting vertex S through two vertices and that path costs d[u].
 
 Also, we can reach the vertex v from the starting vertex S through four vertices and that path costs d[v].
-Here, edge relaxation updates d[v] to d[u]+w(u,v) when d[u]+w(u,v) is less than d[v]. 
+Here, edge relaxation updates d[v] to d[u]+w(u,v) when d[u]+w(u,v) is less than d[v].
 
 In other words, it updates the current reaching cost to the vertex v (d[v]) to the lower reaching cost (d[u]+w(u,v)).
 
-The reason why it updates the cost is that the path through the vertex u can be shorter because the reaching cost of the path through the vertex u will be lower than the cost of the current path. 
-
+The reason why it updates the cost is that the path through the vertex u can be shorter because the reaching cost of the path through the vertex u will be lower than the cost of the current path.
 
 Actually, the algorithms for the shortest paths problem solve the problem by repeatedly using the edge relaxation.
 
@@ -466,7 +458,6 @@ Actually, the algorithms for the shortest paths problem solve the problem by rep
 ### Runtime
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-04_13-30-46.png)
-
 
 ### Claim
 
@@ -901,7 +892,6 @@ D_ij^(k) - restrict intermed vertices to the set {1,2,...,k}
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-01_18-29-05.png)
 
 ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-01_18-29-55.png)
-
 
 ## Rabin-Karp analysis
 
