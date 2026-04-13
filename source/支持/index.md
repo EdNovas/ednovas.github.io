@@ -6,45 +6,13 @@ categories:
   - - uncategorized
 date: 2020-12-26 17:40:15
 ---
-
 ## 打赏支持
 
-如果你想支持EdNovas可以通过以下方式打赏。
+如果你想支持EdNovas可以购买EdNovas云机场，在支持博主的同时也可以有节点使用。
 
-USDT(TRC20):
+[https://ednovas.me](https://ednovas.me)
 
-```
-TQ7zVyrxPCwFj7qkkKVsXjt5QNjomKGq8u
-```
+EdNovas云: 高性价比，节点覆盖80+国家，IEPL专线中转，多地区奈飞迪士尼等流媒体解锁
 
-ETH:
+![EdNovas云](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png)
 
-```
-0x17a6E2777B1E90240616FC6f14C916B3028Fb259
-```
-
-BTC:
-
-```
-3BVRnt1s7K5RJ8xbopP7jRBYuL8JC7qCWr
-```
-
-LTC:
-
-```
-LQTu2hWc2JRvcXX47U1VVCN5jsVku3hCAb
-```
-
-<!-- 微信QQ支付宝三合一：
-
-<img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-13_12-21-15.png" height=40% width=40% /> -->
-
-
-<!-- 微信：
-
-<img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/IMG_20210114_081337.JPG" height=60% width=60% />
-
-
-支付宝：
-
-<img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/IMG_20210114_081257.JPG" height=60% width=60% /> -->

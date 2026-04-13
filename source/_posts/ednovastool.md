@@ -8,13 +8,11 @@ top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/bash-logo.jpg
 sticky: 1
 ---
-
 # EdNovas的Toolbox工具箱
 
 ## 脚本地址
 
 https://github.com/wdm1732418365/vpstoolbox
-
 
 ## 简介
 
@@ -30,7 +28,6 @@ https://github.com/wdm1732418365/vpstoolbox
 ```
 wget -N https://cdn.jsdelivr.net/gh/ednovas/vpstoolbox@main/ednovastool.sh && chmod +x ednovastool.sh && ./ednovastool.sh
 ```
-
 
 此整合脚本整体借鉴自[御坂的Linux VPS工具箱](https://github.com/Misaka-blog/MisakaLinuxToolbox)
 
@@ -80,7 +77,6 @@ v 1.0.0 创建了该脚本
 
 ![Snipaste_2021-12-31_22-26-12](https://user-images.githubusercontent.com/56779951/147845173-bf7f7d92-2da6-4ab7-80fd-90e264fe6c75.png)
 
-
 screen后台运行管理脚本：https://github.com/Misaka-blog/screenManager
 
 acme.sh一键申请证书脚本：https://github.com/Misaka-blog/acme1key
@@ -88,17 +84,3 @@ acme.sh一键申请证书脚本：https://github.com/Misaka-blog/acme1key
 青龙面板：https://blog.csdn.net/weixin_42565036/article/details/117569495
 
 青龙教程合集：https://www.notion.so/1c598629675145988b43a37998a1604a
-
-## 打赏
-
-USDT(TRC20):
-`TQ7zVyrxPCwFj7qkkKVsXjt5QNjomKGq8u`
-
-ETH:
-`0x17a6E2777B1E90240616FC6f14C916B3028Fb259`
-
-BTC:
-`3BVRnt1s7K5RJ8xbopP7jRBYuL8JC7qCWr`
-
-LTC:
-`LQTu2hWc2JRvcXX47U1VVCN5jsVku3hCAb`
