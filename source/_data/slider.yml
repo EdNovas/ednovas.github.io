@@ -5,6 +5,12 @@
 #  description: 置顶文章描述
 #  button: 手机端按钮内容
 # 示例如下
+- cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/33-332141_vector-illustration-of-romance-love-heart-symbol-poster.png
+  timeline: '2020-12-26'
+  link: /支持/
+  title: 打赏支持
+  description: 你的打赏就是我更新的绝对动力！
+  button: 详情
 - cover: https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950
   timeline: '2025-12-31'
   link: /2025/12/31/dongguatv-enhanced/
@@ -35,9 +41,4 @@
   title: Cloudflare Pages 静态网站部署
   description: Cloudflare Pages + Workers实现静态网站一键部署、自定义域名与反向代理
   button: 详情
-- cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/33-332141_vector-illustration-of-romance-love-heart-symbol-poster.png
-  timeline: '2020-12-26'
-  link: /支持/
-  title: 打赏支持
-  description: 你的打赏就是我更新的绝对动力！
-  button: 详情
+
