@@ -5,33 +5,39 @@
 #  description: 置顶文章描述
 #  button: 手机端按钮内容
 # 示例如下
+- cover: https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950
+  timeline: '2025-12-31'
+  link: /2025/12/31/dongguatv-enhanced/
+  title: E视界 (DonguaTV Enhanced Edition)
+  description: 基于Vue 3和Node.js开发的增强版影视聚合播放器，支持广告过滤与多设备同步
+  button: 详情
+- cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/bash-logo.jpg
+  timeline: '2022-01-02'
+  link: /2022/01/02/ednovastool/
+  title: EdNovas VPS一键脚本
+  description: 一键部署VPS常用服务，支持多种协议和工具的自动化安装与配置
+  button: 详情
+- cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/prompt-engineering.png
+  timeline: '2026-03-05'
+  link: /2026/03/05/prompt-engineering-guide/
+  title: Prompt Engineering 提示词工程
+  description: 从入门到精通，掌握AI对话与编程的完整提示词工程指南
+  button: 详情
+- cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/nvidia-dgx-spark-og.jpg
+  timeline: '2026-03-05'
+  link: /2026/03/05/dgxspark-ollama-openwebui-comfyui/
+  title: 桌面级AI部署 Ollama + Open WebUI + ComfyUI
+  description: 使用DGX Spark等桌面级硬件部署本地大语言模型和AI绘图完整指南
+  button: 详情
+- cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/cf-pages-deploy.png
+  timeline: '2026-03-10'
+  link: /2026/03/10/cloudflare-pages-deploy-domain-guide/
+  title: Cloudflare Pages 静态网站部署
+  description: Cloudflare Pages + Workers实现静态网站一键部署、自定义域名与反向代理
+  button: 详情
 - cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/33-332141_vector-illustration-of-romance-love-heart-symbol-poster.png
   timeline: '2020-12-26'
   link: /支持/
   title: 打赏支持
   description: 你的打赏就是我更新的绝对动力！
-  button: 详情
-- cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp
-  timeline: '2020-12-18'
-  link: /2020/12/18/freesubscribes/
-  title: 免费Clash订阅链接(持续更新)
-  description: 请合理合法使用，请勿发表任何不法言论或参与任何违法犯罪行为！
-  button: 详情
-- cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp
-  timeline: '2020-11-29'
-  link: /2020/11/29/clash-windows/
-  title: Clash电脑端使用说明
-  description: Clash电脑端的详细使用说明和一些Q&A。请合理合法使用，请勿发表任何不法言论或参与任何违法犯罪行为！
-  button: 详情
-- cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp
-  timeline: '2021-03-11'
-  link: /2021/03/11/vpnandjc/
-  title: VPN和机场比较
-  description: VPN和机场比较，请勿发表任何不法言论或参与任何违法犯罪行为！
-  button: 详情
-- cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/digital-fingerprint.jpg
-  timeline: '2021-01-20'
-  link: /2021/01/20/browsertrack/
-  title: 浏览器指纹追踪
-  description: 浏览器指纹追踪和隐私保护
   button: 详情
