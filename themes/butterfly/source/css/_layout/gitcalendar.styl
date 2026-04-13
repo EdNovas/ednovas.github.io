@@ -8,6 +8,9 @@ if hexo-config('gitcalendar.enable')
     margin 0 auto
     border-width 0px
     width 100%
+    max-width 100%
+    overflow hidden
+    box-sizing border-box
     display flex
     display -webkit-flex
     justify-content center
@@ -48,6 +51,8 @@ if hexo-config('gitcalendar.enable')
   .gitcalendar-graph
     padding 15px 0 0
     text-align center
+    overflow-x auto
+    overflow-y hidden
 
   .contrib-column
     text-align center
@@ -142,8 +147,11 @@ if hexo-config('gitcalendar.enable')
 
   .position-relative
     width 100%
+    max-width 100%
     padding-left 20px
     padding-right 20px
+    box-sizing border-box
+    overflow hidden
 
   @media screen and (max-width: 650px)
     .contrib-column
