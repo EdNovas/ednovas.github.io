@@ -30,6 +30,14 @@
       link: https://github.com/aiboboxx/v2rayfree
       avatar: https://gravatar.loli.net/avatar/8b531bfbfc7e7174c204c41b2083d1d0?d=monsterid&v=1.4.18
       descr: 免费公益 v2ray 机场节点订阅每日更新
+    - name: 公益 v2ray 节点订阅
+      link: https://www.v2rayfree.eu.org/
+      avatar: https://www.v2rayfree.eu.org/images/avatar.png
+      descr: 免费公益v2ray节点订阅
+    - name: 免费 Clash 节点
+      link: https://clashgithub.com/
+      avatar: https://clashgithub.com/wp-content/themes/modown/static/img/logo.png
+      descr: 免费公益SSR/V2ray/Shadowrocket/Clash节点/小火箭订阅链接|科学上网|免费梯子
 - class_name: 朋友
   class_desc: 值得推荐的博客
   link_list:
@@ -45,46 +53,22 @@
       link: https://www.blueskyxn.com/
       avator: https://p.pstatp.com/origin/pgc-image/95ede86d47174da1bbf576da8e47f431
       descr: SKYのBlog：一个IT打工人&老二刺螈&老游戏佬的博客
-    - name: Sabrina的万事屋
-      link: https://merlinblog.xyz/
-      avatar: https://merlinblog.xyz/usr/uploads/2020/07/1443918516.jpg
-      descr: Sabrina的万事屋
     - name: 山葵酱部落格
       link: https://wasabi.fun/
       avatar: https://wasabi-images.oss-cn-beijing.aliyuncs.com/fun/logo.jpg
       descr: 一个搞机女的日常
-    - name: 末晨的小站
-      link: https://blog.mochen.one/
-      avatar: https://blog.mochen.one/upload/2022/11/%E4%B8%8B%E8%BD%BD.webp
-      descr: 末晨的小站
     - name: 破晓
       link: https://poxiao.tk/
       avatar: https://poxiao.tk/img/bg/avatar.webp
       descr: 日拱一卒，功不唐捐
-    - name: 瞬間の筆記
-      link: https://hikki.site
-      descr: 喜欢的东西就努力去追求，万一成功了呢！
-      avatar: https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/202204.png
     - name: 浮云翩迁之间
       link: https://blognas.hwb0307.com
       descr: 百代繁华一朝都，谁非过客；千秋明月吹角寒，花是主人。
       avatar: https://blognas.hwb0307.com/logo.jpg
-    - name: 开心驿站
-      link: https://www.kxyz.eu.org/
-      descr: steam 游戏交流中心
-      avatar: https://www.kxyz.eu.org/wp-content/uploads/avatar.png
     - name: 零域
       link: https://0skyu.cn/
       descr: Pin Young 的笔记小屋
       avatar: https://0skyu.cn/img/1.jpg
-    - name: 叶清风的学习笔记
-      link: https://www.owo233.xyz/
-      avatar: https://gravatar.loli.net/avatar/4398eef8b812287d777a4377505ebd0f?d=monsterid&v=1.4.14
-      descr: 是博客呢。OwO
-    - name: 呆逼の博客
-      link: https://daibi-mua.github.io/
-      avatar: https://cdn.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/logo.png
-      descr: 一个初中生的博客
     - name: Yuan_Tuo的小站
       link: https://imwcr.cn/
       avatar: https://imwcr.cn/resources/img/headimg.jpg
