@@ -2,7 +2,6 @@
 title: 关于我 | About
 date: 2022-01-02 22:04:54
 ---
-
 ## EdNovas
 
 英文本名 Eddie 或者 Ed 。Nova 意为新星，是一种白矮星，是激变变星的一类，其吸积在表面的氢发生剧烈爆炸。它们原本都很暗，难以被发现，突然爆发增亮，被认为是新产生的恒星，因此而得名。同时也是博主喜爱的星际争霸/风暴英雄角色名。加一个 s 是为了让名字更男性化些，译为 “诺瓦斯”。合为 EdNovas
@@ -11,11 +10,11 @@ date: 2022-01-02 22:04:54
 
 ## 兴趣
 
-什么都有兴趣也什么都不精通。游泳、篮球、羽毛球、手风琴、吉他、编程、手工、足球、飞盘、骑自行车、摄影、剪辑、设计、听音乐、国际象棋、中国象棋、魔方、游戏、绘画 等等。可以说除了写的一手“狗爬字体”以外，琴棋画均有所涉及。
+什么都有兴趣也什么都不精通。游泳、篮球、羽毛球、手风琴、吉他、编程、手工、足球、飞盘、骑自行车、摄影、剪辑、设计、听音乐、国际象棋、魔方、游戏、绘画、划桨板、台球、桌游 等等。
 
 ## 本职工作
 
-加拿大在校大学生，Computer Science专业。十八线博客博主。
+加拿大在校大学生，计算机相关专业。十八线博客博主。
 
 ## 感情状态
 
@@ -31,21 +30,11 @@ Spotify的一些歌单：
 
 <iframe src="https://open.spotify.com/embed/playlist/3w5rcClLKTaRAzHHSSf5Bl" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-<iframe src="https://open.spotify.com/embed/playlist/7kzEpUn11YSddmTU2aDjfR" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4sWSpwq3LiO" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-<iframe src="https://open.spotify.com/embed/playlist/3mzLlLSyzn6Peaox5fKw7X" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-Spotify 2021歌单：
-
-<iframe src="https://open.spotify.com/embed/playlist/5tqaiNxUOFDuUnsyMjwqXO" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
 ## 游戏
 
 不玩吃鸡王者LOL DOTA等主流游戏，更喜欢一些小众游戏。
 
-目前沉迷于 Supercell 的游戏，Blizzard，月圆之夜，world flipper，steam 部分单机休闲游戏，epic 白嫖行动（白嫖一直进行，下载从未开始）。
+目前沉迷于 Blizzard，steam 部分单机休闲游戏，epic 白嫖行动（白嫖一直进行，下载从未开始）。
 
 ## Youtuber
 

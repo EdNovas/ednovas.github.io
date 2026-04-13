@@ -9,8 +9,6 @@ tags:
   - Vue
   - Node.js
 categories:
-  - 编程
-  - 软件
   - 网站
 cover: https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
