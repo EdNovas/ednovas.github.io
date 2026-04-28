@@ -20,7 +20,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-cover.png
 
 # AWS 使用教程
 
-> 本教程包含两部分内容：**AWS 当入口教程** 和 **AWS 小助理使用教程**。请按照顺序操作，图片看不清可以点击放大。
+> 本教程包含两部分内容：**AWS 当入口教程** 和 **AWS 小助理使用教程**。请按照顺序操作。
 
 ---
 
