@@ -15,12 +15,12 @@ keywords:
   - DDNS
   - Cloudflare
 description: AWS 小助理使用教程 & AWS 当入口教程，包含完整的配置步骤和注意事项。
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/awslogo-image.webp
+cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-cover.png
 ---
 
 # AWS 使用教程
 
-> 本教程包含两部分内容：**AWS 小助理使用教程** 和 **AWS 当入口教程**。请按照顺序操作，图片看不清可以点击放大。
+> 本教程包含两部分内容：**AWS 当入口教程** 和 **AWS 小助理使用教程**。请按照顺序操作，图片看不清可以点击放大。
 
 ---
 
@@ -48,13 +48,23 @@ AWS 当入口需要准备 **两个脚本**：
 
 **第一步**：打开你的 [Cloudflare](https://dash.cloudflare.com/) 控制台。
 
-**第二步**：点击右上角的头像 → **我的个人资料** → **API 令牌**。
+**第二步**：点击右上角的头像 → **配置文件** → **API 令牌**。
 
 **第三步**：找到 **Global API Key**，点击查看并复制。
 
-![Cloudflare API 令牌页面](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Aspose.Words.41a3cbd2-c2b8-4366-b21d-badce552e761.001.png)
+{% note warning %}
+**注意**：是第一个 **Global API Key**，别弄错了！不是 Origin CA Key。
+{% endnote %}
 
-### 1.4 配置 DDNS 脚本
+![获取 Cloudflare Global API Key](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-entry-image1.png)
+
+### 1.4 获取 NY 面板入口安装脚本
+
+在 NY 面板的设备列表中，找到你的亚马逊入口节点，点击 **对接** → **复制在线安装命令（海外主线路）**。
+
+![NY 面板复制海外主线路安装命令](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-entry-image0.png)
+
+### 1.5 配置 DDNS 脚本
 
 DDNS 脚本格式如下：
 
@@ -70,7 +80,7 @@ bash <(curl -sSL https://ddns.8245454.xyz/aws.sh) --install-cron 123456789@qq.co
 
 > ⚠️ 将上面的邮箱、API Key、域名替换为你自己的真实信息。
 
-### 1.5 配置 NY 入口脚本
+### 1.6 配置 NY 入口脚本
 
 NY 入口脚本示例：
 
@@ -80,7 +90,7 @@ bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodecli
 
 > 将脚本中的 token（`-t` 后面的值）和 URL（`-u` 后面的值）替换为你自己的。
 
-### 1.6 完成对接
+### 1.7 完成对接
 
 将改好的 **DDNS 脚本** 和 **NY 入口脚本** 一起发给租机客服，由客服帮你完成对接即可。
 
@@ -107,6 +117,12 @@ bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodecli
 - 可以**手动更换一下 IP**，然后其他操作不需要，再去看 Cloudflare 的 IP 变了没有。
 - AWS 小助理有点 Bug，启动过程中可能会提示「AWS 接口错误」或「余额不足」，**不用管**，忽略就行，多刷新网页、多操作几次即可。
 {% endnote %}
+
+下面两张图就是常见的报错提示，**忽略即可**：
+
+![AWS 接口错误提示（不用管）](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-assistant-1.png)
+
+![用户余额不足提示（不用管）](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-assistant-2.png)
 
 ### 2.3 开机脚本说明
 
@@ -143,6 +159,14 @@ printf "\\ny\\n\\n" |bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-in
 bash <(curl -L -s www.hlspeed.cc/bbr/123.sh)
 ```
 
+下图是完整脚本示例，**红框内是依赖部分（不用动）**，红框外是你需要修改的部分：
+
+![完整开机脚本示例](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-assistant-3.png)
+
+下图标注了 **DDNS 脚本中可以修改的参数**，注意邮箱、密钥、域名前后都带一个空格：
+
+![DDNS 脚本参数说明](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-assistant-4.png)
+
 **脚本各部分说明**：
 
 | 部分 | 说明 | 是否必须 |
@@ -170,15 +194,45 @@ bash <(curl -L -s www.hlspeed.cc/bbr/123.sh)
 
 **如果你是改了 DDNS 的 CF 邮箱/密钥/域名**，按照以下步骤操作即可：
 
-1. 修改开机脚本中的对应参数
-2. 保存脚本
-3. 在 AWS 小助理中启动实例
-4. 等待实例启动完成
-5. 检查 Cloudflare 的 DNS 记录是否已自动更新
+---
 
-> 改完以后，就按照下图启动就行了，按照顺序来：
+**第一步：先停止机器**
 
-![操作步骤示意图](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Picture5.png)
+在 AWS 小助理中找到你的实例，点击右侧的三个点菜单 → **停止**。
+
+![第一步：停止机器](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-assistant-5.png)
+
+---
+
+**第二步：编辑开机脚本**
+
+机器停止后，点击三个点菜单 → **开机脚本**，进入脚本编辑页面。
+
+![第二步：编辑开机脚本](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-assistant-6.png)
+
+---
+
+**第三步：修改脚本内容**
+
+在开机脚本编辑器中，**选中部分是设置 SSH 登录和 Root 密码的代码，不用动**。下面是用户自己的脚本，可以修改。
+
+![第三步：修改脚本内容](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-assistant-7.png)
+
+---
+
+**第四步：启动机器**
+
+修改完开机脚本后，点击三个点菜单 → **启动**。
+
+![第四步：启动机器](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-assistant-8.png)
+
+---
+
+**第五步：重装镜像**
+
+最后点击三个点菜单 → **管理镜像** → **重装镜像** 即可完成。
+
+![第五步：重装镜像](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-assistant-9.png)
 
 ---
 
