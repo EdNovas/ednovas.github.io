@@ -1186,7 +1186,7 @@ CDN:
   lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
   instantpage: https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js
   typed: https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js
-  pangu: https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
+  pangu: https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js
 
   # photo
   fancybox_css: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css
