@@ -1,3 +1,5 @@
+// Wrapped in IIFE to scope live2d_path and avoid duplicate declaration errors on Pjax
+(function() {
 // 注意：live2d_path 参数应使用绝对路径
 //const live2d_path = "https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
 const live2d_path = "/live2d-widget/";
@@ -62,3 +64,5 @@ console.log(`
                   ﾄ-,/  |___./
                   'ｰ'    !_,.:
 `);
+})();
+
