@@ -23,19 +23,19 @@
   title: EdNovas VPS一键脚本
   description: 一键部署VPS常用服务，支持多种协议和工具的自动化安装与配置
   button: 详情
-- cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/prompt-engineering.png
+- cover: https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800
   timeline: '2026-03-05'
   link: /2026/03/05/prompt-engineering-guide/
   title: Prompt Engineering 提示词工程
   description: 从入门到精通，掌握AI对话与编程的完整提示词工程指南
   button: 详情
-- cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/nvidia-dgx-spark-og.jpg
+- cover: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800
   timeline: '2026-03-05'
   link: /2026/03/05/dgxspark-ollama-openwebui-comfyui/
   title: 桌面级AI部署 Ollama + Open WebUI + ComfyUI
   description: 使用DGX Spark等桌面级硬件部署本地大语言模型和AI绘图完整指南
   button: 详情
-- cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/cf-pages-deploy.png
+- cover: https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800
   timeline: '2026-03-10'
   link: /2026/03/10/cloudflare-pages-deploy-domain-guide/
   title: Cloudflare Pages 静态网站部署

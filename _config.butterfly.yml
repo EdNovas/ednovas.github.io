@@ -1100,10 +1100,10 @@ pwa:
   enable: true
   manifest: /manifest.json
   theme_color: '#000000'
-  apple_touch_icon: /image/siteicon/apple-touch-icon.png
-  favicon_32_32: /image/siteicon/32.png
-  favicon_16_16: /image/siteicon/16.png
-  mask_icon: /image/siteicon/safari-pinned-tab.svg
+  apple_touch_icon: /img/siteicon/apple-touch-icon.png
+  favicon_32_32: /img/siteicon/favicon-32x32.png
+  favicon_16_16: /img/siteicon/favicon-16x16.png
+  mask_icon: /img/siteicon/safari-pinned-tab.svg
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
@@ -1123,7 +1123,7 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # live2d autoload is already loaded via theme _config.yml at /live2d-widget/autoload.js
-    - <script src = "/js/chatroom.js"></script>
+    # chatroom.js removed - was Gitter-specific configuration (Gitter is defunct)
     - <script src = "/js/smoothscrolling.js"></script>
     - <script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('setup',{'key':'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script>
     # - <script src="xxxx"></script>

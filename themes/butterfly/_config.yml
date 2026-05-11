@@ -1120,7 +1120,7 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script defer src="/live2d-widget/autoload.js"></script>
-    - <script src = "/js/chatroom.js"></script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+    # chatroom.js removed - was Gitter-specific configuration (Gitter is defunct)
     # - <script src = "/js/smoothscrolling.js"></script>
     - <script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('setup',{'key':'BKopqw2sndqlCRgR180vtiuWkmgwWUs-JztYwDNvno_kE7h9x2FYp7bLbT01h5rkgnAp_hGBA7MmYayEYDDLTfE' });</script>
     # - <script src="xxxx"></script>
