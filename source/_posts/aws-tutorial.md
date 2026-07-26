@@ -1,7 +1,7 @@
 ---
 title: AWS 完整使用教程（入口搭建 + 小助理操作）
 date: 2026-04-28 00:00:00
-updated: 2026-05-04 00:00:00
+updated: 2026-07-26 00:00:00
 tags:
   - AWS
   - 教程
@@ -41,14 +41,29 @@ AWS租机TG：[@television666](https://t.me/television666)
 ### 三、准备工作
 
 - Cloudflare 账号（已绑定域名并完成解析）
-- Cloudflare Global API Key
+- Cloudflare API 令牌（推荐）或 Global API Key
 - 主域名、二级域名
 
 ---
 
 ### 四、操作步骤
 
-#### 1. 获取 Cloudflare Global API Key
+#### 1. 获取 API Key
+
+##### 方式一：API 令牌（推荐）
+
+1. 登录 Cloudflare 官网
+2. 点击右上角头像 → 我的个人资料
+3. 进入配置文件
+4. 左侧 **API 令牌**
+5. 创建令牌
+6. 获取密钥
+
+> 注意：请复制并保存好该密钥，页面关闭后将无法二次查看。
+
+自 2026 年起 Cloudflare 新建的用户 API 令牌均为 `cfut_` 开头的新格式，旧令牌为 40 位无前缀字符串，两者都可继续使用，但对应的 DDNS 脚本不同（见下一步）。
+
+##### ~~方式二：Global API Key（已弃用）~~
 
 1. 登录 Cloudflare 官网
 2. 点击右上角头像 → 我的个人资料
@@ -62,21 +77,29 @@ AWS租机TG：[@television666](https://t.me/television666)
 
 **脚本模板**
 
+`cfut_` 开头的 API 令牌（新格式，无需填邮箱）：
+
 ```bash
-bash <(curl -sSL https://ddns.8245454.xyz/aws.sh) --install-cron CF邮箱 CF密钥 主域名 二级域名
+bash <(curl -sSL https://ddns.8245454.xyz/aws4.sh) --install-cron --token CF令牌 主域名 二级域名
+```
+
+非 `cfut_` 开头的 API 令牌（旧格式令牌 / Global API Key）：
+
+```bash
+bash <(curl -sSL https://ddns.8245454.xyz/aws.sh) --install-cron CF邮箱 CF令牌 主域名 二级域名
 ```
 
 **参数说明**
 
-- CF邮箱：Cloudflare 注册邮箱
-- CF密钥：Global API Key
+- CF邮箱：Cloudflare 注册邮箱（仅旧格式脚本需要）
+- CF密钥：API 令牌 / Global API Key
 - 主域名：如 ceshi.com
 - 二级域名：如 awss.ceshi.com
 
-**示例**
+**示例**（`cfut_` 开头的 API 令牌）
 
 ```bash
-bash <(curl -sSL https://ddns.8245454.xyz/aws.sh) --install-cron 123456789@qq.com 70980a7e4s340f7ddsadab32748028e6df6b62 ceshi.com awss.ceshi.com
+bash <(curl -sSL https://ddns.8245454.xyz/aws4.sh) --install-cron --token CFUT_70980a7e4s340f7ddsadab32748028e6df6b62 ceshi.com awss.ceshi.com
 ```
 
 #### 3. NY 面板入口安装脚本（海外主线路）
@@ -97,7 +120,7 @@ bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodecli
 
 ### 五、注意事项
 
-1. 必须使用 **Global API Key**，不要用其他 API 令牌
+1. API 令牌要设置好权限（需要对应域名的 DNS 编辑权限）
 2. 域名需提前在 Cloudflare 解析完成
 3. 脚本参数不要错填、多空格、漏填
 4. 脚本与密钥仅发给租机客服，切勿公开；客服TG：[@television666](https://t.me/television666)
@@ -139,7 +162,25 @@ bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodecli
 
 #### 第 3 步：标准开机脚本（可直接复制使用）
 
-> ⚠️ 使用前请将第 09 行的 **邮箱、密钥、主域名、二级域名** 和第 10 行的 **Token、面板地址** 替换为你自己的信息。
+> ⚠️ 使用前请将第 09 行的 **令牌（邮箱、密钥）、主域名、二级域名** 和第 10 行的 **Token、面板地址** 替换为你自己的信息。
+
+**如果你的 API 令牌是 `cfut_` 开头的，请使用这个脚本：**
+
+```bash
+echo root:'@television666' | sudo chpasswd root
+sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config;
+sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config;
+sudo rm -rf /etc/ssh/sshd_config.d;
+sudo systemctl restart sshd;
+sudo apt update
+sudo apt install -y cron
+sudo systemctl enable --now cron
+bash <(curl -sSL https://ddns.8245454.xyz/aws4.sh) --install-cron --token 你的令牌 主域名 二级域名
+printf "\ny\n\n"| bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-t 你的Token -u 你的面板地址"
+bash <(curl -L -s www.hlspeed.cc/bbr/123.sh)
+```
+
+**如果你的 API 令牌不是 `cfut_` 开头的，请使用这个脚本：**
 
 ```bash
 echo root:'@television666' | sudo chpasswd root
@@ -152,7 +193,7 @@ sudo apt install -y cron
 sudo systemctl enable --now cron
 bash <(curl -sSL https://ddns.8245454.xyz/aws.sh) --install-cron 你的邮箱 你的密钥 主域名 二级域名
 printf "\ny\n\n"| bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-t 你的Token -u 你的面板地址"
-bash <(curl -L -s www.hlspeed.cc/bbr/123.sh)
+bash <(curl -fsSL https://bbr.8245454.xyz/123.sh)
 ```
 
 **各行说明：**
@@ -167,16 +208,17 @@ bash <(curl -L -s www.hlspeed.cc/bbr/123.sh)
 | 06 | 更新软件源，刷新 apt 软件包列表 | `sudo apt update` |
 | 07 | 安装 cron，用于定时任务执行 | `sudo apt install -y cron` |
 | 08 | 设置 cron 开机自启并立即启动服务 | `sudo systemctl enable --now cron` |
-| 09 | 安装 DDNS 脚本（使用前请替换邮箱、密钥、主域名和二级域名） | `bash <(curl -sSL https://ddns.8245454.xyz/aws.sh) --install-cron 你的邮箱 你的密钥 主域名 二级域名` |
+| 09a | 安装 DDNS 脚本（`cfut_` 开头令牌：请替换令牌、主域名和二级域名） | `bash <(curl -sSL https://ddns.8245454.xyz/aws4.sh) --install-cron --token 你的令牌 主域名 二级域名` |
+| 09b | 安装 DDNS 脚本（非 `cfut_` 开头令牌：请替换邮箱、密钥、主域名和二级域名） | `bash <(curl -sSL https://ddns.8245454.xyz/aws.sh) --install-cron 你的邮箱 你的密钥 主域名 二级域名` |
 | 10 | 对接 NY 面板，执行面板对接安装命令 | `printf "\ny\n\n" \| bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-t 你的Token -u 你的面板地址"` |
-| 11 | 运行 BBR 优化脚本，用于网络加速优化 | `bash <(curl -L -s www.hlspeed.cc/bbr/123.sh)` |
+| 11 | 运行 BBR 优化脚本，用于网络加速优化（两个脚本任选其一） | `bash <(curl -L -s www.hlspeed.cc/bbr/123.sh)`<br>`bash <(curl -fsSL https://bbr.8245454.xyz/123.sh)` |
 
 ![开机脚本示例](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-assistant-7.png)
 
 ##### 脚本修改注意事项
 
 1. 顶部 SSH 登录、root 密码代码 **绝对不能动**（大佬除外）
-2. DDNS 部分：邮箱、密钥、域名**前后必须加空格**
+2. DDNS 部分：令牌（邮箱、密钥）、域名**前后必须加空格**
 3. NY 对接脚本：只改后面参数，**前面固定代码不动**（`printf "\ny\n\n" |`）
 4. 小白不懂脚本 → 改完立即联系客服TG：[@television666](https://t.me/television666)，禁止私自操作
 
