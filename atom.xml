@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2026-10-19T22:55:37.033Z</updated>
+  <updated>2026-10-20T03:34:39.773Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,99 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>博客评论系统迁移记：Valine → Waline → Twikoo（附评论系统对比与 Cloudflare Workers + D1 部署教程）</title>
+    <link href="https://ednovas.xyz/2026/10/19/comment-system-migration/"/>
+    <id>https://ednovas.xyz/2026/10/19/comment-system-migration/</id>
+    <published>2026-10-19T16:30:00.000Z</published>
+    <updated>2026-10-20T03:34:39.773Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
+&lt;h1 id=&quot;博客评论系统迁移记：Valine-→-Waline-→-Twikoo&quot;&gt;&lt;a href=&quot;#博客评论系统迁移记：Valine-→-Waline-→-Twikoo&quot; class=&quot;headerlink&quot; title=&quot;博客评论系统迁移记：Valine → Waline → Twikoo&quot;&gt;&lt;/a&gt;博客评论系统迁移记：Valine → Waline → Twikoo&lt;/h1&gt;&lt;p&gt;这个博客从 2021 年开通评论区，五年多里换了三套评论系统：最早是 &lt;strong&gt;Valine + LeanCloud&lt;/strong&gt;；今年 1 月 LeanCloud 发公告宣布停服，4 月我换成了 &lt;strong&gt;Waline（Vercel + Neon）&lt;/strong&gt;；结果没过几个月 Vercel 账号被封，评论区整个挂掉，而我至少一个多月都没发现。这次干脆把评论后端搬到了 &lt;strong&gt;Cloudflare Workers + D1&lt;/strong&gt;，换成 &lt;strong&gt;Twikoo&lt;/strong&gt;，并把五年来的评论一条不落地迁了过来。&lt;/p&gt;
+&lt;p&gt;本文分三部分：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📜 &lt;strong&gt;迁移历程&lt;/strong&gt;（第一章）：每一代评论系统用了多久、怎么出的事、数据是怎么救回来的&lt;/li&gt;
+&lt;li&gt;⚖️ &lt;strong&gt;评论系统横向对比&lt;/strong&gt;（第二章）：Valine / Waline / Twikoo / Artalk / Giscus / Utterances / Gitalk / Disqus / Remark42 / Cusdis&lt;/li&gt;
+&lt;li&gt;🛠️ &lt;strong&gt;部署教程&lt;/strong&gt;（第三～六章）：Twikoo + Cloudflare Workers + D1 从零部署、接入 Butterfly、导入旧评论&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;现在的方案：&lt;strong&gt;Twikoo 2.0.15 + Cloudflare Workers + D1&lt;/strong&gt;，后端域名 &lt;code&gt;comment.ednovas.xyz&lt;/code&gt;，前端用 Hexo + Butterfly 3.6.0 自带的 Twikoo 支持&lt;/li&gt;
+&lt;li&gt;迁移结果：&lt;strong&gt;536 条评论全部上线&lt;/strong&gt;，其中 530 条是 Valine 时代的老评论，另外 6 条是 Waline 时期的新评论，差点就丢了&lt;/li&gt;
+&lt;li&gt;成本：&lt;strong&gt;0 元&lt;/strong&gt;（不算域名本身）。全部在 Cloudflare 免费额度内，DNS 本来就托管在 Cloudflare&lt;/li&gt;
+&lt;li&gt;最大的教训：免费 PaaS 账号说没就没。评论后端最好放在自己本来就离不开的平台上，并且定期导出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;一、迁移历程&quot;&gt;&lt;a href=&quot;#一、迁移历程&quot; class=&quot;headerlink&quot; title=&quot;一、迁移历程&quot;&gt;&lt;/a&gt;一、迁移历程&lt;/h2&gt;&lt;h3 id=&quot;1-1-时间线&quot;&gt;&lt;a href=&quot;#1-1-时间线&quot; class=&quot;headerlink&quot; title=&quot;1.1 时间线&quot;&gt;&lt;/a&gt;1.1 时间线&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;时间&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;事件&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;2021-02-23&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;收到第一条 Valine 评论（Valine + LeanCloud 时代开始）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;2026-01-12&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;LeanCloud 发布停服公告，即日起停止新用户注册和新建应用（已有应用继续运行）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;2026-04-07&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Valine 时代的最后一条评论，累计 &lt;strong&gt;530 条&lt;/strong&gt;，分布在 112 个页面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;2026-04-13&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;迁到 Waline：Vercel 部署服务端，Neon PostgreSQL 存数据，530 条全部导入&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;2026-04-18 → 2026-06-02&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Waline 期间新增 &lt;strong&gt;6 条&lt;/strong&gt;评论（5 条正常、1 条垃圾）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;最晚 2026-09-10&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Vercel 账号已被封，评论接口返回 &lt;code&gt;451&lt;/code&gt;，全站评论区静默失效&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;2026-10-19&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;发现问题，从 LeanCloud 和 Neon 找回全部数据，迁到 Twikoo + Workers + D1，&lt;strong&gt;536 条&lt;/strong&gt;上线&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;2027-01-12&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;LeanCloud 正式停止全部对外服务（还没到，但已经确定）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Cloudflare Workers" scheme="https://ednovas.xyz/tags/Cloudflare-Workers/"/>
+    
+    <category term="评论系统" scheme="https://ednovas.xyz/tags/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="Twikoo" scheme="https://ednovas.xyz/tags/Twikoo/"/>
+    
+    <category term="Waline" scheme="https://ednovas.xyz/tags/Waline/"/>
+    
+    <category term="Valine" scheme="https://ednovas.xyz/tags/Valine/"/>
+    
+    <category term="D1" scheme="https://ednovas.xyz/tags/D1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mondoze VPS</title>
     <link href="https://ednovas.xyz/2026/09/30/mondoze/"/>
     <id>https://ednovas.xyz/2026/09/30/mondoze/</id>
     <published>2026-09-30T21:00:00.000Z</published>
-    <updated>2026-10-19T22:55:37.033Z</updated>
+    <updated>2026-10-20T03:34:39.781Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -52,7 +140,7 @@
     <link href="https://ednovas.xyz/2026/06/12/casbay/"/>
     <id>https://ednovas.xyz/2026/06/12/casbay/</id>
     <published>2026-06-12T22:00:00.000Z</published>
-    <updated>2026-10-19T22:55:37.022Z</updated>
+    <updated>2026-10-20T03:34:39.771Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -93,9 +181,9 @@
     <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="AI" scheme="https://ednovas.xyz/tags/AI/"/>
-    
     <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="AI" scheme="https://ednovas.xyz/tags/AI/"/>
     
     <category term="Hexo" scheme="https://ednovas.xyz/tags/Hexo/"/>
     
@@ -133,7 +221,7 @@
     <link href="https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/"/>
     <id>https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/</id>
     <published>2026-03-10T16:19:00.000Z</published>
-    <updated>2026-10-19T22:55:37.023Z</updated>
+    <updated>2026-10-20T03:34:39.772Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -173,7 +261,7 @@
     <link href="https://ednovas.xyz/2026/03/05/prompt-engineering-guide/"/>
     <id>https://ednovas.xyz/2026/03/05/prompt-engineering-guide/</id>
     <published>2026-03-05T14:48:00.000Z</published>
-    <updated>2026-10-19T22:55:37.036Z</updated>
+    <updated>2026-10-20T03:34:39.784Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -232,7 +320,7 @@
     <link href="https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/"/>
     <id>https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/</id>
     <published>2026-03-05T14:39:00.000Z</published>
-    <updated>2026-10-19T22:55:37.023Z</updated>
+    <updated>2026-10-20T03:34:39.772Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -276,7 +364,7 @@
     <link href="https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/"/>
     <id>https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/</id>
     <published>2026-03-05T14:23:00.000Z</published>
-    <updated>2026-10-19T22:55:37.030Z</updated>
+    <updated>2026-10-20T03:34:39.778Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -321,7 +409,7 @@
     <link href="https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/"/>
     <id>https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/</id>
     <published>2026-03-05T13:29:00.000Z</published>
-    <updated>2026-10-19T22:55:37.025Z</updated>
+    <updated>2026-10-20T03:34:39.773Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -362,7 +450,7 @@
     <link href="https://ednovas.xyz/2026/02/13/blendhosting2026/"/>
     <id>https://ednovas.xyz/2026/02/13/blendhosting2026/</id>
     <published>2026-02-13T22:28:00.000Z</published>
-    <updated>2026-10-19T22:55:37.022Z</updated>
+    <updated>2026-10-20T03:34:39.770Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot;&gt;&lt;a href=&quot;#Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot; class=&quot;headerlink&quot; title=&quot;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&quot;&gt;&lt;/a&gt;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&lt;/h1&gt;&lt;p&gt;Blend Hosting 是一家成立于 2005 年的海外服务器与云计算服务商，在 VPS 与服务器领域拥有 20 年以上的持续运营记录。相比偏向短期试用型的平台，Blend Hosting 的整体定位更偏向长期稳定运行与可持续使用的应用场景，目标用户群体也更明确。&lt;/p&gt;
@@ -390,7 +478,7 @@
     <link href="https://ednovas.xyz/2026/01/27/servergigabit/"/>
     <id>https://ednovas.xyz/2026/01/27/servergigabit/</id>
     <published>2026-01-27T20:38:00.000Z</published>
-    <updated>2026-10-19T22:55:37.038Z</updated>
+    <updated>2026-10-20T03:34:39.786Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot;&gt;&lt;a href=&quot;#🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot; class=&quot;headerlink&quot; title=&quot;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&quot;&gt;&lt;/a&gt;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&lt;/h1&gt;&lt;p&gt;本款 &lt;strong&gt;Deluxe Dedicated Server (MY) v2&lt;/strong&gt; 部署于马来西亚数据中心，采用企业级硬件配置，专为高并发、高性能及长期稳定运行的业务场景而设计 [cite: 3]。&lt;/p&gt;
@@ -466,7 +554,7 @@
     <link href="https://ednovas.xyz/2025/12/31/vps-manager-pro/"/>
     <id>https://ednovas.xyz/2025/12/31/vps-manager-pro/</id>
     <published>2025-12-31T13:46:00.000Z</published>
-    <updated>2026-10-19T22:55:37.041Z</updated>
+    <updated>2026-10-20T03:34:39.789Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Sample-Website-演示网站&quot;&gt;&lt;a href=&quot;#Sample-Website-演示网站&quot; class=&quot;headerlink&quot; title=&quot;Sample Website 演示网站&quot;&gt;&lt;/a&gt;Sample Website 演示网站&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://vps.ednovas.tech/&quot;&gt;https://vps.ednovas.tech&lt;/a&gt;&lt;/p&gt;
@@ -501,7 +589,7 @@
     <link href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/"/>
     <id>https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</id>
     <published>2025-12-31T13:41:00.000Z</published>
-    <updated>2026-10-19T22:55:37.025Z</updated>
+    <updated>2026-10-20T03:34:39.774Z</updated>
     
     
     <summary type="html">&lt;p&gt;这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 &lt;a href=&quot;https://github.com/Minerchu/dongguaTV&quot;&gt;https://github.com/Minerchu/dongguaTV&lt;/a&gt; ，本作添加了许多功能。&lt;/p&gt;
@@ -542,7 +630,7 @@
     <link href="https://ednovas.xyz/2024/04/25/gigabit/"/>
     <id>https://ednovas.xyz/2024/04/25/gigabit/</id>
     <published>2024-04-25T22:28:00.000Z</published>
-    <updated>2026-10-19T22:55:37.028Z</updated>
+    <updated>2026-10-20T03:34:39.777Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。&lt;/p&gt;
@@ -658,7 +746,7 @@
     <link href="https://ednovas.xyz/2023/12/14/blendhosting/"/>
     <id>https://ednovas.xyz/2023/12/14/blendhosting/</id>
     <published>2023-12-14T22:28:00.000Z</published>
-    <updated>2026-10-19T22:55:37.022Z</updated>
+    <updated>2026-10-20T03:34:39.770Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Blend Hosting &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com&lt;/a&gt;&lt;/p&gt;
@@ -685,7 +773,7 @@
     <link href="https://ednovas.xyz/2023/02/24/homemadenas/"/>
     <id>https://ednovas.xyz/2023/02/24/homemadenas/</id>
     <published>2023-02-24T22:28:00.000Z</published>
-    <updated>2026-10-19T22:55:37.030Z</updated>
+    <updated>2026-10-20T03:34:39.779Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;ul&gt;
@@ -725,7 +813,7 @@
     <link href="https://ednovas.xyz/2023/02/24/cloudflaretunnel/"/>
     <id>https://ednovas.xyz/2023/02/24/cloudflaretunnel/</id>
     <published>2023-02-24T21:28:00.000Z</published>
-    <updated>2026-10-19T22:55:37.024Z</updated>
+    <updated>2026-10-20T03:34:39.772Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Cloudflare-Tunnel&quot;&gt;&lt;a href=&quot;#Cloudflare-Tunnel&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Tunnel&quot;&gt;&lt;/a&gt;Cloudflare Tunnel&lt;/h2&gt;&lt;p&gt;cloudflare提供的免费加密通道，通过cloudflare的cnd访问部署在内网的服务，比如web,ssh,smb,tcp等。&lt;/p&gt;
@@ -758,7 +846,7 @@
     <link href="https://ednovas.xyz/2023/02/19/raspberry/"/>
     <id>https://ednovas.xyz/2023/02/19/raspberry/</id>
     <published>2023-02-19T21:28:00.000Z</published>
-    <updated>2026-10-19T22:55:37.037Z</updated>
+    <updated>2026-10-20T03:34:39.785Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Raspberry-Pi&quot;&gt;&lt;a href=&quot;#Raspberry-Pi&quot; class=&quot;headerlink&quot; title=&quot;Raspberry Pi&quot;&gt;&lt;/a&gt;Raspberry Pi&lt;/h2&gt;&lt;p&gt;树莓派（英语：Raspberry Pi）英国树莓派基金会开发的微型单板计算机，目的是以低价硬体及自由软体促进学校的基本电脑科学教育。&lt;/p&gt;
@@ -786,7 +874,7 @@
     <link href="https://ednovas.xyz/2023/01/07/remote-ubuntu/"/>
     <id>https://ednovas.xyz/2023/01/07/remote-ubuntu/</id>
     <published>2023-01-07T11:51:00.000Z</published>
-    <updated>2026-10-19T22:55:37.037Z</updated>
+    <updated>2026-10-20T03:34:39.785Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;众所周知，Chrome Remote Desktop 是一款十分出色的完全免费远程控制软件。其易用性和功能的强大性，以及连接的稳定性都给这款软件加分不少，唯一的缺点可能就是国内无法使用了，需要开梯子才可使用。&lt;/p&gt;
@@ -809,41 +897,6 @@
     <category term="ubuntu" scheme="https://ednovas.xyz/tags/ubuntu/"/>
     
     <category term="Chrome Remote Desktop" scheme="https://ednovas.xyz/tags/Chrome-Remote-Desktop/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 Cloudfront CDN</title>
-    <link href="https://ednovas.xyz/2022/10/28/cloudfront/"/>
-    <id>https://ednovas.xyz/2022/10/28/cloudfront/</id>
-    <published>2022-10-28T13:09:00.000Z</published>
-    <updated>2026-10-19T22:55:37.024Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;Amazon-Cloudfront&quot;&gt;&lt;a href=&quot;#Amazon-Cloudfront&quot; class=&quot;headerlink&quot; title=&quot;Amazon Cloudfront&quot;&gt;&lt;/a&gt;Amazon Cloudfront&lt;/h2&gt;&lt;p&gt;Cloudfront是Amazon提供的CDN服务，有每月免费1T的流量，该流量不可累计。个人小站的话，这个CDN是足够用的了，而且主要是国内访问的速度还不错。但是需要注意不要被攻击了，不然AWS的扣费还是很贵的。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://aws.amazon.com/cn/cloudfront/&quot;&gt;https://aws.amazon.com/cn/cloudfront/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;解析域名&quot;&gt;&lt;a href=&quot;#解析域名&quot; class=&quot;headerlink&quot; title=&quot;解析域名&quot;&gt;&lt;/a&gt;解析域名&lt;/h2&gt;&lt;p&gt;首先先解析个三级域名到你的需要加CDN的网站的VPS IP上，比如&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/photo_2022-10-28_15-50-23.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这里的 8.8.8.8 就是你的VPS IP。这里的cdn就是你的三级域名前缀，这个域名是看不到的，这是回源域名用的。用户访问的是后面Cloudfront生成的域名地址或者是自己加的CNAME域名地址。&lt;/p&gt;
-&lt;h2 id=&quot;创建账号&quot;&gt;&lt;a href=&quot;#创建账号&quot; class=&quot;headerlink&quot; title=&quot;创建账号&quot;&gt;&lt;/a&gt;创建账号&lt;/h2&gt;&lt;p&gt;前往 &lt;a href=&quot;https://aws.amazon.com/cn/cloudfront/&quot;&gt;https://aws.amazon.com/cn/cloudfront/&lt;/a&gt; 注册个账号，并且绑定个信用卡，建议绑定小额的或者限额，否则扣起费来吃不消。&lt;/p&gt;
-&lt;p&gt;创建个Distributions&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="建站" scheme="https://ednovas.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
-    
-    <category term="VPS" scheme="https://ednovas.xyz/tags/VPS/"/>
-    
-    <category term="AWS" scheme="https://ednovas.xyz/tags/AWS/"/>
-    
-    <category term="CDN" scheme="https://ednovas.xyz/tags/CDN/"/>
-    
-    <category term="Cloudfront" scheme="https://ednovas.xyz/tags/Cloudfront/"/>
     
   </entry>
   
