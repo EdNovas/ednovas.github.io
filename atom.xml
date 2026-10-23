@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2026-10-20T03:34:39.773Z</updated>
+  <updated>2026-10-23T19:42:58.756Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,94 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>边界云加速：50+ 线路、不限设备的跨境网络加速服务</title>
+    <link href="https://ednovas.xyz/2026/10/23/bianjiecloud/"/>
+    <id>https://ednovas.xyz/2026/10/23/bianjiecloud/</id>
+    <published>2026-10-23T20:00:00.000Z</published>
+    <updated>2026-10-23T19:42:58.756Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
+&lt;h1 id=&quot;边界云加速：50-线路、不限设备的跨境网络加速服务（附-2026-年-10-月晚高峰实测）&quot;&gt;&lt;a href=&quot;#边界云加速：50-线路、不限设备的跨境网络加速服务（附-2026-年-10-月晚高峰实测）&quot; class=&quot;headerlink&quot; title=&quot;边界云加速：50+ 线路、不限设备的跨境网络加速服务（附 2026 年 10 月晚高峰实测）&quot;&gt;&lt;/a&gt;边界云加速：50+ 线路、不限设备的跨境网络加速服务（附 2026 年 10 月晚高峰实测）&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;测评数据引用自边界云官网公开的《线路实测报告》（2026 年 10 月），测试方法和测试地址均公开，可自行复测。数据只代表测试当时的情况，实际体验请以你自己测到的为准。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;边界云是什么&quot;&gt;&lt;a href=&quot;#边界云是什么&quot; class=&quot;headerlink&quot; title=&quot;边界云是什么&quot;&gt;&lt;/a&gt;边界云是什么&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.bianjiecloud.com/&quot;&gt;边界云加速&lt;/a&gt; 是一家由海外团队运营的跨境网络加速订阅服务，主要特点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;50+ 条多区域线路&lt;/strong&gt;：日本、香港、新加坡、美国、印度、加拿大、欧洲等方向&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VLESS + Reality 协议&lt;/strong&gt;，支持 TCP / UDP，官方标称最高 1000 Mbps（实测数据见下文）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;官方客户端&lt;/strong&gt;：Windows、macOS、Android 登录即用，自动同步套餐和线路；iOS 可用 Shadowrocket 导入订阅&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不限设备数量&lt;/strong&gt;，也支持 Clash Verge Rev、Clash Meta 等开源客户端&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI 与流媒体可用&lt;/strong&gt;：ChatGPT、Gemini、Netflix、YouTube 等（2026 年 10 月这一轮实测中，Claude 只有香港线路能用，见下文）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;人工工单售后&lt;/strong&gt;；不支持无理由退款，因平台故障长时间无法使用、提交工单后未能在合理时间内修复的，可申请按剩余比例退款（详见&lt;a href=&quot;https://www.bianjiecloud.com/help/refund-policy&quot;&gt;退款政策&lt;/a&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;套餐一览&quot;&gt;&lt;a href=&quot;#套餐一览&quot; class=&quot;headerlink&quot; title=&quot;套餐一览&quot;&gt;&lt;/a&gt;套餐一览&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;套餐&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;价格&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;每月流量&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;折合每月&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;云帆（标准）&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;¥189 / 年&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;100 GB&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;¥15.75&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;星河（标准）&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;¥228 / 季&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;500 GB&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;¥76&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;星穹（标准）&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;¥449 / 季&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1000 GB&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;¥149.67&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;尊享云翼&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;¥688 / 年&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;200 GB&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;¥57.33&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;按量流量包&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;¥1 / GB 起&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;一次性额度，用完为止&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;完整套餐见 &lt;a href=&quot;https://www.bianjiecloud.com/plans&quot;&gt;https://www.bianjiecloud.com/plans&lt;/a&gt;。流量按订单日每月重置。新用户想先试线路质量，可以先买 50 GB 的按量流量包。&lt;/p&gt;
+&lt;h2 id=&quot;2026-年-10-月晚高峰实测&quot;&gt;&lt;a href=&quot;#2026-年-10-月晚高峰实测&quot; class=&quot;headerlink&quot; title=&quot;2026 年 10 月晚高峰实测&quot;&gt;&lt;/a&gt;2026 年 10 月晚高峰实测&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+    <category term="科学上网" scheme="https://ednovas.xyz/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    <category term="机场" scheme="https://ednovas.xyz/tags/%E6%9C%BA%E5%9C%BA/"/>
+    
+    <category term="VPN" scheme="https://ednovas.xyz/tags/VPN/"/>
+    
+    <category term="clash" scheme="https://ednovas.xyz/tags/clash/"/>
+    
+    <category term="VLESS" scheme="https://ednovas.xyz/tags/VLESS/"/>
+    
+    <category term="边界云" scheme="https://ednovas.xyz/tags/%E8%BE%B9%E7%95%8C%E4%BA%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>博客评论系统迁移记：Valine → Waline → Twikoo（附评论系统对比与 Cloudflare Workers + D1 部署教程）</title>
     <link href="https://ednovas.xyz/2026/10/19/comment-system-migration/"/>
     <id>https://ednovas.xyz/2026/10/19/comment-system-migration/</id>
     <published>2026-10-19T16:30:00.000Z</published>
-    <updated>2026-10-20T03:34:39.773Z</updated>
+    <updated>2026-10-23T19:42:58.759Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -109,7 +192,7 @@
     <link href="https://ednovas.xyz/2026/09/30/mondoze/"/>
     <id>https://ednovas.xyz/2026/09/30/mondoze/</id>
     <published>2026-09-30T21:00:00.000Z</published>
-    <updated>2026-10-20T03:34:39.781Z</updated>
+    <updated>2026-10-23T19:42:58.767Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -140,7 +223,7 @@
     <link href="https://ednovas.xyz/2026/06/12/casbay/"/>
     <id>https://ednovas.xyz/2026/06/12/casbay/</id>
     <published>2026-06-12T22:00:00.000Z</published>
-    <updated>2026-10-20T03:34:39.771Z</updated>
+    <updated>2026-10-23T19:42:58.757Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -181,9 +264,9 @@
     <category term="建站" scheme="https://ednovas.xyz/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
     <category term="AI" scheme="https://ednovas.xyz/tags/AI/"/>
+    
+    <category term="博客" scheme="https://ednovas.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="Hexo" scheme="https://ednovas.xyz/tags/Hexo/"/>
     
@@ -221,7 +304,7 @@
     <link href="https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/"/>
     <id>https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/</id>
     <published>2026-03-10T16:19:00.000Z</published>
-    <updated>2026-10-20T03:34:39.772Z</updated>
+    <updated>2026-10-23T19:42:58.758Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -261,7 +344,7 @@
     <link href="https://ednovas.xyz/2026/03/05/prompt-engineering-guide/"/>
     <id>https://ednovas.xyz/2026/03/05/prompt-engineering-guide/</id>
     <published>2026-03-05T14:48:00.000Z</published>
-    <updated>2026-10-20T03:34:39.784Z</updated>
+    <updated>2026-10-23T19:42:58.770Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -320,7 +403,7 @@
     <link href="https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/"/>
     <id>https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/</id>
     <published>2026-03-05T14:39:00.000Z</published>
-    <updated>2026-10-20T03:34:39.772Z</updated>
+    <updated>2026-10-23T19:42:58.758Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -364,7 +447,7 @@
     <link href="https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/"/>
     <id>https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/</id>
     <published>2026-03-05T14:23:00.000Z</published>
-    <updated>2026-10-20T03:34:39.778Z</updated>
+    <updated>2026-10-23T19:42:58.764Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -409,7 +492,7 @@
     <link href="https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/"/>
     <id>https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/</id>
     <published>2026-03-05T13:29:00.000Z</published>
-    <updated>2026-10-20T03:34:39.773Z</updated>
+    <updated>2026-10-23T19:42:58.759Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -450,7 +533,7 @@
     <link href="https://ednovas.xyz/2026/02/13/blendhosting2026/"/>
     <id>https://ednovas.xyz/2026/02/13/blendhosting2026/</id>
     <published>2026-02-13T22:28:00.000Z</published>
-    <updated>2026-10-20T03:34:39.770Z</updated>
+    <updated>2026-10-23T19:42:58.756Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot;&gt;&lt;a href=&quot;#Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot; class=&quot;headerlink&quot; title=&quot;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&quot;&gt;&lt;/a&gt;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&lt;/h1&gt;&lt;p&gt;Blend Hosting 是一家成立于 2005 年的海外服务器与云计算服务商，在 VPS 与服务器领域拥有 20 年以上的持续运营记录。相比偏向短期试用型的平台，Blend Hosting 的整体定位更偏向长期稳定运行与可持续使用的应用场景，目标用户群体也更明确。&lt;/p&gt;
@@ -478,7 +561,7 @@
     <link href="https://ednovas.xyz/2026/01/27/servergigabit/"/>
     <id>https://ednovas.xyz/2026/01/27/servergigabit/</id>
     <published>2026-01-27T20:38:00.000Z</published>
-    <updated>2026-10-20T03:34:39.786Z</updated>
+    <updated>2026-10-23T19:42:58.772Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot;&gt;&lt;a href=&quot;#🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot; class=&quot;headerlink&quot; title=&quot;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&quot;&gt;&lt;/a&gt;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&lt;/h1&gt;&lt;p&gt;本款 &lt;strong&gt;Deluxe Dedicated Server (MY) v2&lt;/strong&gt; 部署于马来西亚数据中心，采用企业级硬件配置，专为高并发、高性能及长期稳定运行的业务场景而设计 [cite: 3]。&lt;/p&gt;
@@ -554,7 +637,7 @@
     <link href="https://ednovas.xyz/2025/12/31/vps-manager-pro/"/>
     <id>https://ednovas.xyz/2025/12/31/vps-manager-pro/</id>
     <published>2025-12-31T13:46:00.000Z</published>
-    <updated>2026-10-20T03:34:39.789Z</updated>
+    <updated>2026-10-23T19:42:58.775Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Sample-Website-演示网站&quot;&gt;&lt;a href=&quot;#Sample-Website-演示网站&quot; class=&quot;headerlink&quot; title=&quot;Sample Website 演示网站&quot;&gt;&lt;/a&gt;Sample Website 演示网站&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://vps.ednovas.tech/&quot;&gt;https://vps.ednovas.tech&lt;/a&gt;&lt;/p&gt;
@@ -589,7 +672,7 @@
     <link href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/"/>
     <id>https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</id>
     <published>2025-12-31T13:41:00.000Z</published>
-    <updated>2026-10-20T03:34:39.774Z</updated>
+    <updated>2026-10-23T19:42:58.760Z</updated>
     
     
     <summary type="html">&lt;p&gt;这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 &lt;a href=&quot;https://github.com/Minerchu/dongguaTV&quot;&gt;https://github.com/Minerchu/dongguaTV&lt;/a&gt; ，本作添加了许多功能。&lt;/p&gt;
@@ -630,7 +713,7 @@
     <link href="https://ednovas.xyz/2024/04/25/gigabit/"/>
     <id>https://ednovas.xyz/2024/04/25/gigabit/</id>
     <published>2024-04-25T22:28:00.000Z</published>
-    <updated>2026-10-20T03:34:39.777Z</updated>
+    <updated>2026-10-23T19:42:58.763Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。&lt;/p&gt;
@@ -746,7 +829,7 @@
     <link href="https://ednovas.xyz/2023/12/14/blendhosting/"/>
     <id>https://ednovas.xyz/2023/12/14/blendhosting/</id>
     <published>2023-12-14T22:28:00.000Z</published>
-    <updated>2026-10-20T03:34:39.770Z</updated>
+    <updated>2026-10-23T19:42:58.756Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Blend Hosting &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com&lt;/a&gt;&lt;/p&gt;
@@ -773,7 +856,7 @@
     <link href="https://ednovas.xyz/2023/02/24/homemadenas/"/>
     <id>https://ednovas.xyz/2023/02/24/homemadenas/</id>
     <published>2023-02-24T22:28:00.000Z</published>
-    <updated>2026-10-20T03:34:39.779Z</updated>
+    <updated>2026-10-23T19:42:58.765Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;ul&gt;
@@ -813,7 +896,7 @@
     <link href="https://ednovas.xyz/2023/02/24/cloudflaretunnel/"/>
     <id>https://ednovas.xyz/2023/02/24/cloudflaretunnel/</id>
     <published>2023-02-24T21:28:00.000Z</published>
-    <updated>2026-10-20T03:34:39.772Z</updated>
+    <updated>2026-10-23T19:42:58.758Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Cloudflare-Tunnel&quot;&gt;&lt;a href=&quot;#Cloudflare-Tunnel&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Tunnel&quot;&gt;&lt;/a&gt;Cloudflare Tunnel&lt;/h2&gt;&lt;p&gt;cloudflare提供的免费加密通道，通过cloudflare的cnd访问部署在内网的服务，比如web,ssh,smb,tcp等。&lt;/p&gt;
@@ -846,7 +929,7 @@
     <link href="https://ednovas.xyz/2023/02/19/raspberry/"/>
     <id>https://ednovas.xyz/2023/02/19/raspberry/</id>
     <published>2023-02-19T21:28:00.000Z</published>
-    <updated>2026-10-20T03:34:39.785Z</updated>
+    <updated>2026-10-23T19:42:58.771Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Raspberry-Pi&quot;&gt;&lt;a href=&quot;#Raspberry-Pi&quot; class=&quot;headerlink&quot; title=&quot;Raspberry Pi&quot;&gt;&lt;/a&gt;Raspberry Pi&lt;/h2&gt;&lt;p&gt;树莓派（英语：Raspberry Pi）英国树莓派基金会开发的微型单板计算机，目的是以低价硬体及自由软体促进学校的基本电脑科学教育。&lt;/p&gt;
@@ -866,37 +949,6 @@
     <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
     
     <category term="raspberry" scheme="https://ednovas.xyz/tags/raspberry/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 Chrome Remote Desktop 远程控制 Ubuntu 服务器</title>
-    <link href="https://ednovas.xyz/2023/01/07/remote-ubuntu/"/>
-    <id>https://ednovas.xyz/2023/01/07/remote-ubuntu/</id>
-    <published>2023-01-07T11:51:00.000Z</published>
-    <updated>2026-10-20T03:34:39.785Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;众所周知，Chrome Remote Desktop 是一款十分出色的完全免费远程控制软件。其易用性和功能的强大性，以及连接的稳定性都给这款软件加分不少，唯一的缺点可能就是国内无法使用了，需要开梯子才可使用。&lt;/p&gt;
-&lt;p&gt;首先，先准备一个需要远程控制的VPS，要求 Debian或者 Ubuntu系统。还需要另一个控制端，手机电脑均可，登录你的 Google 账户：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://remotedesktop.google.com/support/&quot;&gt;https://remotedesktop.google.com/support/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;安装（Ubuntu为例）&quot;&gt;&lt;a href=&quot;#安装（Ubuntu为例）&quot; class=&quot;headerlink&quot; title=&quot;安装（Ubuntu为例）&quot;&gt;&lt;/a&gt;安装（Ubuntu为例）&lt;/h2&gt;&lt;h3 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h3&gt;&lt;p&gt;控制端前往 &lt;a href=&quot;https://remotedesktop.google.com/headless&quot;&gt;https://remotedesktop.google.com/headless&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2023-01-07_15-50-47.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Ubuntu被控端下载程序包&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
-    
-    <category term="远程控制" scheme="https://ednovas.xyz/tags/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/"/>
-    
-    <category term="ubuntu" scheme="https://ednovas.xyz/tags/ubuntu/"/>
-    
-    <category term="Chrome Remote Desktop" scheme="https://ednovas.xyz/tags/Chrome-Remote-Desktop/"/>
     
   </entry>
   
