@@ -7,7 +7,7 @@ categories:
   - 建站
 date: 2021-05-09 20:21:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/porkbun.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/porkbun.png
 ---
 
 porkbun.com总部位于俄勒冈州波特兰市，是ICANN认证域名注册商。母公司为Top Level Design ，主营业务为：各类域名、包括域名隐私保护和证书，其次有虚拟主机、邮件营销主机。提供的域名后缀种类繁多(300多种)，并且为每个域名免费提供隐私保护，在国外有着较高的知名度。

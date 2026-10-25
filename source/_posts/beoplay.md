@@ -6,7 +6,7 @@ categories:
   - - 测评
 date: 2020-12-20 13:29:10
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/f8b578_54595dab062f4abb9bd6733ba8ff1c74_mv2.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/f8b578_54595dab062f4abb9bd6733ba8ff1c74_mv2.webp
 ---
 
 ## 写在最前

@@ -6,7 +6,7 @@ categories:
   - 杂
 date: 2021-10-15 00:07:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ubuntu-impish1.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/ubuntu-impish1.jpg
 ---
 
 
@@ -53,19 +53,19 @@ https://ubuntu.com/download/desktop/thank-you/?version=21.10&architecture=amd64
 
 2. 进入软碟通，进行如下操作 选择文件，并且打开你下载的 ubuntu 所在的目录，选择 unbuntu 镜像（改成选择自己的Ubuntu镜像即可），双击打开，如图：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1628751-20190421144433959-1118818166.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1628751-20190421144433959-1118818166.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1628751-20190421144449817-1634930914.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1628751-20190421144449817-1634930914.png)
 
 3. 在软碟通界面菜单栏选择启动，选择写入硬盘映像，如图所示:
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1628751-20190421144509795-498681718.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1628751-20190421144509795-498681718.png)
 
 接下来很重要，记住次序：
 
 进入以后界面如下：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1628751-20190421144531569-1034367299.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1628751-20190421144531569-1034367299.png)
 
 1） 看你的硬盘驱动器是否对应的是你的 U 盘（必须是） ，一般默认是
 
@@ -83,11 +83,11 @@ https://ubuntu.com/download/desktop/thank-you/?version=21.10&architecture=amd64
 
 我是预留了100G空间。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/distribute_space.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/distribute_space.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/distribute_space2.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/distribute_space2.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/distribute_space3.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/distribute_space3.jpg)
 
 关闭Win10快速启动
 Win10快速启动的功能加快了系统开机速度，但可能造成开机时，不会出现进入BIOS选项，所以可以预先关闭快速启动（http://www.xitongcheng.com/jiaocheng/win10_article_45880.html）。
@@ -104,13 +104,13 @@ Win10快速启动的功能加快了系统开机速度，但可能造成开机时
 
 如果存在多个U盘启动项，需要选择UEFI开头的U盘启动项，一般还会写着你的U盘厂商的名字，如sandisk
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/qidongxiang_boot_selecting.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/qidongxiang_boot_selecting.jpg)
 
 然后这里直接选Install Ubuntu(这是老版的，新版就是默认第一个Ubuntu)
 
 当然也可以选Try without installing，先试用，试用过程中可以点击桌面的Install快捷方式安装。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/boot_install_menu.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/boot_install_menu.jpg)
 
 ### 开始安装
 
@@ -118,11 +118,11 @@ Win10快速启动的功能加快了系统开机速度，但可能造成开机时
 
 有网络连接时安装过程最后一步会下载一些更新包，如果网络环境不好，会拖慢安装进度，可以待系统安装完成后再更新
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_from_2019-10-05_11-07-19.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Screenshot_from_2019-10-05_11-07-19.png)
 
 在“安装类型”，这里先选择“其它选项”，至于第一个共存的选项，我们下文再讨论。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_from_2019-10-05_11-07-45.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Screenshot_from_2019-10-05_11-07-45.png)
 
 ### 分区
 
@@ -134,13 +134,13 @@ Win10快速启动的功能加快了系统开机速度，但可能造成开机时
 
 我是选择了2G的boot分区空间。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_from_2019-10-05_11-09-30.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Screenshot_from_2019-10-05_11-09-30.png)
 
 
 
 剩下全部分给根目录/，而不再需要再Swap分区。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_from_2019-10-05_11-11-05.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Screenshot_from_2019-10-05_11-11-05.png)
 
 接下来，最重要的一步，在最下面“安装启动引导器的设备”选为/boot分区对应的设备（此处为/dev/sda5），此步骤会将Ubuntu的grub2引导程序安装到/boot分区，而不会默认覆盖Windows的引导，也就达成了我们“两系统互不影响”的目的。
 
@@ -154,7 +154,7 @@ Win10快速启动的功能加快了系统开机速度，但可能造成开机时
 
 （我可是被这密码折磨的不行啊，还要至少8位，装个软件啥的都要用这个密码）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_from_2019-10-05_19-17-16.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Screenshot_from_2019-10-05_19-17-16.png)
 
 ### 重启电脑
 
@@ -165,7 +165,7 @@ Win10快速启动的功能加快了系统开机速度，但可能造成开机时
 然后就可以正常进入grub引导程序，引导启动系统啦～
 一般正常的话，grub会自动发现电脑中安装的Windows系统，所以在日常使用中也可以用grub来选择引导来启动Windows。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Xnip2019-10-21_22-25-58.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Xnip2019-10-21_22-25-58.jpg)
 
 ## 如何删除Ubuntu
 

@@ -9,7 +9,7 @@ categories:
   - 建站
 date: 2021-07-01 10:56:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3907993163.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/3907993163.png
 ---
 
 ## Typecho
@@ -30,7 +30,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3907993163.png
 
 先用ftp连接到主机,然后拖入解压后的下载的程序(我使用的是FileZilla)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-01_10-17-18.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-07-01_10-17-18.png)
 
 由于文件数量多,要上传一会儿了.如果你的虚拟主机支持在线解压那是最好不过
 
@@ -38,11 +38,11 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3907993163.png
 
 谷歌一下就能找到很多typehco的主题,自己去下载个,然后上传到typecho的 `usr/themes/` 目录下
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-01_10-32-52.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-07-01_10-32-52.png)
 
 启用该主题
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-01_10-33-38.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-07-01_10-33-38.png)
 
 然后就可以开始愉快的写博客啦!
 
@@ -70,11 +70,11 @@ alter table typecho_relationships convert to character set utf8mb4 collate utf8m
 alter table typecho_users convert to character set utf8mb4 collate utf8mb4_general_ci;
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1622631440.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1622631440.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1622631451.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1622631451.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1622631456.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1622631456.png)
 
 ### 修改配置文件
 

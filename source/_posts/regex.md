@@ -5,14 +5,14 @@ categories:
   - - 编程
 date: 2021-10-01 11:51:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/featured.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/featured.png
 # highlight_shrink: true
 ---
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/dbnauyuy7y1o3k839iny.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/dbnauyuy7y1o3k839iny.png)
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1_Wf89DaXXNLF5xCr-rhwOzQ.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1_Wf89DaXXNLF5xCr-rhwOzQ.png)
 
 
 正则表达式，又称正则表示式、正则表示法、规则表达式、常规表示法，是计算机科学的一个概念。正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。

@@ -6,7 +6,7 @@ categories:
   - - VPS
 date: 2021-01-25 13:32:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Note.com_Logo.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Note.com_Logo.png
 #highlight_shrink: true
 ---
 
@@ -47,29 +47,29 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo b
 
 安装完宝塔以后会出现如下地址和密码，访问外网面板地址即可。输入用户名和密码。如果无法访问面板，多半是防火墙没有放行，关闭即可。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-25_13-40-02.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-25_13-40-02.webp)
 
 进入宝塔以后，安装nginx和php，其他用不到。耐心等待大概10分钟左右安装完成。
 
 进入网站，添加你的域名，一般用三级域名即可。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-25_13-42-36.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-25_13-42-36.webp)
 
 然后在网站设置中给域名添加个证书。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-25_13-48-05.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-25_13-48-05.webp)
 
 ## 配置网站
 
 进入网站根目录，把前面下载的GitHub项目里的几个文件都放进来。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-25_13-52-13.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-25_13-52-13.webp)
 
 然后编辑index.php，把文件第四行，将网址改为你自己的域名，我这里就是`note.ednovas.xyz`
 ```
 $base_url = 'https://note.ednovas.xyz';
 ```
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-25_13-52-32.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-25_13-52-32.webp)
 
 在第十九行可以修改生成网址的随机字符串位数和字符（默认也可）：
 ```

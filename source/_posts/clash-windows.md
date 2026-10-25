@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2020-11-29 06:07:41
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp
 ---
 
 > Clash 电脑版使用教程
@@ -26,11 +26,11 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a106
     *   双击打开Clash for windows.exe，同意权限，选择给所有用户安装（图一），点击next
     *   默认安装位置即可，（如果想要更改安装位置，点击Browse...选择）点击Install（图二）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_11-53-22.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_11-53-22.webp)
 
 <center>图一</center>
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/image.webp)
 
 <center>图二</center>
 
@@ -42,7 +42,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a106
 
 耐心等待安装完成，双击打开桌面的快捷方式Clash for Windows（图三）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_16-03-53.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_16-03-53.webp)
 
 <center>图三</center>
 
@@ -58,7 +58,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a106
 
 或加入[EdNovas云](https://ednovas.me/)，流量大、价格贱，节点较多，速度起飞！ https://ednovas.me/
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_14-19-55.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_14-19-55.webp)
 
 <center>图四</center>
 
@@ -66,11 +66,11 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a106
 
 将如（图五）所示的yml文件(或txt文件)拖入到Profiles中（图六）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_14-30-23.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_14-30-23.webp)
 
 <center>图五</center>
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_14-31-24.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_14-31-24.webp)
 
 <center>图六</center>
 
@@ -78,11 +78,11 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a106
 
 在Profiles中选择你想要链接的节点组（图七），左键单击即可选择，如果选中，节点组会变成灰色（图八），即为选中。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_14-33-33.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_14-33-33.webp)
 
 <center>图七</center>
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_14-34-24.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_14-34-24.webp)
 
 <center>图八</center>
 
@@ -94,19 +94,19 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a106
 4.  注意：如果有**自动选择**的话，选择自动选择即可，软件会自动选择延迟最低的节点。
 5.  注意：软件有**负载均衡**会无法选择节点，忽略此步即可。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_14-56-04.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_14-56-04.webp)
 
 <center>图九（1）</center>
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_15-05-25.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_15-05-25.webp)
 
 <center>图九（2）</center>
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_15-08-42.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_15-08-42.webp)
 
 <center>图九（3）</center>
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_14-59-41.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_14-59-41.webp)
 
 <center>图十</center>
 
@@ -114,7 +114,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a106
 
 在General中打开System Proxy就可以了。如果有弹窗请求连接网络，同意即可。如果想要让此软件随系统开机自启动，打开Start with Windows即可。（图十一）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_15-14-43.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_15-14-43.webp)
 
 <center>图十一</center>
 
@@ -126,19 +126,19 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a106
 
 1.  打开节点组策略
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_15-39-24.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_15-39-24.webp)
 
 2. 左侧即为Proxy Groups以及Proxies，右侧为每个Proxy Groups中的每个节点信息
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_15-40-37.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_15-40-37.webp)
 
 3. 可以点击Proxy Groups边上的Add添加一个Proxy Group（左到右依次是自动选择，故障转移，手动选择和负载均衡）根据自己需要创建Group Name以及选择功能。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_15-43-29.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_15-43-29.webp)
 
 4. 现在就可以拖动自定义Proxy Groups的顺序以及节点到新建的Proxy Group中
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_15-47-13.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_15-47-13.webp)
 
 5. 切记要点击右上角的**Save**保存你的设置
 
@@ -150,15 +150,15 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a106
 
 1. 打开规则
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_15-50-26.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_15-50-26.webp)
 
 2. 可以添加或者删除域名网站等
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_15-51-01.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_15-51-01.webp)
 
 3. 创建一个新的规则
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-11-29_15-51-23.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-11-29_15-51-23.webp)
 
 4. 记得保存！
 

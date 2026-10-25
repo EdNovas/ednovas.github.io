@@ -7,7 +7,7 @@ categories:
   - 软件
 date: 2021-05-06 19:14:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/nzxtcam.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/nzxtcam.png
 ---
 
 ## 下载
@@ -20,16 +20,16 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/nzxtcam.png
 
 硬件监控情况
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-06_19-11-40.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-06_19-11-40.png)
 
 详细系统信息
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-06_19-16-45.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-06_19-16-45.png)
 
 CPU具体信息
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-06_19-17-49.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-06_19-17-49.png)
 
 还有桌面悬浮监控
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-06_19-18-24.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-06_19-18-24.png)

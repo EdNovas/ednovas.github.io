@@ -6,13 +6,13 @@ categories:
   - - 软件
 date: 2021-02-06 03:49:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/todesk.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/todesk.png
 # highlight_shrink: true
 ---
 
 > 转载编辑自 https://www.iplaysoft.com/todesk.html
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/todesk.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/todesk.png)
 
 ## 简介
 
@@ -20,7 +20,7 @@ TeamViewer 经常会弹出疑似商业用途警告无法免费使用；微软的
 
 ToDesk 是一款新入局的电脑桌面远程控制 / 远程协助软件，主打流畅以及个人免费的特点。软件的体积很小仅 3MB 左右，但麻雀虽小五脏俱全，ToDesk 的功能还是足够实用的：远程桌面控制、文件传输、语音沟通、文字聊天都有。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-06_04-08-01.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-06_04-08-01.webp)
 
 而且与 TeamViewer、向日葵等产品一样，只要输入正确的 ID 号和密码就能一键连接，完全不必考虑受控的机器是否位于内网、有无公网 IP、端口映射或者网络防火土啬等网络环境去操心，基本能替代大多数同类的收费远程协助产品。
 
@@ -32,7 +32,7 @@ ToDesk 是一款新入局的电脑桌面远程控制 / 远程协助软件，主�
 
 当然了，随着免费用户大量涌入之后，这带宽和服务器的投入毕竟是个烧钱的坑，日后能否一直保持目前如此良好的状态就需要时间去考验了。但目前来说，还是非常不错的。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-06_04-08-24.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-06_04-08-24.webp)
 
 ## 官网
 

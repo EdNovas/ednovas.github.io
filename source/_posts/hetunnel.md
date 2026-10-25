@@ -6,7 +6,7 @@ categories:
   - - VPS
 date: 2021-04-15 15:38:45
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210225051254.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20210225051254.jpg
 # highlight_shrink: true
 ---
 
@@ -23,17 +23,17 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210225051254
 页面拉到最下方，点击Create Tunnel(创建隧道)
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210214034651.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20210214034651.png)
 
 在 Tunnel Details 页面可以看到创建的 IPv6 隧道的详细信息，其中 Client IPv6 Address 是申请到公网 IPv6 地址。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210214040003.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20210214040003.png)
 
 ## 获取配置示例
 
 在 Tunnel Details 页面有个 Example Configuration 选项卡，在这里你可以选择合适的配置示例。就比如这里有 De­bian/​Ubuntu 的 interfaces 配置文件示例：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210214040002.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20210214040002.png)
 
 只要基于 De­bian 的发行版和使用 interfaces 配置文件的系统理论上都可以使用。其它不兼容的发行版则可以使用 Linux-net-tools 或 Linux-route2 示例手动输入命令。
 

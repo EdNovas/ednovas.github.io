@@ -6,7 +6,7 @@ categories:
   - - 建站
 date: 2021-02-17 21:16:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3658665563.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/3658665563.jpg
 # highlight_shrink: true
 ---
 
@@ -40,7 +40,7 @@ WordPress 安装rss导入插件
 
 这里大概率会遇到一个报错，解决也很简单，把如图位置的这行代码注释掉就好了
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-17_20-47-23.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/02-17_20-47-23.png)
 
 然后就可以全部导入成功了
 

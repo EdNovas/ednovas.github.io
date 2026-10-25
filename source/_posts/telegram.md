@@ -6,7 +6,7 @@ categories:
   - - 软件
 date: 2021-02-22 20:28:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1_PGWf028GLDgCjO8s-jMQ1A.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1_PGWf028GLDgCjO8s-jMQ1A.png
 #top: 3
 # highlight_shrink: true
 ---
@@ -54,7 +54,7 @@ Telegram 也有缺点:必须用代理才能用，还有中文搜索很差很差�
 
 秘密和一般聊天之间的最后一个区别就是，秘密聊天的内容不会存储在云端服务器。你只能从秘密聊天双方的设备中访问这些消息。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Encryption_key_in_Telegram.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Encryption_key_in_Telegram.jpg)
 
 ### 机器人
 
@@ -64,7 +64,7 @@ Telegram 也有缺点:必须用代理才能用，还有中文搜索很差很差�
 
 tg中的机器人任何人都可以搭建，所以有各种各样功能强大千奇百怪的机器人不断涌现
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/GDPRbot_de_Telegram_en_español.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/GDPRbot_de_Telegram_en_español.png)
 
 ### 语音通话
 
@@ -78,7 +78,7 @@ tg中的机器人任何人都可以搭建，所以有各种各样功能强大千
 
 设置中可以调整最长时限
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Telegram_account_self-destruction.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Telegram_account_self-destruction.png)
 
 ### 隐私
 
@@ -425,7 +425,7 @@ MTP 代理是在 Telegram 中内置的代理程序，可以直接在软件内配
 
 设置 -> 隐私设置 -> 显示含有敏感内容的媒体
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210222144517.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210222144517.png)
 
 ### 群组被官方警告，解除 iOS 设备访问限制
 
@@ -488,7 +488,7 @@ MTP 代理是在 Telegram 中内置的代理程序，可以直接在软件内配
 
 ● 群员可以被任意管理员所管理。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/administers.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/administers.png)
 
 ### 自定义管理员头衔
 
@@ -510,7 +510,7 @@ MTP 代理是在 Telegram 中内置的代理程序，可以直接在软件内配
 
 首先打开群组设置，在"权限(permissions)"里面关闭发送消息的选项即可(如图所示)。这样就只有群主和管理员能够发言，其他人全部禁言。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/allban.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/allban.png)
 
 ### 查看公开群组/公开频道的创建日期
 
@@ -601,7 +601,7 @@ Telegram 客户端官方已添加"投票"功能,可以实时显示投票人数�
 2. 向官方申诉, 但似乎隔段时间又得重新申诉
 
 <video id="video" controls="" preload="none" poster="">
-      <source id="mp4" src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/2018-11-16-13-10-18-574.mp4" type="video/mp4">
+      <source id="mp4" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/2018-11-16-13-10-18-574.mp4" type="video/mp4">
       </video>
 
 解除 Telegram 对 +86 大陆手机号绑定账户的 私聊限制 的办法
@@ -657,7 +657,7 @@ Android 客户端，可能会因为不同系统而导致界面和操作有些许
 
 如图所示，这种提示就是说明，你的账号已经被永久禁言了，并且这个手机号码也被官方拉黑，根据TG官方的说法：即便你删除并且重新注册账号也是无用的。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/banned.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/banned.png)
 
 ### 被踢出群组/被人拉黑
 

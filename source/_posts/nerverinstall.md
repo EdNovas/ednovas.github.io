@@ -5,7 +5,7 @@ categories:
   - - 杂
 date: 2021-10-24 10:51:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/234ae397-4d40-4dcb-bc33-4b1e0f6777a9.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/234ae397-4d40-4dcb-bc33-4b1e0f6777a9.jpg
 # highlight_shrink: true
 ---
 
@@ -15,7 +15,7 @@ Neverinstall 是一个基于云的平台，可将任何桌面应用程序带入�
 
 据官方的远大远景，看起来挺好玩的样子
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211025013412.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211025013412.png)
 
 ## 准备材料
 
@@ -27,39 +27,39 @@ Neverinstall 是一个基于云的平台，可将任何桌面应用程序带入�
 1. 打开[官网](https://neverinstall.com/login) https://neverinstall.com/login
 2. 选择任意一种方式登录
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211025013556.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211025013556.png)
 
 PS: 由于其登录验证域名在国内被特殊照顾，请使用特殊方式登录
 
 3. 进入到应用管理页面
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211025013814.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211025013814.png)
 
 4. 选择应用，可以发现都是以编程为主的应用多。博主准备以VS Code为例
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211025013826.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211025013826.png)
 
 5. 选择服务器位置，点击Launch
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211025013909.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211025013909.png)
 
 6. 等待创建完成
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211025013947.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211025013947.png)
 
 7. 创建完成了，点击Launch
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211025014006.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211025014006.png)
 
 
 8. 进入到VS Code的页面，可以看到和Linux的VS Code差不多
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211025014034.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211025014034.png)
 
 
 9.  可以发现还有root权限？（估计我发出去官方准备要开始打压了）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211025014121.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211025014121.png)
 
 
 ## 系统跑分

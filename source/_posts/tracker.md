@@ -69,15 +69,15 @@ cover: https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1116506071,4272
 
 下载安装完成后建议先修改一下设置
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_07-19-12.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-03_07-19-12.webp)
 
 下方可以添加 tracker
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_07-29-30.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-03_07-29-30.webp)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_07-26-15.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-03_07-26-15.webp)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_07-20-52.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-03_07-20-52.webp)
 
 可以用ubuntu系统种子（全球最火的种子应该没有之一了吧）做下载文件测试
 
@@ -85,15 +85,15 @@ cover: https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1116506071,4272
 
 下载方法也和其他软件一个样，选择保存的位置，并下载。这里还提供了一些其他下载设置，一般来说保持默认即可。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_07-37-56.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-03_07-37-56.webp)
 
 下载连接的tracker
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_07-39-43.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-03_07-39-43.webp)
 
 别的用户分享给我供我下载
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_07-39-55.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-03_07-39-55.webp)
 
 ## 一些精选Tracker列表
 
@@ -144,14 +144,14 @@ bt-tracker=http://xxx.xx:80/announce,udp://yyy.yy:80/announce
 选项(左下角) - 进阶设置 - Tracker 服务器 - ﹀
 勾选任意一个选项（如 all.txt），然后点击 [保存并应用] 保存。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f584955322f547261636b6572734c697374436f6c6c656374696f6e2f696d672f7a682d31302e706e67.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f584955322f547261636b6572734c697374436f6c6c656374696f6e2f696d672f7a682d31302e706e67.png)
 
 ## qB添加tracker方法
 
 选项[齿轮图标] - BitTorrent
 勾选下图蓝框内的选项并填写 Tracker URL 后点击 [Apply] 保存，然后重启 qBittorrentEE。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f584955322f547261636b6572734c697374436f6c6c656374696f6e2f696d672f7a682d31332e706e67.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f584955322f547261636b6572734c697374436f6c6c656374696f6e2f696d672f7a682d31332e706e67.png)
 
 <!-- # 懒得写了，有空再写
 

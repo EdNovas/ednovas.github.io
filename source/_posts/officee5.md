@@ -6,7 +6,7 @@ categories:
   - - 杂
 date: 2021-02-10 08:23:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Microsoft-365.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Microsoft-365.jpg
 # highlight_shrink: true
 ---
 
@@ -22,23 +22,23 @@ https://developer.microsoft.com/zh-cn/microsoft-365/dev-program
 
 点击立即加入
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-10_08-14-26.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/02-10_08-14-26.png)
 
 输入你的微软个人账号，没有的注册一个
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-10_08-15-24.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/02-10_08-15-24.png)
 
 这里国家/地区选择中国即可，公司名随意，勾选条款和条件，点击下一步
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-10_08-17-36.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/02-10_08-17-36.png)
 
 这个随意填
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-10_08-18-42.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/02-10_08-18-42.png)
 
 这里也随意，点击保存
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-10_08-18-58.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/02-10_08-18-58.png)
 
 这里创建你的用户名和域，其实就是你的登录账号了，所以弄个好记得，并且记住。
 
@@ -46,15 +46,15 @@ https://developer.microsoft.com/zh-cn/microsoft-365/dev-program
 
 密码要求必须有大小写和数字字母符号混合
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-10_08-21-12.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/02-10_08-21-12.png)
 
 验证手机号，用中国的就可以
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-10_08-22-50.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/02-10_08-22-50.png)
 
 耐心等待
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-10_08-23-33.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/02-10_08-23-33.png)
 
 ## 5T 空间
 
@@ -62,7 +62,7 @@ https://developer.microsoft.com/zh-cn/microsoft-365/dev-program
 
 同时，下面的这个25个用户许可证的意思就是你可以添加25个子账号，每个子账号也都能享受到和管理账号一样的服务，比如onedrive5T的空间和office订阅，这些子账号就可以送给你的朋友啥的
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-10_08-24-15.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/02-10_08-24-15.png)
 
 然后点击上图中的go to subscription/转到订阅，然后输入你刚刚设置的密码
 
@@ -70,15 +70,15 @@ https://developer.microsoft.com/zh-cn/microsoft-365/dev-program
 
 再次登录账号
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-10_08-29-15.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/02-10_08-29-15.png)
 
 在这个界面找到当前管理员用户的OneDrive设置
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-10_08-31-54.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/02-10_08-31-54.png)
 
 这里直接选择最大 5120GB = 5T即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-10_08-33-07.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/02-10_08-33-07.png)
 
 添加子账号也是在这个界面，点击Add user/添加用户并且进行配置即可
 

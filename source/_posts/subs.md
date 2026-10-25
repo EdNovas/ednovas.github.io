@@ -8,7 +8,7 @@ categories:
   - VPS
 date: 2021-06-06 20:29:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/kisspng-computer-icons-data-conversion-concert-5abceadf02e439.0045614115223303350119.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/kisspng-computer-icons-data-conversion-concert-5abceadf02e439.0045614115223303350119.jpg
 ---
 
 ## 项目地址
@@ -27,9 +27,9 @@ https://github.com/tindy2013/subconverter
 
 一个用作前端，一个用作后端
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_20-48-34.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-06_20-48-34.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_20-49-16.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-06_20-49-16.png)
 
 ## 安装前端
 
@@ -122,7 +122,7 @@ customBackend: {
         ],
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_21-20-02.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-06_21-20-02.png)
 
 然后修改下面的remoteConfig为以下内容（这个订阅转换比默认更好用）
 
@@ -246,7 +246,7 @@ customBackend: {
 
 替换到哪里呢，到334行这里
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_21-25-49.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-06_21-25-49.png)
 
 全部替换掉
 
@@ -258,7 +258,7 @@ yarn serve
 
 然后还是访问之前的ip+端口页面
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_21-31-25.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-06_21-31-25.png)
 
 
 然后还是ctrl+c停止调试页面，然后打包程序
@@ -277,7 +277,7 @@ yarn build
 
 注意！申请ssl证书的时候需要先关闭一下cloudflare里的小云朵cdn再申请
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_21-34-59.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-06_21-34-59.png)
 
 然后等待片刻网站创建完毕后，进入网站根目录，删除所有文件，user.ini的防跨站文件不用管他
 
@@ -291,7 +291,7 @@ yarn build
 
 加一个反代，填 http://127.0.0.1:25500 ，下面的$host默认不用动，name名字随便输一个即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-06_22-00-15.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-06_22-00-15.png)
 
 ## 安装后端
 

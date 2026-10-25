@@ -5,7 +5,7 @@ categories:
   - - 杂
 date: 2021-10-13 11:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/BPM1f0t7Kt-BnuX0Um-Ld0ZPEtJC5WGQTb4nrNae8hs.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/BPM1f0t7Kt-BnuX0Um-Ld0ZPEtJC5WGQTb4nrNae8hs.jpg
 ---
 
 > 转载自https://bbs.pha.pub/threads/36/

@@ -5,7 +5,7 @@ categories:
   - - VPS
 date: 2021-11-28 13:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/cheap-VPS-hosting-best-cheapest-VPS-hosting-with-buyer-guide.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/cheap-VPS-hosting-best-cheapest-VPS-hosting-with-buyer-guide.png
 ---
 
 推荐购买洛杉矶和圣何塞的机房，到国内速度更快。
@@ -14,7 +14,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/cheap-VPS-host
 
 RackNerd Cyber Monday 2021 会在北京时间2021年11月29日下午1点开始
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-28_22-34-21.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-11-28_22-34-21.png)
 
 
 ***

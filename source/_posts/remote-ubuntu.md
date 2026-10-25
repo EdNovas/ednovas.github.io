@@ -5,7 +5,7 @@ categories:
   - - VPS
 date: 2023-01-07 11:51:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/chromeremtoedesktop.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/chromeremtoedesktop.png
 ---
 
 ## 准备工作
@@ -22,7 +22,7 @@ https://remotedesktop.google.com/support/
 
 控制端前往 https://remotedesktop.google.com/headless
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2023-01-07_15-50-47.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2023-01-07_15-50-47.png)
 
 Ubuntu被控端下载程序包
 
@@ -32,7 +32,7 @@ wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 
 用wget可以直接下载该程序包。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2023-01-07_15-52-25.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2023-01-07_15-52-25.png)
 
 ### 安装
 
@@ -101,7 +101,7 @@ adduser ednovas sudo
 
 控制端，点击下一步，然后会出现类似下图的内容，选择最后一个复制黏贴到被控端。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2023-01-07_15-54-36.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2023-01-07_15-54-36.png)
 
 记得在最后添加一个 `--user-name=ednovas` ，这样就可以指定以`ednovas`用户运行了。
 
@@ -117,7 +117,7 @@ adduser ednovas sudo
 sudo systemctl status chrome-remote-desktop@$USER
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2023-01-07_16-30-21.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2023-01-07_16-30-21.png)
 
 如上图即运行正常。
 
@@ -125,7 +125,7 @@ sudo systemctl status chrome-remote-desktop@$USER
 
 https://remotedesktop.google.com/access 页面选择刚刚新加的，然后输入设置的PIN码连接即可。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2023-01-07_16-31-27.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2023-01-07_16-31-27.png)
 
 
 > 参考 https://cloud.google.com/architecture/chrome-desktop-remote-on-compute-engine

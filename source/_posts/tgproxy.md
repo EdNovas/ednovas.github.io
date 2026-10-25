@@ -5,7 +5,7 @@ categories:
   - - 软件
 date: 2021-12-20 15:12:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/66d0-article-210212-telegram-body-text.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/66d0-article-210212-telegram-body-text.jpg
 ---
 
 ## Telegram Desktop 客户端
@@ -28,7 +28,7 @@ Telegram Desktop 默认并没有勾选"使用系统代理", 所以很多人觉�
 
 不需要填写用户名和密码。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-20_18-40-10.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-12-20_18-40-10.png)
 
 ### 代理软件查看本地端口的方法
 

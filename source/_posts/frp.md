@@ -9,7 +9,7 @@ categories:
   - VPS
 date: 2021-06-23 14:06:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/frp内网穿透.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/frp内网穿透.webp
 ---
 
 内网穿透，也即NAT 穿透，进行NAT 穿透是为了使具有某一个特定源IP 地址和源端口号的数据包不被NAT 设备屏蔽而正确路由到内网主机。
@@ -26,17 +26,17 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/frp内网穿�
 
 配置极其简单,软路由中选择ddns.to服务,然后填入令牌,启用,保存并应用即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_13-20-05.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-23_13-20-05.png)
 
 然后外网访问自己绑定的对应内网ip,比如我的就是192.168.2.1
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_13-22-45.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-23_13-22-45.png)
 
 付费版还有更多功能,但是免费就足够用
 
 如ssh,远程telnet,远程rdp,远程vnc,远程aria2,远程开机
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_13-23-35.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-23_13-23-35.png)
 
 
 ## frp
@@ -45,7 +45,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/frp内网穿�
 
 Frp (Fast Reverse Proxy) 是一个免费开源的用于内网穿透的反向代理应用，它支持 TCP、UDP 协议， 也为 http 和 https 协议提供了额外的支持。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/architecture.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/architecture.png)
 
 而目前 FRP 还推出了“点对点穿透”的试验性功能，连接成功后可以让公网设备直接跟内网设备“点对点”传输，数据流不再经过 VPS 中转，这样可以不受服务器带宽的限制，传输大文件会更快更稳定。当然，此功能并不能保证在你的网络环境 100% 可用，而且还要求访问端也得运行 FRP 客户端 (因此目前手机是无法实现的，只有电脑可以)。由于实现条件较多，所以有文件传输需求的朋友还是建议买带宽稍大一点的 VPS 会比较省心。
 
@@ -65,7 +65,7 @@ releases下载地址: https://github.com/fatedier/frp/releases
 
 注意!我这里用的是arm架构的VPS,所以选择 `frp_0.37.0_linux_arm64.tar.gz`, 但是一般来说大部分VPS都是amd架构的,请选择 `frp_0.37.0_linux_amd64.tar.gz`
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-23_13-29-25.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-23_13-29-25.png)
 
 ```bash
 mkdir /home/frp && cd /home/frp

@@ -5,7 +5,7 @@ categories:
   - - 编程
 date: 2021-09-23 16:51:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/49561-assembly-language.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/49561-assembly-language.jpg
 # highlight_shrink: true
 ---
 ## 安装java环境
@@ -87,18 +87,18 @@ bar: .byte 0xFF, 0xEE, 0xDD, 0xCC
 
 ## Big endian & Little endian
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-20_16-22-59.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-20_16-22-59.png)
 
 ## 基本
 
 指令一览
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/MIPS_Instruction_Set_Page_1.png)
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/MIPS_Instruction_Set_Page_2.png)
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/MIPS_Instruction_Set_Page_3.png)
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/MIPS_Instruction_Set_Page_4.png)
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/MIPS_Instruction_Set_Page_5.png)
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/MIPS_Instruction_Set_Page_6.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/MIPS_Instruction_Set_Page_1.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/MIPS_Instruction_Set_Page_2.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/MIPS_Instruction_Set_Page_3.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/MIPS_Instruction_Set_Page_4.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/MIPS_Instruction_Set_Page_5.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/MIPS_Instruction_Set_Page_6.png)
 
 ### .word && .text && .data
 
@@ -169,7 +169,7 @@ li $8, 0xc800
 
 and 和 or 还有xor看这个图就一目了然了
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/4basicgates.gif)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/4basicgates.gif)
 
 再来个例子，比如(如下是两个Register的值，并且已经转换到了二进制)
 
@@ -215,9 +215,9 @@ Nor则是
 
 至于这个位移的过程，可以用图来很好的表示
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/sll.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/sll.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/srl.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/srl.png)
 
 位移的时候，头上的如果是0（以位移方向为头，反向为尾），直接抛弃，如果是1也是如此。
 
@@ -325,7 +325,7 @@ lbu
 	lw $9, 0($8)
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-20_16-42-54.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-20_16-42-54.png)
 
 ### sw & sb
 
@@ -339,7 +339,7 @@ sw $8, 0($9)
 sb $10, 0($11)
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/kngyn.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/kngyn.png)
 
 ### BASIC INSTRUCTION FORMATS
 
@@ -347,31 +347,31 @@ R I J 三种
 
 头6位都是opcode，也就是决定这个instruction name的，rs,rt,rd对应registers
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-07_13-31-33.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-07_13-31-33.png)
 
 Instruction Encoding:
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-20_17-02-28.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-20_17-02-28.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-20_17-02-39.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-20_17-02-39.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-20_17-02-49.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-20_17-02-49.png)
 
 Branch instruction encoding:
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-20_17-07-00.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-20_17-07-00.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-20_17-08-01.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-20_17-08-01.png)
 
 Branch distance:
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-20_17-09-42.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-20_17-09-42.png)
 
 完整对应列表：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/MIPS_Reference_Data_Page_1.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/MIPS_Reference_Data_Page_1.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/MIPS_Reference_Data_Page_2.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/MIPS_Reference_Data_Page_2.png)
 
 #### Examples
 

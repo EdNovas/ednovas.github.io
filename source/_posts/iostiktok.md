@@ -10,7 +10,7 @@ categories:
   - 科学上网
 date: 2021-05-11 06:02:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/92ea3b1e-6a41-467e-a34d-2a019dc14490.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/92ea3b1e-6a41-467e-a34d-2a019dc14490.png
 ---
 
 都需要开启MitM, 并且正确的信任证书

@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2020-12-19 20:15:24
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/45726700-df29-11ea-96f1-0813cffea4ca.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/45726700-df29-11ea-96f1-0813cffea4ca.webp
 ---
 
 ## 下载地址
@@ -22,31 +22,31 @@ V2RayN-core github官方下载地址：
 
 首先更新v2rayn客户端和xray-core
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210501102300.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210501102300.png)
 
 选择 设置-参数设置-v2rayn设置-core类型，换成`xray-core`
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-01_10-27-08.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-01_10-27-08.png)
 
 ## 添加订阅
 
 打开订阅设置
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-01_11-35-45.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-01_11-35-45.png)
 
 新加一个订阅，然后黏贴你的订阅链接并点击确定
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-01_11-36-33.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-01_11-36-33.png)
 
 更新订阅，获取节点
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-01_11-36-49.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-01_11-36-49.png)
 
 ## 开启，关闭
 
 点击右下角系统代理，自动配置系统代理即可开启，清除系统代理即可关闭
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-01_11-37-10.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-01_11-37-10.png)
 
 
 ## 单节点使用

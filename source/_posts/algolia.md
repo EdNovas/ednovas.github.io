@@ -6,7 +6,7 @@ categories:
   - - 建站
 date: 2021-04-30 19:22:45
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/eyecatch-algolia.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/eyecatch-algolia.png
 # highlight_shrink: true
 ---
 
@@ -30,7 +30,7 @@ Algolia 登陆页面 https://www.algolia.com/users/sign_in，可以使用 GitHub
 
 选择API Keys，然后复制并保存Application ID，Search-Only API Key 和 Admin API Key
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/04-30_19-24-56.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/04-30_19-24-56.png)
 
 GitHub文档给出的是以下的fields，我没有用到，就使用了其中几个
 

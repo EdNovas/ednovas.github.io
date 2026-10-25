@@ -6,7 +6,7 @@ categories:
   - - 建站
 date: 2021-02-01 15:01:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/updated-google-hangouts-chat-header@2x.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/updated-google-hangouts-chat-header@2x.png
 #top: true
 #highlight_shrink: true
 ---
@@ -19,7 +19,7 @@ https://gitter.im/
 
 比如我创建了一个community叫`ednovas`,然后创建了一个叫`ChatRoom`的聊天室。这个要记住，下一步用到。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210201150531.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210201150531.webp)
 
 ## Sidecar获取代码
 
@@ -38,7 +38,7 @@ https://sidecar.gitter.im/
 <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-01_15-08-57.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-01_15-08-57.webp)
 
 这段代码是可以当html页面用，也可以直接当js用。
 

@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2021-01-15 21:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/globe-2679754_1920-768x512-1.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/globe-2679754_1920-768x512-1.jpg
 ---
 
 # 免费抓取上千个白嫖节点
@@ -66,7 +66,7 @@ https://www.linbaoz.com/
 
 这里包含了Clash、ShadowRocket、Surge等订阅链接地址
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-15_21-10-56.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-15_21-10-56.webp)
 
 ```
 https://proxypoolsstest.herokuapp.com/clash/config
@@ -76,7 +76,7 @@ https://proxypoolsstest.herokuapp.com/clash/config
 
 可以点击选择“如何筛选等更多信息”
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-15_21-27-06.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-15_21-27-06.webp)
 
 ## Provider示例分析
 
@@ -143,11 +143,11 @@ https://proxypoolsstest.herokuapp.com/clash/config
 
 如果你不想用Provider来直接编辑，可以复制链接到浏览器并访问，会给出proxies节点。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-15_21-43-29.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-15_21-43-29.webp)
 
 然后把Proxies复制到配置文件中进行编辑
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-15_21-44-02.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-15_21-44-02.webp)
 
 ## 速度
 
@@ -155,6 +155,6 @@ https://proxypoolsstest.herokuapp.com/clash/config
 
 自己多测试几个节点，肯定能找到好的，说不定就能找到如下图所示的中高速节点呢
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210115214813.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210115214813.webp)
 
 

@@ -7,7 +7,7 @@ categories:
   - - 杂
 date: 2021-02-16 16:52:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3315a4da8d1b4e3600ced56d5a181c74.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/3315a4da8d1b4e3600ced56d5a181c74.jpg
 # highlight_shrink: true
 ---
 

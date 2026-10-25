@@ -20,7 +20,7 @@ keywords:
   - 博客搭建教程
   - SEO优化
 description: 详解如何借助 AI 工具（Claude / ChatGPT）在5小时内从零搭建一个拥有数十篇文章的完整博客，包含技术选型、内容生成、SEO优化、部署上线全流程，以及AI博客的利弊分析。
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ai-blog-cover3.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/ai-blog-cover3.jpg
 ---
 
 ## 前言
@@ -31,7 +31,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ai-blog-cover3
 
 <!--more-->
 
-![AI内容生成概念](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ai-blog-content-gen.jpg)
+![AI内容生成概念](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/ai-blog-content-gen.jpg)
 
 ---
 
@@ -67,7 +67,7 @@ AI 工具在 SEO（搜索引擎优化）方面有独特的优势：
 - **内链建设**：AI 可以根据已有文章列表，自动推荐交叉链接
 - **结构化内容**：AI 生成的文章天然具有清晰的 H2/H3 层级结构
 
-![SEO优化策略](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ai-blog-seo.jpg)
+![SEO优化策略](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/ai-blog-seo.jpg)
 
 ---
 
@@ -120,7 +120,7 @@ Google 在 2023–2025 年间多次更新算法，明确表态：
 - 某些领域（医疗、法律、金融）的 AI 内容可能存在合规风险
 - 直接发布未经审核的 AI 内容可能传播错误信息
 
-![AI内容优劣分析](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ai-blog-pros-cons2.jpg)
+![AI内容优劣分析](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/ai-blog-pros-cons2.jpg)
 
 ---
 
@@ -136,7 +136,7 @@ Google 在 2023–2025 年间多次更新算法，明确表态：
 | **Hugo** | [Stack](https://github.com/CaiJimmy/hugo-theme-stack) | 现代卡片式，构建速度极快 |
 | **VitePress** | 官方默认 | 文档风格，极快，适合技术文档 |
 
-![静态网站生成器对比](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ai-blog-ssg-compare.jpg)
+![静态网站生成器对比](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/ai-blog-ssg-compare.jpg)
 
 ### 3.2 为什么推荐 Hexo + Butterfly？
 
@@ -222,7 +222,7 @@ npm install hexo-renderer-pug hexo-renderer-stylus
 hexo server
 ```
 
-![Hexo框架](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ai-blog-hexo.jpg)
+![Hexo框架](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/ai-blog-hexo.jpg)
 
 ### 4.4 第四步：格式化文章（20 分钟）
 
@@ -315,7 +315,7 @@ Sitemap: https://你的域名/sitemap.xml
 自定义域名：Cloudflare DNS 直接绑定
 ```
 
-![部署方案对比](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ai-blog-deploy2.jpg)
+![部署方案对比](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/ai-blog-deploy2.jpg)
 
 **Cloudflare Pages 优势**：
 

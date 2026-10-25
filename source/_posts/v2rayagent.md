@@ -5,7 +5,7 @@ categories:
   - - 科学上网
 date: 2021-10-13 11:19:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/-LV3x-7WtgjD9WFSe7KS.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/-LV3x-7WtgjD9WFSe7KS.png
 ---
 
 > 这应该是博主最钟爱的一键搭建节点脚本了吧
@@ -76,7 +76,7 @@ shell内复制并且回车开始自动安装
 
 下图为作者的示例图
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2rayagent.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/v2rayagent.jpg)
 
 ### 具体讲解
 
@@ -90,7 +90,7 @@ shell内复制并且回车开始自动安装
 
 cloudflare先解析一个域名，纯纯纯小白具体可以[看这里](/2021/05/15/cloudflare/) （~~小白搭建什么节点~~）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-13_14-50-17.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-13_14-50-17.png)
 
 如上图所示，解析一个域名A记录到你的vps ipv4的ip上（如果是IPV6的，那就解析AAAA记录），切记不要开启小云朵，会影响申请证书的
 
@@ -100,41 +100,41 @@ cloudflare先解析一个域名，纯纯纯小白具体可以[看这里](/2021/0
 
 如下图，安装完后会出现这个界面
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-13_14-48-58.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-13_14-48-58.png)
 
 我们直接选择安装（输入数字1并回车）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-13_14-54-54.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-13_14-54-54.png)
 
 这里我们一般选择`1.xray-core`即可（xray-core是v2ray-core的超集），输入数字1并回车
 
 耐心等待安装，机器配置越好安装时间越短。如果超过5分钟还是什么内容（比如安装jq这样的内容）都没有显示，那就按 `ctrl+c`结束进程，然后重新开始安装
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-13_14-56-05.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-13_14-56-05.png)
 
 然后输入之前解析好的域名并回车
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-13_15-09-28.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-13_15-09-28.png)
 
 脚本自动用的acme.sh申请一个免费证书（当然你也可以手动申请）
 
 然后输入自定义路径。这里你随意，或者直接回车随即路径即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-13_15-10-45.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-13_15-10-45.png)
 
 这里你可以根据你使用的运营商来判断使用哪个，或者干脆不使用。这个是用于ws+tls优选用的
 
 如果实在不知道这是干啥的，或者不确定，或者不太明了的，直接回车，省的后面自己搞出来节点还用不了
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-13_15-11-51.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-13_15-11-51.png)
 
 UUID这里直接回车
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-13_15-13-45.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-13_15-13-45.png)
 
 然后就会生成节点信息了
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-13_15-14-25.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-13_15-14-25.png)
 
 如下那么多内容，应该导入哪个呢
 
@@ -266,7 +266,7 @@ Xray的0-RTT path后面会有?ed=2048，不兼容以v2ray为核心的客户端�
 
 shell内输入`vasma`即可再打开脚本界面
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-13_15-21-40.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-13_15-21-40.png)
 
 #### 任意安装
 
@@ -300,7 +300,7 @@ https://github.com/learning-zone/website-templates
 
 （手动更新证书的地方）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-13_15-28-08.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-13_15-28-08.png)
 
 #### 更换CDN节点
 

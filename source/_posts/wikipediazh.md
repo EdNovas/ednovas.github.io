@@ -6,7 +6,7 @@ categories:
   - - 建站
 date: 2021-02-04 16:08:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Wikipedia.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Wikipedia.jpg
 highlight_shrink: true
 ---
 
@@ -178,7 +178,7 @@ async function device_status(user_agent_info) {
 }
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-04_16-14-13.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-04_16-14-13.webp)
 
 点击保存并部署，然后后边这个网址就是啦
 
@@ -188,4 +188,4 @@ https://restless-moon-748d.ednovas.workers.dev
 
 这样就可以在国内也可以畅快的上维基百科查阅资料啦
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-04_16-22-54.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-04_16-22-54.webp)

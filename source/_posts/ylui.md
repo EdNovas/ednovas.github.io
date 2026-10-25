@@ -7,7 +7,7 @@ categories:
   - 建站
 date: 2021-06-24 05:06:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/68747470733a2f2f73322e617831782e636f6d2f323031392f30312f33312f6b314d564c642e706e67.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/68747470733a2f2f73322e617831782e636f6d2f323031392f30312f33312f6b314d564c642e706e67.png
 ---
 
 ## 简介
@@ -40,9 +40,9 @@ https://github.com/yuri2peter/ylui/tree/master/documents
 
 https://github.com/yuri2peter/ylui/tree/master/documents
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-24_18-38-26.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-24_18-38-26.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-24_19-22-23.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-24_19-22-23.png)
 
 ## DEMO
 

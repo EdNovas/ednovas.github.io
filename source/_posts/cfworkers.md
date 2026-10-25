@@ -5,7 +5,7 @@ categories:
   - - VPS
 date: 2021-10-28 10:51:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/cloudflare_workers_full.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/cloudflare_workers_full.png
 # highlight_shrink: true
 ---
 
@@ -41,11 +41,11 @@ cloudflare一向以提供免费的优质服务为名，cf的反代优选就是�
 
 在主页点击Workers。可能会让你输入一个你的域名，有的话可以输入你freenom的域名或者你自己的域名，没有的话瞎填一个也没事。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-54-15.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-04_10-54-15.webp)
 
 进入workers界面以后点击Create a worker创建一个worker
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-55-22.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-04_10-55-22.webp)
 
 把左边Script脚本的内容清空，然后复制下面的代码进去
 
@@ -64,19 +64,19 @@ addEventListener(
 
 然后把`域名`改成你解析的域名，同样要去掉https等那些东西，如 `jiedian.ednovas.xyz`
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_10-58-36.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-04_10-58-36.webp)
 
 然后点击Save and Deploy保存和部署。等待几秒部署完成后点击send发送。如果右边出现400 Bad Request说明配置成功。如果出现如502等其他错误代码说明配置失败(其实出现了也问题不大，直接略过这里即可)。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-00-55.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-04_11-00-55.webp)
 
 在这里把这个HTTP下面的这个地址复制到V2ray里刚刚配置的那个文件里的地址和伪装域名这里。（双击刚刚配置的节点可以再次打开这个配置界面）点击确定保存。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-02-58.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-04_11-02-58.webp)
 
 再来测速，好家伙，直接几百kbps的速度了，这速度还不如刚才呢。不要急，有速度说明刚刚的配置没有问题。下面还需要使用优选IP来实现完全的加速。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-04-25.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-04_11-04-25.webp)
 
 ## 优选IP
 
@@ -88,20 +88,20 @@ addEventListener(
 
 一般来说，100M选择70-80M，200M选择160-180M，300M选择260-280M，差不多个值就行，也不用非得填100M和200M这样填满，否则有可能会一直循环跑脚本。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-08-36.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-04_11-08-36.webp)
 
 我这里输入50以后直接按Enter回车，然后等待一段时间，不会超过5分钟，他会自动测速并且筛选优选IP，耐心等待即可。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-12-03.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-04_11-12-03.webp)
 
 那么测试出来以后，把上方的优选IP复制下来，我这里也就是104.19.71.197。注意不要复制到空格。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-13-00.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-04_11-13-00.webp)
 
 再次打开V2ray的节点配置界面，把刚刚的优选出来的IP复制黏贴到地址里，并点击确定保存。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-14-28.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-04_11-14-28.webp)
 
 现在再来看这个节点的速度，十分可观啊，直接上了3w，甚至直逼4w。看个4k视频没有什么压力的高速度了。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-04_11-15-38.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-04_11-15-38.webp)

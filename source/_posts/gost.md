@@ -8,7 +8,7 @@ categories:
   - VPS
 date: 2021-05-24 21:37:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/gosttunnel.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/gosttunnel.png
 ---
 
 > 转载自https://docs.ginuerzh.xyz/gost/
@@ -74,7 +74,7 @@ Google讨论组: https://groups.google.com/d/forum/go-gost
 
 ## 开启代理服务
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/gost001.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/gost001.png)
 
 启动一个监听在8080端口的HTTP/SOCKS5代理服务：
 
@@ -91,7 +91,7 @@ gost -L http2://:443 -L socks5://:1080 -L ss://aes-128-cfb:123456@:8338
 
 ## 使用转发代理
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/gost002.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/gost002.png)
 
 ```
 gost -L :8080 -F 192.168.1.1:8081
@@ -101,7 +101,7 @@ gost -L :8080 -F 192.168.1.1:8081
 
 ## 使用多级转发代理(代理链)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/gost003.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/gost003.png)
 
 ```
 gost -L=:8080 -F=quic://192.168.1.1:8081 -F=socks5+wss://192.168.1.2:8082 -F=http2://192.168.1.3:8083 ... -F=a.b.c.d:NNNN
@@ -505,17 +505,17 @@ GOST中SOCKS5同时也支持UDP Relay，并支持TCP-over-UDP特性。
 
 不设置转发代理
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/udp01.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/udp01.png)
 
 GOST做为标准SOCKS5代理处理UDP数据。
 
 设置转发代理
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/udp02.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/udp02.png)
 
 设置多个转发代理(代理链)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/udp03.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/udp03.png)
 
 当设置转发代理时，GOST会使用UDP-over-TCP方式转发UDP数据。proxy1 - proxyN可以为任意类型代理。
 
@@ -1179,13 +1179,13 @@ fail_timeout - (2.8.1+) 指定死亡节点的超时时间，当一个节点被�
 > 当设置了ip参数，URL中指定的地址将会被忽略。
 > 当设置了peer参数(见下方说明)，以上参数会被peer参数覆盖。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/lb01.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/lb01.png)
 
 当为一个层级指定了多个节点，GOST会将这些节点按指定顺序放在同一个节点组中。
 
 每次客户端发送请求，代理链会先确定一条路径，对每一个节点组执行节点选择(随机或轮询)。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/lb02.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/lb02.png)
 
 相当于将上面的命令转化为：
 ```
@@ -1207,7 +1207,7 @@ example.com:8083
 ## 复杂型
 复杂型克服了简单型中的限制，可以自由指定代理链中每一层级节点组中节点的类型。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/lb03.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/lb03.png)
 ```
 gost -L=:8080 -F=kcp://192.168.1.1:8388?peer=peer1.txt -F=http2://172.20.1.1:443?peer=peer2.txt
 ```
@@ -1242,12 +1242,12 @@ peer - 指定节点列表。
 
 每次客户端发送请求，代理链会确定一条路径，对每一个节点组执行节点选择(随机或轮询)。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/lb04.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/lb04.png)
 
 ## 简单型+复杂型
 组合使用时，代理链会将每一层级上(通过ip和peer参数)指定的所有节点放在同一个节点组中，再对每一个节点组执行节点选择(随机或轮询)，最终确定一条路径：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/lb05.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/lb05.png)
 
 完整的示例配置
 ```

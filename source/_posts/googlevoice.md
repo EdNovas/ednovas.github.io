@@ -6,7 +6,7 @@ categories:
   - - 杂
 date: 2021-02-05 05:22:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/google-voice-1000x530.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/google-voice-1000x530.png
 highlight_shrink: true
 ---
 
@@ -25,7 +25,7 @@ Google may reclaim your Google Voice number (if you have one) if you have not pl
 
 订阅一些大公司的广告短信，~~已失效 如星巴克：发送JOIN到22122，就能看到，星巴克会每个月发两条广告短信到GV~~
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/998529-20200203142512826-1738264069.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/998529-20200203142512826-1738264069.png)
 
 下面还有两个
 
@@ -53,23 +53,23 @@ https://ifttt.com/applets/SMGSYPzw-google-voice
 
 设置一下时区，这里随意
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-05_05-16-28.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-05_05-16-28.webp)
 
 输入你的gv号，直接 `区号 + 手机号` 即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-05_05-17-25.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-05_05-17-25.webp)
 
 获取验证码并且验证
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-05_05-18-08.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-05_05-18-08.webp)
 
 设置自定义保号内容和周期时间
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-05_05-18-31.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-05_05-18-31.webp)
 
 设置成功
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-05_05-18-50.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-05_05-18-50.webp)
 
 ## 自动回复
 

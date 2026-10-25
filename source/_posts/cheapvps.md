@@ -5,7 +5,7 @@ categories:
   - - VPS
 date: 2021-11-05 13:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/cheap-VPS-hosting-best-cheapest-VPS-hosting-with-buyer-guide.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/cheap-VPS-hosting-best-cheapest-VPS-hosting-with-buyer-guide.png
 sticky: 1
 ---
 
@@ -82,7 +82,7 @@ sticky: 1
 |[BYTES](https://bytes.ua/?from=14129)|$20/年|信用卡|乌克兰G口无限流量，乌克兰本地奈飞解锁|
 |[Netcetera](https://r.netcetera.co.uk/442.html)|$4.5/月|Paypal、信用卡|马恩岛VPS，100M无限流量,BBC iplayer解锁|
 |[Costa Rica](https://clients.crservers.com/?affid=108)|$8/月|Paypal、信用卡|哥斯达黎加VPS，100M无限流量，哥斯达黎加奈飞迪士尼解锁|
-|[Bangmod](https://nest.bangmod.cloud/?aff=wdm1732418365)|￥30/月|Paypal、信用卡|150M，泰国便宜VPS，需要泰国手机号接码验证|
+|[Bangmod](https://nest.bangmod.cloud/)|￥30/月|Paypal、信用卡|150M，泰国便宜VPS，需要泰国手机号接码验证|
 |[Readyidc](https://customer.readyidc.com/)|￥30/月|Paypal、信用卡|G口泰国便宜VPS，购买后需要验证护照等照片信息|
 |[Gurkha Host](https://business.thulo.com/account/aff.php?aff=263)|$9/月|Paypal、信用卡|尼泊尔VPS|
 |[GDKHOST](https://gdkhost.net/)|25GEL/月|Paypal、信用卡|格鲁吉亚VPS|

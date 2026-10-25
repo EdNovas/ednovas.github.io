@@ -5,7 +5,7 @@ categories:
   - - 软件
 date: 2022-01-10 19:12:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/office-365-upgrade.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/office-365-upgrade.jpg
 ---
 
 > 投稿文章
@@ -35,12 +35,12 @@ Microsoft 365 E5 Renew Plus为Microsoft 365 E5 Renew的升级版，其功能性�
  - **自定义美化界面**：支持自定义背景图片，半透明度以及毛玻璃效果
 ## 主界面
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/1.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/1.png)
 
 ## 运行结果查看
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/2.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/2.png)
 
 
 # <font color="#cc0000">**入群须知** </font>
@@ -72,13 +72,13 @@ Microsoft 365 E5 Renew Plus为Microsoft 365 E5 Renew的升级版，其功能性�
 打开旧版本程序根目录下的Account.txt文件，依照每行复制一个账号信息（不支持多行识别）。
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/3.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/3.png)
 
 ### 0.2 导入账户信息到新版本程序中
 打开新版本程序点击“开始运行”-“添加账号”，在弹出的“添加账号”窗口中找到右上角的剪切板图标，点击后程序会自动识别复制的账号信息，如果复制的内容没有错误程序会自动识别调用类型并填充所有空白项，检查无误后单击“确定”按钮完成一个账号信息的导入。
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/4.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/4.png)
 
 
 ## 1 注册Azure应用程序
@@ -87,44 +87,44 @@ Microsoft 365 E5 Renew Plus为Microsoft 365 E5 Renew的升级版，其功能性�
  2.登录完成后点击右上角的“门户”按钮进入Azure管理中心，在搜索栏内输入“应用注册”，点击进入[（若应用注册搜索不到请点击此处直接进入）](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)。
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/5.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/5.png)
 
  3.单击“新注册”按钮
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/6.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/6.png)
 
 
 4.配置应用  应用名称随意写、注意可访问性选项选择最后一项、重定向URL暂时不填 、完成后点击注册
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/7.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/7.png)
 
 
 ### 1.2 配置应用重定向URL（身份验证）
 1.先点击“概述”，然后点击“添加重定向URL”，进入重定向URL配置界面，**下图中的应用程序(客户端)ID即为"客户端ID"**。
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/8.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/8.png)
 
 
 2.点击“添加平台”，再点击“移动和桌面应用程序”，
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/9.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/9.png)
 
 
 3.继续勾选中第一个URL，最后点击底部的“配置”，该URL为“https://login.microsoftonline.com/common/oauth2/nativeclient”也可手动添加。
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/10.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/10.png)
 
 
 4.配置默认客户端类型将应用程序视为公共客户端 点击切换按钮为“是” ，最后点击“保存”按钮保存。
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/11.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/11.png)
 
 
 
@@ -151,7 +151,7 @@ Microsoft 365 E5 Renew Plus为Microsoft 365 E5 Renew的升级版，其功能性�
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/12.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/12.png)
 
 
 
@@ -159,7 +159,7 @@ Microsoft 365 E5 Renew Plus为Microsoft 365 E5 Renew的升级版，其功能性�
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/13.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/13.png)
 
 
 3.判断是否添加API权限成功：首先程序提示授权成功，其次用管理员账户登录Azure查看应用的API权限，发现所有需求的权限全部添加或可以成功调用均视为已添加成功。
@@ -167,21 +167,21 @@ ng)
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/14.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/14.png)
 
 
 #### 2.1.2 手动配置API权限
 1.点击“API权限”-“添加权限”-“Microsoft Graph”
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/15.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/15.png)
 
 
 2.选择“委托的权限”
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/16.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/16.png)
 
 
 
@@ -193,7 +193,7 @@ Notes.Read.All; People.Read.All; Presence.Read.All; Sites.Read.All; Tasks.ReadWr
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/17.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/17.png)
 
 
 添加完成的效果如图
@@ -201,14 +201,14 @@ Notes.Read.All; People.Read.All; Presence.Read.All; Sites.Read.All; Tasks.ReadWr
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/18.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/18.png)
 
 
 4.最后点击代表XXX授予管理员同意,对话框选择“是”（该图包含了当前程序“委托的权限(用户登录)”全部API所需要的权限）。
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/19.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/19.png)
 
 
 ### 2.2 选择“应用程序权限(非用户登录)”类型的API
@@ -218,14 +218,14 @@ Notes.Read.All; People.Read.All; Presence.Read.All; Sites.Read.All; Tasks.ReadWr
 1.点击“API权限”-“添加权限”-“Microsoft Graph”
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/15.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/15.png)
 
 
 
 2.选择“应用程序权限”
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/20.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/20.png)
 
 
 3.根据程序中列出的API权限需求表来勾选所对应的API权限，全部选择完成后点击"添加权限"。
@@ -233,7 +233,7 @@ Notes.Read.All; People.Read.All; Presence.Read.All; Sites.Read.All; Tasks.ReadWr
 Mail.Send; MailboxSettings.Read; Notes.Read.All; Sites.Read.All; User.Read.All;**
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/17.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/17.png)
 
 
 添加完成的效果如图
@@ -241,26 +241,26 @@ Mail.Send; MailboxSettings.Read; Notes.Read.All; Sites.Read.All; User.Read.All;*
 <font color="#cc0000">**如果没有“代表XXX授予管理员同意”按钮 说明该账号不是管理员账号 换登管理员账号创建应用**</font>
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/21.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/21.png)
 
 4.最后点击代表XXX授予管理员同意,对话框选择“是”（该图包含了当前程序“应用程序权限(非用户登录)”全部API所需要的权限）。
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/22.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/22.png)
 
 #### 2.2.2 创建客户端密码
 
 1.点击“证书密码”-“新客户端密码”-“24个月”-“添加”
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/23.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/23.png)
 
 
 2.点击“值”该列中的“复制”（不要复制"ID"列中的值），并立即将该密码保存至电脑，**保存的值即为“客户端密码”**， 注：该值必须立即保存，退出该页面后将永远无法查看。
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/24.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/24.jpg)
 
 
 ## 3 使用程序进行API调用
@@ -276,7 +276,7 @@ Mail.Send; MailboxSettings.Read; Notes.Read.All; Sites.Read.All; User.Read.All;*
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/25.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/25.png)
 
 这里可以切换API调用方式但也需要更改对应的填写内容
 
@@ -284,19 +284,19 @@ Mail.Send; MailboxSettings.Read; Notes.Read.All; Sites.Read.All; User.Read.All;*
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/26.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/26.png)
 
 非登录调用方式填写
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/27.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/27.png)
 
 最后点击确定
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/28.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/28.png)
 
 ### 3.2 开始运行
 
@@ -304,7 +304,7 @@ Mail.Send; MailboxSettings.Read; Notes.Read.All; Sites.Read.All; User.Read.All;*
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/29.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/29.png)
 
 # 写在最后面
 
@@ -314,11 +314,11 @@ Mail.Send; MailboxSettings.Read; Notes.Read.All; Sites.Read.All; User.Read.All;*
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/30.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/30.png)
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/31.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/31.png)
 
 
 ## 关闭Azure中API调用的双重验证
@@ -326,7 +326,7 @@ Mail.Send; MailboxSettings.Read; Notes.Read.All; Sites.Read.All; User.Read.All;*
 [点击进入Azure Active Directory管理中心](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)，按照下图配置即可关闭Azure中API调用的双重验证。
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/32.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/32.png)
 
 
 ## 查询续订剩余天数
@@ -341,27 +341,27 @@ E5续订执行是微软统一的具有一定时间周期的续订，如果你的
 
 ### 仪表盘变化
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/33.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/33.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/34.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/34.png)
 
 
 ### 续订邮件
 
 第一次续订
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/35.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/35.jpg)
 
 
 
 
 第二次续订
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/36.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/36.png)
 
 ### 警告邮件
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/37.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/37.jpg)
 
 
 

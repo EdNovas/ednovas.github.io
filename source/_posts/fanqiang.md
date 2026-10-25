@@ -5,7 +5,7 @@ categories:
   - - 科学上网
 date: 2021-10-21 21:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/scales-of-justice.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/scales-of-justice.jpg
 ---
 
 > 转载自 王宇扬 https://mp.weixin.qq.com/s/cndzW_oXClkSdwOtam0qUw

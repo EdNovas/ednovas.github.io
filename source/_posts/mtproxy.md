@@ -7,7 +7,7 @@ categories:
   - - VPS
 date: 2021-02-24 12:28:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1_PGWf028GLDgCjO8s-jMQ1A.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1_PGWf028GLDgCjO8s-jMQ1A.png
 # highlight_shrink: true
 ---
 
@@ -101,7 +101,7 @@ sysctl -p
 
 即：client --> iran server --> mtproxy server
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/eJaHj3l59czTReQdBwcFqKAm1XdTwWb44Q8kXnKX.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/eJaHj3l59czTReQdBwcFqKAm1XdTwWb44Q8kXnKX.png)
 
 这个方法解决了同一IP被大量用户同时访问连接的问题，在 firewall 看来，只有一台服务器对外提供服务。
 

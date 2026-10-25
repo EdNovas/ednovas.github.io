@@ -5,7 +5,7 @@ categories:
   - - 杂
 date: 2021-09-21 15:58:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/netease-cloud-music-sony-deal-article.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/netease-cloud-music-sony-deal-article.jpg
 # highlight_shrink: true
 ---
 
@@ -23,7 +23,7 @@ https://t.me/BotFather
 
 记下你的token，类似 `11111111：iajfCJIAO324IFJIOW` 一样的一长串，这个就是服务器和tg bot链接的token
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-09-21_12-16-39.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/image_2021-09-21_12-16-39.png)
 
 ## 获取app id
 
@@ -39,7 +39,7 @@ https://my.telegram.org
 
 这里的`app_id`，`app_hash`和`token`就是上面获取的，一一对应填入
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/image_2021-09-21_12-17-20.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/image_2021-09-21_12-17-20.png)
 
 ```bash
 cd /home

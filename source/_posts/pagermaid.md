@@ -8,7 +8,7 @@ categories:
   - VPS
 date: 2021-05-05 23:31:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/telegram-chatbot-1.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/telegram-chatbot-1.png
 ---
 
 GitHub项目地址：https://github.com/Xtao-Labs/PagerMaid-Modify

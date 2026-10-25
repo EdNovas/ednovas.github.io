@@ -10,7 +10,7 @@ categories:
   - 建站
 date: 2021-06-27 10:56:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/photo-1507842217343-583bb7270b66.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/photo-1507842217343-583bb7270b66.jpg
 ---
 
 ## 官网
@@ -33,7 +33,7 @@ https://ednovas.cloud/s/O0Vu8
 
 nginx伪静态改为thinkphp然后保存即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-27_10-29-39.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-27_10-29-39.png)
 
 添加数据库,记住用户名和密码,注意这里要用utf8mb4编码
 
@@ -41,15 +41,15 @@ nginx伪静态改为thinkphp然后保存即可
 
 同意即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-27_10-27-40.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-27_10-27-40.png)
 
 填入对应数据库信息,设置个管理员账密
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-27_10-31-35.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-27_10-31-35.png)
 
 安装完成进入后台
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-27_10-32-33.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-27_10-32-33.png)
 
 ## 采集
 
@@ -73,7 +73,7 @@ INSERT INTO `ky_collect` (`id`, `title`, `charset`, `type`, `url_complete`, `url
 
 复制上方内容的到SQL里
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-27_10-42-32.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-27_10-42-32.png)
 
 ## 更多资源
 

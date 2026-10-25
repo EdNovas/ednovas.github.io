@@ -6,7 +6,7 @@ categories:
   - - 软件
 date: 2021-01-14 06:28:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/powertoys_2019.0.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/powertoys_2019.0.webp
 ---
 
 ## 简介
@@ -35,11 +35,11 @@ Windows 10版PowerToys包含以下工具程序：
 
 默认取色快捷键是win + shift + c （这个c盲猜代表color）。色彩格式支持常见的HEX和RGB以外，还支持HSL\HSV\CMYK\HSB\HSI\HWB\NCol。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-14_06-39-53.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-14_06-39-53.webp)
 
 点击色卡还能选择邻近色，以及输入、调整HSV\RGB\HEX值，十分方便。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-14_06-42-49.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-14_06-42-49.webp)
 
 2. FancyZones 加入了一个窗口管理器，让用户可以更简单地创建并使用复杂的窗口版面配置。
 
@@ -47,25 +47,25 @@ Windows 10版PowerToys包含以下工具程序：
 
 你可以选择窗口然后按住shift即可打开设置好了的窗口管理器（也可以在设置中调整至不需要按shift直接拖动）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-14_06-45-01.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-14_06-45-01.webp)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Ya1A5zwS5w.gif)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Ya1A5zwS5w.gif)
 
 3. File Explorer (Preview Panes) 附加组件，让用户可在资源管理器内预览SVG和Markdown文件。
 
 这个功能略显鸡肋，因为有更好用的软件可以显示markdown和svg文件。quicklook不香嘛！
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-14_06-55-59.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-14_06-55-59.webp)
 
 4. Image Resizer 在资源管理器加入了一个右键菜单选项，用以重新调整图像尺寸。
 
 这个就很实用了，右键快速调整图片尺寸、压缩图片。不过貌似不支持webp格式。如下图可以进行设置，添加自定义大小、图片质量等。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-14_07-07-18.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-14_07-07-18.webp)
 
 选择png\jpg等格式的图片，右键选择resize image调整图片尺寸，即可打开如下窗口进行调整。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-14_07-09-40.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-14_07-09-40.webp)
 
 5. Keyboard Manager 允许用户重新对应按键并创建自己的键盘快捷键。
 
@@ -73,25 +73,25 @@ Windows 10版PowerToys包含以下工具程序：
 
 比如你想要按一个A键就可以实现ctrl+c，就可以使用这个功能进行设置。左边输入A键，右边输入ctrl+c即可完成设置。以后再用ctrl+c的时候直接按A键即可。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-14_07-13-22.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-14_07-13-22.webp)
 
 6. PowerRename 在资源管理器加入了一个选项，允许用户使用搜索和取代或正则表达式来重命名文件。
 
 批量重命名工具，十分好用。批选文件，搜索想要替换的内容，下方输入想要替换的内容，即可实现批量重命名。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-14_07-16-29.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-14_07-16-29.webp)
 
 7. PowerToys Run 一个类似Spotlight的工具，允许用户搜索文件夹、文件、应用程序及其他项目。
 
 微软真的是“有心”了，终于知道自己的搜索功能有多菜鸡了。按alt+space（空格键）即可打开这个搜索窗口。效果肯定不如everything。这个功能有待提升。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-14_07-18-06.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-14_07-18-06.webp)
 
 8. Shortcut Guide 一个全面屏重叠，允许用户查看在当前窗口可用的Windows键快捷键。
 
 长按win键即可打开此窗口。可以显示所有win键 + （如图的各种默认键）的提示，比如你想要打开文件管理器，根据上面的提示，再按E键即可。松开win键自动关闭此窗口，这简直是健忘症福音。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-14_07-22-57.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-14_07-22-57.webp)
 
 9. 更多功能还在加入...
 
@@ -113,6 +113,6 @@ releases界面可以直接下载已经内置版本,或者可以手动安装
 
 放在/modules/launcher/Plugins里面
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210620170001.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210620170001.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210620170047.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210620170047.png)

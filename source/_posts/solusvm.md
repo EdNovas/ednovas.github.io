@@ -5,7 +5,7 @@ categories:
   - - VPS
 date: 2022-03-07 13:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/anyconnect.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/anyconnect.jpg
 ---
 
 ## 转换OVZ7

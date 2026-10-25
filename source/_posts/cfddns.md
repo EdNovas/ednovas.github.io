@@ -5,7 +5,7 @@ categories:
   - - VPS
 date: 2022-02-09 13:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/cf-logo-social-media.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/cf-logo-social-media.png
 ---
 
 ## 脚本地址
@@ -16,7 +16,7 @@ https://github.com/yulewang/cloudflare-api-v4-ddns
 
 访问 https://dash.cloudflare.com/profile 在页面下方找到 Global API Key，点击右侧的 View 查看 Key，并保存下来 ，在页面下方找到 Global API Key，点击右侧的 View 查看 Key，并保存下来 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/bD7yJqoYcAV3riB.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/bD7yJqoYcAV3riB.png)
 
 ## 解析域名
 
@@ -26,7 +26,7 @@ https://github.com/yulewang/cloudflare-api-v4-ddns
 
 ipv4地址随意就行
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/DzHSaNEb1ZBU5pC.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/DzHSaNEb1ZBU5pC.png)
 
 ## 运行脚本
 

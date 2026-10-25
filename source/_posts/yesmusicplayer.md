@@ -6,7 +6,7 @@ categories:
   - - 软件
 date: 2021-02-02 17:35:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/yesplaymusic1.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/yesplaymusic1.webp
 #top: true
 #highlight_shrink: true
 ---
@@ -99,14 +99,14 @@ Spotify
 
 ## 相关截图
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/yesmusicplayer2.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/yesmusicplayer2.webp)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/yesmusicplayer3.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/yesmusicplayer3.webp)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/yesmusicplayer4.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/yesmusicplayer4.webp)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/yesplaymusic5.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/yesplaymusic5.webp)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/yesplaymusic6.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/yesplaymusic6.webp)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/yesplaymusic1.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/yesplaymusic1.webp)

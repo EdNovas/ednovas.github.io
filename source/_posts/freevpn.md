@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2021-01-19 19:47:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/d108d6daa05c480eacfc817179f39db37f4c118c.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/d108d6daa05c480eacfc817179f39db37f4c118c.webp
 #highlight_shrink: true
 ---
 

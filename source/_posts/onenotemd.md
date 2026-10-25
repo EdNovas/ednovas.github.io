@@ -5,7 +5,7 @@ categories:
   - - 软件
 date: 2021-12-24 19:12:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/onemark.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/onemark.jpg
 ---
 
 ## 简介
@@ -35,7 +35,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/onemark.jpg
 
 OneNote 2013 及以上版本，不支持 UWP 版本。安装成功后会在界面上添加 OneMark 菜单。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ribbon.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/ribbon.png)
 
 ## 64位 or 32 位？
 
@@ -43,7 +43,7 @@ OneNote 2013 及以上版本，不支持 UWP 版本。安装成功后会在界�
 
 点击`文件` - `账户` - `关于 OneNote`，弹出的对话框第一行末尾。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/bit.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/bit.png)
 
 ## 安装后没有显示菜单
 
@@ -61,7 +61,7 @@ OneNote 2013 及以上版本，不支持 UWP 版本。安装成功后会在界�
 * 尝试重启电脑。
 * 去`控制面板` - `程序和功能` 中，找到 Office（或OneNote），点击右键 - `修复` - `联机修复`。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/repair.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/repair.png)
 
 运行 `OneMark` 安装程序，先点 `Remove OneMark` 卸载。然后再运行安装程序，在第三步选择安装路径的左下方，勾选`Everyone`，再继续。
 
@@ -75,23 +75,23 @@ OneNote 2013 及以上版本，不支持 UWP 版本。安装成功后会在界�
 
 ## 效果
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/668c882egy1gxe077edp1g20m80ay7lh.gif)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/668c882egy1gxe077edp1g20m80ay7lh.gif)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/668c882egy1gxe077922hg20m80780y1.gif)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/668c882egy1gxe077922hg20m80780y1.gif)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/668c882egy1gxe0779yqmg20m807s7b6.gif)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/668c882egy1gxe0779yqmg20m807s7b6.gif)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/668c882egy1gxe0783rohg20m80gohdx.gif)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/668c882egy1gxe0783rohg20m80gohdx.gif)
 
 双向更新，在Markdown和渲染前的内容间自由切换
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/668c882egy1gxe077bwaqg20m808cwvt.gif)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/668c882egy1gxe077bwaqg20m808cwvt.gif)
 
 被吐槽无数的英文自动变成 Calibri 字体的问题好像也因为这种二次渲染模式的引入无意中解决了
 
 ## 使用快捷键
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-24_17-20-05.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-12-24_17-20-05.png)
 
 ## 结语
 

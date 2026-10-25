@@ -9,7 +9,7 @@ categories:
   - 建站
 date: 2021-05-15 22:08:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/instalar-cloudflare-1.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/instalar-cloudflare-1.png
 ---
 
 ## 简介
@@ -34,25 +34,25 @@ https://www.cloudflare.com/
 
 点击这里的add a site 添加一个网站
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-15_22-12-52.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-15_22-12-52.png)
 
 添加你购买了的域名，比如我的博客地址 ednvoas.xyz
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-15_22-17-59.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-15_22-17-59.png)
 
 选择 free $0 的免费计划即可（别看是免费的，功能依旧强大好用），然后点击continue继续
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-15_22-19-02.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-15_22-19-02.png)
 
 然后会显示你已经解析了的dns，可以直接全部删除也可以不管他
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-15_22-20-37.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-15_22-20-37.png)
 
 ## 更改dns服务器
 
 然后可以点击这个超链接快速前往你购买域名的地方。更改域名的dns服务器为这两个 `angela.ns.cloudflare.com` `corey.ns.cloudflare.com` （每个人不一样的）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-15_22-22-17.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-15_22-22-17.png)
 
 比较常见的域名商的更改dns服务器说明可见[这里](https://support.cloudflare.com/hc/zh-cn/articles/205195708-%E5%B0%86%E6%82%A8%E7%9A%84%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9%E4%B8%BA-Cloudflare)（cloudflare官方说明文档）
 
@@ -154,7 +154,7 @@ Yola: https://www.yola.com/tutorials/article/Changing-the-name-servers-128594443
 
 点击add record 添加一个记录，type类型选择A记录，Name就是 @ （即代表二级域名，根域名，在这里也就是等同于ednovas.xyz的意思），ipv4 address填入你需要解析到的vps的ip地址，比如 1.1.1.1, proxy status也就是cdn小云朵，要给他点灭（如果需要开启cdn后面再打开，如果需要申请证书和搭建节点请勿开启），最后点击save保存
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-16_10-39-54.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-16_10-39-54.png)
 
 等待几秒解析记录生效即可完成解析
 
@@ -162,7 +162,7 @@ Yola: https://www.yola.com/tutorials/article/Changing-the-name-servers-128594443
 
 要想解析更多级域名，多加几个点就是了，比如1.2.3.4.5.6.ednovas.xyz
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-16_10-44-30.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-16_10-44-30.png)
 
 ## 解析完成
 

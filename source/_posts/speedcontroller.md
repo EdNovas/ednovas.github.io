@@ -6,7 +6,7 @@ categories:
   - - 软件
 date: 2021-02-02 12:24:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/unnamed (1).jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/unnamed (1).jpg
 #top: true
 #highlight_shrink: true
 ---
@@ -31,7 +31,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/unnamed (1).jp
 
 如果您更喜欢其他快捷方式，想要更改增量值或希望播放器将来记住您的播放速度，请进入设置页面，并根据自己的喜好对其进行自定义。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vsc2.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vsc2.jpg)
 
 ## 安装
 
@@ -46,9 +46,9 @@ https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfg
 
 下载安装该插件
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-02_12-22-40.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-02_12-22-40.webp)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-02_12-22-40.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-02_12-22-40.webp)
 
 GitHub 项目地址：
 

@@ -9,7 +9,7 @@ categories:
   - VPS
 date: 2021-06-07 14:06:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/connector-rssfeed-colorlogo.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/connector-rssfeed-colorlogo.png
 ---
 
 ## 项目地址
@@ -46,11 +46,11 @@ copy config.yml.sample config.yml
 
 输入你想叫的名字，以及分配一个用户名，用户名需要以bot结尾，比如图中的 ednovas_rss_bot
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-07_14-14-58.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-07_14-14-58.png)
 
 最后会返回给你bot的token，复制并黏贴到config.yml中的bot_token的位置并保存
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-07_14-17-45.png）
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-07_14-17-45.png）
 
 ## 获取telegraph token
 

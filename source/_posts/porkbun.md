@@ -6,7 +6,7 @@ categories:
   - - 网站
 date: 2021-01-14 08:15:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/porkbun.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/porkbun.png
 ---
 
 本活动由about.us和Porkbun联合举办，很早之前就有的活动了，只不过最近又可以注册了

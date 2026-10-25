@@ -5,13 +5,13 @@ categories:
   - - 科学上网
 date: 2022-03-07 15:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/clash.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/clash.png
 ---
 
 使用Prasers更新订阅，会自动把旧配置改成新配置
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7d69aa1167261b56dc945.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/7d69aa1167261b56dc945.png)
 
 ## Windows
 

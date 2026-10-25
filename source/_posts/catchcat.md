@@ -34,4 +34,4 @@ js代码可以托管到jsdelivr cdn加速一下
 
 [3 X 3](/catchcatone)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/03-10_20-04-49.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/03-10_20-04-49.png)

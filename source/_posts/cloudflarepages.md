@@ -10,7 +10,7 @@ categories:
   - 建站
 date: 2021-07-04 12:56:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/e8a8c56d.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/e8a8c56d.webp
 ---
 
 ## Cloudflare Pages
@@ -35,7 +35,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/e8a8c56d.webp
 
 按照官网介绍，现在 JAMstack 是新一代的网站架构，通过预渲染和可重用的 API，使其同时拥有静态和动态站点的优势。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/132321.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/132321.png)
 
 > Jamstack is the new standard architecture for the web. Using Git workflows and modern build tools, pre-rendered content is served to a CDN and made dynamic through APIs and serverless functions. Technologies in the stack include JavaScript frameworks, Static Site Generators, Headless CMSs, and CDNs.
 > 
@@ -47,23 +47,23 @@ https://pages.cloudflare.com/
 
 登录后绑定你的GitHub账户,然后授予权限,权限全给或者只给你的GitHub Pages仓库都可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-04_12-32-20.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-07-04_12-32-20.png)
 
 然后随便输入个project name项目名称,不可用中文,保持默认的GitHub仓库名也可
 
 framework preset选择None,因为GitHub里是已经渲染好的静态网站了,所以`build command`构建命令和`build output directory`也都空着就行,下面的`Path`也空着即可,然后点击`Save and Deploy`
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-04_13-30-41.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-07-04_13-30-41.png)
 
 构建需要数分钟,耐心等待即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-04_12-13-53.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-07-04_12-13-53.png)
 
 构建完成后的域名十分复杂,可以自定义域名
 
 `Settings`设置中还可以便捷的开启`Access policy`和`Web Analytics`十分贴心
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-04_13-34-25.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-07-04_13-34-25.png)
 
 ## DEMO
 

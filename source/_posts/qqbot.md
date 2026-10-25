@@ -9,7 +9,7 @@ categories:
   - VPS
 date: 2021-06-05 20:19:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-c78b0cbf81571fdd2e0fd76555424555_720w.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/v2-c78b0cbf81571fdd2e0fd76555424555_720w.jpg
 ---
 
 ## 项目
@@ -55,11 +55,11 @@ https://github.com/Mrs4s/go-cqhttp/releases
 
 （其他任何地方均可，这里以/home下为例）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-05_20-31-16.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-05_20-31-16.png)
 
 然后把之前下载的 go-cqhttp_linux_amd64.tar.gz 的文件放到该目录下 `/home/go-cqhttp` ，并解压
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-05_20-34-29.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-05_20-34-29.png)
 
 解压后会多出来三个文件
 
@@ -72,7 +72,7 @@ cd /home/go-cqhttp
 
 选择第二个ws，输入数字2回车即可（你甚至可以全部选择，输入1234回车）然后生成config.yml以后可以 `ctrl+c` 终止进程
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-05_20-43-07.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-05_20-43-07.png)
 
 ## 配置go-cqhttp
 
@@ -82,7 +82,7 @@ cd /home/go-cqhttp
 
 然后Save保存文件即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-05_20-47-43.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-05_20-47-43.png)
 
 ## go-cqhttp升级
 
@@ -103,7 +103,7 @@ cd /home/go-cqhttp
 
 如图即正常加载了
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-05_20-49-50.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-05_20-49-50.png)
 
 当然，估计你因为异地登录会让你输入滑块验证码反馈
 
@@ -157,7 +157,7 @@ npm -v
 
 应该能正确返回版本号。如果不能，请确定安装过程没有任何问题，然后手动添加环境目录
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-05_21-12-03.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-05_21-12-03.png)
 
 ## 安装部署 qc-picsearcher-bot
 

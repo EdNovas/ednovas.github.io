@@ -10,7 +10,7 @@ categories:
   - 建站
 date: 2021-07-03 18:56:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Step-5.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Step-5.png
 ---
 
 ## 小浣熊漫画CMS
@@ -36,23 +36,23 @@ chown -R www:www ./
 
 php 拓展中安装 `redis`
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-22-12.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-07-03_20-22-12.png)
 
 运行目录改成`/public`
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-31-28.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-07-03_20-31-28.png)
 
 新建数据库
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-35-25.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-07-03_20-35-25.png)
 
 访问域名,填入对应数据库信息,其中前缀用默认`tp_`即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-36-07.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-07-03_20-36-07.png)
 
 设置管理员账户
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-07-03_20-36-57.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-07-03_20-36-57.png)
 
 如果要开启404,而不让cms报错信息显示出来,需要修改config/app.php文件,在中间偏下的位置
 

@@ -6,7 +6,7 @@ categories:
   - - 编程
 date: 2020-12-26 17:14:58
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/heybox/day1/V1.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/heybox/day1/V1.webp
 ---
 
 Python最近几年有多火相信大家也有所耳闻，因为其简单易上手还有极其丰富的各种库让他成为了新手容易上手，上限也不低的热门编程语言。我学习python也没有很长时间，还算是个菜鸟新手，在这里只是和大家分享一下我作为一个新手学习python的历程。

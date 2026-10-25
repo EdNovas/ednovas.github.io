@@ -6,7 +6,7 @@ categories:
   - - 下载
 date: 2020-12-21 12:23:01
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/googlechrome.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/googlechrome.webp
 ---
 
 ## Chrome浏览器（edge也可以）自带下载功能提速

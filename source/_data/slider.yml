@@ -5,7 +5,7 @@
 #  description: 置顶文章描述
 #  button: 手机端按钮内容
 # 示例如下
-- cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/33-332141_vector-illustration-of-romance-love-heart-symbol-poster.png
+- cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/33-332141_vector-illustration-of-romance-love-heart-symbol-poster.png
   timeline: '2020-12-26'
   link: /支持/
   title: 打赏支持
@@ -17,7 +17,7 @@
   title: E视界 (DonguaTV Enhanced Edition)
   description: 基于Vue 3和Node.js开发的增强版影视聚合播放器，支持广告过滤与多设备同步
   button: 详情
-- cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/bash-logo.jpg
+- cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/bash-logo.jpg
   timeline: '2022-01-02'
   link: /2022/01/02/ednovastool/
   title: EdNovas VPS一键脚本

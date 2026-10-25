@@ -5,7 +5,7 @@ categories:
   - - VPS
 date: 2021-10-04 20:51:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vps2.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vps2.jpg
 # highlight_shrink: true
 ---
 
@@ -33,7 +33,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vps2.jpg
 
 输入 `/getid` 获取你的用户ID，然后网站内复制黏贴你的用户ID,接下来会通过 `@HatTG_bot` 给你发送一个密钥，复制并填入网站内
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-04_19-17-35.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-04_19-17-35.png)
 
 网站内除了这一串密钥，还会让你创建一个账号登录密码，按照要求创建即可
 
@@ -47,7 +47,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vps2.jpg
 
 等待网站配置好您的VPS服务器，大概需要1-3分钟的时间
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211020001907.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211020001907.png)
 
 ## 登入VPS
 
@@ -61,7 +61,7 @@ https://hax.co.id/vps-info
 
 点击对应按钮进行操作
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211005070258.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211005070258.png)
 
 ## 续期
 
@@ -69,15 +69,15 @@ https://hax.co.id/vps-info
 
 续期需要在过期时间前3天内续期才有效，怕忘记可以上个每周的闹钟哈哈哈
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-04_20-34-27.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-04_20-34-27.png)
 
 ## IPV4
 
 网站很贴心的贴上了快捷添加IPV4的方法，这个就自行研究了吧，官方也贴有简要的说明
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-04_20-47-29.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-04_20-47-29.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-04_20-46-50.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-04_20-46-50.png)
 
 ## 免费数量
 

@@ -5,7 +5,7 @@ categories:
   - - 建站
 date: 2021-12-17 13:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/shutterstock_781493554.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/shutterstock_781493554.png
 ---
 
 > 转载自 小御坂的破站 https://blog.misaka.rest/202110/55.html
@@ -18,85 +18,85 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/shutterstock_7
 
 打开[注册页面](https://nic.eu.org/arf/en/login/) https://nic.eu.org/arf/en/login/ ，点击Register
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010021048.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010021048.png)
 
 填入个人信息，输入邮箱密码，同意协议，点击Create
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010021322.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010021322.png)
 
 成功创建账号
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010021420.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010021420.png)
 
 在你的邮箱应该会有类似这样的邮件，点击里面的链接激活账号
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010021545.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010021545.png)
 
 输入你在eu.org的用户代码（类似于：什么什么-Free），输入密码，点击Login登录
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010021704.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010021704.png)
 
 点击New Domain创建域名
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010021755.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010021755.png)
 
 输入待申请的域名，输入dns记录，点击Submit
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010021909.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010021909.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010022403.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010022403.png)
 
 
 ## 域名添加到CF的小提示
 
 登录CF账号，进入已有的域名，复制下方的两个dns服务器即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010022158.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010022158.png)
 
 出现Error时，请点击浏览器的返回按钮回到注册页面
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010022231.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010022231.png)
 
 选择第一项server names，点击Submit
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010022345.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010022345.png)
 
 等待审核通过
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010022421.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010022421.png)
 
 审核通过之后，你的面板上应会有审核好的域名
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010022602.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010022602.png)
 
 点击需要管理的域名
 
 点击Nameservers
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010022755.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010022755.png)
 
 检查自己的dns是否设置正确
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010022918.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010022918.png)
 
 打开CF，新增网页
 
 输入域名，点击Add site
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010023019.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010023019.png)
 
 选择套餐，点击Continue
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010023051.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010023051.png)
 
 设置dns解析，点击Continue
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010023217.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010023217.png)
 
 添加完成
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010023258.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010023258.png)
 
 ## 问题
 
@@ -116,12 +116,12 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/shutterstock_7
 
 先在 [TopDN](https://topdn.net/) 注册，把你的域名解析到TopDN。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/photo_2021-11-14_12-10-31.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/photo_2021-11-14_12-10-31.jpg)
 
 回到eu.org域名注册页面，在Nameserver按照如下图填写TopDN的ns记录，选择第一项servername，点击submit。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/photo_2021-11-14_12-10-45.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/photo_2021-11-14_12-10-45.jpg)
 
 看到这个done就是已经提交申请，需要等待一段时间（短则几小时，长则几个月）等待审核通过，通过或者不通过的情况，官方都会发邮件给你，注意查收邮件。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211010022421.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211010022421.png)

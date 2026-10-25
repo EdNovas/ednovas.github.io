@@ -6,10 +6,10 @@ categories:
   - - 软件
 date: 2021-01-10 14:55:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/potplayer-01.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/potplayer-01.webp
 ---
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/potplayer-01.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/potplayer-01.webp)
 
 ## 简介
 
@@ -41,15 +41,15 @@ https://github.com/iptv-org/iptv/blob/master/README.md
 
 这里有按照类别来分类的：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_14-39-53.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_14-39-53.webp)
 
 还有按照语言来分类的：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_14-40-12.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_14-40-12.webp)
 
 还有按照地区/国家分类的：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_14-40-42.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_14-40-42.webp)
 
 复制下其中一个，比如所有的中文频道（只需要复制链接），从左到右分别是：语言、频道数量、链接
 
@@ -57,15 +57,15 @@ Chinese	827	https://iptv-org.github.io/iptv/languages/zho.m3u
 
 然后右键播放器，打开playlist（播放列表），然后在上方点击 + 添加一个播放列表
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_14-39-24.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_14-39-24.webp)
 
 选择最后一个External Playlist，复制上刚刚的链接https://iptv-org.github.io/iptv/languages/zho.m3u ，然后在最上方的Name名字，输入一个标记，用来区分不同的频道。最后点击OK确定。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_14-42-07.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_14-42-07.webp)
 
 等待片刻，右边就会出现频道了，选择你想看的频道即可。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_14-42-32.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_14-42-32.webp)
 
 ## 其他
 

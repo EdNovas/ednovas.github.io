@@ -5,7 +5,7 @@ categories:
   - - 科学上网
 date: 2022-06-25 14:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/PASSWORD-ft-IMAGE.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/PASSWORD-ft-IMAGE.png
 ---
 
 # GFW的原理
@@ -16,13 +16,13 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/PASSWORD-ft-IM
 
 检测有两种方式。一种是人工检测，一种是机器检测。你去国新办网站举报，就是参与了人工检测。在人工检测到不和谐的网站之后，就会采取一些应对方式来防止国内的网民访问该网站。对于这类的封锁，规避检测就不是技术问题了，只能从GFW采取的应对方式上采取反制措施。另外一类检测是机器检测，其检测过程又可以再进一步细分：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/0r2ob02om5.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/0r2ob02om5.png)
 
 重建是指GFW从网络上监听过往的IP包，然后分析其中的TCP协议，最后重建出一个完整的字节流。分析是在这个重建的字节流上分析具体的应用协议，比如HTTP协议。然后在应用协议中查找是不是有不和谐的内容，然后决定采用何种应对方式。
 
 所以，GFW机器检测的第一步就是重建出一个字节流。那么GFW是如何拿到原始的IP包的呢？真正的GFW部署方式，外人根本无从得知。据猜测，GFW是部署在国家的出口路由器的旁路上，用“分光”的方式把IP包复制一份到另外一根光纤上，从而拿到所有进出国境的IP包。下图引在gfwrev.blogspot.com：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/g8f9fcptsz.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/g8f9fcptsz.png)
 
 但是Google在北京有自己的机房。所以聪明的网友就使用Google的北京机房提供的GAE服务，用Goagent软件达到高速翻墙的目的。但是有网友证实 [https://twitter.com/chengr28/status/260970749190365184](https://twitter.com/chengr28/status/260970749190365184) ，
 即便是北京的机房也会被骨干网丢包。事实上Google在北京的谷翔机房有一个独立的AS（BGP的概念）。这个AS与谷歌总部有一条IPV6的直连线路，所以通过这个机房可以用IPV6不受墙的限制出去。但是这个AS无论是连接国内还是国外都是要经过GFW的。所以机房在北京也不能保证国内访问不被墙。GFW通过配置骨干网的BGP路由规则，是可以让国内的机房也经过它的。另外一个例子是当我们访问被封的网站触发连接重置的时候，往往收到两个RST包，但是TTL不同。还有一个例子是对于被封的IP，访问的IP包还没有到达国际出口就已经被丢弃。所以GFW应该在其他地方也部署有设备，据推测是在省级骨干路由的位置。
@@ -33,7 +33,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/PASSWORD-ft-IM
 
 GFW在拥有了这些IP包之后，要做一个艰难的决定，那就是到底要不要让你和服务器之间的通信继续下去。GFW不能太过于激进，毕竟全国性的不能访问国外的网站是违反GFW自身存在价值的。GFW就需要在理解了IP包背后代表的含义之后，再来决定是不是可以安全的阻断你和国外服务器之间的连接。这种理解就要建立了前面说的“重建”这一步的基础上。大概用图表达一下重建是在怎么一回事：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/a1tcmvrpms.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/a1tcmvrpms.png)
 
 重建需要做的事情就是把IP包1中的GET /inde和IP包2中的x.html H和IP包3中的TTP/1.1拼到一起变成GET /index.html HTTP/1.1。拼出来的数据可能是纯文本的，也可能是二进制加密的协议内容。具体是什么是你和服务器之间约定好的。GFW做为窃听者需要猜测才知道你们俩之间的交谈内容。对于HTTP协议就非常容易猜测了，因为HTTP的协议是标准化的，而且是未加密的。所以GFW可以在重建之后很容易的知道，你使用了HTTP协议，访问的是什么网站。
 
@@ -49,7 +49,7 @@ GFW在拥有了这些IP包之后，要做一个艰难的决定，那就是到底
 
 对于GFW具体是怎么达到目的一，也就是防止不和谐内容传播的就牵涉到对HTTP协议和DNS协议等几个协议的明文审查。大体的做法是这样的。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/xm6kekrlzh.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/xm6kekrlzh.png)
 
 像HTTP这样的协议会有非常明显的特征供检测，所以第一步就没什么好说的了。当GFW发现了包是HTTP的包之后就会按照HTTP的协议规则拆包。这个拆包过程是GFW按照它对于协议的理解来做的。比如说，从HTTP的GET请求中取得请求的URL。然后GFW拿到这个请求的URL去与关键字做匹配，比如查找Twitter是否在请求的URL中。为什么有拆包这个过程？首先，拆包之后可以更精确的打击，防止误杀。另外可能预先做拆包，比全文匹配更节省资源。其次，xiaoxia和liruqi同学的jjproxy的核心就是基于GFW的一个HTTP拆包的漏洞，当然这个bug已经被修复了。其原理就是GFW在拆解HTTP包的时候没有处理有多出来的\r\n这样的情况，但是你访问的google.com却可以正确处理额外的\r\n的情况。从这个例子中可以证明，GFW还是先去理解协议，然后才做关键字匹配的。关键字匹配应该就是使用了一些高效的正则表达式算法，没有什么可以讨论的。
 
@@ -130,7 +130,7 @@ GFW除了自身主体是挂在骨干路由器旁路上的入侵检测设备，�
 
 shadowsocks（ss）是一种基于sock5代理方式的加密传输协议。初代版本发布于2012年4月20日。Shadowsocks使用自行设计的协定进行加密通信。加密演算法有AES、Blowfish、ChaCha20、RC4等，除建立TCP连接外无需握手，每次请求只转发一个连接，无需保持一直连线的状态，因此在流动装置上相对较为省电。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/FQ1cONPXIAYyLLg.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/FQ1cONPXIAYyLLg.jpg)
 
 
 

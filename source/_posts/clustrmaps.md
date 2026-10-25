@@ -5,7 +5,7 @@ categories:
   - - 建站
 date: 2021-10-29 18:51:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/istockphoto-1278951186-170667a.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/istockphoto-1278951186-170667a.jpg
 # highlight_shrink: true
 ---
 
@@ -20,15 +20,15 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/istockphoto-12
 
 注册之后，在官网找到 Website Widget，如图。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20200505000231389.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20200505000231389.png)
 
 我喜欢Globe widget形式，如果喜欢Map自便
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20200504230609405.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20200504230609405.png)
 
 点击select就可以看到信息了，我这里用的html版，复制到你的博客就好了。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/2020050423071020.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/2020050423071020.png)
 
 ## Hexo主题引入
 
@@ -41,13 +41,13 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/istockphoto-12
   card_maps: true
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20200504234654500.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20200504234654500.png)
 
 添加一个界面元素
 
 文件如图所示：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20200504234850441.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20200504234850441.png)
 
 先在加载框添加一条card_maps的声明，（主题控制是否显示这个界面元素）
 修改添加：`themes\Butterfly\layout\includes\widget\index.pug`
@@ -59,7 +59,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/istockphoto-12
 
 位置其实你可以任意
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20200504234731170.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20200504234731170.png)
 
 
 

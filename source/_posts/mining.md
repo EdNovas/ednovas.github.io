@@ -5,7 +5,7 @@ categories:
   - - 杂
 date: 2021-12-02 13:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Ethereum-2.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Ethereum-2.jpg
 ---
 
 ## 准备工作
@@ -14,7 +14,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Ethereum-2.jpg
 
 显卡天梯图：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-15eb42faf46aaa34d7268edf8495f430_r.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/v2-15eb42faf46aaa34d7268edf8495f430_r.jpg)
 
 挖矿软件用的开源矿工：https://ntminer.com
 
@@ -39,7 +39,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Ethereum-2.jpg
 挖 ETH 每卡至少设置 6.0G 虚拟内存，建议按虚拟内存比显存 1 比 1 设置。比如 6 张 6G 的 1066 显卡建议设置 6 x 6 = 36G。
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-02_19-09-47.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-12-02_19-09-47.png)
 
 点确认后会让你重新启动，点击重启即可。
 
@@ -53,21 +53,21 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Ethereum-2.jpg
 
 矿机名随意填，主币选择ETH
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-02_19-15-47.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-12-02_19-15-47.png)
 
 内核安装NBMiner（最新版即可）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-02_19-16-34.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-12-02_19-16-34.png)
 
 主矿池选择火币北方1
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-02_19-16-53.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-12-02_19-16-53.png)
 
 主池账户选择刚刚创建的子账户名称即可
 
 然后点击尚未开始那个地方，点击开始挖矿
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-12-02_19-18-34.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-12-02_19-18-34.png)
 
 ## 到账
 

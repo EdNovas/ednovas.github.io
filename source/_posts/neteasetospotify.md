@@ -6,7 +6,7 @@ categories:
   - - 杂
 date: 2021-09-17 15:58:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1_c0FaLqy4tcO1uuYLP8AWBw.jpeg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1_c0FaLqy4tcO1uuYLP8AWBw.jpeg
 # highlight_shrink: true
 ---
 
@@ -41,7 +41,7 @@ https://greasyfork.org/zh-CN/scripts/38793-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%
 
 安装完成后打开你的歌单网页，然后右上角就会出现导出列表按钮，保存到本地即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/5s28oe4p37xtwc7u8cj087r3ni6d.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/5s28oe4p37xtwc7u8cj087r3ni6d.png)
 
 ## 导出方法2
 

@@ -8,7 +8,7 @@ categories:
   - 下载
 date: 2021-08-01 17:56:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/xiao2018-08-26_15-31-27.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/xiao2018-08-26_15-31-27.jpg
 ---
 
 ## 前言

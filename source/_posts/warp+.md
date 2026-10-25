@@ -5,13 +5,13 @@ categories:
   - - 杂
 date: 2021-10-05 11:51:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/main-warp-share-1.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/main-warp-share-1.png
 # highlight_shrink: true
 ---
 
 ## 最简单的方法
 
-https://replit.com/@wdm1732418365/warp
+> 注：原 Replit 项目已失效。
 
 点击小三角开始run运行，然后输入你的warp ID（获取方法见下`获取APP的设备ID`部分）
 
@@ -33,7 +33,7 @@ CloudFlare® WARP APP
 
 打开客户端的偏好设置，然后复制这一串设备ID
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-05_19-04-39.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-05_19-04-39.png)
 
 ### Android
 
@@ -172,17 +172,17 @@ jobs:
 
 找到settings, secrets,新创建一个仓库secret
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-05_21-29-17.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-05_21-29-17.png)
 
 名字填入`DEVICEID`，下方黏贴上最早复制的那个设备ID，最后点击Add secret添加
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-05_21-31-32.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-05_21-31-32.png)
 
 ## 开始 Actions
 
 转到 `Actions`，点击`Getting WARP+ Traffic`，`Run workflow` 即可开始了
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-10-05_21-34-24.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-10-05_21-34-24.png)
 
 ## F&Q
 

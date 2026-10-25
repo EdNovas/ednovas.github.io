@@ -5,7 +5,7 @@ categories:
   - - 杂
 date: 2021-10-24 21:51:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(1).png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(1).png
 # highlight_shrink: true
 ---
 
@@ -59,136 +59,136 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(1)
 
 世界那么大，一起去看看吧！不要从明天开始，千里之路，始于脚下。带上你的心，去享受世界
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(1).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(1).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(1).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(1).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(2).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(2).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(3).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(3).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(4).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(4).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(5).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(5).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(6).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(6).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(7).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(7).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(8).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(8).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(9).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(9).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(10).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(10).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(11).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(11).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(12).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(12).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(13).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(13).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(66).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(66).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(65).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(65).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(64).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(64).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(63).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(63).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(62).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(62).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(61).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(61).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(60).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(60).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(59).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(59).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(58).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(58).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(57).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(57).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(56).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(56).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(55).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(55).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(54).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(54).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(53).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(53).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(52).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(52).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(51).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(51).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(50).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(50).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(49).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(49).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(48).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(48).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(47).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(47).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(46).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(46).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(45).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(45).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(44).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(44).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(43).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(43).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(42).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(42).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(41).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(41).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(40).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(40).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(39).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(39).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(38).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(38).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(37).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(37).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(36).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(36).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(35).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(35).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(34).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(34).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(33).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(33).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(32).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(32).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(31).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(31).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(30).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(30).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(29).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(29).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(28).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(28).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(27).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(27).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(26).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(26).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(25).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(25).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(24).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(24).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(23).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(23).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(22).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(22).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(21).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(21).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(20).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(20).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(19).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(19).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(18).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(18).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(17).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(17).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(16).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(16).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(15).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(15).png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/daydream%20(14).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/daydream%20(14).png)

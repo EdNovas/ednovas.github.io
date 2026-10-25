@@ -10,7 +10,7 @@ categories:
   - VPS
 date: 2021-05-08 12:21:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-00532941b2f768db55fe49309766f637_1440w.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/v2-00532941b2f768db55fe49309766f637_1440w.jpg
 ---
 
 ## 主要思路

@@ -5,14 +5,14 @@ categories:
   - - VPS
 date: 2022-01-02 19:12:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/bash-logo.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/bash-logo.jpg
 sticky: 1
 ---
 # EdNovas的Toolbox工具箱
 
 ## 脚本地址
 
-https://github.com/wdm1732418365/vpstoolbox
+https://github.com/ednovas/vpstoolbox
 
 ## 简介
 

@@ -6,7 +6,7 @@ categories:
   - - 下载
 date: 2020-12-21 12:32:13
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/heybox/IDM/Snipaste_2020-12-13_20-33-10.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/heybox/IDM/Snipaste_2020-12-13_20-33-10.webp
 ---
 
 每天一个小技巧更多的是提供一种方法，并不是你必须的选择。每个人有自己的意愿，适合自己的方法才是最好的，这里只做推荐。

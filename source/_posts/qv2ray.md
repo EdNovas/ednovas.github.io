@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2021-03-20 09:15:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/4d04fa00-c81d-11ea-929c-38b8e9efcbcc.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/4d04fa00-c81d-11ea-929c-38b8e9efcbcc.png
 # highlight_shrink: true
 ---
 
@@ -56,7 +56,7 @@ Xray：https://github.com/XTLS/Xray-core/releases
 
 下载以后解压，在qv2ray的设置->内核设置->v2ray核心选择`v2ray.exe`或`xray.exe`，资源目录就选择`v2ray.exe`或`xray.exe`所在的目录即可，如图例
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210320055923.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210320055923.png)
 
 推荐用Xray内核，因为他是向下兼容的，所以兼容v2ray-core
 
@@ -106,7 +106,7 @@ https://github.com/klzgrad/naiveproxy/releases
 
 连接设置中已经自动绕过中国大陆和私有地址了，再建议打开绕过BT协议，同时把入站设置中的嗅探打开。毕竟机场都禁BT下载
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/03-20_07-56-56.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/03-20_07-56-56.png)
 
 ### 加强版规则
 
@@ -124,7 +124,7 @@ https://github.com/Loyalsoldier/v2ray-rules-dat
 
 双击节点开始起飞
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/03-20_09-30-34.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/03-20_09-30-34.png)
 
 ***
 
@@ -138,7 +138,7 @@ https://github.com/Loyalsoldier/v2ray-rules-dat
 
 ## 主流协议速度对比
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/photo_2021-03-19_21-20-51.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/photo_2021-03-19_21-20-51.jpg)
 
 ## 简介
 

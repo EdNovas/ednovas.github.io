@@ -228,7 +228,7 @@ gitcalendar:
   #设为false时使用svg绘制gitgitcalendar
   #canvas：dom数少，但图像会发生模糊，自适应一般
   #svg：dom数多，图像清晰，自适应更佳
-  user: wdm1732418365 #这里填写你的github用户名
+  user: ednovas #这里填写你的github用户名
   apiurl: github-calendar-api.vercel.app
   # 以下色调选择喜欢的一行保留即可。其余注释。
   # color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
@@ -310,11 +310,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/830.circled-e-filled1.png
+favicon: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/830.circled-e-filled1.png
 
 # Avatar (頭像)
 avatar:
-  img: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/icon.png
+  img: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/icon.png
   effect: false
 
 # Disable all banner image
@@ -363,14 +363,14 @@ cover:
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
-  flink: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/404.gif
-  post_page: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp
+  flink: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/404.gif
+  post_page: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp
 
 # A simple 404 page
 error_404:
   enable: true
   subtitle: '页面无法找到 | Page Not Found'
-  background: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/404.gif
+  background: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/404.gif
 
 post_meta:
   page: # Home Page
@@ -421,10 +421,10 @@ post_copyright:
 reward:
   enable: false
   QR_code:
-    #  - img: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/IMG_20210114_081337.JPG
+    #  - img: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/IMG_20210114_081337.JPG
     # #   link:
     #  - text: wechat
-    #  - img: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/IMG_20210114_081257.JPG
+    #  - img: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/IMG_20210114_081257.JPG
     # #   link:
     #  - text: alipay
 
@@ -682,7 +682,7 @@ google_adsense:
 ad:
   index: 
   aside:
-  post: <a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210405210546.png"><center><h3>EdNovas云————EdNovas自己搞的机场，不想来试试嘛？</h3></center></a>
+  post: <a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210405210546.png"><center><h3>EdNovas云————EdNovas自己搞的机场，不想来试试嘛？</h3></center></a>
 
 # Verification (站長驗證)
 # --------------------------------------

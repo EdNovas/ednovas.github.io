@@ -7,7 +7,7 @@ categories:
   - - 安全
 date: 2021-01-18 10:45:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210118104709.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210118104709.webp
 #highlight_shrink: true
 ---
 
@@ -18,19 +18,19 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片202101
  
 这我就想去验证下了，开虚拟机装QQ、Chrome，然后打开Process Monitor开始等。规则简单的过滤下。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/873391_DJ94X9WVG4MBTWR.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/873391_DJ94X9WVG4MBTWR.png)
 
 果然看到了读取AppData\Local\Google\Chrome\User Data\Default\History等目录的操作。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/873391_W68XZTFJANKMN69.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/873391_W68XZTFJANKMN69.png)
 
 而且时间也是恰到好处的十分钟。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/873391_FWD8MPBYN2VRD3G.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/873391_FWD8MPBYN2VRD3G.png)
 
 这是实锤了QQ和Chrome过不去啊，这我可不信，把规则去掉，重新翻了一下才发现果然是冤枉QQ了啊。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/873391_AGXY96FE877JTJU.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/873391_AGXY96FE877JTJU.png)
 
 受害人之多令人震惊，仔细一看，这玩意是遍历了Appdata\Local\下的所有文件夹，然后加上User Data\Default\History去读啊。User Data\Default\History是谷歌系浏览器（火狐等浏览器不熟，不清楚目录如何）默认的历史纪录存放位置，Chrome中枪也就很正常了。
 
@@ -40,15 +40,15 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片202101
  
 挂上x32dbg，动态调试找到位置。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/873391_C2KUMY3YXHM4B37.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/873391_C2KUMY3YXHM4B37.png)
 
 然后去IDA里直接反编译出来，如下（位置在AppUtil.dll中 .text:510EFB98 附近）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/873391_5HHXWXCZHYAZ4RH.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/873391_5HHXWXCZHYAZ4RH.png)
 
 这一段的逻辑还是很好看懂的，先读取各种 User Data\Default\History 文件，读到了就复制到Temp目录下的temphis.db。回去看下Procmom，果然没错。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/873391_3CRMBX6H9ENTZ6B.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/873391_3CRMBX6H9ENTZ6B.png)
 
 再之后的操作就简单了，SQLite读取数据库，然后“select url from urls”，这是在干什么大家都懂哈。后面就不接着讲了，有兴趣的可以自己接着看。
 
@@ -58,8 +58,8 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片202101
  
 晚上来编辑一下，刚才去试了下TIM，果然经典重现，而且比QQ还离谱，不多说直接上图。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/873391_W44WFBHCYKMC3PX.png)
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/873391_FY3MV2SM35XPDR2.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/873391_W44WFBHCYKMC3PX.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/873391_FY3MV2SM35XPDR2.png)
 
 >转载自qwqdanchun https://bbs.pediy.com/thread-265359.htm
 
@@ -79,7 +79,7 @@ Chrome插件商店：
 
 https://chrome.google.com/webstore/detail/ghostery-%E2%80%93-privacy-ad-blo/mlomiejdfkolichcflejclcbmpeaniij/related?utm_source=chrome-ntp-icon
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-18_10-53-42.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-18_10-53-42.webp)
 
 ### 卡巴斯基
 
@@ -92,19 +92,19 @@ https://www.zhihu.com/question/439768601/answer/1683013056
 
 先打开火绒的防护中心
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-18_08-28-22.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-18_08-28-22.webp)
 
 选择高级防护，打开自定义保护
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-18_08-28-33.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-18_08-28-33.webp)
 
 在来到安全设置中的自定义防护，添加一条规则
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-18_08-31-41.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-18_08-31-41.webp)
 
 取一个规则名，发起程序选择*即表示所有程序，文件规则写入访问的路径，保护的动作选择读取和修改，然后保存。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-18_08-32-59.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-18_08-32-59.webp)
 
 添加以下几条规则，应该能包含大部分主流浏览器的访问记录了
 
@@ -123,7 +123,7 @@ https://www.zhihu.com/question/439768601/answer/1683013056
 
 果不其然，开启QQ以后十分钟左右会出现如下提示，要读取你的历史记录。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210118104709.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210118104709.webp)
 
 除此之外，火绒官方论坛还有很多其他强大的用户自定规则
 

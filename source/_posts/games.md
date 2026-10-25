@@ -6,7 +6,7 @@ categories:
   - - 杂
 date: 2021-01-04 12:11:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/video-game-types-blog-header.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/video-game-types-blog-header.webp
 password: 123
 ---
 

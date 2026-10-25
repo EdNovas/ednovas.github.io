@@ -8,7 +8,7 @@ categories:
   - VPS
 date: 2021-08-15 15:25:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/featured_hub2cfcd6b5c77b9a12c88168cc4a68ae1_69085_768x0_resize_q75_lanczos.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/featured_hub2cfcd6b5c77b9a12c88168cc4a68ae1_69085_768x0_resize_q75_lanczos.webp
 ---
 
 ## 前言
@@ -81,7 +81,7 @@ Finalshell 要黏贴文本是按下右键黏贴。
 
 ### 快捷键
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20181207050337.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20181207050337.png)
 
 打开文件后，下方有一堆文字，那就是快捷键说明。例如：`^G` 即为 `Ctrl+G` ，功能为显示帮助文本。
 

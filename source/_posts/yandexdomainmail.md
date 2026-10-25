@@ -5,7 +5,7 @@ categories:
   - - 杂
 date: 2022-02-08 13:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/yandexmail.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/yandexmail.png
 ---
 
 Outlook e5 a1 a1p等订阅可以自定义域名，但是比较复杂或者需要一些特殊手段，但是yandex mail提供免费的域名邮箱服务。这项服务叫做Yandex Connect，免费提供1000个子邮箱，每个子邮箱10G容量。查阅过官方文档，并没有找到明确解释，但是外网网友据说每个邮箱有每天3000封邮件的发件限制，相比QQ、Gmail这些只有每日500封的已经很厉害了。而且注册极其容易。此外还有SPF/DIKM配置能十分有效的防止邮件进入垃圾箱的概率。
@@ -38,37 +38,37 @@ https://admin.yandex.ru/ 页面可以再次回到管理页面（类似Microsoft 
 
 直到显示如下图所示的 Domain Configured 即全部完成了
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-02-08_17-38-56.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2022-02-08_17-38-56.jpg)
 
 ## 添加用户
 
 Users内添加用户即可，Language记得选择English，除非你看的懂俄文。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-02-08_17-40-14.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2022-02-08_17-40-14.jpg)
 
 这样就可以设置为管理员用户了，下次就可以直接用这个账户登录[admin页面](https://admin.yandex.ru/)了。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-02-08_17-42-26.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2022-02-08_17-42-26.jpg)
 
 ## 配置SMTP
 
 转到Email中，选择设置，然后Email clients，把 `From the imap.yandex.com server via IMAP` 和 `App passwords and OAuth tokens` 打开并保存。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-02-08_17-44-50.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2022-02-08_17-44-50.jpg)
 
 右上角选择账户管理
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-02-08_17-46-17.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2022-02-08_17-46-17.jpg)
 
 往下拉，选择 `Passwords and authorization`
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-02-08_17-47-54.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2022-02-08_17-47-54.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-02-08_17-48-15.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2022-02-08_17-48-15.jpg)
 
 创建APP 密钥，一定要保存下来。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-02-08_17-48-37.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2022-02-08_17-48-37.jpg)
 
 配置SMTP的话，就是
 

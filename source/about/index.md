@@ -6,7 +6,7 @@ date: 2022-01-02 22:04:54
 
 英文本名 Eddie 或者 Ed 。Nova 意为新星，是一种白矮星，是激变变星的一类，其吸积在表面的氢发生剧烈爆炸。它们原本都很暗，难以被发现，突然爆发增亮，被认为是新产生的恒星，因此而得名。同时也是博主喜爱的星际争霸/风暴英雄角色名。加一个 s 是为了让名字更男性化些，译为 “诺瓦斯”。合为 EdNovas
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/galaxy-colorful-nebula-layers-light-explosion-space-9045-2560x1600.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/galaxy-colorful-nebula-layers-light-explosion-space-9045-2560x1600.jpg)
 
 ## 兴趣
 

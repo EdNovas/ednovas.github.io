@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2021-02-06 09:29:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp
 # highlight_shrink: true
 ---
 
@@ -24,7 +24,7 @@ Windows Clash使用说明和一些Q&A看[这里](/2020/11/29/clash-windows/)
 
 记下这个IP地址， `192.168.2.105`
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-06_09-24-12.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-06_09-24-12.webp)
 
 还需要记下端口号，如果未经过修改的话一般默认端口号是 `7890`
 
@@ -34,15 +34,15 @@ Windows Clash使用说明和一些Q&A看[这里](/2020/11/29/clash-windows/)
 
 在和电脑连接的同WiFi环境下，打开连接的WiFi设置，应该会有如下设置，找到proxy代理设置，并设置为 Manual 手动。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-06_09-28-07.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-06_09-28-07.webp)
 
 这里的host就填刚刚记下的主机 IP，端口号就是 `7890` ，保存
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-06_09-27-21.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-06_09-27-21.webp)
 
 然后就可以连接科学上网了，注意上方任务栏没有VPN连接标志
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210206092728.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210206092728.webp)
 
 ## 理论
 

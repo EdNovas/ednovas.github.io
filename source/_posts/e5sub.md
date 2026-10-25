@@ -6,7 +6,7 @@ categories:
   - - 杂
 date: 2021-02-13 05:41:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Microsoft-365.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Microsoft-365.jpg
 # highlight_shrink: true
 ---
 
@@ -68,11 +68,11 @@ telegram bot 源码 https://github.com/iyear/E5SubBot
 
 然后再去跳转连接复制那个localhost...的网址 + 空格 + 随便一个别名（用于管理）并发送即可绑定成功
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/02-13_05-34-58.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/02-13_05-34-58.png)
 
 ## 软件（推荐，续订几率可能是最大的）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/1.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/e5plus/1.png)
 
 ### 官网
 
@@ -122,7 +122,7 @@ https://ms-e5-renew.leeskyler.top:11015/Account/Login?ReturnUrl=%2F
 ~~GitHub AUTOAPI稳定版 https://github.com/wangziyingwen/AutoApiP
 GitHub AUTOAPI最新版 https://github.com/wangziyingwen/AutoApi~~
 
-我的fork版：https://github.com/wdm1732418365/AutoApi
+我的fork版：https://github.com/ednovas/AutoApi
 
 ## cloudreve公共网盘
 

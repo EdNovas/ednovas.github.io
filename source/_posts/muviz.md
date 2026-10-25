@@ -6,7 +6,7 @@ categories:
   - - 软件
 date: 2021-01-22 20:50:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/5ff7465ae28d9.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/5ff7465ae28d9.png
 #highlight_shrink: true
 ---
 
@@ -18,8 +18,8 @@ https://play.google.com/store/apps/details?id=com.sparkine.muvizedge&hl=en_US&gl
 蓝奏云破解付费版本（自己用lucky破解器破解的）：
 https://ednovas.lanzoux.com/imvDokpem4f
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/640.gif)
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/6301.gif)
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/6302.gif)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/640.gif)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/6301.gif)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/6302.gif)
 
 > topbook https://mp.weixin.qq.com/s?__biz=MzU0Nzg2Njc0Ng==&mid=2247489558&idx=1&sn=a8a26a482f98ceb0d70e122f0a8d6ec4&chksm=fb468903cc31001554833effcbc4666b8c0010042baff8877bcde68114046435e364aaab18d9&mpshare=1&scene=23&srcid=0121vwP3fh2Fgqjj0ZeLSLy1&sharer_sharetime=1611241256655&sharer_shareid=f2372beb2b72516821f2909bce8cfdb7#rd

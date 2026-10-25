@@ -6,7 +6,7 @@ categories:
   - - VPS
 date: 2021-01-20 04:44:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/f0288b435079a664c49b4ce8aae1403e.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/f0288b435079a664c49b4ce8aae1403e.jpg
 #highlight_shrink: true
 ---
 

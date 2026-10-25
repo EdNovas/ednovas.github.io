@@ -6,7 +6,7 @@ categories:
   - - 网站
 date: 2021-01-12 05:34:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/messenger-overview-telegram.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/messenger-overview-telegram.webp
 ---
 
 ## 简介
@@ -23,9 +23,9 @@ Telegraph是即时聊天软件Telegram的开发商推出的一个内容发布网
 
 如下图所示，他支持插入YouTube视频链接、推特链接、插入图片、图片描述、三种字体大小变化、引用、斜体、粗体、跳转链接、居中等编辑网页文章所需要的基本功能都有。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-12_05-39-52.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-12_05-39-52.webp)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-12_05-40-05.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-12_05-40-05.webp)
 
 编辑完成后点击PUBLISH发布即可。
 
@@ -45,7 +45,7 @@ Telegraph是即时聊天软件Telegram的开发商推出的一个内容发布网
 
 除此之外在telegram中直接放上telegraph的链接也可以直接显示文章预览
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-12_05-48-43.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-12_05-48-43.webp)
 
 ## 使用情况
 

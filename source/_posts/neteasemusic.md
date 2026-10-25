@@ -6,7 +6,7 @@ categories:
   - - 杂
 date: 2021-03-10 06:58:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/NetEase-Cloud-Music-1280x720.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/NetEase-Cloud-Music-1280x720.jpg
 highlight_shrink: true
 ---
 
@@ -293,17 +293,17 @@ V 1.0	发布于：2020-03-04
 
 文件下载后将其解压，然后双击该目录下的exe运行程序
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3399164750.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/3399164750.png)
 
 按照提示来运行，第一次使用的小伙伴请务必选择【1】看下使用说明，如果出现如下图所示即表示代理已成功运行
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/4178238987.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/4178238987.png)
 
 然后打开网易云，选择设置——>工具——>代理——>自定义代理
 服务器填写：127.0.0.1
 端口（默认）：2635
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1763792106.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1763792106.png)
 
 确认后重启一遍网易云即可
 
@@ -421,15 +421,15 @@ rules:
 - MATCH,DIRECT
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/2427673393.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/2427673393.png)
 
 然后在Proxies处选择Rule，即规则代理，如图所示：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3214514194.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/3214514194.png)
 
 最后在General处将System proxy打开，此处Clash for Windows即配置成功，然后去打开网易云，选择设置——>工具——>代理——>使用IE代理设置，确定后重启网易云，此时无版权的歌曲即解锁成功。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/4103077367.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/4103077367.png)
 
 ### 方法三：（基于方法一）
 
@@ -444,7 +444,7 @@ http://127.0.0.1:端口/proxy.pac
 
 然后保存，如图所示：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/823356949.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/823356949.png)
 
 最后再打开网易云，选择设置——>工具——>代理——>使用IE代理设置
 
@@ -454,11 +454,11 @@ http://127.0.0.1:端口/proxy.pac
 
 未使用代理：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1721941757.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1721941757.png)
 
 使用代理后：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/4074027762.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/4074027762.png)
 
 ## 最后说明
 

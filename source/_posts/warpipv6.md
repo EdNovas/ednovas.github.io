@@ -6,7 +6,7 @@ categories:
   - - VPS
 date: 2021-04-15 15:37:45
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210225024426.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20210225024426.jpg
 # highlight_shrink: true
 ---
 
@@ -135,7 +135,7 @@ wgcf generate
 
 ## 编辑 WireGuard 配置文件
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210224211008.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20210224211008.png)
 
 将配置文件中的节点域名 engage.cloudflareclient.com 解析成 IP。不过一般都是以下两个结果：
 
@@ -144,7 +144,7 @@ wgcf generate
 2606:4700:d0::a29f:c001
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210224061043.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20210224061043.png)
 
 这样做是因为后面的操作要根据 VPS 所配备的网络协议的不同去选择要连接 WARP 的节点是 IPv4 或 IPv6 协议。
 
@@ -196,11 +196,11 @@ sudo cp wgcf-profile.conf /etc/wireguard/wgcf.conf
 sudo wg-quick up wgcf
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210224055351.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20210224055351.png)
 
 执行执行ip a命令，此时能看到名为wgcf的网络接口，类似于下面这张图：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210224054306.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20210224054306.png)
 
 执行以下命令检查是否连通。同时也能看到正在使用的是 Cloud­flare 的网络。
 ```
@@ -210,7 +210,7 @@ curl -6 ip.p3terx.com
 curl -4 ip.p3terx.com
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210224050013.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20210224050013.png)
 
 测试完成后关闭相关接口，因为这样配置只是临时性的。
 ```
@@ -281,7 +281,7 @@ curl -fsSL git.io/speedtest-cli.sh | sudo bash
 执行speedtest命令测速。
 博主测速使用的是 EU­serv 德国 IPv6 Only 小鸡，即使使用的是 wireguard-go 其网速依然很猛，几轮测试下来速度都在 500M 上下。可以预见的是这个速度应该远未达到 WARP 的极限。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20210224050001.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20210224050001.png)
 
 ## 尾巴
 Cloud­flare 一直以来为广大人民群众免费提供优秀的网络服务，希望大家善待它，不要肆意滥用。

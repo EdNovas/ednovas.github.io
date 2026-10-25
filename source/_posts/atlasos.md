@@ -6,7 +6,7 @@ categories:
   - - VPS
 date: 2021-04-06 10:14:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/d1747ca6d096e7ba1faa90830942325900b069b6.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/d1747ca6d096e7ba1faa90830942325900b069b6.jpg
 # highlight_shrink: true
 ---
 
@@ -26,21 +26,21 @@ https://www.atlas-os.org/
 
 新建一个机器
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210406101758.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210406101758.png)
 
 开个新机
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/04-06_10-19-21.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/04-06_10-19-21.png)
 
 选择这个t3a.micro即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/04-06_10-20-02.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/04-06_10-20-02.png)
 
 data drive选择刚刚创建的那个，Instance Drive Size (Unit: GB) 随意我用了20，instance name随意，然后点击start an instance 创建实例
 
 创建以后等待片刻，这个url就是一个已经解析好了的主机域名，username和secret就是密码
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/04-06_10-21-53.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/04-06_10-21-53.png)
 
 ## SSH
 
@@ -66,7 +66,7 @@ https://github.com/proxysu/ProxySU/releases
 
 主机可以直接用他给我们解析好的域名，端口默认22，用户必须是root，密码就是刚刚passwd以后设置的，email是必填的，填个有效的，下面的协议自己随意安装，这里以ws+tls+web做例子，域名填入解析好的域名，伪装网站自己随意，点击确定，然后`V2ray一键安装`等待安装完毕
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/04-06_10-31-56.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/04-06_10-31-56.png)
 
 安装完成会给一个vmess节点连接，然后你肯定就会用了吧
 

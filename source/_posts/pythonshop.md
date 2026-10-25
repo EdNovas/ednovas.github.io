@@ -8,7 +8,7 @@ categories:
   - 杂
 date: 2021-06-18 16:30:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/014d4a5ca6b204a801214168494d8c.jpg@1280w_1l_2o_100sh.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/014d4a5ca6b204a801214168494d8c.jpg@1280w_1l_2o_100sh.jpg
 ---
 
 ## 源码

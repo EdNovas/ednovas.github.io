@@ -5,7 +5,7 @@ categories:
   - - VPS
 date: 2021-12-05 17:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/allthings.how-how-to-change-the-sftp-port-on-linux-coomand-prompt.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/allthings.how-how-to-change-the-sftp-port-on-linux-coomand-prompt.png
 ---
 
 ## SSH 端口转发

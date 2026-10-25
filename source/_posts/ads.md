@@ -6,7 +6,7 @@ categories:
   - - 软件
 date: 2021-01-04 16:24:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/dark_banner.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/dark_banner.webp
 ---
 
 ## Adblock Plus
@@ -22,7 +22,7 @@ https://www.crx4chrome.com/crx/31928/
 
 除了可以自选屏蔽网站和网站内的页面广告之外，还支持选择广告元素手动屏蔽。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-12-29_09-16-50.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-12-29_09-16-50.webp)
 
 ## 插件安装
 
@@ -30,7 +30,7 @@ https://www.crx4chrome.com/crx/31928/
 
 [chrome://extensions/](chrome://extensions/)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2020-12-29_09-18-52.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2020-12-29_09-18-52.webp)
 
 然后直接把.crx格式的插件拖入即可。
 
@@ -38,7 +38,7 @@ https://www.crx4chrome.com/crx/31928/
 
 如果出现如下问题
 
-![https://chrome.zzzmh.cn/img/help/setup/-1.jpg](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/-1.webp)
+![https://chrome.zzzmh.cn/img/help/setup/-1.jpg](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/-1.webp)
 
 
 是因为如果插件作者长时间不更新插件，而chrome浏览器一直在更新，插件版本跟不上，就会出现此 CRX HEADER INVALID 错误。

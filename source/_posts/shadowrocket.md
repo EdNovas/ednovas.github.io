@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2020-12-19 20:39:50
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/0_eGqjLXySHxjnu5a5.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/0_eGqjLXySHxjnu5a5.webp
 ---
 
 ## 软件购买
@@ -21,13 +21,13 @@ Shadowrocket需要iOS外区商店自行购买： [http://shop.owo233.xyz](http:/
 
 在 URL 一栏粘贴自己的订阅链接，备注一栏可以随便填写。
 
-![IMG_6816.PNG](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/shadowrocket1.png)
+![IMG_6816.PNG](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/shadowrocket1.png)
 
-![IMG_6817.jpg](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/shadowrocket2.jpg)
+![IMG_6817.jpg](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/shadowrocket2.jpg)
 
 Shadowrocket 会从订阅服务器获取订阅信息并添加节点到本地。
 
-![IMG_6819.PNG](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/shadowrocket3.jpg)
+![IMG_6819.PNG](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/shadowrocket3.jpg)
 
 ## 启动服务
 
@@ -35,7 +35,7 @@ Shadowrocket 会从订阅服务器获取订阅信息并添加节点到本地。
 
 点击 「延迟测试」，若干秒之后节点右侧会有数值显示。如下图。
 
-![IMG_6820.jpg](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/shadowrocket4.jpg)
+![IMG_6820.jpg](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/shadowrocket4.jpg)
 
 建议选择一个延迟较低的节点后打开右上角的开关进行连接。（但请注意延迟与网速并无关系）  
 在 Shadowrocket 主页面选择一个接入点，然后点击顶部的开关。
@@ -52,7 +52,7 @@ Shadowrocket 会从订阅服务器获取订阅信息并添加节点到本地。
 
 「全局路由」选项建议设置为配置以实现自动分流功能，不影响国内服务的连接。
 
-![IMG_6822.jpg](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/shadowrocket5.jpg)
+![IMG_6822.jpg](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/shadowrocket5.jpg)
 
 ### 添加第三方分流规则
 
@@ -64,13 +64,13 @@ Shadowrocket 会从订阅服务器获取订阅信息并添加节点到本地。
 *   专业版：[https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Pro.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Pro.conf)
 *   回国版（国内用户请勿使用）：[https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/BacktoCN.conf](https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/BacktoCN.conf)
 
-![IMG_6823.jpg](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/shadowrocket6.jpg)
+![IMG_6823.jpg](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/shadowrocket6.jpg)
 
-![IMG_6824.PNG](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/shadowrocket7.jpg)
+![IMG_6824.PNG](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/shadowrocket7.jpg)
 
 点击下载好的远程文件，选择「使用配置」。
 
-![IMG_6825.jpg](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/shadowrocket8.jpg)
+![IMG_6825.jpg](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/shadowrocket8.jpg)
 
 ### 按需求连接
 
@@ -78,14 +78,14 @@ Shadowrocket 会从订阅服务器获取订阅信息并添加节点到本地。
 
 如图，点击下方的「设置」，找到 「按需求连接」。
 
-![IMG_6827.jpg](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/shadowrocket9.jpg)
+![IMG_6827.jpg](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/shadowrocket9.jpg)
 
-![IMG_6828.jpg](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/shadowrocket10.jpg)
+![IMG_6828.jpg](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/shadowrocket10.jpg)
 
 ### 自动更新订阅
 
 点击下方的「设置」，找到 「服务器订阅」。勾选上如图所示的开关。
 
-![IMG_6829.jpg](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/shadowrocket11.jpg
+![IMG_6829.jpg](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/shadowrocket11.jpg
 
 转载自Sabrina的万事屋[https://merlinblog.xyz/wiki/androidssr.html](https://merlinblog.xyz/wiki/androidssr.html)

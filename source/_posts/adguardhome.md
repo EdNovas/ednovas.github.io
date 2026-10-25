@@ -6,7 +6,7 @@ categories:
   - - 软件
 date: 2021-01-08 20:06:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20201101092641.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20201101092641.webp
 ---
 
 ## 简介
@@ -39,7 +39,7 @@ GitHub官方下载地址：https://static.adguard.com/adguardhome/edge/AdGuardHo
 
 然后搜索cmd或者Windows Powershell，需要用管理员身份来打开。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-08_20-21-30.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-08_20-21-30.webp)
 
 打开以后，依次复制以下代码：
 
@@ -48,7 +48,7 @@ cd "C:\Program Files\AdGuard_Home"
 .\AdGuardHome.exe --service install
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-08_19-59-42.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-08_19-59-42.webp)
 
 出现如上图所示，即表示安装完成。
 
@@ -56,15 +56,15 @@ cd "C:\Program Files\AdGuard_Home"
 
 还需要在cmd或windows powershell中输入ipconfig来判断当前的IP地址。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-08_20-26-45.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-08_20-26-45.webp)
 
 如图所示，这个就是我们家的IP地址，复制这个IP地址192.168.XXX.X，然后打开浏览器，在网址栏黏贴你的IP地址，然后加上：3000并回车。如下图
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-08_20-28-33.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-08_20-28-33.webp)
 
 那么我们就会来到我们的设置页面（127.0.0.1就是本地IP的意思）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-08_19-38-55.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-08_19-38-55.webp)
 
 ## 启动设置
 
@@ -74,11 +74,11 @@ cd "C:\Program Files\AdGuard_Home"
 
 下方改成53端口即可。再点击下一步
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-08_19-39-14.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-08_19-39-14.webp)
 
 这里就是让你设置你的Adguard Home的管理账号登录密码了，最好拿个小本本记住。再次点击下一步，来到恭喜界面，打开仪表盘即可。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-08_19-39-38.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-08_19-39-38.webp)
 
 以后再登录这个界面就是你家的ip+:刚刚设置的面板端口。如192.168.000.0:3000（注意分号的中英文）
 
@@ -100,7 +100,7 @@ cd "C:\Program Files\AdGuard_Home"
 
 这个设置为24小时-7天左右即可，记得保存。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-08_19-43-18.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-08_19-43-18.webp)
 
 ## DNS设置
 
@@ -137,7 +137,7 @@ https://dns.cloudflare.com/dns-query
 
 然后这个点击测速上游DNS，等待片刻会自动更新，然后点击应用即可。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-08_19-45-36.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-08_19-45-36.webp)
 
 ### DNS服务设定
 
@@ -145,13 +145,13 @@ https://dns.cloudflare.com/dns-query
 
 推荐勾选使用客户端的子网地址和启用DNSSEC。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-08_20-12-28.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-08_20-12-28.webp)
 
 ### DNS缓存配置
 
 缓存大小不用动，覆盖最小TTL值和覆盖最大TTL值默认为0，一般也设置成0即可。但如果DNS延迟过大的情况下，可以分别配置为600和3600，不建议更改。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-08_20-13-02.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-08_20-13-02.webp)
 
 ## 过滤器
 
@@ -159,7 +159,7 @@ https://dns.cloudflare.com/dns-query
 
 这个就是所谓的去广告、DNS追踪等。可以添加阻止列表，检查更新（不用过于频繁）。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-08_19-48-32.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-08_19-48-32.webp)
 
 默认只有三个列表，全部勾选，然后在添加组织列表中，我们可以选择更多。但十分不建议全选，因为过多的规则会导致加载缓慢等问题。
 
@@ -183,19 +183,19 @@ https://dns.cloudflare.com/dns-query
 
 可以看到这里还有拦截恶意软件、钓鱼或欺诈域名的列表等，都可以自行根据需要添加。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-08_19-51-18.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-08_19-51-18.webp)
 
 ## DNS服务器设置
 
 最重要的一步来了，来到Adguard Home的设置向导页面，可以看到在这里有4个DNS服务器，那么我们选择两个复制下来。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-11_10-19-29.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-11_10-19-29.webp)
 
 然后打开你的光猫/路由器管理界面，可以尝试192.168.0.1/192.168.1.1/192.168.2.1/192.168.1.0等，或者你看你的光猫/路由器背后，应该会写有登录地址，还有登录账号和密码。普遍的登录账号为admin/user等。密码如果没有更改过，那就输入光猫/路由器背面的密码即可。
 
 进入管理页面以后找到DHCP服务器设置，找到有DNS字样的东西，复制黏贴刚刚的Adguard Home上的DNS黏贴到这里，然后保存即可。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-11_10-20-30.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-11_10-20-30.webp)
 
 ## 效果
 
@@ -207,15 +207,15 @@ https://dns.cloudflare.com/dns-query
 
 这个是我用的自己的流量，也就是说没有用家里的WiFi的情况下，会有广告。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_2021-01-08-19-52-35.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Screenshot_2021-01-08-19-52-35.webp)
 
 而用了刚刚设置好了Adguard Home的WiFi以后，就是这个样子：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210111100724.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210111100724.webp)
 
 开启不到半个小时的时间被过滤器拦截下来的广告等东西图例：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-11_10-08-49.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-11_10-08-49.webp)
 
 ## 意义
 

@@ -8,7 +8,7 @@ categories:
   - 杂
 date: 2021-05-24 21:37:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20703217_G.jpeg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20703217_G.jpeg
 ---
 
 ## 引言
@@ -21,15 +21,15 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20703217_G.jpe
 
 假如你在搜索引擎搜索暗网，你会发现大多数媒体口中描述的暗网是黄赌毒聚集地，犯罪者的天堂。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/31ad1ef11abdb1271583de78edc580b5.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/31ad1ef11abdb1271583de78edc580b5.png)
 
 
 而网上那些自称去过暗网的人，都会表示非常后悔，看了不该看的东西。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/47d811d7810d004f86c6701a895e26b3.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/47d811d7810d004f86c6701a895e26b3.png)
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/fb531057ad0b3658a77a136fc23bdab1.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/fb531057ad0b3658a77a136fc23bdab1.png)
 
 
 
@@ -55,14 +55,14 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20703217_G.jpe
 
 下面我就从原理开始讲起，一步一步的为你揭开暗网的“神秘”面纱。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ea216ca506a149efc6c1c85477ad3e0b.jpeg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/ea216ca506a149efc6c1c85477ad3e0b.jpeg)
 
 
 如果你在搜索引擎搜索暗网，那你肯定会看到这张图。大多数的媒体甚至是央视都在说，我们现在的所使用的互联网是表层网，其实只占了互联网的5%都不到，剩下的95%都是暗网。
 
 这种说辞和夸张的描写，可以吸引一大票人的好奇心和探索欲。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1aac65243605a4b45b7ff67804af20c5.jpeg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1aac65243605a4b45b7ff67804af20c5.jpeg)
 
 
 但其实这张图完全是错误的。
@@ -79,7 +79,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20703217_G.jpe
 
 如果用一个大圆来比喻整个互联网，那么表层网，深层网与暗网的关系大致是这样的。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/339061d08baa4a75829ee7a7f18583d1.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/339061d08baa4a75829ee7a7f18583d1.png)
 
 
 
@@ -95,7 +95,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20703217_G.jpe
 
 Tor最早是由上世纪90年代美国海军研究实验室开发的匿名传输工具，其目的最早是为了保护美国的情报通信工作，但在2004年，美国海军研究实验室将Tor开源后，就有人开始利用Tor的匿名性开始传播并发送违法内容。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/896da94f84d64046a0b4146e978a7633.jpeg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/896da94f84d64046a0b4146e978a7633.jpeg)
 
 
 Tor使用的匿名防追踪技术要解释起来也很简单，Tor会通过多次不定IP转发和多次加解密来做到保护你的隐私。
@@ -106,7 +106,7 @@ Tor使用的匿名防追踪技术要解释起来也很简单，Tor会通过多�
 
 下图只是帮助你理解的一个参考，不代表最终实现的技术原理，真实的情况要比下图复杂的多
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/2277c335e68f13ba46b6c301d1028d1d.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/2277c335e68f13ba46b6c301d1028d1d.png)
 
 
 当然，除了这种将整体数据进行转发的，还有把数据拆成一小块一小块分别转发的。
@@ -115,7 +115,7 @@ Tor使用的匿名防追踪技术要解释起来也很简单，Tor会通过多�
 
 下图只是帮助你理解的一个参考，不代表最终实现的技术原理，真实的情况要比下图复杂的多
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/7e2146f6539c4f0a674201a1385a5d01.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/7e2146f6539c4f0a674201a1385a5d01.png)
 
 ## 暗网内容
 
@@ -129,7 +129,7 @@ Tor使用的匿名防追踪技术要解释起来也很简单，Tor会通过多�
 
 也就是说，目前还在活跃的暗网站点中，有一大半都是不违法的正常站点，这些站点如果架设在表层网上也是可以正常访问的，建立在暗网上，也只是为了使用暗网的匿名性。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/060075d8cb0d3be169979d55102f94cc.jpeg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/060075d8cb0d3be169979d55102f94cc.jpeg)
 
 
 
@@ -140,7 +140,7 @@ Tor使用的匿名防追踪技术要解释起来也很简单，Tor会通过多�
 但在2013年，暗网上最大的购物网站“丝绸之路”运营者Ross
 Ulbricht却被美国FBI抓获。Ross的抓获代表暗网已经失去了绝对的匿名隐私性。处于暗处的暗网，正在被各国警方联合围剿。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/2f662796a513300df8ba7307cbcc81e4.jpeg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/2f662796a513300df8ba7307cbcc81e4.jpeg)
 
 
 
@@ -150,7 +150,7 @@ Ulbricht却被美国FBI抓获。Ross的抓获代表暗网已经失去了绝对�
 
 警方只要通过特殊手段，照样可以将犯罪嫌疑人捉拿归案。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/5e5a3a141e2282b3ab4256f194d8f718.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/5e5a3a141e2282b3ab4256f194d8f718.png)
 
 
 

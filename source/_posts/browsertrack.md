@@ -7,7 +7,7 @@ categories:
   - - 网站
 date: 2021-01-20 11:41:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/digital-fingerprint.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/digital-fingerprint.jpg
 #highlight_shrink: true
 ---
 
@@ -23,7 +23,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/digital-finger
 
 Cookie，有时也用复数形式Cookies，在Web世界中其实际上是用户浏览网站时，网站存储在用户浏览器上的一段信息，并在服务器和浏览器之间传递，用户与辨别用户身份和维持状态。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c2.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/c2.png)
 
 当你在浏览器地址栏中键入了服务的URL，浏览器会向服务器发送一个读取网页的请求，并将结果回显。在发送之前，该网页在你的电脑上寻找服务网站设置的Cookie文件，如果找到，浏览器会把Cookie文件中的数据连同前面输入的URL一同发送到服务器。
 
@@ -31,11 +31,11 @@ Cookie，有时也用复数形式Cookies，在Web世界中其实际上是用户�
 
 我们日常工作中所能见到的购物网站如京东淘宝，第三方监测工具如doubleclick、99click等都需要利用Cookie技术，网站分析工具如GA、百度统计、CNZZ等也需要利用Cookie。
 
-![用户首次访问购物网站时](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c3.png)
+![用户首次访问购物网站时](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/c3.png)
 
-![第二次访问时](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c4.png)
+![第二次访问时](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/c4.png)
 
-![浏览器查看Cookies](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c5.png)
+![浏览器查看Cookies](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/c5.png)
 
 ### Cookie同步
 
@@ -43,7 +43,7 @@ Cookie同步一般是指用户访问某A网站时，该网站通过页面跳转�
 
 这也就是为什么浏览器的广告和购物网站会给你推送你百度搜索过的东西。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c7.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/c7.png)
 
 不少安全工具甚至是浏览器都允许或者引导关闭追踪Cookie，Cookie追踪越来越受限制，浏览器指纹追踪渐渐成为了Web追踪的重要技术手段。
 
@@ -62,14 +62,14 @@ Cookie同步一般是指用户访问某A网站时，该网站通过页面跳转�
 
 上述博客中还包含了更多的如何保护你的在线隐私问题，有兴趣推荐拜读一下: https://pixelprivacy.com （网站是纯英文的，可以使用页面翻译更方便的浏览）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/---1.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/---1.png)
 
 ### 高级指纹
 基本指纹就像是人的外貌特征，外貌可以用男女、身高、体重区分，然而这些特征不能对某个人进行唯一性标识，仅使用基本指纹也无法对客户端进行唯一性判定，基于HTML5的诸多高级指纹对此提供了新思路。
 #### **Canvas指纹**
 
 Canvas（画布）是HTML5中一种动态绘图的标签，可以使用其生成甚至处理高级图片。2014年9月，ProPublica报道：新型的Canvas指纹追踪正在被用到“上到白宫，下到YouPorn”等众多网站，事实上早在2012年已有研究报告分析称canvas指纹被用于跟踪用户。
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/---2.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/---2.png)
 
 Canvas指纹的原理大致如下：
 
@@ -77,11 +77,11 @@ Canvas指纹的原理大致如下：
 
 在线测试地址：[Browserleaks](https://www.browserleaks.com/canvas)，可查看浏览器的Canvas唯一性字符串。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/---6.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/---6.png)
 
 Canvas几乎已被所有主流浏览器支持，可以通过大部分的PC、平板、智能手机访问.
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/---7.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/---7.png)
 
 ### 硬件指纹
 
@@ -110,7 +110,7 @@ RTCDataChannel：RTCDataChannel使得浏览器之间（点对点）建立一个�
 
 基于WebRTC的实时通讯功能，可以获取客户端的IP地址，包括本地内网地址和公网地址。其原理是利用到RTCPeerConnection 的API，大致函数如下：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/---11.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/---11.png)
 
 利用WebRTC能做的事情还远不止这些，比如使用其探测扫描内网信息，进行语音、视频交流，更多技术细节请参考：
 
@@ -118,7 +118,7 @@ http://net.ipcalf.com
 
 https://diafygi.github.io/webrtc-ips/
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/---12.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/---12.png)
 
 # 防护措施
 
@@ -132,11 +132,11 @@ https://diafygi.github.io/webrtc-ips/
    1. Ghostery可以有效屏蔽网页追踪、广告，加速网页：https://chrome.google.com/webstore/detail/ghostery-%E2%80%93-privacy-ad-blo/mlomiejdfkolichcflejclcbmpeaniij?utm_source=chrome-ntp-icon
    2. Privacy Badger同样可以有效屏蔽隐秘追踪：https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp?utm_source=chrome-ntp-icon
    可以在插件设置中开启Prevent WebRTC from leaking local IP address （防止WebRTC追踪泄露IP地址）
-   ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/PrivacyBadger.jpg)
+   ![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/PrivacyBadger.jpg)
    1. uMatrix十分强大的分类管理cookie,css,image,media,script,XHR,frame和其他：https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf?utm_source=chrome-ntp-icon
    第一行和第一列的标题方块有上下两个可点击的地方，上面是开启和关闭此列/行全部，下面是仅开启和关闭这个主网页的，除主页面以外此网页上的其他网站等信息由上面的小方块控制。你也可以分别控制每个网页的具体单个选项。
    在软件使用的时候，除了基本上必须开启的css和image以外，大多数时候需要开启Scrpit选项来保证页面功能能正常运作。你也可以点击ALL直接允许所有都开启。
-   ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/unnamed.jpg)
+   ![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/unnamed.jpg)
    1. Chameleon这个仅在GitHub上有，GitHub上下载最新版本的.crx后缀文件：https://github.com/ghostwords/chameleon/releases
    如果无法正常安装.crx后缀，参考[这里](/2021/01/04/ads/#%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85)
    1. Random User-Agent按时自动更改用户代理字符串，隐藏真实用户代理，还可防止通过 JavaScript 发掘真实信息：https://chrome.google.com/webstore/detail/random-user-agent/einpaelgookohagofgnnkcfjbkkgepnp?hl=zh-CN

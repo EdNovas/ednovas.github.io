@@ -5,7 +5,7 @@ categories:
   - - VPS
 date: 2021-12-21 15:12:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vpsbg.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vpsbg.webp
 ---
 
 
@@ -158,45 +158,45 @@ IPv4：1个
 
 测评机型为300M的CERA CMI，该套餐为限量套餐。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vollclouddownload.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vollclouddownload.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vcdownload1.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vcdownload1.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc2download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc2download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc3download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc3download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc4download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc4download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc5download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc5download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc6download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc6download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc7download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc7download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc8download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc8download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc9download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc9download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc10download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc10download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc11download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc11download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc12download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc12download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc13download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc13download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc14download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc14download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc15download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc15download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc16download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc16download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc17download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc17download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc18download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc18download.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/vc19download.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/vc19download.jpg)
 
 ## 小结
 

@@ -5,7 +5,7 @@ categories:
   - - VPS
 date: 2022-04-13 19:06:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/blog_post_20.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/blog_post_20.webp
 ---
 
 
@@ -61,24 +61,24 @@ https://github.com/semicons/java_oci_manage
 
 获取API很简单，进去账号控制台，以新加坡为例，如下图
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/0ef000ffe2c9050.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/0ef000ffe2c9050.png)
 
 下滑，找到API
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/c90e95e9fbf3572.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/c90e95e9fbf3572.png)
 
 点击添加API
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/dbc5d012e73f20c.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/dbc5d012e73f20c.png)
 
 下载API信息的一对Key，点Add，在桌面新建一个txt，复制内容在txt里面
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/951c86575b8c65e.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/951c86575b8c65e.png)
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/f94c2c251edec3a.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/f94c2c251edec3a.png)
 
 最后点击关闭，就完成了获取API这个步骤。
 
@@ -92,34 +92,34 @@ wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releas
 ```
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/b1871d332828781.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/b1871d332828781.png)
 
 安装完成后，进去/root文件夹内，会发现多了一个client_config文件，这个文件就是配置信息的文件
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/4d8af9201efbe7c.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/4d8af9201efbe7c.png)
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/92b4e3d3990687d.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/92b4e3d3990687d.png)
 
 打开文件后，内容如图所示，将TXT复制进去的内容，黏贴进去配置文件中
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/faba83db69fd8d3.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/faba83db69fd8d3.png)
 
 
 将下载下来的PrivateKey，传进去机器的/root文件夹内，我为了方便，直接将PrivateKey名字改为1.pem，所以路径也是/root/1.pem
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ca7bc97fe4bd34e.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/ca7bc97fe4bd34e.png)
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3fdfc7e3d81271f.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/3fdfc7e3d81271f.png)
 
 接下来，配置文件中还需要获取TG上懒人界面的账号与密码，这个更简单，网页打开t.me/radiance_helper_bot
 进去BOT中，输入/raninfo获得账号密码，再输入/getflash获得加钱VIP等级，搞定。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/242fe9365084b0e.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/242fe9365084b0e.png)
 
 配置文件完成后，保存，在装了脚本的机器中，运行：
 
@@ -128,11 +128,11 @@ screen -S sh_client_bot bash sh_client_bot.sh
 ```
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/f0107c7e1f11a77.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/f0107c7e1f11a77.png)
 
 随后移步到TG中的BOT进行操作，输入/oracle即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/986690bff2f8e81.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/986690bff2f8e81.png)
 
 
 刷的过程可以在机器SSH中输入`Screen -r`查看进程，当刷到机器后，还需要开放端口，否则是无法Ping通的，bot中输入/oracle，选7，开放云面板端口，点击第二次后，稍等1分钟就端口全开。

@@ -6,7 +6,7 @@ categories:
   - - 软件
 date: 2021-02-04 18:06:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/hidden_logo.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/hidden_logo.png
 highlight_shrink: true
 ---
 
@@ -115,19 +115,19 @@ https://ednovas.lanzoux.com/iOmHUlbb2fa
 
 把两个文件直接拖进来
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-04_19-34-01.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-04_19-34-01.webp)
 
 `ctrl + a` 全选 `ctrl + c` 复制 `zip/rar` 文件全部内容
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-04_19-34-13.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-04_19-34-13.webp)
 
 来到图片文件的最底下，`ctrl + v` 黏贴
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-04_19-34-40.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-04_19-34-40.webp)
 
 建议另存为新文件，随意命名，记得要符合你的图片后缀格式
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-04_19-35-21.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-04_19-35-21.webp)
 
 最终效果如下，可以下载该图片然后修改后缀名为 `.zip` 并解压
 
@@ -143,7 +143,7 @@ https://ednovas.lanzoux.com/iOmHUlbb2fa
 
 然后保存，修改该txt文件的后缀为 `.bat`
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-04_19-50-42.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-04_19-50-42.webp)
 
 最后双击运行 bat 文件即可。等待片刻就会在同文件夹下生成输出图片了。
 
@@ -151,4 +151,4 @@ https://ednovas.lanzoux.com/iOmHUlbb2fa
 
 这种方法能够很快速的合并大文件，如图，一张5G的隐藏内容图片就这么做好了
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210204195237.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210204195237.png)

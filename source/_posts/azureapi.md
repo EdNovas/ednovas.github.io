@@ -9,30 +9,30 @@ categories:
   - 杂
 date: 2021-06-08 19:35:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/azure.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/azure.png
 ---
 
 > 转载自 https://sirbei.com/index.php/archives/22/
 
 ## 注册应用、开通 API
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/148165012.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/148165012.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1512344440.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1512344440.png)
 
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3709738410.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/3709738410.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1701175550.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1701175550.png)
 
 ### 设置 Application 密码
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/3498537165.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/3498537165.png)
 
 ### 记录密码“值”和“ID”备用。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/195691701.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/195691701.png)
 
 ## API使用配套软件
 
@@ -44,7 +44,7 @@ https://github.com/6mb/Microsoft-365-Admin
 
 ## 另一个方法
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20641690.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20641690.jpg)
 
 前提：自己开通了权限，主要是RoleManagement.ReadWrite.Directory（务必保证权限正确开启），而且你的SPO没有被封禁（子账号的onedrive可以正常使用）
 脚本运行说明：下载代码自己修改参数，代码需要修改的地方都有备注，自行修改即可，需要安装requests库，python3运行代码，返回204就代表成功，然后登陆子账号就可以了

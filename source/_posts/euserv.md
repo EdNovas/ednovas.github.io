@@ -6,7 +6,7 @@ categories:
   - - VPS
 date: 2021-01-16 13:22:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/euserv.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/euserv.webp
 ---
 
 ## 简介
@@ -31,7 +31,7 @@ https://www.euserv.com/en/virtual-private-server/root-vserver/v2/vs2-free.php
 
 到手以后就会像这样一样
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-16_16-50-05.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-16_16-50-05.webp)
 
 安装完系统以后root密码会出的很慢，一定要耐心等待！
 

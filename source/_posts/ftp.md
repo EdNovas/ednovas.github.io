@@ -7,7 +7,7 @@ categories:
   - - 下载
 date: 2021-01-14 21:28:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/ftp.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/ftp.webp
 ---
 
 ## 简介
@@ -68,13 +68,13 @@ HTTP上载提供了一种非常简单的将文件上载到服务器的方法，�
 
 这里以FileZilla为例。打开软件，点击左上角的site manager，新建一个site，输入对应的IP、port端口（默认21，没有特别说明留空即可）、user用户名、password密码。最后点击connect连接。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-14_21-40-41.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-14_21-40-41.webp)
 
 可以在transfer传输中设置默认文件下载位置。transfer传输-manual transfer手动传输（传输配置）-local file（默认本地文件下载位置）
 
 此外还需要使用强制utf-8编码才能正确显示中文。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-14_21-44-15.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-14_21-44-15.webp)
 
 使用也很简单，左边就是你的本地电脑，右边是连接到的FTP服务器。
 
@@ -130,7 +130,7 @@ eA2taYB3yWVlRQvkKneFy1c6y6brkC0w
 
 新建一个Album专辑，取个名字，选择第三个，FTP连接，输入Host、username、password点击ok即可建立连接。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-16_21-44-54.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-16_21-44-54.webp)
 
 在右侧选择你想要在线观看的视频文件，双击打开在线观看。
 

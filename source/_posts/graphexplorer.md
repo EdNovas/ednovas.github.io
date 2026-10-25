@@ -8,7 +8,7 @@ categories:
   - 杂
 date: 2021-06-07 14:06:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/azure.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/azure.png
 ---
 
 ## Graph Explorer-在线测试API工具
@@ -50,9 +50,9 @@ id改为应用的对象ID
 
 ### AAD中验证密钥有效期，看不到刷新或重新登陆
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Ub97c153ce38540508a56c90070ab8176H.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Ub97c153ce38540508a56c90070ab8176H.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/U0a66c05e975343ffa2b8a548cc1c2846r.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/U0a66c05e975343ffa2b8a548cc1c2846r.jpg)
 
 
 > 转载自hostloc https://hostloc.com/thread-840678-1-1.html

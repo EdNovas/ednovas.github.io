@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2021-01-10 20:53:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/IBM.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/IBM.webp
 ---
 
 ## 准备工作
@@ -21,15 +21,15 @@ https://cloud.ibm.com/registration
 
 这里邮箱推荐填Gmail或者outlook邮箱
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_20-30-02.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_20-30-02.webp)
 
 发送邮箱验证码，接码填入即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_20-30-27.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_20-30-27.webp)
 
 姓名自己填写，地区要写当前IP位置（一般默认）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_20-30-57.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_20-30-57.webp)
 
 最后点击create account完成注册账号
 
@@ -43,11 +43,11 @@ https://github.com/P3TERX/IBM-CF-V2
 
 点击那个Use this template（使用这个模板），不想被大佬拉黑就别瞎点，特别是别别别点fork。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_20-22-54.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_20-22-54.webp)
 
 然后自己随便取个仓库名称，比如我这里用了ednovasibm0，然后点击创建
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_20-23-21.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_20-23-21.webp)
 
 ## 新建IBM app
 
@@ -57,7 +57,7 @@ https://cloud.ibm.com/cloudfoundry/overview
 
 点击create创建一个新的app
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_20-38-19.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_20-38-19.webp)
 
 地区自己选择，推荐dallas达拉斯，下面的plan选择lite，这样右边的pricing价格就会显示是免费的。免费账户是可以自选内存的，如果你就创建这个一个的话内存直接拉满256MB就行，也可以创建2个128M应用程序，或者创建4个64M应用程序。
 
@@ -69,13 +69,13 @@ App name随意，但是你要记住，后面要用到。输入App name的时候h
 
 最后点击右边的创建（我这里因为已经用了256MB，所以无法创建新的免费的app了）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_20-39-01.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_20-39-01.webp)
 
 ## 关联GitHub项目到IBM Cloud
 
 GitHub中打开刚刚复制过来的模板仓库的设置，secrets，新建一个repository secret。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_20-50-28.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_20-50-28.webp)
 
 需要创建下面几个环境变量和说明
 
@@ -85,7 +85,7 @@ IBM Cloud 用户名（也就是你注册IBM时候用的邮箱）
 
 （这里放一张图作为例子，下面都是一样的，不过内容不同）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_20-53-23.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_20-53-23.webp)
 
 #### IBM_CF_PASSWORD
 
@@ -105,13 +105,13 @@ IBM Cloud 密码（你注册IBM时候用的密码，用于登录获取你的app�
 定义 WebSocket path ，只能是字母或者数字或者两者组合。（这个不重要，只要自己能记住就行，配置v2ray的时候会用到）
 例如我这里填一个：ednovas
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_21-02-17.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_21-02-17.webp)
 
 ## 运行程序
 
 上述secrets全部添加完并且确认无误后，点击Actions，选择v2ray程序，运行。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_21-04-52.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_21-04-52.webp)
 
 需要等待上几分钟，直到那个运行状态的颜色从黄色变成绿色。
 
@@ -119,7 +119,7 @@ IBM Cloud 密码（你注册IBM时候用的密码，用于登录获取你的app�
 
 https://github.com/P3TERX/IBM-CF-V2
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_21-07-24.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_21-07-24.webp)
 
 ## v2ray配置
 
@@ -127,7 +127,7 @@ https://github.com/P3TERX/IBM-CF-V2
 
 老规矩，还是去服务器新建一个vmess服务器（如果上面选择了V2_WS_PATH_VLESS，这里就选择vless服务器）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_21-09-03.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_21-09-03.webp)
 
 那么接下来我们的地址栏填写刚刚创建的app name + .us-south.cf.appdomain.cloud（如果你选择了其他域名后缀，自己切换）
 
@@ -147,7 +147,7 @@ https://github.com/P3TERX/IBM-CF-V2
 
 底层传输安全选择tls，跳过证书验证选false。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_21-15-49.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_21-15-49.webp)
 
 ## 加速
 
@@ -161,13 +161,13 @@ https://github.com/P3TERX/IBM-CF-V2
 
 那么最后搭建出来的效果是这样的
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_21-19-53.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_21-19-53.webp)
 
 ## 起飞速度
 
 YouTube速度如下，我原本还想着把视频切换到8k上，万万没想到他居然是自动8k。这是21：25测的速，算是晚高峰了吧，这速度不是可观了，是直接起飞了。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-10_21-24-24.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-10_21-24-24.webp)
 
 ## 自动续期
 

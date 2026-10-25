@@ -10,7 +10,7 @@ categories:
   - VPS
 date: 2021-05-11 20:06:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/DDNS.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/DDNS.jpg
 ---
 
 # Change IP
@@ -25,27 +25,27 @@ https://www.changeip.com/accounts/cart.php?a=confproduct&i=1
 
 ## 解析域名
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-212049.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-212049.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-212308.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-212308.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-212419.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-212419.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-212646.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-212646.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-213112.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-213112.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-213234.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-213234.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-213335.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-213335.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-214037.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-214037.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-214136.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-214136.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-214429.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-214429.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-214747.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-214747.jpg)
 
 到此，您已經獲得一個免費域名ip.yourname.ddns.info
 
@@ -176,15 +176,15 @@ https://www.dynu.com/zh-CN/
 
 然后进入「后台控制中心」 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-234051.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-234051.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-231607.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-231607.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-231810.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-231810.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-232133.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-232133.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Jietu20200208-232451.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Jietu20200208-232451.jpg)
 
 使用脚本让VPS自动更新DDNS
 

@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2021-03-10 05:15:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/-LBnoY2fRrQzEAYSZ_1D.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/-LBnoY2fRrQzEAYSZ_1D.png
 # highlight_shrink: true
 ---
 
@@ -25,11 +25,11 @@ https://t.me/surfboardnews
 
 Speedtest:
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210310051931.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210310051931.png)
 
 Youtube:
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210310052002.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210310052002.png)
 
 原视频：
 
@@ -51,37 +51,37 @@ https://www.youtube.com/watch?v=oG8y-6s6Aek
 
 在profiles中添加订阅链接，本地文件，扫描qr码，或者新建一个空的配置文件
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_20210310-052459.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Screenshot_20210310-052459.png)
 
 添加订阅
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_20210310-052243.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Screenshot_20210310-052243.png)
 
 更新订阅等长按订阅文件即可（这里实在截不了图，就偷了Sabrina的图嘿嘿嘿）
 
 > 图源自 https://merlinblog.xyz/wiki/surfboard.html
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1633370814.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1633370814.jpg)
 
 ### 开启代理
 
 回到主界面打开即可，一般使用软件自带的分流功能，也就是Rule-based
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_20210310-052247.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Screenshot_20210310-052247.png)
 
 在config中切换节点，也可以在这里测试节点ping
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_20210310-052252.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Screenshot_20210310-052252.png)
 
 ### 设置
 
 设置界面可调整的东西比clash就少了很多，但是并不影响使用
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_20210310-052258.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Screenshot_20210310-052258.png)
 
 其中的Bypass VPN Apps就是选择软件分流，在这里你可以手动选择需要代理的软件
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Screenshot_20210310-052319.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Screenshot_20210310-052319.png)
 
 ## 总结
 

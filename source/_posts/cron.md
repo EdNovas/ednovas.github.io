@@ -5,13 +5,13 @@ categories:
   - - VPS
 date: 2021-10-01 22:51:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/5ca4b074e9c52631fc36f901_Schedule-Time.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/5ca4b074e9c52631fc36f901_Schedule-Time.png
 # highlight_shrink: true
 ---
 
 Cron 表达式，是应用在 Unix 和类 Unix 操作系统之中，让脚本、任务定时进行周期性重复的执行。Cron 表达式有差丰富的表达能力，能够适应各种时间表达需求。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/cron-2131.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/cron-2131.jpg)
 
 共 7 位，最后一位可选，可以不写，至少 6 位，从左到右各位置分别是：
 

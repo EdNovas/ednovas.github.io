@@ -15,4 +15,4 @@ https://markdown-convert.com/zh/tool/table
 
 左边黏贴表格内容，即可快速转换成markdown格式的表格
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-21_19-13-27.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-21_19-13-27.webp)

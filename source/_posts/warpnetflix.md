@@ -5,7 +5,7 @@ categories:
   - - VPS
 date: 2021-12-14 13:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/04lz9VVjGyhpbBMVbSJMAeQ-7..v1608587679.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/04lz9VVjGyhpbBMVbSJMAeQ-7..v1608587679.png
 ---
 
 ## 前言
@@ -128,11 +128,11 @@ WARP默认分配到的通道是共享的通道，很多用户被挤在一起，�
 
 点击中间的Download Android Studio，进行下载安装包
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212173345.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212173345.png)
 
 依据提示进行安装
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212173712.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212173712.png)
 
 打开Android Studio，等待下载一些配置文件。由于我这里已经安装过了，卸载重装复现不了，故不上图演示了
 
@@ -140,43 +140,43 @@ WARP默认分配到的通道是共享的通道，很多用户被挤在一起，�
 
 点击More Actions里面的AVD Manager
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212174039.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212174039.png)
 
 点击Create Virtual Device
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212174141.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212174141.png)
 
 设备选择一定要选下图的平板，然后点击Next
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212174159.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212174159.png)
 
 
 系统镜像选Lollipop，点Next
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212174350.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212174350.png)
 
 名字随便输入一个，点击Finish完成创建
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212174629.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212174629.png)
 
 启动虚拟机
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212174809.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212174809.png)
 
 打开[ Android SDK Platform Tools 的官网](https://developer.android.com/studio/releases/platform-tools)，点击下载适用于 Windows 的 SDK Platform-Tools
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212174938.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212174938.png)
 
 解压到电脑的任意一个位置
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212175018.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212175018.png)
 
 从[此处](https://www.apkmirror.com/apk/cloudflare/1-1-1-1-faster-safer-internet/)下载1.1.1.1 APP的APK文件，然后复制到Android SDK Platform Tools的程序目录下
 
 右键，选择在Windows 终端中打开
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212181800.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212181800.png)
 
 输入`adb.exe devices`命令检查SDK是否正确识别到虚拟机
 
@@ -186,7 +186,7 @@ WARP默认分配到的通道是共享的通道，很多用户被挤在一起，�
 adb.exe install "xxxx.apk"
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212182134.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212182134.png)
 
 打开真全局模式（例如：Clash的TUN模式），并打开WARP APP
 
@@ -195,7 +195,7 @@ adb.exe install "xxxx.apk"
 在虚拟机内连接WARP
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212182701(1).png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212182701(1).png)
 
 输入以下命令提取WARP Teams的配置文件
 
@@ -203,13 +203,13 @@ adb.exe install "xxxx.apk"
 adb pull /data/data/com.cloudflare.onedotonedotonedotone/shared_prefs/com.cloudflare.onedotonedotonedotone_preferences.xml
 ```
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212182819.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212182819.png)
 
 关闭虚拟机，打开配置文件
 
 复制`PublicKey`、`PrivateKey`，`Endpoint`地址和IP地址
 
-![PS: 本文的配置文件格式是为了方便展示用，实际的配置文件不是这样](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212183555.png)
+![PS: 本文的配置文件格式是为了方便展示用，实际的配置文件不是这样](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212183555.png)
 
 ### VPS启用WARP Teams
 
@@ -221,11 +221,11 @@ SSH登录至自己的VPS
 
 编辑，替换相对应的`PublicKey`、`PrivateKey`，`Endpoint`地址和IP地址
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212184612.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212184612.png)
 
 VPS内重新启动WARP
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/20211212184743.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/20211212184743.png)
 
 使用以下命令查询WARP状态，如返回warp=plus即为成功
 

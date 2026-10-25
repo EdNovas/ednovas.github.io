@@ -6,7 +6,7 @@ categories:
   - - 网站
 date: 2021-05-01 20:52:45
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/mover_logo.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/mover_logo.png
 # highlight_shrink: true
 ---
 
@@ -16,7 +16,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/mover_logo.png
 
 [e5账户注册](/2021/02/10/officee5/)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-f71c12dc94fbf0d8c44ba737517d30e1.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1584502432-f71c12dc94fbf0d8c44ba737517d30e1.png)
 
 这个网站之前就是网盘搬家类的，就在去年2019年10月21号，被微软收购了(巨硬有钱任性)，现在用于将云文件迁移到OFFICE365(包括谷歌网盘，亚马逊等)，只进不出，接下来简单介绍一下!
 
@@ -42,13 +42,13 @@ Mover 将十几个云服务提供商、web服务和数据库链接到Office 365�
 
 Mover Agent / Amazon S3 / Amazon WorkDocs / Microsoft Azure / Box / Dropbox / Egnyte / FTP / Google Drive / Office 365 / OneDrive / SFTP / SharePoint Online / WebDAV
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-f4e36fb558f7e36aa7574d5281e61fef.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1584502432-f4e36fb558f7e36aa7574d5281e61fef.png)
 
 ## 使用方法
 
 注册成功后，进入网页，务必使用​电脑打开网页，手机打开网页可能会被折叠，导致文件夹打不开，如下图，电脑打开网页和手机打开的网页(手机Chrome已开启桌面版网页)。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-9e7b0f996593c8e9ef50af5c50432395.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1584502432-9e7b0f996593c8e9ef50af5c50432395.png)
 
 ## 数据源
 数据源基本上 连接器 支持的云服务商都支持！只要授权登录即可！非常方便！
@@ -58,7 +58,7 @@ Mover Agent / Amazon S3 / Amazon WorkDocs / Microsoft Azure / Box / Dropbox / Eg
 
 Azure Blob Storage / Office 365 (OneDrive/SharePoint Admin) / OneDrive Consumer / OneDrive for Business (Single User)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-19f126a714a227b6d3aa891068e34f19.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1584502432-19f126a714a227b6d3aa891068e34f19.png)
 
 ## 账号选择？
 我的微软的账号，到底选择哪个授权登录呢？其实多试几次就知道了！
@@ -78,11 +78,11 @@ Office 365 (OneDrive/SharePoint Admin) ：A1 / A1P / E3 /E5 等商业版全局�
 
 更多功能自行探索(其实功能就那几个，多试试)​~~
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-c462e460e5e983fe339b1d8ab435944d.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1584502432-c462e460e5e983fe339b1d8ab435944d.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-166f4003b07f699955a6c7ce186bcd46.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1584502432-166f4003b07f699955a6c7ce186bcd46.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1584502432-baedf92141d6aebd6e53ddaf3cd59e83.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1584502432-baedf92141d6aebd6e53ddaf3cd59e83.png)
 
 ## 使用缺点
 团队盘(A1，E5，A1P等等)限制单文件大小15G。

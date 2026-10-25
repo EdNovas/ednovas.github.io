@@ -9,7 +9,7 @@ categories:
   - VPS
 date: 2021-05-11 17:40:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/keyword-research.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/keyword-research.png
 ---
 
 ## 入门
@@ -140,13 +140,13 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/keyword-resear
 
     -keyword new regex '^/prpr$' 'reply::NM$L'
 
-    ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/38f538f946af07630e8a9.png)
+    ![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/38f538f946af07630e8a9.png)
 
 2. 正则捕获组 ( ${regex_<捕获组名称>} )
 
     -keyword new regex '(?P<text>[\S\s]+)' 'reply::${regex_text}' ( 复读机，${regex_text} 中的 text 为捕获组名称 )
 
-    ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/61e5c8166b62dd5e709a0.png)
+    ![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/61e5c8166b62dd5e709a0.png)
 
 
 3. 回复文件或图片 ( file, photo, tgfile, tgphoto )
@@ -157,7 +157,7 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/keyword-resear
 
     TG 中的文件和图片同理，将文件链接替换成包含文件的消息链接即可。
 
-    ![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/336c65e6d870fad1ca794.png)
+    ![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/336c65e6d870fad1ca794.png)
 
 1. 外部回复 ( ext_<chat_id> )
 

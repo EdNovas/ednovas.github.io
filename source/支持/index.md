@@ -14,5 +14,5 @@ date: 2020-12-26 17:40:15
 
 EdNovas云: 高性价比，节点覆盖80+国家，IEPL专线中转，多地区奈飞迪士尼等流媒体解锁
 
-![EdNovas云](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png)
+![EdNovas云](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png)
 

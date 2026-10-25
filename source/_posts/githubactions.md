@@ -6,7 +6,7 @@ categories:
   - - VPS
 date: 2021-05-13 11:32:45
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/442-github-actions.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/442-github-actions.png
 # highlight_shrink: true
 ---
 
@@ -84,11 +84,11 @@ https://www.ngrok.com/
 
 在 GitHub 创建一个新的仓库
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-03_11-56-18.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-03_11-56-18.png)
 
 只需要填上仓库名字，点击下面的Creat repository
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-03_11-56-43.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-03_11-56-43.png)
 
 添加两个仓库secrets，一个是 `NGROK_TOKEN`，一个是 `SSH_PASSWORD`
 
@@ -97,11 +97,11 @@ https://www.ngrok.com/
 NGROK_TOKEN： 1ry9Mln411aOpQrcrtCzLWYaBwl_5rQXwdRRcA14oXXoXoXoo
 SSH_PASSWORD：英文数字ssh密码
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-03_12-01-43.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-03_12-01-43.png)
 
 点击code, creating a new file
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-03_12-05-04.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-03_12-05-04.png)
 
 文件名填入`ssh-server.sh`，内容复制以下
 
@@ -147,7 +147,7 @@ fi
 
 点击Actions， set up a workflow yourself
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-03_12-07-51.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-03_12-07-51.png)
 
 名字填入`ssh-server.yml`
 
@@ -182,11 +182,11 @@ jobs:
 
 ssh中填入对应内容
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-03_12-09-57.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-03_12-09-57.png)
 
 ssh的密码填入刚刚设定的 `SSH_PASSWORD`
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-03_12-10-28.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-03_12-10-28.png)
 
 ## ActionsVM
 
@@ -200,7 +200,7 @@ https://github.com/P3TERX/ActionsVM/generate
 
 然后点击actions，选择Ubuntu（ngrok），点击运行run workflow，同上找到ssh连接信息并连接
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-03_12-18-33.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-03_12-18-33.png)
 
 ## 服务器存活时间
 

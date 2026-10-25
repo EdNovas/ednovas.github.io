@@ -8,16 +8,16 @@ categories:
   - 编程
 date: 2021-07-20 10:27:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy90YWdzL2dvb2dsZS5qcGc.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy90YWdzL2dvb2dsZS5qcGc.jpg
 ---
 
 以前进行谷歌搜索的时候，都是很正常的。最近服务器发生了一些变动，在地址栏直接输入关键字搜索，就跳出了人机验证的界面，如下图
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0Ly81NDdmYmFkYzNmZmY1LmdpZg.gif)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0Ly81NDdmYmFkYzNmZmY1LmdpZg.gif)
 
 次数多了之后 Google 还会弹出一个窗口，要求输入传统的验证码或者跳出阿猫阿狗汽车的图片让你选择。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0Ly81NDdmYzBjMTkxYmJkLmpwZw.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0Ly81NDdmYzBjMTkxYmJkLmpwZw.jpg)
 
 关于谷歌人机验证的详细新闻，可以看雷锋网的这篇文章——[《与恼人的验证码说拜拜，Google用一次点击区分人与机器》](http://www.leiphone.com/news/201412/Hnux7n19OcNWwUFt.html)。我猜测这是多人公用同一个谷歌搜索的站点引起的问题。Google reCaptcha 功能会在收集大量信息，包括IP地址和cookies，然后通过收集这些数据对比用户是否和过去在互联网上的行为一致，来判定这个用户究竟是不是机器人。
 
@@ -27,15 +27,15 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG
 
 打开设置
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0LzIwMTcwNDA2MTkyMTQwLmpwZw.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0LzIwMTcwNDA2MTkyMTQwLmpwZw.jpg)
 
 管理搜索引擎
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0LzIwMTcwNDA2MTkyMTUyLmpwZw.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0LzIwMTcwNDA2MTkyMTUyLmpwZw.jpg)
 
 自定义搜索引擎，并且设为默认搜索引擎
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0LzIwMTcwNDA2MTkyMTU4LmpwZw.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aHR0cHM6Ly9jZG4ua2VsdS5vcmcvYmxvZy8yMDE3LzA0LzIwMTcwNDA2MTkyMTU4LmpwZw.jpg)
 
 将自定义搜索的地址改成各种天花乱坠的谷歌 + /search?q=%s ，比如
 

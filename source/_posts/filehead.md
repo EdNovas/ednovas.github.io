@@ -5,7 +5,7 @@ categories:
   - - 杂
 date: 2022-04-23 20:06:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/What-is-a-Computer-file-958x575.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/What-is-a-Computer-file-958x575.webp
 ---
 
 ## 从Ultra－edit-32中提取出来的

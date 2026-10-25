@@ -6,7 +6,7 @@ categories:
   - - 软件
 date: 2021-02-02 11:58:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/clover.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/clover.jpg
 #top: true
 #highlight_shrink: true
 ---
@@ -37,7 +37,7 @@ Clover 通过插件的形式集成到 Windows Explorer，保留您通常的使�
 
 按Ctrl+D添加当前路径，或者直接将文件夹拖入书签栏。再也不用到处寻找要访问的文件夹了，瞬间到达，何等痛快！
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/clover.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/clover.jpg)
 
 ## Q & A
 

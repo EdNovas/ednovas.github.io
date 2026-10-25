@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2020-12-18 17:15:12
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/93264e9bf3a10632a0fd7798af53dc8c.webp
 password: 123
 message: 密码请私聊EdNovas
 #top: 5
@@ -34,7 +34,7 @@ message: 密码请私聊EdNovas
 
 ### 欢迎使用EdNovas自己的机场 https://ednovas.me 物美价廉（严禁分享及滥用）
 
-<a href="https://ednovas.me" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png"></a>
+<a href="https://ednovas.me" target="_blank"><img src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png"></a>
 
 ***
 
@@ -143,7 +143,7 @@ https://leadingto.top/api/v1/client/subscribe?token=d91774daff2b4cb8d5b6df3fc492
 
 ### 欢迎使用EdNovas自己的机场 https://ednovas.me 物美价廉（严禁分享及滥用）~~
 
-<a href="https://ednovas.me" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png">
+<a href="https://ednovas.me" target="_blank"><img src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png">
 
 ***
 

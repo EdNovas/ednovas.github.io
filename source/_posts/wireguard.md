@@ -9,7 +9,7 @@ categories:
   - VPS
 date: 2021-05-24 11:08:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/WireGuard-logo.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/WireGuard-logo.png
 ---
 
 ## 前言

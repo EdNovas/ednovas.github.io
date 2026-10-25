@@ -10,7 +10,7 @@ categories:
   - VPS
 date: 2021-06-11 20:56:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Videos-icon-02.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Videos-icon-02.jpg
 ---
 
 ## 准备工作
@@ -33,11 +33,11 @@ wget -O install.sh http://www.aapanel.com/script/install-ubuntu_6.0_en.sh && sud
 
 安装完成后解析域名到该VPS的ip地址，记得要关掉小云朵cdn方便申请SSL证书
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210611212443.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210611212443.png)
 
 如图，申请ssl，自动https跳转，添加一个数据库，要自己记住数据库名和密码
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-11_21-26-46.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-11_21-26-46.png)
 
 
 ## 下载
@@ -46,7 +46,7 @@ GitHub下载地址：https://github.com/magicblack/maccms10/releases
 
 官网下载地址：https://www.maccms.cn/down.html
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-11_21-29-24.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-11_21-29-24.png)
 
 可以直接使用remote download远程下载
 
@@ -57,7 +57,7 @@ https://github.com/magicblack/maccms10/archive/refs/tags/v2020.1000.1075.tar.gz
 下载完成后解压，然后进入解压后的文件夹，剪切里面的内容，黏贴到网站根目录，即如下图所示
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-11_21-31-34.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-11_21-31-34.png)
 
 
 ## 安装
@@ -66,23 +66,23 @@ https://github.com/magicblack/maccms10/archive/refs/tags/v2020.1000.1075.tar.gz
 
 比如我的就是 https://movies.ednovas.xyz ，他会自动跳转到 https://movies.ednovas.xyz/install.php 运行install.php脚本进行安装初始化
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-11_21-33-18.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-11_21-33-18.png)
 
 如上图所示，他fileinfo标红了，这就证明我们需要去安装一下
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-11_21-34-48.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-11_21-34-48.png)
 
 安装很快，性能好的机器几十秒钟就ok了，安装完成后reload重载一下php或者restart重启一下（一般重载即可）
 
 然后刷新网页，就会发现标红消失了，点击下一步
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-11_21-38-38.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-11_21-38-38.png)
 
 然后链接数据库，服务器地址和端口不用更改，数据库账号和名称是相同的，前缀不用管，可以点击测试数据库链接查看是否填写正确。管理员账号很好理解，极其建议勾选初始化数据
 
 确认无误立即执行安装
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-11_21-40-28.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-11_21-40-28.png)
 
 程序很贴心的让我们把后台从admin.php改为别的
 
@@ -94,7 +94,7 @@ https://github.com/magicblack/maccms10/archive/refs/tags/v2020.1000.1075.tar.gz
 
 自己开始畅玩吧，调整参数啥的，他写的都挺明了，基本看看就能知道这个功能是干啥的了，就不多做叙述了
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-06-11_21-45-58.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-06-11_21-45-58.png)
 
 视频抓取主要是用采集，采集前记得先看看分类是否都绑定了，还有播放器是否正常再采集
 

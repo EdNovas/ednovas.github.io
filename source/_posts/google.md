@@ -6,7 +6,7 @@ categories:
   - 杂
 date: 2021-07-04 16:56:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/search_anchor_hero_2.max-1000x1000.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/search_anchor_hero_2.max-1000x1000.jpg
 ---
 
 ## 前言

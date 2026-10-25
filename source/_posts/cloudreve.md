@@ -8,7 +8,7 @@ categories:
   - 建站
 date: 2021-08-01 17:56:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/head_huca9e586f553d1688159ad3eaa80dfc1d_18571_2000x0_resize_box_2.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/head_huca9e586f553d1688159ad3eaa80dfc1d_18571_2000x0_resize_box_2.png
 ---
 
 > 参考自 https://docs.cloudreve.org/ 本文添加了更多的说明且更详细些
@@ -606,11 +606,11 @@ Docker
 
 一般选OneDrive就是了，A1,A1P,E5 那么多选择呢
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-08-01_19-58-08.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-08-01_19-58-08.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-08-01_19-58-22.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-08-01_19-58-22.png)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-08-01_19-58-32.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-08-01_19-58-32.png)
 
 ## WebDav
 
@@ -712,32 +712,32 @@ wget -N git.io/aria2.sh && chmod +x aria2.sh
 
 管理员界面进入 存储策略，添加存储策略，选择对应的存储策略，这里我选OneDrive了
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-08-01_20-34-33.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-08-01_20-34-33.png)
 
 如果是OneDrive多账号的话，为了防止反复登录注销登录的繁琐操作，建议无痕浏览器打开添加存储策略
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-08-01_20-35-34.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-08-01_20-35-34.png)
 
 右键在新窗口打开AAD控制台（国内和国外OneDrive对应不同的地址，注意区分）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-08-01_20-36-35.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-08-01_20-36-35.png)
 
 选择你要登录的OneDrive账号，输入密码登录
 
 进入AAD控制台后选择左侧的App Registrations应用注册
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-08-01_20-40-33.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-08-01_20-40-33.png)
 
 填入对应的信息
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-08-01_20-42-06.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-08-01_20-42-06.png)
 
 复制创建的 Application ID 应用程序（客户端）ID 一会要用
 
 
 再进入certificates & secrets 证书和密码 界面，创建一个新的Client Secret 程序密钥
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-08-01_20-44-30.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-08-01_20-44-30.png)
 
 最多只能创建两年的，想创建如图的自定时间密钥可以参考[这里](/2021/06/07/graphexplorer)
 

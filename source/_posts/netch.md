@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2021-01-03 12:37:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/netch.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/netch.jpg
 ---
 
 ## 简介
@@ -25,41 +25,41 @@ https://github.com/NetchX/Netch/releases
 
 ## 添加订阅链接
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210103131408.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210103131408.webp)
 
 Remark备注必须填写内容，下面的link就复制上订阅连接即可，然后点击Add/Modify添加/修改。关闭这个页面就行。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210103131652.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210103131652.webp)
 
 然后需要再手动更新一下订阅链接：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210103124204.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210103124204.webp)
 
 然后选择节点（软件默认选择延迟低的节点）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210103131949.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210103131949.webp)
 
 ## 规则
 
 然后在rule规则中选择想要代理的游戏
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210103132010.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210103132010.webp)
 
 软件自带支持的游戏比较少，所以我们可以自己扫描并添加游戏
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210103132129.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210103132129.webp)
 
 先点击scan扫描，选择游戏安装文件夹，等待软件加载一会，会自动列出文件夹内所有.exe的游戏程序，在上方添加一个Remark备注，最后点击Save保存
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210103132329.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210103132329.webp)
 
 那么我们就可以看到在rule里面多出来了最后一个刚刚添加的程序规则，选择即可
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210103132503.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210103132503.webp)
 
 最后点击Start开始代理
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/QQ图片20210103132048.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/QQ图片20210103132048.webp)
 
 ## Q&A
 

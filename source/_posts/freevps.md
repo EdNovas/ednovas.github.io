@@ -6,7 +6,7 @@ categories:
   - - VPS
 date: 2021-03-22 16:48:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/VPS-Hosting-2.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/VPS-Hosting-2.jpg
 #top: 4
 sticky: 2
 # highlight_shrink: true

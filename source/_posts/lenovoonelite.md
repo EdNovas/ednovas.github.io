@@ -6,7 +6,7 @@ categories:
   - - 软件
 date: 2021-02-03 04:45:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-ec0f1a965c0a8ee46900ec9e26826631_1440w.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/v2-ec0f1a965c0a8ee46900ec9e26826631_1440w.jpg
 #top: true
 #highlight_shrink: true
 ---
@@ -42,11 +42,11 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-ec0f1a965c0
 
 要打开开发者模式，需要去设置中，选择关于手机，然后连点5次版本号/build_number。根据手机不同有不同的开启方式，但大同小异。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_04-32-51.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-03_04-32-51.webp)
 
 进入开发者模式以后找到 USB debugging/USB调试并打开
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_04-33-21.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-03_04-33-21.webp)
 
 ## 下载
 
@@ -68,8 +68,8 @@ https://cdnzui.lenovomm.cn/developer/lenovoone/Installforshop.exe
 
 支持屏息操作。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_05-00-39.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-03_05-00-39.webp)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_05-00-48.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-03_05-00-48.webp)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-02-03_05-00-58.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-02-03_05-00-58.webp)

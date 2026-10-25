@@ -6,13 +6,13 @@ categories:
   - - 软件
 date: 2021-01-22 20:29:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/360_F_264849084_TGrvP8BrLE8ycY1m90xssEOJQqH7AyCT.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/360_F_264849084_TGrvP8BrLE8ycY1m90xssEOJQqH7AyCT.jpg
 #highlight_shrink: true
 ---
 
 Windows 电脑硬件检测工具集合。可以检测 CPU、主板、显卡、硬盘等硬件信息。还内置了从硬件检测到测试以及系统驱动激活管理等几十款工具。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-22_20-34-20)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-22_20-34-20)
 
 官网：https://www.tbtool.cn/
 

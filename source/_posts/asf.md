@@ -6,7 +6,7 @@ categories:
   - - 软件
 date: 2021-05-03 17:31:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/archi-steam-farm-768x432.jpg
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/archi-steam-farm-768x432.jpg
 # highlight_shrink: true
 ---
 
@@ -123,7 +123,7 @@ screen -S asf
 
 宝塔安装，安装必要环境，新建网址，解析域名，添加ssl证书，开启强制https，添加nginx反代，反代本地1242端口并保存（proxy name处随意，图片为英文版，中文版大同小异）
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/05-03_17-28-06.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/05-03_17-28-06.png)
 
 ## 设置网页管理面板(复杂)
 

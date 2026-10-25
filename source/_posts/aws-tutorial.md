@@ -15,7 +15,7 @@ keywords:
   - DDNS
   - Cloudflare
 description: AWS 完整使用教程，包含入口搭建和小助理操作的详细步骤。
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-cover.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aws-cover.png
 hidden: true
 ---
 
@@ -71,7 +71,7 @@ AWS租机TG：[@television666](https://t.me/television666)
 4. 找到 API 密钥区域
 5. 复制第一个 **Global API Key**（不要用其他密钥）
 
-![cfapi](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-entry-image1.png)
+![cfapi](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aws-entry-image1.png)
 
 #### 2. 配置 CF DDNS 脚本
 
@@ -110,7 +110,7 @@ bash <(curl -sSL https://ddns.8245454.xyz/aws4.sh) --install-cron --token CFUT_7
 bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-t dd0b03c1-89b9-46be-8594-15254525810a -u https://zhima.520666.best"
 ```
 
-![duijie](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-entry-image0.png)
+![duijie](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aws-entry-image0.png)
 
 #### 4. 提交客服对接
 
@@ -152,13 +152,13 @@ bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodecli
 
 找到实例 → 点击 **停止**，等待状态变为「已停止」
 
-![停止机器](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-assistant-5.png)
+![停止机器](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aws-assistant-5.png)
 
 #### 第 2 步：编辑开机脚本
 
 状态停止后 → 点击 **开机脚本**，进入编辑界面
 
-![编辑开机脚本](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-assistant-6.png)
+![编辑开机脚本](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aws-assistant-6.png)
 
 #### 第 3 步：标准开机脚本（可直接复制使用）
 
@@ -213,7 +213,7 @@ bash <(curl -fsSL https://bbr.8245454.xyz/123.sh)
 | 10 | 对接 NY 面板，执行面板对接安装命令 | `printf "\ny\n\n" \| bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-t 你的Token -u 你的面板地址"` |
 | 11 | 运行 BBR 优化脚本，用于网络加速优化（两个脚本任选其一） | `bash <(curl -L -s www.hlspeed.cc/bbr/123.sh)`<br>`bash <(curl -fsSL https://bbr.8245454.xyz/123.sh)` |
 
-![开机脚本示例](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-assistant-7.png)
+![开机脚本示例](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aws-assistant-7.png)
 
 ##### 脚本修改注意事项
 
@@ -244,16 +244,16 @@ bash <(curl -fsSL https://bbr.8245454.xyz/123.sh)
 
 YouTube 测速
 
-![联通4K测速](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-speed-unicom.png)
+![联通4K测速](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aws-speed-unicom.png)
 
 ## 电信 4K 晚高峰测试（仅供参考）
 
 YouTube 测速
 
-![电信4K测速](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-speed-telecom.png)
+![电信4K测速](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aws-speed-telecom.png)
 
 ## 移动 4K 晚高峰测试（仅供参考）
 
 YouTube 测速
 
-![移动4K测速](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/aws-speed-mobile.png)
+![移动4K测速](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/aws-speed-mobile.png)

@@ -6,7 +6,7 @@ categories:
   - - 科学上网
 date: 2021-01-26 11:59:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1_B-khKHPeEEixZhMB9LlWrg.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1_B-khKHPeEEixZhMB9LlWrg.webp
 #highlight_shrink: true
 ---
 
@@ -33,29 +33,29 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/1_B-khKHPeEEix
 
 点击一键部署
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-26_10-11-46.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-26_10-11-46.webp)
 
 app name随意，要记住，后面会用到。UUID前往[网站](https://www.uuidgenerator.net/)获取。将UUID复制到这里，然后点击部署。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-26_10-14-59.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-26_10-14-59.webp)
 
 等待片刻部署完毕。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-26_10-15-36.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-26_10-15-36.webp)
 
 进入app管理，点击设置，reveal config vars，可以查看刚刚设置的UUID。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-26_10-17-03.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-26_10-17-03.webp)
 
 ## Cloudflare反代
 
 进入cloudflare的workers
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-26_10-18-50.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-26_10-18-50.webp)
 
 新建一个workers
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-26_10-19-13.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-26_10-19-13.webp)
 
 复制如下代码并黏贴，把应用程序名改为自己刚刚设置的app name。
 ```javascript
@@ -80,7 +80,7 @@ addEventListener(
     }
 )
 ```
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-26_10-20-22.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-26_10-20-22.webp)
 
 ## v2ray配置
 
@@ -104,7 +104,7 @@ UUID使用之前的UUID
 
 别忘了确认
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-26_10-33-09.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-26_10-33-09.webp)
 项目配置说明：
 ```
 * 客户端下载：https://github.com/XTLS/Xray-core/releases
@@ -155,7 +155,7 @@ trojan-go配置：
 
 油管4k速度：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-26_12-30-33.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-26_12-30-33.webp)
 
 ## 负载均衡
 

@@ -5,7 +5,7 @@ categories:
   - - 杂
 date: 2022-06-25 13:09:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/PASSWORD-ft-IMAGE.png
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/PASSWORD-ft-IMAGE.png
 ---
 
 # 起源
@@ -36,10 +36,10 @@ cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/PASSWORD-ft-IM
 点的长度（也就是上面的时间长度t）决定了发报的速度
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/72f082025aafa40f2b207369a264034f79f0199b.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/72f082025aafa40f2b207369a264034f79f0199b.webp)
 
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/morsecode-1.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/morsecode-1.jpg)
 
 ## sos
 
@@ -66,7 +66,7 @@ https://morsecode.world/international/translator.html
 
 博多式电报机 (Baudot code) 是法国人埃米尔‧博多于1874年发明的“印字电报机”。主要特点是字符用5比特编码，采用两个字符集。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/12067578-5ad092acc57aa4c5.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/12067578-5ad092acc57aa4c5.webp)
 
 ## 转换网站
 
@@ -139,14 +139,14 @@ Vigenère cipher
 
 假设串长为m，明文为P，密文为C，密钥为K则
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-06-25_22-20-10.bmp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2022-06-25_22-20-10.bmp)
 
 
 也可以根据图1进行计算，如图。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/v2-994bb20eb908fe1ace76f14d5e93aea1_720w.jpg)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/v2-994bb20eb908fe1ace76f14d5e93aea1_720w.jpg)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-06-25_22-20-39.bmp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2022-06-25_22-20-39.bmp)
 
 ## 转换网站
 
@@ -179,11 +179,11 @@ Bacon Cipher
 
 为了对消息进行编码，需要将明文中的每个字母按照下方的编码表进行编码。明文中的每个字母都会转换成一组5个的a/b字母。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/BaconCipher-1.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/BaconCipher-1.png)
 
 除此之外，还有第二种编码表，与第一种编码表不同的是，在第二种编码表里I与J、U与V皆有不同编号。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/BaconCipher-2.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/BaconCipher-2.png)
 
 加密者需使用两种不同字体，分别代表A和B。准备好一篇包含相同AB字数的假信息后，按照密文格式化假信息，即依密文中每个字母是A还是B分别套用两种字体。
 
@@ -225,7 +225,7 @@ MY InTErEST iS iN tHe FUTUrE beCaUSE i aM GoING TO sPEnd ThE RESt of MY liFe tTE
 
 例如：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/BaconCipher-3.png)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/BaconCipher-3.png)
 
 ## 转换网站
 
@@ -273,7 +273,7 @@ https://cryptii.com/pipes/text-to-base64
 
 ASCII是基于拉丁字母的一套电脑编码系统。它主要用于显示现代英语，而其扩展版本延伸美国标准信息交换码则可以部分支持其他西欧语言，并等同于国际标准ISO/IEC 646。 美国信息交换标准代码是这套编码系统的传统命名，互联网号码分配局现在更倾向于使用它的新名字US-ASCII。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-06-25_22-45-12.bmp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2022-06-25_22-45-12.bmp)
 
 # 苏州码子
 
@@ -281,7 +281,7 @@ ASCII是基于拉丁字母的一套电脑编码系统。它主要用于显示现
 
 苏州码子是种曾在民间流行一时在中国传统数字，产生于中国的苏州，由中国的算筹演变而来。因为苏州码子容易学习，书写便捷，一串数字能连笔写出，而且写法如同算珠，可以配合算盘使用，所以曾经广泛使用于商业中，在账簿和发票等均有使用。现在这种数字在中国大陆几近绝迹，但在港澳地区、台湾的街市、旧式茶餐厅及中药房偶而仍然可见。
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2022-06-25_22-05-48.bmp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2022-06-25_22-05-48.bmp)
 
 ## 为何叫杭州码子？
 

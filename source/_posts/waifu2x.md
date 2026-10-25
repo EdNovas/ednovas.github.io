@@ -6,7 +6,7 @@ categories:
   - - 软件
 date: 2021-01-03 20:54:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-cover: https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/icon_main.webp
+cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/icon_main.webp
 ---
 
 ## 简介
@@ -69,7 +69,7 @@ Waifu2x-caffe / Waifu2x-converter / Waifu2x-ncnn-vulkan / SRMD-ncnn-vulkan / Rea
 
 ### 主页如下所示
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-03_20-49-41.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-03_20-49-41.webp)
 
 ### 文件列表
 
@@ -141,13 +141,13 @@ github不支持在线播放视频, 请点击下方链接查看视频示例:
 
 还有我自己放大的图片效果，这里是原图：
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/888849-colorful-wallpaper-hd-2880x1800-for-hd-1080p.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/888849-colorful-wallpaper-hd-2880x1800-for-hd-1080p.webp)
 
 然后这个是对眼睛放大以后的对比图，左图为未放大原图
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-03_08-58-50.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-03_08-58-50.webp)
 
-![](https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/New%20folder/Snipaste_2021-01-03_09-09-41.webp)
+![](https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-01-03_09-09-41.webp)
 
 可以看到放大效果相当的惊人，那么是不是一千三百万的手机拍了照片以后一放大就成了一亿像素效果了呢/狗头
 
