@@ -83,7 +83,7 @@ function Get_Ip_Address(){
 # ==============part1=============
 
 function rootLogin(){
-    wget -N https://raw.githubusercontent.com/wdm1732418365/vpstoolbox/main/root.sh && chmod -R 755 root.sh && bash root.sh
+    wget -N https://raw.githubusercontent.com/ednovas/vpstoolbox/main/root.sh && chmod -R 755 root.sh && bash root.sh
 }
 
 function vpsupdate(){
@@ -217,7 +217,7 @@ function xrayronekey(){
 
 function rulelist(){
     cd /etc/XrayR
-    wget https://raw.githubusercontent.com/wdm1732418365/rulelist/main/rulelist
+    wget https://raw.githubusercontent.com/ednovas/rulelist/main/rulelist
     sudo sed -i 's/RuleListPath:/RuleListPath: \/etc\/XrayR\/rulelist/g' /etc/XrayR/config.yml
     xrayr restart
 }
@@ -228,7 +228,7 @@ function mtproxyonekey(){
 }
 
 function tcponekey(){
-    wget https://raw.githubusercontent.com/wdm1732418365/bbr-tcp-boost/main/tools.sh -O tools.sh && bash tools.sh
+    wget https://raw.githubusercontent.com/ednovas/bbr-tcp-boost/main/tools.sh -O tools.sh && bash tools.sh
 }
 
 function bbronekey(){
@@ -441,7 +441,7 @@ function reallyNothing(){
 
 # ==============part9=============
 function updateScript(){
-    wget -N https://raw.githubusercontent.com/wdm1732418365/vpstoolbox/main/ednovastool.sh && chmod +x ednovastool.sh && ./ednovastool.sh
+    wget -N https://raw.githubusercontent.com/ednovas/vpstoolbox/main/ednovastool.sh && chmod +x ednovastool.sh && ./ednovastool.sh
 }
 # ==============part9=============
 
@@ -790,7 +790,7 @@ function othersonekey(){
 
 # part 9
 # function updateScript(){
-#     wget -N https://raw.githubusercontent.com/wdm1732418365/vpstoolbox/main/ednovastool.sh && chmod +x ednovastool.sh && ./ednovastool.sh
+#     wget -N https://raw.githubusercontent.com/ednovas/vpstoolbox/main/ednovastool.sh && chmod +x ednovastool.sh && ./ednovastool.sh
 # }
 
 
