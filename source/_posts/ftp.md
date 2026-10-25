@@ -87,7 +87,7 @@ HTTP上载提供了一种非常简单的将文件上载到服务器的方法，�
 
 FTP自动支持断点续传，所以不用担心丢包率高
 
-总空间大小23TB。只可以上传和下载，无法删除文件，如果需要删除请联系[EdNovas](http://wpa.qq.com/msgrd?v=3&uin=180099495&site=qq&menu=yes)
+总空间大小23TB。只可以上传和下载，无法删除文件，如果需要删除请联系[EdNovas](mailto:ednovas@ednovas.tech)
 
 Host（ip，服务器）：
 ```

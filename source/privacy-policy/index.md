@@ -14,8 +14,6 @@ All articles without a source are originally created by EdNovas. Reprinting, cop
 
 联系方式：
 
-QQ：180099495
-
 邮箱：ednovas@ednovas.tech
 
 ## Who we are
