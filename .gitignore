@@ -9,3 +9,5 @@ _config.yml
 .deploy_git*/
 .idea
 themes/butterfly/.git
+/.agents
+skills-lock.json
