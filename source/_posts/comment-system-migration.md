@@ -4,12 +4,15 @@ tags: [评论系统,Twikoo,Waline,Valine,Cloudflare Workers,D1,博客]
 categories:
   - - 建站
 date: 2026-10-19 16:30:00
+updated: 2026-11-08 12:00:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=800
 #highlight_shrink: true
 ---
 
 注： 本文由AI生成，ednovas编辑并审核发布。
+
+> 📢 **2026-11-08 更新**：新增 [4.10 评论回复邮件：用 Resend](#4-10-评论回复邮件：用-Resend（免费、配置最简单）)，读者的评论被回复后会收到邮件提醒，免费、配置也最简单。
 
 # 博客评论系统迁移记：Valine → Waline → Twikoo
 
@@ -195,7 +198,7 @@ SELECT id, createdat::text AS created_utc FROM wl_comment;
 
 | 你的情况 | 推荐 | 注意 |
 | :-- | :-- | :-- |
-| 域名在 Cloudflare、不想要服务器、读者在国内、需要匿名评论 | **Twikoo + Workers + D1**（本站方案） | 一定要绑自定义域名；邮件只能走 HTTP API，或改用 Telegram 推送 |
+| 域名在 Cloudflare、不想要服务器、读者在国内、需要匿名评论 | **Twikoo + Workers + D1**（本站方案） | 一定要绑自定义域名；回复邮件用 Resend（免费），博主通知用 Telegram 推送 |
 | 想要用户系统、浏览量、文章反应等最全功能 | **Waline** | 绑自定义域名、定期导出；别和高风险项目放在同一个免费 PaaS 账号 |
 | 国内访问速度第一，愿意花点钱 | Twikoo / Waline 部署在腾讯云 CloudBase，或国内服务器自托管 | CloudBase 需要付费套餐 |
 | 有 VPS，想完全掌控数据、多站点 | 中文博客选 **Artalk**，偏英文、重隐私选 **Remark42** | 要自己负责备份和安全更新 |
@@ -252,7 +255,7 @@ SELECT id, createdat::text AS created_utc FROM wl_comment;
 这个方案也不是没有缺点，部署之前最好心里有数：
 
 - 🔧 **要自己从源码构建**：Cloudflare 适配器没有发布到 npm（`@twikoojs/cloudflare` 是 private 包），而且 2.x 的根 `package.json` 要求 **Node.js 26** 和 pnpm 12.5.1。构建只是一次性的，Worker 本身跑在 workerd 上，跟你本机的 Node 版本无关
-- 📧 **不能用 SMTP 发邮件**：Workers 上 25 端口被禁止，587 和 465 也连不上。邮件只能走 Resend / SendGrid / MailChannels 这类 **HTTP 邮件 API**，或者干脆用 Telegram 推送
+- 📧 **不能用 SMTP 发邮件**：Workers 上 25 端口被禁止，587 和 465 也连不上。邮件只能走 HTTP 邮件 API，实测 **Resend** 免费又最好配（见 4.10）；博主自己的新评论通知可以用 Telegram 推送
 - 🛡️ **没有 Akismet 和腾讯云内容安全**：Cloudflare 适配器不支持这两个，反垃圾只能靠频率限制、验证码、违禁词、人工审核或 AI 检测
 - 🧱 **`workers.dev` 在国内被 DNS 污染**：必须绑自定义域名，国内访问速度也要看线路
 - 📏 **免费版限制**：主要是 10 ms CPU 和每次调用的查询数。日常读写评论没问题，但一次性批量导入几百条评论就有风险（见第六章）
@@ -444,27 +447,75 @@ Cloudflare 版没有 Akismet，如果垃圾评论多，还可以考虑这几个�
 
 几个注意点：
 
-- 📌 IM 推送**只通知博主**，回复提醒发给评论者还是得靠邮件
+- 📌 IM 推送**只通知博主**，回复提醒发给评论者还是得靠邮件（见下一节，我用的是免费的 Resend）
 - 📌 配置了 IM 推送后，Twikoo **默认不再给博主发邮件**，如果两个都想要，把 `SC_MAIL_NOTIFY` 设为 `true`
 - 📌 评论邮箱等于 `BLOGGER_EMAIL` 的评论不会推送（按邮箱判断，不看登录状态），测试时换一个邮箱、以访客身份发一条；用隐身窗口只是为了不带上浏览器记住的昵称和邮箱
 - 📌 推送内容里包含评论者的**邮箱和 IP**（Twikoo 的推送模板写死的），所以 chat id 只填你自己和机器人的私聊，不要推到群组或频道
 - 📌 Telegram 消息用的是 Markdown 解析模式，而 Twikoo 只转义了 `*` 和 `_`。如果评论里有奇怪的方括号、反引号，**推送可能会失败**，不过评论本身照常发表
 
-### 4.10 邮件通知（HTTP API）
+### 4.10 评论回复邮件：用 Resend（免费、配置最简单）
 
-如果还是想发邮件，只能用 HTTP 邮件 API：
+Telegram 推送只通知博主。读者在评论区收到回复后，如果没有邮件提醒，只能等他自己哪天回到网站才看得到。所以我又给 Twikoo 配了**回复通知邮件**：有人回复了某条评论，原评论者就会收到一封邮件。
+
+#### 为什么选 Resend
+
+Twikoo 管理面板的 `SMTP_SERVICE` 下拉提示里列了一长串邮箱服务（QQ、163、Gmail……），但那些都是 **SMTP 发信**。Workers 不允许 SMTP 连接，选了也发不出去。Cloudflare 版 Twikoo 2.0.15 只支持三个走 HTTP API 的服务：
+
+| 服务 | 结论 |
+| :-- | :-- |
+| **Resend** | ✅ 推荐。免费版每月 3,000 封、每天 100 封，最多 3 个自定义域名，个人博客完全够用 |
+| SendGrid / MailChannels | ❌ 不推荐。2.0.15 会把 `"发件人名称" <发件地址>` 整串当成邮箱地址提交，管理面板的测试邮件能过，真正的评论通知却很可能被接口拒绝（400） |
+
+> 💡 Resend 的免费额度是 2026-11 查的，以官网 [Pricing](https://resend.com/pricing) 为准。
+
+#### 第一步：注册 Resend 并验证发信域名
+
+1. 注册 [Resend](https://resend.com/)，进入 **Domains → Add Domain**
+2. 填一个用来发信的域名。官方建议用**子域名**，比如 `mail.example.com`，不影响主域名原有的邮箱设置
+3. Resend 会在 **Records** 页面生成几条 DNS 记录（DKIM、SPF 用的 TXT / MX 记录等），到 Cloudflare 的 DNS 里**逐条照抄**
+4. 如果有 CNAME 记录，**一定要设成「仅 DNS」（灰色云朵）**，开了代理（橙色云朵）会验证失败
+5. 回到 Resend 点 Verify，一般 15 分钟内就会通过（最长可能要 72 小时）
+6. 验证通过后，建议再按 Resend 的提示加一条 **DMARC** 记录，能减少邮件被 QQ 邮箱等扔进垃圾箱的情况
+
+#### 第二步：创建 API Key
+
+**API Keys → Create API Key**，权限选只能发信的 **Sending access** 就够了，还可以限定只能用刚才那个域名。生成的 Key 以 `re_` 开头，只显示一次，直接复制到下一步，不要发给别人，也不要写进博客仓库。
+
+#### 第三步：在 Twikoo 管理面板里填写
 
 | 配置项 | 值 |
 | :-- | :-- |
-| `SMTP_SERVICE` | `Resend` / `SendGrid` / `MailChannels` |
-| `SMTP_PASS` | 对应服务的 API Key |
-| `SMTP_USER` | 随便填，但**不能为空** |
-| `SENDER_EMAIL` | 发件地址（需要在邮件服务那边验证过域名） |
-| `SENDER_NAME` | 发件人名称，不填的话发件人会显示成 `undefined` |
+| `SMTP_SERVICE` | `Resend`（大小写都行） |
+| `SMTP_USER` | 随便填，比如 `resend`，但**不能为空** |
+| `SMTP_PASS` | 上一步的 API Key（`re_` 开头） |
+| `SENDER_EMAIL` | 发件地址，域名必须是刚验证过的，比如 `noreply@mail.example.com` |
+| `SENDER_NAME` | 发件人名称，比如 `EdNovas的小站`；不填的话会显示成 `undefined` |
+| `SMTP_HOST` / `SMTP_PORT` / `SMTP_SECURE` | **全部留空**，在 Workers 上没用 |
+| `MAIL_SUBJECT` | 回复通知的邮件标题，比如 `您在EdNovas的小站上的评论收到了回复`；留空用默认标题 |
+| `MAIL_TEMPLATE` | **建议留空**，用 Twikoo 自带的默认模板 |
 
-`SMTP_HOST` / `SMTP_PORT` 在 Workers 上配什么都没用，直连 SMTP 是建立不了连接的。
+默认模板是一封简洁的 HTML 邮件：「xxx 同学，您曾发表评论：（原评论）／ yyy 回复说：（回复内容）／ 点击查看回复的完整内容」，里面的站点名和链接取自 `SITE_NAME` 和 `SITE_URL`，所以这两项要先填好。想自己写模板的话，可用的变量有 `${SITE_URL}`、`${SITE_NAME}`、`${NICK}`、`${COMMENT}`、`${POST_URL}`、`${IMG}`、`${PARENT_IMG}`，另外还有两个面板提示里没写、但源码支持的：`${PARENT_NICK}`（原评论者昵称）和 `${PARENT_COMMENT}`（原评论内容）。
 
-> ⚠️ 2.0.15 的源码里，SendGrid / MailChannels 通道会把 `"发件人名称" <发件地址>` 整串当成邮箱地址提交。管理面板的测试邮件能过，真正的评论通知却很可能被接口拒绝（400）。目前建议用 Resend。
+填完保存，然后在管理面板的 **「邮件通知测试」** 里输入一个邮箱、点「发送测试邮件」，能收到就说明发信通了。
+
+#### 什么时候会发邮件
+
+按 2.0.15 的源码：
+
+| 情况 | 会不会发 |
+| :-- | :-- |
+| 有人回复了一条**留了邮箱**的评论（包括博主回复读者） | ✅ 发给原评论者 |
+| 原评论者没填邮箱，或者邮箱格式不对 | ❌ 不发 |
+| 回复的是博主自己的评论（邮箱等于 `BLOGGER_EMAIL`） | ❌ 不发，博主那边走 Telegram 推送或博主通知邮件 |
+| 自己回复自己 | ❌ 不发 |
+
+所以 `BLOGGER_EMAIL` 一定要填，不然你回复读者时，系统分不清谁是博主。
+
+#### 实测一下
+
+用浏览器无痕窗口，填一个**你自己的另一个邮箱**，以访客身份发一条评论；再回到正常窗口，用博主身份回复它。几秒钟后那个邮箱就应该收到回复通知。发到 QQ 邮箱的信偶尔会进垃圾箱，第一次记得翻一下。
+
+> 💡 免费版每天 100 封的上限，对个人博客的回复量来说基本碰不到；真遇到垃圾评论刷屏，先在管理面板里开 `LIMIT_PER_MINUTE` 限流或人工审核。
 
 ### 4.11 以后怎么升级
 
@@ -736,7 +787,9 @@ D1 自带 Time Travel，免费版可以恢复到 7 天内的任意时间点，�
 | 不加 `--remote` 时线上库里没有表 | `wrangler d1 execute` 默认操作本地库 | 加 `--remote` |
 | 改成 Twikoo 后页面还是 Waline | Hexo 合并主题配置时数组是去重追加，变成 `[Waline, Twikoo]` | 主题自带的 `_config.yml` 也改掉 |
 | 部署后访客看到的还是旧评论区 | Cloudflare 缓存了 HTML 5 小时 | Purge Everything |
-| 收不到邮件通知 | Workers 上不能直连 SMTP | 用 HTTP 邮件 API，或者改用 Telegram |
+| 收不到邮件通知 | Workers 上不能直连 SMTP，QQ / 163 / Gmail 等选项都发不出去 | `SMTP_SERVICE` 用 `Resend`（见 4.10），博主通知用 Telegram |
+| Resend 域名一直验证不过 | DNS 里的 CNAME 开了 Cloudflare 代理（橙色云朵） | 改成「仅 DNS」（灰色云朵）后重新 Verify |
+| 回复后读者没收到邮件 | 原评论没填邮箱，或者回复的是博主自己的评论 | 正常现象，见 4.10「什么时候会发邮件」 |
 | SendGrid / MailChannels 测试邮件能发，评论通知可能发不出 | 2.0.15 把「名称 + 地址」整串当成发件地址提交 | 改用 Resend |
 | Telegram 推送可能失败 | Markdown 解析模式下只转义了 `*` 和 `_` | 评论本身不受影响，可以忽略 |
 
@@ -765,6 +818,8 @@ D1 自带 Time Travel，免费版可以恢复到 7 天内的任意时间点，�
 - [Cloudflare D1 限制](https://developers.cloudflare.com/d1/platform/limits/)
 - [Workers 自定义域名](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/)
 - [D1 的 Wrangler 命令](https://developers.cloudflare.com/d1/wrangler-commands/)
+- [Resend 价格与免费额度](https://resend.com/pricing)
+- [Resend：添加并验证域名](https://resend.com/docs/dashboard/domains/introduction)
 - [Vercel 错误：DEPLOYMENT_DISABLED](https://vercel.com/docs/errors/DEPLOYMENT_DISABLED)
 - [Waline 文档](https://waline.js.org/)
 - [Artalk 文档](https://artalk.js.org/)
