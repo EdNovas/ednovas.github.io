@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2026-11-09T04:54:23.873Z</updated>
+  <updated>2026-11-16T21:34:10.941Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,11 +17,56 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>鼠标滚轮回弹（往回跳）怎么办：原因分析、简单修法和 AutoHotkey 去抖脚本</title>
+    <link href="https://ednovas.xyz/2026/11/16/mouse-wheel-bounce/"/>
+    <id>https://ednovas.xyz/2026/11/16/mouse-wheel-bounce/</id>
+    <published>2026-11-16T20:00:00.000Z</published>
+    <updated>2026-11-16T21:34:10.941Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
+&lt;h1 id=&quot;鼠标滚轮回弹（往回跳）怎么办&quot;&gt;&lt;a href=&quot;#鼠标滚轮回弹（往回跳）怎么办&quot; class=&quot;headerlink&quot; title=&quot;鼠标滚轮回弹（往回跳）怎么办&quot;&gt;&lt;/a&gt;鼠标滚轮回弹（往回跳）怎么办&lt;/h1&gt;&lt;p&gt;不知道你有没有遇到过这种情况：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;网页往下滚得好好的，页面突然&lt;strong&gt;往上一跳&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;打游戏用滚轮切枪，明明往下滚，枪却&lt;strong&gt;往回切了一把&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;在 Excel、代码编辑器里往下翻，翻着翻着画面&lt;strong&gt;抖一下往回退一行&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这就是常说的&lt;strong&gt;鼠标滚轮回弹&lt;/strong&gt;（也有人叫滚轮抽风、滚轮跳格、滚轮反跳）。鼠标别的地方都好好的，就滚轮时不时反着来一下，用起来特别难受，扔了又可惜。&lt;/p&gt;
+&lt;p&gt;我的鼠标用了一段时间也开始这样，于是研究了一下原因，最后用一个几十行的 AutoHotkey 脚本把它压住了。废话不多说，直接上干货。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;原因：滚轮里的&lt;strong&gt;机械编码器&lt;/strong&gt;触点老化、氧化或进灰，接触一抖，鼠标芯片就把方向&lt;strong&gt;判反&lt;/strong&gt;了&lt;/li&gt;
+&lt;li&gt;简单修法：猛滚几十圈、吹灰、滴电子接点清洁剂、拆机捏紧编码器，或者干脆换编码器 / 走保修&lt;/li&gt;
+&lt;li&gt;不想拆鼠标：用本文的 &lt;strong&gt;AutoHotkey 去抖脚本&lt;/strong&gt;，在系统层面把「回弹」信号丢掉，正常滚动没有延迟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;一、先确认是不是滚轮硬件的问题&quot;&gt;&lt;a href=&quot;#一、先确认是不是滚轮硬件的问题&quot; class=&quot;headerlink&quot; title=&quot;一、先确认是不是滚轮硬件的问题&quot;&gt;&lt;/a&gt;一、先确认是不是滚轮硬件的问题&lt;/h2&gt;&lt;p&gt;滚轮「往回跳」也可能是软件引起的，动手之前先花两分钟排除一下：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://ednovas.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="硬件" scheme="https://ednovas.xyz/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+    <category term="鼠标" scheme="https://ednovas.xyz/tags/%E9%BC%A0%E6%A0%87/"/>
+    
+    <category term="滚轮" scheme="https://ednovas.xyz/tags/%E6%BB%9A%E8%BD%AE/"/>
+    
+    <category term="AutoHotkey" scheme="https://ednovas.xyz/tags/AutoHotkey/"/>
+    
+    <category term="Windows" scheme="https://ednovas.xyz/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mondoze 云端 Mac mini M4 与 BX 独立服务器</title>
     <link href="https://ednovas.xyz/2026/10/30/mondoze-mac-mini/"/>
     <id>https://ednovas.xyz/2026/10/30/mondoze-mac-mini/</id>
     <published>2026-10-30T20:00:00.000Z</published>
-    <updated>2026-11-09T04:54:23.873Z</updated>
+    <updated>2026-11-16T21:34:10.941Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -113,7 +158,7 @@
     <link href="https://ednovas.xyz/2026/09/30/mondoze/"/>
     <id>https://ednovas.xyz/2026/09/30/mondoze/</id>
     <published>2026-09-30T21:00:00.000Z</published>
-    <updated>2026-11-09T04:54:23.873Z</updated>
+    <updated>2026-11-16T21:34:10.941Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -144,7 +189,7 @@
     <link href="https://ednovas.xyz/2026/06/12/casbay/"/>
     <id>https://ednovas.xyz/2026/06/12/casbay/</id>
     <published>2026-06-12T22:00:00.000Z</published>
-    <updated>2026-11-09T04:54:23.866Z</updated>
+    <updated>2026-11-16T21:34:10.933Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -202,7 +247,7 @@
     <link href="https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/"/>
     <id>https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/</id>
     <published>2026-03-10T16:19:00.000Z</published>
-    <updated>2026-11-09T04:54:23.867Z</updated>
+    <updated>2026-11-16T21:34:10.934Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -242,7 +287,7 @@
     <link href="https://ednovas.xyz/2026/03/05/prompt-engineering-guide/"/>
     <id>https://ednovas.xyz/2026/03/05/prompt-engineering-guide/</id>
     <published>2026-03-05T14:48:00.000Z</published>
-    <updated>2026-11-09T04:54:23.875Z</updated>
+    <updated>2026-11-16T21:34:10.943Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -301,7 +346,7 @@
     <link href="https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/"/>
     <id>https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/</id>
     <published>2026-03-05T14:39:00.000Z</published>
-    <updated>2026-11-09T04:54:23.867Z</updated>
+    <updated>2026-11-16T21:34:10.934Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -345,7 +390,7 @@
     <link href="https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/"/>
     <id>https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/</id>
     <published>2026-03-05T14:23:00.000Z</published>
-    <updated>2026-11-09T04:54:23.872Z</updated>
+    <updated>2026-11-16T21:34:10.939Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -390,7 +435,7 @@
     <link href="https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/"/>
     <id>https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/</id>
     <published>2026-03-05T13:29:00.000Z</published>
-    <updated>2026-11-09T04:54:23.868Z</updated>
+    <updated>2026-11-16T21:34:10.936Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -431,7 +476,7 @@
     <link href="https://ednovas.xyz/2026/02/13/blendhosting2026/"/>
     <id>https://ednovas.xyz/2026/02/13/blendhosting2026/</id>
     <published>2026-02-13T22:28:00.000Z</published>
-    <updated>2026-11-09T04:54:23.865Z</updated>
+    <updated>2026-11-16T21:34:10.933Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot;&gt;&lt;a href=&quot;#Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot; class=&quot;headerlink&quot; title=&quot;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&quot;&gt;&lt;/a&gt;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&lt;/h1&gt;&lt;p&gt;Blend Hosting 是一家成立于 2005 年的海外服务器与云计算服务商，在 VPS 与服务器领域拥有 20 年以上的持续运营记录。相比偏向短期试用型的平台，Blend Hosting 的整体定位更偏向长期稳定运行与可持续使用的应用场景，目标用户群体也更明确。&lt;/p&gt;
@@ -459,7 +504,7 @@
     <link href="https://ednovas.xyz/2026/01/27/servergigabit/"/>
     <id>https://ednovas.xyz/2026/01/27/servergigabit/</id>
     <published>2026-01-27T20:38:00.000Z</published>
-    <updated>2026-11-09T04:54:23.877Z</updated>
+    <updated>2026-11-16T21:34:10.944Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot;&gt;&lt;a href=&quot;#🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot; class=&quot;headerlink&quot; title=&quot;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&quot;&gt;&lt;/a&gt;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&lt;/h1&gt;&lt;p&gt;本款 &lt;strong&gt;Deluxe Dedicated Server (MY) v2&lt;/strong&gt; 部署于马来西亚数据中心，采用企业级硬件配置，专为高并发、高性能及长期稳定运行的业务场景而设计 [cite: 3]。&lt;/p&gt;
@@ -535,7 +580,7 @@
     <link href="https://ednovas.xyz/2025/12/31/vps-manager-pro/"/>
     <id>https://ednovas.xyz/2025/12/31/vps-manager-pro/</id>
     <published>2025-12-31T13:46:00.000Z</published>
-    <updated>2026-11-09T04:54:23.879Z</updated>
+    <updated>2026-11-16T21:34:10.947Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Sample-Website-演示网站&quot;&gt;&lt;a href=&quot;#Sample-Website-演示网站&quot; class=&quot;headerlink&quot; title=&quot;Sample Website 演示网站&quot;&gt;&lt;/a&gt;Sample Website 演示网站&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://vps.ednovas.tech/&quot;&gt;https://vps.ednovas.tech&lt;/a&gt;&lt;/p&gt;
@@ -570,7 +615,7 @@
     <link href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/"/>
     <id>https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</id>
     <published>2025-12-31T13:41:00.000Z</published>
-    <updated>2026-11-09T04:54:23.868Z</updated>
+    <updated>2026-11-16T21:34:10.936Z</updated>
     
     
     <summary type="html">&lt;p&gt;这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 &lt;a href=&quot;https://github.com/Minerchu/dongguaTV&quot;&gt;https://github.com/Minerchu/dongguaTV&lt;/a&gt; ，本作添加了许多功能。&lt;/p&gt;
@@ -611,7 +656,7 @@
     <link href="https://ednovas.xyz/2024/04/25/gigabit/"/>
     <id>https://ednovas.xyz/2024/04/25/gigabit/</id>
     <published>2024-04-25T22:28:00.000Z</published>
-    <updated>2026-11-09T04:54:23.871Z</updated>
+    <updated>2026-11-16T21:34:10.938Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。&lt;/p&gt;
@@ -727,7 +772,7 @@
     <link href="https://ednovas.xyz/2023/12/14/blendhosting/"/>
     <id>https://ednovas.xyz/2023/12/14/blendhosting/</id>
     <published>2023-12-14T22:28:00.000Z</published>
-    <updated>2026-11-09T04:54:23.865Z</updated>
+    <updated>2026-11-16T21:34:10.933Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Blend Hosting &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com&lt;/a&gt;&lt;/p&gt;
@@ -754,7 +799,7 @@
     <link href="https://ednovas.xyz/2023/02/24/homemadenas/"/>
     <id>https://ednovas.xyz/2023/02/24/homemadenas/</id>
     <published>2023-02-24T22:28:00.000Z</published>
-    <updated>2026-11-09T04:54:23.872Z</updated>
+    <updated>2026-11-16T21:34:10.939Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;ul&gt;
@@ -794,7 +839,7 @@
     <link href="https://ednovas.xyz/2023/02/24/cloudflaretunnel/"/>
     <id>https://ednovas.xyz/2023/02/24/cloudflaretunnel/</id>
     <published>2023-02-24T21:28:00.000Z</published>
-    <updated>2026-11-09T04:54:23.867Z</updated>
+    <updated>2026-11-16T21:34:10.935Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Cloudflare-Tunnel&quot;&gt;&lt;a href=&quot;#Cloudflare-Tunnel&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Tunnel&quot;&gt;&lt;/a&gt;Cloudflare Tunnel&lt;/h2&gt;&lt;p&gt;cloudflare提供的免费加密通道，通过cloudflare的cnd访问部署在内网的服务，比如web,ssh,smb,tcp等。&lt;/p&gt;
@@ -827,7 +872,7 @@
     <link href="https://ednovas.xyz/2023/02/19/raspberry/"/>
     <id>https://ednovas.xyz/2023/02/19/raspberry/</id>
     <published>2023-02-19T21:28:00.000Z</published>
-    <updated>2026-11-09T04:54:23.876Z</updated>
+    <updated>2026-11-16T21:34:10.944Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Raspberry-Pi&quot;&gt;&lt;a href=&quot;#Raspberry-Pi&quot; class=&quot;headerlink&quot; title=&quot;Raspberry Pi&quot;&gt;&lt;/a&gt;Raspberry Pi&lt;/h2&gt;&lt;p&gt;树莓派（英语：Raspberry Pi）英国树莓派基金会开发的微型单板计算机，目的是以低价硬体及自由软体促进学校的基本电脑科学教育。&lt;/p&gt;
@@ -847,37 +892,6 @@
     <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
     
     <category term="raspberry" scheme="https://ednovas.xyz/tags/raspberry/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 Chrome Remote Desktop 远程控制 Ubuntu 服务器</title>
-    <link href="https://ednovas.xyz/2023/01/07/remote-ubuntu/"/>
-    <id>https://ednovas.xyz/2023/01/07/remote-ubuntu/</id>
-    <published>2023-01-07T11:51:00.000Z</published>
-    <updated>2026-11-09T04:54:23.876Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;众所周知，Chrome Remote Desktop 是一款十分出色的完全免费远程控制软件。其易用性和功能的强大性，以及连接的稳定性都给这款软件加分不少，唯一的缺点可能就是国内无法使用了，需要开梯子才可使用。&lt;/p&gt;
-&lt;p&gt;首先，先准备一个需要远程控制的VPS，要求 Debian或者 Ubuntu系统。还需要另一个控制端，手机电脑均可，登录你的 Google 账户：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://remotedesktop.google.com/support/&quot;&gt;https://remotedesktop.google.com/support/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;安装（Ubuntu为例）&quot;&gt;&lt;a href=&quot;#安装（Ubuntu为例）&quot; class=&quot;headerlink&quot; title=&quot;安装（Ubuntu为例）&quot;&gt;&lt;/a&gt;安装（Ubuntu为例）&lt;/h2&gt;&lt;h3 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h3&gt;&lt;p&gt;控制端前往 &lt;a href=&quot;https://remotedesktop.google.com/headless&quot;&gt;https://remotedesktop.google.com/headless&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2023-01-07_15-50-47.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Ubuntu被控端下载程序包&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="VPS" scheme="https://ednovas.xyz/categories/VPS/"/>
-    
-    
-    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
-    
-    <category term="远程控制" scheme="https://ednovas.xyz/tags/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/"/>
-    
-    <category term="ubuntu" scheme="https://ednovas.xyz/tags/ubuntu/"/>
-    
-    <category term="Chrome Remote Desktop" scheme="https://ednovas.xyz/tags/Chrome-Remote-Desktop/"/>
     
   </entry>
   
