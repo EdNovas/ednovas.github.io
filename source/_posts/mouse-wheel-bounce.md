@@ -39,6 +39,7 @@ cover: https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800
 - 🔌 **换个 USB 口 / 换台电脑**：别的电脑上也一样跳，基本就是鼠标本身的问题
 - 🖱️ **关掉驱动里的特效**：鼠标驱动里的「平滑滚动」「高精度滚动」、浏览器的平滑滚动先关掉再试
 - 🐢 **一格一格慢慢滚**：打开一篇长网页，只往下、一格一格地滚，盯着看有没有某一格是往上走的
+- 🌐 **用在线工具测**：打开 [StarryRing 鼠标滚轮测试](https://starryring.com/zh/toolbox/mouse/scroll-wheel/)，选好「向上」或「向下」模式，只往这个方向连续滚二三十下。如果出现红色的「!」，「反向错误」的计数也在涨，就说明滚轮发出了反方向的信号。打开网页就能用，不用装软件，比盯着网页看准得多，推荐先用它测一下
 - 📊 **用后面的脚本来测**：脚本运行后，鼠标悬停在托盘图标上会显示「已拦截 N 次」。只往一个方向滚一阵，如果这个数字在涨，说明确实有反方向的错误信号，就是回弹
 
 ---
@@ -302,6 +303,8 @@ UpdateTip() {
 - **觉得往回滚不跟手、被吃格**：把 `QUIET` 降到 250～300，或者把 `CONFIRM` 降到 2
 
 托盘上的「已拦截」次数就是很好的参考：只往一个方向滚的时候，这个数字涨了多少，就说明帮你挡掉了多少次回弹。
+
+也可以用第一章提到的 [滚轮测试页面](https://starryring.com/zh/toolbox/mouse/scroll-wheel/) 来验证效果。网页收到的是脚本过滤之后发出来的滚轮信号，所以先关掉脚本测一遍，再开着脚本测一遍，对比一下「反向错误」的计数：开着脚本的时候基本不涨了，就说明脚本起作用了。调参数的时候也可以开着这个页面看效果。
 
 ### 4.6 几个代码细节
 
@@ -613,6 +616,7 @@ UpdateTip() {
 
 ## 参考资料
 
+- [StarryRing：鼠标滚轮在线测试](https://starryring.com/zh/toolbox/mouse/scroll-wheel/)
 - [AutoHotkey 下载](https://www.autohotkey.com/download/)
 - [AutoHotkey v2 文档：鼠标滚轮热键](https://www.autohotkey.com/docs/v2/Hotkeys.htm)
 - [AutoHotkey v2 文档：SendLevel](https://www.autohotkey.com/docs/v2/lib/SendLevel.htm)
