@@ -125,7 +125,7 @@ Humanizer-zh 那篇和原稿一模一样的行有 33 行（一共 43 行），17
 
 两种叠着用要小心。先按某人的风格写、再用去 AI 味的 skill 扫一遍，作者的特征会被一起扫掉（任务 B 里 Humanizer-zh 那篇就是这样）。
 
-每组只写了一篇，评分的也是 AI，结论只代表这一次测试。我们现在博客文章都先用自己的蒸馏 skill 写，发布前再人工看一遍。
+每组只写了一篇，评分的也是 AI，结论只代表这一次测试。
 
 > 参考：
 > [blader/humanizer](https://github.com/blader/humanizer)
