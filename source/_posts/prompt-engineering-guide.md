@@ -17,7 +17,7 @@ cover: https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800
 
 很多人觉得 AI “不好用”“回答太水”，其实多半是提示词写得太随意，和模型本身关系不大。
 
-这篇整理了一套提示词的写法，ChatGPT、Claude、DeepSeek、Gemini 这些主流大模型都适用。
+下面这套提示词写法，ChatGPT、Claude、DeepSeek、Gemini 这些主流大模型都能用。
 
 ## Prompt 的核心原则
 
