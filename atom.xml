@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2026-11-18T04:41:10.257Z</updated>
+  <updated>2026-11-18T21:42:08.567Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -17,33 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>鼠标滚轮回弹（往回跳）怎么办：原因分析、简单修法和 AutoHotkey 去抖脚本</title>
+    <title>鼠标滚轮回弹（往回跳）的原因和 AutoHotkey 去抖脚本</title>
     <link href="https://ednovas.xyz/2026/11/16/mouse-wheel-bounce/"/>
     <id>https://ednovas.xyz/2026/11/16/mouse-wheel-bounce/</id>
     <published>2026-11-16T20:00:00.000Z</published>
-    <updated>2026-11-18T04:41:10.257Z</updated>
+    <updated>2026-11-18T21:42:08.567Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
-&lt;h1 id=&quot;鼠标滚轮回弹（往回跳）怎么办&quot;&gt;&lt;a href=&quot;#鼠标滚轮回弹（往回跳）怎么办&quot; class=&quot;headerlink&quot; title=&quot;鼠标滚轮回弹（往回跳）怎么办&quot;&gt;&lt;/a&gt;鼠标滚轮回弹（往回跳）怎么办&lt;/h1&gt;&lt;p&gt;不知道你有没有遇到过这种情况：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;网页往下滚得好好的，页面突然&lt;strong&gt;往上一跳&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;打游戏用滚轮切枪，明明往下滚，枪却&lt;strong&gt;往回切了一把&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;在 Excel、代码编辑器里往下翻，翻着翻着画面&lt;strong&gt;抖一下往回退一行&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这就是常说的&lt;strong&gt;鼠标滚轮回弹&lt;/strong&gt;（也有人叫滚轮抽风、滚轮跳格、滚轮反跳）。鼠标别的地方都好好的，就滚轮时不时反着来一下，用起来特别难受，扔了又可惜。&lt;/p&gt;
-&lt;p&gt;我们手上好几只&lt;strong&gt;罗技 Superlight&lt;/strong&gt; 都中招了，基本用一年左右就开始回弹；一只用了好几年的&lt;strong&gt;冰豹 Roccat Kone&lt;/strong&gt; 也出现了一模一样的问题。于是研究了一下原因，最后用一个几十行的 AutoHotkey 脚本把它压住了（压住大部分，不是百分百）。后来针对它的盲点又写了一个改进版，两个版本各有取舍，都放在文里了。废话不多说，直接上干货。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;原因：滚轮里的&lt;strong&gt;机械编码器&lt;/strong&gt;触点老化、氧化或进灰，接触一抖，鼠标芯片就把方向&lt;strong&gt;判反&lt;/strong&gt;了&lt;/li&gt;
-&lt;li&gt;简单修法：猛滚几十圈、吹灰、滴电子接点清洁剂、拆机捏紧编码器，或者干脆换编码器 / 走保修&lt;/li&gt;
-&lt;li&gt;不想拆鼠标：用本文的 &lt;strong&gt;AutoHotkey 去抖脚本&lt;/strong&gt;，在系统层面把「回弹」信号丢掉，正常滚动没有延迟&lt;/li&gt;
-&lt;li&gt;两个版本：&lt;strong&gt;严格版&lt;/strong&gt;滚动时零延迟，但&lt;strong&gt;换方向时第一下就是错的&lt;/strong&gt;挡不住；&lt;strong&gt;改进版&lt;/strong&gt;能挡住这种情况，代价是开始滚动时多一点延迟（见第四～六章）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;一、先确认是不是滚轮硬件的问题&quot;&gt;&lt;a href=&quot;#一、先确认是不是滚轮硬件的问题&quot; class=&quot;headerlink&quot; title=&quot;一、先确认是不是滚轮硬件的问题&quot;&gt;&lt;/a&gt;一、先确认是不是滚轮硬件的问题&lt;/h2&gt;&lt;p&gt;滚轮「往回跳」也可能是软件引起的，动手之前先花两分钟排除一下：&lt;/p&gt;</summary>
+&lt;p&gt;鼠标滚轮回弹，就是明明往一个方向滚，页面却突然往回跳一下（也有人叫滚轮抽风、滚轮跳格、滚轮反跳）。&lt;/p&gt;
+&lt;p&gt;网页往下滚得好好的，页面突然往上一跳。&lt;/p&gt;
+&lt;p&gt;打游戏用滚轮切枪，明明往下滚，枪却往回切了一把。&lt;/p&gt;
+&lt;p&gt;在 Excel、代码编辑器里往下翻，翻着翻着画面抖一下往回退一行。&lt;/p&gt;
+&lt;p&gt;鼠标别的地方都好好的，就滚轮时不时反着来一下，用起来特别难受，扔了又可惜。&lt;/p&gt;
+&lt;p&gt;我们手上好几只罗技 Superlight 都中招了，基本用一年左右就开始回弹；一只用了好几年的冰豹 Roccat Kone 也出现了一模一样的问题。于是研究了一下原因，最后用一个几十行的 AutoHotkey 脚本把它压住了（压住大部分，不是百分百）。后来针对它的盲点又写了一个改进版，两个版本各有取舍，都放在文里了。&lt;/p&gt;
+&lt;p&gt;先说结论。原因是滚轮里的机械编码器触点老化、氧化或进灰，接触一抖，鼠标芯片就把方向判反了。修法可以猛滚几十圈、吹灰、滴电子接点清洁剂、拆机捏紧编码器，或者干脆换编码器、走保修。不想拆鼠标的话，用本文的脚本在系统层面把回弹信号丢掉，正常滚动没有延迟。&lt;/p&gt;
+&lt;p&gt;两个版本的区别：严格版滚动时零延迟，但换方向时第一下就是错的挡不住；改进版能挡住这种情况，代价是开始滚动时多一点延迟（见下文“严格版去抖脚本”“改进版去抖脚本”和“两个版本的选择”三节）。&lt;/p&gt;
+&lt;h2 id=&quot;先排除软件问题&quot;&gt;&lt;a href=&quot;#先排除软件问题&quot; class=&quot;headerlink&quot; title=&quot;先排除软件问题&quot;&gt;&lt;/a&gt;先排除软件问题&lt;/h2&gt;</summary>
     
     
     
@@ -67,7 +57,7 @@
     <link href="https://ednovas.xyz/2026/10/30/mondoze-mac-mini/"/>
     <id>https://ednovas.xyz/2026/10/30/mondoze-mac-mini/</id>
     <published>2026-10-30T20:00:00.000Z</published>
-    <updated>2026-11-18T04:41:10.256Z</updated>
+    <updated>2026-11-18T21:42:08.567Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -103,7 +93,7 @@
   </entry>
   
   <entry>
-    <title>博客评论系统迁移记：Valine → Waline → Twikoo（附评论系统对比与 Cloudflare Workers + D1 部署教程）</title>
+    <title>博客评论系统迁移记：Valine → Waline → Twikoo（评论系统对比与 Cloudflare Workers + D1 部署）</title>
     <link href="https://ednovas.xyz/2026/10/19/comment-system-migration/"/>
     <id>https://ednovas.xyz/2026/10/19/comment-system-migration/</id>
     <published>2026-10-19T16:30:00.000Z</published>
@@ -112,26 +102,15 @@
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;📢 &lt;strong&gt;2026-11-08 更新&lt;/strong&gt;：新增 &lt;a href=&quot;#4-10-%E8%AF%84%E8%AE%BA%E5%9B%9E%E5%A4%8D%E9%82%AE%E4%BB%B6%EF%BC%9A%E7%94%A8-Resend%EF%BC%88%E5%85%8D%E8%B4%B9%E3%80%81%E9%85%8D%E7%BD%AE%E6%9C%80%E7%AE%80%E5%8D%95%EF%BC%89&quot;&gt;4.10 评论回复邮件：用 Resend&lt;/a&gt;，读者的评论被回复后会收到邮件提醒，免费、配置也最简单。&lt;/p&gt;
+&lt;p&gt;2026-11-08 更新：新增 &lt;a href=&quot;#4-10-%E8%AF%84%E8%AE%BA%E5%9B%9E%E5%A4%8D%E9%82%AE%E4%BB%B6%EF%BC%9A%E7%94%A8-Resend%EF%BC%88%E5%85%8D%E8%B4%B9%E3%80%81%E9%85%8D%E7%BD%AE%E6%9C%80%E7%AE%80%E5%8D%95%EF%BC%89&quot;&gt;4.10 评论回复邮件：用 Resend&lt;/a&gt;，读者的评论被回复后会收到邮件提醒，免费，配置也最简单。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;博客评论系统迁移记：Valine-→-Waline-→-Twikoo&quot;&gt;&lt;a href=&quot;#博客评论系统迁移记：Valine-→-Waline-→-Twikoo&quot; class=&quot;headerlink&quot; title=&quot;博客评论系统迁移记：Valine → Waline → Twikoo&quot;&gt;&lt;/a&gt;博客评论系统迁移记：Valine → Waline → Twikoo&lt;/h1&gt;&lt;p&gt;这个博客从 2021 年开通评论区，五年多里换了三套评论系统：最早是 &lt;strong&gt;Valine + LeanCloud&lt;/strong&gt;；今年 1 月 LeanCloud 发公告宣布停服，4 月我换成了 &lt;strong&gt;Waline（Vercel + Neon）&lt;/strong&gt;；结果没过几个月 Vercel 账号被封，评论区整个挂掉，而我至少一个多月都没发现。这次干脆把评论后端搬到了 &lt;strong&gt;Cloudflare Workers + D1&lt;/strong&gt;，换成 &lt;strong&gt;Twikoo&lt;/strong&gt;，并把五年来的评论一条不落地迁了过来。&lt;/p&gt;
-&lt;p&gt;本文分三部分：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;📜 &lt;strong&gt;迁移历程&lt;/strong&gt;（第一章）：每一代评论系统用了多久、怎么出的事、数据是怎么救回来的&lt;/li&gt;
-&lt;li&gt;⚖️ &lt;strong&gt;评论系统横向对比&lt;/strong&gt;（第二章）：Valine / Waline / Twikoo / Artalk / Giscus / Utterances / Gitalk / Disqus / Remark42 / Cusdis&lt;/li&gt;
-&lt;li&gt;🛠️ &lt;strong&gt;部署教程&lt;/strong&gt;（第三～六章）：Twikoo + Cloudflare Workers + D1 从零部署、接入 Butterfly、导入旧评论&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;现在的方案：&lt;strong&gt;Twikoo 2.0.15 + Cloudflare Workers + D1&lt;/strong&gt;，后端域名 &lt;code&gt;comment.ednovas.xyz&lt;/code&gt;，前端用 Hexo + Butterfly 3.6.0 自带的 Twikoo 支持&lt;/li&gt;
-&lt;li&gt;迁移结果：&lt;strong&gt;536 条评论全部上线&lt;/strong&gt;，其中 530 条是 Valine 时代的老评论，另外 6 条是 Waline 时期的新评论，差点就丢了&lt;/li&gt;
-&lt;li&gt;成本：&lt;strong&gt;0 元&lt;/strong&gt;（不算域名本身）。全部在 Cloudflare 免费额度内，DNS 本来就托管在 Cloudflare&lt;/li&gt;
-&lt;li&gt;最大的教训：免费 PaaS 账号说没就没。评论后端最好放在自己本来就离不开的平台上，并且定期导出&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;一、迁移历程&quot;&gt;&lt;a href=&quot;#一、迁移历程&quot; class=&quot;headerlink&quot; title=&quot;一、迁移历程&quot;&gt;&lt;/a&gt;一、迁移历程&lt;/h2&gt;&lt;h3 id=&quot;1-1-时间线&quot;&gt;&lt;a href=&quot;#1-1-时间线&quot; class=&quot;headerlink&quot; title=&quot;1.1 时间线&quot;&gt;&lt;/a&gt;1.1 时间线&lt;/h3&gt;</summary>
+&lt;h1 id=&quot;博客评论系统迁移记：Valine-→-Waline-→-Twikoo&quot;&gt;&lt;a href=&quot;#博客评论系统迁移记：Valine-→-Waline-→-Twikoo&quot; class=&quot;headerlink&quot; title=&quot;博客评论系统迁移记：Valine → Waline → Twikoo&quot;&gt;&lt;/a&gt;博客评论系统迁移记：Valine → Waline → Twikoo&lt;/h1&gt;&lt;p&gt;这个博客从 2021 年开通评论区，五年多里换了三套评论系统。&lt;/p&gt;
+&lt;p&gt;最早是 Valine + LeanCloud。今年 1 月 LeanCloud 发公告宣布停服，4 月我换成了 Waline（Vercel + Neon）。&lt;/p&gt;
+&lt;p&gt;结果没过几个月 Vercel 账号被封，评论区整个挂掉，而我至少一个多月都没发现。&lt;/p&gt;
+&lt;p&gt;这次把评论后端搬到了 Cloudflare Workers + D1，换成 Twikoo，五年来的评论一条不落地迁了过来。&lt;/p&gt;
+&lt;p&gt;本文第一章讲迁移历程：每一代评论系统用了多久、怎么出的事、数据是怎么救回来的。第二章对比 Valine / Waline / Twikoo / Artalk / Giscus / Utterances / Gitalk / Disqus / Remark42 / Cusdis 这十个评论系统。第三到六章是 Twikoo + Cloudflare Workers + D1 的从零部署、接入 Butterfly 和导入旧评论。第七章汇总部署时踩的坑。&lt;/p&gt;
+&lt;p&gt;现在的方案是 Twikoo 2.0.15 + Cloudflare Workers + D1，后端域名 &lt;code&gt;comment.ednovas.xyz&lt;/code&gt;，前端用 Hexo + Butterfly 3.6.0 自带的 Twikoo 支持。&lt;/p&gt;
+&lt;p&gt;迁移后 536 条评论全部上线，其中 530 条是 Valine 时代的老评论，另外 6 条是 Waline 时期的新评论，差点就丢了。&lt;/p&gt;</summary>
     
     
     
@@ -159,7 +138,7 @@
     <link href="https://ednovas.xyz/2026/09/30/mondoze/"/>
     <id>https://ednovas.xyz/2026/09/30/mondoze/</id>
     <published>2026-09-30T21:00:00.000Z</published>
-    <updated>2026-11-18T04:41:10.256Z</updated>
+    <updated>2026-11-18T21:42:08.567Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -190,7 +169,7 @@
     <link href="https://ednovas.xyz/2026/06/12/casbay/"/>
     <id>https://ednovas.xyz/2026/06/12/casbay/</id>
     <published>2026-06-12T22:00:00.000Z</published>
-    <updated>2026-11-18T04:41:10.246Z</updated>
+    <updated>2026-11-18T21:42:08.560Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -244,27 +223,21 @@
   </entry>
   
   <entry>
-    <title>Cloudflare Pages + Workers：部署小项目的终极方案 + 域名省钱指南</title>
+    <title>Cloudflare Pages + Workers 部署小项目，以及域名购买省钱技巧</title>
     <link href="https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/"/>
     <id>https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/</id>
     <published>2026-03-10T16:19:00.000Z</published>
-    <updated>2026-11-18T04:41:10.247Z</updated>
+    <updated>2026-11-18T21:42:08.561Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
-&lt;h1 id=&quot;Cloudflare-Pages-Workers：部署小项目的终极方案&quot;&gt;&lt;a href=&quot;#Cloudflare-Pages-Workers：部署小项目的终极方案&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Pages + Workers：部署小项目的终极方案&quot;&gt;&lt;/a&gt;Cloudflare Pages + Workers：部署小项目的终极方案&lt;/h1&gt;&lt;p&gt;用了一段时间后越来越觉得，&lt;strong&gt;Cloudflare Pages + Workers&lt;/strong&gt; 可能是目前部署小项目最舒服的方案——免费、快速、全球 CDN、自带防御，推送即上线。&lt;/p&gt;
-&lt;p&gt;我目前在 Cloudflare 上跑了十几个小项目，从博客到 API 到展示页面一应俱全，&lt;strong&gt;全部零服务器成本&lt;/strong&gt;。本文详细分享这套工作流，以及域名购买的省钱技巧。&lt;/p&gt;
-&lt;p&gt;本文将详细介绍：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;🚀 如何将 GitHub 仓库连接到 Cloudflare Pages，实现自动化部署&lt;/li&gt;
-&lt;li&gt;🌍 我的实际项目案例&lt;/li&gt;
-&lt;li&gt;🛡️ Cloudflare 生态配套功能&lt;/li&gt;
-&lt;li&gt;🌐 如何绑定自定义域名&lt;/li&gt;
-&lt;li&gt;💰 域名购买的省钱技巧&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;一、Cloudflare-Pages-是什么？&quot;&gt;&lt;a href=&quot;#一、Cloudflare-Pages-是什么？&quot; class=&quot;headerlink&quot; title=&quot;一、Cloudflare Pages 是什么？&quot;&gt;&lt;/a&gt;一、Cloudflare Pages 是什么？&lt;/h2&gt;&lt;p&gt;Cloudflare Pages 是一个 &lt;strong&gt;静态网站托管平台&lt;/strong&gt;，可以直接从 GitHub 仓库读取代码、自动构建并部署到 Cloudflare 的全球 CDN。&lt;/p&gt;
-&lt;h3 id=&quot;免费套餐&quot;&gt;&lt;a href=&quot;#免费套餐&quot; class=&quot;headerlink&quot; title=&quot;免费套餐&quot;&gt;&lt;/a&gt;免费套餐&lt;/h3&gt;</summary>
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;用了一段时间后，我觉得 Cloudflare Pages + Workers 可能是目前部署小项目最舒服的方案。免费、快速、全球 CDN、自带防御，推送代码即上线。&lt;/p&gt;
+&lt;p&gt;我目前在 Cloudflare 上跑了十几个小项目，从博客到 API 到展示页面都有，全部零服务器成本。&lt;/p&gt;
+&lt;p&gt;这篇先讲怎么把 GitHub 仓库连到 Cloudflare Pages 自动部署，然后是我的实际项目和 Cloudflare 的配套功能，最后讲怎么绑定自定义域名，以及域名购买的省钱方法。&lt;/p&gt;
+&lt;h2 id=&quot;Cloudflare-Pages-简介&quot;&gt;&lt;a href=&quot;#Cloudflare-Pages-简介&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Pages 简介&quot;&gt;&lt;/a&gt;Cloudflare Pages 简介&lt;/h2&gt;&lt;p&gt;Cloudflare Pages 是静态网站托管平台，可以直接从 GitHub 仓库读取代码，自动构建并部署到 Cloudflare 的全球 CDN。&lt;/p&gt;
+&lt;p&gt;免费套餐每月可以构建 500 次，并发构建 1 个。&lt;br&gt;带宽无限，站点数量无限，自定义域名也无限，SSL 证书自动签发（免费）。&lt;/p&gt;
+&lt;p&gt;带宽无限是 Pages 最大的优势，即使网站流量很大也不会产生任何费用。&lt;/p&gt;
+&lt;p&gt;适合放在上面的项目有：个人博客（Hexo / Hugo / Jekyll / VitePress）、项目文档站和下载页面、落地页和导航页和地址发布页、纯前端 SPA（React / Vue）、数据展示页面（地图、图表等），再搭配 Workers 还能做小型 API 服务。&lt;/p&gt;</summary>
     
     
     
@@ -284,44 +257,21 @@
   </entry>
   
   <entry>
-    <title>Prompt Engineering 实战指南：让 AI 输出质量翻倍的技巧</title>
+    <title>Prompt Engineering 提示词写法与常用模板</title>
     <link href="https://ednovas.xyz/2026/03/05/prompt-engineering-guide/"/>
     <id>https://ednovas.xyz/2026/03/05/prompt-engineering-guide/</id>
     <published>2026-03-05T14:48:00.000Z</published>
-    <updated>2026-11-18T04:41:10.260Z</updated>
+    <updated>2026-11-18T21:42:08.569Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
-&lt;h1 id=&quot;Prompt-Engineering-实战指南：让-AI-输出质量翻倍的技巧&quot;&gt;&lt;a href=&quot;#Prompt-Engineering-实战指南：让-AI-输出质量翻倍的技巧&quot; class=&quot;headerlink&quot; title=&quot;Prompt Engineering 实战指南：让 AI 输出质量翻倍的技巧&quot;&gt;&lt;/a&gt;Prompt Engineering 实战指南：让 AI 输出质量翻倍的技巧&lt;/h1&gt;&lt;p&gt;同样一个大模型，不同的提示词（Prompt）可以导致天壤之别的结果。很多人觉得 AI “不好用”、”回答太水”，往往不是模型的问题，而是 &lt;strong&gt;提示词写得太随意&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;本文从实战角度出发，总结了一套系统化的 Prompt 编写方法，适用于 ChatGPT / Claude / DeepSeek / Gemini 等所有主流大模型。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;一、Prompt-的核心原则&quot;&gt;&lt;a href=&quot;#一、Prompt-的核心原则&quot; class=&quot;headerlink&quot; title=&quot;一、Prompt 的核心原则&quot;&gt;&lt;/a&gt;一、Prompt 的核心原则&lt;/h2&gt;&lt;h3 id=&quot;1-1-好-Prompt-的三个要素&quot;&gt;&lt;a href=&quot;#1-1-好-Prompt-的三个要素&quot; class=&quot;headerlink&quot; title=&quot;1.1 好 Prompt 的三个要素&quot;&gt;&lt;/a&gt;1.1 好 Prompt 的三个要素&lt;/h3&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;要素&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;说明&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;反面例子&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;具体&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;明确说出你要什么&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;❌ “帮我写个东西”&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;完整&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;提供足够的上下文&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;❌ “这段代码有 bug”&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;有约束&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;限定格式、长度、风格&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;❌ “随便写就行”&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id=&quot;1-2-一句话总结&quot;&gt;&lt;a href=&quot;#1-2-一句话总结&quot; class=&quot;headerlink&quot; title=&quot;1.2 一句话总结&quot;&gt;&lt;/a&gt;1.2 一句话总结&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;🎯 &lt;strong&gt;把 AI 当成一个能力很强但完全不了解你背景的新同事&lt;/strong&gt;——你需要把任务说清楚，把背景交代完整，把期望讲明白。&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
+&lt;h1 id=&quot;Prompt-Engineering-提示词写法与常用模板&quot;&gt;&lt;a href=&quot;#Prompt-Engineering-提示词写法与常用模板&quot; class=&quot;headerlink&quot; title=&quot;Prompt Engineering 提示词写法与常用模板&quot;&gt;&lt;/a&gt;Prompt Engineering 提示词写法与常用模板&lt;/h1&gt;&lt;p&gt;同样一个大模型，提示词（Prompt）写法不同，结果能差很多。&lt;/p&gt;
+&lt;p&gt;很多人觉得 AI “不好用”“回答太水”，其实多半是提示词写得太随意，和模型本身关系不大。&lt;/p&gt;
+&lt;p&gt;这篇整理了一套提示词的写法，ChatGPT、Claude、DeepSeek、Gemini 这些主流大模型都适用。&lt;/p&gt;
+&lt;h2 id=&quot;Prompt-的核心原则&quot;&gt;&lt;a href=&quot;#Prompt-的核心原则&quot; class=&quot;headerlink&quot; title=&quot;Prompt 的核心原则&quot;&gt;&lt;/a&gt;Prompt 的核心原则&lt;/h2&gt;&lt;p&gt;一个好的 Prompt 需要具体、完整、有约束。&lt;/p&gt;
+&lt;p&gt;具体，就是明确说出你要什么。反面例子是“帮我写个东西”。&lt;/p&gt;
+&lt;p&gt;完整，就是给足上下文。反面例子是“这段代码有 bug”（哪段代码，什么 bug，AI 都不知道）。&lt;/p&gt;
+&lt;p&gt;有约束，就是限定格式、长度和风格。反面例子是“随便写就行”。&lt;/p&gt;</summary>
     
     
     
@@ -343,31 +293,22 @@
   </entry>
   
   <entry>
-    <title>Cloudflare Workers + KV 实战：搭建零成本节点健康监控系统</title>
+    <title>Cloudflare Workers + KV 搭建零成本节点健康监控系统</title>
     <link href="https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/"/>
     <id>https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/</id>
     <published>2026-03-05T14:39:00.000Z</published>
-    <updated>2026-11-18T04:41:10.247Z</updated>
+    <updated>2026-11-18T21:42:08.561Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
-&lt;h1 id=&quot;Cloudflare-Workers-KV-实战：搭建零成本节点健康监控系统&quot;&gt;&lt;a href=&quot;#Cloudflare-Workers-KV-实战：搭建零成本节点健康监控系统&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Workers + KV 实战：搭建零成本节点健康监控系统&quot;&gt;&lt;/a&gt;Cloudflare Workers + KV 实战：搭建零成本节点健康监控系统&lt;/h1&gt;&lt;p&gt;Cloudflare Workers 是一个运行在全球边缘网络的 Serverless 平台，免费套餐每天 &lt;strong&gt;10 万次请求&lt;/strong&gt;，配合 KV 存储，可以零成本搭建各种后端服务。&lt;/p&gt;
-&lt;p&gt;本文将以一个真实项目为例——&lt;strong&gt;分布式节点健康监控系统&lt;/strong&gt;，演示如何利用 Workers + KV 实现：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;🔍 接收国内服务器的健康检测上报&lt;/li&gt;
-&lt;li&gt;🔄 调用 Cloudflare DNS API 自动切换故障节点 IP&lt;/li&gt;
-&lt;li&gt;📱 通过 Telegram Bot 实时告警和查询&lt;/li&gt;
-&lt;li&gt;💾 使用 KV 存储最新状态，供 Bot 命令查询&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;一、项目架构&quot;&gt;&lt;a href=&quot;#一、项目架构&quot; class=&quot;headerlink&quot; title=&quot;一、项目架构&quot;&gt;&lt;/a&gt;一、项目架构&lt;/h2&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;┌─────────────────────────┐           ┌────────────────────────────────┐&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│  🇨🇳 国内检测服务器        │   HTTP    │  ☁️ Cloudflare Worker           │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│  (detector.py)          │ ────────→ │  (node-monitor-worker.js)      │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│                         │           │                                │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│  • TCPing 检测节点端口    │           │  • 验证 Webhook 密钥            │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│  • 多端口健康检查         │           │  • 调用 Cloudflare DNS API     │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│  • EDNS 运营商分流检测    │           │  • 更新 A 记录 (切换 IP)        │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│  • 定时上报状态           │           │  • 发送 Telegram 告警通知       │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│                         │           │  • KV 存储检测状态              │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;└─────────────────────────┘           │  • Telegram Bot 命令处理        │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                      └────────────────────────────────┘&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                          │              │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                          ▼              ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                   Cloudflare DNS   Telegram API&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                   (更新 A 记录)    (告警 + Bot)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;Cloudflare-Workers-KV-搭建零成本节点健康监控系统&quot;&gt;&lt;a href=&quot;#Cloudflare-Workers-KV-搭建零成本节点健康监控系统&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Workers + KV 搭建零成本节点健康监控系统&quot;&gt;&lt;/a&gt;Cloudflare Workers + KV 搭建零成本节点健康监控系统&lt;/h1&gt;&lt;p&gt;Cloudflare Workers 是运行在全球边缘网络上的 Serverless 平台，免费套餐每天 10 万次请求，配合 KV 存储，可以零成本搭一些后端服务。&lt;/p&gt;
+&lt;p&gt;这里以一个分布式节点健康监控系统为例，用 Workers + KV 实现几个功能：接收国内服务器上报的健康检测结果，调用 Cloudflare DNS API 自动切换故障节点的 IP，通过 Telegram Bot 发送告警并响应查询命令，最新状态存在 KV 里，供 Bot 命令读取。&lt;/p&gt;
+&lt;h2 id=&quot;项目架构&quot;&gt;&lt;a href=&quot;#项目架构&quot; class=&quot;headerlink&quot; title=&quot;项目架构&quot;&gt;&lt;/a&gt;项目架构&lt;/h2&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;┌─────────────────────────┐           ┌────────────────────────────────┐&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│  🇨🇳 国内检测服务器        │   HTTP    │  ☁️ Cloudflare Worker           │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│  (detector.py)          │ ────────→ │  (node-monitor-worker.js)      │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│                         │           │                                │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│  • TCPing 检测节点端口    │           │  • 验证 Webhook 密钥            │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│  • 多端口健康检查         │           │  • 调用 Cloudflare DNS API     │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│  • EDNS 运营商分流检测    │           │  • 更新 A 记录 (切换 IP)        │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│  • 定时上报状态           │           │  • 发送 Telegram 告警通知       │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│                         │           │  • KV 存储检测状态              │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;└─────────────────────────┘           │  • Telegram Bot 命令处理        │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                      └────────────────────────────────┘&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                          │              │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                          ▼              ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                   Cloudflare DNS   Telegram API&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                   (更新 A 记录)    (告警 + Bot)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;strong&gt;为什么需要这种架构？&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;国内服务器无法直接访问 Cloudflare API 和 Telegram API&lt;/li&gt;
-&lt;li&gt;Workers 部署在全球边缘节点，可以同时访问两者&lt;/li&gt;
-&lt;li&gt;Workers 作为中间层，接收国内检测结果，执行 DNS 切换和告警转发&lt;/li&gt;
-&lt;/ul&gt;</summary>
+&lt;p&gt;国内服务器无法直接访问 Cloudflare API 和 Telegram API。&lt;/p&gt;
+&lt;p&gt;Workers 部署在全球边缘节点，两边都能访问。&lt;/p&gt;
+&lt;p&gt;所以让 Workers 做中间层，接收国内的检测结果，执行 DNS 切换和告警转发。&lt;/p&gt;
+&lt;h2 id=&quot;Cloudflare-Workers-基础&quot;&gt;&lt;a href=&quot;#Cloudflare-Workers-基础&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Workers 基础&quot;&gt;&lt;/a&gt;Cloudflare Workers 基础&lt;/h2&gt;</summary>
     
     
     
@@ -387,32 +328,21 @@
   </entry>
   
   <entry>
-    <title>GitHub Actions 自动化部署 Hexo 博客完全指南</title>
+    <title>GitHub Actions 自动部署 Hexo 博客</title>
     <link href="https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/"/>
     <id>https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/</id>
     <published>2026-03-05T14:23:00.000Z</published>
-    <updated>2026-11-18T04:41:10.254Z</updated>
+    <updated>2026-11-18T21:42:08.565Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
-&lt;h1 id=&quot;GitHub-Actions-自动化部署-Hexo-博客完全指南&quot;&gt;&lt;a href=&quot;#GitHub-Actions-自动化部署-Hexo-博客完全指南&quot; class=&quot;headerlink&quot; title=&quot;GitHub Actions 自动化部署 Hexo 博客完全指南&quot;&gt;&lt;/a&gt;GitHub Actions 自动化部署 Hexo 博客完全指南&lt;/h1&gt;&lt;p&gt;传统的 Hexo 博客部署流程通常是：本地写文章 → &lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo generate&lt;/code&gt; → &lt;code&gt;hexo deploy&lt;/code&gt;。这个流程有几个痛点：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;🖥️ 换一台电脑就需要重新配置整个 Hexo 环境（Node.js、npm 依赖等）&lt;/li&gt;
-&lt;li&gt;🔑 配置文件中包含 API Key 等敏感信息，直接提交到 Git 有安全风险&lt;/li&gt;
-&lt;li&gt;⏱️ 每次部署都需要手动执行多个命令，繁琐且容易出错&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;本文将详细介绍如何使用 &lt;strong&gt;GitHub Actions&lt;/strong&gt; 实现 Hexo 博客的全自动部署：推送代码到 GitHub 仓库后，自动构建并发布到 GitHub Pages，同时妥善保护敏感信息。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;整体架构&quot;&gt;&lt;a href=&quot;#整体架构&quot; class=&quot;headerlink&quot; title=&quot;整体架构&quot;&gt;&lt;/a&gt;整体架构&lt;/h2&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;本地电脑 (写文章)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │  git push → dev 分支&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;GitHub 仓库 (源码)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ├──── GitHub Actions 自动触发&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │         │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │         ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    ┌─────────────────────────────────┐&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  GitHub Actions Runner          │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │                                 │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  1. 检出代码                     │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  2. 从模板 + Secrets 生成配置     │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  3. npm install                 │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  4. hexo generate               │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  5. 部署到 gh-pages 分支         │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    └─────────────────────────────────┘&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │         │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │         ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    GitHub Pages (线上博客)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    └──── Cloudflare Pages 自动触发&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         ┌─────────────────────────────────┐&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  Cloudflare Pages               │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │                                 │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  • dev 分支 → Preview 预览环境   │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  • gh-pages 分支 → Production   │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  • 自动绑定自定义域名            │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  • 全球 CDN 加速                │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         └─────────────────────────────────┘&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;核心思路：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;源码存放在 &lt;code&gt;dev&lt;/code&gt; 分支（包含模板配置文件，不含敏感信息）&lt;/li&gt;
-&lt;li&gt;GitHub Actions 在构建时通过 Secrets + &lt;code&gt;envsubst&lt;/code&gt; 动态生成真实配置文件&lt;/li&gt;
-&lt;li&gt;构建产物自动推送到 &lt;code&gt;gh-pages&lt;/code&gt; 分支&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub Pages&lt;/strong&gt; 和 &lt;strong&gt;Cloudflare Pages&lt;/strong&gt; 同时从 &lt;code&gt;gh-pages&lt;/code&gt; 分支提供服务，互为冗余&lt;/li&gt;
-&lt;li&gt;Cloudflare Pages 还会为每个 &lt;code&gt;dev&lt;/code&gt; 分支的推送自动生成 &lt;strong&gt;Preview 预览环境&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;传统的 Hexo 博客部署流程是本地写文章，然后 &lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo generate&lt;/code&gt;，再 &lt;code&gt;hexo deploy&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;这个流程有几个麻烦的地方。&lt;/p&gt;
+&lt;p&gt;换一台电脑就要重新配置整个 Hexo 环境（Node.js、npm 依赖等）。&lt;/p&gt;
+&lt;p&gt;配置文件里带着 API Key 这类敏感信息，直接提交到 Git 有安全风险。&lt;/p&gt;
+&lt;p&gt;每次部署都要手动执行好几个命令，繁琐，也容易出错。&lt;/p&gt;
+&lt;p&gt;所以这里用 GitHub Actions 做全自动部署：推送代码到 GitHub 仓库后，自动构建并发布到 GitHub Pages，敏感信息也不会进仓库。&lt;/p&gt;
+&lt;h2 id=&quot;整体架构&quot;&gt;&lt;a href=&quot;#整体架构&quot; class=&quot;headerlink&quot; title=&quot;整体架构&quot;&gt;&lt;/a&gt;整体架构&lt;/h2&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;本地电脑 (写文章)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │  git push → dev 分支&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;GitHub 仓库 (源码)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ├──── GitHub Actions 自动触发&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │         │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │         ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    ┌─────────────────────────────────┐&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  GitHub Actions Runner          │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │                                 │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  1. 检出代码                     │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  2. 从模板 + Secrets 生成配置     │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  3. npm install                 │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  4. hexo generate               │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    │  5. 部署到 gh-pages 分支         │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    └─────────────────────────────────┘&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │         │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │         ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │    GitHub Pages (线上博客)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    └──── Cloudflare Pages 自动触发&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         ┌─────────────────────────────────┐&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  Cloudflare Pages               │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │                                 │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  • dev 分支 → Preview 预览环境   │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  • gh-pages 分支 → Production   │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  • 自动绑定自定义域名            │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         │  • 全球 CDN 加速                │&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         └─────────────────────────────────┘&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -436,20 +366,17 @@
     <link href="https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/"/>
     <id>https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/</id>
     <published>2026-03-05T13:29:00.000Z</published>
-    <updated>2026-11-18T04:41:10.249Z</updated>
+    <updated>2026-11-18T21:42:08.562Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
-&lt;h1 id=&quot;本地-AI-全栈部署：Ollama-Open-WebUI-ComfyUI&quot;&gt;&lt;a href=&quot;#本地-AI-全栈部署：Ollama-Open-WebUI-ComfyUI&quot; class=&quot;headerlink&quot; title=&quot;本地 AI 全栈部署：Ollama + Open WebUI + ComfyUI&quot;&gt;&lt;/a&gt;本地 AI 全栈部署：Ollama + Open WebUI + ComfyUI&lt;/h1&gt;&lt;p&gt;本文使用 NVIDIA DGX Spark 进行演示，你也可以在其他支持 Docker 的设备上进行部署，推荐ubuntu或者MAC系统。&lt;/p&gt;
-&lt;p&gt;NVIDIA DGX Spark 是 NVIDIA 推出的面向个人/小型团队的桌面级 AI 超级计算机，搭载 Grace Blackwell 架构，拥有 128GB 统一内存，非常适合在本地运行大语言模型和图像生成工作负载。本文将介绍如何在 DGX Spark 上一步步部署 &lt;strong&gt;Ollama + Open WebUI + ComfyUI&lt;/strong&gt;，实现本地 LLM 聊天 + AI 图像生成的全栈 AI 工作站。&lt;/p&gt;
-&lt;h2 id=&quot;最终效果&quot;&gt;&lt;a href=&quot;#最终效果&quot; class=&quot;headerlink&quot; title=&quot;最终效果&quot;&gt;&lt;/a&gt;最终效果&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;💬 &lt;strong&gt;Open WebUI&lt;/strong&gt;：一个美观的 ChatGPT 风格 Web 聊天界面，支持多模型切换（通过 Ollama 管理本地模型）&lt;/li&gt;
-&lt;li&gt;🖼️ &lt;strong&gt;ComfyUI&lt;/strong&gt;：节点式 Stable Diffusion / FLUX 图像生成工作流引擎，作为 Open WebUI 的图像生成后端&lt;/li&gt;
-&lt;li&gt;在 Open WebUI 的聊天中直接输入 Prompt，即可调用 ComfyUI 后端生成图片并展示&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2026-03-05_13-38-42.png&quot; alt=&quot;Open WebUI 聊天界面&quot;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;一、前置准备&quot;&gt;&lt;a href=&quot;#一、前置准备&quot; class=&quot;headerlink&quot; title=&quot;一、前置准备&quot;&gt;&lt;/a&gt;一、前置准备&lt;/h2&gt;&lt;h3 id=&quot;1-1-DGX-Spark-基本配置&quot;&gt;&lt;a href=&quot;#1-1-DGX-Spark-基本配置&quot; class=&quot;headerlink&quot; title=&quot;1.1 DGX Spark 基本配置&quot;&gt;&lt;/a&gt;1.1 DGX Spark 基本配置&lt;/h3&gt;</summary>
+&lt;h1 id=&quot;本地-AI-全栈部署：Ollama-Open-WebUI-ComfyUI&quot;&gt;&lt;a href=&quot;#本地-AI-全栈部署：Ollama-Open-WebUI-ComfyUI&quot; class=&quot;headerlink&quot; title=&quot;本地 AI 全栈部署：Ollama + Open WebUI + ComfyUI&quot;&gt;&lt;/a&gt;本地 AI 全栈部署：Ollama + Open WebUI + ComfyUI&lt;/h1&gt;&lt;p&gt;本文用 NVIDIA DGX Spark 演示，你也可以在其他支持 Docker 的设备上部署，推荐ubuntu或者MAC系统。&lt;/p&gt;
+&lt;p&gt;NVIDIA DGX Spark 是 NVIDIA 推出的面向个人/小型团队的桌面级 AI 超级计算机，搭载 Grace Blackwell 架构，拥有 128GB 统一内存，很适合在本地跑大语言模型和图像生成。&lt;/p&gt;
+&lt;p&gt;这里我们在它上面部署 Ollama + Open WebUI + ComfyUI，做一个本地 LLM 聊天加 AI 图像生成的工作站。&lt;/p&gt;
+&lt;h2 id=&quot;最终效果&quot;&gt;&lt;a href=&quot;#最终效果&quot; class=&quot;headerlink&quot; title=&quot;最终效果&quot;&gt;&lt;/a&gt;最终效果&lt;/h2&gt;&lt;p&gt;Open WebUI 是 ChatGPT 风格的 Web 聊天界面，可以切换多个模型（本地模型通过 Ollama 管理）。&lt;/p&gt;
+&lt;p&gt;ComfyUI 是节点式的 Stable Diffusion / FLUX 图像生成工作流引擎，这里作为 Open WebUI 的图像生成后端。&lt;/p&gt;
+&lt;p&gt;在 Open WebUI 的聊天里直接输入 Prompt，就会调用 ComfyUI 后端生成图片并显示出来。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2026-03-05_13-38-42.png&quot; alt=&quot;Open WebUI 聊天界面&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -477,7 +404,7 @@
     <link href="https://ednovas.xyz/2026/02/13/blendhosting2026/"/>
     <id>https://ednovas.xyz/2026/02/13/blendhosting2026/</id>
     <published>2026-02-13T22:28:00.000Z</published>
-    <updated>2026-11-18T04:41:10.246Z</updated>
+    <updated>2026-11-18T21:42:08.560Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot;&gt;&lt;a href=&quot;#Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot; class=&quot;headerlink&quot; title=&quot;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&quot;&gt;&lt;/a&gt;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&lt;/h1&gt;&lt;p&gt;Blend Hosting 是一家成立于 2005 年的海外服务器与云计算服务商，在 VPS 与服务器领域拥有 20 年以上的持续运营记录。相比偏向短期试用型的平台，Blend Hosting 的整体定位更偏向长期稳定运行与可持续使用的应用场景，目标用户群体也更明确。&lt;/p&gt;
@@ -505,7 +432,7 @@
     <link href="https://ednovas.xyz/2026/01/27/servergigabit/"/>
     <id>https://ednovas.xyz/2026/01/27/servergigabit/</id>
     <published>2026-01-27T20:38:00.000Z</published>
-    <updated>2026-11-18T04:41:10.261Z</updated>
+    <updated>2026-11-18T21:42:08.571Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot;&gt;&lt;a href=&quot;#🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot; class=&quot;headerlink&quot; title=&quot;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&quot;&gt;&lt;/a&gt;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&lt;/h1&gt;&lt;p&gt;本款 &lt;strong&gt;Deluxe Dedicated Server (MY) v2&lt;/strong&gt; 部署于马来西亚数据中心，采用企业级硬件配置，专为高并发、高性能及长期稳定运行的业务场景而设计 [cite: 3]。&lt;/p&gt;
@@ -581,7 +508,7 @@
     <link href="https://ednovas.xyz/2025/12/31/vps-manager-pro/"/>
     <id>https://ednovas.xyz/2025/12/31/vps-manager-pro/</id>
     <published>2025-12-31T13:46:00.000Z</published>
-    <updated>2026-11-18T04:41:10.265Z</updated>
+    <updated>2026-11-18T21:42:08.573Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Sample-Website-演示网站&quot;&gt;&lt;a href=&quot;#Sample-Website-演示网站&quot; class=&quot;headerlink&quot; title=&quot;Sample Website 演示网站&quot;&gt;&lt;/a&gt;Sample Website 演示网站&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://vps.ednovas.tech/&quot;&gt;https://vps.ednovas.tech&lt;/a&gt;&lt;/p&gt;
@@ -616,7 +543,7 @@
     <link href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/"/>
     <id>https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</id>
     <published>2025-12-31T13:41:00.000Z</published>
-    <updated>2026-11-18T04:41:10.250Z</updated>
+    <updated>2026-11-18T21:42:08.562Z</updated>
     
     
     <summary type="html">&lt;p&gt;这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 &lt;a href=&quot;https://github.com/Minerchu/dongguaTV&quot;&gt;https://github.com/Minerchu/dongguaTV&lt;/a&gt; ，本作添加了许多功能。&lt;/p&gt;
@@ -657,7 +584,7 @@
     <link href="https://ednovas.xyz/2024/04/25/gigabit/"/>
     <id>https://ednovas.xyz/2024/04/25/gigabit/</id>
     <published>2024-04-25T22:28:00.000Z</published>
-    <updated>2026-11-18T04:41:10.253Z</updated>
+    <updated>2026-11-18T21:42:08.564Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。&lt;/p&gt;
@@ -773,7 +700,7 @@
     <link href="https://ednovas.xyz/2023/12/14/blendhosting/"/>
     <id>https://ednovas.xyz/2023/12/14/blendhosting/</id>
     <published>2023-12-14T22:28:00.000Z</published>
-    <updated>2026-11-18T04:41:10.246Z</updated>
+    <updated>2026-11-18T21:42:08.560Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Blend Hosting &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com&lt;/a&gt;&lt;/p&gt;
@@ -800,7 +727,7 @@
     <link href="https://ednovas.xyz/2023/02/24/homemadenas/"/>
     <id>https://ednovas.xyz/2023/02/24/homemadenas/</id>
     <published>2023-02-24T22:28:00.000Z</published>
-    <updated>2026-11-18T04:41:10.254Z</updated>
+    <updated>2026-11-18T21:42:08.566Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;ul&gt;
@@ -840,7 +767,7 @@
     <link href="https://ednovas.xyz/2023/02/24/cloudflaretunnel/"/>
     <id>https://ednovas.xyz/2023/02/24/cloudflaretunnel/</id>
     <published>2023-02-24T21:28:00.000Z</published>
-    <updated>2026-11-18T04:41:10.248Z</updated>
+    <updated>2026-11-18T21:42:08.561Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Cloudflare-Tunnel&quot;&gt;&lt;a href=&quot;#Cloudflare-Tunnel&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Tunnel&quot;&gt;&lt;/a&gt;Cloudflare Tunnel&lt;/h2&gt;&lt;p&gt;cloudflare提供的免费加密通道，通过cloudflare的cnd访问部署在内网的服务，比如web,ssh,smb,tcp等。&lt;/p&gt;
@@ -873,7 +800,7 @@
     <link href="https://ednovas.xyz/2023/02/19/raspberry/"/>
     <id>https://ednovas.xyz/2023/02/19/raspberry/</id>
     <published>2023-02-19T21:28:00.000Z</published>
-    <updated>2026-11-18T04:41:10.261Z</updated>
+    <updated>2026-11-18T21:42:08.570Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Raspberry-Pi&quot;&gt;&lt;a href=&quot;#Raspberry-Pi&quot; class=&quot;headerlink&quot; title=&quot;Raspberry Pi&quot;&gt;&lt;/a&gt;Raspberry Pi&lt;/h2&gt;&lt;p&gt;树莓派（英语：Raspberry Pi）英国树莓派基金会开发的微型单板计算机，目的是以低价硬体及自由软体促进学校的基本电脑科学教育。&lt;/p&gt;
