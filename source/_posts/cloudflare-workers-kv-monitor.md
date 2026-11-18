@@ -1,5 +1,5 @@
 ---
-title: Cloudflare Workers + KV 实战：搭建零成本节点健康监控系统
+title: Cloudflare Workers + KV 搭建零成本节点健康监控系统
 tags: [Cloudflare Workers,Cloudflare KV,Serverless,节点监控,自动化]
 categories:
   - - 杂
@@ -11,20 +11,13 @@ cover: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800
 
 注： 本文由AI生成，ednovas编辑并审核发布。
 
-# Cloudflare Workers + KV 实战：搭建零成本节点健康监控系统
+# Cloudflare Workers + KV 搭建零成本节点健康监控系统
 
-Cloudflare Workers 是一个运行在全球边缘网络的 Serverless 平台，免费套餐每天 **10 万次请求**，配合 KV 存储，可以零成本搭建各种后端服务。
+Cloudflare Workers 是运行在全球边缘网络上的 Serverless 平台，免费套餐每天 10 万次请求，配合 KV 存储，可以零成本搭一些后端服务。
 
-本文将以一个真实项目为例——**分布式节点健康监控系统**，演示如何利用 Workers + KV 实现：
+这里以一个分布式节点健康监控系统为例，用 Workers + KV 实现几个功能：接收国内服务器上报的健康检测结果，调用 Cloudflare DNS API 自动切换故障节点的 IP，通过 Telegram Bot 发送告警并响应查询命令，最新状态存在 KV 里，供 Bot 命令读取。
 
-- 🔍 接收国内服务器的健康检测上报
-- 🔄 调用 Cloudflare DNS API 自动切换故障节点 IP
-- 📱 通过 Telegram Bot 实时告警和查询
-- 💾 使用 KV 存储最新状态，供 Bot 命令查询
-
----
-
-## 一、项目架构
+## 项目架构
 
 ```
 ┌─────────────────────────┐           ┌────────────────────────────────┐
@@ -44,39 +37,29 @@ Cloudflare Workers 是一个运行在全球边缘网络的 Serverless 平台，�
                                    (更新 A 记录)    (告警 + Bot)
 ```
 
-**为什么需要这种架构？**
+国内服务器无法直接访问 Cloudflare API 和 Telegram API。
 
-- 国内服务器无法直接访问 Cloudflare API 和 Telegram API
-- Workers 部署在全球边缘节点，可以同时访问两者
-- Workers 作为中间层，接收国内检测结果，执行 DNS 切换和告警转发
+Workers 部署在全球边缘节点，两边都能访问。
 
----
+所以让 Workers 做中间层，接收国内的检测结果，执行 DNS 切换和告警转发。
 
-## 二、Cloudflare Workers 基础
+## Cloudflare Workers 基础
 
-### 2.1 什么是 Workers？
+Workers 是 Cloudflare 的 Serverless 函数平台，代码运行在全球 300+ 边缘节点。
 
-Workers 是 Cloudflare 的 Serverless 函数平台，代码运行在全球 300+ 边缘节点。与传统云函数不同，它的冷启动时间几乎为 0。
+和传统云函数不同，它的冷启动时间几乎为 0。
 
-**免费套餐**：
+免费套餐每天 100,000 次请求，每次请求 CPU 时间 10ms。KV 每天 100,000 次读取、1,000 次写入，存储 1 GB。
 
-| 资源 | 免费额度 |
-| :-- | :-: |
-| 每日请求数 | 100,000 |
-| CPU 时间 | 10ms / 请求 |
-| KV 读取 | 100,000 / 天 |
-| KV 写入 | 1,000 / 天 |
-| KV 存储 | 1 GB |
-
-### 2.2 创建 Worker
+### 创建 Worker
 
 1. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/)
-2. 进入 **Workers & Pages** → **Create**
-3. 选择 **Create Worker**
+2. 进入 Workers & Pages → Create
+3. 选择 Create Worker
 4. 给 Worker 命名（如 `node-monitor`）
-5. 粘贴代码，点击 **Deploy**
+5. 粘贴代码，点击 Deploy
 
-### 2.3 Worker 代码结构
+### Worker 代码结构
 
 ```javascript
 export default {
@@ -109,40 +92,35 @@ function jsonResponse(data, status = 200) {
 }
 ```
 
-**关键参数说明**：
-- `request` — 传入的 HTTP 请求对象
-- `env` — 环境变量和 Bindings（Secrets、KV 等）
-- `ctx` — 执行上下文（可用于 `waitUntil` 异步任务）
+`request` 是传入的 HTTP 请求对象，`env` 放环境变量和 Bindings（Secrets、KV 等），`ctx` 是执行上下文（可用于 `waitUntil` 异步任务）。
 
----
+## 配置环境变量
 
-## 三、配置环境变量（Secrets）
+进入 Worker 的 Settings → Variables and Secrets，添加下面这些加密变量。
 
-进入 Worker 的 **Settings → Variables and Secrets**，添加以下加密变量：
+`CF_API_TOKEN` 填 Cloudflare API Token，需要 DNS 编辑权限（示例 `abc123...`）。
 
-| 变量名 | 说明 | 示例 |
-| :-- | :-- | :-- |
-| `CF_API_TOKEN` | Cloudflare API Token（需要 DNS 编辑权限） | `abc123...` |
-| `CF_ZONE_ID` | 域名对应的 Zone ID | `0123456789abcdef` |
-| `WEBHOOK_SECRET` | Webhook 验证密钥（自定义随机字符串） | `my-secret-key-xxxxx` |
-| `TELEGRAM_BOT_TOKEN` | Telegram Bot Token（可选） | `123456:ABC-DEF...` |
-| `TELEGRAM_CHAT_ID` | 接收通知的 Chat ID（可选） | `-1001234567890` |
+`CF_ZONE_ID` 填域名对应的 Zone ID（示例 `0123456789abcdef`）。
 
-### 3.1 获取 Cloudflare API Token
+`WEBHOOK_SECRET` 是 Webhook 验证密钥，自己写一串随机字符即可（示例 `my-secret-key-xxxxx`）。
 
-1. 进入 Cloudflare Dashboard → **My Profile → API Tokens**
-2. 点击 **Create Token**
-3. 选择模板 **Edit zone DNS**
+`TELEGRAM_BOT_TOKEN` 填 Telegram Bot Token，可选（示例 `123456:ABC-DEF...`）。
+
+`TELEGRAM_CHAT_ID` 填接收通知的 Chat ID，可选（示例 `-1001234567890`）。
+
+**所有 Secrets 都使用 Encrypt 加密存储，部署后无法查看原始值。**
+
+### 获取 Cloudflare API Token
+
+1. 进入 Cloudflare Dashboard → My Profile → API Tokens
+2. 点击 Create Token
+3. 选择模板 Edit zone DNS
 4. 在 Zone Resources 中选择你的域名
 5. 创建后复制 Token
 
-> ⚠️ 所有 Secrets 都使用 **Encrypt** 加密存储，部署后无法查看原始值。
+## 核心功能实现
 
----
-
-## 四、核心功能实现
-
-### 4.1 Webhook 接收与密钥验证
+### Webhook 接收与密钥验证
 
 所有 Webhook 请求都需要验证密钥，防止未授权调用：
 
@@ -190,7 +168,7 @@ async function handleSwitch(request, env) {
 }
 ```
 
-### 4.2 调用 Cloudflare DNS API
+### 调用 Cloudflare DNS API
 
 Worker 中可以直接使用 `fetch` 调用 Cloudflare API 修改 DNS 记录：
 
@@ -245,7 +223,7 @@ async function switchNodeIP(env, nodeName, newIP) {
 }
 ```
 
-### 4.3 Telegram 通知
+### Telegram 通知
 
 通过 Telegram Bot API 发送告警消息：
 
@@ -270,23 +248,19 @@ async function sendTelegram(env, message) {
 }
 ```
 
-> 💡 国内服务器无法直接访问 `api.telegram.org`，通过 Worker 中转是最优解。
+国内服务器无法直接访问 `api.telegram.org`，通过 Worker 中转最合适。
 
----
+## KV 存储检测状态
 
-## 五、KV 存储：持久化检测状态
+Workers KV（Key-Value）是 Cloudflare 的全球分布式键值存储，读取性能很高。
 
-Workers KV（Key-Value）是 Cloudflare 的全球分布式键值存储，读取性能极高。
+### 创建 KV 命名空间
 
-### 5.1 创建 KV 命名空间
+1. 进入 Workers 页面 → KV
+2. 点击 Create a namespace，命名为 `NODE_MONITOR_KV`
+3. 在 Worker 的 Settings → Bindings 中添加 KV 绑定，Variable name 写 `KV`，KV namespace 选择刚创建的 `NODE_MONITOR_KV`
 
-1. 进入 Workers 页面 → **KV**
-2. 点击 **Create a namespace**，命名为 `NODE_MONITOR_KV`
-3. 在 Worker 的 **Settings → Bindings** 中添加 KV 绑定：
-   - Variable name: `KV`
-   - KV namespace: 选择刚创建的 `NODE_MONITOR_KV`
-
-### 5.2 存储检测状态
+### 存储检测状态
 
 国内检测脚本每 5 分钟上报一次最新状态到 Worker，Worker 存入 KV：
 
@@ -310,7 +284,9 @@ async function handleReport(request, env) {
 }
 ```
 
-### 5.3 读取状态（Telegram Bot `/check` 命令）
+### 读取状态
+
+Telegram Bot 的 `/check` 命令从 KV 读取：
 
 ```javascript
 async function handleCheckCommand(env) {
@@ -353,11 +329,9 @@ async function handleCheckCommand(env) {
 }
 ```
 
----
+## Telegram Bot 集成
 
-## 六、Telegram Bot 集成
-
-### 6.1 注册 Telegram Webhook
+### 注册 Telegram Webhook
 
 将 Telegram Bot 的 Webhook 设置为 Worker 地址：
 
@@ -366,7 +340,7 @@ async function handleCheckCommand(env) {
 https://your-worker.workers.dev/setup-webhook?secret=你的WEBHOOK密钥
 ```
 
-### 6.2 Bot 命令处理
+### Bot 命令处理
 
 ```javascript
 async function handleTelegramWebhook(request, env) {
@@ -413,20 +387,19 @@ async function handleTelegramWebhook(request, env) {
 }
 ```
 
-**支持的命令**：
+支持的命令有四个。
 
-| 命令 | 功能 |
-| :-- | :-- |
-| `/test` | 测试 Bot 连接是否正常 |
-| `/status` | 查询当前 DNS A 记录（调用 CF API 实时查询） |
-| `/check` | 查看国内服务器上报的端口检测结果（从 KV 读取） |
-| `/help` | 显示帮助信息 |
+`/test` 测试 Bot 连接是否正常。
 
----
+`/status` 查询当前 DNS A 记录（调用 CF API 实时查询）。
 
-## 七、国内检测脚本（detector.py）
+`/check` 查看国内服务器上报的端口检测结果（从 KV 读取）。
 
-### 7.1 核心检测逻辑
+`/help` 显示帮助信息。
+
+## 国内检测脚本 detector.py
+
+### 核心检测逻辑
 
 检测脚本运行在国内服务器，通过 TCPing 检测节点端口可用性：
 
@@ -459,7 +432,7 @@ TCPING_TIMEOUT = 5    # 超时时间（秒）
 FAIL_THRESHOLD = 3    # 连续失败次数阈值
 ```
 
-### 7.2 TCPing 检测函数
+### TCPing 检测函数
 
 ```python
 def tcping(host: str, port: int, timeout: float = 5) -> tuple:
@@ -485,7 +458,7 @@ def tcping(host: str, port: int, timeout: float = 5) -> tuple:
         return False, str(e)
 ```
 
-### 7.3 多端口检测
+### 多端口检测
 
 只有当所有端口都不通时才判定节点故障（单个端口不通可能是后端服务问题）：
 
@@ -516,7 +489,7 @@ def check_node_all_ports(ip: str, ports: list, attempts: int = 2) -> tuple:
     return is_healthy, failed_ports
 ```
 
-### 7.4 调用 Webhook 触发切换
+### 调用 Webhook 触发切换
 
 ```python
 def call_switch_webhook(node_name: str, current_ip: str, next_ip: str, reason: str) -> bool:
@@ -548,9 +521,9 @@ def call_switch_webhook(node_name: str, current_ip: str, next_ip: str, reason: s
         return result.get('success', False)
 ```
 
-> 💡 使用 `urllib` 而非 `requests` 库，减少外部依赖，方便在轻量服务器上部署。
+这里用 `urllib` 而不用 `requests` 库，可以减少外部依赖，方便在轻量服务器上部署。
 
-### 7.5 主循环逻辑
+### 主循环逻辑
 
 ```python
 def main():
@@ -598,7 +571,7 @@ def main():
         time.sleep(CHECK_INTERVAL)
 ```
 
-### 7.6 systemd 后台运行
+### systemd 后台运行
 
 ```bash
 cat > /etc/systemd/system/node-detector.service << 'EOF'
@@ -622,9 +595,7 @@ systemctl start node-detector
 systemctl enable node-detector
 ```
 
----
-
-## 八、完整 API 接口
+## API 接口汇总
 
 | 路径 | 方法 | 说明 | 认证方式 |
 | :-- | :-: | :-- | :-: |
@@ -645,47 +616,45 @@ curl -X POST https://your-worker.workers.dev/manual/switch \
   -d '{"secret":"你的密钥","node":"node1.example.com","newIP":"1.2.3.4"}'
 ```
 
----
+## 与传统 VPS 对比
 
-## 九、Workers + KV 的优势总结
+Workers + KV 免费（10 万次/天），VPS 需要购买服务器。
 
-| 特性 | Workers + KV | 传统 VPS |
-| :-- | :-: | :-: |
-| **成本** | 免费（10 万次/天） | 需购买服务器 |
-| **全球延迟** | < 50ms（边缘节点） | 取决于服务器位置 |
-| **运维** | 零运维，自动扩缩容 | 需要管理操作系统 |
-| **高可用** | 自动多区域容灾 | 需自建高可用 |
-| **冷启动** | 近乎 0ms | 不适用 |
-| **适合场景** | API、Webhook、轻逻辑 | 复杂运算、长连接 |
+全球延迟低于 50ms（边缘节点），VPS 取决于服务器位置。
 
----
+运维上零运维，自动扩缩容，VPS 需要自己管理操作系统。
 
-## 十、常见问题
+高可用是自动多区域容灾，VPS 需要自建。
 
-### Q: Worker 免费额度够用吗？
+冷启动近乎 0ms，VPS 不适用。
 
-对于监控场景完全够用。以每 60 秒检测一次、5 分钟上报一次计算：
-- 切换请求：极少（仅故障时触发）
-- 上报请求：每天 288 次
-- Telegram 命令：按需，通常每天几十次
+适合 API、Webhook 这类轻逻辑，复杂运算和长连接还是用 VPS。
+
+## 常见问题
+
+### 免费额度
+
+对于监控场景完全够用。以每 60 秒检测一次、5 分钟上报一次计算，切换请求极少（仅故障时触发），上报请求每天 288 次，Telegram 命令按需，通常每天几十次。
 
 总计每天 < 500 次请求，远低于 10 万次免费额度。
 
-### Q: KV 写入有 1000 次/天限制？
+### KV 写入限制
 
 免费套餐 KV 写入为 1000 次/天。每 5 分钟上报一次 = 288 次/天，完全足够。
 
-### Q: 如何调试 Worker？
+### 调试 Worker
 
-- 在 Cloudflare Dashboard 的 Worker 页面使用 **Quick Edit** 在线编辑测试
-- 使用 `console.log` 输出日志，在 **Logs** 标签页实时查看
-- 本地开发使用 `wrangler dev` 命令
+在 Cloudflare Dashboard 的 Worker 页面可以用 Quick Edit 在线编辑测试。
 
-### Q: Workers 支持 WebSocket 吗？
+使用 `console.log` 输出日志，在 Logs 标签页实时查看。
 
-支持，但免费套餐有连接时间限制。对于监控这种请求-响应模式，HTTP 已经足够。
+本地开发使用 `wrangler dev` 命令。
 
----
+### WebSocket
+
+Workers 支持 WebSocket，但免费套餐有连接时间限制。
+
+监控这种请求-响应模式，HTTP 已经足够。
 
 ## 参考资料
 
