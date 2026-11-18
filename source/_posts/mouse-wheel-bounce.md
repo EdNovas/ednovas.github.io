@@ -4,12 +4,15 @@ tags: [鼠标,滚轮,AutoHotkey,Windows,硬件]
 categories:
   - - 软件
 date: 2026-11-16 20:00:00
+updated: 2026-11-18 15:00:00
 top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 cover: https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800
 #highlight_shrink: true
 ---
 
 注： 本文由AI生成，ednovas编辑并审核发布。
+
+> 2026-11-18 更新：新增[滚轮回弹诊断](https://wheel-bounce.e.show/)网页和标准档脚本。现在推荐先用网页测一次，再按结果装脚本。原来的严格版和改进版留在后面。
 
 鼠标滚轮回弹，就是明明往一个方向滚，页面却突然往回跳一下（也有人叫滚轮抽风、滚轮跳格、滚轮反跳）。
 
@@ -21,11 +24,11 @@ cover: https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800
 
 鼠标别的地方都好好的，就滚轮时不时反着来一下，用起来特别难受，扔了又可惜。
 
-我们手上好几只罗技 Superlight 都中招了，基本用一年左右就开始回弹；一只用了好几年的冰豹 Roccat Kone 也出现了一模一样的问题。于是研究了一下原因，最后用一个几十行的 AutoHotkey 脚本把它压住了（压住大部分，不是百分百）。后来针对它的盲点又写了一个改进版，两个版本各有取舍，都放在文里了。
+我们手上好几只罗技 Superlight 都中招了，基本用一年左右就开始回弹；一只用了好几年的冰豹 Roccat Kone 也出现了一模一样的问题。于是研究了一下原因，最后用一个几十行的 AutoHotkey 脚本把它压住了（压住大部分，不是百分百）。后来针对它的盲点又写了一个改进版。再后来干脆做了一个网页，用你自己鼠标的数据来挑脚本，网页推荐的标准档脚本也放在文里了。
 
 先说结论。原因是滚轮里的机械编码器触点老化、氧化或进灰，接触一抖，鼠标芯片就把方向判反了。修法可以猛滚几十圈、吹灰、滴电子接点清洁剂、拆机捏紧编码器，或者干脆换编码器、走保修。不想拆鼠标的话，用本文的脚本在系统层面把回弹信号丢掉，正常滚动没有延迟。
 
-两个版本的区别：严格版滚动时零延迟，但换方向时第一下就是错的挡不住；改进版能挡住这种情况，代价是开始滚动时多一点延迟（见下文“严格版去抖脚本”“改进版去抖脚本”和“两个版本的选择”三节）。
+现在推荐的做法是先用滚轮回弹诊断网页测一次，它会用你的数据从宽松、标准、严格三档里挑一档，大多数人用标准档就行（见下文“滚轮回弹诊断”和“标准档脚本”两节）。早期写的严格版和改进版也留着，区别见“几个脚本怎么选”。
 
 ## 先排除软件问题
 
@@ -38,6 +41,8 @@ cover: https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800
 也可以一格一格慢慢滚。打开一篇长网页，只往下、一格一格地滚，盯着看有没有某一格是往上走的。
 
 更准的办法是用在线工具测。打开 [StarryRing 鼠标滚轮测试](https://starryring.com/zh/toolbox/mouse/scroll-wheel/)，选好“向上”或“向下”模式，只往这个方向连续滚二三十下。如果出现红色的“!”，“反向错误”的计数也在涨，就说明滚轮发出了反方向的信号。打开网页就能用，不用装软件，比盯着网页看准得多，推荐先用它测一下。
+
+也可以直接用我们做的[滚轮回弹诊断](https://wheel-bounce.e.show/)，它会记下每一格的方向和时间，后面单独讲。
 
 后面的脚本运行后，鼠标悬停在托盘图标上会显示“已拦截 N 次”。只往一个方向滚一阵，如果这个数字在涨，说明确实有反方向的错误信号，就是回弹。
 
@@ -120,7 +125,231 @@ cover: https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800
 
 而软件过滤的思路很简单：错误信号既然已经发出来了，那就在系统里把它丢掉。不用拆鼠标，回弹不是特别严重的话都能压住，换台电脑把脚本拷过去就行。
 
+## 滚轮回弹诊断
+
+不同鼠标回弹的规律不一样。有的滚动中途跳，有的停一下再滚的第一下就跳，适合的脚本参数也不一样。前面的 StarryRing 能看出有没有回弹，所以我们又做了一个网页：[滚轮回弹诊断](https://wheel-bounce.e.show/)。它会找出你的鼠标在什么时候回弹，再用你自己的数据回测三档防回弹脚本，给出推荐。
+
+网页是纯静态的，部署在 Cloudflare Pages 上。所有计算都在浏览器里完成（网页设置了禁止向任何服务器发送数据的安全策略），测试记录只存在你自己浏览器的 localStorage 里，页面底部可以一键清除。
+
+用法一共四步，每次测试大约 3 分钟。
+
+1. 准备。如果已经在用防回弹脚本，先在托盘里右键绿色的 H 图标，选 Suspend Hotkeys 或者 Exit，这样测到的才是鼠标本来的样子。用鼠标滚轮测，别用触控板。
+2. 不开脚本测一次。鼠标放在页面里的文章上，按右边的提示滚动，一共 5 小项。每录到一格反方向的跳动，文章边框会闪一下红色。
+3. 看结果，选一份脚本装上。页面会用你的数据算出每一档的效果并标出推荐，直接下载对应的 AHK 脚本即可。
+4. 开着脚本再测一次，对比前后的回弹率。
+
+测试页在任何电脑的浏览器上都能用，但 AutoHotkey 只支持 Windows，所以脚本只能在 Windows 上装。
+
+浏览器有时会把同一帧（约 16 毫秒）里的几个滚轮事件合并，极快的抖动可能会少算。想要更精确的话，第 3 步的“进阶”里有一个只记录、不拦截的 AHK 记录器，可以记下每一格的精确时间再导入。
+
+如果回弹率高到 8% 以上，或者严格档也压不住，那就是编码器本身的问题了，还是回到上面的硬件修法，或者直接送修。
+
+## 标准档脚本
+
+这是诊断网页推荐给大多数人的一档。不想测的话，直接装这一份也行。
+
+### 换了什么思路
+
+网上最常见的防回弹写法是“这一格和上一格方向相反、间隔又很短，就丢掉”。滚动途中这招有效，但停顿一会儿再开始滚时，上一格早就超出了时间窗，脚本手里没有参考方向，起手的那一下回弹会被直接放过去。很多写法还拿“上一个触发的热键”做比较，被拦下的回弹也算数，于是紧接着那一格正常滚动反而被吃掉，滚起来像卡了一下又跳一下。
+
+标准档换了个思路。
+
+方向记得更久（3 秒），这段时间里单独冒出来的反方向格子，一律先拦下。
+
+真要往回翻的时候，250 毫秒内连拨两格就放行，并把第一格补回来，滚动距离一格不少。
+
+凑够两格之后再等 45 毫秒，下一格要是回到了原方向，说明刚才那两格也是抖动，一起丢掉。
+
+另外还有两道抖动防护：紧贴着正常滚动 30 毫秒内冒出来的反方向格，直接当抖动；两个反方向格挨得比 6 毫秒还近，只算一格。
+
+### 三档的区别
+
+宽松档方向只记 1.2 秒，250 毫秒内连续 2 格就换向。往回翻几乎没有门槛，适合经常一格一格往回翻的人，代价是漏掉的回弹多一点。
+
+标准档方向记 3 秒，250 毫秒内连续 2 格换向，凑够之后再等 45 毫秒确认。适合大多数人。
+
+严格档方向记 4 秒，要 400 毫秒内连续 3 格才承认换方向，确认要等 60 毫秒，停顿后的第一格也先等 60 毫秒看清方向。适合回弹很严重的旧鼠标，往回翻会稍微“沉”一点。
+
+（注意这里的“严格档”和后面早期写的“严格版”脚本不是一个东西，别搞混了。）
+
+我们在两份真实录制（一共约 1900 格）上回测过三档，又在数据里模拟加入了“两格连抖”再测一次。每格里的两个数字分别对应两份录制：
+
+| 档位 | 真实数据：漏掉的回弹 | 加入两格连抖后：漏掉的回弹 | 误拦的正常滚动 |
+|---|---|---|---|
+| 不加抖动防护的旧标准档 | 3/36、1/47 | 51/82、48/93 | 0 |
+| 宽松 | 6/36、2/47 | 6/82、2/93 | 4、2 |
+| 标准 | 3/36、2/47 | 3/82、2/93 | 3、6 |
+| 严格 | 1/36、2/47 | 1/82、2/93 | 18、19 |
+
+没有抖动防护的话，一遇到两格连抖几乎全漏。加上之后标准档只漏 3 格和 2 格，误拦 3 格和 6 格。严格档漏得最少，但误拦多到 18、19 格，所以一般不推荐直接上严格档。
+
+### 完整脚本
+
+下面是诊断网页生成的标准档脚本（AHK v2）：
+
+```autohotkey
+#Requires AutoHotkey v2.0
+; 滚轮防回弹 —— 滚轮回弹诊断 · 「标准」档
+; 方案：方向记忆 3.0 s · 250 ms 内连续 2 格才换向（补发） · 防连抖 45 ms
+; 用法：保存为 wheel_filter.ahk（编码选 UTF-8），双击运行。
+; 退出：任务栏托盘里右键绿色 H 图标 → Exit。
+#SingleInstance Force
+#MaxThreadsBuffer true
+A_MaxHotkeysPerInterval := 5000
+A_HotkeyInterval := 1000
+ProcessSetPriority "High"
+
+; ===== 参数（可以按手感微调）=====
+global MEMORY_MS    := 3000   ; 方向记忆：正常滚动后这么久之内，反方向的格子先当回弹
+global CONFIRM_N    := 2      ; 反方向连续几格才算真的换向（0 = 记忆期内一律拦下）
+global CONFIRM_GAP  := 250    ; 这几格之间的最大间隔（毫秒）
+global REPLAY       := true   ; 确认换向后补发之前拦下的格子
+global LOCK_MS      := 30     ; 紧贴着正常滚动这么久之内的反方向格子，直接当抖动
+global MIN_GAP      := 6      ; 两个反方向格子挨得比这更近（毫秒），只算一格
+global CONFIRM_WAIT := 45     ; 凑够换向格数后再等这么久，下一格回到原方向就判为抖动（0 = 不等）
+global START_MS     := 0      ; 起手判决：停顿后第一格先等多久再决定方向（0 = 关闭）
+global TIE_LAST     := false  ; 起手窗口里两个方向一样多时：以最后一格为准 / 全部丢掉
+
+; ===== 状态 =====
+global accDir := 0, accT := 0.0, revCnt := 0, revT := 0.0
+global pendOn := false, pendDir := 0, pendCnt := 0, pendT := 0.0
+global winOpen := false, winUp := 0, winDn := 0, winLast := 0
+
+DllCall("winmm\timeBeginPeriod", "UInt", 1)   ; 让计时器更准
+
+*WheelDown::OnWheel(1)
+*WheelUp::OnWheel(-1)
+
+NowMs() {
+    static freq := 0
+    if !freq
+        DllCall("QueryPerformanceFrequency", "Int64*", &freq)
+    DllCall("QueryPerformanceCounter", "Int64*", &cnt := 0)
+    return cnt * 1000.0 / freq
+}
+
+OnWheel(d) {
+    global accDir, accT, revCnt, revT, pendOn, pendDir, pendCnt, pendT, winOpen, winUp, winDn, winLast
+    Critical
+    t := NowMs()
+    if pendOn {                      ; 换向待确认：看这一格往哪走
+        if (t - pendT <= CONFIRM_WAIT) {
+            SetTimer ConfirmFire, 0
+            pendOn := false
+            if (d = pendDir) {        ; 还是反方向：确认真的要换向
+                Emit(d, REPLAY ? pendCnt + 1 : 1)
+                accDir := d, accT := t, revCnt := 0
+                return
+            }
+            revCnt := 0, accT := t    ; 马上回到原方向：刚才那几格是抖动，丢掉
+            Emit(d, 1)
+            return
+        }
+        ConfirmFire()                 ; 定时器来晚了：先按确认处理
+    }
+    if winOpen {                     ; 起手判决窗口内：先收集
+        if (d > 0)
+            winDn += 1
+        else
+            winUp += 1
+        winLast := d
+        return
+    }
+    if (accDir = 0 || t - accT > MEMORY_MS) {   ; 停顿太久，没有参考方向
+        revCnt := 0
+        if (START_MS > 0) {
+            winOpen := true, winLast := d, winDn := (d > 0), winUp := (d < 0)
+            SetTimer CloseWindow, -START_MS
+            return
+        }
+        accDir := d, accT := t
+        Emit(d, 1)
+        return
+    }
+    if (d = accDir) {                 ; 同方向：放行
+        accT := t, revCnt := 0
+        Emit(d, 1)
+        return
+    }
+    ; 反方向：先拦下，看是不是真的要换向
+    if (t - accT < LOCK_MS)           ; 紧贴着上一格正常滚动：抖动
+        return
+    if (revCnt > 0 && t - revT < MIN_GAP)   ; 和上一个反方向格几乎同时：同一次抖动
+        return
+    revCnt := (revCnt > 0 && t - revT <= CONFIRM_GAP) ? revCnt + 1 : 1
+    revT := t
+    if (CONFIRM_N > 0 && revCnt >= CONFIRM_N) {
+        if (CONFIRM_WAIT > 0) {       ; 先别放，再等一格看看
+            pendOn := true, pendDir := d, pendCnt := revCnt, pendT := t, revCnt := 0
+            SetTimer ConfirmFire, -CONFIRM_WAIT
+            return
+        }
+        Emit(d, REPLAY ? revCnt : 1)
+        accDir := d, accT := t, revCnt := 0
+    }
+}
+
+ConfirmFire() {
+    global accDir, accT, revCnt, pendOn, pendDir, pendCnt, pendT
+    Critical
+    if !pendOn
+        return
+    SetTimer ConfirmFire, 0
+    pendOn := false
+    Emit(pendDir, REPLAY ? pendCnt : 1)
+    accDir := pendDir, accT := pendT + CONFIRM_WAIT, revCnt := 0
+}
+
+CloseWindow() {
+    global accDir, accT, revCnt, winOpen, winUp, winDn, winLast
+    Critical
+    winOpen := false
+    if (winDn = winUp) {
+        if !TIE_LAST                ; 平票：当作起手抖动，全部丢掉
+            return
+        d := winLast                  ; 平票：以最后一格的方向为准
+    } else
+        d := (winDn > winUp) ? 1 : -1
+    Emit(d, (d > 0) ? winDn : winUp)
+    accDir := d, accT := NowMs(), revCnt := 0
+}
+
+Emit(d, n) {
+    Send "{Blind}{Wheel" (d > 0 ? "Down" : "Up") " " n "}"
+}
+```
+
+### 安装和参数
+
+安装和后面严格版的一样：保存为 `wheel_filter.ahk`（编码选 UTF-8），双击运行，托盘里会出现绿色的 H 图标。开机自启、管理员窗口这些注意事项也一样，见后面的“安装和使用”和“注意事项”。想停用的话，右键托盘图标选 Exit 即可。
+
+同方向滚动完全不受影响，没有任何延迟。只有换方向时，第一格会等到第二格出现才一起放出来，通常晚 20 到 30 毫秒，几乎察觉不到（只往回拨两格就停手的话，还会再等 45 毫秒确认）。按住 Ctrl 滚轮缩放、Shift 滚轮横向滚动都照常工作。
+
+参数都在脚本开头，一般不用动，想换档直接回诊断网页下载对应的那一份就行。
+
+`MEMORY_MS` 默认 3000，是方向记忆的时间（毫秒），正常滚动后这么久之内，反方向的格子先当回弹。
+
+`CONFIRM_N` 默认 2，是反方向连续几格才算真的换向（填 0 就是记忆期内一律拦下）。
+
+`CONFIRM_GAP` 默认 250，是这几格之间允许的最大间隔（毫秒）。
+
+`REPLAY` 默认 true，确认换向以后，把之前拦下的格子补发出去。
+
+`LOCK_MS` 默认 30，紧贴着正常滚动这么久之内的反方向格子，直接当抖动。
+
+`MIN_GAP` 默认 6，两个反方向格子挨得比这更近（毫秒），只算一格。
+
+`CONFIRM_WAIT` 默认 45，凑够换向格数后再等这么久，下一格回到原方向就判为抖动（填 0 就是不等）。
+
+`START_MS` 默认 0，也就是关闭。打开后，停顿后的第一格先等这么久再决定方向，严格档用的是 60。
+
+`TIE_LAST` 默认 false。起手窗口里两个方向一样多时，false 是全部丢掉，true 是以最后一格的方向为准。
+
+另外脚本用 `QueryPerformanceCounter` 计时，用 `timeBeginPeriod` 把系统计时器精度调到 1 毫秒，进程优先级也设成了 High，几毫秒级别的判断才准。
+
 ## 严格版去抖脚本
+
+（这是最早写的版本，现在推荐用前面的标准档。思路和代码留在这里给想看的朋友参考。）
 
 [AutoHotkey](https://www.autohotkey.com/)（简称 AHK）是 Windows 上一个免费开源的自动化工具，可以拦截键盘、鼠标的输入，处理之后再发出去。我们就用它在系统层面接管滚轮信号。
 
@@ -348,6 +577,8 @@ UpdateTip() {
 
 ## 改进版去抖脚本
 
+（同样是早期版本，现在推荐用前面的标准档。）
+
 ### 思路和规则
 
 严格版的盲点在于：停顿之后的第一个信号，只要和上一次方向一样就直接放行。可偏偏换方向的时候，第一下冒出来的回弹往往就是和上一次一样的方向。
@@ -554,7 +785,11 @@ UpdateTip() {
 
 `START_LEAD` 默认 2，是观察期内某个方向领先几个就立即放行。一般不用动；开头经常连冒两个错误信号的话可以调到 3，但开始滚动会更慢。
 
-## 两个版本的选择
+## 几个脚本怎么选
+
+现在推荐先用[滚轮回弹诊断](https://wheel-bounce.e.show/)测一次，按它的推荐装，大多数人是标准档。不想测的话，直接装标准档。
+
+早期的两个版本也能用，区别是这样的。
 
 回弹主要出现在滚动中途或者停下的时候，换方向时很少跳，用严格版，跟手、零延迟。它的代码也更简单。
 
@@ -562,10 +797,11 @@ UpdateTip() {
 
 拿不准就先用严格版，看托盘上的拦截次数和实际手感，换方向时还经常跳再换改进版。
 
-**两个版本不要同时运行，它们都会接管滚轮。** 换版本前先右键托盘图标退出旧的，开机自启的文件夹里也只放一个。托盘提示里会显示“严格”或“改进版”，可以用来区分正在跑的是哪个。
+**几个脚本不要同时运行，它们都会接管滚轮。** 换脚本前先右键托盘图标退出旧的，开机自启的文件夹里也只放一个。托盘提示里严格版显示“严格”，改进版显示“改进版”，标准档没有设提示，显示的是文件名。
 
 ## 参考资料
 
+- [滚轮回弹诊断（在线测试和脚本生成）](https://wheel-bounce.e.show/)
 - [StarryRing：鼠标滚轮在线测试](https://starryring.com/zh/toolbox/mouse/scroll-wheel/)
 - [AutoHotkey 下载](https://www.autohotkey.com/download/)
 - [AutoHotkey v2 文档：鼠标滚轮热键](https://www.autohotkey.com/docs/v2/Hotkeys.htm)
