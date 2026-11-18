@@ -23,6 +23,10 @@
       link: http://dh.kejilion.pro
       avatar: https://3.bp.blogspot.com/-IbmMY5WJ-wQ/YkuQiKDtOvI/AAAAAAAAAD0/Mhu3ZNkiFcosNwBTI3xVQceNuw3a3RjuQCK4BGAYYCw/s113-pf/kejilion.jpg
       descr: 专业的云服务导航
+    - name: VPS-Craft
+      link: https://vps-craft.com/
+      avatar: https://vps-craft.com/favicon.svg
+      descr: 国外 VPS 优惠大全，实时价格与线路比价
 - class_name: 节点分享
   class_desc: 免费节点分享
   link_list:
