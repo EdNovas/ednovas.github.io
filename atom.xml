@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2026-11-18T15:00:00.000Z</updated>
+  <updated>2026-11-18T22:16:27.778Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>去掉文章的 AI 味：5 个去 AI 味 skill 和女娲蒸馏的对比测试</title>
+    <link href="https://ednovas.xyz/2026/11/18/ai-writing-humanizer-vs-distill/"/>
+    <id>https://ednovas.xyz/2026/11/18/ai-writing-humanizer-vs-distill/</id>
+    <published>2026-11-18T16:00:00.000Z</published>
+    <updated>2026-11-18T22:16:27.778Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;博客里有 7 篇文章是 AI 起草、我们再编辑发布的，读起来总有一股说不清的味道。&lt;/p&gt;
+&lt;p&gt;网上现在有不少专门“去 AI 味”的 skill，GitHub 上星最多的有好几万。另外还有一种思路，是用女娲（nuwa-skill）把一个人的写法“蒸馏”成 skill，让 AI 照着这个人写。&lt;/p&gt;
+&lt;p&gt;我们两种都试了，还拿同一篇稿子做了对比测试。这篇就把过程和结果记下来。&lt;/p&gt;
+&lt;h2 id=&quot;AI-味在哪&quot;&gt;&lt;a href=&quot;#AI-味在哪&quot; class=&quot;headerlink&quot; title=&quot;AI 味在哪&quot;&gt;&lt;/a&gt;AI 味在哪&lt;/h2&gt;&lt;p&gt;先拿我们自己的博客算了一笔账。&lt;/p&gt;
+&lt;p&gt;我们从以前的文章里挑出 26 篇确实是自己手写的（2020 到 2023 年），和 7 篇 AI 生成的放在一起统计。挑的时候还发现，候选的 56 篇里有 17 篇其实是整篇转载，文里写着“转载自”，这些都不能算。&lt;/p&gt;
+&lt;p&gt;结果是，两边的句子长短、段落长短几乎一样，差别全在排版和语气上。按每一万个中文字算：&lt;/p&gt;
+&lt;p&gt;手写的加粗 34 处，AI 写的 208 处。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="AI" scheme="https://ednovas.xyz/categories/AI/"/>
+    
+    
+    <category term="AI" scheme="https://ednovas.xyz/tags/AI/"/>
+    
+    <category term="写作" scheme="https://ednovas.xyz/tags/%E5%86%99%E4%BD%9C/"/>
+    
+    <category term="Claude Code" scheme="https://ednovas.xyz/tags/Claude-Code/"/>
+    
+    <category term="Skill" scheme="https://ednovas.xyz/tags/Skill/"/>
+    
+    <category term="女娲" scheme="https://ednovas.xyz/tags/%E5%A5%B3%E5%A8%B2/"/>
+    
+    <category term="去AI味" scheme="https://ednovas.xyz/tags/%E5%8E%BBAI%E5%91%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>鼠标滚轮回弹（往回跳）的原因和 AutoHotkey 去抖脚本</title>
@@ -59,7 +95,7 @@
     <link href="https://ednovas.xyz/2026/10/30/mondoze-mac-mini/"/>
     <id>https://ednovas.xyz/2026/10/30/mondoze-mac-mini/</id>
     <published>2026-10-30T20:00:00.000Z</published>
-    <updated>2026-11-18T22:01:18.239Z</updated>
+    <updated>2026-11-18T22:16:27.787Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -140,7 +176,7 @@
     <link href="https://ednovas.xyz/2026/09/30/mondoze/"/>
     <id>https://ednovas.xyz/2026/09/30/mondoze/</id>
     <published>2026-09-30T21:00:00.000Z</published>
-    <updated>2026-11-18T22:01:18.239Z</updated>
+    <updated>2026-11-18T22:16:27.787Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -171,7 +207,7 @@
     <link href="https://ednovas.xyz/2026/06/12/casbay/"/>
     <id>https://ednovas.xyz/2026/06/12/casbay/</id>
     <published>2026-06-12T22:00:00.000Z</published>
-    <updated>2026-11-18T22:01:18.231Z</updated>
+    <updated>2026-11-18T22:16:27.779Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -229,7 +265,7 @@
     <link href="https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/"/>
     <id>https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/</id>
     <published>2026-03-10T16:19:00.000Z</published>
-    <updated>2026-11-18T22:01:18.232Z</updated>
+    <updated>2026-11-18T22:16:27.780Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -263,7 +299,7 @@
     <link href="https://ednovas.xyz/2026/03/05/prompt-engineering-guide/"/>
     <id>https://ednovas.xyz/2026/03/05/prompt-engineering-guide/</id>
     <published>2026-03-05T14:48:00.000Z</published>
-    <updated>2026-11-18T22:01:18.241Z</updated>
+    <updated>2026-11-18T22:16:27.790Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -299,7 +335,7 @@
     <link href="https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/"/>
     <id>https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/</id>
     <published>2026-03-05T14:39:00.000Z</published>
-    <updated>2026-11-18T22:01:18.232Z</updated>
+    <updated>2026-11-18T22:16:27.781Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -334,7 +370,7 @@
     <link href="https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/"/>
     <id>https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/</id>
     <published>2026-03-05T14:23:00.000Z</published>
-    <updated>2026-11-18T22:01:18.237Z</updated>
+    <updated>2026-11-18T22:16:27.785Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -368,7 +404,7 @@
     <link href="https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/"/>
     <id>https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/</id>
     <published>2026-03-05T13:29:00.000Z</published>
-    <updated>2026-11-18T22:01:18.233Z</updated>
+    <updated>2026-11-18T22:16:27.782Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -406,7 +442,7 @@
     <link href="https://ednovas.xyz/2026/02/13/blendhosting2026/"/>
     <id>https://ednovas.xyz/2026/02/13/blendhosting2026/</id>
     <published>2026-02-13T22:28:00.000Z</published>
-    <updated>2026-11-18T22:01:18.231Z</updated>
+    <updated>2026-11-18T22:16:27.779Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot;&gt;&lt;a href=&quot;#Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot; class=&quot;headerlink&quot; title=&quot;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&quot;&gt;&lt;/a&gt;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&lt;/h1&gt;&lt;p&gt;Blend Hosting 是一家成立于 2005 年的海外服务器与云计算服务商，在 VPS 与服务器领域拥有 20 年以上的持续运营记录。相比偏向短期试用型的平台，Blend Hosting 的整体定位更偏向长期稳定运行与可持续使用的应用场景，目标用户群体也更明确。&lt;/p&gt;
@@ -434,7 +470,7 @@
     <link href="https://ednovas.xyz/2026/01/27/servergigabit/"/>
     <id>https://ednovas.xyz/2026/01/27/servergigabit/</id>
     <published>2026-01-27T20:38:00.000Z</published>
-    <updated>2026-11-18T22:01:18.243Z</updated>
+    <updated>2026-11-18T22:16:27.791Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot;&gt;&lt;a href=&quot;#🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot; class=&quot;headerlink&quot; title=&quot;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&quot;&gt;&lt;/a&gt;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&lt;/h1&gt;&lt;p&gt;本款 &lt;strong&gt;Deluxe Dedicated Server (MY) v2&lt;/strong&gt; 部署于马来西亚数据中心，采用企业级硬件配置，专为高并发、高性能及长期稳定运行的业务场景而设计 [cite: 3]。&lt;/p&gt;
@@ -510,7 +546,7 @@
     <link href="https://ednovas.xyz/2025/12/31/vps-manager-pro/"/>
     <id>https://ednovas.xyz/2025/12/31/vps-manager-pro/</id>
     <published>2025-12-31T13:46:00.000Z</published>
-    <updated>2026-11-18T22:01:18.245Z</updated>
+    <updated>2026-11-18T22:16:27.794Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Sample-Website-演示网站&quot;&gt;&lt;a href=&quot;#Sample-Website-演示网站&quot; class=&quot;headerlink&quot; title=&quot;Sample Website 演示网站&quot;&gt;&lt;/a&gt;Sample Website 演示网站&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://vps.ednovas.tech/&quot;&gt;https://vps.ednovas.tech&lt;/a&gt;&lt;/p&gt;
@@ -545,7 +581,7 @@
     <link href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/"/>
     <id>https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</id>
     <published>2025-12-31T13:41:00.000Z</published>
-    <updated>2026-11-18T22:01:18.234Z</updated>
+    <updated>2026-11-18T22:16:27.782Z</updated>
     
     
     <summary type="html">&lt;p&gt;这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 &lt;a href=&quot;https://github.com/Minerchu/dongguaTV&quot;&gt;https://github.com/Minerchu/dongguaTV&lt;/a&gt; ，本作添加了许多功能。&lt;/p&gt;
@@ -586,7 +622,7 @@
     <link href="https://ednovas.xyz/2024/04/25/gigabit/"/>
     <id>https://ednovas.xyz/2024/04/25/gigabit/</id>
     <published>2024-04-25T22:28:00.000Z</published>
-    <updated>2026-11-18T22:01:18.236Z</updated>
+    <updated>2026-11-18T22:16:27.784Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。&lt;/p&gt;
@@ -702,7 +738,7 @@
     <link href="https://ednovas.xyz/2023/12/14/blendhosting/"/>
     <id>https://ednovas.xyz/2023/12/14/blendhosting/</id>
     <published>2023-12-14T22:28:00.000Z</published>
-    <updated>2026-11-18T22:01:18.231Z</updated>
+    <updated>2026-11-18T22:16:27.779Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Blend Hosting &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com&lt;/a&gt;&lt;/p&gt;
@@ -729,7 +765,7 @@
     <link href="https://ednovas.xyz/2023/02/24/homemadenas/"/>
     <id>https://ednovas.xyz/2023/02/24/homemadenas/</id>
     <published>2023-02-24T22:28:00.000Z</published>
-    <updated>2026-11-18T22:01:18.237Z</updated>
+    <updated>2026-11-18T22:16:27.786Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;ul&gt;
@@ -769,7 +805,7 @@
     <link href="https://ednovas.xyz/2023/02/24/cloudflaretunnel/"/>
     <id>https://ednovas.xyz/2023/02/24/cloudflaretunnel/</id>
     <published>2023-02-24T21:28:00.000Z</published>
-    <updated>2026-11-18T22:01:18.232Z</updated>
+    <updated>2026-11-18T22:16:27.781Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Cloudflare-Tunnel&quot;&gt;&lt;a href=&quot;#Cloudflare-Tunnel&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Tunnel&quot;&gt;&lt;/a&gt;Cloudflare Tunnel&lt;/h2&gt;&lt;p&gt;cloudflare提供的免费加密通道，通过cloudflare的cnd访问部署在内网的服务，比如web,ssh,smb,tcp等。&lt;/p&gt;
@@ -794,34 +830,6 @@
     <category term="tunnel" scheme="https://ednovas.xyz/tags/tunnel/"/>
     
     <category term="内网穿透" scheme="https://ednovas.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Raspberry Pi 入门使用指南</title>
-    <link href="https://ednovas.xyz/2023/02/19/raspberry/"/>
-    <id>https://ednovas.xyz/2023/02/19/raspberry/</id>
-    <published>2023-02-19T21:28:00.000Z</published>
-    <updated>2026-11-18T22:01:18.242Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;Raspberry-Pi&quot;&gt;&lt;a href=&quot;#Raspberry-Pi&quot; class=&quot;headerlink&quot; title=&quot;Raspberry Pi&quot;&gt;&lt;/a&gt;Raspberry Pi&lt;/h2&gt;&lt;p&gt;树莓派（英语：Raspberry Pi）英国树莓派基金会开发的微型单板计算机，目的是以低价硬体及自由软体促进学校的基本电脑科学教育。&lt;/p&gt;
-&lt;p&gt;树莓派系列计算机每一代均使用博通（Broadcom）出产的ARM架构处理器，如今生产的机型（树莓派4B）内存在2GB和8GB之间，主要TF卡作为系统存储媒体（初代使用SD卡），配备USB接口和HDMI的视频输出（支持声音输出），内置Ethernet/WLAN/Bluetooth网络链接的方式（依据型号决定），并且可使用多种操作系统。产品线型号分为A型、B型、Zero型和ComputeModule计算卡。&lt;/p&gt;
-&lt;h2 id=&quot;用途&quot;&gt;&lt;a href=&quot;#用途&quot; class=&quot;headerlink&quot; title=&quot;用途&quot;&gt;&lt;/a&gt;用途&lt;/h2&gt;&lt;p&gt;Raspberry Pi 实际上就是一个超级便捷的小型电脑，通常用来装linux系统，可以用作服务器的一些功能。&lt;/p&gt;
-&lt;p&gt;例如：搭建个人网站，Git服务器，远程BT下载器，小型家庭NAS，AirPlay服务，闹钟，DNSmasq服务（内网DNS），Adguard Home，等等功能。&lt;/p&gt;
-&lt;p&gt;这是作为服务器的用途，还可以用作一些机械结构的模块，用来做树莓派飞行器，机器人，遥控坦克等等。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.adafruit.com/&quot;&gt;https://www.adafruit.com/&lt;/a&gt; 这个网站上有很多树莓派的开源有趣的项目可以用作参考&lt;/p&gt;
-&lt;p&gt;还有一本书也很推荐 &lt;a href=&quot;https://book.douban.com/subject/25856712/&quot;&gt;https://book.douban.com/subject/25856712/&lt;/a&gt; （京东有售。不想买书的话可以从Z-lib找免费的PDF版本）&lt;/p&gt;
-&lt;h2 id=&quot;购买&quot;&gt;&lt;a href=&quot;#购买&quot; class=&quot;headerlink&quot; title=&quot;购买&quot;&gt;&lt;/a&gt;购买&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="杂" scheme="https://ednovas.xyz/categories/%E6%9D%82/"/>
-    
-    
-    <category term="vps" scheme="https://ednovas.xyz/tags/vps/"/>
-    
-    <category term="raspberry" scheme="https://ednovas.xyz/tags/raspberry/"/>
     
   </entry>
   
