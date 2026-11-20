@@ -11,10 +11,7 @@ cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Black_Friday_1200x62
 
 注： 本文由AI生成，ednovas编辑并审核发布。
 
-> 内容整理自
-> https://t.me/lowendaff_blog
-> https://lowendaff.com/
-> 整理时间 2026-11-19。价格和库存以商家页面为准。RackNerd 的购买链接是我们自己的推广链接，其他商家的链接都是不带推广参数的官网链接。已经结束的活动没有收，专做代理线路的也没有收。
+> 整理时间 2026-11-19，价格和库存以商家页面为准。
 
 ## 美国 VPS
 
