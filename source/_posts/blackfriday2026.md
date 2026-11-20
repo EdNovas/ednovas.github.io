@@ -14,7 +14,7 @@ cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Black_Friday_1200x62
 > 内容整理自
 > https://t.me/lowendaff_blog
 > https://lowendaff.com/
-> 整理时间 2026-11-19。价格和库存以商家页面为准，链接里的推广参数已经去掉。已经结束的活动没有收，专做代理线路的也没有收。
+> 整理时间 2026-11-19。价格和库存以商家页面为准。RackNerd 的购买链接是我们自己的推广链接，其他商家的链接都是不带推广参数的官网链接。已经结束的活动没有收，专做代理线路的也没有收。
 
 ## 美国 VPS
 
@@ -22,19 +22,19 @@ cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Black_Friday_1200x62
 
 2026 黑五活动，洛杉矶、达拉斯、纽约、阿姆斯特丹等多个机房，续费同价。
 
-1C / 1G / 20GB SSD / 3TB / 1Gbps，$15.98/年
+1C / 1G / 20GB SSD / 3TB / 1Gbps，$15.98/年，[购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=968)
 
-2C / 2.5G / 30GB SSD / 6TB / 1Gbps，$27.98/年
+2C / 2.5G / 30GB SSD / 6TB / 1Gbps，$27.98/年，[购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=969)
 
-4C / 4G / 60GB SSD / 10TB / 1Gbps，$47.98/年
+4C / 4G / 60GB SSD / 10TB / 1Gbps，$47.98/年，[购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=970)
 
-6C / 6G / 85GB SSD / 15TB，$74.98/年
+6C / 6G / 85GB SSD / 15TB，$74.98/年，[购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=971)
 
-6C / 8G / 140GB SSD / 20TB，$94.98/年
+6C / 8G / 140GB SSD / 20TB，$94.98/年，[购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=972)
 
 在 LowEndTalk 原帖回复订单号，月流量可以翻倍。
 
-链接：https://www.racknerd.com/BlackFriday/
+黑五活动页：https://www.racknerd.com/BlackFriday/
 
 ### D4 Networks
 
