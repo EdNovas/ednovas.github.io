@@ -13,11 +13,13 @@ cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Black_Friday_1200x62
 
 > 整理时间 2026-11-19，价格和库存以商家页面为准。
 
+> 11-21 更新：新增 AlexHost、PawnHoster、HostDZire、SurferCloud、Namecheap、Streamline-Servers、Leapswitch Networks 和 BGP Network；RackNerd 加了虚拟主机、分销主机和独服，DediRock、D4 Networks、ServerHost 有新套餐。
+
 ## 美国 VPS
 
 ### RackNerd
 
-洛杉矶、达拉斯、纽约、阿姆斯特丹等多个机房，2026 黑五活动，续费同价。
+黑五 KVM VPS 续费同价，洛杉矶、圣何塞、西雅图、达拉斯、芝加哥、纽约、Ashburn、亚特兰大、多伦多、斯特拉斯堡、阿姆斯特丹、都柏林都有测试 IP，能选哪些机房看下单页。这次还新加了虚拟主机、分销主机和独服。
 
 | 套餐 | CPU | 内存 | 硬盘 | 流量 | 端口 | 价格 | 购买 |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -27,8 +29,34 @@ cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Black_Friday_1200x62
 | 6GB KVM | 6C | 6G | 85GB SSD | 15TB | 1Gbps | $74.98/年 | [购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=971) |
 | 8GB KVM | 6C | 8G | 140GB SSD | 20TB | 1Gbps | $94.98/年 | [购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=972) |
 
+虚拟主机和分销主机（都在达拉斯，AdminBolt 面板）：
+
+| 套餐 | 硬盘 | 流量 | 价格 | 购买 |
+| :-: | :-: | :-: | :-: | :-: |
+| 虚拟主机 35GB（5 个域名） | 35GB SSD | 5TB | $9.49/年 | [购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=977) |
+| 虚拟主机 90GB（不限域名） | 90GB SSD | 15TB | $21.99/年 | [购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=978) |
+| 虚拟主机 200GB（不限域名） | 200GB SSD | 40TB | $49.88/年 | [购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=979) |
+| 分销 80GB（15 个账户） | 80GB SSD | 5TB | $29.88/年 | [购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=980) |
+| 分销 115GB（25 个账户） | 115GB SSD | 20TB | $54.88/年 | [购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=981) |
+| 分销 185GB（50 个账户） | 185GB SSD | 30TB | $84.88/年 | [购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=982) |
+
+独服：
+
+| 套餐 | CPU | 内存 | 硬盘 | 流量 | 端口 | 价格 | 购买 |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 美国（按库存分配机房） | Xeon E3-1230 V2 | 16GB | 256GB SSD | 30TB | 1Gbps | $64/月 | [购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=973) |
+| 西雅图 | 2×Xeon L5520 | 48GB | 1TB HDD | 30TB | 1Gbps | $75/月 | [购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=974) |
+| 西雅图 | 2×Xeon E5-2660 | 64GB | 1TB SSD | 不限流量 | 1Gbps | $139/月 | [购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=975) |
+| 西雅图 | 2×Xeon E5-2683 V4 | 128GB | 2TB SSD | 不限流量 | 1Gbps | $199/月 | [购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=976) |
+
 {% note info flat %}
-在 LowEndTalk 的活动帖下回复订单号，月流量可以翻倍。
+在 LowEndTalk 的活动帖下回复订单号，月流量可以翻倍（VPS 和虚拟主机都算）。
+
+VPS 现在用 RackNerd 自己的 ctrl 面板，带一键应用和网络防火墙。
+
+分销主机送 Clientexec 授权，可以自己贴牌卖。
+
+独服要 2 到 3 天开通，每台带 5 个 IPv4（/29），库存变动很快。
 {% endnote %}
 
 链接：https://www.racknerd.com/BlackFriday/
@@ -37,10 +65,11 @@ cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Black_Friday_1200x62
 
 纽约、达拉斯、阿姆斯特丹三地可选的 KVM 年付特惠，续费同价，免安装费。
 
-| 套餐 | CPU | 内存 | 硬盘 | 流量 | 价格 |
-| :-: | :-: | :-: | :-: | :-: | :-: |
-| KVM 5GB | 2 vCPU | 5GB | 100GB NVMe | 6TB | $69/年 |
-| KVM 7GB | 3 vCPU | 7GB | 140GB NVMe | 8TB | $89/年 |
+| 套餐 | CPU | 内存 | 硬盘 | 流量 | 端口 | 价格 | 购买 |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| KVM 5GB | 2 vCPU | 5GB | 100GB NVMe | 6TB | - | $69/年 | - |
+| KVM 7GB | 3 vCPU | 7GB | 140GB NVMe | 8TB | - | $89/年 | - |
+| 达拉斯独服 | 2×Xeon Platinum 8173M（56C） | 128GB | 2×1.92TB SSD | 30TB | 10Gbps | $175/月，免安装费 | [购买](https://my.d4networks.com/cart.php?a=add&pid=59) |
 
 {% note info flat %}
 截止：11 月 26 日 23:59（PST）或售完
@@ -48,6 +77,8 @@ cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Black_Friday_1200x62
 带 1 个 IPv4 和 /64 IPv6。
 
 在 LowEndTalk 活动帖下回复订单号可以多送一个月。
+
+达拉斯独服不算黑五活动，只有一台。
 {% endnote %}
 
 链接：https://my.d4networks.com/cart.php?a=add&pid=73
@@ -303,16 +334,57 @@ Cost-Optimized 续费同价，不参加首月 7 折。
 | Apex x12（伊斯坦布尔、索非亚） | 4 vCPU | 12GB | 90GB NVMe | 1 到 10Gbps 共享 | $8.99/月，年付 $7.19/月 | [购买](https://genixnode.com/billing/store/vps/aydin-vps-x12) |
 
 {% note info flat %}
-欧美机房是利姆堡、伦敦、都柏林、纽约、洛杉矶、迈阿密、达拉斯、博阿尔努。
+欧美机房是利姆堡、伦敦、都柏林、纽约、洛杉矶、迈阿密、达拉斯、博阿尔努，达拉斯和新加坡暂时缺货。
 
 长周期还有折扣，季付 9 折、半年付 85 折、年付 8 折。
 
-伊斯坦布尔、索非亚、都柏林、卡拉奇是 Intel，其他机房是 Ryzen 7/9。
+下单后在 LowEndTalk 活动帖下回复订单号，每台多送一周。
 
-每台带 1 个独立 IPv4，Linux 和 Windows 都能装。
+商家说黑五活动 11 月 23 日开始，到时候再更新。
 {% endnote %}
 
 链接：https://genixnode.com/vps
+
+### AlexHost
+
+英国、罗马尼亚、保加利亚的 VPS 黑五 7 折循环，只有 60 个名额，另有两款独服直接打折。
+
+| 套餐 | CPU | 内存 | 硬盘 | 价格 | 购买 |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| VPS（英国、罗马尼亚、保加利亚） | - | - | - | 用码后 7 折，循环 | [购买](https://alexhost.com/vps/) |
+| 独服 | Xeon E5-2690 v3（12C/24T） | 16GB DDR4 ECC | 128GB SSD | €77/月（原价 €109.80） | [购买](https://bill.alexhost.com/?cmd=cart&action=add&id=618) |
+| 独服 | 2×Xeon E5-2690 v4（28C/56T） | 64GB DDR4 ECC | 1TB SSD | €126/月（原价 €180） | [购买](https://bill.alexhost.com/?cmd=cart&action=add&id=619) |
+
+{% note info flat %}
+优惠码：`30BF`（VPS 7 折，循环）
+
+VPS 限 60 个名额，独服数量也有限，即时开通。
+{% endnote %}
+
+链接：https://alexhost.com/
+
+### PawnHoster
+
+芬兰赫尔辛基的 KVM 和 LXC VPS，黑五年付 5 折，不限流量，限量。
+
+| 套餐 | CPU | 内存 | 硬盘 | 流量 | 价格 |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| KVM-S | 1C | 2GB | 25GB NVMe | 不限流量 | $30/年 |
+| KVM-M | 2C | 4GB | 50GB NVMe | 不限流量 | $60/年 |
+| KVM-L | 4C | 8GB | 100GB NVMe | 不限流量 | $120/年 |
+| LXC-S | 1C | 2GB | 25GB NVMe | 不限流量 | $24/年 |
+| LXC-M | 2C | 4GB | 50GB NVMe | 不限流量 | $48/年 |
+| LXC-L | 4C | 8GB | 100GB NVMe | 不限流量 | $96/年 |
+
+{% note info flat %}
+优惠码：`BLACKFRIDAY50`（只限年付，5 折）
+
+折扣只算第一年，续费恢复原价。
+
+带独立 IPv4 和 IPv6，自动备份（S 每月、M 每周、L 每天）。
+{% endnote %}
+
+链接：https://pawnhoster.com/vps-hosting
 
 ## 亚洲和国内线路 VPS
 
@@ -395,6 +467,54 @@ LAX-B 的 2C4G 端口从 1G 升到 2.5G，4C8G 从 2.5G 升到 5G，老用户也
 
 链接：https://kainode.com/vps
 
+### HostDZire
+
+印度孟买的 VPS，提前开始的黑五价，AMD EPYC 的 NVMe VPS 和 Intel 的存储 VPS 都有，下面是年付价，两年付、三年付更便宜。
+
+| 套餐 | CPU | 内存 | 硬盘 | 流量 | 端口 | 价格 | 购买 |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| IN CloudVPS #3 | 2C EPYC | 4GB | 40GB NVMe | 4TB | 1Gbps | €21/年 | [购买](https://hostdzire.com/billing/cart.php?a=add&currency=1&billingcycle=annually&pid=1261) |
+| IN CloudVPS #4 | 4C EPYC | 6GB | 80GB NVMe | 4TB | 1Gbps | €30/年 | [购买](https://hostdzire.com/billing/cart.php?a=add&currency=1&billingcycle=annually&pid=1262) |
+| IN CloudVPS #5 | 8C EPYC | 12GB | 120GB NVMe | 8TB | 1Gbps | €45/年 | [购买](https://hostdzire.com/billing/cart.php?a=add&currency=1&billingcycle=annually&pid=1263) |
+| IN CloudVPS #6 | 12C EPYC | 24GB | 240GB NVMe | 12TB | 1Gbps | €71/年 | [购买](https://hostdzire.com/billing/cart.php?a=add&currency=1&billingcycle=annually&pid=1271) |
+| IN StorageVPS #1 | 1C | 2GB | 500GB SATA | 1TB | 1Gbps | €18/年 | [购买](https://hostdzire.com/billing/cart.php?a=add&currency=1&billingcycle=annually&pid=1320) |
+| IN StorageVPS #2 | 2C | 3GB | 1TB SATA | 2TB | 1Gbps | €29/年 | [购买](https://hostdzire.com/billing/cart.php?a=add&currency=1&billingcycle=annually&pid=1321) |
+| IN StorageVPS #3 | 2C | 4GB | 2TB SATA | 4TB | 1Gbps | €58/年 | [购买](https://hostdzire.com/billing/cart.php?a=add&currency=1&billingcycle=annually&pid=1322) |
+
+{% note info flat %}
+流量是上下行一起算的。
+
+25 端口是封的，价格不含税。
+
+每台带 1 个 IPv4 和 1 个 IPv6。
+{% endnote %}
+
+链接：https://hostdzire.com/cloud-vps-india.html
+
+### SurferCloud
+
+全球 17 个机房（香港、台北、东京、首尔、新加坡等亚太机房为主），黑五按月阶梯折扣，第一个月 8 折，第二个月 7 折，第三个月起 6 折。
+
+| 套餐 | CPU | 内存 | 硬盘 | 端口 | 价格 |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| UHost | 1C | 2GB | 40GB | 1 或 2Mbps | 首月 $10.82/月（原价 $13.53） |
+| UHost | 2C | 2GB | 40GB | 1 或 2Mbps | 首月 $16.30/月（原价 $20.38） |
+| UHost | 2C | 4GB | 40GB | 2 或 5Mbps | 首月 $23.19/月（原价 $28.99） |
+| UHost | 4C | 8GB | 40GB | 2 到 10Mbps | 首月 $40.94/月（原价 $51.18） |
+| UHost | 8C | 16GB | 40GB | 5 到 20Mbps | 首月 $84.61/月（原价 $105.76） |
+
+{% note info flat %}
+表里是洛杉矶的价格，其他机房在下单页看。
+
+首月 8 折自动生效，第二个月起的 7 折、6 折要找客户经理开通。
+
+带宽按 Mbps 卖，1Mbps 跑满一个月大约 300GB 出头。
+
+支持支付宝、PayPal 和加密货币。
+{% endnote %}
+
+链接：https://www.surfercloud.com/promos/blackfriday
+
 ## 地区没写的 VPS
 
 ### LayerOne
@@ -432,6 +552,8 @@ $7/年款每天放 3 台，$7.50/月款一共 30 台。
 截止：12 月 1 日
 
 25 端口默认是封的。
+
+VPS Nano 只能选两年付或三年付。
 {% endnote %}
 
 ### OwnWebServers
@@ -455,17 +577,39 @@ $7/年款每天放 3 台，$7.50/月款一共 30 台。
 
 ### ServerHost
 
-2GB 的 Ryzen/i9 VPS，年付 $22.99。
+Ryzen/i9 VPS，2GB 年付 $22.99，这两天又加了 4GB 年付 $55。
 
 | 套餐 | 内存 | 价格 | 购买 |
 | :-: | :-: | :-: | :-: |
 | 2GB Ryzen/i9 VPS | 2GB | $22.99/年 | [购买](https://vpshostingservice.co/order/ryzen-i9-linux/2-gb?billingcycle=annually&promocode=OCTRYZI92GB) |
+| 4GB Ryzen/i9 VPS | 4GB | $55/年 | [购买](https://vpshostingservice.co/order/ryzen-i9-linux/4-gb-1?billingcycle=annually&promocode=OCTRYZI94GB) |
 
 {% note info flat %}
-优惠码：`OCTRYZI92GB`
+优惠码：`OCTRYZI92GB`（2GB）；`OCTRYZI94GB`（4GB），下单链接已经带上
 {% endnote %}
 
 链接：https://www.serverhost.com/
+
+### Namecheap
+
+黑五全场促销，VPS 用码后首年更便宜，域名和虚拟主机也在打折。
+
+| 套餐 | CPU | 内存 | 硬盘 | 流量 | 价格 |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| Pulsar | 2C | 2GB | 40GB SSD | 1000GB | $5.41/月（首年 $64.92） |
+| Magnetar | 8C | 12GB | 240GB SSD | 6000GB | $19.71/月（首年 $236.52） |
+
+{% note info flat %}
+优惠码：`THEGAMESVPS26`（VPS，每人限 5 台）；`THEGAMESTLD26`（域名新注册，.com 首年 $8.98）；`THEGAMESDTR26`（域名转入）；`THEGAMESHOST26`（虚拟主机）
+
+截止：12 月 4 日 23:59（美东）
+
+Quasar（4C/6GB/120GB）也在打折，表里没列。
+
+价格都是首年或首期的，续费恢复原价。
+{% endnote %}
+
+链接：https://www.namecheap.com/domain-web-hosting-ssl-deals/black-friday/
 
 ## 独立服务器
 
@@ -527,6 +671,48 @@ Black Friday 有 30 多款独服参加，Limited Edition 最高 8 折，限量�
 在 LowEndTalk 活动帖下回复，流量可以翻倍到 200TB。
 {% endnote %}
 
+### Streamline-Servers
+
+澳大利亚悉尼 Equinix SY5 的独服，提前开始的黑五价，$45/月，免安装费，带 DDoS 防护。
+
+| CPU | 内存 | 硬盘 | 流量 | 端口 | 价格 | 购买 |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Xeon E3-1230v3（4C/8T） | 32GB DDR3 ECC | 500GB SSD | 50TB | 1Gbps 或 10Gbps | $45/月 | [购买](https://billing.streamline-servers.com/cart.php?a=add&pid=344&currency=4&promocode=BLACKFRIDAY26SERVER) |
+| Xeon E3-1240v6（4C/8T） | 32GB DDR4 ECC | 250GB 或 500GB SSD | 50TB | 1Gbps 或 10Gbps | $45/月 | [购买](https://billing.streamline-servers.com/cart.php?a=add&pid=531&currency=4&promocode=BLACKFRIDAY26SERVER) |
+
+{% note info flat %}
+优惠码：`BLACKFRIDAY26SERVER`（链接已经带上）
+
+截止：11 月 30 日或售完
+
+带 IPMI，可以开 BGP。
+
+测试 IP：103.1.215.34
+{% endnote %}
+
+链接：https://streamline-servers.com/
+
+### Leapswitch Networks
+
+印度孟买的独服黑五活动，免安装费，带 DDoS 防护，可以用自己的 ASN 免费广播 IP。
+
+| CPU | 内存 | 硬盘 | 流量 | 端口 | 价格 | 购买 |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Xeon Gold 6244（8C/16T） | 64GB DDR4 | 960GB NVMe | 10TB | 1Gbps | $178.60/月 | [购买](https://manage.leapswitch.com/cart/?id=7441) |
+| Xeon Gold 6254（18C/36T） | 64GB DDR4 | 960GB NVMe | 10TB | 1Gbps | $174.31/月 | - |
+
+{% note info flat %}
+优惠码：`SAVE15DDR4`（DDR4 独服 85 折）
+
+截止：11 月 30 日
+
+当天交付，IPMI/KVM 要走 VPN。
+
+Windows Server 另外收费。
+{% endnote %}
+
+链接：https://www.leapswitch.com/
+
 ### Felware
 
 美国威斯康星州 Madison 的独服，优惠码终身循环 5 折，库存有限。
@@ -581,21 +767,51 @@ Black Friday 有 30 多款独服参加，Limited Edition 最高 8 折，限量�
 优惠码：`CODE_C4a`（5 折循环）
 {% endnote %}
 
-### DediRock
+### BGP Network
 
-纽约、洛杉矶的 VPS 和 Ryzen 独服新品，另有 Buffalo 的 High-RAM VPS，8GB 内存年付 $24.99。
+美国堪萨斯城的 BGP VPS，可以带自己的 ASN 和 IP，BGP 会话自动配置，1Gbps 不限流量。
 
 | 套餐 | CPU | 内存 | 硬盘 | 流量 | 端口 | 价格 | 购买 |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| 纽约 VPS | 1C | 2G | 30G SSD | 2TB | 1Gbps | $10.88/年 | [购买](https://billing.dedirock.com/index.php/store/promo-vp/promo-vps-star-ny) |
-| 纽约 Ryzen 5950X 独服 | 5950X | 32GB | 1TB NVMe | 10TB | - | $79/月 | - |
-| Buffalo High-RAM Core | 1x vCore | 8GB | 20GB HDD | 2TB | 1Gbps | $24.99/年 | [购买](https://billing.dedirock.com/index.php/store/the-dedirock-high-ram-vps/dedirock-high-ram-vps-core) |
-| Buffalo High-RAM Plus | 1x vCore | 16GB | 30GB HDD | 3TB | 1Gbps | $59.99/年 | [购买](https://billing.dedirock.com/index.php/store/the-dedirock-high-ram-vps/dedirock-high-ram-vps-plus) |
-| Buffalo High-RAM Power | 2x vCore | 32GB | 50GB HDD | 4TB | 1Gbps | $89.99/年 | [购买](https://billing.dedirock.com/index.php/store/the-dedirock-high-ram-vps/dedirock-high-ram-vps-power) |
+| BGP VPS Starter | 1C | 2GB | 20GB | 不限流量 | 1Gbps | $9.99/月 | [购买](https://portal.bgp.sa/vps/configure/bgp-vps-starter) |
 
 {% note info flat %}
-High-RAM VPS 是 KVM，用 HDD，只适合吃内存和做缓存，不适合重磁盘读写或持续高 CPU。
+适合有自己 ASN、想练 BGP 的人，普通建站用不上。
+
+每个节点只放 10 台 VPS。
 {% endnote %}
+
+链接：https://bgp.sa/
+
+### DediRock
+
+纽约州 Buffalo 这两天上了一批新品：大硬盘 SSD VPS、i9 VPS、存储 VPS、大内存 VPS 和 Ryzen 独服，另有纽约、洛杉矶的 VPS Star 年付 $10.88 起。
+
+| 套餐 | CPU | 内存 | 硬盘 | 流量 | 端口 | 价格 | 购买 |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| VPS Star 纽约 | 1C | 2GB | 30GB SSD | 2TB | 1Gbps | $10.88/年 | [购买](https://billing.dedirock.com/index.php/store/promo-vp/promo-vps-star-ny) |
+| VPS Star 洛杉矶 | 1C | 2GB | 30GB SSD | 2TB | 1Gbps | $11.88/年 | [购买](https://billing.dedirock.com/index.php/store/promo-vps-los-angeles/promo-vps-star-la) |
+| 4K Write 256GB | 1C | 2GB | 256GB SSD | 2TB | 1Gbps | $28.99/年 | [购买](https://billing.dedirock.com/index.php/store/the-4k-write-sensation/4k-write-256-gb-ny) |
+| i9 Dream Core | 1C | 2GB DDR5 | 30GB NVMe | 2TB | 1Gbps | $24.88/年 | [购买](https://billing.dedirock.com/index.php/store/promo-performance/promo-performance-vps-ny-core) |
+| i9 Dream Plus | 1C | 3GB DDR5 | 40GB NVMe | 4TB | 1Gbps | $34.88/年 | [购买](https://billing.dedirock.com/index.php/store/promo-performance/promo-performance-vps-ny-plus) |
+| i9 Dream Power | 2C | 4GB DDR5 | 60GB NVMe | 6TB | 1Gbps | $44.88/年 | [购买](https://billing.dedirock.com/index.php/store/promo-performance/promo-performance-vps-ny-power) |
+| Storage Wars Core | 1C | 1GB | 256GB | 1TB | 1Gbps | $12.88/年 | [购买](https://billing.dedirock.com/index.php/store/promo-storage-new-york/promo-storage-ny-core) |
+| Storage Wars Plus | 1C | 2GB | 1TB | 2TB | 1Gbps | $19.88/年 | [购买](https://billing.dedirock.com/index.php/store/promo-storage-new-york/promo-storage-ny-plus) |
+| Storage Wars Power | 1C | 2GB | 2TB | 4TB | 1Gbps | $29.88/年 | [购买](https://billing.dedirock.com/index.php/store/promo-storage-new-york/promo-storage-ny-power) |
+| High-RAM Core | 1C | 8GB | 20GB HDD | 2TB | 1Gbps | $24.99/年 | [购买](https://billing.dedirock.com/index.php/store/the-dedirock-high-ram-vps/dedirock-high-ram-vps-core) |
+| High-RAM Plus | 1C | 16GB | 30GB HDD | 3TB | 1Gbps | $59.99/年 | [购买](https://billing.dedirock.com/index.php/store/the-dedirock-high-ram-vps/dedirock-high-ram-vps-plus) |
+| High-RAM Power | 2C | 32GB | 50GB HDD | 4TB | 1Gbps | $89.99/年 | [购买](https://billing.dedirock.com/index.php/store/the-dedirock-high-ram-vps/dedirock-high-ram-vps-power) |
+| Ryzen 独服 Core | Ryzen 9 5950X | 32GB DDR4 | 1TB NVMe | 10TB | 1Gbps | $79/月 | [购买](https://billing.dedirock.com/index.php/store/the-ryzen-experience/amd-ryzen-dedicated-ny-core) |
+| Ryzen 独服 Plus | Ryzen 9 7950X | 64GB DDR5 | 2TB NVMe | 10TB | 1Gbps | $149/月 | [购买](https://billing.dedirock.com/index.php/store/the-ryzen-experience/amd-ryzen-dedicated-ny-plus) |
+| Ryzen 独服 Power | Ryzen 9 7950X3D | 128GB DDR5 | 4TB NVMe | 10TB | 1Gbps | $249/月 | [购买](https://billing.dedirock.com/index.php/store/the-ryzen-experience/amd-ryzen-dedicated-ny-power) |
+
+{% note info flat %}
+除了 VPS Star，其他都在 Buffalo。
+
+Storage Wars 是 RAID 5/6 的存储机，High-RAM 用 HDD，这两种都不适合大量随机读写。
+{% endnote %}
+
+链接：https://dedirock.com/
 
 ### Paradise Hosting
 
