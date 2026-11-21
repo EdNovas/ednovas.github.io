@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2026-11-20T05:42:23.762Z</updated>
+  <updated>2026-11-21T18:53:10.985Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -21,14 +21,17 @@
     <link href="https://ednovas.xyz/2026/11/19/blackfriday2026/"/>
     <id>https://ednovas.xyz/2026/11/19/blackfriday2026/</id>
     <published>2026-11-19T22:30:00.000Z</published>
-    <updated>2026-11-20T05:42:23.762Z</updated>
+    <updated>2026-11-21T18:53:10.985Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;整理时间 2026-11-19，价格和库存以商家页面为准。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;美国-VPS&quot;&gt;&lt;a href=&quot;#美国-VPS&quot; class=&quot;headerlink&quot; title=&quot;美国 VPS&quot;&gt;&lt;/a&gt;美国 VPS&lt;/h2&gt;&lt;h3 id=&quot;RackNerd&quot;&gt;&lt;a href=&quot;#RackNerd&quot; class=&quot;headerlink&quot; title=&quot;RackNerd&quot;&gt;&lt;/a&gt;RackNerd&lt;/h3&gt;&lt;p&gt;洛杉矶、达拉斯、纽约、阿姆斯特丹等多个机房，2026 黑五活动，续费同价。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;11-21 更新：新增 AlexHost、PawnHoster、HostDZire、SurferCloud、Namecheap、Streamline-Servers、Leapswitch Networks 和 BGP Network；RackNerd 加了虚拟主机、分销主机和独服，DediRock、D4 Networks、ServerHost 有新套餐。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;美国-VPS&quot;&gt;&lt;a href=&quot;#美国-VPS&quot; class=&quot;headerlink&quot; title=&quot;美国 VPS&quot;&gt;&lt;/a&gt;美国 VPS&lt;/h2&gt;&lt;h3 id=&quot;RackNerd&quot;&gt;&lt;a href=&quot;#RackNerd&quot; class=&quot;headerlink&quot; title=&quot;RackNerd&quot;&gt;&lt;/a&gt;RackNerd&lt;/h3&gt;&lt;p&gt;黑五 KVM VPS 续费同价，洛杉矶、圣何塞、西雅图、达拉斯、芝加哥、纽约、Ashburn、亚特兰大、多伦多、斯特拉斯堡、阿姆斯特丹、都柏林都有测试 IP，能选哪些机房看下单页。这次还新加了虚拟主机、分销主机和独服。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -93,11 +96,61 @@
 &lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=972&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;div class=&quot;note info flat&quot;&gt;&lt;p&gt;在 LowEndTalk 的活动帖下回复订单号，月流量可以翻倍。&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;链接：&lt;a href=&quot;https://www.racknerd.com/BlackFriday/&quot;&gt;https://www.racknerd.com/BlackFriday/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;D4-Networks&quot;&gt;&lt;a href=&quot;#D4-Networks&quot; class=&quot;headerlink&quot; title=&quot;D4 Networks&quot;&gt;&lt;/a&gt;D4 Networks&lt;/h3&gt;&lt;p&gt;纽约、达拉斯、阿姆斯特丹三地可选的 KVM 年付特惠，续费同价，免安装费。&lt;/p&gt;</summary>
+&lt;p&gt;虚拟主机和分销主机（都在达拉斯，AdminBolt 面板）：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;套餐&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;硬盘&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;流量&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;价格&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;购买&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;虚拟主机 35GB（5 个域名）&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;35GB SSD&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5TB&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;$9.49/年&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=977&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;虚拟主机 90GB（不限域名）&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;90GB SSD&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;15TB&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;$21.99/年&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=978&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;虚拟主机 200GB（不限域名）&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;200GB SSD&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;40TB&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;$49.88/年&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=979&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;分销 80GB（15 个账户）&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;80GB SSD&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5TB&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;$29.88/年&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=980&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;分销 115GB（25 个账户）&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;115GB SSD&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;20TB&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;$54.88/年&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=981&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;分销 185GB（50 个账户）&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;185GB SSD&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;30TB&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;$84.88/年&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=982&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;独服：&lt;/p&gt;</summary>
     
     
     
@@ -119,7 +172,7 @@
     <link href="https://ednovas.xyz/2026/11/19/mondoze-mac-mini-m6/"/>
     <id>https://ednovas.xyz/2026/11/19/mondoze-mac-mini-m6/</id>
     <published>2026-11-19T20:00:00.000Z</published>
-    <updated>2026-11-20T05:42:23.770Z</updated>
+    <updated>2026-11-21T18:53:10.992Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -158,7 +211,7 @@
     <link href="https://ednovas.xyz/2026/11/18/ai-writing-humanizer-vs-distill/"/>
     <id>https://ednovas.xyz/2026/11/18/ai-writing-humanizer-vs-distill/</id>
     <published>2026-11-18T16:00:00.000Z</published>
-    <updated>2026-11-20T05:42:23.761Z</updated>
+    <updated>2026-11-21T18:53:10.985Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -232,7 +285,7 @@
     <link href="https://ednovas.xyz/2026/10/30/mondoze-mac-mini/"/>
     <id>https://ednovas.xyz/2026/10/30/mondoze-mac-mini/</id>
     <published>2026-10-30T20:00:00.000Z</published>
-    <updated>2026-11-20T05:42:23.770Z</updated>
+    <updated>2026-11-21T18:53:10.992Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -313,7 +366,7 @@
     <link href="https://ednovas.xyz/2026/09/30/mondoze/"/>
     <id>https://ednovas.xyz/2026/09/30/mondoze/</id>
     <published>2026-09-30T21:00:00.000Z</published>
-    <updated>2026-11-20T05:42:23.770Z</updated>
+    <updated>2026-11-21T18:53:10.992Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -344,7 +397,7 @@
     <link href="https://ednovas.xyz/2026/06/12/casbay/"/>
     <id>https://ednovas.xyz/2026/06/12/casbay/</id>
     <published>2026-06-12T22:00:00.000Z</published>
-    <updated>2026-11-20T05:42:23.763Z</updated>
+    <updated>2026-11-21T18:53:10.985Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -402,7 +455,7 @@
     <link href="https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/"/>
     <id>https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/</id>
     <published>2026-03-10T16:19:00.000Z</published>
-    <updated>2026-11-20T05:42:23.763Z</updated>
+    <updated>2026-11-21T18:53:10.986Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -436,7 +489,7 @@
     <link href="https://ednovas.xyz/2026/03/05/prompt-engineering-guide/"/>
     <id>https://ednovas.xyz/2026/03/05/prompt-engineering-guide/</id>
     <published>2026-03-05T14:48:00.000Z</published>
-    <updated>2026-11-20T05:42:23.773Z</updated>
+    <updated>2026-11-21T18:53:10.994Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -472,7 +525,7 @@
     <link href="https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/"/>
     <id>https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/</id>
     <published>2026-03-05T14:39:00.000Z</published>
-    <updated>2026-11-20T05:42:23.764Z</updated>
+    <updated>2026-11-21T18:53:10.986Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -507,7 +560,7 @@
     <link href="https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/"/>
     <id>https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/</id>
     <published>2026-03-05T14:23:00.000Z</published>
-    <updated>2026-11-20T05:42:23.769Z</updated>
+    <updated>2026-11-21T18:53:10.990Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -541,7 +594,7 @@
     <link href="https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/"/>
     <id>https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/</id>
     <published>2026-03-05T13:29:00.000Z</published>
-    <updated>2026-11-20T05:42:23.765Z</updated>
+    <updated>2026-11-21T18:53:10.987Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -579,7 +632,7 @@
     <link href="https://ednovas.xyz/2026/02/13/blendhosting2026/"/>
     <id>https://ednovas.xyz/2026/02/13/blendhosting2026/</id>
     <published>2026-02-13T22:28:00.000Z</published>
-    <updated>2026-11-20T05:42:23.762Z</updated>
+    <updated>2026-11-21T18:53:10.985Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot;&gt;&lt;a href=&quot;#Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot; class=&quot;headerlink&quot; title=&quot;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&quot;&gt;&lt;/a&gt;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&lt;/h1&gt;&lt;p&gt;Blend Hosting 是一家成立于 2005 年的海外服务器与云计算服务商，在 VPS 与服务器领域拥有 20 年以上的持续运营记录。相比偏向短期试用型的平台，Blend Hosting 的整体定位更偏向长期稳定运行与可持续使用的应用场景，目标用户群体也更明确。&lt;/p&gt;
@@ -607,7 +660,7 @@
     <link href="https://ednovas.xyz/2026/01/27/servergigabit/"/>
     <id>https://ednovas.xyz/2026/01/27/servergigabit/</id>
     <published>2026-01-27T20:38:00.000Z</published>
-    <updated>2026-11-20T05:42:23.775Z</updated>
+    <updated>2026-11-21T18:53:10.996Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot;&gt;&lt;a href=&quot;#🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot; class=&quot;headerlink&quot; title=&quot;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&quot;&gt;&lt;/a&gt;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&lt;/h1&gt;&lt;p&gt;本款 &lt;strong&gt;Deluxe Dedicated Server (MY) v2&lt;/strong&gt; 部署于马来西亚数据中心，采用企业级硬件配置，专为高并发、高性能及长期稳定运行的业务场景而设计 [cite: 3]。&lt;/p&gt;
@@ -683,7 +736,7 @@
     <link href="https://ednovas.xyz/2025/12/31/vps-manager-pro/"/>
     <id>https://ednovas.xyz/2025/12/31/vps-manager-pro/</id>
     <published>2025-12-31T13:46:00.000Z</published>
-    <updated>2026-11-20T05:42:23.777Z</updated>
+    <updated>2026-11-21T18:53:10.998Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Sample-Website-演示网站&quot;&gt;&lt;a href=&quot;#Sample-Website-演示网站&quot; class=&quot;headerlink&quot; title=&quot;Sample Website 演示网站&quot;&gt;&lt;/a&gt;Sample Website 演示网站&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://vps.ednovas.tech/&quot;&gt;https://vps.ednovas.tech&lt;/a&gt;&lt;/p&gt;
@@ -718,7 +771,7 @@
     <link href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/"/>
     <id>https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</id>
     <published>2025-12-31T13:41:00.000Z</published>
-    <updated>2026-11-20T05:42:23.765Z</updated>
+    <updated>2026-11-21T18:53:10.987Z</updated>
     
     
     <summary type="html">&lt;p&gt;这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 &lt;a href=&quot;https://github.com/Minerchu/dongguaTV&quot;&gt;https://github.com/Minerchu/dongguaTV&lt;/a&gt; ，本作添加了许多功能。&lt;/p&gt;
@@ -759,7 +812,7 @@
     <link href="https://ednovas.xyz/2024/04/25/gigabit/"/>
     <id>https://ednovas.xyz/2024/04/25/gigabit/</id>
     <published>2024-04-25T22:28:00.000Z</published>
-    <updated>2026-11-20T05:42:23.768Z</updated>
+    <updated>2026-11-21T18:53:10.990Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。&lt;/p&gt;
@@ -875,7 +928,7 @@
     <link href="https://ednovas.xyz/2023/12/14/blendhosting/"/>
     <id>https://ednovas.xyz/2023/12/14/blendhosting/</id>
     <published>2023-12-14T22:28:00.000Z</published>
-    <updated>2026-11-20T05:42:23.762Z</updated>
+    <updated>2026-11-21T18:53:10.985Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Blend Hosting &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com&lt;/a&gt;&lt;/p&gt;
