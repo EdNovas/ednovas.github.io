@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>E视界 (DongguaTV Enhanced Edition) | EdNovas的小站</title><meta name="keywords" content="编程,软件,电影,电视剧,Vue,Node.js"><meta name="author" content="EdNovas"><meta name="copyright" content="EdNovas"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 https:&#x2F;&#x2F;github.com&#x2F;Minerchu&#x2F;dongguaTV ，本作添加了许多功能。 演示网站https:&#x2F;&#x2F;ednovas-test.vercel.app （不包含任何数据）        ✨ 核心特性 (Core Features)1. 🎬 双引擎数据驱动 **TMDb (T">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>E视界 (DongguaTV Enhanced Edition) | EdNovas的小站</title><meta name="keywords" content="编程,软件,电影,电视剧,Vue,Node.js"><meta name="author" content="EdNovas"><meta name="copyright" content="EdNovas"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="E视界影视聚合播放器：TMDb 提供资料，多个 Maccms 采集站提供播放源。Node.js + Express + Vue 3。 网站https:&#x2F;&#x2F;e.show          最早从 Minerchu&#x2F;dongguaTV（冬瓜TV）起步，现已整体重写，主要增加：两级去广告、按广告情况分组的线路、跳过片头片尾、弹幕与评论、刷短剧、直播、离线缓存、多用户同步、站长后台、TV 模式与 Andr">
 <meta property="og:type" content="article">
 <meta property="og:title" content="E视界 (DongguaTV Enhanced Edition)">
 <meta property="og:url" content="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/index.html">
 <meta property="og:site_name" content="EdNovas的小站">
-<meta property="og:description" content="这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 https:&#x2F;&#x2F;github.com&#x2F;Minerchu&#x2F;dongguaTV ，本作添加了许多功能。 演示网站https:&#x2F;&#x2F;ednovas-test.vercel.app （不包含任何数据）        ✨ 核心特性 (Core Features)1. 🎬 双引擎数据驱动 **TMDb (T">
+<meta property="og:description" content="E视界影视聚合播放器：TMDb 提供资料，多个 Maccms 采集站提供播放源。Node.js + Express + Vue 3。 网站https:&#x2F;&#x2F;e.show          最早从 Minerchu&#x2F;dongguaTV（冬瓜TV）起步，现已整体重写，主要增加：两级去广告、按广告情况分组的线路、跳过片头片尾、弹幕与评论、刷短剧、直播、离线缓存、多用户同步、站长后台、TV 模式与 Andr">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950">
 <meta property="article:published_time" content="2025-12-31T13:41:00.000Z">
-<meta property="article:modified_time" content="2026-11-27T04:58:40.213Z">
+<meta property="article:modified_time" content="2026-11-27T22:09:49.753Z">
 <meta property="article:author" content="EdNovas">
 <meta property="article:tag" content="编程">
 <meta property="article:tag" content="软件">
@@ -66,7 +66,7 @@ gtag('config', 'UA-185849872-1');
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2026-11-27 04:58:40'
+  postUpdate: '2026-11-27 22:09:49'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -158,695 +158,1038 @@ gtag('config', 'UA-185849872-1');
       document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
     }
     })(window)</script><link rel="stylesheet" href="/css/scrollbar.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_2440505_a5eo7su26z8.css"><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="EdNovas的小站" type="application/atom+xml">
-</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/icon.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">312</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">416</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">11</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签 | Tags</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于我 | About</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-users"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">EdNovas的小站</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签 | Tags</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于我 | About</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-users"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">E视界 (DongguaTV Enhanced Edition)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-12-31T13:41:00.000Z" title="Created 2025-12-31 13:41:00">2025-12-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2026-11-27T04:58:40.213Z" title="Updated 2026-11-27 04:58:40">2026-11-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BD%91%E7%AB%99/">网站</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">6.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>23min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 <a target="_blank" rel="noopener" href="https://github.com/Minerchu/dongguaTV">https://github.com/Minerchu/dongguaTV</a> ，本作添加了许多功能。</p>
-<h2 id="演示网站"><a href="#演示网站" class="headerlink" title="演示网站"></a>演示网站</h2><p><a target="_blank" rel="noopener" href="https://ednovas-test.vercel.app/">https://ednovas-test.vercel.app</a> （不包含任何数据）</p>
-<img alt="image" src="https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950" />
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/icon.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">312</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">416</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">11</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签 | Tags</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于我 | About</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-users"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">EdNovas的小站</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://navigate.ednovas.xyz"><i class="fa-fw fas fa-home"></i><span> 主页 | Home</span></a></div><div class="menus_item"><a class="site-page" href="/random.html"><i class="fa-fw fas fa-random"></i><span> 随机 | Random</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录 | Categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签 | Tags</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 回忆 | Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于我 | About</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-users"></i><span> 朋友圈 | Link</span></a></div><div class="menus_item"><a class="site-page" href="/%E6%94%AF%E6%8C%81/"><i class="fa-fw fas fa-heart"></i><span> 打赏支持 | Support</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">E视界 (DongguaTV Enhanced Edition)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-12-31T13:41:00.000Z" title="Created 2025-12-31 13:41:00">2025-12-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2026-11-27T22:09:49.753Z" title="Updated 2026-11-27 22:09:49">2026-11-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BD%91%E7%AB%99/">网站</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">7.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>24min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="E视界"><a href="#E视界" class="headerlink" title="E视界"></a>E视界</h1><p>影视聚合播放器：TMDb 提供资料，多个 Maccms 采集站提供播放源。Node.js + Express + Vue 3。</p>
+<h1 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h1><p><a target="_blank" rel="noopener" href="https://e.show/">https://e.show</a></p>
+<video controls playsinline preload="metadata" poster="https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950" style="width:100%;max-width:100%;">
+  <source src="https://github.com/user-attachments/assets/1a830e18-a358-4ad3-8b49-da554b206c3b" type="video/mp4">
+</video>
 
-<img alt="image" src="https://github.com/user-attachments/assets/d03543f5-34a4-414b-a131-62eda0af21b2" />
 
-<img alt="image" src="https://github.com/user-attachments/assets/e8bd4e14-dbd2-4d49-a1fc-7979c1ca22a4" />
+
+
+<p>最早从 <a target="_blank" rel="noopener" href="https://github.com/Minerchu/dongguaTV">Minerchu/dongguaTV</a>（冬瓜TV）起步，现已整体重写，主要增加：两级去广告、按广告情况分组的线路、跳过片头片尾、弹幕与评论、刷短剧、直播、离线缓存、多用户同步、站长后台、TV 模式与 Android App。</p>
+<img width="2547" height="1226" alt="image" src="https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950" />
+
+<img width="2547" height="1227" alt="image" src="https://github.com/user-attachments/assets/d03543f5-34a4-414b-a131-62eda0af21b2" />
+
+<img width="2547" height="1229" alt="image" src="https://github.com/user-attachments/assets/e8bd4e14-dbd2-4d49-a1fc-7979c1ca22a4" />
 
 <hr>
-<h2 id="✨-核心特性-Core-Features"><a href="#✨-核心特性-Core-Features" class="headerlink" title="✨ 核心特性 (Core Features)"></a>✨ 核心特性 (Core Features)</h2><h3 id="1-🎬-双引擎数据驱动"><a href="#1-🎬-双引擎数据驱动" class="headerlink" title="1. 🎬 双引擎数据驱动"></a>1. 🎬 双引擎数据驱动</h3><ul>
-<li>**TMDb (The Movie Database)**：提供高质量的电影/剧集元数据（海报、背景图、评分、简介、演职员表）。</li>
-<li><strong>CMS 聚合源 (Maccms)**：可集成多个自定义第三方资源站 API，自动进行</strong>全网测速**，智能过滤失效源，确保播放流畅。</li>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ol>
+<li><a href="#%E5%8A%9F%E8%83%BD%E4%B8%80%E8%A7%88">功能一览</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B">快速开始</a>：<a href="#1-%E5%87%86%E5%A4%87">准备</a> · <a href="#2-%E9%83%A8%E7%BD%B2">部署</a> · <a href="#3-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">环境变量</a></li>
+<li><a href="#%E5%8F%AF%E9%80%89%E7%BB%84%E4%BB%B6">可选组件</a>：<a href="#cors-%E4%BB%A3%E7%90%86">CORS 代理</a> · <a href="#tmdb-%E5%8F%8D%E4%BB%A3">TMDB 反代</a> · <a href="#%E5%BC%B9%E5%B9%95%E6%9C%8D%E5%8A%A1-danmu_api">弹幕服务</a></li>
+<li><a href="#%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E">功能说明</a><ul>
+<li>找片：<a href="#%E6%90%9C%E7%B4%A2%E4%B8%8E%E9%A6%96%E9%A1%B5">搜索与首页</a> · <a href="#%E7%9F%AD%E5%89%A7">短剧</a></li>
+<li>播放：<a href="#%E7%BA%BF%E8%B7%AF%E5%88%86%E7%BB%84%E4%B8%8E%E8%87%AA%E5%8A%A8%E9%80%89%E6%BA%90">线路</a> · <a href="#%E5%8E%BB%E5%B9%BF%E5%91%8A">去广告</a> · <a href="#%E6%92%AD%E6%94%BE%E5%99%A8">播放器</a> · <a href="#%E8%B7%B3%E8%BF%87%E7%89%87%E5%A4%B4%E7%89%87%E5%B0%BE">跳过片头片尾</a> · <a href="#%E7%A6%BB%E7%BA%BF%E7%BC%93%E5%AD%98">离线缓存</a></li>
+<li>互动：<a href="#%E5%BC%B9%E5%B9%95">弹幕</a> · <a href="#%E8%AF%84%E8%AE%BA%E4%B8%8E%E7%94%A8%E6%88%B7%E5%BC%B9%E5%B9%95">评论</a> · <a href="#%E6%94%B6%E8%97%8F%E7%89%87%E5%8D%95%E4%B8%8E%E6%8E%A8%E9%80%81">收藏与片单</a> · <a href="#%E5%88%86%E4%BA%AB%E4%B8%8E-seo">分享</a></li>
+<li>其它：<a href="#%E7%9B%B4%E6%92%AD-iptv">直播</a> · <a href="#%E8%B4%A6%E5%8F%B7%E4%B8%8E%E5%90%8C%E6%AD%A5">账号与同步</a> · <a href="#%E7%AB%99%E9%95%BF%E5%90%8E%E5%8F%B0">站长后台</a> · <a href="#%E5%A4%96%E8%A7%82tv-%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%81%8F%E5%A5%BD%E8%AE%BE%E7%BD%AE">外观与 TV 模式</a></li>
 </ul>
-<h3 id="2-🔍-智能搜索与聚合"><a href="#2-🔍-智能搜索与聚合" class="headerlink" title="2. 🔍 智能搜索与聚合"></a>2. 🔍 智能搜索与聚合</h3><ul>
-<li><strong>实时流式搜索 (SSE)**：采用 Server-Sent Events 技术，搜索结果</strong>边搜边显**，即时反馈，无需等待所有源响应。</li>
-<li><strong>智能关键词匹配</strong>：自动生成搜索变体（去除副标题、季数后缀等），同时搜索中英文名，大幅提高命中率。</li>
-<li><strong>自动英中翻译</strong>：检测到英文搜索词时，自动通过 TMDB 获取中文译名并一起搜索（如搜索 “Stranger Things” 会自动添加 “怪奇物语”），无需外部翻译 API。</li>
-<li><strong>自动分组与实时合并</strong>：同一影片的不同线路自动聚合，新搜索到的源实时合并到已有卡片，右上角源数量实时跳动。</li>
-<li><strong>SQLite 永久缓存</strong>：内置高性能 SQLite 数据库缓存，支持无限存储，读写速度极快，热搜词秒级响应。</li>
-</ul>
-<h3 id="3-📺-沉浸式播放体验"><a href="#3-📺-沉浸式播放体验" class="headerlink" title="3. 📺 沉浸式播放体验"></a>3. 📺 沉浸式播放体验</h3><ul>
-<li><strong>影院模式</strong>：全新设计的播放详情页，采用暗色系沉浸布局，支持剧集网格选择。</li>
-<li><strong>智能线路测速</strong>：支持用户端直连测速和服务器代理测速，真实反映视频可用性。</li>
-<li><strong>自动故障转移</strong>：播放失败时自动切换到下一个可用线路，无需手动操作。</li>
-<li><strong>投屏支持</strong>：集成 DLNA/AirPlay 本地投屏功能（需浏览器支持）。</li>
-</ul>
-<h3 id="4-🌏-大陆用户优化"><a href="#4-🌏-大陆用户优化" class="headerlink" title="4. 🌏 大陆用户优化"></a>4. 🌏 大陆用户优化</h3><ul>
-<li><strong>智能 IP 双重检测</strong>：采用 <strong>Cloudflare Trace + ipapi.co</strong> 双重检测机制，准确率高且无 API 速率限制，自动切换到 TMDB 反代模式。</li>
-<li><strong>本地资源优先</strong>：核心依赖库（Vue, Bootstrap, DPlayer 等）均本地化部署，彻底解决 CDN 劫持或加载缓慢问题，秒开无压力。</li>
-<li><strong>一键安装脚本</strong>：支持交互式配置 API Key、反代地址、运行端口。</li>
-</ul>
-<h3 id="5-📱-多端支持"><a href="#5-📱-多端支持" class="headerlink" title="5. 📱 多端支持"></a>5. 📱 多端支持</h3><ul>
-<li><strong>Android TV / 盒子</strong>：提供专属 APK 安装包，完美适配电视遥控器操作，支持 Android TV 桌面启动 (Leanback Launcher)。</li>
-<li><strong>移动端 App</strong>：基于现代 Web 技术封装，支持**沉浸式状态栏 (Immersive Status Bar)**，顶部无黑边，内容自动适配刘海屏，体验原生级流畅。</li>
-<li><strong>PWA 支持</strong>：支持添加到主屏幕，即点即用。</li>
-</ul>
-<h3 id="6-🔒-安全与访问控制"><a href="#6-🔒-安全与访问控制" class="headerlink" title="6. 🔒 安全与访问控制"></a>6. 🔒 安全与访问控制</h3><ul>
-<li><strong>全局访问密码</strong>：支持设置全局访问密码，且支持<strong>记住登录状态长达 1 年</strong>，既安全又便捷。</li>
-<li><strong>远程配置加载</strong>：支持从远程 URL 加载 <code>db.json</code> 配置文件，方便多站点统一管理。</li>
-</ul>
+</li>
+<li><a href="#android-app">Android App</a></li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E4%B8%8E%E5%A4%87%E4%BB%BD">数据与备份</a></li>
+<li><a href="#%E5%BC%80%E5%8F%91%E4%B8%8E%E6%B5%8B%E8%AF%95">开发与测试</a></li>
+<li><a href="#%E8%87%B4%E8%B0%A2">致谢与免责声明</a></li>
+</ol>
 <hr>
-<h2 id="🎨-界面与交互升级-UI-UX-Upgrades"><a href="#🎨-界面与交互升级-UI-UX-Upgrades" class="headerlink" title="🎨 界面与交互升级 (UI/UX Upgrades)"></a>🎨 界面与交互升级 (UI/UX Upgrades)</h2><p>相比原版，我们在 UI/UX 上做了颠覆性的改进：</p>
+<h2 id="功能一览"><a href="#功能一览" class="headerlink" title="功能一览"></a>功能一览</h2><p><strong>找片</strong></p>
+<ul>
+<li>TMDb 海报、评分、简介；多个采集站聚合，边搜边出结果</li>
+<li>关键词变体、英文名转中文名；同名不同作品自动拆卡</li>
+<li>语音搜索、AI 找片（描述剧情、演员、台词或截图）</li>
+<li>内置 4 个番剧源；关了搜索的采集站走本地片名索引</li>
+</ul>
+<p><strong>首页</strong></p>
+<ul>
+<li>趋势轮播、20 个榜单、继续观看、我的收藏、为你推荐、大家都在看</li>
+<li>追剧日历（一周更新表）、自选分类行、片单</li>
+</ul>
+<p><strong>短剧</strong></p>
+<ul>
+<li>竖屏刷：上下滑换部，按住两侧倍速，长按中间进播放器页</li>
+<li>「短剧」分类：按题材、热度浏览全部短剧</li>
+</ul>
+<p><strong>播放</strong></p>
+<ul>
+<li>线路按「有没有广告」分组，实测分辨率角标，失败自动换线</li>
+<li>两级去广告：Worker 边缘剔除 + 播放器开播前剪掉插播</li>
+<li>跳过片头片尾（自动学习、全站共享）、进度条缩略图</li>
+<li>倍速、进度记忆、自动下一集、画中画、投屏、手势、离线缓存</li>
+</ul>
+<p><strong>互动</strong></p>
+<ul>
+<li>弹幕（平台弹幕 + 用户弹幕）、评论区</li>
+<li>收藏追剧、更新提醒、推送通知、片单、截帧分享</li>
+</ul>
+<p><strong>其它</strong></p>
+<ul>
+<li>直播：约 1800 个频道，语言 × 种类筛选</li>
+<li>账号：多密码多用户、扫码登录、跨设备同步、求片</li>
+<li>站长后台：观看统计、用户、求片、评论、AI 模型</li>
+<li>多端：PWA、Android App、TV 模式；5 种主题风格 × 明暗</li>
+</ul>
+<blockquote>
+<p>部分功能需要服务器和 SQLite，<strong>Vercel 部署不支持</strong>，见 <a href="#vercel">Vercel 的限制</a>。</p>
+</blockquote>
+<hr>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="1-准备"><a href="#1-准备" class="headerlink" title="1. 准备"></a>1. 准备</h3><p><strong>TMDb API Key（必需）</strong></p>
+<p>注册 <a target="_blank" rel="noopener" href="https://www.themoviedb.org/signup">TMDb</a> → <a target="_blank" rel="noopener" href="https://www.themoviedb.org/settings/api">API 设置</a> 申请（类型选 Developer）→ 复制 **API Key (v3 auth)**。</p>
+<p><strong>采集源（必需）</strong></p>
+<p>本项目<strong>不内置</strong>任何资源接口。自备合法的 Maccms V10 JSON 接口，写进 <code>db.json</code>（首次运行会由 <code>db.template.json</code> 生成占位）：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;sites&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span> <span class="attr">&quot;key&quot;</span><span class="punctuation">:</span> <span class="string">&quot;site1&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;站点名称&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;api&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://example.com/api.php/provide/vod/&quot;</span> <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>停用站点只能删除（<code>active</code> 字段不生效）。</li>
+<li><code>ad_tier</code> / <code>profile</code>：覆盖线路分组，见<a href="#%E7%BA%BF%E8%B7%AF%E5%88%86%E7%BB%84%E4%B8%8E%E8%87%AA%E5%8A%A8%E9%80%89%E6%BA%90">线路</a>。</li>
+<li><code>search: false</code> / <code>true</code>：强制走 / 不走片名索引。</li>
+<li><code>shorts_types</code>：短剧放在认不出来的分类里时手动指定，如 <code>&quot;96-116&quot;</code>（追加）、<code>&quot;=24,50&quot;</code>（只用这些）。</li>
+<li>远程加载：<code>REMOTE_DB_URL</code>（5 分钟缓存，失败回退本地）；Vercel 用 <code>SITES_JSON</code>。</li>
+</ul>
+<h3 id="2-部署"><a href="#2-部署" class="headerlink" title="2. 部署"></a>2. 部署</h3><p><strong>要求</strong></p>
+<ul>
+<li>Node.js <strong>22 或 24</strong>（18、20 已停止维护）。</li>
+<li>要用同步、求片、评论、短剧、后台等功能，设 **<code>CACHE_TYPE=sqlite</code>**。</li>
+</ul>
+<h4 id="Docker（推荐）"><a href="#Docker（推荐）" class="headerlink" title="Docker（推荐）"></a>Docker（推荐）</h4><p>镜像 <code>ednovas/dongguatv:latest</code>（或 <code>ghcr.io/ednovas/dongguatv:latest</code>），支持 amd64 / arm64 / armv7。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 先建好文件，否则 Docker 会把它们当目录挂载（报 EISDIR）</span></span><br><span class="line"><span class="built_in">touch</span> cache.db &amp;&amp; <span class="built_in">echo</span> <span class="string">&#x27;&#123;&quot;sites&quot;:[]&#125;&#x27;</span> &gt; db.json &amp;&amp; <span class="built_in">mkdir</span> -p cache/images</span><br><span class="line"></span><br><span class="line">docker run -d --name donggua-tv --restart unless-stopped -p 3000:3000 \</span><br><span class="line">  -e TMDB_API_KEY=<span class="string">&quot;your_api_key&quot;</span> \</span><br><span class="line">  -e CACHE_TYPE=sqlite \</span><br><span class="line">  -e ACCESS_PASSWORD=<span class="string">&quot;main_pw,user1_pw,user2_pw&quot;</span> \</span><br><span class="line">  -e ADMIN_TOKEN=<span class="string">&quot;a_long_random_string&quot;</span> \</span><br><span class="line">  -e CORS_PROXY_URL=<span class="string">&quot;https://cors-proxy.your-name.workers.dev&quot;</span> \</span><br><span class="line">  -v $(<span class="built_in">pwd</span>)/db.json:/app/db.json \</span><br><span class="line">  -v $(<span class="built_in">pwd</span>)/cache.db:/app/cache.db \</span><br><span class="line">  -v $(<span class="built_in">pwd</span>)/cache/images:/app/public/cache/images \</span><br><span class="line">  ednovas/dongguatv:latest</span><br></pre></td></tr></table></figure>
+
+<details>
+<summary>Docker Compose / 本地构建</summary>
+
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">donggua-tv:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">ednovas/dongguatv:latest</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">donggua-tv</span></span><br><span class="line">    <span class="attr">ports:</span> [<span class="string">&quot;3000:3000&quot;</span>]</span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">TMDB_API_KEY=your_api_key</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">CACHE_TYPE=sqlite</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ACCESS_PASSWORD=main_pw,user1_pw</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ADMIN_TOKEN=a_long_random_string</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">CORS_PROXY_URL=https://cors-proxy.your-name.workers.dev</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./db.json:/app/db.json</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./cache.db:/app/cache.db</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./cache/images:/app/public/cache/images</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">unless-stopped</span></span><br></pre></td></tr></table></figure>
+
+<p>本地构建：<code>docker build -t donggua-tv .</code>。<code>.dockerignore</code> 不排除 <code>db.json</code>、<code>cache.db</code>，构建前请移走，免得打进镜像。</p>
+</details>
+
+<ul>
+<li>**重建容器前先 <code>docker stop</code>**：SQLite 用 WAL 模式，最近的写入可能还在 <code>cache.db-wal</code> 里。</li>
+<li><strong>更新</strong>：<code>docker pull ednovas/dongguatv:latest</code> → <code>docker stop donggua-tv &amp;&amp; docker rm donggua-tv</code> → 重新创建。Compose：<code>docker compose pull &amp;&amp; docker compose up -d</code>。</li>
+</ul>
+<h4 id="一键脚本"><a href="#一键脚本" class="headerlink" title="一键脚本"></a>一键脚本</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -fsSL https://raw.githubusercontent.com/ednovas/e-show/main/install.sh | bash</span><br></pre></td></tr></table></figure>
+
+<p>脚本会询问 TMDb Key、反代、端口、缓存类型、访问密码、安装目录，用 PM2 启动（进程名 <code>donggua-tv</code>）。CORS 代理、弹幕、站长令牌之后在 <code>.env</code> 里补。</p>
+<h4 id="手动-PM2-宝塔"><a href="#手动-PM2-宝塔" class="headerlink" title="手动 / PM2 / 宝塔"></a>手动 / PM2 / 宝塔</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/ednovas/e-show.git &amp;&amp; <span class="built_in">cd</span> e-show</span><br><span class="line">npm install                          <span class="comment"># 无预编译包时需 build-essential python3</span></span><br><span class="line"><span class="built_in">cp</span> .env.example .<span class="built_in">env</span> &amp;&amp; nano .<span class="built_in">env</span>    <span class="comment"># 至少填 TMDB_API_KEY</span></span><br><span class="line">node server.js                       <span class="comment"># 或 pm2 start server.js --name donggua-tv</span></span><br></pre></td></tr></table></figure>
+
+<p>宝塔：装 Node.js 版本管理器（22 或 24）→ 网站 → Node 项目 → 添加，启动文件 <code>server.js</code>、端口 <code>3000</code>，配好 <code>.env</code> 后重启。</p>
+<h4 id="Vercel"><a href="#Vercel" class="headerlink" title="Vercel"></a>Vercel</h4><p><a target="_blank" rel="noopener" href="https://vercel.com/new/clone?repository-url=https://github.com/ednovas/e-show&env=TMDB_API_KEY,SITES_JSON,REMOTE_DB_URL,ACCESS_PASSWORD,TMDB_PROXY_URL&envDescription=TMDB_API_KEY%20is%20required.%20Use%20SITES_JSON%20(Base64)%20or%20REMOTE_DB_URL%20for%20site%20config.&envLink=https://github.com/ednovas/e-show%23vercel"><img src="https://vercel.com/button" alt="Deploy with Vercel"></a></p>
+<p>填 <code>TMDB_API_KEY</code>，以及 <code>SITES_JSON</code>（db.json 内容，JSON 或 Base64）或 <code>REMOTE_DB_URL</code>。改变量后要 <strong>Redeploy</strong>。</p>
+<p><a id="vercel"></a><strong>Vercel 的限制</strong>（无状态，只跑 <code>api/index.js</code>）：</p>
 <table>
 <thead>
 <tr>
-<th align="left">功能区域</th>
-<th align="left">原版体验</th>
-<th align="left"><strong>MAX 版体验</strong></th>
+<th>缺少</th>
+<th>原因</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><strong>首页视觉</strong></td>
-<td align="left">简单的列表罗列</td>
-<td align="left"><strong>Netflix 风格 Hero 轮播</strong>：全屏动态背景、高斯模糊遮罩、Top 10 排名特效。</td>
+<td>同步、求片、评论、站长后台、观看统计</td>
+<td>没有 SQLite</td>
 </tr>
 <tr>
-<td align="left"><strong>导航栏</strong></td>
-<td align="left">固定顶部</td>
-<td align="left"><strong>智能融合导航</strong>：初始透明，滚动变黑；分类点击自动平滑滚动定位。</td>
+<td>边缘去广告；iOS 开播前剪插播退化为播放中跳过</td>
+<td><code>CORS_PROXY_URL</code> 不生效</td>
 </tr>
 <tr>
-<td align="left"><strong>搜索框</strong></td>
-<td align="left">顶部固定位置</td>
-<td align="left"><strong>动态交互搜索栏</strong>：初始占满全屏，下滑自动吸顶并缩小为”胶囊”悬浮。</td>
+<td>刷短剧、追剧日历、片名索引、收藏更新检查</td>
+<td>没有后台定时任务</td>
 </tr>
 <tr>
-<td align="left"><strong>榜单浏览</strong></td>
-<td align="left">有限的静态列表</td>
-<td align="left">**无限滚动 (Infinite Scroll)**：20+ 个细分榜单，支持向右无限加载。</td>
+<td>直播、片头标记共享、分享卡片、SEO 页、sitemap</td>
+<td>未移植</td>
 </tr>
 <tr>
-<td align="left"><strong>搜索体验</strong></td>
-<td align="left">需等待 loading 结束</td>
-<td align="left">**实时流式加载 (SSE)**：结果即时呈现，源数量实时跳动增加，拒绝枯燥等待。</td>
-</tr>
-<tr>
-<td align="left"><strong>线路选择</strong></td>
-<td align="left">单一延迟显示</td>
-<td align="left"><strong>双模式测速</strong>：区分”直连”(用户端)和”代理”(服务器端) 测速，更准确。</td>
-</tr>
-<tr>
-<td align="left"><strong>播放失败</strong></td>
-<td align="left">需手动切换</td>
-<td align="left"><strong>自动故障转移</strong>：检测播放失败后自动切换到下一可用线路。</td>
-</tr>
-<tr>
-<td align="left"><strong>启动体验</strong></td>
-<td align="left">页面分块加载</td>
-<td align="left"><strong>优雅启动屏</strong>：新增应用级启动画面，资源加载完成后丝滑过渡，拒绝白屏。</td>
-</tr>
-<tr>
-<td align="left"><strong>分类系统</strong></td>
-<td align="left">仅支持搜索跳转</td>
-<td align="left"><strong>全直达榜单</strong>：历史、冒险、综艺等分类均拥有独立的数据流榜单。</td>
+<td>关键词变体、英文转中文、搜索缓存</td>
+<td>未移植</td>
 </tr>
 </tbody></table>
-<hr>
-<h2 id="🛠️-技术栈-Tech-Stack"><a href="#🛠️-技术栈-Tech-Stack" class="headerlink" title="🛠️ 技术栈 (Tech Stack)"></a>🛠️ 技术栈 (Tech Stack)</h2><table>
-<thead>
-<tr>
-<th>类别</th>
-<th>技术</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Frontend</strong></td>
-<td>Vue.js 3 (CDN), Bootstrap 5, FontAwesome 6, DPlayer, HLS.js</td>
-</tr>
-<tr>
-<td><strong>Backend</strong></td>
-<td>Node.js, Express, Axios</td>
-</tr>
-<tr>
-<td><strong>Data Sources</strong></td>
-<td>TMDb API v3, 48+ Maccms CMS APIs</td>
-</tr>
-<tr>
-<td><strong>Deployment</strong></td>
-<td>Docker, Vercel, PM2, 宝塔面板</td>
-</tr>
-<tr>
-<td><strong>Cache</strong></td>
-<td>Flexible: SQLite (Recommended), JSON File, or Memory</td>
-</tr>
-<tr>
-<td><strong>Proxy</strong></td>
-<td>Cloudflare Workers (for China users)</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="🔧-前置准备"><a href="#🔧-前置准备" class="headerlink" title="🔧 前置准备"></a>🔧 前置准备</h2><h3 id="1-⚠️-配置采集源-重要"><a href="#1-⚠️-配置采集源-重要" class="headerlink" title="1. ⚠️ 配置采集源 (重要)"></a>1. ⚠️ 配置采集源 (重要)</h3><p>本项目<strong>不包含</strong>任何内置的影视资源接口。在运行项目前（或运行后），您必须自行添加合法的 Maccms V10 (JSON格式) 接口才能搜索和播放视频。</p>
-<p><strong>配置方法：</strong><br>所有的采集源配置均存储在根目录的 <code>db.json</code> 文件中。</p>
-<ol>
-<li>项目初次运行时会自动生成 <code>db.json</code>（如果未生成，可以手动创建或使用模板）。</li>
-<li>打开 <code>db.json</code>，找到 <code>sites</code> 数组。</li>
-<li>填入您找到的采集接口信息：</li>
-</ol>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;sites&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;key&quot;</span><span class="punctuation">:</span> <span class="string">&quot;unique_key1&quot;</span><span class="punctuation">,</span>       <span class="comment">// 唯一标识符（英文字母，不可重复）</span></span><br><span class="line">      <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;站点名称1&quot;</span><span class="punctuation">,</span>         <span class="comment">// 显示在界面的名称</span></span><br><span class="line">      <span class="attr">&quot;api&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://...&quot;</span><span class="punctuation">,</span>      <span class="comment">// Maccms V10/JSON 接口地址</span></span><br><span class="line">      <span class="attr">&quot;active&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span>             <span class="comment">// 是否启用 (true/false)</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;key&quot;</span><span class="punctuation">:</span> <span class="string">&quot;unique_key2&quot;</span><span class="punctuation">,</span>       <span class="comment">// 唯一标识符（英文字母，不可重复）</span></span><br><span class="line">      <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;站点名称2&quot;</span><span class="punctuation">,</span>         <span class="comment">// 显示在界面的名称</span></span><br><span class="line">      <span class="attr">&quot;api&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://...&quot;</span><span class="punctuation">,</span>      <span class="comment">// Maccms V10/JSON 接口地址</span></span><br><span class="line">      <span class="attr">&quot;active&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span>             <span class="comment">// 是否启用 (true/false)</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>保存文件并<strong>重启服务</strong>。</li>
-</ol>
-<h3 id="2-获取-TMDb-API-Key-必需"><a href="#2-获取-TMDb-API-Key-必需" class="headerlink" title="2. 获取 TMDb API Key (必需)"></a>2. 获取 TMDb API Key (必需)</h3><p>本项目依赖 <strong>The Movie Database (TMDb)</strong> 提供影视元数据。</p>
-<ol>
-<li>注册账户：访问 <a target="_blank" rel="noopener" href="https://www.themoviedb.org/signup">Create Account</a> 注册并登录。</li>
-<li>申请 API：访问 <a target="_blank" rel="noopener" href="https://www.themoviedb.org/settings/api">API Settings</a>，点击 <strong>“Create”</strong> 或 <strong>“click here”</strong> 申请。</li>
-<li>填写信息：应用类型选择 **”Developer”**，简单填写用途（如 “Personal learning project”）。</li>
-<li>获取 Key：申请通过后，复制 <strong>“API Key (v3 auth)”</strong> 备用。</li>
-</ol>
-<h3 id="3-大陆用户：部署-TMDB-反代-可选"><a href="#3-大陆用户：部署-TMDB-反代-可选" class="headerlink" title="3. 大陆用户：部署 TMDB 反代 (可选)"></a>3. 大陆用户：部署 TMDB 反代 (可选)</h3><p>由于 TMDB 在大陆无法直接访问，需要配置反向代理以正常显示海报和影视信息。</p>
-<h4 id="方案一：部署-Cloudflare-Workers-反代-推荐"><a href="#方案一：部署-Cloudflare-Workers-反代-推荐" class="headerlink" title="方案一：部署 Cloudflare Workers 反代 (推荐)"></a>方案一：部署 Cloudflare Workers 反代 (推荐)</h4><ol>
-<li><p><strong>登录 Cloudflare</strong></p>
-<ul>
-<li>访问 <a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">Cloudflare Dashboard</a></li>
-<li>选择左侧菜单 <strong>“Workers &amp; Pages”</strong> → <strong>“Create application”</strong> → <strong>“Create Worker”</strong></li>
-</ul>
-</li>
-<li><p><strong>部署反代代码</strong></p>
-<ul>
-<li>给 Worker 取名（如 <code>tmdb-proxy</code>），点击 <strong>Deploy</strong></li>
-<li>部署后点击 <strong>“Edit code”</strong></li>
-<li>复制 <code>cloudflare-tmdb-proxy.js</code> 文件内容，粘贴到编辑器</li>
-<li>点击 <strong>“Save and Deploy”</strong></li>
-</ul>
-</li>
-<li><p><strong>获取 Worker URL</strong><br>部署成功后获得 URL，如：<code>https://tmdb-proxy.your-name.workers.dev</code></p>
-</li>
-<li><p><strong>稍后在安装时配置</strong><br>在 <code>.env</code> 文件中添加：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">TMDB_PROXY_URL=https://tmdb-proxy.your-name.workers.dev</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="4-资源站-CORS-代理-可选-推荐"><a href="#4-资源站-CORS-代理-可选-推荐" class="headerlink" title="4. 资源站 CORS 代理 (可选/推荐)"></a>4. 资源站 CORS 代理 (可选/推荐)</h3><p>当服务器或用户无法直接访问某些资源站时，系统会自动通过 CORS 代理中转请求。</p>
-<h4 id="支持的场景"><a href="#支持的场景" class="headerlink" title="支持的场景"></a>支持的场景</h4><table>
-<thead>
-<tr>
-<th>场景</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>服务器端搜索</strong></td>
-<td>服务器无法访问资源站 API 时，自动通过代理搜索</td>
-</tr>
-<tr>
-<td><strong>服务器端获取详情</strong></td>
-<td>同上，获取影片详情时自动回退到代理</td>
-</tr>
-<tr>
-<td><strong>用户端视频播放</strong></td>
-<td>用户浏览器无法访问视频流时，自动代理播放</td>
-</tr>
-<tr>
-<td><strong>慢速线路优化</strong></td>
-<td>直连延迟 &gt;1500ms 时，自动尝试代理，选择更快的方式</td>
-</tr>
-</tbody></table>
-<h4 id="核心功能"><a href="#核心功能" class="headerlink" title="核心功能"></a>核心功能</h4><ul>
-<li>✅ <strong>智能学习</strong>：自动记住需要代理的站点（24小时有效期）</li>
-<li>✅ <strong>慢速检测</strong>：直连延迟超过 1.5 秒时，自动测试代理是否更快</li>
-<li>✅ <strong>m3u8 重写</strong>：自动重写 m3u8 文件中的 ts 分片 URL，确保视频流完整代理</li>
-<li>✅ <strong>防盗链绕过</strong>：自动设置正确的 Referer 和 Origin 头</li>
-</ul>
-<h4 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h4><p><strong>服务器端（搜索/详情）：</strong></p>
-<ol>
-<li>服务器先尝试直接访问资源站 API</li>
-<li>如果直连失败或延迟过高，自动通过 CORS 代理重试</li>
-<li>成功后会”记住”该站点需要代理，后续请求直接使用代理</li>
-</ol>
-<p><strong>用户端（播放）：</strong></p>
-<ol>
-<li>用户端测速时，先尝试直接访问视频流</li>
-<li>如果直连失败或延迟 &gt;1500ms，自动通过 CORS 代理重试</li>
-<li>代理会重写 m3u8 内容，将 ts 分片 URL 也改为代理 URL</li>
-<li>UI 上会显示三种状态：<ul>
-<li>🟢 <strong>直连</strong>：用户端可直接访问</li>
-<li>🟡 <strong>中转</strong>：通过代理访问</li>
-<li>🔵 <strong>服务</strong>：服务器端测速（无法客户端测试）</li>
-</ul>
-</li>
-</ol>
-<h4 id="部署-CORS-代理-Cloudflare-Workers"><a href="#部署-CORS-代理-Cloudflare-Workers" class="headerlink" title="部署 CORS 代理 (Cloudflare Workers)"></a>部署 CORS 代理 (Cloudflare Workers)</h4><blockquote>
-<p>⚠️ <strong>关于流量限制的风险提示</strong>：<br>Cloudflare 免费版 Workers 每日有请求限制 (10万次)，且根据条款<strong>不建议</strong>用于大规模非 HTML 内容（如视频流）的代理。</p>
-<ul>
-<li><strong>个人自用</strong>：通常没问题。</li>
-<li><strong>多人/高频使用</strong>：强烈建议使用下方的 <strong>VPS / Node.js</strong> 部署方案，以免被封号。</li>
-</ul>
-</blockquote>
-<ol>
-<li><p><strong>登录 <a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">Cloudflare Dashboard</a></strong></p>
-<ul>
-<li>进入 <strong>Workers &amp; Pages</strong> → <strong>Create Worker</strong></li>
-<li>命名如 <code>cors-proxy</code></li>
-</ul>
-</li>
-<li><p><strong>部署代理代码</strong></p>
-<ul>
-<li>复制 <code>cloudflare-cors-proxy.js</code> 文件<strong>全部内容</strong>到编辑器</li>
-<li>点击 <strong>“Save and Deploy”</strong></li>
-<li>记录 Worker URL（如 <code>https://cors-proxy.your-name.workers.dev</code>）</li>
-</ul>
-</li>
-<li><p><strong>配置 .env</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CORS_PROXY_URL=https://cors-proxy.your-name.workers.dev</span><br></pre></td></tr></table></figure></li>
-<li><p><strong>（可选）绑定自定义域名</strong></p>
-<ul>
-<li>Worker 设置 → Triggers → Custom Domains → 添加域名</li>
-</ul>
-</li>
-</ol>
-<blockquote>
-<p>⚠️ <strong>重要</strong>：每次更新 <code>cloudflare-cors-proxy.js</code> 文件后，需要重新部署到 Cloudflare！</p>
-</blockquote>
-<h4 id="部署-CORS-代理-VPS-Node-js"><a href="#部署-CORS-代理-VPS-Node-js" class="headerlink" title="部署 CORS 代理 (VPS / Node.js)"></a>部署 CORS 代理 (VPS / Node.js)</h4><p>如果您有自己的服务器，或者流量较大，建议使用此方式。</p>
-<ol>
-<li><p><strong>准备环境</strong>：确保 VPS 已安装 Node.js (v18+)。</p>
-</li>
-<li><p><strong>上传代码</strong>：上传 <code>proxy-server.js</code> 到服务器。</p>
-</li>
-<li><p><strong>安装依赖 &amp; 运行</strong>：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">npm install express axios cors dotenv</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动服务</span></span><br><span class="line">PORT=8080 node proxy-server.js</span><br></pre></td></tr></table></figure>
-
-<p><em>推荐使用 PM2 守护进程：</em> <code>pm2 start proxy-server.js --name cors-proxy</code></p>
-</li>
-<li><p><strong>配置 .env</strong>：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CORS_PROXY_URL=http://your-vps-ip:8080</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h4 id="代理工作流程图"><a href="#代理工作流程图" class="headerlink" title="代理工作流程图"></a>代理工作流程图</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">用户请求 m3u8 视频</span><br><span class="line">        ↓</span><br><span class="line">   代理获取 m3u8</span><br><span class="line">        ↓</span><br><span class="line">  重写 ts 分片 URL</span><br><span class="line">   (改为经过代理)</span><br><span class="line">        ↓</span><br><span class="line">  返回修改后的 m3u8</span><br><span class="line">        ↓</span><br><span class="line">播放器请求 ts 分片</span><br><span class="line">   (通过代理,带正确 Referer)</span><br><span class="line">        ↓</span><br><span class="line">    视频正常播放 ✓</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="🔒-安全配置与远程加载-高级"><a href="#🔒-安全配置与远程加载-高级" class="headerlink" title="🔒 安全配置与远程加载 (高级)"></a>🔒 安全配置与远程加载 (高级)</h2><p>为了保护您的站点或统一管理配置，可以使用以下高级功能：</p>
-<h3 id="全局访问密码"><a href="#全局访问密码" class="headerlink" title="全局访问密码"></a>全局访问密码</h3><p>在 <code>.env</code> 文件中设置 <code>ACCESS_PASSWORD</code> 即可开启全局密码保护。开启后，用户访问任何页面都需要输入密码。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ACCESS_PASSWORD=your_secure_password</span><br></pre></td></tr></table></figure>
-
-<h3 id="远程配置文件-db-json"><a href="#远程配置文件-db-json" class="headerlink" title="远程配置文件 (db.json)"></a>远程配置文件 (db.json)</h3><p>如果您有多个站点或希望远程更新配置，可以让服务器读取远程的 <code>db.json</code> 文件。<br>在 <code>.env</code> 文件中设置：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 远程 JSON 文件地址 (需支持 GET 请求)</span><br><span class="line">REMOTE_DB_URL=https://example.com/my-config/db.json</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p><strong>注意</strong>：</p>
-<ol>
-<li>配置 <code>REMOTE_DB_URL</code> 后，系统会自动优先尝试从该 URL 获取配置。</li>
-<li>会有 5 分钟的内存缓存，避免频繁请求远程服务器。</li>
-<li>如果远程获取失败，会自动降级使用本地的 <code>db.json</code> 文件。</li>
-</ol>
-</blockquote>
-<h3 id="多用户模式与观看历史同步-新功能"><a href="#多用户模式与观看历史同步-新功能" class="headerlink" title="多用户模式与观看历史同步 (新功能)"></a>多用户模式与观看历史同步 (新功能)</h3><p>支持多个密码，每个密码代表一个独立用户，拥有独立的观看历史。历史记录可在同一用户的不同设备间自动同步。</p>
-<p><strong>配置方式</strong>：在 <code>.env</code> 文件中用逗号分隔多个密码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 多密码模式</span><br><span class="line">ACCESS_PASSWORD=admin_password,user1_pass,user2_pass</span><br></pre></td></tr></table></figure>
-
-<p><strong>规则说明</strong>：</p>
+<p>要完整功能请用 VPS / Docker。</p>
+<h3 id="3-环境变量"><a href="#3-环境变量" class="headerlink" title="3. 环境变量"></a>3. 环境变量</h3><p>只有 <code>TMDB_API_KEY</code> 必填。布尔开关认 <code>1/true/yes/on</code>，填 <code>0/false</code> 等于没开。</p>
+<p><strong>基础</strong></p>
 <table>
 <thead>
 <tr>
-<th>密码位置</th>
-<th>行为</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>第一个密码</strong></td>
-<td>保持传统模式，观看历史仅存储在本地设备</td>
-</tr>
-<tr>
-<td><strong>第二个及之后</strong></td>
-<td>启用云同步，观看历史在设备间自动同步</td>
-</tr>
-</tbody></table>
-<p><strong>同步特性</strong>：</p>
-<ul>
-<li>✅ 自动同步：页面加载时自动拉取和推送历史</li>
-<li>✅ 本地优先：本地记录不会被其他设备覆盖</li>
-<li>✅ 智能合并：同一影片以最新的观看记录为准</li>
-<li>✅ 隐蔽提示：同步状态图标显示在”继续观看”旁边</li>
-</ul>
-<blockquote>
-<p>⚠️ <strong>重要</strong>：观看历史同步功能<strong>仅在 SQLite 缓存模式下可用</strong>。</p>
-<table>
-<thead>
-<tr>
-<th>缓存类型</th>
-<th>历史同步</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>sqlite</code></td>
-<td>✅ 支持</td>
-<td>推荐，数据持久化存储在数据库中</td>
-</tr>
-<tr>
-<td><code>json</code></td>
-<td>❌ 不支持</td>
-<td>仅支持搜索/详情缓存，无用户数据存储</td>
-</tr>
-<tr>
-<td><code>memory</code></td>
-<td>❌ 不支持</td>
-<td>服务器重启后数据丢失</td>
-</tr>
-<tr>
-<td><code>none</code></td>
-<td>❌ 不支持</td>
-<td>无缓存功能</td>
-</tr>
-</tbody></table>
-<p>如需使用历史同步，请在 <code>.env</code> 中设置 <code>CACHE_TYPE=sqlite</code>。</p>
-</blockquote>
-<p><strong>使用场景示例</strong>：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># admin_password - 管理员使用，本地存储</span></span><br><span class="line"><span class="comment"># user1_pass - 家人A使用，全设备同步  </span></span><br><span class="line"><span class="comment"># user2_pass - 家人B使用，全设备同步</span></span><br><span class="line">ACCESS_PASSWORD=admin123,familyA_pass,familyB_pass</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="📦-安装与运行-Installation"><a href="#📦-安装与运行-Installation" class="headerlink" title="📦 安装与运行 (Installation)"></a>📦 安装与运行 (Installation)</h2><h3 id="🚀-一键安装脚本-推荐"><a href="#🚀-一键安装脚本-推荐" class="headerlink" title="🚀 一键安装脚本 (推荐)"></a>🚀 一键安装脚本 (推荐)</h3><p>适用于 Ubuntu/Debian/CentOS 系统，自动安装所有依赖并配置服务。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 下载并运行一键安装脚本</span></span><br><span class="line">curl -fsSL https://raw.githubusercontent.com/ednovas/dongguaTV/main/install.sh | bash</span><br></pre></td></tr></table></figure>
-
-<p>或者手动下载后运行：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget https://raw.githubusercontent.com/ednovas/dongguaTV/main/install.sh</span><br><span class="line"><span class="built_in">chmod</span> +x install.sh</span><br><span class="line">./install.sh</span><br></pre></td></tr></table></figure>
-
-<p>脚本会引导您输入：</p>
-<ul>
-<li>TMDB API Key (必填)</li>
-<li>TMDB 反代地址 (可选，大陆用户需要)</li>
-<li>运行端口 (默认 3000)</li>
-<li>运行端口 (默认 3000)</li>
-<li>安装目录 (默认 /opt/dongguaTV)</li>
-</ul>
-<blockquote>
-<p><strong>提示</strong>：安装完成后，您可以随时编辑安装目录下的 <code>.env</code> 文件，修改 <code>CACHE_TYPE</code> 来切换缓存模式（需要重启服务）。</p>
-</blockquote>
-<h3 id="手动本地运行"><a href="#手动本地运行" class="headerlink" title="手动本地运行"></a>手动本地运行</h3><h4 id="1-安装-Node-js-v18"><a href="#1-安装-Node-js-v18" class="headerlink" title="1. 安装 Node.js (v18+)"></a>1. 安装 Node.js (v18+)</h4><p><strong>Ubuntu/Debian:</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -fsSL https://deb.nodesource.com/setup_18.x | <span class="built_in">sudo</span> -E bash -</span><br><span class="line"><span class="built_in">sudo</span> apt-get install -y nodejs</span><br></pre></td></tr></table></figure>
-
-<p><strong>CentOS/RHEL:</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -fsSL https://rpm.nodesource.com/setup_18.x | <span class="built_in">sudo</span> bash -</span><br><span class="line"><span class="built_in">sudo</span> yum install -y nodejs</span><br></pre></td></tr></table></figure>
-
-<p><strong>macOS (使用 Homebrew):</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew install node@18</span><br></pre></td></tr></table></figure>
-
-<p><strong>Windows:</strong><br>下载安装包：<a target="_blank" rel="noopener" href="https://nodejs.org/">https://nodejs.org/</a></p>
-<p>验证安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node -v  <span class="comment"># 应显示 v18.x.x</span></span><br><span class="line">npm -v   <span class="comment"># 应显示 9.x.x 或更高</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="2-安装编译工具-可选"><a href="#2-安装编译工具-可选" class="headerlink" title="2. 安装编译工具 (可选)"></a>2. 安装编译工具 (可选)</h4><p>如果您计划使用 <code>sqlite</code> 作为缓存（默认推荐），则必须安装编译工具。如果不使用 SQLite (如使用 <code>json</code> 或 <code>memory</code> 模式)，可跳过此步。</p>
-<p><strong>Ubuntu/Debian:</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get install -y build-essential python3</span><br></pre></td></tr></table></figure>
-
-<p><strong>CentOS/RHEL:</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> yum groupinstall -y <span class="string">&quot;Development Tools&quot;</span></span><br><span class="line"><span class="built_in">sudo</span> yum install -y python3</span><br></pre></td></tr></table></figure>
-
-<p><strong>macOS:</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-安装项目依赖"><a href="#3-安装项目依赖" class="headerlink" title="3. 安装项目依赖"></a>3. 安装项目依赖</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-<h4 id="4-配置环境变量"><a href="#4-配置环境变量" class="headerlink" title="4. 配置环境变量"></a>4. 配置环境变量</h4><p>复制 <code>.env.example</code> 为 <code>.env</code>，并配置如下信息：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># TMDb API Key (必填)</span><br><span class="line">TMDB_API_KEY=your_api_key_here</span><br><span class="line"></span><br><span class="line"># 可选：自定义端口 (默认 3000)</span><br><span class="line">PORT=3000</span><br><span class="line"></span><br><span class="line"># 可选：大陆用户 TMDB 反代地址 (详见下方说明)</span><br><span class="line">TMDB_PROXY_URL=</span><br><span class="line"></span><br><span class="line"># 可选：缓存类型 (&#x27;json&#x27;, &#x27;sqlite&#x27;, &#x27;memory&#x27;, &#x27;none&#x27;) - 默认 json</span><br><span class="line">CACHE_TYPE=json</span><br><span class="line"></span><br><span class="line"># 可选：访问密码 (设置后需要密码才能访问)</span><br><span class="line">ACCESS_PASSWORD=</span><br><span class="line"></span><br><span class="line"># 可选：远程配置文件地址</span><br><span class="line">REMOTE_DB_URL=</span><br></pre></td></tr></table></figure>
-
-<h4 id="5-启动服务"><a href="#5-启动服务" class="headerlink" title="5. 启动服务"></a>5. 启动服务</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node server.js</span><br></pre></td></tr></table></figure>
-
-<h4 id="6-访问"><a href="#6-访问" class="headerlink" title="6. 访问"></a>6. 访问</h4><p>打开浏览器访问 <code>http://localhost:3000</code></p>
-<hr>
-<h2 id="🚀-部署-Deployment"><a href="#🚀-部署-Deployment" class="headerlink" title="🚀 部署 (Deployment)"></a>🚀 部署 (Deployment)</h2><h3 id="🐳-Docker-部署-推荐"><a href="#🐳-Docker-部署-推荐" class="headerlink" title="🐳 Docker 部署 (推荐)"></a>🐳 Docker 部署 (推荐)</h3><h4 id="环境变量说明"><a href="#环境变量说明" class="headerlink" title="环境变量说明"></a>环境变量说明</h4><table>
-<thead>
-<tr>
-<th>变量名</th>
-<th>必填</th>
+<th>变量</th>
+<th>默认</th>
 <th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>TMDB_API_KEY</code></td>
-<td>✅ 是</td>
-<td>TMDb API 密钥，用于获取影视信息</td>
-</tr>
-<tr>
-<td><code>CACHE_TYPE</code></td>
-<td>❌ 否</td>
-<td>缓存类型:<code>json</code>(默认), <code>sqlite</code>, <code>memory</code>, <code>none</code></td>
-</tr>
-<tr>
-<td><code>TMDB_PROXY_URL</code></td>
-<td>❌ 否</td>
-<td>TMDB 反代地址，大陆用户需要配置</td>
-</tr>
-<tr>
-<td><code>CORS_PROXY_URL</code></td>
-<td>❌ 否</td>
-<td>视频/图片 CORS 代理地址，解决资源站播放失败问题</td>
+<td>—</td>
+<td><strong>必填</strong>，TMDb v3 Key</td>
 </tr>
 <tr>
 <td><code>PORT</code></td>
-<td>❌ 否</td>
-<td>服务端口，默认 3000</td>
+<td><code>3000</code></td>
+<td>监听端口</td>
+</tr>
+<tr>
+<td><code>CACHE_TYPE</code></td>
+<td><code>json</code></td>
+<td><code>sqlite</code>（推荐）/ <code>json</code> / <code>memory</code> / <code>none</code>。SQLite 起不来时退回 <code>memory</code></td>
 </tr>
 <tr>
 <td><code>ACCESS_PASSWORD</code></td>
-<td>❌ 否</td>
-<td>访问密码，保护站点不被公开访问</td>
+<td>—</td>
+<td>访问密码，逗号分隔多个：第 1 个是共用主密码（不同步），其余每个是独立用户</td>
 </tr>
 <tr>
-<td><code>REMOTE_DB_URL</code></td>
-<td>❌ 否</td>
-<td>远程 <code>db.json</code> 地址，用于统一配置管理</td>
+<td><code>ADMIN_TOKEN</code></td>
+<td>—</td>
+<td>站长令牌。设了才有 <code>/admin</code> 后台和求片</td>
+</tr>
+<tr>
+<td><code>SITE_URL</code></td>
+<td>按请求推断</td>
+<td>分享卡片、SEO、sitemap 用的站点地址</td>
+</tr>
+<tr>
+<td><code>SHARE_TRIAL_MINUTES</code></td>
+<td><code>5</code></td>
+<td>未登录打开分享链接可试看几分钟；<code>0</code> = 不试看</td>
 </tr>
 </tbody></table>
-<h4 id="方案一：使用现有镜像（最快）"><a href="#方案一：使用现有镜像（最快）" class="headerlink" title="方案一：使用现有镜像（最快）"></a>方案一：使用现有镜像（最快）</h4><p>无需构建，一行命令直接运行。</p>
-<blockquote>
-<p><strong>🎉 多架构支持</strong>：Docker 镜像已支持以下架构，会自动选择匹配的版本：</p>
-<ul>
-<li><code>linux/amd64</code> - x86_64 服务器、PC</li>
-<li><code>linux/arm64</code> - Apple M1/M2/M3、树莓派4/5、AWS Graviton</li>
-<li><code>linux/arm/v7</code> - 树莓派3、旧版 ARM 设备</li>
-</ul>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 基础启动 (请替换 TMDB_API_KEY)</span></span><br><span class="line">docker run -d -p 3000:3000 \</span><br><span class="line">  -e TMDB_API_KEY=<span class="string">&quot;your_api_key_here&quot;</span> \</span><br><span class="line">  -e ACCESS_PASSWORD=<span class="string">&quot;your_password&quot;</span> \</span><br><span class="line">  --name donggua-tv \</span><br><span class="line">  --restart unless-stopped \</span><br><span class="line">  ghcr.io/ednovas/dongguatv:latest</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1. ⚠️ 重要：先创建文件，防止 Docker 将其识别为目录</span></span><br><span class="line"><span class="built_in">touch</span> db.json cache.db</span><br><span class="line"><span class="comment"># 如果是 Windows PowerShell:</span></span><br><span class="line"><span class="comment"># New-Item -ItemType File -Name db.json -Force</span></span><br><span class="line"><span class="comment"># New-Item -ItemType File -Name cache.db -Force</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 写入默认配置 (可选，如果不写则为空)</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;&#123;&quot;sites&quot;:[]&#125;&#x27;</span> &gt; db.json</span><br><span class="line"><span class="built_in">mkdir</span> -p cache/images</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 完整配置启动</span></span><br><span class="line">docker run -d -p 3000:3000 \</span><br><span class="line">  -e TMDB_API_KEY=<span class="string">&quot;your_api_key_here&quot;</span> \</span><br><span class="line">  -e ACCESS_PASSWORD=<span class="string">&quot;your_password&quot;</span> \</span><br><span class="line">  -e TMDB_PROXY_URL=<span class="string">&quot;https://tmdb-proxy.your-name.workers.dev&quot;</span> \</span><br><span class="line">  -e CORS_PROXY_URL=<span class="string">&quot;https://cors-proxy.your-name.workers.dev&quot;</span> \</span><br><span class="line">  -e REMOTE_DB_URL=<span class="string">&quot;https://example.com/db.json&quot;</span> \</span><br><span class="line">  -v $(<span class="built_in">pwd</span>)/db.json:/app/db.json \</span><br><span class="line">  -v $(<span class="built_in">pwd</span>)/cache.db:/app/cache.db \</span><br><span class="line">  -v $(<span class="built_in">pwd</span>)/cache/images:/app/public/cache/images \</span><br><span class="line">  --name donggua-tv \</span><br><span class="line">  --restart unless-stopped \</span><br><span class="line">  ghcr.io/ednovas/dongguatv:latest</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p><strong>⚠️ 常见错误警告</strong>：如果启动失败且日志报错 <code>EISDIR: illegal operation on a directory</code>，说明您没有先创建 <code>db.json</code> 文件，Docker 自动创建了同名文件夹。请删除该文件夹 (<code>rm -rf db.json</code>) 并重新执行上述 <code>touch</code> 命令创建文件。</p>
-<p><strong>注意</strong>：如果不挂载 <code>-v</code> 卷，您的站点配置(db.json)和缓存(cache.db)将在容器重启后丢失。请确保当前目录下有 <code>db.json</code> 文件（如果没有，第一次运行后可以从容器内复制出来）。</p>
-</blockquote>
-<h4 id="方案二：本地构建"><a href="#方案二：本地构建" class="headerlink" title="方案二：本地构建"></a>方案二：本地构建</h4><p>如果您想自己修改代码或重新构建镜像：</p>
-<ol>
-<li><strong>构建镜像</strong><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker build -t donggua-tv .</span><br></pre></td></tr></table></figure></li>
-<li><strong>运行容器</strong><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d -p 3000:3000 \</span><br><span class="line">  -e TMDB_API_KEY=<span class="string">&quot;your_api_key_here&quot;</span> \</span><br><span class="line">  -e TMDB_PROXY_URL=<span class="string">&quot;https://tmdb-proxy.your-name.workers.dev&quot;</span> \</span><br><span class="line">  -e CORS_PROXY_URL=<span class="string">&quot;https://cors-proxy.your-name.workers.dev&quot;</span> \</span><br><span class="line">  -e REMOTE_DB_URL=<span class="string">&quot;https://example.com/db.json&quot;</span> \</span><br><span class="line">  --name donggua-tv \</span><br><span class="line">  --restart unless-stopped \</span><br><span class="line">  donggua-tv</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h4 id="方案三：Docker-Compose"><a href="#方案三：Docker-Compose" class="headerlink" title="方案三：Docker Compose"></a>方案三：Docker Compose</h4><p>如果您更喜欢使用 Compose 管理：</p>
-<ol>
-<li><p>创建 <code>docker-compose.yml</code> 文件：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">&#x27;3&#x27;</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">donggua-tv:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">ghcr.io/ednovas/dongguatv:latest</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">donggua-tv</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;3000:3000&quot;</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">TMDB_API_KEY=your_api_key_here</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">TMDB_PROXY_URL=https://tmdb-proxy.your-name.workers.dev</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">CORS_PROXY_URL=https://cors-proxy.your-name.workers.dev</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ACCESS_PASSWORD=your_secure_password</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">REMOTE_DB_URL=https://example.com/db.json</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./db.json:/app/db.json</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./cache.db:/app/cache.db</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">unless-stopped</span></span><br></pre></td></tr></table></figure></li>
-<li><p><strong>启动</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 同样需要先创建文件，防止挂载成目录</span></span><br><span class="line"><span class="built_in">touch</span> db.json cache.db</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动服务</span></span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="▲-Vercel-部署"><a href="#▲-Vercel-部署" class="headerlink" title="▲ Vercel 部署"></a>▲ Vercel 部署</h3><p>适合零成本快速上线。</p>
-<p><a target="_blank" rel="noopener" href="https://vercel.com/new/clone?repository-url=https://github.com/ednovas/dongguaTV&env=TMDB_API_KEY,REMOTE_DB_URL,ACCESS_PASSWORD,TMDB_PROXY_URL&envDescription=TMDB_API_KEY%20and%20REMOTE_DB_URL%20are%20required.%20Others%20are%20optional.&envLink=https://github.com/ednovas/dongguaTV%23-vercel-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><img src="https://vercel.com/button" alt="Deploy with Vercel"></a></p>
-<p><em>(请确保先将本项目fork到您自己的 GitHub 仓库，点击上方按钮即可一键导入部署)</em></p>
-<h4 id="⚠️-Vercel-环境变量配置注意事项"><a href="#⚠️-Vercel-环境变量配置注意事项" class="headerlink" title="⚠️ Vercel 环境变量配置注意事项"></a>⚠️ Vercel 环境变量配置注意事项</h4><p>在 Vercel 部署后，<strong>必须正确配置环境变量</strong>才能使用：</p>
-<ol>
-<li><p><strong>Settings → Environment Variables</strong> 中添加以下变量：</p>
-<ul>
-<li><code>TMDB_API_KEY</code> - TMDb API 密钥（<strong>必填</strong>）</li>
-<li><code>REMOTE_DB_URL</code> - 远程站点配置 JSON 地址（<strong>Vercel 必填</strong>，因为无法读取本地 db.json）</li>
-<li><code>ACCESS_PASSWORD</code> - 访问密码（可选）</li>
-<li><code>TMDB_PROXY_URL</code> - 大陆用户反代地址（可选）</li>
-</ul>
-</li>
-<li><p><strong>环境变量不生效？</strong> 请按以下步骤排查：</p>
+<p><strong>采集源与网络</strong></p>
 <table>
 <thead>
 <tr>
-<th>步骤</th>
-<th>操作</th>
+<th>变量</th>
+<th>默认</th>
 <th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>①</td>
-<td>检查变量名</td>
-<td>确保<strong>完全正确</strong>且区分大小写</td>
+<td><code>REMOTE_DB_URL</code></td>
+<td>—</td>
+<td>远程 db.json</td>
 </tr>
 <tr>
-<td>②</td>
-<td>检查环境范围</td>
-<td>确保勾选了<strong>Production</strong> 环境</td>
+<td><code>SITES_JSON</code></td>
+<td>—</td>
+<td>仅 Vercel：站点配置（JSON 或 Base64），优先于 <code>REMOTE_DB_URL</code></td>
 </tr>
 <tr>
-<td>③</td>
-<td><strong>重新部署</strong></td>
-<td>⚠️ 添加/修改变量后必须重新部署！进入 Deployments → 点击最新部署的 <code>...</code> → <strong>Redeploy</strong></td>
+<td><code>CORS_PROXY_URL</code></td>
+<td>—</td>
+<td>Cloudflare Worker 代理，<strong>去广告和直播都靠它</strong>。逗号分隔多个，第一个为主</td>
 </tr>
 <tr>
-<td>④</td>
-<td>使用诊断端点</td>
-<td>访问 <code>/api/debug</code> 查看环境变量状态</td>
+<td><code>TMDB_PROXY_URL</code></td>
+<td>—</td>
+<td>TMDB 反代，大陆访客自动走</td>
+</tr>
+<tr>
+<td><code>SERVER_IN_CHINA</code></td>
+<td>—</td>
+<td><code>true</code> = 服务器自己的 TMDB 请求也走反代</td>
+</tr>
+<tr>
+<td><code>TITLE_INDEX_DISABLE</code></td>
+<td>—</td>
+<td>关闭片名索引（见<a href="#%E6%90%9C%E7%B4%A2%E4%B8%8E%E9%A6%96%E9%A1%B5">搜索</a>）</td>
+</tr>
+<tr>
+<td><code>TITLE_INDEX_DB</code></td>
+<td><code>./title-index.db</code></td>
+<td>片名索引位置，纯缓存</td>
 </tr>
 </tbody></table>
-</li>
-<li><p><strong>诊断端点</strong> - 检查配置是否生效：</p>
-<p>访问 <code>https://your-domain.vercel.app/api/debug</code>，您会看到类似以下的返回：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;environment&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Vercel Serverless&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;node_version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;v18.x.x&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;env_status&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;TMDB_API_KEY&quot;</span><span class="punctuation">:</span> <span class="string">&quot;configured&quot;</span><span class="punctuation">,</span>      <span class="comment">// 应显示 &quot;configured&quot;</span></span><br><span class="line">    <span class="attr">&quot;TMDB_PROXY_URL&quot;</span><span class="punctuation">:</span> <span class="string">&quot;not_set&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;ACCESS_PASSWORD&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1 password(s)&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;REMOTE_DB_URL&quot;</span><span class="punctuation">:</span> <span class="string">&quot;not_set&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;CACHE_TYPE&quot;</span><span class="punctuation">:</span> <span class="string">&quot;memory&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;cache_type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;memory&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;timestamp&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2024-01-01T00:00:00.000Z&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<p>如果 <code>TMDB_API_KEY</code> 显示 <code>&quot;missing&quot;</code>，说明环境变量未正确配置或未重新部署。</p>
-</li>
-<li><p><strong>常见问题</strong>：</p>
-<ul>
-<li>❌ <strong>修改环境变量后没有重新部署</strong> - 这是最常见的问题！</li>
-<li>❌ <strong>环境变量只勾选了 Preview 没勾选 Production</strong></li>
-<li>❌ <strong>使用了错误的变量名</strong>（如 <code>tmdb_api_key</code> 而非 <code>TMDB_API_KEY</code>）</li>
-</ul>
-</li>
-<li><p><strong>Vercel 功能限制</strong>：<br>由于 Vercel Serverless 无法写入文件系统，以下功能在 Vercel 上不可用：</p>
-<ul>
-<li>❌ 本地图片缓存（会自动禁用）</li>
-<li>❌ SQLite 缓存（使用内存缓存替代）</li>
-<li>❌ 本地 db.json（必须配置 <code>REMOTE_DB_URL</code>）</li>
-<li>❌ 多用户历史同步（需要持久化存储）</li>
-</ul>
-</li>
-</ol>
-<h3 id="🖥️-Linux-服务器命令行部署-PM2"><a href="#🖥️-Linux-服务器命令行部署-PM2" class="headerlink" title="🖥️ Linux 服务器命令行部署 (PM2)"></a>🖥️ Linux 服务器命令行部署 (PM2)</h3><p>适合常规 VPS (Ubuntu/CentOS/Debian)。</p>
-<ol>
-<li><p><strong>环境准备</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装 Node.js (v18+)</span></span><br><span class="line">curl -fsSL https://deb.nodesource.com/setup_18.x | <span class="built_in">sudo</span> -E bash -</span><br><span class="line"><span class="built_in">sudo</span> apt-get install -y nodejs</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 PM2 进程管理器</span></span><br><span class="line">npm install -g pm2</span><br></pre></td></tr></table></figure></li>
-<li><p><strong>获取代码与运行</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/ednovas/dongguaTV.git</span><br><span class="line"><span class="built_in">cd</span> dongguaTV</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置环境变量</span></span><br><span class="line"><span class="built_in">cp</span> .env.example .<span class="built_in">env</span></span><br><span class="line"><span class="comment"># 编辑 .env文件填入您的 TMDB_API_KEY</span></span><br><span class="line">nano .<span class="built_in">env</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 PM2 启动服务</span></span><br><span class="line">pm2 start server.js --name <span class="string">&quot;donggua-tv&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置开机自启</span></span><br><span class="line">pm2 save &amp;&amp; pm2 startup</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="🏰-宝塔面板-aaPanel-部署"><a href="#🏰-宝塔面板-aaPanel-部署" class="headerlink" title="🏰 宝塔面板 (aaPanel) 部署"></a>🏰 宝塔面板 (aaPanel) 部署</h3><p>可视化管理，不需要懂代码。</p>
-<ol>
-<li><p>在 <strong>软件商店</strong> 搜索并安装 <strong>Node.js版本管理器</strong> (建议选择 v18+)。</p>
-</li>
-<li><p><strong>⚠️ 重要：安装编译工具</strong> (better-sqlite3 需要)：</p>
-<ul>
-<li>登录 SSH 终端。</li>
-<li>执行安装命令：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># CentOS/RedHat</span></span><br><span class="line"><span class="built_in">sudo</span> yum groupinstall <span class="string">&quot;Development Tools&quot;</span> -y</span><br><span class="line"><span class="built_in">sudo</span> yum install python3 -y</span><br><span class="line"></span><br><span class="line"><span class="comment"># Ubuntu/Debian</span></span><br><span class="line"><span class="built_in">sudo</span> apt-get install build-essential python3 -y</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li><p>在 <strong>网站</strong> -&gt; <strong>Node项目</strong> -&gt; <strong>添加Node项目</strong>。</p>
-<ul>
-<li><strong>项目目录</strong>：选择上传代码的文件夹 (例如 <code>/www/wwwroot/dongguaTV</code>)。</li>
-<li><strong>启动选项</strong>：<code>server.js</code>。</li>
-<li><strong>项目端口</strong>：<code>3000</code>。</li>
-</ul>
-</li>
-<li><p><strong>配置环境变量</strong>：</p>
-<ul>
-<li>在 <strong>文件</strong> 栏目进入项目目录。</li>
-<li>将 <code>.env.example</code> 重命名为 <code>.env</code>。</li>
-<li>编辑 <code>.env</code> 文件，配置以下内容：</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 必填：TMDb API Key</span><br><span class="line">TMDB_API_KEY=your_api_key_here</span><br><span class="line"></span><br><span class="line"># 可选：运行端口</span><br><span class="line">PORT=3000</span><br><span class="line"></span><br><span class="line"># 可选：缓存类型 (&#x27;json&#x27;, &#x27;sqlite&#x27;, &#x27;memory&#x27;, &#x27;none&#x27;)</span><br><span class="line">CACHE_TYPE=json</span><br><span class="line"></span><br><span class="line"># 可选：大陆用户 TMDB 反代地址</span><br><span class="line"># 如果您的服务器在大陆，请参考&quot;大陆用户配置&quot;章节部署反代</span><br><span class="line">TMDB_PROXY_URL=https://tmdb-proxy.your-name.workers.dev</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>保存后回到 <strong>Node项目</strong> 列表，点击 <strong>重启</strong> 服务。</li>
-</ul>
-</li>
-<li><p>点击 <strong>映射/绑定域名</strong>，输入您的域名 (如 <code>movie.example.com</code>)。</p>
-</li>
-<li><p>访问域名即可使用。</p>
-</li>
-</ol>
-<h4 id="🤖-Android-APP-构建-GitHub-Actions"><a href="#🤖-Android-APP-构建-GitHub-Actions" class="headerlink" title="🤖 Android APP 构建 (GitHub Actions)"></a>🤖 Android APP 构建 (GitHub Actions)</h4><p>本项目配置了自动化构建流程。由于构建 APK 耗时较长，<strong>默认仅在推送 Tag 时触发构建</strong>，普通代码提交不会触发。</p>
-<ol>
-<li><strong>Fork 本仓库</strong> 到您的 GitHub 账号。</li>
-<li>**提交 Tag (触发构建)**：<br>每当您推送一个以 <code>v</code> 开头的 Tag (例如 <code>v1.0.0</code>) 到仓库时，GitHub Actions 会自动触发构建。<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git tag v1.0.0</span><br><span class="line">git push origin v1.0.0</span><br></pre></td></tr></table></figure></li>
-<li><strong>下载 APK</strong>：<br>构建完成后，在 GitHub 仓库的 <strong>“Releases”</strong> 页面即可下载生成的 <code>.apk</code> 安装包。<br><em>此 APK 包含完整的电视端 (Android TV) 适配、沉浸式状态栏支持及自动优化的应用图标。</em></li>
-</ol>
-<h4 id="📱-构建特性"><a href="#📱-构建特性" class="headerlink" title="📱 构建特性"></a>📱 构建特性</h4><ul>
-<li><strong>自动图标优化</strong>：GitHub Actions 会自动调整图标尺寸并添加安全边距，防止在圆形图标遮罩下被裁剪。</li>
-<li><strong>沉浸式适配</strong>：内置原生级状态栏适配逻辑，自动处理 Safe Area，确保刘海屏手机无遮挡。</li>
-</ul>
-<h4 id="📱-APK-默认配置"><a href="#📱-APK-默认配置" class="headerlink" title="📱 APK 默认配置"></a>📱 APK 默认配置</h4><table>
+<p><strong>首页与短剧</strong></p>
+<table>
 <thead>
 <tr>
-<th>配置项</th>
-<th>值</th>
+<th>变量</th>
+<th>默认</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>App 名称</strong></td>
-<td>E视界</td>
+<td><code>CALENDAR_DISABLE</code></td>
+<td>—</td>
+<td>关闭追剧日历</td>
 </tr>
 <tr>
-<td><strong>默认服务器</strong></td>
-<td><code>https://ednovas.video</code></td>
+<td><code>CALENDAR_SITES</code></td>
+<td>自动</td>
+<td>追剧日历的数据源，填站点 key，逗号分隔</td>
 </tr>
 <tr>
-<td><strong>图标来源</strong></td>
-<td>自动从 <code>public/icon.png</code> 生成</td>
+<td><code>SHORTS_DISABLE</code></td>
+<td>—</td>
+<td>关闭刷短剧和短剧分类</td>
+</tr>
+<tr>
+<td><code>SHORTS_SITES</code></td>
+<td>自动</td>
+<td>短剧用哪些站，填站点 key。默认自动识别有短剧分类的站</td>
+</tr>
+<tr>
+<td><code>SHORTS_SITES_FILE</code></td>
+<td><code>./shorts-sites.json</code></td>
+<td>只给短剧用的站（格式同 db.json），不进普通搜索</td>
 </tr>
 </tbody></table>
-<h4 id="🔧-自定义构建-新功能"><a href="#🔧-自定义构建-新功能" class="headerlink" title="🔧 自定义构建 (新功能)"></a>🔧 自定义构建 (新功能)</h4><p>无需修改代码，直接在 GitHub 网页上自定义并构建 App：</p>
+<p><strong>AI</strong>（Cloudflare Workers AI）</p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>默认</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>CF_AI_ACCOUNT_ID</code> / <code>CF_AI_TOKEN</code></td>
+<td>—</td>
+<td>账户 ID 与 Workers AI Token。配了才有语音搜索（Whisper）、AI 找片、评论 AI 审核</td>
+</tr>
+<tr>
+<td><code>CF_AI_DAILY_LIMIT</code></td>
+<td><code>3000</code></td>
+<td>全站每天最多调用几次</td>
+</tr>
+<tr>
+<td><code>CF_AI_FIND_MODEL</code></td>
+<td>—</td>
+<td>AI 找片默认文字模型；后台选了以后台为准</td>
+</tr>
+<tr>
+<td><code>VOICE_DISABLE</code></td>
+<td>—</td>
+<td>只关语音搜索</td>
+</tr>
+<tr>
+<td><code>AI_FIND_DISABLE</code></td>
+<td>—</td>
+<td>只关 AI 找片</td>
+</tr>
+<tr>
+<td><code>COMMENT_AI_REVIEW</code></td>
+<td>开</td>
+<td><code>0</code> = 评论只用屏蔽词，不过 AI</td>
+</tr>
+<tr>
+<td><code>COMMENT_AI_DAILY_LIMIT</code></td>
+<td>总额度一半</td>
+<td>评论审核每天最多几次</td>
+</tr>
+</tbody></table>
+<p><strong>弹幕与评论</strong></p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>默认</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>DANMU_API_URL</code></td>
+<td>—</td>
+<td>自建 danmu_api 地址，设了才有平台弹幕；逗号分隔多个并行</td>
+</tr>
+<tr>
+<td><code>DANMU_API_TOKEN</code></td>
+<td>—</td>
+<td>对应令牌，按顺序配对，只填一个则共用</td>
+</tr>
+<tr>
+<td><code>DANMU_API_SINGLE_INSTANCE</code></td>
+<td>—</td>
+<td>声明 danmu_api 只有一个实例（自己的 Docker），多实例别开</td>
+</tr>
+<tr>
+<td><code>DANMAKU_CACHE_DAYS</code></td>
+<td><code>7</code></td>
+<td>服务器缓存一集弹幕几天</td>
+</tr>
+<tr>
+<td><code>COMMENTS_DISABLE</code></td>
+<td>—</td>
+<td>关闭评论和用户弹幕</td>
+</tr>
+</tbody></table>
+<p><strong>直播</strong></p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>默认</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>LIVE_TV_DISABLED</code></td>
+<td>—</td>
+<td>关闭直播</td>
+</tr>
+<tr>
+<td><code>LIVE_M3U_URL</code> / <code>LIVE_M3U_FALLBACK</code></td>
+<td>内置</td>
+<td>主源 / 备源</td>
+</tr>
+<tr>
+<td><code>LIVE_M3U_IPTVORG</code> / <code>LIVE_M3U_ZHO</code></td>
+<td>iptv-org</td>
+<td>中文 / 华语补充源</td>
+</tr>
+<tr>
+<td><code>LIVE_M3U_EXTRA</code></td>
+<td>—</td>
+<td>自定义 M3U，逗号分隔</td>
+</tr>
+<tr>
+<td><code>LIVE_M3U_DISABLE</code></td>
+<td>—</td>
+<td>关闭所有内置源，只留 <code>EXTRA</code> / <code>ADULT</code></td>
+</tr>
+<tr>
+<td><code>LIVE_M3U_ADULT</code></td>
+<td>—</td>
+<td>成人直播源（不内置），受成人过滤开关控制</td>
+</tr>
+<tr>
+<td><code>LIVE_NO_VALIDATE</code></td>
+<td>—</td>
+<td>跳过服务器的频道可达性测试</td>
+</tr>
+</tbody></table>
+<p><strong>其它开关</strong></p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>默认</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>KAZUMI_DISABLE</code></td>
+<td>—</td>
+<td>关闭内置番剧源</td>
+</tr>
+<tr>
+<td><code>KAZUMI_SITES</code></td>
+<td>全部</td>
+<td>只启用指定番剧源：<code>7sefun,dm84,moonci,xfdm</code></td>
+</tr>
+<tr>
+<td><code>HLS_CUT_DISABLE</code></td>
+<td>—</td>
+<td>关闭剪后清单托管（iOS 开播前剪插播要它）</td>
+</tr>
+<tr>
+<td><code>STATS_DISABLE</code></td>
+<td>—</td>
+<td>关闭观看与分享统计（「大家都在看」随之消失）</td>
+</tr>
+<tr>
+<td><code>FAV_CHECK_DISABLE</code></td>
+<td>—</td>
+<td>关闭收藏的更新检查</td>
+</tr>
+<tr>
+<td><code>VAPID_PUBLIC_KEY</code> / <code>VAPID_PRIVATE_KEY</code></td>
+<td>自动生成</td>
+<td>推送密钥。一般不填；换服务器想保留订阅时才填</td>
+</tr>
+<tr>
+<td><code>VAPID_SUBJECT</code></td>
+<td><code>SITE_URL</code></td>
+<td>推送联系方式，一般不填</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="可选组件"><a href="#可选组件" class="headerlink" title="可选组件"></a>可选组件</h2><h3 id="CORS-代理"><a href="#CORS-代理" class="headerlink" title="CORS 代理"></a>CORS 代理</h3><p>浏览器直连资源站失败时经代理中转。<strong>边缘去广告、直播、服务器测速都依赖它。</strong></p>
+<p><strong>部署</strong></p>
 <ol>
-<li>进入仓库的 <strong>Actions</strong> 页面。</li>
-<li>在左侧选择 **”Android Build &amp; Release”**。</li>
-<li>点击右侧的 <strong>Run workflow</strong> 按钮。</li>
-<li>输入配置信息：<ul>
-<li><strong>Server URL</strong>: 您的服务器地址 (例如 <code>https://movie.example.com</code>)</li>
-<li><strong>App Name</strong>: App 名称 (例如 <code>我的私人影院</code>)</li>
-<li><strong>Version Tag</strong>: 版本号 (例如 <code>v1.0.0</code>)</li>
+<li>Cloudflare → Workers &amp; Pages → Create Worker，粘贴 <code>cloudflare-cors-proxy.js</code> → Deploy。</li>
+<li><code>.env</code> 配 <code>CORS_PROXY_URL=https://cors-proxy.your-name.workers.dev</code>（可再部署一个做备用）。</li>
+</ol>
+<p><strong>注意</strong></p>
+<ul>
+<li>免费版每天 10 万次请求，自用足够。</li>
+<li>改了 <code>cloudflare-cors-proxy.js</code> 要回 Dashboard 重新部署，网站更新不会带上 Worker。</li>
+<li><code>proxy-server.js</code> 是最简 Node 版：<strong>只转发、不去广告</strong>，输出 <code>http://</code> 地址（HTTPS 站点上要再套 HTTPS），它的 <code>PROXY_PASSWORD</code> 前端不会发送，设了会全部 403。</li>
 </ul>
-</li>
-<li>点击 <strong>Run workflow</strong> 开始构建。</li>
-</ol>
-<p>等待构建完成后，在 Releases 页面即可下载您定制的 App。</p>
-<h4 id="🔧-代码修改方式-高级"><a href="#🔧-代码修改方式-高级" class="headerlink" title="🔧 代码修改方式 (高级)"></a>🔧 代码修改方式 (高级)</h4><p>如果您 Fork 了本项目并希望永久修改默认配置：</p>
-<ol>
-<li><p>编辑 <code>capacitor.config.json</code>，修改 <code>server.url</code> 为您的服务器地址：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;appId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;com.ednovas.donguatv&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;appName&quot;</span><span class="punctuation">:</span> <span class="string">&quot;E视界&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;webDir&quot;</span><span class="punctuation">:</span> <span class="string">&quot;public&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;server&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://your-server.com&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;cleartext&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>提交更改并推送 Tag 触发自动构建：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add capacitor.config.json</span><br><span class="line">git commit -m <span class="string">&quot;修改服务器地址&quot;</span></span><br><span class="line">git tag v1.0.0</span><br><span class="line">git push origin main --tags</span><br></pre></td></tr></table></figure></li>
-<li><p>或者本地手动构建：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install</span><br><span class="line">npx <span class="built_in">cap</span> <span class="built_in">sync</span> android</span><br><span class="line"><span class="built_in">cd</span> android &amp;&amp; ./gradlew assembleRelease</span><br></pre></td></tr></table></figure>
+<h3 id="TMDB-反代"><a href="#TMDB-反代" class="headerlink" title="TMDB 反代"></a>TMDB 反代</h3><p>大陆访问不了 TMDB：部署 <code>cloudflare-tmdb-proxy.js</code> 为 Worker，配 <code>TMDB_PROXY_URL</code>；服务器在大陆再加 <code>SERVER_IN_CHINA=true</code>。</p>
+<h3 id="弹幕服务-danmu-api"><a href="#弹幕服务-danmu-api" class="headerlink" title="弹幕服务 danmu_api"></a>弹幕服务 danmu_api</h3><p>平台弹幕来自自建的 <a target="_blank" rel="noopener" href="https://github.com/huangxd-/danmu_api">huangxd-/danmu_api</a>（兼容弹弹play，聚合爱奇艺、腾讯、优酷、B站、芒果等）。需要 <strong>v1.20.10 及以上</strong>。推荐自己的 VPS 跑 Docker：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d --name danmu-api --restart unless-stopped -p 127.0.0.1:9321:9321 \</span><br><span class="line">  -e TOKEN=your_token -e RATE_LIMIT_MAX_REQUESTS=0 \</span><br><span class="line">  -e SOURCE_ORDER=360 -e PLATFORM_ORDER=qiyi,qq \</span><br><span class="line">  -v /opt/danmu/cache:/app/.cache logvar/danmu-api:latest</span><br></pre></td></tr></table></figure>
 
-<p>APK 位于 <code>android/app/build/outputs/apk/release/</code></p>
-</li>
+<p>然后配 <code>DANMU_API_URL=http://127.0.0.1:9321</code>、<code>DANMU_API_TOKEN=your_token</code>。</p>
+<details>
+<summary>danmu_api 参数建议</summary>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>建议</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>TOKEN</code></td>
+<td>自定义</td>
+<td>与本站 <code>DANMU_API_TOKEN</code> 一致，否则静默拿不到弹幕</td>
+</tr>
+<tr>
+<td><code>RATE_LIMIT_MAX_REQUESTS</code></td>
+<td><code>0</code></td>
+<td>关掉每 IP 限流（本站请求都来自同一 IP）</td>
+</tr>
+<tr>
+<td><code>SOURCE_ORDER</code></td>
+<td><code>360</code></td>
+<td>搜索源，别用带 <code>douban</code> 的默认值（最慢）</td>
+</tr>
+<tr>
+<td><code>PLATFORM_ORDER</code></td>
+<td><code>qiyi,qq</code></td>
+<td>优先爱奇艺、腾讯弹幕</td>
+</tr>
+<tr>
+<td><code>OTHER_SERVER</code></td>
+<td>另一个实例</td>
+<td>自己抓空时转它</td>
+</tr>
+<tr>
+<td><code>UPSTASH_REDIS_REST_URL</code> / <code>_TOKEN</code></td>
+<td>Upstash 免费版</td>
+<td>serverless 部署必配</td>
+</tr>
+<tr>
+<td><code>BILIBILI_COOKIE</code></td>
+<td>B站 <code>SESSDATA</code></td>
+<td>只有 B站需要</td>
+</tr>
+<tr>
+<td><code>VOD_REQUEST_TIMEOUT</code></td>
+<td><code>6000</code></td>
+<td>单源超时</td>
+</tr>
+</tbody></table>
+<p>部署在 CF Workers / Vercel 上的问题：出口 IP 共享易被限流；CF 免费版每请求最多 50 个子请求（长视频后半段没弹幕）；没有 Redis 时缓存会丢。自己的 VPS 没有这些问题。</p>
+</details>
+
+<hr>
+<h2 id="功能说明"><a href="#功能说明" class="headerlink" title="功能说明"></a>功能说明</h2><h3 id="搜索与首页"><a href="#搜索与首页" class="headerlink" title="搜索与首页"></a>搜索与首页</h3><p><strong>搜索</strong></p>
+<ul>
+<li>SSE 流式：各站边搜边出结果。</li>
+<li>自动生成关键词变体，英文名转中文名。</li>
+<li>同一部剧的各站线路合并成一张卡；同名不同作品拆成多张，标年份和集数。</li>
+<li><strong>片名索引</strong>：有的采集站关了关键词搜索。服务器每天检查一次，把这些站的片名表爬到本地，搜索时先查本地再取详情。后台「片库」页看进度。</li>
+<li><strong>语音搜索</strong>：录音交给 Whisper 转文字；没配 AI 时退回浏览器自带识别。</li>
+<li><strong>AI 找片</strong>：用一段描述、台词或截图找片。AI 给出候选，再到 TMDB 核实（编造的片名会被筛掉）。</li>
+</ul>
+<p><strong>首页</strong></p>
+<ul>
+<li>板块可调顺序和开关；常用的分类筛选可以存成首页一行（自选分类）。</li>
+<li><strong>追剧日历</strong>：服务器每 30 分钟拉各大站的更新，按天、按分类整理成一周的更新表；今天以后的日子显示「待播」：每 6 小时从 TMDB 同步排期（需要 TMDB_API_KEY），TMDB 没有的按前两周的更新规律预计。需要 SQLite。</li>
+<li><strong>杂志风</strong>主题下，首页排成电子杂志（封面、专题、短评、播出表）。</li>
+</ul>
+<h3 id="短剧"><a href="#短剧" class="headerlink" title="短剧"></a>短剧</h3><p><strong>竖屏刷</strong>（首页右上角「刷短剧」）</p>
+<ul>
+<li>上下滑换部，一部看完自动下一集。</li>
+<li>默认清屏；按住左右两侧 = 倍速（左右滑 1.5/2/3×，上滑锁定）。</li>
+<li>进度条按住可拖。</li>
+<li><strong>长按中间 = 播放器页</strong>：倍速、线路、选集、收藏、分享、完整播放都在这里。</li>
+<li>点「完整播放」进详情页后，有「返回刷短剧」一键回来。</li>
+</ul>
+<p><strong>「短剧」分类</strong>（分类栏、分类大全、追剧日历都能进）</p>
+<ul>
+<li>按题材浏览：都市、古装、甜宠、逆袭、重生穿越、悬疑、家庭。</li>
+<li>按最新 / 热门排序，搜片名，可只看分集的。</li>
+<li>点哪部就从哪部开始竖屏刷，往下接着刷这个列表。</li>
+</ul>
+<p><strong>片库</strong></p>
+<ul>
+<li>服务器每 30 分钟拉各站短剧分类的最新更新，并逐页往回补老片。</li>
+<li>一集一个文件的进竖屏刷；整部拼成一个文件的只出现在分类页。</li>
+<li>需要 SQLite（没有时存在内存里）。</li>
+</ul>
+<h3 id="线路分组与自动选源"><a href="#线路分组与自动选源" class="headerlink" title="线路分组与自动选源"></a>线路分组与自动选源</h3><p><strong>分组</strong>（自动选源也按这个顺序偏好）</p>
+<table>
+<thead>
+<tr>
+<th>分组</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>🟢 无广告</td>
+<td>画面干净，插播会被去掉</td>
+</tr>
+<tr>
+<td>🟡 有插播</td>
+<td>画面干净，但插播去不掉（如没配 <code>CORS_PROXY_URL</code>）</td>
+</tr>
+<tr>
+<td>🟠 有水印</td>
+<td>画面里烧录了广告，无法去除</td>
+</tr>
+<tr>
+<td>🔴 可能无法播放</td>
+<td>未评测的站，或只有服务器能连通</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>档案</strong>：分级数据在 <code>lib/site-profiles/profiles.json</code>，按 API 域名匹配。</li>
+<li><strong>覆盖</strong>：在 db.json 站点里写 <code>&quot;ad_tier&quot;: &quot;noburn&quot;</code>（或 无广告 / 有插播 / 有水印），或 <code>&quot;profile&quot;: &#123; &quot;tier&quot;, &quot;res&quot;, &quot;geo&quot;, &quot;clip&quot; &#125;</code>。</li>
+<li><strong>时长对比</strong>：同一集明显比别的线路长的，标「可能有广告」并排后。</li>
+</ul>
+<p><strong>分辨率角标</strong></p>
+<ul>
+<li>优先用这部片的实测宽高（主清单或播放中补测），本机记 30 天。</li>
+<li>标「4K」但实际 1080P 的会如实标 1080P。</li>
+<li>自动选源最多只选到 1080P（4K 码率高，弱网易卡），想看 4K 手动点。</li>
+</ul>
+<p><strong>选源与测速</strong></p>
+<ul>
+<li>先比可达性（直连 → 代理 → 只有服务器能通），同档内再比广告分组和速度。</li>
+<li>测速结果本机缓存：测通 3 天、只有服务器能通 6 小时、不可用 12 小时。</li>
+<li>播放失败自动换下一条；全部失败时有离线缓存就切缓存。</li>
+</ul>
+<h3 id="去广告"><a href="#去广告" class="headerlink" title="去广告"></a>去广告</h3><p>效果：<strong>插播直接没有，进度条里也没有，没有「跳过广告」按钮。</strong></p>
+<p><strong>① 边缘：Cloudflare Worker</strong>（<code>cloudflare-cors-proxy.js</code>）</p>
+<p>m3u8 经过 Worker 时按分段时长剔除广告：</p>
+<ol>
+<li><strong>候选</strong>：以 <code>#EXT-X-DISCONTINUITY</code> 分组，3–120 秒、少于 15 个分片的组。</li>
+<li><strong>豁免</strong>：只有一组的清单；镜头切分的正片碎片；定长切块打包。</li>
+<li><strong>其它剔除</strong>：不足 0.5 秒的追踪分片；外来域名且后缀可疑（<code>.vip/.bet/.top/.xyz</code> 等）的分片。</li>
+<li><strong>保险丝</strong>：要删的超过总时长 20%，或会删光内容，就整份放行。</li>
+<li><strong>不过滤</strong>：直播、多码率主清单、<code>?nofilter=1</code>。</li>
 </ol>
-<h4 id="🏠-内网-HTTP-使用说明"><a href="#🏠-内网-HTTP-使用说明" class="headerlink" title="🏠 内网 HTTP 使用说明"></a>🏠 内网 HTTP 使用说明</h4><blockquote>
-<p><strong>⚠️ 重要</strong>：从 Android 9 (API 28) 开始，Android 默认禁止明文 HTTP 流量 (Cleartext Traffic)。如果您的 APK 无法连接 HTTP 服务器，请确认以下配置。</p>
+<p><strong>② 播放器：开播前剪掉插播</strong></p>
+<p>有的站把广告切成和正片一样的分片藏在中间，或屏蔽 Worker。这类广告分辨率或时间戳和正片不同：</p>
+<ul>
+<li>开播前读每段第一个分片的前 16KB 判断，把插播段从清单里删掉。</li>
+<li>每集约 1–2 秒，结果本机缓存 30 天；看到最后 2 分钟时预扫下一集。</li>
+<li>只扫档案标了 <code>clip</code> 的站，以及本机真遇到过插播的站。</li>
+<li>iOS / Safari：剪好的清单交服务器托管（<code>/api/hls/cut</code>，服务器不自己拉 m3u8）。</li>
+<li>漏网的播到时静默跳过。</li>
+<li>进度、历史、片头标记、分享时间都按原始时间轴存，换线路、换设备都对得上。</li>
+</ul>
+<details>
+<summary>代理失败时的处理</summary>
+
+<p>不少 CDN 会封 Cloudflare 出口 IP。播放失败时经 Worker 再取一次 m3u8，按返回结果处理：</p>
+<table>
+<thead>
+<tr>
+<th>返回</th>
+<th>判断</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>5xx / 429 / 超时</td>
+<td>Worker 故障</td>
+<td>换备用 Worker，都不行才本集直连</td>
+</tr>
+<tr>
+<td>403 / 404 / 451，或不是 m3u8</td>
+<td>源站封了 CF</td>
+<td>记 12 小时，能直连就直连，否则换线路</td>
+</tr>
+<tr>
+<td>200 且有分片</td>
+<td>偶发错误</td>
+<td>直接重试</td>
+</tr>
+<tr>
+<td>200 但 0 分片</td>
+<td>过滤异常</td>
+<td>依次试 <code>?nofilter=1</code>、直连、换线路</td>
+</tr>
+</tbody></table>
+</details>
+
+<h3 id="播放器"><a href="#播放器" class="headerlink" title="播放器"></a>播放器</h3><p>DPlayer + hls.js（打过补丁，修正 Chrome 长时间播放后声音变低沉）。</p>
+<ul>
+<li><strong>基础</strong>：倍速 0.5–3×；进度记忆（30 天内、看过 1 分钟以上）；自动下一集并预热。</li>
+<li><strong>进度条缩略图</strong>：拖动或悬停时显示画面预览。</li>
+<li><strong>画中画与投屏</strong>：AirPlay、Chromecast（投的是去过广告的清单）、浏览器远程播放。</li>
+<li><strong>手机</strong>：控制栏只留播放、下一集、设置、全屏；双击两侧 ±10 秒；全屏时左侧调亮度、右侧调音量。</li>
+<li><strong>桌面</strong>：空格暂停/播放，及 DPlayer 自带快捷键。</li>
+<li><strong>起播看门狗</strong>：14 秒没画面自动换线路。</li>
+<li><strong>屏幕常亮</strong>：播放中不锁屏。</li>
+</ul>
+<h3 id="跳过片头片尾"><a href="#跳过片头片尾" class="headerlink" title="跳过片头片尾"></a>跳过片头片尾</h3><p>奈飞式「跳过片头 / 跳过片尾」，不需要人工打点。</p>
+<ul>
+<li><strong>学习</strong>：播放稳定后，后台拉本集和邻集的低码率音频，比对响度找出片头曲和片尾位置。</li>
+<li><strong>共享</strong>：学到的位置上报服务器，全站共用。</li>
+<li><strong>确认</strong>：两集学出来的值先只亮按钮；在第三集定位命中才算确认，确认后才自动跳。</li>
+<li><strong>开头贴片</strong>：每集开头相同的许可证、平台 logo 单独识别为「跳过开头」。</li>
+<li><strong>片尾按钮</strong>：有下一集叫「下一集」（立刻切），最后一集或循环时叫「跳过片尾」。片尾只亮按钮，不自动切。</li>
+<li><strong>流量</strong>：每集约 10–20MB；省流量、2G、蜂窝网络下不分析；单剧上限 700MB，每次会话 2000MB。</li>
+</ul>
+<h3 id="离线缓存"><a href="#离线缓存" class="headerlink" title="离线缓存"></a>离线缓存</h3><ul>
+<li>播放页按集缓存到浏览器（IndexedDB），下载的是去过广告的版本。</li>
+<li>断网时自动切到已缓存的集续播；没网打开时，用缓存合成离线选集列表。</li>
+</ul>
+<h3 id="弹幕"><a href="#弹幕" class="headerlink" title="弹幕"></a>弹幕</h3><p>需配 <a href="#%E5%BC%B9%E5%B9%95%E6%9C%8D%E5%8A%A1-danmu_api">danmu_api</a>，未配置时自动隐藏。</p>
+<p><strong>设置</strong></p>
+<ul>
+<li>显示 / 海量、行数 1–20、速度 1–10、字号 12–44、6 种字体、不透明度 10–100%。</li>
+<li>手动时间偏移；芒果弹幕按集自动校正。</li>
+<li>开关和样式跨设备同步。</li>
+</ul>
+<p><strong>匹配</strong>：按「剧名 + 集名」匹配，宁可没有也不配错。</p>
+<ul>
+<li>带上类型、年份、集数做提示：综艺不会配到同名电影，翻拍按年份区分，没写季号不会配到第二季。</li>
+<li>认得写法差异：庆余年2 ↔ 庆余年第二季、未删减版、国语、大写数字等。</li>
+<li>路演、花絮、纯享、解说、小剧场不当正片。</li>
+<li>按日期命名的腾讯综艺（第20261010期）：按腾讯当天所有条目的时长和类别唯一对上才认。</li>
+</ul>
+<p><strong>缓存</strong></p>
+<ul>
+<li>服务器 SQLite 缓存，默认 7 天后后台更新，过期期间先回旧的。</li>
+<li>同一集多人同时打开只回源一次；低置信结果只缓存 10 分钟，空结果不缓存。</li>
+<li>单集最多 12000 条，超出按时间均匀采样。</li>
+</ul>
+<h3 id="评论与用户弹幕"><a href="#评论与用户弹幕" class="headerlink" title="评论与用户弹幕"></a>评论与用户弹幕</h3><p>需要 SQLite；<code>COMMENTS_DISABLE=1</code> 可关。</p>
+<ul>
+<li><strong>评论区</strong>：详情页下方，可回复、点赞、举报。</li>
+<li><strong>用户弹幕</strong>：播放器里发的弹幕会存下来，和平台弹幕合在一起，同一集换哪条线路都能看到。</li>
+<li><strong>谁能发</strong>：只有独立用户（同步账号）能发；被封禁的发不了，发过的也不再展示。</li>
+<li><strong>作者身份</strong>：显示为「观众XXXX」，不暴露令牌或邮箱。</li>
+<li><strong>审核</strong>：<ol>
+<li>限速、每日上限、10 分钟内重复的不收。</li>
+<li>屏蔽词（后台可改），不收网址和长串数字。</li>
+<li>AI 审核（配了 <code>CF_AI_*</code>）：广告、联系方式、色情、赌博、仇恨、隐私、违法直接拒收；拿不准的只给作者自己看，等站长决定。AI 出错或超时一律放行。</li>
+<li>不同用户举报满 3 次自动收起，等站长处理。</li>
+</ol>
+</li>
+</ul>
+<h3 id="收藏、片单与推送"><a href="#收藏、片单与推送" class="headerlink" title="收藏、片单与推送"></a>收藏、片单与推送</h3><p><strong>收藏（追剧）</strong></p>
+<ul>
+<li>详情页标题旁的 ♥，每人最多 100 部。</li>
+<li>有新集时显示「更新至第 N 集」并排到最前。</li>
+<li>追更日历：卡片显示「周五更新」「通常每周三更新」，首页有「本周更新」条。</li>
+<li>独立用户跨设备同步；主密码和没设密码的站只存本机。</li>
+</ul>
+<p><strong>更新检查</strong></p>
+<ul>
+<li>服务器每 10 分钟查一轮，只调用详情接口，<strong>从不拉视频清单</strong>。</li>
+<li>按更新状态调整频率：刚更新 2 小时、连载中 4 小时、完结 72 小时。</li>
+<li>全站最多跟踪 3000 部。需要 SQLite，<code>FAV_CHECK_DISABLE=1</code> 可关。</li>
+</ul>
+<p><strong>片单</strong>（像豆瓣豆列）</p>
+<ul>
+<li>自建片子清单：名字、简介，随时加删。</li>
+<li>可设公开，分享链接 <code>/?list=&lt;id&gt;</code>；设回私密后链接立即失效。</li>
+<li>每人 50 个片单、每个 500 部。独立用户存账号，其他人存本机。</li>
+</ul>
+<p><strong>推送通知</strong></p>
+<ul>
+<li>收藏更新、求片有结果时推送，点开直接到那一集。</li>
+<li>这台设备允许过通知就自动开；否则第一次点 ♥ 或求片后问一次。</li>
+<li>需要 HTTPS；iPhone / iPad 要先「添加到主屏幕」（iOS 16.4+）。</li>
+</ul>
+<p><strong>大家都在看</strong></p>
+<ul>
+<li>按全站近 7 天实测观看统计。</li>
+<li>除你之外至少 2 人各看过 2 分钟才上榜；你看过的不出现；只显示片名。</li>
+</ul>
+<h3 id="分享与-SEO"><a href="#分享与-SEO" class="headerlink" title="分享与 SEO"></a>分享与 SEO</h3><ul>
+<li><strong>深链</strong>：<code>/?play=剧名&amp;ep=集名&amp;t=秒数</code>（同名多部带 <code>&amp;w=</code>），可分享到微信、QQ、Telegram 等。</li>
+<li><strong>截帧分享</strong>：当前画面 + 剧名、集数、时间 + 二维码，扫码从这一秒开始看。</li>
+<li><strong>未登录试看</strong>：打开分享链接直接从分享的位置播放，试看 <code>SHARE_TRIAL_MINUTES</code> 分钟，到时登录后接着播。</li>
+<li><strong>未登录预览</strong>：不能试看时只显示标题、简介、海报（<strong>不访问任何资源站</strong>）。</li>
+<li><strong>社媒卡片</strong>：爬虫抓取时返回 OpenGraph / Twitter Card。</li>
+<li><strong>SEO</strong>：<code>/movie/:id</code>、<code>/tv/:id</code> 服务端渲染页，<code>/sitemap.xml</code>、<code>/robots.txt</code>。</li>
+</ul>
+<h3 id="直播-IPTV"><a href="#直播-IPTV" class="headerlink" title="直播 (IPTV)"></a>直播 (IPTV)</h3><p>聚合 <a target="_blank" rel="noopener" href="https://github.com/vbskycn/iptv">vbskycn/iptv</a> 和 <a target="_blank" rel="noopener" href="https://github.com/iptv-org/iptv">iptv-org</a>，约 1800 个频道。</p>
+<ul>
+<li><strong>筛选</strong>：13 种语言 × 22 个种类，每页 48 个。</li>
+<li><strong>线路</strong>：每个频道多条线路，失败自动切换；最近观看跨设备同步；可分享 <code>?live=频道名</code>。</li>
+<li>**必须配 <code>CORS_PROXY_URL</code>**：http 源经 Worker 升级为 https。</li>
+<li><strong>可达性</strong>：服务器测每个频道的前 2 条线路，不通的置灰。央视多为运营商内网地址，海外大多看不了，可用 <code>LIVE_M3U_EXTRA</code> 接付费源。</li>
+<li><strong>成人频道</strong>：<code>LIVE_M3U_ADULT</code> 注入（不内置），默认被成人过滤隐藏。</li>
+</ul>
+<h3 id="账号与同步"><a href="#账号与同步" class="headerlink" title="账号与同步"></a>账号与同步</h3><p><strong>用户类型</strong></p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>来源</th>
+<th>同步</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主密码</td>
+<td><code>ACCESS_PASSWORD</code> 第 1 个</td>
+<td>不同步，多人共用</td>
+</tr>
+<tr>
+<td>独立用户</td>
+<td><code>ACCESS_PASSWORD</code> 其余每个</td>
+<td>跨设备同步</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>同步内容</strong>：观看历史（增量，只推变化的）、收藏、片单、弹幕设置、主题、封面大小、最近频道。需要 SQLite。</li>
+<li><strong>扫码登录</strong>：电视、盒子、App 登录页显示二维码，用已登录的手机扫码确认即可。二维码 5 分钟过期、只能用一次。</li>
+<li><strong>求片</strong>：配了 <code>ADMIN_TOKEN</code> 才有。每人最多 3 条待处理；站长回复链接或标记「需补充 / 无法提供」，用户在「我的求片」查看。</li>
+<li><strong>封禁</strong>：被封用户整站锁屏，同步、求片、评论一律拒绝。</li>
+<li>注意：密码只拦页面，搜索等接口本身不校验密码。</li>
+</ul>
+<h3 id="站长后台"><a href="#站长后台" class="headerlink" title="站长后台"></a>站长后台</h3><p>打开 <code>/admin</code>，输入 <code>ADMIN_TOKEN</code> 登录（需要 SQLite）。</p>
+<table>
+<thead>
+<tr>
+<th>页面</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>概览</td>
+<td>用户数、活跃、观看时长、每日柱状图、热门剧、分享来源、待处理求片</td>
+</tr>
+<tr>
+<td>用户</td>
+<td>筛选、排序、搜索；每人看过的剧和逐集明细；封禁 / 解封</td>
+</tr>
+<tr>
+<td>求片</td>
+<td>按状态分栏、「N 人想看」排序、回复模板、批量处理</td>
+</tr>
+<tr>
+<td>分享</td>
+<td>每条分享的渠道、打开次数、来源 App、带来的登录</td>
+</tr>
+<tr>
+<td>评论</td>
+<td>被扣下的评论和弹幕、屏蔽词、AI 审核记录</td>
+</tr>
+<tr>
+<td>片库</td>
+<td>片名索引进度</td>
+</tr>
+<tr>
+<td>AI 模型</td>
+<td>模型目录、测评评级、为各功能选模型（配了 <code>CF_AI_*</code> 才有）</td>
+</tr>
+</tbody></table>
+<p><strong>观看时长是实测的</strong></p>
+<ul>
+<li>只在画面真在走、页面在前台时计时，4 小时无操作视为挂机。</li>
+<li>断网先存本机，恢复后补发；每人每天最多计 24 小时。</li>
+<li>「看过一集」= 实际看 2 分钟以上，或看到 90%。</li>
+</ul>
+<p><strong>分享来源</strong>：每次分享生成短码（<code>&amp;s=</code>），按打开者的 User-Agent 识别来自哪个 App，不存 IP。</p>
+<p>不想统计设 <code>STATS_DISABLE=1</code>。</p>
+<h3 id="外观、TV-模式与偏好设置"><a href="#外观、TV-模式与偏好设置" class="headerlink" title="外观、TV 模式与偏好设置"></a>外观、TV 模式与偏好设置</h3><p><strong>主题</strong>：风格 × 明暗两个设置，明暗可跟随系统，跨设备同步。</p>
+<table>
+<thead>
+<tr>
+<th>风格</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>默认</td>
+<td>原来的影院风格</td>
+</tr>
+<tr>
+<td>极简黑白</td>
+<td>只有黑白、直角、无阴影</td>
+</tr>
+<tr>
+<td>赛博霓虹</td>
+<td>品红与青色霓虹、发光描边</td>
+</tr>
+<tr>
+<td>复古胶片</td>
+<td>琥珀色、衬线标题、老相片海报</td>
+</tr>
+<tr>
+<td>杂志风</td>
+<td>首页排成电子杂志</td>
+</tr>
+</tbody></table>
+<p><strong>TV 模式</strong></p>
+<ul>
+<li>开启：偏好设置里打开，或访问 <code>?tv=1</code>（<code>?tv=0</code> 关闭，会记住）。</li>
+<li>电视设备（Android TV、Fire TV、Tizen、WebOS 等）和 Android App 自动开启。</li>
+<li>方向键导航、确认键选择、返回键退出；播放时有倍速、换线路、±10 秒、选集按钮。</li>
+<li>老内核 WebView 给出提示而不是白屏。</li>
+</ul>
+<p><strong>偏好设置</strong>（右下角 ⚙️）</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>默认</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>隐藏随机盲盒</td>
+<td>关</td>
+<td>首页不显示随机推荐</td>
+</tr>
+<tr>
+<td>过滤成人内容</td>
+<td>开</td>
+<td>盲盒只出 PG-13 / TV-14 及以下，隐藏成人直播</td>
+</tr>
+<tr>
+<td>跳过按钮</td>
+<td>开</td>
+<td>片头片尾处显示跳过按钮</td>
+</tr>
+<tr>
+<td>自动跳过片头/片尾</td>
+<td>关</td>
+<td>已确认的片头直接跳；片尾仍只亮按钮</td>
+</tr>
+<tr>
+<td>封面/文字大小</td>
+<td>标准</td>
+<td>小 / 标准 / 大 / 特大，跨设备同步</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="Android-App"><a href="#Android-App" class="headerlink" title="Android App"></a>Android App</h2><p>Capacitor 外壳，打开内置的站点地址（默认 <code>https://ednovas.video</code>）。App ID <code>com.ednovas.donguatv</code>，最低 Android 7.0。</p>
+<ul>
+<li><strong>自动构建</strong>：推送 <code>v*.*.*</code> tag 触发 GitHub Actions，在 Releases 下载 APK。</li>
+<li><strong>自定义构建</strong>：Actions → Android Build &amp; Release → Run workflow，填服务器地址、App 名称、版本号。</li>
+<li><strong>签名</strong>：配了 Secrets（<code>SIGNING_KEY</code>、<code>KEY_STORE_PASSWORD</code>、<code>ALIAS</code>、<code>KEY_PASSWORD</code>）就用它，否则 debug 签名。</li>
+<li><strong>图标</strong>：由 <code>public/icon.png</code> 自动生成。</li>
+</ul>
+<details>
+<summary>本地构建</summary>
+
+<p>需要 Node 22+、JDK 21、Android SDK 36。</p>
+<ul>
+<li>服务器地址：<code>capacitor.config.json</code> 的 <code>server.url</code></li>
+<li>App 名称：<code>android/app/src/main/res/values/strings.xml</code></li>
+<li>版本：<code>android/app/build.gradle</code></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install &amp;&amp; npx <span class="built_in">cap</span> <span class="built_in">sync</span> android</span><br><span class="line"><span class="built_in">cd</span> android &amp;&amp; ./gradlew assembleRelease   <span class="comment"># 产物未签名，需自行签名</span></span><br></pre></td></tr></table></figure>
+</details>
+
+<p>App 有问题时，网页版和 PWA 兼容性最好；电视推荐当贝浏览器。</p>
+<hr>
+<h2 id="数据与备份"><a href="#数据与备份" class="headerlink" title="数据与备份"></a>数据与备份</h2><table>
+<thead>
+<tr>
+<th>文件</th>
+<th>内容</th>
+<th>能删吗</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>db.json</code></td>
+<td>采集源配置</td>
+<td>否</td>
+</tr>
+<tr>
+<td><code>cache.db</code>（+ <code>-wal</code> / <code>-shm</code>）</td>
+<td><strong>所有用户数据</strong>：历史、设置、收藏、片单、评论、推送、求片、统计、片头标记；以及各类缓存</td>
+<td><strong>否</strong></td>
+</tr>
+<tr>
+<td><code>shorts-sites.json</code></td>
+<td>只给短剧用的站（可选）</td>
+<td>否</td>
+</tr>
+<tr>
+<td><code>title-index.db</code>（+ <code>-wal</code> / <code>-shm</code>）</td>
+<td>片名索引</td>
+<td>可以，会自动重爬</td>
+</tr>
+<tr>
+<td><code>public/cache/images/</code></td>
+<td>TMDB 图片缓存（上限 1GB）</td>
+<td>可以</td>
+</tr>
+<tr>
+<td><code>cache_*.json</code></td>
+<td>仅 <code>CACHE_TYPE=json</code> 时的缓存与片头标记</td>
+<td>可以，但会丢片头标记</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>⚠️ <code>cache.db</code> 不只是缓存，删掉会丢掉所有用户数据。换服务器时整个带走。</p>
 </blockquote>
-<p><strong>问题现象</strong>：</p>
-<ul>
-<li>APK 在 Android TV / 手机上一直显示 loading</li>
-<li>浏览器可以正常访问 <code>http://192.168.x.x:3000</code>，但 APP 不行</li>
-<li>控制台报错 <code>net::ERR_CLEARTEXT_NOT_PERMITTED</code></li>
-</ul>
-<p><strong>解决方案</strong>：</p>
-<p>本项目已内置 HTTP 支持配置。如果您使用 GitHub Actions 自动构建或本地构建，APK 会自动支持 HTTP 访问。</p>
-<p><strong>使用 GitHub Actions 构建内网 APK</strong>：</p>
-<ol>
-<li>进入 <strong>Actions</strong> → <strong>Android Build &amp; Release</strong> → <strong>Run workflow</strong></li>
-<li>填写您的内网服务器地址：<code>http://192.168.1.100:3000</code></li>
-<li>构建完成后下载 APK，即可正常访问 HTTP 服务</li>
-</ol>
-<p><strong>📝 注意事项</strong>：</p>
-<ul>
-<li><code>capacitor.config.json</code> 中的 <code>&quot;cleartext&quot;: true</code> 是 Capacitor 配置，但 Android 9+ 还需要上述 Android 原生配置</li>
-<li>如果您手动构建 APK，请确保项目代码是最新版本（包含上述配置）</li>
-<li>建议使用固定 IP 地址而非主机名，避免 DNS 解析问题</li>
-</ul>
-<hr>
-<h2 id="💾-数据维护与备份"><a href="#💾-数据维护与备份" class="headerlink" title="💾 数据维护与备份"></a>💾 数据维护与备份</h2><p>本项目的核心数据存储在以下两个文件中，建议定期备份：</p>
-<ol>
-<li>**<code>db.json</code>**：存储所有的采集源配置信息（重要）。</li>
-<li><strong><code>cache.db</code></strong> (SQLite模式)：存储搜索结果和详情的数据库文件。</li>
-<li><strong><code>cache_search.json</code> / <code>cache_detail.json</code></strong> (JSON模式)：存储缓存的 JSON 文件。</li>
-</ol>
-<h3 id="备份命令示例"><a href="#备份命令示例" class="headerlink" title="备份命令示例"></a>备份命令示例</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 备份到当前用户的 backup 目录</span></span><br><span class="line"><span class="built_in">mkdir</span> -p ~/backup</span><br><span class="line"><span class="built_in">cp</span> /opt/dongguaTV/db.json ~/backup/</span><br><span class="line"><span class="comment"># 如果使用 SQLite</span></span><br><span class="line">[ -f /opt/dongguaTV/cache.db ] &amp;&amp; <span class="built_in">cp</span> /opt/dongguaTV/cache.db ~/backup/</span><br><span class="line"><span class="comment"># 如果使用 JSON</span></span><br><span class="line">[ -f /opt/dongguaTV/cache_search.json ] &amp;&amp; <span class="built_in">cp</span> /opt/dongguaTV/cache_search.json ~/backup/</span><br></pre></td></tr></table></figure>
-
-<h3 id="清理缓存"><a href="#清理缓存" class="headerlink" title="清理缓存"></a>清理缓存</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># SQLite 模式</span></span><br><span class="line"><span class="built_in">rm</span> /opt/dongguaTV/cache.db</span><br><span class="line"></span><br><span class="line"><span class="comment"># JSON 模式</span></span><br><span class="line"><span class="built_in">rm</span> /opt/dongguaTV/cache_*.json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重启服务生效</span></span><br><span class="line">pm2 restart donggua-tv</span><br></pre></td></tr></table></figure>
+<p>在线备份（不用停服务）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sqlite3 /opt/dongguaTV/cache.db <span class="string">&quot;.backup &#x27;/root/backup/cache-<span class="subst">$(date +%F)</span>.db&#x27;&quot;</span></span><br><span class="line"><span class="built_in">cp</span> /opt/dongguaTV/db.json /root/backup/</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h2 id="📝-贡献与致谢"><a href="#📝-贡献与致谢" class="headerlink" title="📝 贡献与致谢"></a>📝 贡献与致谢</h2><p>本项目由 <strong>kk爱吃王哥呆阿龟头</strong> 设计编写， <strong>ednovas</strong> 优化了功能和部署流程。<br>数据由 <strong>TMDb</strong> 和各式 <strong>Maccms</strong> API 提供。</p>
+<h2 id="开发与测试"><a href="#开发与测试" class="headerlink" title="开发与测试"></a>开发与测试</h2><p><strong>结构</strong></p>
+<ul>
+<li>前端：单文件 <code>public/index.html</code>（Vue 3）</li>
+<li>后端：<code>server.js</code>（VPS）/ <code>api/index.js</code>（Vercel）</li>
+<li>模块：<code>lib/</code>（番剧源、剪后清单、线路档案、弹幕缓存、统计、收藏、推送、片单、评论、短剧、追剧日历、片名索引、AI）</li>
+</ul>
+<p><strong>回归测试</strong>（<code>node scripts/&lt;名字&gt;.mjs</code>）</p>
+<table>
+<thead>
+<tr>
+<th>方面</th>
+<th>脚本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>去广告</td>
+<td><code>worker-test</code>、<code>adclip-test</code>、<code>hls-cut-test</code></td>
+</tr>
+<tr>
+<td>线路与搜索</td>
+<td><code>source-list-test</code>、<code>site-profiles-test</code>、<code>src-len-test</code>、<code>title-index-test</code>、<code>kazumi-test</code></td>
+</tr>
+<tr>
+<td>播放器</td>
+<td><code>hole-skip-test</code>、<code>seek-preview-test</code>、<code>watch-meter-test</code>、<code>check-hls-lc-patch</code>（升级 hls.js 必跑）</td>
+</tr>
+<tr>
+<td>片头片尾</td>
+<td><code>intro-refine-test</code>、<code>intro-mark-migrate-test</code></td>
+</tr>
+<tr>
+<td>弹幕</td>
+<td><code>danmaku-match-test</code>、<code>danmaku-cache-test</code>、<code>danmaku-sync-test</code>、<code>danmaku-offset-test</code>、<code>danmaku-auto-test</code>、<code>danmaku-load-test</code>、<code>danmaku-flash-test</code></td>
+</tr>
+<tr>
+<td>账号与同步</td>
+<td><code>history-sync-test</code>、<code>qr-login-test</code>、<code>share-trial-test</code>、<code>user-stats-test</code></td>
+</tr>
+<tr>
+<td>收藏与推送</td>
+<td><code>favorites-test</code>、<code>favorites-client-test</code>、<code>push-test</code>、<code>frame-share-test</code></td>
+</tr>
+<tr>
+<td>新功能</td>
+<td><code>shorts-feed-test</code>、<code>playlists-test</code>、<code>comments-test</code>、<code>calendar-test</code>、<code>catalog-test</code>、<code>voice-test</code>、<code>ai-models-test</code></td>
+</tr>
+<tr>
+<td>页面结构</td>
+<td><code>page-syntax-test</code>、<code>index-methods-test</code>、<code>home-layout-test</code>、<code>resume-layout-test</code></td>
+</tr>
+</tbody></table>
+<p><strong>改动须知</strong></p>
+<ul>
+<li>改了前端库：<code>public/sw.js</code> 里同时升 <code>?v=</code> 和 <code>CACHE_VERSION</code>。</li>
+<li>改了 Worker：要重新部署 Worker。</li>
+<li>改了 <code>index.html</code>：服务器会缓存它，要重启。</li>
+</ul>
 <hr>
-<h2 id="⚠️-免责声明-Disclaimer"><a href="#⚠️-免责声明-Disclaimer" class="headerlink" title="⚠️ 免责声明 (Disclaimer)"></a>⚠️ 免责声明 (Disclaimer)</h2><ol>
-<li><strong>仅供学习交流</strong>：本项目仅作为 Node.js 和 Vue 3 的学习练手项目开源，旨在展示前后端交互、数据聚合与 UI 设计技术。</li>
-<li><strong>API 说明</strong>：本项目<strong>不内置</strong>任何有效的影视资源采集接口。README 或代码演示中可能出现的 API 地址仅为占位符或示例，不保证可用性。</li>
-<li><strong>自行配置</strong>：使用者需自行寻找合法的 Maccms V10/JSON 格式的采集接口，并遵守相关法律法规。</li>
-<li><strong>内容无关</strong>：开发者不存储、不发布、不参与任何视频内容的制作与传播，对用户配置的内容不承担任何责任。</li>
+<h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><p>由 <strong>kk爱吃王哥呆阿龟头</strong> 设计编写，<strong>ednovas</strong> 优化功能与部署。</p>
+<ul>
+<li>弹幕：<a target="_blank" rel="noopener" href="https://github.com/huangxd-/danmu_api">danmu_api</a></li>
+<li>番剧规则：<a target="_blank" rel="noopener" href="https://github.com/Predidit/KazumiRules">KazumiRules</a>（MIT，见 <code>lib/kazumi/rules/NOTICE</code>）</li>
+<li>数据：<strong>TMDb</strong> 与各 <strong>Maccms</strong> 接口</li>
+</ul>
+<h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><ol>
+<li>本项目仅作为 Node.js 与 Vue 3 的学习项目开源。</li>
+<li>本项目不内置任何影视资源接口，文档与代码中的地址均为占位示例。</li>
+<li>使用者需自行寻找合法接口并遵守当地法律法规。</li>
+<li>开发者不存储、不发布、不参与任何视频内容的制作与传播。</li>
 </ol>
-<hr>
-<p><em>Enjoy your movie night! 🍿</em></p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">EdNovas</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/">https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BC%96%E7%A8%8B/">编程</a><a class="post-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6/">软件</a><a class="post-meta__tags" href="/tags/%E7%94%B5%E5%BD%B1/">电影</a><a class="post-meta__tags" href="/tags/%E7%94%B5%E8%A7%86%E5%89%A7/">电视剧</a><a class="post-meta__tags" href="/tags/Vue/">Vue</a><a class="post-meta__tags" href="/tags/Node-js/">Node.js</a></div><div class="post_share"><div class="social-share" data-image="https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950" data-sites="qq,wechat,weibo,qzone"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="ads-wrap"><a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png"><center><h3>EdNovas云————高性价比，节点覆盖80+国家，多地区奈飞迪士尼等流媒体解锁</h3></center></a></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2025/12/31/vps-manager-pro/"><img class="prev-cover" src="https://github.com/user-attachments/assets/53cfb7b2-d51d-40d3-b63c-82b285f828c8" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">VPS Manager Pro (Web SSH Terminal)</div></div></a></div><div class="next-post pull-right"><a href="/2024/04/25/gigabit/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/gigabit1.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Server Gigabit Network</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2021/02/22/videos/" title="电影电视剧资源网站/APP"><img class="cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/EhjA-hmhafis3300165.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-22</div><div class="title">电影电视剧资源网站/APP</div></div></a></div><div><a href="/2021/02/04/renren/" title="人人影视被查，涉案金额1600万元"><img class="cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1534469249266361.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-04</div><div class="title">人人影视被查，涉案金额1600万元</div></div></a></div><div><a href="/2021/10/01/regex/" title="Regular Expression 正则表达式"><img class="cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/featured.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-01</div><div class="title">Regular Expression 正则表达式</div></div></a></div><div><a href="/2021/10/01/algorithm/" title="Algorithm算法"><img class="cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/algorithms_landlord-FINAL.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-01</div><div class="title">Algorithm算法</div></div></a></div><div><a href="/2021/09/23/mips/" title="Assembly language 汇编语言基础"><img class="cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/49561-assembly-language.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-23</div><div class="title">Assembly language 汇编语言基础</div></div></a></div><div><a href="/2022/01/10/e5renewplus/" title="Microsoft 365 E5 Renew Plus 续订程序"><img class="cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/office-365-upgrade.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-10</div><div class="title">Microsoft 365 E5 Renew Plus 续订程序</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BC%94%E7%A4%BA%E7%BD%91%E7%AB%99"><span class="toc-number">1.</span> <span class="toc-text">演示网站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9C%A8-%E6%A0%B8%E5%BF%83%E7%89%B9%E6%80%A7-Core-Features"><span class="toc-number">2.</span> <span class="toc-text">✨ 核心特性 (Core Features)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%F0%9F%8E%AC-%E5%8F%8C%E5%BC%95%E6%93%8E%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8"><span class="toc-number">2.1.</span> <span class="toc-text">1. 🎬 双引擎数据驱动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%F0%9F%94%8D-%E6%99%BA%E8%83%BD%E6%90%9C%E7%B4%A2%E4%B8%8E%E8%81%9A%E5%90%88"><span class="toc-number">2.2.</span> <span class="toc-text">2. 🔍 智能搜索与聚合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%F0%9F%93%BA-%E6%B2%89%E6%B5%B8%E5%BC%8F%E6%92%AD%E6%94%BE%E4%BD%93%E9%AA%8C"><span class="toc-number">2.3.</span> <span class="toc-text">3. 📺 沉浸式播放体验</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%F0%9F%8C%8F-%E5%A4%A7%E9%99%86%E7%94%A8%E6%88%B7%E4%BC%98%E5%8C%96"><span class="toc-number">2.4.</span> <span class="toc-text">4. 🌏 大陆用户优化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%F0%9F%93%B1-%E5%A4%9A%E7%AB%AF%E6%94%AF%E6%8C%81"><span class="toc-number">2.5.</span> <span class="toc-text">5. 📱 多端支持</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%F0%9F%94%92-%E5%AE%89%E5%85%A8%E4%B8%8E%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6"><span class="toc-number">2.6.</span> <span class="toc-text">6. 🔒 安全与访问控制</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%A8-%E7%95%8C%E9%9D%A2%E4%B8%8E%E4%BA%A4%E4%BA%92%E5%8D%87%E7%BA%A7-UI-UX-Upgrades"><span class="toc-number">3.</span> <span class="toc-text">🎨 界面与交互升级 (UI&#x2F;UX Upgrades)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9B%A0%EF%B8%8F-%E6%8A%80%E6%9C%AF%E6%A0%88-Tech-Stack"><span class="toc-number">4.</span> <span class="toc-text">🛠️ 技术栈 (Tech Stack)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%A7-%E5%89%8D%E7%BD%AE%E5%87%86%E5%A4%87"><span class="toc-number">5.</span> <span class="toc-text">🔧 前置准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E2%9A%A0%EF%B8%8F-%E9%85%8D%E7%BD%AE%E9%87%87%E9%9B%86%E6%BA%90-%E9%87%8D%E8%A6%81"><span class="toc-number">5.1.</span> <span class="toc-text">1. ⚠️ 配置采集源 (重要)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%8E%B7%E5%8F%96-TMDb-API-Key-%E5%BF%85%E9%9C%80"><span class="toc-number">5.2.</span> <span class="toc-text">2. 获取 TMDb API Key (必需)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%A4%A7%E9%99%86%E7%94%A8%E6%88%B7%EF%BC%9A%E9%83%A8%E7%BD%B2-TMDB-%E5%8F%8D%E4%BB%A3-%E5%8F%AF%E9%80%89"><span class="toc-number">5.3.</span> <span class="toc-text">3. 大陆用户：部署 TMDB 反代 (可选)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%80%EF%BC%9A%E9%83%A8%E7%BD%B2-Cloudflare-Workers-%E5%8F%8D%E4%BB%A3-%E6%8E%A8%E8%8D%90"><span class="toc-number">5.3.1.</span> <span class="toc-text">方案一：部署 Cloudflare Workers 反代 (推荐)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%B5%84%E6%BA%90%E7%AB%99-CORS-%E4%BB%A3%E7%90%86-%E5%8F%AF%E9%80%89-%E6%8E%A8%E8%8D%90"><span class="toc-number">5.4.</span> <span class="toc-text">4. 资源站 CORS 代理 (可选&#x2F;推荐)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%94%AF%E6%8C%81%E7%9A%84%E5%9C%BA%E6%99%AF"><span class="toc-number">5.4.1.</span> <span class="toc-text">支持的场景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD"><span class="toc-number">5.4.2.</span> <span class="toc-text">核心功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">5.4.3.</span> <span class="toc-text">工作原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2-CORS-%E4%BB%A3%E7%90%86-Cloudflare-Workers"><span class="toc-number">5.4.4.</span> <span class="toc-text">部署 CORS 代理 (Cloudflare Workers)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2-CORS-%E4%BB%A3%E7%90%86-VPS-Node-js"><span class="toc-number">5.4.5.</span> <span class="toc-text">部署 CORS 代理 (VPS &#x2F; Node.js)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="toc-number">5.4.6.</span> <span class="toc-text">代理工作流程图</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%92-%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%B8%8E%E8%BF%9C%E7%A8%8B%E5%8A%A0%E8%BD%BD-%E9%AB%98%E7%BA%A7"><span class="toc-number">6.</span> <span class="toc-text">🔒 安全配置与远程加载 (高级)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81"><span class="toc-number">6.1.</span> <span class="toc-text">全局访问密码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-db-json"><span class="toc-number">6.2.</span> <span class="toc-text">远程配置文件 (db.json)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E7%94%A8%E6%88%B7%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%A7%82%E7%9C%8B%E5%8E%86%E5%8F%B2%E5%90%8C%E6%AD%A5-%E6%96%B0%E5%8A%9F%E8%83%BD"><span class="toc-number">6.3.</span> <span class="toc-text">多用户模式与观看历史同步 (新功能)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%A6-%E5%AE%89%E8%A3%85%E4%B8%8E%E8%BF%90%E8%A1%8C-Installation"><span class="toc-number">7.</span> <span class="toc-text">📦 安装与运行 (Installation)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%9A%80-%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC-%E6%8E%A8%E8%8D%90"><span class="toc-number">7.1.</span> <span class="toc-text">🚀 一键安装脚本 (推荐)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E5%8A%A8%E6%9C%AC%E5%9C%B0%E8%BF%90%E8%A1%8C"><span class="toc-number">7.2.</span> <span class="toc-text">手动本地运行</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85-Node-js-v18"><span class="toc-number">7.2.1.</span> <span class="toc-text">1. 安装 Node.js (v18+)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7-%E5%8F%AF%E9%80%89"><span class="toc-number">7.2.2.</span> <span class="toc-text">2. 安装编译工具 (可选)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E4%BE%9D%E8%B5%96"><span class="toc-number">7.2.3.</span> <span class="toc-text">3. 安装项目依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">7.2.4.</span> <span class="toc-text">4. 配置环境变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1"><span class="toc-number">7.2.5.</span> <span class="toc-text">5. 启动服务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E8%AE%BF%E9%97%AE"><span class="toc-number">7.2.6.</span> <span class="toc-text">6. 访问</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9A%80-%E9%83%A8%E7%BD%B2-Deployment"><span class="toc-number">8.</span> <span class="toc-text">🚀 部署 (Deployment)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%90%B3-Docker-%E9%83%A8%E7%BD%B2-%E6%8E%A8%E8%8D%90"><span class="toc-number">8.1.</span> <span class="toc-text">🐳 Docker 部署 (推荐)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AF%B4%E6%98%8E"><span class="toc-number">8.1.1.</span> <span class="toc-text">环境变量说明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%80%EF%BC%9A%E4%BD%BF%E7%94%A8%E7%8E%B0%E6%9C%89%E9%95%9C%E5%83%8F%EF%BC%88%E6%9C%80%E5%BF%AB%EF%BC%89"><span class="toc-number">8.1.2.</span> <span class="toc-text">方案一：使用现有镜像（最快）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%BA%8C%EF%BC%9A%E6%9C%AC%E5%9C%B0%E6%9E%84%E5%BB%BA"><span class="toc-number">8.1.3.</span> <span class="toc-text">方案二：本地构建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%89%EF%BC%9ADocker-Compose"><span class="toc-number">8.1.4.</span> <span class="toc-text">方案三：Docker Compose</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%96%B2-Vercel-%E9%83%A8%E7%BD%B2"><span class="toc-number">8.2.</span> <span class="toc-text">▲ Vercel 部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%9A%A0%EF%B8%8F-Vercel-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">8.2.1.</span> <span class="toc-text">⚠️ Vercel 环境变量配置注意事项</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%96%A5%EF%B8%8F-Linux-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%83%A8%E7%BD%B2-PM2"><span class="toc-number">8.3.</span> <span class="toc-text">🖥️ Linux 服务器命令行部署 (PM2)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%8F%B0-%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF-aaPanel-%E9%83%A8%E7%BD%B2"><span class="toc-number">8.4.</span> <span class="toc-text">🏰 宝塔面板 (aaPanel) 部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%A4%96-Android-APP-%E6%9E%84%E5%BB%BA-GitHub-Actions"><span class="toc-number">8.4.1.</span> <span class="toc-text">🤖 Android APP 构建 (GitHub Actions)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%93%B1-%E6%9E%84%E5%BB%BA%E7%89%B9%E6%80%A7"><span class="toc-number">8.4.2.</span> <span class="toc-text">📱 构建特性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%93%B1-APK-%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE"><span class="toc-number">8.4.3.</span> <span class="toc-text">📱 APK 默认配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%94%A7-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9E%84%E5%BB%BA-%E6%96%B0%E5%8A%9F%E8%83%BD"><span class="toc-number">8.4.4.</span> <span class="toc-text">🔧 自定义构建 (新功能)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%94%A7-%E4%BB%A3%E7%A0%81%E4%BF%AE%E6%94%B9%E6%96%B9%E5%BC%8F-%E9%AB%98%E7%BA%A7"><span class="toc-number">8.4.5.</span> <span class="toc-text">🔧 代码修改方式 (高级)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%8F%A0-%E5%86%85%E7%BD%91-HTTP-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E"><span class="toc-number">8.4.6.</span> <span class="toc-text">🏠 内网 HTTP 使用说明</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%BE-%E6%95%B0%E6%8D%AE%E7%BB%B4%E6%8A%A4%E4%B8%8E%E5%A4%87%E4%BB%BD"><span class="toc-number">9.</span> <span class="toc-text">💾 数据维护与备份</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD%E5%91%BD%E4%BB%A4%E7%A4%BA%E4%BE%8B"><span class="toc-number">9.1.</span> <span class="toc-text">备份命令示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%85%E7%90%86%E7%BC%93%E5%AD%98"><span class="toc-number">9.2.</span> <span class="toc-text">清理缓存</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%9D-%E8%B4%A1%E7%8C%AE%E4%B8%8E%E8%87%B4%E8%B0%A2"><span class="toc-number">10.</span> <span class="toc-text">📝 贡献与致谢</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9A%A0%EF%B8%8F-%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E-Disclaimer"><span class="toc-number">11.</span> <span class="toc-text">⚠️ 免责声明 (Disclaimer)</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2026 By EdNovas</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">已经到底啦！再往下划要坏掉啦！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">EdNovas</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/">https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BC%96%E7%A8%8B/">编程</a><a class="post-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6/">软件</a><a class="post-meta__tags" href="/tags/%E7%94%B5%E5%BD%B1/">电影</a><a class="post-meta__tags" href="/tags/%E7%94%B5%E8%A7%86%E5%89%A7/">电视剧</a><a class="post-meta__tags" href="/tags/Vue/">Vue</a><a class="post-meta__tags" href="/tags/Node-js/">Node.js</a></div><div class="post_share"><div class="social-share" data-image="https://github.com/user-attachments/assets/15392a90-9078-45b6-828d-829402669950" data-sites="qq,wechat,weibo,qzone"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="ads-wrap"><a href="https://ednovas.me/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Snipaste_2021-11-20_17-48-37.png"><center><h3>EdNovas云————高性价比，节点覆盖80+国家，多地区奈飞迪士尼等流媒体解锁</h3></center></a></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2025/12/31/vps-manager-pro/"><img class="prev-cover" src="https://github.com/user-attachments/assets/53cfb7b2-d51d-40d3-b63c-82b285f828c8" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">VPS Manager Pro (Web SSH Terminal)</div></div></a></div><div class="next-post pull-right"><a href="/2024/04/25/gigabit/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/gigabit1.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5120x2880-3150.webp'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Server Gigabit Network</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2021/02/22/videos/" title="电影电视剧资源网站/APP"><img class="cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/EhjA-hmhafis3300165.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-22</div><div class="title">电影电视剧资源网站/APP</div></div></a></div><div><a href="/2021/02/04/renren/" title="人人影视被查，涉案金额1600万元"><img class="cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/1534469249266361.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-04</div><div class="title">人人影视被查，涉案金额1600万元</div></div></a></div><div><a href="/2021/10/01/regex/" title="Regular Expression 正则表达式"><img class="cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/featured.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-01</div><div class="title">Regular Expression 正则表达式</div></div></a></div><div><a href="/2021/10/01/algorithm/" title="Algorithm算法"><img class="cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/algorithms_landlord-FINAL.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-01</div><div class="title">Algorithm算法</div></div></a></div><div><a href="/2021/09/23/mips/" title="Assembly language 汇编语言基础"><img class="cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/49561-assembly-language.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-23</div><div class="title">Assembly language 汇编语言基础</div></div></a></div><div><a href="/2022/01/10/e5renewplus/" title="Microsoft 365 E5 Renew Plus 续订程序"><img class="cover" src="https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/office-365-upgrade.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-10</div><div class="title">Microsoft 365 E5 Renew Plus 续订程序</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#E%E8%A7%86%E7%95%8C"><span class="toc-number">1.</span> <span class="toc-text">E视界</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%AB%99"><span class="toc-number">2.</span> <span class="toc-text">网站</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-number">2.1.</span> <span class="toc-text">目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E4%B8%80%E8%A7%88"><span class="toc-number">2.2.</span> <span class="toc-text">功能一览</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"><span class="toc-number">2.3.</span> <span class="toc-text">快速开始</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%87%86%E5%A4%87"><span class="toc-number">2.3.1.</span> <span class="toc-text">1. 准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%83%A8%E7%BD%B2"><span class="toc-number">2.3.2.</span> <span class="toc-text">2. 部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Docker%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">2.3.2.1.</span> <span class="toc-text">Docker（推荐）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E9%94%AE%E8%84%9A%E6%9C%AC"><span class="toc-number">2.3.2.2.</span> <span class="toc-text">一键脚本</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%8B%E5%8A%A8-PM2-%E5%AE%9D%E5%A1%94"><span class="toc-number">2.3.2.3.</span> <span class="toc-text">手动 &#x2F; PM2 &#x2F; 宝塔</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vercel"><span class="toc-number">2.3.2.4.</span> <span class="toc-text">Vercel</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">2.3.3.</span> <span class="toc-text">3. 环境变量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%AF%E9%80%89%E7%BB%84%E4%BB%B6"><span class="toc-number">2.4.</span> <span class="toc-text">可选组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CORS-%E4%BB%A3%E7%90%86"><span class="toc-number">2.4.1.</span> <span class="toc-text">CORS 代理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TMDB-%E5%8F%8D%E4%BB%A3"><span class="toc-number">2.4.2.</span> <span class="toc-text">TMDB 反代</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%B9%E5%B9%95%E6%9C%8D%E5%8A%A1-danmu-api"><span class="toc-number">2.4.3.</span> <span class="toc-text">弹幕服务 danmu_api</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E"><span class="toc-number">2.5.</span> <span class="toc-text">功能说明</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E4%B8%8E%E9%A6%96%E9%A1%B5"><span class="toc-number">2.5.1.</span> <span class="toc-text">搜索与首页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9F%AD%E5%89%A7"><span class="toc-number">2.5.2.</span> <span class="toc-text">短剧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E8%B7%AF%E5%88%86%E7%BB%84%E4%B8%8E%E8%87%AA%E5%8A%A8%E9%80%89%E6%BA%90"><span class="toc-number">2.5.3.</span> <span class="toc-text">线路分组与自动选源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%BB%E5%B9%BF%E5%91%8A"><span class="toc-number">2.5.4.</span> <span class="toc-text">去广告</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%92%AD%E6%94%BE%E5%99%A8"><span class="toc-number">2.5.5.</span> <span class="toc-text">播放器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%B3%E8%BF%87%E7%89%87%E5%A4%B4%E7%89%87%E5%B0%BE"><span class="toc-number">2.5.6.</span> <span class="toc-text">跳过片头片尾</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A6%BB%E7%BA%BF%E7%BC%93%E5%AD%98"><span class="toc-number">2.5.7.</span> <span class="toc-text">离线缓存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%B9%E5%B9%95"><span class="toc-number">2.5.8.</span> <span class="toc-text">弹幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E4%B8%8E%E7%94%A8%E6%88%B7%E5%BC%B9%E5%B9%95"><span class="toc-number">2.5.9.</span> <span class="toc-text">评论与用户弹幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B6%E8%97%8F%E3%80%81%E7%89%87%E5%8D%95%E4%B8%8E%E6%8E%A8%E9%80%81"><span class="toc-number">2.5.10.</span> <span class="toc-text">收藏、片单与推送</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E4%BA%AB%E4%B8%8E-SEO"><span class="toc-number">2.5.11.</span> <span class="toc-text">分享与 SEO</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B4%E6%92%AD-IPTV"><span class="toc-number">2.5.12.</span> <span class="toc-text">直播 (IPTV)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%A6%E5%8F%B7%E4%B8%8E%E5%90%8C%E6%AD%A5"><span class="toc-number">2.5.13.</span> <span class="toc-text">账号与同步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AB%99%E9%95%BF%E5%90%8E%E5%8F%B0"><span class="toc-number">2.5.14.</span> <span class="toc-text">站长后台</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%96%E8%A7%82%E3%80%81TV-%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%81%8F%E5%A5%BD%E8%AE%BE%E7%BD%AE"><span class="toc-number">2.5.15.</span> <span class="toc-text">外观、TV 模式与偏好设置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android-App"><span class="toc-number">2.6.</span> <span class="toc-text">Android App</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E4%B8%8E%E5%A4%87%E4%BB%BD"><span class="toc-number">2.7.</span> <span class="toc-text">数据与备份</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E4%B8%8E%E6%B5%8B%E8%AF%95"><span class="toc-number">2.8.</span> <span class="toc-text">开发与测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%B4%E8%B0%A2"><span class="toc-number">2.9.</span> <span class="toc-text">致谢</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E"><span class="toc-number">2.10.</span> <span class="toc-text">免责声明</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2026 By EdNovas</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">已经到底啦！再往下划要坏掉啦！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
