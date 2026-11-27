@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2026-11-21T18:53:10.985Z</updated>
+  <updated>2026-11-27T04:56:20.576Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ednovas.xyz/2026/11/19/blackfriday2026/"/>
     <id>https://ednovas.xyz/2026/11/19/blackfriday2026/</id>
     <published>2026-11-19T22:30:00.000Z</published>
-    <updated>2026-11-21T18:53:10.985Z</updated>
+    <updated>2026-11-27T04:56:20.576Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -168,19 +168,21 @@
   </entry>
   
   <entry>
-    <title>Mondoze 黑五：云端 Mac mini M6 独立服务器 $109/月起，另有 Mac Studio M5 Max 和 M5 Ultra</title>
+    <title>Mondoze 黑五和网络星期一：Mac mini M4/M6 独立服务器最高 87 折，M6 年付 $109/月</title>
     <link href="https://ednovas.xyz/2026/11/19/mondoze-mac-mini-m6/"/>
     <id>https://ednovas.xyz/2026/11/19/mondoze-mac-mini-m6/</id>
     <published>2026-11-19T20:00:00.000Z</published>
-    <updated>2026-11-21T18:53:10.992Z</updated>
+    <updated>2026-11-26T22:00:00.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
-&lt;h1 id=&quot;Mondoze-黑五限时优惠：Mac-mini-M6-独立服务器-109-月起，支持-OpenAI-Codex-与-AI-Agent&quot;&gt;&lt;a href=&quot;#Mondoze-黑五限时优惠：Mac-mini-M6-独立服务器-109-月起，支持-OpenAI-Codex-与-AI-Agent&quot; class=&quot;headerlink&quot; title=&quot;Mondoze 黑五限时优惠：Mac mini M6 独立服务器 $109/月起，支持 OpenAI Codex 与 AI Agent&quot;&gt;&lt;/a&gt;Mondoze 黑五限时优惠：Mac mini M6 独立服务器 $109/月起，支持 OpenAI Codex 与 AI Agent&lt;/h1&gt;&lt;p&gt;Mondoze 的 MX 系列 Mac 独立服务器新上了马来西亚机房的 Mac mini M6。&lt;/p&gt;
-&lt;p&gt;配置是 Apple M6 芯片，12 核 CPU、12 核 GPU，双 16 核 Neural Engine，16GB 内存，256GB 存储，100Mbps 不限流量，带 1 个马来西亚 IPv4。&lt;/p&gt;
-&lt;p&gt;黑五期间用优惠码 BLACKFRIDAY2026，Mac mini M6 年付 $109/月起（官网原价年付 $138/月），活动到 2026 年 11 月 30 日截止。&lt;/p&gt;
-&lt;p&gt;MX 系列都是真实的 Apple Silicon 实体机，每个用户独享一整台，不做虚拟化，也不和别人共享硬件。除了 M6，还有这几款：&lt;/p&gt;
-&lt;p&gt;Mac mini M4，10 核 CPU、10 核 GPU，16GB 内存，256GB 存储（&lt;a href=&quot;/2026/10/30/mondoze-mac-mini/&quot;&gt;之前介绍过&lt;/a&gt;）。&lt;/p&gt;
+&lt;h1 id=&quot;Mondoze-网络星期一：马来西亚-Mac-mini-M4-M6-独立服务器-87-折，M6-年付-109-月&quot;&gt;&lt;a href=&quot;#Mondoze-网络星期一：马来西亚-Mac-mini-M4-M6-独立服务器-87-折，M6-年付-109-月&quot; class=&quot;headerlink&quot; title=&quot;Mondoze 网络星期一：马来西亚 Mac mini M4/M6 独立服务器 87 折，M6 年付 $109/月&quot;&gt;&lt;/a&gt;Mondoze 网络星期一：马来西亚 Mac mini M4/M6 独立服务器 87 折，M6 年付 $109/月&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;11-26 更新：加了网络星期一的优惠码 XJIW13，Mac mini M4 也能打折了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Mondoze 的网络星期一活动开始了，马来西亚机房的 Mac mini M4 和 M6 用优惠码 XJIW13 最高 87 折，M4 年付算下来 $86.13/月。&lt;/p&gt;
+&lt;p&gt;M6 年付还是用黑五的优惠码 BLACKFRIDAY2026 更便宜，$109/月（官网原价年付 $138/月）。&lt;/p&gt;
+&lt;p&gt;MX 系列都是真实的 Apple Silicon 实体机，每个用户独享一整台，不做虚拟化，也不和别人共享硬件。静态 IP 和动态 IP 可选，不限流量，可以用 SSH、Screen Sharing、DeskIn 和 ToDesk 远程连接，提供 99.9% SLA 和 7×24 技术支持，付款支持 USDT。&lt;/p&gt;
+&lt;p&gt;除了 M4 和 M6，还有这几款：&lt;/p&gt;
 &lt;p&gt;Mac mini M5 Pro，15 核 CPU、16 核 GPU，24GB 内存，512GB 存储。&lt;/p&gt;
 &lt;p&gt;Mac Studio M5 Max，18 核 CPU、32 核 GPU，36GB 内存，512GB 存储。&lt;/p&gt;
 &lt;p&gt;Mac Studio M5 Ultra，30 核 CPU、64 核 GPU，96GB 内存，1TB 存储。&lt;/p&gt;</summary>
@@ -204,6 +206,8 @@
     
     <category term="马来西亚" scheme="https://ednovas.xyz/tags/%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A/"/>
     
+    <category term="网络星期一" scheme="https://ednovas.xyz/tags/%E7%BD%91%E7%BB%9C%E6%98%9F%E6%9C%9F%E4%B8%80/"/>
+    
   </entry>
   
   <entry>
@@ -211,7 +215,7 @@
     <link href="https://ednovas.xyz/2026/11/18/ai-writing-humanizer-vs-distill/"/>
     <id>https://ednovas.xyz/2026/11/18/ai-writing-humanizer-vs-distill/</id>
     <published>2026-11-18T16:00:00.000Z</published>
-    <updated>2026-11-21T18:53:10.985Z</updated>
+    <updated>2026-11-27T04:56:20.576Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -285,7 +289,7 @@
     <link href="https://ednovas.xyz/2026/10/30/mondoze-mac-mini/"/>
     <id>https://ednovas.xyz/2026/10/30/mondoze-mac-mini/</id>
     <published>2026-10-30T20:00:00.000Z</published>
-    <updated>2026-11-21T18:53:10.992Z</updated>
+    <updated>2026-11-27T04:56:20.582Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -366,7 +370,7 @@
     <link href="https://ednovas.xyz/2026/09/30/mondoze/"/>
     <id>https://ednovas.xyz/2026/09/30/mondoze/</id>
     <published>2026-09-30T21:00:00.000Z</published>
-    <updated>2026-11-21T18:53:10.992Z</updated>
+    <updated>2026-11-27T04:56:20.582Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -397,7 +401,7 @@
     <link href="https://ednovas.xyz/2026/06/12/casbay/"/>
     <id>https://ednovas.xyz/2026/06/12/casbay/</id>
     <published>2026-06-12T22:00:00.000Z</published>
-    <updated>2026-11-21T18:53:10.985Z</updated>
+    <updated>2026-11-27T04:56:20.576Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -455,7 +459,7 @@
     <link href="https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/"/>
     <id>https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/</id>
     <published>2026-03-10T16:19:00.000Z</published>
-    <updated>2026-11-21T18:53:10.986Z</updated>
+    <updated>2026-11-27T04:56:20.577Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -489,7 +493,7 @@
     <link href="https://ednovas.xyz/2026/03/05/prompt-engineering-guide/"/>
     <id>https://ednovas.xyz/2026/03/05/prompt-engineering-guide/</id>
     <published>2026-03-05T14:48:00.000Z</published>
-    <updated>2026-11-21T18:53:10.994Z</updated>
+    <updated>2026-11-27T04:56:20.585Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -525,7 +529,7 @@
     <link href="https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/"/>
     <id>https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/</id>
     <published>2026-03-05T14:39:00.000Z</published>
-    <updated>2026-11-21T18:53:10.986Z</updated>
+    <updated>2026-11-27T04:56:20.577Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -560,7 +564,7 @@
     <link href="https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/"/>
     <id>https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/</id>
     <published>2026-03-05T14:23:00.000Z</published>
-    <updated>2026-11-21T18:53:10.990Z</updated>
+    <updated>2026-11-27T04:56:20.581Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -594,7 +598,7 @@
     <link href="https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/"/>
     <id>https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/</id>
     <published>2026-03-05T13:29:00.000Z</published>
-    <updated>2026-11-21T18:53:10.987Z</updated>
+    <updated>2026-11-27T04:56:20.578Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -632,7 +636,7 @@
     <link href="https://ednovas.xyz/2026/02/13/blendhosting2026/"/>
     <id>https://ednovas.xyz/2026/02/13/blendhosting2026/</id>
     <published>2026-02-13T22:28:00.000Z</published>
-    <updated>2026-11-21T18:53:10.985Z</updated>
+    <updated>2026-11-27T04:56:20.576Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot;&gt;&lt;a href=&quot;#Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot; class=&quot;headerlink&quot; title=&quot;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&quot;&gt;&lt;/a&gt;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&lt;/h1&gt;&lt;p&gt;Blend Hosting 是一家成立于 2005 年的海外服务器与云计算服务商，在 VPS 与服务器领域拥有 20 年以上的持续运营记录。相比偏向短期试用型的平台，Blend Hosting 的整体定位更偏向长期稳定运行与可持续使用的应用场景，目标用户群体也更明确。&lt;/p&gt;
@@ -660,7 +664,7 @@
     <link href="https://ednovas.xyz/2026/01/27/servergigabit/"/>
     <id>https://ednovas.xyz/2026/01/27/servergigabit/</id>
     <published>2026-01-27T20:38:00.000Z</published>
-    <updated>2026-11-21T18:53:10.996Z</updated>
+    <updated>2026-11-27T04:56:20.586Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot;&gt;&lt;a href=&quot;#🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot; class=&quot;headerlink&quot; title=&quot;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&quot;&gt;&lt;/a&gt;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&lt;/h1&gt;&lt;p&gt;本款 &lt;strong&gt;Deluxe Dedicated Server (MY) v2&lt;/strong&gt; 部署于马来西亚数据中心，采用企业级硬件配置，专为高并发、高性能及长期稳定运行的业务场景而设计 [cite: 3]。&lt;/p&gt;
@@ -736,7 +740,7 @@
     <link href="https://ednovas.xyz/2025/12/31/vps-manager-pro/"/>
     <id>https://ednovas.xyz/2025/12/31/vps-manager-pro/</id>
     <published>2025-12-31T13:46:00.000Z</published>
-    <updated>2026-11-21T18:53:10.998Z</updated>
+    <updated>2026-11-27T04:56:20.588Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Sample-Website-演示网站&quot;&gt;&lt;a href=&quot;#Sample-Website-演示网站&quot; class=&quot;headerlink&quot; title=&quot;Sample Website 演示网站&quot;&gt;&lt;/a&gt;Sample Website 演示网站&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://vps.ednovas.tech/&quot;&gt;https://vps.ednovas.tech&lt;/a&gt;&lt;/p&gt;
@@ -771,7 +775,7 @@
     <link href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/"/>
     <id>https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</id>
     <published>2025-12-31T13:41:00.000Z</published>
-    <updated>2026-11-21T18:53:10.987Z</updated>
+    <updated>2026-11-27T04:56:20.578Z</updated>
     
     
     <summary type="html">&lt;p&gt;这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 &lt;a href=&quot;https://github.com/Minerchu/dongguaTV&quot;&gt;https://github.com/Minerchu/dongguaTV&lt;/a&gt; ，本作添加了许多功能。&lt;/p&gt;
@@ -812,7 +816,7 @@
     <link href="https://ednovas.xyz/2024/04/25/gigabit/"/>
     <id>https://ednovas.xyz/2024/04/25/gigabit/</id>
     <published>2024-04-25T22:28:00.000Z</published>
-    <updated>2026-11-21T18:53:10.990Z</updated>
+    <updated>2026-11-27T04:56:20.580Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。&lt;/p&gt;
@@ -928,7 +932,7 @@
     <link href="https://ednovas.xyz/2023/12/14/blendhosting/"/>
     <id>https://ednovas.xyz/2023/12/14/blendhosting/</id>
     <published>2023-12-14T22:28:00.000Z</published>
-    <updated>2026-11-21T18:53:10.985Z</updated>
+    <updated>2026-11-27T04:56:20.576Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Blend Hosting &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com&lt;/a&gt;&lt;/p&gt;
