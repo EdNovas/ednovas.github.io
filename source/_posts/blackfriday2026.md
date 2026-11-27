@@ -13,7 +13,56 @@ cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Black_Friday_1200x62
 
 > 整理时间 2026-11-19，价格和库存以商家页面为准。
 
+> 11-27 更新：加了 LowEndTalk 黑五闪购第一天的时间表。
+
 > 11-21 更新：新增 AlexHost、PawnHoster、HostDZire、SurferCloud、Namecheap、Streamline-Servers、Leapswitch Networks 和 BGP Network；RackNerd 加了虚拟主机、分销主机和独服，DediRock、D4 Networks、ServerHost 有新套餐。
+
+## LowEndTalk 黑五闪购
+
+LowEndTalk 从 11 月 27 日到 30 日每 20 到 40 分钟放出一个闪购，四天一共 200 多个，下面是第一天的时间表（换算成了北京时间）。
+
+| 北京时间 | 商家 | 内容 |
+| :-: | :-: | :-: |
+| 11-27 14:00 | Cloudnium | 2GB VPS，$0.79/月，美国、加拿大 |
+| 11-27 14:00 | OrangeVPS | VPS 9 折，2GB 起 $19.69/年起，亚洲、美国 |
+| 11-27 17:20 | CubeData | 没提前公布 |
+| 11-27 18:00 | EnderHost | 4GB 起 Ryzen VPS，$30.6/年起，美国、加拿大、欧洲 |
+| 11-27 20:00 | GreenLeafWeb | 10GB Plesk 虚拟主机，$15.40/年，德国纽伦堡 |
+| 11-27 20:40 | Zenlayer | E3v6 32GB 起独服，$98.60/月起，美国、亚洲、英国 |
+| 11-27 21:00 | ServersCamp | 没提前公布 |
+| 11-28 00:00 | GreenWebPage | 4GB EPYC KVM VPS，€29.50/年，美国、欧洲、亚洲 |
+| 11-28 00:20 | Fivenines | 没提前公布 |
+| 11-28 01:20 | ServerHost | 2GB Ryzen/i9 不限流量 VPS，$19.99/年，美国 |
+| 11-28 02:20 | Pulsed Media | 8TB 起 10Gbps Seedbox，€7.99/月起，芬兰赫尔辛基 |
+| 11-28 03:00 | CloudCone | 2GB VPS，$17.77/年，美国加州 |
+| 11-28 03:00 | StarryDNS | 1GB 起 KVM VPS，$20/年起，日本、香港、新加坡、荷兰 |
+| 11-28 04:00 | RackGenius | 2GB KVM VPS，$2.50/月，美国密歇根 |
+| 11-28 05:40 | SoftShellWeb | 1GB 起 IPv6 Ryzen LXC VPS，$7.95/年起，美国犹他，可加 IPv4 |
+| 11-28 06:40 | HandyHost | 4GB 不限流量 KVM VPS，$30/年，美国犹他 |
+| 11-28 09:00 | Servury | 2GB 匿名 VPS 一次性 5 折，$2.49/月起，加拿大 |
+| 11-28 09:40 | Servitro | 4GB EPYC KVM VPS，$16/年，德国法兰克福 |
+| 时间没公布 | Clouvider | 4GB VPS，£25/年，美国、英国、欧洲 |
+| 时间没公布 | FireVPS | 2GB Ryzen KVM VPS，$13.89/年，美国新泽西、加州 |
+| 时间没公布 | GenixNode | 4GB 起 KVM VPS，首月 $2.39 起，土耳其、保加利亚 |
+| 时间没公布 | Host.al | 没提前公布 |
+| 时间没公布 | Host4Fun | 8GB KVM VPS，$7/月，美国 |
+| 时间没公布 | IonSwitch | 10Gbps 托管，4U 单机 $45/月，42U 整柜 $799/月，美国爱达荷 |
+| 时间没公布 | KhanWebHost | DirectAdmin 虚拟主机 5GB 起 $5/年起，另有加拿大 50GB 分销 $50/年 |
+| 时间没公布 | Linveo | 1GB Ryzen VPS，$7/年，美国俄亥俄、得克萨斯 |
+| 时间没公布 | PomeloHost | 8GB 起 EPYC KVM VPS，$15/季起，美国佛罗里达 |
+| 时间没公布 | RedSwitches | 双路 Xeon Silver/Gold 64GB 起不限流量独服，$459/月起，阿姆斯特丹、巴黎 |
+| 时间没公布 | ServerCrate | 250GB 起 Borg/Restic 备份存储，首年 $21 起，美国加州 |
+| 时间没公布 | ST-Hosting | 4GB Ryzen KVM VPS，首年 €77，德国法兰克福 |
+| 时间没公布 | VPSPioneer | 1GB KVM VPS，首年 $9.99，土耳其布尔萨 |
+| 时间没公布 | WebHosting1st | 没提前公布 |
+
+{% note info flat %}
+到点以后，完整配置和购买链接会发在 LowEndTalk 的黑五帖里：https://lowendtalk.com/discussion/223930
+
+闪购库存一般很少，很多不退款，有的价格只算第一期，下单前看清续费价格。
+
+11 月 28 日到 30 日的时间表会在前一天公布，到时候再更新。
+{% endnote %}
 
 ## 美国 VPS
 
@@ -250,25 +299,6 @@ Cost-Optimized 续费同价，不参加首月 7 折。
 
 链接：https://www.vm6.co.uk/promotions
 
-### HyperHost Solutions
-
-英国 Coventry 的 KVM VPS，GTA VI 活动，5 折循环折扣。
-
-| 套餐 | CPU | 内存 | 硬盘 | 流量 | 端口 | 价格 | 购买 |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| HHS VPS 1 | 1 vCPU | 2GB | 20GB SSD | 1TB | 1Gbps | £1.50/月 | [购买](https://clients.hyperhostsolutions.com/campaign/gta-vi-launch-2026/FGI9KSnegypxqXY9knGiygY86RRCge55jJ0GOlo7) |
-| HHS VPS 3 | 3 vCPU | 4GB | 60GB SSD | 2TB | 1Gbps | £3.50/月 | [购买](https://clients.hyperhostsolutions.com/campaign/gta-vi-launch-2026/FGI9KSnegypxqXY9knGiygY86RRCge55jJ0GOlo7) |
-| IPv6 VPS 1（只有 IPv6） | 1 vCPU | 1GB | 20GB SSD | 1TB | 1Gbps | £0.63/月 | [购买](https://clients.hyperhostsolutions.com/campaign/gta-vi-launch-2026/FGI9KSnegypxqXY9knGiygY86RRCge55jJ0GOlo7) |
-| IPv6 VPS 2（只有 IPv6） | 2 vCPU | 2GB | 40GB SSD | 2TB | 1Gbps | £0.84/月 | [购买](https://clients.hyperhostsolutions.com/campaign/gta-vi-launch-2026/FGI9KSnegypxqXY9knGiygY86RRCge55jJ0GOlo7) |
-
-{% note info flat %}
-优惠码：`VICE50`（活动链接已经带上）
-
-截止：11 月 22 日 23:59（GMT）
-
-促销款不能退款。
-{% endnote %}
-
 ### DeluxHost.net
 
 荷兰阿姆斯特丹的 X Series 早鸟黑五，年付，端口不限流量。
@@ -285,22 +315,6 @@ Cost-Optimized 续费同价，不参加首月 7 折。
 {% endnote %}
 
 链接：https://deluxhost.net/en/deals/x
-
-### Prepaid-Host
-
-德国法兰克福 Pre-Black Friday 预售，Ceph NVMe，续费同价，免安装费。
-
-| 套餐 | CPU | 内存 | 硬盘 | 流量 | 端口 | 价格 | 购买 |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| PreBF-8 | 4 核 | 8GB | 180GB Ceph NVMe | 10TB | 2Gbps | €58.80/年（只有年付） | [购买](https://prepaid-host.com/en/aktion/prebf-8) |
-| PreBF-10 | 6 核 | 10GB | 200GB Ceph NVMe | 10TB | 2Gbps | €6.39/月 | [购买](https://prepaid-host.com/en/aktion/prebf-10) |
-| FLASH-16 | 6 核 | 16GB | 250GB Ceph NVMe | 10TB | 2Gbps | €7.99/月 | [购买](https://prepaid-host.com/en/aktion/flash-16) |
-
-{% note info flat %}
-截止：11 月 26 日 23:59（CET）或售完，FLASH-16 量最少
-
-这家是先充值再下单，开通是即时的，所以不退款。
-{% endnote %}
 
 ### PetroSky
 
@@ -652,24 +666,6 @@ Black Friday 有 30 多款独服参加，Limited Edition 最高 8 折，限量�
 {% endnote %}
 
 链接：https://cloud.zenlayer.com/promotions/black-friday
-
-### PureVoltage
-
-纽约独服 Pre-Black Friday，限量，每人最多 2 台。
-
-| CPU | 内存 | 硬盘 | 流量 | 端口 | 价格 | 购买 |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| E5-2670v3 | 64GB | 1TB SSD | 100TB | 1Gbps | $60/月 | [购买](https://my.purevoltage.com/?cmd=cart&action=add&id=253) |
-| E5-2699v3 | 64GB | 1TB SSD | 100TB | 1Gbps | $70/月 | [购买](https://my.purevoltage.com/?cmd=cart&action=add&id=254) |
-| Ryzen 9 9950X | 64GB DDR5 | 2×1TB NVMe | 100TB | 10Gbps | $200/月 | [购买](https://my.purevoltage.com/?cmd=cart&action=add&id=178) |
-
-{% note info flat %}
-截止：11 月 25 日，限量，每人最多 2 台
-
-带 IPv4 /31 和 IPv6 /64。
-
-在 LowEndTalk 活动帖下回复，流量可以翻倍到 200TB。
-{% endnote %}
 
 ### Streamline-Servers
 
