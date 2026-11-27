@@ -6,7 +6,7 @@
   <link href="https://ednovas.xyz/atom.xml" rel="self"/>
   
   <link href="https://ednovas.xyz/"/>
-  <updated>2026-11-27T04:56:20.576Z</updated>
+  <updated>2026-11-27T04:58:40.210Z</updated>
   <id>https://ednovas.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ednovas.xyz/2026/11/19/blackfriday2026/"/>
     <id>https://ednovas.xyz/2026/11/19/blackfriday2026/</id>
     <published>2026-11-19T22:30:00.000Z</published>
-    <updated>2026-11-27T04:56:20.576Z</updated>
+    <updated>2026-11-27T04:58:40.210Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -29,128 +29,187 @@
 &lt;p&gt;整理时间 2026-11-19，价格和库存以商家页面为准。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
+&lt;p&gt;11-27 更新：加了 LowEndTalk 黑五闪购第一天的时间表。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;11-21 更新：新增 AlexHost、PawnHoster、HostDZire、SurferCloud、Namecheap、Streamline-Servers、Leapswitch Networks 和 BGP Network；RackNerd 加了虚拟主机、分销主机和独服，DediRock、D4 Networks、ServerHost 有新套餐。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;美国-VPS&quot;&gt;&lt;a href=&quot;#美国-VPS&quot; class=&quot;headerlink&quot; title=&quot;美国 VPS&quot;&gt;&lt;/a&gt;美国 VPS&lt;/h2&gt;&lt;h3 id=&quot;RackNerd&quot;&gt;&lt;a href=&quot;#RackNerd&quot; class=&quot;headerlink&quot; title=&quot;RackNerd&quot;&gt;&lt;/a&gt;RackNerd&lt;/h3&gt;&lt;p&gt;黑五 KVM VPS 续费同价，洛杉矶、圣何塞、西雅图、达拉斯、芝加哥、纽约、Ashburn、亚特兰大、多伦多、斯特拉斯堡、阿姆斯特丹、都柏林都有测试 IP，能选哪些机房看下单页。这次还新加了虚拟主机、分销主机和独服。&lt;/p&gt;
+&lt;h2 id=&quot;LowEndTalk-黑五闪购&quot;&gt;&lt;a href=&quot;#LowEndTalk-黑五闪购&quot; class=&quot;headerlink&quot; title=&quot;LowEndTalk 黑五闪购&quot;&gt;&lt;/a&gt;LowEndTalk 黑五闪购&lt;/h2&gt;&lt;p&gt;LowEndTalk 从 11 月 27 日到 30 日每 20 到 40 分钟放出一个闪购，四天一共 200 多个，下面是第一天的时间表（换算成了北京时间）。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;套餐&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;CPU&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;内存&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;硬盘&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;流量&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;端口&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;价格&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;购买&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;北京时间&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;商家&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;内容&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;1GB KVM&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;1C&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;1G&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;20GB SSD&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;3TB&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;1Gbps&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;$15.98/年&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=968&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;11-27 14:00&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Cloudnium&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;2GB VPS，$0.79/月，美国、加拿大&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;2.5GB KVM&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;2C&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;2.5G&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;30GB SSD&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;6TB&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;1Gbps&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;$27.98/年&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=969&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;11-27 14:00&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;OrangeVPS&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;VPS 9 折，2GB 起 $19.69/年起，亚洲、美国&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;4GB KVM&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;4C&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;4G&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;60GB SSD&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;10TB&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;1Gbps&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;$47.98/年&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=970&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;11-27 17:20&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;CubeData&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;没提前公布&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;6GB KVM&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;6C&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;6G&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;85GB SSD&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;15TB&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;1Gbps&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;$74.98/年&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=971&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;11-27 18:00&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;EnderHost&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;4GB 起 Ryzen VPS，$30.6/年起，美国、加拿大、欧洲&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;8GB KVM&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;6C&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;8G&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;140GB SSD&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;20TB&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;1Gbps&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;$94.98/年&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=972&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;11-27 20:00&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;GreenLeafWeb&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;10GB Plesk 虚拟主机，$15.40/年，德国纽伦堡&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;11-27 20:40&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Zenlayer&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;E3v6 32GB 起独服，$98.60/月起，美国、亚洲、英国&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;11-27 21:00&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;ServersCamp&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;没提前公布&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;11-28 00:00&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;GreenWebPage&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;4GB EPYC KVM VPS，€29.50/年，美国、欧洲、亚洲&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;11-28 00:20&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Fivenines&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;没提前公布&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;11-28 01:20&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;ServerHost&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;2GB Ryzen/i9 不限流量 VPS，$19.99/年，美国&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;11-28 02:20&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Pulsed Media&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8TB 起 10Gbps Seedbox，€7.99/月起，芬兰赫尔辛基&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;11-28 03:00&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;CloudCone&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;2GB VPS，$17.77/年，美国加州&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;11-28 03:00&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;StarryDNS&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1GB 起 KVM VPS，$20/年起，日本、香港、新加坡、荷兰&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;11-28 04:00&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;RackGenius&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;2GB KVM VPS，$2.50/月，美国密歇根&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;11-28 05:40&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;SoftShellWeb&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1GB 起 IPv6 Ryzen LXC VPS，$7.95/年起，美国犹他，可加 IPv4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;11-28 06:40&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;HandyHost&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;4GB 不限流量 KVM VPS，$30/年，美国犹他&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;11-28 09:00&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Servury&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;2GB 匿名 VPS 一次性 5 折，$2.49/月起，加拿大&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;11-28 09:40&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Servitro&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;4GB EPYC KVM VPS，$16/年，德国法兰克福&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;时间没公布&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Clouvider&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;4GB VPS，£25/年，美国、英国、欧洲&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;时间没公布&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;FireVPS&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;2GB Ryzen KVM VPS，$13.89/年，美国新泽西、加州&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;时间没公布&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;GenixNode&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;4GB 起 KVM VPS，首月 $2.39 起，土耳其、保加利亚&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;时间没公布&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Host.al&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;没提前公布&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;时间没公布&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Host4Fun&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8GB KVM VPS，$7/月，美国&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;时间没公布&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;IonSwitch&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;10Gbps 托管，4U 单机 $45/月，42U 整柜 $799/月，美国爱达荷&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;时间没公布&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;KhanWebHost&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;DirectAdmin 虚拟主机 5GB 起 $5/年起，另有加拿大 50GB 分销 $50/年&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;时间没公布&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Linveo&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1GB Ryzen VPS，$7/年，美国俄亥俄、得克萨斯&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;时间没公布&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;PomeloHost&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8GB 起 EPYC KVM VPS，$15/季起，美国佛罗里达&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;时间没公布&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;RedSwitches&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;双路 Xeon Silver/Gold 64GB 起不限流量独服，$459/月起，阿姆斯特丹、巴黎&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;时间没公布&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;ServerCrate&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;250GB 起 Borg/Restic 备份存储，首年 $21 起，美国加州&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;时间没公布&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;ST-Hosting&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;4GB Ryzen KVM VPS，首年 €77，德国法兰克福&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;时间没公布&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;VPSPioneer&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1GB KVM VPS，首年 $9.99，土耳其布尔萨&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;时间没公布&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;WebHosting1st&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;没提前公布&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;p&gt;虚拟主机和分销主机（都在达拉斯，AdminBolt 面板）：&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;套餐&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;硬盘&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;流量&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;价格&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;购买&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;虚拟主机 35GB（5 个域名）&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;35GB SSD&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;5TB&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;$9.49/年&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=977&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;虚拟主机 90GB（不限域名）&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;90GB SSD&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;15TB&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;$21.99/年&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=978&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;虚拟主机 200GB（不限域名）&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;200GB SSD&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;40TB&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;$49.88/年&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=979&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;分销 80GB（15 个账户）&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;80GB SSD&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;5TB&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;$29.88/年&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=980&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;分销 115GB（25 个账户）&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;115GB SSD&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;20TB&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;$54.88/年&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=981&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;分销 185GB（50 个账户）&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;185GB SSD&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;30TB&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;$84.88/年&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://my.racknerd.com/aff.php?aff=3207&amp;a=add&amp;pid=982&quot;&gt;购买&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;p&gt;独服：&lt;/p&gt;</summary>
+&lt;div class=&quot;note info flat&quot;&gt;&lt;p&gt;到点以后，完整配置和购买链接会发在 LowEndTalk 的黑五帖里：&lt;a href=&quot;https://lowendtalk.com/discussion/223930&quot;&gt;https://lowendtalk.com/discussion/223930&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;闪购库存一般很少，很多不退款，有的价格只算第一期，下单前看清续费价格。&lt;/p&gt;
+&lt;p&gt;11 月 28 日到 30 日的时间表会在前一天公布，到时候再更新。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;美国-VPS&quot;&gt;&lt;a href=&quot;#美国-VPS&quot; class=&quot;headerlink&quot; title=&quot;美国 VPS&quot;&gt;&lt;/a&gt;美国 VPS&lt;/h2&gt;&lt;h3 id=&quot;RackNerd&quot;&gt;&lt;a href=&quot;#RackNerd&quot; class=&quot;headerlink&quot; title=&quot;RackNerd&quot;&gt;&lt;/a&gt;RackNerd&lt;/h3&gt;</summary>
     
     
     
@@ -215,7 +274,7 @@
     <link href="https://ednovas.xyz/2026/11/18/ai-writing-humanizer-vs-distill/"/>
     <id>https://ednovas.xyz/2026/11/18/ai-writing-humanizer-vs-distill/</id>
     <published>2026-11-18T16:00:00.000Z</published>
-    <updated>2026-11-27T04:56:20.576Z</updated>
+    <updated>2026-11-27T04:58:40.209Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -289,7 +348,7 @@
     <link href="https://ednovas.xyz/2026/10/30/mondoze-mac-mini/"/>
     <id>https://ednovas.xyz/2026/10/30/mondoze-mac-mini/</id>
     <published>2026-10-30T20:00:00.000Z</published>
-    <updated>2026-11-27T04:56:20.582Z</updated>
+    <updated>2026-11-27T04:58:40.219Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -370,7 +429,7 @@
     <link href="https://ednovas.xyz/2026/09/30/mondoze/"/>
     <id>https://ednovas.xyz/2026/09/30/mondoze/</id>
     <published>2026-09-30T21:00:00.000Z</published>
-    <updated>2026-11-27T04:56:20.582Z</updated>
+    <updated>2026-11-27T04:58:40.219Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -401,7 +460,7 @@
     <link href="https://ednovas.xyz/2026/06/12/casbay/"/>
     <id>https://ednovas.xyz/2026/06/12/casbay/</id>
     <published>2026-06-12T22:00:00.000Z</published>
-    <updated>2026-11-27T04:56:20.576Z</updated>
+    <updated>2026-11-27T04:58:40.211Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为商家投稿。&lt;/p&gt;
@@ -459,7 +518,7 @@
     <link href="https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/"/>
     <id>https://ednovas.xyz/2026/03/10/cloudflare-pages-deploy-domain-guide/</id>
     <published>2026-03-10T16:19:00.000Z</published>
-    <updated>2026-11-27T04:56:20.577Z</updated>
+    <updated>2026-11-27T04:58:40.212Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -493,7 +552,7 @@
     <link href="https://ednovas.xyz/2026/03/05/prompt-engineering-guide/"/>
     <id>https://ednovas.xyz/2026/03/05/prompt-engineering-guide/</id>
     <published>2026-03-05T14:48:00.000Z</published>
-    <updated>2026-11-27T04:56:20.585Z</updated>
+    <updated>2026-11-27T04:58:40.221Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -529,7 +588,7 @@
     <link href="https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/"/>
     <id>https://ednovas.xyz/2026/03/05/cloudflare-workers-kv-monitor/</id>
     <published>2026-03-05T14:39:00.000Z</published>
-    <updated>2026-11-27T04:56:20.577Z</updated>
+    <updated>2026-11-27T04:58:40.212Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -564,7 +623,7 @@
     <link href="https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/"/>
     <id>https://ednovas.xyz/2026/03/05/hexo-github-actions-deploy/</id>
     <published>2026-03-05T14:23:00.000Z</published>
-    <updated>2026-11-27T04:56:20.581Z</updated>
+    <updated>2026-11-27T04:58:40.217Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -598,7 +657,7 @@
     <link href="https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/"/>
     <id>https://ednovas.xyz/2026/03/05/dgxspark-ollama-openwebui-comfyui/</id>
     <published>2026-03-05T13:29:00.000Z</published>
-    <updated>2026-11-27T04:56:20.578Z</updated>
+    <updated>2026-11-27T04:58:40.213Z</updated>
     
     
     <summary type="html">&lt;p&gt;注： 本文由AI生成，ednovas编辑并审核发布。&lt;/p&gt;
@@ -636,7 +695,7 @@
     <link href="https://ednovas.xyz/2026/02/13/blendhosting2026/"/>
     <id>https://ednovas.xyz/2026/02/13/blendhosting2026/</id>
     <published>2026-02-13T22:28:00.000Z</published>
-    <updated>2026-11-27T04:56:20.576Z</updated>
+    <updated>2026-11-27T04:58:40.210Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot;&gt;&lt;a href=&quot;#Blend-Hosting：马来西亚动态住宅-VPS（Linux）低至-14-85-月&quot; class=&quot;headerlink&quot; title=&quot;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&quot;&gt;&lt;/a&gt;Blend Hosting：马来西亚动态住宅 VPS（Linux）低至 $14.85/月&lt;/h1&gt;&lt;p&gt;Blend Hosting 是一家成立于 2005 年的海外服务器与云计算服务商，在 VPS 与服务器领域拥有 20 年以上的持续运营记录。相比偏向短期试用型的平台，Blend Hosting 的整体定位更偏向长期稳定运行与可持续使用的应用场景，目标用户群体也更明确。&lt;/p&gt;
@@ -664,7 +723,7 @@
     <link href="https://ednovas.xyz/2026/01/27/servergigabit/"/>
     <id>https://ednovas.xyz/2026/01/27/servergigabit/</id>
     <published>2026-01-27T20:38:00.000Z</published>
-    <updated>2026-11-27T04:56:20.586Z</updated>
+    <updated>2026-11-27T04:58:40.223Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot;&gt;&lt;a href=&quot;#🚀-超大内存（128GB）马来西亚独立服务器限时优惠-cite-1&quot; class=&quot;headerlink&quot; title=&quot;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&quot;&gt;&lt;/a&gt;🚀 超大内存（128GB）马来西亚独立服务器限时优惠 [cite: 1]&lt;/h1&gt;&lt;p&gt;本款 &lt;strong&gt;Deluxe Dedicated Server (MY) v2&lt;/strong&gt; 部署于马来西亚数据中心，采用企业级硬件配置，专为高并发、高性能及长期稳定运行的业务场景而设计 [cite: 3]。&lt;/p&gt;
@@ -740,7 +799,7 @@
     <link href="https://ednovas.xyz/2025/12/31/vps-manager-pro/"/>
     <id>https://ednovas.xyz/2025/12/31/vps-manager-pro/</id>
     <published>2025-12-31T13:46:00.000Z</published>
-    <updated>2026-11-27T04:56:20.588Z</updated>
+    <updated>2026-11-27T04:58:40.225Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Sample-Website-演示网站&quot;&gt;&lt;a href=&quot;#Sample-Website-演示网站&quot; class=&quot;headerlink&quot; title=&quot;Sample Website 演示网站&quot;&gt;&lt;/a&gt;Sample Website 演示网站&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://vps.ednovas.tech/&quot;&gt;https://vps.ednovas.tech&lt;/a&gt;&lt;/p&gt;
@@ -775,7 +834,7 @@
     <link href="https://ednovas.xyz/2025/12/31/dongguatv-enhanced/"/>
     <id>https://ednovas.xyz/2025/12/31/dongguatv-enhanced/</id>
     <published>2025-12-31T13:41:00.000Z</published>
-    <updated>2026-11-27T04:56:20.578Z</updated>
+    <updated>2026-11-27T04:58:40.213Z</updated>
     
     
     <summary type="html">&lt;p&gt;这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版 &lt;a href=&quot;https://github.com/Minerchu/dongguaTV&quot;&gt;https://github.com/Minerchu/dongguaTV&lt;/a&gt; ，本作添加了许多功能。&lt;/p&gt;
@@ -816,7 +875,7 @@
     <link href="https://ednovas.xyz/2024/04/25/gigabit/"/>
     <id>https://ednovas.xyz/2024/04/25/gigabit/</id>
     <published>2024-04-25T22:28:00.000Z</published>
-    <updated>2026-11-27T04:56:20.580Z</updated>
+    <updated>2026-11-27T04:58:40.216Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Server Gigabit是一家马来西亚本土商家，主要就是提供马来西亚境内的服务器和网络解决方案，目前有2个数据中心：分别位于马来西亚吉隆坡的AIMS数据中心和位于马来西亚赛城的Bridge数据中心，Server Gigabit支持贝宝，加密货币和信用卡，提供马来西亚原生IP。24/7全天候售后服务，中英文沟通，以及7天退款条例。&lt;/p&gt;
@@ -932,7 +991,7 @@
     <link href="https://ednovas.xyz/2023/12/14/blendhosting/"/>
     <id>https://ednovas.xyz/2023/12/14/blendhosting/</id>
     <published>2023-12-14T22:28:00.000Z</published>
-    <updated>2026-11-27T04:56:20.576Z</updated>
+    <updated>2026-11-27T04:58:40.210Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Blend Hosting &lt;a href=&quot;https://www.blendhosting.com/&quot;&gt;https://www.blendhosting.com&lt;/a&gt;&lt;/p&gt;
