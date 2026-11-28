@@ -13,55 +13,108 @@ cover: https://cdn.jsdelivr.net/gh/ednovas/CDN/New%20folder/Black_Friday_1200x62
 
 > 整理时间 2026-11-19，价格和库存以商家页面为准。
 
+> 11-28 更新：LowEndTalk 闪购第一天已经放出来的都补上了购买链接和优惠码，卖完的标了出来；D4 Networks 的活动已经结束，删掉了。
+
 > 11-27 更新：加了 LowEndTalk 黑五闪购第一天的时间表。
 
 > 11-21 更新：新增 AlexHost、PawnHoster、HostDZire、SurferCloud、Namecheap、Streamline-Servers、Leapswitch Networks 和 BGP Network；RackNerd 加了虚拟主机、分销主机和独服，DediRock、D4 Networks、ServerHost 有新套餐。
 
 ## LowEndTalk 黑五闪购
 
-LowEndTalk 从 11 月 27 日到 30 日每 20 到 40 分钟放出一个闪购，四天一共 200 多个，下面是第一天的时间表（换算成了北京时间）。
+LowEndTalk 从 11 月 27 日到 30 日每 20 到 40 分钟放出一个闪购，四天一共 200 多个。第一天是北京时间 11-27 13:00 到 11-28 12:40，已经放出来的都列在下面，购买链接和优惠码是从活动帖里抄的。
+
+### 第一天：VPS
+
+| 北京时间 | 商家 | 内容 | 优惠码 | 购买 |
+| :-: | :-: | :-: | :-: | :-: |
+| 11-27 13:00 | Prepaid-Host | 4C/8G/180GB NVMe，10TB 流量，€58.80/年；6C/10G €6.39/月，6C/16G €7.99/月，德国法兰克福 | - | [8G](https://prepaid-host.com/en/aktion/bf-8) [10G](https://prepaid-host.com/en/aktion/bf-10) [16G](https://prepaid-host.com/en/aktion/flash-16) |
+| 11-27 13:20 | TNAHosting | 1C/1G/2TB HDD，4TB 流量，$19/年，芝加哥，限 10 台 | `BF26FLASH2TB`（链接已带） | [购买](https://tnahosting.net/billing/cart.php?a=add&pid=121&promocode=BF26FLASH2TB) |
+| 11-27 14:00 | Cloudnium | 2C/2G/20GB SSD，1TB 流量，$0.79/月，达拉斯、西雅图、洛杉矶、芝加哥、多伦多 | `BFVPS` | [购买](https://portal.cloudnium.net/products/) |
+| 11-27 14:00 | OrangeVPS | 2G/20GB NVMe，1TB 流量（250Mbps），9 折后 $19.69/年起，新加坡、香港、东京、美国，限 50 台 | `LETGOODBF2026` | [购买](https://portal.orangevps.com/store/vps-budget/bf26-1)（已售罄） |
+| 11-27 14:20 | PureVoltage | 4C EPYC/16G/200GB NVMe，20TB 流量，$75/年，纽约、西雅图 | - | [纽约](https://my.purevoltage.com/?cmd=cart&action=add&id=185) [西雅图](https://my.purevoltage.com/?cmd=cart&action=add&id=232)（都已售罄） |
+| 11-27 15:00 | RAVNIX | 1C/1G/10GB，2TB 流量（250Mbps），$10/年，亚特兰大 | - | [购买](https://lbfmt26.ravnix.io/wtmvv8raty) |
+| 11-27 15:40 | CrownCloud | 4C/8G/80GB SSD，4TB 流量（10Gbps），$70/年，阿姆斯特丹、迈阿密、洛杉矶 | - | [阿姆斯特丹](https://crowncloud.net/clients/index.php?rp=/store/specials/ams-8g-80g-epyc-10g-1s) [迈阿密](https://crowncloud.net/clients/index.php?rp=/store/specials/mia-8g-80g-epyc-10g-1s) [洛杉矶](https://crowncloud.net/clients/index.php?rp=/store/specials/lax-8g-80g-epyc-10g-1s) |
+| 11-27 16:00 | AspireHosting | 2C/2G/30GB NVMe，2TB 流量，$20/年；6C/16G/200GB SSD，$99.95/年，迈阿密 | - | [2G](https://billing.aspirehosting.net/store/iwriijdksfkljfiejoildscm/diwnjiqwdnipqw) [16G](https://billing.aspirehosting.net/store/iwriijdksfkljfiejoildscm/wkndipqwdniqndq) |
+| 11-27 17:00 | Mejiro Network | 1C/2G/20GB，6TB 流量，首年 $1.50/月（续费 $6/月），限 10 台；2C/4G 首年 $3/月（续费 $12/月），限 2 台，香港、新加坡 | 2G：`BF20262G-1sQ58PY1`、`BF20262G-4oI7x64h`；4G：`BF20264G-3mFm746R` | [香港 2G](https://billing.mejiro.io/store/hong-kong-standard-vps/hkg-std-sp-2g) [新加坡 2G](https://billing.mejiro.io/store/singapore-standard-vps/sin-std-sp-2g) [香港 4G](https://billing.mejiro.io/store/hong-kong-standard-vps/hkg-std-sp-4g) [新加坡 4G](https://billing.mejiro.io/store/singapore-standard-vps/sin-std-sp-4g) |
+| 11-27 18:00 | EnderHost | 2C/4G/40GB SSD，2TB 流量，年付 $30.60 起，纽约；Ryzen 9950X 1C/4G/80GB NVMe，年付 $50.18 起，多伦多、纽约、布鲁塞尔 | 预算款 `BFSpecial75`，Ryzen 款 `BFSpecial123`（都是年付） | [购买](https://enderhost.co/vps) |
+| 11-27 18:20 | LogicWeb | VPS 5 折，2C/4G/25GB NVMe，2TB 流量，$5/月，纽约、伦敦、法兰克福、新加坡、特拉维夫、东京，只限新用户 | `save50` | [购买](https://www.logicweb.com/vps-hosting/) |
+| 11-27 19:00 | Host4Fun | 2C/8G/60GB NVMe，8TB 流量（10Gbps），$7/月，美国，限 20 台 | 链接自动打折 | [购买](https://client.host4fun.com/link.php?id=79) |
+| 11-27 19:20 | ZappieHost | LXC 和 KVM 全场 1 折，512MB LXC $2.70/半年起，新西兰、南非、智利 | `LLEEEETTTS-GOO-BF26` | [官网](https://zappiehost.com/) |
+| 11-27 19:40 | GulloHosting | OpenVZ NAT VPS，256MB $4/年起，512MB $6/年起，20 个 NAT 端口，只有 IPv6，保加利亚、加拿大、美国、欧洲、新加坡 | 256MB `BF-NAT-4D-256M`，512MB `BF-NAT-6D-512M` | [购买](https://hosting.gullo.me/order/main/index/nat-vps) |
+| 11-27 21:20 | PomeloHost | 2C EPYC/8G/100GB NVMe，8TB 流量，$15/季（限 3 台）；16G $24/季（限 5 台）；32G $45/季（限 2 台），佛罗里达 | - | [8G](https://my.pomelohost.com/index.php?/cart/lowendtalk-bf-1/&action=add&id=188&cycle=q) [16G](https://my.pomelohost.com/index.php?/cart/lowendtalk-bf-1/&action=add&id=189&cycle=q) [32G](https://my.pomelohost.com/index.php?/cart/lowendtalk-bf-1/&action=add&id=190&cycle=q) |
+| 11-27 21:40 | SmokyHosts | 2C/4G/40GB SSD，800GB 流量，$20.93/年，或 $53.67/三年，Buffalo、洛杉矶 | Buffalo `BF2026-NY`，洛杉矶 `BF2026-CA` | [购买](https://members.smokyhosts.com/cart.php?a=add&pid=151) |
+| 11-27 22:20 | Clouvider | 2C/4G/80GB NVMe，5TB 流量（10Gbps），£25/年，美国、英国、欧洲，限 5 台 | `LETBF26-4G7Q`（先选年付） | [购买](https://console.clouvider.co.uk/?cmd=cart&action=add&id=988) |
+| 11-27 22:40 | VPSNerds | 1C/1G/25GB SSD，7TB 流量，$7/年，美国、欧洲、亚洲，限 5 台 | `CYQ10CYM42` | [购买](https://myaccount.vpsnerds.com/store/cloud-servers/cloud-starter-yearly-deal) |
+| 11-28 00:00 | GreenWebPage | 2C EPYC/4G/60GB NVMe，2TB 流量，€29.50/年，凤凰城、法兰克福、伦敦、海牙、香港、东京，限 10 台 | `AMDKVM4G`，没抢到用 `BF2026` 年付 5 折 | [购买](https://www.greenwebpage.com/vpshosting.php) |
+| 11-28 00:40 | SKRIME | EPYC VPS 75 折，2C/8G/25GB NVMe，€6.74/月，荷兰，自动打折到 11-30 | - | [购买](https://skri.me/epyc) |
+| 11-28 00:40 | ReadyDedis | 1C EPYC/2G/30GB NVMe，3TB 流量，$7/年，新泽西、洛杉矶各 8 台，只限新用户 | `EUDN5VZU8E9Y` | [新泽西](https://service.readydedis.com/cart/nvme-cloud-vps-new-jersey/&action=add&id=261) [洛杉矶](https://service.readydedis.com/cart/nvme-cloud-vps-los-angeles/&action=add&id=262)（都已售罄） |
+| 11-28 01:20 | ServerHost | 2C Ryzen/i9，2G/50GB NVMe，不限流量，$19.99/年，美国，限 99 台 | `LETMEGA2GBRYZ`（链接已带） | [购买](https://vpshostingservice.co/order/ryzen-i9-linux/2-gb?billingcycle=annually&promocode=LETMEGA2GBRYZ) |
+| 11-28 02:00 | VPSPioneer | 1C/1G/10GB SSD，首年 $9.99（续费 $14.99），土耳其布尔萨，限 10 台 | `BF1G` | [购买](https://customer.vpspioneer.com/index.php?rp=/store/bare-metal-vps/tr-vps-1g-let-bf)（已售罄） |
+| 11-28 03:00 | StarryDNS | 1C/1G/20GB SSD，1TB 流量（100Mbps），$20/年；2C/6G/60GB SSD，$50/年，大阪、香港、新加坡、阿姆斯特丹 | 1G 用 `LEB2026BF` | [1G](https://my.starrydns.com/index.php?rp=/store/promotion/bf2026-1) [6G](https://my.starrydns.com/index.php?rp=/store/promotion/bf2026-2) |
+| 11-28 03:00 | CloudCone | 2G/30GB SSD，4TB 流量，$17.77/年，洛杉矶，限 9 台 | - | [购买](https://app.cloudcone.com/vps/552/create?token=bf-26-ssd-vps-let-1-llmm67zz)（已售罄） |
+| 11-28 03:20 | OuiHeberg | 2C/4G/50GB NVMe，5TB 流量，€17.99/年，法国马赛，限 10 台 | `VPFBVNVTTZ27` | [购买](https://dash.ouiheberg.com/shop/let-black-friday-4-go?pid=3329) |
+| 11-28 03:40 | HostWild | 4C/6G/100GB NVMe，30TB 流量（10Gbps），$4.99/月，洛杉矶、华盛顿，限 10 台 | `USBF50` | [购买](https://my.hostwild.com/cart.php?a=add&pid=97) |
+| 11-28 04:00 | RackGenius | 2C/2G/25GB SSD，2TB 流量，$2.50/月，密歇根，只限月付新单 | `RG26LET35M` | [购买](https://my.rackgenius.com/store/value-kvm-vps-michigan/2gb-value-kvm-vps) |
+| 11-28 04:20 | LiteServer | 1C EPYC/2G/10GB NVMe，5TB 流量，€29/年，荷兰，不退款 | - | [购买](https://clients.liteserver.nl/index.php?rp=/store/black-friday-deals-2026/bf2026-fat32-epyc) |
+| 11-28 04:40 | GenixNode | 2C/4G/40GB NVMe，首月 $2.39（续费 $2.99/月）；4C/8G 首月 $4.79；4C/12G 首月 $7.19，伊斯坦布尔、索非亚 | `BF2026` | [4G](https://genixnode.com/billing/store/vps/aydin-vps-x4) [8G](https://genixnode.com/billing/store/vps/aydin-vps-x8) [12G](https://genixnode.com/billing/store/vps/aydin-vps-x12) |
+| 11-28 05:00 | FireVPS | 1C Ryzen 7950X/2G/35GB SSD，1TB 流量，$13.89/年，新泽西、洛杉矶，限 10 台 | `LETEBVQYZKB` | [购买](https://clients.firevps.net/store/let-bf-cm-2026/amd-ryzen-kvm-vps-2gb)（已售罄） |
+| 11-28 05:20 | BageVM | 1C/1G/10GB SSD，2TB 流量，$11.99/年（前 3 年按这个价续费），香港，限 11 台 | `KY62BUFAT32BF2026` | [购买](https://www.bagevm.com/index.php/store/flash-sales/hong-kong-lite-bftiny) |
+| 11-28 05:40 | SoftShellWeb | 只有 IPv6 的 1G LXC，$7.95/年（限 15 台）；带 IPv4 的 2G，$19.95/年（限 10 台），盐湖城 | `RYZEN-6ZL8GS42QI` | [1G](https://softshellweb.com/client/store/bf-2026-flash-sale/ryzen-flash-1) [2G](https://softshellweb.com/client/store/bf-2026-flash-sale/ryzen-flash-2) |
+| 11-28 06:00 | RackNerd | 1C Ryzen 7950X/1.5G/20GB NVMe，3TB 流量，$9/年，芝加哥，限 10 台 | `2026BFTAKEOVER` | [购买](https://my.racknerd.com/aff.php?aff=3207&a=add&pid=967) |
+| 11-28 06:00 | ST-Hosting | 2C Ryzen 7950X3D/4G/80GB NVMe，10TB 流量，首年 €77（续费 €110.83，不含税），法兰克福，限 10 台 | `LET77` | [购买](https://cp.st-hosting.com/en/cart/addToCart/916?amount=12) |
+| 11-28 06:20 | MetroVPS | 1C/2G/25GB NVMe，500GB 流量，$4/月，孟加拉、新加坡 | `BF26`（链接已带） | [孟加拉](https://dash.metrovps.com/orders/category/vps?design=modern&pid=1&t=monthly&c=BF26) [新加坡](https://dash.metrovps.com/orders/category/vps?design=modern&pid=6&t=monthly&c=BF26) |
+| 11-28 06:40 | HandyHost | 4C/4G/40GB NVMe，不限流量，$30/年，盐湖城，限 4 台 | `BF2026-VPS1-A8F1` | [购买](https://handyhost.net/client/index.php?rp=/store/black-friday-2026/bf2026-vps1)（已售罄） |
+| 11-28 08:00 | HostGnome | 4C EPYC/8G/100GB NVMe，15TB 流量（10Gbps），$54.99/年，英国 Redditch | `LETBF-77121` | [购买](https://ca.hostgnome.com/index.php/store/special-offers/bf-2026-2) |
+
+### 第一天：独服和托管
+
+| 北京时间 | 商家 | 内容 | 优惠码 | 购买 |
+| :-: | :-: | :-: | :-: | :-: |
+| 11-27 15:20 | FiberState | E3-1240 v5/32G/1TB NVMe，1Gbps 不限流量，$29.95/月，盐湖城，限 5 台 | `FAT32ROCKS` | [购买](https://www.fiberstate.com/dedicated-servers) |
+| 11-27 16:40 | RedSwitches | 双路 Silver 4214/64G/2×480GB SSD + 2×28TB HDD，5Gbps 不限流量，$459/月，阿姆斯特丹；双路 Gold 5218/128G/2×960GB SSD，10Gbps 不限流量，$499/月，阿姆斯特丹、巴黎 | - | [Silver](https://dedicated.redswitches.com/cart.php?a=add&pid=2124&currency=4) [Gold 阿姆斯特丹](https://dedicated.redswitches.com/cart.php?a=add&pid=2125&currency=4) [Gold 巴黎](https://dedicated.redswitches.com/cart.php?a=add&pid=2126&currency=4) |
+| 11-27 20:40 | Zenlayer | E3-1270 v6/32G/2TB HDD，3TB 流量（10Gbps），迈阿密 $98.60/月（10TB 流量 $128/月）；E3-1230 v6 新加坡 $141.24/月，雅加达 $151.24/月，香港（480GB SSD，1Gbps）$161.24/月，伦敦（50Mbps 不限流量）$157.50/月 | - | [迈阿密](https://console.zenlayer.com/bmc/server/create?chargeType=PREPAID&zoneCode=MIA-A&typeId=S8O&bmcInternetChargeType=flowPackageBandwidth&packageSize=3) [迈阿密 10TB](https://console.zenlayer.com/bmc/server/create?chargeType=PREPAID&zoneCode=MIA-A&typeId=S8O&bmcInternetChargeType=flowPackageBandwidth&packageSize=10) [新加坡](https://console.zenlayer.com/bmc/server/create?chargeType=PREPAID&zoneCode=SIN-F&typeId=S8A&bmcInternetChargeType=flowPackageBandwidth&packageSize=3) [雅加达](https://console.zenlayer.com/bmc/server/create?chargeType=PREPAID&zoneCode=JKT-A&typeId=S8A&bmcInternetChargeType=flowPackageBandwidth&packageSize=3) [香港](https://console.zenlayer.com/bmc/server/create?chargeType=PREPAID&zoneCode=HKG-B&typeId=S8S&bmcInternetChargeType=flowPackageBandwidth&packageSize=3) [伦敦](https://console.zenlayer.com/bmc/server/create?chargeType=PREPAID&zoneCode=LON-B&typeId=S8H&bmcInternetChargeType=limitedBandwidthUnmeteredTraffic&bandwidth=50) |
+| 11-27 23:00 | DartNode | 双路 E5-2650 v4/16G/250GB SSD，$99/年，休斯顿，限 10 台 | - | 一次性链接，看[活动帖](https://lowendtalk.com/discussion/comment/4957449#Comment_4957449) |
+| 11-28 01:40 | IonSwitch | 托管：4U 单机 $45/月（100TB 流量，10Gbps），42U 整柜 $799/月，美国爱达荷 | - | [4U](https://clients.ionswitch.com/cart.php?a=add&pid=114&billingcycle=monthly) [42U](https://clients.ionswitch.com/cart.php?a=add&pid=113&billingcycle=monthly) |
+| 11-28 07:00 | ShockHosting | E3-1270 v3/32G/2TB HDD 或 480GB SSD，10TB 流量，$199/年，全球 15 个以上机房（不含新加坡、东京） | `LETBF26DEDI`（选年付） | [购买](https://shockhosting.com/dedicated) |
+
+### 第一天：虚拟主机、存储和其他
+
+| 北京时间 | 商家 | 内容 | 优惠码 | 购买 |
+| :-: | :-: | :-: | :-: | :-: |
+| 11-27 13:40 | Porkbun | 注册域名减 $1，送一年邮箱和一年静态或 WordPress 主机，每个账户一次，到 12-4 | `LOWENDTALK26`（链接已带） | [购买](https://porkbun.com/event/blackfriday?coupon=LOWENDTALK26) |
+| 11-27 14:40 | VisualWebTechnologies | DirectAdmin 主机 40GB NVMe，$5.55/年；cPanel 主机 15GB，$8.88/年，美国、英国、加拿大、新加坡、德国 | DirectAdmin `BF1111`，cPanel `BF26CP888` | [DirectAdmin](https://my.visualwebtechnologies.com/order/config/index/bfcm2026/?group_id=48&pricing_id=696) [cPanel](https://my.visualwebtechnologies.com/order/config/index/bfcm2026/?group_id=48&pricing_id=697) |
+| 11-27 17:40 | BaboonHosting | DirectAdmin 分销 40GB，不限流量，€10/年，欧洲，限 20 个 | `L8N7TKA8F1` | [购买](https://clients.baboonhosting.com/index.php?rp=/store/black-friday-2025/black-friday-deal-3-reseller-hosting) |
+| 11-27 18:00 | FranklyMail | 邮箱 15GB，不限域名和邮箱数，$9/年 | `BF2026` | [购买](https://franklymail.com/signup?campaign=BF2026) |
+| 11-27 18:40 | KhanWebHost | DirectAdmin 主机 5GB $5/年，10GB $9/年，20GB $14/年；加拿大分销 50GB，$50/年 | - | [活动页](https://khanwebhost.com/blackfriday/) |
+| 11-27 20:00 | GreenLeafWeb | Plesk 主机 10GB NVMe，$15.40/年，德国纽伦堡，限 10 个 | `HOST-BF26-REC`，没抢到用 `HOST-BF26` 首期 7 折 | [购买](https://greenleafweb.net/hosting/plesk-hosting) |
+| 11-27 20:20 | Enzonix | S3 兼容存储 6 折，250GB $0.90/月起，美东、美西、中欧，到 11-30 | `STORFRIDAY26` | [购买](https://my.enzonix.com/s/let-2026) |
+| 11-27 21:00 | ServersCamp | 充值送 50% 余额，罗马尼亚布加勒斯特，限 10 个账户 | `BF26-1-Y4MR` | [购买](https://console.serverscamp.com/) |
+| 11-27 21:00 | Dataforest | 新用户送 €50 云服务器额度，90 天内用完，限 50 个 | `LET-BF-2026` | [购买](https://cloud.dataforest.net/) |
+| 11-27 23:20 | Stored | 磁带归档存储，1TB $7/年，5TB $60/年，恢复最长要 12 小时，各限 5 个 | 1TB `STOREDHC4XG9C`，5TB `STOREDHP5W98F` | [1TB](https://stored.cloud/let/bf2026/1tb) [5TB](https://stored.cloud/let/bf2026/5tb) |
+| 11-27 23:40 | HyperHostSolutions | DirectAdmin 主机 3 折，5GB £5.40/年起，阿姆斯特丹、拉斯维加斯、伦敦、纽约、新加坡 | `LETBF70` | [购买](https://clients.hyperhostsolutions.com/campaign/black-friday-directadmin/WWfV6Kt6GXFG4a1VViFKy85otXxq6Y59XaCRZTrq) |
+| 11-28 02:20 | Pulsed Media | 10Gbps Seedbox，2TB €69.69/三年，4TB €69.69/年，1TB SSD 首年 €49.99，8TB €7.99/月，芬兰赫尔辛基 | 链接已带 | [2TB](https://pulsedmedia.com/clients/cart.php?a=add&pid=215&billingcycle=triennially&promocode=LETBF26-M10GS3Y-6969-X9CJ) [4TB](https://pulsedmedia.com/clients/cart.php?a=add&pid=216&billingcycle=annually&promocode=LETBF26-M10GM-6969-H9DW) [1TB SSD](https://pulsedmedia.com/clients/cart.php?a=add&pid=327&billingcycle=annually&promocode=LETBF26-SSD910-4999-MKS5) [8TB](https://pulsedmedia.com/clients/cart.php?a=add&pid=217&billingcycle=monthly&promocode=LETBF26-M10GL799-W2Z6) |
+| 11-28 02:40 | DataPasa | 新用户送 $5 VPS 额度，限 20 个 | `LETBF2026` | [注册](https://cloud.datapasa.com/register) |
+| 11-28 07:40 | NameBig | 邮箱 50 个，共 10GB，$7/年，欧洲，限 50 个 | `MBBF2026PEAK` | [购买](https://mailbig.net/client/order.php?step=2&product=17&paymentTerm=12) |
+
+### 第一天还没放出来的
 
 | 北京时间 | 商家 | 内容 |
 | :-: | :-: | :-: |
-| 11-27 14:00 | Cloudnium | 2GB VPS，$0.79/月，美国、加拿大 |
-| 11-27 14:00 | OrangeVPS | VPS 9 折，2GB 起 $19.69/年起，亚洲、美国 |
-| 11-27 17:20 | CubeData | 没提前公布 |
-| 11-27 18:00 | EnderHost | 4GB 起 Ryzen VPS，$30.6/年起，美国、加拿大、欧洲 |
-| 11-27 20:00 | GreenLeafWeb | 10GB Plesk 虚拟主机，$15.40/年，德国纽伦堡 |
-| 11-27 20:40 | Zenlayer | E3v6 32GB 起独服，$98.60/月起，美国、亚洲、英国 |
-| 11-27 21:00 | ServersCamp | 没提前公布 |
-| 11-28 00:00 | GreenWebPage | 4GB EPYC KVM VPS，€29.50/年，美国、欧洲、亚洲 |
-| 11-28 00:20 | Fivenines | 没提前公布 |
-| 11-28 01:20 | ServerHost | 2GB Ryzen/i9 不限流量 VPS，$19.99/年，美国 |
-| 11-28 02:20 | Pulsed Media | 8TB 起 10Gbps Seedbox，€7.99/月起，芬兰赫尔辛基 |
-| 11-28 03:00 | CloudCone | 2GB VPS，$17.77/年，美国加州 |
-| 11-28 03:00 | StarryDNS | 1GB 起 KVM VPS，$20/年起，日本、香港、新加坡、荷兰 |
-| 11-28 04:00 | RackGenius | 2GB KVM VPS，$2.50/月，美国密歇根 |
-| 11-28 05:40 | SoftShellWeb | 1GB 起 IPv6 Ryzen LXC VPS，$7.95/年起，美国犹他，可加 IPv4 |
-| 11-28 06:40 | HandyHost | 4GB 不限流量 KVM VPS，$30/年，美国犹他 |
 | 11-28 09:00 | Servury | 2GB 匿名 VPS 一次性 5 折，$2.49/月起，加拿大 |
 | 11-28 09:40 | Servitro | 4GB EPYC KVM VPS，$16/年，德国法兰克福 |
-| 时间没公布 | Clouvider | 4GB VPS，£25/年，美国、英国、欧洲 |
-| 时间没公布 | FireVPS | 2GB Ryzen KVM VPS，$13.89/年，美国新泽西、加州 |
-| 时间没公布 | GenixNode | 4GB 起 KVM VPS，首月 $2.39 起，土耳其、保加利亚 |
-| 时间没公布 | Host.al | 没提前公布 |
-| 时间没公布 | Host4Fun | 8GB KVM VPS，$7/月，美国 |
-| 时间没公布 | IonSwitch | 10Gbps 托管，4U 单机 $45/月，42U 整柜 $799/月，美国爱达荷 |
-| 时间没公布 | KhanWebHost | DirectAdmin 虚拟主机 5GB 起 $5/年起，另有加拿大 50GB 分销 $50/年 |
-| 时间没公布 | Linveo | 1GB Ryzen VPS，$7/年，美国俄亥俄、得克萨斯 |
-| 时间没公布 | PomeloHost | 8GB 起 EPYC KVM VPS，$15/季起，美国佛罗里达 |
-| 时间没公布 | RedSwitches | 双路 Xeon Silver/Gold 64GB 起不限流量独服，$459/月起，阿姆斯特丹、巴黎 |
-| 时间没公布 | ServerCrate | 250GB 起 Borg/Restic 备份存储，首年 $21 起，美国加州 |
-| 时间没公布 | ST-Hosting | 4GB Ryzen KVM VPS，首年 €77，德国法兰克福 |
-| 时间没公布 | VPSPioneer | 1GB KVM VPS，首年 $9.99，土耳其布尔萨 |
-| 时间没公布 | WebHosting1st | 没提前公布 |
+| 11-28 12:40 前 | Linveo | 1GB Ryzen VPS，$7/年，美国俄亥俄、得克萨斯 |
+| 11-28 12:40 前 | ServerCrate | 250GB 起 Borg/Restic 备份存储，首年 $21 起，美国加州 |
+| 11-28 12:40 前 | Host.al | 没提前公布 |
+| 11-28 12:40 前 | WebHosting1st | 没提前公布 |
 
 {% note info flat %}
-到点以后，完整配置和购买链接会发在 LowEndTalk 的黑五帖里：https://lowendtalk.com/discussion/223930
+标了数量的大多放出来几分钟就没了，表里的“已售罄”是北京时间 11-28 早上 8 点查的，商家可能还会补货。
 
-闪购库存一般很少，很多不退款，有的价格只算第一期，下单前看清续费价格。
+闪购很多不退款，有的价格只算第一期，下单前看清续费价格。
 
-11 月 28 日到 30 日的时间表会在前一天公布，到时候再更新。
+软件授权、监控、DNS、GPU 租用这几个和 VPS 关系不大，没放进来，想看的去活动帖：https://lowendtalk.com/discussion/223930
+
+第二天北京时间 11-28 13:00 开始，时间表中午左右公布，到时候再更新。
 {% endnote %}
 
 ## 美国 VPS
@@ -109,28 +162,6 @@ VPS 现在用 RackNerd 自己的 ctrl 面板，带一键应用和网络防火墙
 {% endnote %}
 
 链接：https://www.racknerd.com/BlackFriday/
-
-### D4 Networks
-
-纽约、达拉斯、阿姆斯特丹三地可选的 KVM 年付特惠，续费同价，免安装费。
-
-| 套餐 | CPU | 内存 | 硬盘 | 流量 | 端口 | 价格 | 购买 |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| KVM 5GB | 2 vCPU | 5GB | 100GB NVMe | 6TB | - | $69/年 | - |
-| KVM 7GB | 3 vCPU | 7GB | 140GB NVMe | 8TB | - | $89/年 | - |
-| 达拉斯独服 | 2×Xeon Platinum 8173M（56C） | 128GB | 2×1.92TB SSD | 30TB | 10Gbps | $175/月，免安装费 | [购买](https://my.d4networks.com/cart.php?a=add&pid=59) |
-
-{% note info flat %}
-截止：11 月 26 日 23:59（PST）或售完
-
-带 1 个 IPv4 和 /64 IPv6。
-
-在 LowEndTalk 活动帖下回复订单号可以多送一个月。
-
-达拉斯独服不算黑五活动，只有一台。
-{% endnote %}
-
-链接：https://my.d4networks.com/cart.php?a=add&pid=73
 
 ### CentrixNodes
 
@@ -354,7 +385,7 @@ Cost-Optimized 续费同价，不参加首月 7 折。
 
 下单后在 LowEndTalk 活动帖下回复订单号，每台多送一周。
 
-商家说黑五活动 11 月 23 日开始，到时候再更新。
+LowEndTalk 闪购里用 `BF2026`，月付首月也是年付的价格，之后按原价续费。
 {% endnote %}
 
 链接：https://genixnode.com/vps
